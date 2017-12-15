@@ -25,224 +25,224 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
+# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a><span data-ttu-id="d4d4e-103">온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결</span><span class="sxs-lookup"><span data-stu-id="d4d4e-103">Connect an on-premises network to a Microsoft Azure virtual network</span></span>
 
- **요약:** Office Server 작업용 프레미스 간 Azure Virtual Network 구성 방법을 알아봅니다.
+ <span data-ttu-id="d4d4e-104">**요약:** Office Server 작업용 프레미스 간 Azure Virtual Network 구성 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-104">**Summary:** Learn how to configure a cross-premises Azure virtual network for Office server workloads.</span></span>
   
-프레미스 간 Azure Virtual Network가 온-프레미스 네트워크에 연결되어 Azure 인프라 서비스에서 호스트되는 서브넷 및 가상 시스템을 포함하도록 네트워크를 확장합니다. 이 연결을 통해 온-프레미스 네트워크의 컴퓨터는 Azure의 가상 시스템에 직접 액세스할 수 있으며 그 반대의 경우도 가능합니다. 예를 들어 Azure Virtual Machine에서 실행되는 DirSync 서버는 온-프레미스 도메인 컨트롤러에 계정 변경 내용을 쿼리하고 이러한 변경 내용을 Office 365 구독과 동기화해야 합니다. 이 문서에서는 Azure Virtual Machine을 호스트할 준비가 된 프레미스 간 Azure Virtual Network를 설정하는 방법을 설명합니다.
+<span data-ttu-id="d4d4e-p101">프레미스 간 Azure Virtual Network가 온-프레미스 네트워크에 연결되어 Azure 인프라 서비스에서 호스트되는 서브넷 및 가상 시스템을 포함하도록 네트워크를 확장합니다. 이 연결을 통해 온-프레미스 네트워크의 컴퓨터는 Azure의 가상 시스템에 직접 액세스할 수 있으며 그 반대의 경우도 가능합니다. 예를 들어 Azure Virtual Machine에서 실행되는 DirSync 서버는 온-프레미스 도메인 컨트롤러에 계정 변경 내용을 쿼리하고 이러한 변경 내용을 Office 365 구독과 동기화해야 합니다. 이 문서에서는 Azure Virtual Machine을 호스트할 준비가 된 프레미스 간 Azure Virtual Network를 설정하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p101">A cross-premises Azure virtual network is connected to your on-premises network, extending your network to include subnets and virtual machines hosted in Azure infrastructure services. This connection allows computers on your on-premises network to directly access virtual machines in Azure and vice versa. For example, a DirSync server running on an Azure virtual machine needs to query your on-premises domain controllers for changes to accounts and synchronize those changes with your Office 365 subscription. This article shows you how to set up a cross-premises Azure virtual network that is ready to host Azure virtual machines.</span></span>
   
-이 문서의 내용
+<span data-ttu-id="d4d4e-109">이 문서의 내용</span><span class="sxs-lookup"><span data-stu-id="d4d4e-109">In this article:</span></span>
   
-- [개요](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Overview)
+- [<span data-ttu-id="d4d4e-110">개요</span><span class="sxs-lookup"><span data-stu-id="d4d4e-110">Overview</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Overview)
     
-- [Azure Virtual Network 계획](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#PlanningVirtual)
+- [<span data-ttu-id="d4d4e-111">Azure Virtual Network 계획</span><span class="sxs-lookup"><span data-stu-id="d4d4e-111">Plan your Azure virtual network</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#PlanningVirtual)
     
-- [배포 로드맵](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#DeploymentRoadmap)
+- [<span data-ttu-id="d4d4e-112">배포 로드맵</span><span class="sxs-lookup"><span data-stu-id="d4d4e-112">Deployment roadmap</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#DeploymentRoadmap)
     
-## <a name="overview"></a>개요
-<a name="Overview"> </a>
+## <a name="overview"></a><span data-ttu-id="d4d4e-113">개요</span><span class="sxs-lookup"><span data-stu-id="d4d4e-113">Overview</span></span>
+<span data-ttu-id="d4d4e-114"><a name="Overview"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-114"><a name="Overview"> </a></span></span>
 
-Azure의 가상 시스템은 온-프레미스 환경에서 격리할 필요가 없습니다. Azure Virtual Machine을 온-프레미스 네트워크 리소스에 연결하려면 프레미스 간 Azure Virtual Network를 구성해야 합니다. 다음 다이어그램은 Azure의 가상 컴퓨터가 있는 프레미스 간 Azure Virtual Network를 배포하는 데 필요한 구성 요소를 표시합니다.
+<span data-ttu-id="d4d4e-p102">Azure의 가상 시스템은 온-프레미스 환경에서 격리할 필요가 없습니다. Azure Virtual Machine을 온-프레미스 네트워크 리소스에 연결하려면 프레미스 간 Azure Virtual Network를 구성해야 합니다. 다음 다이어그램은 Azure의 가상 컴퓨터가 있는 프레미스 간 Azure Virtual Network를 배포하는 데 필요한 구성 요소를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p102">Your virtual machines in Azure don't have to be isolated from your on-premises environment. To connect Azure virtual machines to your on-premises network resources, you must configure a cross-premises Azure virtual network. The following diagram shows the required components to deploy a cross-premises Azure virtual network with a virtual machine in Azure.</span></span>
   
 ![사이트 간 VPN 연결을 통해 Microsoft Azure에 연결된 온-프레미스 네트워크](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-다이어그램에는 사이트 간 VPN(가상 사설망) 연결로 연결된 두 개 네트워크가 있으며, 하나는 온-프레미스 네트워크이고 하나는 Azure Virtual Network입니다. 사이트 간 VPN 연결은 온-프레미스 네트워크의 VPN 장치와 Azure Virtual Network의 Azure VPN 게이트웨이에서 종료됩니다. Azure Virtual Network에는 가상 컴퓨터가 있습니다. Azure Virtual Network의 가상 컴퓨터에서 시작된 네트워크 트래픽은 VPN 게이트웨이로 전달되며, VPN 게이트웨이는 사이트 간 VPN 연결을 통해 온-프레미스 네트워크의 VPN 장치로 트래픽을 전달합니다. 그런 다음 온-프레미스 네트워크의 라우팅 인프라가 대상으로 트래픽을 전달합니다.
+<span data-ttu-id="d4d4e-p103">다이어그램에는 사이트 간 VPN(가상 사설망) 연결로 연결된 두 개 네트워크가 있으며, 하나는 온-프레미스 네트워크이고 하나는 Azure Virtual Network입니다. 사이트 간 VPN 연결은 온-프레미스 네트워크의 VPN 장치와 Azure Virtual Network의 Azure VPN 게이트웨이에서 종료됩니다. Azure Virtual Network에는 가상 컴퓨터가 있습니다. Azure Virtual Network의 가상 컴퓨터에서 시작된 네트워크 트래픽은 VPN 게이트웨이로 전달되며, VPN 게이트웨이는 사이트 간 VPN 연결을 통해 온-프레미스 네트워크의 VPN 장치로 트래픽을 전달합니다. 그런 다음 온-프레미스 네트워크의 라우팅 인프라가 대상으로 트래픽을 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p103">In the diagram, there are two networks connected by a site-to-site virtual private network (VPN) connection: the on-premises network and the Azure virtual network. The site-to-site VPN connection is terminated by a VPN device on the on-premises network and an Azure VPN gateway on the Azure virtual network. The Azure virtual network has virtual machines. Network traffic originating from virtual machines on the Azure virtual network gets forwarded to the VPN gateway, which then forwards the traffic across the site-to-site VPN connection to the VPN device on the on-premises network. The routing infrastructure of the on-premises network then forwards the traffic to its destination.</span></span>
   
-Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설정하려면 다음 단계를 수행합니다. 
+<span data-ttu-id="d4d4e-124">Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설정하려면 다음 단계를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-124">To set up the VPN connection between your Azure virtual network and your on-premises network, do the following steps:</span></span> 
   
-1. **온-프레미스:** 온-프레미스 VPN 장치를 가리키는 Azure Virtual Network의 주소 공간에 대한 온-프레미스 네트워크 경로를 정의하고 만듭니다.
+1. <span data-ttu-id="d4d4e-125">**온-프레미스:** 온-프레미스 VPN 장치를 가리키는 Azure Virtual Network의 주소 공간에 대한 온-프레미스 네트워크 경로를 정의하고 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-125">**On-premises:** Define and create an on-premises network route for the address space of the Azure virtual network that points to your on-premises VPN device.</span></span>
     
-2. **Microsoft Azure:** 사이트 마다 VPN 연결 Azure 가상 네트워크를 만듭니다. 이 문서는 [ExpressRoute](https://azure.microsoft.com/services/expressroute/)의 사용을 설명 하지 않습니다.
+2. <span data-ttu-id="d4d4e-p104">**Microsoft Azure:** 사이트 마다 VPN 연결 Azure 가상 네트워크를 만듭니다. 이 문서는 [ExpressRoute](https://azure.microsoft.com/services/expressroute/)의 사용을 설명 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p104">**Microsoft Azure:** Create an Azure virtual network with a site-to-site VPN connection. This article does not describe the use of [ExpressRoute](https://azure.microsoft.com/services/expressroute/).</span></span>
     
-3. **온-프레미스:** 온-프레미스 하드웨어 또는 소프트웨어 VPN 장치를 구성하여 IPsec(인터넷 프로토콜 보안)을 사용하는 VPN 연결을 종료합니다.
+3. <span data-ttu-id="d4d4e-128">**온-프레미스:** 온-프레미스 하드웨어 또는 소프트웨어 VPN 장치를 구성하여 IPsec(인터넷 프로토콜 보안)을 사용하는 VPN 연결을 종료합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-128">**On premises:** Configure your on-premises hardware or software VPN device to terminate the VPN connection, which uses Internet Protocol security (IPsec).</span></span>
     
-사이트 간 VPN 연결을 설정한 후 Azure Virtual Machine을 가상 네트워크의 서브넷에 추가합니다.
+<span data-ttu-id="d4d4e-129">사이트 간 VPN 연결을 설정한 후 Azure Virtual Machine을 가상 네트워크의 서브넷에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-129">After you establish the site-to-site VPN connection, you add Azure virtual machines to the subnets of the virtual network.</span></span>
   
-## <a name="plan-your-azure-virtual-network"></a>Azure Virtual Network 계획
-<a name="PlanningVirtual"> </a>
+## <a name="plan-your-azure-virtual-network"></a><span data-ttu-id="d4d4e-130">Azure Virtual Network 계획</span><span class="sxs-lookup"><span data-stu-id="d4d4e-130">Plan your Azure virtual network</span></span>
+<span data-ttu-id="d4d4e-131"><a name="PlanningVirtual"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-131"><a name="PlanningVirtual"> </a></span></span>
 
-### <a name="prerequisites"></a>필수 구성 요소
-<a name="Prerequisites"> </a>
+### <a name="prerequisites"></a><span data-ttu-id="d4d4e-132">필수 구성 요소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-132">Prerequisites</span></span>
+<span data-ttu-id="d4d4e-133"><a name="Prerequisites"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-133"><a name="Prerequisites"> </a></span></span>
 
-- Azure 구독. Azure 구독에 대한 자세한 내용은 [Microsoft Azure 구독 페이지](https://azure.microsoft.com/pricing/purchase-options/)로 이동하여 확인하세요.
+- <span data-ttu-id="d4d4e-p105">Azure 구독. Azure 구독에 대한 자세한 내용은 [Microsoft Azure 구독 페이지](https://azure.microsoft.com/pricing/purchase-options/)로 이동하여 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p105">An Azure subscription. For information about Azure subscriptions, go to the [Microsoft Azure subscription page](https://azure.microsoft.com/pricing/purchase-options/).</span></span>
     
-- 가상 네트워크 및 서브넷에 할당할 수 있는 개인 IPv4 주소 공간. 이 주소 공간에는 현재와 미래에 필요한 가상 컴퓨터 수를 수용할만한 충분한 공간이 있어야 합니다.
+- <span data-ttu-id="d4d4e-136">가상 네트워크 및 서브넷에 할당할 수 있는 개인 IPv4 주소 공간. 이 주소 공간에는 현재와 미래에 필요한 가상 컴퓨터 수를 수용할만한 충분한 공간이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-136">An available private IPv4 address space to assign to the virtual network and its subnets, with sufficient room for growth to accommodate the number of virtual machines needed now and in the future.</span></span>
     
-- 온-프레미스 네트워크에서 사용할 수 있는 VPN 장치. 이 장치로 IPsec의 요구 사항을 지원하는 사이트 간 VPN 연결을 종료할 수 있습니다. 자세한 내용은 [사이트 간 가상 네트워크 연결용 VPN 장치 정보](https://go.microsoft.com/fwlink/p/?LinkId=393093)를 참조하세요.
+- <span data-ttu-id="d4d4e-p106">온-프레미스 네트워크에서 사용할 수 있는 VPN 장치. 이 장치로 IPsec의 요구 사항을 지원하는 사이트 간 VPN 연결을 종료할 수 있습니다. 자세한 내용은 [사이트 간 가상 네트워크 연결용 VPN 장치 정보](https://go.microsoft.com/fwlink/p/?LinkId=393093)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p106">An available VPN device in your on-premises network to terminate the site-to-site VPN connection that supports the requirements for IPsec. For more information, see [About VPN devices for site-to-site virtual network connections](https://go.microsoft.com/fwlink/p/?LinkId=393093).</span></span>
     
-- 라우팅 인프라에 대한 변경 내용. Azure Virtual Network의 주소 공간으로 라우팅된 트래픽이 사이트 간 VPN 연결을 호스트하는 VPN 장치로 전달되도록 라우팅 인프라를 변경해야 합니다.
+- <span data-ttu-id="d4d4e-139">라우팅 인프라에 대한 변경 내용. Azure Virtual Network의 주소 공간으로 라우팅된 트래픽이 사이트 간 VPN 연결을 호스트하는 VPN 장치로 전달되도록 라우팅 인프라를 변경해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-139">Changes to your routing infrastructure so that traffic routed to the address space of the Azure virtual network gets forwarded to the VPN device that hosts the site-to-site VPN connection.</span></span>
     
-- 온-프레미스 네트워크와 Azure Virtual Network에 연결된 컴퓨터에 인터넷으로의 액세스를 제공하는 웹 프록시.
+- <span data-ttu-id="d4d4e-140">온-프레미스 네트워크와 Azure Virtual Network에 연결된 컴퓨터에 인터넷으로의 액세스를 제공하는 웹 프록시.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-140">A web proxy that gives computers that are connected to the on-premises network and the Azure virtual network access to the Internet.</span></span>
     
-### <a name="solution-architecture-design-assumptions"></a>솔루션 아키텍처 디자인 가정
-<a name="DesignAssumptions"> </a>
+### <a name="solution-architecture-design-assumptions"></a><span data-ttu-id="d4d4e-141">솔루션 아키텍처 디자인 가정</span><span class="sxs-lookup"><span data-stu-id="d4d4e-141">Solution architecture design assumptions</span></span>
+<span data-ttu-id="d4d4e-142"><a name="DesignAssumptions"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-142"><a name="DesignAssumptions"> </a></span></span>
 
-다음 목록에는 이 솔루션 아키텍처에 대한 디자인 선택이 나타납니다. 
+<span data-ttu-id="d4d4e-143">다음 목록에는 이 솔루션 아키텍처에 대한 디자인 선택이 나타납니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-143">The following list represents the design choices that have been made for this solution architecture.</span></span> 
   
-- 이 솔루션은 사이트 간 VPN 연결을 사용하는 단일 Azure Virtual Network를 사용합니다. Azure Virtual Network는 여러 가상 컴퓨터를 포함할 수 있는 단일 서브넷을 호스트합니다. 
+- <span data-ttu-id="d4d4e-p107">이 솔루션은 사이트 간 VPN 연결을 사용하는 단일 Azure Virtual Network를 사용합니다. Azure Virtual Network는 여러 가상 컴퓨터를 포함할 수 있는 단일 서브넷을 호스트합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p107">This solution uses a single Azure virtual network with a site-to-site VPN connection. The Azure virtual network hosts a single subnet that can contain multiple virtual machines.</span></span> 
     
-- Windows Server 2016 또는 Windows Server 2012에서 RRAS(라우팅 및 원격 액세스 서비스)를 사용하여 온-프레미스 네트워크와 Azure Virtual Network 간의 IPsec 사이트 간 VPN 연결을 설정할 수 있습니다. Cisco 또는 Juniper Networks VPN 장치와 같은 다른 옵션을 사용할 수도 있습니다.
+- <span data-ttu-id="d4d4e-p108">Windows Server 2016 또는 Windows Server 2012에서 RRAS(라우팅 및 원격 액세스 서비스)를 사용하여 온-프레미스 네트워크와 Azure Virtual Network 간의 IPsec 사이트 간 VPN 연결을 설정할 수 있습니다. Cisco 또는 Juniper Networks VPN 장치와 같은 다른 옵션을 사용할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p108">You can use the Routing and Remote Access Service (RRAS) in Windows Server 2016 or Windows Server 2012 to establish an IPsec site-to-site VPN connection between the on-premises network and the Azure virtual network. You can also use other options, such as Cisco or Juniper Networks VPN devices.</span></span>
     
-- 온-프레미스 네트워크에는 Windows Server AD(Active Directory), DNS(Domain Name System) 및 프록시 서버와 같은 네트워크 서비스가 아직 있을 수 있습니다. 사용자의 요구 사항에 따라 Azure Virtual Network에서 이러한 네트워크 리소스를 배치하는 것이 좋을 수도 있습니다.
+- <span data-ttu-id="d4d4e-p109">온-프레미스 네트워크에는 Windows Server AD(Active Directory), DNS(Domain Name System) 및 프록시 서버와 같은 네트워크 서비스가 아직 있을 수 있습니다. 사용자의 요구 사항에 따라 Azure Virtual Network에서 이러한 네트워크 리소스를 배치하는 것이 좋을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p109">The on-premises network might still have network services like Windows Server Active Directory (AD), Domain Name System (DNS), and proxy servers. Depending on your requirements, it might be beneficial to place some of these network resources in the Azure virtual network.</span></span>
     
-하나 이상의 서브넷이 있는 기존 Azure Virtual Network의 경우 사용자의 요구 사항에 따라 필요한 가상 컴퓨터를 호스트할 추가 서브넷을 위한 남은 주소가 있는지 확인합니다. 추가 서브넷을 위한 남은 주소 공간이 없으면 자체 사이트 간 VPN 연결이 있는 추가 가상 네트워크를 만듭니다.
+<span data-ttu-id="d4d4e-p110">하나 이상의 서브넷이 있는 기존 Azure Virtual Network의 경우 사용자의 요구 사항에 따라 필요한 가상 컴퓨터를 호스트할 추가 서브넷을 위한 남은 주소가 있는지 확인합니다. 추가 서브넷을 위한 남은 주소 공간이 없으면 자체 사이트 간 VPN 연결이 있는 추가 가상 네트워크를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p110">For an existing Azure virtual network with one or more subnets, determine whether there is remaining address space for an additional subnet to host your needed virtual machines, based on your requirements. If you don't have remaining address space for an additional subnet, create an additional virtual network that has its own site-to-site VPN connection.</span></span>
   
-### <a name="plan-the-routing-infrastructure-changes-for-the-azure-virtual-network"></a>Azure Virtual Network에 대한 라우팅 인프라 변경 계획
-<a name="routing"> </a>
+### <a name="plan-the-routing-infrastructure-changes-for-the-azure-virtual-network"></a><span data-ttu-id="d4d4e-152">Azure Virtual Network에 대한 라우팅 인프라 변경 계획</span><span class="sxs-lookup"><span data-stu-id="d4d4e-152">Plan the routing infrastructure changes for the Azure virtual network</span></span>
+<span data-ttu-id="d4d4e-153"><a name="routing"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-153"><a name="routing"> </a></span></span>
 
-Azure Virtual Network의 주소 공간을 대상으로 하는 트래픽을 사이트 간 VPN 연결을 호스트하는 온 - 프레미스 VPN 장치로 전달하도록 온-프레미스 라우팅 인프라를 구성해야 합니다.
+<span data-ttu-id="d4d4e-154">Azure Virtual Network의 주소 공간을 대상으로 하는 트래픽을 사이트 간 VPN 연결을 호스트하는 온 - 프레미스 VPN 장치로 전달하도록 온-프레미스 라우팅 인프라를 구성해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-154">You must configure your on-premises routing infrastructure to forward traffic destined for the address space of the Azure virtual network to the on-premises VPN device that is hosting the site-to-site VPN connection.</span></span>
   
-라우팅 인프라를 업데이트하는 정확한 방법은 라우팅 정보를 관리하는 방법에 따라 달라지며 그 방법은 다음과 같습니다.
+<span data-ttu-id="d4d4e-155">라우팅 인프라를 업데이트하는 정확한 방법은 라우팅 정보를 관리하는 방법에 따라 달라지며 그 방법은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-155">The exact method of updating your routing infrastructure depends on how you manage routing information, which can be:</span></span>
   
-- 수동 구성에 따른 라우팅 테이블 업데이트.
+- <span data-ttu-id="d4d4e-156">수동 구성에 따른 라우팅 테이블 업데이트.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-156">Routing table updates based on manual configuration.</span></span>
     
-- RIP(Routing Information Protocol) 또는 OSPF(최단 경로 우선 프로토콜)와 같은 라우팅 프로토콜을 기준으로 라우팅 테이블 업데이트.
+- <span data-ttu-id="d4d4e-157">RIP(Routing Information Protocol) 또는 OSPF(최단 경로 우선 프로토콜)와 같은 라우팅 프로토콜을 기준으로 라우팅 테이블 업데이트.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-157">Routing table updates based on routing protocols, such as Routing Information Protocol (RIP) or Open Shortest Path First (OSPF).</span></span>
     
-라우팅 전문가와 상담하여 Azure Virtual Network를 대상으로 하는 트래픽이 온-프레미스 VPN 장치로 전달되는지 확인하세요.
+<span data-ttu-id="d4d4e-158">라우팅 전문가와 상담하여 Azure Virtual Network를 대상으로 하는 트래픽이 온-프레미스 VPN 장치로 전달되는지 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-158">Consult with your routing specialist to make sure that traffic destined for the Azure virtual network is forwarded to the on-premises VPN device.</span></span>
   
-### <a name="plan-for-firewall-rules-for-traffic-to-and-from-the-on-premises-vpn-device"></a>온-프레미스 VPN 장치의 트래픽용 방화벽 규칙 계획
-<a name="firewall"> </a>
+### <a name="plan-for-firewall-rules-for-traffic-to-and-from-the-on-premises-vpn-device"></a><span data-ttu-id="d4d4e-159">온-프레미스 VPN 장치의 트래픽용 방화벽 규칙 계획</span><span class="sxs-lookup"><span data-stu-id="d4d4e-159">Plan for firewall rules for traffic to and from the on-premises VPN device</span></span>
+<span data-ttu-id="d4d4e-160"><a name="firewall"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-160"><a name="firewall"> </a></span></span>
 
-주변 네트워크와 인터넷 사이에 방화벽이 있는 주변 네트워크에 VPN 장치가 있는 경우 사이트 간 VPN 연결을 허용하도록 다음 규칙에 맞게 방화벽을 구성해야 할 수도 있습니다.
+<span data-ttu-id="d4d4e-161">주변 네트워크와 인터넷 사이에 방화벽이 있는 주변 네트워크에 VPN 장치가 있는 경우 사이트 간 VPN 연결을 허용하도록 다음 규칙에 맞게 방화벽을 구성해야 할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-161">If your VPN device is on a perimeter network that has a firewall between the perimeter network and the Internet, you might have to configure the firewall for the following rules to allow the site-to-site VPN connection.</span></span>
   
-- VPN 장치로 보내는 트래픽(인터넷에서 수신):
+- <span data-ttu-id="d4d4e-162">VPN 장치로 보내는 트래픽(인터넷에서 수신):</span><span class="sxs-lookup"><span data-stu-id="d4d4e-162">Traffic to the VPN device (incoming from the Internet):</span></span>
     
-  - VPN 장치 및 IP 프로토콜 50의 대상 IP 주소
+  - <span data-ttu-id="d4d4e-163">VPN 장치 및 IP 프로토콜 50의 대상 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-163">Destination IP address of the VPN device and IP protocol 50</span></span>
     
-  - VPN 장치 및 UDP 대상 포트 500의 대상 IP 주소
+  - <span data-ttu-id="d4d4e-164">VPN 장치 및 UDP 대상 포트 500의 대상 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-164">Destination IP address of the VPN device and UDP destination port 500</span></span>
     
-  - VPN 장치 및 UDP 대상 포트 4500의 대상 IP 주소
+  - <span data-ttu-id="d4d4e-165">VPN 장치 및 UDP 대상 포트 4500의 대상 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-165">Destination IP address of the VPN device and UDP destination port 4500</span></span>
     
-- VPN 장치에서 받는 트래픽(인터넷으로 발신)
+- <span data-ttu-id="d4d4e-166">VPN 장치에서 받는 트래픽(인터넷으로 발신)</span><span class="sxs-lookup"><span data-stu-id="d4d4e-166">Traffic from the VPN device (outgoing to the Internet):</span></span>
     
-  - VPN 장치 및 IP 프로토콜 50의 원본 IP 주소
+  - <span data-ttu-id="d4d4e-167">VPN 장치 및 IP 프로토콜 50의 원본 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-167">Source IP address of the VPN device and IP protocol 50</span></span>
     
-  - VPN 장치 및 UDP 원본 포트 500의 원본 IP 주소
+  - <span data-ttu-id="d4d4e-168">VPN 장치 및 UDP 원본 포트 500의 원본 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-168">Source IP address of the VPN device and UDP source port 500</span></span>
     
-  - VPN 장치 및 UDP 원본 포트 4500의 원본 IP 주소
+  - <span data-ttu-id="d4d4e-169">VPN 장치 및 UDP 원본 포트 4500의 원본 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-169">Source IP address of the VPN device and UDP source port 4500</span></span>
     
-### <a name="plan-for-the-private-ip-address-space-of-the-azure-virtual-network"></a>Azure Virtual Network의 개인 IP 주소 공간 계획
-<a name="IPAddresses"> </a>
+### <a name="plan-for-the-private-ip-address-space-of-the-azure-virtual-network"></a><span data-ttu-id="d4d4e-170">Azure Virtual Network의 개인 IP 주소 공간 계획</span><span class="sxs-lookup"><span data-stu-id="d4d4e-170">Plan for the private IP address space of the Azure virtual network</span></span>
+<span data-ttu-id="d4d4e-171"><a name="IPAddresses"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-171"><a name="IPAddresses"> </a></span></span>
 
-Azure Virtual Network의 개인 IP 주소 공간은 가상 네트워크를 호스트하기 위해 Azure에서 사용하는 주소와 Azure Virtual Machine에 충분한 주소가 있는 서브넷을 하나 이상 수용할 수 있어야 합니다.
+<span data-ttu-id="d4d4e-172">Azure Virtual Network의 개인 IP 주소 공간은 가상 네트워크를 호스트하기 위해 Azure에서 사용하는 주소와 Azure Virtual Machine에 충분한 주소가 있는 서브넷을 하나 이상 수용할 수 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-172">The private IP address space of the Azure virtual network must be able to accommodate addresses used by Azure to host the virtual network and with at least one subnet that has enough addresses for your Azure virtual machines.</span></span>
   
-서브넷에 필요한 주소 개수를 확인하려면 지금 필요한 가상 컴퓨터의 수를 계산하고 이후 증가량을 추정한 후 다음 테이블을 사용해서 서브넷의 크기를 확인합니다.
+<span data-ttu-id="d4d4e-173">서브넷에 필요한 주소 개수를 확인하려면 지금 필요한 가상 컴퓨터의 수를 계산하고 이후 증가량을 추정한 후 다음 테이블을 사용해서 서브넷의 크기를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-173">To determine the number of addresses needed for the subnet, count the number of virtual machines that you need now, estimate for future growth, and then use the following table to determine the size of the subnet.</span></span>
   
-|**필요한 가상 컴퓨터의 수**|**필요한 호스트 비트 수**|**서브넷 크기**|
+|<span data-ttu-id="d4d4e-174">**필요한 가상 컴퓨터의 수**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-174">**Number of virtual machines needed**</span></span>|<span data-ttu-id="d4d4e-175">**필요한 호스트 비트 수**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-175">**Number of host bits needed**</span></span>|<span data-ttu-id="d4d4e-176">**서브넷 크기**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-176">**Size of the subnet**</span></span>|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|<span data-ttu-id="d4d4e-177">1-3</span><span class="sxs-lookup"><span data-stu-id="d4d4e-177">1-3</span></span>  <br/> |<span data-ttu-id="d4d4e-178">3</span><span class="sxs-lookup"><span data-stu-id="d4d4e-178">3</span></span>  <br/> |<span data-ttu-id="d4d4e-179">/29</span><span class="sxs-lookup"><span data-stu-id="d4d4e-179">/29</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-180">4-11</span><span class="sxs-lookup"><span data-stu-id="d4d4e-180">4-11</span></span>  <br/> |<span data-ttu-id="d4d4e-181">4</span><span class="sxs-lookup"><span data-stu-id="d4d4e-181">4</span></span>  <br/> |<span data-ttu-id="d4d4e-182">/28</span><span class="sxs-lookup"><span data-stu-id="d4d4e-182">/28</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-183">12-27</span><span class="sxs-lookup"><span data-stu-id="d4d4e-183">12-27</span></span>  <br/> |<span data-ttu-id="d4d4e-184">5</span><span class="sxs-lookup"><span data-stu-id="d4d4e-184">5</span></span>  <br/> |<span data-ttu-id="d4d4e-185">/27</span><span class="sxs-lookup"><span data-stu-id="d4d4e-185">/27</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-186">28-59</span><span class="sxs-lookup"><span data-stu-id="d4d4e-186">28-59</span></span>  <br/> |<span data-ttu-id="d4d4e-187">6</span><span class="sxs-lookup"><span data-stu-id="d4d4e-187">6</span></span>  <br/> |<span data-ttu-id="d4d4e-188">/26</span><span class="sxs-lookup"><span data-stu-id="d4d4e-188">/26</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-189">60-123</span><span class="sxs-lookup"><span data-stu-id="d4d4e-189">60-123</span></span>  <br/> |<span data-ttu-id="d4d4e-190">7</span><span class="sxs-lookup"><span data-stu-id="d4d4e-190">7</span></span>  <br/> |<span data-ttu-id="d4d4e-191">/25</span><span class="sxs-lookup"><span data-stu-id="d4d4e-191">/25</span></span>  <br/> |
    
-### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Azure Virtual Network 구성용 계획 워크시트
-<a name="worksheet"> </a>
+### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a><span data-ttu-id="d4d4e-192">Azure Virtual Network 구성용 계획 워크시트</span><span class="sxs-lookup"><span data-stu-id="d4d4e-192">Planning worksheet for configuring your Azure virtual network</span></span>
+<span data-ttu-id="d4d4e-193"><a name="worksheet"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-193"><a name="worksheet"> </a></span></span>
 
-Azure 가상 네트워크를 만들어서 가상 컴퓨터를 호스트하기 전에 다음 테이블에서 필요한 설정을 확인해야 합니다.
+<span data-ttu-id="d4d4e-194">Azure 가상 네트워크를 만들어서 가상 컴퓨터를 호스트하기 전에 다음 테이블에서 필요한 설정을 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-194">Before you create an Azure virtual network to host virtual machines, you must determine the settings needed in the following tables.</span></span>
   
-가상 네트워크 설정에 대해서는 테이블 V를 채웁니다.
+<span data-ttu-id="d4d4e-195">가상 네트워크 설정에 대해서는 테이블 V를 채웁니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-195">For the settings of the virtual network, fill in Table V.</span></span>
   
- **테이블 V: 프레미스 간 가상 네트워크 구성**
+ <span data-ttu-id="d4d4e-196">**테이블 V: 프레미스 간 가상 네트워크 구성**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-196">**Table V: Cross-premises virtual network configuration**</span></span>
   
-|**항목**|**Configuration 요소**|**설명**|**값**|
+|<span data-ttu-id="d4d4e-197">**항목**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-197">**Item**</span></span>|<span data-ttu-id="d4d4e-198">**Configuration 요소**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-198">**Configuration element**</span></span>|<span data-ttu-id="d4d4e-199">**설명**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-199">**Description**</span></span>|<span data-ttu-id="d4d4e-200">**값**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-200">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |가상 네트워크 이름  <br/> |Azure Virtual Network(예: DirSyncNet)에 할당할 이름입니다.  <br/> |__________________  <br/> |
-|2.  <br/> |가상 네트워크 위치  <br/> |가상 네트워크가 포함될 Azure 데이터 센터입니다(예: 미국 서부).  <br/> |__________________  <br/> |
-|3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다. IT 부서에서 이 주소를 확인합니다.  <br/> |__________________  <br/> |
-|4.  <br/> |가상 네트워크 주소 공간  <br/> |단일 개인 주소 접두사로 정의된 가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다. 주소 공간은 CIDR(Classless Interdomain Routing) 형식이어야 하며 네트워크 접두사 형식이라고도 합니다. 예를 들어 10.24.64.0/20입니다.  <br/> |__________________  <br/> |
-|5.  <br/> |IPsec 공유 키  <br/> |사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인한 다음 안전한 위치에 저장합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.<br/> |__________________  <br/> |
+|<span data-ttu-id="d4d4e-201">1.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-201">1.</span></span>  <br/> |<span data-ttu-id="d4d4e-202">가상 네트워크 이름</span><span class="sxs-lookup"><span data-stu-id="d4d4e-202">Virtual network name</span></span>  <br/> |<span data-ttu-id="d4d4e-203">Azure Virtual Network(예: DirSyncNet)에 할당할 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-203">A name to assign to the Azure virtual network (example DirSyncNet).</span></span>  <br/> |<span data-ttu-id="d4d4e-204">__________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-204">__________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-205">2.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-205">2.</span></span>  <br/> |<span data-ttu-id="d4d4e-206">가상 네트워크 위치</span><span class="sxs-lookup"><span data-stu-id="d4d4e-206">Virtual network location</span></span>  <br/> |<span data-ttu-id="d4d4e-207">가상 네트워크가 포함될 Azure 데이터 센터입니다(예: 미국 서부).</span><span class="sxs-lookup"><span data-stu-id="d4d4e-207">The Azure datacenter that will contain the virtual network (such as West US).</span></span>  <br/> |<span data-ttu-id="d4d4e-208">__________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-208">__________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-209">3.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-209">3.</span></span>  <br/> |<span data-ttu-id="d4d4e-210">VPN 장치 IP 주소</span><span class="sxs-lookup"><span data-stu-id="d4d4e-210">VPN device IP address</span></span>  <br/> |<span data-ttu-id="d4d4e-p111">인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다. IT 부서에서 이 주소를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p111">The public IPv4 address of your VPN device's interface on the Internet. Work with your IT department to determine this address.</span></span>  <br/> |<span data-ttu-id="d4d4e-213">__________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-213">__________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-214">4.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-214">4.</span></span>  <br/> |<span data-ttu-id="d4d4e-215">가상 네트워크 주소 공간</span><span class="sxs-lookup"><span data-stu-id="d4d4e-215">Virtual network address space</span></span>  <br/> |<span data-ttu-id="d4d4e-p112">단일 개인 주소 접두사로 정의된 가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다. 주소 공간은 CIDR(Classless Interdomain Routing) 형식이어야 하며 네트워크 접두사 형식이라고도 합니다. 예를 들어 10.24.64.0/20입니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p112">The address space (defined in a single private address prefix) for the virtual network. Work with your IT department to determine this address space. The address space should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.</span></span>  <br/> |<span data-ttu-id="d4d4e-220">__________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-220">__________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-221">5.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-221">5.</span></span>  <br/> |<span data-ttu-id="d4d4e-222">IPsec 공유 키</span><span class="sxs-lookup"><span data-stu-id="d4d4e-222">IPsec shared key</span></span>  <br/> |<span data-ttu-id="d4d4e-p113">사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인한 다음 안전한 위치에 저장합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p113">A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value and then store it in a secure location. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  </span></span><br/> |<span data-ttu-id="d4d4e-226">__________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-226">__________________</span></span>  <br/> |
    
-이 솔루션의 서브넷에 대해서는 테이블 S를 채웁니다.
+<span data-ttu-id="d4d4e-227">이 솔루션의 서브넷에 대해서는 테이블 S를 채웁니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-227">Fill in Table S for the subnets of this solution.</span></span>
   
-- 첫 서브넷의 경우 Azure 게이트웨이 서브넷의 28비트 주소 공간(/28 접두사 길이)을 결정합니다. 이 주소 공간을 확인하는 방법의 정보는 [Azure Virtual Network용 게이트웨이 서브넷 주소 공간 계산](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)을 참조하세요.
+- <span data-ttu-id="d4d4e-p114">첫 서브넷의 경우 Azure 게이트웨이 서브넷의 28비트 주소 공간(/28 접두사 길이)을 결정합니다. 이 주소 공간을 확인하는 방법의 정보는 [Azure Virtual Network용 게이트웨이 서브넷 주소 공간 계산](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p114">For the first subnet, determine a 28-bit address space (with a /28 prefix length) for the Azure gateway subnet. See [Calculating the gateway subnet address space for Azure virtual networks](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/) for information about how to determine this address space.</span></span>
     
-- 두 번째 서브넷의 경우 식별 이름, 가상 네트워크 주소 공간을 기준으로 하는 단일 IP 주소 공간 및 설명이 포함된 용도를 지정합니다.
+- <span data-ttu-id="d4d4e-230">두 번째 서브넷의 경우 식별 이름, 가상 네트워크 주소 공간을 기준으로 하는 단일 IP 주소 공간 및 설명이 포함된 용도를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-230">For the second subnet, specify a friendly name, a single IP address space based on the virtual network address space, and a descriptive purpose.</span></span>
     
-IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 확인합니다. 두 주소 공간 모두 CIDR 형식이어야 합니다.
+<span data-ttu-id="d4d4e-p115">IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 확인합니다. 두 주소 공간 모두 CIDR 형식이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p115">Work with your IT department to determine these address spaces from the virtual network address space. Both address spaces should be in CIDR format.</span></span>
   
- **테이블 S: 가상 네트워크의 서브넷**
+ <span data-ttu-id="d4d4e-233">**테이블 S: 가상 네트워크의 서브넷**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-233">**Table S: Subnets in the virtual network**</span></span>
   
-|**항목**|**서브넷 이름**|**서브넷 주소 공간**|**용도**|
+|<span data-ttu-id="d4d4e-234">**항목**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-234">**Item**</span></span>|<span data-ttu-id="d4d4e-235">**서브넷 이름**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-235">**Subnet name**</span></span>|<span data-ttu-id="d4d4e-236">**서브넷 주소 공간**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-236">**Subnet address space**</span></span>|<span data-ttu-id="d4d4e-237">**용도**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-237">**Purpose**</span></span>|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |_____________________________  <br/> |Azure 게이트웨이에서 사용하는 서브넷입니다.  <br/> |
-|2.  <br/> |_____________________________  <br/> |_____________________________  <br/> |_____________________________  <br/> |
+|<span data-ttu-id="d4d4e-238">1.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-238">1.</span></span>  <br/> |<span data-ttu-id="d4d4e-239">GatewaySubnet</span><span class="sxs-lookup"><span data-stu-id="d4d4e-239">GatewaySubnet</span></span>  <br/> |<span data-ttu-id="d4d4e-240">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-240">_____________________________</span></span>  <br/> |<span data-ttu-id="d4d4e-241">Azure 게이트웨이에서 사용하는 서브넷입니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-241">The subnet used by the Azure gateway.</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-242">2.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-242">2.</span></span>  <br/> |<span data-ttu-id="d4d4e-243">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-243">_____________________________</span></span>  <br/> |<span data-ttu-id="d4d4e-244">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-244">_____________________________</span></span>  <br/> |<span data-ttu-id="d4d4e-245">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-245">_____________________________</span></span>  <br/> |
    
-가상 네트워크의 가상 컴퓨터에서 사용할 온-프레미스 DNS 서버에 대해서는 테이블 D에 채웁니다. 각 DNS 서버에 식별 이름과 단일 IP 주소를 부여합니다. 식별 이름은 DNS 서버의 컴퓨터 이름 또는 호스트 이름과 일치하지 않아도 됩니다. 두 개의 빈 항목이 나열되어 있지만 추가할 수 있습니다. IT 부서에서 이 목록을 확인합니다.
+<span data-ttu-id="d4d4e-p116">가상 네트워크의 가상 컴퓨터에서 사용할 온-프레미스 DNS 서버에 대해서는 테이블 D에 채웁니다. 각 DNS 서버에 식별 이름과 단일 IP 주소를 부여합니다. 식별 이름은 DNS 서버의 컴퓨터 이름 또는 호스트 이름과 일치하지 않아도 됩니다. 두 개의 빈 항목이 나열되어 있지만 추가할 수 있습니다. IT 부서에서 이 목록을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p116">For the on-premises DNS servers that you want the virtual machines in the virtual network to use, fill in Table D. Give each DNS server a friendly name and a single IP address. This friendly name does not need to match the host name or computer name of the DNS server. Note that two blank entries are listed, but you can add more. Work with your IT department to determine this list.</span></span>
   
- **테이블 D: 온-프레미스 DNS 서버**
+ <span data-ttu-id="d4d4e-250">**테이블 D: 온-프레미스 DNS 서버**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-250">**Table D: On-premises DNS servers**</span></span>
   
-|**항목**|**DNS 서버 식별 이름**|**DNS 서버 IP 주소**|
+|<span data-ttu-id="d4d4e-251">**항목**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-251">**Item**</span></span>|<span data-ttu-id="d4d4e-252">**DNS 서버 식별 이름**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-252">**DNS server friendly name**</span></span>|<span data-ttu-id="d4d4e-253">**DNS 서버 IP 주소**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-253">**DNS server IP address**</span></span>|
 |:-----|:-----|:-----|
-|1.  <br/> |_____________________________  <br/> |_____________________________  <br/> |
-|2.  <br/> |_____________________________  <br/> |_____________________________  <br/> |
+|<span data-ttu-id="d4d4e-254">1.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-254">1.</span></span>  <br/> |<span data-ttu-id="d4d4e-255">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-255">_____________________________</span></span>  <br/> |<span data-ttu-id="d4d4e-256">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-256">_____________________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-257">2.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-257">2.</span></span>  <br/> |<span data-ttu-id="d4d4e-258">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-258">_____________________________</span></span>  <br/> |<span data-ttu-id="d4d4e-259">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-259">_____________________________</span></span>  <br/> |
    
-사이트 간 VPN 연결을 통해 Azure Virtual Network에서 조직 네트워크로 패킷을 라우팅하려면 로컬 네트워크로 가상 네트워크를 구성해야 합니다. 이 로컬 네트워크에는 가상 네트워크의 가상 컴퓨터에 도달해야 하는 온-프레미스 네트워크의 모든 위치에 대한 주소 공간 목록(CIDR 형식)이 포함되어 있습니다. 온-프레미스 네트워크 또는 하위 집합의 모든 위치일 수 있습니다. 로컬 네트워크를 정의하는 주소 공간 목록은 고유해야 하며 이 가상 네트워크 또는 다른 프레미스 간 가상 네트워크에 사용되는 주소 공간과 중복되지 않아야 합니다.
+<span data-ttu-id="d4d4e-p117">사이트 간 VPN 연결을 통해 Azure Virtual Network에서 조직 네트워크로 패킷을 라우팅하려면 로컬 네트워크로 가상 네트워크를 구성해야 합니다. 이 로컬 네트워크에는 가상 네트워크의 가상 컴퓨터에 도달해야 하는 온-프레미스 네트워크의 모든 위치에 대한 주소 공간 목록(CIDR 형식)이 포함되어 있습니다. 온-프레미스 네트워크 또는 하위 집합의 모든 위치일 수 있습니다. 로컬 네트워크를 정의하는 주소 공간 목록은 고유해야 하며 이 가상 네트워크 또는 다른 프레미스 간 가상 네트워크에 사용되는 주소 공간과 중복되지 않아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p117">To route packets from the Azure virtual network to your organization network across the site-to-site VPN connection, you must configure the virtual network with a local network. This local network contains a list of the address spaces (in CIDR format) for all of the locations on your organization's on-premises network that the virtual machines in the virtual network must reach. This can be all of the locations on the on-premises network or a subset. The list of address spaces that define your local network must be unique and must not overlap with the address spaces used for this virtual network or your other cross-premises virtual networks.</span></span>
   
-로컬 네트워크 주소 공간의 집합에 대해서는 테이블 L을 채웁니다. 세 개의 빈 항목이 나열되지만 일반적으로 더 많이 필요합니다. IT 부서에서 이 목록을 확인합니다.
+<span data-ttu-id="d4d4e-p118">로컬 네트워크 주소 공간의 집합에 대해서는 테이블 L을 채웁니다. 세 개의 빈 항목이 나열되지만 일반적으로 더 많이 필요합니다. IT 부서에서 이 목록을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p118">For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list.</span></span>
   
- **테이블 L: 로컬 네트워크의 주소 접두사**
+ <span data-ttu-id="d4d4e-266">**테이블 L: 로컬 네트워크의 주소 접두사**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-266">**Table L: Address prefixes for the local network**</span></span>
   
-|**항목**|**로컬 네트워크 주소 공간**|
+|<span data-ttu-id="d4d4e-267">**항목**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-267">**Item**</span></span>|<span data-ttu-id="d4d4e-268">**로컬 네트워크 주소 공간**</span><span class="sxs-lookup"><span data-stu-id="d4d4e-268">**Local network address space**</span></span>|
 |:-----|:-----|
-|1.  <br/> |_____________________________  <br/> |
-|2.  <br/> |_____________________________  <br/> |
-|3.  <br/> |_____________________________  <br/> |
+|<span data-ttu-id="d4d4e-269">1.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-269">1.</span></span>  <br/> |<span data-ttu-id="d4d4e-270">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-270">_____________________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-271">2.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-271">2.</span></span>  <br/> |<span data-ttu-id="d4d4e-272">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-272">_____________________________</span></span>  <br/> |
+|<span data-ttu-id="d4d4e-273">3.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-273">3.</span></span>  <br/> |<span data-ttu-id="d4d4e-274">_____________________________</span><span class="sxs-lookup"><span data-stu-id="d4d4e-274">_____________________________</span></span>  <br/> |
    
-## <a name="deployment-roadmap"></a>배포 로드맵
-<a name="DeploymentRoadmap"> </a>
+## <a name="deployment-roadmap"></a><span data-ttu-id="d4d4e-275">배포 로드맵</span><span class="sxs-lookup"><span data-stu-id="d4d4e-275">Deployment roadmap</span></span>
+<span data-ttu-id="d4d4e-276"><a name="DeploymentRoadmap"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-276"><a name="DeploymentRoadmap"> </a></span></span>
 
-다음 3단계를 통해 프레미스 간 가상 네트워크를 만들고 Azure에 가상 컴퓨터를 추가합니다.
+<span data-ttu-id="d4d4e-277">다음 3단계를 통해 프레미스 간 가상 네트워크를 만들고 Azure에 가상 컴퓨터를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-277">Creating the cross-premises virtual network and adding virtual machines in Azure consists of three phases:</span></span>
   
-- 1단계: 온-프레미스 네트워크 준비
+- <span data-ttu-id="d4d4e-278">1단계: 온-프레미스 네트워크 준비</span><span class="sxs-lookup"><span data-stu-id="d4d4e-278">Phase 1: Prepare your on-premises network.</span></span>
     
-- 2단계: Azure에 프레미스 간 가상 네트워크를 만들기
+- <span data-ttu-id="d4d4e-279">2단계: Azure에 프레미스 간 가상 네트워크를 만들기</span><span class="sxs-lookup"><span data-stu-id="d4d4e-279">Phase 2: Create the cross-premises virtual network in Azure.</span></span>
     
-- 3단계(선택 사항): 가상 컴퓨터 추가
+- <span data-ttu-id="d4d4e-280">3단계(선택 사항): 가상 컴퓨터 추가</span><span class="sxs-lookup"><span data-stu-id="d4d4e-280">Phase 3 (Optional): Add virtual machines.</span></span>
     
-### <a name="phase-1-prepare-your-on-premises-network"></a>1단계: 온-프레미스 네트워크 준비
-<a name="Phase1"> </a>
+### <a name="phase-1-prepare-your-on-premises-network"></a><span data-ttu-id="d4d4e-281">1단계: 온-프레미스 네트워크 준비</span><span class="sxs-lookup"><span data-stu-id="d4d4e-281">Phase 1: Prepare your on-premises network</span></span>
+<span data-ttu-id="d4d4e-282"><a name="Phase1"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-282"><a name="Phase1"> </a></span></span>
 
-가상 네트워크의 주소 공간을 대상으로 하는 트래픽을 온-프레미스 네트워크의 가장자리에 있는 라우터로 지정하고 궁극적으로 이를 배달하는 경로로 온 - 프레미스 네트워크를 구성해야 합니다. 네트워크 관리자와 상의하여 온-프레미스 네트워크의 라우팅 인프라에 경로를 추가하는 방법을 확인합니다.
+<span data-ttu-id="d4d4e-p119">가상 네트워크의 주소 공간을 대상으로 하는 트래픽을 온-프레미스 네트워크의 가장자리에 있는 라우터로 지정하고 궁극적으로 이를 배달하는 경로로 온 - 프레미스 네트워크를 구성해야 합니다. 네트워크 관리자와 상의하여 온-프레미스 네트워크의 라우팅 인프라에 경로를 추가하는 방법을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p119">You must configure your on-premises network with a route that points to and ultimately delivers traffic destined for the address space of the virtual network to the router on the edge of the on-premises network. Consult with your network administrator to determine how to add the route to the routing infrastructure of your on-premises network.</span></span>
   
-구성 결과는 다음과 같습니다.
+<span data-ttu-id="d4d4e-285">구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-285">Here is your resulting configuration.</span></span>
   
 ![온-프레미스 네트워크에는 VPN 장치 쪽을 가리키는 Virtual Network의 주소 공간에 대한 경로가 있어야 합니다.](images/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
-### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>2단계: Azure에 프레미스 간 가상 네트워크 만들기
-<a name="Phase2"> </a>
+### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a><span data-ttu-id="d4d4e-287">2단계: Azure에 프레미스 간 가상 네트워크 만들기</span><span class="sxs-lookup"><span data-stu-id="d4d4e-287">Phase 2: Create the cross-premises virtual network in Azure</span></span>
+<span data-ttu-id="d4d4e-288"><a name="Phase2"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-288"><a name="Phase2"> </a></span></span>
 
-먼저 Azure PowerShell 프롬프트를 엽니다. Azure PowerShell을 설치하지 않은 경우 [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요.
+<span data-ttu-id="d4d4e-p120">먼저 Azure PowerShell 프롬프트를 엽니다. Azure PowerShell을 설치하지 않은 경우 [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p120">First, open an Azure PowerShell prompt. If you have not installed Azure PowerShell, see [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).</span></span>
   
 > [!NOTE]
-> 이러한 명령은 Azure PowerShell 1.0 이상에서 사용할 수 있습니다. 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일은 [여기](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)를 클릭합니다. 
+> <span data-ttu-id="d4d4e-p121">이러한 명령은 Azure PowerShell 1.0 이상에서 사용할 수 있습니다. 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일은 [여기](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p121">These commands are for Azure PowerShell 1.0 and above. For a text file that contains all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19).</span></span> 
   
-그런 다음 이 명령을 사용하여 Azure 계정에 로그인합니다.
+<span data-ttu-id="d4d4e-293">그런 다음 이 명령을 사용하여 Azure 계정에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-293">Next, login to your Azure account with this command.</span></span>
   
 ```
 Login-AzureRMAccount
 ```
 
-다음 명령을 사용하여 구독 이름을 가져옵니다.
+<span data-ttu-id="d4d4e-294">다음 명령을 사용하여 구독 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-294">Get your subscription name using the following command.</span></span>
   
 ```
 Get-AzureRMSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
-이러한 명령을 사용하여 Azure 구독을 설정합니다. <and> 문자를 포함하여 따옴표 안에 있는 모든 것을 올바른 구독 이름으로 바꿉니다.
+<span data-ttu-id="d4d4e-p122">이러한 명령을 사용하여 Azure 구독을 설정합니다. <and> 문자를 포함하여 따옴표 안에 있는 모든 것을 올바른 구독 이름으로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p122">Set your Azure subscription with these commands. Replace everything within the quotes, including the < and > characters, with the correct subscription name.</span></span>
   
 ```
 $subscrName="<subscription name>"
 Select-AzureRMSubscription -SubscriptionName $subscrName -Current
 ```
 
-다음으로 가상 네트워크에 새 리소스 그룹을 만듭니다. 고유한 리소스 그룹 이름을 확인하려면 이 명령을 사용하여 기존 리소스 그룹을 나열합니다.
+<span data-ttu-id="d4d4e-p123">다음으로 가상 네트워크에 새 리소스 그룹을 만듭니다. 고유한 리소스 그룹 이름을 확인하려면 이 명령을 사용하여 기존 리소스 그룹을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p123">Next, create a new resource group for your virtual network. To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
   
 ```
 Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-이러한 명령을 사용하여 새 리소스 그룹을 만듭니다.
+<span data-ttu-id="d4d4e-299">이러한 명령을 사용하여 새 리소스 그룹을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-299">Create your new resource group with these commands.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -251,19 +251,19 @@ New-AzureRMResourceGroup -Name $rgName -Location $locName
 
 ```
 
-리소스 관리자 기반 가상 컴퓨터에는 리소스 관리자 기반 저장소 계정이 있어야 합니다. 소문자와 숫자만 포함하는 저장소 계정의 고유한 이름을 전역으로 선택해야 합니다. 이 명령을 사용하여 기존 저장소 계정을 나열할 수 있습니다.
+<span data-ttu-id="d4d4e-p124">리소스 관리자 기반 가상 컴퓨터에는 리소스 관리자 기반 저장소 계정이 있어야 합니다. 소문자와 숫자만 포함하는 저장소 계정의 고유한 이름을 전역으로 선택해야 합니다. 이 명령을 사용하여 기존 저장소 계정을 나열할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p124">Resource Manager-based virtual machines require a Resource Manager-based storage account. You must pick a globally unique name for your storage account that contains only lowercase letters and numbers. You can use this command to list the existing storage accounts.</span></span>
   
 ```
 Get-AzureRMStorageAccount | Sort Name | Select Name
 ```
 
-이 명령을 사용하여 제안된 저장소 계정 이름이 고유한지 테스트할 수 있습니다.
+<span data-ttu-id="d4d4e-303">이 명령을 사용하여 제안된 저장소 계정 이름이 고유한지 테스트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-303">Use this command to test whether a proposed storage account name is unique.</span></span>
   
 ```
 Get-AzureRmStorageAccountNameAvailability "<proposed name>"
 ```
 
-새 저장소 계정을 만들려면 이러한 명령을 실행합니다.
+<span data-ttu-id="d4d4e-304">새 저장소 계정을 만들려면 이러한 명령을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-304">To create a new storage account, run these commands.</span></span>
   
 ```
 $rgName="<your new resource group name>"
@@ -272,7 +272,7 @@ $saName="<unique storage account name>"
 New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
 ```
 
-다음으로 Azure Virtual Network를 만듭니다.
+<span data-ttu-id="d4d4e-305">다음으로 Azure Virtual Network를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-305">Next, you create the Azure virtual network.</span></span>
   
 ```
 # Fill in the variables from previous values and from Tables V, S, and D
@@ -300,11 +300,11 @@ $nsg=Get-AzureRMNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgNam
 Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
 ```
 
-구성 결과는 다음과 같습니다.
+<span data-ttu-id="d4d4e-306">구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-306">Here is your resulting configuration.</span></span>
   
 ![Virtual Network가 온-프레미스 네트워크에 아직 연결되지 않았습니다.](images/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
-다음으로 이러한 명령을 사용하여 사이트 간 VPN 연결의 게이트웨이를 만듭니다.
+<span data-ttu-id="d4d4e-308">다음으로 이러한 명령을 사용하여 사이트 간 VPN 연결의 게이트웨이를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-308">Next, use these commands to create the gateways for the site-to-site VPN connection.</span></span>
   
 ```
 # Fill in the variables from previous values and from Tables V and L
@@ -330,54 +330,54 @@ $vnetConnectionName="S2SConnection"
 $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 ```
 
-구성 결과는 다음과 같습니다.
+<span data-ttu-id="d4d4e-309">구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-309">Here is your resulting configuration.</span></span>
   
 ![이제 Virtual Network에 게이트웨이가 있습니다.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-계속해서 Azure VPN 게이트웨이에 연결할 온-프레미스 VPN 장치를 구성합니다. 자세한 내용은 [사이트 간 Azure Virtual Network 연결용 VPN 장치 정보](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)를 참조하세요.
+<span data-ttu-id="d4d4e-p125">계속해서 Azure VPN 게이트웨이에 연결할 온-프레미스 VPN 장치를 구성합니다. 자세한 내용은 [사이트 간 Azure Virtual Network 연결용 VPN 장치 정보](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p125">Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [About VPN Devices for site-to-site Azure Virtual Network connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).</span></span>
   
-VPN 장치를 구성하려면 다음 항목이 필요합니다.
+<span data-ttu-id="d4d4e-313">VPN 장치를 구성하려면 다음 항목이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-313">To configure your VPN device, you will need the following:</span></span>
   
-- 가상 네트워크의 Azure VPN 게이트웨이의 공용 IPv4 주소. **Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** 명령을 사용하여 주소를 표시합니다.
+- <span data-ttu-id="d4d4e-p126">가상 네트워크의 Azure VPN 게이트웨이의 공용 IPv4 주소. **Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** 명령을 사용하여 주소를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p126">The public IPv4 address of the Azure VPN gateway for your virtual network. Use the **Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** command to display this address.</span></span>
     
-- 사이트 간 VPN 연결용 IPsec 미리 공유한 키(테이블 V - 항목 5 - 값 열).
+- <span data-ttu-id="d4d4e-316">사이트 간 VPN 연결용 IPsec 미리 공유한 키(테이블 V - 항목 5 - 값 열).</span><span class="sxs-lookup"><span data-stu-id="d4d4e-316">The IPsec pre-shared key for the site-to-site VPN connection (Table V- Item 5 - Value column).</span></span>
     
-구성 결과는 다음과 같습니다.
+<span data-ttu-id="d4d4e-317">구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-317">Here is your resulting configuration.</span></span>
   
 ![Virtual Network가 온-프레미스 네트워크에 이제 연결되었습니다.](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
-### <a name="phase-3-optional-add-virtual-machines"></a>3단계(선택 사항): 가상 컴퓨터 추가
-<a name="Phase2"> </a>
+### <a name="phase-3-optional-add-virtual-machines"></a><span data-ttu-id="d4d4e-319">3단계(선택 사항): 가상 컴퓨터 추가</span><span class="sxs-lookup"><span data-stu-id="d4d4e-319">Phase 3 (Optional): Add virtual machines</span></span>
+<span data-ttu-id="d4d4e-320"><a name="Phase2"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-320"><a name="Phase2"> </a></span></span>
 
-Azure에서 필요한 가상 컴퓨터를 만듭니다. 자세한 내용은 [Azure portal에서 첫 번째 Windows Virtual Machine 만들기](https://go.microsoft.com/fwlink/p/?LinkId=393098)를 참조하세요.
+<span data-ttu-id="d4d4e-p127">Azure에서 필요한 가상 컴퓨터를 만듭니다. 자세한 내용은 [Azure portal에서 첫 번째 Windows Virtual Machine 만들기](https://go.microsoft.com/fwlink/p/?LinkId=393098)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p127">Create the virtual machines you need in Azure. For more information, see [Create your first Windows virtual machine in the Azure portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).</span></span>
   
-다음 설정을 사용합니다.
+<span data-ttu-id="d4d4e-323">다음 설정을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-323">Use the following settings:</span></span>
   
-- **기초** 창에서 사용자 가상 네트워크와 동일한 구독과 리소스 그룹을 선택합니다. 사용자 이름과 암호를 안전한 위치에 기록합니다. 나중에 가상 컴퓨터에 로그인하려면 이러한 정보가 필요합니다.
+- <span data-ttu-id="d4d4e-p128">**기초** 창에서 사용자 가상 네트워크와 동일한 구독과 리소스 그룹을 선택합니다. 사용자 이름과 암호를 안전한 위치에 기록합니다. 나중에 가상 컴퓨터에 로그인하려면 이러한 정보가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p128">On the **Basics** pane, select the same subscription and resource group as your virtual network. Record the user name and password in a secure location. You will need these later to sign in to the virtual machine.</span></span>
     
-- **크기** 창에서 적절한 크기를 선택합니다.
+- <span data-ttu-id="d4d4e-327">**크기** 창에서 적절한 크기를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-327">On the **Size** pane, choose the appropriate size.</span></span>
     
-- **설정** 창의 **저장소** 섹션에서 가상 네트워크로 설정된 **표준** 저장소 유형과 저장소 계정을 선택합니다. **네트워크** 섹션에서 가상 네트워크 이름과 가상 컴퓨터를 호스트하는 서브넷(GatewaySubnet 제외)을 선택합니다. 다른 설정은 기본값을 그대로 사용합니다.
+- <span data-ttu-id="d4d4e-p129">**설정** 창의 **저장소** 섹션에서 가상 네트워크로 설정된 **표준** 저장소 유형과 저장소 계정을 선택합니다. **네트워크** 섹션에서 가상 네트워크 이름과 가상 컴퓨터를 호스트하는 서브넷(GatewaySubnet 제외)을 선택합니다. 다른 설정은 기본값을 그대로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p129">On the **Settings** pane, in the **Storage** section, select the **Standard** storage type and the storage account set up with your virtual network. In the **Network** section, select the name of your virtual network and the subnet for hosting virtual machines (not the GatewaySubnet). Leave all other settings at their default values.</span></span>
     
-내부 DNS를 확인하여 가상 컴퓨터가 올바르게 DNS를 사용하고 있는지 확인합니다. 주소(A) 레코드가 새 가상 컴퓨터에 추가되어야 합니다. 인터넷에 액세스하려면 Azure Virtual Machine이 온-프레미스 네트워크의 프록시 서버에 구성되어야 합니다. 네트워크 관리자에게 이 서버에서 수행할 수 있는 추가 구성 단계를 문의합니다.
+<span data-ttu-id="d4d4e-p130">내부 DNS를 확인하여 가상 컴퓨터가 올바르게 DNS를 사용하고 있는지 확인합니다. 주소(A) 레코드가 새 가상 컴퓨터에 추가되어야 합니다. 인터넷에 액세스하려면 Azure Virtual Machine이 온-프레미스 네트워크의 프록시 서버에 구성되어야 합니다. 네트워크 관리자에게 이 서버에서 수행할 수 있는 추가 구성 단계를 문의합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-p130">Verify that your virtual machine is using DNS correctly by checking your internal DNS to ensure that Address (A) records were added for you new virtual machine. To access the Internet, your Azure virtual machines must be configured to use your on-premises network's proxy server. Contact your network administrator for additional configuration steps to perform on the server.</span></span>
   
-구성 결과는 다음과 같습니다.
+<span data-ttu-id="d4d4e-334">구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-334">Here is your resulting configuration.</span></span>
   
 ![이제 Virtual Network는 온-프레미스 네트워크에서 액세스할 수 있는 가상 컴퓨터를 호스트합니다.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="d4d4e-336">See Also</span><span class="sxs-lookup"><span data-stu-id="d4d4e-336">See Also</span></span>
 
-<a name="DeploymentRoadmap"> </a>
+<span data-ttu-id="d4d4e-337"><a name="DeploymentRoadmap"> </a></span><span class="sxs-lookup"><span data-stu-id="d4d4e-337"><a name="DeploymentRoadmap"> </a></span></span>
 
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="d4d4e-338">클라우드 채택 및 하이브리드 솔루션</span><span class="sxs-lookup"><span data-stu-id="d4d4e-338">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[Microsoft Azure에서 Office 365 디렉터리 동기화 (DirSync)를 배포 합니다.](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[<span data-ttu-id="d4d4e-339">Microsoft Azure에서 Office 365 디렉터리 동기화 (DirSync)를 배포 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4d4e-339">Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure</span></span>](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 
-[가상 컴퓨터 만드는 방법](https://go.microsoft.com/fwlink/p/?LinkId=393098)
+[<span data-ttu-id="d4d4e-340">가상 컴퓨터 만드는 방법</span><span class="sxs-lookup"><span data-stu-id="d4d4e-340">How to create the virtual machine</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=393098)
   
-[사이트 간 Azure Virtual Network 연결용 VPN 장치 정보](https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/)
+[<span data-ttu-id="d4d4e-341">사이트 간 Azure Virtual Network 연결용 VPN 장치 정보</span><span class="sxs-lookup"><span data-stu-id="d4d4e-341">About VPN Devices for site-to-site Azure Virtual Network connections</span></span>](https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/)
   
-[Azure PowerShell 설치 및 구성 방법](https://azure.microsoft.com/documentation/articles/powershell-install-configure/#how-to-install-azure-powershell)
+[<span data-ttu-id="d4d4e-342">Azure PowerShell 설치 및 구성 방법</span><span class="sxs-lookup"><span data-stu-id="d4d4e-342">How to install and configure Azure PowerShell</span></span>](https://azure.microsoft.com/documentation/articles/powershell-install-configure/#how-to-install-azure-powershell)
 
 
 

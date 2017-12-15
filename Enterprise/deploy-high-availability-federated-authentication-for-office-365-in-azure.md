@@ -25,112 +25,112 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure에서 Office 365용 고가용성 페더레이션 인증 배포
+# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a><span data-ttu-id="12475-103">Azure에서 Office 365용 고가용성 페더레이션 인증 배포</span><span class="sxs-lookup"><span data-stu-id="12475-103">Deploy high availability federated authentication for Office 365 in Azure</span></span>
 
- **요약:** Microsoft Azure에서 Office 365 구독에 대한 고가용성 페더레이션 인증을 구성합니다.
+ <span data-ttu-id="12475-104">**요약:** Microsoft Azure에서 Office 365 구독에 대한 고가용성 페더레이션 인증을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-104">**Summary:** Configure high availability federated authentication for your Office 365 subscription in Microsoft Azure.</span></span>
   
-이 문서에는 다음과 같은 가상 컴퓨터를 사용하여 Azure 인프라 서비스에서 Microsoft Office 365에 대한 고가용성 페더레이션 인증을 배포하기 위한 단계별 지침 관련 링크가 포함되어 있습니다.
+<span data-ttu-id="12475-105">이 문서에는 다음과 같은 가상 컴퓨터를 사용하여 Azure 인프라 서비스에서 Microsoft Office 365에 대한 고가용성 페더레이션 인증을 배포하기 위한 단계별 지침 관련 링크가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="12475-105">This article contains links to the step-by-step instructions for deploying high availability federated authentication for Microsoft Office 365 in Azure infrastructure services with these virtual machines:</span></span>
   
-- 웹 응용 프로그램 프록시 서버 2개
+- <span data-ttu-id="12475-106">웹 응용 프로그램 프록시 서버 2개</span><span class="sxs-lookup"><span data-stu-id="12475-106">Two web application proxy servers</span></span>
     
-- AD FS(Active Directory Federation Services) 서버 2개
+- <span data-ttu-id="12475-107">AD FS(Active Directory Federation Services) 서버 2개</span><span class="sxs-lookup"><span data-stu-id="12475-107">Two Active Directory Federation Services (AD FS) servers</span></span>
     
-- 복제본 도메인 컨트롤러 2개
+- <span data-ttu-id="12475-108">복제본 도메인 컨트롤러 2개</span><span class="sxs-lookup"><span data-stu-id="12475-108">Two replica domain controllers</span></span>
     
-- Azure AD Connect를 실행하는 DirSync(디렉터리 동기화) 서버 1개
+- <span data-ttu-id="12475-109">Azure AD Connect를 실행하는 DirSync(디렉터리 동기화) 서버 1개</span><span class="sxs-lookup"><span data-stu-id="12475-109">One directory synchronization (DirSync) server running Azure AD Connect</span></span>
     
-다음은 각 서버에 대해 자리 표시자 이름이 사용된 구성입니다.
+<span data-ttu-id="12475-110">다음은 각 서버에 대해 자리 표시자 이름이 사용된 구성입니다.</span><span class="sxs-lookup"><span data-stu-id="12475-110">Here is the configuration, with placeholder names for each server.</span></span>
   
-**Azure에서 Office 365 인프라용 고가용성 페더레이션 인증**
+<span data-ttu-id="12475-111">**Azure에서 Office 365 인프라용 고가용성 페더레이션 인증**</span><span class="sxs-lookup"><span data-stu-id="12475-111">**A high availability federated authentication for Office 365 infrastructure in Azure**</span></span>
 
 ![Azure에서 고가용성 Office 365 페더레이션 인증 인프라의 최종 구성.](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-모든 가상 컴퓨터는 단일 프레미스 간 Azure VNet(가상 네트워크)에 있습니다. 
+<span data-ttu-id="12475-113">모든 가상 컴퓨터는 단일 프레미스 간 Azure VNet(가상 네트워크)에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="12475-113">All of the virtual machines are in a single cross-premises Azure virtual network (VNet).</span></span> 
   
 > [!NOTE]
-> 개별 사용자의 페더레이션 인증은 온-프레미스 리소스를 사용하지 않습니다. 그러나 프레미스 간 연결을 사용할 수 없게 되는 경우 VNet의 도메인 컨트롤러가 온-프레미스 Windows Server AD에서 만든 사용자 계정 및 그룹에 대한 업데이트를 받을 수 없게 됩니다. 이 문제가 발생하지 않도록 하려면 프레미스 간 연결을 위한 고가용성을 구성하면 됩니다. 자세한 내용은 [항상 사용 가능한 프레미스 간 및 VNet 간 연결](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)을 참조하세요.
+> <span data-ttu-id="12475-p101">개별 사용자의 페더레이션 인증은 온-프레미스 리소스를 사용하지 않습니다. 그러나 프레미스 간 연결을 사용할 수 없게 되는 경우 VNet의 도메인 컨트롤러가 온-프레미스 Windows Server AD에서 만든 사용자 계정 및 그룹에 대한 업데이트를 받을 수 없게 됩니다. 이 문제가 발생하지 않도록 하려면 프레미스 간 연결을 위한 고가용성을 구성하면 됩니다. 자세한 내용은 [항상 사용 가능한 프레미스 간 및 VNet 간 연결](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="12475-p101">Federated authentication of individual users does not rely on any on-premises resources. However, if the cross-premises connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Windows Server AD. To ensure this does not happen, you can configure high availability for your cross-premises connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)</span></span>
   
-특정 역할에 대한 각 쌍의 가상 컴퓨터는 자체 서브넷 및 가용성 집합에 포함됩니다.
+<span data-ttu-id="12475-118">특정 역할에 대한 각 쌍의 가상 컴퓨터는 자체 서브넷 및 가용성 집합에 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="12475-118">Each pair of virtual machines for a specific role is in its own subnet and availability set.</span></span>
   
 > [!NOTE]
-> 이 VNet이 온-프레미스 네트워크에 연결되어 있으므로 이 구성에는 jumpbox 또는 관리 서브넷의 가상 컴퓨터 모니터링이 포함되지 않습니다. 자세한 내용은 [N 계층 아키텍처에 대해 Windows VM 실행](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)을 참조하세요. 
+> <span data-ttu-id="12475-p102">이 VNet이 온-프레미스 네트워크에 연결되어 있으므로 이 구성에는 jumpbox 또는 관리 서브넷의 가상 컴퓨터 모니터링이 포함되지 않습니다. 자세한 내용은 [N 계층 아키텍처에 대해 Windows VM 실행](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="12475-p102">Because this VNet is connected to the on-premises network, this configuration does not include jumpbox or monitoring virtual machines on a management subnet. For more information, see [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm).</span></span> 
   
-이 구성을 완료하면 모든 Office 365 사용자에 대한 페더레이션 인증을 가지게 됩니다. 즉, 사용자가 Office 365 계정 대신 자신의 Windows Server Active Directory 자격 증명을 사용하여 로그인할 수 있습니다. 페더레이션 인증 인프라는 온-프레미스 경계 네트워크 대신 Azure 인프라 서비스에 더욱 쉽게 배포되는 중복 서버 집합을 사용합니다.
+<span data-ttu-id="12475-p103">이 구성을 완료하면 모든 Office 365 사용자에 대한 페더레이션 인증을 가지게 됩니다. 즉, 사용자가 Office 365 계정 대신 자신의 Windows Server Active Directory 자격 증명을 사용하여 로그인할 수 있습니다. 페더레이션 인증 인프라는 온-프레미스 경계 네트워크 대신 Azure 인프라 서비스에 더욱 쉽게 배포되는 중복 서버 집합을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-p103">The result of this configuration is that you will have federated authentication for all of your Office 365 users, in which they can use their Windows Server Active Directory credentials to sign in rather than their Office 365 account. The federated authentication infrastructure uses a redundant set of servers that are more easily deployed in Azure infrastructure services, rather than in your on-premises edge network.</span></span>
   
-## <a name="bill-of-materials"></a>제품 구성 정보(BOM)
+## <a name="bill-of-materials"></a><span data-ttu-id="12475-123">제품 구성 정보(BOM)</span><span class="sxs-lookup"><span data-stu-id="12475-123">Bill of materials</span></span>
 
-이 기본 구성에는 다음과 같은 Azure 서비스 및 구성 요소 집합이 필요합니다.
+<span data-ttu-id="12475-124">이 기본 구성에는 다음과 같은 Azure 서비스 및 구성 요소 집합이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-124">This baseline configuration requires the following set of Azure services and components:</span></span>
   
-- 가상 컴퓨터 7개
+- <span data-ttu-id="12475-125">가상 컴퓨터 7개</span><span class="sxs-lookup"><span data-stu-id="12475-125">Seven virtual machines</span></span>
     
-- 4개의 서브넷이 있는 프레미스 간 가상 네트워크 1개
+- <span data-ttu-id="12475-126">4개의 서브넷이 있는 프레미스 간 가상 네트워크 1개</span><span class="sxs-lookup"><span data-stu-id="12475-126">One cross-premises virtual network with four subnets</span></span>
     
-- 저장소 계정 7개
+- <span data-ttu-id="12475-127">저장소 계정 7개</span><span class="sxs-lookup"><span data-stu-id="12475-127">Four resource groups</span></span>
     
-- 리소스 그룹 4개
+- <span data-ttu-id="12475-128">리소스 그룹 4개</span><span class="sxs-lookup"><span data-stu-id="12475-128">Three availability sets</span></span>
     
-- 가용성 집합 3개
+- <span data-ttu-id="12475-129">가용성 집합 3개</span><span class="sxs-lookup"><span data-stu-id="12475-129">One Azure subscription</span></span>
     
-다음은 이 구성의 가상 컴퓨터 및 해당 기본 크기입니다.
+<span data-ttu-id="12475-130">다음은 이 구성의 가상 컴퓨터 및 해당 기본 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="12475-130">Here are the virtual machines and their default sizes for this configuration.</span></span>
   
-|**항목**|**가상 컴퓨터 설명**|**Azure 갤러리 이미지**|**기본 크기**|
+|<span data-ttu-id="12475-131">**항목**</span><span class="sxs-lookup"><span data-stu-id="12475-131">**Item**</span></span>|<span data-ttu-id="12475-132">**가상 컴퓨터 설명**</span><span class="sxs-lookup"><span data-stu-id="12475-132">**Virtual machine description**</span></span>|<span data-ttu-id="12475-133">**Azure 갤러리 이미지**</span><span class="sxs-lookup"><span data-stu-id="12475-133">**Azure gallery image**</span></span>|<span data-ttu-id="12475-134">**기본 크기**</span><span class="sxs-lookup"><span data-stu-id="12475-134">**Default size**</span></span>|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |첫 번째 도메인 컨트롤러  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|2.  <br/> |두 번째 도메인 컨트롤러  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|3.  <br/> |Azure AD Connect 서버  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|4.  <br/> |첫 번째 AD FS 서버  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|5.  <br/> |두 번째 AD FS 서버  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|6.  <br/> |첫 번째 웹 응용 프로그램 프록시 서버  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|7.  <br/> |두 번째 웹 응용 프로그램 프록시 서버  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|<span data-ttu-id="12475-135">1.</span><span class="sxs-lookup"><span data-stu-id="12475-135">1.</span></span>  <br/> |<span data-ttu-id="12475-136">첫 번째 도메인 컨트롤러</span><span class="sxs-lookup"><span data-stu-id="12475-136">First domain controller</span></span>  <br/> |<span data-ttu-id="12475-137">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-137">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-138">D2</span><span class="sxs-lookup"><span data-stu-id="12475-138">D2</span></span>  <br/> |
+|<span data-ttu-id="12475-139">2.</span><span class="sxs-lookup"><span data-stu-id="12475-139">2.</span></span>  <br/> |<span data-ttu-id="12475-140">두 번째 도메인 컨트롤러</span><span class="sxs-lookup"><span data-stu-id="12475-140">Second domain controller</span></span>  <br/> |<span data-ttu-id="12475-141">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-141">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-142">D2</span><span class="sxs-lookup"><span data-stu-id="12475-142">D2</span></span>  <br/> |
+|<span data-ttu-id="12475-143">3.</span><span class="sxs-lookup"><span data-stu-id="12475-143">3.</span></span>  <br/> |<span data-ttu-id="12475-144">Azure AD Connect 서버</span><span class="sxs-lookup"><span data-stu-id="12475-144">Azure AD Connect server</span></span>  <br/> |<span data-ttu-id="12475-145">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-145">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-146">D2</span><span class="sxs-lookup"><span data-stu-id="12475-146">D2</span></span>  <br/> |
+|<span data-ttu-id="12475-147">4.</span><span class="sxs-lookup"><span data-stu-id="12475-147">4.</span></span>  <br/> |<span data-ttu-id="12475-148">첫 번째 AD FS 서버</span><span class="sxs-lookup"><span data-stu-id="12475-148">First AD FS server</span></span>  <br/> |<span data-ttu-id="12475-149">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-149">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-150">D2</span><span class="sxs-lookup"><span data-stu-id="12475-150">D2</span></span>  <br/> |
+|<span data-ttu-id="12475-151">5.</span><span class="sxs-lookup"><span data-stu-id="12475-151">5.</span></span>  <br/> |<span data-ttu-id="12475-152">두 번째 AD FS 서버</span><span class="sxs-lookup"><span data-stu-id="12475-152">Second AD FS server</span></span>  <br/> |<span data-ttu-id="12475-153">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-153">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-154">D2</span><span class="sxs-lookup"><span data-stu-id="12475-154">D2</span></span>  <br/> |
+|<span data-ttu-id="12475-155">6.</span><span class="sxs-lookup"><span data-stu-id="12475-155">6.</span></span>  <br/> |<span data-ttu-id="12475-156">첫 번째 웹 응용 프로그램 프록시 서버</span><span class="sxs-lookup"><span data-stu-id="12475-156">First web application proxy server</span></span>  <br/> |<span data-ttu-id="12475-157">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-157">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-158">D2</span><span class="sxs-lookup"><span data-stu-id="12475-158">D2</span></span>  <br/> |
+|<span data-ttu-id="12475-159">7.</span><span class="sxs-lookup"><span data-stu-id="12475-159">7.</span></span>  <br/> |<span data-ttu-id="12475-160">두 번째 웹 응용 프로그램 프록시 서버</span><span class="sxs-lookup"><span data-stu-id="12475-160">Second web application proxy server</span></span>  <br/> |<span data-ttu-id="12475-161">Windows Server 2016 Datacenter</span><span class="sxs-lookup"><span data-stu-id="12475-161">Windows Server 2016 Datacenter</span></span>  <br/> |<span data-ttu-id="12475-162">D2</span><span class="sxs-lookup"><span data-stu-id="12475-162">D2</span></span>  <br/> |
    
-이러한 구성에 대한 예상 비용을 계산하려면 [Azure 가격 계산기](https://azure.microsoft.com/pricing/calculator/)를 참조하세요.
+<span data-ttu-id="12475-163">이러한 구성에 대한 예상 비용을 계산하려면 [Azure 가격 계산기](https://azure.microsoft.com/pricing/calculator/)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="12475-163">To compute the estimated costs for this configuration, see the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)</span></span>
   
-## <a name="phases-of-deployment"></a>배포 단계
+## <a name="phases-of-deployment"></a><span data-ttu-id="12475-164">배포 단계</span><span class="sxs-lookup"><span data-stu-id="12475-164">Phases of deployment</span></span>
 
-이 작업은 다음과 같은 단계로 배포됩니다.
+<span data-ttu-id="12475-165">이 작업은 다음과 같은 단계로 배포됩니다.</span><span class="sxs-lookup"><span data-stu-id="12475-165">You deploy this workload in the following phases:</span></span>
   
-<<<<<<< 헤드
-- [고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)합니다. 자원 그룹, 저장소, 가용성 집합 계정과 크로스-프레미스 가상 네트워크를 만듭니다.
+<span data-ttu-id="12475-166"><<<<<<< 헤드</span><span class="sxs-lookup"><span data-stu-id="12475-166"><<<<<<< HEAD</span></span>
+- <span data-ttu-id="12475-p104">[고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)합니다. 자원 그룹, 저장소, 가용성 집합 계정과 크로스-프레미스 가상 네트워크를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="12475-p104">[High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Create resource groups, storage accounts, availability sets, and a cross-premises virtual network.</span></span>
     
-- [고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)합니다. 페이지를 만들고 복제 Windows Server Active Directory (AD) 도메인 컨트롤러와 디렉터리 동기화 서버를 구성 합니다.
+- <span data-ttu-id="12475-p105">[고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)합니다. 페이지를 만들고 복제 Windows Server Active Directory (AD) 도메인 컨트롤러와 디렉터리 동기화 서버를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-p105">[High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Create and configure replica Windows Server Active Directory (AD) domain controllers and the DirSync server.</span></span>
     
-- [고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)합니다. 페이지를 만들고 두 AD FS 서버를 구성 합니다.
+- <span data-ttu-id="12475-p106">[고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)합니다. 페이지를 만들고 두 AD FS 서버를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-p106">[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Create and configure the two AD FS servers.</span></span>
     
-- [고가용성 페더레이션 인증 4 단계: 웹 응용 프로그램 프록시를 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)합니다. 페이지를 만들고 두 웹 응용 프로그램 프록시 서버를 구성 합니다.
+- <span data-ttu-id="12475-p107">[고가용성 페더레이션 인증 4 단계: 웹 응용 프로그램 프록시를 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)합니다. 페이지를 만들고 두 웹 응용 프로그램 프록시 서버를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-p107">[High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Create and configure the two web application proxy servers.</span></span>
     
-- [고가용성 페더레이션 인증 5 단계: Office 365에 대 한 연결 된 인증을 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)합니다. Office 365 구독에 대 한 연결 된 인증을 구성 합니다. =======
-- [고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) -자원 그룹, 저장소, 가용성 집합 계정과 크로스-프레미스 가상 네트워크를 만듭니다.
+- <span data-ttu-id="12475-p108">[고가용성 페더레이션 인증 5 단계: Office 365에 대 한 연결 된 인증을 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)합니다. Office 365 구독에 대 한 연결 된 인증을 구성 합니다. =======</span><span class="sxs-lookup"><span data-stu-id="12475-p108">[High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configure federated authentication for your Office 365 subscription. =======</span></span>
+- <span data-ttu-id="12475-177">[고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) -자원 그룹, 저장소, 가용성 집합 계정과 크로스-프레미스 가상 네트워크를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="12475-177">[High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md) - Create resource groups, storage accounts, availability sets, and a cross-premises virtual network.</span></span>
     
-- [고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) -만들기 및 복제 Windows Server Active Directory (AD) 도메인 컨트롤러와 디렉터리 동기화 서버를 구성 합니다.
+- <span data-ttu-id="12475-178">[고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) -만들기 및 복제 Windows Server Active Directory (AD) 도메인 컨트롤러와 디렉터리 동기화 서버를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-178">[High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) - Create and configure replica Windows Server Active Directory (AD) domain controllers and the DirSync server.</span></span>
     
-- [고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) -만들기 및 두 AD FS 서버를 구성 합니다.
+- <span data-ttu-id="12475-179">[고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) -만들기 및 두 AD FS 서버를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-179">[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) - Create and configure the two AD FS servers.</span></span>
     
-- [고가용성 페더레이션 인증 4 단계: 웹 응용 프로그램 프록시를 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) -만들기 및 두 웹 응용 프로그램 프록시 서버를 구성 합니다.
+- <span data-ttu-id="12475-180">[고가용성 페더레이션 인증 4 단계: 웹 응용 프로그램 프록시를 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) -만들기 및 두 웹 응용 프로그램 프록시 서버를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-180">[High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) - Create and configure the two web application proxy servers.</span></span>
     
-- [고가용성 페더레이션 인증 5 단계: Office 365에 대 한 연결 된 인증을 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) -Office 365 구독에 대 한 연결 된 인증을 구성 합니다.
->>>>>>> 마스터
+- <span data-ttu-id="12475-181">[고가용성 페더레이션 인증 5 단계: Office 365에 대 한 연결 된 인증을 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) -Office 365 구독에 대 한 연결 된 인증을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-181">[High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) - Configure federated authentication for your Office 365 subscription.</span></span>
+>>>>>>> <span data-ttu-id="12475-182">마스터</span><span class="sxs-lookup"><span data-stu-id="12475-182">master</span></span>
     
-이러한 문서에서는 Azure 인프라 서비스의 Office 365용 고가용성 페더레이션 인증 기능을 만들기 위해 미리 정의된 아키텍처에 대한 단계별 규범 지침을 제공합니다. 다음 사항에 유의해야 합니다.
+<span data-ttu-id="12475-p109">이러한 문서에서는 Azure 인프라 서비스의 Office 365용 고가용성 페더레이션 인증 기능을 만들기 위해 미리 정의된 아키텍처에 대한 단계별 규범 지침을 제공합니다. 다음 사항에 유의해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-p109">These articles provide a prescriptive, phase-by-phase guide for a predefined architecture to create a functional, high availability federated authentication for Office 365 in Azure infrastructure services. Keep the following in mind:</span></span>
   
-- 숙련된 AD FS 구현자인 경우 3~4단계의 지침을 적용하고 본인의 요구에 가장 적합한 서버 집합을 구축합니다.
+- <span data-ttu-id="12475-185">숙련된 AD FS 구현자인 경우 3~4단계의 지침을 적용하고 본인의 요구에 가장 적합한 서버 집합을 구축합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-185">If you are an experienced AD FS implementer, feel free to adapt the instructions in phases 3 and 4 and build the set of servers that best suits your needs.</span></span>
     
-- 기존 프레미스 간 가상 네트워크와 함께 기존 Azure 하이브리드 클라우드 배포가 이미 있는 경우에는 1-2단계의 지침을 적용하거나 건너뛰고, 적절한 서브넷에 AD FS 및 웹 응용 프로그램 프록시 서버를 배치합니다.
+- <span data-ttu-id="12475-186">기존 프레미스 간 가상 네트워크와 함께 기존 Azure 하이브리드 클라우드 배포가 이미 있는 경우에는 1-2단계의 지침을 적용하거나 건너뛰고, 적절한 서브넷에 AD FS 및 웹 응용 프로그램 프록시 서버를 배치합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-186">If you already have an existing Azure hybrid cloud deployment with an existing cross-premises virtual network, feel free to adapt or skip the instructions in phases 1 and 2 and place the AD FS and web application proxy servers on the appropriate subnets.</span></span>
     
-개발/테스트 환경 또는 이 구성의 개념 증명을 구축하려면 [Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)를 참조하세요.
+<span data-ttu-id="12475-187">개발/테스트 환경 또는 이 구성의 개념 증명을 구축하려면 [Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="12475-187">To build a dev/test environment or a proof-of-concept of this configuration, see [Federated identity for your Office 365 dev/test environment](federated-identity-for-your-office-365-dev-test-environment.md).</span></span>
   
-## <a name="next-step"></a>다음 단계
+## <a name="next-step"></a><span data-ttu-id="12475-188">다음 단계</span><span class="sxs-lookup"><span data-stu-id="12475-188">Next step</span></span>
 
-[고가용성 페더레이션 인증 1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md) 를 사용하여 이 작업의 구성을 시작합니다. 
+<span data-ttu-id="12475-189">[고가용성 페더레이션 인증 1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md) 를 사용하여 이 작업의 구성을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="12475-189">Start the configuration of this workload with [High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span> 
   
 > [!TIP]
-> Azure에서 Office 365용 고가용성 페더레이션 인증을 더욱 빠르게 배포하기 위한 파일 집합에 대해 알아보려면 [Azure 배포 키트의 Office 365용 페더레이션 인증](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)을 참조하세요. 
+> <span data-ttu-id="12475-190">Azure에서 Office 365용 고가용성 페더레이션 인증을 더욱 빠르게 배포하기 위한 파일 집합에 대해 알아보려면 [Azure 배포 키트의 Office 365용 페더레이션 인증](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="12475-190">For a set of files to more quickly deploy your high availability federated authentication for Office 365 in Azure, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span></span> 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="12475-191">See Also</span><span class="sxs-lookup"><span data-stu-id="12475-191">See Also</span></span>
 
-[Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="12475-192">Office 365 개발/테스트 환경에 대 한 페더레이션된 id</span><span class="sxs-lookup"><span data-stu-id="12475-192">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="12475-193">클라우드 채택 및 하이브리드 솔루션</span><span class="sxs-lookup"><span data-stu-id="12475-193">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365용 페더레이션 ID](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[<span data-ttu-id="12475-194">Office 365용 페더레이션 ID</span><span class="sxs-lookup"><span data-stu-id="12475-194">Federated identity for Office 365</span></span>](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 
 

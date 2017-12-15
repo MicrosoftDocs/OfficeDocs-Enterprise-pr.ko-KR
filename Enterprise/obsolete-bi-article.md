@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-bi-article"></a>사용 되지 않음 BI 문서
+# <a name="obsolete-bi-article"></a><span data-ttu-id="a74e2-104">사용 되지 않음 BI 문서</span><span class="sxs-lookup"><span data-stu-id="a74e2-104">OBSOLETE BI article</span></span>
 
-이 문서는 2014 년 3 월 7 일 이후로 사용 되지 않습니다. 참조 [콘텐츠 로드맵: 설치 및 구성 SharePoint 및 SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx)합니다.
+<span data-ttu-id="a74e2-p102">이 문서는 2014 년 3 월 7 일 이후로 사용 되지 않습니다. 참조 [콘텐츠 로드맵: 설치 및 구성 SharePoint 및 SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx)합니다.</span><span class="sxs-lookup"><span data-stu-id="a74e2-p102">This article is obsolete as of March 7, 2014. See [Content Roadmap: Setup and Configure SharePoint and SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).</span></span>
   
 

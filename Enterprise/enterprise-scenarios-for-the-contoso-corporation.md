@@ -20,27 +20,27 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Contoso Corporation에 대 한 엔터프라이즈 시나리오
+# <a name="enterprise-scenarios-for-the-contoso-corporation"></a><span data-ttu-id="8323a-103">Contoso Corporation에 대 한 엔터프라이즈 시나리오</span><span class="sxs-lookup"><span data-stu-id="8323a-103">Enterprise scenarios for the Contoso Corporation</span></span>
 
- **요약:** 엔터프라이즈 클라우드 시나리오와 필요한 가상의 하지만 전형적인 글로벌 조직이 비즈니스를 주소 지정 방법입니다.
+ <span data-ttu-id="8323a-104">**요약:** 엔터프라이즈 클라우드 시나리오와 필요한 가상의 하지만 전형적인 글로벌 조직이 비즈니스를 주소 지정 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="8323a-104">**Summary:** How a fictional but representative global organization is addressing its business needs with enterprise cloud scenarios.</span></span>
   
-네트워킹, id 및 전체에서 보안 인프라와 Contoso는 다음과 같은 엔터프라이즈 클라우드 시나리오를 배포 합니다.
+<span data-ttu-id="8323a-105">네트워킹, id 및 전체에서 보안 인프라와 Contoso는 다음과 같은 엔터프라이즈 클라우드 시나리오를 배포 합니다.</span><span class="sxs-lookup"><span data-stu-id="8323a-105">With the networking, identity, and security infrastructure in place, Contoso deployed the following enterprise cloud scenarios:</span></span>
   
-- [기록 트랜잭션 데이터를 클라우드로 이동](moving-historical-transaction-data-to-the-cloud.md)
+- [<span data-ttu-id="8323a-106">기록 트랜잭션 데이터를 클라우드로 이동</span><span class="sxs-lookup"><span data-stu-id="8323a-106">Moving historical transaction data to the cloud</span></span>](moving-historical-transaction-data-to-the-cloud.md)
     
-    Contoso 늘이기 데이터베이스의 온-프레미스 데이터 저장소 요구 사항 및 비용을 실행 하는 매일 감소를 구현 합니다.
+    <span data-ttu-id="8323a-107">Contoso 늘이기 데이터베이스의 온-프레미스 데이터 저장소 요구 사항 및 비용을 실행 하는 매일 감소를 구현 합니다.</span><span class="sxs-lookup"><span data-stu-id="8323a-107">Contoso implemented stretch database to reduce its on-premises data storage needs and daily running costs.</span></span>
     
-- [중요 한 기밀 사항이 자산에 대 한 SharePoint Online 팀 사이트 보호](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
+- [<span data-ttu-id="8323a-108">중요 한 기밀 사항이 자산에 대 한 SharePoint Online 팀 사이트 보호</span><span class="sxs-lookup"><span data-stu-id="8323a-108">Secure SharePoint Online team sites for sensitive and highly confidential assets</span></span>](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
     
-    Contoso는 중요 한 보호 하 고 해당 임원 및 연구 센터에 대 한 보안 하면서도 쉽게, 공동 작업을 위한 매우 기밀 SharePoint Online 팀 사이트를 구현 합니다.
+    <span data-ttu-id="8323a-109">Contoso는 중요 한 보호 하 고 해당 임원 및 연구 센터에 대 한 보안 하면서도 쉽게, 공동 작업을 위한 매우 기밀 SharePoint Online 팀 사이트를 구현 합니다.</span><span class="sxs-lookup"><span data-stu-id="8323a-109">Contoso implemented sensitive protection and highly confidential SharePoint Online team sites for easier, yet secure, collaboration for its executives and research centers.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="8323a-110">See Also</span><span class="sxs-lookup"><span data-stu-id="8323a-110">See Also</span></span>
 
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[<span data-ttu-id="8323a-111">Microsoft 클라우드 Contoso</span><span class="sxs-lookup"><span data-stu-id="8323a-111">Contoso in the Microsoft Cloud</span></span>](contoso-in-the-microsoft-cloud.md)
   
-[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="8323a-112">Microsoft 클라우드 IT 아키텍처 리소스</span><span class="sxs-lookup"><span data-stu-id="8323a-112">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="8323a-113">Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스</span><span class="sxs-lookup"><span data-stu-id="8323a-113">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

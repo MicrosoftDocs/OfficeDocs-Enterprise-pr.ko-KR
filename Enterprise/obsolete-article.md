@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-article"></a>사용 되지않는 문서
+# <a name="obsolete-article"></a><span data-ttu-id="8ecb7-104">사용 되지않는 문서</span><span class="sxs-lookup"><span data-stu-id="8ecb7-104">Obsolete article</span></span>
 
-이 문서는 사용 되지 않습니다. 현재 정보 [클라우드 채택 및 하이브리드 솔루션을](cloud-adoption-and-hybrid-solutions.md) 참조 하십시오.
+<span data-ttu-id="8ecb7-p102">이 문서는 사용 되지 않습니다. 현재 정보 [클라우드 채택 및 하이브리드 솔루션을](cloud-adoption-and-hybrid-solutions.md) 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="8ecb7-p102">This article is obsolete. See [Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md) for current information.</span></span>
   
 

@@ -24,130 +24,130 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경
+# <a name="office-365-and-dynamics-365-devtest-environment"></a><span data-ttu-id="084ba-103">Office 365 및 Dynamics 365 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="084ba-103">Office 365 and Dynamics 365 dev/test environment</span></span>
 
- **요약:** 이 테스트 랩 가이드를 사용 하 여 Office 365 개발/테스트 환경에 Dynamics 365 추가 합니다.
+ <span data-ttu-id="084ba-104">**요약:** 이 테스트 랩 가이드를 사용 하 여 Office 365 개발/테스트 환경에 Dynamics 365 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-104">**Summary:** Use this Test Lab Guide to add Dynamics 365 to your Office 365 dev/test environment.</span></span>
   
-이 문서의 지침을 사용 하면 추가 Dynamics 365 평가판 구독 Office 365 개발/테스트 환경와 같은 조직에는 Office 365 및 Dynamics 365 개발/테스트 환경 만들기 (영문).
+<span data-ttu-id="084ba-105">이 문서의 지침을 사용 하면 추가 Dynamics 365 평가판 구독 Office 365 개발/테스트 환경와 같은 조직에는 Office 365 및 Dynamics 365 개발/테스트 환경 만들기 (영문).</span><span class="sxs-lookup"><span data-stu-id="084ba-105">With the instructions in this article, you add a Dynamics 365 trial subscription to the same organization as your Office 365 dev/test environment, creating an Office 365 and Dynamics 365 dev/test environment.</span></span>
   
-Dynamics 365 기능 및 특징을 설명 하기 위해 Dynamics 365 평가판 구독을 사용할 수 있습니다. 다음과 같은 솔루션을 Dynamics 365 계획 1, Enterprise Edition 평가판 포함 됩니다.
+<span data-ttu-id="084ba-p101">Dynamics 365 기능 및 특징을 설명 하기 위해 Dynamics 365 평가판 구독을 사용할 수 있습니다. 다음과 같은 솔루션을 Dynamics 365 계획 1, Enterprise Edition 평가판 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p101">You can use a Dynamics 365 trial subscription to demonstrate features and capabilities of Dynamics 365. The following solutions are included with a Dynamics 365 Plan 1, Enterprise Edition trial:</span></span>
   
-- [Microsoft Dynamics 365 Sales에 대 한](https://www.microsoft.com/dynamics365/sales)합니다. 자동화 및 판매원 집중할 수 및 현명 작동을 내리도록 지원 되는 디지털 인텔리전스 영업을 늘립니다.
+- <span data-ttu-id="084ba-p102">[Microsoft Dynamics 365 Sales에 대 한](https://www.microsoft.com/dynamics365/sales)합니다. 자동화 및 판매원 집중할 수 및 현명 작동을 내리도록 지원 되는 디지털 인텔리전스 영업을 늘립니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p102">[Microsoft Dynamics 365 for Sales](https://www.microsoft.com/dynamics365/sales). Increase your sales with automation and digital intelligence helping your salespeople stay focused and work smarter.</span></span>
     
-- [Microsoft Dynamics 365 고객 서비스에 대 한](https://www.microsoft.com/dynamics365/customer-service)합니다. 전체 정보 및 디지털 인텔리전스 원활 하 게 서비스를 제공 하는데 필요한 사용자 에이전트에 게 제공 하 여 충성도 획득 합니다.
+- <span data-ttu-id="084ba-p103">[Microsoft Dynamics 365 고객 서비스에 대 한](https://www.microsoft.com/dynamics365/customer-service)합니다. 전체 정보 및 디지털 인텔리전스 원활 하 게 서비스를 제공 하는데 필요한 사용자 에이전트에 게 제공 하 여 충성도 획득 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p103">[Microsoft Dynamics 365 for Customer Service](https://www.microsoft.com/dynamics365/customer-service). Earn loyalty by giving your agents the complete information and digital intelligence they need to provide seamless service.</span></span>
     
-- [Microsoft Dynamics 365 필드 서비스에 대 한](https://www.microsoft.com/dynamics365/field-service)합니다. 하면 일정을 최적화 하 고, 직원, 착용 하기, 수익을 높일 수 예측 도구를 사용 하 여 마스터 서비스를 호출 합니다.
+- <span data-ttu-id="084ba-p104">[Microsoft Dynamics 365 필드 서비스에 대 한](https://www.microsoft.com/dynamics365/field-service)합니다. 하면 일정을 최적화 하 고, 직원, 착용 하기, 수익을 높일 수 예측 도구를 사용 하 여 마스터 서비스를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p104">[Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/dynamics365/field-service). Master the service call by optimizing your schedules, equipping your workforce, and using predictive tools to increase profit.</span></span>
     
-- [Microsoft Dynamics 365 프로젝트 서비스 자동화에 대 한](https://www.microsoft.com/en-us/dynamics365/project-service-automation)합니다. 프로젝트를 성공적으로 완료 하 고 생산성을 직원 및 지능형 도구와 많은 이익을 관계를 만듭니다.
+- <span data-ttu-id="084ba-p105">[Microsoft Dynamics 365 프로젝트 서비스 자동화에 대 한](https://www.microsoft.com/en-us/dynamics365/project-service-automation)합니다. 프로젝트를 성공적으로 완료 하 고 생산성을 직원 및 지능형 도구와 많은 이익을 관계를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p105">[Microsoft Dynamics 365 for Project Service Automation](https://www.microsoft.com/en-us/dynamics365/project-service-automation). Complete your projects successfully and create profitable relationships with productive employees and intelligent tools.</span></span>
     
-Dynamics 365 평가판 구독에 대 한 위의 중 하나 이상을 탐색할 수 있습니다.
+<span data-ttu-id="084ba-116">Dynamics 365 평가판 구독에 대 한 위의 중 하나 이상을 탐색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-116">You can explore one or more of the above for your Dynamics 365 trial subscription.</span></span>
   
 ![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> <span data-ttu-id="084ba-118">클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-118">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>1단계: 경량 또는 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 구축합니다.
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a><span data-ttu-id="084ba-119">1단계: 경량 또는 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 구축합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-119">Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment</span></span>
 
-최소 요구 사항을 경량 방식으로 Office 365 및 Dynamics 365 테스트 하려면 2와 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)의 3 단계에서 지침을 따릅니다.
+<span data-ttu-id="084ba-120">최소 요구 사항을 경량 방식으로 Office 365 및 Dynamics 365 테스트 하려면 2와 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)의 3 단계에서 지침을 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-120">If you just want to test Office 365 and Dynamics 365 in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
   
-Office 365 및 Dynamics 365 시뮬레이션 된 enterprise에 대 한 테스트 하려는 경우 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지시를 따릅니다.
+<span data-ttu-id="084ba-121">Office 365 및 Dynamics 365 시뮬레이션 된 enterprise에 대 한 테스트 하려는 경우 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지시를 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-121">If you want to test Office 365 and Dynamics 365 for a simulated enterprise, follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
   
 > [!NOTE]
-> 이 문서의 구성 인터넷에 연결 하는 시뮬레이션 된 인트라넷을 포함 하는 시뮬레이션 된 엔터프라이즈 개발/테스트 환경에 원하지 않는 및 Windows Server AD 포리스트에 대 한 디렉터리 동기화 합니다. 제공은 일반적인 조직을 대표 하는 환경에서 Office 365와 Dynamics 365 테스트할 수 있도록 하는 옵션으로 여기 합니다. 
+> <span data-ttu-id="084ba-p106">이 문서의 구성 인터넷에 연결 하는 시뮬레이션 된 인트라넷을 포함 하는 시뮬레이션 된 엔터프라이즈 개발/테스트 환경에 원하지 않는 및 Windows Server AD 포리스트에 대 한 디렉터리 동기화 합니다. 제공은 일반적인 조직을 대표 하는 환경에서 Office 365와 Dynamics 365 테스트할 수 있도록 하는 옵션으로 여기 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p106">The configuration in this article does not require the simulated enterprise dev/test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can experiment with Office 365 and Dynamics 365 in an environment that represents a typical organization.</span></span> 
   
-## <a name="phase-2-add-a-dynamics-365-trial-subscription"></a>2 단계: Dynamics 365 평가판 구독 추가
+## <a name="phase-2-add-a-dynamics-365-trial-subscription"></a><span data-ttu-id="084ba-124">2 단계: Dynamics 365 평가판 구독 추가</span><span class="sxs-lookup"><span data-stu-id="084ba-124">Phase 2: Add a Dynamics 365 trial subscription</span></span>
 
-이 단계에서 Dynamics 365 평가판 구독에 대 한 등록 하 여 Office 365 평가판 구독와 같은 조직에 추가 합니다.
+<span data-ttu-id="084ba-125">이 단계에서 Dynamics 365 평가판 구독에 대 한 등록 하 여 Office 365 평가판 구독와 같은 조직에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-125">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
   
-### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Dynamics 365 평가판 구독에 등록
+### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a><span data-ttu-id="084ba-126">Dynamics 365 평가판 구독에 등록</span><span class="sxs-lookup"><span data-stu-id="084ba-126">Sign up for a Dynamics 365 trial subscription</span></span>
 
-1. 브라우저를 사용 하는 중 하나에서 데스크톱 컴퓨터 (lightweight) 나 CLIENT1 (enterprise 시뮬레이션)에 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 하 여 Office 365 포털에 로그인 합니다.
+1. <span data-ttu-id="084ba-127">브라우저를 사용 하는 중 하나에서 데스크톱 컴퓨터 (lightweight) 나 CLIENT1 (enterprise 시뮬레이션)에 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 하 여 Office 365 포털에 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-127">Using a browser on either your desktop computer (lightweight) or from CLIENT1 (simulated enterprise), sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
     
-2. **Admin** 타일을 클릭 합니다.
+2. <span data-ttu-id="084ba-128">**Admin** 타일을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-128">Click the **Admin** tile.</span></span>
     
-3. 왼쪽 탐색 영역에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.
+3. <span data-ttu-id="084ba-129">왼쪽 탐색 영역에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-129">On the **Office admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. **서비스 구매** 페이지 **Dynamics 365 계획 1 Enterprise Edition** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.
+4. <span data-ttu-id="084ba-p107">**서비스 구매** 페이지 **Dynamics 365 계획 1 Enterprise Edition** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p107">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
+5. <span data-ttu-id="084ba-132">**주문 확인** 페이지에서 **지금 시도**클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-132">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
+6. <span data-ttu-id="084ba-133">**순서 확인** 페이지에서 **계속**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-133">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> Dynamics 365 계획 1 Enterprise Edition 평가판 구독은 30 일입니다. 다른 30 일에 대 한 내역 구독을 쉽게 확장할 수 있습니다. 영구 개발/테스트 환경에 대 한 만들기 새 적은 수의 라이선스를 사용 하 여 구독을 지불 합니다. 
+> <span data-ttu-id="084ba-p108">Dynamics 365 계획 1 Enterprise Edition 평가판 구독은 30 일입니다. 다른 30 일에 대 한 내역 구독을 쉽게 확장할 수 있습니다. 영구 개발/테스트 환경에 대 한 만들기 새 적은 수의 라이선스를 사용 하 여 구독을 지불 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p108">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-## <a name="phase-3-assign-dynamics-365-licenses-and-system-administrators"></a>3 단계: Dynamics 365 라이선스 및 시스템 관리자를 할당 합니다.
+## <a name="phase-3-assign-dynamics-365-licenses-and-system-administrators"></a><span data-ttu-id="084ba-137">3 단계: Dynamics 365 라이선스 및 시스템 관리자를 할당 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-137">Phase 3: Assign Dynamics 365 licenses and system administrators</span></span>
 
-이 단계에서 전역 관리자, 사용자 2 및 3 사용자 계정에 Dynamics 365 라이선스를 할당 하 고 시스템 관리자가 하 게 합니다.
+<span data-ttu-id="084ba-138">이 단계에서 전역 관리자, 사용자 2 및 3 사용자 계정에 Dynamics 365 라이선스를 할당 하 고 시스템 관리자가 하 게 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-138">In this phase, you assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
   
-Dynamics 365 라이선스를 할당 하려면 다음이 단계를 사용 합니다.
+<span data-ttu-id="084ba-139">Dynamics 365 라이선스를 할당 하려면 다음이 단계를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-139">Use these steps to assign Dynamics 365 licenses.</span></span>
   
-1. **Office 관리 센터** 탭을 클릭 **사용자 > 활성 사용자**합니다.
+1. <span data-ttu-id="084ba-140">**Office 관리 센터** 탭을 클릭 **사용자 > 활성 사용자**합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-140">On the **Office admin center** tab, click **Users > Active users**.</span></span>
     
-2. 활성 사용자 목록에서 전역 관리자 계정을 클릭 하 고 **제품 라이선스**에 대 한 **편집** 을 클릭 합니다.
+2. <span data-ttu-id="084ba-141">활성 사용자 목록에서 전역 관리자 계정을 클릭 하 고 **제품 라이선스**에 대 한 **편집** 을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-141">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. **제품 라이선스** 창에서 **전환** **Dynamics 365 계획 1 Enterprise Edition** 대 한 제품 라이선스 설정, **저장** 을 클릭 하 고 두번 **닫기** 를 클릭 합니다.
+3. <span data-ttu-id="084ba-142">**제품 라이선스** 창에서 **전환** **Dynamics 365 계획 1 Enterprise Edition** 대 한 제품 라이선스 설정, **저장** 을 클릭 하 고 두번 **닫기** 를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-142">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. 사용자 2 및 3 사용자 계정에 대해 2-3 단계를 수행 합니다.
+4. <span data-ttu-id="084ba-143">사용자 2 및 3 사용자 계정에 대해 2-3 단계를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-143">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
     
-5. **Office 관리 센터** 탭을 닫습니다.
+5. <span data-ttu-id="084ba-144">**Office 관리 센터** 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-144">Close the **Office admin center** tab.</span></span>
     
-Dynamics 365 시스템 관리자는 사용자 2 및 3 사용자 계정을 구성 하려면 다음이 단계를 사용 합니다.
+<span data-ttu-id="084ba-145">Dynamics 365 시스템 관리자는 사용자 2 및 3 사용자 계정을 구성 하려면 다음이 단계를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-145">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
   
-1. **Microsoft Office 홈** 탭에서 **관리**를 클릭 합니다.
+1. <span data-ttu-id="084ba-146">**Microsoft Office 홈** 탭에서 **관리**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-146">From the **Microsoft Office Home** tab, click **Admin**.</span></span>
     
-2. **Office 관리 센터** 탭의 왼쪽된 탐색 영역에서 **관리 센터**를 클릭 하 고 **Dynamics 365**를 클릭 합니다.
+2. <span data-ttu-id="084ba-147">**Office 관리 센터** 탭의 왼쪽된 탐색 영역에서 **관리 센터**를 클릭 하 고 **Dynamics 365**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-147">On the **Office Admin center** tab, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
     
-    Dynamics 365 Dynamics 365 메뉴에 표시 되기 전에 프로 비전을 완료할 때까지 대기 해야할 수 있습니다.
+    <span data-ttu-id="084ba-148">Dynamics 365 Dynamics 365 메뉴에 표시 되기 전에 프로 비전을 완료할 때까지 대기 해야할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-148">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
     
-3. Dynamics 365 탭에서 **대부분의**를 클릭 하 고 다음을 클릭 **설치를 완료 합니다.**
+3. <span data-ttu-id="084ba-149">Dynamics 365 탭에서 **대부분의**를 클릭 하 고 다음을 클릭 **설치를 완료 합니다.**</span><span class="sxs-lookup"><span data-stu-id="084ba-149">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
     
-    설치가 완료 될 때까지 기다립니다.
+    <span data-ttu-id="084ba-150">설치가 완료 될 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-150">Wait for setup to complete.</span></span>
     
-    설치가 완료 되 면 내역 구독의 일부인 샘플 데이터를 기반으로 영업 활동 대시보드를 표시 합니다. **평가판 시작** 보려면 잠시 비디오를 수행 합니다. 완료 되 면 비디오 창을 닫습니다.
+    <span data-ttu-id="084ba-p109">설치가 완료 되 면 내역 구독의 일부인 샘플 데이터를 기반으로 영업 활동 대시보드를 표시 합니다. **평가판 시작** 보려면 잠시 비디오를 수행 합니다. 완료 되 면 비디오 창을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-p109">When setup completes, it displays a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
     
-4. 위쪽 도구 모음에서 **Sales**옆에 있는 아래쪽 화살표를 클릭 하 고 **설정**, **보안**을 클릭 한 다음 합니다.
+4. <span data-ttu-id="084ba-154">위쪽 도구 모음에서 **Sales**옆에 있는 아래쪽 화살표를 클릭 하 고 **설정**, **보안**을 클릭 한 다음 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-154">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
     
-5. **보안** 페이지에서 **사용자**를 클릭 합니다.
+5. <span data-ttu-id="084ba-155">**보안** 페이지에서 **사용자**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-155">On the **Security** page, click **Users**.</span></span>
     
-6. 사용자의 목록에서 **사용자 2**를 클릭 합니다.
+6. <span data-ttu-id="084ba-156">사용자의 목록에서 **사용자 2**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-156">In the list of users, click **User 2**.</span></span>
     
-7. 도구 모음에서 **관리 역할**을 클릭 합니다.
+7. <span data-ttu-id="084ba-157">도구 모음에서 **관리 역할**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-157">In the tool bar, click **Manage Roles**.</span></span>
     
-8. **역할 관리** **시스템 관리자**클릭 한 다음 **확인**을 클릭 합니다.
+8. <span data-ttu-id="084ba-158">**역할 관리** **시스템 관리자**클릭 한 다음 **확인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-158">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
     
-9. 맨 위쪽에 있는 도구 모음에서 **보안**을 클릭 합니다.
+9. <span data-ttu-id="084ba-159">맨 위쪽에 있는 도구 모음에서 **보안**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-159">In the tool bar at the top click **Security**.</span></span>
     
-10. 3 사용자 계정에 대해 5-8 단계를 반복 합니다.
+10. <span data-ttu-id="084ba-160">3 사용자 계정에 대해 5-8 단계를 반복 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-160">Repeat steps 5-8 for the User 3 account.</span></span>
     
-11. 닫기는 **사용자: User3** 탭 합니다.
+11. <span data-ttu-id="084ba-161">닫기는 **사용자: User3** 탭 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-161">Close the **User: User3** tab.</span></span>
     
 > [!NOTE]
-> Office 365 전역 관리자 계정 Dynamics 365 시스템 관리자 역할을 자동으로 할당 되었습니다. 
+> <span data-ttu-id="084ba-162">Office 365 전역 관리자 계정 Dynamics 365 시스템 관리자 역할을 자동으로 할당 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-162">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
   
-Office 365 및 Dynamics 365 개발/테스트 환경을 현재가지고 있습니다.
+<span data-ttu-id="084ba-163">Office 365 및 Dynamics 365 개발/테스트 환경을 현재가지고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-163">Your Office 365 and Dynamics 365 dev/test environment now has:</span></span>
   
-- Office 365 e 5 엔터프라이즈 및 Dynamics 365 평가판 구독 사용자 계정의 대화 목록와 같은 조직 및 동일한 Azure AD 테 넌 트를 공유 합니다.
+- <span data-ttu-id="084ba-164">Office 365 e 5 엔터프라이즈 및 Dynamics 365 평가판 구독 사용자 계정의 대화 목록와 같은 조직 및 동일한 Azure AD 테 넌 트를 공유 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-164">Office 365 E5 Enterprise and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- 사용자 글로벌 엔터프라이즈 관리자, 사용자 2 및 3 사용자 계정을 Office 365 e 5 엔터프라이즈 사용자와 Dynamics 365 모두 사용 하도록 설정 된 및 Dynamics 365 시스템 관리자가 있습니다.
+- <span data-ttu-id="084ba-165">사용자 글로벌 엔터프라이즈 관리자, 사용자 2 및 3 사용자 계정을 Office 365 e 5 엔터프라이즈 사용자와 Dynamics 365 모두 사용 하도록 설정 된 및 Dynamics 365 시스템 관리자가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-165">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use both Office 365 E5 Enterprise and Dynamics 365 and are Dynamics 365 system administrators.</span></span>
     
-## <a name="next-step"></a>다음 단계
+## <a name="next-step"></a><span data-ttu-id="084ba-166">다음 단계</span><span class="sxs-lookup"><span data-stu-id="084ba-166">Next step</span></span>
 
-Office 365 및 Dynamics 365 작동 하는 방법을 [Office 365 및 Dynamics 365 개발/테스트 환경에 대 한 Exchange Online 통합](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)된 Exchange Online 사서함을 설명 하 고 구성 합니다.
+<span data-ttu-id="084ba-167">Office 365 및 Dynamics 365 작동 하는 방법을 [Office 365 및 Dynamics 365 개발/테스트 환경에 대 한 Exchange Online 통합](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)된 Exchange Online 사서함을 설명 하 고 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="084ba-167">Configure and then demonstrate how Office 365 and Dynamics 365 work together in Exchange Online mailboxes with [Exchange Online integration for your Office 365 and Dynamics 365 dev/test environment](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="084ba-168">See Also</span><span class="sxs-lookup"><span data-stu-id="084ba-168">See Also</span></span>
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="084ba-169">클라우드 채택 테스트 랩 가이드 (Tlg)</span><span class="sxs-lookup"><span data-stu-id="084ba-169">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
+[<span data-ttu-id="084ba-170">기본 구성 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="084ba-170">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
   
-[Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
+[<span data-ttu-id="084ba-171">Office 365 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="084ba-171">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="084ba-172">Office 365 개발/테스트 환경에 대 한 디렉터리 동기화</span><span class="sxs-lookup"><span data-stu-id="084ba-172">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Dynamics 365 (온라인)에 대 한 구독 관리](https://technet.microsoft.com/library/jj679903.aspx)
+[<span data-ttu-id="084ba-173">Dynamics 365 (온라인)에 대 한 구독 관리</span><span class="sxs-lookup"><span data-stu-id="084ba-173">Subscription Management for Dynamics 365 (online)</span></span>](https://technet.microsoft.com/library/jj679903.aspx)
   
-[Dynamics 365 관리](https://technet.microsoft.com/library/dn531101.aspx)
+[<span data-ttu-id="084ba-174">Dynamics 365 관리</span><span class="sxs-lookup"><span data-stu-id="084ba-174">Administering Dynamics 365</span></span>](https://technet.microsoft.com/library/dn531101.aspx)
 
 
