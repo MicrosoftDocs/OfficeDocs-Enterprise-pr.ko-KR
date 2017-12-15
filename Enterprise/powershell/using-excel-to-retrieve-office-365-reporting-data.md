@@ -1,0 +1,113 @@
+---
+title: "Excel을 사용하여 Office 365 보고 데이터 검색"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 12/15/2017
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom:
+- DecEntMigration
+- Ent_Office_Other
+- PowerShell
+ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
+description: "요약: Office 365의 배포에 대 한 자세한 보고 정보를 검색 하려면 Microsoft Excel에서 oData 기능을 사용"
+ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
+ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/15/2017
+---
+# <a name="using-excel-to-retrieve-office-365-reporting-data"></a><span data-ttu-id="938ed-103">Excel을 사용하여 Office 365 보고 데이터 검색</span><span class="sxs-lookup"><span data-stu-id="938ed-103">Using Excel to Retrieve Office 365 Reporting Data</span></span>
+
+ <span data-ttu-id="938ed-104">**요약:** Microsoft Excel에서 oData 기능을 사용 하 여 Office 365의 배포에 대 한 자세한 보고 정보를 검색할 수</span><span class="sxs-lookup"><span data-stu-id="938ed-104">**Summary:** Use the oData feature in Microsoft Excel to retrieve detailed reporting information for your deployment of Office 365</span></span>
+  
+<span data-ttu-id="938ed-p101">보고 시스템 관리의 핵심 부분입니다. Office 365 관리 센터에서 **보고서** 구역의 왼쪽된 탐색에서 액세스할 수 있는 미리 정의 된 보고서의 번호를 포함 합니다. 사용 현황 보고서 및 보안 및 규정 준수 보고서 있습니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p101">Reporting is a key part of system administration. The Office 365 Admin center includes a number of predefined reports, which you can access from the **Reports** section of the left navigation. There are usage reports and security and compliance reports.</span></span>
+  
+<span data-ttu-id="938ed-p102">사용할 수 있는 보고서를 사용 하 고 있는 Office 365 서비스 사용 하도록 설정한 Office 365의 버전에 따라 달라 집니다. 자세한 내용은 [보고서 페이지](https://technet.microsoft.com/en-us/library/office-365-reports.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="938ed-p102">The reports available to you depend on the version of Office 365 you are using and which Office 365 services you have enabled. For more information, see the [Reports page](https://technet.microsoft.com/en-us/library/office-365-reports.aspx).</span></span>
+  
+<span data-ttu-id="938ed-p103">미리 정의 된 관리 센터 보고서는 하는 훌륭한 리소스입니다. 늦 쉽게 사서함 사용량 또는 시간 (분)을 사용자가 온라인 회의에 투입 된가 수 등에서 확인할 수 있습니다. 그러나와 관련해 서 Office 365 도메인의 상세한 분석 보고서에 그에 따른 제한 않아도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p103">The pre-defined Admin center reports are an excellent resource. They make it easy to check on such things as mailbox usage or the number of minutes that your users have been spending in online conferences. However, when it comes to detailed analysis of your Office 365 domain, the reports do have their limitations.</span></span>
+  
+<span data-ttu-id="938ed-p104">이러한 제한 사항을 해결 하는 한 가지 방법은 Windows PowerShell 또는 다른 개발 언어에서 Office 365 보고 서비스에 액세스 하 고, 사용자 지정 보고서 만들기를 사용 하는 사용자 지정 보고서를 사용 하면 데이터 (및 데이터의 양을)를 지정 하는 기능 Office 365에서 반환 되는 서비스를 보고 합니다. 사용자 지정 보고서 데이터를 정렬 및 그룹화 해야 하는 방법 및 해당 하는 경우에 지정할 수 있습니다를 작성 하 여 어떻게 해당 데이터 저장 해야 합니다. 예, XML 형식에서 또는 Excel에서 쉽게 가져올 수 있는 쉼표로 구분 된 값 형식으로 데이터를 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p104">One way to work around these limitations is to use Windows PowerShell or another development language to access the Office 365 reporting service and create custom reports; custom reports give you the ability to dictate which data (and how much data) is returned from the Office 365 reporting service. By writing custom reports you can also specify how the data should be sorted and grouped, and, if applicable, how that data should be saved; for example, you can save data in XML format or in a comma-separated values format that can easily be imported in Excel.</span></span> 
+  
+<span data-ttu-id="938ed-p105">또한 사용자 지정 스크립트/응용 프로그램을 사용 하는 Office 365 관리 센터에서 사용할 수 없는 보고서에 액세스할 수 있습니다. 예, 관리 센터에 있는 오래 된 사서함 수를 알 수 있습니다 하지만 지난 30 일 후에는 사서함을 액세스 하지 않은 알 수 없습니다. 사용자 지정 PowerShell 스크립트를 확인할 수 있는. 전체적으로 볼 때, 상당한을 유연성 짧고 상대적으로 간단한 Windows PowerShell 스크립트를 작성 하는 것 대신 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p105">In addition, custom scripts/applications enable you to access reports that are not available in the Office 365 Admin center. For example, the Admin center can tell you how many stale mailboxes you have, but it can't tell which mailboxes haven't been accessed in the past 30 days. That is something that a custom PowerShell script can tell you. Taken together, this represents an enormous amount of flexibility in return for having to write a short and relatively-simple Windows PowerShell script.</span></span>
+  
+> [! VISUAL BASIC 참고]<span data-ttu-id="938ed-119"> 서비스를 보고 Office 365에 대 한 자세한 내용은 [홈페이지](https://msdn.microsoft.com/en-us/library/office/jj984325%28v=office.15%29.aspx) 를 참조 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-119"> For more information, see the [home page](https://msdn.microsoft.com/en-us/library/office/jj984325%28v=office.15%29.aspx) for the Office 365 reporting service.</span></span>
+  
+<span data-ttu-id="938ed-p106">이 데이터를 검색 하기 위해 일종의 코드를 작성을 수행 해야 합니다. 이것이 가치가 양과 반환 되는 정보의 종류를 제한 하는 대규모 조직 하는 경우입니다. 하지만 소규모 조직 참가 하 고 있는 경우 반환 되는 정보의 종류와 양을 제한 하지 않아도 됩니다. Excel 자체 내에서 Office 365 보고서 열기 고려할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p106">In order to retrieve this data, you do have to write code of some kind. That's worth it if you are a larger organization that needs to limit the amount and the type of information that gets returned. But if you're a smaller organization, and you don't need to limit the amount and type of information that gets returned, you might consider opening the Office 365 reports from within Excel itself.</span></span>
+  
+<span data-ttu-id="938ed-p107">하지만 몇 가지 제한 사항이 있다는 사실만 인식하면 됩니다. 먼저 데이터가 반환되기 전에는 데이터를 필터링, 정렬, 선택하거나 달리 조작할 수 없습니다. 대신 보고서에서 반환되는 기본 데이터 집합만 볼 수 있습니다. 일부 경우에는 데이터가 충분하지 않을 수 있습니다. 예를 들어 보고서가 전체 연도가 아닌 이전 달의 데이터만 반환할 수 있습니다. 이와는 대조적으로 데이터가 너무 많을 수도 있습니다. 이전 달의 데이터만 원함에도 전체 연도의 데이터가 반환될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p107">However, there are a few limitations here, the primary one being this: you cannot filter, sort, select, or otherwise manipulate the data that before it gets returned. Instead, you simply get back the default set of data returned by the report. In some cases that might not be enough data. For example, the report might return data for, say, only the previous month and not for the entire year. Conversely, in other cases that might be too much data: you might get back data for the entire year even though you only want data for the previous month.</span></span>
+  
+<span data-ttu-id="938ed-128">Excel 내에서 직접 Office 365 보고서를를 열려면 다음 절차를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-128">To open an Office 365 report directly from within Excel, complete the following procedure:</span></span>
+  
+1. <span data-ttu-id="938ed-p108">Excel에서 새 워크시트를 열어서를 시작 합니다. 해당 워크시트에서 **데이터**를 클릭 하 고 **에서 기타 원본**을 클릭 다음 **OData 데이터 피드에서**클릭 합니다. **데이터 연결 마법사** 대화 상자를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p108">Start by opening a new worksheet in Excel. On that worksheet, click **Data**, click **From Other Sources**, and then click **From OData Data Feed**. That brings up the **Data Connection Wizard** dialog box:</span></span>
+    
+     ![데이터 연결 마법사의 데이터 피드에 연결 대화 상자 예제입니다.](images/o365_reporting_connect_data_feed.png)
+  
+2. <span data-ttu-id="938ed-p109">**피드 데이터에 연결** 페이지에서 데이터 피드 위치 대로 **https://reports.office365.com/ecp/reportingwebservice/reporting.svc/** 를 입력 합니다. 참고;와 같이 기본 URL을 입력만 사용할 수 있습니다. 모든 선택에 추가할 수 없습니다 Filter 또는 문 서식을 지정 합니다. 외의 기본 URL을 입력 하면 여러분은 얻지 다시 모든 데이터입니다. 대신 다음과 같은 오류 메시지가 표시 하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p109">On the **Connect to a Data Feed** page, enter **https://reports.office365.com/ecp/reportingwebservice/reporting.svc/** as the data feed location. Note that you can only enter the base URL as shown; you cannot add any Select, Filter, or Format statements. If you enter anything but the base URL you won't get back any data; instead, you'll simply see the following error message:</span></span>
+    
+     ![Select, Filter 또는 Format 문을 추가할 때 표시되는 오류 메시지 예제입니다.](images/o365_reporting_incorrect_data_feed.png)
+  
+3. <span data-ttu-id="938ed-p110">보고 서비스 URL을 입력 한 후 **이 이름 및 암호를 사용 하 여** **로그온 자격 증명에서**를 선택 합니다. **사용자 이름** 상자에 Office 365 로그온 이름 (예: admin@litwareinc.onmicrosoft.com)을 입력 합니다. **암호** 상자에 Office 365 로그온 암호를 입력 하 고 ****을 클릭 합니다. Excel 제공 된 자격 증명을 사용 하 여 보고 서비스에 연결을 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p110">After entering the reporting service URL, select **Use this name and password** under **Log on credentials**. In the **User Name** box, enter your Office 365 logon name (for example, admin@litwareinc.onmicrosoft.com). In the **Password** box, enter your Office 365 logon password and then click **Next**. Excel will then attempt to connect to the reporting service using the supplied credentials.</span></span>
+    
+4. <span data-ttu-id="938ed-p111">인증을 받은 후에 **테이블 선택** 페이지를 표시 됩니다. 보고서 보기 (예: **MailTrafficTop** )를 되 고 **다음**을 클릭 한 다음이 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p111">After you have been authenticated, you'll see the **Select Tables** page. Select the report that you'd like to view (for example, **MailTrafficTop** ) and then click **Next**:</span></span>
+    
+     ![데이터 연결 마법사의 테이블 선택 페이지 예제입니다.](images/o365_reporting_select_tables.png)
+  
+    > [!NOTE]
+    > <span data-ttu-id="938ed-p112">여러 보고서;를 선택 하는 것이 불가능 여러 테이블/차트 Excel 스프레드시트에 추가 되는 만들어집니다. 도 차트를 만드는 단일 테이블/데이터 여러 보고서를 포함 하는 것이 불가능 합니다. 그러나 다루지 않습니다 하는 소개이 문서에서.</span><span class="sxs-lookup"><span data-stu-id="938ed-p112">It's possible to select multiple reports; that results in multiple tables/charts being added to your Excel spreadsheet. It's even possible to create a single table/chart that combines data from multiple reports. However, we won't discuss that in this introductory article.</span></span> 
+  
+5. <span data-ttu-id="938ed-147">**다음** 을 클릭 한 후 **데이터 연결 파일 저장 및 마침** 페이지와 함께 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-147">After clicking **Next** you'll be presented with the **Save Data Connection File and Finish** page:</span></span>
+    
+     ![데이터 연결 마법사의 데이터 연결 파일 저장 및 마침 페이지 예제입니다.](images/o365_reporting_odata_finish.png)
+  
+    <span data-ttu-id="938ed-p113">여기에 모든 정보를 입력할 필요가 없습니다. 데이터 검색을 수행 해야 하는 작업만 **완료**를 클릭 합니다. 그러나는 기본적으로 Excel 저장 하는; 할 각 데이터 연결에 대 한 정보를 주목할 만한 것은 이 데이터는 **내 데이터 원본** 폴더에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p113">You don't have to enter any information here. All you need to do to retrieve your data is to click **Finish**. However, it's worth noting that, by default, Excel saves information about each data connection you make; this data is stored in your **My Data Sources** folder:</span></span>
+    
+     ![내 데이터 원본 폴더에 대한 파일 저장 대화 상자 예제입니다.](images/o365_reporting_save_data_source.png)
+  
+    <span data-ttu-id="938ed-p114">따라서 **친숙 한 이름** 및 **검색 키워드**; 등과 같은 레이블이 있는 텍스트 상자를 포함 하는 대화 상자 이러한 옵션 이러한 데이터 연결을 사용자 지정할 수 있는 기회를 제공 합니다. 그렇게 하면 끝나지 않는 다음과 같은 표시 된 데이터 원본의 전체 묶음 일:</span><span class="sxs-lookup"><span data-stu-id="938ed-p114">That's why the dialog box includes text boxes with labels like **Friendly Name** and **Search Keywords**; these options give you the chance to customize these data connections. That way you do not end up with a whole bunch of data sources that look like these:</span></span>
+    
+  ```
+  DataFeed_1_reports-office365-com ClientSoftwareBrowserDetail.odc
+DataFeed_1_reports-office365-com MailTrafficTop.odc
+DataFeed_1_reports-office365-com Multiple Tables.odc
+DataFeed_2_reports-office365-com MailboxActivityWeekly.odc
+DataFeed_2_reports-office365-com MailTrafficTop.odc
+DataFeed_3_reports-office365-com ClientSoftwareBrowserDetail.odc
+  ```
+
+<span data-ttu-id="938ed-p115">**암호 파일에 저장**확인란을 선택 하는 경우 이러한 데이터 피드를 다시 사용할 수 있습니다. 예를들어 **클라이언트 브라우저 보고서**로 데이터 연결을 저장 합니다. 다음에 Office 365 도메인에 액세스 하는 데 사용 되는 웹 브라우저에 대 한 정보를 원하는 데이터 연결 마법사를 통해 진행 필요가 없습니다. 대신 하기만 하면 Excel을 열, **데이터**클릭 한 다음 **기존 원본**를 클릭 합니다. **기존 연결** 대화 상자에서 원하는 데이터 연결을 선택 하 고 **확인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p115">If you select the checkbox **Save password in file**, you'll be able to reuse these data feeds. For example, suppose you save a data connection as **Client Browser Report**. The next time you want information about the web browsers being used to access your Office 365 domain you don't have to walk through the data connection wizard. Instead, all you need to do is open Excel, click **Data**, and then click **Existing Sources**. Select the desired data connection in the **Existing Connections** dialog box and then click **OK**:</span></span>
+    
+![기존 연결 대화 상자에서 원하는 데이터 연결을 선택하는 예제입니다.](images/o365_reporting_select_connection.png)
+  
+<span data-ttu-id="938ed-161">이때는 Excel에서 자동으로 해당 연결을 설정하고 데이터를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-161">At that point, Excel will make the connection for you and retrieve the data.</span></span>
+    
+<span data-ttu-id="938ed-p116">이때 이러한 합니다. ODC 파일은 일반 텍스트 XML 파일입니다. Office 365 사용자 이름과 암호는 이러한 일반 텍스트 XML 파일에 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p116">Note that these .ODC files are plain-text XML files. Included in these plain-text XML files are your Office 365 user name and password:</span></span>
+    
+<span data-ttu-id="938ed-164">\<odc:ConnectionString > 데이터 원본 = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/; 네임 스페이스를 포함 하도록 = *. 최대 메시지 크기를 받은 4398046511104; = 통합 보안 = 기본; **사용자 ID=admin@litwareinc.onmicrosoft.com; 암호 MYpassw0rd =!**; 보안 정보 유지 = false; 서비스 문서 Url https://reports.office365.com/ecp/reportingwebservice/reporting.svc/ =\</odc:ConnectionString ></span><span class="sxs-lookup"><span data-stu-id="938ed-164">\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString></span></span>
+    
+<span data-ttu-id="938ed-p117">사용자 이름 및 암호를 일반 텍스트 파일에 저장 된 것을 원치 않으면 다음 하지 라는 상자는 선택 **암호 파일에 저장**합니다. 그러나 이렇게 하면 염두에 있는지에 이러한 데이터 연결을 다시 사용할 수 없습니다. 사용자 이름과 암호의 없이 Office 365 됩니다 서비스에 대 한 로그온 시도 인증할 수 때문입니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p117">If you don't like the idea of saving your user name and password in a plain-text file, then don't check the box labeled **Save password in file**. If you do that, however, keep in mind that you won't be able to reuse these data connections. That's because, without the user name and password, Office 365 will not be able to authenticate your attempt to log on to the service.</span></span>
+    
+6. <span data-ttu-id="938ed-168">**데이터 가져오기** 대화 상자 표시 됩니다 **데이터 연결 파일 저장 및 마침** 페이지에서 **완료** 를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-168">Click **Finish** on the **Save Data Connection File and Finish** page you'll be presented with the **Import Data** dialog box:</span></span>
+    
+     ![데이터 가져오기 대화 상자 예제입니다.](images/o365_reporting_import_data.png)
+  
+7. <span data-ttu-id="938ed-p118">보기 옵션 (예: **피벗 테이블 보고서** )를 선택한 다음 **확인**을 클릭 합니다. 데이터를 가져올 수는 모든 작업을 완료 하는 경우에서 제공 하 고 선택 하려면 이러한 상황이 발생 하면 어떤 보기 옵션:</span><span class="sxs-lookup"><span data-stu-id="938ed-p118">Select your view options (for example, **PivotTable Report** ) and then click **OK**. If all goes well, your data will be imported and be presented in whichever view option you happened to choose:</span></span>
+    
+     ![Excel 워크시트로 성공적으로 가져온 데이터 예제입니다.](images/o365_reporting_sample_spreadsheet.png)
+  
+<span data-ttu-id="938ed-p119">해당 데이터를 사용 하 여 할는 전적으로 사용자 다음 됩니다. 일부 제안 합니다. [oData 데이터 피드를 사용 하 여 Excel Services 대시보드 만들기](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx)를 살펴보겠습니다. 이 문서는 Office 365 서비스를 보고를 사용 하지 않지만 새 대시보드 필터 및 슬라이서에 추가 하는 등의 작업을 수행 하는 것에 대 한 간편 하 게 되는 힌트 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="938ed-p119">What you do with that data is then entirely up to you. For some suggestions. take a look at [Create an Excel Services dashboard using an oData data feed](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx). Although that article doesn't use the Office 365 reporting service, it does provide some handy hints for doing things like adding filters and slicers to your new dashboard.</span></span>
+  
+## <a name="see-also"></a><span data-ttu-id="938ed-177">See also</span><span class="sxs-lookup"><span data-stu-id="938ed-177">See also</span></span>
+
+#### 
+
+[<span data-ttu-id="938ed-178">Office 365 PowerShell로 Office 365 관리</span><span class="sxs-lookup"><span data-stu-id="938ed-178">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+  
+[<span data-ttu-id="938ed-179">Office 365 PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="938ed-179">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+  
+[<span data-ttu-id="938ed-180">Windows PowerShell을 사용 하 여 Office 365에서 보고서를 만들려면</span><span class="sxs-lookup"><span data-stu-id="938ed-180">Use Windows PowerShell to create reports in Office 365</span></span>](use-windows-powershell-to-create-reports-in-office-365.md)
+
