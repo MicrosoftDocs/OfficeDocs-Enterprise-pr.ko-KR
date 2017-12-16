@@ -1,7 +1,7 @@
 ---
-title: "정치적 캠페인, 비영리, 및 기타 민첩 한 조직에 대 한 Microsoft 보안 지침"
+title: "GDPR에 대 한 office 365 정보 보호"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -11,8 +11,8 @@ localization_priority: Priority
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 
 description: "이 솔루션에는 Office 365 서비스에 저장 된 중요 한 데이터를 보호 하는 방법을 보여줍니다."
-ms.openlocfilehash: ef0bfdcd27682b92dd450b424b5feee53c3344da
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 208134e78f7f5c40ee61d678b2f1b42bde738c68
+ms.sourcegitcommit: c5a12b35a475ef4a5a80085e1bb2829d115d7c4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
