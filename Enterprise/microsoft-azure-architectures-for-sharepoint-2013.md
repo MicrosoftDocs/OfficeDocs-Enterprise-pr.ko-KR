@@ -1,7 +1,7 @@
 ---
 title: "SharePoint 2013에 대 한 Microsoft Azure 아키텍처"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: "요약: SharePoint 2013 솔루션은 Microsoft Azure 가상 컴퓨터에서 호스팅할 수 있습니다. 어떤 유형의 솔루션은 가장 잘 맞는 및 Microsoft Azure 하나는 호스트를 설정 하는 방법에 알아봅니다."
-ms.openlocfilehash: b21e40351b3d4ae304e0268ad75462c8592e3a69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ee157ef81101cd51090fff50c972edd37562a179
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013에 대 한 Microsoft Azure 아키텍처
 

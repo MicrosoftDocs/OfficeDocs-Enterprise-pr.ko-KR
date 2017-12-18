@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Azure의 SharePoint Server 2013 재해 복구"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다."
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
 
@@ -360,7 +360,7 @@ DFSR를 사용 하 여 파일 복제를 설정 하려면 DNS 관리 스냅인을
   
 **표: DFSR에 대 한 문서를 참조**
 
-|**제목**|**설명**|
+|**Title**|**설명**|
 |:-----|:-----|
 |[복제](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |복제에 대 한 링크와 함께 DFS 관리 TechNet 항목  <br/> |
 |[DFS 복제: 상태 가이드](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |DFS 정보에 대 한 링크와 위 키  <br/> |

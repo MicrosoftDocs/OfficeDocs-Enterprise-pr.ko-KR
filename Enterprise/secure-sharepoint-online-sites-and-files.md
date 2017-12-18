@@ -1,7 +1,7 @@
 ---
 title: "SharePoint Online 사이트 및 파일의 보안"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "요약: SharePoint Online 및 Office 365에서 파일을 보호 하기 위해 구성 권장 합니다."
-ms.openlocfilehash: 0657ff5f3b6668d8cd5ae361bd890ef35c23608b
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online 사이트 및 파일의 보안
 
