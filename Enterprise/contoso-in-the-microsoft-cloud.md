@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "요약: 가상의 전형적인 글로벌 조직이 Microsoft 클라우드 서비스로 클라우드 포함 IT 인프라를 채택하는 방법"
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 이 문서는 파리에 본사를 두고 있는 글로벌 제조 대기업인 Contoso Corporation이 클라우드 포함 IT 인프라를 수용하고, 네트워킹, ID 및 보안에 대한 주요 디자인 결정을 해결한 방법과 비즈니스 문제를 해결하기 위해 엔터프라이즈 클라우드 시나리오를 구현하는 방법을 설명하는 문서 모음으로 연결됩니다. 또한 비즈니스 문제를 해결하기 위해 엔터프라이즈 클라우드 시나리오를 이 정보는 11페이지로 이루어진 포스터로 표시한 후 타블로이드 형식으로 인쇄할 수도 있습니다(ledger 11 x 17 또는 A3).
   
-[![Microsoft 클라우드 포스터에 Contoso의 축소판 그림 이미지입니다.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Microsoft 클라우드 포스터의 Contoso 축소판 이미지입니다.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 ![PDF 파일](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Visio 파일](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![다른 언어 버전으로 페이지 보기](images/Common_Images/GlobeIcon.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54427)
   
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/15/2017
   
 - [하이브리드 클라우드 개요 (영문)](hybrid-cloud-overview.md)
     
-    Contoso Corporation은 다국적 기업이자 10만 개가 넘는 제품의 제조, 판매 및 지원 업무를 처리하는 복합 기업입니다.
+    Contoso Corporation은 다국적 기업이자 10만 개가 넘는 제품의 제조, 판매 및 지원 업무를 처리하는 복합 기업입니다. 
     
 - [Contoso의 IT 인프라 및 필요한](contoso-it-infrastructure-and-needs.md)
     
@@ -67,11 +67,11 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > 이러한 문서는 Microsoft 클라우드 포스터 Contoso의 **2017년 9월** 릴리스를 반영합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

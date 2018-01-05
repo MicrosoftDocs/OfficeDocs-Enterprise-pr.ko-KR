@@ -20,7 +20,7 @@ ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 ID 솔루션을 디자인합니다."
 ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,17 +30,17 @@ ms.lasthandoff: 12/15/2017
   
 이 문서에서는 Microsoft 클라우드 서비스 및 플랫폼을 사용하는 조직용으로 ID를 설계하는 과정과 관련하여 IT 설계자가 파악해야 하는 사항을 설명합니다. 이 문서를 5페이지로 이루어진 포스터로 표시한 후 타블로이드 형식으로 인쇄할 수도 있습니다(ledger 11 x 17 또는 A3).
   
-[![Microsoft 클라우드 id 모델에 대 한 축소판 그림 이미지](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+[![Microsoft 클라우드 ID 모델용 축소판 이미지](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54431)
+![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54431)
   
-또한 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에 모델의 모든 및 표시를 통해 대 [Microsoft의 Enterprise 클라우드 로드맵: IT 의사 결정자를 위한 리소스](https://aka.ms/cloudarchitecture)합니다.
+[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://aka.ms/cloudarchitecture))를 살펴볼 수도 있습니다.
   
 > [!NOTE]
-> 이 문서는 **엔터프라이즈 설계자에 대 한 Microsoft 클라우드 id** 포스터의 1 월 2016 버전을 반영합니다. 4 월 2016에 대 한 변경 내용을 또는 포스터의 이후 버전에는 포함 하지 않습니다.
+> 이 문서에서는 **Microsoft Cloud ID for Enterprise Architects** 포스터의 2016년 1월 이후 버전을 반영합니다. 이 포스터의 2016년 4월 버전에 대한 변경 내용을 포함하지 않습니다.
   
-## <a name="designing-identity-for-the-microsoft-cloud"></a>Microsoft 클라우드에 대한 ID 디자인
+## <a name="designing-identity-for-the-microsoft-cloud"></a>Microsoft 클라우드의 ID 디자인
 
 ID를 Microsoft 클라우드와 통합하면 보다 폭넓은 서비스 및 클라우드 플랫폼 옵션에 액세스할 수 있습니다. 두 가지 기본 옵션이 있습니다.
   
@@ -66,7 +66,7 @@ Azure AD에는 무료, 기본 및 프리미엄의 세 가지 버전이 있습니
 ||||
 |:-----|:-----|:-----|
 |**무료** <br/> |**기본** <br/> |**프리미엄** <br/> |
-| 사용자 계정 관리 <br/>  온-프레미스 디렉터리와 동기화 <br/>  Azure, Office 365 및 널리 사용되는 수천 가지 기타 SaaS 응용 프로그램(예: Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox 등)에서 Single Sign-On <br/> | 무료 버전에 포함된 모든 기능과 다음 기능 포함: <br/>  회사 브랜딩 <br/>  그룹 기반 응용 프로그램 액세스 <br/>  셀프 서비스 암호 재설정 <br/>  99.9%의 엔터프라이즈 SLA <br/> | 무료 및 기본 버전의 모든 기능과 다음 기능 포함: <br/>  셀프 서비스 그룹 관리 <br/>  고급 보안 보고서 및 알림 <br/>  Multi-Factor Authentication <br/>  온-프레미스 AD DS에 쓰기 저장하는 방식의 암호 재설정 <br/>  Azure Connect AD 도구 양방향 동기화 <br/>  Azure AD 응용 프로그램 프록시 <br/>  MIM(Microsoft Forefront Identity Manager) <br/> |
+| 	사용자 계정 관리 <br/>  온-프레미스 디렉터리와 동기화 <br/>  Azure, Office 365 및 널리 사용되는 수천 가지 기타 SaaS 응용 프로그램(예: Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox 등)에서 Single Sign-On <br/> | 무료 버전에 포함된 모든 기능과 다음 기능 포함: <br/>  회사 브랜딩 <br/>  그룹 기반 응용 프로그램 액세스 <br/>  셀프 서비스 암호 재설정 <br/>  99.9%의 엔터프라이즈 SLA <br/> | 무료 및 기본 버전의 모든 기능과 다음 기능 포함: <br/>  셀프 서비스 그룹 관리 <br/>  고급 보안 보고서 및 알림 <br/>  Multi-Factor Authentication <br/>  온-프레미스 AD DS에 쓰기 저장하는 방식의 암호 재설정 <br/>  Azure Connect AD 도구 양방향 동기화 <br/>  Azure AD 응용 프로그램 프록시 <br/>  	MIM(Microsoft Forefront Identity Manager) <br/> |
    
 버전에 대한 자세한 내용은 [Azure Active Directory 버전](https://go.microsoft.com/fwlink/p/?LinkId=524280)을 참조하세요.
   
@@ -363,11 +363,11 @@ Azure AD Connect 도구는 Azure Virtual Network의 클라우드에 호스트될
     
 자세한 내용은 [Azure Active Directory에 온-프레미스 ID 통합](https://go.microsoft.com/fwlink/p/?LinkId=524307).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

@@ -19,7 +19,7 @@ ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 네트워킹을 디자인합니다."
 ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,12 +29,12 @@ ms.lasthandoff: 12/15/2017
   
 이 문서는 IT 설계자가 Microsoft 클라우드 서비스와 플랫폼을 사용하여 조직의 네트워킹을 디자인할 때 알아야 하는 사항을 설명하는 문서 모음으로 연결됩니다. 이 정보를 12페이지로 이루어진 포스터로 표시한 후 타블로이드 형식으로 인쇄할 수도 있습니다(ledger 11 x 17 또는 A3).
   
-[![Microsoft 클라우드 네트워킹 모델에 대 한 이미지 엄지 단추](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54425)
   
-또한 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에 모델의 모든 및 표시를 통해 대 [Microsoft의 Enterprise 클라우드 로드맵: IT 의사 결정자를 위한 리소스](https://aka.ms/cloudarchitecture)합니다.
+[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://aka.ms/cloudarchitecture))를 살펴볼 수도 있습니다.
   
 다음 섹션을 참조하세요.
   
@@ -62,16 +62,16 @@ ms.lasthandoff: 12/15/2017
     
     서브넷, 주소 공간, 라우팅, DNS, 부하 분산을 비롯한 서버 기반 IT 워크로드를 호스트하기 위한 최적의 Azure Virtual Network(VNet)와 온-프레미스 네트워크, 기타 VNet 및 인터넷에 대한 연결을 만들기 위한 디자인 프로세스를 안내합니다.
     
-이 포스터의 요점을 30 분 분량 요약을 [Microsoft 클라우드 서비스에 대 한 네트워크 최적화](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft 가상 Academy 과정을 참조 하십시오.
+이 포스터의 핵심 포인트에 대한 30분 요약은 [Microsoft 클라우드 제품에 대한 네트워크 최적화]((https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) Microsoft Virtual Academy 코스를 참조하세요.
   
 > [!NOTE]
 > 이러한 문서에서는 Microsoft Cloud Networking for Enterprise Architects의 **2017년 6월** 릴리스를 반영합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 
