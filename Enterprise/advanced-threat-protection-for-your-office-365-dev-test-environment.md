@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "요약: 구성 및 Office 365 개발/테스트 환경에서 Office 365 고급 위협 보호 기능을 시연 합니다."
-ms.openlocfilehash: 00b1fc8fea930346f082d3d2302a14dea7ad4309
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Advanced Threat Protection
 
@@ -158,15 +155,15 @@ ATP 시뮬레이션 된 엔터프라이즈에서 테스트 하려는 경우 [Off
 > [!TIP]
 > 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
-[Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
+[Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
