@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
-- apr17entnews
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 Office 365 관리 센터 작업을 수행합니다."
-ms.openlocfilehash: 3ac368a3d3584c15e1d0c26104616e8258a78e7b
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 942c128d8cfbcf4e78f054a0ab3a51b05173073f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 

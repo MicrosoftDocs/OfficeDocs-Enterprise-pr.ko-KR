@@ -8,22 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
-ms.custom:
-- apr17entnews
-- DecEntMigration
-- mar17entnews
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "요약: 이 테스트 랩 가이드를 사용하여 Office 365 평가판 구독에서 Exchange Online용 Dynamic 365 통합을 사용하도록 설정할 수 있습니다."
-ms.openlocfilehash: 9cecd13f0ffc3c2822ac6c66a3bde9c9e6a3c798
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: b297c3e461b5695b323c619145df64524989d58a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경을 위한 Exchange Online 통합
 
@@ -46,7 +39,7 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
 
 다음 단계를 통해 Dynamics 365 및 Exchange Online 통합용 전역 관리자 사서함을 구성할 수 있습니다.
   
-1. 브라우저의 개인 세션을 통해 [http://portal.office.com](http://portal.office.com)으로 이동한 다음 Office 365 전역 관리자 계정으로 로그인할 수 있습니다.
+1. 브라우저의 개인 세션을 통해 [(http://portal.office.com)]((http://portal.office.com))으로 이동한 다음 Office 365 전역 관리자 계정으로 로그인할 수 있습니다.
     
 2. **Microsoft Office Home** 페이지에서 **메일** 타일을 클릭합니다.
     
@@ -105,7 +98,7 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
 9. **취소**를 클릭합니다.
 
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.
+> [여기]((http://aka.ms/catlgstack))를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.
     
 ## <a name="see-also"></a>참고 항목
 
@@ -119,8 +112,8 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
   
 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Dynamics 365용 구독 관리(온라인)](https://technet.microsoft.com/library/jj679903.aspx)
+[Dynamics 365용 구독 관리(온라인)]((https://technet.microsoft.com/library/jj679903.aspx))
   
-[Dynamics 365 관리](https://technet.microsoft.com/library/dn531101.aspx)
+[Dynamics 365 관리]((https://technet.microsoft.com/library/dn531101.aspx))
 
 

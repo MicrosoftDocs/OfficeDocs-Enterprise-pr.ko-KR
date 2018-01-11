@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - PowerShell
-- DecEntMigration
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: "요약:Office 365 PowerShell을 사용하여 사서함 구성 및 고급 보고서 표시 등 Microsoft Exchange Online을 관리할 수 있습니다."
-ms.openlocfilehash: 8ec855731d9f8db7f70c7c0a3923170d463075f7
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 984347207e3773887850620b6bc194cf5ff9705d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 Exchange Online 관리
 
