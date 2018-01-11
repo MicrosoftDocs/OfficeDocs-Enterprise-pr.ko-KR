@@ -121,7 +121,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
   
 - [<span data-ttu-id="2394f-170">Csv 내보내기</span><span class="sxs-lookup"><span data-stu-id="2394f-170">Export-Csv</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- <span data-ttu-id="2394f-171">[Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))</span><span class="sxs-lookup"><span data-stu-id="2394f-171">[Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))</span></span>
+- <span data-ttu-id="2394f-171">[Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)</span><span class="sxs-lookup"><span data-stu-id="2394f-171">[Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)</span></span>
     
 - [<span data-ttu-id="2394f-172">New-MsolUser</span><span class="sxs-lookup"><span data-stu-id="2394f-172">New-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     

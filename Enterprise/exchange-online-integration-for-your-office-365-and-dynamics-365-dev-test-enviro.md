@@ -39,7 +39,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="53b61-115">다음 단계를 통해 Dynamics 365 및 Exchange Online 통합용 전역 관리자 사서함을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-115">Use these steps to configure the global administrator's mailbox for Dynamics 365 and Exchange Online integration:</span></span>
   
-1. <span data-ttu-id="53b61-116">브라우저의 개인 세션을 통해 [(http://portal.office.com)]((http://portal.office.com))으로 이동한 다음 Office 365 전역 관리자 계정으로 로그인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-116">Using a private session of your browser, go to [(http://portal.office.com)]((http://portal.office.com)) and sign in using your Office 365 global administrator account.</span></span>
+1. <span data-ttu-id="53b61-116">브라우저의 개인 세션을 통해 [(http://portal.office.com)](http://portal.office.com)으로 이동한 다음 Office 365 전역 관리자 계정으로 로그인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-116">Using a private session of your browser, go to [(http://portal.office.com)](http://portal.office.com) and sign in using your Office 365 global administrator account.</span></span>
     
 2. <span data-ttu-id="53b61-117">**Microsoft Office Home** 페이지에서 **메일** 타일을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-117">On the **Microsoft Office Home** page, click the **Mail** tile.</span></span>
     
@@ -98,7 +98,7 @@ ms.lasthandoff: 01/11/2018
 9. <span data-ttu-id="53b61-151">**취소**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-151">Click **Discard**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="53b61-152">[여기]((http://aka.ms/catlgstack))를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-152">Click [here]((http://aka.ms/catlgstack)) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="53b61-152">[여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="53b61-152">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="53b61-153">참고 항목</span><span class="sxs-lookup"><span data-stu-id="53b61-153">See Also</span></span>
 
@@ -112,8 +112,8 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="53b61-158">Office 365 개발/테스트 환경용 DirSync</span><span class="sxs-lookup"><span data-stu-id="53b61-158">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
 
-<span data-ttu-id="53b61-159">[Dynamics 365용 구독 관리(온라인)]((https://technet.microsoft.com/library/jj679903.aspx))</span><span class="sxs-lookup"><span data-stu-id="53b61-159">[Subscription Management for Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))</span></span>
+<span data-ttu-id="53b61-159">[Dynamics 365용 구독 관리(온라인)](https://technet.microsoft.com/library/jj679903.aspx)</span><span class="sxs-lookup"><span data-stu-id="53b61-159">[Subscription Management for Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)</span></span>
   
-<span data-ttu-id="53b61-160">[Dynamics 365 관리]((https://technet.microsoft.com/library/dn531101.aspx))</span><span class="sxs-lookup"><span data-stu-id="53b61-160">[Administering Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))</span></span>
+<span data-ttu-id="53b61-160">[Dynamics 365 관리](https://technet.microsoft.com/library/dn531101.aspx)</span><span class="sxs-lookup"><span data-stu-id="53b61-160">[Administering Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)</span></span>
 
 

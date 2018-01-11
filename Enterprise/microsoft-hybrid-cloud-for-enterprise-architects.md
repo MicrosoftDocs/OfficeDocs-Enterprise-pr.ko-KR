@@ -34,7 +34,7 @@ ms.lasthandoff: 01/11/2018
 [기타 언어](https://www.microsoft.com/download/details.aspx?id=54424)</span><span class="sxs-lookup"><span data-stu-id="761c1-108">![PDF file](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio file](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![See a page with versions in additional languages](images/Common_Images/GlobeIcon.png)
 [More languages](https://www.microsoft.com/download/details.aspx?id=54424)</span></span>
   
-<span data-ttu-id="761c1-109">[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://aka.ms/cloudarchitecture))를 살펴볼 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="761c1-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)).</span></span>
+<span data-ttu-id="761c1-109">[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://aka.ms/cloudarchitecture)를 살펴볼 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="761c1-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
 <span data-ttu-id="761c1-110">다음 섹션을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="761c1-110">See the following sections:</span></span>
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/11/2018
 
 [<span data-ttu-id="761c1-123">Microsoft 클라우드 IT 아키텍처 리소스</span><span class="sxs-lookup"><span data-stu-id="761c1-123">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="761c1-124">[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="761c1-124">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="761c1-124">[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="761c1-124">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

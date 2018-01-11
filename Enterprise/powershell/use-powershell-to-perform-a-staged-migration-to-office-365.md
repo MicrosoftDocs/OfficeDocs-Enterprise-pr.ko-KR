@@ -58,7 +58,7 @@ ms.lasthandoff: 01/11/2018
   
 - <span data-ttu-id="aa8a0-131">회사 네트워크 외부에서 Outlook을 사용하여 온-프레미스 Exchange 사서함에 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-131">Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.</span></span>
     
-- <span data-ttu-id="aa8a0-p108">[Microsoft Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/))를 사용하여 연결 설정을 테스트합니다. Outlook Anywhere(RPC over HTTP) 또는 Outlook 자동 검색 테스트를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-p108">Use the [Microsoft Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.</span></span>
+- <span data-ttu-id="aa8a0-p108">[Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/)를 사용하여 연결 설정을 테스트합니다. Outlook Anywhere(RPC over HTTP) 또는 Outlook 자동 검색 테스트를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-p108">Use the [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.</span></span>
     
 - <span data-ttu-id="aa8a0-134">Exchange Online PowerShell에서 다음 명령을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-134">Run the following commands in Exchange Online PowerShell:</span></span>
     

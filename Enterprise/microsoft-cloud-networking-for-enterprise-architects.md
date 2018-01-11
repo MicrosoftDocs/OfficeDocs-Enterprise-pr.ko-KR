@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="f2b48-108">![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54425)</span><span class="sxs-lookup"><span data-stu-id="f2b48-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=54425)</span></span>
   
-<span data-ttu-id="f2b48-109">[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://aka.ms/cloudarchitecture))를 살펴볼 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f2b48-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)).</span></span>
+<span data-ttu-id="f2b48-109">[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://aka.ms/cloudarchitecture)를 살펴볼 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f2b48-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
 <span data-ttu-id="f2b48-110">다음 섹션을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f2b48-110">See the following sections:</span></span>
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="f2b48-123">서브넷, 주소 공간, 라우팅, DNS, 부하 분산을 비롯한 서버 기반 IT 워크로드를 호스트하기 위한 최적의 Azure Virtual Network(VNet)와 온-프레미스 네트워크, 기타 VNet 및 인터넷에 대한 연결을 만들기 위한 디자인 프로세스를 안내합니다.</span><span class="sxs-lookup"><span data-stu-id="f2b48-123">Step through the design process to create an optimal Azure virtual network (VNet) for hosting server-based IT workloads, including subnets, address spaces, routing, DNS, load balancing, and connectivity to your on-premises network, other VNets, and the Internet.</span></span>
     
-<span data-ttu-id="f2b48-124">이 포스터의 핵심 포인트에 대한 30분 요약은 [Microsoft 클라우드 제품에 대한 네트워크 최적화]((https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) Microsoft Virtual Academy 코스를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f2b48-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings]((https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) Microsoft Virtual Academy course.</span></span>
+<span data-ttu-id="f2b48-124">이 포스터의 핵심 포인트에 대한 30분 요약은 [Microsoft 클라우드 제품에 대한 네트워크 최적화](https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy 코스를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f2b48-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings](https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy course.</span></span>
   
 > [!NOTE]
 > <span data-ttu-id="f2b48-125">이러한 문서에서는 Microsoft Cloud Networking for Enterprise Architects의 **2017년 6월** 릴리스를 반영합니다.</span><span class="sxs-lookup"><span data-stu-id="f2b48-125">These articles reflect the **June 2017** release of the Microsoft Cloud Networking for Enterprise Architects poster.</span></span>
@@ -69,7 +69,7 @@ ms.lasthandoff: 01/11/2018
 
 [<span data-ttu-id="f2b48-127">Microsoft 클라우드 IT 아키텍처 리소스</span><span class="sxs-lookup"><span data-stu-id="f2b48-127">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="f2b48-128">[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="f2b48-128">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="f2b48-128">[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="f2b48-128">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 
