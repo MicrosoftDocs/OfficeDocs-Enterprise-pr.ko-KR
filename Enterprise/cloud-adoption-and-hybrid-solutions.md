@@ -1,25 +1,24 @@
 ---
 title: "엔터프라이즈 클라우드 솔루션"
-description: "Microsoft 클라우드를 사용 하 여 비즈니스 문제를 해결 합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 채택 등 대 한 정보를 찾아보십시오."
-services: o365-solutions
+description: "Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요."
 author: JoeDavies-MSFT
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: landing-page
+localization_priority: Normal
+ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
-ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
+ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 <h1>엔터프라이즈 클라우드 솔루션</h1>
-<p>Microsoft 클라우드를 사용 하 여 비즈니스 문제를 해결 합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 채택 등 대 한 정보를 찾아보십시오.</p>
+<p>Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요.</p>
 <p>오늘날의 비즈니스 문제를 기술 솔루션 여러 제품 및 플랫폼 포함 되는 경우도 있습니다. 유연성을 활용 하는 동안 사용 하도록 기존 온-프레미스 인프라를 활용 하 고 비용 절감 Microsoft 클라우드 서비스 및 플랫폼에서 제공 수 있습니다. 이러한 목표 Microsoft 제품 및 서비스를 사용 하 여 비즈니스 목표를 달성 하기 위해 필요한 정보를 제공 하는 것입니다.</p>
 <ul class="cardsF panelContent">
     <li>
