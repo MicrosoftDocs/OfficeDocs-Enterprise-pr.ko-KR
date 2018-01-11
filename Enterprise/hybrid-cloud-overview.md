@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: "요약: 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다."
-ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f4eb3a814c6dcf50321ae34a05671cfa8cf17c1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-overview"></a>하이브리드 클라우드 개요 (영문)
 
@@ -86,9 +82,9 @@ Microsoft 시장에서 가장 전체 클라우드 솔루션을 갖기 때문에-
     
     하이브리드 클라우드 시나리오에 대 한 관리 설정, 데이터, 계정, 정책 및 사용 권한 유지 관리 하 고 시나리오 및 성능에 대의 요소는 계속 해 서 상태를 모니터링 하는 기능을 포함 합니다. Azure IaaS에 가상 컴퓨터를 관리 하기 위한 Systems Management Server와 같은 동일한 도구 집합을 사용할 수도 있습니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 설계자 용 Microsoft 하이브리드 클라우드](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Microsoft Hybrid Cloud for Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: "요약: 이러한 절차로 격리 된 SharePoint Online 팀 사이트를 관리 합니다."
-ms.openlocfilehash: 516bf9d1c94992789bd8341b347a5788dbb04933
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 51e3bea35220781303ca6dfb49ce57b60e72ba3a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>SharePoint Online 팀 사이트를 격리 관리
 
@@ -184,7 +180,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 17. 브라우저에서 **사용자 및 그룹** 탭을 닫습니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [격리 된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
   

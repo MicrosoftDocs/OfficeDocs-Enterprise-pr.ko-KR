@@ -5,23 +5,20 @@ author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "요약: SharePoint Online 및 Office 365에서 파일을 보호 하기 위해 구성 권장 합니다."
-ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: a8ba632d9bc24e272a649f5790824323f889bdc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online 사이트 및 파일의 보안
 
@@ -39,9 +36,9 @@ ms.lasthandoff: 12/18/2017
     
 이러한 계층 및 각 계층에 대 한 권장 하는 기능에 대 한 자세한 내용은 다음 리소스를 참조 합니다. 
   
-- [Id 및 Office 365에 대 한 장치 보호](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
+- [Office 365용 ID 및 장치 보호](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
-- [Office 365에서에서 파일 보호 솔루션](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
+- [Office 365의 파일 보호 솔루션](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     
 ## <a name="capability-overview"></a>기능 개요 (영문)
 
@@ -185,7 +182,7 @@ Azure 정보 보호 암호화는 Office 365에 저장 된 파일에 적용 되 �
 
 이 솔루션에 Azure 정보 보호를 구성 하는 단계를 [Azure 정보 보호와 SharePoint Online 보호 파일](protect-sharepoint-online-files-with-azure-information-protection.md)을 참조 하십시오.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [정치적 캠페인, 비영리, 및 기타 민첩 한 조직에 대 한 Microsoft 보안 지침](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

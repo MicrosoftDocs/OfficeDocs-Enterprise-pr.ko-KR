@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Ent_TLGs
 - Strat_O365_Enterprise
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: "요약:이 테스트 랩 가이드를 사용 하 여 Office 365 e 5, Enterprise 이동성 + 보안 (EMS) e 5 및 Windows 10 Enterprise를 실행 하는 컴퓨터를 포함 하는 개발/테스트 환경을 만들 수 있습니다."
-ms.openlocfilehash: 547662a21733941e3242e9cdd933090a4f53714d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f6baabaee10c25243690918aa6c9b2c68ff3758b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 엔터프라이즈 개발/테스트 환경
 
@@ -227,7 +224,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 - [구성 하 고 고급 위협 보호를 테스트 합니다.](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [하나의 Microsoft 클라우드 개발/테스트 환경](the-one-microsoft-cloud-dev-test-environment.md)
 

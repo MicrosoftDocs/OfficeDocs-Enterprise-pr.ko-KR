@@ -5,23 +5,20 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: "요약: 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 사이 계정을 동기화 하는 Azure에 가상 컴퓨터에서 Azure AD 연결 (DirSync)를 배포 합니다."
-ms.openlocfilehash: c6ee337c49092ac5d2b3d30a54fc33b3f3e2bb58
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4160c8b0f1d38c53fdbc1052cc0bc30793cc8ba2
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Microsoft Azure에서 Office 365 디렉터리 동기화 (DirSync)를 배포 합니다.
 
@@ -198,7 +195,7 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
     
 7. 추가 사용자를 위한 3 단계로 이동 합니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 <a name="DeploymentRoadmap"> </a>
 

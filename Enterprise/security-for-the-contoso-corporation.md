@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "요약: Contoso이 Microsoft의 클라우드 서비스의 기능을 위해 보안 요구 사항이 매핑되어야 하 고 클라우드 보안 준비에 대 한 경로 결정 하는 방법을 이해 합니다."
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Contoso Corporation에 대 한 보안
 
@@ -134,9 +132,9 @@ Office 365 보안 모범 사례에 따라 Contoso의 보안 관리자 및 IT 부
     
     자세한 내용은 [데이터 손실 방지 정책 개요](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)를 참조 하십시오.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

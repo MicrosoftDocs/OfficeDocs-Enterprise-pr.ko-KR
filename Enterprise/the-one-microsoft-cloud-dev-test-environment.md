@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "요약:이 테스트 랩 가이드를 사용 하 여 Microsoft의 클라우드 서비스를 모두 포함 하는 개발/테스트 환경을 만들 수 있습니다."
-ms.openlocfilehash: a6375c60ff6c216f34e2f78850e1afd5ed0c8c80
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2cbfb3e963927f18d2ee46ed1f5076b274a99154
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>하나의 Microsoft 클라우드 개발/테스트 환경
 
@@ -185,9 +182,9 @@ Dynamics 365 시스템 관리자는 사용자 2 및 3 사용자 계정을 구성
     
 - [서버 기반 작업 부하를 호스팅하기 위한 Azure 인프라 서비스에서 시뮬레이션 된 크로스-프레미스 네트워크를 만들기](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   

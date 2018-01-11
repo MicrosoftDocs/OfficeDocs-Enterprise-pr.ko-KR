@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "요약:이 테스트 랩 가이드를 사용 하 여 Microsoft 365 개발/테스트 환경에서 장치를 등록 하 고 원격으로 관리 하기를."
-ms.openlocfilehash: 8ad22ed62d8e7cac8aca225af42e389dc05cb2b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 71d04b0d2a59683ff09ad4256ed8fc82e89e876a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>IOS 및 Microsoft 기업 365 개발/테스트 환경에서 Android 장치 등록
 
@@ -255,15 +251,15 @@ Android 장치에 대 한 암호를 다시 설정할 때 Intune 관리 포털을
 7. 암호를 다시을 변경 하려면 **설정**으로 이동, **장치**를 누릅니다, 그리고 **잠금 화면**을 누릅니다, 그리고은 암호에 대 한 새 암호를 다시, 누르고 **화면 잠금 기능**및 사용자가 선택한을 입력 합니다.
     
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 문서는 모든 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Microsoft 365 엔터프라이즈 개발/테스트 환경](the-microsoft-365-enterprise-dev-test-environment.md)
   
 [Microsoft 365 엔터프라이즈 개발/테스트 환경에 대 한 MAM 정책](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [엔터프라이즈 이동성 + 보안 (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

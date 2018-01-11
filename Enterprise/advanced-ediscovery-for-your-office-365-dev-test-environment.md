@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "요약: 구성 및 Office 365 개발/테스트 환경에서 예제 데이터가 포함 된 Office 365 고급 eDiscovery 시연 합니다."
-ms.openlocfilehash: 35ebbe68027d37d2925728005235d3dde62c6248
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 95eabc3eeb718cb1235848544b41207a94c428c7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 고급 eDiscovery
 
@@ -183,15 +180,15 @@ Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 �
     
 이제 이 환경을 사용하여 새 콘텐츠, 새 검색 및 사례를 만들고 Office 365의 고급 eDiscovery를 추가로 실험할 수 있습니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
-[Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
+[Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
   

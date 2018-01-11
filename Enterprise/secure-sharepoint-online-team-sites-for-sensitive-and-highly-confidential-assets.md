@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "요약: Contoso 중요 한 보호 및 기밀 사항이 SharePoint Online 팀 사이트에 대 한 더 쉽게을 구현 하는 방법 아직 보안 임원 및 해당 연구 (영문)에 대 한 공동 작업 가운데에 맞춥니다."
-ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>중요 한 기밀 사항이 자산에 대 한 SharePoint Online 팀 사이트 보호
 
@@ -60,11 +56,11 @@ Contoso의 보안 및 SharePoint 관리자의 IT 부서 중요 한 보호 하 �
   
  데모, 개념 증명 또는 개발/테스트 하면이 설정, [개발/테스트 환경에서 SharePoint Online 보안 사이트](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)를 참조 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Contoso Corporation에 대 한 엔터프라이즈 시나리오](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

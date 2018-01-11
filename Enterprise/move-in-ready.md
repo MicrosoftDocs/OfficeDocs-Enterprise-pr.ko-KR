@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "요약: Microsoft의 클라우드 서비스에 기본 제공 되는 저장소 옵션을 클라우드 집합에 대 한 세부 정보를 가져옵니다."
-ms.openlocfilehash: 341b530f3b4348a4111cdd8e9741d0e5696e652e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="move-in-ready"></a>이동-준비 완료
 
@@ -276,9 +272,9 @@ ms.lasthandoff: 12/15/2017
 
 [일부 어셈블리 필요한](some-assembly-required.md) 클라우드 저장소 옵션을 검토 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 설계자 용 Microsoft 클라우드 저장소](microsoft-cloud-storage-for-enterprise-architects.md)
+[Microsoft Cloud Storage for Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

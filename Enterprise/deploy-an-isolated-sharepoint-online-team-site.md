@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: "요약: 새 격리 된 SharePoint Online 팀 사이트가 단계별 지침을 배포 합니다."
-ms.openlocfilehash: 9715c6168276b6ba9ffc63591cc6421708bbda27
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 31a1f588aefccd9e2cb353af86d8aa0d598696af
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>SharePoint Online 팀 사이트를 격리를 배포 합니다.
 
@@ -232,7 +228,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 사이트 액세스 그룹 구성원 자격을 변경 하거나 사용자 지정 사용 권한으로 문서 폴더를 만들어 해야하는 경우 [Manage SharePoint Online 팀 사이트를 격리](manage-an-isolated-sharepoint-online-team-site.md)를 참조 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [격리 된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
   

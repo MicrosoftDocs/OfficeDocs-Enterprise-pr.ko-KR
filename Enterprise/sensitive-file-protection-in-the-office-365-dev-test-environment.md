@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "요약: 구성 및 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에 Office 365 정보 권한 관리에 중요 한 파일을 보호 하는 방법을 시연 합니다."
-ms.openlocfilehash: a6547cf4327980e3909323d5bda4455dfffd37f4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eb456c86b118556abde6a887fe8b9ab68300740b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에서 중요 한 파일 보호
 
@@ -331,9 +327,9 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 IRM 보호를 참조 하는 다른 방법은 로컬 폴더에 파일에서 확인 하는 것입니다. **SensitiveData AfterIRM.docx** **SensitiveData BeforeIRM.docx** 파일 보다 훨씬 더 큰 있어야 합니다. **SensitiveData AfterIRM.docx** 파일은 암호화 및 IRM 보호 정보를 사용 하 여 추가 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   

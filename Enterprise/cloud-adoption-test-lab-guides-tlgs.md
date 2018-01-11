@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "요약: 이러한 클라우드 채택 테스트 랩 가이드 (Tlg)를 사용 하 여 데모, 개념, 또는 개발/테스트 환경 영수증 Office 365 \",\" Enterprise 이동성 \"+\" 보안 (EMS) \",\" Dynamics 365 \"및\" Office 서버 제품에 대 한 설정 합니다."
-ms.openlocfilehash: 532215a08e28a9d67cd19ef60d60419b06df4957
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2c533129b88783d8ff39dbc5753bdeb26eeafe81
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>클라우드 도입 TLG(테스트 랩 가이드)
 
@@ -53,7 +49,7 @@ Tlg 도움말을 신속 하 게 Microsoft 제품에 알아봅니다. 기술 이�
     
     Azure 인프라 서비스에서 실행 하는 간소화 된 인트라넷 나 사용자의 컴퓨터에서 수행할 수 있는 작업 하는 Office 365 Enterprise E5 평가판 구독을 만듭니다.
     
-- [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
     
     암호 동기화를 사용하여 디렉터리를 동기화하는 Azure AD Connect를 설치하고 구성합니다. 이 단계는 시뮬레이트된 엔터프라이즈 구성을 구축하려는 경우에 가능한 선택 사항입니다.
     
@@ -164,7 +160,7 @@ Microsoft의 클라우드 서비스를 모두 포함 하는 개발/테스트 환
 |**클라우드 채택 토론에 참가** <br/> |클라우드 기반 솔루션에 열정을 갖고 인 경우에는 클라우드 채택 자문 보드 (CAAB) Microsoft 콘텐츠 개발자, 업계 전문가는 전세계 어디에서 고객의 더 큰, 생생한 커뮤니티와 연결할에 참가 하는 것이 좋습니다. 참가, Microsoft 기술 커뮤니티의 [CAAB (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 의 구성원으로 자신을 추가 하 고 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내주시기 합니다. 누구나 [CAAB 블로그 (영문)](https://blogs.technet.com/b/solutions_advisory_board/)에서 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원에 게 새 클라우드 채택 리소스 및 솔루션에 설명 하는 개인 웨 초대장을 가져옵니다.<br/> |
 |**여기에서 참조 하 여 아트 가져오기** <br/> |이 문서에서 참조 하는 이미지의 편집 가능한 복사본을 원하는 귀하에 게 보내야 기꺼이 표시 됩니다. URL 및 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)는 이미지의 제목을 포함 하 여 요청을 전자 메일로 보냅니다.<br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 <a name="ADD_TLGs"> </a>
 
@@ -172,7 +168,7 @@ Microsoft의 클라우드 서비스를 모두 포함 하는 개발/테스트 환
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   
-[개발자를 위한 SharePoint, Exchange, 비즈니스 및 Lync에 대 한 Skype 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [하이브리드 솔루션](hybrid-solutions.md)
 

@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "요약: Azure 정보 보호 기밀 사항이 SharePoint Online 팀 사이트의 파일을 보호 하기 위해 적용 됩니다."
-ms.openlocfilehash: bc2c7dbbcc254270cf2c7db3d3eed98b3f7872f6
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 03a10c5d856c4c5518f18b9d02ffe76f2c8d2e7a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure 정보 보호와 SharePoint Online 파일 보호
 
@@ -95,7 +92,7 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > 각 하위 레이블의 사이트 구성원 액세스 그룹 설정에 대 한 사용 권한 가진 위의 설정을 사용 하 여 여러 범위 Azure 정보 보호 정책의 만들어 하위 레이블이 있는 해야 여러 매우 중요 한 SharePoint Online 팀 사이트를 사용 하는 경우는 특정 SharePoint Online 팀 사이트입니다. 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [SharePoint Online 사이트 및 파일의 보안](secure-sharepoint-online-sites-and-files.md)
   

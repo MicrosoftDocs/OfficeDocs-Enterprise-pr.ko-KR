@@ -8,22 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "요약: Office 365 개발/테스트 환경에 대 한 디렉터리 동기화를 구성 합니다."
-ms.openlocfilehash: da9a0070587c50ea9fc2f33612fb4885d6eaf695
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d8a663367e61ac3f01e67f4d3731a0dccdd5a222
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대 한 디렉터리 동기화
 
@@ -121,9 +117,9 @@ Stop-Process -Name Explorer -Force
 
 조직에 대 한 디렉터리 동기화를 배포할 준비가 되 면 [배포 Office 365에서에서 디렉터리 동기화 (DirSync) Microsoft Azure을](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)참조 하십시오.
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   

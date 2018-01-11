@@ -10,17 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: "요약: Microsoft Azure의 개발/테스트 환경으로 단순화 된 인트라넷을 만듭니다."
-ms.openlocfilehash: 672486f62a940d812c821fda67d3e92a4164eea8
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f61490ea9ee9ee23df2b2fd13df1097d183a8de7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -360,7 +358,7 @@ CLIENT1를 다시 시작한 후에 회사를 사용 하 여 연결\\User1 계정
 Azure의 기본 구성을 추가 테스트 환경 만들기 (영문) 또는 응용 프로그램 개발 및 테스트에 대 한 준비가 되었습니다. 
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 문서는 모든 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Azure의 테스트 환경 가상 컴퓨터의 비용을 최소화
 <a name="mincost"> </a>
@@ -397,13 +395,13 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "APP1"
 Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 ```
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 <a name="mincost"> </a>
 
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
-[Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
+[Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
   

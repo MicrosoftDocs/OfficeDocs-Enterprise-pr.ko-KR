@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation의 개요 (영문)"
+title: "Contoso Corporation 개요"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,18 +9,16 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "요약: Contoso Corporation 기업 및 전세계 사무소의 계층된 구조를 이해 합니다."
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c00e7fd75f580b82f8f920b9f74551a5e5e1b328
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation의 개요 (영문)
+# <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 개요
 
  **요약:** Contoso Corporation 기업 및 전세계 사무소의 계층된 구조를 이해 합니다.
   
@@ -85,9 +83,9 @@ Contoso의 IT 설계자는 Microsoft의 클라우드 서비스의 채택을 계�
     
     클라우드 기반 앱 및 SaaS 작업 부하에 대 한 관리 설정, 데이터, 계정, 정책 및 사용 권한 유지 관리 하 고 계속 해 서 상태 및 성능 모니터링 하는 기능을 해야 합니다. 기존 서버 관리 도구는 Azure IaaS에 가상 컴퓨터를 관리 하는데 사용 됩니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

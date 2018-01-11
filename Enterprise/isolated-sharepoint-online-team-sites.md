@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: "요약: 격리 된 SharePoint Online 팀 사이트에 대 한 사용 하는 방법에 대 한 설명입니다."
-ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d4fe03c8e95b78bbd9454bbbd23f6fa27ba39f06
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>격리 된 SharePoint Online 팀 사이트
 
@@ -61,7 +58,7 @@ SharePoint Online 팀 사이트는 쉽게 신속 하 게 Microsoft Office 365의
   
 프로덕션 환경에서 격리 된 SharePoint Online 팀 사이트를 배포할 준비가 되 면 [디자인 한 격리 된 SharePoint Online 팀 사이트에](design-an-isolated-sharepoint-online-team-site.md)대 한 단계별 디자인 고려 사항을 참조 하십시오.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [격리 된 SharePoint Online 팀 사이트를 디자인 합니다.](design-an-isolated-sharepoint-online-team-site.md)
   

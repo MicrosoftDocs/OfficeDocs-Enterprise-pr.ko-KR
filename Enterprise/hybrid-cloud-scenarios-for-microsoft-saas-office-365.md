@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: "요약: Microsoft의 SaaS 기반에 대 한 하이브리드 아키텍처 및 시나리오 이해 클라우드 제품 (Office 365)."
-ms.openlocfilehash: 5f50573376b70ad94b3b1cd4b86ce3ef1fdc67dd
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 63126d694817f8323494e584f1f497a1a732c678
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Microsoft SaaS (Office 365)에 대 한 하이브리드 클라우드 시나리오
 
@@ -162,9 +158,9 @@ Exchange Server 2016 하이브리드 사용 하면 기존 Exchange 서버 인프
   
 자세한 내용은 [Exchange Server 하이브리드 배포](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) 및 [Exchange 하이브리드](http://hybrid.office.com/exchange/)를 참조 하십시오.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 설계자 용 Microsoft 하이브리드 클라우드](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Microsoft Hybrid Cloud for Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 014b3710-e6e9-485c-8550-975d510eb2fc
 description: "요약: 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다."
-ms.openlocfilehash: 115a4844d96c1d027fd63e7d91f02cbadeb975d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 0943864c8a9982eba00a139617ebe17d39cdde4e
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation에 대 한 네트워킹
 
@@ -128,9 +126,9 @@ Contoso는 Microsoft 클라우드 하기 위해 네트워크를 준비 하려면
     
     Azure IaaS 예상된 장단기 서버 수가에 based, Azure VNets 및 해당 서브넷에 대 한 개인 주소 공간을 예약해 둡니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

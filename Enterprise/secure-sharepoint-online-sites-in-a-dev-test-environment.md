@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: "요약: 개발/테스트 환경에서 공용, 개인, 소문자를 구분 및 기밀 사항이 SharePoint Online 팀 사이트를 만듭니다."
-ms.openlocfilehash: 17abee7a293996194a097693607b4b4d9c117046
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4878eb201fa32fbeb34be755a22e329fe45d5885
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>개발/테스트 환경에서 SharePoint Online 사이트 보호
 
@@ -41,21 +39,21 @@ ms.lasthandoff: 12/15/2017
     
 2. **Admin** 타일을 클릭 합니다.
     
-3. On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.
+3. 왼쪽 탐색 영역에서 브라우저에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.
     
-4. On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.
+4. **서비스 구매** 페이지 **Enterprise 이동성 + 보안 e 5** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
-5. On the **Confirm your order** page, click **Try now**.
+5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
     
-6. On the **Order receipt** page, click **Continue**.
+6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
     
 다음으로, 엔터프라이즈 이동성 + 전역 관리자 계정에 대 한 보안 E5 라이선스 사용 하도록 설정 합니다.
   
 1. 왼쪽 탐색 영역에서 브라우저에서 **Office 365 관리 센터** 탭을 클릭 **사용자 > 활성 사용자**합니다.
     
-2. Click your global administrator account, and then click **Edit** for **Product licenses**.
+2. 전역 관리자 계정을 클릭 하 고 **제품 라이선스**에 대 한 **편집** 을 클릭 합니다.
     
-3. On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.
+3. **제품 라이선스** 창에서 **엔터프라이즈 이동성 + 보안 e 5** **전환**에 대 한 제품 라이선스 설정, **저장** 을 클릭 하 고 두번 **닫기** 를 클릭 합니다.
     
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a>2 단계: 만들기 및 Azure Active Directory (AD) 그룹 및 사용자를 구성 합니다.
 
@@ -212,7 +210,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
   - 개인
     
-  - Sensitive
+  - 중요 한
     
   - 기밀
     
@@ -222,9 +220,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 12. **Choose 레이블** 창에서 **추가** 클릭 하 고 모든 4 개의 레이블을 선택 합니다.
     
-13. Click **Done**.
+13. **완료**를 클릭 합니다.
     
-14. On the **Choose labels to publish** pane, click **Next**.
+14. **게시를 선택 레이블** 창에서 **다음**을 클릭 합니다.
     
 15. **Choose 위치** 창에서 **다음**을 클릭 합니다.
     
@@ -242,7 +240,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 1. 필요한 경우 로컬 컴퓨터에서 브라우저를 사용 하 고 전역 관리자 계정을 사용 하 여 Office 365 포털에 로그인 합니다. 도움말을 보려면 [Office 365에 로그인 할 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조 하십시오.
     
-2. In the list of tiles, click **SharePoint**.
+2. 타일의 목록에서 **SharePoint**를 클릭 합니다.
     
 3. 브라우저에서 새 **SharePoint** 탭에서 **+ 사이트 만들기를**클릭 합니다.
     
@@ -254,13 +252,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 7. **개인 설정** **공용-이 사이트에 액세스할 수는 조직의 모든 사용자**를 선택 하 고 ****을 클릭 합니다.
     
-8. On the **Who do you want to add?** pane, click **Finish**.
+8. 에 **가 수행 하려는 추가?** 창 **마침**을 클릭 합니다.
     
-Next, configure the documents folder of the Organization wide team site for the Internal Public label.
+다음으로 내부 공용 레이블에 대 한 조직 전체 팀 사이트의 문서 폴더를 구성 합니다.
   
-1. In the **Organization wide-Home** tab of your browser, click **Documents**.
+1. 브라우저의 **조직 전체의-홈** 탭에서 **문서**를 클릭 합니다.
     
-2. Click the settings icon, and then click **Library settings**.
+2. 설정 아이콘을 클릭 하 고 **라이브러리 설정**을 클릭 합니다.
     
 3. **사용 권한 및 관리**, 아래에서 **이 라이브러리에 항목 레이블을 적용을**클릭 합니다.
     
@@ -276,7 +274,7 @@ Next, configure the documents folder of the Organization wide team site for the 
   
 1. 필요한 경우 로컬 컴퓨터에서 브라우저를 사용 하 고 전역 관리자 계정을 사용 하 여 Office 365 포털에 로그인 합니다. 도움말을 보려면 [Office 365에 로그인 할 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조 하십시오.
     
-2. In the list of tiles, click **SharePoint**.
+2. 타일의 목록에서 **SharePoint**를 클릭 합니다.
     
 3. 브라우저에서 새 **SharePoint** 탭에서 **+ 사이트 만들기를**클릭 합니다.
     
@@ -288,7 +286,7 @@ Next, configure the documents folder of the Organization wide team site for the 
     
 7. **개인정보 보호 설정**선택 **개인-이 사이트에 액세스할 수 있는 구성원만**, **다음**을 클릭 하 고 있습니다.
     
-8. On the **Who do you want to add?** pane, click **Finish**.
+8. 에 **가 수행 하려는 추가?** 창 **마침**을 클릭 합니다.
     
 다음으로 개인 레이블에 대 한 프로젝트 1 팀 사이트의 문서 폴더를 구성 합니다.
   
@@ -308,9 +306,9 @@ Next, configure the documents folder of the Organization wide team site for the 
 
 대부분은 중요 하지 수준의 격리 된 SharePoint Online 팀 사이트 마케팅 캠페인 리소스에 대 한를 만들려면 다음을 수행 합니다.
   
-1. Using a browser on your local computer, sign in to the Office 365 portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. 전역 관리자 계정을 사용 하 여 Office 365 포털에 로그인 브라우저를 사용 하 여 로컬 컴퓨터에서 하십시오. 도움말을 보려면 [Office 365에 로그인 할 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조 하십시오.
     
-2. In the list of tiles, click **SharePoint**.
+2. 타일의 목록에서 **SharePoint**를 클릭 합니다.
     
 3. 브라우저에서 새 **SharePoint** 탭에서 **+ 사이트 만들기를**클릭 합니다.
     
@@ -318,103 +316,103 @@ Next, configure the documents folder of the Organization wide team site for the 
     
 5. **팀 사이트 이름** **마케팅 캠페인**을 입력 합니다.
     
-6. In **Team site description**, type **SharePoint site for marketing campaign resources (sensitive)**.
+6. **팀 사이트 설명** **마케팅 캠페인 리소스 (중요)에 대 한 SharePoint 사이트**를 입력 합니다.
     
-7.  In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.
+7.  **개인정보 보호 설정**선택 **개인-이 사이트에 액세스할 수 있는 구성원만**, **다음**을 클릭 하 고 있습니다.
     
-8. On the **Who do you want to add?** pane, click **Finish**.
+8. 에 **가 수행 하려는 추가?** 창 **마침**을 클릭 합니다.
     
-9. On the new **Marketing campaigns** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.
+9. 도구 모음에서 브라우저에서 새 **마케팅 캠페인** 탭에서 설정 아이콘을 클릭 한 다음 **사이트 사용 권한**을 클릭 합니다.
     
-10. In the **Site permissions** pane, click **Advanced permissions settings**.
+10. **사이트 사용 권한** 창에서 **고급 사용 권한 설정**을 클릭 합니다.
     
-11. In the new **Permissions** tab in your browser, click **Access Request Settings**.
+11. 브라우저에서 새 **사용 권한** 탭에서 **액세스 요청 설정**을 클릭 합니다.
     
-12. In the **Access Request Settings** dialog box, clear the **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** check boxes, type **ITAdmin1@**\<your organization name>**.onmicrosoft.com** in **Send all requests for access**, and then click **OK**.
+12. **액세스 요청 설정** 대화 상자에서 확인란의 선택을 취소 **사이트 및 개별 파일 및 폴더 공유 허용 구성원** 및 **사이트 구성원 그룹에 다른 사용자를 초대 하도록 허용 구성원** 을 **@ ITAdmin1**입력\<프로그램 조직 이름 >**. onmicrosoft.com** **액세스에 대 한 모든 요청을 보낼**에서 한 다음 **확인**을 클릭 합니다.
     
-13. Click **Marketing campaigns Members** in the list.
+13. **마케팅 캠페인 구성원** 목록에서 클릭 합니다.
     
-14. On the **People and Groups** page, click **New**.
+14. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭 합니다.
     
-15. In the **Share** dialog box, type **Marketing staff**, select it, and then click **Share**.
+15. **공유** 대화 상자에서 입력 **마케팅 직원**을 선택한 다음 **공유**를 클릭 합니다.
     
-16. Repeat steps 14 and 15 for the **Researcher1** user account.
+16. **Researcher1** 사용자 계정에 대 한 14 및 15 단계를 반복 합니다.
     
 17. 브라우저에서 뒤로 단추를 클릭합니다.
     
-18. Click **Marketing campaigns Owners** in the list.
+18. **마케팅 캠페인 소유자** 목록에서 클릭 합니다.
     
 19. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭 합니다.
     
-20. In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.
+20. **공유** 대화 상자에서 입력 **IT 담당자**를 선택한 다음 **공유**를 클릭 합니다.
     
 21. 브라우저에서 뒤로 단추를 클릭합니다.
     
-22. Close the **People and Groups** tab in your browser, click the **Marketing campaigns-Home** tab in your browser, and then close the **Site permissions** pane.
+22. 브라우저에서 **사용자 및 그룹** 탭을 닫은 브라우저에서 **마케팅 캠페인 홈** 탭을 클릭 한 다음 **사이트 사용 권한** 창을 닫습니다.
     
 사용 권한 구성 결과는 다음과 같습니다.
   
 - **마케팅 캠페인 Members** SharePoint 그룹에는 **마케팅 캠페인** 그룹 (포함 하는 전역 관리자 사용자 계정), (Marketing1 및 Marketing2 사용자가 들어 있는 **마케팅 직원** 그룹 포함 계정) 및 **Researcher1** 사용자 계정입니다.
     
-- The **Marketing campaigns-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).
+- **마케팅 캠페인 Owners** SharePoint 그룹의 **IT 담당자가** 그룹 (포함 하는 ITAdmin1 및 ITAdmin2 사용자 계정을)를 포함 합니다.
     
-- The **Marketing campaigns-Visitors** SharePoint group contains no groups or user accounts.
+- **마케팅 캠페인 방문자** SharePoint 그룹에는 없는 그룹이 나 사용자 계정을 포함합니다.
     
-- Members cannot modify site-level permissions (this can only be done by members of the **Marketing campaigns-Owners** group).
+- 구성원 (이 수행할 수 있습니다 **마케팅 캠페인 소유자** 그룹의 구성원으로) 사이트 수준 사용 권한을 수정할 수 없습니다.
     
-- Other user accounts cannot access the site or its resources, but can request access to the site, which will send an email to the ITAdmin1 user account mailbox.
+- 다른 사용자의 계정을 사이트 또는 해당 리소스에 액세스할 수 없습니다 하지만 ITAdmin1 사용자 계정 사서함을 전자 메일을 보내 하는 사이트에 대 한 액세스를 요청할 수 있습니다.
     
-Next, configure the documents folder of the Marketing campaigns team site for the Sensitive label.
+다음으로 중요 한 레이블에 대 한 마케팅 캠페인 팀 사이트의 문서 폴더를 구성 합니다.
   
-1. In the **Marketing campaigns-Home** tab of your browser, click **Documents**.
+1. 브라우저의 **마케팅 캠페인 홈** 탭에서 **문서**를 클릭 합니다.
     
-2. Click the settings icon, and then click **Library settings**.
+2. 설정 아이콘을 클릭 하 고 **라이브러리 설정**을 클릭 합니다.
     
-3. Under **Permissions and Management**, click **Apply label to items in this library**.
+3. **사용 권한 및 관리**, 아래에서 **이 라이브러리에 항목 레이블을 적용을**클릭 합니다.
     
-4. In **Settings-Apply Label**, select **Sensitive**, and then click **Save**.
+4. **레이블 설정 적용** **중요 한**을 선택 하 고 **저장**을 클릭 합니다.
     
-Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label, which includes the Marketing campaigns site, outside the organization.
+다음으로 조직 외부의 마케팅 캠페인 사이트를 포함 하는 중요 한 레이블로 SharePoint Online 팀 사이트에 문서를 공유 하는 경우 사용자에 게 알리는 하는 데이터 손실 방지 (DLP) 정책을 구성 합니다.
   
-1. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+1. 브라우저에서 **Microsoft Office 홈** 탭에서 클릭 된 **보안 &amp; 준수** 바둑판식으로 배열 합니다.
     
-2. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+2. 새에서 **보안 &amp; 준수** 브라우저에서 탭을 클릭 **데이터 손실 방지 > 정책**합니다.
     
-3. In the **Data loss prevention** pane, click **+ Create a policy**.
+3. **데이터 손실 방지** 창에서 **+ 정책 만들기를**클릭 합니다.
     
-4. In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.
+4. **서식 파일을 시작 하거나 사용자 지정 정책을 만들** 창 **사용자 지정**을 클릭 하 고 **다음**을 클릭 합니다.
     
-5. In the **Name your policy** pane, type **Sensitive label SharePoint Online team sites** in **Name**, and then click **Next**.
+5. **이름에 정책** 창에서 **이름** **중요 한 레이블 SharePoint Online 팀 사이트** 를 입력 하 고 ****을 클릭 합니다.
     
-6. In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.
+6. **선택 위치** 창에서 **특정 위치를 선택 합니다.**를 클릭 하 고 ****을 클릭 합니다.
     
-7. In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.
+7. 위치 목록에서 **Exchange 전자 메일** 및 **OneDrive 계정** 위치를 사용 하지 않도록 설정 하 고 ****을 클릭 합니다.
     
-8. In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.
+8. **중요 한 정보를 보호 하려면 유형의 사용자 지정** 창에서 **편집**을 클릭 합니다.
     
-9. In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.
+9. **보호 하기 위해 콘텐츠 형식 선택** 창에서 드롭다운 목록 상자에서 **추가** 클릭 하 고 **레이블**을 클릭 합니다.
     
-10. In the **Labels** pane, click **+ Add**, select the **Sensitive** label, click **Add**, and then click **Done**.
+10. **레이블** 창에서 **+ 기호 추가**클릭, **중요 한** 레이블을 선택, **추가**클릭 하 고 **완료**를 클릭 합니다.
     
-11. In the **Choose the types of content to protect** pane, click **Save**.
+11. **보호 하기 위해 콘텐츠 형식 선택** 창에서 **저장**을 클릭 합니다.
     
-12. In the **Customize the types of sensitive info you want to protect** pane, click **Next**.
+12. **중요 한 정보를 보호 하려면 유형의 사용자 지정** 창에서 **다음**을 클릭 합니다.
     
-13. In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.
+13. **는 중요 한 정보를 검색 하는 경우 작업을 수행 하 시겠습니까?** 창 **사용자 지정 팁 및 전자 메일을**클릭 합니다.
     
-14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
+14. **사용자 지정 정책 팁 및 전자 메일 알림** 창에서 **사용자 지정 정책 팁 텍스트를**클릭 합니다.
     
-15. In the text box, type or paste in the following:
+15. 텍스트 상자에 입력 하거나 다음에 붙여넣습니다.
     
-  - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
+  - 조직 외부의 사용자와 공유 하려면 파일을 다운로드 하 고 파일을 엽니다. 파일을 다음 문서 보호를 클릭 하 고 암호를 암호화 하 고 강력한 암호를 지정 합니다. 별도 전자 메일 또는 다른 수단 통신의 암호를 보냅니다.
     
 16. **확인**을 클릭합니다.
     
-17. In the **What do you want to do if we detect sensitive info?** pane, clear the **Block people from sharing, and restrict access to shared content** check box, and then click **Next**.
+17. **는 중요 한 정보를 검색 하는 경우 작업을 수행 하 시겠습니까?** 창에서 **공유, 다른 사람을 차단 하 고 공유 내용에 대 한 액세스를 제한** 확인란의 선택을 취소 하 고 **다음**을 클릭 합니다.
     
-18. In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.
+18. **먼저 수행 정책 또는 테스트 작업을 설정 하 시겠습니까?** 창 **예, 귀하가 켜기**를 클릭 한 후에 **다음**을 클릭 합니다.
     
-19. In the **Review your settings** pane, click **Create**, and then click **Close**.
+19. **설정 검토** 창에서 **만들기**를 클릭 한 다음 **닫기**를 클릭 합니다.
     
 구성 결과는 다음과 같습니다.
   
@@ -466,25 +464,25 @@ Next, configure a data loss prevention (DLP) policy that notifies users when the
     
 사용 권한 구성 결과는 다음과 같습니다.
   
-- The **Company strategy-Members** SharePoint group contains only the **C-Suite** group (which contains only the CEO, CFO, and CIO user accounts) and the **Company strategy** group (which contains only the global administrator user account).
+- **회사 전략 구성원** SharePoint 그룹의 **C 제품군** 그룹 (포함 하는 CEO, CFO, 및 CIO 사용자 계정을) 및 하는 **회사 전략** 그룹 (전역 관리자 사용자 계정이 포함 되어 있음)를 포함 합니다.
     
-- The **Company strategy-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).
+- **회사 전략 Owners** SharePoint 그룹의 **IT 담당자가** 그룹 (포함 하는 ITAdmin1 및 ITAdmin2 사용자 계정을)를 포함 합니다.
     
-- The **Company strategy-Visitors** SharePoint group contains no groups or user accounts.
+- **회사 전략 방문자** SharePoint 그룹에는 없는 그룹이 나 사용자 계정을 포함합니다.
     
-- Members cannot modify site-level permissions (this can only be done by members of the **Company strategy-Owners** group).
+- 구성원 (이 수만 수행할 수 있는 **회사 전략 소유자** 그룹의 구성원으로) 사이트 수준 사용 권한을 수정할 수 없습니다.
     
-- Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Company strategy-Owners** group.
+- 다른 사용자의 계정을 사이트 또는 해당 리소스에 액세스 하거나 사이트에 대 한 액세스를 요청할 수 없습니다. 사이트에 추가 사용 권한이 전역 관리자 또는 **회사 전략 소유자** 그룹의 구성원에 의해 수행 되어야 합니다.
     
-Next, configure the documents folder of the Company strategy team site for the Highly Confidential label.
+다음으로 기밀로 레이블에 대 한 회사 전략 팀 사이트의 문서 폴더를 구성 합니다.
   
-1. In the **Company strategy-Home** tab of your browser, click **Documents**.
+1. 브라우저의 **회사 전략-홈** 탭에서 **문서**를 클릭 합니다.
     
-2. Click the settings icon, and then click **Library settings**.
+2. 설정 아이콘을 클릭 하 고 **라이브러리 설정**을 클릭 합니다.
     
 3. **사용 권한 및 관리**, 아래에서 **이 라이브러리에 항목 레이블을 적용을**클릭 합니다.
     
-4. In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**.
+4. **레이블 설정 적용** **매우 기밀**을 선택 하 고 **저장**을 클릭 합니다.
     
 다음으로, DLP 정책 구성 요소 (영문)가 사용 하는 조직 외부의 회사 전략 사이트를 포함 하는 매우 기밀 레이블로 SharePoint Online 팀 사이트에 문서를 공유 하는 경우.
   
@@ -590,7 +588,7 @@ Azure 정보 보호 하 고이 새 레이블을 사용 하 여 문서를 보호 
 
 보안 SharePoint Online 사이트의 프로덕션 배포에 대 한 준비가 되 면 [보안 SharePoint Online 사이트 및 파일에](secure-sharepoint-online-sites-and-files.md) 대 한 자세한 정보와 단계별 배포 문서 링크를 참조 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [SharePoint Online 사이트 및 파일의 보안](secure-sharepoint-online-sites-and-files.md)
   

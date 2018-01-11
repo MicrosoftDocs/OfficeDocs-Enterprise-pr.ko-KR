@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "요약:는 Office 365 PowerShell을 사용 하 여 Skype 정책 사용 하 여 비즈니스 온라인 사용자 계정 속성을 관리할 수 있습니다."
-ms.openlocfilehash: 9b3877d2680b2b36d155cb5dd2a69fa21c972fe3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
 
@@ -120,13 +120,13 @@ ApplicableTo 매개 변수는 반환되는 데이터를 지정된 사용자(여�
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>참고 항목
 
 #### 
 
-[Office 365 powershell 온라인 비즈니스에 대 한 Skype 관리](manage-skype-for-business-online-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

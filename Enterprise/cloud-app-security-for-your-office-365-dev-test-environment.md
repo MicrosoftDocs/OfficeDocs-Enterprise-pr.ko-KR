@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "요약: 구성 및 Office 365 개발/테스트 환경에서 Office 365 클라우드 응용 프로그램 보안을 시연 합니다."
-ms.openlocfilehash: 1fab5ebfd6e0670ba59fe34b2cca8a7282e75723
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8d398dcbf1ca5dea5ee790a64829eef55765025a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안
 
@@ -157,9 +154,9 @@ ms.lasthandoff: 12/15/2017
     
 이제 새 정책 만들기 및 추가 Office 365 클라우드 응용 프로그램 보안을 사용해이 환경에 사용할 수 있습니다. 추가 구성 문서 링크를 [Office 365 클라우드 응용 프로그램 보안에 대 한 준비](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) 를 참조 하십시오.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   

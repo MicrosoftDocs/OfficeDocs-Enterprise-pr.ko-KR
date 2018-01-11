@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "요약: Office 365 개발/테스트 환경에서 조직의 나머지 부분에서 격리 된 SharePoint Online 팀 사이트를 구성 합니다."
-ms.openlocfilehash: a5e36060ed54213f555ab75a1d4ace7300b7667c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e54edb0111fd3285030a3074b5ec66a0c9224d29
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>격리 된 SharePoint Online 팀 사이트 개발/테스트 환경
 
@@ -285,11 +282,11 @@ ProjectX에 대 한 SharePoint Online 팀 사이트를 만들려면 다음을 �
 
 프로덕션 환경에서 격리 된 SharePoint Online 팀 사이트를 배포할 준비가 되 면 [디자인 한 격리 된 SharePoint Online 팀 사이트에](design-an-isolated-sharepoint-online-team-site.md)대 한 단계별 디자인 고려 사항을 참조 하십시오.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [격리 된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
   
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   

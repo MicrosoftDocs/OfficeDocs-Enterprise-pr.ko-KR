@@ -14,14 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "Office 365 PowerShell을 사용 하 여 사용자에 게 이전에 할당 된 Office 365 라이선스를 제거 하는 방법에 설명 합니다."
-ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d419aab9b3287364567e03accdfb2e687eacb0de
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센스를 제거 합니다.
 
@@ -29,20 +28,20 @@ ms.lasthandoff: 12/15/2017
   
 ## <a name="before-you-begin"></a>시작하기 전에
 
-- 이 항목의 절차에서는 Office 365 PowerShell에 연결 해야 합니다. 자세한 내용은 [Office 365 PowerShell 연결](connect-to-office-365-powershell.md)을 참조 하십시오.
+- 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
     
 - 조직에서 라이선스 계획 ( **AccountSkuID** ) 정보를 보려면 다음 항목을 참조 합니다.
     
-  - [라이선스 및 Office 365 PowerShell을 사용 하 여 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)
+  - [라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.](view-licenses-and-services-with-office-365-powershell.md)
     
-  - [Office 365 powershell 계정 라이선스 및 서비스 정보 보기](view-account-license-and-service-details-with-office-365-powershell.md)
+  - [Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- 사용 하지 않고 **Get-msoluser** cmdlet을 사용 하는 경우는 _-모든_ 매개 변수를 처음 500 개 계정만 반환 됩니다.
+- _-All_ 매개 변수를 사용하지 않고 **Get-MsolUser** cmdlet을 사용하는 경우 처음 500개의 계정만 반환됩니다.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>간략 한 (설명 없이 지침)
 <a name="ShortVersion"> </a>
 
-이 섹션에서는 선전과 또는 불필요 한 설명 없이 절차를 제공 합니다. 질문이 더 많은 정보를 원하는 경우에 항목의 나머지 부분을 읽을 수 있습니다.
+이 여기서도 바라지 나 불필요 한 설명을 하지 않고 절차를 제공합니다. 질문이 있거나 자세한 내용을 확인 하려면 해당 항목의 나머지 부분을 읽을 수 있습니다.
   
 기존 사용자 계정에서 라이센스를 제거 하려면 다음 구문을 사용 합니다.
   
@@ -144,27 +143,27 @@ BelindaN@litwareinc.com      Newman, Belinda     False
   
 ## <a name="see-also"></a>참고 항목
 
-Office 365 PowerShell을 사용하여 사용자를 관리하는 방법에 대한 다음 추가 항목을 참조하세요.
+Office 365 PowerShell을 사용 하여 사용자를 관리에 대하여 다음과 같은 추가 항목을 참조 하십시오.
   
-- [Office 365 PowerShell을 사용한 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
     
-- [삭제 하 고 사용자 계정을 Office 365 PowerShell로 복원](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다.](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [Office 365 powershell 블록 사용자 계정](block-user-accounts-with-office-365-powershell.md)
+- [블록 사용자 계정 Office 365 PowerShell을 사용 하 여](block-user-accounts-with-office-365-powershell.md)
     
-- [Office 365 PowerShell을 사용한 사용자 계정에 게 라이선스 할당](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
 이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.
   
 - [Get-content](https://go.microsoft.com/fwlink/p/?LinkId=289917)
     
-- [Get-msoluser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [Set-msoluserlicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [ForEach 개체](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
-- [Where-object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
+- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
     
 ## <a name="new-to-office-365"></a>Office 365의 새로운 기능
 

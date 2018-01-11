@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "요약: Contoso 구현 하는 방법 SQL Server 데이터베이스의 온-프레미스 데이터 저장소 요구 사항 및 비용을 실행 하는 매일 감소를 확대 합니다."
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>기록 트랜잭션 데이터를 클라우드로 이동
 
@@ -69,11 +67,11 @@ SQL Server 2016 파리 본사에서 실행 하는 하나의 서버에 대 한 �
     
 - 일별 실행 비용을 크게 절감 하였습니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Contoso Corporation에 대 한 엔터프라이즈 시나리오](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

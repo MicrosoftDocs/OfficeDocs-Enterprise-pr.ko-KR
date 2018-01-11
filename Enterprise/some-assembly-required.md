@@ -1,5 +1,5 @@
 ---
-title: Some assembly required
+title: "필요한 일부 어셈블리"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,203 +8,199 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: 'Summary: Get the details on the set of cloud storage options that you can use to create your custom storage solution.'
-ms.openlocfilehash: bf6f7586b3a890cd25aba314e4892d5e2ac5bb34
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+description: "요약: 사용자 지정 저장소 솔루션을 만드는 데 사용할 수 있는 클라우드 저장소 옵션 집합에 세부 정보를 가져옵니다."
+ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="some-assembly-required"></a>Some assembly required
+# <a name="some-assembly-required"></a>필요한 일부 어셈블리
 
- **Summary:** Get the details on the set of cloud storage options that you can use to create your custom storage solution.
+ **요약:** 사용자 지정 저장소 솔루션을 만드는 데 사용할 수 있는 저장소 옵션을 클라우드 집합에 정보를 가져옵니다.
   
-"Some assembly required " storage solutions:
+"필요한 일부 어셈블리" 저장소 솔루션:
   
-- Use existing services as a starting point for your storage solution.
+- 저장소 솔루션에 대 한 시작 지점으로 기존 서비스를 사용 합니다.
     
-- Require some configuration or coding.
+- 코딩 또는 일부 구성이 필요 합니다.
     
-- Can be customized to fit your needs.
+- 사용자의 요구에 맞게 사용자 지정할 수 있습니다.
     
-The following sections describe the details of each "Some assembly required" storage solution.
+다음 섹션에서는 각 "필요한 일부 어셈블리" 저장소 솔루션의 세부 정보에 설명 합니다.
   
-## <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
+## <a name="azure-content-delivery-network"></a>Azure 콘텐츠 배달 네트워크
 
 ### <a name="features"></a>기능
 
-- Advanced and real time analytics
+- 고급 및 실제 시간 분석
     
-- Robust security against DDoS
+- DDoS에 대해 강력한 보안
     
-- Gets content automatically from an Azure Website or Azure Cloud Service once you set up the integration
+- 콘텐츠를 가져옵니다 자동으로 Azure 웹사이트 또는 Azure 클라우드 서비스에서 통합 설정
     
-- New partnership with Akamai
+- Akamai와 새 파트너 관계
     
-- Can handle sudden traffic spikes and heavy loads
+- 갑작스런 트래픽 스파이크 및 과도 한 로드를 처리할 수 있습니다.
     
-### <a name="common-uses"></a>Common uses
+### <a name="common-uses"></a>일반적으로 사용
 
-- Distribute audio, video, applications, images, and other files faster and more reliably to customers by using the servers that are closest to them
+- 배포 오디오, 비디오, 응용 프로그램, 이미지 및 기타 파일 보다 빠르고 안정적으로 고객에 게 자신에 게 가장 가까운 서버를 사용 하 여
     
-### <a name="key-storage-scenarios"></a>Key storage scenarios
+### <a name="key-storage-scenarios"></a>키 저장소 시나리오
 
-- Manage data
+- 데이터 관리
     
-- Manage videos
+- 비디오를 관리 합니다.
     
 ### <a name="resources"></a>리소스
 
-For additional information, click [here](https://azure.microsoft.com/services/cdn/).
+자세한 내용은 [여기](https://azure.microsoft.com/services/cdn/)합니다.
   
-For cost information, click [here](https://azure.microsoft.com/pricing/details/cdn/).
+비용 정보에 대 한 클릭 [여기](https://azure.microsoft.com/pricing/details/cdn/)합니다.
   
 ## <a name="hdinsight"></a>HdInsight
 
 ### <a name="features"></a>기능
 
-- Apache Hadoop distribution powered by the cloud A Data Lake service
+- Apache Hadoop 메일 구동 되는 클라우드 A 데이터 호수 서비스
     
-- Scale to petabytes on demand
+- 필요에 따라 페타바이트를 확장
     
-- Process unstructured and semi-structured data Develop in Java, .NET, and more
+- 구조화 되지 않은 및 반구조적 데이터 Java,.NET, 등의 개발 프로세스
     
-- Skip buying and maintaining hardware
+- 구입 및 하드웨어를 유지 관리를 건너뛰려면
     
-- Connect on-premises Hadoop clusters with the cloud
+- 클라우드와 온-프레미스 Hadoop 클러스터에 연결
     
-- Flexibility to deploy arbitrary Hadoop projects through custom scripts (e.g. R, Giraph, Solr)
+- 사용자 지정 스크립트 (예: R, Giraph, Solr)를 통해 임의의 Hadoop 프로젝트를 배포 하는 유연성
     
-### <a name="common-uses"></a>Common uses
+### <a name="common-uses"></a>일반적으로 사용
 
-- Data analytics workloads
+- 데이터 분석 작업
     
-- In-memory data processing framework for big data (Spark)
+- 큰 데이터 (스파크)에 대 한 메모리 내 데이터 처리 프레임 워크
     
-- Real-time stream processing (Storm)
+- 실시간 스트림 처리 (폭풍)
     
-- Large transactional processing (OLTP) of non-relational data (HBase)
+- 비 관계형 데이터 (HBase)의 큰 트랜잭션 처리 (OLTP)
     
-### <a name="key-storage-scenarios"></a>Key storage scenarios
+### <a name="key-storage-scenarios"></a>키 저장소 시나리오
 
-- Manage data
+- 데이터 관리
     
 ### <a name="resources"></a>리소스
 
-For additional information, click [here](https://azure.microsoft.com/services/hdinsight/).
+자세한 내용은 [여기](https://azure.microsoft.com/services/hdinsight/)합니다.
   
-For cost information, click [here](https://azure.microsoft.com/pricing/details/hdinsight/).
+비용 정보에 대 한 클릭 [여기](https://azure.microsoft.com/pricing/details/hdinsight/)합니다.
   
 ## <a name="azure-sql-database"></a>Azure SQL 데이터베이스
 
 ### <a name="features"></a>기능
 
-- Optimized to reduce management and costs
+- 관리 및 비용을 줄일 수 있도록 최적화
     
-- Automatic high availability, disaster recovery, and upgrade
+- 자동 고가용성, 재해 복구 및 업그레이드
     
-- Recommended for organizations managing hundreds or thousands of databases of up to 1 TB in size
+- 수백 또는 수천 개의 최대 1TB 크기에서의 데이터베이스를 관리 하는 조직에 대 한 권장
     
-- Sharding techniques can split data across databases for increased storage
+- Sharding 기술을 향상 된 저장소에 대 한 데이터베이스 간에 데이터를 분할할 수 있습니다.
     
-- Stretch database with SQL Server 2016
+- SQL Server 2016를 사용 하 여 데이터베이스를 늘이기
     
-### <a name="common-uses"></a>Common uses
+### <a name="common-uses"></a>일반적으로 사용
 
-- New cloud-designed applications with relational data
+- 관계형 데이터와 새로운 클라우드 설계 된 응용 프로그램
     
-- Data processing over schematic, highly structured data sets with relationships
+- 관계를 가진 계통도, 고도로 구조화 된 데이터 집합을 통해 데이터 처리
     
-- Spatial data or rich data types
+- 공간 데이터 또는 다양 한 데이터 형식
     
-### <a name="key-storage-scenarios"></a>Key storage scenarios
+### <a name="key-storage-scenarios"></a>키 저장소 시나리오
 
-- Manage data
+- 데이터 관리
     
-### <a name="elastic-database"></a>Elastic database
+### <a name="elastic-database"></a>탄력적 데이터베이스
 
-Use the virtually unlimited resources of Azure SQL Database when:
+다음과 같은 경우 SQL Azure의 거의 모든 무제한 리소스 데이터베이스을 사용 합니다.
   
-- The total amount of data is too large to fit within the constraints of a single database.
+- 최대 데이터 양과 단일 데이터베이스의 제약 조건 내에 맞게 너무 큽니다.
     
-- The transaction throughput of the overall workload exceeds the capabilities of a single database.
+- 전체 작업 부하의 트랜잭션 처리량 단일 데이터베이스의 기능을 초과합니다.
     
-- Tenants require physical isolation from each other, so separate databases are needed for each tenant.
+- 테 넌 트 각 테 넌 트에 필요한 별개의 데이터베이스에서 기타를 물리적으로 격리 해야하는.
     
-- Different sections of a database need to reside in different geographies for compliance, performance, or geopolitical reasons.
+- 규정 준수, 성능 또는 지리적 이유 때문에 대 한 서로 다른 지역에 있는 데이터베이스의 다른 섹션 해야 합니다.
     
-With vertical scaling, you can change Azure database performance level/edition or by using elastic database pools.
+수직 확장 된 Azure 데이터베이스 성능 수준/edition을 변경할 수 또는 탄력적 데이터베이스 풀을 사용 하 여 합니다.
   
 ![Azure SQL Database에서 제공한 세로 배율입니다.](images/Storage_Poster/CloudStor-VertScale.png)
   
-With horizontal scaling, you can add new databases as needed.
+수평 확장이와 필요에 따라 새 데이터베이스를 추가할 수 있습니다.
   
 ![Azure SQL Database에서 제공한 가로 배율입니다.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-Click [here](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) for more information.
+클릭 [여기](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) 대 한 자세한 내용은 합니다.
   
 ### <a name="stretch-database-with-sql-server-2016"></a>SQL Server 2016에 적용된 스트레치 데이터베이스
 
-Stretch database is a feature of SQL Server 2016 that allows you to transparently and securely move cold data, such as closed business data in a large table that contains customer order information, to a SQL Stretch database in Azure. When stretched, the contents of a SQL Server instance, a database, or even a single table is the combination of local data in SQL Server 2016 server and remote data in Azure. Data that becomes eligible for stretch is automatically moved to Azure by SQL Server 2016.
+늘이기 데이터베이스는 투명 하 게 하 고 안전 하 게 Azure에서 SQL 전체 확대/축소 데이터베이스에 고객 주문 정보를 포함 하는 대규모 테이블에서 닫힌된 비즈니스 데이터와 같은 정지 데이터를 이동할 수 있도록 하는 SQL Server 2016의 기능입니다. SQL Server 인스턴스, 데이터베이스 또는 단일 테이블도의 내용을 맞춰지거나 때 SQL Server 2016 서버에서 로컬 데이터와 Azure에서 원격 데이터의 조합 합니다. 전체 확대/축소에 대 한 대상이 되는 데이터는 SQL Server 2016 하 여 Azure에 자동으로 이동 됩니다.
   
 ![SQL Server 2016을 사용하는 Stretch Database입니다.](images/Storage_Poster/CloudStor-Stretch.png)
   
-User queries that include the historical data are transparently forwarded to Azure SQL Stretch database. The queries do not need to be re-written, even though the table is stretched.
+Azure SQL 전체 확대/축소 데이터베이스에 기록 데이터를 포함 하는 사용자 쿼리를 전달 투명 하 게 됩니다. 쿼리는 테이블을 확대 하는 경우에를 다시 쓰도록 필요는 없습니다.
   
-Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.
+늘이기 데이터베이스 장기 저장소 및 기록 데이터를 투명 하 게 액세스를 위한 비용 효율적인 옵션을 제공합니다. 또한 성능과 테이블 매우 큰 될 때 발생 하는 가용성 문제를 해결 합니다.
   
-Click [here](https://msdn.microsoft.com/library/dn935011.aspx) for more information.
+클릭 [여기](https://msdn.microsoft.com/library/dn935011.aspx) 대 한 자세한 내용은 합니다.
   
 ### <a name="resources"></a>리소스
 
-For additional information, click [here](http://azure.microsoft.com/services/sql-database/).
+자세한 내용은 [여기](http://azure.microsoft.com/services/sql-database/)합니다.
   
-For cost information, click [here](http://azure.microsoft.com/pricing/details/sql-database/).
+비용 정보에 대 한 클릭 [여기](http://azure.microsoft.com/pricing/details/sql-database/)합니다.
   
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 
 ### <a name="features"></a>기능
 
-- Guaranteed low latency, 99.99% availability SLA with limitless, elastic scale of storage and throughput
+- 낮은 대기 시간, 저장소 및 처리량의 한계가 없습니다, 확대/축소 배율와 99.99% 가용성 SLA를 보장합니다.
     
-- All data is globally replicated across any number of regions with transparent failover and four well-defined consistency levels
+- 모든 데이터는 임의 개수의 투명 하 게 장애 조치를 사용 하는 영역 및 4 개의 잘 정의 된 일관성 수준 간에 복제 전역적으로
     
-- Automatically indexes all your data without requiring schemas or secondary indices
+- 스키마 또는 보조 인덱스가 필요 없이 모든 데이터를 자동으로 인덱싱됩니다.
     
-- Rich SQL and JavaScript queries and multi-item transactions
+- 서식 있는 SQL과 JavaScript 쿼리 및 다중 항목 트랜잭션
     
-### <a name="common-uses"></a>Common uses
+### <a name="common-uses"></a>일반적으로 사용
 
-- IoT, Mobile and Social
+- IoT, 모바일 및 공유
     
 - 게임
     
 - 정품
     
-- Content management
+- 콘텐츠 관리
     
-### <a name="key-storage-scenarios"></a>Key storage scenarios
+### <a name="key-storage-scenarios"></a>키 저장소 시나리오
 
-- Manage data
+- 데이터 관리
     
-### <a name="cosmos-db-vs-azure-tables-vs-azure-sql-database"></a>Cosmos DB vs. Azure Tables vs. Azure SQL Database
+### <a name="cosmos-db-vs-azure-tables-vs-azure-sql-database"></a>Cosmos DB 비교 Azure 테이블 및 비교 Azure SQL 데이터베이스
 
-Common attributes of Cosmos DB, Azure Table Storage, and Azure SQL Database:
+Cosmos DB, Azure 테이블 저장소 및 Azure SQL 데이터베이스의 일반적인 특성:
   
-- 99.99 availability SLA
+- 99.99 가용성 SLA
     
-- Fully managed database services
+- 완벽 하 게 관리 되는 데이터베이스 서비스
     
-- ISO 27001, HIPAA and EU Model Clauses Compliant
+- ISO 27001, HIPAA 및 EU 모델 조항 규격
     
-The following table shows the uncommon attributes of Azure Cosmos DB, Azure Table Storage, and Azure SQL Database.
+다음 표에서 Azure Cosmos DB, Azure 테이블 저장소 및 Azure SQL 데이터베이스의 가끔 수행 특성을 보여줍니다.
   
 ![Cosmos DB의 일반적이지 않은 특성 대 Azure Tables 대 Azure SQL Database](images/Storage_Poster/CloudStor-Table.png)
   
@@ -212,51 +208,51 @@ The following table shows the uncommon attributes of Azure Cosmos DB, Azure Tabl
 
 자세한 내용은 [여기](http://azure.microsoft.com/services/documentdb/)합니다.
   
-For cost information, click [here](http://azure.microsoft.com/pricing/details/documentdb/).
+비용 정보에 대 한 클릭 [여기](http://azure.microsoft.com/pricing/details/documentdb/)합니다.
   
-## <a name="azure-media-services"></a>Azure Media Services
+## <a name="azure-media-services"></a>Azure 미디어 서비스
 
 ### <a name="features"></a>기능
 
 - 라이브 및 배율로 VOD (주문형) 배달에 비디오
     
-- Highly available encoding and streaming
+- 항상 사용 가능 인코딩 및 스트리밍
     
-- Supports Flash, iOS, Android, HTML5, and Xbox
+- Flash, iOS, Android, HTML5, 및 Xbox 지원
     
-- Studio-certified DRM support
+- DRM studio 인증 지원
     
-- Rich content monetization
+- 서식 있는 콘텐츠 바꾸고 통화 옵션
     
-- Broad ecosystem of pre-integrated partners
+- 사전 통합 된 파트너의 광범위 한 에코 시스템
     
-### <a name="common-uses"></a>Common uses
+### <a name="common-uses"></a>일반적으로 사용
 
-- Encode, store, and stream audio and video at scale
+- 인코딩, 저장 하 고, 오디오 및 비디오 규모로 스트림
     
-- Real time streaming and VOD
+- 실시간으로 스트리밍 및 VOD
     
-- Streamlined video content management
+- 간소화 된 비디오 콘텐츠 관리
     
-### <a name="key-storage-scenarios"></a>Key storage scenarios
+### <a name="key-storage-scenarios"></a>키 저장소 시나리오
 
-- Manage videos
+- 비디오를 관리 합니다.
     
 ### <a name="resources"></a>리소스
 
-For additional information, click [here](https://azure.microsoft.com/services/media-services/).
+자세한 내용은 [여기](https://azure.microsoft.com/services/media-services/)합니다.
   
-For cost information, click [here](http://azure.microsoft.com/pricing/details/media-services/).
+비용 정보에 대 한 클릭 [여기](http://azure.microsoft.com/pricing/details/media-services/)합니다.
   
 ## <a name="azure-redis-cache"></a>Azure 액세스 캐시
 
 ### <a name="features"></a>기능
 
-- Secure, dedicated Redis server with high-availability with data replication and failover managed by Microsoft
+- 안전 하 고, 전용 서버 고가용성 데이터 복제 및 Microsoft에서 관리 하는 장애 조치에 액세스
     
-- Recommended for any app needing high-throughput
+- 처리량이 높은 필요한 모든 응용 프로그램에 대 한 권장
     
-- Available in sizes up to 530 GB and beyond (with Premium and automatic sharding)
+- 지원 되는 최대 530 g B의 크기를 조정 하 고 기능 이외에 (프리미엄 %와 자동 sharding)
     
 - 지 속성 액세스 지속 되는 메모리에 캐시 된 데이터를 Azure 저장소
     
@@ -268,7 +264,7 @@ For cost information, click [here](http://azure.microsoft.com/pricing/details/me
 
 - Azure Cosmos DB Azure SQL 데이터베이스 등의 모든 저장소 서비스의 데이터에 대 한 역방향 조회
     
-- Synchronized content from other data stores
+- 다른 데이터 저장소에서 동기화 된 콘텐츠
     
 ### <a name="key-storage-scenarios"></a>키 저장소 시나리오
 
@@ -406,9 +402,9 @@ For cost information, click [here](http://azure.microsoft.com/pricing/details/me
 
 클라우드 저장소를 [처음부터 작성](build-from-the-ground-up.md) 옵션을 검토 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 설계자 용 Microsoft 클라우드 저장소](microsoft-cloud-storage-for-enterprise-architects.md)
+[Microsoft Cloud Storage for Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "요약: 클라우드 집합에 대 한 자세한 내용은 직접 저장소 서비스 또는 솔루션 만들기를 사용할 수 있는 저장소 구성 요소를 가져옵니다."
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="build-from-the-ground-up"></a>처음부터 만들기
 
@@ -194,9 +190,9 @@ Azure 저장소와 사용자 지정 저장소 솔루션을 디자인할 때 다�
     
 - 여러 데이터베이스에는 부하 분산을 데이터 또는 가로에서 세로로 (테이블에 의해) (여러 파편 간에 세그먼트 테이블)으로 분할 합니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 설계자 용 Microsoft 클라우드 저장소](microsoft-cloud-storage-for-enterprise-architects.md)
+[Microsoft Cloud Storage for Enterprise Architects](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

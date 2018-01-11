@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 description: "요약: eDiscovery에 대 한 사용자의 컴퓨터에서 파일 컬렉션을 자동화 하는 방법에 알아봅니다."
-ms.openlocfilehash: 2c2a3d5d217203bb608fcb48f9cc1da8d4b49213
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: bb93bed80ec95511c6bbf4307d1f0c9e1d4f82cb
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>EDiscovery에 대 한 파일 컬렉션을 자동화 합니다.
 
@@ -268,8 +268,8 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 |**# 선**|**필요한 변경 하려면**|**필수/선택**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** 변수입니다. 스크립트를 조사 하 고 배열 변수에서를 수집 하려는 모든 파일 형식 확장명을 포함 합니다.<br/> |옵션  <br/> |
-|76 및 77  <br/> |요구에 맞게 변경 **$CaseNo** 변수 방식으로 작성 됩니다. 스크립트는 현재 날짜와 시간 캡처하고 사용자 이름을 추가 합니다.<br/> |옵션  <br/> |
+|71  <br/> |**$FileTypes** 변수입니다. 스크립트를 조사 하 고 배열 변수에서를 수집 하려는 모든 파일 형식 확장명을 포함 합니다.<br/> |선택  <br/> |
+|76 및 77  <br/> |요구에 맞게 변경 **$CaseNo** 변수 방식으로 작성 됩니다. 스크립트는 현재 날짜와 시간 캡처하고 사용자 이름을 추가 합니다.<br/> |선택  <br/> |
 |80  <br/> |**$CaseRootLocation** 변수를 설정 해야 준비 서버 컬렉션 파일 공유 ** \\ \\준비\\$의 경우**합니다. <br/> |필수  <br/> |
    
 4. 도메인 컨트롤러의 Netlogon 파일 공유에 CollectionScript.ps1 파일을 넣습니다. 
@@ -326,7 +326,7 @@ $AllFiles | ForEach-Object {
     
 |**# 선**|**필요한 변경 하려면**|**필수/선택**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** 태그 Pst로 가져오는 사서함 폴더를 지정 합니다. 필요한 경우이 변경 합니다.<br/> |옵션  <br/> |
+|12  <br/> |**$FolderIdentifier** 태그 Pst로 가져오는 사서함 폴더를 지정 합니다. 필요한 경우이 변경 합니다.<br/> |선택  <br/> |
 |17  <br/> |**$ConnectionUri** 를 자체 서버를 설정 해야 합니다. <br/> > [!IMPORTANT]> 다음을 확인 하면 **$ConnectionUri** 하지 https http 위치를 가리킵니다. Https로 작동 하지 않음:.          |필수  <br/> |
    
 4. 권한이 있는지 확인 Exchange 신뢰할 수 있는 하위 시스템 계정 읽기, 쓰기 및 실행 하는 \\ \\준비\\의 경우 $ 공유 합니다.

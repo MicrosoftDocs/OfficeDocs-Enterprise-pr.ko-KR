@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다."
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
 
@@ -185,7 +181,7 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
   
 **그림: 토폴로지 및 프로덕션 팜과 웜 대기 복구 팜의 핵심 요소**
 
-![SharePoint 프로덕션 팜 및 웜 대기 복구 팜의 토폴로지 및 핵심 요소를 보여줍니다.](images/AZarch_TopWarmStndby.gif)
+![SharePoint 프로덕션 팜 및 웜 대기 복구 팜의 토폴로지 및 핵심 요소를 보여줍니다.](images/AZarchWarmStndby.gif)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
@@ -688,7 +684,7 @@ Ipconfig /flushdns
   
 [SharePoint 2013에 대 한 SQL Server 2012 AlwaysOn 가용성 그룹 구성](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 <a name="Troubleshooting"> </a>
 

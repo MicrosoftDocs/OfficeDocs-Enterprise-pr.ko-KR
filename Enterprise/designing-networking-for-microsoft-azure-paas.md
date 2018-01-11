@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "요약: Microsoft Azure PaaS에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다."
-ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)
 
@@ -100,9 +98,9 @@ Azure PaaS에서 호스팅되는 조직 응용 프로그램의 경우 인트라�
     
 자세한 내용은 [트래픽 관리자](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)를 참조 하십시오.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 엔터프라이즈 설계자에 대 한 네트워킹](microsoft-cloud-networking-for-enterprise-architects.md)
+[Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

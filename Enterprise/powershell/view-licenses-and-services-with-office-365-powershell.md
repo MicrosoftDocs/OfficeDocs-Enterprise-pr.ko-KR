@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
-- DecEntMigration
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "라이선스 계획, 서비스 및 Office 365 조직에서 사용할 수 있는 라이선스에 대 한 정보를 보려면 Office 365 PowerShell을 사용 하는 방법에 설명 합니다."
-ms.openlocfilehash: dc9ea5ad5077062a05c0070ffecbf580d3aacc49
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
 
@@ -38,7 +37,7 @@ Office 365 조직에서 사용 가능한 라이선스 계획, 라이선스 및 �
 ## <a name="before-you-begin"></a>시작하기 전에
 <a name="RTT"> </a>
 
-- 이 항목의 절차에서는 Office 365 PowerShell에 연결 해야 합니다. 자세한 내용은 [Office 365 PowerShell 연결](connect-to-office-365-powershell.md)을 참조 하십시오.
+- 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
     
 - PowerShell 스크립트를 사용할 수 있는이 항목에서 설명 하는 절차를 자동화 합니다. 특히, 스크립트를 사용 하 보기 및 Office 365 조직 전체에서 영향을 포함 하 여 서비스를 사용 하지 않도록 설정할 수 있습니다. 자세한 내용은 [Office 365 powershell 영향에 대 한 액세스를 사용 하지 않도록 설정](disable-access-to-sway-with-office-365-powershell.md)을 참조 하십시오.
     
@@ -100,14 +99,14 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 |:-----|
 |![LinkedIn 학습에 대 한 짧은 아이콘](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **새로 만들기를 Office 365?**         [Office 365 관리자 및 IT 전문가](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), LinkedIn 학습에 의해 제공자에 대 한 무료 비디오 코스를 검색 합니다. |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>참고 항목
 <a name="ShortVersion"> </a>
 
 #### 
 
-[Office 365 powershell 사용이 허가 된 및 허가 되지 않은 사용자 보기](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
   
-[Office 365 powershell 계정 라이선스 및 서비스 정보 보기](view-account-license-and-service-details-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기](view-account-license-and-service-details-with-office-365-powershell.md)
 #### 
 
 [Get-msolaccountsku](https://go.microsoft.com/fwlink/p/?LinkId=691549)

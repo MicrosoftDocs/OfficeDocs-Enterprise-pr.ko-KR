@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "요약: 구성 및 시연 데이터 분류 하 고 Azure 정보 보호 (AIP) 클라이언트를 사용 하 여 Office 365 개발/테스트 환경에서 레이블을 지정 합니다."
-ms.openlocfilehash: 2784f4105903855de89c6c45f7a643279bb4dfbf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a2db6817bea879caeb52ed9b11b40c6c317ea171
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>데이터 분류 및 Office 365 개발/테스트 환경에서 레이블 지정
 
@@ -161,9 +157,9 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
     
     지원 사이트 모음의 문서 폴더에 AfterAIP.docx이 표시 됩니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Office 365 및 EMS 개발/테스트 환경](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   

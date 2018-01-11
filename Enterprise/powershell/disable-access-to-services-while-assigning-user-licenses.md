@@ -11,14 +11,13 @@ localization_priority: Normal
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "사용자 계정에 라이선스를 할당 하 고 Office 365 PowerShell을 사용 하 여 동시에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법에 알아봅니다."
-ms.openlocfilehash: 907314e13b353e5d5ddbcd8fe467db568473d0b3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 96ce12f811ee147a92da6b6928c2f6e3391c9b1f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당 하는 동안 서비스에 대 한 액세스를 사용 하지 않도록 설정
 
@@ -31,7 +30,7 @@ Office 365 구독 개별 서비스에 대 한 서비스 계획 함께 제공 됩
   
 ## <a name="before-you-begin"></a>시작하기 전에
 
-이 항목의 절차에서는 Office 365 PowerShell에 연결 해야 합니다. 자세한 내용은 [Office 365 PowerShell 연결](connect-to-office-365-powershell.md)을 참조 하십시오.
+이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
   
 ## <a name="collect-information-about-subscriptions-and-service-plans"></a>구독 및 서비스 계획 하는 방법에 대 한 정보 수집
 
@@ -150,15 +149,15 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 - 처리 된 모든 사용자와 CSV 파일을 만들고의 라이선스 상태를 표시 합니다.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>참고 항목
 
 #### 
 
-[Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 사용 하지 않도록 설정](disable-access-to-services-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.](disable-access-to-services-with-office-365-powershell.md)
   
 [Office 365 powershell 영향에 대 한 액세스를 사용 하지 않도록 설정](disable-access-to-sway-with-office-365-powershell.md)
   
-[사용자 계정 및 Office 365 powershell 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 

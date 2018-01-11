@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: "요약: 다양 한 수준의 정보 보호와 SharePoint Online 팀 사이트에 대 한 Office 365 레이블 및 데이터 손실 방지 (DLP) 정책을 적용 합니다."
-ms.openlocfilehash: 502a899c586114644bb59a2d55ca388c819f7777
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: dd4f71d8fae458d6d20f7a5b35b46e14a72853f1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 레이블 및 DLP 사용 하 여 SharePoint Online 파일 보호
 
@@ -225,7 +222,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 
 [Azure 정보 보호와 SharePoint Online 파일 보호](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [SharePoint Online 사이트 및 파일의 보안](secure-sharepoint-online-sites-and-files.md)
   

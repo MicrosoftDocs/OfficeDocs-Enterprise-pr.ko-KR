@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365_Hybrid_Top
-- Ent_O365
-- Ent_O365_Hybrid
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: "요약: 만들고 Microsoft Azure에서 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 Active Directory Federation Services (AD FS) 서버를 구성 합니다."
-ms.openlocfilehash: b3faf7e7ebf25dbcbfd5a0a8d3431d145b540da8
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: fb31aba6e68358740e316983206bddae1df00548
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>고가용성 페더레이션 인증 3단계: AD FS 서버 구성
 
@@ -156,7 +151,7 @@ Restart-Computer
 
 사용 [고가용성 페더레이션 인증 4 단계: 웹 응용 프로그램 프록시를 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) 를 계속이 작업을 구성 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

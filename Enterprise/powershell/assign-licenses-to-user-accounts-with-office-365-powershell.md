@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: "Office 365 PowerShell 할당 허가 되지 않은 사용자에 게 Office 365 라이선스를 사용 하는 방법에 설명 합니다."
-ms.openlocfilehash: 7120b5d61b98f401f9ec1830598f20fbcbecdb66
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 88628a78179605c734cd1d3f114a8a1dcb712376
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 12/15/2017
 ## <a name="before-you-begin"></a>시작하기 전에
 <a name="RTT"> </a>
 
-- 이 항목의 절차에서는 Office 365 PowerShell에 연결 해야 합니다. 자세한 내용은 [Office 365 PowerShell 연결](connect-to-office-365-powershell.md)을 참조 하십시오.
+- 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
     
 - **Get-msolaccountsku** cmdlet을 사용 하 여 조직에서 각 계획에서 사용 가능한 라이선스 계획 및 사용 가능한 라이선스 수를 볼 수 있습니다. 각 계획에서 사용 가능한 라이선스 수가 **ActiveUnits** - **WarningUnits** - **ConsumedUnits**합니다. 계획, 라이선스 및 서비스 라이선스에 대 한 자세한 내용은 [보기 라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를](view-licenses-and-services-with-office-365-powershell.md)참조 하십시오.
     
@@ -227,31 +226,31 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 |:-----|
 |![LinkedIn 학습에 대 한 짧은 아이콘](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **새로 만들기를 Office 365?**         [Office 365 관리자 및 IT 전문가](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), LinkedIn 학습에 의해 제공자에 대 한 무료 비디오 코스를 검색 합니다. |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 <a name="SeeAlso"> </a>
 
 Office 365 PowerShell을 사용하여 사용자를 관리하는 방법에 대한 다음 추가 항목을 참조하세요.
   
-- [Office 365 PowerShell을 사용한 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
     
-- [삭제 하 고 사용자 계정을 Office 365 PowerShell로 복원](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다.](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [Office 365 powershell 블록 사용자 계정](block-user-accounts-with-office-365-powershell.md)
+- [블록 사용자 계정 Office 365 PowerShell을 사용 하 여](block-user-accounts-with-office-365-powershell.md)
     
-- [Office 365 PowerShell을 사용한 사용자 계정에서 라이선스를 제거 합니다.](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센스를 제거 합니다.](remove-licenses-from-user-accounts-with-office-365-powershell.md)
     
 이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.
   
 - [Get-msolaccountsku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
     
-- [Get-msoluser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [Set-msoluserlicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [ForEach 개체](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [선택 개체](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     
-- [Where-object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
+- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
     
 

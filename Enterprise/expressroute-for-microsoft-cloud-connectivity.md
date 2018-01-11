@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다."
-ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결에 대 한 ExpressRoute
 
@@ -263,9 +261,9 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
     
 - [Azure에 대 한 ExpressRoute](https://azure.microsoft.com/services/expressroute/)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 엔터프라이즈 설계자에 대 한 네트워킹](microsoft-cloud-networking-for-enterprise-architects.md)
+[Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

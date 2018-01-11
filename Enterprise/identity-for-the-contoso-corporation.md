@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "요약: Contoso IDaaS를 활용 하 고 지리적으로 분산 된를 제공 하는 방법 및 해당 사용자에 대 한 중복 인증을 이해 합니다."
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 프로그램 id
 
@@ -120,15 +118,15 @@ DMZ 본사에서 기본 인증 서버를 사용할 수, IT 직원이 Azure IaaS�
     
 - DMZ 인증 서버를 사용할 수 없는 경우 Azure IaaS에서 서버 IP 주소를 사용 합니다.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 
-[엔터프라이즈 설계자 용 Microsoft 클라우드 Id](http://aka.ms/cloudarchidentity)
+[Microsoft Cloud ID for Enterprise Architects](http://aka.ms/cloudarchidentity)
   
-[Id 및 Office 365에 대 한 장치 보호](http://aka.ms/o365protect_device)
+[Office 365용 ID 및 장치 보호](http://aka.ms/o365protect_device)
   
 [Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
 

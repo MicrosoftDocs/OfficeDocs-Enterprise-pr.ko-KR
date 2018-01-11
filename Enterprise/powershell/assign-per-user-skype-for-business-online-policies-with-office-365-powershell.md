@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: "요약: Office 365 PowerShell을 사용 사용자별 비즈니스 온라인 정책에 대 한 Skype와 통신 설정을 할당 합니다."
-ms.openlocfilehash: 91916b41ba420a204ecabb27eea2e451a91f6f25
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7f819b619c5b3607c98c10791fe30c3944e862a4
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당
 
@@ -106,13 +106,13 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
   
 Windows PowerShell을 사용 하 여 사용자 계정을 사용 하지 않으려면, Alex의 Skype 비즈니스 온라인 라이선스를 제거 하려면 Azure Active Directory cmdlet을 사용 합니다. 자세한 내용은 [Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 사용 하지 않도록 설정](assign-licenses-to-user-accounts-with-office-365-powershell.md)을 참조 하십시오.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>참고 항목
 
 #### 
 
-[Office 365 powershell 온라인 비즈니스에 대 한 Skype 관리](manage-skype-for-business-online-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
