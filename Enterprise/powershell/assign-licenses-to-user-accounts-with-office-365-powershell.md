@@ -16,11 +16,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: "Office 365 PowerShell 할당 허가 되지 않은 사용자에 게 Office 365 라이선스를 사용 하는 방법에 설명 합니다."
-ms.openlocfilehash: 88628a78179605c734cd1d3f114a8a1dcb712376
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 8a7ad7b4586ccdef95430f9c4cc9c4d6e9360070
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.
 
@@ -222,10 +222,8 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
   
 ## <a name="new-to-office-365"></a>Office 365의 새로운 기능
 
-||
-|:-----|
-|![LinkedIn 학습에 대 한 짧은 아이콘](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **새로 만들기를 Office 365?**         [Office 365 관리자 및 IT 전문가](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), LinkedIn 학습에 의해 제공자에 대 한 무료 비디오 코스를 검색 합니다. |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>참고 항목
 <a name="SeeAlso"> </a>
 
