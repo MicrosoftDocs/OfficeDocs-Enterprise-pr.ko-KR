@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다."
-ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
+ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
 
@@ -106,7 +106,7 @@ Azure 인프라 서비스를 사용 하는 경우의 이점은 다음과 같습�
   
 **그림: Azure의 웜 대기 솔루션 요소**
 
-![Azure의 SharePoint 웜 대기 솔루션 요소](images/AZarch_AZWarmStndby.png)
+![Azure의 SharePoint 웜 대기 솔루션 요소](images/AZarch_AZWarmStndby.gif)
   
 SQL Server 로그 전달 분산 파일 시스템 복제 (DFSR)와 Azure에서 복구 팜에 데이터베이스 백업과 트랜잭션 로그를 복사를 사용 합니다. 
   
@@ -506,7 +506,7 @@ SharePoint 팜에 대 한 외부 액세스를 위한 방화벽의 외부 IP 주�
   
 **표: 온-프레미스에 대 한 가상 컴퓨터 테스트**
 
-|**서버 이름**|**역할**|**구성**|
+|**서버 이름**|**Role**|**구성**|
 |:-----|:-----|:-----|
 |DC1  <br/> |Active Directory와 도메인 컨트롤러입니다.  <br/> |2 개의 프로세서  <br/> Ram 4GB를 통해 512MB에서  <br/> 1 x 127 GB 하드 디스크  <br/> |
 |RRAS  <br/> |라우팅 및 원격 액세스 서비스 (RRAS) 역할을 사용 하 여 구성 하는 서버입니다.  <br/> |2 개의 프로세서  <br/> 2-8 개의 2GB의 RAM  <br/> 1 x 127 GB 하드 디스크  <br/> |
@@ -519,7 +519,7 @@ SharePoint 팜에 대 한 외부 액세스를 위한 방화벽의 외부 IP 주�
   
 **표: 프런트엔드 최종 웹에 대 한 가상 컴퓨터 드라이브 요구 사항 및 온-프레미스에 대 한 응용 프로그램 서버 테스트**
 
-|**드라이브 문자**|**크기**|**디렉터리 이름**|**경로**|
+|**드라이브 문자**|**크기**|**디렉터리 이름**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |시스템 드라이브  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\  <br/> |
 |E  <br/> |80  <br/> |로그 드라이브 (40GB)  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\데이터  <br/> |
@@ -529,7 +529,7 @@ SharePoint 팜에 대 한 외부 액세스를 위한 방화벽의 외부 IP 주�
   
 **표: 온-프레미스에 대 한 데이터베이스 서버에 대 한 가상 컴퓨터 드라이브 요구 사항 테스트**
 
-|**드라이브 문자**|**크기**|**디렉터리 이름**|**경로**|
+|**드라이브 문자**|**크기**|**디렉터리 이름**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |데이터 루트 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\  <br/> |
 |E  <br/> |500 개  <br/> |사용자 데이터베이스 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\데이터  <br/> |
@@ -594,7 +594,7 @@ SQL server가 SharePoint 2013 서버를 만들기 전에 설치 된 데이터베
   
 **표: 복구 팜 인프라**
 
-|**서버 이름**|**역할**|**구성**|**서브넷**|**가용성 집합**|
+|**서버 이름**|**Role**|**구성**|**서브넷**|**가용성 집합**|
 |:-----|:-----|:-----|:-----|:-----|
 |spDRAD  <br/> |Active Directory와 도메인 컨트롤러  <br/> |2 개의 프로세서  <br/> Ram 4GB를 통해 512MB에서  <br/> 1 x 127 GB 하드 디스크  <br/> |sp ADservers  <br/> ||
 |AZ-S P-FS  <br/> |파일 서버 백업 위한 공유 및 DFSR에 대 한 끝점  <br/> | A5 구성: <br/>  2 개의 프로세서 <br/>  14 2GB의 RAM <br/>  1 x 127 GB 하드 디스크 <br/>  1 x 135 GB 하드 디스크 <br/>  1 x 127 GB 하드 디스크 <br/>  1 x 150 GB 하드 디스크 <br/> |sp databaseservers  <br/> |DATA_SET  <br/> |
