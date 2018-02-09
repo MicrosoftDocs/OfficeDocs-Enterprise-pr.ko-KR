@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "요약: Microsoft Azure PaaS에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다."
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)
 
@@ -26,8 +26,6 @@ Azure PaaS 앱용 네트워킹을 최적화하려면 적절한 인터넷 대역�
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Azure의 조직 PaaS 응용 프로그램 호스팅에 대 한 계획 단계
 
-여기에 섹션 본문을 삽입합니다.
-  
 1. [Microsoft 클라우드 연결의 공통 요소](common-elements-of-microsoft-cloud-connectivity.md)에 **Microsoft 클라우드 서비스에 대 한 네트워크를 준비 하는 단계** 섹션을 통해 이동 합니다.
     
 2. [Microsoft SaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-saas.md)에서 **Microsoft SaaS 서비스에 대 한 네트워크를 준비 하는 단계** 섹션의 2-4 단계를 사용 하 여 인터넷 대역폭을 최적화 합니다.
@@ -97,7 +95,11 @@ Azure PaaS에서 호스팅되는 조직 응용 프로그램의 경우 인트라�
 2. 유럽에서 지역 웹 응용 프로그램을 사용 하 여 트래픽을 시작 하는 사용자입니다.
     
 자세한 내용은 [트래픽 관리자](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)를 참조 하십시오.
-  
+
+## <a name="next-step"></a>다음 단계
+
+[Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-azure-iaas.md)
+ 
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)

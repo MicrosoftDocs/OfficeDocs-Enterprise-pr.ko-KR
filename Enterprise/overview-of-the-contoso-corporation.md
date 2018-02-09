@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "요약: Contoso Corporation 기업 및 전세계 사무소의 계층된 구조를 이해 합니다."
-ms.openlocfilehash: c00e7fd75f580b82f8f920b9f74551a5e5e1b328
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 개요
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "요약: Microsoft Azure의 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 Azure AD 연결을 구성 합니다."
-ms.openlocfilehash: 92e579c325d2cfa18e404d15d6add56fc225eedd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>고가용성 페더레이션 인증 5 단계: Office 365에 대 한 연결 된 인증 구성
 

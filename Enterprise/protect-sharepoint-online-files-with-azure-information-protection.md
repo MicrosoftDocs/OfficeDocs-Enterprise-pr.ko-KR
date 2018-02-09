@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "요약: Azure 정보 보호 기밀 사항이 SharePoint Online 팀 사이트의 파일을 보호 하기 위해 적용 됩니다."
-ms.openlocfilehash: 03a10c5d856c4c5518f18b9d02ffe76f2c8d2e7a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5beba188cadc88c15ec75ed2adb4899d9b41b8ec
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure 정보 보호와 SharePoint Online 파일 보호
 

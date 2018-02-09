@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: "요약: 만들고 Microsoft Azure에서 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 Active Directory Federation Services (AD FS) 서버를 구성 합니다."
-ms.openlocfilehash: fb31aba6e68358740e316983206bddae1df00548
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: a9daecddb572bf2432d68ae76ed8d81571ef4b79
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>고가용성 페더레이션 인증 3단계: AD FS 서버 구성
 

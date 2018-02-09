@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "요약:는 클라우드 저장소 필요한 이유를 이해 하 고 Microsoft의 클라우드 저장소 옵션 및 키 저장소 시나리오 목록을 검토 합니다."
-ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Microsoft 클라우드를 위한 저장소 디자인 (영문)
 

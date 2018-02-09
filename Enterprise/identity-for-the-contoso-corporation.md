@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "요약: Contoso IDaaS를 활용 하 고 지리적으로 분산 된를 제공 하는 방법 및 해당 사용자에 대 한 중복 인증을 이해 합니다."
-ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 프로그램 id
 

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "요약: 구성 및 Office 365 개발/테스트 환경에서 Office 365 고급 위협 보호 기능을 시연 합니다."
-ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: bc703bd01f3430a01810795b9d2ccea9e4ac9bc0
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Advanced Threat Protection
 

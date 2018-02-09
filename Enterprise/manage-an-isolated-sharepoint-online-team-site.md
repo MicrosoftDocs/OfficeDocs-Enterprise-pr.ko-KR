@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: "요약: 이러한 절차로 격리 된 SharePoint Online 팀 사이트를 관리 합니다."
-ms.openlocfilehash: 51e3bea35220781303ca6dfb49ce57b60e72ba3a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: bc6a3487f8e7dd6d6c3c0c8a38d2ac85e3565091
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>SharePoint Online 팀 사이트를 격리 관리
 

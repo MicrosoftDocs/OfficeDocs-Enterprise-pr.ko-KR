@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: "요약: Microsoft 클라우드 서비스 및 플랫폼에 대 한 사용자 저장소를 디자인 합니다."
-ms.openlocfilehash: 71b774192e72c4c7e961df8c9258c104e25aea4a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 610a33962098f6d3474b1a77f668536ce7bbbbbf
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Microsoft Cloud Storage for Enterprise Architects
 

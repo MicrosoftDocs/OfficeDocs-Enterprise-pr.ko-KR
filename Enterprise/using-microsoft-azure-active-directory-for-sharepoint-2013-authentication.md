@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: "요약: Azure Active Directory를 사용 하 여 SharePoint Server 2013 사용자를 인증 하는 Azure 액세스 제어 서비스를 사용 하는 방법에 알아봅니다."
-ms.openlocfilehash: 9025eb53f4d8e37403c48416f41adbe35fa9fa01
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c4c8c4a2c35018b9e4eef2ce32502c4ba67585ca
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-microsoft-azure-active-directory-for-sharepoint-2013-authentication"></a>SharePoint 2013 인증에 대 한 Microsoft Azure Active Directory를 사용 하 여
 

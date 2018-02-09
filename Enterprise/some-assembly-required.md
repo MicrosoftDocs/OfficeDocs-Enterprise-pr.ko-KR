@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "요약: 사용자 지정 저장소 솔루션을 만드는 데 사용할 수 있는 클라우드 저장소 옵션 집합에 세부 정보를 가져옵니다."
-ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="some-assembly-required"></a>필요한 일부 어셈블리
 

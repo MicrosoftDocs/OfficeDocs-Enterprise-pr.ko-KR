@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "요약: 계획 및 구현 지침 빠른 이동에 대 한 증가 위협 프로필 하는 조직에서는 합니다."
-ms.openlocfilehash: 7b400a1c097bb1d3906a59dfd21461df0568c76a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 15565c313c1aeef1273ae9398b045a07ddb9c443
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>정치적 캠페인, 비영리, 및 기타 민첩 한 조직에 대 한 Microsoft 보안 지침
 
@@ -30,8 +31,8 @@ ms.lasthandoff: 01/11/2018
 |||
 |:-----|:-----|
 |**항목** <br/> |**설명** <br/> |
-|**정치적 캠페인에 대 한 Microsoft 보안 지침** <br/> [![미니 포스터 (영문)에 대 한 축소판 그림 못 설정합니다.](images/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf)  \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.vsdx) <br/> |이 지침을 예로 정치적 캠페인 조직을 사용합니다. 모든 환경에 대 한 시작 지점으로이 가이드를 사용 합니다.  <br/> |
-|**비영리에 대 한 Microsoft 보안 지침** <br/> [![다운로드 가능한 파일에 대 한 축소판 그림 이미지](images/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf)  \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.vsdx) <br/> |이 가이드는 약간 비 이익 조직에 대 한 개정 됩니다. 예, Office 365 비 이익 계획을 참조합니다. 기술 설명서 정치적 캠페인 솔루션 가이드와 동일 합니다.  <br/> |
+|**정치적 캠페인에 대 한 Microsoft 보안 지침** <br/> [![미니 포스터 (영문)에 대 한 축소판 그림 못 설정합니다.](images/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.vsdx)   <br/> |이 지침을 예로 정치적 캠페인 조직을 사용합니다. 모든 환경에 대 한 시작 지점으로이 가이드를 사용 합니다.  <br/> |
+|**비영리에 대 한 Microsoft 보안 지침** <br/> [![다운로드 가능한 파일에 대 한 축소판 그림 이미지](images/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.vsdx)   <br/> |이 가이드는 약간 비 이익 조직에 대 한 개정 됩니다. 예, Office 365 비 이익 계획을 참조합니다. 기술 설명서 정치적 캠페인 솔루션 가이드와 동일 합니다.  <br/> |
    
 ## <a name="test-lab-guides"></a>테스트 랩 가이드
 

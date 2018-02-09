@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "요약: 클라우드 채택 네트워크 인프라 투자를 하는 새로운 방법이 필요 하는 방법을 이해 합니다."
-ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>클라우드 연결에 대 한 네트워크 발전 하 고
 
@@ -81,15 +81,15 @@ ExpressRoute 전용된 연결에 대 한 기존 네트워크 공급자를 활용
 |설계 하 고 내부 및 인터넷 IT 작업에 대해 부하 분산을 구현 합니다.  <br/> |||적용  <br/> |
 |가상 컴퓨터 연결 및 처리량 문제를 해결  <br/> |||적용  <br/> |
    
+## <a name="next-step"></a>다음 단계
+
+[Microsoft 클라우드 연결의 일반적인 요소](common-elements-of-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Microsoft 클라우드 연결에 대 한 ExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
-  
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

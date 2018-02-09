@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "요약: Office 365, Microsoft Intune 및 Dynamics 365 포함 한 Microsoft의 SaaS 서비스에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다."
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS에 대 한 네트워킹 디자인 (영문)
 
@@ -185,6 +185,10 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
 - [Office 365 성능 관리 Microsoft 가상 Academy 코스 (영문)](https://aka.ms/o365perf)
     
 - [Office 365에 대 한 ExpressRoute](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>다음 단계
+
+[Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>참고 항목
 

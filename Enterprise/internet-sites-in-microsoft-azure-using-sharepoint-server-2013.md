@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: "요약: SharePoint Server 2013을 사용 하는 인터넷 사이트 Azure 인프라 서비스에서 호스트 되 여 활용 합니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하기 위한 리소스를 제공 합니다."
-ms.openlocfilehash: d822d957f4eb5937ce4b109dff58684ea3d83afa
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 44bf53477c502c89dfae32abf59e1ac0c3120f8e
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트
 
@@ -42,8 +42,8 @@ Microsoft Azure SharePoint Server 2013에 따라 인터넷 사이트를 호스�
   
 |**리소스**|**자세한 내용**|
 |:-----|:-----|
-|**Azure의 SharePoint Server 2013 인터넷 사이트** <br/> [![SharePoint를 사용 하 여 Azure의 인터넷 사이트의 이미지](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [ ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)           ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551) <br/> |주요 디자인 활동을 간략하게 소개 하 고 Azure의 인터넷 사이트에 대 한 선택 하려는 아키텍처를 권장 하는이 아키텍처 모델입니다.  <br/> |
-|**이 디자인 예제: SharePoint Server 2013에 대 한 Azure의 인터넷 사이트** <br/> [![이 디자인 예제 이미지: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |시작 지점으로이 디자인 예제를 사용 하 여 자신의 아키텍처에 대 한.  <br/> |
+|**Azure의 SharePoint Server 2013 인터넷 사이트** <br/> [![SharePoint를 사용 하 여 Azure의 인터넷 사이트의 이미지](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [ ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392551)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |주요 디자인 활동을 간략하게 소개 하 고 Azure의 인터넷 사이트에 대 한 선택 하려는 아키텍처를 권장 하는이 아키텍처 모델입니다.  <br/> |
+|**이 디자인 예제: SharePoint Server 2013에 대 한 Azure의 인터넷 사이트** <br/> [![이 디자인 예제 이미지: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549) \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)   <br/> |시작 지점으로이 디자인 예제를 사용 하 여 자신의 아키텍처에 대 한.  <br/> |
 |**[SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |이 문서에서는 호스트 SharePoint 솔루션을 Azure 아키텍처를 디자인 하는 방법에 설명 합니다.  <br/> |
 |**[SharePoint 2013 인증에 대 한 Microsoft Azure Active Directory를 사용 하 여](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)** <br/> |SharePoint 2013 팜에서 Azure AD를 구성 하기 위한 단계별 지침입니다.  <br/> |
    

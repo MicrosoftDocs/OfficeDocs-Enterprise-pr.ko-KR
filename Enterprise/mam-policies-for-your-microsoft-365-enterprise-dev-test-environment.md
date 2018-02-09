@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: "요약:이 테스트 랩 가이드를 사용 하 여 EMS 모바일 응용 프로그램 관리 (MAM) 정책 Microsoft 365 개발/테스트 환경에 추가 합니다."
-ms.openlocfilehash: cd5a9801ec7cc5c8fe287fa65015fcb02dd542bf
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 엔터프라이즈 개발/테스트 환경에 대 한 MAM 정책
 

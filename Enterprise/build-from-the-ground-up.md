@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "요약: 클라우드 집합에 대 한 자세한 내용은 직접 저장소 서비스 또는 솔루션 만들기를 사용할 수 있는 저장소 구성 요소를 가져옵니다."
-ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-from-the-ground-up"></a>처음부터 만들기
 

@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: "요약: Exchange Server 2013을 실행 하는 서버, Lync Server 2013을 실행 하는 서버 및 SharePoint Server 2013을 실행 하는 서버를 포함 하는 통합 된 테스트 랩을 만들고 하는 방법에 알아봅니다."
-ms.openlocfilehash: 6fc3bc05db0d28bc4de2be77671ccf5e8fc55926
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4bc9c48782c7693368c304f5f9d5bae56242111d
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>테스트 랩 가이드: 통합된 Exchange, Lync 및 SharePoint 테스트 랩 구성
 
@@ -52,7 +53,7 @@ Hyper-v에서이 테스트 랩을 구성 하는 방법에 대 한 정보를 [호
 
 [테스트 랩 가이드:는 통합 된 Exchange, Lync 및 SharePoint 테스트 랩 구성](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [테스트 랩 가이드](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

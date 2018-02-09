@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "격리 된 SharePoint Online 팀 사이트에 대 한 디자인 프로세스를 통해 요약: 단계입니다."
-ms.openlocfilehash: 7b2e8f0bc06a7901c52187ec6e63a056a11fa5e1
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>격리 된 SharePoint Online 팀 사이트를 디자인 합니다.
 

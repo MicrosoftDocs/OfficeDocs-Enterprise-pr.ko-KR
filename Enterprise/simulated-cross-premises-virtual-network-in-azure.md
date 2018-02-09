@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: "요약: Microsoft Azure의 개발/테스트 환경으로 시뮬레이션 된 크로스-프레미스 가상 네트워크를 만듭니다."
-ms.openlocfilehash: bd39e1a9815326ee9b0c479631b834df3609ac4f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 66373635156cb2b8ddf19b16ad99b1b865ab4140
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure의 시뮬레이션 된 크로스-프레미스 가상 네트워크
 

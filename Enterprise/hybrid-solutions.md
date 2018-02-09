@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "요약: Microsoft Azure의 Office 서버 작업 부하를 배포 하는이 문서를 사용 합니다."
-ms.openlocfilehash: 1397143f6b66a4391357bf29b3414a7ef8e86794
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5a225acb061da961f27f05fa43317b752f6aba56
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-solutions"></a>하이브리드 솔루션
 
@@ -28,7 +28,7 @@ Azure의 Office 365 identity 인프라:
   
 - [Microsoft Azure 가상 네트워크에 연결 하는 온-프레미스 네트워크에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Microsoft Azure에서 Office 365 디렉터리 동기화 (DirSync)를 배포 합니다.](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Microsoft Azure에서 Office 365 DirSync(디렉터리 동기화)를 배포합니다.](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
     
 - [Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     

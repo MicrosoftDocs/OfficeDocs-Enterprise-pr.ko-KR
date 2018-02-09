@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "요약: SharePoint Online 및 Office 365에서 파일을 보호 하기 위해 구성 권장 합니다."
-ms.openlocfilehash: a8ba632d9bc24e272a649f5790824323f889bdc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 78e29b12bad2d9ba91524fecf4fa66b8729715ae
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online 사이트 및 파일의 보안
 

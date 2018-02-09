@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "요약: Microsoft Azure의 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 웹 응용 프로그램 프록시 서버를 구성 합니다."
-ms.openlocfilehash: 9e7c07a659993437776a7c26e5d02498b1680699
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>고가용성 페더레이션 인증 4단계: 웹 응용 프로그램 프록시 구성
 
@@ -63,13 +63,13 @@ DNS 이름을 확인하면 인터넷에서 페더레이션 서비스 이름을 �
   
 페더레이션 서비스 FDQN이 있으면 Azure 인터넷 연결 부하 분산 장치의 공용 IP 주소로 확인되는 페더레이션 서비스 FDQN의 공용 DNS 도메인 A 레코드를 만듭니다.
   
-|**이름**|**유형**|**TTL**|**값**|
+|**Name**|**종류**|**TTL**|**값**|
 |:-----|:-----|:-----|:-----|
 |페더레이션 서비스 FDQN  <br/> |A  <br/> |3600  <br/> |Azure 인터넷 부하 분산 장치 (이전 섹션의 **쓰기 호스트** 명령으로 표시 됨)의 공용 IP 주소 <br/> |
    
 예제는 다음과 같습니다.
   
-|**이름**|**유형**|**TTL**|**값**|
+|**Name**|**종류**|**TTL**|**값**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    

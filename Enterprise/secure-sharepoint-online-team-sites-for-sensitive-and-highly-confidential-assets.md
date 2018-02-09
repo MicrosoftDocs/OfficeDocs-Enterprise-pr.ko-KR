@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "요약: Contoso 중요 한 보호 및 기밀 사항이 SharePoint Online 팀 사이트에 대 한 더 쉽게을 구현 하는 방법 아직 보안 임원 및 해당 연구 (영문)에 대 한 공동 작업 가운데에 맞춥니다."
-ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>중요 한 기밀 사항이 자산에 대 한 SharePoint Online 팀 사이트 보호
 

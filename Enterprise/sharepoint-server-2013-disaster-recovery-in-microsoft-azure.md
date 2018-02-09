@@ -3,7 +3,7 @@ title: "Microsoft Azure의 SharePoint Server 2013 재해 복구"
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다."
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
 
@@ -89,7 +89,7 @@ Azure 인프라 서비스를 사용 하는 경우의 이점은 다음과 같습�
   
 이 문서의 지침에서는 웜 대기 환경 구현 하는 방법에 설명 합니다. 또한 해당를 직접 적용할 수 콜드 대기 환경 환경의이 종류를 지원 하기 위해 추가 절차에 따라 필요는 없지만 합니다. 이 문서는 상시 대기 환경 구현 하는 방법을 설명 하지 않습니다.
   
-재해 복구 솔루션에 대 한 자세한 내용은 [고가용성 및 재해 복구 개념에 SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) 및[SharePoint 2013에 대 한 재해 복구 전략 선택](https://go.microsoft.com/fwlink/p/?linkid=203228)을 참조 하십시오.
+재해 복구 솔루션에 대 한 자세한 내용은 [고가용성 및 재해 복구 개념에 SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) 및 [SharePoint 2013에 대 한 재해 복구 전략 선택](https://go.microsoft.com/fwlink/p/?linkid=203228)을 참조 하십시오.
   
 ## <a name="solution-description"></a>솔루션 설명
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ Azure 인프라 서비스를 사용 하는 경우의 이점은 다음과 같습�
   
 **그림: Azure의 웜 대기 솔루션 요소**
 
-![Azure의 SharePoint 웜 대기 솔루션 요소](images/AZarch_AZWarmStndby.gif)
+![Azure의 SharePoint 웜 대기 솔루션 요소](images/AZarch_AZWarmStndby.png)
   
 SQL Server 로그 전달 분산 파일 시스템 복제 (DFSR)와 Azure에서 복구 팜에 데이터베이스 백업과 트랜잭션 로그를 복사를 사용 합니다. 
   
@@ -181,7 +181,7 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
   
 **그림: 토폴로지 및 프로덕션 팜과 웜 대기 복구 팜의 핵심 요소**
 
-![SharePoint 프로덕션 팜 및 웜 대기 복구 팜의 토폴로지 및 핵심 요소를 보여줍니다.](images/AZarchWarmStndby.gif)
+![SharePoint 팜 및 웜 대기 복구 팜 토폴로지](images/AZarch_AZWarmStndby.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   

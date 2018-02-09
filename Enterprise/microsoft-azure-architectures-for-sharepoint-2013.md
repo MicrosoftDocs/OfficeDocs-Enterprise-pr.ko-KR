@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: "요약: SharePoint 2013 솔루션은 Microsoft Azure 가상 컴퓨터에서 호스팅할 수 있습니다. 어떤 유형의 솔루션은 가장 잘 맞는 및 Microsoft Azure 하나는 호스트를 설정 하는 방법에 알아봅니다."
-ms.openlocfilehash: e7290e3e53173ecf3406470ef0a136bb1364e39b
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013에 대 한 Microsoft Azure 아키텍처
 

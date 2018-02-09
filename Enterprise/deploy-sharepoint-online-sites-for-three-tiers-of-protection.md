@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: "요약: 만들기 및 다양 한 수준의 정보 보호에 대 한 SharePoint Online 팀 사이트를 구성 합니다."
-ms.openlocfilehash: 7aa0107222454383abe0c1284b66ec0c4b808595
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 0b0c6541f05499526dc472e4e724472d943607ef
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>보호의 세 계층에 대 한 SharePoint Online 사이트 배포
 
