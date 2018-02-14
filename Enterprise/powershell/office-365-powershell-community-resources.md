@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: "요약: 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대한 도움말을 볼 수 있습니다."
-ms.openlocfilehash: ab6eb810e856d1d9219e06def078e36074646ce3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell 커뮤니티 리소스
 
@@ -26,13 +26,13 @@ ms.lasthandoff: 01/11/2018
   
 - [Office 365 Yammer 네트워크의 Office 365용 PowerShell 그룹](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- [Office 365 커뮤니티 포럼 관리]((https://community.office365.com/ko-KR/f/148.aspx))
+- [Office 365 커뮤니티 포럼 관리](https://community.office365.com/ko-KR/f/148.aspx)
     
 - [Exchange TechCenter 커뮤니티 포럼](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- [Office 블로그]((https://blogs.office.com/))
+- [Office 블로그](https://blogs.office.com/)
     
-- [Office 365 Wiki 관리]((https://community.office365.com/ko-KR/w/manage/default.aspx))
+- [Office 365 Wiki 관리](https://community.office365.com/ko-KR/w/manage/default.aspx)
     
 ## <a name="see-also"></a>참고 항목
 
