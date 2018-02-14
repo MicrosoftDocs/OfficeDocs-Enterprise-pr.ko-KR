@@ -1,8 +1,8 @@
 ---
 title: "PowerShell을 사용하여 Office 365로 IMAP 마이그레이션 수행"
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "요약:Windows PowerShell을 사용하여 Office 365로 IMAP 마이그레이션을 수행하는 방법을 알아봅니다."
-ms.openlocfilehash: 2c4d54f02a885e7ee5e18bed715c30e9090610df
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 50f97d858b7e7f00ac3cb1e0a239928badca215a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 IMAP 마이그레이션 수행
 
@@ -109,7 +109,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-Dovecot IMAP 서버와 같이 SASL(Simple Authentication and Security Layer)을 지원하는 IMAP 서버의 경우 **User_UserName*Admin_UserName** 형식을 사용합니다. 여기서 별표( * )는 구성 가능한 구분 기호 문자입니다. 이번에는 관리자 자격 증명( **mailadmin** 및 **P@ssw0rd** )을 사용하여 동일한 사용자의 전자 메일을 Dovecot IMAP 서버에서 마이그레이션한다고 가정하겠습니다. CSV 파일은 다음과 같이 나타납니다.
+Dovecot IMAP 서버와 같이 SASL(Simple Authentication and Security Layer)을 지원하는 IMAP 서버의 경우 **User_UserName*Admin_UserName** 형식을 사용합니다. 여기서 별표( * )는 구성 가능한 구분 기호 문자입니다. 이번에는 관리자 자격 증명(**mailadmin** 및 **P@ssw0rd**)을 사용하여 동일한 사용자의 전자 메일을 Dovecot IMAP 서버에서 마이그레이션한다고 가정하겠습니다. CSV 파일은 다음과 같이 나타납니다.
   
 ```
 EmailAddress,UserName,Password
