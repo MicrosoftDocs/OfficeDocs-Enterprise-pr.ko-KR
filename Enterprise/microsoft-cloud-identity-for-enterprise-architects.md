@@ -8,15 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: O365ITProTrain, Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- O365ITProTrain
+- Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 ID 솔루션을 디자인합니다."
-ms.openlocfilehash: 08dfb843128839fc6f8b70373335f64b44133ff1
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 07a27a63972163948148da117084800171a304b7
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft Cloud Identity for Enterprise Architects
 

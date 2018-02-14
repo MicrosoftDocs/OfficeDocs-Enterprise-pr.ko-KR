@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "요약: 가상의 전형적인 글로벌 조직이 Microsoft 클라우드 서비스로 클라우드 포함 IT 인프라를 채택하는 방법"
-ms.openlocfilehash: 6357338705a1ae8aa987981b680cbcd02560041f
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 314fc872e1c5d555b3e412b3ce709d70595aa23b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 클라우드의 Contoso
 
