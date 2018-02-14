@@ -9,14 +9,16 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "사용자 계정에 라이선스를 할당 하 고 Office 365 PowerShell을 사용 하 여 동시에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법에 알아봅니다."
-ms.openlocfilehash: 5b39a7e92217f5f7039ae1d8980f0c271ea29bfb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 0ab1aea03099f6aae469699b1169af9e12b41d74
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당 하는 동안 서비스에 대 한 액세스를 사용 하지 않도록 설정
 
