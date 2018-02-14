@@ -9,189 +9,191 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG-
+- Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "요약: 구성 및 Office 365 개발/테스트 환경에서 예제 데이터가 포함 된 Office 365 고급 eDiscovery 시연 합니다."
-ms.openlocfilehash: 6c0c28ced9d267ea2ecc353af8f1453c4dce7f8e
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a><span data-ttu-id="d7942-103">Office 365 개발/테스트 환경용 고급 eDiscovery</span><span class="sxs-lookup"><span data-stu-id="d7942-103">Advanced eDiscovery for your Office 365 dev/test environment</span></span>
+# <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a><span data-ttu-id="a39bd-103">Office 365 개발/테스트 환경용 고급 eDiscovery</span><span class="sxs-lookup"><span data-stu-id="a39bd-103">Advanced eDiscovery for your Office 365 dev/test environment</span></span>
 
- <span data-ttu-id="d7942-104">**요약:** Office 365 개발/테스트 환경에서 예제 데이터가 포함 된 Office 365 고급 eDiscovery 시연 및 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-104">**Summary:** Configure and demonstrate Office 365 Advanced eDiscovery with sample data in your Office 365 dev/test environment.</span></span>
+ <span data-ttu-id="a39bd-104">**요약:** Office 365 개발/테스트 환경에서 예제 데이터가 포함 된 Office 365 고급 eDiscovery 시연 및 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-104">**Summary:** Configure and demonstrate Office 365 Advanced eDiscovery with sample data in your Office 365 dev/test environment.</span></span>
   
-<span data-ttu-id="d7942-p101">Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 메일 및 문서를 포함 하 여 Office 365에 저장 된 데이터에서 관련 정보를 분석할 수 있습니다. 막대 한 분량의 시간 및 경비를 저장할이 소송 같은 경우에 특히 수 있습니다. 자세한 내용은 [Office 365 고급 eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="d7942-p101">Office 365 Advanced eDiscovery allows you to quickly find and analyze relevant information across the data that is stored in Office 365, including email and documents. This can save enormous amounts of time and expense, especially in litigation situations. For more information, see [Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).</span></span>
+<span data-ttu-id="a39bd-p101">Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 메일 및 문서를 포함 하 여 Office 365에 저장 된 데이터에서 관련 정보를 분석할 수 있습니다. 막대 한 분량의 시간 및 경비를 저장할이 소송 같은 경우에 특히 수 있습니다. 자세한 내용은 [Office 365 고급 eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p101">Office 365 Advanced eDiscovery allows you to quickly find and analyze relevant information across the data that is stored in Office 365, including email and documents. This can save enormous amounts of time and expense, especially in litigation situations. For more information, see [Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).</span></span>
   
-<span data-ttu-id="d7942-108">이 기사의 지침에 따라 가상 계약 분쟁에 대한 작은 데이터 집합을 만들고 고급 eDiscovery로 이를 분석합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-108">With the instructions in this article, you create a small set of data for a fictional contract dispute and analyze it with Advanced eDiscovery.</span></span>
+<span data-ttu-id="a39bd-108">이 기사의 지침에 따라 가상 계약 분쟁에 대한 작은 데이터 집합을 만들고 고급 eDiscovery로 이를 분석합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-108">With the instructions in this article, you create a small set of data for a fictional contract dispute and analyze it with Advanced eDiscovery.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="d7942-109">클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-109">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="a39bd-109">클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-109">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-your-office-365-devtest-environment"></a><span data-ttu-id="d7942-110">1단계: Office 365 개발/테스트 환경 만들기</span><span class="sxs-lookup"><span data-stu-id="d7942-110">Phase 1: Create your Office 365 dev/test environment</span></span>
+## <a name="phase-1-create-your-office-365-devtest-environment"></a><span data-ttu-id="a39bd-110">1단계: Office 365 개발/테스트 환경 만들기</span><span class="sxs-lookup"><span data-stu-id="a39bd-110">Phase 1: Create your Office 365 dev/test environment</span></span>
 
-<span data-ttu-id="d7942-111">최소 요구 사항을 경량 방식으로 고급 eDiscovery를 테스트 하려면 2 단계와 3 단계 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)에 대 한 지침을 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-111">If you just want to test Advanced eDiscovery in a lightweight way with the minimum requirements, follow the instructions in Phase 2 and Phase 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="a39bd-111">최소 요구 사항을 경량 방식으로 고급 eDiscovery를 테스트 하려면 2 단계와 3 단계 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)에 대 한 지침을 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-111">If you just want to test Advanced eDiscovery in a lightweight way with the minimum requirements, follow the instructions in Phase 2 and Phase 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
   
-<span data-ttu-id="d7942-112">시뮬레이션 된 엔터프라이즈에서 고급 eDiscovery 테스트 하려는 경우 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지시를 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-112">If you want to test Advanced eDiscovery in a simulated enterprise, follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="a39bd-112">시뮬레이션 된 엔터프라이즈에서 고급 eDiscovery 테스트 하려는 경우 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지시를 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-112">If you want to test Advanced eDiscovery in a simulated enterprise, follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="d7942-p102">고급 eDiscovery 테스트 인터넷에 연결 하는 시뮬레이션 된 인트라넷을 포함 하는 시뮬레이션 된 엔터프라이즈 환경에서는 필요 하지 않은 및 Windows Server AD 포리스트에 대 한 디렉터리 동기화 합니다. 제공 되는 일반적인 조직 나타내는 환경에서 테스트 하 고 실험을 수행할 수 있도록 하는 옵션으로 여기 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-p102">Testing Advanced eDiscovery does not require the simulated enterprise environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can perform testing and experimentation in an environment that represents a typical organization.</span></span> 
+> <span data-ttu-id="a39bd-p102">고급 eDiscovery 테스트 인터넷에 연결 하는 시뮬레이션 된 인트라넷을 포함 하는 시뮬레이션 된 엔터프라이즈 환경에서는 필요 하지 않은 및 Windows Server AD 포리스트에 대 한 디렉터리 동기화 합니다. 제공 되는 일반적인 조직 나타내는 환경에서 테스트 하 고 실험을 수행할 수 있도록 하는 옵션으로 여기 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p102">Testing Advanced eDiscovery does not require the simulated enterprise environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can perform testing and experimentation in an environment that represents a typical organization.</span></span> 
   
-## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a><span data-ttu-id="d7942-115">2단계: 고급 eDiscovery의 예제 데이터 만들기</span><span class="sxs-lookup"><span data-stu-id="d7942-115">Phase 2: Create example data for Advanced eDiscovery</span></span>
+## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a><span data-ttu-id="a39bd-115">2단계: 고급 eDiscovery의 예제 데이터 만들기</span><span class="sxs-lookup"><span data-stu-id="a39bd-115">Phase 2: Create example data for Advanced eDiscovery</span></span>
 
-<span data-ttu-id="d7942-116">이 프로시저에서는 나중에 고급 eDiscovery 사례에서 분석할 전자 메일 메시지를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-116">In this procedure, you create email messages that will you later analyze in an Advanced eDiscovery case.</span></span>
+<span data-ttu-id="a39bd-116">이 프로시저에서는 나중에 고급 eDiscovery 사례에서 분석할 전자 메일 메시지를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-116">In this procedure, you create email messages that will you later analyze in an Advanced eDiscovery case.</span></span>
   
-1. <span data-ttu-id="d7942-117">Internet Explorer를 열고[Office 365 개발/테스트 환경](office-365-dev-test-environment.md)중 2 단계에서에서 만든 Outlook 계정에 [https://outlook.com](https://outlook.com) 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-117">Open Internet Explorer and sign in at [https://outlook.com](https://outlook.com) to the Outlook account you created in Phase 2 of[Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
+1. <span data-ttu-id="a39bd-117">Internet Explorer를 열고[Office 365 개발/테스트 환경](office-365-dev-test-environment.md)중 2 단계에서에서 만든 Outlook 계정에 [https://outlook.com](https://outlook.com) 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-117">Open Internet Explorer and sign in at [https://outlook.com](https://outlook.com) to the Outlook account you created in Phase 2 of[Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
     
-  - <span data-ttu-id="d7942-118">경량 개발/테스트 환경을 사용하는 경우 Internet Explorer의 비공개 세션을 열고 로컬 컴퓨터에서 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-118">If you are using the lightweight dev/test environment, open a private session of Internet Explorer and sign in from your local computer.</span></span>
+  - <span data-ttu-id="a39bd-118">경량 개발/테스트 환경을 사용하는 경우 Internet Explorer의 비공개 세션을 열고 로컬 컴퓨터에서 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-118">If you are using the lightweight dev/test environment, open a private session of Internet Explorer and sign in from your local computer.</span></span>
     
-  - <span data-ttu-id="d7942-119">시뮬레이션 된 엔터프라이즈 개발/테스트 환경을 사용 하는 경우에 Azure 포털 ([https://portal.azure.com](https://portal.azure.com))를 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음 CLIENT1에서 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-119">If you are using the simulated enterprise dev/test environment, use the Azure portal ([https://portal.azure.com](https://portal.azure.com)) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
+  - <span data-ttu-id="a39bd-119">시뮬레이션 된 엔터프라이즈 개발/테스트 환경을 사용 하는 경우에 Azure 포털 ([https://portal.azure.com](https://portal.azure.com))를 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음 CLIENT1에서 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-119">If you are using the simulated enterprise dev/test environment, use the Azure portal ([https://portal.azure.com](https://portal.azure.com)) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
     
-2. <span data-ttu-id="d7942-120">**Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-120">On the **Outlook Mail** tab, click **New**.</span></span>
+2. <span data-ttu-id="a39bd-120">**Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-120">On the **Outlook Mail** tab, click **New**.</span></span>
     
-3. <span data-ttu-id="d7942-p103">(영문) **를**, 평가판 구독의 User6 계정의 전자 메일 주소를 입력 ( **user6 @.** <organization name> **. onmicrosoft.com**).</span><span class="sxs-lookup"><span data-stu-id="d7942-p103">In **To**, type the email address of the User6 account of your trial subscription ( **user6@.**<organization name> **.onmicrosoft.com**).</span></span>
+3. <span data-ttu-id="a39bd-p103">(영문) **를**, 평가판 구독의 User6 계정의 전자 메일 주소를 입력 ( **user6 @.** <organization name> **. onmicrosoft.com**).</span><span class="sxs-lookup"><span data-stu-id="a39bd-p103">In **To**, type the email address of the User6 account of your trial subscription ( **user6@.**<organization name> **.onmicrosoft.com**).</span></span>
     
-4. <span data-ttu-id="d7942-123">주제에 대 한 **테스트 전자 메일 1을**입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-123">For the subject, type **Test email 1**.</span></span>
+4. <span data-ttu-id="a39bd-123">주제에 대 한 **테스트 전자 메일 1을**입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-123">For the subject, type **Test email 1**.</span></span>
     
-5. <span data-ttu-id="d7942-124">본문에 **Tailspin 계약 초안**입력 하 고 **보내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-124">In the body, type **Tailspin contract draft**, and then click **Send**.</span></span>
+5. <span data-ttu-id="a39bd-124">본문에 **Tailspin 계약 초안**입력 하 고 **보내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-124">In the body, type **Tailspin contract draft**, and then click **Send**.</span></span>
     
-6. <span data-ttu-id="d7942-125">**Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-125">On the **Outlook Mail** tab, click **New**.</span></span>
+6. <span data-ttu-id="a39bd-125">**Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-125">On the **Outlook Mail** tab, click **New**.</span></span>
     
-7. <span data-ttu-id="d7942-126">(영문) **를**, 평가판 구독의 User6 계정의 전자 메일 주소를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-126">In **To**, type the email address of the User6 account of your trial subscription.</span></span>
+7. <span data-ttu-id="a39bd-126">(영문) **를**, 평가판 구독의 User6 계정의 전자 메일 주소를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-126">In **To**, type the email address of the User6 account of your trial subscription.</span></span>
     
-8. <span data-ttu-id="d7942-127">주제에 대 한 **테스트 전자 메일 2를**입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-127">For the subject, type **Test email 2**.</span></span>
+8. <span data-ttu-id="a39bd-127">주제에 대 한 **테스트 전자 메일 2를**입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-127">For the subject, type **Test email 2**.</span></span>
     
-9. <span data-ttu-id="d7942-128">본문에 **Tailspin 점심 모임 요청**입력 하 고 **보내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-128">In the body, type **Tailspin lunch meeting**, and then click **Send**.</span></span>
+9. <span data-ttu-id="a39bd-128">본문에 **Tailspin 점심 모임 요청**입력 하 고 **보내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-128">In the body, type **Tailspin lunch meeting**, and then click **Send**.</span></span>
     
-10. <span data-ttu-id="d7942-129">**Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-129">On the **Outlook Mail** tab, click **New**.</span></span>
+10. <span data-ttu-id="a39bd-129">**Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-129">On the **Outlook Mail** tab, click **New**.</span></span>
     
-11. <span data-ttu-id="d7942-130">(영문) **를**, 평가판 구독의 User6 계정의 전자 메일 주소를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-130">In **To**, type the email address of the User6 account of your trial subscription.</span></span>
+11. <span data-ttu-id="a39bd-130">(영문) **를**, 평가판 구독의 User6 계정의 전자 메일 주소를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-130">In **To**, type the email address of the User6 account of your trial subscription.</span></span>
     
-12. <span data-ttu-id="d7942-131">주제에 대 한 **테스트 전자 메일 3을**입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-131">For the subject, type **Test email 3**.</span></span>
+12. <span data-ttu-id="a39bd-131">주제에 대 한 **테스트 전자 메일 3을**입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-131">For the subject, type **Test email 3**.</span></span>
     
-13. <span data-ttu-id="d7942-132">본문에 **Tailspin 계약 반대 의견이**입력 하 고 **보내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-132">In the body, type **Tailspin contract disagreement**, and then click **Send**.</span></span>
+13. <span data-ttu-id="a39bd-132">본문에 **Tailspin 계약 반대 의견이**입력 하 고 **보내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-132">In the body, type **Tailspin contract disagreement**, and then click **Send**.</span></span>
     
-14. <span data-ttu-id="d7942-133">오른쪽 위 모서리에서 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-133">Click the user icon in the upper right corner, and then click **Sign out**.</span></span>
+14. <span data-ttu-id="a39bd-133">오른쪽 위 모서리에서 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-133">Click the user icon in the upper right corner, and then click **Sign out**.</span></span>
     
-15. <span data-ttu-id="d7942-134">새 탭을 열고 계정 이름 및 평가판 구독의 User6 계정의 암호를 사용 하 여 Office 365 포털 ([https://portal.office.com](https://portal.office.com))에 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-134">Open a new tab and sign in to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) with the account name and password of the User6 account of your trial subscription.</span></span>
+15. <span data-ttu-id="a39bd-134">새 탭을 열고 계정 이름 및 평가판 구독의 User6 계정의 암호를 사용 하 여 Office 365 포털 ([https://portal.office.com](https://portal.office.com))에 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-134">Open a new tab and sign in to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) with the account name and password of the User6 account of your trial subscription.</span></span>
     
-16. <span data-ttu-id="d7942-135">**Office 365 포털** 탭에서 **메일**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-135">On the **Office 365 portal** tab, click **Mail**.</span></span>
+16. <span data-ttu-id="a39bd-135">**Office 365 포털** 탭에서 **메일**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-135">On the **Office 365 portal** tab, click **Mail**.</span></span>
     
-17. <span data-ttu-id="d7942-136">**메일-User6-Outlook** 탭에서 User6 Outlook 전자 메일 계정에서 모든 전자 메일 3 통 수신 되었는지 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-136">On the **Mail - User6 - Outlook** tab, verify that User6 received all three emails from the Outlook email account.</span></span>
+17. <span data-ttu-id="a39bd-136">**메일-User6-Outlook** 탭에서 User6 Outlook 전자 메일 계정에서 모든 전자 메일 3 통 수신 되었는지 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-136">On the **Mail - User6 - Outlook** tab, verify that User6 received all three emails from the Outlook email account.</span></span>
     
-18. <span data-ttu-id="d7942-137">User6에 대 한 **Office 365 포털 탭** 으로 다시 전환 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-137">Switch back to the **Office 365 portal tab** for User6.</span></span>
+18. <span data-ttu-id="a39bd-137">User6에 대 한 **Office 365 포털 탭** 으로 다시 전환 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-137">Switch back to the **Office 365 portal tab** for User6.</span></span>
     
-19. <span data-ttu-id="d7942-138">오른쪽 위 모서리에서 사용자 아이콘을 클릭 하 고 다음을 클릭 **로그 아웃.**</span><span class="sxs-lookup"><span data-stu-id="d7942-138">Click the user icon in the upper right corner, and then click **Sign out.**</span></span>
+19. <span data-ttu-id="a39bd-138">오른쪽 위 모서리에서 사용자 아이콘을 클릭 하 고 다음을 클릭 **로그 아웃.**</span><span class="sxs-lookup"><span data-stu-id="a39bd-138">Click the user icon in the upper right corner, and then click **Sign out.**</span></span>
     
-<span data-ttu-id="d7942-139">이 프로시저에서는 나중에 고급 eDiscovery 사례에서 분석할 두 개의 Word 문서를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-139">In this procedure, you create two Word documents that will you will later analyze in an Advanced eDiscovery case.</span></span>
+<span data-ttu-id="a39bd-139">이 프로시저에서는 나중에 고급 eDiscovery 사례에서 분석할 두 개의 Word 문서를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-139">In this procedure, you create two Word documents that will you will later analyze in an Advanced eDiscovery case.</span></span>
   
-1. <span data-ttu-id="d7942-140">**Office** 페이지에서 전역 관리자 계정의 자격 증명을 사용 하 여 **로그인,** 기호를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-140">On the **Office** page, click **Sign in,** sign in with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="a39bd-140">**Office** 페이지에서 전역 관리자 계정의 자격 증명을 사용 하 여 **로그인,** 기호를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-140">On the **Office** page, click **Sign in,** sign in with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="d7942-141">새 탭에 있는 프로덕션 SharePoint 사이트의 URL에 액세스: **https://** <fictional organization name> **.sharepoint.com/sites/production**</span><span class="sxs-lookup"><span data-stu-id="d7942-141">On a new tab, access the URL of your Production SharePoint site: **https://**<fictional organization name> **.sharepoint.com/sites/production**</span></span>
+2. <span data-ttu-id="a39bd-141">새 탭에 있는 프로덕션 SharePoint 사이트의 URL에 액세스: **https://** <fictional organization name> **.sharepoint.com/sites/production**</span><span class="sxs-lookup"><span data-stu-id="a39bd-141">On a new tab, access the URL of your Production SharePoint site: **https://**<fictional organization name> **.sharepoint.com/sites/production**</span></span>
     
-3. <span data-ttu-id="d7942-142">**문서**를 아래에 있는 **프로덕션 사이트 모음** 탭을 클릭 **새로 만들기 > Word 문서**합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-142">On the **Production site collection** tab, under **Documents**, click **New > Word Document**.</span></span>
+3. <span data-ttu-id="a39bd-142">**문서**를 아래에 있는 **프로덕션 사이트 모음** 탭을 클릭 **새로 만들기 > Word 문서**합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-142">On the **Production site collection** tab, under **Documents**, click **New > Word Document**.</span></span>
     
-4. <span data-ttu-id="d7942-143">**Word 온라인** 페이지에서 **Tailspin 임시 계약**을 입력, **저장 된** 제목에 표시 될 때까지 대기 하 고 **Word 온라인** 페이지 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-143">On the **Word Online** page, type **Tailspin draft contract**, wait until it displays **Saved** in the title, and then close the **Word Online** page tab.</span></span>
+4. <span data-ttu-id="a39bd-143">**Word 온라인** 페이지에서 **Tailspin 임시 계약**을 입력, **저장 된** 제목에 표시 될 때까지 대기 하 고 **Word 온라인** 페이지 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-143">On the **Word Online** page, type **Tailspin draft contract**, wait until it displays **Saved** in the title, and then close the **Word Online** page tab.</span></span>
     
-5. <span data-ttu-id="d7942-144">**문서**를 아래에 있는 **프로덕션 사이트 모음** 탭을 클릭 **새로 만들기 > Word 문서**합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-144">On the **Production site collection** tab, under **Documents**, click **New > Word Document**.</span></span>
+5. <span data-ttu-id="a39bd-144">**문서**를 아래에 있는 **프로덕션 사이트 모음** 탭을 클릭 **새로 만들기 > Word 문서**합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-144">On the **Production site collection** tab, under **Documents**, click **New > Word Document**.</span></span>
     
-6. <span data-ttu-id="d7942-145">**Word 온라인** 탭에서 **Tailspin 계약 분쟁 메모**를 입력, **저장 된** 제목에 표시 될 때까지 대기 하 고 **Word 온라인** 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-145">On the **Word Online** tab, type **Tailspin contract dispute notes**, wait until it displays **Saved** in the title, and then close the **Word Online** tab.</span></span>
+6. <span data-ttu-id="a39bd-145">**Word 온라인** 탭에서 **Tailspin 계약 분쟁 메모**를 입력, **저장 된** 제목에 표시 될 때까지 대기 하 고 **Word 온라인** 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-145">On the **Word Online** tab, type **Tailspin contract dispute notes**, wait until it displays **Saved** in the title, and then close the **Word Online** tab.</span></span>
     
-7. <span data-ttu-id="d7942-146">**프로덕션 사이트 모음** 탭에서 **문서** 와 **다음은 Document1** 문서 목록에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-146">On the **Production site collection** tab, you should see **Document** and **Document1** in the list of documents.</span></span>
+7. <span data-ttu-id="a39bd-146">**프로덕션 사이트 모음** 탭에서 **문서** 와 **다음은 Document1** 문서 목록에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-146">On the **Production site collection** tab, you should see **Document** and **Document1** in the list of documents.</span></span>
     
-8. <span data-ttu-id="d7942-147">**프로덕션 사이트 모음** 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-147">Close the **Production site collection** tab.</span></span>
+8. <span data-ttu-id="a39bd-147">**프로덕션 사이트 모음** 탭을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-147">Close the **Production site collection** tab.</span></span>
     
-## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a><span data-ttu-id="d7942-148">3 단계: 법적 분쟁에 대 한 고급 eDiscovery 사용</span><span class="sxs-lookup"><span data-stu-id="d7942-148">Phase 3: Use Advanced eDiscovery for a legal dispute</span></span>
+## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a><span data-ttu-id="a39bd-148">3 단계: 법적 분쟁에 대 한 고급 eDiscovery 사용</span><span class="sxs-lookup"><span data-stu-id="a39bd-148">Phase 3: Use Advanced eDiscovery for a legal dispute</span></span>
 
-<span data-ttu-id="d7942-p104">그러나 사용자의 조직 및 Tailspin Toys 간의 계약 분쟁에 법적 조치 지점에 도달 했습니다. 이 절차에서는 만들기 및 고급 eDiscovery 사례를 검색 하 고 전자 메일 및 "Tailspin 계약" 텍스트를 포함 하는 문서를 분석을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-p104">Unfortunately, a contract dispute between your organization and Tailspin Toys has reached the point of legal action. In this procedure, you create and configure an Advanced eDiscovery case to search for and analyze email and documents that contain the text "Tailspin contract".</span></span>
+<span data-ttu-id="a39bd-p104">그러나 사용자의 조직 및 Tailspin Toys 간의 계약 분쟁에 법적 조치 지점에 도달 했습니다. 이 절차에서는 만들기 및 고급 eDiscovery 사례를 검색 하 고 전자 메일 및 "Tailspin 계약" 텍스트를 포함 하는 문서를 분석을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p104">Unfortunately, a contract dispute between your organization and Tailspin Toys has reached the point of legal action. In this procedure, you create and configure an Advanced eDiscovery case to search for and analyze email and documents that contain the text "Tailspin contract".</span></span>
   
-<span data-ttu-id="d7942-151">고급 eDiscovery를 사용하는 프로세스는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-151">The process for using Advanced eDiscovery is the following:</span></span>
+<span data-ttu-id="a39bd-151">고급 eDiscovery를 사용하는 프로세스는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-151">The process for using Advanced eDiscovery is the following:</span></span>
   
-- <span data-ttu-id="d7942-152">보안에서 검색을 만들기 &amp; 준수 센터의 결과 분석 하 고 다음 고급 eDiscovery에 대 한 결과 준비 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-152">Create a search in the Security &amp; Compliance center, analyze its results, and then prepare the results for Advanced eDiscovery.</span></span>
+- <span data-ttu-id="a39bd-152">보안에서 검색을 만들기 &amp; 준수 센터의 결과 분석 하 고 다음 고급 eDiscovery에 대 한 결과 준비 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-152">Create a search in the Security &amp; Compliance center, analyze its results, and then prepare the results for Advanced eDiscovery.</span></span>
     
-- <span data-ttu-id="d7942-153">고급 eDiscovery에서 사례를 만들고 구성한 다음 검색 결과를 분석합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-153">Create and configure a case in Advanced eDiscovery and analyze the search results.</span></span>
+- <span data-ttu-id="a39bd-153">고급 eDiscovery에서 사례를 만들고 구성한 다음 검색 결과를 분석합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-153">Create and configure a case in Advanced eDiscovery and analyze the search results.</span></span>
     
-<span data-ttu-id="d7942-154">보안에서 검색을 만들려면이 절차에서는 &amp; 준수 센터 "Tailspin 계약"에 대 한 찾습니다를 결과 한 다음 고급 eDiscovery에 대 한 결과 준비 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-154">In this procedure, you create a search in the Security &amp; Compliance center for "Tailspin contract", look at the results, and then prepare the results for Advanced eDiscovery.</span></span>
+<span data-ttu-id="a39bd-154">보안에서 검색을 만들려면이 절차에서는 &amp; 준수 센터 "Tailspin 계약"에 대 한 찾습니다를 결과 한 다음 고급 eDiscovery에 대 한 결과 준비 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-154">In this procedure, you create a search in the Security &amp; Compliance center for "Tailspin contract", look at the results, and then prepare the results for Advanced eDiscovery.</span></span>
   
-1. <span data-ttu-id="d7942-155">**Office 365 포털** 탭에서 **관리**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-155">From the **Office 365 portal** tab, click **Admin**.</span></span>
+1. <span data-ttu-id="a39bd-155">**Office 365 포털** 탭에서 **관리**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-155">From the **Office 365 portal** tab, click **Admin**.</span></span>
     
-2. <span data-ttu-id="d7942-156">관리 센터 탭의 왼쪽 탐색 영역에서 클릭 **관리 센터 > 준수**합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-156">In the left navigation of the Admin center tab, click **Admin centers > Compliance**.</span></span>
+2. <span data-ttu-id="a39bd-156">관리 센터 탭의 왼쪽 탐색 영역에서 클릭 **관리 센터 > 준수**합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-156">In the left navigation of the Admin center tab, click **Admin centers > Compliance**.</span></span>
     
-3. <span data-ttu-id="d7942-157">**보안 &amp; 준수** 탭에서 **사용 권한**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-157">On the **Security &amp; Compliance** tab, click **Permissions**.</span></span>
+3. <span data-ttu-id="a39bd-157">**보안 &amp; 준수** 탭에서 **사용 권한**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-157">On the **Security &amp; Compliance** tab, click **Permissions**.</span></span>
     
-4. <span data-ttu-id="d7942-158">**사용 권한** 목록에서 **조직 관리**를 두번클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-158">In the **Permissions** list, double-click **Organization Management**.</span></span>
+4. <span data-ttu-id="a39bd-158">**사용 권한** 목록에서 **조직 관리**를 두번클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-158">In the **Permissions** list, double-click **Organization Management**.</span></span>
     
-5. <span data-ttu-id="d7942-159">**역할 그룹** 창에서 **구성원**아래에 있는 더하기 기호를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-159">In the **Role Group** window, under **Members**, click the plus sign.</span></span>
+5. <span data-ttu-id="a39bd-159">**역할 그룹** 창에서 **구성원**아래에 있는 더하기 기호를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-159">In the **Role Group** window, under **Members**, click the plus sign.</span></span>
     
-6. <span data-ttu-id="d7942-160">**구성원 선택** 창에서 관리자 계정의 이름을 두번클릭 한 다음 **확인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-160">In the **Select Members** window, double-click the name of your administrator account, and then click **OK**.</span></span>
+6. <span data-ttu-id="a39bd-160">**구성원 선택** 창에서 관리자 계정의 이름을 두번클릭 한 다음 **확인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-160">In the **Select Members** window, double-click the name of your administrator account, and then click **OK**.</span></span>
     
-7. <span data-ttu-id="d7942-161">**역할 그룹** 창에서 **저장**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-161">In the **Role Group** window, click **Save**.</span></span>
+7. <span data-ttu-id="a39bd-161">**역할 그룹** 창에서 **저장**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-161">In the **Role Group** window, click **Save**.</span></span>
     
-8. <span data-ttu-id="d7942-162">**사용 권한** 목록에서 **eDiscovery 관리자를**두번클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-162">In the **Permissions** list, double-click **eDiscovery Manager**.</span></span>
+8. <span data-ttu-id="a39bd-162">**사용 권한** 목록에서 **eDiscovery 관리자를**두번클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-162">In the **Permissions** list, double-click **eDiscovery Manager**.</span></span>
     
-9. <span data-ttu-id="d7942-163">**역할 그룹** 창에서 **eDiscovery 관리자**더하기 아이콘을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-163">In the **Role Group** window, under **eDiscovery Administrator**, click the plus icon.</span></span>
+9. <span data-ttu-id="a39bd-163">**역할 그룹** 창에서 **eDiscovery 관리자**더하기 아이콘을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-163">In the **Role Group** window, under **eDiscovery Administrator**, click the plus icon.</span></span>
     
-10. <span data-ttu-id="d7942-164">**구성원 선택** 창에서 관리자 계정의 이름을 두번클릭 한 다음 **확인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-164">In the **Select Members** window, double-click the name of your administrator account, and then click **OK**.</span></span>
+10. <span data-ttu-id="a39bd-164">**구성원 선택** 창에서 관리자 계정의 이름을 두번클릭 한 다음 **확인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-164">In the **Select Members** window, double-click the name of your administrator account, and then click **OK**.</span></span>
     
-11. <span data-ttu-id="d7942-165">**역할 그룹** 창에서 **저장**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-165">In the **Role Group** window, click **Save**.</span></span>
+11. <span data-ttu-id="a39bd-165">**역할 그룹** 창에서 **저장**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-165">In the **Role Group** window, click **Save**.</span></span>
     
-12. <span data-ttu-id="d7942-166">왼쪽 탐색 영역에서 클릭 **검색 &amp; 조사 > 콘텐츠 검색**합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-166">In the left navigation, click **Search &amp; Investigation > Content search**.</span></span>
+12. <span data-ttu-id="a39bd-166">왼쪽 탐색 영역에서 클릭 **검색 &amp; 조사 > 콘텐츠 검색**합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-166">In the left navigation, click **Search &amp; Investigation > Content search**.</span></span>
     
-13. <span data-ttu-id="d7942-167">+기호를 클릭하여 검색을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-167">Click the plus icon to add a search.</span></span>
+13. <span data-ttu-id="a39bd-167">+기호를 클릭하여 검색을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-167">Click the plus icon to add a search.</span></span>
     
-14. <span data-ttu-id="d7942-168">**새 검색** 창에서 **Tailspin 계약 검색** **이름**에 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-168">In the **New search** window, type **Tailspin contract search** in **Name**.</span></span>
+14. <span data-ttu-id="a39bd-168">**새 검색** 창에서 **Tailspin 계약 검색** **이름**에 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-168">In the **New search** window, type **Tailspin contract search** in **Name**.</span></span>
     
-15. <span data-ttu-id="d7942-169">**수행 하려는 찾을 우리?**, **모든 곳에서, 검색** 선택 **Exchange**, **SharePoint**및 **공용 폴더**클릭 하 고 다음을 클릭 **다음.**</span><span class="sxs-lookup"><span data-stu-id="d7942-169">In **Where do you want us to look?**, click **Search everywhere,** select **Exchange**, **SharePoint**, and **Public Folders**, and then click **Next.**</span></span>
+15. <span data-ttu-id="a39bd-169">**수행 하려는 찾을 우리?**, **모든 곳에서, 검색** 선택 **Exchange**, **SharePoint**및 **공용 폴더**클릭 하 고 다음을 클릭 **다음.**</span><span class="sxs-lookup"><span data-stu-id="a39bd-169">In **Where do you want us to look?**, click **Search everywhere,** select **Exchange**, **SharePoint**, and **Public Folders**, and then click **Next.**</span></span>
     
-16. <span data-ttu-id="d7942-170">**수행할를 찾도록 우리?** **Tailspin 계약**을 입력 한 다음 **검색**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-170">In **What do you want us to look for?**, type **Tailspin contract**, and then click **Search**.</span></span>
+16. <span data-ttu-id="a39bd-170">**수행할를 찾도록 우리?** **Tailspin 계약**을 입력 한 다음 **검색**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-170">In **What do you want us to look for?**, type **Tailspin contract**, and then click **Search**.</span></span>
     
-17. <span data-ttu-id="d7942-171">검색 목록의 **Tailspin 계약 검색** 이름을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-171">In the list of searches, click the **Tailspin contract search** name.</span></span>
+17. <span data-ttu-id="a39bd-171">검색 목록의 **Tailspin 계약 검색** 이름을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-171">In the list of searches, click the **Tailspin contract search** name.</span></span>
     
-18. <span data-ttu-id="d7942-p105">**Tailspin 계약 검색** 창에서 **결과**아래에서 **검색 결과 미리 보기를** 클릭 합니다. 프로덕션 SharePoint 사이트 ( **문서** 와 **다음은 Document1**) 및 User6 **테스트 전자 메일 1** 및 **테스트 전자 메일 3** 전자 메일에 있는 두 문서를 나열 하는 창을 표시 됩니다. 창을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-p105">In the **Tailspin contract search** pane, click **Preview search results** under **Results**. You should see a window listing the two documents on the Production SharePoint site ( **Document** and **Document1**) and the **Test email 1** and **Test email 3** emails to User6. Close the window.</span></span>
+18. <span data-ttu-id="a39bd-p105">**Tailspin 계약 검색** 창에서 **결과**아래에서 **검색 결과 미리 보기를** 클릭 합니다. 프로덕션 SharePoint 사이트 ( **문서** 와 **다음은 Document1**) 및 User6 **테스트 전자 메일 1** 및 **테스트 전자 메일 3** 전자 메일에 있는 두 문서를 나열 하는 창을 표시 됩니다. 창을 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p105">In the **Tailspin contract search** pane, click **Preview search results** under **Results**. You should see a window listing the two documents on the Production SharePoint site ( **Document** and **Document1**) and the **Test email 1** and **Test email 3** emails to User6. Close the window.</span></span>
     
-19. <span data-ttu-id="d7942-175">**콘텐츠 검색** 창에서 **고급 eDiscovery 사용 하 여 분석 결과**얻으려면 아래에서 **분석을 위해 결과 미리 보기를**클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-175">In the **Content search** pane, under **Analyze results with Advanced eDiscovery**, click **Preview results for analysis**.</span></span>
+19. <span data-ttu-id="a39bd-175">**콘텐츠 검색** 창에서 **고급 eDiscovery 사용 하 여 분석 결과**얻으려면 아래에서 **분석을 위해 결과 미리 보기를**클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-175">In the **Content search** pane, under **Analyze results with Advanced eDiscovery**, click **Preview results for analysis**.</span></span>
     
-20. <span data-ttu-id="d7942-176">**Tailspin 계약 검색에 대 한 준비는 검색 결과** 창에서 **준비** 를 클릭 하 고 완료할 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-176">In the **Prepare the search results for Tailspin contract search** window, click **Prepare** and wait for it to complete.</span></span>
+20. <span data-ttu-id="a39bd-176">**Tailspin 계약 검색에 대 한 준비는 검색 결과** 창에서 **준비** 를 클릭 하 고 완료할 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-176">In the **Prepare the search results for Tailspin contract search** window, click **Prepare** and wait for it to complete.</span></span>
     
-<span data-ttu-id="d7942-177">이 프로시저에서는 고급 eDiscovery의 새 사례를 만들고 Tailspin 계약 검색 결과를 분석합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-177">In this procedure, you create a new case for Advanced eDiscovery and analyze the Tailspin contract search results.</span></span>
+<span data-ttu-id="a39bd-177">이 프로시저에서는 고급 eDiscovery의 새 사례를 만들고 Tailspin 계약 검색 결과를 분석합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-177">In this procedure, you create a new case for Advanced eDiscovery and analyze the Tailspin contract search results.</span></span>
   
-1. <span data-ttu-id="d7942-178">왼쪽 탐색 영역에서에서 **eDiscovery** 클릭 **검색 &amp; 조사**합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-178">In the left navigation, click **eDiscovery** under **Search &amp; Investigation**.</span></span>
+1. <span data-ttu-id="a39bd-178">왼쪽 탐색 영역에서에서 **eDiscovery** 클릭 **검색 &amp; 조사**합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-178">In the left navigation, click **eDiscovery** under **Search &amp; Investigation**.</span></span>
     
-2. <span data-ttu-id="d7942-179">**EDiscovery** 창에서 **고급 eDiscovery로 이동**합니다.를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-179">In the **eDiscovery** pane, click **Go to Advanced eDiscovery**.</span></span>
+2. <span data-ttu-id="a39bd-179">**EDiscovery** 창에서 **고급 eDiscovery로 이동**합니다.를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-179">In the **eDiscovery** pane, click **Go to Advanced eDiscovery**.</span></span>
     
-3. <span data-ttu-id="d7942-180">**EDiscovery 고급** 탭에서 새 사례를 추가 하려면 더하기 아이콘을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-180">In the **Advanced eDiscovery** tab, click the plus icon to add a new case.</span></span>
+3. <span data-ttu-id="a39bd-180">**EDiscovery 고급** 탭에서 새 사례를 추가 하려면 더하기 아이콘을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-180">In the **Advanced eDiscovery** tab, click the plus icon to add a new case.</span></span>
     
-4. <span data-ttu-id="d7942-p106">**추가 사례** 창에서 **이름** **Tailspin 계약 분쟁** 를 입력 한 다음 **확인**을 클릭 합니다. 대/소문자를 만들 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-p106">In the **Add case** pane, type **Tailspin contract dispute** in **Name**, and then click **OK**. Wait for the case to be created.</span></span>
+4. <span data-ttu-id="a39bd-p106">**추가 사례** 창에서 **이름** **Tailspin 계약 분쟁** 를 입력 한 다음 **확인**을 클릭 합니다. 대/소문자를 만들 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p106">In the **Add case** pane, type **Tailspin contract dispute** in **Name**, and then click **OK**. Wait for the case to be created.</span></span>
     
-5. <span data-ttu-id="d7942-183">목록에서 **Tailspin 계약 분쟁** 대/소문자를 두번클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-183">Double click the **Tailspin contract dispute** case in the list.</span></span>
+5. <span data-ttu-id="a39bd-183">목록에서 **Tailspin 계약 분쟁** 대/소문자를 두번클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-183">Double click the **Tailspin contract dispute** case in the list.</span></span>
     
-6. <span data-ttu-id="d7942-p107">**컨테이너** 목록에서 **Tailspin 계약 검색** 컨테이너를 클릭 한 다음 **프로세스**를 클릭 합니다. 처리가 완료 될 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-p107">In the **Container** list, click the **Tailspin contract search** container, and then click **Process**. Wait for the processing to complete.</span></span>
+6. <span data-ttu-id="a39bd-p107">**컨테이너** 목록에서 **Tailspin 계약 검색** 컨테이너를 클릭 한 다음 **프로세스**를 클릭 합니다. 처리가 완료 될 때까지 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p107">In the **Container** list, click the **Tailspin contract search** container, and then click **Process**. Wait for the processing to complete.</span></span>
     
-7. <span data-ttu-id="d7942-186">때 **프로세스: 완료** 표시 창 맨 아래에 요약을 보려면 왼쪽 탐색 영역에서 **프로세스 요약** 을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-186">When **Process: completed** appears at the bottom of the window, click **Process summary** in the left navigation to see a summary.</span></span>
+7. <span data-ttu-id="a39bd-186">때 **프로세스: 완료** 표시 창 맨 아래에 요약을 보려면 왼쪽 탐색 영역에서 **프로세스 요약** 을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-186">When **Process: completed** appears at the bottom of the window, click **Process summary** in the left navigation to see a summary.</span></span>
     
-8. <span data-ttu-id="d7942-187">위쪽 탐색 모음에서 **분석**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-187">In the top navigation, click **Analyze**.</span></span>
+8. <span data-ttu-id="a39bd-187">위쪽 탐색 모음에서 **분석**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-187">In the top navigation, click **Analyze**.</span></span>
     
-9. <span data-ttu-id="d7942-188">**테마** **설치** 페이지에서 **테마의 최대 개수**에 **3** 을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-188">On the **Setup** page, under **Themes**, type **3** in **Max number of themes**.</span></span>
+9. <span data-ttu-id="a39bd-188">**테마** **설치** 페이지에서 **테마의 최대 개수**에 **3** 을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-188">On the **Setup** page, under **Themes**, type **3** in **Max number of themes**.</span></span>
     
-10. <span data-ttu-id="d7942-p108">**분석** 을 클릭 하 고를 완료 하려면 분석 될 때까지 기다립니다. 대상 모집단, 문서, 전자 메일 및 첨부 파일을 분석 원형 차트의 계열을 표시 됩니다. 자세한 내용은 [결과 분석 보기](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="d7942-p108">Click **Analyze** and wait for the analysis to complete. You should see a series of pie charts with analysis of the target population, documents, emails, and attachments. For more information, see [Viewing Analyze results](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).</span></span>
+10. <span data-ttu-id="a39bd-p108">**분석** 을 클릭 하 고를 완료 하려면 분석 될 때까지 기다립니다. 대상 모집단, 문서, 전자 메일 및 첨부 파일을 분석 원형 차트의 계열을 표시 됩니다. 자세한 내용은 [결과 분석 보기](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="a39bd-p108">Click **Analyze** and wait for the analysis to complete. You should see a series of pie charts with analysis of the target population, documents, emails, and attachments. For more information, see [Viewing Analyze results](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).</span></span>
     
-<span data-ttu-id="d7942-192">이제 이 환경을 사용하여 새 콘텐츠, 새 검색 및 사례를 만들고 Office 365의 고급 eDiscovery를 추가로 실험할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d7942-192">You can now use this environment to create new content, new searches and cases, and experiment further with Advanced eDiscovery in Office 365.</span></span>
+<span data-ttu-id="a39bd-192">이제 이 환경을 사용하여 새 콘텐츠, 새 검색 및 사례를 만들고 Office 365의 고급 eDiscovery를 추가로 실험할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a39bd-192">You can now use this environment to create new content, new searches and cases, and experiment further with Advanced eDiscovery in Office 365.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="d7942-193">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d7942-193">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a39bd-193">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a39bd-193">See Also</span></span>
 
-[<span data-ttu-id="d7942-194">클라우드 도입 TLG(테스트 랩 가이드)</span><span class="sxs-lookup"><span data-stu-id="d7942-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="a39bd-194">클라우드 도입 TLG(테스트 랩 가이드)</span><span class="sxs-lookup"><span data-stu-id="a39bd-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[<span data-ttu-id="d7942-195">기본 구성 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="d7942-195">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
+[<span data-ttu-id="a39bd-195">기본 구성 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="a39bd-195">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
   
-[<span data-ttu-id="d7942-196">Office 365 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="d7942-196">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
+[<span data-ttu-id="a39bd-196">Office 365 개발/테스트 환경</span><span class="sxs-lookup"><span data-stu-id="a39bd-196">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[<span data-ttu-id="d7942-197">Office 365 개발/테스트 환경용 DirSync</span><span class="sxs-lookup"><span data-stu-id="d7942-197">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="a39bd-197">Office 365 개발/테스트 환경용 DirSync</span><span class="sxs-lookup"><span data-stu-id="a39bd-197">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="d7942-198">Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안</span><span class="sxs-lookup"><span data-stu-id="d7942-198">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="a39bd-198">Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안</span><span class="sxs-lookup"><span data-stu-id="a39bd-198">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="d7942-199">클라우드 채택 및 하이브리드 솔루션</span><span class="sxs-lookup"><span data-stu-id="d7942-199">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="a39bd-199">클라우드 채택 및 하이브리드 솔루션</span><span class="sxs-lookup"><span data-stu-id="a39bd-199">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-[<span data-ttu-id="d7942-200">Office 365 고급 eDiscovery</span><span class="sxs-lookup"><span data-stu-id="d7942-200">Office 365 Advanced eDiscovery</span></span>](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
+[<span data-ttu-id="a39bd-200">Office 365 고급 eDiscovery</span><span class="sxs-lookup"><span data-stu-id="a39bd-200">Office 365 Advanced eDiscovery</span></span>](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 
 
