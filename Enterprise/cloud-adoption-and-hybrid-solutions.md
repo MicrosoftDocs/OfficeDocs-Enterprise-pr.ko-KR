@@ -2,6 +2,7 @@
 title: "엔터프라이즈 클라우드 솔루션"
 description: "Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요."
 author: JoeDavies-MSFT
+ms.author: josephd
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
@@ -9,13 +10,12 @@ ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.date: 12/13/2017
-ms.author: JoeDavies-MSFT
-ms.openlocfilehash: 32e15b5d80fd7c7a200987ea55bca927e6e02372
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.date: 2/14/2018
+ms.openlocfilehash: 3d8d7f89395c7cb84953e75de48cde71d2e7327a
+ms.sourcegitcommit: 990ca49b20ae70a3b57ca8293d22deb04defa958
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 <h1>엔터프라이즈 클라우드 솔루션</h1>
 <p>Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요.</p>
@@ -124,5 +124,5 @@ ms.lasthandoff: 02/09/2018
 <ul>
     <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">어떤 클라우드 채택 콘텐츠가 필요한가요?</a><br>여러 Microsoft 클라우드 플랫폼 및 서비스에 적용되는 클라우드 채택 콘텐츠를 만들고 있습니다. 클라우드 채택 콘텐츠에 대한 의견을 제공하거나 cloudadopt@microsoft.com으로 전자 메일을 보내서 특정 콘텐츠를 요청하세요.</li><br>
     <li><a href="https://aka.ms/caab">클라우드 채택 토론에 가입</a><br>클라우드 기반 솔루션에 관심이 있다면 CAAB(클라우드 채택 자문 위원회)에 가입하여 Microsoft 콘텐츠 개발자, 산업 전문가 및 전 세계 고객으로 구성된 더 크고 활발한 커뮤니티에 연결할 수 있습니다. 참가하려면 Microsoft 기술 커뮤니티의 CAAB(Cloud Adoption Advisory Board) 영역에 본인을 회원으로 추가하고 <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>에서 간단한 전자 메일을 보내주세요. CAAB <a href="https://blogs.technet.com/b/solutions_advisory_board/">블로그</a>에서는 누구나 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원은 새 클라우드 채택 리소스와 솔루션에 대해 설명하는 비공개 웹 세미나에 초대됩니다.</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">여기에 표시되는 아트 받기</a><br>이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 cloudadopt@microsoft.com으로 요청 메일을 보내주세요.</li>
+    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">여기에 표시된 아트 받기</a><br>이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 cloudadopt@microsoft.com으로 요청 메일을 보내주세요.</li>
 </ul>
