@@ -3,7 +3,7 @@ title: "블록 사용자 계정 Office 365 PowerShell을 사용 하 여"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
-- DecEntMigration
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: "Office 365 PowerShell을 사용 하 여 차단 하 고 Office 365 계정에 대 한 액세스를 차단 해제 하는 방법에 설명 합니다."
-ms.openlocfilehash: f22656426e7aa3adf764a3f90adea84cf57a5e89
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>블록 사용자 계정 Office 365 PowerShell을 사용 하 여
 
@@ -33,11 +32,11 @@ Office 365 PowerShell을 사용 하 여 여러 사용자 계정 및 개별에 �
   
 ## <a name="before-you-begin"></a>시작하기 전에
 
-- 이 항목의 절차에서는 Office 365 PowerShell에 연결 해야 합니다. 자세한 내용은 [Office 365 PowerShell 연결](connect-to-office-365-powershell.md)을 참조 하십시오.
+- 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
     
 - 사용자 계정, 차단 하는 경우에 모든 사용자의 장치 및 클라이언트에 영향을 24 시간 까지도 걸릴 수 있습니다.
     
-## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Office 365 PowerShell을 사용 하 여 개별 사용자 계정에 대 한 액세스를 차단 하려면
+## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>사용 하 여 Office 365 PowerShell 개별 사용자 계정에 대 한 액세스를 차단 하려면
 
 개별 사용자 계정에 대 한 액세스를 차단 하려면 다음 구문을 사용 합니다.
   
@@ -77,17 +76,17 @@ kakers@contoso.com
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUser -UserPrincipalName $_.UserPrincipalName -BlockCredential $true
+  Get-Content Accounts.txt | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
   ```
 텍스트 파일에 나열 된 계정 차단 해제 하려면 다음 명령을 실행 합니다.
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUser -UserPrincipalName $_.UserPrincipalName -BlockCredential $false
+  Get-Content Accounts.txt | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
   ```
 
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-block-access-to-user-accounts"></a>Azure Active Directory V2 PowerShell 모듈을 사용하여 사용자 계정 액세스 차단
 
-Azure Active Directory V2 PowerShell 모듈에서 **새로 만들기 AzureADUser** cmdlet을 사용 하려면 먼저 구독에 연결 해야 합니다. 지침,[Azure Active Directory V2 PowerShell 모듈을 사용 하 여 연결](https://go.microsoft.com/fwlink/?linkid=842218)을 참조 하십시오.
+Azure Active Directory V2 PowerShell 모듈에서 **New-AzureADUser** cmdlet을 사용하려면 먼저 구독에 연결해야 합니다. 지침은[Azure Active Directory V2 PowerShell 모듈을 사용하여 연결](https://go.microsoft.com/fwlink/?linkid=842218)을 참조하세요.
   
 연결한 후 다음 구문을 사용하여 개별 사용자 계정을 차단합니다.
   
@@ -152,13 +151,13 @@ kakers@contoso.com
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
 ```
-Get-Content "C:\My Documents\Accounts.txt" | Set-AzureADUSer -ObjectID $_.ObjectID -AccountEnabled $true
+Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
 텍스트 파일에 나열 된 계정 차단 해제 하려면 다음 명령을 실행 합니다.
     
 ```
-Get-Content "C:\My Documents\Accounts.txt" | Set-AzureADUSer -ObjectID $_.ObjectID -AccountEnabled $false
+Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
 ## <a name="see-also"></a>참고 항목
@@ -166,13 +165,13 @@ Get-Content "C:\My Documents\Accounts.txt" | Set-AzureADUSer -ObjectID $_.Object
 
 Office 365 PowerShell을 사용하여 사용자를 관리하는 방법에 대한 다음 추가 항목을 참조하세요.
   
-- [Office 365 PowerShell을 사용한 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
     
-- [삭제 하 고 사용자 계정을 Office 365 PowerShell로 복원](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다.](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [Office 365 PowerShell을 사용한 사용자 계정에 게 라이선스 할당](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-- [Office 365 PowerShell을 사용한 사용자 계정에서 라이선스를 제거 합니다.](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센스를 제거 합니다.](remove-licenses-from-user-accounts-with-office-365-powershell.md)
     
 이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.
   
@@ -180,6 +179,6 @@ Office 365 PowerShell을 사용하여 사용자를 관리하는 방법에 대한
     
 - [이와](https://go.microsoft.com/fwlink/p/?LinkId=691644)
     
-- [새 AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
+- [New-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
     
 

@@ -1,5 +1,5 @@
 ---
-title: "Contoso의 IT 인프라 및 필요한"
+title: "Contoso의 IT 인프라 및 요구 사항"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,18 +9,16 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
 description: "요약: Contoso의 기본 구조는 온-프레미스 IT 인프라 및 방법의 비즈니스 요구 하 여 충족할 수 Microsoft의 클라우드 서비스를 이해 합니다."
-ms.openlocfilehash: 98ead7ffa3164c3cd57ec50def836b690881ba63
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="contosos-it-infrastructure-and-needs"></a>Contoso의 IT 인프라 및 필요한
+# <a name="contosos-it-infrastructure-and-needs"></a>Contoso의 IT 인프라 및 요구 사항
 
  **요약:** Contoso의 기본 구조는 온-프레미스 IT 인프라 및 방법의 비즈니스 요구 하 여 충족할 수 Microsoft의 클라우드 서비스를 이해 합니다.
   
@@ -82,9 +80,9 @@ Microsoft의 클라우드 서비스, Contoso의 분석을 바탕의 IT 부서는
 |**Dynamics 365:** 클라우드 기반 고객 및 공급 업체 관리를 사용 합니다. DMZ에 익스트라넷 파트너를 제거 합니다.<br/> 비즈니스 요구: 2  <br/> |모바일 응용 프로그램은 클라우드 기반 데이터 센터 기반 파리가 아닌 합니다.  <br/> 비즈니스 요구 사항: 3 4  <br/> |자주 사용 앱 및 온-프레미스 데이터 센터에서 데이터를 마이그레이션하십시오.  <br/> 비즈니스 요구: 5  <br/> |
 |**Intune/EMS:** IOS 및 Android 장치를 관리 합니다. <br/> 비즈니스 요구: 3  <br/> ||임시 서버 및 분기의 끝 처리 요구 사항에 대 한 저장소를 추가 합니다.  <br/> 비즈니스 요구: 6  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 클라우드 Contoso](contoso-in-the-microsoft-cloud.md)
+[Microsoft 클라우드의 Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

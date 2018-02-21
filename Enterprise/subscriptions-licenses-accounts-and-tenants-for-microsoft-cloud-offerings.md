@@ -10,18 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Visuals
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: "요약: Microsoft의 클라우드 서비스에서 조직, 구독, 라이선스, 사용자 계정 및 테 넌 트의 관계를 이해 합니다."
-ms.openlocfilehash: 0c416efe1bfff6a3e6c979af165df8eb951b879c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>구독, 라이선스, 계정 및 Microsoft의 클라우드 서비스에 대 한 테 넌 트
 
@@ -169,13 +168,13 @@ Office 365 구독으로 Azure AD 테 넌 트와 같은 조직에 Azure 구독을
     
 Azure 및 Office 365 구독을 별도로 구입 하 고 Azure 구독에서 Office 365 Azure AD 테 넌 트에 액세스 하는 경우 [는 Office 365 테 넌 트 Azure에 가입 연결](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription)의 지침을 참조 합니다.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   
-[클라우드 채택 테스트 랩 가이드 (Tlg)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[개발자를 위한 SharePoint, Exchange, 비즈니스 및 Lync에 대 한 Skype 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [하이브리드 솔루션](hybrid-solutions.md)
   
