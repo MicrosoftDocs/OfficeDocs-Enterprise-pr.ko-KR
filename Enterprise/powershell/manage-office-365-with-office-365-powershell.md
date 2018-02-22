@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "요약: Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online 및 Microsoft Exchange Online으로 Office 365 PowerShell을 사용하는 방법을 알아봅니다."
-ms.openlocfilehash: 8732d8f6170608e76df25f521ac83feda62b2d2a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell로 Office 365 관리
 
@@ -37,7 +37,7 @@ Office 365 PowerShell은 Office 365 관리 센터를 보완하는 강력한 관�
     
     Office 365 PowerShell 모듈을 설치했으며 자동화 명령을 사용하여 사용자 계정 및 라이선스를 관리하는 방법에 대해 자세히 알아보려면 여기에서 시작합니다.
     
-- [SharePoint Online용 Office 365 PowerShell]((https://technet.microsoft.com/ko-KR/library/fp161362.aspx))
+- [SharePoint Online용 Office 365 PowerShell](https://technet.microsoft.com/ko-KR/library/fp161362.aspx)
     
     Office 365 PowerShell 모듈을 설치했으며 자동화 명령을 사용하여 SharePoint Online의 관리를 수행하려면 여기에서 시작합니다.
     
@@ -57,7 +57,7 @@ Office 365 PowerShell은 Office 365 관리 센터를 보완하는 강력한 관�
     
     Office 365 PowerShell 모듈을 설치했으며 자동화 명령을 사용하여 비즈니스용 Skype Online의 관리를 수행하려면 여기에서 시작합니다.
     
-- [비즈니스용 Skype Online cmdlet]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
+- [비즈니스용 Skype Online cmdlet](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
     
     Office 365 PowerShell을 능숙하게 사용할 수 있고 조직의 전화 접속 회의, 클라우드 PBX 및 PSTN 호출 설정을 관리하는 특정 명령에 대해 자세히 알아보고, 보고 기능을 사용하여 비즈니스용 Skype Online 사용을 모니터링하고 보고하려면 여기에서 시작합니다.
     

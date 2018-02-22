@@ -14,11 +14,11 @@ ms.custom:
 - PowerShell
 ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "요약: Microsoft Excel의 oData 기능을 사용하여 Office 365 배포에 대한 자세한 보고 정보를 검색합니다."
-ms.openlocfilehash: a4245029c337450f5f5ac3655e0b60a301ea80ec
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 0749160e1d9bf5e8e0b6ee73aa1baa5ae826ba49
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Excel을 사용하여 Office 365 보고 데이터 검색
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/11/2018
   
 보고는 시스템 관리의 핵심 부분입니다. Office 365 관리 센터는 미리 정의된 보고서를 다수 포함하고 있으며, 왼쪽 탐색의 **보고서** 섹션에서 액세스할 수 있습니다. 여기에는 사용 현황 보고서와 보안 및 준수 보고서가 있습니다.
   
-사용할 수 있는 보고서는 사용 중인 Office 365 버전 및 사용하도록 설정한 Office 365 서비스에 따라 다릅니다. 자세한 내용은 [보고서 페이지]((https://technet.microsoft.com/ko-KR/library/office-365-reports.aspx))를 참조하세요.
+사용할 수 있는 보고서는 사용 중인 Office 365 버전 및 사용하도록 설정한 Office 365 서비스에 따라 다릅니다. 자세한 내용은 [보고서 페이지](https://technet.microsoft.com/ko-KR/library/office-365-reports.aspx)를 참조하세요.
   
 미리 정의된 관리 센터 보고서는 유용한 리소스입니다. 이 보고서를 사용하면 사서함 사용량이나 사용자가 온라인 회의에 소요한 시간(분)과 같은 사항을 쉽게 확인할 수 있습니다. 그러나 이러한 보고서는 Office 365 도메인을 자세히 분석할 때 몇 가지 제한이 있습니다.
   
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/11/2018
   
 또한 사용자 지정 스크립트/응용 프로그램을 사용하여 Office 365 관리 센터에서는 사용할 수 없는 보고서에 액세스할 수 있습니다. 예를 들어 관리 센터는 보유하고 있는 오래된 사서함의 수를 알려줄 수는 있지만 지난 30일 동안 액세스하지 않은 사서함이 어느 것인지 알려줄 수는 없습니다. 사용자 지정 PowerShell 스크립트로는 이러한 사실을 확인할 수 있습니다. 이러한 기능을 함께 사용하면 아주 유연하게 작업할 수 있으므로 짧으면서 비교적 간단한 Windows PowerShell 스크립트만 작성하면 됩니다.
   
-> [!VISUAL BASIC NOTE] Office 365 보고 서비스에 대한 자세한 내용은 [홈 페이지](https://msdn.microsoft.com/en-us/library/office/jj984325%28v=office.15%29.aspx)를 참조하세요.
+> [!VISUAL BASIC NOTE] Office 365 보고 서비스에 대한 자세한 내용은 [홈 페이지](https://msdn.microsoft.com/ko-KR/library/office/jj984325%28v=office.15%29.aspx)를 참조하세요.
   
 이 데이터를 검색하려면 일종의 코드를 작성해야 합니다. 반환되는 정보의 양과 유형을 제한해야 하는 더 큰 조직에 있는 경우 이러한 작업이 중요합니다. 그러나 규모가 좀 더 작은 조직이고 반환되는 정보의 양과 유형을 제한할 필요가 없는 경우라면 Excel 자체에서 Office 365 보고서를 여는 것을 고려할 수 있습니다.
   
@@ -98,7 +98,7 @@ DataFeed_3_reports-office365-com ClientSoftwareBrowserDetail.odc
     
      ![Excel 워크시트로 성공적으로 가져온 데이터 예제입니다.](images/o365_reporting_sample_spreadsheet.png)
   
-해당 데이터의 용도는 전적으로 사용자에게 달려 있습니다. 제안 사항을 보려면 [oData 데이터 피드를 사용하여 Excel Services 대시보드 만들기](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx)를 참조하세요. 이 문서는 Office 365 보고 서비스를 사용하지는 않지만 새 대시보드에 필터 및 슬라이서를 추가하는 작업과 같은 간단한 작업에 대한 힌트를 제공합니다.
+해당 데이터의 용도는 전적으로 사용자에게 달려 있습니다. 제안 사항을 보려면 [oData 데이터 피드를 사용하여 Excel Services 대시보드 만들기](https://technet.microsoft.com/ko-KR/library/jj873965%28v=office.15%29.aspx)를 참조하세요. 이 문서는 Office 365 보고 서비스를 사용하지는 않지만 새 대시보드에 필터 및 슬라이서를 추가하는 작업과 같은 간단한 작업에 대한 힌트를 제공합니다.
   
 ## <a name="see-also"></a>참고 항목
 
