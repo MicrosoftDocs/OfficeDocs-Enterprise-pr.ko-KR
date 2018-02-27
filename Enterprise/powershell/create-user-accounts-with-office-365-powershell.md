@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom: PowerShell, Ent_Office_Other, O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "사용 하는 방법은 Office 365 PowerShell 에 대 한 사용자 계정을 만드는 Office 365."
-ms.openlocfilehash: 97830f8158f84e6978cf3f2d168aa83d9fc551e6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 58c4f6b1d75bb8b77cbf6616b8036dd753ddc3f3
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정 만들기
 
@@ -31,19 +28,19 @@ ms.lasthandoff: 01/11/2018
 
 |**속성 이름**|**필수 여부**|**설명**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |예  <br/> |표시 이름에 사용 되는 Office 365 서비스. 예를 들어, Caleb 창턱  <br/> |
-|**UserPrincipalName** <br/> |예  <br/> |계정에 로그인 하는 데 사용 되는 이름 Office 365 서비스. For example, CalebS@contoso.onmicrosoft.com.  <br/> |
+|**DisplayName** <br/> |예  <br/> |Office 365 서비스에서 사용되는 표시 이름입니다. 예: Caleb Sills  <br/> |
+|**UserPrincipalName** <br/> |예  <br/> |Office 365 서비스에 로그인하는 데 사용되는 계정 이름입니다. 예: CalebS@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |아니요  <br/> ||
 |**LastName** <br/> |아니요  <br/> ||
-|**LicenseAssignment** <br/> |아니요  <br/> |이것은 라이센스 제도 (라이센스 계획으로 Office 365 계획 또는 SKU)에서 사용 가능한 라이선스는 사용자 계정에 할당 되. 라이선스 정의 Office 365 계정에 사용할 수 있는 서비스입니다. 계정을 만들면 계정에 액세스 하려면 라이센스가 필요 하지만 사용자에 게 라이선스를 할당 하지 않아도 됩니다. Office 365 서비스. 30 일을 만든 후 사용자 계정 허가 해야 합니다.<br/> **Get-MsolAccountSku** cmdlet을 사용하여 조직의 라이선싱 계획(**AccountSkuId**) 및 사용할 수 있는 라이선스를 확인할 수 있습니다. 자세한 내용은 [Office 365 PowerShell을 통해 라이선스 및 서비스 확인](view-licenses-and-services-with-office-365-powershell.md)을 참조하세요.<br/> |
-|**Password** <br/> |아니요  <br/> | 암호를 지정 하지 않으면 사용자 계정에 임의의 암호를 할당 하 고 암호는 명령의 결과에 표시 됩니다. 암호를 지정 하면 다음과 같은 복잡성을 만족 해야 합니다. <br/>  8에서 16 ASCII 텍스트 문자입니다. <br/>  다음과 같은 종류의 모든 3 문자: 소문자, 대문자, 숫자 및 기호입니다. <br/> |
+|**LicenseAssignment** <br/> |아니요  <br/> |사용 가능한 라이선스가 사용자 계정에 할당되는 라이선싱 계획(라이선스 계획, Office 365 계획 또는 SKU라고도 함)입니다. 라이선스는 계정에서 사용할 수 있는 Office 365 서비스를 정의합니다. 계정을 만들 때 사용자에게 라이선스를 할당할 필요는 없지만 계정이 Office 365 서비스에 액세스하려면 라이선스가 필요합니다. 만든 후에 사용자 계정에 30일 간의 라이선스가 부여됩니다.<br/> **Get-MsolAccountSku** cmdlet을 사용하여 조직의 라이선싱 계획(**AccountSkuId**) 및 사용할 수 있는 라이선스를 확인할 수 있습니다. 자세한 내용은 [Office 365 PowerShell을 통해 라이선스 및 서비스 확인](view-licenses-and-services-with-office-365-powershell.md)을 참조하세요.<br/> |
+|**Password** <br/> |아니요  <br/> | 암호를 지정하지 않으면 사용자 계정에 임의 암호가 할당되고 명령 결과에 암호가 표시됩니다. 암호를 지정하는 경우 다음과 같은 복잡성 요구 사항을 충족해야 합니다. <br/>  8에서 16 ASCII 텍스트 문자입니다. <br/>  다음과 같은 종류의 모든 3 문자: 소문자, 대문자, 숫자 및 기호입니다. <br/> |
 |**UsageLocation** <br/> |아니요  <br/> |유효한 ISO 3166-1 alpha-2 국가 코드입니다. 예를 들어 미국은 US, 프랑스는 FR입니다. 특정 국가에서는 일부 Office 365 서비스를 사용할 수 없으므로 이 값을 제공하는 것이 중요합니다. 따라서 계정에 이 값이 구성되어 있지 않으면 사용자 계정에 라이선스를 할당할 수 없습니다. 자세한 내용은 [라이센스 제한 정보](https://go.microsoft.com/fwlink/p/?LinkId=691730)를 참조하세요.<br/> |
    
 ## <a name="before-you-begin"></a>시작하기 전에
 
 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
   
-## <a name="use-office-365-powershell-to-create-individual-user-accounts"></a>사용 하 여 Office 365 PowerShell 개별 사용자 계정을 만들려면
+## <a name="use-office-365-powershell-to-create-individual-user-accounts"></a>Office 365 PowerShell을 사용하여 개별 사용자 계정 만들기
 
 개별 계정을 만들려면 다음 구문을 사용 합니다.
   
@@ -83,7 +80,7 @@ ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRI
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. 결과 볼 수 있는 출력 파일을 검토 합니다. 임의의 암호 생성 된 출력 파일에 표시 되므로 암호를 지정 하지 않았습니다.
+3. 출력 파일을 검토하여 결과를 확인합니다. 암호를 지정하지 않았으므로 생성된 임의 암호가 출력 파일에 표시됩니다.
     
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-create-individual-user-accounts"></a>Azure Active Directory V2 PowerShell 모듈을 사용하여 개별 사용자 계정 만들기
 
@@ -121,7 +118,7 @@ Office 365 PowerShell을 사용하여 사용자를 관리하는 방법에 대한
   
 - [Csv 내보내기](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- [Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))
+- [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)
     
 - [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     
