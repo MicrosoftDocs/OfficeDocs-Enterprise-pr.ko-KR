@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 Office 365 관리 센터 작업을 수행합니다."
-ms.openlocfilehash: 2f51c68acf55239c7d47f9b617a8a72965ead79d
-ms.sourcegitcommit: 7ed9108846227ca883cb5113543a165704d9bbc8
+ms.openlocfilehash: 9c653b2cbe5cd05ee8b0ae23ce84c2805d82e6f2
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -43,7 +43,7 @@ Office 365 PowerShell을 사용하면 명령줄에서 Office 365 설정을 관�
   - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2 SP1
     
     > [!NOTE]
-    >Windows 64비트 버전을 사용하세요. 32비트 버전의 Windows PowerShell용 Microsoft Azure Active Directory 모듈은 2014년 10월에 중단되었습니다.
+    >Windows 64비트 버전을 사용하세요. 32비트 버전의 Microsoft PowerShell용 Windows Azure Active Directory 모듈은 2014년 10월에 중단되었습니다.
     
 -  이러한 절차에 사용하는 Office 365회사 또는 학교 계정은 Office 365 관리자 역할의 구성원이어야 합니다. 자세한 내용은 [Office 365 관리자 역할 정보](https://go.microsoft.com/fwlink/p/?LinkId=532367)를 참조하세요.
 
@@ -53,7 +53,7 @@ Windows PowerShell용 Microsoft Azure Active Directory 모듈의 명령에는 cm
     
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
 
-이러한 단계는 컴퓨터에서 1번만 필요하며 연결할 때마다 수행할 필요는 없습니다. 그렇지만 최신 버전의 소프트웨어를 주기적으로 설치해야 합니다.
+다음이 단계 연결할 때마다 하지 컴퓨터에 한 번만 필요 합니다. 주기적으로 최신 버전의 소프트웨어를 설치 하려면 필요할 수 있습니다.
   
 1.  64비트 버전의 Microsoft Online Services 로그인 도우미를 설치합니다.[IT 전문가용 Microsoft Online Services 로그인 도우미 RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)를 설치합니다.
     
@@ -96,13 +96,13 @@ Connect-MsolService
 ### <a name="how-do-you-know-this-worked"></a>작동 여부는 어떻게 확인합니까?
 <a name="step3"> </a>
 
-어떠한 오류도 전송되지 않으면 성공적으로 연결되었음을 의미합니다. 빠른 테스트는 Office 365 cmdlet(예: **Get-MsolUser**)을 실행하여 결과를 확인하는 것입니다.
+어떠한 오류도 전송되지 않으면 성공적으로 연결되었음을 의미합니다. 빠른 테스트는 Office 365 cmdlet(예: **Get-MsolUser** )을 실행하여 결과를 확인하는 것입니다.
   
 오류가 발생하면 다음 요구 사항을 확인합니다.
   
-- **가장 흔한 문제는 암호를 잘못 입력한 경우입니다**. 3단계를 다시 실행하고 사용자 이름과 암호를 입력할 때 신중하게 확인합니다.
+- 가장 흔한 문제는 암호를 잘못 입력한 경우입니다. 두 가지 단계를 다시 실행하고 1단계에서 사용자 이름과 암호를 입력할 때 신중하게 확인합니다.
     
-- **Windows PowerShell용 Microsoft Azure Active Directory 모듈을 사용하려면 컴퓨터에서 Microsoft .NET Framework 3.5._x_ 기능이 사용되도록 설정되어야 합니다**. 컴퓨터에 최신 버전(예: 4 또는 4.5._x_)이 설치되어 있을 수 있지만 이전 버전의 .NET Framework와의 호환성이 사용되거나 사용되지 않도록 설정되어 있을 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
+- **Microsoft PowerShell용 Windows Azure Active Directory 모듈 하 고 Microsoft .NET Framework 3.5. _x_ 기능을 컴퓨터에서 사용할 수**. 컴퓨터에 새 버전이 설치 될 (4 또는 4.5 등. _x_), 있지만 이전 버전과 이전 버전과의 호환성을 .NET Framework 사용 또는 사용할 수. 자세한 내용은 다음 항목을 참조하십시오.
     
   - Windows Server 2012 또는 Windows Server 2012 R2의 경우 [역할 및 기능 추가 마법사를 사용하여 .NET Framework 3.5를 사용 가능하도록 설정](https://go.microsoft.com/fwlink/p/?LinkId=532368)을 참조하세요.
     
@@ -110,13 +110,13 @@ Connect-MsolService
     
   - Windows 7 또는 Windows Server 2008 R2의 경우 [Windows PowerShell용 Azure Active Directory 모듈을 열 수 없음](https://go.microsoft.com/fwlink/p/?LinkId=532370)을 참조하세요.
     
-- **Windows PowerShell용 Microsoft Azure Active Directory 모듈 버전이 오래되었을 수 있습니다.** 확인하려면 Windows PowerShell용 Microsoft Azure Active Directory 모듈 또는 Office 365 PowerShell에서 다음 명령을 실행하세요.
+- **사용자의 Microsoft PowerShell용 Windows Azure Active Directory 모듈 버전이 오래되었을 수 있습니다.** 확인하려면 Microsoft PowerShell용 Windows Azure Active Directory 모듈 또는 Office 365 PowerShell에서 다음 명령을 실행하세요.
     
   ```
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    반환된 버전 번호가 1.0.8070.2 값보다 낮은 경우 Windows PowerShell용 Microsoft Azure Active Directory 모듈을 제거한 후 1단계의 링크에서 최신 버전을 설치합니다.
+    반환된 버전 번호가 1.0.8070.2 값보다 낮은 경우 Microsoft PowerShell용 Windows Azure Active Directory 모듈을 제거한 후 1단계의 링크에서 최신 버전을 설치합니다.
     
 - **연결 오류가 발생하면** ["Connect-MsolService: 형식의 예외가 발생했습니다." 오류](https://go.microsoft.com/fwlink/p/?LinkId=532377) 항목을 참조하세요.
     
@@ -129,7 +129,7 @@ Azure Active Directory V2 PowerShell 모듈의 명령에는 cmdlet 이름에 “
 
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
 
-이러한 단계는 컴퓨터에서 1번만 필요하며 연결할 때마다 수행할 필요는 없습니다. 그렇지만 최신 버전의 소프트웨어를 주기적으로 설치해야 합니다.
+다음이 단계 연결할 때마다 하지 컴퓨터에 한 번만 필요 합니다. 주기적으로 최신 버전의 소프트웨어를 설치 하려면 필요할 수 있습니다.
 
   
 1. 관리자 권한의 Windows PowerShell 명령 프롬프트를 엽니다(관리자 권한으로 Windows PowerShell 실행).
