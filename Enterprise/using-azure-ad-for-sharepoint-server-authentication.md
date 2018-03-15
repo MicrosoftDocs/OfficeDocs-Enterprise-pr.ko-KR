@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다."
-ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
+ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD를 사용 하 여 SharePoint 서버 인증을 위해
 
@@ -67,7 +67,7 @@ SharePoint Server 2016 id 공급자로 Azure AD를 사용 하 여 환경을 설�
 
 ## <a name="step-1-create-a-new-azure-ad-directory-or-use-your-existing-directory"></a>1 단계: 새 만들기 Azure AD 디렉터리 하거나 기존 디렉터리를 사용 하 여
 
-Azure 포털 ([https://portal.azure.com](https://portal.azure.com))에서 새 디렉터리를 만듭니다. 조직 이름, 초기 도메인 이름 및 국가 또는 지역을 제공 합니다.
+Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), 새 디렉터리를 만듭니다. 조직 이름, 초기 도메인 이름 및 국가 또는 지역을 제공 합니다.
 
 ![디렉터리를 만들기 (영문)](images/SAML11/fig2-createdirectory.png) 
 
@@ -89,7 +89,7 @@ SAML을 사용 하 여 응용 프로그램 SSL을 사용 하도록 구성 해야
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>3 단계: Azure AD에 새 엔터프라이즈 응용 프로그램 만들기
 
-1. Azure 포털 ([https://portal.azure.com](https://portal.azure.com))에서 Azure AD 디렉터리를 엽니다. **엔터프라이즈 응용 프로그램**클릭 한 다음 **새 응용 프로그램**을 클릭 합니다. **비 갤러리 응용 프로그램**을 선택 합니다. *SharePoint SAML 통합* 와 같은 이름을 제공 하 고 **추가**클릭 합니다.</br>![새 갤러리가 아닌 응용 프로그램 추가 (영문)](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), Azure AD 디렉터리를 엽니다. **엔터프라이즈 응용 프로그램**클릭 한 다음 **새 응용 프로그램**을 클릭 합니다. **비 갤러리 응용 프로그램**을 선택 합니다. *SharePoint SAML 통합* 와 같은 이름을 제공 하 고 **추가**클릭 합니다.</br>![새 갤러리가 아닌 응용 프로그램 추가 (영문)](images/SAML11/fig5-addnongalleryapp.png)</br>
 2. 응용 프로그램을 구성 하는 탐색 창의 Single sign on 링크를 클릭 합니다. **SAML 기반 sign-on** 응용 프로그램에 대 한 SAML 구성 속성을 표시 하는 **Single sign-on 모드** 드롭다운을 변경 합니다. 다음과 같은 속성으로 구성 합니다.</br>
     - 식별자:`urn:sharepoint:portal.contoso.local`
     - 회신 URL:`https://portal.contoso.local/_trust/default.aspx`
@@ -172,7 +172,7 @@ Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>6 단계: Azure AD에 SAML 1.1 토큰 발급 정책 추가
 
-포털에서 Azure AD 응용 프로그램이 만들어지면 SAML 2.0을 사용 하 여 기본값입니다. SharePoint Server 2016 SAML 1.1 토큰 형식이 필요합니다. 다음 스크립트는 기본 SAML 2.0 정책을 제거 하 고 문제 SAML 1.1 토큰에 새 정책 추가 됩니다. 이 코드는 해당 [Azure Active Directory 그래프와 상호작용을 보여주는 샘플](https://github.com/kaevans/spsaml11/tree/master/scripts)을 다운로드 해야 합니다.
+포털에서 Azure AD 응용 프로그램이 만들어지면 SAML 2.0을 사용 하 여 기본값입니다. SharePoint Server 2016 SAML 1.1 토큰 형식이 필요합니다. 다음 스크립트는 기본 SAML 2.0 정책을 제거 하 고 문제 SAML 1.1 토큰에 새 정책 추가 됩니다. 이 코드는 해당 [Azure Active Directory 그래프와 상호작용을 보여주는 샘플](https://github.com/kaevans/spsaml11/tree/master/scripts)을 다운로드 해야 합니다. 
 
 
 ```
@@ -183,8 +183,9 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+> 실행 하는 것이 중요는 `Import-Module` 이 예제와 같이 명령 합니다. 이 표시 된 명령은 포함 된 종속 모듈을 로드 합니다. 성공적으로 이러한 명령을 실행 하려면 관리자 권한으로 명령 프롬프트를 열고 해야할 수 있습니다.
 
-Azure AD와 토큰 발급 정책에 대 한 자세한 내용은 [정책에 대 한 작업에 대 한 그래프 API 참조](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)를 참조 하십시오.
+이러한 예제 PowerShell 명령을 그래프 API에 대 한 쿼리를 실행 하는 방법의 예입니다. Azure AD와 토큰 발급 정책에 대 한 자세한 내용은 [정책에 대 한 작업에 대 한 그래프 API 참조](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)를 참조 하십시오.
 
 ## <a name="step-7-verify-the-new-provider"></a>7 단계: 새 공급자를 확인 하십시오.
 
@@ -210,7 +211,14 @@ New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
 
+## <a name="fixing-people-picker"></a>수정 하는 사용자 선택
+사용자가 Azure AD에서 id가 사용 하 여 SharePoint 2016에 이제 로그인 할 수 있지만 여전히 사용자 환경 향상을 위한 기회 있습니다. 예: 사용자에 대 한 검색 사용자 선택에서 여러 검색 결과 제공 합니다. 각 클레임 매핑을에서 만들어진 3 클레임 유형에 대 한 검색 결과 방법이 있습니다. 사용자 선택을 사용 하 여 사용자를 선택 하려면 사용자 이름을 정확 하 게 입력 하 고 **이름** 클레임 결과 선택 해야 합니다.
 
+![클레임 검색 결과](images/SAML11/fig16-claimssearchresults.png)
+
+맞춤법 오류를 야기할 수 있는 값을 검색에 대 한 유효성을 검사 없이 이거나 잘못 된 실수로 선택 클레임 유형 **성** 등을 할당 하는 사용자가 클레임 합니다. 사용자가 성공적으로 리소스에 액세스 하지 못하도록 방지할 수이 합니다.
+
+이 시나리오를 지원 하기는 개방형 소스 SharePoint 2016에 대 한 사용자 지정 클레임 공급자를 제공 하는 [AzureCP](https://yvand.github.io/AzureCP/) 를 호출 하는 솔루션입니다. Azure AD 그래프를 사용 하 여 문제를 해결 사용자 입력 및 수행 하는 것 유효성 검사 합니다. 자세한 내용은 [AzureCP](https://yvand.github.io/AzureCP/). 
 
 ## <a name="additional-resources"></a>추가 리소스
 
