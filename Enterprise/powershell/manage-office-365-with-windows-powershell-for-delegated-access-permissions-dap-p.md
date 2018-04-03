@@ -1,5 +1,5 @@
 ---
-title: "DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 Office 365 관리"
+title: DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 Office 365 관리
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: "요약:Syndication 및 CSP(클라우드 솔루션 공급자) 파트너에서는 Windows PowerShell을 사용하여 Office 365 고객 테넌트를 관리할 수 있습니다."
+description: 요약:Syndication 및 CSP(클라우드 솔루션 공급자) 파트너에서는 Windows PowerShell을 사용하여 Office 365 고객 테넌트를 관리할 수 있습니다.
 ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT

@@ -1,5 +1,5 @@
 ---
-title: "사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리"
+title: 사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,16 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: "요약:Office 365 PowerShell로 사용자 계정 및 라이선스를 관리하는 방법을 배우세요."
-ms.openlocfilehash: 6a8403c03733a5b604a8da1503ed98537bc15edb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 요약:Office 365 PowerShell로 사용자 계정 및 라이선스를 관리하는 방법을 배우세요.
+ms.openlocfilehash: 27bf709fc0daca5c56d9a1c57d3723a09ff49fdc
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리
 
@@ -24,7 +26,7 @@ ms.lasthandoff: 02/13/2018
   
 Office 365 관리자의 기본 작업 중 하나는 사용자 계정과 라이선스를 관리하는 일입니다. Office 365 관리 센터에서 이러한 작업의 일부를 수행할 수 있지만 다른 작업은 Office 365 PowerShell에서 훨씬 더 빠르고 쉽습니다. 자세한 내용은 다음 항목을 참조하세요.
   
-- [Office 365 PowerShell을 사용하여 라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)
+- [라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.](view-licenses-and-services-with-office-365-powershell.md)
     
 - [Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
     

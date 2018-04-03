@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell 커뮤니티 리소스"
+title: Office 365 PowerShell 커뮤니티 리소스
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: "요약: 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대한 도움말을 볼 수 있습니다."
+description: '요약: 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대한 도움말을 볼 수 있습니다.'
 ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
 ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
