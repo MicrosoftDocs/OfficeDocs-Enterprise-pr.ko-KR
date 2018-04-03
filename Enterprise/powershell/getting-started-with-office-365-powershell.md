@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell 시작"
+title: Office 365 PowerShell 시작
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "요약:Office 365 PowerShell의 중요성을 살펴보고 Office 365 테넌트에 연결하여 도움말을 확인하세요."
+description: 요약:Office 365 PowerShell의 중요성을 살펴보고 Office 365 테넌트에 연결하여 도움말을 확인하세요.
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

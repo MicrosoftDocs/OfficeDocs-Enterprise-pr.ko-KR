@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 클라우드 IT 아키텍처 리소스"
+title: Microsoft 클라우드 IT 아키텍처 리소스
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
-description: "요약: Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다."
+description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다.'
 ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

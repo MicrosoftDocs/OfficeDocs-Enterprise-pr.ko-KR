@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용하여 Exchange Online 관리"
+title: Office 365 PowerShell을 사용하여 Exchange Online 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
-description: "요약:Office 365 PowerShell을 사용하여 사서함 구성 및 고급 보고서 표시 등 Microsoft Exchange Online을 관리할 수 있습니다."
+description: 요약:Office 365 PowerShell을 사용하여 사서함 구성 및 고급 보고서 표시 등 Microsoft Exchange Online을 관리할 수 있습니다.
 ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

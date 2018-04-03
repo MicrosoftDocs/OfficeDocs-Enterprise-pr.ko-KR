@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용하여 SharePoint Online 관리"
+title: Office 365 PowerShell을 사용하여 SharePoint Online 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: "요약:Office 365 PowerShell을 사용하여 SharePoint Online 사용자, 그룹 및 사이트 그룹을 관리합니다."
+description: 요약:Office 365 PowerShell을 사용하여 SharePoint Online 사용자, 그룹 및 사이트 그룹을 관리합니다.
 ms.openlocfilehash: d92ddfa82c0d21b9de16439ef1d0108eed6ab63f
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
