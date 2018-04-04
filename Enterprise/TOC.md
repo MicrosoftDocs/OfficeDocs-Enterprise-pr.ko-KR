@@ -73,7 +73,6 @@
 #### [지리적으로 분산 위치 삭제](delete-a-geo-location.md)
 #### [다중-지리적으로 분산 환경에서 사용자 환경](multi-geo-user-experience.md)
 ### [OneDrive 비즈니스 다중-지리적으로 분산에 대 한 구성](multi-geo-tenant-configuration.md)
-### [비즈니스 다중-지리적으로 분산에 대 한 OneDrive에 대 한 검색 구성](configure-search-for-multi-geo.md)
 ### [OneDrive 라이브러리를 다른 지리적 위치로 이동](move-onedrive-between-geo-locations.md)
 ## [보안 솔루션](security-solutions.md)
 ### [GDPR에 대 한 office 365 정보 보호](office-365-information-protection-for-gdpr.md)
