@@ -1,5 +1,5 @@
 ---
-title: "Azure IaaS에 대 한 하이브리드 클라우드 시나리오"
+title: Azure IaaS용 하이브리드 클라우드 시나리오
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: "요약: 경우 서비스로 (IaaS) Microsoft의 인프라에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다."
-ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: 경우 서비스로 (IaaS) Microsoft의 인프라에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.'
+ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS에 대 한 하이브리드 클라우드 시나리오
+# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS용 하이브리드 클라우드 시나리오
 
  **요약:** 서비스로 (IaaS) Microsoft의 인프라에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.
   
@@ -179,8 +179,6 @@ Azure의 다중 계층, 항상 사용 가능한 LOB 응용 프로그램의 다�
 다음의 추가 리소스를 참조 하십시오.
   
 - [하이브리드 클라우드 환경 설계](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [클라우드 Microsoft 가상 Academy 코스를 Your 데이터 센터를 확장 합니다.](https://mva.microsoft.com/en-US/training-courses/extend-your-datacenter-to-the-cloud-13908?l=7fG3tAouB_7100115881)
     
 - [디자인 및 Azure의 LOB 응용 프로그램 구축](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     

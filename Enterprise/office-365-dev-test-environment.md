@@ -1,9 +1,9 @@
 ---
-title: "Office 365 개발/테스트 환경"
+title: Office 365 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: "요약:이 테스트 랩 가이드를 사용 하 여 평가 또는 개발/테스트는 Office 365 평가판 구독을 만듭니다."
-ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 요약:이 테스트 랩 가이드를 사용 하 여 평가 또는 개발/테스트는 Office 365 평가판 구독을 만듭니다.
+ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -56,17 +56,17 @@ Azure에 구독을 해야 합니다. 이 구성에 대 한 [Azure 무료 평가�
 
 Office 365 E5 평가판 구독을 시작 하려면 먼저 가상의 회사 이름 및 새 Microsoft 계정을 필요 합니다.
   
-1. 하는 Microsoft 샘플 콘텐츠에서 사용 되는 가상의 회사, 회사 이름에 대 한 회사 이름 Contoso의 variant를 사용 하지만 필요 하지 않습니다 하는 것이 좋습니다. 여기에 가상의 회사 이름을 기록: ___
+1. 하는 Microsoft 샘플 콘텐츠에서 사용 되는 가상의 회사, 회사 이름에 대 한 회사 이름 Contoso의 variant를 사용 하지만 필요 하지 않습니다 하는 것이 좋습니다. 여기에 가상의 회사 이름을 기록: ___ 합니다.
     
-2. 새 Microsoft 계정을 등록 하려면 [https://outlook.com](https://outlook.com) 로 이동 하 고 새 전자 메일 계정 및 주소와 계정을 만듭니다. 이 계정을 사용 하 여 Office 365에 등록 됩니다.
+2. 새 Microsoft 계정을 등록 하려면로 이동 [https://outlook.com](https://outlook.com) 새 전자 메일 계정 및 주소와 계정을 만듭니다. 이 계정을 사용 하 여 Office 365에 등록 됩니다.
     
-  - 여기에 새 계정의 성과 이름을 기록: ___
+  - 여기에 새 계정의 성과 이름을 기록: ___ 합니다.
     
   - 여기서 새 전자 메일 계정 주소를 기록: ___@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 평가판 구독에 등록
 
-1. 간편한 Office 365 개발/테스트 환경에 대 한 사용자의 컴퓨터에서 인터넷 브라우저를 열고 및 [https://aka.ms/e5trial](https://aka.ms/e5trial)로 이동 합니다. 
+1. 간편한 Office 365 개발/테스트 환경에 대 한 사용자의 컴퓨터에서 인터넷 브라우저를 열고 하 고 이동 [https://aka.ms/e5trial](https://aka.ms/e5trial)합니다. 
     
     시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경용:
     
@@ -83,7 +83,7 @@ Stop-Process -Name Explorer -Force
     > [!TIP]
     > 클릭 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) 이 문서의 모든 PowerShell 명령을 포함 된 텍스트 파일을 가져오도록 합니다.
   
-  - 시작 화면에서 **Internet Explorer** 를 클릭 하 고 [https://aka.ms/e5trial](https://aka.ms/e5trial)로 이동 합니다.
+  - 시작 화면에서 **Internet Explorer** 를 클릭 하 고 이동 [https://aka.ms/e5trial](https://aka.ms/e5trial)합니다.
     
 2. **알고 있습니다 하기 시작** 페이지에서 다음을 지정 합니다.
     
@@ -105,7 +105,7 @@ Stop-Process -Name Explorer -Force
     
     안전한 위치에 입력 한 암호를 기록 합니다.
     
-    여기에서 **조직 이름**, 라고 하 여 가상의 회사 이름을 기록: ___
+    여기에서 **조직 이름**, 라고 하 여 가상의 회사 이름을 기록: ___ 합니다.
     
 5. **내 계정 만들기**를 클릭 합니다.
     
@@ -113,7 +113,7 @@ Stop-Process -Name Explorer -Force
     
 7. 수신 된 텍스트 메시지에서 확인 코드를 입력 하 고 ****을 클릭 합니다.
     
-8. URL을 기록 로그인 페이지 여기 (선택한 복사본): ___
+8. URL을 기록 로그인 페이지 여기 (선택한 복사본): ___ 합니다.
     
 9. ID를 기록 사용자 여기 (선택한 복사본): ___.onmicrosoft.com
     
@@ -259,17 +259,17 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 프로덕션 사이트 URL: https://___.sharepoint.com/sites/production
+  - 프로덕션 사이트 URL:https://______________________________________________.sharepoint.com/sites/production
     
-  - 판매 사이트 URL: https://___.sharepoint.com/sites/sales
+  - 영업 사이트 URL:https://______________________________________________.sharepoint.com/sites/sales
     
-  - 사이트 URL을 지원: https://___.sharepoint.com/sites/support
+  - 사이트 URL을 지원 합니다.https://______________________________________________.sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>다음 단계
 
 이러한 추가 문서를 사용 하 여 Office 365 개발/테스트 환경에서:
   
-- [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [Office 365 개발/테스트 환경에 대해 다단계 인증](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     

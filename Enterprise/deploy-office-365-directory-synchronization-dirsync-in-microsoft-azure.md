@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Azure에서 Office 365 디렉터리 동기화 (DirSync)를 배포 합니다."
+title: Microsoft Azure의 Office 365 디렉터리 동기화 배포
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,16 +15,16 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: "요약: 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 사이 계정을 동기화 하는 Azure에 가상 컴퓨터에서 Azure AD 연결 (DirSync)를 배포 합니다."
-ms.openlocfilehash: 07ec310c50635afd70b0342d2e0547aab0e95d01
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: Azure AD 연결 계정 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 간에 동기화 하는 Azure에 가상 컴퓨터에 배포 합니다.'
+ms.openlocfilehash: f96147542da3af1883ea5428b1345c8cf75b9223
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Microsoft Azure에서 Office 365 디렉터리 동기화 (DirSync)를 배포 합니다.
+# <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure의 Office 365 디렉터리 동기화 배포
 
- **요약:** 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 사이 계정을 동기화 하는 Azure에 가상 컴퓨터에서 Azure AD 연결 (DirSync)를 배포 합니다.
+ **요약:** 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 사이 계정을 동기화 하는 Azure에 가상 컴퓨터에서 Azure AD 연결을 배포 합니다.
   
 Azure Active Directory (AD) 연결 (이전의 디렉터리 동기화 도구, 디렉터리 동기화 도구 또는 DirSync.exe 도구) 도메인에 가입 된 서버에 설치 하는 서버 기반 응용 프로그램은 온-프레미스 Windows 서버를 동기화 Office 365 구독 Azure Active Directory 테 넌 트에 active Directory 사용자입니다. 온-프레미스 서버의 Azure AD 연결을 설치할 수는 있지만 설치할 수 있습니다 또한 Azure에 가상 컴퓨터에 다음과 같은 이유로 합니다.
   
@@ -50,7 +50,7 @@ Azure Active Directory (AD) 연결 (이전의 디렉터리 동기화 도구, 디
   
 ![트래픽 흐름을 사용하여 온-프레미스 계정을 Office 365 구독의 Azure AD 테넌트와 동기화하는 Azure의 가상 컴퓨터에 있는 Azure AD Connect 도구](images/CP_DirSyncOverview.png)
   
-이 다이어그램에서는 사이트 마다 VPN 또는 ExpressRoute 연결 하 여 연결 된 두 네트워크 있습니다. 여기에서 Windows Server AD 도메인 컨트롤러 이동한 하는 가상 컴퓨터에 해당 하는 디렉터리 동기화 서버와 함께 Azure 가상 네트워크를 온-프레미스 네트워크가 [Azure AD 연결](https://www.microsoft.com/download/details.aspx?id=47594)을 실행 합니다. 디렉터리 동기화 서버에서 시작 되는 두가지 주요 트래픽 흐름 가지가 있습니다.
+이 다이어그램에서는 사이트 마다 VPN 또는 ExpressRoute 연결 하 여 연결 된 두 네트워크 있습니다. 여기에서 Windows Server AD 도메인 컨트롤러 이동한 하는 가상 컴퓨터 디렉터리 동기화 서버를 함께 Azure 가상 네트워크를 온-프레미스 네트워크가 [Azure AD 연결](https://www.microsoft.com/download/details.aspx?id=47594)을 실행 합니다. 디렉터리 동기화 서버에서 시작 되는 두가지 주요 트래픽 흐름 가지가 있습니다.
   
 -  Azure AD 연결 계정 및 암호를 변경 내용에 대 한 온-프레미스 네트워크에서 도메인 컨트롤러를 쿼리합니다.
     
@@ -73,7 +73,7 @@ Azure Active Directory (AD) 연결 (이전의 디렉터리 동기화 도구, 디
     
     Azure AD 연결을 구성 하려면 Azure AD 관리자 계정 및 Windows Server AD 엔터프라이즈 관리자 계정 자격 증명 (사용자 이름 및 암호) 필요 합니다. Azure AD 연결을 즉시 하 고 Office 365를 온-프레미스 Windows Server AD 포리스트를 동기화 하 고 지속적으로 실행 합니다.
     
-프로덕션 환경에서이 솔루션을 배포 하기 전에 실험 또는 데모에 대 한 개념 증명으로이 구성을 설정 하려면 지침 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md) 에 사용 합니다.
+프로덕션 환경에서이 솔루션을 배포 하기 전에 실험 또는 데모에 대 한 개념 증명으로이 구성을 설정 하려면 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md) 의 지침을 사용 합니다.
   
 > [!IMPORTANT]
 > Azure AD 연결 구성에는 다음이 완료 되 면 저장 하지는 않습니다 Windows Server AD 엔터프라이즈 관리자 계정 자격 증명입니다. 
@@ -81,7 +81,7 @@ Azure Active Directory (AD) 연결 (이전의 디렉터리 동기화 도구, 디
 > [!NOTE]
 > 이 솔루션에서는 Office 365를 단일 Windows Server AD 포리스트 동기화 (영문)에 대해 설명 합니다. 이 문서에서 설명 하는 토폴로지는이 솔루션을 구현 하는 방법은 하나 뿐를 나타냅니다. 조직의 토폴로지 고유한 네트워크 요구 사항 및 보안 고려 사항에 따라 다를 수 있습니다. 
   
-## <a name="plan-for-hosting-a-dirsync-server-for-office-365-in-azure"></a>Azure의 Office 365에 대 한 디렉터리 동기화 서버를 호스트 하는 것에 대 한 계획
+## <a name="plan-for-hosting-a-directory-sync-server-for-office-365-in-azure"></a>Azure의 Office 365에 대 한 디렉터리 동기화 서버를 호스트 하는 것에 대 한 계획
 <a name="PlanningVirtual"> </a>
 
 ### <a name="prerequisites"></a>필수 구성 요소
@@ -102,11 +102,11 @@ Azure Active Directory (AD) 연결 (이전의 디렉터리 동기화 도구, 디
 
 다음 목록에서는이 솔루션에 대 한 디자인 선택 사항에 설명 합니다.
   
-- 이 솔루션 단일 Azure 가상 네트워크를 사용 하 여 사이트 간 VPN 연결을 사용 합니다. Azure 가상 네트워크 서버가 포함 된 단일 서브넷, Azure AD 연결을 실행 하는 디렉터리 동기화 서버를 호스트 합니다. 
+- 이 솔루션 단일 Azure 가상 네트워크를 사용 하 여 사이트 간 VPN 연결을 사용 합니다. Azure 가상 네트워크를 하나의 서버를 포함 하는 단일 서브넷, Azure AD 연결을 실행 하는 디렉터리 동기화 서버를 호스트 합니다. 
     
 - 온-프레미스 네트워크에서 도메인 컨트롤러와 DNS 서버 존재 합니다.
     
-- Azure AD 연결 single sign-on 하는 대신 암호 동기화를 수행합니다. Active Directory Federation Services (AD FS) 인프라를 배포 필요가 없습니다. 암호 동기화 및 single sign-on 및 옵션에 대 한 자세한 내용은 [사용 하 여 디렉터리 통합 시나리오는 결정](https://go.microsoft.com/fwlink/p/?LinkId=393094)을 참조 합니다.
+- Azure AD 연결 single sign-on 하는 대신 암호 해시 동기화를 수행합니다. Active Directory Federation Services (AD FS) 인프라를 배포 필요가 없습니다. 암호 해시 동기화 및 single sign-on 및 옵션에 대 한 자세한 내용은 [사용 하 여 디렉터리 통합 시나리오는 결정](https://go.microsoft.com/fwlink/p/?LinkId=393094)을 참조 합니다.
     
 환경에서이 솔루션을 배포할 때 고려할 수 있는 추가 디자인 선택 사항이 있습니다. 이러한 기능은 다음과 같습니다.
   
@@ -128,7 +128,7 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
 배포 후에 위치 및 Office 365에서 새 사용자 계정에 대 한 라이선스를 할당 해야 합니다.
   
 > [!TIP]
-> 이 솔루션, Microsoft PowerPoint 및 Visio 형식, 다이어그램 및 Azure PowerShell을 생성 하는 Microsoft Excel 구성 통합 문서를 개발할 수 Azure PowerShell 블록의 모든 [디렉터리 동기화 서버 Azure 배포 키트에](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) 포함 사용자 설정에 대해 사용자 지정 명령 차단 됩니다.
+> 이 솔루션, Microsoft PowerPoint 및 Visio 형식, 다이어그램 및 생성 하는 Microsoft Excel 구성 통합 문서를 개발할 수 Azure PowerShell 블록의 모든 [디렉터리 동기화 서버 Azure 배포 키트에](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) 포함 Azure PowerShell 명령 블록 설정에 대해 사용자 지정 합니다.
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>1 단계: 만들기 및 Azure 가상 네트워크를 구성 합니다.
 
@@ -136,7 +136,7 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
   
 결과 구성입니다.
   
-![Azure에서 호스트되는 Office 365의 DirSync 서버 1단계](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Azure에서 호스팅되는 Office 365에 대 한 디렉터리 동기화 서버의 1 단계](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 이 그림에서는 사이트 마다 VPN 또는 ExpressRoute 연결을 통해 Azure 가상 네트워크에 연결 하는 온-프레미스 네트워크를 보여줍니다.
   
@@ -158,9 +158,9 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
   
 결과 구성입니다.
   
-![Azure에서 호스트되는 Office 365의 DirSync 서버 2단계](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Azure에서 호스팅되는 Office 365에 대 한 디렉터리 동기화 서버의 2 단계](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
-이 그림 디렉터리 동기화 서버 가상 컴퓨터에서 크로스-프레미스 Azure 가상 네트워크입니다.
+이 그림에서 크로스-프레미스 디렉터리 동기화 서버 가상 컴퓨터를 보여주는 Azure 가상 네트워크입니다.
   
 ### <a name="phase-3-install-and-configure-azure-ad-connect"></a>3 단계: 설치 하 고 Azure AD 연결 구성
 
@@ -168,14 +168,14 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
   
 1. 로컬 관리자 권한이 있는 Windows Server AD 도메인 계정을 사용 하 여 원격 데스크톱 연결을 사용 하 여 디렉터리 동기화 서버에 연결 합니다. [가상 컴퓨터 및 로그인 시에 연결](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)을 참조 합니다.
     
-2. 디렉터리 동기화 서버에서 [Office 365에서 디렉터리 동기화 설정](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) 문서 열고 암호 동기화를 사용 하 여 디렉터리 동기화에 대 한 지침을 따릅니다.
+2. 디렉터리 동기화 서버에서 [Office 365에서 디렉터리 동기화 설정](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) 문서 열고 암호 해시 동기화를 사용 하 여 디렉터리 동기화에 대 한 지침을 따릅니다.
     
 > [!CAUTION]
 > 로컬 사용자 조직 구성 단위 (OU) **AAD_xxxxxxxxxxxx** 계정을 만듭니다. 이동 하지 않거나이 계정을 제거 또는 동기화에 실패 합니다.
   
 결과 구성입니다.
   
-![Azure에서 호스트되는 Office 365의 DirSync 서버 3단계](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Azure에서 호스팅되는 Office 365에 대 한 디렉터리 동기화 서버의 3 단계](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 이 그림 Azure AD 연결 사용 하 여 디렉터리 동기화 서버에서 크로스-프레미스 Azure 가상 네트워크입니다.
   
@@ -209,7 +209,7 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
   
 [Office 365에서 디렉터리 동기화 설정](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
   
-[디렉터리 동기화 서버에서 Azure 배포 키트 (영문)](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+[Azure 배포 키트 (영문)에서 디렉터리 동기화 서버](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
 
 
 
