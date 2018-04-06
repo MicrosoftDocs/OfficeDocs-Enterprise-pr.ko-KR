@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 엔터프라이즈 개발/테스트 환경"
+title: Microsoft 365 엔터프라이즈 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: "요약:이 테스트 랩 가이드를 사용 하 여 Office 365 e 5, Enterprise 이동성 + 보안 (EMS) e 5 및 Windows 10 Enterprise를 실행 하는 컴퓨터를 포함 하는 개발/테스트 환경을 만들 수 있습니다."
-ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 요약:이 테스트 랩 가이드를 사용 하 여 Office 365 e 5, Enterprise 이동성 + 보안 (EMS) e 5 및 Windows 10 Enterprise를 실행 하는 컴퓨터를 포함 하는 개발/테스트 환경을 만들 수 있습니다.
+ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 엔터프라이즈 개발/테스트 환경
 
@@ -44,17 +44,17 @@ ms.lasthandoff: 02/14/2018
   
 1. 인터넷 브라우저의 개인 인스턴스와 전역 관리자 계정 자격 증명을 사용 하 여 Office 365 포털에 로그인 합니다. 도움말을 보려면 [Office 365에 로그인 할 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조 하십시오.
     
-2. **Admin** 타일을 클릭 합니다.
+2. **관리** 타일을 클릭합니다.
     
-3. 왼쪽 탐색 영역에서 브라우저에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.
+3. 브라우저의 **Office 관리 센터** 탭에 있는 왼쪽 탐색 영역에서 **대금 청구 > 서비스 구매**를 차례로 클릭합니다.
     
 4. **서비스 구매** 페이지 **Enterprise 이동성 + 보안 e 5** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
-5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
+5. **주문 확인** 페이지에서 **지금 평가판 사용**을 클릭합니다.
     
-6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
+6. **주문 접수** 페이지에서 **계속**을 클릭합니다.
     
-7. 왼쪽 탐색 영역에서 브라우저에서 **Office 365 관리 센터** 탭을 클릭 **사용자 > 활성 사용자**합니다.
+7. 브라우저의 **Office 365 관리 센터** 탭에 있는 왼쪽 탐색 영역에서 **사용자 > 활성 사용자**를 차례로 클릭합니다.
     
 8. 전역 관리자 계정을 클릭 하 고 **제품 라이선스**에 대 한 **편집** 을 클릭 합니다.
     
@@ -63,12 +63,11 @@ ms.lasthandoff: 02/14/2018
 > [!NOTE]
 > Enterprise Mobility + Security E5 평가판 구독 기간은 90일입니다. 영구 개발/테스트 환경의 경우 소수의 라이선스를 사용해서 유료 구독을 새로 만듭니다. 
   
- ***3 단계를 완료 한 경우*** [Office 365 개발/테스트 환경](office-365-dev-test-environment.md) 에서는 모든 (사용자 2, 사용자 3, 4 사용자 및 사용자 5) 사용자 계정에 대해 8과 이전 절차의 9 단계를 반복 합니다.
+ ***의 3 단계를 완료 하는 경우는*** [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)에서는 모든 (사용자 2, 사용자 3, 4 사용자 및 사용자 5) 사용자 계정에 대해 8과 이전 절차의 9 단계를 반복 합니다.
   
 개발/테스트 환경을 현재가지고 있습니다.
   
 - 사용자 계정 목록과 동일한 조직 및 동일한 Azure AD 테넌트를 공유하는 Office 365 E5 Enterprise 및 EMS 평가판 구독
-    
 - Office 365 e 5 및 EMS e 5를 사용 하 여 모든 적절 한 사용자 계정 (전역 관리자만 또는 모든 5 개의 사용자 계정) 사용할 수 있습니다.
     
 그림 2 EMS를 추가 하는 구성에 결과 보여줍니다.
@@ -91,7 +90,7 @@ ms.lasthandoff: 02/14/2018
   
 ### <a name="virtual-machine-in-azure"></a>Azure에 가상 컴퓨터
 
-***Visual Studio 기반 구독 있어야***Windows 10 Enterprise에 대 한 이미지에 액세스할 수 있는 Microsoft Azure에서 Windows 10 가상 컴퓨터를 생성 합니다. 다른 유형의 평가판 및 유료 구독 등 Azure 구독에이 이미지에 대 한 액세스를 사용할 필요가 없습니다.
+Azure 갤러리 이미지를 사용 하 여 Microsoft Azure에 가상 컴퓨터를 Windows 10을 만듭니다.
   
 > [!NOTE]
 > 다음 명령 집합 텍스트 Azure PowerShell의 최신 버전을 사용 합니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조 하십시오. 이 명령 집합 빌드 Windows 10 엔터프라이즈 가상 컴퓨터에는 WIN10 및 리소스 그룹, 사용자는 저장소 계정이 및 가상 네트워크를 포함 하 여 필요한 인프라의 모든 라는 합니다. Azure 인프라 서비스에 익숙한 사용자의 현재 배포 된 인프라에 맞게 이러한 지침에 맞게 조정 하십시오. 
@@ -131,27 +130,6 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-리소스 관리자 기반 가상 컴퓨터 저장소 리소스 관리자 기반 계정이 필요합니다. *소문자 및 숫자를 포함 하* 여 저장소 계정에 대해 전역적으로 고유 이름을 선택 해야 합니다. 기존 저장소 계정을 나열 하려면이 명령을 사용할 수 있습니다.
-  
-```
-Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
-```
-
-이 명령을 사용하여 제안된 저장소 계정 이름이 고유한지 테스트할 수 있습니다.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-이러한 명령을 사용하여 새 테스트 환경에 대한 새 저장소 계정을 만듭니다.
-  
-```
-$rgName="<your new resource group name>"
-$saName="<storage account name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 다음으로 만들면 새 가상 네트워크에 연결 하 고 WIN10 가상 컴퓨터 이러한 명령을 사용 합니다. 대화 상자가 나타나면 WIN10에 대 한 이름 및 로컬 관리자 계정의 암호를 제공 하 고 이러한 안전한 위치에 저장 합니다.
   
 ```
@@ -165,19 +143,17 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 $pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
-$storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftVisualStudio -Offer Windows -Skus Windows-10-N-x64 -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + "vhds/WIN10-TestLab-OSDisk.vhd"
-$vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -CreateOption fromImage
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>4 단계: Azure AD를 Windows 10 컴퓨터를 가입 시킵니다.
 
-실제 또는 가상 컴퓨터를 만든 Windows 10 Enterprise를 사용 하 여 구성 하 고 실행 되 고, 로컬 관리자 계정을 사용 하 여 로그인 합니다.
+실제 메모리 또는 Windows 10 엔터프라이즈와 가상 컴퓨터를 만든 후에 로컬 관리자 계정을 사용 하 여 로그인 합니다.
   
 > [!NOTE]
 > Azure에 가상 컴퓨터에 대 한 [다음이 지침](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)을 사용 하 여 연결 합니다. 로컬 관리자 계정의 자격 증명을 사용 하 여 로그인 합니다. 
@@ -196,7 +172,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 6. 설정 창을 닫습니다.
     
-다음으로, Office 2016 WIN10 컴퓨터에 설치
+다음으로, Office 2016 WIN10 컴퓨터에 설치 합니다.
   
 1. Microsoft에 지 브라우저를 열고 전역 관리자 계정 자격 증명을 사용 하 여 Office 365 포털에 로그인 합니다. 도움말을 보려면 [Office 365에 로그인 할 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조 하십시오.
     
@@ -228,10 +204,8 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 ## <a name="see-also"></a>참고 항목
 
-[하나의 Microsoft 클라우드 개발/테스트 환경](the-one-microsoft-cloud-dev-test-environment.md)
+- [Microsoft 365 Enterprise 설명서](https://docs.microsoft.com/microsoft-365-enterprise/)
 
-[Microsoft 365 Enterprise 설명서](https://docs.microsoft.com/microsoft-365-enterprise/)
+ - [Microsoft 365 엔터프라이즈 배포](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 
-
-
-
+- [하나의 Microsoft 클라우드 개발/테스트 환경](the-one-microsoft-cloud-dev-test-environment.md)

@@ -1,9 +1,9 @@
 ---
-title: "기본 구성 개발/테스트 환경"
+title: 기본 구성 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
-description: "요약: Microsoft Azure의 개발/테스트 환경으로 단순화 된 인트라넷을 만듭니다."
-ms.openlocfilehash: 04da1037dbebed9f9a5d2aa2fb37b03b88218839
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: Microsoft Azure의 개발/테스트 환경으로 단순화 된 인트라넷을 만듭니다.'
+ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/14/2018
 
 ![CLIENT1 가상 컴퓨터를 사용한 Azure의 기본 구성 4단계](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-그림 1의 기본 구성 개발/테스트 환경에서 클라우드 전용 Azure 가상 네트워크를 인터넷에 연결 하는 간소화 된, 개인 인트라넷을 시뮬레이션 하는 테스트 실습 라는 회사 서브넷으로 이루어져 있습니다. Windows Server 2016를 실행 하는 세 Azure 가상 컴퓨터를 포함 합니다.
+그림 1의 기본 구성 개발/테스트 환경에서 클라우드 전용 Azure 가상 네트워크를 인터넷에 연결 하는 간소화 된, 개인 인트라넷을 시뮬레이션 하는 테스트 실습 라는 회사 서브넷으로 이루어져 있습니다. 세 Azure 가상 컴퓨터를 포함 합니다.
   
 - D c 1에는 인트라넷 도메인 컨트롤러와 도메인 이름 시스템 (DNS) 서버 구성
     
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/14/2018
   
 - 응용 프로그램 개발 및 테스트 합니다.
     
-- 으로 가상 컴퓨터를 추가, Azure 서비스 또는 Office 365 및 엔터프라이즈 보안 + 이동성와 같은 다른 Microsoft 클라우드 서비스를 포함 하는 디자인의 확장된 테스트 환경의 초기 구성 합니다.
+- 으로 가상 컴퓨터를 추가, Azure 서비스 또는 Office 365 및 엔터프라이즈 보안 + 이동성 (EMS)와 같은 다른 Microsoft 클라우드 서비스를 포함 하는 디자인의 확장된 테스트 환경의 초기 구성 합니다.
     
 Azure의 기본 구성 테스트 환경을 설정 하는 4 단계로 가지가 있습니다.
   
@@ -163,7 +163,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>D c 1에 연결할 로컬 관리자 계정 자격 증명을 사용 하 여
 
-1. [Azure 포털](https://portal.azure.com)클릭 **리소스 그룹 >** <the name of your new resource group> **> d c 1 > 연결**합니다.
+1. [Azure 포털](https://portal.azure.com)클릭 **리소스 그룹 >** [새 자원 그룹의 이름] **> d c 1 > 연결**합니다.
     
 2. 를 다운로드 하는 DC1.rdp 파일을 열고 **연결**을 클릭 합니다.
     
@@ -191,7 +191,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs"
+Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
 
 안전 모드 관리자 암호를 지정 해야 합니다. 이 암호를 안전한 위치에 저장 합니다.
@@ -202,7 +202,7 @@ D c 1에는 다음 작업을 다시 시작 되 면 d c 1에 가상 컴퓨터를 
   
 ### <a name="connect-to-dc1-using-domain-credentials"></a>D c 1에 연결할 도메인 자격 증명을 사용 하 여
 
-1. [Azure 포털](https://portal.azure.com)클릭 **리소스 그룹 >** <your resource group name> **> d c 1 > 연결**합니다.
+1. [Azure 포털](https://portal.azure.com)클릭 **리소스 그룹 >** [자원 그룹 이름] **> d c 1 > 연결**합니다.
     
 2. 를 다운로드 하는 DC1.rdp 파일을 실행 하 고 **연결**을 클릭 합니다.
     
@@ -242,7 +242,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 A p p 1에서는 웹 서버 및 파일 공유 서비스를 제공 합니다.
   
-A p p 1에 대 한 Azure 가상 컴퓨터를 만들려면 이름에 리소스 그룹, Azure 위치 및 저장소 계정 이름을 입력 하 고 로컬 컴퓨터에서 Azure PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
+A p p 1에 대 한 Azure 가상 컴퓨터를 만들려면 자원 그룹의 이름을 입력 하 고 로컬 컴퓨터에서 Azure PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
   
 ```
 $rgName="<resource group name>"
@@ -283,9 +283,9 @@ Install-WindowsFeature Web-WebServer -IncludeManagementTools
 다음으로 만들 공유 폴더 및 폴더 내에 있는 텍스트 파일을 a p p 1 이러한 PowerShell 명령을 사용 합니다.
   
 ```
-New-Item -path c:\\files -type directory
-Write-Output "This is a shared file." | out-file c:\\files\\example.txt
-New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
+New-Item -path c:\files -type directory
+Write-Output "This is a shared file." | out-file c:\files\example.txt
+New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ```
 
 현재 구성입니다.
@@ -296,10 +296,7 @@ New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
 
 일반적으로 랩톱, 태블릿, 또는 Contoso 인트라넷에서 데스크톱 컴퓨터 CLIENT1 작동합니다.
   
-> [!NOTE]
-> 다음 명령 집합 만듭니다 CLIENT1 모든 유형의 Azure 구독에 대 한 수행할 수 있는 Windows Server 2016 Datacenter를 실행 합니다. Visual Studio 기반 Azure 구독을 설치한 경우 [Azure 포털](https://portal.azure.com)와 CLIENT1 실행 중인 Windows 10, Windows 8 또는 Windows 7을 만들 수 있습니다. 
-  
-CLIENT1에 대 한 Azure 가상 컴퓨터를 만들려면 이름에 리소스 그룹, Azure 위치 및 저장소 계정 이름을 입력 하 고 로컬 컴퓨터에서 Azure PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
+CLIENT1에 대 한 Azure 가상 컴퓨터를 만들려면 자원 그룹의 이름을 입력 하 고 로컬 컴퓨터에서 Azure PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
   
 ```
 $rgName="<resource group name>"
@@ -310,7 +307,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -343,7 +340,7 @@ CLIENT1를 다시 시작한 후에 회사를 사용 하 여 연결\\User1 계정
     
 4. 시작 화면에서 **Internet Explorer**클릭 한 다음 **확인**을 클릭 합니다.
     
-5. 주소 표시줄에 **http://app1.corp.contoso.com/**입력 하 고 ENTER 키를 누릅니다. A p p 1에 대 한 기본 인터넷 정보 서비스 웹 페이지를 참조 해야 합니다.
+5. 주소 표시줄에 입력 **http://app1.corp.contoso.com/**를 누른 다음 ENTER 키를 누릅니다. A p p 1에 대 한 기본 인터넷 정보 서비스 웹 페이지를 참조 해야 합니다.
     
 6. 바탕 화면 작업 표시줄에서 파일 탐색기 아이콘을 클릭 합니다.
     
@@ -362,8 +359,8 @@ Azure의 기본 구성을 추가 테스트 환경 만들기 (영문) 또는 응�
 > [!TIP]
 > [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 기사에 대한 가상 맵을 확인할 수 있습니다.
   
-## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Azure의 테스트 환경 가상 컴퓨터의 비용을 최소화
 <a name="mincost"> </a>
+## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Azure의 테스트 환경 가상 컴퓨터의 비용을 최소화
 
 테스트 환경 가상 컴퓨터를 실행 하는 비용을 최소화 하려면 다음 중 하나를 수행할 수 있습니다.
   
@@ -383,9 +380,7 @@ Stop-AzureRMVM -ResourceGroupName $rgName -Name "DC1" -Force
 가상 컴퓨터가 제대로 때 시작 하 여 모든 상태가 중지 됨 (Deallocated)에서 작동 하려면, 다음 순서 대로 시작 해야 있습니다.
   
 1. DC1
-    
 2. A P P 1
-    
 3. CLIENT1
     
 Azure PowerShell을 사용한 순서를 가상 컴퓨터를 시작 하려면 자원 그룹 이름을 입력 하 고이 명령을 실행 합니다.
@@ -399,16 +394,8 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>참고 항목
 
-<a name="mincost"> </a>
-
-[Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
-  
-[Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 개발/테스트 환경에 대 한 위협 보호 고급](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
-
-
+- [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경에 대 한 위협 보호 고급](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
