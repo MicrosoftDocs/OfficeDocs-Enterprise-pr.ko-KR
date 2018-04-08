@@ -1,9 +1,9 @@
 ---
-title: "Office 365 개발/테스트 환경에 대 한 페더레이션된 id"
+title: Office 365 개발/테스트 환경에 대 한 페더레이션된 id
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: "요약: Office 365 개발/테스트 환경에 대 한 연결 된 인증을 구성 합니다."
-ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: Office 365 개발/테스트 환경에 대 한 연결 된 인증을 구성 합니다.'
+ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대 한 페더레이션된 id
 
@@ -59,11 +59,11 @@ Azure의 Office 365에 대 한 연결 된 인증의 프로덕션 배포를 진�
 > 이 개발/테스트 환경 Azure 평가판 구독을 구성할 수 없습니다. 
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>1 단계: 디렉터리 동기화와 시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경 만들기
 
-디렉터리 동기화 서버 및 Office 365와 Windows Server AD 간의 동기화 된 id로 a p p 1으로 시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경 만들기를 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md) 의 지침에 따라 d c 1에 대 한 계정입니다.
+A p p 1으로 디렉터리 동기화 서버를 사용 하 여 시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경 만들기를 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md) 의 지침에 따라 및 Office 365 간의 identity 동기화 되 고 D c 1에 Windows Server AD 계정을 합니다.
   
 다음으로 새 공용 DNS 도메인 이름을 기준으로 현재 도메인 이름을 만들고 Office 365 구독을 추가 합니다. 이름을 사용 하는 것이 좋습니다 **테스트 실습.** \<공용 도메인 >. 예, 공용 도메인 이름이 contoso.com 이면 공용 도메인 이름 testlab.contoso.com를 추가 합니다.
   
@@ -73,9 +73,9 @@ DNS 공급자에서 올바른 DNS 레코드를 만들고 Office 365 평가판 �
   
 **Office 365 개발/테스트 환경에 대 한 그림 2: 디렉터리 동기화**
 
-![DirSync를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![디렉터리 동기화를 통해 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-그림 2는 Azure 가상 네트워크의 Office 365 및 CLIENT1, a p p 1을 및 d c 1에 가상 컴퓨터를 포함 하는 Office 365 개발/테스트 환경에 대 한 디렉터리 동기화를 보여줍니다.
+그림 2는 Azure 가상 네트워크의 Office 365 및 CLIENT1, a p p 1을 및 d c 1에 가상 컴퓨터를 포함 하는 Office 365 개발/테스트 환경에 대 한 디렉터리 synchronizationc를 보여줍니다.
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>2 단계: AD FS 서버 만들기
 
@@ -103,7 +103,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> 클릭 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) 이 문서의 모든 PowerShell 명령을 포함 된 텍스트 파일을 가져오도록 합니다.
+> 클릭 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) 대 한이 문서의 모든 PowerShell 명령을 포함 하는 텍스트 파일입니다.
   
 다음으로 ADFS1 로컬 관리자 계정 이름과 암호를 사용 하 여 ADFS1 가상 컴퓨터에 연결 하는 [Azure 포털](http://portal.azure.com) 을 사용 하 고 Windows PowerShell 명령 프롬프트를 엽니다.
   
@@ -112,7 +112,7 @@ ADFS1 및 d c 1 간의 이름 확인 및 네트워크 통신을 확인 하려면
 다음으로, ADFS1에서 Windows PowerShell 프롬프트에 다음이 명령 사용 하 여 회사 도메인에 ADFS1 가상 컴퓨터에 참가 합니다.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -164,7 +164,7 @@ PROXY1 및 d c 1 간의 이름 확인 및 네트워크 통신을 확인 하려�
 다음으로, PROXY1에서 Windows PowerShell 프롬프트에 다음이 명령 사용 하 여 회사 도메인에 PROXY1 가상 컴퓨터에 참가 합니다.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -214,9 +214,9 @@ New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user pa
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
-New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\\LocalMachine\\My"
-New-Item -path c:\\Certs -type directory
-New-SmbShare -name Certs -path c:\\Certs -changeaccess CORP\\User1
+New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\LocalMachine\My"
+New-Item -path c:\Certs -type directory
+New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
 다음으로 새 자체 서명 된 인증서를 파일로 저장 하려면 다음이 단계를 사용 합니다.
@@ -401,7 +401,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 을 설명 하기 위해 해당 페더레이션된 인증 (영문)은 다음을 수행 합니다.
   
-1. 로컬 컴퓨터에서 브라우저의 새 개인 인스턴스를 열고 [https://portal.office.com](https://portal.office.com)로 이동 합니다.
+1. 로컬 컴퓨터에서 브라우저의 새 개인 인스턴스를 열고 이동 [https://portal.office.com](https://portal.office.com)합니다.
     
 2. 로그인 자격 증명을 입력 **@ user1**\<1 단계에서에서 만든 도메인 >. 
     
@@ -449,6 +449,6 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
-[Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Azure에서 Office 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 
 

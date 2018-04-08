@@ -1,5 +1,5 @@
 ---
-title: "고가용성 연결 된 인증 Office 365에 대 한 연결 된 인증 단계 5 구성"
+title: 고가용성 연결 된 인증 Office 365에 대 한 연결 된 인증 단계 5 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: "요약: Microsoft Azure의 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 Azure AD 연결을 구성 합니다."
-ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Microsoft Azure의 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 Azure AD 연결을 구성 합니다.'
+ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>고가용성 페더레이션 인증 5 단계: Office 365에 대 한 연결 된 인증 구성
 
@@ -26,7 +26,7 @@ Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이�
   
 모든 단계에 대 한 [Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포를](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 참조 하십시오.
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-dirsync-server"></a>공용 인증서를 얻고 디렉터리 동기화 서버에 복사
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>공용 인증서를 얻고 디렉터리 동기화 서버에 복사
 
 다음 속성을 갖는 공용 인증 기관에서 디지털 인증서를 가져옵니다.
   
@@ -70,9 +70,9 @@ Contoso 조직에 대 한 예는 다음과 같습니다.
 
 Azure AD 연결 도구이 단계와 연결 된 인증에 대 한 AD FS 서버, 웹 응용 프로그램 프록시 서버 및 Office 365를 구성합니다.
   
-1. 로컬 관리자 권한이 있는 도메인 계정을 사용 하 여 디렉터리 동기화 서버를 원격 데스크톱 연결을 만듭니다.
+1. 로컬 관리자 권한이 있는 도메인 계정을 사용 하 여 디렉터리 동기화 서버에 원격 데스크톱 연결을 만듭니다.
     
-2. 디렉터리 동기화 서버 바탕 화면에서 Internet Explorer를 열고 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)로 이동 합니다.
+2. 디렉터리 동기화 서버 바탕 화면에서 Internet Explorer를 열고로 이동 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)합니다.
     
 3. **Microsoft Azure Active Directory에 연결** 페이지에서 **다운로드**를 클릭 한 다음 **실행**을 클릭 합니다.
     
@@ -140,7 +140,7 @@ Azure의 Office 365에 대 한 고가용성 연결 된 인증 인프라가 완�
   
 ## <a name="see-also"></a>참고 항목
 
-[Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Azure에서 Office 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
 [Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)
   
