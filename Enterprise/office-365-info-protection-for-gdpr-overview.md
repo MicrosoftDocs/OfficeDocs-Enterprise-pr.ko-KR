@@ -1,5 +1,5 @@
 ---
-title: "GDPR에 대한 Office 365 정보 보호 개요"
+title: GDPR에 대한 Office 365 정보 보호 개요
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,8 +14,8 @@ localization_priority: Priority
 ms.custom:
 - Strat_O365_Enterprise
 - GDPR
-ms.assetid: 
-description: "GDPR에 대한 Office 365 정보 보호 개요를 확인합니다. 개인 데이터를 검색, 분류, 보호 및 모니터링하는 방법을 알아봅니다."
+ms.assetid: ''
+description: GDPR에 대한 Office 365 정보 보호 개요를 확인합니다. 개인 데이터를 검색, 분류, 보호 및 모니터링하는 방법을 알아봅니다.
 ms.openlocfilehash: b3af91608d545b221694b9e4a18db07b85d7541a
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

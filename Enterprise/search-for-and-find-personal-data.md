@@ -1,5 +1,5 @@
 ---
-title: "개인 데이터 검색 및 찾기"
+title: 개인 데이터 검색 및 찾기
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,8 +14,8 @@ localization_priority: Priority
 ms.custom:
 - Strat_O365_Enterprise
 - GDPR
-ms.assetid: 
-description: "Office 365에서 개인 데이터를 검색하고 찾는 방법을 알아봅니다."
+ms.assetid: ''
+description: Office 365에서 개인 데이터를 검색하고 찾는 방법을 알아봅니다.
 ms.openlocfilehash: f19aed534fe2bb4154edc31f0d1b0c82afcc1f04
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
