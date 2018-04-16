@@ -3,7 +3,7 @@ title: PowerShell Office 365에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/02/2018
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 Office 365 관리 센터 작업을 수행합니다.'
-ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
-ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
+ms.openlocfilehash: 1ba14628d765022309353fa8cecbeb56667bcf87
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -102,7 +102,7 @@ Connect-MsolService
   
 - 가장 흔한 문제는 암호를 잘못 입력한 경우입니다. 두 가지 단계를 다시 실행하고 1단계에서 사용자 이름과 암호를 입력할 때 신중하게 확인합니다.
     
-- **Microsoft PowerShell용 Windows Azure Active Directory 모듈 하 고 Microsoft .NET Framework 3.5. _x_ 기능을 컴퓨터에서 사용할 수**. 컴퓨터에 새 버전이 설치 될 (4 또는 4.5 등. _x_), 있지만 이전 버전과 이전 버전과의 호환성을 .NET Framework 사용 또는 사용할 수. 자세한 내용은 다음 항목을 참조하십시오.
+- **Windows PowerShell용 Microsoft Azure Active Directory 모듈을 사용하려면 컴퓨터에서 Microsoft .NET Framework 3.5.*x* 기능이 사용되도록 설정되어야 합니다.** 컴퓨터 최신 버전(예: 4 또는 4.5.*x*)이 설치되어 있을 수 있지만 이전 버전의 .NET Framework와의 호환성이 사용되거나 사용되지 않도록 설정되어 있을 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
     
   - Windows Server 2012 또는 Windows Server 2012 R2의 경우 [역할 및 기능 추가 마법사를 사용하여 .NET Framework 3.5를 사용 가능하도록 설정](https://go.microsoft.com/fwlink/p/?LinkId=532368)을 참조하세요.
     
@@ -125,7 +125,11 @@ Connect-MsolService
 
 Azure Active Directory V2 PowerShell 모듈의 명령에는 cmdlet 이름에 “AzureAD”가 있습니다.
 
-[Azure Active Directory V2 PowerShell 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)에서 새 cmdlet을 필요로 하는 프로시저의 경우, 이러한 단계를 사용해서 모듈을 설치하고 Office 365 구독에 연결할 수 있습니다.
+Azure Active Directory V2 PowerShell 모듈에서 새 cmdlet을 필요로 하는 프로시저의 경우, 이러한 단계를 사용해서 모듈을 설치하고 Office 365 구독에 연결할 수 있습니다.
+
+>[!Note]
+>Microsoft Windows의 여러 버전에 대한 지원 정보는 [Azure Active Directory V2 PowerShell 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)을 참조하세요.
+>
 
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
 
@@ -168,13 +172,9 @@ Connect-AzureAD
   
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
-  
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
-  
-[단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-
-[Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-  
-[Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+- [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+- [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
+- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 
