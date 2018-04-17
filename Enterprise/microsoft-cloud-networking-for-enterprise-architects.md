@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
-description: "요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 네트워킹을 디자인합니다."
-ms.openlocfilehash: 3ad510ff63ec861976804ab62c85213652415bee
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 네트워킹을 디자인합니다.'
+ms.openlocfilehash: 8b4a31c782abb359f521eb86fae211239bbb80d0
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking for Enterprise Architects
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 02/14/2018
     
     클라우드 마이그레이션으로 인해 회사 네트워크 내부 및 외부의 트래픽 흐름 양과 특성이 달라지고 있습니다. 또한 보안 위험을 완화시키는 방법도 영향을 받고 있습니다.
     
-- [Microsoft 클라우드 연결의 공통 요소](common-elements-of-microsoft-cloud-connectivity.md)
+- [Microsoft 클라우드 연결의 일반적인 요소](common-elements-of-microsoft-cloud-connectivity.md)
     
     네트워킹을 Microsoft 클라우드와 통합하면 보다 폭넓은 서비스에 최적 상태로 액세스할 수 있습니다.
     

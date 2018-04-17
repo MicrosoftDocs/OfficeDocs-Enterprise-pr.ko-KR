@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
+ms.custom: ''
 ms.assetid: ''
 description: Office 365에서 개인 데이터를 검색하고 찾는 방법을 알아봅니다.
-ms.openlocfilehash: f19aed534fe2bb4154edc31f0d1b0c82afcc1f04
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: c536686b25d94403e29b2f706d21a54e9f1cf9b3
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="search-for-and-find-personal-data"></a>개인 데이터 검색 및 찾기
 
@@ -97,7 +96,8 @@ Office 365에서 개인 데이터를 찾는 위한 3단계 접근 방식이 권�
 <tbody>
 <tr class="odd"><td align="left"><p>보안 및 준수 센터에서 콘텐츠 검색으로 이동</p></td>
 <td align="left"><p>보안 및 준수 센터의 왼쪽 창에서 **검색 및 조사** &gt; **콘텐츠 검색**을 클릭합니다.</p>
-<p><a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Office 365 보안 및 준수 센터에서 콘텐츠 검색 실행</a>을 참조하세요.</p></td>
+<p>
+  <a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Office 365 보안 및 준수 센터에서 콘텐츠 검색 실행</a>을 참조하세요.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>각 중요한 정보 유형에 대해 새 검색 항목 만들기</p></td>
@@ -117,7 +117,8 @@ Office 365에서 개인 데이터를 찾는 위한 3단계 접근 방식이 권�
 <td align="left"><p>다음 유형의 문제를 찾아 쿼리 정확도가 원하는 수준인지 확인합니다.</p>
 <p><li>많은 가양성</li></p>
 <p><li>누락된 데이터의 알려진 인스턴스</li></p>
-<p><a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Office 365 보안 및 준수 센터에서 콘텐츠 검색 결과 내보내기</a>를 참조하세요.</p>
+<p>
+  <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Office 365 보안 및 준수 센터에서 콘텐츠 검색 결과 내보내기</a>를 참조하세요.</p>
 <p>참고: Mozilla Firefox 또는 Chrome을 사용하는 경우 필요한 추가 기능을 설치하기 위해 먼저 Internet Explorer 또는 Edge를 사용하여 보고서를 다운로드해야 할 수 있습니다.</p></td>
 </tr>
 </tbody>

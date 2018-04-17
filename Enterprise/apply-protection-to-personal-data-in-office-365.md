@@ -1,5 +1,5 @@
 ---
-title: "Office 365의 개인 데이터에 보호 적용"
+title: Office 365의 개인 데이터에 보호 적용
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- GDPR
-- Strat_O365_Enterprise
-ms.assetid: 
-description: "Office 365에서 DLP 정책을 사용하여 개인 데이터를 보호하는 방법을 알아봅니다."
-ms.openlocfilehash: e3ecb020a569cbf2cdcf50b4aead5cedf962b4d9
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Office 365에서 DLP 정책을 사용하여 개인 데이터를 보호하는 방법을 알아봅니다.
+ms.openlocfilehash: 8753ffe2b051e18e0790fba14c7a063200a74758
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365의 개인 데이터에 보호 적용
 
@@ -299,7 +298,8 @@ SharePoint의 사용 권한을 사용하여 사용자에게 사이트 또는 해
 
 추가 정보:
 
--   [SharePoint Online 환경에 대해 외부 공유 관리](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   
+  [SharePoint Online 환경에 대해 외부 공유 관리](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [조직 외부의 사용자와 사이트 또는 문서 공유](https://support.office.com/ko-KR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
