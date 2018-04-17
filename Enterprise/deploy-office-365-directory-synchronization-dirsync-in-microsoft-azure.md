@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: '요약: Azure AD 연결 계정 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 간에 동기화 하는 Azure에 가상 컴퓨터에 배포 합니다.'
-ms.openlocfilehash: f96147542da3af1883ea5428b1345c8cf75b9223
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure의 Office 365 디렉터리 동기화 배포
 
@@ -203,7 +202,7 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
 
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
-[Microsoft Azure 가상 네트워크에 연결 하는 온-프레미스 네트워크에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+[온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
 [다운로드 Azure AD 연결](https://www.microsoft.com/download/details.aspx?id=47594)
   

@@ -1,5 +1,5 @@
 ---
-title: "Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델"
+title: Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
-description: "요약: 아키텍처 모델, 배포 및 비즈니스 및 Lync에 대 한 개발자를 위한 SharePoint, Exchange, Skype 플랫폼 옵션에 설명 하는 IT 포스터를 가져옵니다."
-ms.openlocfilehash: 94f33ec4460758276cfada3ef9fcc4a444e9133a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: 아키텍처 모델, 배포 및 비즈니스 및 Lync에 대 한 개발자를 위한 SharePoint, Exchange, Skype 플랫폼 옵션에 설명 하는 IT 포스터를 가져옵니다.'
+ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 

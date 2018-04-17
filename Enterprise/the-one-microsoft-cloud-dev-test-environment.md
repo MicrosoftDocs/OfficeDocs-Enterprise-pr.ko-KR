@@ -1,5 +1,5 @@
 ---
-title: "하나의 Microsoft 클라우드 개발/테스트 환경"
+title: One Microsoft Cloud 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,17 +12,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "요약:이 테스트 랩 가이드를 사용 하 여 Microsoft의 클라우드 서비스를 모두 포함 하는 개발/테스트 환경을 만들 수 있습니다."
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 요약:이 테스트 랩 가이드를 사용 하 여 Microsoft의 클라우드 서비스를 모두 포함 하는 개발/테스트 환경을 만들 수 있습니다.
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-one-microsoft-cloud-devtest-environment"></a>하나의 Microsoft 클라우드 개발/테스트 환경
+# <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 개발/테스트 환경
 
  **요약:** 이 테스트 랩 가이드를 사용 하 여 Microsoft의 클라우드 서비스를 모두 포함 하는 개발/테스트 환경을 만들 수 있습니다.
   
@@ -57,24 +56,24 @@ ms.lasthandoff: 02/14/2018
 
 이 단계에서는 EMS 평가판 구독을 등록하고 Office 365 평가판 구독과 동일한 조직에 추가합니다.
   
-1. 중 하나에서 브라우저와 데스크톱 컴퓨터에서 CLIENT1, 로그인에 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 하 여 Office 365 포털에 또는 합니다.
+1. 중 하나에서 브라우저를 통해 데스크톱 컴퓨터 CLIENT1에서 로그인에서 Office 365 포털 또는 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 합니다.
     
-2. **Admin** 타일을 클릭 합니다.
+2. **관리** 타일을 클릭합니다.
     
-3. 왼쪽 탐색 영역에서 브라우저에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.
+3. 브라우저의 **Office 관리 센터** 탭에 있는 왼쪽 탐색 영역에서 **대금 청구 > 서비스 구매**를 차례로 클릭합니다.
     
 4. **서비스 구매** 페이지 **Enterprise 이동성 + 보안 e 5** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
-5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
+5. **주문 확인** 페이지에서 **지금 평가판 사용**을 클릭합니다.
     
-6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
+6. **주문 접수** 페이지에서 **계속**을 클릭합니다.
     
 > [!NOTE]
 > Enterprise Mobility + Security E5 평가판 구독 기간은 90일입니다. 영구 개발/테스트 환경의 경우 소수의 라이선스를 사용해서 유료 구독을 새로 만듭니다. 
   
 다음으로, 엔터프라이즈 이동성 + 모든 사용자 계정에 대 한 보안 E5 라이선스 사용 하도록 설정 합니다.
   
-1. 왼쪽 탐색 영역에서 브라우저에서 **Office 365 관리 센터** 탭을 클릭 **사용자 > 활성 사용자**합니다.
+1. 브라우저의 **Office 365 관리 센터** 탭에 있는 왼쪽 탐색 영역에서 **사용자 > 활성 사용자**를 차례로 클릭합니다.
     
 2. 전역 관리자 계정을 클릭 하 고 **제품 라이선스**에 대 한 **편집** 을 클릭 합니다.
     
@@ -100,17 +99,17 @@ ms.lasthandoff: 02/14/2018
 
 이 단계에서 Dynamics 365 평가판 구독에 대 한 등록 하 여 Office 365 및 EMS 평가판 구독와 같은 조직에 추가 합니다.
   
-1. 브라우저를 사용 하는 중 하나에서 데스크톱 컴퓨터 또는 CLIENT1에서 로그인에 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 하 여 Office 365 포털에 있습니다.
+1. 브라우저를 사용 하는 중 하나에서 데스크톱 컴퓨터 또는 CLIENT1에서 포털에 로그인은 Office 365에서 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 합니다.
     
-2. **Admin** 타일을 클릭 합니다.
+2. **관리** 타일을 클릭합니다.
     
 3. 왼쪽 탐색 영역에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.
     
 4. **서비스 구매** 페이지 **Dynamics 365 계획 1 Enterprise Edition** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
-5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
+5. **주문 확인** 페이지에서 **지금 평가판 사용**을 클릭합니다.
     
-6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
+6. **주문 접수** 페이지에서 **계속**을 클릭합니다.
     
 > [!NOTE]
 > Dynamics 365 계획 1 Enterprise Edition 평가판 구독은 30 일입니다. 다른 30 일에 대 한 내역 구독을 쉽게 확장할 수 있습니다. 영구 개발/테스트 환경에 대 한 만들기 새 적은 수의 라이선스를 사용 하 여 구독을 지불 합니다. 

@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: OneDrive 사이트를 다른 지리적 위치로 이동 하는 방법에 알아봅니다.
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치를 이동 
 
@@ -76,9 +77,9 @@ OneDrive은 이동 또는 법적 보존 또는 하위 사이트 이동 하는 �
 
 나중에 대 한 지리적으로 분산 이동을 예약 하려면 다음 매개 변수 중 하나를 사용 합니다.
 
--   이 지정 된 시간에서 시작 됩니다 _PreferredMoveBeginDate_ -가능성이 이동 하면 됩니다.
+-   이 지정 된 시간에서 시작 됩니다 _PreferredMoveBeginDate_ -가능성이 이동 하면 됩니다. 시간에서 Utc (협정 세계시)을 지정 합니다.
 
--   _PreferredMoveEndDate_ -가능성이 이동 하면 됩니다 최상의 노력 별로이 지정한 시간까지 완료 합니다.
+-   _PreferredMoveEndDate_ -가능성이 이동 하면 됩니다 최상의 노력 별로이 지정한 시간까지 완료 합니다. 시간에서 Utc (협정 세계시)을 지정 합니다. 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>OneDrive 지리적으로 분산 이동을 취소 합니다. 
 
@@ -97,7 +98,7 @@ OneDrive은 이동 또는 법적 보존 또는 하위 사이트 이동 하는 �
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Status</strong></th>
+<th align="left"><strong>상태</strong></th>
 <th align="left"><strong>설명</strong></th>
 </tr>
 </thead>
@@ -135,7 +136,7 @@ OneDrive은 이동 또는 법적 보존 또는 하위 사이트 이동 하는 �
 
 자신의 OneDrive 다른 지리적 위치로 이동 하는 경우 OneDrive의 사용자가 영향을 최소화 하는 것을 알 해야 합니다. 간단한 읽기 전용 상태를 이동 하는 동안 외에도 이동이 완료 되 면 예상 대로 작동 하도록 기존 링크 및 사용 권한을 계속 됩니다.
 
-### <a name="onedrive-for-business"></a>비즈니스용 OneDrive
+### <a name="onedrive-for-business"></a>OneDrive for Business
 
 진행 중인으로 이동 하는 동안에 읽기 전용 사용자의 OneDrive 설정 됩니다. 이동이 완료 되 면 Office 365 응용 프로그램 시작 관리자 또는 웹 브라우저를 OneDrive을 탐색할 때 사용자가 새로운 지리적 위치에 자신의 OneDrive로 전달 됩니다.
 

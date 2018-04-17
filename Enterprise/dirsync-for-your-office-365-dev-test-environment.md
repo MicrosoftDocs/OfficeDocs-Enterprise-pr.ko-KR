@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '요약: Office 365 개발/테스트 환경에 대 한 디렉터리 동기화를 구성 합니다.'
-ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대 한 디렉터리 동기화
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 04/05/2018
 2. 설치 하 고 a p p 1에서 Azure AD 연결을 구성 합니다.
     
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경 만들기
 

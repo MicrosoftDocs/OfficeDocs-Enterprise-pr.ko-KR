@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '요약: Microsoft Azure의 개발/테스트 환경으로 단순화 된 인트라넷을 만듭니다.'
-ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 04/06/2018
 
 ![CLIENT1 가상 컴퓨터를 사용한 Azure의 기본 구성 4단계](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-그림 1의 기본 구성 개발/테스트 환경에서 클라우드 전용 Azure 가상 네트워크를 인터넷에 연결 하는 간소화 된, 개인 인트라넷을 시뮬레이션 하는 테스트 실습 라는 회사 서브넷으로 이루어져 있습니다. 세 Azure 가상 컴퓨터를 포함 합니다.
+그림 1의 기본 구성 개발/테스트 환경에서 클라우드 전용 Azure 가상 네트워크를 인터넷에 연결 하는 간소화 된, 개인 인트라넷을 시뮬레이션 하는 테스트 실습 라는 회사 서브넷으로 이루어져 있습니다. WIndows Server 2016를 실행 하는 세 Azure 가상 컴퓨터를 포함 합니다.
   
 - D c 1에는 인트라넷 도메인 컨트롤러와 도메인 이름 시스템 (DNS) 서버 구성
     
@@ -70,7 +69,7 @@ Azure에 구독 아직 없는 경우 무료 평가판을 신청 [시도 Azure](h
 ![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-the-virtual-network"></a>1 단계: 가상 네트워크 만들기
 
@@ -241,7 +240,10 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 ## <a name="phase-3-configure-app1"></a>A p p 1을 구성 하는 3 단계:
 
 A p p 1에서는 웹 서버 및 파일 공유 서비스를 제공 합니다.
-  
+
+-> [!NOTE]  
+다음-> 명령 집합 만듭니다 CLIENT1 모든 유형의 Azure 구독에 대 한 수행할 수 있는 Windows Server 2016 Datacenter를 실행 합니다. Visual Studio 기반 Azure 구독을 설치한 경우에 CLIENT1을 만들 수 있습니다 [Azure 포털](https://portal.azure.com)을 사용 하 여 Windows 10을 실행 합니다. 
+
 A p p 1에 대 한 Azure 가상 컴퓨터를 만들려면 자원 그룹의 이름을 입력 하 고 로컬 컴퓨터에서 Azure PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
   
 ```
@@ -307,7 +309,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -396,6 +398,6 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 - [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
 - [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-- [Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
-- [Office 365 개발/테스트 환경에 대 한 위협 보호 고급](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 엔터프라이즈 개발/테스트 환경
+title: Microsoft 365 Enterprise 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,17 +12,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 요약:이 테스트 랩 가이드를 사용 하 여 Office 365 e 5, Enterprise 이동성 + 보안 (EMS) e 5 및 Windows 10 Enterprise를 실행 하는 컴퓨터를 포함 하는 개발/테스트 환경을 만들 수 있습니다.
-ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 엔터프라이즈 개발/테스트 환경
+# <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 개발/테스트 환경
 
  **요약:** 이 테스트 랩 가이드를 사용 하 여 Office 365 e 5, Enterprise 이동성 + 보안 (EMS) e 5 및 Windows 10 Enterprise를 실행 하는 컴퓨터를 포함 하는 개발/테스트 환경을 만듭니다.
   
@@ -90,10 +89,10 @@ ms.lasthandoff: 04/06/2018
   
 ### <a name="virtual-machine-in-azure"></a>Azure에 가상 컴퓨터
 
-Azure 갤러리 이미지를 사용 하 여 Microsoft Azure에 가상 컴퓨터를 Windows 10을 만듭니다.
+***Visual Studio 기반 구독 있어야***Windows 10 Enterprise에 대 한 이미지에 액세스할 수 있는 Microsoft Azure에서 Windows 10 가상 컴퓨터를 생성 합니다. 다른 유형의 평가판 및 유료 구독 등 Azure 구독에이 이미지에 대 한 액세스를 사용할 필요가 없습니다.
   
 > [!NOTE]
-> 다음 명령 집합 텍스트 Azure PowerShell의 최신 버전을 사용 합니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조 하십시오. 이 명령 집합 빌드 Windows 10 엔터프라이즈 가상 컴퓨터에는 WIN10 및 리소스 그룹, 사용자는 저장소 계정이 및 가상 네트워크를 포함 하 여 필요한 인프라의 모든 라는 합니다. Azure 인프라 서비스에 익숙한 사용자의 현재 배포 된 인프라에 맞게 이러한 지침에 맞게 조정 하십시오. 
+> Azure PowerShell의 최신 버전을 사용 하는 다음 명령 집합입니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조 하십시오. 이 명령 집합 빌드 Windows 10 엔터프라이즈 가상 컴퓨터에는 WIN10 및 리소스 그룹, 사용자는 저장소 계정이 및 가상 네트워크를 포함 하 여 필요한 인프라의 모든 라는 합니다. Azure 인프라 서비스에 익숙한 사용자의 현재 배포 된 인프라에 맞게 이러한 지침에 맞게 조정 하십시오. 
   
 먼저, Microsoft PowerShell 프롬프트를 시작 합니다.
   
@@ -205,7 +204,5 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ## <a name="see-also"></a>참고 항목
 
 - [Microsoft 365 Enterprise 설명서](https://docs.microsoft.com/microsoft-365-enterprise/)
-
- - [Microsoft 365 엔터프라이즈 배포](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-
+- [Microsoft 365 엔터프라이즈 배포](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [하나의 Microsoft 클라우드 개발/테스트 환경](the-one-microsoft-cloud-dev-test-environment.md)

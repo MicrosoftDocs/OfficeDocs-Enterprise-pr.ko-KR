@@ -1,5 +1,5 @@
 ---
-title: "Office 365 개발/테스트 환경용 고급 eDiscovery"
+title: Office 365 개발/테스트 환경용 고급 eDiscovery
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "요약: 구성 및 Office 365 개발/테스트 환경에서 예제 데이터가 포함 된 Office 365 고급 eDiscovery 시연 합니다."
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: 구성 및 Office 365 개발/테스트 환경에서 예제 데이터가 포함 된 Office 365 고급 eDiscovery 시연 합니다.'
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 고급 eDiscovery
 
@@ -29,7 +29,7 @@ Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 �
 이 기사의 지침에 따라 가상 계약 분쟁에 대한 작은 데이터 집합을 만들고 고급 eDiscovery로 이를 분석합니다.
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>1단계: Office 365 개발/테스트 환경 만들기
 
@@ -44,11 +44,11 @@ Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 �
 
 이 프로시저에서는 나중에 고급 eDiscovery 사례에서 분석할 전자 메일 메시지를 만듭니다.
   
-1. Internet Explorer를 열고[Office 365 개발/테스트 환경](office-365-dev-test-environment.md)중 2 단계에서에서 만든 Outlook 계정에 [https://outlook.com](https://outlook.com) 로그인 합니다.
+1. Internet Explorer를 열고에서 로그인 [https://outlook.com](https://outlook.com) [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)중 2 단계에서에서 만든 Outlook 계정에 있습니다.
     
   - 경량 개발/테스트 환경을 사용하는 경우 Internet Explorer의 비공개 세션을 열고 로컬 컴퓨터에서 로그인합니다.
     
-  - 시뮬레이션 된 엔터프라이즈 개발/테스트 환경을 사용 하는 경우에 Azure 포털 ([https://portal.azure.com](https://portal.azure.com))를 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음 CLIENT1에서 로그인 합니다.
+  - Azure 포털을 사용 하 여 시뮬레이션 된 엔터프라이즈 개발/테스트 환경을 사용 하는 경우 ([https://portal.azure.com](https://portal.azure.com)) CLIENT1 가상 컴퓨터에 연결한 다음 CLIENT1에서 로그인 합니다.
     
 2. **Outlook 메일** 탭에서 **새로 만들기**를 클릭 합니다.
     
@@ -76,7 +76,7 @@ Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 �
     
 14. 오른쪽 위 모서리에서 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다.
     
-15. 새 탭을 열고 계정 이름 및 평가판 구독의 User6 계정의 암호를 사용 하 여 Office 365 포털 ([https://portal.office.com](https://portal.office.com))에 로그인 합니다.
+15. 새 탭을 열고 Office 365 포털에 로그인 ([https://portal.office.com](https://portal.office.com)) 계정 이름 및 평가판 구독의 User6 계정 암호입니다.
     
 16. **Office 365 포털** 탭에서 **메일**을 클릭 합니다.
     
@@ -190,7 +190,7 @@ Office 365 고급 eDiscovery를 사용 하면 신속 하 게 찾기 및 전자 �
   
 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 

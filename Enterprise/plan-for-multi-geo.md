@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: 비즈니스 다중-지리적으로 분산, 다중-지리적으로 분산 작동 하는 방법 및 어떤 지리적 위치 데이터 저장소에서 사용할 수 있는 OneDrive을 소개 합니다.
-ms.openlocfilehash: 22ba0f4ebc3fb3c4e11bc0386a1479fa6a889ad8
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: d7d6cfbbff4cf0ec2516f2506946c2832d96b3f2
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>비즈니스 다중-지리적으로 분산 비즈니스용 OneDrive 계획
 

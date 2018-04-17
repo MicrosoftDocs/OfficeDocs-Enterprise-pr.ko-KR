@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '요약: Office 365 개발/테스트 환경에 대 한 연결 된 인증을 구성 합니다.'
-ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: e1a2e4096dc14c2853af33a36b24d7b6ac9784bd
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대 한 페더레이션된 id
 
@@ -275,7 +274,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
   - **페더레이션 서비스 표시 이름**가상의 조직 이름을 입력 합니다.
     
-  - **다음**을 클릭합니다.
+  - **Next**(다음)를 클릭합니다.
     
 7. **서비스 계정 지정** 페이지에서 **계정 이름**에 대 한 **선택** 을 클릭 합니다.
     
@@ -357,7 +356,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - **암호**에 User1 계정에 대 한 암호를 입력 합니다.
     
-  - **다음**을 클릭합니다.
+  - **Next**(다음)를 클릭합니다.
     
 6. **AD FS 프록시 인증서** 페이지에서 아래쪽 화살표를 클릭 하 고 페더레이션 서비스 FQDN 사용 하 여 인증서를 클릭 한 다음 **다음**을 클릭 합니다.
     

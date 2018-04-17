@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: 다중-지리적으로 분산 환경에서 SharePoint와 OneDrive 사용자 환경에 알아봅니다.
-ms.openlocfilehash: 91837883ef7c970674a500afa4fda9adfafc6d5b
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 42e384d3e93ca3f5a06a8ee07a37b10e21477038
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>다중-지리적으로 분산 환경에서 사용자 환경
 
@@ -55,7 +56,7 @@ Office 365에 있는 사용자가 위성 인스턴스에 대 한 다중 Geo 굴 
 
 다음과 같은 검색 클라이언트가 지원 됩니다.
 
--   비즈니스용 OneDrive
+-   OneDrive for Business
 
 -   Delve
 

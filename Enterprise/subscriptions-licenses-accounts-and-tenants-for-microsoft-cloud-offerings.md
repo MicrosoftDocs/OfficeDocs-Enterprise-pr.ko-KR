@@ -1,5 +1,5 @@
 ---
-title: "구독, 라이선스, 계정 및 Microsoft의 클라우드 서비스에 대 한 테 넌 트"
+title: 구독, 라이선스, 계정 및 Microsoft의 클라우드 서비스에 대 한 테 넌 트
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "요약: Microsoft의 클라우드 서비스에서 조직, 구독, 라이선스, 사용자 계정 및 테 넌 트의 관계를 이해 합니다."
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: Microsoft의 클라우드 서비스에서 조직, 구독, 라이선스, 사용자 계정 및 테 넌 트의 관계를 이해 합니다.'
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>구독, 라이선스, 계정 및 Microsoft의 클라우드 서비스에 대 한 테 넌 트
 
@@ -150,7 +149,7 @@ Microsoft의 클라우드 서비스에서 identity 통합 하는 방법에 대 �
    
 Office 365 관리 센터를 통해 Microsoft SaaS 기반 서비스에 대 한 조직에 구독을 추가 하는 간편한 방법이 됩니다.
   
-1. 전역 관리자 계정과 Office 365 포털 ([https://portal.office.com](https://portal.office.com))에 로그인 한 다음 **관리**를 클릭 합니다.
+1. Office 365 포털에 로그인 ([https://portal.office.com](https://portal.office.com)) 전역 관리자, 계정 하 고 다음 **관리**를 클릭 합니다.
     
 2. **관리 센터** 홈페이지의 왼쪽된 탐색 모음에서 **대금 청구**및 **구매 서비스**를 클릭 합니다.
     
@@ -160,7 +159,7 @@ Office 365 관리 센터 SaaS 기반 클라우드 서비스에 대 한 새 등�
   
 Office 365 구독으로 Azure AD 테 넌 트와 같은 조직에 Azure 구독을 추가:
   
-1. Office 365 전역 관리자 계정 사용 하 여 Azure 포털 ([https://portal.azure.com](https://portal.azure.com))에 로그인 합니다.
+1. Azure 포털에 로그인 ([https://portal.azure.com](https://portal.azure.com)) Office 365 전역 관리자 계정을 사용 합니다.
     
 2. 왼쪽 탐색 영역에서 **구독**을 클릭 하 고 **추가**클릭 합니다.
     

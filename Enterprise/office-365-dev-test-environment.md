@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 요약:이 테스트 랩 가이드를 사용 하 여 평가 또는 개발/테스트는 Office 365 평가판 구독을 만듭니다.
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -38,7 +41,7 @@ Office 365 평가판 구독을 사용할 수 있으며 응용 프로그램 또�
 ![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>1 단계: Azure의 기본 구성 만들기
 
@@ -56,13 +59,13 @@ Azure에 구독을 해야 합니다. 이 구성에 대 한 [Azure 무료 평가�
 
 Office 365 E5 평가판 구독을 시작 하려면 먼저 가상의 회사 이름 및 새 Microsoft 계정을 필요 합니다.
   
-1. 하는 Microsoft 샘플 콘텐츠에서 사용 되는 가상의 회사, 회사 이름에 대 한 회사 이름 Contoso의 variant를 사용 하지만 필요 하지 않습니다 하는 것이 좋습니다. 여기에 가상의 회사 이름을 기록: ___ 합니다.
+1. 하는 Microsoft 샘플 콘텐츠에서 사용 되는 가상의 회사, 회사 이름에 대 한 회사 이름 Contoso의 variant를 사용 하지만 필요 하지 않습니다 하는 것이 좋습니다. 여기에 가상의 회사 이름을 기록 합니다.![](./images/Common_Images/TableLine.png)
     
 2. 새 Microsoft 계정을 등록 하려면로 이동 [https://outlook.com](https://outlook.com) 새 전자 메일 계정 및 주소와 계정을 만듭니다. 이 계정을 사용 하 여 Office 365에 등록 됩니다.
     
-  - 여기에 새 계정의 성과 이름을 기록: ___ 합니다.
+  - 여기에 새 계정의 성과 이름을 기록 합니다.![](./images/Common_Images/TableLine.png)
     
-  - 여기서 새 전자 메일 계정 주소를 기록: ___@outlook.com
+  - 여기서 새 전자 메일 계정 주소를 기록: ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 평가판 구독에 등록
 
@@ -105,7 +108,7 @@ Stop-Process -Name Explorer -Force
     
     안전한 위치에 입력 한 암호를 기록 합니다.
     
-    여기에서 **조직 이름**, 라고 하 여 가상의 회사 이름을 기록: ___ 합니다.
+    가상의 회사 이름, **조직 이름**, 여기에 참조할 수를 기록 합니다.![](./images/Common_Images/TableLine.png)
     
 5. **내 계정 만들기**를 클릭 합니다.
     
@@ -113,9 +116,9 @@ Stop-Process -Name Explorer -Force
     
 7. 수신 된 텍스트 메시지에서 확인 코드를 입력 하 고 ****을 클릭 합니다.
     
-8. URL을 기록 로그인 페이지 여기 (선택한 복사본): ___ 합니다.
+8. 로그인 페이지 URL 여기 (선택한 복사본)를 기록 합니다.![](./images/Common_Images/TableLine.png)
     
-9. ID를 기록 사용자 여기 (선택한 복사본): ___.onmicrosoft.com
+9. ID를 기록 사용자 여기 (선택한 복사본): ![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     이 값은 **Office 365 전역 관리자의 이름**으로 참조할 수 됩니다.
     
@@ -229,11 +232,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 (영문) 또는이 테스트 환경에 있는 추가 테스트 랩 가이드를 배포에 대 한 이러한 값을 기록 합니다.
   
-- Office 365 전역 관리자 이름: ___.onmicrosoft.com (에서 9 단계 중 2 단계)
+- Office 365 전역 관리자 이름: ![](./images/Common_Images/TableLine.png). onmicrosoft.com (에서 9 단계 중 2 단계)
     
     또한 안전한 위치에이 계정에 대 한 암호를 기록 합니다.
     
-- 평가판 구독 조직 이름: ___ (에서 4 단계 중 2 단계)
+- 평가판 구독 조직 이름을: ![](./images/Common_Images/TableLine.png) (에서 2 단계의 4 단계)
     
 - 사용자 2에 대 한 계정을 나열 하려면 사용자 3, 4 사용자 및 사용자 5 Windows Azure Active Directory 모듈에 대 한 Windows PowerShell 프롬프트에서 다음 명령을 실행 합니다.
     
@@ -243,13 +246,13 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     여기에 계정 이름을 기록 합니다.
     
-  - 2 사용자 계정 이름: user2@___.onmicrosoft.com
+  - 2 사용자 계정 이름: @ user2![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - 3 사용자 계정 이름: user3@___.onmicrosoft.com
+  - 3 사용자 계정 이름: @ user3![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - 4 사용자 계정 이름: user4@___.onmicrosoft.com
+  - 4 사용자 계정 이름: @ user4![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - 5 사용자 계정 이름: user5@___.onmicrosoft.com
+  - 5 사용자 계정 이름: @ user5![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     또한 안전한 위치에 이러한 계정에 대 한 암호를 기록 합니다.
     
@@ -259,11 +262,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 프로덕션 사이트 URL:https://______________________________________________.sharepoint.com/sites/production
+  - 프로덕션 사이트 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - 영업 사이트 URL:https://______________________________________________.sharepoint.com/sites/sales
+  - 판매 사이트 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - 사이트 URL을 지원 합니다.https://______________________________________________.sharepoint.com/sites/support
+  - 지원 사이트 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>다음 단계
 
@@ -271,34 +274,34 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   
 - [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경에 대해 다단계 인증](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 다단계 인증](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 페더레이션된 ID](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경에 대 한 위협 보호 고급](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경에 대 한 고급 eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 고급 eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경에서 중요 한 파일 보호](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 중요 파일 보호](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [격리 된 SharePoint Online 팀 사이트 개발/테스트 환경](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [개발/테스트 환경에서 격리된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [데이터 분류 및 Office 365 개발/테스트 환경에서 레이블 지정](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 Office 365 개발/테스트 환경을 추가로 Microsoft 클라우드 서비스를 포함 하도록 확장:
   
-- [Microsoft 365 엔터프라이즈 개발/테스트 환경](the-microsoft-365-enterprise-dev-test-environment.md)
+- [Microsoft 365 Enterprise 개발/테스트 환경](the-microsoft-365-enterprise-dev-test-environment.md)
     
 - [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
     
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
+- [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
+- [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+ - [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 

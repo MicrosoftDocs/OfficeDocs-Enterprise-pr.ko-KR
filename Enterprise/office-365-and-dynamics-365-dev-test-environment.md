@@ -1,5 +1,5 @@
 ---
-title: "Office 365 및 Dynamics 365 개발/테스트 환경"
+title: Office 365 및 Dynamics 365 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: "요약:이 테스트 랩 가이드를 사용 하 여 Dynamics 365 Office 365 개발/테스트 환경에 추가 합니다."
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 요약:이 테스트 랩 가이드를 사용 하 여 Dynamics 365 Office 365 개발/테스트 환경에 추가 합니다.
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경
 
@@ -39,7 +41,7 @@ Dynamics 365 평가판 구독에 대 한 위의 중 하나 이상을 탐색할 �
 ![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>1단계: 경량 또는 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 구축합니다.
 
@@ -56,17 +58,17 @@ Office 365 및 Dynamics 365 시뮬레이션 된 enterprise에 대 한 테스트 
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Dynamics 365 평가판 구독에 등록
 
-1. 브라우저를 사용 하는 중 하나에서 데스크톱 컴퓨터 (lightweight) 나 CLIENT1 (enterprise 시뮬레이션)에 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 하 여 Office 365 포털에 로그인 합니다.
+1. 브라우저를 사용 하는 중 하나에서 데스크톱 컴퓨터 (lightweight) 나 CLIENT1 (enterprise 시뮬레이션)에서 Office 365 포털에 로그인 [https://portal.office.com](https://portal.office.com) 전역 관리자 계정의 자격 증명을 사용 합니다.
     
-2. **Admin** 타일을 클릭 합니다.
+2. **관리** 타일을 클릭합니다.
     
 3. 왼쪽 탐색 영역에서 **Office 관리 센터** 탭을 클릭 **대금 청구 > 구매 서비스**합니다.
     
 4. **서비스 구매** 페이지 **Dynamics 365 계획 1 Enterprise Edition** 항목을 찾습니다. 마우스 포인터를 올려 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
-5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
+5. **주문 확인** 페이지에서 **지금 평가판 사용**을 클릭합니다.
     
-6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
+6. **주문 접수** 페이지에서 **계속**을 클릭합니다.
     
 > [!NOTE]
 > Dynamics 365 계획 1 Enterprise Edition 평가판 구독은 30 일입니다. 다른 30 일에 대 한 내역 구독을 쉽게 확장할 수 있습니다. 영구 개발/테스트 환경에 대 한 만들기 새 적은 수의 라이선스를 사용 하 여 구독을 지불 합니다. 

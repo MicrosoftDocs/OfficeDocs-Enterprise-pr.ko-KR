@@ -1,5 +1,5 @@
 ---
-title: "온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결"
+title: 온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: "요약: Office Server 작업용 프레미스 간 Azure Virtual Network 구성 방법을 알아봅니다."
-ms.openlocfilehash: 7366b366e2ec89e7590d98a94550c36a46513ab2
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: '요약: Office Server 작업용 프레미스 간 Azure Virtual Network 구성 방법을 알아봅니다.'
+ms.openlocfilehash: 559c1330c3f39ea52b1cf5c3127782dddf37f95b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 

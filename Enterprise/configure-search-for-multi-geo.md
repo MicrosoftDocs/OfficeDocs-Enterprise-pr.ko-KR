@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: 다중-지리적으로 분산 환경에서 검색을 구성 하는 방법에 알아봅니다.
-ms.openlocfilehash: 5aa1e9eb189e00dbed8f575e88046b661341bf52
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>비즈니스 다중-지리적으로 분산에 대 한 OneDrive에 대 한 검색 구성
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/05/2018
 
 이러한 클라이언트는 모든 지리적 위치에서 결과 반환할 수 있습니다.
 
--   비즈니스용 OneDrive
+-   OneDrive for Business
 
 -   Delve
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/05/2018
 
 -   SharePoint 검색 API를 사용 하는 사용자 지정 검색 응용 프로그램
 
-### <a name="onedrive-for-business"></a>비즈니스용 OneDrive
+### <a name="onedrive-for-business"></a>OneDrive for Business
 
 다중-지리적으로 분산 환경 설정, OneDrive를 검색 하는 사용자는 즉시 모든 지리적 위치에서 결과를 가져옵니다.
 
