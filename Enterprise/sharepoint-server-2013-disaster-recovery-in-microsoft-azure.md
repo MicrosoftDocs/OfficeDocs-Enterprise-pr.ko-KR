@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Azure의 SharePoint Server 2013 재해 복구"
+title: Microsoft Azure의 SharePoint Server 2013 재해 복구
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/5/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,28 +11,28 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: "요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다."
-ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.'
+ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
 
  **요약:** Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.
+
+ **SharePoint Server 2013 재해 복구 개요 비디오를 보기**
+<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
+
   
  재난이 발생 한 SharePoint 온-프레미스 환경의 경우 시스템을 신속 하 게 다시 실행 하 여 가장 높은 우선순위가 됩니다. Microsoft Azure에서 이미 실행 되 고 백업 환경을 사용 하는 경우 SharePoint 사용 하 여 재해 복구는 빠르고 쉽게 수행할 수 있습니다. 이 비디오는 SharePoint 웜 장애 조치 환경의 주요 개념에 설명 하 고 전체 자세한 내용은이 문서에서 사용할 수 있는 기능을 보완 합니다.
   
-![동영상(재생 단추) 아이콘](images/mod_icon_video_M.png)
-  
 이 문서를 사용 하 여 다음과 같은 솔루션 모델: **Microsoft Azure의 SharePoint 재해 복구**합니다.
   
-[![Azure에 대한 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)
+[![Azure에 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-] (https://go.microsoft.com/fwlink/p/?LinkId=392555)
-  
-![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+![PDF 파일](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Visio 파일](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 이 문서의 내용
   
@@ -356,7 +356,7 @@ DFSR를 사용 하 여 파일 복제를 설정 하려면 DNS 관리 스냅인을
   
 **표: DFSR에 대 한 문서를 참조**
 
-|**Title**|**설명**|
+|**제목**|**설명**|
 |:-----|:-----|
 |[복제](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |복제에 대 한 링크와 함께 DFS 관리 TechNet 항목  <br/> |
 |[DFS 복제: 상태 가이드](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |DFS 정보에 대 한 링크와 위 키  <br/> |
@@ -487,7 +487,7 @@ SharePoint 팜의를 가리키도록 DNS 레코드를 수동으로 만들어야 
   
 일반적으로 네트워크 부하 분산 설정 하는 경우 클러스터는 단일 IP 주소를 할당 됩니다. 그런 다음 만들면 DNS 호스트 레코드를 DNS 공급자에서 클러스터를 가리키는 네트워크에 대 한 합니다. (이 프로젝트에 대 한는 DNS 서버에에서 배치 Azure에서 온-프레미스 데이터 센터 오류가 발생 하는 경우 복구를 위한.) DNS 레코드를 DNS 관리자에서 Active Directory에서 예, 호출을 만들 수 예를 들어, `http://sharepoint.contoso.com`, 부하 분산 된 클러스터에 대 한 IP 주소를 가리키는 합니다.
   
-SharePoint 팜에 대 한 외부 액세스를 위한 방화벽의 외부 IP 주소를 가리키는 인트라넷 (예: http://sharepoint.contoso.com)에서 클라이언트를 사용 하는 동일한 URL에는 외부 DNS 서버에 호스트 레코드를 만들 수 있습니다. (이 예제를 사용 하 여 최상의 결과은 외부 DNS 서버 라우팅 DNS 요청 하지 않고 내부 DNS 서버에서 SharePoint 팜 클러스터에 직접 contoso.com 및 경로 요청에 대 한 신뢰할 수 있도록 분할 DNS 설정 합니다.) 그런 다음 클라이언트에 대 한 필요 리소스를 찾을 수 있도록 외부 IP 주소 온-프레미스 클러스터의 내부 IP 주소를 매핑할 수 있습니다.
+SharePoint 팜에 대 한 외부 액세스를 위한 클라이언트가 인트라넷에서 사용 하는 동일한 URL에는 외부 DNS 서버에 호스트 레코드를 만들 수 있습니다 (예를들어, http://sharepoint.contoso.com) 방화벽의 외부 IP 주소를 가리키는 합니다. (이 예제를 사용 하 여 최상의 결과은 외부 DNS 서버 라우팅 DNS 요청 하지 않고 내부 DNS 서버에서 SharePoint 팜 클러스터에 직접 contoso.com 및 경로 요청에 대 한 신뢰할 수 있도록 분할 DNS 설정 합니다.) 그런 다음 클라이언트에 대 한 필요 리소스를 찾을 수 있도록 외부 IP 주소 온-프레미스 클러스터의 내부 IP 주소를 매핑할 수 있습니다.
   
 여기에서 서로 다른 재해 복구 시나리오의 메시지를 몇 충돌할 수 있습니다.
   
@@ -495,7 +495,7 @@ SharePoint 팜에 대 한 외부 액세스를 위한 방화벽의 외부 IP 주�
   
  **예제 시나리오: 온-프레미스 데이터 센터를 완전히 손실 됩니다.** 이 시나리오는 자연 재해, 화재 또는 배 등으로 인해 발생할 수 있습니다. 이 경우에 엔터프라이즈에 대 한 가능성이 해야 Azure 서브넷 자체 디렉터리 서비스와 DNS를 비롯 하 여 다른 지역에 호스팅되는 보조 데이터 센터입니다. 이전 재해 시나리오와 같이 Azure SharePoint 팜을 가리키도록 내부 및 외부 DNS 레코드를 리디렉션할 수 있습니다. 다시는 점에 주의 DNS 레코드가 전파 다소 시간이 걸릴 수 있습니다.
   
-[호스트 이름이 지정 된 사이트 모음 아키텍처 및 배포 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120)에서 권장 하는 대로 호스트 이름이 지정 된 사이트 모음을 사용 하는 경우에 SharePoint 팜의 고유와 동일한 웹 응용 프로그램에서 호스트 하는 여러 사이트 모음을 할 수 있습니다. DNS 이름 (예: http://sales.contoso.com 및 http://marketing.contoso.com). 이 경우 사용자 클러스터의 IP 주소를 가리키는 각 사이트 모음에 대 한 DNS 레코드를 만들 수 있습니다. 요청을 SharePoint 웹 프런트엔드 서버에 도달 하면 후 적절 한 사이트 모음에 각 요청을 라우팅 처리할 수 있습니다.
+[호스트 이름이 지정 된 사이트 모음 아키텍처 및 배포 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120)에서 권장 하는 대로 호스트 이름이 지정 된 사이트 모음을 사용 하는 경우에 SharePoint 팜의 고유와 동일한 웹 응용 프로그램에서 호스트 하는 여러 사이트 모음을 할 수 있습니다. DNS 이름 (예 http://sales.contoso.com 및 http://marketing.contoso.com)합니다. 이 경우 사용자 클러스터의 IP 주소를 가리키는 각 사이트 모음에 대 한 DNS 레코드를 만들 수 있습니다. 요청을 SharePoint 웹 프런트엔드 서버에 도달 하면 후 적절 한 사이트 모음에 각 요청을 라우팅 처리할 수 있습니다.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 개념 증명 환경
 <a name="POC"> </a>
@@ -506,7 +506,7 @@ SharePoint 팜에 대 한 외부 액세스를 위한 방화벽의 외부 IP 주�
   
 **표: 온-프레미스에 대 한 가상 컴퓨터 테스트**
 
-|**서버 이름**|**Role**|**구성**|
+|**서버 이름**|**역할**|**구성**|
 |:-----|:-----|:-----|
 |DC1  <br/> |Active Directory와 도메인 컨트롤러입니다.  <br/> |2 개의 프로세서  <br/> Ram 4GB를 통해 512MB에서  <br/> 1 x 127 GB 하드 디스크  <br/> |
 |RRAS  <br/> |라우팅 및 원격 액세스 서비스 (RRAS) 역할을 사용 하 여 구성 하는 서버입니다.  <br/> |2 개의 프로세서  <br/> 2-8 개의 2GB의 RAM  <br/> 1 x 127 GB 하드 디스크  <br/> |
@@ -594,7 +594,7 @@ SQL server가 SharePoint 2013 서버를 만들기 전에 설치 된 데이터베
   
 **표: 복구 팜 인프라**
 
-|**서버 이름**|**Role**|**구성**|**서브넷**|**가용성 집합**|
+|**서버 이름**|**역할**|**구성**|**서브넷**|**가용성 집합**|
 |:-----|:-----|:-----|:-----|:-----|
 |spDRAD  <br/> |Active Directory와 도메인 컨트롤러  <br/> |2 개의 프로세서  <br/> Ram 4GB를 통해 512MB에서  <br/> 1 x 127 GB 하드 디스크  <br/> |sp ADservers  <br/> ||
 |AZ-S P-FS  <br/> |파일 서버 백업 위한 공유 및 DFSR에 대 한 끝점  <br/> | A5 구성: <br/>  2 개의 프로세서 <br/>  14 2GB의 RAM <br/>  1 x 127 GB 하드 디스크 <br/>  1 x 135 GB 하드 디스크 <br/>  1 x 127 GB 하드 디스크 <br/>  1 x 150 GB 하드 디스크 <br/> |sp databaseservers  <br/> |DATA_SET  <br/> |
@@ -682,7 +682,7 @@ Ipconfig /flushdns
 
 [(SharePoint 2013) SharePoint 데이터베이스에 대 한 지원 되는 고가용성 및 재해 복구 옵션](https://go.microsoft.com/fwlink/p/?LinkId=393121)
   
-[SharePoint 2013에 대 한 SQL Server 2012 AlwaysOn 가용성 그룹 구성](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[SharePoint 2013에 대해 SQL Server 2012 AlwaysOn 가용성 그룹 구성](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
 ## <a name="see-also"></a>참고 항목
 

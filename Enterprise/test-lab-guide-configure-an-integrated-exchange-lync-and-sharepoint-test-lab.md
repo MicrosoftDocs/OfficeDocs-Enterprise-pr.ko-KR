@@ -1,5 +1,5 @@
 ---
-title: "통합 된 Exchange 랩 가이드 구성 테스트, Lync 및 SharePoint 테스트 랩"
+title: 통합 된 Exchange 랩 가이드 구성 테스트, Lync 및 SharePoint 테스트 랩
 ms.author: jhendr
 author: JoanneHendrickson
 manager: laurawi
@@ -10,17 +10,22 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
-description: "요약: Exchange Server 2013을 실행 하는 서버, Lync Server 2013을 실행 하는 서버 및 SharePoint Server 2013을 실행 하는 서버를 포함 하는 통합 된 테스트 랩을 만들고 하는 방법에 알아봅니다."
-ms.openlocfilehash: 4bc9c48782c7693368c304f5f9d5bae56242111d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Exchange Server 2013을 실행 하는 서버, Lync Server 2013을 실행 하는 서버 및 SharePoint Server 2013을 실행 하는 서버를 포함 하는 통합 된 테스트 랩을 만들고 하는 방법에 알아봅니다.'
+ms.openlocfilehash: 636429a9cce04b982c1129dba601c6348deb9cdc
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>테스트 랩 가이드: 통합된 Exchange, Lync 및 SharePoint 테스트 랩 구성
 
  **요약:** Exchange Server 2013을 실행 하는 서버, Lync Server 2013을 실행 하는 서버 및 SharePoint Server 2013을 실행 하는 서버를 포함 하는 통합 된 테스트 랩을 만들고 하는 방법에 알아봅니다.
-  
+ 
+**통합 된 Exchange, Lync 및 SharePoint 테스트 랩 가이드 개요 동영상 보기**
+
+<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" ></iframe>
+
+ 
 확장 구성 하 고 다중 제품 시나리오 및 Exchange Server 2013을 실행 하는 서버를 사용 하는 솔루션을 시연 하는 세 유형의 서버 간에 서버-서버 인증을 포함 하는이 구성의 결과로 발생 하는 테스트 랩을 사용할 수는 Lync Server 2013을 실행 하는 서버와 SharePoint Server 2013을 실행 하는 서버입니다.
   
 이 문서에는 다음 작업을 위한 지침이 나와 있습니다.
@@ -43,10 +48,6 @@ ms.lasthandoff: 02/09/2018
     
 9. E x 1, LYNC1, s p 1과의 통합을 구성 합니다.
     
-**통합 된 Exchange, Lync 및 SharePoint 테스트 랩 가이드 개요 동영상 보기**
-
-![동영상(재생 단추) 아이콘](images/mod_icon_video_M.png)
-  
 Hyper-v에서이 테스트 랩을 구성 하는 방법에 대 한 정보를 [호스팅 통합된 Exchange, Lync 및 SharePoint 테스트 랩와 Windows Server 2012 Hyper-v를](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)참조 하십시오.
   
 ## <a name="download-the-test-lab-guide"></a>테스트 랩 가이드 다운로드
