@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 요약:이 테스트 랩 가이드를 사용 하 여 Office 365 e 5, Enterprise 이동성 + 보안 (EMS) e 5 및 Windows 10 Enterprise를 실행 하는 컴퓨터를 포함 하는 개발/테스트 환경을 만들 수 있습니다.
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 개발/테스트 환경
 
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/16/2018
 **그림 1: 해당 Azure Active Directory (AD) 테 넌 트 및 사용자 계정으로 Office 365 E5 구독**
 
 ![Microsoft 3656 Enterprise 개발/테스트 환경 1단계](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> Office 365 E5 평가판 구독은 30 일, 60 일을 쉽게 확장할 수 있습니다. 영구 개발/테스트 환경에 대 한 만들기 새 적은 수의 라이선스를 사용 하 여 구독을 지불 합니다. 
   
 ## <a name="phase-2-add-ems"></a>2 단계: EMS 추가
 
@@ -66,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 개발/테스트 환경을 현재가지고 있습니다.
   
-- 사용자 계정 목록과 동일한 조직 및 동일한 Azure AD 테넌트를 공유하는 Office 365 E5 Enterprise 및 EMS 평가판 구독
+- Office 365 e 5 엔터프라이즈 및 EMS E5 평가판 구독 사용자 계정의 사용자 목록을 사용 하 여 동일한 Azure AD 테 넌 트를 공유 합니다.
 - Office 365 e 5 및 EMS e 5를 사용 하 여 모든 적절 한 사용자 계정 (전역 관리자만 또는 모든 5 개의 사용자 계정) 사용할 수 있습니다.
     
 그림 2 EMS를 추가 하는 구성에 결과 보여줍니다.
@@ -201,8 +204,9 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 - [구성 하 고 고급 위협 보호를 테스트 합니다.](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>Concepts
 
 - [Microsoft 365 Enterprise 설명서](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Microsoft 365 엔터프라이즈 배포](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [하나의 Microsoft 클라우드 개발/테스트 환경](the-one-microsoft-cloud-dev-test-environment.md)
+- [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)

@@ -3,7 +3,7 @@ title: Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: '요약: 아키텍처 모델, 배포 및 비즈니스 및 Lync에 대 한 개발자를 위한 SharePoint, Exchange, Skype 플랫폼 옵션에 설명 하는 IT 포스터를 가져옵니다.'
-ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 
@@ -98,7 +98,7 @@ SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Office 365 모델에서 다중-지리적으로 분산 OneDrive](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | 이 모델은 개인 미리 보기에서 현재 사용 되는 Office 365에서 다중-지리적으로 분산 OneDrive의 한 페이지 개요입니다. 이 모델에는 다음이 포함 됩니다.<br/><br/> -이점 <br/> -배포에 대 한 단계 <br/> -예제 구성 <br/><br/>  Office 365의 OneDrive에 대 한 다중-지리적으로 분산 미리 보기에 대 한 자세한 내용은 [여기](https://aka.ms/onedrivemultigeo)합니다.  <br/> |
+|[![Office 365 모델에서 다중-지리적으로 분산 OneDrive](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | 이 포스터 (이 영문)은 미리 보기에서 현재 사용 되는 Office 365에서 다중-지리적으로 분산 OneDrive의 한 페이지 개요입니다. 이 모델에는 다음이 포함 됩니다.<br/><br/> -이점 <br/> -배포에 대 한 단계 <br/> -예제 구성 <br/><br/>  Office 365의 OneDrive에 대 한 다중-지리적으로 분산 미리 보기에 대 한 자세한 내용은 [여기](https://aka.ms/onedrivemultigeo)합니다.  <br/> |
    
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 데이터베이스
 <a name="SP2016_Databases"> </a>
@@ -167,7 +167,7 @@ SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![SharePoint를 사용 하 여 Azure의 인터넷 사이트의 이미지](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |이 포스터에서는 주요 디자인 활동에 설명 하 고 Azure의 인터넷 사이트에 대 한 선택 하려는 아키텍처를 권장 합니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 [액세스할 수 있는 다이어그램-SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트를](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md)참조 하십시오.<br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![SharePoint를 사용 하 여 Azure의 인터넷 사이트의 이미지](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |이 포스터에서는 주요 디자인 활동에 설명 하 고 Azure의 인터넷 사이트에 대 한 선택 하려는 아키텍처를 권장 합니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 [액세스할 수 있는 다이어그램-SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트를](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md)참조 하십시오.<br/><br/> 자세한 내용은 다음 문서를 참조하세요.  <br/><br/> - [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>디자인 샘플: SharePoint 2013용 Microsoft Azure의 인터넷 사이트
 <a name="DesignSampleInternetSites"> </a>
@@ -176,7 +176,7 @@ SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![이 디자인 예제 이미지: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |SharePoint Server 2013을 사용 하 여 Azure에서 직접 아키텍처 인터넷 사이트에 대 한 시작 지점으로이 디자인 예제를 사용 합니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 참조 하십시오. [액세스할 수 있는 다이어그램-디자인 예제: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md)합니다.<br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![이 디자인 예제 이미지: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |SharePoint Server 2013을 사용 하 여 Azure에서 직접 아키텍처 인터넷 사이트에 대 한 시작 지점으로이 디자인 예제를 사용 합니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 참조 하십시오. [액세스할 수 있는 다이어그램-디자인 예제: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md)합니다.<br/><br/> 자세한 내용은 다음 문서를 참조하세요.  <br/><br/> - [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Microsoft Azure로의 SharePoint 재해 복구
 <a name="sharepoint_recovery_Azure"> </a>
@@ -185,9 +185,9 @@ SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Azure에 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |이 IT 포스터에서는 Azure의 재해 복구 환경에 대 한 아키텍처 원리를 보여줍니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 [액세스할 수 있는 다이어그램-Microsoft Azure에 SharePoint 재해 복구를](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)참조 하십시오.<br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [Microsoft Azure의 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Azure에 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |이 IT 포스터에서는 Azure의 재해 복구 환경에 대 한 아키텍처 원리를 보여줍니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 [액세스할 수 있는 다이어그램-Microsoft Azure에 SharePoint 재해 복구를](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)참조 하십시오.<br/><br/> 자세한 내용은 다음 문서를 참조하세요.  <br/><br/> - [Microsoft Azure의 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>Concepts
 
 <a name="Lync2013_Options"> </a>
 

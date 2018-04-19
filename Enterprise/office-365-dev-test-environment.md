@@ -3,7 +3,7 @@ title: Office 365 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 요약:이 테스트 랩 가이드를 사용 하 여 평가 또는 개발/테스트는 Office 365 평가판 구독을 만듭니다.
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -49,7 +49,7 @@ Office 365 평가판 구독을 사용할 수 있으며 응용 프로그램 또�
   
 Azure에 구독을 해야 합니다. 이 구성에 대 한 [Azure 무료 평가판](https://azure.microsoft.com/pricing/free-trial/) 을 사용할 수 있습니다. MSDN 또는 Visual Studio 구독이 있는 경우 [Visual Studio 구독자에 대 한 월별 Azure 신용](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)를 참조 하십시오.
   
-결과 구성은 다음과 같습니다.
+구성 결과는 다음과 같습니다.
   
 ![Azure의 기본 구성 개발/테스트 환경](images/63108214-f716-46ae-9974-072ff15b44a2.png)
   
@@ -71,22 +71,9 @@ Office 365 E5 평가판 구독을 시작 하려면 먼저 가상의 회사 이�
 
 1. 간편한 Office 365 개발/테스트 환경에 대 한 사용자의 컴퓨터에서 인터넷 브라우저를 열고 하 고 이동 [https://aka.ms/e5trial](https://aka.ms/e5trial)합니다. 
     
-    시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경용:
-    
-  - [Azure 포털](https://portal.azure.com)연결 하는 회사와 CLIENT1\\User1 계정을 합니다.
-    
-  - 관리자 수준 Windows PowerShell 명령 프롬프트를 열고 하 고 이러한 명령을 실행 합니다.
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경에 연결 CLIENT1 CORP\User1 계정을 사용 하 여 Azure 포털에서 합니다.
 
-    > [!TIP]
-    > 클릭 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) 이 문서의 모든 PowerShell 명령을 포함 된 텍스트 파일을 가져오도록 합니다.
-  
-  - 시작 화면에서 **Internet Explorer** 를 클릭 하 고 이동 [https://aka.ms/e5trial](https://aka.ms/e5trial)합니다.
+    시작 화면에서 Microsoft에 지를 실행 하 고 이동 [https://aka.ms/e5trial](https://aka.ms/e5trial)합니다.
     
 2. **알고 있습니다 하기 시작** 페이지에서 다음을 지정 합니다.
     
@@ -161,6 +148,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> 클릭 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) 이 문서의 모든 PowerShell 명령을 포함 된 텍스트 파일을 가져오도록 합니다.
 
 **New-msoluser** 명령의 디스플레이에서 사용자 2 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
   
@@ -296,12 +285,12 @@ Office 365 개발/테스트 환경을 추가로 Microsoft 클라우드 서비스
     
 - [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>Concepts
 
 - [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+- [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 

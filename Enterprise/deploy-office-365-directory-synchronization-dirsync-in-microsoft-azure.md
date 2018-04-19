@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: '요약: Azure AD 연결 계정 온-프레미스 디렉터리 및 Office 365 구독 Azure AD 테 넌 트 간에 동기화 하는 Azure에 가상 컴퓨터에 배포 합니다.'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure의 Office 365 디렉터리 동기화 배포
 
@@ -105,7 +105,7 @@ Azure Active Directory (AD) 연결 (이전의 디렉터리 동기화 도구, 디
     
 - 온-프레미스 네트워크에서 도메인 컨트롤러와 DNS 서버 존재 합니다.
     
-- Azure AD 연결 single sign-on 하는 대신 암호 해시 동기화를 수행합니다. Active Directory Federation Services (AD FS) 인프라를 배포 필요가 없습니다. 암호 해시 동기화 및 single sign-on 및 옵션에 대 한 자세한 내용은 [사용 하 여 디렉터리 통합 시나리오는 결정](https://go.microsoft.com/fwlink/p/?LinkId=393094)을 참조 합니다.
+- Azure AD 연결 single sign-on 하는 대신 암호 해시 동기화를 수행합니다. Active Directory Federation Services (AD FS) 인프라를 배포 필요가 없습니다. 암호 해시 동기화 및 single sign-on 및 옵션에 대 한 자세한 내용은, [Azure Active Directory 하이브리드 identity 솔루션에 대 한 적절 한 인증 방법을 선택](http://aka.ms/auth-options)을 참조 하십시오.
     
 환경에서이 솔루션을 배포할 때 고려할 수 있는 추가 디자인 선택 사항이 있습니다. 이러한 기능은 다음과 같습니다.
   
@@ -196,7 +196,7 @@ Azure AD 연결 Azure에 가상 컴퓨터에 배포 하는 작업은 세 단계�
     
 7. 추가 사용자를 위한 3 단계로 이동 합니다.
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>Concepts
 
 <a name="DeploymentRoadmap"> </a>
 

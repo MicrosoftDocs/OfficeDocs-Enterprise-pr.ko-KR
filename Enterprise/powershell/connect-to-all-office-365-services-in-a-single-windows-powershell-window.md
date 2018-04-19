@@ -3,7 +3,7 @@ title: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell에 연결 합니다.'
-ms.openlocfilehash: ffa603ec50c95f5800315eee07b4d01e058852f3
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
@@ -57,10 +57,9 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
     
     비즈니스 온라인 모듈 및 Office 365 모듈 중 하나는 Skype에 대 한 요구 사항으로 인해 64 비트 버전의 Windows 사용 해야 합니다.
     
-- Office 365, SharePoint Online 및 비즈니스 온라인 용 Skype에 필요한 모듈을 설치 해야 합니다.
+- Azure AD에 필요한 사용 되는 모듈을 설치 해야 SharePoint Online 및 비즈니스 온라인 용 Skype:
     
-   - [Microsoft 온라인 서비스 로그인 도우미 IT 전문가 위한 RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)
-   - Windows Azure Active Directory 모듈에 대 한 Windows PowerShell (64 비트 버전)는 상승 된 PowerShell 명령 프롬프트에서 **설치 모듈 MSOnline** 명령 사용 하 여 합니다.
+   - [Azure Active Directory V2](connect-to-office-365-powershell.md#ConnectV2)
    - [SharePoint Online 관리 셸](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [온라인으로 비즈니스 Windows PowerShell 모듈에 대 한 Skype](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
@@ -83,11 +82,10 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
   $credential = Get-Credential
   ```
 
-3. Office 365에 연결 하려면 다음이 명령을 실행 합니다.
+3. 연결을 Azure Active Directory (AD)이이 명령을 실행 합니다.
     
   ```
-  Import-Module MsOnline
-  Connect-MsolService -Credential $credential
+   Connect-AzureAD -Credential $credential
   ```
 
 4. SharePoint Online에 연결 하려면 다음이 명령을 실행 합니다. 교체 _ \<domainhost >_ 도메인에 대 한 실제 값입니다. 예: `litwareinc.onmicrosoft.com`는 _ \<domainhost >_ 값은 `litwareinc`합니다.
@@ -124,8 +122,7 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
 ```
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
-Import-Module MsOnline
-Connect-MsolService -Credential $credential
+Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
 Import-Module SkypeOnlineConnector
@@ -151,10 +148,7 @@ Azure AD에 연결 하는 단일 블록에서 모든 명령을 사항은 SharePo
 $acctName="<UPN of a global administrator account>"
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
-#If you are running Office 365 commands that contain "AzureAd" in their name, use this command:
 Connect-AzureAD
-#If you are running Office 365 commands that contain "Msol" in their name, comment the preceding command and un-comment the following command:
-#Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
 #Skype for Business Online
@@ -176,8 +170,7 @@ Exchange Online 및 보안에 대 한 &amp; 준수 센터 다단계 인증을 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
-- [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+- [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)
 - [Office 365 PowerShell을 사용하여 SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
 - [사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)

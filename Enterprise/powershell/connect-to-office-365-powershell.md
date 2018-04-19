@@ -3,7 +3,7 @@ title: PowerShell Office 365에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2018
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 Office 365 관리 센터 작업을 수행합니다.'
-ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 04/16/2018
   
 Office 365 PowerShell을 사용하면 명령줄에서 Office 365 설정을 관리할 수 있습니다. Office 365 PowerShell에 연결하려면 필요한 소프트웨어를 설치하고, 필요한 소프트웨어를 실행하고, Office 365 조직에 연결하는 간단한 세 단계 과정을 수행합니다. 
 
-이러한 연결 지침은 [Azure ActiveDirectory(MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113) 항목의 연결 지침과 동일합니다.
   
 > [!TIP]
 > **PowerShell을 처음 사용하시나요?** [PowerShell의 비디오 개요](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)를 보고 LinkedIn Learning을 통해 가져올 수 있습니다. 
@@ -120,15 +119,15 @@ Connect-MsolService
     
 - **연결 오류가 발생하면** ["Connect-MsolService: 형식의 예외가 발생했습니다." 오류](https://go.microsoft.com/fwlink/p/?LinkId=532377) 항목을 참조하세요.
     
-## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Azure Active Directory V2 PowerShell 모듈을 사용하 여 연결
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>그래프 모듈에 대 한 Active Directory Azure PowerShell을 사용 하 여 연결
 <a name="ConnectV2"> </a>
 
-Azure Active Directory V2 PowerShell 모듈의 명령에는 cmdlet 이름에 “AzureAD”가 있습니다.
+Cmdlet 이름에 "AzureAD"를 포함 하는 그래프 모듈에 대 한 Active Directory Azure PowerShell에 명령 합니다.
 
-Azure Active Directory V2 PowerShell 모듈에서 새 cmdlet을 필요로 하는 프로시저의 경우, 이러한 단계를 사용해서 모듈을 설치하고 Office 365 구독에 연결할 수 있습니다.
+그래프 모듈에 대 한 Azure Active Directory PowerShell에서 새 cmdlet을 필요로 하는 절차에 대 한 모듈을 설치 하 고 Office 365 구독에 연결 하려면 다음이 단계를 사용 합니다.
 
 >[!Note]
->Microsoft Windows의 여러 버전에 대한 지원 정보는 [Azure Active Directory V2 PowerShell 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)을 참조하세요.
+>다른 버전의 Microsoft Windows에 대 한 지원에 대 한 정보에 대 한 [그래프 모듈에 대 한 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 를 참조 합니다.
 >
 
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
@@ -168,7 +167,7 @@ Connect-AzureAD
     
 ** Azure Active Directory PowerShell** 대화 상자의 지침에 따라 인증 코드와 같은 추가 인증 정보를 제공한 다음 **로그인**을 클릭합니다.
     
-연결이 되면 [Azure Active Directory V2 PowerShell 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)의 새 cmdlet을 사용할 수 있습니다.
+를 연결한 후 [그래프 모듈에 대 한 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)에 대 한 새 cmdlet을 사용할 수 있습니다.
   
 ## <a name="see-also"></a>참고 항목
 
