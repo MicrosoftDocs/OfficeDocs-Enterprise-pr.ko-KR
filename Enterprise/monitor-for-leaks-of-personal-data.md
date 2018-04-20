@@ -1,5 +1,5 @@
 ---
-title: "개인 데이터 누수 모니터링"
+title: 개인 데이터 누수 모니터링
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
-description: "개인 데이터의 누수를 모니터링하는 데 사용할 수 있는 세 가지 도구에 대해 알아봅니다."
-ms.openlocfilehash: 04f5346a9c6554b75e9f360233c942907b826447
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: 개인 데이터의 누수를 모니터링하는 데 사용할 수 있는 세 가지 도구에 대해 알아봅니다.
+ms.openlocfilehash: 4f7e9b35f7e2da5254e98a9f1cf97d6a5e9e1a73
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>개인 데이터 누수 모니터링
 
@@ -86,7 +85,8 @@ Microsoft Management Activity API를 통해 통합 감사 로그에 구독된 �
 
 -   [Office 365 감사 로그 검색 켜기 또는 끄기](https://support.office.com/ko-KR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Office 365 보안 및 준수 센터에서 감사 로그 검색](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   
+  [Office 365 보안 및 준수 센터에서 감사 로그 검색](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx)(cmdlet) 
@@ -117,7 +117,7 @@ Cloud App Security에 다음 특성 형식의 곧 제공될 예정입니다.
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security 대시보드
 
-아직 Cloud App Security를 사용하지 않고 이는 경우 먼저 시작하세요. Cloud App Security에 액세스하려면 <https://portal.cloudappsecurity.com>으로 이동하세요.
+아직 Cloud App Security를 사용하지 않은 경우 먼저 시작하세요. Cloud App Security에 액세스하려면 <https://portal.cloudappsecurity.com>으로 이동하세요.
 
 참고: Cloud App Security를 시작할 때 또는 레이블을 할당하기 전에 '파일에서 Azure Information Protection 분류 레이블 자동 검색’(일반 설정)을 사용하도록 설정해야 합니다. 설정 후에는 Cloud App Security가 기존 파일이 수정될 때까지 다시 검색하지 않습니다.
 
