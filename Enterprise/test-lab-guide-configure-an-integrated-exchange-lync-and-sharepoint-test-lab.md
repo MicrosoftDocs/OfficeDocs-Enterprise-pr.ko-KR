@@ -11,11 +11,11 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: '요약: Exchange Server 2013을 실행 하는 서버, Lync Server 2013을 실행 하는 서버 및 SharePoint Server 2013을 실행 하는 서버를 포함 하는 통합 된 테스트 랩을 만들고 하는 방법에 알아봅니다.'
-ms.openlocfilehash: 636429a9cce04b982c1129dba601c6348deb9cdc
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>테스트 랩 가이드: 통합된 Exchange, Lync 및 SharePoint 테스트 랩 구성
 
@@ -23,8 +23,7 @@ ms.lasthandoff: 04/18/2018
  
 **통합 된 Exchange, Lync 및 SharePoint 테스트 랩 가이드 개요 동영상 보기**
 
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" ></iframe>
-
+> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
 확장 구성 하 고 다중 제품 시나리오 및 Exchange Server 2013을 실행 하는 서버를 사용 하는 솔루션을 시연 하는 세 유형의 서버 간에 서버-서버 인증을 포함 하는이 구성의 결과로 발생 하는 테스트 랩을 사용할 수는 Lync Server 2013을 실행 하는 서버와 SharePoint Server 2013을 실행 하는 서버입니다.
   

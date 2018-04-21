@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '요약: Microsoft Azure의 개발/테스트 환경으로 시뮬레이션 된 크로스-프레미스 가상 네트워크를 만듭니다.'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure의 시뮬레이션 된 크로스-프레미스 가상 네트워크
 
@@ -54,7 +54,7 @@ Azure IaaS 하이브리드 클라우드 프로덕션 환경에서 시뮬레이�
 3. D c 2를 구성 합니다.
     
 > [!NOTE]
-> 이 구성 유료 Azure 구독에 필요 합니다. 
+> 이 구성을 위해서는 유료 Azure 구독이 필요합니다. 
   
 ![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
@@ -76,7 +76,7 @@ Azure IaaS 하이브리드 클라우드 프로덕션 환경에서 시뮬레이�
 먼저, 로컬 컴퓨터에서 Azure PowerShell 프롬프트를 시작 합니다.
   
 > [!NOTE]
-> Azure PowerShell의 최신 버전을 사용 하는 다음 명령 집합입니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조 하십시오. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 다음 명령 사용 하 여 Azure 계정에 로그인 합니다.
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> 클릭 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) 모든이 문서의 PowerShell 명령을 포함 된 텍스트 파일을 가져오도록 합니다.
+> 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일을 가져오려면 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)를 클릭합니다.
   
 다음 명령을 사용하여 구독 이름을 가져옵니다.
   
@@ -173,7 +173,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 두는 회사를 제공 하 라는 메시지가\\User1 암호와 디렉터리 서비스 복원 모드 (DSRM) 암호를 d c 2를 다시 시작 하 고 있습니다. 

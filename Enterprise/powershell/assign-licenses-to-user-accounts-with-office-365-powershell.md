@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다."
+title: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "Office 365 PowerShell 할당 허가 되지 않은 사용자에 게 Office 365 라이선스를 사용 하는 방법에 설명 합니다."
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Office 365 PowerShell 할당 허가 되지 않은 사용자에 게 Office 365 라이선스를 사용 하는 방법에 설명 합니다.
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.
 
@@ -66,7 +66,7 @@ Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "l
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **슬라이드 노트**
+ **참고**
   
 - 동일한 라이센스 제도에서 여러 라이센스 사용자 지정할 수 없습니다.
     
@@ -139,7 +139,7 @@ Set-MsolUserLicense -UserPrincipalName "BelindaN@litwareinc.com" -AddLicenses "l
   
 때 **Set-msoluserlicense** 실행이 완료 되이 다음과 유사한 화면:
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 즉, 이러한 상황이 발생 아무것도 동일 하 게 모양과지 않습니다 동일 합니다. 사용자는 라이선스가 할당 된을 확인 하려면 다음과 같은 명령을 실행 합니다.
   

@@ -1,9 +1,9 @@
 ---
-title: "Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기"
+title: Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: "Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 설명 합니다."
-ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 설명 합니다.
+ms.openlocfilehash: 5286a581a67b39d5d5ca921b998d6ea14b3ff50f
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기
 
@@ -44,8 +44,8 @@ Office 365에서 라이선스를 제공 계획 라이선스를 (또한 호출된
     
 - 사용 하는 경우는 **Get-MsolUser** cmdlet을 사용 하지 않고는 _All_ 매개 변수를 처음 500 개의 계정만 반환 됩니다.
     
-## <a name="the-short-version-instructions-without-explanations"></a>간략 한 (설명 없이 지침)
 <a name="ShortVersion"> </a>
+## <a name="the-short-version-instructions-without-explanations"></a>간략 한 (설명 없이 지침)
 
 사용자에 액세스할 수 있는 모든 Office 365 PowerShell 서비스를 보려면 다음 구문을 사용 합니다.
   
@@ -89,8 +89,8 @@ Skype 비즈니스 온라인 또는 Exchange Online에 대 한 사용 하도록 
 Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>긴 버전 (명령에 대 한 세부 정보)
 <a name="LongVersion"> </a>
+## <a name="the-long-version-instructions-with-detailed-explanations"></a>긴 버전 (명령에 대 한 세부 정보)
 
 ### <a name="find-the-office-365-powershell-services-that-a-user-has-access-to"></a>사용자에 액세스할 수 있는 Office 365 PowerShell 서비스 찾기
 
@@ -124,10 +124,10 @@ System.Runtime... Microsoft.On...  litwarein... {Microsoft.Online.A...
 
 및 다음 **ServiceStatus** 속성을 확장 하 여을 얻을 수 더 많은 정보:
   
-|서비스 계획 * * *|설명 * * *|
+|서비스 계획 * * *|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft 팀  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
@@ -162,10 +162,10 @@ EXCHANGE_S_ENTERPRISE             Success
 
 한 보겠습니다 또한 이러한 이상한 이름의 서비스 계획이 실제로 나타내는 설명 하는 테이블에 대 한 정보를 수행 합니다.
   
-|서비스 계획 * * *|설명 * * *|
+|서비스 계획 * * *|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft 팀  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
@@ -190,10 +190,10 @@ EXCHANGE_S_ENTERPRISE             Success
   
 요청은 다른 사용자 굴뚝 된 것입니다. 그 대답 하기 위해 먼저 살펴보았습니다 문서 [보기 라이선스 및 Office 365 PowerShell을 사용 하 여 서비스에](view-licenses-and-services-with-office-365-powershell.md) 에서만 사용할 수 있는 현재 라이선스 계획에 대 한 서비스의 표를 검토 보겠습니다 `litwareinc:ENTERPRISEPACK`:
   
-|서비스 계획 * * *|설명 * * *|
+|서비스 계획 * * *|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft 팀  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
@@ -282,19 +282,23 @@ Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceSta
   
 물론는 Windows PowerShell가 제공 하는 이유: 하는 등의 방대 하 고 시간이 많이 걸리는 작업에서 Windows PowerShell 하면 저장 하는데 도움이 됩니다.
   
-올려놓습니다 우리가 하는 동안 서비스 정보를 확인 하는 최상의 명령은 다음과 같습니다.
+Office 365 E5 구독에 대 한 해당 라이선스 및 servicestatus에 포함 된 색인으로 식별 되는 지정 된 서비스 집합에 대 한 서비스 정보를 보기 위한 명령의 예는 다음과 같습니다.
   
 ```
-Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[0].ProvisioningStatus}}, @{Name="MDM";Expression={$_.Licenses[0].ServiceStatus[1].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[2].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[3].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[4].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[5].ProvisioningStatus}}, @{Name="OfficeWeb";Expression={$_.Licenses[0].ServiceStatus[6].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[8].ProvisioningStatus}} | ConvertTo-Html > "C:\\My Documents\\Service Info.html"
+Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[12].ProvisioningStatus}}, @{Name="Teams";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[20].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[19].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[21].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[22].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[24].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[23].ProvisioningStatus}} | ConvertTo-CSV > "C:\Service Info.csv"
 ```
 
-및는 매우 이상한 보고 하는 명령입니다. 하지만 모든 해당 서비스 상태를 확인 및 모든 사용자에 게 보여주는 CSV 파일을 만듭니다.
+이 명령은 모든 사용자 및 서비스 (팀, Yammer, AD RMS, OfficePro, Skype, SharePoint, 및 Exchange)의 지정된 된 집합에 대 한 해당 서비스 상태를 보여주는 CSV 파일을 만듭니다.
+
+>[!Note]
+>서비스 목록에서 구독에서 얻을 수 있습니다는 `(Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus` 명령 합니다. 출력을 0이 들어 있는 서비스 인덱스 번호 매기기 시작 합니다. 위 명령은 단지 예를 합니다. 시간에 따른 서비스에 대 한 인덱스 번호를 변경할 수 있습니다.
+>
 
   
-## <a name="see-also"></a>참고 항목
 <a name="SeeAlso"> </a>
+## <a name="see-also"></a>참고 항목
 
-Office 365 PowerShell을 사용하여 사용자를 관리하는 방법에 대한 다음 추가 항목을 참조하세요.
+Office 365 PowerShell을 사용 하여 사용자를 관리에 대하여 다음과 같은 추가 항목을 참조 하십시오.
   
 - [Office 365 PowerShell을 사용 하 여 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
     

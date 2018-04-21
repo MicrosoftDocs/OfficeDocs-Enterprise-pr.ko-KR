@@ -12,19 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.'
-ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
 
  **요약:** Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.
 
  **SharePoint Server 2013 재해 복구 개요 비디오를 보기**
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
  재난이 발생 한 SharePoint 온-프레미스 환경의 경우 시스템을 신속 하 게 다시 실행 하 여 가장 높은 우선순위가 됩니다. Microsoft Azure에서 이미 실행 되 고 백업 환경을 사용 하는 경우 SharePoint 사용 하 여 재해 복구는 빠르고 쉽게 수행할 수 있습니다. 이 비디오는 SharePoint 웜 장애 조치 환경의 주요 개념에 설명 하 고 전체 자세한 내용은이 문서에서 사용할 수 있는 기능을 보완 합니다.
   
@@ -193,9 +192,9 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
     
 - 4 번째 계층은 데이터베이스 계층입니다. 로그 전달 보조 데이터베이스 서버는 온-프레미스 환경에서 동일한 환경에서 파일 공유에 로그를 복사 하는 하는데 사용 됩니다.
     
-- DFSR Azure 환경에서 파일 공유에 온-프레미스 환경에서 파일 공유에서 파일을 복사합니다.
+- DFSR은 온-프레미스 환경의 파일 공유에서 Azure 환경의 파일 공유로 파일을 복사합니다.
     
-- 로그 전달은 복구 환경에서 SQL Server AlwaysOn 가용성 그룹의 기본 복제본으로 Azure 환경에서 공유 되는 파일에서 로그를 재생 합니다.
+- 로그 전달은 Azure 환경의 파일 공유에서 복구 환경의 SQL Server AlwaysOn 가용성 그룹에 있는 기본 복제본으로 로그를 재생합니다.
     
 ### <a name="cold-standby-environments"></a>콜드 대기 환경
 
@@ -225,7 +224,7 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
     
 - [Windows Server 장애 조치 (WSFC) SQL server 클러스터링](https://go.microsoft.com/fwlink/p/?LinkId=392701)
     
-- [AlwaysOn 가용성 그룹 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [AlwaysOn 가용성 그룹(SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
     
 - [백업 및 SQL Server 데이터베이스 복원](https://go.microsoft.com/fwlink/p/?LinkId=392728)
     

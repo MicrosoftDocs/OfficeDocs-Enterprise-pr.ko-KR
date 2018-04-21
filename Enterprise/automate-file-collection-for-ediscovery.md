@@ -1,5 +1,5 @@
 ---
-title: "EDiscovery에 대 한 파일 컬렉션을 자동화 합니다."
+title: EDiscovery에 대 한 파일 컬렉션을 자동화 합니다.
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
-description: "요약: eDiscovery에 대 한 사용자의 컴퓨터에서 파일 컬렉션을 자동화 하는 방법에 알아봅니다."
-ms.openlocfilehash: bb93bed80ec95511c6bbf4307d1f0c9e1d4f82cb
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: '요약: eDiscovery에 대 한 사용자의 컴퓨터에서 파일 컬렉션을 자동화 하는 방법에 알아봅니다.'
+ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>EDiscovery에 대 한 파일 컬렉션을 자동화 합니다.
 
@@ -163,7 +163,7 @@ catch [System.Exception] {
 Function CopyFileToCaseFolder($SourcePath, $TargetPath, $FileName) {
     
     # Check to see if the file already exists
-    $TargetFileCheck = Test-Path $TargetPath\\$FileName
+    $TargetFileCheck = Test-Path $TargetPath\$FileName
 
 try {
 
@@ -202,18 +202,18 @@ $CaseNo = get-date -Format yyyyMMddHHmm
 $CaseNo = $CaseNo + "_" + [Environment]::UserName
 
 # Target location to copy case files
-$CaseRootLocation = "\\\\staging\\Cases$" 
+$CaseRootLocation = "\\staging\Cases$" 
 
 # File copy location, log file location, PST file location and temporary log file location
-$CaseLocation = $CaseRootLocation + "\\" + $CaseNo
-$CaseLogLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_Log"
-$CasePSTLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_PSTs"
-$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\\" + $CaseNo
+$CaseLocation = $CaseRootLocation + "\" + $CaseNo
+$CaseLogLocation = $CaseRootLocation + "\" + $CaseNo + "\_Log"
+$CasePSTLocation = $CaseRootLocation + "\" + $CaseNo + "\_PSTs"
+$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\" + $CaseNo
 
 # Inventory of local drives
 $LocalDrives = Get-PSDrive -PSProvider FileSystem -Scope Global
 
-$LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
+$LoggingFile = "$CaseLogLocation\FileCopyErrors.log"
 
 # Main script
 
@@ -221,12 +221,12 @@ $LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
 CreateCaseFolder
 
 # Create the list of files to be copied
-# First create the temporary directory in the AppData\\Roaming folder
+# First create the temporary directory in the AppData\Roaming folder
 New-Item "$TemporaryLogLocation" -ItemType Directory -Force -ErrorAction SilentlyContinue
 $LocalDrives | foreach {
 
     # Write-Host -ForeGroundColor Cyan "Collecting Files for Drive: " $_
-    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\\\\$_.xml -Force
+    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\$_.xml -Force
     # Needs try catch and logged collection error file
 }
 
@@ -268,8 +268,8 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 |**# 선**|**필요한 변경 하려면**|**필수/선택**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** 변수입니다. 스크립트를 조사 하 고 배열 변수에서를 수집 하려는 모든 파일 형식 확장명을 포함 합니다.<br/> |선택  <br/> |
-|76 및 77  <br/> |요구에 맞게 변경 **$CaseNo** 변수 방식으로 작성 됩니다. 스크립트는 현재 날짜와 시간 캡처하고 사용자 이름을 추가 합니다.<br/> |선택  <br/> |
+|71  <br/> |**$FileTypes** 변수입니다. 스크립트를 조사 하 고 배열 변수에서를 수집 하려는 모든 파일 형식 확장명을 포함 합니다.<br/> |옵션  <br/> |
+|76 및 77  <br/> |요구에 맞게 변경 **$CaseNo** 변수 방식으로 작성 됩니다. 스크립트는 현재 날짜와 시간 캡처하고 사용자 이름을 추가 합니다.<br/> |옵션  <br/> |
 |80  <br/> |**$CaseRootLocation** 변수를 설정 해야 준비 서버 컬렉션 파일 공유 ** \\ \\준비\\$의 경우**합니다. <br/> |필수  <br/> |
    
 4. 도메인 컨트롤러의 Netlogon 파일 공유에 CollectionScript.ps1 파일을 넣습니다. 
@@ -290,7 +290,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 # This is for on-prem Exchange only
 # Input parameters
 # When you run the script, you call it with two parameters, PST source path and target mailbox alias
-# For example:  .\\PSTImport.ps1 \\\\FileShare\\PSTFiles jdoe
+# For example:  .\PSTImport.ps1 \\FileShare\PSTFiles jdoe
 
 param ([String]$SourcePath,[String]$MailboxAlias)
 
@@ -326,7 +326,7 @@ $AllFiles | ForEach-Object {
     
 |**# 선**|**필요한 변경 하려면**|**필수/선택**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** 태그 Pst로 가져오는 사서함 폴더를 지정 합니다. 필요한 경우이 변경 합니다.<br/> |선택  <br/> |
+|12  <br/> |**$FolderIdentifier** 태그 Pst로 가져오는 사서함 폴더를 지정 합니다. 필요한 경우이 변경 합니다.<br/> |옵션  <br/> |
 |17  <br/> |**$ConnectionUri** 를 자체 서버를 설정 해야 합니다. <br/> > [!IMPORTANT]> 다음을 확인 하면 **$ConnectionUri** 하지 https http 위치를 가리킵니다. Https로 작동 하지 않음:.          |필수  <br/> |
    
 4. 권한이 있는지 확인 Exchange 신뢰할 수 있는 하위 시스템 계정 읽기, 쓰기 및 실행 하는 \\ \\준비\\의 경우 $ 공유 합니다.
@@ -337,7 +337,7 @@ $AllFiles | ForEach-Object {
     
   - **$MailboxAlias** 가져온된 전자 메일 항목을 받을 수 있는 대상 사서함의 별칭입니다.
     
-6. 예: 경로에서 모든 PST 파일을 가져오려는 경우 \\ \\준비\\의 경우 $ 별칭 eDiscoveryMailbox 인 사서함으로, 다음과 같은 스크립트를 실행할 것 `\\\\staging\\AFCscripts\\PSTImportScript.ps1 \\\\Staging\\cases$ eDiscoveryMailbox`합니다.
+6. 예: 경로에서 모든 PST 파일을 가져오려는 경우 \\Staging\Cases$ 별칭 eDiscoveryMailbox 인 사서함으로, 다음과 같은 스크립트를 실행할 것 `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`합니다.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Exchange Online에 대 한 B, PST 가져오기 옵션
 
@@ -361,7 +361,7 @@ $AllFiles | ForEach-Object {
     
 4. **가져오기 실행 서** 및 **암호화 된 데이터를 가져오기 조정자를**선택 합니다. **카운터**, **일정**, **변수**, **컴퓨터 그룹**, **전역 구성 가져오기**및 **덮어쓰기 기존 전역 구성**의 선택을 취소 합니다.
     
-5. **완료 날짜**를 클릭 합니다.
+5. **마침**을 클릭합니다.
     
 6. **MoveFilesToColdStorage** 실행 서를 다음과 같이 편집 합니다.
     
