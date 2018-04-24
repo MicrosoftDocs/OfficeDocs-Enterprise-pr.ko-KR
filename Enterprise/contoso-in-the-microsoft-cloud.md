@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: '요약: 가상의 전형적인 글로벌 조직이 Microsoft 클라우드 서비스로 클라우드 포함 IT 인프라를 채택하는 방법'
-ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 클라우드의 Contoso
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 다음 섹션을 참조하세요.
   
-- [하이브리드 클라우드 개요 (영문)](hybrid-cloud-overview.md)
+- [Contoso Corporation 개요](overview-of-the-contoso-corporation.md)
     
     Contoso Corporation은 다국적 기업이자 10만 개가 넘는 제품의 제조, 판매 및 지원 업무를 처리하는 복합 기업입니다. 
     

@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용해야 하는 이유"
+title: Office 365 PowerShell을 사용해야 하는 이유
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: "요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다."
-ms.openlocfilehash: b3715da44c1509ea46e7bb939b5ca0be8b2b9671
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
+ms.openlocfilehash: d4dec6a62aecf2cfafdaf52f018f34fd2c9a14d4
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
@@ -334,7 +334,7 @@ Get-User -Filter '{LastName -like "*son"}'
 ```
 
 > [!TIP]
->  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독의 모든 사용자를 가져오지만 성이 "son"으로 끝나는 사용자만 나열하는 필터를 사용합니다(**-Filter '{LastName -like "**son"}'\**). \*는 임의의 문자 집합을 나타내며, 사용자의 성인 경우에는 글자에 해당합니다.
+>  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독의 모든 사용자를 가져오지만 성이 "son"으로 끝나는 사용자만 나열하는 필터를 사용합니다(**-Filter '{LastName -like "** son"}'\**). \*는 임의의 문자 집합을 나타내며, 사용자의 성인 경우에는 글자에 해당합니다.
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell을 사용하면 데이터 쉽게 인쇄 또는 저장할 수 있음
 <a name="printsave"> </a>
