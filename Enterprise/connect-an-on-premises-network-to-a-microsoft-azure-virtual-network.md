@@ -3,7 +3,7 @@ title: 온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,18 +14,20 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: '요약: Office Server 작업용 프레미스 간 Azure Virtual Network 구성 방법을 알아봅니다.'
-ms.openlocfilehash: 559c1330c3f39ea52b1cf5c3127782dddf37f95b
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: '요약: 크로스-프레미스 Azure를 구성 하는 방법을 설명 하 여 사이트 간 VPN 연결 Office 서버 작업 부하에 대 한 가상 네트워크입니다.'
+ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
  **요약:** Office Server 작업용 프레미스 간 Azure Virtual Network 구성 방법을 알아봅니다.
   
-프레미스 간 Azure Virtual Network가 온-프레미스 네트워크에 연결되어 Azure 인프라 서비스에서 호스트되는 서브넷 및 가상 시스템을 포함하도록 네트워크를 확장합니다. 이 연결을 통해 온-프레미스 네트워크의 컴퓨터는 Azure의 가상 시스템에 직접 액세스할 수 있으며 그 반대의 경우도 가능합니다. 예를 들어 Azure Virtual Machine에서 실행되는 DirSync 서버는 온-프레미스 도메인 컨트롤러에 계정 변경 내용을 쿼리하고 이러한 변경 내용을 Office 365 구독과 동기화해야 합니다. 이 문서에서는 Azure Virtual Machine을 호스트할 준비가 된 프레미스 간 Azure Virtual Network를 설정하는 방법을 설명합니다.
+크로스-프레미스 Azure 가상 네트워크 Azure 인프라 서비스에 서브넷 및 호스팅되는 가상 컴퓨터를 포함 하 여 네트워크 확장 (영문)를 온-프레미스 네트워크에 연결 됩니다. 이 연결에는 그 반대의 Azure에 가상 컴퓨터에 직접 액세스를 온-프레미스 네트워크에 컴퓨터 수 있습니다. 
+
+예는 Azure 가상 컴퓨터에서 실행 하는 디렉터리 동기화 서버 계정에 대 한 변경 내용에 대 한 온-프레미스 도메인 컨트롤러를 쿼리하고 Office 365 구독에 이러한 변경 내용을 동기화 해야 합니다. 이 문서는 가상 크로스-프레미스 Azure를 설정 하는 방법을 보여주는 Azure 가상 컴퓨터 호스트를 준비 하는 사이트 마다 가상 사설망 (VPN) 연결을 사용 하 여 네트워크입니다.
 
 ## <a name="overview"></a>개요
 
@@ -33,13 +35,22 @@ Azure의 가상 시스템은 온-프레미스 환경에서 격리할 필요가 �
   
 ![사이트 간 VPN 연결을 통해 Microsoft Azure에 연결된 온-프레미스 네트워크](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-다이어그램에는 사이트 간 VPN(가상 사설망) 연결로 연결된 두 개 네트워크가 있으며, 하나는 온-프레미스 네트워크이고 하나는 Azure Virtual Network입니다. 사이트 간 VPN 연결은 온-프레미스 네트워크의 VPN 장치와 Azure Virtual Network의 Azure VPN 게이트웨이에서 종료됩니다. Azure Virtual Network에는 가상 컴퓨터가 있습니다. Azure Virtual Network의 가상 컴퓨터에서 시작된 네트워크 트래픽은 VPN 게이트웨이로 전달되며, VPN 게이트웨이는 사이트 간 VPN 연결을 통해 온-프레미스 네트워크의 VPN 장치로 트래픽을 전달합니다. 그런 다음 온-프레미스 네트워크의 라우팅 인프라가 대상으로 트래픽을 전달합니다.
+다이어그램에는 사이트 마다 VPN 연결 하 여 연결 된 두 네트워크: 온-프레미스 네트워크 및 Azure 가상 네트워크입니다. 사이트 마다 VPN 연결이 시작 됩니다.
+
+- 두 끝점 간에 되어 주소 지정이 가능한 공용 인터넷에 있는입니다.
+- 온-프레미스 네트워크의 VPN 장치 및 Azure 가상 네트워크에는 Azure VPN 게이트웨이가 종료 됩니다.
+
+Azure 가상 네트워크 가상 컴퓨터를 호스트합니다. Azure 가상 네트워크의 가상 컴퓨터에서 시작 되는 네트워크 트래픽은 다음 온-프레미스 네트워크의 VPN 장치에 사이트 간 VPN 연결을 통해 트래픽을 전달 하는 VPN 게이트웨이로 전달를 가져옵니다. 온-프레미스 네트워크의 라우팅 인프라에는 다음 대상 트래픽을 전달합니다.
+
+>[!Note]
+>또한 조직에서 Microsoft의 네트워크 사이 직접 연결 인 [ExpressRoute](https://azure.microsoft.com/services/expressroute/)사용할 수 있습니다. 트래픽 ExpressRoute 통해 공용 인터넷을 통해 이동 하지 않습니다. 이 문서는 ExpressRoute의 사용을 설명 하지 않습니다.
+>
   
 Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설정하려면 다음 단계를 수행합니다. 
   
 1. **온-프레미스:** 온-프레미스 VPN 장치를 가리키는 Azure Virtual Network의 주소 공간에 대한 온-프레미스 네트워크 경로를 정의하고 만듭니다.
     
-2. **Microsoft Azure:** 사이트 간 VPN 연결을 사용하여 Azure 가상 네트워크를 만듭니다. 이 문서에서는[ExpressRoute](https://azure.microsoft.com/services/expressroute/)의 사용에 대해서는 설명하지 않습니다.
+2. **Microsoft Azure:** 사이트 마다 VPN 연결 Azure 가상 네트워크를 만듭니다. 
     
 3. **온-프레미스:** 온-프레미스 하드웨어 또는 소프트웨어 VPN 장치를 구성하여 IPsec(인터넷 프로토콜 보안)을 사용하는 VPN 연결을 종료합니다.
     
@@ -51,7 +62,7 @@ Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설�
 ### <a name="prerequisites"></a>필수 구성 요소
 <a name="Prerequisites"></a>
 
-- Azure 구독. Azure 구독에 대한 자세한 내용은 [Microsoft Azure 구독 페이지](https://azure.microsoft.com/pricing/purchase-options/)로 이동하여 확인하세요.
+- Azure에 구독 합니다. Azure 구독에 대 한 정보를 [어떻게를 구입 Azure 페이지](https://azure.microsoft.com/pricing/purchase-options/)으로 이동 합니다.
     
 - 가상 네트워크 및 서브넷에 할당할 수 있는 개인 IPv4 주소 공간. 이 주소 공간에는 현재와 미래에 필요한 가상 컴퓨터 수를 수용할만한 충분한 공간이 있어야 합니다.
     
@@ -328,7 +339,7 @@ VPN 장치를 구성하려면 다음 항목이 필요합니다.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>3단계(선택 사항): 가상 머신 추가
 
-Azure에서 필요한 가상 머신을 만듭니다. 자세한 내용은 [Azure portal에서 첫 번째 Windows Virtual Machine 만들기](https://go.microsoft.com/fwlink/p/?LinkId=393098)를 참조하세요.
+Azure에서 필요한 가상 컴퓨터를 만듭니다. 자세한 내용은 [Azure 포털과 Windows 가상 컴퓨터 만들기](https://go.microsoft.com/fwlink/p/?LinkId=393098)를 참조 하십시오.
   
 다음 설정을 사용합니다.
   
@@ -347,6 +358,4 @@ Azure에서 필요한 가상 머신을 만듭니다. 자세한 내용은 [Azure 
 ## <a name="next-step"></a>다음 단계
   
 [Microsoft Azure에서 Office 365 DirSync(디렉터리 동기화)를 배포합니다.](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
- 
-
 

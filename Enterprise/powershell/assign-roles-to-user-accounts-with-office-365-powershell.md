@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다."
+title: Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: "요약: Office 365 PowerShell 및 추가 MsolRoleMember cmdlet를 사용 하 여 사용자 계정에 역할을 할당 합니다."
-ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: Office 365 PowerShell 및 추가 MsolRoleMember cmdlet를 사용 하 여 사용자 계정에 역할을 할당 합니다.'
+ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.
 
@@ -124,14 +124,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ## <a name="see-also"></a>참고 항목
 
-#### 
-
-[사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-  
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
-  
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
-#### 
-
-[추가 MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
-
+- [사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+- [추가 MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
