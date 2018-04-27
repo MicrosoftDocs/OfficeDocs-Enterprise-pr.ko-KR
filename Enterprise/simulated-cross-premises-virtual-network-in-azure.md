@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '요약: Microsoft Azure의 개발/테스트 환경으로 시뮬레이션 된 크로스-프레미스 가상 네트워크를 만듭니다.'
-ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure의 시뮬레이션 된 크로스-프레미스 가상 네트워크
 

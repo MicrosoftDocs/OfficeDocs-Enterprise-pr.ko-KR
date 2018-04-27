@@ -7,7 +7,7 @@ ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: '요약: 아키텍처 모델, 배포 및 비즈니스 및 Lync에 대 한 개발자를 위한 SharePoint, Exchange, Skype 플랫폼 옵션에 설명 하는 IT 포스터를 가져옵니다.'
-ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 
@@ -187,7 +187,7 @@ SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 
 |:-----|:-----|
 |[![Azure에 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |이 IT 포스터에서는 Azure의 재해 복구 환경에 대 한 아키텍처 원리를 보여줍니다. 이 포스터의 액세스할 수 있는 텍스트 버전을 [액세스할 수 있는 다이어그램-Microsoft Azure에 SharePoint 재해 복구를](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)참조 하십시오.<br/><br/> 자세한 내용은 다음 문서를 참조하세요.  <br/><br/> - [Microsoft Azure의 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Concepts
+## <a name="see-also"></a>참고 항목
 
 <a name="Lync2013_Options"> </a>
 
