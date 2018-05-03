@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '요약: Microsoft Azure 인프라 호스트에 대 한 고가용성 정보를 구성 하는 Office 365에 대 한 연결 된 인증 합니다.'
-ms.openlocfilehash: aea4fb5b8645f18381b9b9391b91925ffed00aab
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>고가용성 페더레이션 인증 1단계: Azure 구성
 
@@ -42,9 +42,9 @@ Azure 구성 요소를 시작 하기 전에 다음 표를 입력 합니다. 에 
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 이름  <br/> |VNet에 할당할 이름(예: FedAuthNet)입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 위치  <br/> |지역 Azure 데이터 센터에 가상 네트워크가 포함됩니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다.   <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet 주소 공간  <br/> |가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 공유 키  <br/> |32 자 임의의 영숫자 문자열 사이트 마다 VPN 연결의 양쪽 모두를 인증 하는데 사용 되는입니다. IT 작업 또는 보안 부서가 키 값을 결정 합니다. 또는 [IPsec 미리 공유한 키에 대 한 임의의 문자열 만들기](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조 하십시오.<br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 공유 키  <br/> |사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
  **테이블 V: 프레미스 간 가상 네트워크 구성**
   
@@ -71,7 +71,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 다음으로 가상 컴퓨터와 부하 분산 장치 인스턴스에 할당된 고정 IP 주소에 대해서는 테이블 I를 채웁니다.
   
-|**항목**|**용도**|**서브넷에 IP 주소**|**값**|
+|**항목**|**용도**|**서브넷의 IP 주소**|**값**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |첫 번째 도메인 컨트롤러의 고정 IP 주소  <br/> |테이블 S의 항목 1에 정의된 서브넷의 주소 공간에 사용할 수 있는 네 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |두 번째 도메인 컨트롤러의 고정 IP 주소  <br/> |테이블 S의 항목 1에 정의된 서브넷의 주소 공간에 사용할 수 있는 다섯 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
@@ -80,9 +80,9 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 |5.  <br/> |첫 번째 AD FS 서버의 고정 IP 주소  <br/> |테이블 S의 항목 2에 정의된 서브넷의 주소 공간에 사용할 수 있는 다섯 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |6.  <br/> |두 번째 AD FS 서버의 고정 IP 주소  <br/> |테이블 S의 항목 2에 정의된 서브넷의 주소 공간에 사용할 수 있는 여섯 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |7.  <br/> |첫 번째 웹 응용 프로그램 프록시 서버의 고정 IP 주소  <br/> |테이블 S의 항목 3에 정의된 서브넷의 주소 공간에 사용할 수 있는 네 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|8입니다.  <br/> |두 번째 웹 응용 프로그램 프록시 서버의 고정 IP 주소  <br/> |테이블 S의 항목 3에 정의된 서브넷의 주소 공간에 사용할 수 있는 다섯 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|8.  <br/> |두 번째 웹 응용 프로그램 프록시 서버의 고정 IP 주소  <br/> |테이블 S의 항목 3에 정의된 서브넷의 주소 공간에 사용할 수 있는 다섯 번째 IP 주소입니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **가상 네트워크에 있는 표 i: 고정 IP 주소**
+ **테이블 I: 가상 네트워크의 고정 IP 주소**
   
 가상 네트워크에서 도메인 컨트롤러를 처음 설정할 때 사용하려는 온-프레미스 네트워크의 두 DNS(Domain Name System) 서버에 대해서는 테이블 D를 채웁니다. IT 부서에서 이 목록을 확인합니다.
   
@@ -108,7 +108,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 이제 Azure 인프라를 구축하여 Office 365용 페더레이션 인증을 호스트합니다.
   
 > [!NOTE]
-> Azure PowerShell의 최신 버전을 사용 하는 다음 명령 집합입니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조 하십시오. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 먼저 Azure PowerShell 프롬프트를 시작하고 계정에 로그인합니다.
   
@@ -153,7 +153,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 |3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |웹 응용 프로그램 프록시 서버  <br/> |
 |4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |인프라 구성 요소  <br/> |
    
- **표 r: 자원 그룹**
+ **테이블 R: 리소스 그룹**
   
 이러한 명령을 사용하여 새 리소스 그룹을 만듭니다.
   
@@ -198,7 +198,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-다음으로, 네트워크 가상 컴퓨터를 포함 하는 각 서브넷에 대 한 보안 그룹을 만듭니다. 서브넷 격리를 수행 하 여 특정 유형의 트래픽 허용 또는 서브넷의 네트워크 보안 그룹에 대 한 거부에 대 한 규칙을 추가할 수 있습니다.
+그다음 가상 컴퓨터를 포함하는 각 서브넷의 네트워크 보안 그룹을 만듭니다. 서브넷 격리를 수행하려면 서브넷의 네트워크 보안 그룹에서 허용되거나 거부되는 특정 유형의 트래픽에 대한 규칙을 추가할 수 있습니다.
   
 ```
 # Create network security groups
@@ -259,13 +259,13 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-다음으로 Azure VPN 게이트웨이를 연결 하기 위해 온-프레미스 VPN 장치를 구성 합니다. 자세한 내용은 [Configure VPN 장치를](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)참조 합니다.
+계속해서 Azure VPN 게이트웨이에 연결할 온-프레미스 VPN 장치를 구성합니다. 자세한 내용은 [VPN 장치 구성](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)을 참조하세요.
   
 온-프레미스 VPN 장치를 구성하려면 다음 항목이 필요합니다.
   
 - Azure VPN 게이트웨이의 공용 IPv4 주소.
     
-- 사이트 마다 VPN 연결 (테이블 V-항목 5-값 열)에 대 한 IPsec 사전 공유 키입니다.
+- 사이트 간 VPN 연결용 IPsec 미리 공유한 키(테이블 V - 항목 5 - 값 열).
     
 다음으로 가상 네트워크의 주소 공간이 온-프레미스 네트워크에서 연결 가능한지 확인합니다. 일반적으로 가상 네트워크 주소 공간에 해당하는 경로를 VPN 장치에 추가한 다음 이 경로를 조직 네트워크의 나머지 라우팅 인프라에 보급합니다. IT 부서에서 이 작업을 수행하는 방법을 확인합니다.
   
@@ -277,7 +277,7 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
 |2.  <br/> |AD FS 서버  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |웹 응용 프로그램 프록시 서버  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **설정 하는 테이블 a: 가용성**
+ **테이블 A: 가용성 집합**
   
 2, 3 및 4단계에서 가상 컴퓨터를 만들 때 이러한 이름이 필요합니다.
   
@@ -287,13 +287,13 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
 이 단계를 성공적으로 완료하면 다음 구성을 얻을 수 있습니다.

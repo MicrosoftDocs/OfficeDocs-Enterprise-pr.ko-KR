@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: 추가 또는 OneDrive에 대 한 비즈니스 다중-지리적으로 분산 지리적으로 분산 관리자를 제거 하는 방법에 알아봅니다.
-ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
-ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
+ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>추가 또는 OneDrive에 대 한 Busniess 다중-지리적으로 분산 지리적으로 분산 관리자 제거
 
@@ -49,6 +49,14 @@ ms.lasthandoff: 04/30/2018
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 실행 하는 ObjectID를 사용 하 여 그룹을 제거 하려면`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>특정 지리적 위치에 대 한 관리 센터 액세스 (영문)
+
+지리적 위치에 대 한 OneDrive 설정을 관리 하려면 관리자가 다음 URL 형식을 사용 하 여 직접 OneDrive 관리 센터에 액세스 해야 합니다.
+
+https://admin.onedrive.com/?geo=<*지리적으로 분산*>
+
+캐나다에 대 한 OneDrive 관리 센터에는 예: https://admin.onedrive.com/?geo=CAN합니다.
 
 ## <a name="see-also"></a>참고 항목
 

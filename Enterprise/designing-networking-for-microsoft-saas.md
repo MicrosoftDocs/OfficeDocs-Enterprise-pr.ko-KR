@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SaaS에 대 한 네트워킹 디자인 (영문)"
+title: Microsoft SaaS에 대 한 네트워킹 디자인 (영문)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
-description: "요약: Office 365, Microsoft Intune 및 Dynamics 365 포함 한 Microsoft의 SaaS 서비스에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다."
-ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Office 365, Microsoft Intune 및 Dynamics 365 포함 한 Microsoft의 SaaS 서비스에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다.'
+ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS에 대 한 네트워킹 디자인 (영문)
 
@@ -178,11 +178,9 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
     
 - 결과 모니터링 하는 대역폭을 사용 하 여 네트워크 변경 (수직/수평, 새 회로 또는 추가 장치)에 대 한 요구를 확인 하려면
     
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음을 참조하세요.
   
 - [네트워크 및 마이그레이션 Office 365에 대 한 계획](https://aka.ms/tune)
-    
-- [Office 365 성능 관리 Microsoft 가상 Academy 코스 (영문)](https://aka.ms/o365perf)
     
 - [Office 365에 대 한 ExpressRoute](https://aka.ms/expressrouteoffice365)
 
