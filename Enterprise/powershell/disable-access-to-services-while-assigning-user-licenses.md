@@ -1,9 +1,9 @@
 ---
-title: "사용자 라이선스를 할당 하는 동안 서비스에 대 한 액세스를 사용 하지 않도록 설정"
+title: 사용자 라이선스를 할당 하는 동안 서비스에 대 한 액세스를 사용 하지 않도록 설정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -13,21 +13,18 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: "사용자 계정에 라이선스를 할당 하 고 Office 365 PowerShell을 사용 하 여 동시에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법에 알아봅니다."
-ms.openlocfilehash: 0ab1aea03099f6aae469699b1169af9e12b41d74
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 사용자 계정에 라이선스를 할당 하 고 Office 365 PowerShell을 사용 하 여 동시에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법에 알아봅니다.
+ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당 하는 동안 서비스에 대 한 액세스를 사용 하지 않도록 설정
 
 **요약:**  사용자 계정에 라이선스를 할당 하 고 Office 365 PowerShell을 사용 하 여 동시에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법에 알아봅니다.
   
 Office 365 구독 개별 서비스에 대 한 서비스 계획 함께 제공 됩니다. Office 365 관리자는 종종 사용자에 게 라이선스를 할당 하는 경우 특정 계획을 사용 하지 않도록 설정 해야 합니다. 이 문서의 지침을 개별 사용자 계정 또는 여러 사용자 계정에 대 한 PowerShell을 사용 하 여 특정 서비스 계획을 사용 하지 않도록 설정 하는 동안 Office 365 라이선스를 할당할 수 있습니다.
-  
-> [!NOTE]
-> 이 문서는 감사 Parmar, Microsoft 지원 에스컬레이션 엔지니어의 작업을 기반으로 합니다. 
   
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -151,8 +148,6 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 - 처리 된 모든 사용자와 CSV 파일을 만들고의 라이선스 상태를 표시 합니다.
     
 ## <a name="see-also"></a>참고 항목
-
-#### 
 
 [Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.](disable-access-to-services-with-office-365-powershell.md)
   

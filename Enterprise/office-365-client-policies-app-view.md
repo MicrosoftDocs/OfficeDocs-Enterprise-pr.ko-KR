@@ -4,21 +4,24 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.date: 5/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: ''
-ms.custom: ''
-ms.assetid: ''
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
 description: '요약: Android, 브라우저, iOS, Mac OS X, Windows 및 Windows Mobile에서 지원 되는 Office 365 클라이언트 정책을 이해 합니다.'
-ms.openlocfilehash: 1da917ec40fb40d7a13dc5fb426f640b178877f4
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: 663d2e2a127b03524f7f402acee3d6249870321a
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="office-365-client-policies---client-and-app-view"></a>Office 365 클라이언트 정책-클라이언트 및 응용 프로그램 보기
+**이 정보는 보기를 변경 하려면? 아래 다른 보기를 선택 합니다.**
+> [!div class="op_single_selector"] 
+> - [클라이언트 및 응용 프로그램 보기](office-365-client-policies-app-view.md)
+> - [정책 보기](office-365-client-policies-policy-view.md)
+
 다음 목록에서는 사용 하 여 개별 Microsoft 클라이언트 응용 프로그램에 대 한 지원 되는 Office 365 클라이언트 정책을 결정 합니다.
 
 ## <a name="delve"></a>Delve

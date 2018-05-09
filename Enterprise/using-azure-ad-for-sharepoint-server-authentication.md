@@ -1,5 +1,5 @@
 ---
-title: "Azure AD를 사용 하 여 SharePoint 서버 인증을 위해"
+title: Azure AD를 사용 하 여 SharePoint 서버 인증을 위해
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -16,13 +16,13 @@ ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
-ms.assetid: 
-description: "요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다."
-ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
-ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
+ms.assetid: ''
+description: '요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다.'
+ms.openlocfilehash: 1ab0bb3215531ca8b2d0fda8d70874f966438759
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD를 사용 하 여 SharePoint 서버 인증을 위해
 
@@ -159,11 +159,11 @@ Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그
  
 사용자 Azure AD에 권한을 부여 하지만 사용 권한을 부여 해야 SharePoint에서 합니다. 웹 응용 프로그램에 액세스 권한을 설정 하려면 다음 단계를 사용 합니다.
 
-1. 중앙 관리의 **응용 프로그램 관리**를 클릭 합니다.
+1. 중앙 관리에서 **응용 프로그램 관리**를 클릭합니다.
 2. **응용 프로그램 관리** 페이지의 **웹 응용 프로그램** 섹션에서 **웹 응용 프로그램 관리를**클릭 합니다.
 3. 적절 한 웹 응용 프로그램을 클릭 한 다음 **사용자 정책**을 클릭 합니다.
 4. 웹 응용 프로그램에 대 한 정책에서 **사용자 추가**클릭 합니다.</br>![자신의 이름 클레임 하 여 사용자에 대 한 검색](images/SAML11/fig11-searchbynameclaim.png)</br>
-5. **사용자 추가** 대화 상자에서 **영역**적절 한 영역을 클릭 하 고 ****을 클릭 합니다.
+5. **사용자 추가** 대화 상자에서 **영역**적절 한 영역을 클릭 하 고 **** 을 클릭 합니다.
 6. **사용자 선택** 섹션에서 **웹 응용 프로그램에 대 한 정책** 대화 상자에서 **찾아보기** 아이콘을 클릭 합니다.
 7. **찾을** 텍스트 상자에 디렉터리에 사용자에 대 한 로그인 이름을 입력 하 고 **검색**을 클릭 합니다. </br>예: *demouser@blueskyabove.onmicrosoft.com*합니다.
 8. 목록 보기에서 AzureAD 머리글 아래에서 name 속성을 선택 하 고 **추가** 클릭 한 다음 대화 상자를 닫으려면 **확인** 클릭 합니다.
@@ -210,6 +210,22 @@ $cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
+## <a name="configuring-one-trusted-identity-provider-for-multiple-web-applications"></a>여러 웹 응용 프로그램에 대 한 하나의 신뢰할 수 있는 id 공급자를 구성합니다.
+구성을 단일 웹 응용 프로그램에 대해 작동 하지만 여러 웹 응용 프로그램에 대 한 동일한 신뢰할 수 있는 id 공급자를 사용 하도록 하려는 경우 추가 구성이 필요 합니다. 예는 URL을 사용 하 여 웹 응용 프로그램 확장을 가정 `https://portal.contoso.local` 이름 옆에 사용자를 인증 하 고 `https://sales.contoso.local` 도 있습니다. 이 작업을 수행 하려면 WReply 매개 변수는 제한이 회신 URL을 추가 하려면 Azure AD에서 응용 프로그램 등록을 업데이트 하는 id 공급자를 업데이트 해야 합니다.
+
+1. Azure 포털에서 Azure AD 디렉터리를 엽니다. **응용 프로그램 등록**클릭 한 다음 **모든 응용 프로그램 보기**를 클릭 합니다. 이전에 만든 응용 프로그램을 클릭 합니다. (SharePoint SAML 통합).
+2. **설정**을 클릭 합니다.
+3. 설정 블레이드 **회신 Url**을 클릭 합니다. 
+4. 추가 웹 응용 프로그램에 대 한 URL을 추가 (예: `https://sales.contoso.local`) **저장**을 클릭 하 고 있습니다. 
+5. SharePoint 서버에서 **SharePoint 2016 관리 셸** 을 열고 이전에 사용 되는 신뢰할 수 있는 id 토큰 발급자의 이름을 사용 하 여 다음 명령을 실행 합니다.
+
+```
+$t = Get-SPTrustedIdentityTokenIssuer "AzureAD"
+$t.UseWReplyParameter=$true
+$t.Update()
+```
+6. 중앙 관리에서 웹 응용 프로그램으로 이동 하 고 기존의 신뢰할 수 있는 id 공급자를 사용 하도록 설정 합니다. 또한 사용자 지정 로그인 페이지로 로그인 페이지 URL을 구성 하려면 기억 `/_trust/`합니다.
+7. 중앙 관리에서 웹 응용 프로그램을 클릭 하 고 **사용자 정책**을 선택 합니다. 이 문서의 이전에 나와있는 것 처럼 적절 한 사용 권한 가진 사용자를 추가 합니다.
 
 ## <a name="fixing-people-picker"></a>수정 하는 사용자 선택
 사용자가 Azure AD에서 id가 사용 하 여 SharePoint 2016에 이제 로그인 할 수 있지만 여전히 사용자 환경 향상을 위한 기회 있습니다. 예: 사용자에 대 한 검색 사용자 선택에서 여러 검색 결과 제공 합니다. 각 클레임 매핑을에서 만들어진 3 클레임 유형에 대 한 검색 결과 방법이 있습니다. 사용자 선택을 사용 하 여 사용자를 선택 하려면 사용자 이름을 정확 하 게 입력 하 고 **이름** 클레임 결과 선택 해야 합니다.
@@ -228,10 +244,10 @@ Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -I
   
 ## <a name="join-the-discussion"></a>토론 참여
 
-|**문의처**|**설명**|
+|**연락처**|**설명**|
 |:-----|:-----|
-|**어떤 클라우드 채택 콘텐츠가 필요한가요?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 걸쳐 있는 클라우드 채택에 대 한 콘텐츠를 만듭니다. 보겠습니다 작업을 알 사용해 클라우드 채택 콘텐츠를 구상할 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)에 전자 메일을 발송 하 여 특정 콘텐츠를 요청 합니다.<br/> |
-|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 열정을 갖고 인 경우에는 클라우드 채택 자문 보드 (CAAB) Microsoft 콘텐츠 개발자, 업계 전문가는 전세계 어디에서 고객의 더 큰, 생생한 커뮤니티와 연결할에 참가 하는 것이 좋습니다. 참가, Microsoft 기술 커뮤니티의 [CAAB (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 의 구성원으로 자신을 추가 하 고 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내주시기 합니다. 누구나 [CAAB 블로그 (영문)](https://blogs.technet.com/b/solutions_advisory_board/)에서 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원에 게 새 클라우드 채택 리소스 및 솔루션에 설명 하는 개인 웨 초대장을 가져옵니다.<br/> |
-|**여기에 표시된 아트 받기** <br/> |이 문서에서 참조 하는 이미지의 편집 가능한 복사본을 원하는 귀하에 게 보내야 기꺼이 표시 됩니다. URL 및 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)는 이미지의 제목을 포함 하 여 요청을 전자 메일로 보냅니다.<br/> |
+|**어떤 클라우드 채택 콘텐츠가 필요한가요?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 적용되는 클라우드 채택 콘텐츠를 만들고 있습니다. 클라우드 채택 콘텐츠에 대한 의견을 제공하거나 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)으로 이메일을 보내서 특정 콘텐츠를 요청하세요.  <br/> |
+|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 관심이 있다면 CAAB(클라우드 채택 자문 위원회)에 가입하여 Microsoft 콘텐츠 개발자, 산업 전문가 및 전 세계 고객으로 구성된 더 크고 활발한 커뮤니티에 연결할 수 있습니다. 참가하려면 Microsoft 기술 커뮤니티의 [CAAB(Cloud Adoption Advisory Board) 영역](https://aka.ms/caab)에 본인을 회원으로 추가하고 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 간단한 이메일을 보내주세요. [CAAB 블로그](https://blogs.technet.com/b/solutions_advisory_board/)에서는 누구나 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원은 새 클라우드 채택 리소스와 솔루션에 대해 설명하는 비공개 웹 세미나에 초대됩니다.  <br/> |
+|**여기에 표시된 아트 받기** <br/> |이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)으로 요청 이메일을 보내주세요.  <br/> |
    
 
