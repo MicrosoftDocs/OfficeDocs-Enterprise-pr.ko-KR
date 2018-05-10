@@ -11,11 +11,11 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online의 다중-지리적으로 분산 기능을 사용 하는 여러 지리적 영역을 Office 365 현재 상태를 확장 합니다.
-ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
+ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online의 다중-지리적으로 분산 기능
 
@@ -65,7 +65,7 @@ Exchange Online은 Exchange Online 디렉터리 서비스에서 **MailboxRegion*
 
 - 없는 지리적으로 분산을 지정 하는 경우 사서함 기본 지리적으로 분산에에서 배치 됩니다.
 
-**참고**: 다중-지리적으로 분산 기능 및 Skype 모두 지역별로 호스팅되는 비즈니스 온라인 모임에 대 한 속성을 사용 **PreferredDataLocation** 사용자 개체에 서비스를 찾습니다. 지역별로 호스팅된 모임에 대 한 사용자 개체에 **PreferredDataLocation** 값을 구성 하는 경우 사서함 및 해당 사용자에 대 한 OneDrive 자동으로 이동할 지정 된 지리적으로 분산 다중-지리적으로 분산이 Office 365 테 넌 트에 설정 된 후 합니다.
+**참고**: 다중-지리적으로 분산 기능 및 Skype 모두 지역별로 호스팅되는 비즈니스 온라인 모임에 대 한 속성을 사용 **PreferredDataLocation** 사용자 개체에 서비스를 찾습니다. 지역별로 호스팅된 모임에 대 한 사용자 개체에 **PreferredDataLocation** 값을 구성 하는 경우 해당 사용자에 대 한 사서함 자동으로 이동할 지정 된 지리적으로 분산 다중-지리적으로 분산이 Office 365 테 넌 트에 설정 된 후 합니다.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>다중-지리적으로 분산 Exchange online에 대 한 기능 제한
 1. 사용자 사서함, 리소스 사서함 (회의실 및 기 자재 사서함) 및 공유 사서함 다중-지리적으로 분산 기능을 지원 합니다. 고객의 홈 지리적으로 분산에서 공용 폴더 사서함 및 Office 365 그룹을 배치할 수 있습니다.
