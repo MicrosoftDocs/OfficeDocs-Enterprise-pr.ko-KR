@@ -3,7 +3,7 @@ title: 개발/테스트 환경의 SharePoint Online 사이트 보호
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,11 +14,11 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: '요약: 개발/테스트 환경에서 공용, 개인, 소문자를 구분 및 기밀 사항이 SharePoint Online 팀 사이트를 만듭니다.'
-ms.openlocfilehash: 8c02f1416cb00150e68dcc27dc7afb41bf82ed21
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 004a1614330f220b31be640cd822d9fdcbb49b99
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>개발/테스트 환경의 SharePoint Online 사이트 보호
 
@@ -66,18 +66,18 @@ ms.lasthandoff: 04/27/2018
   
 1. 브라우저에서 별도 탭을 만들고 다음 포털로 이동 하 여 Azure에서 [https://portal.azure.com](https://portal.azure.com)합니다. 필요한 경우 Office 365 E5 평가판 구독에 대 한 전역 관리자 계정의 자격 증명을 사용 하 여 로그인 합니다.
     
-2. Azure Portal에서 **Azure Active Directory > 사용자 및 그룹 > 모든 그룹**을 클릭합니다.
+2. Azure 포털에서 클릭 **Azure Active Directory > 그룹**합니다.
     
-3. **모든 그룹** 블레이드에서 **+ 새 그룹**을 클릭합니다.
+3. **그룹-모든 그룹** 블레이드에서 **+ 새 그룹을**클릭 합니다.
     
 4. **그룹** 블레이드에서:
     
+  - **그룹 종류**에서 **Office 365** 를 선택 합니다.
+    
   - **이름**에 **C-Suite**를 입력합니다.
     
-  - **멤버 자격**에서 **할당됨**을 선택합니다.
-    
-  - **Office 기능 사용**에 **예**를 클릭합니다.
-    
+  - **멤버 자격 종류**에 **할당 됨** 을 선택 합니다.
+      
 5. **만들기**를 클릭한 다음 **그룹** 블레이드를 닫습니다.
     
 6. 다음 그룹 이름에서 3-5단계를 반복합니다.
@@ -541,7 +541,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 3. 처음으로 Azure 정보 보호를 구성 하는 경우 다음 [지침](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)을 참조 하십시오.
     
-4. 목록 창에서 **서비스를 더**, **정보**를 입력 한 다음 **Azure 정보 보호**를 클릭 합니다.
+4. 목록 창에서 **모든 서비스**를 클릭 하 고 **정보**를 입력 다음 **Azure 정보 보호**를 클릭 합니다.
     
 5. **Azure 정보 보호** 블레이드에서를 클릭 **정책 범위 > 새 정책을 추가 +** 합니다.
     

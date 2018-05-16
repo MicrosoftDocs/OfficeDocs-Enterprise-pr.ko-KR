@@ -1,9 +1,9 @@
 ---
-title: "SharePoint Online 팀 사이트를 격리를 배포 합니다."
+title: SharePoint Online 팀 사이트를 격리를 배포 합니다.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: "요약: 새 격리 된 SharePoint Online 팀 사이트가 단계별 지침을 배포 합니다."
-ms.openlocfilehash: 297681b688b43eb02ee4f99f983a0f796312e599
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: '요약: 새 격리 된 SharePoint Online 팀 사이트가 단계별 지침을 배포 합니다.'
+ms.openlocfilehash: c4bb272cc96ca86fc8bffc99f7c3e50033c06755
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>SharePoint Online 팀 사이트를 격리를 배포 합니다.
 
@@ -61,21 +61,23 @@ Azure AD에서 다음과 같은 액세스 그룹을 만들 해야 합니다.
     
 - (3 단계에서 목록 포함)이 표시 된 사이트 뷰어
     
-1. 브라우저에서 [https://portal.azure.com](https://portal.azure.com) 에서 Azure 포털로 이동 하 고 사용자 관리 관리자 또는 회사 관리자 역할을 가진 할당 된 계정의 자격 증명을 사용 하 여 로그인 합니다.
+1. 브라우저에서 포털로 이동 하 여 Azure에서 [https://portal.azure.com](https://portal.azure.com) 및 사용자 관리 관리자 또는 회사 관리자 역할을 가진 할당 된 계정의 자격 증명을 사용 하 여 로그인 합니다.
     
-2. Azure 포털에서 클릭 **Azure Active Directory > 사용자 및 그룹 > 모든 그룹**합니다.
+2. Azure 포털에서 클릭 **Azure Active Directory > 그룹**합니다.
     
-3. **모든 그룹** 블레이드에서 **+ 새 그룹을**클릭 합니다.
+3. **그룹-모든 그룹** 블레이드에서 **+ 새 그룹을**클릭 합니다.
     
 4. **그룹** 블레이드에서:
     
+  - **그룹 종류**에서 **Office 365** 를 선택 합니다.
+    
   - **이름**에 그룹 이름을 입력 합니다.
     
-  - **멤버 자격**에서 **할당** 을 선택 합니다.
+  - **그룹 설명**에 그룹에 대 한 설명을 입력 합니다.
     
-  - **Office를 사용 하도록 설정 기능**에 대 한 **예** 를 클릭 합니다.
+  - **멤버 자격 종류**에 **할당 됨** 을 선택 합니다.
     
-5. **만들기**클릭 한 다음 **그룹** 블레이드를 닫습니다.
+5. **만들기**를 클릭한 다음 **그룹** 블레이드를 닫습니다.
     
 6. 추가 그룹에 대해 3-5 단계를 반복 합니다.
     
@@ -160,11 +162,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 1. SharePoint Online 팀 사이트 (SharePoint Online 관리자)를 관리 하는데 사용 되는 계정 사용 하 여 Office 365 포털에 로그인 합니다. 도움말을 보려면 [Office 365에 로그인 할 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조 하십시오.
     
-2. 타일의 목록에서 **SharePoint**를 클릭 합니다.
+2. 타일 목록에서 **SharePoint**를 클릭합니다.
     
 3. 브라우저의 새 **SharePoint** 탭에서 **+ 사이트 만들기를**클릭 합니다.
     
-4. **사이트 만들기** 페이지에서 **팀 사이트**를 클릭 합니다.
+4. **사이트 만들기** 페이지에서 **팀 사이트**를 클릭합니다.
     
 5. **사이트 이름**팀 사이트에 대 한 이름을 입력 합니다. 
     
@@ -172,15 +174,15 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 7. **개인정보 보호 설정**선택 **개인-이 사이트에 액세스할 수 있는 구성원만**, **다음**을 클릭 하 고 있습니다.
     
-8. 에 **가 수행 하려는 추가?** 창 **마침**을 클릭 합니다.
+8. **Who do you want to add?(누구를 추가하시겠습니까?)** 창에서 **마침**을 클릭합니다.
     
 다음으로 새 SharePoint Online 팀 사이트에서 사용 권한을 구성 합니다.
   
 1. 도구 모음에서 설정 아이콘을 클릭 한 다음 **사이트 사용 권한**을 클릭 합니다.
     
-2. **사이트 사용 권한** 창에서 **고급 사용 권한 설정**을 클릭 합니다.
+2. **사이트 권한** 창에서 **고급 권한 설정**을 클릭합니다.
     
-3. 브라우저의 새 **사용 권한** 탭에서 **액세스 요청 설정**을 클릭 합니다.
+3. 브라우저의 새 **권한** 탭에서 **액세스 요청 설정**을 클릭합니다.
     
 4. **액세스 요청 설정** 대화 상자에서의 선택을 취소 **허용 액세스 요청** 및 **사이트 및 개별 파일 및 폴더 공유 허용 구성원** (되도록 세 확인란을 모두 선택 취소)를 한 다음 **확인**을 클릭 합니다.
     
@@ -206,7 +208,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 15. **공유** 대화 상자에서 사이트 뷰어 액세스 그룹의 이름을 입력을 선택한 다음 **공유**를 클릭 합니다.
     
-16. 브라우저의 **사용 권한** 탭을 닫습니다.
+16. 브라우저의 **권한** 탭을 닫습니다.
     
 이러한 사용 권한 설정의 결과:
   
@@ -230,7 +232,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 ## <a name="see-also"></a>참고 항목
 
-[격리 된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
+[격리된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
   
 [격리 된 SharePoint Online 팀 사이트를 디자인 합니다.](design-an-isolated-sharepoint-online-team-site.md)
   
