@@ -87,6 +87,7 @@
 #### [Office 365의 개인 데이터를 보호 기능을 적용 합니다.](apply-protection-to-personal-data-in-office-365.md)
 #### [개인 데이터 유출에 대 한 모니터링](monitor-for-leaks-of-personal-data.md)
 ### [온-프레미스 Office 서버에 대 한 GDPR](gdpr-for-office-servers.md)
+#### [SharePoint 서버에 대 한 GDPR](gdpr-for-sharepoint-server.md)
 #### [Exchange 서버에 대 한 GDPR](gdpr-for-exchange-server.md)
 #### [Businesss 서버에 대 한 Skype에 대 한 GDPR](gdpr-for-skype-for-business-server.md)
 #### [Project Server에 대 한 GDPR](gdpr-for-project-server.md)
