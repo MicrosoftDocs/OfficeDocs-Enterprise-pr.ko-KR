@@ -1,22 +1,21 @@
 ---
-title: "PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행"
+title: PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: "요약:Windows PowerShell을 사용하여 Office 365로 단독형 마이그레이션을 수행하는 방법을 알아봅니다."
-ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 요약:Windows PowerShell을 사용하여 Office 365로 단독형 마이그레이션을 수행하는 방법을 알아봅니다.
+ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행
 
@@ -75,7 +74,7 @@ Exchange Online PowerShell cmdlet을 사용하려면 로그인한 후 cmdlet을 
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **온-프레미스 사용자 계정에 Exchange 조직의 사서함에 액세스하는 데 필요한 사용 권한 할당** 온-프레미스 Exchange 조직에 연결하는 데 사용하는 온-프레미스 사용자 계정(마이그레이션 관리자라고도 함)에는 Office 365으로 마이그레이션할 온-프레미스 사서함에 액세스하는 데 필요한 권한이 있어야 합니다. 이 사용자 계정은 온-프레미스 조직에 대한 마이그레이션 끝점을 만드는 데 사용됩니다.
+- **온-프레미스 사용자 계정을 Exchange 조직에서 사서함에 액세스 하는 데 필요한 사용 권한을 할당 합니다.** (마이그레이션 관리자에 게가 라고도 함) 하 여 온-프레미스 Exchange 조직에 연결을 사용 하는 온-프레미스 사용자 계정에는 Office 365로 마이그레이션할 수 있는 온-프레미스 사서함에 액세스 하는 데 필요한 권한이 있어야 합니다. 이 사용자 계정은 온-프레미스 조직으로 마이그레이션 끝점을 만드는 데 사용 됩니다.
     
     다음 목록에는 단독형 마이그레이션을 사용하여 사서함을 마이그레이션하는 데 필요한 관리 권한이 나와 있으며, 세 개의 옵션이 제공됩니다.
     

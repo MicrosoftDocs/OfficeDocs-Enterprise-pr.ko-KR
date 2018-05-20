@@ -3,7 +3,6 @@
 
 # [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 ## [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-### [Microsoft Cloud ID for Enterprise Architects](microsoft-cloud-identity-for-enterprise-architects.md)
 ### [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
 #### [클라우드 연결에 대 한 네트워크 발전 하 고](evolving-your-network-for-cloud-connectivity.md)
 #### [Microsoft 클라우드 연결의 일반적인 요소](common-elements-of-microsoft-cloud-connectivity.md)

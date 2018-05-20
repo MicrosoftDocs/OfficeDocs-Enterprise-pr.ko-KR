@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation 개요"
+title: Contoso Corporation 개요
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
-description: "요약: Contoso Corporation 기업 및 전세계 사무소의 계층된 구조를 이해 합니다."
-ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso Corporation 기업 및 전세계 사무소의 계층된 구조를 이해 합니다.'
+ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 개요
 
@@ -71,7 +71,7 @@ Contoso의 IT 설계자는 Microsoft의 클라우드 서비스의 채택을 계�
     
     Contoso는 Windows Server AD 포리스트를 사용 하 여 해당 내부 id 공급자에 대 한 및 고객 및 파트너에 대 한 타사 공급자와 페더레이션도 합니다. Contoso는 내부 Microsoft의 클라우드 서비스에 대 한 계정 집합을 활용 해야 합니다. 고객 및 파트너에 대 한 클라우드 기반 앱에 대 한 액세스를 타사 id 공급자도 활용 해야 합니다.
     
-    자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 Id](microsoft-cloud-identity-for-enterprise-architects.md) 포스터를 참조 합니다.
+    자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 Id](microsoft-cloud-it-architecture-resources.md#identity) 포스터를 참조 합니다.
     
 - 보안
     
