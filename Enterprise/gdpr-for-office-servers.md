@@ -9,8 +9,8 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Office 온-프레미스 Server에서 GDPR 요구 사항을 해결하는 방법을 알아보세요.
-ms.openlocfilehash: dc1150361db6a28f011e4890a2770f4a6b607a91
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: 598d4b0c3f4b7d4281383111f0891759f81d483f
+ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
@@ -18,6 +18,8 @@ ms.lasthandoff: 05/17/2018
 # <a name="gdpr-for-office-on-premises-servers"></a>Office 온-프레미스 Server GDPR
 
 GDPR(일반 데이터 보호 규정)은 조직에 요구 사항을 소개하여 개인 데이터를 보호하고 데이터 주체 요청에 적절하게 응답합니다. 이 일련의 문서는 온-프레미스 작업에 권장되는 접근 방식을 제공합니다.
+
+-   [SharePoint Server](gdpr-for-sharepoint-server.md)
 
 -   [Exchange Server](gdpr-for-exchange-server.md)
 
@@ -48,4 +50,4 @@ GDPR 및 Microsoft가 지원하는 방법에 대한 자세한 내용은 [Microso
 |보호||Exchange Server 데이터 손실 방지 규칙, 권한, 라이브러리의 IRM 보호|Exchange Server 데이터 손실 방지 규칙, Exchange Server와 IRM 통합|||
 |모니터링|SIEM 도구와 로그 통합|SIEM 도구와 로그 통합|SIEM 도구와 로그 통합|SIEM 도구와 로그 통합|SIEM 도구와 로그 통합|
 
-*GDPR의 경우 보호가 포함되지 않은 레이블을 적용합니다. 보호는 파일을 암호화합니다. 따라서 SharePoint Server가 이러한 파일에서 중요한 정보 유형을 찾을 수 없습니다.
+*보호는 파일을 암호화합니다. 따라서 SharePoint Server가 보호된 파일에서 중요한 정보 유형을 찾을 수 없습니다.

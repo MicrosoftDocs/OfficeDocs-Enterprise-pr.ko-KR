@@ -1,5 +1,5 @@
 ---
-title: OneDrive 및 Office 365의에서 SharePoint Online의 다중-지리적으로 분산 기능
+title: OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위치 기능
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,59 +7,60 @@ ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: OneDrive 및 SharePoint Online의 다중-지리적으로 분산 기능을 사용 하는 여러 지리적 영역을 Office 365 현재 상태를 확장 합니다.
-ms.openlocfilehash: edcd8895c4a6e57ae1124ad15a9c5cc2b6bf94ca
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
-ms.translationtype: MT
+description: OneDrive 및 SharePoint Online의 다중 위치 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
+ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive 및 Office 365의에서 SharePoint Online의 다중-지리적으로 분산 기능
+# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위치 기능
 
-OneDrive 및 SharePoint Online에서 다중-지리적으로 분산 기능을 조직 여러 지리적 위치 및/또는 기존 테 넌 트 내의 국가에 해당 Office 365 현재 상태를 확장할 수 있습니다. 다중 National 회사에 등록 OneDrive에 대 한 비즈니스 다중-지리적으로 분산을 Microsoft 계정 팀에 게 연락 합니다.
+OneDrive 및 SharePoint Online의 여러 위치 기능을 사용하여 조직은 Office 365 사용 범위를 기존 테넌트 내의 여러 지리적 지역 및/또는 국가로 확장할 수 있습니다. 또한 Microsoft 계정 팀에 연락하여 비즈니스용 OneDrive Multi-Geo에 귀하의 다국적 기업을 등록합니다.
   
-와 OneDrive 다중-지리적으로 분산을 있습니다 수를 구축 하 고 데이터 residency 요구를 충족 하기 위해 선택한 지리적 위치에 보관 된 데이터를 저장 및 동시에 잠금해제 현대 생산성 경험 부족 글로벌 롤 직원을 합니다.
+OneDrive Multi-Geo를 사용하여 데이터 상주 요구 사항을 충족하기 위해 선택한 지리적 위치에서 미사용 데이터를 프로비전 및 저장하고, 동시에 귀하의 전 세계 작업자들이 최신 생산선 환경을 활용하도록 할 수 있습니다.
   
-다중-지리적으로 분산 기능 조직을 활용 하는 방법을 다음과 같습니다.
+다중 위치 기능이 조직에 유용하게 사용될 수 있는 방법은 다음과 같습니다.
   
-- 여러 지리적 위치에 해당 하는 단일 Office 365 테 넌 하나의 글로벌 연결 된 조직으로 작동 합니다.
+- 단일 Office 365 테넌트가 여러 개의 지리적 위치에 걸쳐 있는 하나의 연결된 전역 조직으로 작용합니다.
     
-- 만들고 지정 된 지리적 위치 내 나머지에서 데이터를 호스트 하 여 데이터 residency 요구를 충족 합니다.
+- 지정된 지리적 위치 내에서 미사용 데이터를 생성 및 호스트하여 데이터 상주 요구 사항을 충족합니다.
     
-- 위성 사용자에 게 권한 부여는 동일한 현대 생산성 경험 중앙 위치 사용자가 절감할 수 있었습니다.
+- 중앙 위치 사용자가 사용하는 것과 동일한 최신 생산성 환경을 위성 사용자도 누릴 수 있습니다.
     
-- 사용 하면 사용자가 자신의 콘텐츠에 대 한 액세스는 그대로 유지 되는 동안 자신의 역할 변경 됨에 따라 여러 지리적 위치에 걸친 이동 합니다.
+- 콘텐츠 액세스 권한을 안전하게 유지하면서 역할 변화에 맞춰 지리적 위치 간을 이동할 수 있도록 합니다.
     
-- 지리적으로 분산 위치 마다 공유 정책에 및 각 사이트 마다 데이터 손실 방지 정책을 조정할 수 있습니다.
+- 지리적 위치별 공유 정책을 조정하고, 사이트별로 데이터 손실 방지 정책을 조정합니다.
     
-- EDiscovery 관리자 당 지리적 위치를 지정 하 고 관리 하는 사용자의 지리적 위치에 맞게 조정 하는 경우를 허용 합니다.
+- 지리적 위치별로 eDiscovery 관리자를 지정하고, 지리적 위치에 맞게 관리 방식을 조정할 수 있습니다.
     
-- 추가 지리적 위치에 대 한 고유 URL 네임 스페이스 (예: ContosoEUR.sharepoint.com)를 선택 합니다.
+- 추가적인 지리적 위치에 대한 고유한 URL 네임스페이스(예: ContosoEUR.sharepoint.com)를 선택합니다.
     
-- Office 365 geo 다중 테 넌 트를 지역 온-프레미스 데이터를 통합 합니다.
+- 지역의 온-프레미스 데이터를 Office 365 다중 위치 테넌트에 통합합니다.
     
-다중-지리적으로 분산 구성에서 Office 365 테 넌 트 (기본 위치 라고도 함) 하는 중앙 위치 및 위성 지리적 위치를 하나 이상으로 구성 됩니다. 다중-지리적으로 분산의 핵심 개념은 하는 단일 테 넌 시가에 걸쳐 하나 여러 지리적 위치입니다. 다중-지리적으로 분산 테 넌 트의 지리적 위치, 그룹 및 사용자 정보에 대 한 정보에서 Azure Active Directory (AAD) 마스터입니다. 테 넌 트 정보는 중앙에서 마스터 이며 각 지리적 위치에 동기화를 하기 때문에 공유 하 고 회사의 모든 사용자와 관련 된 경험 글로벌 인식 기능을 포함 합니다.
+다중 위치 구성에서 Office 365 테넌트는 하나의 중앙 위치(기본 위치라고도 함)와 하나 이상의 위성 지리적 위치로 구성됩니다. 다중 위치의 핵심 개념은 단일 테넌트가 하나의 다중 지리적 위치에 걸쳐 있는 다중 위치 개념입니다. 다중 위치 테넌트에서 지리적 위치, 그룹 및 사용자에 대한 정보는 AAD(Azure Active Directory)에서 마스터됩니다. 테넌트 정보가 중앙에서 마스터된 후 각 지리적 위치로 동기화되므로, 회사 직원 누구든지 전역 정보를 공유하고 경험할 수 있습니다.
 
-## <a name="video-introducing-office-365-multi-geo"></a>비디오: Office 365 다중-지리적으로 분산 소개 (영문)
+## <a name="video-introducing-office-365-multi-geo"></a>비디오: Office 365 Multi-Geo 소개
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
   
-## <a name="get-multi-geo-features-in-three-simple-steps"></a>간단한 세 단계를 확인할 수 있는 다중-지리적으로 분산 기능
+## <a name="get-multi-geo-features-in-three-simple-steps"></a>세 가지 간단한 단계로 다중 위치 기능 설정
 
-다중-지리적으로 분산을 구성 하는 것은 쉽습니다.
+다중 위치 기능은 다음과 같이 간단히 구성할 수 있습니다.
   
-1. _Office 365의 다중-지리적으로 분산 기능_ 서비스 계획을 추가 하려면 계정 팀과 함께 작동 합니다. 자신이 필요한 라이선스의 수를 추가할 수 있습니다를 안내 합니다.
+1. 계정 팀과 협의하여 추가 하려면 계정 팀에서 작업 하는 _Office 365의 Multi-Geo 기능_ 서비스 계획을 추가합니다. 필요한 라이선스 수를 추가하는 과정이 안내됩니다.
     
-2. 위성 위치를 추가 합니다.
+2. 위성 위치를 추가합니다.
     
-3. 적절 한 위치에 대 한 사용자 계정을 구성 합니다.
+3. 해당 위치에 맞게 사용자 계정을 구성합니다.
     
-## <a name="multi-geo-status-and-availability"></a>다중-지리적으로 분산 상태와 연락 가능성
+## <a name="multi-geo-status-and-availability"></a>다중 위치 상태 및 가용성
 
-OneDrive 다중-지리적으로 분산 이러한 지역 및 국가에서 현재 제공 됩니다.
+OneDrive Multi-Geo는 현재 다음 지역 및 국가에서 제공됩니다.
   
 - 아시아 태평양
     
@@ -67,21 +68,21 @@ OneDrive 다중-지리적으로 분산 이러한 지역 및 국가에서 현재 
     
 - 캐나다
     
-- 유럽 연합 (EMEA)
+- EMEA(유럽 연합)
     
 - 일본
     
 - 영국
     
-- 미국 (북미)
+- 미국(북미)
     
 - 한국
       
-예정 된 지리적 위치:
+예정된 지리적 위치:
   
 - 프랑스
 - 인도
     
 ## <a name="getting-started"></a>시작
 
-Onedrive에 대 한 비즈니스 다중-지리적으로 분산을 시작 하려면 첫 단계 [비즈니스 다중-지리적으로 분산 환경에 대 한 OneDrive 계획](plan-for-multi-geo.md)하는 것입니다. 다음, [다중-지리적으로 분산 환경 관리 하는 방법에 대 한 설명](administering-a-multi-geo-environment.md) 및 [다중-지리적으로 분산 환경에 사용자는 경험 하는 방법](multi-geo-user-experience.md)입니다. 비즈니스용 OneDrive에 대 한 비즈니스 다중-지리적으로 분산, [다중-지리적으로 분산에 대 한 테 넌 트 구성](multi-geo-tenant-configuration.md)설정에 준비가 되 면 다음 [모든 기존 OneDrive 사이트의 새로운 지리적 위치를 이동](move-onedrive-between-geo-locations.md) 하 고 [검색을 설정](configure-search-for-multi-geo.md)합니다.
+비즈니스용 OneDrive Multi-Geo를 시작하려는 경우 첫 번째 단계는 [비즈니스용 OneDrive Multi-Geo 환경 계획](plan-for-multi-geo.md)입니다. 다음은 [다중 위치 환경 관리 방법 알아보기](administering-a-multi-geo-environment.md) 및 [사용자가 다중 위치 환경을 경험하는 방식](multi-geo-user-experience.md)입니다. 비즈니스용 OneDrive Multi-Geo를 설정할 준비가 되면 [다중 위치에 대한 테넌트를 구성](multi-geo-tenant-configuration.md)하고 [기존 OneDrive 사이트를 새 지리적 위치로 이동](move-onedrive-between-geo-locations.md)한 후 [검색을 설정](configure-search-for-multi-geo.md)합니다.
