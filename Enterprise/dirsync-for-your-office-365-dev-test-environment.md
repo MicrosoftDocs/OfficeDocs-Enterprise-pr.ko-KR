@@ -1,5 +1,5 @@
 ---
-title: Office 365 개발/테스트 환경에 대 한 디렉터리 동기화
+title: Office 365 개발/테스트 환경에 대한 디렉터리 동기화
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,54 +15,54 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: '요약: Office 365 개발/테스트 환경에 대 한 디렉터리 동기화를 구성 합니다.'
-ms.openlocfilehash: ebb16cb65738e0440b40d0d14550cd1f9c5bb21c
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: MT
+description: '요약: Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.'
+ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a><span data-ttu-id="7691c-103">Office 365 개발/테스트 환경에 대 한 디렉터리 동기화</span><span class="sxs-lookup"><span data-stu-id="7691c-103">Directory synchronization for your Office 365 dev/test environment</span></span>
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a><span data-ttu-id="a7491-103">Office 365 개발/테스트 환경에 대한 디렉터리 동기화</span><span class="sxs-lookup"><span data-stu-id="a7491-103">DirSync for your Office 365 dev/test environment</span></span>
 
- <span data-ttu-id="7691c-104">**요약:** Office 365 개발/테스트 환경에 대 한 디렉터리 동기화를 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-104">**Summary:** Configure directory synchronization for your Office 365 dev/test environment.</span></span>
+ <span data-ttu-id="a7491-104">**요약:** Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-104">**Summary:** Configure directory synchronization for your Office 365 dev/test environment.</span></span>
   
-<span data-ttu-id="7691c-p101">많은 조직에서는 사용 하 여 Azure AD 연결 및 Office 365에서 계정 집합을 온-프레미스 Windows Server Active Directory (AD) 포리스트에 계정의 집합을 동기화 할 디렉터리 동기화 합니다. 이 문서에 추가 하는 방법을 암호 해시 동기화를 사용 하 여 디렉터리 동기화 Office 365 개발/테스트 환경에 다음 구성의 결과 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p101">Many organizations use Azure AD Connect and directory synchronization to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in Office 365. This article describes how you can add directory synchronization with password hash synchronization to the Office 365 dev/test environment, resulting in the following configuration.</span></span>
+<span data-ttu-id="a7491-p101">많은 조직에서는 Azure AD Connect 및 디렉터리 동기화를 사용하여 온-프레미스 Windows Server AD(Active Directory) 포리스트의 계정 집합을 Office 365의 계정 집합과 동기화합니다. 이 문서에서는 암호 해시 동기화를 사용한 디렉터리 동기화를 Office 365 개발/테스트 환경에 추가하여 다음과 같이 구성하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p101">Many organizations use Azure AD Connect and directory synchronization to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in Office 365. This article describes how you can add directory synchronization with password hash synchronization to the Office 365 dev/test environment, resulting in the following configuration.</span></span>
   
-![디렉터리 동기화를 통해 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-<span data-ttu-id="7691c-108">이 구성은 다음으로 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-108">This configuration consists of:</span></span> 
+<span data-ttu-id="a7491-108">이 구성은 다음으로 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-108">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="7691c-109">Office 365 e 5 평가판 구독을 만들 때에서 30 일이 지나면 만료는 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-109">An Office 365 E5 Trial Subscription, which expires 30 days from when you create it.</span></span>
-- <span data-ttu-id="7691c-p102">간소화 된 조직 인트라넷 (d c 1, a p p 1을 및 CLIENT1) Azure 가상 네트워크의 서브넷에 세 가상 컴퓨터의 구성 되는 인터넷에 연결 합니다. Azure AD 연결 Office 365에 Windows Server AD 도메인을 동기화 하는 a p p 1을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p102">A simplified organization intranet connected to the Internet, consisting of three virtual machines on a subnet of an Azure virtual network (DC1, APP1, and CLIENT1). Azure AD Connect runs on APP1 to synchronize the Windows Server AD domain to Office 365.</span></span>
+- <span data-ttu-id="a7491-109">Office 365 E5 평가판 구독: 만들고 30일 후에 만료됩니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-109">An Office 365 E5 Trial Subscription, which expires 30 days from when you create it.</span></span>
+- <span data-ttu-id="a7491-p102">인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 3개의 가상 머신(DC1, APP1 및 CLIENT1)으로 구성됩니다. Azure AD Connect는 APP1에서 실행되며 Windows Server AD 도메인을 Office 365와 동기화합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p102">A simplified organization intranet connected to the Internet, consisting of three virtual machines on a subnet of an Azure virtual network (DC1, APP1, and CLIENT1). Azure AD Connect runs on APP1 to synchronize the Windows Server AD domain to Office 365.</span></span>
     
-<span data-ttu-id="7691c-112">이 개발/테스트 환경 설정 하는 두 단계로 가지가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-112">There are two phases to setting up this dev/test environment:</span></span>
+<span data-ttu-id="a7491-112">이 개발/테스트 환경의 2가지 주요 설정 단계는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-112">There are three major phases to setting up this dev/test environment:</span></span>
   
-1. <span data-ttu-id="7691c-113">Office 365 개발/테스트 환경 (d c 1, a p p 1을 및 CLIENT1 가상 컴퓨터에 Office 365 E5 평가판 구독을 Azure 가상 네트워크를)을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-113">Create the Office 365 dev/test environment (the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network with an Office 365 E5 trial subscription).</span></span>
-2. <span data-ttu-id="7691c-114">설치 하 고 a p p 1에서 Azure AD 연결을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-114">Install and configure Azure AD Connect on APP1.</span></span>
+1. <span data-ttu-id="a7491-113">Office 365 개발/테스트 환경을 만듭니다(Office 365 E5 평가판 구독, Azure Virtual Network의 DC1, APP1, and CLIENT1 가상 머신).</span><span class="sxs-lookup"><span data-stu-id="a7491-113">Create the Office 365 dev/test environment (the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network with an Office 365 E5 trial subscription).</span></span>
+2. <span data-ttu-id="a7491-114">APP1에 Azure AD Connect를 설치 및 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-114">Install and configure Azure AD Connect on APP1.</span></span>
     
 > [!TIP]
-> <span data-ttu-id="7691c-115">[여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-115">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="a7491-115">[여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-115">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-an-office-365-devtest-environment"></a><span data-ttu-id="7691c-116">1 단계: Office 365 개발/테스트 환경 만들기</span><span class="sxs-lookup"><span data-stu-id="7691c-116">Phase 1: Create an Office 365 dev/test environment</span></span>
+## <a name="phase-1-create-an-office-365-devtest-environment"></a><span data-ttu-id="a7491-116">1단계: Office 365 개발/테스트 환경 만들기</span><span class="sxs-lookup"><span data-stu-id="a7491-116">Phase 1: Create your Office 365 dev/test environment</span></span>
 
-<span data-ttu-id="7691c-p103">1, 2 및 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md) 문서의 3 단계에서 지침을 따릅니다. 결과 구성은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p103">Follow the instructions in phases 1, 2, and 3 of the [Office 365 dev/test environment](office-365-dev-test-environment.md) article. Here is the resulting configuration.</span></span>
+<span data-ttu-id="a7491-p103">[Office 365 개발/테스트 환경](office-365-dev-test-environment.md) 문서의 1, 2 및 3단계 지침을 따릅니다. 구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p103">Follow the instructions in phases 1, 2, and 3 of the [Office 365 dev/test environment](office-365-dev-test-environment.md) article. Here is the resulting configuration.</span></span>
   
 ![Office 365 개발/테스트 환경](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
-<span data-ttu-id="7691c-120">이 구성은 다음으로 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-120">This configuration consists of:</span></span> 
+<span data-ttu-id="a7491-120">이 구성은 다음으로 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-120">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="7691c-121">Office 365 e 5 평가판 구독 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-121">An Office 365 E5 Trial Subscription.</span></span>
-- <span data-ttu-id="7691c-122">간소화 된 조직 인트라넷 Azure 가상 네트워크의 서브넷에서 d c 1, a p p 1을 및 CLIENT1 가상 컴퓨터의 구성 되는 인터넷에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-122">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
+- <span data-ttu-id="a7491-121">Office 365 E5 평가판 구독</span><span class="sxs-lookup"><span data-stu-id="a7491-121">An Office 365 E5 Trial Subscription.</span></span>
+- <span data-ttu-id="a7491-122">인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 DC1, APP1 및 CLIENT1 가상 머신으로 구성됩니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-122">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
     
-## <a name="phase-2-install-azure-ad-connect-on-app1"></a><span data-ttu-id="7691c-123">2 단계: 설치 Azure AD a p p 1에 연결</span><span class="sxs-lookup"><span data-stu-id="7691c-123">Phase 2: Install Azure AD Connect on APP1</span></span>
+## <a name="phase-2-install-azure-ad-connect-on-app1"></a><span data-ttu-id="a7491-123">2단계: APP1에 Azure AD Connect 설치</span><span class="sxs-lookup"><span data-stu-id="a7491-123">Phase 2: Install Azure AD Connect on APP1</span></span>
 
-<span data-ttu-id="7691c-p104">설치 및 구성한 후 Azure AD 연결 Office 365 평가판 구독에서 계정 집합으로 CORP Windows Server AD 도메인의 계정 집합을 동기화 합니다. 다음 절차를 안내 Azure AD Connect a p p 1을 설치 하 고 작동 하는지 확인 (영문)를 통해 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p104">Once installed and configured, Azure AD Connect synchronizes the set of accounts in the CORP Windows Server AD domain with the set of accounts in your Office 365 trial subscription. The following procedure steps you through installing Azure AD Connect on APP1 and verifying that it works.</span></span>
+<span data-ttu-id="a7491-p104">일단 설치 및 구성되면, Azure AD Connect는 CORP Windows Server AD 도메인의 계정 집합을 Office 365 평가판 구독의 계정 집합과 동기화합니다. 다음 절차에서는 APP1에 Azure AD Connect를 설치하고 작동하는지 확인하는 과정을 안내합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p104">Once installed and configured, Azure AD Connect synchronizes the set of accounts in the CORP Windows Server AD domain with the set of accounts in your Office 365 trial subscription. The following procedure steps you through installing Azure AD Connect on APP1 and verifying that it works.</span></span>
   
-### <a name="install-and-configure-azure-ad-connect-on-app1"></a><span data-ttu-id="7691c-126">설치 하 고 a p p 1에서 Azure AD 연결 구성</span><span class="sxs-lookup"><span data-stu-id="7691c-126">Install and configure Azure AD Connect on APP1</span></span>
+### <a name="install-and-configure-azure-ad-connect-on-app1"></a><span data-ttu-id="a7491-126">APP1에 Azure AD Connect 설치 및 구성</span><span class="sxs-lookup"><span data-stu-id="a7491-126">Install and configure Azure AD Connect on APP1</span></span>
 
-1. <span data-ttu-id="7691c-127">[Azure 포털](https://portal.azure.com)는 회사와 a p p 1에 연결\\User1 계정을 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-127">From the [Azure portal](https://portal.azure.com), connect to APP1 with the CORP\\User1 account.</span></span>
+1. <span data-ttu-id="a7491-127">[Azure Portal](https://portal.azure.com)에서 CORP\\User1 계정을 사용하여 APP1에 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-127">From the [Azure portal](https://portal.azure.com), connect to APP1 with the CORP\\User1 account.</span></span>
     
-2. <span data-ttu-id="7691c-128">A p p 1을에서 관리자 수준 Windows PowerShell 명령 프롬프트를 열고 하 고 이러한 명령을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-128">From APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
+2. <span data-ttu-id="a7491-128">APP1에서 관리자 수준 Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-128">From the desktop on adVM, open an administrator-level Windows PowerShell command prompt and run the following commands:</span></span>
     
   ```
   Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -71,57 +71,57 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. <span data-ttu-id="7691c-129">작업 표시줄에서 **Internet Explorer** 를 클릭 하 고 이동 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-129">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
+3. <span data-ttu-id="a7491-129">작업 표시줄에서 **Internet Explorer**를 클릭하고 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-129">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
     
-4. <span data-ttu-id="7691c-130">Microsoft Azure Active Directory에 연결 페이지에서 **다운로드**를 클릭 한 다음 **실행**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-130">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
+4. <span data-ttu-id="a7491-130">Microsoft Azure Active Directory Connect 페이지에서 **다운로드**를 클릭하고 **실행**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-130">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
     
-5. <span data-ttu-id="7691c-131">**Azure AD 연결을 시작** 페이지에서 **동의 함**를 클릭 한 다음 **계속**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-131">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.</span></span>
+5. <span data-ttu-id="a7491-131">**Azure AD Connect 시작** 페이지에서 **동의**를 클릭하고 **계속**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-131">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.</span></span>
     
-6. <span data-ttu-id="7691c-132">**Express 설정** 페이지에서 **express 설정 사용을**클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-132">On the **Express Settings** page, click **Use express settings**.</span></span>
+6. <span data-ttu-id="a7491-132">**기본 설정** 페이지에서 **기본 설정 사용**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-132">On the **Express Settings** page, click **Use express settings**.</span></span>
     
-7. <span data-ttu-id="7691c-133">**Azure AD에 연결** 페이지에서 **암호**해당 암호 **사용자 이름,** 형식에 전역 관리자 계정 이름을 입력 하 고 ****을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-133">On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+7. <span data-ttu-id="a7491-133">**Azure AD에 연결** 페이지에서 **사용자 이름**에 전역 관리자 계정 이름을 입력하고 **암호**에 해당 암호를 입력한 후 **다음 **을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-133">On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
-8. <span data-ttu-id="7691c-134">**AD DS에 연결** 페이지에서 입력 **CORP\\User1** **사용자 이름** 에서 **암호**를에서 계정의 암호를 입력 하 고 **다음**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-134">On the **Connect to AD DS** page, type **CORP\\User1** in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+8. <span data-ttu-id="a7491-134">**AD DS에 연결** 페이지에서 **사용자 이름**에 **CORP\\User1**을 입력하고 **암호**에 암호를 입력한 후 **다음**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-134">On the **Connect to AD DS** page, type **CORP\\User1** in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
-9. <span data-ttu-id="7691c-135">**Azure AD 로그인 구성** 페이지에서 **확인 된 모든 도메인 키 지 않고 계속**클릭 하 고 ****을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-135">On the **Azure AD sign-in configuration** page, click **Continue without any verified domains**, and then click **Next**.</span></span>
+9. <span data-ttu-id="a7491-135">**Azure AD 로그인 구성** 페이지에서 **확인된 도메인 없이 계속**을 클릭한 후 **다음**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-135">On the **Azure AD sign-in configuration** page, click **Continue without any verified domains**, and then click **Next**.</span></span>
     
-10. <span data-ttu-id="7691c-136">**구성 준비 완료** 페이지에서 **설치**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-136">On the **Ready to configure** page, click **Install**.</span></span>
+10. <span data-ttu-id="a7491-136">**구성 준비 완료** 페이지에서 **설치**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-136">On the **Ready to configure** page, click **Install**.</span></span>
     
-11. <span data-ttu-id="7691c-137">**구성 완료** 페이지에서 **끝내기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-137">On the **Configuration complete** page, click **Exit**.</span></span>
+11. <span data-ttu-id="a7491-137">**구성 완료** 페이지에서 **끝내기**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-137">On the **Configuration complete** page, click **Exit**.</span></span>
     
-12. <span data-ttu-id="7691c-138">Internet Explorer에서 Office 365 포털에 이동 ([https://portal.office.com](https://portal.office.com)) 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-138">In Internet Explorer, go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+12. <span data-ttu-id="a7491-138">Internet Explorer에서 Office 365 포털([https://portal.office.com](https://portal.office.com))로 이동한 후 전역 관리자 계정으로 Office 365 평가판 구독에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-138">In Internet Explorer, go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
-13. <span data-ttu-id="7691c-139">주 포털 페이지에서 **관리**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-139">From the main portal page, click **Admin**.</span></span>
+13. <span data-ttu-id="a7491-139">기본 포털 페이지에서 **관리자**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-139">From the main portal page, click **Admin**.</span></span>
     
-14. <span data-ttu-id="7691c-140">왼쪽 탐색 영역에서 클릭 **사용자 > 활성 사용자**합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-140">In the left navigation, click **Users > Active users**.</span></span>
+14. <span data-ttu-id="a7491-140">왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-140">In the left navigation, click **Users > Active users**.</span></span>
     
-    <span data-ttu-id="7691c-p105">**사용자 1**이라는 새 계정을 note 합니다. 이 계정은 CORP Windows Server AD 도메인에서 형식이 며 교정본을 디렉터리 동기화가 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p105">Note the account named **User1**. This account is from the CORP Windows Server AD domain and is proof that directory synchronization has worked.</span></span>
+    <span data-ttu-id="a7491-p105">**User1** 계정을 확인합니다. 이 계정은 CORP Windows Server AD 도메인에서 가져온 것이며 디렉터리 동기화가 진행되었다는 증거입니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p105">Note the account named **User1**. This account is from the CORP Windows Server AD domain and is proof that directory synchronization has worked.</span></span>
     
-15. <span data-ttu-id="7691c-p106">**User1** 계정을 클릭 합니다. 제품 라이선스에 대 한 **편집**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p106">Click the **User1** account. For product licenses, click **Edit**.</span></span>
+15. <span data-ttu-id="a7491-p106">**User1** 계정을 클릭합니다. 제품 라이선스에 대해 **편집**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p106">Click the **User1** account. For product licenses, click **Edit**.</span></span>
     
-16. <span data-ttu-id="7691c-p107">**제품 라이선스**해당 국가 선택 하 고 **Office 365 Enterprise E5** ( **On**으로 전환)에 대 한 **오프** 컨트롤을 클릭 합니다. 페이지의 맨 아래에 **저장** 을 클릭 하 고 **닫기**를 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p107">In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Click **Save** at the bottom of the page, and then click **Close**.</span></span>
+16. <span data-ttu-id="a7491-p107">**제품 라이선스**에서 국가를 선택하고 **Office 365 Enterprise E5**에 대해 **해제**를 클릭합니다(**설정**으로 전환됨). 페이지 아래쪽의 **저장**을 클릭하고 **닫기**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p107">In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Click **Save** at the bottom of the page, and then click **Close**.</span></span>
     
-<span data-ttu-id="7691c-147">결과 구성입니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-147">This is the resulting configuration.</span></span>
+<span data-ttu-id="a7491-147">구성 결과는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-147">Here is the resulting configuration.</span></span>
   
-![디렉터리 동기화를 통해 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-<span data-ttu-id="7691c-149">이 구성은 다음으로 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-149">This configuration consists of:</span></span> 
+<span data-ttu-id="a7491-149">이 구성은 다음으로 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-149">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="7691c-150">Office 365 e 5 평가판 구독 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-150">An Office 365 E5 Trial Subscription.</span></span>
-- <span data-ttu-id="7691c-p108">간소화 된 조직 인트라넷 Azure 가상 네트워크의 서브넷에서 d c 1, a p p 1을 및 CLIENT1 가상 컴퓨터의 구성 되는 인터넷에 연결 합니다. Azure AD 연결 Office 365에 CORP Windows Server AD 도메인 30 분 마다 동기화 하는 a p p 1을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="7691c-p108">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the CORP Windows Server AD domain to Office 365 every 30 minutes.</span></span>
+- <span data-ttu-id="a7491-150">Office 365 E5 평가판 구독</span><span class="sxs-lookup"><span data-stu-id="a7491-150">An Office 365 E5 Trial Subscription.</span></span>
+- <span data-ttu-id="a7491-p108">인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 DC1, APP1 및 CLIENT1 가상 머신으로 구성됩니다. Azure AD Connect는 APP1에서 실행되며 30분 간격으로 CORP Windows Server AD 도메인을 Office 365와 동기화합니다.</span><span class="sxs-lookup"><span data-stu-id="a7491-p108">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the CORP Windows Server AD domain to Office 365 every 30 minutes.</span></span>
     
-## <a name="next-step"></a><span data-ttu-id="7691c-153">다음 단계</span><span class="sxs-lookup"><span data-stu-id="7691c-153">Next Step</span></span>
+## <a name="next-step"></a><span data-ttu-id="a7491-153">다음 단계</span><span class="sxs-lookup"><span data-stu-id="a7491-153">Next step</span></span>
 
-<span data-ttu-id="7691c-154">조직에 대 한 디렉터리 동기화를 배포할 준비가 되 면 [Microsoft Azure의 디렉터리 동기화를 Office 365 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="7691c-154">When you are ready to deploy directory synchronization for your organization, see [Deploy Office 365 directory synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).</span></span>
+<span data-ttu-id="a7491-154">조직에 대한 디렉터리 동기화 배포 준비가 완료되면 [Microsoft Azure에서 Office 365 디렉터리 동기화 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="a7491-154">When you are ready to deploy directory synchronization for your organization, see [Deploy Office 365 directory synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7691c-155">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7691c-155">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a7491-155">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a7491-155">See Also</span></span>
 
-<span data-ttu-id="7691c-156">[테스트 랩 가이드 (Tlg) 채택 클라우드](cloud-adoption-test-lab-guides-tlgs.md)
+<span data-ttu-id="a7491-156">[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
-[Office 365 개발/테스트 환경에 대 한 응용 프로그램 보안 클라우드](cloud-app-security-for-your-office-365-dev-test-environment.md) 
- [ Office 365 개발/테스트 환경에 대 한 위협 보호 고급](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)</span><span class="sxs-lookup"><span data-stu-id="7691c-156">[Cloud adoption Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[Office 365 개발/테스트 환경용 클라우드 앱 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Office 365 개발/테스트 환경용 Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)</span><span class="sxs-lookup"><span data-stu-id="a7491-156">[Cloud adoption Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
 [Base Configuration dev/test environment](base-configuration-dev-test-environment.md)
 [Office 365 dev/test environment](office-365-dev-test-environment.md)
 [Cloud App Security for your Office 365 dev/test environment](cloud-app-security-for-your-office-365-dev-test-environment.md)
