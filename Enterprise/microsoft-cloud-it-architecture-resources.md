@@ -3,7 +3,7 @@ title: Microsoft 클라우드 IT 아키텍처 리소스
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/18/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다.'
-ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: a2e2431d0ace5a77722da844feb3aaaea61b0e6f
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193708"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -82,7 +83,7 @@ Microsoft 클라우드 서비스 및 플랫폼을 사용하는 조직용으로 I
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft Cloud ID 모델용 축소판 이미지](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![문서](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[문서](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>Microsoft 클라우드를 사용하는 ID 소개 </li> <li>Azure AD IDaaS 기능 </li><li>온-프레미스 Active Directory 도메인 서비스 계정을 Microsoft Azure Active Directory와 통합 </li> <li>Azure에 디렉터리 구성 요소 추가 </li><li>Azure IaaS의 작업을 위한 도메인 서비스 옵션 </li></ul> <br/>|
+|[![Microsoft Cloud ID 모델용 축소판 이미지](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![다른 언어 버전으로 페이지 보기](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>Microsoft 클라우드를 사용하는 ID 소개 </li> <li>Azure AD IDaaS 기능 </li><li>온-프레미스 Active Directory 도메인 서비스 계정을 Microsoft Azure Active Directory와 통합 </li> <li>Azure에 디렉터리 구성 요소 추가 </li><li>Azure IaaS의 작업을 위한 도메인 서비스 옵션 </li></ul> <br/>|
    
 <a name="security"> </a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft Cloud Security for Enterprise Architects

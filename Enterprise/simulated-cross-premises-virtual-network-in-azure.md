@@ -1,9 +1,9 @@
 ---
-title: Azure의 시뮬레이션 된 크로스-프레미스 가상 네트워크
+title: 시뮬레이션된 Azure의 크로스-프레미스 가상 네트워크
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,44 +14,45 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: '요약: Microsoft Azure의 개발/테스트 환경으로 시뮬레이션 된 크로스-프레미스 가상 네트워크를 만듭니다.'
-ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
-ms.translationtype: MT
+description: '요약: 시뮬레이션된 프레미스 간 가상 네트워크를 Microsoft Azure에 개발/테스트 환경으로 만듭니다.'
+ms.openlocfilehash: 42ef04a92794c8df53d3de32970db78d4dcf3119
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193668"
 ---
-# <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure의 시뮬레이션 된 크로스-프레미스 가상 네트워크
+# <a name="simulated-cross-premises-virtual-network-in-azure"></a>시뮬레이션된 Azure의 크로스-프레미스 가상 네트워크
 
- **요약:** 개발/테스트 환경으로 Microsoft Azure의 시뮬레이션 된 크로스-프레미스 가상 네트워크를 만듭니다.
+ **요약:** 시뮬레이션된 프레미스 간 가상 네트워크를 Microsoft Azure에 개발/테스트 환경으로 만듭니다.
   
-이 문서와 Microsoft Azure 두 Azure 가상 네트워크를 사용 하 여 시뮬레이션 된 하이브리드 클라우드 환경 만들기 (영문)에 대해 설명 합니다. 결과 구성은 다음과 같습니다. 
+이 문서는 2개의 Azure 가상 네트워크를 사용하여 Microsoft Azure에 시뮬레이션된 하이브리드 클라우드 환경을 만드는 방법을 단계별로 설명합니다. 결과 구성은 다음과 같습니다. 
   
 ![XPrem VNet의 DC2 가상 컴퓨터를 사용한 시뮬레이션된 크로스-프레미스 Virtual Network 개발/테스트 환경 3단계](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
-Azure IaaS 하이브리드 클라우드 프로덕션 환경에서 시뮬레이션 하 고 구성 됩니다.
+Azure IaaS 하이브리드 클라우드 프로덕션 환경을 시뮬레이트하며 다음으로 구성됩니다.
   
-- 네트워크에 연결 시뮬레이션 된 간소화 된 온-프레미스 및 Azure 가상 네트워크 (테스트 실습 가상 네트워크)에서 호스팅됩니다.
+- Azure 가상 네트워크(TestLab 가상 네트워크)에서 호스트되고 시뮬레이션된 간소화된 온-프레미스 네트워크.
     
-- Azure (XPrem)에서 호스팅되는 시뮬레이션 된 크로스-프레미스 가상 네트워크입니다.
+- Azure(XPrem)에서 호스트되고 시뮬레이션된 프레미스 간 가상 네트워크.
     
-- 두 가상 네트워크 간의 VNet 피어 링 관계입니다.
+- 2개의 가상 네트워크 간 VNet 피어링 관계입니다.
     
-- XPrem 가상 네트워크에서 보조 도메인 컨트롤러입니다.
+- XPrem 가상 네트워크의 보조 도메인 컨트롤러입니다.
     
-이렇게 기준 및 일반적인 시작 하는 수를 가리킵니다. 제공 됩니다. 
+이 컨트롤러는 다음 작업을 수행할 수 있는 기본적이고 일반적인 시작 지점을 제공합니다. 
   
-- 개발 및 시뮬레이션 된 Azure IaaS 하이브리드 클라우드 환경에서 응용 프로그램을 테스트 합니다.
+- 시뮬레이션된 Azure IaaS 하이브리드 클라우드 환경에서 테스트 응용 프로그램을 개발하고 테스트합니다.
     
-- 컴퓨터, 테스트 실습 가상 네트워크 내에서 일부 및 하이브리드 클라우드 기반 IT 작업 부하를 시뮬레이션 하기 위해 XPrem 가상 네트워크 내에서 일부 테스트 구성을 만듭니다.
+- 일부 TestLab 가상 네트워크 및 일부 XPrem 가상 네트워크 내에서 컴퓨터의 테스트 구성을 만들어서 하이브리드 클라우드 기반 IT 작업을 시뮬레이션합니다.
     
 이 개발/테스트 환경의 3가지 주요 설정 단계는 다음과 같습니다.
   
-1. 테스트 실습 가상 네트워크를 구성 합니다.
+1. TestLab 가상 네트워크를 구성합니다.
     
-2. 크로스-프레미스 가상 네트워크를 만듭니다.
+2. 프레미스 간 가상 네트워크를 만듭니다.
     
-3. D c 2를 구성 합니다.
+3. DC2를 구성합니다.
     
 > [!NOTE]
 > 이 구성을 위해서는 유료 Azure 구독이 필요합니다. 
@@ -61,24 +62,24 @@ Azure IaaS 하이브리드 클라우드 프로덕션 환경에서 시뮬레이�
 > [!TIP]
 > [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
-## <a name="phase-1-configure-the-testlab-virtual-network"></a>1 단계: 테스트 실습 가상 네트워크 구성
+## <a name="phase-1-configure-the-testlab-virtual-network"></a>1단계: TestLab 가상 네트워크 구성
 
-[기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md) 에서 테스트 실습 라는 Azure 가상 네트워크에서 d c 1, a p p 1을 및 CLIENT1 컴퓨터를 구성 하는 지침을 따르십시오.
+[기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)의 지침을 사용하여 TestLab이라는 Azure 가상 네트워크에서 DC1, APP1, CLIENT1 컴퓨터를 구성합니다.
   
-현재 구성입니다. 
+다음은 현재 구성입니다. 
   
-![CLIENT1 가상 컴퓨터를 사용한 Azure의 기본 구성 4단계](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 가상 머신을 사용한 Azure의 기본 구성 4단계](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-## <a name="phase-2-create-the-xprem-virtual-network"></a>2 단계: XPrem 가상 네트워크 만들기
+## <a name="phase-2-create-the-xprem-virtual-network"></a>2단계: XPrem 가상 네트워크 만들기
 
-이 단계에서 하 고 새 XPrem 가상 네트워크 구성 만들고 VNet 피어 링으로 테스트 실습 가상 네트워크에 연결 합니다.
+이 단계에서는 새로운 XPrem 가상 네트워크를 만들고 구성한 다음 이를 VNet 피어링을 통해 TestLab 가상 네트워크에 연결합니다.
   
-먼저, 로컬 컴퓨터에서 Azure PowerShell 프롬프트를 시작 합니다.
+먼저 로컬 컴퓨터에서 Azure PowerShell 프롬프트를 시작합니다.
   
 > [!NOTE]
-> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/ko-KR/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
-다음 명령 사용 하 여 Azure 계정에 로그인 합니다.
+다음 명령을 사용하여 Azure 계정에 로그인합니다.
   
 ```
 Login-AzureRMAccount
@@ -93,14 +94,14 @@ Login-AzureRMAccount
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Azure 구독을 설정 합니다. 교체 따옴표를 포함 하 여 입력을 내에 있는 모든 항목은 \< 및 > 올바른 이름 사용 하 여 문자입니다.
+Azure 구독을 설정합니다. \< 및 > 문자를 포함하여 따옴표 안에 있는 모든 것을 올바른 이름으로 바꿉니다.
   
 ```
 $subscrName="<subscription name>"
 Get-AzureRmSubscription -SubscriptionName $subscrName | Select-AzureRmSubscription
 ```
 
-다음으로 XPrem 가상 네트워크를 만들고 이러한 명령으로 네트워크 보안 그룹과 보호 합니다.
+그런 다음, 해당 명령을 통해 XPrem 가상 네트워크를 만들고 가상 보안 그룹으로 네트워크를 보호합니다.
   
 ```
 $rgName="<name of the resource group that you used for your TestLab virtual network>"
@@ -114,7 +115,7 @@ $nsg=Get-AzureRMNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName
 Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "Testnet" -AddressPrefix 192.168.0.0/24 -NetworkSecurityGroup $nsg
 ```
 
-그런 다음 이러한 명령을와 테스트 실습 및 XPrem VNets 간의 VNet 피어 링 관계를 만듭니다.
+그런 다음, 해당 명령을 통해 TestLab 및 XPrem VNet 간의 VNet 피어링 관계를 만듭니다.
   
 ```
 $rgName="<name of the resource group that you used for your TestLab virtual network>"
@@ -124,15 +125,15 @@ Add-AzureRmVirtualNetworkPeering -Name TestLab2XPrem -VirtualNetwork $vnet1 -Rem
 Add-AzureRmVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-현재 구성입니다. 
+다음은 현재 구성입니다. 
   
 ![XPrem VNet 및 VNet 피어링 관계를 사용한 시뮬레이션된 크로스-프레미스 Virtual Network 개발/테스트 환경 2단계](images/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
-## <a name="phase-3-configure-dc2"></a>3 단계: d c 2를 구성 합니다.
+## <a name="phase-3-configure-dc2"></a>3단계: DC2 구성
 
-이 단계에서 d c 2 가상 컴퓨터 XPrem 가상 네트워크에서 만들고 복제 도메인 컨트롤러를 구성 합니다.
+이 단계에서는 XPrem 가상 네트워크에 DC2 가상 컴퓨터를 만들고 복제본 도메인 컨트롤러로 구성합니다.
   
-먼저 d c 2에 대 한 가상 컴퓨터를 만듭니다. Azure PowerShell 명령 프롬프트에서 로컬 컴퓨터에서 이러한 명령을 실행 합니다.
+먼저 DC2에 대한 가상 컴퓨터를 만듭니다. 로컬 컴퓨터의 Azure PowerShell 명령 프롬프트에서 해당 명령을 실행합니다.
   
 ```
 $rgName="<your resource group name>"
@@ -152,33 +153,33 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-다음으로, 로컬 관리자 계정 이름과 암호를 사용 하 여 [Azure 포털](https://portal.azure.com) 에서 새 d c 2 가상 컴퓨터에 연결 합니다.
+그런 다음, 로컬 관리자 계정 이름과 암호를 사용하여 [Azure Portal](https://portal.azure.com)에서 새로운 DC2 가상 컴퓨터에 연결합니다.
   
-다음으로 기본 연결을 테스트 하는 것에 대 한 트래픽을 허용 하도록 Windows 방화벽 규칙을 구성 합니다. 프로그램 관리자 수준 Windows PowerShell 명령 프롬프트에서 d c 2에서 다음이 명령을 실행 합니다. 
+그런 다음, 기본 연결 테스트에 트래픽을 허용하도록 Windows 방화벽 규칙을 구성합니다. DC2의 관리자 수준 Windows PowerShell 명령 프롬프트에서 해당 명령을 실행합니다. 
   
 ```
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
 
-IP 주소 10.0.0.4에서에서 4 개의 성공적인 회신을 받으면 ping 명령을 발생 해야 합니다. 이것은 VNet 피어 링 관계 별 트래픽의 테스트 합니다. 
+ping 명령으로 인해 IP 주소 10.0.0.4에서 네 번의 성공적인 응답이 발생해야 합니다. VNet 피어링 관계 전반에 걸친 트래픽 테스트입니다. 
   
-그 다음 d c 2에서 Windows PowerShell 명령 프롬프트에서 추가 데이터 디스크 드라이브 문자로 f:가이 명령 사용 하 여 새 볼륨으로 추가 합니다.
+다음으로 DC2의 Windows PowerShell 명령 프롬프트에서 이 명령을 사용하여 추가 데이터 디스크를 드라이브 문자 F:의 새로운 볼륨으로 추가합니다.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-다음으로, corp.contoso.com 도메인에 대 한 복제 도메인 컨트롤러로 d c 2를 구성 합니다. D c 2 Windows PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
+그런 다음 DC2를 corp.contoso.com 도메인에 대한 복제본 도메인 컨트롤러로 구성합니다. DC2의 Windows PowerShell 명령 프롬프트에서 해당 명령을 실행합니다.
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-두는 회사를 제공 하 라는 메시지가\\User1 암호와 디렉터리 서비스 복원 모드 (DSRM) 암호를 d c 2를 다시 시작 하 고 있습니다. 
+CORP\\User1 암호와 디렉터리 서비스 복원 모드(DSRM) 암호 모두를 제공하고 DC2를 다시 시작하라는 메시지가 표시됩니다. 
   
-XPrem 가상 네트워크 부여한 후 자체 DNS 서버 (d c 2),이 DNS 서버를 사용 하 여 XPrem 가상 네트워크를 구성 해야 합니다. Azure PowerShell 명령 프롬프트에서 로컬 컴퓨터 이러한 명령을 실행 합니다.
+이제 XPrem에는 자체 DNS 서버(DC2)가 있으므로 이 DNS 서버를 사용하도록 XPrem 가상 네트워크를 구성해야 합니다. 로컬 컴퓨터의 Azure PowerShell 명령 프롬프트에서 해당 명령을 실행합니다.
   
 ```
 $vnet=Get-AzureRmVirtualNetwork -ResourceGroupName $rgName -name "XPrem"
@@ -187,7 +188,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-로컬 컴퓨터에서 Azure 포털에서 d c 1에는 회사와 연결\\User1 자격 증명입니다. 파일을 컴퓨터 및 사용자 인증에 대 한 자신의 로컬 도메인 컨트롤러를 사용할 수 있도록 CORP 도메인을 구성 하려면 d c 1에는 관리자 수준 Windows PowerShell 명령 프롬프트에서 다음이 명령을 실행 합니다.
+로컬 컴퓨터의 Azure Portal에서 CORP\\User1 자격 증명을 사용하여 DC1에 연결합니다. 컴퓨터와 사용자가 로컬 도메인 컨트롤러를 사용하여 인증하도록 CORP 도메인을 구성하려면 DC1의 관리자 수준 Windows PowerShell 명령 프롬프트에서 해당 명령을 실행합니다.
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -196,15 +197,15 @@ New-ADReplicationSubnet -Name "10.0.0.0/8" -Site "TestLab"
 New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 ```
 
-현재 구성입니다. 
+다음은 현재 구성입니다. 
   
 ![XPrem VNet의 DC2 가상 컴퓨터를 사용한 시뮬레이션된 크로스-프레미스 Virtual Network 개발/테스트 환경 3단계](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
-시뮬레이션 된 Azure 하이브리드 클라우드 환경 테스트를 수행할 준비가 되었습니다.
+시뮬레이션된 Azure 하이브리드 클라우드 환경은 이제 테스트 준비 중입니다.
   
 ## <a name="next-step"></a>다음 단계
 
-[Azure에서 호스팅되는 SharePoint Server 2016 인트라넷 팜](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)시뮬레이션 하기 위해이 개발/테스트 환경을 사용 합니다.
+이 개발/테스트 환경을 사용하여 [Azure에서 호스트된 SharePoint Server 2016 인트라넷 팜](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)을 시뮬레이션할 수 있습니다.
   
 ## <a name="see-also"></a>참고 항목
 

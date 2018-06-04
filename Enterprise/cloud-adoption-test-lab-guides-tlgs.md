@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365, EMS(Enterprise Mobility + Security), Dynamics 365, Office Server 제품의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.'
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193678"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>클라우드 채택 TLG(테스트 랩 가이드)
 
@@ -38,7 +39,6 @@ TLG를 사용하면 Microsoft 제품을 빠르게 학습할 수 있습니다. �
 - [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
     
 ## <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
-<a name="O365"> </a>
 
 이러한 문서를 사용하여 Office 365 개발/테스트 환경을 구축하세요.
   
@@ -89,7 +89,6 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
     중요하거나 극비 사항인 리소스를 위해 조직의 나머지와 분리된 SharePoint Online Group 사이트를 만드는 방법을 보여 줍니다.
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 개발/테스트 환경
-<a name="O365"> </a>
 
 다음 문서의 시나리오를 따라 [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)용 개발/테스트 환경을 만들어보세요.
   
@@ -106,7 +105,6 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
     iOS 또는 Android 장치를 등록하고 원격으로 관리합니다.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경
-<a name="O365_D365"> </a>
 
 이러한 문서를 사용하여 Dynamics 365 평가판 구독을 추가하고 Office 365 및 Dynamics 365 통합 기능 및 시나리오를 테스트합니다.
   
@@ -119,12 +117,10 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
     Office 365 및 Dynamics 365가 Exchange Online 사서함에서 함께 작동하는 방식을 구성한 다음 보여 줍니다.
     
 ## <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 개발/테스트 환경
-<a name="O365_D365"> </a>
 
 Microsoft의 모든 클라우드 서비스(Office 365, Azure, EMS, 및 Dynamics 365)를 포함하여 개발/테스트 환경을 만들어보세요. 단계별 지침에 대해서는 [One Microsoft Cloud 개발/테스트 환경](the-one-microsoft-cloud-dev-test-environment.md)을 참조하세요.
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>시뮬레이션된 프레미스 간 개발/테스트 환경
-<a name="O365_D365"> </a>
 
 이러한 문서를 사용하여 Azure Virtual Network, 시뮬레이션된 온-프레미스 네트워크 등의 프레미스 간 개발/테스트 환경을 만들 수 있습니다.
   
@@ -137,7 +133,6 @@ Microsoft의 모든 클라우드 서비스(Office 365, Azure, EMS, 및 Dynamics 
     Azure Virtual Network에 단일 서버 SharePoint Server 2016 팜을 만들고 시뮬레이션된 온-프레미스 네트워크의 연결 및 관리를 테스트합니다.
     
 ## <a name="additional-cloud-based-devtest-environments"></a>추가 클라우드 기반 개발/테스트 환경
-<a name="ADD_TLGs"> </a>
 
 다음은 Azure 인프라 서비스에서 만들 수 있는 추가적인 클라우드 기반 개발/테스트 환경입니다.
   

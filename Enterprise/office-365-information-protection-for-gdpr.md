@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: ''
 description: 이 솔루션에서는 Office 365 서비스에 저장되어 있는 중요한 데이터를 보호하는 방법을 보여 줍니다.
-ms.openlocfilehash: 276a7659d2bb23cf10099c0dbd3dd388f9b2442a
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 8e63f75ffa87d6013f0d7e9be754ce72868645dd
+ms.sourcegitcommit: 565a6275c719be61636bc43d0f8c000b440992bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/24/2018
+ms.locfileid: "19434965"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>GDPR에 대한 Office 365 정보 보호
 
@@ -26,10 +27,11 @@ ms.lasthandoff: 04/16/2018
   
 이 솔루션에는 개인 데이터를 검색, 분류, 보호 및 모니터링하기 위한 규정된 권장 사항이 포함되어 있습니다. 이 솔루션에서는 GDPR(일반 데이터 보호 규정)을 예제로 사용하지만, 동일한 프로세스를 적용하여 여러 다른 규정을 준수할 수 있습니다.
 
-[![GDPR에 대한 Office 365 정보 보호 포스터의 축소판 그림입니다.](images/InfoProtectGDPR_Poster/o365infoprotectforgdpr_thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)
+[![GDPR에 대한 Office 365 정보 보호 포스터의 축소판 그림입니다.](images/InfoProtectGDPR_Poster/o365infoprotectforgdpr_thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
+
+[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   
-[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)  | [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.vsdx)
-  
+GDPR에 대한 데이터 주체 요청 수행에 대한 자세한 내용은 [GDPR에 대한 Office 365 데이터 주체 요청](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json)을 참조하세요. 
 
 ## <a name="see-also"></a>참고 항목
 

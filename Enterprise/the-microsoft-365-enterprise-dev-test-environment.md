@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: '요약: 이 테스트 랩 가이드를 사용하여 Office 365 E5, EMS(Enterprise Mobility + Security) E5 및 Windows 10 Enterprise를 실행하는 컴퓨터가 포함되는 개발/테스트 환경을 만듭니다.'
-ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178650"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 개발/테스트 환경
 
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="virtual-machine-in-azure"></a>Azure의 가상 머신
 
-Microsoft Azure에서 Windows 10 가상 머신을 만들려면 Windows 10 Enterprise에 대한 이미지에 액세스할 수 있는 ***Visual Studio 기반 구독이 있어야 합니다***. 다른 유형의 Azure 구독(예: 평가판 및 유료 구독)으로는 이 이미지에 액세스할 수 없습니다.
+Microsoft Azure에서 Windows 10 가상 머신을 만들려면 Windows 10 Enterprise에 대한 이미지에 액세스할 수 있는 ***Visual Studio 기반 구독이 있어야 합니다***. 다른 유형의 Azure 구독(예: 평가판 및 유료 구독)으로는 이 이미지에 액세스할 수 없습니다. 최신 정보를 보려면 [개발/테스트 시나리오에 Azure의 Windows 클라이언트 사용](https://docs.microsoft.com/azure/virtual-machines/windows/client-images)을 참조하세요.
   
 > [!NOTE]
 > 다음 명령에서는 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요. 이러한 명령 집합은 WIN10이라는 Windows 10 Enterprise 가상 머신과 리소스 그룹, 저장소 계정 및 가상 네트워크를 포함하는 모든 필수 인프라를 빌드합니다. Azure 인프라 서비스에 이미 익숙한 경우 혅 배포된 인프라에 맞게 이러한 지침을 조정하세요. 
@@ -175,7 +176,7 @@ Windows 10 Enterprise가 있는 실제 또는 가상 머신을 만든 후에 로
     
 6. 설정 창을 닫습니다.
     
-다음으로, WIN10 컴퓨터에 Office 2016을 설치합니다.
+다음으로, WIN10 컴퓨터에 Office 365 ProPlus를 설치합니다.
   
 1. Microsoft Edge 브라우저를 열고 전역 관리자 계정 자격 증명으로 Office 365 포털에 로그인합니다. 도움을 받으려면 [Office 365에 로그인하는 위치](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)를 참조하세요.
     
@@ -185,9 +186,13 @@ Windows 10 Enterprise가 있는 실제 또는 가상 머신을 만든 후에 로
     
 4. Office 설치가 완료될 때까지 기다립니다. **모두 완료되었습니다.** 가 표시되면 **닫기**를 두 번 차례로 클릭합니다.
     
-그림 3에는 Office 365 및 EMS 구독의 Azure 테넌트에 가입된 WIN10 컴퓨터를 포함하는 사용자 환경 결과가 표시됩니다.
+그림 3에서는 다음에 해당하는 WIN10 컴퓨터를 포함하는 결과 환경을 보여줍니다.
+
+- Office 365 및 EMS 구독의 Azure 테넌트에 가입되어 있습니다.
+- Intune(EMS)에 Azure AD 장치로 등록되어 있습니다.
+- Office 365 ProPlus가 설치되어 있습니다.
   
-**그림 3: Azure AD 테넌트에 WIN10 컴퓨터 계정 추가**
+**그림 3: Microsoft 365 개발/테스트 환경의 최종 구성**
 
 ![Microsoft 3656 Enterprise 개발/테스트 환경 4단계](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   

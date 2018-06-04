@@ -3,7 +3,7 @@ title: Office 365 개발/테스트 환경에 대한 디렉터리 동기화
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,11 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '요약: Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.'
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193538"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대한 디렉터리 동기화
 
@@ -117,10 +118,15 @@ Stop-Process -Name Explorer -Force
 ## <a name="see-also"></a>참고 항목
 
 [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
+
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
+
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
-[Office 365 개발/테스트 환경용 클라우드 앱 보안](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
+[Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
 [Office 365 개발/테스트 환경용 Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
 [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 
