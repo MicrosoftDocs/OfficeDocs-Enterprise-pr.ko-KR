@@ -3,7 +3,7 @@ title: 정치적 캠페인 개발/테스트 환경에서 팀 사이트 만들기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,12 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '요약: 정치적 캠페인 개발/테스트 환경에서 공용, 개인, 중요 및 극비 SharePoint Online 팀 사이트를 만듭니다.'
-ms.openlocfilehash: 1651d89a1c17dfa5af592727bb534717763288e0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 452e504a8d5fe0cb53fde2e4bb11aa8510f247fc
+ms.sourcegitcommit: 0d92efcb24a388c6fc5c3e333bc5714f43dbf4a7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168492"
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "19339159"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>정치적 캠페인 개발/테스트 환경에서 팀 사이트 만들기
 
@@ -372,40 +372,42 @@ ms.locfileid: "19168492"
 3. 처음으로 Azure Information Protection을 구성하는 경우 다음 [지침](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)을 참조하세요.
     
 4. 목록 창에서 **모든 서비스**를 클릭하고 **정보**를 입력한 다음, **Azure Information Protection**을 클릭합니다.
+
+5. **레이블**을 클릭합니다.
     
-5. **Azure Information Protection** 블레이드에서 **범위 지정 정책 > + 새 정책 추가**를 클릭합니다.
+6. **기밀** 레이블을 마우스 오른쪽 단추로 클릭하고 **하위 레이블 추가**를 클릭합니다.
     
-6. **정책 이름**에 **CampaignStrategy**를 입력하고 **설명**에 **캠페인 전략 팀 사이트의 문서에 대한 레이블**을 입력합니다.
+7. **이름**에 **CampaignStrategy**를 입력하고 **설명**에 **캠페인 전략 팀 사이트의 문서에 대한 레이블**을 입력합니다.
     
-7. **이 정책을 가져올 사용자 또는 그룹을 선택합니다 > 사용자/그룹**을 클릭한 후 **선임 및 전략적 직원**을 선택합니다.
+8. **이 레이블을 포함하는 문서 및 전자 메일에 대한 권한 설정**에서 **보호**를 클릭합니다.
     
-8. **선택 > 확인**을 클릭합니다.
+9. **보호** 섹션에서 **Azure(클라우드 키)** 를 클릭합니다.
     
-9. **기밀** 레이블에서 생략 부호(…)를 클릭한 후 **하위 레이블 추가**를 클릭합니다.
+10. **보호** 블레이드의 **보호 설정** 아래에서 **+ 권한 추가**를 클릭합니다.
     
-10. **이름**에 하위 레이블의 이름을 입력하고 **설명**에 하위 레이블에 대한 설명을 입력합니다.
+11. **권한 추가** 블레이드의 **사용자 및 그룹 지정** 아래에서 **+ 디렉터리 찾아보기**를 클릭합니다.
     
-11. **이 레이블을 포함하는 문서 및 전자 메일에 대한 권한 설정**에서 **보호**를 클릭합니다.
+12. **AAD 사용자 및 그룹** 창에서 **선임 및 전략적 직원**을 선택하고 **선택**을 클릭합니다.
     
-12. **보호** 섹션에서 **Azure(클라우드 키)** 를 클릭합니다.
+13. **미리 설정된 또는 설정된 사용자 지정에서 권한 선택**에서 **사용자 지정**을 클릭한 다음 **권한 보기**, **콘텐츠 편집**, **저장**, **회신** 및 **모두 회신** 확인란을 차례로 클릭합니다.
     
-13. **보호** 블레이드의 **보호 설정** 아래에서 **+ 권한 추가**를 클릭합니다.
+14. **확인**를 두 번 차례로 클릭합니다.
     
-14. **권한 추가** 블레이드의 **사용자 및 그룹 지정** 아래에서 **+ 디렉터리 찾아보기**를 클릭합니다.
+15. **하위 레이블** 블레이드에서 **저장**을 클릭하고 **확인**을 클릭합니다.
+
+16. **Azure Information Protection** 블레이드에서 **정책 > + 새 정책 추가**를 클릭합니다.
     
-15. **AAD 사용자 및 그룹** 창에서 **선임 및 전략적 직원**을 선택하고 **선택**을 클릭합니다.
+17. **정책 이름**에 **CampaignStrategy**를 입력하고 **설명**에 **캠페인 전략 팀 사이트의 문서**를 입력합니다.
     
-16. **미리 설정에서 권한 선택** 아래에서 **인쇄**, **콘텐츠 복사 및 추출**, **전달** 확인란의 선택을 취소합니다.
+18. **이 정책을 가져올 사용자 또는 그룹을 선택합니다 > 사용자/그룹**을 클릭한 후 **선임 및 전략적 직원**을 선택합니다.
     
-17. **확인**를 두 번 차례로 클릭합니다.
-    
-18. **하위 레이블** 블레이드에서 **저장**을 클릭합니다.
-    
-19. 새로운 범위 지정 정책 블레이드를 닫습니다.
-    
-20. **Azure Information Protection – 범위 지정 정책** 블레이드에서 **게시**를 클릭한 후 **예**를 클릭합니다.
-    
-이제 이러한 네 가지 사이트에서 문서를 만들고 평가판 구독의 다양한 사용자 계정으로 해당 문서에 대한 액세스를 테스트할 준비가 되었습니다. 
+19. **선택 > 확인**을 클릭합니다.
+
+20. **레이블 추가 또는 제거**를 클릭합니다. **정책: 레이블 추가 또는 제거** 창에서 **캠페인 전략**을 클릭하고 **확인**을 클릭합니다.   
+
+21. **저장**을 클릭한 다음 **확인**을 클릭합니다.
+  
+이제 이러한 네 가지 사이트에서 문서를 만들고 다양한 사용자 계정으로 해당 문서에 대한 액세스를 테스트할 준비가 되었습니다. 
   
 Azure Information Protection 및 이 새로운 레이블을 사용하여 문서를 보호하려면 테스트 컴퓨터에 [Azure Information Protection 클라이언트를 설치](https://docs.microsoft.com/information-protection/rms-client/install-client-app)하고, Office 365 포털에서 Office를 설치한 다음, Microsoft Word에서 평가판 구독의 **선임 및 전략적 직원** 그룹에 속한 계정으로 로그인합니다.
   
