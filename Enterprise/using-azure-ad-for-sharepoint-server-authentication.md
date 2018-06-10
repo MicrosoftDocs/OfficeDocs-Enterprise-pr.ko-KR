@@ -17,18 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: '요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다.'
-ms.openlocfilehash: 8a844cf1f45f6285e676439f934b9119a757804f
-ms.sourcegitcommit: c52bd6eaa8772063f9e2bd1acf10fa23422a2b92
+ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
+ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19702988"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD를 사용 하 여 SharePoint 서버 인증을 위해
 
- **요약:** Azure Active Directory와 SharePoint Server 2016 사용자를 인증 하는 방법에 알아봅니다.
-  
-> [!NOTE]
-> 이 문서는 Kirk Evans, Microsoft 보안 주체 프로그램 관리자의 작업을 기반으로 합니다. 
+ **요약:** Azure Active Directory와 SharePoint Server 2016 사용자를 인증 하는 방법에 알아봅니다. 
 
 <blockquote>
 <p>이 문서는 Azure Active Directory 그래프와 상호작용 하기 위한 코드 예제를 참조 합니다. 코드 샘플을 다운로드할 수 [여기](https://github.com/kaevans/spsaml11/tree/master/scripts)합니다.</p>
@@ -147,6 +145,9 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 
 ![인증 공급자 구성](images/SAML11/fig10-configauthprovider.png)
 
+> [!IMPORTANT]
+> 것과 같이 "/_trust/" 페이지에서 사용자 지정 기호를 설정 포함 하는 모든 단계를 수행 하는 것이 중요 합니다. 모든 단계 중 하나를 수행 하지 않으면 구성이 제대로 작동 하지 않습니다.
+
 ## <a name="step-5-set-the-permissions"></a>5 단계: 사용 권한 설정
 
 Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그램에 대 한 액세스를 부여 되어야 합니다. 
@@ -171,18 +172,54 @@ Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>6 단계: Azure AD에 SAML 1.1 토큰 발급 정책 추가
 
-포털에서 Azure AD 응용 프로그램이 만들어지면 SAML 2.0을 사용 하 여 기본값입니다. SharePoint Server 2016 SAML 1.1 토큰 형식이 필요합니다. 다음 스크립트는 기본 SAML 2.0 정책을 제거 하 고 문제 SAML 1.1 토큰에 새 정책 추가 됩니다. 이 코드는 해당 [Azure Active Directory 그래프와 상호작용을 보여주는 샘플](https://github.com/kaevans/spsaml11/tree/master/scripts)을 다운로드 해야 합니다. 
+포털에서 Azure AD 응용 프로그램이 만들어지면 SAML 2.0을 사용 하 여 기본값입니다. SharePoint Server 2016 SAML 1.1 토큰 형식이 필요합니다. 다음 스크립트는 기본 SAML 2.0 정책을 제거 하 고 문제 SAML 1.1 토큰에 새 정책 추가 됩니다. 
 
+> 이 코드는 해당 [Azure Active Directory 그래프와 상호작용을 보여주는 샘플](https://github.com/kaevans/spsaml11/tree/master/scripts)을 다운로드 해야 합니다. Windows 바탕 화면에 GitHub에서 ZIP 파일로 스크립트를 다운로드 하는 경우 차단을 해제 하려면 되어있는지 확인은 `MSGraphTokenLifetimePolicy.psm1` 스크립트 모듈 파일 및 `Initialize.ps1` 스크립트 파일 (속성을 마우스 오른쪽 단추로 클릭, 차단 해제를 선택, 확인을 클릭). ![다운로드 한 파일 차단 해제](images/SAML11/fig17-unblock.png)
+
+샘플 스크립트를 다운로드 하 고 나면 개체 틀의 다운로드 한 파일 경로로 대체 하는 다음 코드를 사용 하 여 새 PowerShell 스크립트를 만들 `Initialize.ps1` 로컬 컴퓨터에 있습니다. 표 1에 입력 한 응용 프로그램 개체 ID를 가진 응용 프로그램 개체 ID 개체 틀을 대체 합니다. 를 만든 후에 PowerShell 스크립트를 실행 합니다. 
 
 ```
-Import-Module <file path of Initialize.ps1> 
-$objectid = "<Application Object ID from Table 1>"
-$saml2policyid = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $objectid | ?{$_.displayName -EQ "TokenIssuancePolicy"} | select objectId
-Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $objectid
-$policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
-Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
+function AssignSaml11PolicyToAppPrincipal
+{
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$pathToInitializeScriptFile, 
+        [Parameter(Mandatory=$true)]
+        [string]$appObjectid
+    )
+
+    $folder = Split-Path $pathToInitializeScriptFile
+    Push-Location $folder
+
+    #Loads the dependent ADAL module used to acquire tokens
+    Import-Module $pathToInitializeScriptFile 
+
+    #Gets the existing token issuance policy
+    $existingTokenIssuancePolicy = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $appObjectid | ?{$_.type -EQ "TokenIssuancePolicy"} 
+    Write-Host "The following TokenIssuancePolicy policies are assigned to the service principal." -ForegroundColor Green
+    Write-Host $existingTokenIssuancePolicy -ForegroundColor White
+    $policyId = $existingTokenIssuancePolicy.objectId
+
+    #Removes existing token issuance policy
+    Write-Host "Only a single policy can be assigned to the service principal. Removing the existing policy with ID $policyId" -ForegroundColor Green
+    Remove-PolicyFromServicePrincipal -policyId $policyId -servicePrincipalId $appObjectid
+
+    #Creates a new token issuance policy and assigns to the service principal
+    Write-Host "Adding the new SAML 1.1 TokenIssuancePolicy" -ForegroundColor Green
+    $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
+    Write-Host "Assigning the new SAML 1.1 TokenIssuancePolicy $policy.objectId to the service principal $appObjectid" -ForegroundColor Green
+    Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $appObjectid
+    Pop-Location
+}
+
+#Only edit the following two variables
+$pathToInitializeScriptFile = "<file path of Initialize.ps1>"
+$appObjectid = "<Application Object ID from Table 1>"
+
+AssignSaml11PolicyToAppPrincipal $pathToInitializeScriptFile $appObjectid
 ```
-> 실행 하는 것이 중요는 `Import-Module` 이 예제와 같이 명령 합니다. 이 표시 된 명령은 포함 된 종속 모듈을 로드 합니다. 성공적으로 이러한 명령을 실행 하려면 관리자 권한으로 명령 프롬프트를 열고 해야할 수 있습니다.
+> [!IMPORTANT]
+> PowerShell 스크립트는 서명 되지 않은 하 고 실행 정책을 설정 하 라는 메시지가 표시 될 수 있습니다. 실행 정책에 대 한 자세한 내용은 [실행 정책에 대 한](http://go.microsoft.com/fwlink/?LinkID=135170)참조입니다. 또한 성공적으로 샘플 스크립트에 포함 된 명령을 실행 하려면 관리자 권한으로 명령 프롬프트를 열고 해야할 수 있습니다.
 
 이러한 예제 PowerShell 명령을 그래프 API에 대 한 쿼리를 실행 하는 방법의 예입니다. Azure AD와 토큰 발급 정책에 대 한 자세한 내용은 [정책에 대 한 작업에 대 한 그래프 API 참조](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)를 참조 하십시오.
 
@@ -215,7 +252,7 @@ Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -I
 1. Azure 포털에서 Azure AD 디렉터리를 엽니다. **응용 프로그램 등록**클릭 한 다음 **모든 응용 프로그램 보기**를 클릭 합니다. 이전에 만든 응용 프로그램을 클릭 합니다. (SharePoint SAML 통합).
 2. **설정**을 클릭 합니다.
 3. 설정 블레이드 **회신 Url**을 클릭 합니다. 
-4. 추가 웹 응용 프로그램에 대 한 URL을 추가 (예: `https://sales.contoso.local`) **저장**을 클릭 하 고 있습니다. 
+4. 인 추가 웹 응용 프로그램에 대 한 URL을 추가 `/_trust/default.aspx` URL에 추가 (같은 `https://sales.contoso.local/_trust/default.aspx`) **저장**을 클릭 하 고 있습니다. 
 5. SharePoint 서버에서 **SharePoint 2016 관리 셸** 을 열고 이전에 사용 되는 신뢰할 수 있는 id 토큰 발급자의 이름을 사용 하 여 다음 명령을 실행 합니다.
 
 ```
@@ -239,7 +276,7 @@ $t.Update()
 
 [Ws-federation 이해](https://go.microsoft.com/fwlink/p/?linkid=188052)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
 ## <a name="join-the-discussion"></a>토론 참여
 
