@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '요약: Microsoft Azure에서 개발/테스트 환경으로 간소화된 인트라넷을 만듭니다.'
-ms.openlocfilehash: 6d53bb61ea7d325b15590c8aabe0740df3b92750
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 86f2f6ec907639c9aa513c6868f6ce5ed021f3d4
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193758"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631409"
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -241,9 +241,6 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 APP1은 웹 및 파일 공유 서비스를 제공합니다.
 
--> [!NOTE]  
--> 다음 명령 집합은 Windows Server 2016 Datacenter를 실행하는 CLIENT1을 만듭니다. 이 작업은 모든 유형의 Azure 구독에서 수행할 수 있습니다. Visual Studio 기반 Azure 구독이 있는 경우 [Azure Portal](https://portal.azure.com)을 사용하여 Windows 10이 실행되는 CLIENT1을 만들 수 있습니다. 
-
 APP1에 대한 Azure Virtual Machine을 만들려면 리소스 그룹의 이름을 입력하고 로컬 컴퓨터의 Azure PowerShell 명령 프롬프트에서 다음 명령을 실행합니다.
   
 ```
@@ -297,6 +294,9 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ## <a name="phase-4-configure-client1"></a>4단계: CLIENT1 구성
 
 CLIENT1은 Contoso 인트라넷에서 일반적인 랩톱, 태블릿 또는 데스크톱 컴퓨터의 역할을 합니다.
+
+> [!NOTE]  
+> 다음 명령 집합은 Windows Server 2016 Datacenter를 실행하는 CLIENT1을 만듭니다. 이 작업은 모든 유형의 Azure 구독에서 수행할 수 있습니다. Visual Studio 기반 Azure 구독이 있는 경우 [Azure Portal](https://portal.azure.com)을 사용하여 Windows 10이 실행되는 CLIENT1을 만들 수 있습니다. 
   
 먼저 리소스 그룹의 이름을 입력하고 로컬 컴퓨터의 Azure PowerShell 명령 프롬프트에 다음 명령을 실행하여 CLIENT1에 대한 Azure Virtual Machine을 만듭니다.
   

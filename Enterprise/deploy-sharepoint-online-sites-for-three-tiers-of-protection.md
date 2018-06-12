@@ -3,7 +3,7 @@ title: 3단계 보호를 위한 SharePoint Online 사이트 배포
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '요약: 다양한 정보 보호 수준에 맞게 SharePoint Online 팀 사이트를 만들고 구성합니다.'
-ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631399"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3단계 보호를 위한 SharePoint Online 사이트 배포
 
@@ -141,7 +142,7 @@ SharePoint 그룹 및 권한 수준은 기본적으로 팀 사이트에 대해 �
     
 다음으로, 새 SharePoint Online 팀 사이트에서 다음 단계를 사용하여 권한을 구성합니다.
   
-1. IT 관리자 또는 사이트에 대한 액세스 요청에 응답하고 처리할 책임이 있는 다른 사용자(belindan@contoso.com - UPN의 한 가지 예)의 UPN(사용자 계정 이름)을 결정합니다. 해당 UPN을 아래에 작성합니다. _________________________________________.
+1. IT 관리자 또는 사이트에 대한 액세스 요청에 응답하고 처리할 책임이 있는 다른 사용자(belindan@contoso.com - UPN의 한 가지 예)의 UPN(사용자 계정 이름)을 결정합니다. 해당 UPN을 여기에 작성합니다. ![](./images/Common_Images/TableLine.png)
     
 2. 도구 모음에서 설정 아이콘을 클릭한 다음, **사이트 권한**을 클릭합니다.
     
@@ -267,7 +268,7 @@ SharePoint 그룹 및 권한 수준은 기본적으로 팀 사이트에 대해 �
 
 [SharePoint Online 사이트 및 파일 보호](secure-sharepoint-online-sites-and-files.md)
   
-[개발/테스트 환경의 SharePoint Online 사이트 보호](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[개발/테스트 환경의 보안 SharePoint Online 사이트](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
 [정치적 캠페인, 비영리 조직 및 기타 기밀 조직에 대한 Microsoft 보안 지침](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
