@@ -5,7 +5,6 @@
 ### [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)
 ### [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
-#### [Excel을 사용하여 Office 365 보고 데이터 검색](using-excel-to-retrieve-office-365-reporting-data.md)
 ### [Office 365 서비스에 대한 cmdlet 참조](cmdlet-references-for-office-365-services.md)
 ### [Office 365 PowerShell 커뮤니티 리소스](office-365-powershell-community-resources.md)
 ## [사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
