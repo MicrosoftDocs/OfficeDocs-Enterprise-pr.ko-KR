@@ -3,7 +3,7 @@ title: Office 365에서 Windows PowerShell을 사용하여 보고서 만들기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/22/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 요약:Office 365 PowerShell을 사용하여 Office 365 관리 센터에서는 생성할 수 없는 보고서를 만듭니다.
-ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 381a07d48db777a335e24baa32a65e992a78dfa2
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017424"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Office 365에서 Windows PowerShell을 사용하여 보고서 만들기
 
@@ -68,5 +69,3 @@ Office 365 관리 센터에는 사용 가능한 여러 다른 보고서가 있�
   
 [사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Excel을 사용하여 Office 365 보고 데이터 검색](using-excel-to-retrieve-office-365-reporting-data.md)
-
