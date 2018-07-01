@@ -1,5 +1,5 @@
 ---
-title: "SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트"
+title: SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: "요약: SharePoint Server 2013을 사용 하는 인터넷 사이트 Azure 인프라 서비스에서 호스트 되 여 활용 합니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하기 위한 리소스를 제공 합니다."
-ms.openlocfilehash: 52af2dfe250007156848d1892fbee6bca89ab708
-ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
+description: '요약: SharePoint Server 2013을 사용 하는 인터넷 사이트 Azure 인프라 서비스에서 호스트 되 여 활용 합니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하기 위한 리소스를 제공 합니다.'
+ms.openlocfilehash: a2444cdf98e861530131d55ae80fc661f730ba57
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161791"
 ---
-# <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트
+# <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트
 
  **요약:** SharePoint Server 2013을 사용 하는 인터넷 사이트 Azure 인프라 서비스에서 호스트 되 여 활용 합니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하기 위한 리소스를 제공 합니다.
   
@@ -40,20 +41,20 @@ Microsoft Azure SharePoint Server 2013에 따라 인터넷 사이트를 호스�
 
 기술에 대 한 다음 그림 및 문서를 디자인 하 고 SharePoint Server 2013을 사용 하 여 Azure의 인터넷 사이트를 구현 하는 방법에 대 한 정보를 제공 합니다.
   
-|**리소스**|**자세한 내용**|
+|**리소스**|**추가 정보**|
 |:-----|:-----|
-|**Azure의 SharePoint Server 2013 인터넷 사이트** <br/> [![SharePoint를 사용 하 여 Azure의 인터넷 사이트의 이미지](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [ ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392551)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |주요 디자인 활동을 간략하게 소개 하 고 Azure의 인터넷 사이트에 대 한 선택 하려는 아키텍처를 권장 하는이 아키텍처 모델입니다.  <br/> |
-|**이 디자인 예제: SharePoint Server 2013에 대 한 Azure의 인터넷 사이트** <br/> [![이 디자인 예제 이미지: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> ![PDF 파일](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio 파일](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |시작 지점으로이 디자인 예제를 사용 하 여 자신의 아키텍처에 대 한.  <br/> |
-|**[SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |이 문서에서는 호스트 SharePoint 솔루션을 Azure 아키텍처를 디자인 하는 방법에 설명 합니다.  <br/> |
+|**Azure의 SharePoint Server 2013 인터넷 사이트** <br/> [![SharePoint를 사용 하 여 Azure의 인터넷 사이트의 이미지](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [           ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |주요 디자인 활동을 간략하게 소개 하 고 Azure의 인터넷 사이트에 대 한 선택 하려는 아키텍처를 권장 하는이 아키텍처 모델입니다.  <br/> |
+|**이 디자인 예제: SharePoint Server 2013에 대 한 Azure의 인터넷 사이트** <br/> [![이 디자인 예제 이미지: SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |시작 지점으로이 디자인 예제를 사용 하 여 자신의 아키텍처에 대 한.  <br/> |
+|**[SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |이 문서에서는 호스트 SharePoint 솔루션을 Azure 아키텍처를 디자인 하는 방법에 설명 합니다.  <br/> |
 
    
-**토론에 참가**
+**토론 참여**
 
-|**문의처**|**설명**|
+|**연락처**|**설명**|
 |:-----|:-----|
-|**클라우드 채택 콘텐츠 합니까 필요 합니까?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 걸쳐 있는 클라우드 채택에 대 한 콘텐츠를 만듭니다. 보겠습니다 작업을 알 사용해 클라우드 채택 콘텐츠를 구상할 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)에 전자 메일을 발송 하 여 특정 콘텐츠를 요청 합니다.<br/> |
-|**클라우드 채택 토론에 참가** <br/> |클라우드 기반 솔루션에 열정을 갖고 인 경우에는 클라우드 채택 자문 보드 (CAAB) Microsoft 콘텐츠 개발자, 업계 전문가는 전세계 어디에서 고객의 더 큰, 생생한 커뮤니티와 연결할에 참가 하는 것이 좋습니다. 참가, Microsoft 기술 커뮤니티의 [CAAB (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 의 구성원으로 자신을 추가 하 고[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내주시기 합니다. 누구나 [CAAB 블로그 (영문)](https://blogs.technet.com/b/solutions_advisory_board/)에서 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원에 게 새 클라우드 채택 리소스 및 솔루션에 설명 하는 개인 웨 초대장을 가져옵니다.<br/> |
-|**여기에서 참조 하 여 아트 가져오기** <br/> |이 문서에서 참조 하는 이미지의 편집 가능한 복사본을 원하는 귀하에 게 보내야 기꺼이 표시 됩니다. URL 및 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)는 이미지의 제목을 포함 하 여 요청을 전자 메일로 보냅니다.<br/> |
+|**어떤 클라우드 채택 콘텐츠가 필요한가요?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 적용되는 클라우드 채택 콘텐츠를 만들고 있습니다. 클라우드 채택 콘텐츠에 대한 의견을 제공하거나 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)으로 이메일을 보내서 특정 콘텐츠를 요청하세요.  <br/> |
+|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 열정을 갖고 인 경우에는 클라우드 채택 자문 보드 (CAAB) Microsoft 콘텐츠 개발자, 업계 전문가는 전세계 어디에서 고객의 더 큰, 생생한 커뮤니티와 연결할에 참가 하는 것이 좋습니다. 참가, Microsoft 기술 커뮤니티의 [CAAB (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 의 구성원으로 자신을 추가 하 고[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내주시기 합니다. 누구나 [CAAB 블로그 (영문)](https://blogs.technet.com/b/solutions_advisory_board/)에서 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원에 게 새 클라우드 채택 리소스 및 솔루션에 설명 하는 개인 웨 초대장을 가져옵니다.<br/> |
+|**여기에 표시된 아트 받기** <br/> |이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)으로 요청 이메일을 보내주세요.  <br/> |
    
 ## <a name="see-also"></a>참고 항목
 

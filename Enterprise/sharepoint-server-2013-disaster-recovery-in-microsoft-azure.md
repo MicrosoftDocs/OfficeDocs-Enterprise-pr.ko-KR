@@ -1,5 +1,5 @@
 ---
-title: Microsoft Azure의 SharePoint Server 2013 재해 복구
+title: Microsoft Azure에서 SharePoint Server 2013 재해 복구
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.'
-ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 553b2e6bb9d35ab3dba471b01938914a95af23d6
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161801"
 ---
-# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure의 SharePoint Server 2013 재해 복구
+# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure에서 SharePoint Server 2013 재해 복구
 
  **요약:** Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.
 
@@ -29,9 +30,9 @@ ms.lasthandoff: 04/20/2018
   
 이 문서를 사용 하 여 다음과 같은 솔루션 모델: **Microsoft Azure의 SharePoint 재해 복구**합니다.
   
-[![Azure에 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![Azure에 대한 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-![PDF 파일](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Visio 파일](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+ [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 이 문서의 내용
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/20/2018
     
 - [솔루션 설명](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
     
-- [상세 아키텍처](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
+- [자세한 아키텍처](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
     
 - [재해 복구 로드맵](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
     
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/20/2018
     
 - [Microsoft 개념 증명 환경](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
     
-- [문제해결 팁](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
+- [문제 해결 팁](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
     
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>재해 복구를 위한 Azure 인프라 서비스를 사용 하 여
 <a name="AZ"> </a>
@@ -439,7 +440,7 @@ SQL Server Management Studio에서 **WSS_Content** 데이터베이스를 마우�
   
 ### <a name="crawl-the-content-source"></a>콘텐츠 원본 크롤링
 
-검색 서비스를 복원 하려면 각 콘텐츠 원본의 전체 크롤링을 시작 해야 합니다. 참고 온-프레미스 팜에서 검색 추천와 같은 일부 분석 정보를 잃을 있습니다. 전체 크롤링 시작, **Restore-spenterprisesearchserviceapplication** Windows PowerShell cmdlet을 사용 하 고 로그를 전달 하 고 복제 된 검색 관리 데이터베이스를 지정 하기 전에 **Search_Service__DB_<GUID>**합니다. 이 cmdlet는 검색 구성, 스키마, 관리 속성, 규칙 및 원본에 게 제공 하 고 다른 구성 요소의 기본 집합을 만듭니다.
+검색 서비스를 복원 하려면 각 콘텐츠 원본의 전체 크롤링을 시작 해야 합니다. 참고 온-프레미스 팜에서 검색 추천와 같은 일부 분석 정보를 잃을 있습니다. 전체 크롤링 시작, **Restore-spenterprisesearchserviceapplication** Windows PowerShell cmdlet을 사용 하 고 로그를 전달 하 고 복제 된 검색 관리 데이터베이스를 지정 하기 전에 **Search_Service__DB_<GUID>** 합니다. 이 cmdlet는 검색 구성, 스키마, 관리 속성, 규칙 및 원본에 게 제공 하 고 다른 구성 요소의 기본 집합을 만듭니다.
   
 전체 크롤링을 시작 하려면 다음 단계를 완료 합니다.
   
@@ -459,7 +460,7 @@ SQL Server Management Studio에서 **WSS_Content** 데이터베이스를 마우�
 
 |**로그 전달 데이터베이스에서 이러한 서비스를 복원 합니다.**|**이러한 서비스 데이터베이스를 되었지만 해당 데이터베이스를 복원 하지 않고 이러한 서비스를 시작 하는 것이 좋습니다.**|**이러한 서비스, 데이터베이스에서 데이터를 저장 하지 않습니다. 장애 조치 후 이러한 서비스를 시작 합니다.**|
 |:-----|:-----|:-----|
-| 기계 번역 서비스 <br/>  Managed Metadata Service <br/>  Secure Store Service <br/>  사용자 프로필입니다. (프로필 및 공유 태그 데이터베이스 에서만 지원 됩니다. 동기화 데이터베이스 지원 되지 않습니다.) <br/>  Microsoft SharePoint Foundation 가입 설정 서비스 <br/> | Usage and Health Data Collection <br/>  State Service <br/>  Word 자동화 <br/> | Excel Services <br/>  PerformancePoint Services <br/>  PowerPoint Conversion <br/>  Visio Graphics Service <br/>  Work Management <br/> |
+| 기계 번역 서비스 <br/>  Managed Metadata Service <br/>  Secure Store Service <br/>  사용자 프로필입니다. (프로필 및 공유 태그 데이터베이스 에서만 지원 됩니다. 동기화 데이터베이스 지원 되지 않습니다.) <br/>  Microsoft SharePoint Foundation 가입 설정 서비스 <br/> | Usage and Health Data Collection <br/>  State Service <br/>  Word 자동화 <br/> | Excel Services <br/>  PerformancePoint Services <br/>  PowerPoint Conversion <br/>  Visio Graphics Service <br/>  작업 관리 <br/> |
    
 다음 예제에서는 데이터베이스에서 관리 되는 메타 데이터 서비스를 복원 하는 방법을 보여줍니다.
   
@@ -509,7 +510,7 @@ SharePoint 팜에 대 한 외부 액세스를 위한 클라이언트가 인트�
 |:-----|:-----|:-----|
 |DC1  <br/> |Active Directory와 도메인 컨트롤러입니다.  <br/> |2 개의 프로세서  <br/> Ram 4GB를 통해 512MB에서  <br/> 1 x 127 GB 하드 디스크  <br/> |
 |RRAS  <br/> |라우팅 및 원격 액세스 서비스 (RRAS) 역할을 사용 하 여 구성 하는 서버입니다.  <br/> |2 개의 프로세서  <br/> 2-8 개의 2GB의 RAM  <br/> 1 x 127 GB 하드 디스크  <br/> |
-|F S 1  <br/> |파일 서버 백업에 대 한 공유 및 DFSR의 시작점과 끝점입니다.  <br/> |4 개의 프로세서  <br/> 2-12GB ram  <br/> 1 x 127 GB 하드 디스크  <br/> 1 x 1 TB 하드 디스크 (SAN)  <br/> 1 x 750 GB 하드 디스크  <br/> |
+|FS1  <br/> |파일 서버 백업에 대 한 공유 및 DFSR의 시작점과 끝점입니다.  <br/> |4 개의 프로세서  <br/> 2-12GB ram  <br/> 1 x 127 GB 하드 디스크  <br/> 1 x 1 TB 하드 디스크 (SAN)  <br/> 1 x 750 GB 하드 디스크  <br/> |
 |SP-WFE1, SP-WFE2  <br/> |프런트엔드 웹 서버입니다.  <br/> |4 개의 프로세서  <br/> 16GB RAM  <br/> |
 |S P-A P P 1을 S P-APP2 S P-APP3  <br/> |응용 프로그램 서버입니다.  <br/> |4 개의 프로세서  <br/> 2-16 2GB의 RAM  <br/> |
 |SP-SQL-HA1, SP-SQL-HA2  <br/> |높은 가용성을 제공 하도록 SQL Server 2012 AlwaysOn 가용성 그룹을 사용 하 여 구성 데이터베이스 서버입니다. 이 구성은 기본 및 보조 복제본으로 SP-sql-ha1 및 HA2-s P-SQL을 사용합니다.  <br/> |4 개의 프로세서  <br/> 2-16 2GB의 RAM  <br/> |
@@ -679,7 +680,7 @@ Ipconfig /flushdns
 ## <a name="additional-resources"></a>추가 리소스
 <a name="Troubleshooting"> </a>
 
-[(SharePoint 2013) SharePoint 데이터베이스에 대 한 지원 되는 고가용성 및 재해 복구 옵션](https://go.microsoft.com/fwlink/p/?LinkId=393121)
+[SharePoint 데이터베이스에 대해 지원되는 고가용성 및 재해 복구 옵션(SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)
   
 [SharePoint 2013에 대해 SQL Server 2012 AlwaysOn 가용성 그룹 구성](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
@@ -687,7 +688,7 @@ Ipconfig /flushdns
 
 <a name="Troubleshooting"> </a>
 
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 
 

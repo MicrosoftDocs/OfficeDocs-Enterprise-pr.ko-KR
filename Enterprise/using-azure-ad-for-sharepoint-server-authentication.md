@@ -1,5 +1,5 @@
 ---
-title: Azure AD를 사용 하 여 SharePoint 서버 인증을 위해
+title: SharePoint Server 인증에 Azure AD를 사용
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -18,13 +18,13 @@ ms.custom: Ent_Solutions
 ms.assetid: ''
 description: '요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다.'
 ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19702988"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "19856273"
 ---
-# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD를 사용 하 여 SharePoint 서버 인증을 위해
+# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>SharePoint Server 인증에 Azure AD를 사용
 
  **요약:** Azure Active Directory와 SharePoint Server 2016 사용자를 인증 하는 방법에 알아봅니다. 
 
@@ -94,7 +94,7 @@ SAML을 사용 하 여 응용 프로그램 SSL을 사용 하도록 구성 해야
     - 사용자 Id:`user.userprincipalname`</br>
     - 참고: *portal.contoso.local* 보안을 유지 하려면 SharePoint 사이트의 URL로 대체 하 여 Url을 변경 해야 합니다.</br>
 3. 다음 행을 포함 하는 표 (아래 표 1에서와 유사함)를 설정 합니다.</br> 
-    - 영역
+    - Realm
     - 인증서 파일에 서명 하는 SAML에 대 한 전체 경로
     - ( */Wsfed* */saml2* 바꿉니다) 서비스 URL SAML Single Sign-on
     - 응용 프로그램 개체 id입니다. </br>
@@ -109,7 +109,7 @@ SAML을 사용 하 여 응용 프로그램 SSL을 사용 하도록 구성 해야
 
 | 표 1: 값 캡처  |  |
 |---------|---------|
-|영역 | `urn:sharepoint:portal.contoso.local` |
+|Realm | `urn:sharepoint:portal.contoso.local` |
 |인증서 파일에 서명 하는 SAML에 대 한 전체 경로 | `C:/temp/SharePoint SAML Integration.cer`  |
 |SAML single sign-on 서비스 URL (/wsfed /saml2 바꿉니다) | `https://login.microsoftonline.com/b1726649-b616-460d-8d20-defab80d476c/wsfed` |
 |응용 프로그램 개체 ID | `a812f48b-d1e4-4c8e-93be-e4808c8ca3ac` |
@@ -161,9 +161,9 @@ Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그
 
 1. 중앙 관리에서 **응용 프로그램 관리**를 클릭합니다.
 2. **응용 프로그램 관리** 페이지의 **웹 응용 프로그램** 섹션에서 **웹 응용 프로그램 관리를**클릭 합니다.
-3. 적절 한 웹 응용 프로그램을 클릭 한 다음 **사용자 정책**을 클릭 합니다.
+3. 해당 웹 응용 프로그램을 클릭한 다음 **사용자 정책**을 클릭합니다.
 4. 웹 응용 프로그램에 대 한 정책에서 **사용자 추가**클릭 합니다.</br>![자신의 이름 클레임 하 여 사용자에 대 한 검색](images/SAML11/fig11-searchbynameclaim.png)</br>
-5. **사용자 추가** 대화 상자에서 **영역**적절 한 영역을 클릭 하 고 **** 을 클릭 합니다.
+5. **사용자 추가** 대화 상자의 **영역**에서 해당 영역을 클릭하고 **다음**을 클릭합니다.
 6. **사용자 선택** 섹션에서 **웹 응용 프로그램에 대 한 정책** 대화 상자에서 **찾아보기** 아이콘을 클릭 합니다.
 7. **찾을** 텍스트 상자에 디렉터리에 사용자에 대 한 로그인 이름을 입력 하 고 **검색**을 클릭 합니다. </br>예: *demouser@blueskyabove.onmicrosoft.com*합니다.
 8. 목록 보기에서 AzureAD 머리글 아래에서 name 속성을 선택 하 고 **추가** 클릭 한 다음 대화 상자를 닫으려면 **확인** 클릭 합니다.
