@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: '요약: 가상의 전형적인 글로벌 조직이 Microsoft 클라우드 서비스로 클라우드 포함 IT 인프라를 채택하는 방법'
-ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161781"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 클라우드의 Contoso
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/19/2018
   
 [![Microsoft 클라우드 포스터의 Contoso 축소판 이미지입니다.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![PDF 파일](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Visio 파일](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![다른 언어 버전으로 페이지 보기](images/Common_Images/GlobeIcon.png)[기타 언어](https://www.microsoft.com/download/details.aspx?id=54427)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [더 많은 언어](https://www.microsoft.com/download/details.aspx?id=54427)
   
 다음 섹션을 참조하세요.
   
