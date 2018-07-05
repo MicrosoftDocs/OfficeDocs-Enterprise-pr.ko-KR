@@ -16,6 +16,7 @@ ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "18908362"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a><span data-ttu-id="dad82-103">비즈니스용 OneDrive Multi-Geo 계획</span><span class="sxs-lookup"><span data-stu-id="dad82-103">Plan for OneDrive for Business</span></span>
 

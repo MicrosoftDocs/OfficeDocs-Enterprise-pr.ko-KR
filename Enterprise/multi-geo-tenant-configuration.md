@@ -16,6 +16,7 @@ ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "18908232"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a><span data-ttu-id="995ca-103">비즈니스용 OneDrive Multi-Geo 테넌트 구성</span><span class="sxs-lookup"><span data-stu-id="995ca-103">OneDrive for Business Multi-Geo tenant configuration</span></span>
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "18908332"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a><span data-ttu-id="bb582-103">비즈니스용 OneDrive Multi-Geo 검색 구성</span><span class="sxs-lookup"><span data-stu-id="bb582-103">Configure Search for OneDrive for Business Multi-Geo</span></span>
 
