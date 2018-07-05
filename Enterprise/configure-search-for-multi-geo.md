@@ -16,6 +16,7 @@ ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "18908332"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>비즈니스용 OneDrive Multi-Geo 검색 구성
 
