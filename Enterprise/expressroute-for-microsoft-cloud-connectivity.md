@@ -1,9 +1,9 @@
 ---
-title: "Microsoft 클라우드 연결에 대 한 ExpressRoute"
+title: Microsoft 클라우드 연결을 위한 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188116"
 ---
-# <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결에 대 한 ExpressRoute
+# <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결을 위한 ExpressRoute
 
  **요약:** ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다.
   
@@ -28,7 +29,7 @@ ExpressRoute는 Microsoft 클라우드에 대해 개인, 전용, 고처리량의
 
 ExpressRoute에 연결 하지 않고 Microsoft 클라우드 네트워킹 경로 다음과 같습니다.
   
-**그림 1: ExpressRoute 없이 네트워킹 경로**
+**그림 1: ExpressRoute가 없는 네트워킹 경로**
 
 ![그림 1: ExpressRoute가 없는 네트워킹 경로](images/Network_Poster/ExpressRoute.png)
   
@@ -42,13 +43,13 @@ ISP와 Microsoft 클라우드 가장자리 사이의 경로 최상의 배달 시
   
 다음은 ExpressRoute 연결을 사용 하 여 Microsoft 클라우드 네트워킹 경로입니다.
   
-**그림 2: ExpressRoute와 네트워킹 경로**
+**그림 2: ExpressRoute 사용한 네트워킹 경로**
 
 ![그림 2: ExpressRoute 사용한 네트워킹 경로](images/Network_Poster/ExpressRoute_post.png)
   
 그림 2는 두 네트워킹 경로 보여줍니다. Microsoft Intune로의 트래픽은 기본 인터넷 트래픽와 같은 경로입니다. ExpressRoute 연결, 온-프레미스 네트워크의 가장자리와 Microsoft 클라우드 가장자리 사이의 전용된 경로 통해 Office 365, Microsoft Azure 및 Dynamics 365 여행에 대 한 트래픽입니다.
   
-ExpressRoute 연결을 사용할 경우 서비스 공급자와 관계를 통해 제어 이제, microsoft 프로그램 가장자리에서 전체 트래픽 경로 통해 클라우드 지 합니다. 이 연결에는 예측 가능한 성능과 99.9% 가동 시간 SLA 제공할 수 있습니다.
+ExpressRoute 연결을 사용할 경우 서비스 공급자와 관계를 통해 제어 이제, microsoft 프로그램 가장자리에서 전체 트래픽 경로 통해 클라우드 지 합니다. 이 연결에는 예측 가능한 성능과 [99.95% 가동 시간 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)제공할 수 있습니다.
   
 이제 예측 가능한 처리량과 대기 시간을 Office 365, Azure, 및 Dynamics 365 서비스에 대 한 서비스 공급자의 연결을 기반으로 계산할 수 있습니다. 이 이번에는 Microsoft Intune에 대 한 ExpressRoute 연결 지원 되지 않습니다.
   
@@ -60,7 +61,7 @@ ExpressRoute 연결의 경우와 인증서 해지 목록 확인 하 고, 일부 
   
 자세한 내용은 다음의 추가 리소스를 참조 하십시오.
   
-- [Office 365에 대 한 ExpressRoute](https://aka.ms/expressrouteoffice365)
+- [Office 365용 Express 경로](https://aka.ms/expressrouteoffice365)
     
 - [Azure에 대 한 ExpressRoute](https://azure.microsoft.com/services/expressroute/)
     
@@ -95,7 +96,7 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
 
 단일 ExpressRoute 연결에 최대 3 개의 서로 다른 테두리 게이트웨이 프로토콜 (BGP) 피어 링 관계 Microsoft 클라우드의 다른 부분을 지원합니다. BPG 피어 관계를 사용 하 여 트러스트를 설정 하 고 라우팅 정보를 교환 합니다.
   
-**그림 3: 세 다른 BGP 관계에 대 한 단일 ExpressRoute 연결**
+**그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계**
 
 ![그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계](images/Network_Poster/ERPeering.png)
   
@@ -125,7 +126,7 @@ Microsoft 피어 링 BGP 관계:
 
 방법의 트래픽은 ExpressRoute 연결 전체에 걸쳐 및 Microsoft 클라우드 내에서 원본 및 대상 및 응용 프로그램 동작 간의 경로의 홉에서 경로의 함수입니다. 사이트 마다 VPN 연결을 통해는 온-프레미스 SharePoint 팜의 액세스 하는 Azure 가상 컴퓨터에서 실행 중인 응용 프로그램의 예는 다음과 같습니다.
   
-**그림 4: 응용 프로그램은 온-프레미스 SharePoint 팜에 액세스 하는 Azure 가상 컴퓨터에서**
+**그림 4: 온-프레미스 SharePoint 팜에 액세스하는 Azure 가상 컴퓨터의 응용 프로그램**
 
 ![그림 4: 온-프레미스 SharePoint 팜에 액세스하는 Azure 가상 컴퓨터의 응용 프로그램](images/Network_Poster/ER_App_Flow1.png)
 
@@ -136,7 +137,7 @@ Microsoft 피어 링 BGP 관계:
   
 이 조직 Office 365의 SharePoint Online으로 온-프레미스 SharePoint 팜의 마이그레이션되며 ExpressRoute 연결을 배포 합니다.
   
-**그림 5: SharePoint Online을 온-프레미스 SharePoint 팜의 이동**
+**그림 5: 온-프레미스 SharePoint 팜을 SharePoint Online으로 이동**
 
 ![그림 5: 온-프레미스 SharePoint 팜을 SharePoint Online으로 이동](images/Network_Poster/Hairpin1.png)
   
@@ -154,7 +155,7 @@ Microsoft 및 개인 피어 관계:
   
 프록시 서버에서 SharePoint Online의 IP 주소를 찾으면 ExpressRoute 연결을 통해 다시 트래픽을 전달 합니다. 응답 트래픽은 역방향 경로 이동 합니다.
   
-**SharePoint 팜 Office 365의 SharePoint Online으로 마이그레이션 되었고 그림 6: 트래픽 흐름**
+**그림 6: SharePoint 팜이 Office 365의 SharePoint Online으로 마이그레이션되었을 때의 트래픽 흐름**
 
 ![그림 6: SharePoint 팜이 Office 365의 SharePoint Online으로 마이그레이션되었을 때의 트래픽 흐름](images/Network_Poster/Hairpin2.png)
 
@@ -183,7 +184,7 @@ Microsoft 클라우드 피어 링 위치에 대 한 ExpressRoute 연결을 만�
   
 이 모든-를-모든 연결 모델에 대 한 로컬 Microsoft 데이터 센터에 최적이 아닌 배달 될 수 있습니다.
   
-**단일 ExpressRoute 연결을 사용 하는 지리적으로 분산 된 조직에서는의 그림 7: 예**
+**그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예**
 
 ![그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예](images/Network_Poster/MSNet1.png)
   
@@ -191,7 +192,7 @@ Microsoft 클라우드 피어 링 위치에 대 한 ExpressRoute 연결을 만�
   
 최적의 배달에 대 한 지역 Microsoft 클라우드 피어 링 위치를 여러 ExpressRoute 연결을 사용 합니다. 
   
-**그림 8: 여러 ExpressRoute 연결 사용 지역 데이터 센터에 최적의 배달에 대 한**
+**그림 8: 지역 데이터 센터로의 최적 전달을 위한 여러 개의 ExpressRoute 연결 사용**
 
 ![그림 8: 지역 데이터 센터로의 최적 전달을 위한 여러 개의 ExpressRoute 연결 사용](images/Network_Poster/MSNet2.png)
   
@@ -233,11 +234,11 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
     
 - 다른 대륙에 office 365 데이터 센터 intercontinental Microsoft 클라우드 네트워크를 통해 전달 됩니다.
     
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 항목을 참조하십시오.
   
 - [Office 365 교육에 대 한 azure ExpressRoute](https://channel9.msdn.com/series/aer/)
     
-- [네트워크 계획 및 Office 365에 대 한 성능 조정](https://aka.ms/tune)
+- [Office 365의 네트워크 계획 및 성능 조정](https://aka.ms/tune)
     
 - [Office 365 성능 관리](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
@@ -255,7 +256,7 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
     
 자세한 내용은 다음의 추가 리소스를 참조 하십시오.
   
-- [Office 365에 대 한 ExpressRoute](https://aka.ms/expressrouteoffice365)
+- [Office 365용 Express 경로](https://aka.ms/expressrouteoffice365)
     
 - [Office 365 교육에 대 한 azure ExpressRoute](https://channel9.msdn.com/series/aer/)
     

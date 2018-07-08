@@ -1,5 +1,5 @@
 ---
-title: "데이터 분류 및 Office 365 개발/테스트 환경에서 레이블 지정"
+title: Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,21 +13,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
-description: "요약: 구성 및 시연 데이터 분류 하 고 Azure 정보 보호 (AIP) 클라이언트를 사용 하 여 Office 365 개발/테스트 환경에서 레이블을 지정 합니다."
-ms.openlocfilehash: 7243acecca0dd4c39ff6ef2aecd25091f25f2f53
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: 구성 및 시연 데이터 분류 하 고 Azure 정보 보호 (AIP) 클라이언트를 사용 하 여 Office 365 개발/테스트 환경에서 레이블을 지정 합니다.'
+ms.openlocfilehash: f9674f5e2bac804f5bd23b5f67e733580c50450f
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188096"
 ---
-# <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>데이터 분류 및 Office 365 개발/테스트 환경에서 레이블 지정
+# <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정
 
  **요약:** 구성 및 시연 데이터 분류 하 고 Azure 정보 보호 (AIP) 클라이언트를 사용 하 여 Office 365 개발/테스트 환경에서 레이블을 지정 합니다.
   
 Azure 정보 보호 클라이언트를 사용 하면 Office 365의 SharePoint Online 폴더에 업로드 하기 전에 문서를 분류할 수 있습니다. 이 문서의 지침을 함께 Azure 정보 보호 클라이언트를 설치 및 데이터 분류를 시연 합니다. 자세한 내용은 [Azure 정보 보호](https://www.microsoft.com/cloud-platform/azure-information-protection)를 참조 하십시오.
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경을 구축합니다
 
@@ -41,7 +42,7 @@ Azure 정보 보호 클라이언트를 사용 하면 Office 365의 SharePoint On
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Azure 정보 보호 평가판 구독에 등록
 
-1. Internet Explorer 또는 브라우저에서 [http://portal.office.com](http://portal.office.com) 로 이동 하 고 Office 365 전역 관리자 계정을 사용 하 여 로그인 합니다.
+1. Internet Explorer 또는 브라우저에서로 이동 [http://portal.office.com](http://portal.office.com) 와 Office 365 전역 관리자 계정을 사용 하 여 로그인 합니다.
     
 2. **Microsoft Office 홈** 탭에서 **관리** 타일을 클릭 합니다.
     
@@ -49,9 +50,9 @@ Azure 정보 보호 클라이언트를 사용 하면 Office 365의 SharePoint On
     
 4. **서비스 구매** 페이지 **Azure 정보 보호 프리미엄 P2** 항목을 찾습니다. 마우스 포인터로 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
-5. **주문 확인** 페이지에서 **지금 시도**클릭 합니다.
+5. **주문 확인** 페이지에서 **지금 평가판 사용**을 클릭합니다.
     
-6. **순서 확인** 페이지에서 **계속**을 클릭 합니다.
+6. **주문 접수** 페이지에서 **계속**을 클릭합니다.
     
 다음으로 모든 사용자 계정에 대 한 정보 보호 Azure 라이선스 사용 하도록 설정 합니다.
   
@@ -79,9 +80,9 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
     
 2. 클릭 **리소스 그룹 >** [자원 그룹 이름] **> CLIENT1 > 연결**합니다.
     
-3. CLIENT1에서 Internet Explorer를 실행, [http://portal.office.com](http://portal.office.com)Office 포털을 이동 하 고 User5 계정 이름과 암호를 사용 하 여 로그인 합니다.
+3. CLIENT1에서 Internet Explorer를 실행, Office 포털에서 이동 [http://portal.office.com](http://portal.office.com), 다음 User5 계정 이름과 암호를 사용 하 여 로그인 하 고 있습니다.
     
-4. **Microsoft Office 홈** 탭에서 **Office 2016 설치**를 클릭 합니다.
+4. **Microsoft Office 홈** 탭에서 **Office 2016 설치**를 클릭합니다.
     
 5. 메시지가 표시 되 고 클릭 하 여 **Yes** 사용자 계정 컨트롤 대화 상자가 나타나면 다운로드를 실행 합니다. Office를 설치 될 때까지 기다립니다. 완료 되 면 두번 **닫기를** 클릭 합니다.
     
@@ -137,7 +138,7 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
     
 5. SharePoint 그룹의 목록에서 **지원 사이트 모음 구성원을**클릭 합니다.
     
-6. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭 합니다.
+6. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
 7. **'지원 사이트 모음' 공유** **모든 사용자**를 입력 하 고 **외부 사용자를 제외한 모든 사용자**를 클릭 한 다음이 클릭 한 다음 **공유.**
     
@@ -147,9 +148,9 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
   
 1. 오른쪽 위에 있는 **Microsoft Office 홈** 탭에서 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [Http://portal.office.com](http://portal.office.com)로 이동 합니다.
+2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
     
-3. 에 * * Office 365 로그인 * * 페이지 User5 계정 이름을 클릭 하 고 로그인 합니다.
+3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 로그인 합니다.
     
 4. **Microsoft Office 홈** 탭에서 클릭 **SharePoint > 사이트 모음을 지원**합니다.
     
@@ -163,6 +164,6 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
 
 [Office 365 및 EMS 개발/테스트 환경](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Azure 정보 보호](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 
