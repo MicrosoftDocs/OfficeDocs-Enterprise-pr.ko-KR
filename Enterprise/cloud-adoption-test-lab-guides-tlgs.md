@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365, EMS(Enterprise Mobility + Security), Dynamics 365, Office Server 제품의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.'
-ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193678"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188166"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>클라우드 채택 TLG(테스트 랩 가이드)
 
@@ -100,7 +100,7 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
     
     사용자 그룹과 iOS 및 Android 장치용 MAM(모바일 응용 프로그램 관리) 정책을 만듭니다.
     
-- [Microsoft Enterprise 365 개발/테스트 환경에서 iOS 및 Android 장치 등록](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Microsoft 365 Enterprise 개발/테스트 환경에서 iOS 및 Android 장치 등록](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
     iOS 또는 Android 장치를 등록하고 원격으로 관리합니다.
     
