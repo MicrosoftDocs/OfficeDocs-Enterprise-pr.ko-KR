@@ -3,7 +3,7 @@ title: 고가용성 페더레이션 인증 단계 2 구성 도메인 컨트롤�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 07/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: '요약: Microsoft Azure에서 도메인 컨트롤러와 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 디렉터리 동기화 서버를 구성 합니다.'
-ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+description: '요약: Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 도메인 컨트롤러 및 DirSync 서버를 구성합니다.'
+ms.openlocfilehash: 3f898fea8fc92d4f7ea392bfe854425beafb1eb4
+ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "20215870"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>고가용성 페더레이션 인증 2단계: 도메인 컨트롤러 구성
 
- **요약:** Microsoft Azure의 도메인 컨트롤러와 Office 365에 대 한 고가용성 연결 된 인증 사용자에 대 한 디렉터리 동기화 서버를 구성 합니다.
+ **요약:** Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 도메인 컨트롤러 및 DirSync 서버를 구성합니다.
   
 이 단계에서는 Azure 인프라 서비스의 Office 365 페더레이션 인증의 고가용성을 배포하며 Azure Virtual Network에 두 도메인 컨트롤러와 DirSync 서버를 구성합니다. 인증용 클라이언트 웹 요청은 온-프레미스 네트워크에 대한 사이트 간 VPN 연결을 통한 인증 트래픽을 전송이 아닌 Azure Virtual Network에서 인증될 수 있습니다.
   
@@ -31,21 +32,21 @@ ms.lasthandoff: 04/08/2018
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Azure에서 도메인 컨트롤러 가상 컴퓨터 만들기
 
-표 M의 **가상 컴퓨터 이름** 열 작성 하 고 **최소 크기** 열에서 필요에 따라 가상 컴퓨터 크기를 수정 해야 합니다.
+먼저, 테이블 M의 **가상 컴퓨터 이름** 열을 채우고 **최소 크기** 열에서 가상 컴퓨터 크기를 필요한만큼 수정합니다.
   
 |**항목**|**가상 컴퓨터 이름**|**갤러리 이미지**|**저장소 유형**|**최소 크기**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)(첫번째 도메인 컨트롤러 d c 1에 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)(두번째 도메인 컨트롤러, 예에서는 d c 2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)(디렉터리 동기화 서버를 d s 1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)(첫번째 AD FS 서버, ADFS1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./images/Common_Images/TableLine.png)(두번째 AD FS 서버, ADFS2 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./images/Common_Images/TableLine.png)(첫번째 웹 응용 프로그램 프록시 서버, WEB1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./images/Common_Images/TableLine.png)(두번째 웹 응용 프로그램 프록시 서버, 예제 w e b 2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)(첫 번째 도메인 컨트롤러, 예: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)(두 번째 도메인 컨트롤러, 예: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)(디렉터리 동기화 서버를 d s 1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./images/Common_Images/TableLine.png)(첫번째 AD FS 서버, ADFS1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./images/Common_Images/TableLine.png)(두번째 AD FS 서버, ADFS2 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./images/Common_Images/TableLine.png)(첫번째 웹 응용 프로그램 프록시 서버, WEB1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./images/Common_Images/TableLine.png)(두번째 웹 응용 프로그램 프록시 서버, 예제 w e b 2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **표 M-Azure의 Office 365에 대 한 고가용성 연결 된 인증에 대 한 가상 컴퓨터**
   
-가상 컴퓨터 크기의 전체 목록은, [가상 컴퓨터에 대 한 크기](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)를 참조 하십시오.
+가상 컴퓨터 크기의 전체 목록은 [가상 컴퓨터 크기](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)를 참조하세요.
   
 Azure PowerShell 명령 블록은 다음 두 도메인 컨트롤러에 대 한 가상 컴퓨터를 만듭니다. 제거 하는 변수에 대 한 값을 지정 된 \< 및 > 문자입니다. Note이 Azure PowerShell 명령 블록 다음 테이블에서 값을 사용 합니다.
   
@@ -64,7 +65,7 @@ Azure PowerShell 명령 블록은 다음 두 도메인 컨트롤러에 대 한 �
 테이블 R, V, S, I 및 A에서 정의한 회수 [고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)합니다.
   
 > [!NOTE]
-> Azure PowerShell의 최신 버전을 사용 하는 다음 명령 집합입니다. [Azure PowerShell cmdlet 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조 하십시오. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 올바른 값을 모두 제공하면 Azure PowerShell 프롬프트나 로컬 컴퓨터의 PowerShell ISE(통합 스크립트 환경)에서 결과 블록을 실행합니다.
   
@@ -155,7 +156,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-다음으로, 이름과 조직의 네트워크에 있는 리소스의 IP 주소를 ping을 **ping** 명령을 사용 하 여 조직의 네트워크에 대 한 위치에 대 한 첫번째 도메인 컨트롤러의 연결을 테스트 합니다.
+그런 다음 **ping** 명령으로 조직 네트워크의 리소스 이름과 IP 주소를 ping하여 조직 네트워크의 위치에 대한 첫 번째 도메인 컨트롤러의 연결을 테스트합니다.
   
 이 프로시저에서는 DNS 이름 확인이 제대로 작동하는지(가상 컴퓨터가 온-프레미스 DNS 서버와 올바르게 구성되었는지)와 프레미스 간 가상 네트워크에서 이 패킷을 보낼 수 있는지 확인합니다. 기본 테스트가 실패하면 DNS 이름 확인 및 패킷 배달 문제의 해결 방법을 IT 부서에 문의합니다.
   
@@ -165,7 +166,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
 도메인 관리자 계정의 자격 증명을 제공하라는 메시지가 나타납니다. 컴퓨터가 다시 시작됩니다.
@@ -186,7 +187,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 
 ```
 
@@ -242,13 +243,13 @@ Restart-Computer
 
 이 단계를 성공적으로 완료하면 자리 표시자 컴퓨터 이름과 함께 이 구성을 얻을 수 있습니다.
   
-**2 단계: 도메인 컨트롤러와 Azure에서 사용 하도록 고가용성 연결 된 인증 인프라에 대 한 디렉터리 동기화 서버**
+**2단계: Azure의 고가용성 페더레이션 인증 인프라용 도메인 컨트롤러 및 DirSync 서버를 구성합니다.**
 
 ![도메인 컨트롤러를 포함한 Azure에서 고가용성 Office 365 페더레이션 인증 인프라 2단계](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>다음 단계
 
-사용 하 여 [고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) 구성이 작업을 계속 해야 합니다.
+[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)을 사용하여 이 작업을 계속 구성합니다.
   
 ## <a name="see-also"></a>참고 항목
 

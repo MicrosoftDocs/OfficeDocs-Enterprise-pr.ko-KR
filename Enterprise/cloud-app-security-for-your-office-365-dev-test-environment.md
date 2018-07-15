@@ -1,9 +1,9 @@
 ---
-title: "Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안"
+title: Office 365 개발/테스트 환경용 Cloud App Security
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,15 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
-description: "요약: 구성 및 Office 365 개발/테스트 환경에서 Office 365 클라우드 응용 프로그램 보안을 시연 합니다."
-ms.openlocfilehash: ac5f5c25ecb4d97ac1c8fe3b48096ee02da2ec3e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: 구성 및 Office 365 개발/테스트 환경에서 Office 365 클라우드 응용 프로그램 보안을 시연 합니다.'
+ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
+ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "20215880"
 ---
-# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대 한 클라우드 응용 프로그램 보안
+# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
  **요약:** 구성 하 고 Office 365 개발/테스트 환경에서 Office 365 클라우드 응용 프로그램 보안을 시연 합니다.
   
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/14/2018
 이 문서의 지침을 사용 하도록 설정 하 고 Office 365 평가판 구독에서 클라우드 응용 프로그램 보안 테스트 합니다.
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>1단계: 경량 또는 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 구축합니다.
 
@@ -46,23 +47,23 @@ ms.lasthandoff: 02/14/2018
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Office 365의 기본 알림 동작 테스트
 
-1. Office 365 포털 ([https://portal.office.com](https://portal.office.com))에 이동 하 고 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
+1. Office 365 포털에 이동 ([https://portal.office.com](https://portal.office.com)) 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
     
   - 경량 Office 365 개발/테스트 환경을 사용하는 경우 로컬 컴퓨터에서 로그인합니다.
     
   - 시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경을 사용 하는 경우 [Azure 포털](https://portal.azure.com) 을 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음 CLIENT1에서 로그인 합니다.
     
-2. 주 포털 페이지에서 **관리**를 클릭 합니다.
+2. 기본 포털 페이지에서 **관리자**를 클릭합니다.
     
-3. 왼쪽 탐색 영역에서 클릭 **사용자 > 활성 사용자**합니다.
+3. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
-4. **사용자 4** 계정을 클릭 합니다.
+4. **User 4** 계정을 클릭합니다.
     
-5. **사용자 4** 페이지에서 **역할** 행에 대 한 **편집** 을 클릭 합니다.
+5. **User 4** 페이지에서 **규칙** 열에 대한 **편집**을 클릭합니다.
     
-6. **사용자 역할 편집** 페이지에서 **전역 관리자**를 클릭 하 고 **user4@contoso.com** **대체 전자 메일 주소**입력 한 다음 **저장**을 클릭 합니다. **닫기** 를 두 번 클릭 합니다.
+6. **사용자 역할 편집** 페이지에서 **전역 관리자**를 클릭하고 **대체 전자 메일 주소**에 **user4@contoso.com**을 입력한 다음 **저장**을 클릭합니다. **닫기**를 두 번 클릭합니다.
     
-7. 왼쪽 위에서에서 응용 프로그램 시작 관리자 아이콘을 선택 하 고 **메일**을 선택 합니다.
+7. 	왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **메일**을 선택합니다.
     
 8. 30 분 기다립니다. 전역 관리자 권한으로 사용자 4 역할에서 변경 된 알려주는 받은 편지함에 전자 메일 메시지 없이 것을 볼 수 있습니다.
     
@@ -76,9 +77,9 @@ ms.lasthandoff: 02/14/2018
     
 ### <a name="enable-and-configure-cloud-app-security"></a>설정 하 고 클라우드 응용 프로그램 보안 설정 구성
 
-1. Office 365 포털 ([https://portal.office.com](https://portal.office.com))에 이동 하 고 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
+1. Office 365 포털에 이동 ([https://portal.office.com](https://portal.office.com)) 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
     
-2. 클릭 하 고 **보안 &amp; 준수** 바둑판식으로 배열 합니다.
+2. **Admin** 타일을 클릭 합니다. **Office 관리 센터** 탭을 클릭 **관리 센터 > 보안 및 규정 준수**합니다.
     
 3. 왼쪽된 탐색 창의 클릭 **알림 > 고급 알림 관리**합니다.
     
@@ -90,15 +91,15 @@ ms.lasthandoff: 02/14/2018
     
 7. **정책 이름** **관리 작업**을 입력 합니다.
     
-8. **정책 심각도** **높은**클릭 합니다.
+8. **정책 심각도**에서 **높음**을 클릭합니다.
     
 9. **범주** **권한이 부여 된 계정**을 클릭 합니다.
     
 10. **정책에 대 한 만들기 필터**에 **일치 하는 다음의 모든 활동**을에서 **관리 작업**을 클릭 합니다.
     
-11. **경고** **경고로 전자 메일 보내기**를 클릭 합니다. (영문) **를**, 전역 관리자 계정의 전자 메일 주소를 입력 합니다.
+11. **경고**에서 **전자 메일로 경고 보내기**를 클릭합니다. **받는 사람**에서 전역 관리자 계정의 전자 메일 주소를 입력합니다.
     
-12. 페이지의 맨 아래에 **만들기**를 클릭 합니다.
+12. 페이지 하단에서 **만들기**를 클릭합니다.
     
 ## <a name="phase-4-show-cloud-app-security-in-action"></a>4 단계: 동작의 표시 클라우드 응용 프로그램 보안
 
@@ -108,37 +109,37 @@ ms.lasthandoff: 02/14/2018
 
 1. 위 오른쪽에서 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다.
     
-2. [Https://portal.office.com](https://portal.office.com)로 이동 합니다.
+2. 이동 [https://portal.office.com](https://portal.office.com)합니다.
     
-3. Office 365 로그인 페이지에서 **다른 계정 사용**을 클릭 합니다.
+3. Office 365 로그인 페이지에서 **다른 계정 사용**을 클릭합니다.
     
-4. 사용자 4 계정 이름 및 해당 암호를 입력 하 고 **로그인**을 클릭 합니다.
+4. User 4 계정 이름 및 암호를 입력한 다음 **로그인**을 클릭합니다.
     
-5. 필요한 경우 사용자 4 계정 암호를 변경 하 고 **암호를 업데이트 하 고 로그인**을 클릭 합니다.
+5. 필요한 경우 User 4 계정 암호를 변경한 다음 **암호 업데이트 및 로그인**을 클릭합니다.
     
-6. Office 365 포털 페이지에서 **관리**를 클릭 합니다.
+6. Office 365 포털 페이지에서 **관리자**를 클릭합니다.
     
-7. 필요한 경우에 프로그램 관리자의 연락처 정보를 업데이트 하려면 대화 상자가 나타나면 **취소** 를 클릭 합니다.
+7. 관리자 연락처 정보를 업데이트하라는 메시지가 표시되면 필요한 경우 **취소**를 클릭합니다.
     
-8. 주 포털 페이지에서 **관리**를 클릭 합니다.
+8. 기본 포털 페이지에서 **관리자**를 클릭합니다.
     
-9. 왼쪽 탐색 영역에서 클릭 **사용자 > 활성 사용자**합니다.
+9. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
-10. **5 사용자** 계정을 클릭 합니다.
+10. **User 5** 계정을 클릭합니다.
     
-11. **사용자 5** 페이지에서 **역할** 행에 대 한 **편집** 을 클릭 합니다.
+11. **User 5** 페이지에서 **규칙** 열에 대한 **편집**을 클릭합니다.
     
-12. **사용자 역할 편집** 페이지에서 **사용자 지정 된 관리자**를 클릭합니다, 그리고 **암호 관리자** 및 **사용자 관리 관리자**를 클릭합니다, 그리고 **user5@contoso.com** **대체 전자 메일 주소**입력 하 고을 클릭합니다 **저장**합니다. **닫기** 를 두 번 클릭 합니다.
+12. **사용자 역할 편집** 페이지에서 **사용자 지정된 관리자**를 클릭하고 **암호 관리자** 및 **사용자 관리 관리자**를 클릭한 다음 **대체 전자 메일 주소**에 **user5@contoso.com**을 입력하고 **저장**을 클릭합니다. **닫기**를 두 번 클릭합니다.
     
 13. 위 오른쪽에 있는 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다. 
     
-14. [Https://portal.office.com](https://portal.office.com)로 이동 합니다.
+14. 이동 [https://portal.office.com](https://portal.office.com)합니다.
     
-15. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭 합니다.
+15. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭합니다.
     
-16. 암호를 입력 한 다음 **로그인**을 클릭 합니다.
+16. 암호를 입력한 다음 **로그인**을 클릭합니다.
     
-17. 주 포털 페이지에서 **관리**를 클릭 합니다.
+17. 기본 포털 페이지에서 **관리자**를 클릭합니다.
     
 18. 클릭 하 고 **보안 &amp; 준수** 바둑판식으로 배열 합니다.
     
@@ -160,7 +161,7 @@ ms.lasthandoff: 02/14/2018
   
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 [Office 365의에서 클라우드 앱 보안 개요](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
