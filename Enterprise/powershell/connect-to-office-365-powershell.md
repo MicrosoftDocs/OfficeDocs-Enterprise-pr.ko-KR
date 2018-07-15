@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 사용 하 여 명령줄에서 관리 센터 작업을 수행 하 여 Office 365 조직에 연결 합니다.'
-ms.openlocfilehash: eac56ae28ab48bb53842725d703bf81fb37d31eb
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: b603e019564f85d490dd560bda9967c9bb164d4b
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319249"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -71,10 +72,11 @@ Windows PowerShell용 Microsoft Azure Active Directory 모듈의 명령에는 cm
 1. Windows PowerShell 명령 프롬프트를 실행합니다.
 2. **Windows PowerShell** 명령 창에 다음 명령을 입력합니다.
     
-```
-$UserCredential = Get-Credential
-Connect-MsolService -Credential $UserCredential
-```
+  ```
+  $UserCredential = Get-Credential
+  Connect-MsolService -Credential $UserCredential
+
+  ```
 
 3. **Windows PowerShell 자격 증명 요청** 대화 상자에서 Office 365Office 365회사 또는 학교 계정 사용자 이름과 암호를 입력한 다음 **확인**을 클릭합니다.
     
@@ -83,9 +85,9 @@ Connect-MsolService -Credential $UserCredential
 1. Windows PowerShell 명령 프롬프트를 실행합니다.
 2. **Windows PowerShell용 Microsoft Azure Active Directory 모듈  ** 명령 창에서 다음 명령을 실행합니다.
     
-```
-Connect-MsolService
-```
+  ```
+  Connect-MsolService
+  ```
 
 3. **Azure Active Directory PowerShell** 대화 상자에서 Office 365회사 또는 학교 계정 사용자 이름과 암호를 입력한 다음 **로그인**을 클릭합니다.
     
@@ -151,6 +153,7 @@ Cmdlet 이름에 **AzureAD** 를 포함 하는 [그래프 모듈에 대 한 Azur
 ```
 $UserCredential = Get-Credential
 Connect-AzureAD -Credential $UserCredential
+
 ```
 
 **Windows PowerShell 자격 증명 요청** 대화 상자에서 Office 365Office 365회사 또는 학교 계정 사용자 이름과 암호를 입력한 다음 **확인**을 클릭합니다.
