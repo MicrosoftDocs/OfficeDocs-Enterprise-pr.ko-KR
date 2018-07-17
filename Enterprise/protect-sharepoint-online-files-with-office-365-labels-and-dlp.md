@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '요약: 다양한 정보 보호 수준을 통해 SharePoint Online 팀 사이트에 Office 365 레이블 및 DLP(데이터 손실 방지) 정책을 적용합니다.'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319269"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 레이블 및 DLP를 사용하여 SharePoint Online 파일 보호
 
@@ -27,6 +28,13 @@ ms.lasthandoff: 04/27/2018
   
 이 문서의 단계를 사용하여 초기, 중요 및 극비 SharePoint Online 팀 사이트에 대한 Office 365 레이블 및 DLP 정책을 디자인하고 배포합니다. 이러한 3계층 보호에 대한 자세한 내용은 [SharePoint Online 사이트 및 파일 보호](secure-sharepoint-online-sites-and-files.md)를 참조하세요.
   
+## <a name="how-this-works"></a>작동 방식
+1. 원하는 레이블을 만들고 게시합니다. 레이블을 게시하는 데 최대 12시간이 걸릴 수 있습니다.
+2. 원하는 SharePoint 사이트에서 문서 라이브러리 설정을 편집하여 레이블을 라이브러리의 항목에 적용할 수 있습니다.
+3. 레이블을 기반으로 작업을 수행하는 Create DLP 정책을 만듭니다.
+
+사용자가 라이브러리에 문서를 추가하면 문서에 기본적으로 레이블이 할당됩니다. 필요한 경우 사용자는 레이블을 변경할 수 있습니다. 사용자가 조직 외부에서 문서를 공유하면 레이블이 할당되어있는지 DLP가 체크하고 레이블이 DLP 정책에 일치하면 작업을 수행합니다l. 이러한 유형의 정책이 구성되면 DLP는 신용카드 번호가 포함된 파일 보호와 같은 다른 정책이 일치하는지도 확인합니다. 
+
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>SharePoint Online 사이트에 대한 Office 365 레이블
 
 SharePoint Online 팀 사이트에 Office 365 레이블을 만들고 할당하는 경우 다음 세 가지 단계를 수행해야 합니다.
@@ -151,13 +159,14 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 13. **중요한 정보를 발견하면 ** 창에서 **팁 및 전자 메일 사용자 지정**을 클릭합니다.
     
-14. **Customize policy tips and email notifications(정책 팁 및 전자 메일 알림 사용자 지정)** 창에서 **Customize the policy tip text(정책 팁 텍스트 사용자 지정)** 를 클릭합니다.
+14. **정책 팁 및 전자 메일 알림 사용자 지정** 창에서 **정책 팁 텍스트 사용자 지정**을 클릭합니다.
     
-15. 텍스트 상자에 다음을 입력하거나 붙여넣습니다.
+15. Azure Information Protection에서 극비 파일을 보호하도록 구현했는지에 따라 텍스트 상자에 다음 팁 중 하나를 입력하거나 붙여 넣습니다.
     
   - 조직 외부의 사용자와 공유하려면 파일을 다운로드한 다음 파일을 엽니다. 파일, 문서 보호, 암호 설정을 차례로 클릭한 다음 강력한 암호를 지정합니다. 암호를 별도의 전자 메일 또는 다른 통신 수단으로 보냅니다.
+  - 극비 파일은 암호화를 통해 보호됩니다. IT 부서에서 사용 권한을 부여받은 외부 사용자만 극비 파일을 읽을 수 있습니다.
     
-    또는 조직 외부의 파일을 공유하는 방법을 사용자에게 지시하는 사용자 고유의 정책 팁을 입력하거나 붙여넣습니다.
+    또는 조직 외부의 파일을 공유하는 방법을 사용자에게 지시하는 사용자 고유의 정책 팁을 입력하거나 붙여넣습니다. Azure Information Protection으로 보호된 파일에 외부 사용자 권한을 부여하는 방법에 대한 자세한 정보는 외부 사용자에 대한 권한 추가를 참조하십시오.
     
 16. **확인**을 클릭합니다.
     
@@ -227,7 +236,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 
 [SharePoint Online 사이트 및 파일 보호](secure-sharepoint-online-sites-and-files.md)
   
-[개발/테스트 환경의 SharePoint Online 사이트 보호](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[개발/테스트 환경의 보안 SharePoint Online 사이트](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
 [정치적 캠페인, 비영리 조직 및 기타 기밀 조직에 대한 Microsoft 보안 지침](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

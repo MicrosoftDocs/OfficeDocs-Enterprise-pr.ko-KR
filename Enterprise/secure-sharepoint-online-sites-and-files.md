@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '요약: SharePoint Online 및 Office 365에서 파일을 보호하기 위한 구성 권장 사항입니다.'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319229"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online 사이트 및 파일 보호
 
@@ -46,9 +47,9 @@ ms.lasthandoff: 04/27/2018
 SharePoint Online 팀 사이트에 대한 권장 사항은 다양한 Office 365 기능을 활용합니다. 극비 사이트의 경우 Azure Information Protection을 사용하는 것이 좋습니다. 이는 EMS(Enterprise Mobility + Security)에 포함되어 있습니다. 
   
 다음 그림은 4가지 SharePoint Online 팀 사이트에 권장되는 구성을 보여줍니다.
-  
-![SharePoint 사이트에 대한 권장 구성](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![SharePoint 사이트에 대한 권장 구성](Media/SharePoint-site-configuration-v2.png)
+
 그림에서 보여 주듯이 다음과 같이 설명됩니다.
   
 - 초기 보호에는 SharePoint Online 팀 사이트(공용 사이트 및 개인 사이트)에 대한 두 가지 옵션이 있습니다. 공용 사이트는 조직의 모든 사용자가 검색하고 액세스할 수 있습니다. 개인 사이트는 사이트의 구성원만 검색하고 액세스할 수 있습니다. 이 두 사이트 모두의 구성에서는 그룹 외부와의 공유를 허용합니다. 
@@ -59,7 +60,7 @@ SharePoint Online 팀 사이트에 대한 권장 사항은 다양한 Office 365 
     
 - 사용자가 조직 외부로 이러한 종류의 파일을 보내려고 할 때 경고하거나 방지하기 위해 중요 및 극비 Office 365 레이블에 대한 DLP(데이터 손실 방지) 정책이 구성됩니다.
     
-- 극비 보호로 구성된 사이트의 경우 Azure Information Protection은 파일에 대한 권한을 암호화하고 부여합니다.
+- 시나리오에 필요한 경우 Azure Information Protection을 사용하여 극비 파일을 암호화하고 사용 권한을 부여할 수 있습니다. 이는 모든 고객에게 권장되지 않습니다.
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 및 비즈니스용 OneDrive에 대한 테넌트 수준 설정
 
@@ -155,7 +156,7 @@ SharePoint Online 및 비즈니스용 OneDrive에 대한 장치 액세스 설정
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Azure Information Protection을 사용하여 어디서나 파일과 동반하는 레이블과 보호를 적용합니다. 이 솔루션의 경우 Azure Information Protection 범위 지정 정책 및 극비 레이블의 하위 레이블을 사용하여 최고 수준의 보안으로 보호해야 하는 파일에 대한 권한을 암호화하고 부여하는 것이 좋습니다. 
+보안 시나리오가 필요하다면 Azure Information Protection을 사용하여 어디서나 파일과 동반하는 레이블과 보호를 적용할 수 있습니다. Azure Information Protection 레이블은 Office 365 레이블과 다릅니다. 이 솔루션의 경우 Azure Information Protection 범위 지정 정책 및 극비 레이블의 하위 레이블을 사용하여 최고 수준의 보안으로 보호해야 하는 파일에 대한 권한을 암호화하고 부여하는 것이 좋습니다. 
   
 Office 365에 저장된 파일에 Azure Information Protection 암호화가 적용되어 있으면 이 파일의 내용을 처리할 수 없습니다. 즉 공동 작성, eDiscovery, 검색, Delve 및 기타 공동 작업 기능이 작동하지 않습니다. DLP 정책은 메타데이터(Office 365 레이블 포함)에만 작동할 수 있지만 파일의 내용(예: 파일 내의 신용 카드 번호)에는 작동할 수 없습니다.
   
