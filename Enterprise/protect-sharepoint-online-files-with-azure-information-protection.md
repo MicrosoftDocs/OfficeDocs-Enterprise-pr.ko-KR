@@ -15,22 +15,28 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '요약: Azure Information Protection을 적용하여 극비 SharePoint Online 팀 사이트의 파일을 보호합니다.'
-ms.openlocfilehash: bab799a784cac579c92fb06ea17592d85fd59af2
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168502"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319289"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection을 사용한 SharePoint Online 파일 보호
 
  **요약:** Azure Information Protection을 적용하여 극비 SharePoint Online 팀 사이트의 파일을 보호합니다.
   
-이 문서의 단계를 사용하여 극비 SharePoint Online 팀 사이트에서 파일에 대해 암호화 및 사용 권한을 제공하도록 Azure Information Protection을 구성합니다. 암호화 및 사용 권한 보호 기능은 사이트에서 다운로드된 파일에 적용됩니다. 극비 SharePoint Online 팀 사이트에 대한 자세한 내용은 [보안 SharePoint Online 사이트 및 파일](secure-sharepoint-online-sites-and-files.md)을 참조하세요.
-  
-> [!NOTE]
-> Office 365에 저장된 파일에 Azure Information Protection 암호화가 적용되어 있으면 이 파일의 내용을 처리할 수 없습니다. 즉 공동 작성, eDiscovery, 검색, Delve 및 기타 공동 작업 기능이 작동하지 않습니다. DLP(데이터 손실 방지) 정책은 메타데이터(Office 365 레이블 포함)에만 작동할 수 있지만 파일의 내용(예: 파일 내의 신용 카드 번호)에는 작동할 수 없습니다. 
-  
+이 문서의 단계를 사용하여 파일에 대해 암호화 및 사용 권한을 제공하도록 Azure Information Protection을 구성합니다. 이러한 파일은 극비 보호용으로 구성된 SharePoint 라이브러리에 추가되거나, 사이트에서 직접 파일을 열고 Azure Information Protection 클라이언트를 사용하여 암호화를 추가할 수 있습니다. 암호화 및 사용 권한 보호 기능은 사이트에서 다운로드된 파일에 적용됩니다. 
+
+다음 단계는 이러한 사이트 내에서 SharePoint 사이트 및 파일에 대해 극비 보호를 구성하기 위한 보다 큰 솔루션의 일부입니다. 자세한 내용은 [SharePoint Online 사이트 및 파일 보호](secure-sharepoint-online-sites-and-files.md)를 참조하세요. 
+
+SharePoint Online의 파일에 대해 Azure Information Protection을 사용하는 것이 모든 고객에게 권장되는 것은 아니지만 일부 파일에 대해 이러한 수준의 보호가 필요한 고객에게는 적절할 수 있습니다.
+
+이 솔루션에 대한 몇 가지 중요 참고 사항은 다음과 같습니다.
+- Office 365에 저장된 파일에 Azure Information Protection 암호화가 적용되어 있으면 이 파일의 내용을 처리할 수 없습니다. 즉 공동 작성, eDiscovery, 검색, Delve 및 기타 공동 작업 기능이 작동하지 않습니다. DLP(데이터 손실 방지) 정책은 메타데이터(Office 365 레이블 포함)에만 작동할 수 있지만 파일의 내용(예: 파일 내의 신용 카드 번호)에는 작동할 수 없습니다.
+- 이 솔루션을 사용하려면 Azure Information Protection의 보호를 적용하는 레이블을 선택해야 합니다. 파일을 인덱싱하고 조사하기 위해 SharePoint 기능 및 자동 암호화가 필요한 경우 SharePoint Online의 IRM(정보 권한 관리)을 사용하는 것이 좋습니다. IRM에 대해 SharePoint 라이브러리를 구성하면 편집을 위해 파일을 다운로드할 때 파일이 자동으로 암호화됩니다. SharePoint IRM에는 의사 결정에 영향을 줄 수 있는 제한 사항이 포함되어 있습니다. 자세한 내용은 [SharePoint 관리 센터에서 의 IRM(정보 권한 관리) 설정](https://support.office.com/ko-KR/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)을 참조하세요.
+
+##<a name="admin-setup"></a>관리자 설정
 먼저 [Office 365 구독을 위해 Office 365 관리 센터에서 Azure RMS 활성화](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)의 지침을 사용합니다.
   
 그런 다음, 극비 SharePoint Online 팀 사이트에 대한 보호 및 권한을 위한 새로운 범위 지정 정책 및 하위 레이블로 Azure Information Protection을 구성합니다.
@@ -75,10 +81,8 @@ ms.locfileid: "19168502"
     
 20. **Azure Information Protection – 범위 지정 정책** 블레이드에서 **게시**를 클릭합니다.
     
-결과적으로 극비 SharePoint Online 팀 사이트에 대한 구성은 다음과 같습니다.
-  
-![격리된 SharePoint Online 팀 사이트에 대한 Azure Information Protection 레이블입니다.](images/8cc92aa4-e7bc-4c2f-a4a4-3b034b21aebf.png)
-  
+ 
+##<a name="client-setup"></a>클라이언트 설치
 이제 문서를 작성하고 Azure Information Protection 및 새로운 레이블을 사용하여 해당 문서를 보호할 준비가 완료되었습니다.
   
 사용자의 장치 또는 Windows 기반 컴퓨터 [Azure Information Protection 클라이언트](https://docs.microsoft.com/information-protection/rms-client/install-client-app)를 설치해야 합니다. 스크립트를 작성하여 설치를 자동화하거나 사용자가 클라이언트를 수동으로 설치할 수 있습니다. 다음 리소스를 참조하세요.
@@ -94,6 +98,12 @@ ms.locfileid: "19168502"
 > [!NOTE]
 > 극비 SharePoint Online 팀 사이트가 여러 개인 경우, 각 하위 레이블에 대한 권한을 특정 SharePoint Online 팀 사이트의 사이트 멤버 액세스 그룹으로 설정하고 위의 설정을 사용하여 하위 레이블이 포함된 Azure Information Protection 범위 지정 정책 여러 개를 만들어야 합니다. 
   
+##<a name="adding-permissions-for-external-users"></a>외부 사용자에 대한 권한 추가
+Azure Information Protection으로 보호된 파일에 대한 액세스 권한을 외부 사용자에게 부여할 수 있는 두 가지 방법이 있습니다. 이 두 가지 방법에서는 모두 Azure AD 계정이 외부 사용자에게 있어야 합니다. 외부 사용자가 Azure AD를 사용하는 조직의 구성원이 아닌 경우 [https://aka.ms/aip-signup](https://aka.ms/aip-signup) 등록 페이지를 사용하여 Azure AD 계정을 개별로 가져올 수 있습니다.
+
+ - 레이블 보호를 구성하는 데 사용되는 외부 사용자를 Azure AD 그룹에 추가합니다. 먼저 계정을 디렉터리에 B2B 사용자로 추가해야 합니다. [Azure Rights Management의 그룹 구성원 캐싱](https://docs.microsoft.com/ko-KR/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection) 작업에는 몇 시간 정도 걸릴 수 있습니다.  
+ - 레이블 보호에 외부 사용자를 직접 추가합니다. 조직(예: Fabrikam.com), Azure AD 그룹(조직 내의 재무 그룹) 또는 사용자의 모든 사용자를 추가할 수 있습니다. 예를 들어 조절기의 외부 팀을 레이블 보호에 추가할 수 있습니다.
+
 ## <a name="see-also"></a>참고 항목
 
 [SharePoint Online 사이트 및 파일 보호](secure-sharepoint-online-sites-and-files.md)
