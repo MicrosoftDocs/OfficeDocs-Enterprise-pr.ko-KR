@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell에 연결 합니다.'
-ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
-ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
+ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "19907189"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720374"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
@@ -60,7 +60,7 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
     
 - Azure AD에 필요한 사용 되는 모듈을 설치 해야 SharePoint Online 및 비즈니스 온라인 용 Skype:
     
-   - [Azure Active Directory V2](connect-to-office-365-powershell.md#ConnectV2)
+   - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online 관리 셸](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [온라인으로 비즈니스 Windows PowerShell 모듈에 대 한 Skype](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
@@ -197,7 +197,7 @@ Import-PSSession $sfboSession
 
 Exchange Online 및 보안에 대 한 &amp; 준수 센터 다단계 인증을 사용 하 여 연결 하려면 다음 항목을 참조 하십시오.
 
-- [다단계 인증을 사용 하 여 Exchange Online PowerShell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
+- [다단계 인증을 사용하여 Exchange Online PowerShell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [Office 365 보안 및 규정 준수 센터 PowerShell 다단계 인증을 사용 하 여 연결](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 두 경우 모두 사항에 유의 Exchange Online 원격 PowerShell 모듈의 별도 세션을 사용 하 여 연결 해야 합니다.
@@ -207,7 +207,7 @@ Exchange Online 및 보안에 대 한 &amp; 준수 센터 다단계 인증을 �
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>See also
 
 - [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)
 - [Office 365 PowerShell을 사용하여 SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
