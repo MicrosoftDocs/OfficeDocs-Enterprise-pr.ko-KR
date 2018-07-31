@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 서버와 클라이언트 응용 프로그램에 대 한 지원 곧 종료 하 고 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 지금 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 6935fab5e91de05c427d2bb1c233f988dc13e8ce
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 9318dd4f85d02673137498375e7ecdcfe2b4b553
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169860"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21548889"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>2007 서버와 클라이언트에서 Office를 업그레이드 하는데 도움이 되는 리소스
 
@@ -52,13 +51,13 @@ Microsoft 제품에 대 한 지원 끝나면 없는 새 보안 업데이트, 비
 다음 옵션 중 하나를 선택 합니다.
 - **Office 365로 이동**: 많은 고객을 위한는 효율적이 고 경제적인 솔루션입니다. 참조 [것을 이동 하려면 어떻게 Office 365 비즈니스를 위한?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **온-프레미스 서버와 응용 프로그램을 업그레이드 합니다.** [Exchange 2007](exchange-2007-end-of-support.md), [SharePoint Server 2007](sharepoint-2007-end-of-support.md), [Project Server 2007](project-server-2007-end-of-support.md), [Office Communications Server](/Skype/SfbServer/plan-your-deployment/upgrade.md)및 콘텐츠를 계획 하는 [PerformancePoint Server 2007](pps-2007-end-of-support.md) 를 참조 하십시오. 
+- **온-프레미스 서버와 응용 프로그램을 업그레이드 합니다.** [Exchange 2007](exchange-2007-end-of-support.md), [SharePoint Server 2007](sharepoint-2007-end-of-support.md), [Project Server 2007](project-server-2007-end-of-support.md), [Office Communications Server](https://docs.microsoft.com/Skype/SfbServer/plan-your-deployment/upgrade)및 콘텐츠를 계획 하는 [PerformancePoint Server 2007](pps-2007-end-of-support.md) 를 참조 하십시오. 
     
 - **Office 365를 포함 하 여 하이브리드 솔루션을 구현** 하 고 온-프레미스 서버와 응용 프로그램입니다. 참조 [Office 365 하이브리드 클라우드 솔루션 개요.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
     
 **도움이 필요 하십니까?** 파트너 또는 볼륨 라이선스 전문가 사용을 고려 합니다. **[Office 365 파트너 또는 대리점 찾기](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)** 를 참조 합니다. 
 > [!TIP]
-> 50 개 이상의 해당 하는 Office 365의 라이선스를 구입 하는 경우이 FastTrack 팀으로 Office 365를 설정 하는 프로세스를 통해 수 있습니다. [FastTrack.Microsoft.com](https://fasttrack.microsoft.com)를 참고 하십시오.
+> 50 개 이상의 해당 하는 Office 365의 라이선스를 구입 하는 경우이 FastTrack 팀으로 Office 365를 설정 하는 프로세스를 통해 수 있습니다. [FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365)를 참고 하십시오.
   
 조직에 50 명 미만의 Office 365 라이선스 있으면 참조 [관리자: 사용자에 게 비즈니스를 위한 Office 365를 사용 하 여 최신 Office 클라이언트를 업그레이드](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx)합니다. 
   
@@ -81,14 +80,12 @@ Microsoft 제품에 대 한 지원 끝나면 없는 새 보안 업데이트, 비
 ## <a name="what-is-office-365"></a>Office 365 란?
 
 Office 365 Microsoft 클라우드 스택의 일부인 소프트웨어--a-서비스로 (SaaS) 제공 됩니다. [Office 365 Enterprise 계획](https://aka.ms/viirjv) 비즈니스 전자 메일, IM 및 온라인 회의 대 한 비즈니스 온라인 상태이 고 온라인 저장소에 대 한 비즈니스용 OneDrive에 대 한 Skype에 대 한 Exchange Online에 포함 합니다. 컴퓨터 (PC 및 Mac) 스마트폰 (Android, iOS, 및 Windows) 및 태블릿 (Android 및 iOS)에 설치할 수 있는 Office 소프트웨어를 포함 하는 대부분 사업 계획 합니다. Office 365와 누구나 어디에서 나 및 다양 한 장치를 통해 생산성을 높일 수 있습니다. 
-  
+
 |**리소스**|**설명**|
 |:-----|:-----|
-|**[비디오: Office 365 란?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |Office 365에 대 한 개요를 가져올이 비디오를 시청 합니다.  <br/> |
-|**[이동 하려면 어떻게 Office 365 비즈니스를 위한?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |엔터프라이즈 조직 이동 하는 방법을 Office 365에 대 한 높은 수준의 개요를이 문서를 읽어보십시오.  <br/> |
 |**[계획을 선택 합니다.](https://aka.ms/viirjv)** <br/> |Office 365 비즈니스 계획에 대해 자세히 알아보려면이 페이지를 방문 하십시오  <br/> |
 |**[Office에 대 한 시스템 요구 사항](https://aka.ms/o365sysrequirements)** <br/> |**비즈니스, 교육 및 정부를 위한 Office 365 계획** 섹션에서 시스템 요구 사항에 대 한 정보를 봅니다.  <br/> |
-|**[Microsoft 클라우드 플랫폼 옵션](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Office 365와 Microsoft 클라우드 스택에 대해 자세히 알아보려면이 포스터를 다운로드 합니다. Office 365 및 수, 사용해의 고객 및 Microsoft에 대 한 책임의 영역을 포함 하는 Microsoft 클라우드 스택의 핵심 기능에 대해 알아봅니다. PDF에 포스터를 다운로드할 수 있습니다 또는 Visio 서식을 설정 합니다.  <br/> |
+|**[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)** <br/> |Microsoft 클라우드 및 서버 플랫폼 옵션에 대 한 자세한 내용을 보려면 하나 이상의 포스터를 다운로드 합니다. PDF에 포스터를 다운로드할 수 또는 Visio 서식을 설정 합니다.  <br/> |
 |**[Office 365 FAQ](https://aka.ms/office365faqs)** <br/> |추가 정보에 대 한 링크와 Office 365에 대 한 질문과 대답의 목록을 보려면이 페이지를 방문 합니다.  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>Microsoft 365 란?
