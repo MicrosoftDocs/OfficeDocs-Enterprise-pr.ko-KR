@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 비즈니스용 OneDrive Multi-Geo를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "18908232"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549969"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>비즈니스용 OneDrive Multi-Geo 테넌트 구성
 
@@ -43,14 +43,6 @@ _Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금�
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">북미</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
-<td align="left">유럽/중동/아프리카</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
 <td align="left">아시아 태평양</td>
 <td align="left">APC</td>
 </tr>
@@ -58,21 +50,33 @@ _Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금�
 <td align="left">오스트레일리아</td>
 <td align="left">AUS</td>
 </tr>
+<tr class="even">
+<td align="left">캐나다</td>
+<td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">유럽/중동/아프리카</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="even">
+<td align="left">프랑스</td>
+<td align="left">FRA</td>
+</tr>
 <tr class="odd">
 <td align="left">일본</td>
 <td align="left">JPN</td>
 </tr>
 <tr class="even">
-<td align="left">캐나다</td>
-<td align="left">CAN</td>
+<td align="left">한국</td>
+<td align="left">KOR</td>
+</tr>
+<tr class="odd">
+<td align="left">북미</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="odd">
 <td align="left">영국</td>
 <td align="left">GBR</td>
-</tr>
-<tr class="even">
-<td align="left">한국</td>
-<td align="left">KOR</td>
 </tr>
 </tbody>
 </table>
