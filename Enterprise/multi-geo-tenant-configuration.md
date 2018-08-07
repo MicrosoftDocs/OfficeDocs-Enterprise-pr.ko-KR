@@ -98,7 +98,7 @@ _Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금�
 테넌트의 크기에 따라 프로비전하는 데 몇 시간에서 72시간까지 걸릴 수 있습니다. 위성 위치의 프로비전이 완료되면 전자 메일 확인이 수신됩니다. 새 지리적 위치가 OneDrive 관리 센터의 **지리적 위치** 탭의 지도에 파란색으로 표시되면 사용자의 기본 설정 데이터 위치를 해당 지리적 위치로 설정할 수 있습니다. 
 
 > [!IMPORTANT]
-> 새 위성 지리적 위치가 기본 설정으로 지정됩니다. 이 경우 해당 지리적 위치를 로컬 준수 요구에 적절하게 구성할 수 있습니다.
+> 이 경우 해당 지리적 위치를 로컬 준수 요구에 적합하게 구성할 수 있습니다.
 
 ## <a name="setting-users-preferred-data-location"></a>사용자의 기본 설정 데이터 위치 지정
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
@@ -148,7 +148,7 @@ AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용�
 
 사용자의 OneDrive 사이트가 이미 테넌트에 만들어진 경우 해당 PDL을 설정해도 기존 OneDrive가 자동으로 이동되지 않습니다. 사용자의 OneDrive를 이동하려면 [비즈니스용 OneDrive 지리적 이동](move-onedrive-between-geo-locations.md)을 참조하세요. 또한 두 지리적 위치 간의 OneDrive 이동 지침을 따르세요.
 
-테넌트 내에 OneDrive 사이트가 없으면 해당 사용자의 PDL가 회사의 ADL(허용 데이터 위치) 중 하나와 일치한다고 가정할 경우 해당 PDL 값에 따라 OneDrive가 프로비전됩니다.
+테넌트 내에 OneDrive 사이트가 없으면 해당 사용자의 PDL이 회사의 ADL(허용 데이터 위치) 중 하나와 일치한다고 가정할 경우 해당 PDL 값에 따라 OneDrive가 프로비전됩니다.
 
 ## <a name="configuring-multi-geo-search"></a>Multi-Geo 검색 구성
 
@@ -170,7 +170,7 @@ Multi-Geo 테넌트에는 검색 쿼리가 테넌트 내의 어디에서든지 �
 
 ## <a name="validating-the-onedrive-for-business-multi-geo-configuration"></a>비즈니스용 OneDrive Multi-Geo 구성 유효성 검사
 
-다음은 비즈니스용 OneDrive Multi-Geo를 회사에 광범위하게 롤아웃하기 전에 유효성 검사 계획에 포함할 수 있는 몇 가지 기본적인 사용 사례입니다. 이러한 테스트와 회사에 적합한 추가 사용 사례를 완료했으면 초기 파일럿 그룹에 사용자를 추가하는 작업을 계속하도록 선택할 수 있습니다.
+다음은 비즈니스용 OneDrive Multi-Geo를 회사에 광범위하게 롤아웃하기 전에 유효성 검사 계획에 포함할 수 있는 몇 가지 기본적인 사용 사례입니다. 이러한 테스트와 회사에 적합한 추가 사용 사례를 완료하고 나면 초기 파일럿 그룹에 사용자를 추가하는 작업을 계속하도록 선택할 수 있습니다.
 
 **비즈니스용 OneDrive**
 
