@@ -1,9 +1,9 @@
 ---
-title: "Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다."
+title: Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2018
+ms.date: 08/08/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,13 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: "Office 365 PowerShell을 사용 하 여 조직에서 사용자를 위한 Office 365 서비스에 대 한 액세스를 사용 하지 않도록 설정 하는 방법에 설명 합니다."
-ms.openlocfilehash: 61d92a1a0c55a381f10fedbb43403dd099fcb69b
-ms.sourcegitcommit: 07416472be80566370c30631aff740177b37b24c
+description: Office 365 PowerShell을 사용 하 여 조직에서 사용자를 위한 Office 365 서비스에 대 한 액세스를 사용 하지 않도록 설정 하는 방법에 설명 합니다.
+ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
+ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22196825"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.
 
@@ -62,7 +63,7 @@ Office 365 계정을 라이선스 계획에서 라이선스를 할당 된, Offic
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
-2. 1 단계에서에서 **LicenseOptions** 개체를 사용 하 여 하나 이상의 사용자에 게 있습니다.
+2. 사용 하는 **LicenseOptions** 개체를 1 단계에서에서 하나 이상의 사용자에 게 있습니다.
     
   - 서비스를 비활성화 하는 가진 새 계정을 만들려면 다음 구문을 사용 합니다.
     
@@ -151,9 +152,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 
 2. 사용자 환경에 대 한 다음 값을 사용자 지정 합니다.
     
-  -  _<UndesirableService>_이 예제에서는 Office Online 및 SharePoint Online를 사용 합니다.
+  -  _<UndesirableService>_ 이 예제에서는 Office Online 및 SharePoint Online를 사용 합니다.
     
-  -  _<Account>_이 예제에서는 belindan@litwareinc.com를 사용 합니다.
+  -  _<Account>_ 이 예제에서는 belindan@litwareinc.com를 사용 합니다.
     
     사용자 지정 된 스크립트는 다음과 같습니다.
     
@@ -177,20 +178,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 > [!NOTE]
 > 이러한 절차의 효과 반전 하려면 (즉, 다시 사용할 수 없는 서비스를 사용 하도록 설정)을 하는 절차를 다시 실행 되지만 값을 사용 하 여 `$null` _DisabledPlans_ 매개 변수에 대 한 합니다.
   
-[맨위로 돌아가기](disable-access-to-services-with-office-365-powershell.md#RTT)
+[Return to top](disable-access-to-services-with-office-365-powershell.md#RTT)
 
 
-## <a name="all-office-365-services-for-all-users-for-a-single-licensing-plan"></a>단일 라이선스에 대 한 모든 사용자에 대 한 모든 Office 365 서비스 계획
- 
-특정 라이선스 계획에서 모든 사용자에 대 한 모든 Office 365 서비스를 사용 하지 않도록 설정 합니다 (예: **litwareinc:ENTERPRISEPACK**) $acctSKU에 대 한 라이선스 계획 이름을 지정 하 고 PowerShell 명령 창에 다음이 명령을 실행:
-
-```
-$acctSKU="<AccountSkuId>"
-$servicesList=(Get-MsolAccountSku | Select -ExpandProperty ServiceStatus).ServicePlan.ServiceName
-$lo = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans $servicesList
-$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-$AllLicensed | ForEach {Set-MsolUserLicense -ObjectID $_.ObjectID -LicenseOptions $lo}
-```
 
 ## <a name="new-to-office-365"></a>Office 365의 새로운 기능
 <a name="LinkedIn"> </a>
