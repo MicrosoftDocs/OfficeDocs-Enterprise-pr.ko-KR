@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17115247"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>PowerShell을 사용 하 여 Office 365 전자 메일 마이그레이션에 대 한
 
@@ -47,9 +48,9 @@ Windows PowerShell을 사용하여 Office 365로 전자 메일을 마이그레�
 [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Windows PowerShell을 사용하여 Office 365를 관리할 때의 이점]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))
+[Windows PowerShell을 사용하여 Office 365를 관리할 때의 이점](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Office 365의 Windows PowerShell 기술 참조]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))
+[Office 365의 Windows PowerShell 기술 참조](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Office 365 라이선싱 및 Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))
+[Office 365 라이선싱 및 Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 
