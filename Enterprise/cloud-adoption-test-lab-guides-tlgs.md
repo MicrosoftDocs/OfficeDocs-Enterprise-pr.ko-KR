@@ -1,36 +1,38 @@
 ---
-title: 클라우드 채택 TLG(테스트 랩 가이드)
+title: 클라우드 채택 TLG(테스트 랩 가이드)로 Office 365 테스트
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: '요약: 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365, EMS(Enterprise Mobility + Security), Dynamics 365, Office Server 제품의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.'
-ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+description: '요약: 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365, Dynamics 365, Office Server 제품의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.'
+ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188166"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "23041502"
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>클라우드 채택 TLG(테스트 랩 가이드)
+# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>클라우드 채택 TLG(테스트 랩 가이드)로 Office 365 테스트
 
- **요약:** 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365, EMS(Enterprise Mobility + Security), Dynamics 365, Office Server 제품의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.
+ **요약:** 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365, Dynamics 365, Office Server 제품의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.
   
 TLG를 사용하면 Microsoft 제품을 빠르게 학습할 수 있습니다. 기술 또는 구성이 자신에게 적합한지 결정을 내리거나 기술 또는 구성을 사용자에게 선보이기 전에 먼저 평가해야 하는 경우에 유용합니다. "직접 구축 후 정상 작동 확인" 실습을 통해 새로운 제품 또는 솔루션의 배포 요구 사항을 이해할 수 있으므로 프로덕션에서 호스팅을 더욱 잘 계획할 수 있습니다.
   
 또한, TLG는 응용 프로그램의 개발 및 테스트를 위한 대표적 환경(개발/테스트 환경이라고도 함)을 만들 수도 있습니다.
   
-![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft 클라우드의 테스트 랩 가이드](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 본격적으로 시작하기 전에 다음의 추가 리소스를 참조하세요.
   
@@ -88,21 +90,10 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
     
     중요하거나 극비 사항인 리소스를 위해 조직의 나머지와 분리된 SharePoint Online Group 사이트를 만드는 방법을 보여 줍니다.
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 개발/테스트 환경
+## <a name="the-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise 테스트 환경
 
-다음 문서의 시나리오를 따라 [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)용 개발/테스트 환경을 만들어보세요.
-  
-- [Microsoft 365 Enterprise 개발/테스트 환경](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Office 365 E5, EMS E5 및 Windows 10 Enterprise를 실행하는 컴퓨터를 포함한 초기 환경을 만듭니다.
-    
-- [Microsoft 365 Enterprise 개발/테스트 환경용 MAM(모바일 응용 프로그램 관리) 정책](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-    사용자 그룹과 iOS 및 Android 장치용 MAM(모바일 응용 프로그램 관리) 정책을 만듭니다.
-    
-- [Microsoft 365 Enterprise 개발/테스트 환경에서 iOS 및 Android 장치 등록](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-    
-    iOS 또는 Android 장치를 등록하고 원격으로 관리합니다.
+[이러한 문서](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)에 따라 [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)용 테스트 환경을 만들어보세요.
+ 
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경
 
@@ -148,17 +139,7 @@ Microsoft의 모든 클라우드 서비스(Office 365, Azure, EMS, 및 Dynamics 
     
     Azure 인프라 서비스에 기본 및 고가용성 SharePoint Server 2013 팜을 구축합니다.
     
-**토론 참여**
-
-|**연락처**|**설명**|
-|:-----|:-----|
-|**어떤 클라우드 채택 콘텐츠가 필요한가요?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 적용되는 클라우드 채택 콘텐츠를 만들고 있습니다. 클라우드 채택 콘텐츠에 대한 의견을 제공하거나 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)으로 이메일을 보내서 특정 콘텐츠를 요청하세요.  <br/> |
-|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 관심이 있다면 CAAB(클라우드 채택 자문 위원회)에 가입하여 Microsoft 콘텐츠 개발자, 산업 전문가 및 전 세계 고객으로 구성된 더 크고 활발한 커뮤니티에 연결할 수 있습니다. 참가하려면 Microsoft 기술 커뮤니티의 [CAAB(Cloud Adoption Advisory Board) 영역](https://aka.ms/caab)에 본인을 회원으로 추가하고 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 간단한 이메일을 보내주세요. [CAAB 블로그](https://blogs.technet.com/b/solutions_advisory_board/)에서는 누구나 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원은 새 클라우드 채택 리소스와 솔루션에 대해 설명하는 비공개 웹 세미나에 초대됩니다.  <br/> |
-|**여기에 표시된 아트 받기** <br/> |이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)으로 요청 이메일을 보내주세요.  <br/> |
-   
 ## <a name="see-also"></a>참고 항목
-
-<a name="ADD_TLGs"> </a>
 
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
