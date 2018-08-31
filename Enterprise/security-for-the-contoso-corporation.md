@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation에 대 한 보안"
+title: Contoso Corporation에 대 한 보안
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
-description: "요약: Contoso이 Microsoft의 클라우드 서비스의 기능을 위해 보안 요구 사항이 매핑되어야 하 고 클라우드 보안 준비에 대 한 경로 결정 하는 방법을 이해 합니다."
-ms.openlocfilehash: f8df7f6437159aefe88851a22cc8da8b19c3838c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso이 Microsoft의 클라우드 서비스의 기능을 위해 보안 요구 사항이 매핑되어야 하 고 클라우드 보안 준비에 대 한 경로 결정 하는 방법을 이해 합니다.'
+ms.openlocfilehash: 722c01995c95c36b9975b0682858c38063f79d2c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914833"
 ---
 # <a name="security-for-the-contoso-corporation"></a>Contoso Corporation에 대 한 보안
 
@@ -66,7 +69,7 @@ Contoso는 자신의 정보 보안 및 보호 하는 방법에 대 한 심각한
 
 다음 표에 Contoso의 정보 정책입니다.
   
-||**액세스**|**데이터 보존 기간**|**정보 보호**|
+||**액세스**|**데이터 보존**|**정보 보호**|
 |:-----|:-----|:-----|:-----|
 |수준 1: 낮은 비즈니스 가치  <br/> | 모두에 대 한 액세스를 허용 합니다. <br/> |6개월  <br/> |암호화를 사용 하 여  <br/> |
 |수준 2: 중간 규모 비즈니스 가치  <br/> | Contoso 직원, 하청 및 파트너에 대 한 액세스를 허용 합니다. <br/>  MFA, TLS 및 MAM를 사용 하 여 <br/> |2년  <br/> |데이터 무결성을 위해 해시 값을 사용 합니다.  <br/> |
@@ -118,19 +121,19 @@ Office 365 보안 모범 사례에 따라 Contoso의 보안 관리자 및 IT 부
     
     Contoso 보안 전문가 Exchange Online Protection 및 고급 위협 보호 ATP ()를 사용 하 여 알 수 없는 맬웨어, 바이러스 및 전자 메일을 통해 전송 되는 악성 Url 보호 하기 위해 됩니다. Contoso에 활성화 된 사서함 감사 메시지를 전송 하는 사용자 사서함 및 사서함 소유자, 위임된 된 사용자 또는 관리자에 의해 수행 되는 다른 작업에 로그인 사용자를 확인 하려면 로깅을 수도 있습니다.
     
-    자세한 내용은 다음을 참조하십시오. 
+    자세한 내용은 다음 항목을 참조하십시오. 
     
   - [Office 365 전자 메일 스팸 방지 보호 기능](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     
-  - [안전한 첨부 파일 및 안전 링크에 대 한 고급 위협 보호](https://technet.microsoft.com/library/mt148491.aspx)
+  - [안전한 첨부 파일 및 안전한 링크를 위한 Advanced Threat Protection](https://technet.microsoft.com/library/mt148491.aspx)
     
-  - [Office 365에서 사서함 감사를 사용 하도록 설정](https://go.microsoft.com/fwlink/p/?LinkID=626109)
+  - [Office 365에서 사서함 감사 사용](https://go.microsoft.com/fwlink/p/?LinkID=626109)
     
 - **데이터 손실 방지 (DLP)**
     
     Contoso가의 중요 한 데이터를 식별 하 고 Exchange Online, SharePoint Online 및 OneDrive 사용자가 실수로 또는 의도적으로 데이터를 공유 하는 것을 방지 하기에 대 한 DLP 정책을 구성 합니다. 
     
-    자세한 내용은 [데이터 손실 방지 정책 개요](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)를 참조 하십시오.
+    자세한 내용은 [데이터 손실 방지 정책 개요](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)를 참조하세요.
     
 ## <a name="see-also"></a>참고 항목
 
@@ -140,7 +143,7 @@ Office 365 보안 모범 사례에 따라 Contoso의 보안 관리자 및 IT 부
 
 [Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
   
-[Office 365에 대 한 보안 모범 사례](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+[Office 365에 대한 보안 모범 사례](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 
 
 

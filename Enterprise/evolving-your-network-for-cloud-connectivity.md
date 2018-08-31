@@ -1,5 +1,5 @@
 ---
-title: "클라우드 연결에 대 한 네트워크 발전 하 고"
+title: 클라우드 연결을 위해 네트워크 확장
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
-description: "요약: 클라우드 채택 네트워크 인프라 투자를 하는 새로운 방법이 필요 하는 방법을 이해 합니다."
-ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: 클라우드 채택 네트워크 인프라 투자를 하는 새로운 방법이 필요 하는 방법을 이해 합니다.'
+ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915143"
 ---
-# <a name="evolving-your-network-for-cloud-connectivity"></a>클라우드 연결에 대 한 네트워크 발전 하 고
+# <a name="evolving-your-network-for-cloud-connectivity"></a>클라우드 연결을 위해 네트워크 확장
 
  **요약:** 클라우드 채택 네트워크 인프라 투자를 하는 새로운 방법이 필요 하는 방법을 이해 합니다.
   

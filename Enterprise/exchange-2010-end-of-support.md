@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 지원 거의 끝났습니다. 로드맵을 사용 하 여이 계획 가이드로 Exchange Online 또는 Exchange Server 온-프레미스의 최신 버전으로 업그레이드 하기 위한 준비 합니다.
-ms.openlocfilehash: 240f93bfe27e3d564514626fc1d0f51ddeb7802d
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: e655edcc38723acd622fc6abc62a00d3f3e36738
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169890"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915193"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 끝날 지원 로드맵
 

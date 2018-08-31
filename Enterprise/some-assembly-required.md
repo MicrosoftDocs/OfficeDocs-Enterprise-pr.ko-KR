@@ -1,5 +1,5 @@
 ---
-title: "필요한 일부 어셈블리"
+title: 일부 필수 어셈블리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "요약: 사용자 지정 저장소 솔루션을 만드는 데 사용할 수 있는 클라우드 저장소 옵션 집합에 세부 정보를 가져옵니다."
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: 사용자 지정 저장소 솔루션을 만드는 데 사용할 수 있는 클라우드 저장소 옵션 집합에 세부 정보를 가져옵니다.'
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915523"
 ---
-# <a name="some-assembly-required"></a>필요한 일부 어셈블리
+# <a name="some-assembly-required"></a>일부 필수 어셈블리
 
  **요약:** 사용자 지정 저장소 솔루션을 만드는 데 사용할 수 있는 저장소 옵션을 클라우드 집합에 정보를 가져옵니다.
   
@@ -138,11 +141,11 @@ ms.lasthandoff: 02/09/2018
     
 수직 확장 된 Azure 데이터베이스 성능 수준/edition을 변경할 수 또는 탄력적 데이터베이스 풀을 사용 하 여 합니다.
   
-![Azure SQL Database에서 제공한 세로 배율입니다.](images/Storage_Poster/CloudStor-VertScale.png)
+![Azure SQL Database에서 제공한 세로 배율입니다.](media/Storage-Poster/CloudStor-VertScale.png)
   
 수평 확장이와 필요에 따라 새 데이터베이스를 추가할 수 있습니다.
   
-![Azure SQL Database에서 제공한 가로 배율입니다.](images/Storage_Poster/CloudStor-HorizScale.png)
+![Azure SQL Database에서 제공한 가로 배율입니다.](media/Storage-Poster/CloudStor-HorizScale.png)
   
 클릭 [여기](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) 대 한 자세한 내용은 합니다.
   
@@ -150,7 +153,7 @@ ms.lasthandoff: 02/09/2018
 
 늘이기 데이터베이스는 투명 하 게 하 고 안전 하 게 Azure에서 SQL 전체 확대/축소 데이터베이스에 고객 주문 정보를 포함 하는 대규모 테이블에서 닫힌된 비즈니스 데이터와 같은 정지 데이터를 이동할 수 있도록 하는 SQL Server 2016의 기능입니다. SQL Server 인스턴스, 데이터베이스 또는 단일 테이블도의 내용을 맞춰지거나 때 SQL Server 2016 서버에서 로컬 데이터와 Azure에서 원격 데이터의 조합 합니다. 전체 확대/축소에 대 한 대상이 되는 데이터는 SQL Server 2016 하 여 Azure에 자동으로 이동 됩니다.
   
-![SQL Server 2016을 사용하는 Stretch Database입니다.](images/Storage_Poster/CloudStor-Stretch.png)
+![SQL Server 2016을 사용하는 Stretch Database입니다.](media/Storage-Poster/CloudStor-Stretch.png)
   
 Azure SQL 전체 확대/축소 데이터베이스에 기록 데이터를 포함 하는 사용자 쿼리를 전달 투명 하 게 됩니다. 쿼리는 테이블을 확대 하는 경우에를 다시 쓰도록 필요는 없습니다.
   
@@ -202,7 +205,7 @@ Cosmos DB, Azure 테이블 저장소 및 Azure SQL 데이터베이스의 일반�
     
 다음 표에서 Azure Cosmos DB, Azure 테이블 저장소 및 Azure SQL 데이터베이스의 가끔 수행 특성을 보여줍니다.
   
-![Cosmos DB의 일반적이지 않은 특성 대 Azure Tables 대 Azure SQL Database](images/Storage_Poster/CloudStor-Table.png)
+![Cosmos DB의 일반적이지 않은 특성 대 Azure Tables 대 Azure SQL Database](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>리소스
 

@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: 375ab283385431ea975782f9b7b8bf97ed0cb6ed
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: HT
+ms.openlocfilehash: 7149478efcbffcec56423a6c8ade5377992f3352
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915043"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
@@ -65,11 +66,10 @@ Office 365 PowerShell은 Office 365 관리 센터를 대신하는 것이 아니�
 이러한 기본 기술을 학습한 후에는 **Get-Mailbox** 명령을 사용하여 사서함 사용자를 나열할 필요도 없고, 앞에 나온 것처럼 모든 웹앱에 대한 모든 사이트의 전체 목록에 포함된 항목 수를 계산하기 위한 명령과 같은 새 명령을 만드는 방법을 알 필요도 없습니다. Microsoft 및 Office 365 관리자 커뮤니티에서 필요할 때 도움을 드릴 수 있습니다.
   
 ## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>Office 365 PowerShell은 Office 365 관리 센터에서는 볼 수 없는 추가 정보를 제공할 수 있음
-<a name="reveal"> </a>
 
 Office 365 관리 센터에는 많은 유용한 정보가 표시되지만 Office 365에서 사용자, 라이선스, 사서함 및 사이트에 대해 저장할 수 있는 모든 정보가 표시되지는 않습니다. 다음은 Office 365 관리 센터의 **사용자 및 그룹** 예입니다.
   
-![Office 365 관리 센터의 사용자 및 그룹 표시 예제입니다.](images/o365_powershell_users_and_groups.png)
+![Office 365 관리 센터의 사용자 및 그룹 표시 예제입니다.](media/o365-powershell-users-and-groups.png)
   
 여기에는 다양한 용도로 사용자가 알아야 하는 정보가 표시됩니다. 그러나 더 많은 정보가 필요한 경우도 있습니다. 예를 들어 Office 365 라이선스 및 사용자에게 제공되는 Office 365 기능은 해당 사용자의 지리적 위치에 따라 달라집니다. 가령 미국 사용자에 대해 확장 가능한 정책과 기능은 인도나 벨기에 사용자에 대해 확장 가능한 정책과 기능은 서로 다를 수 있습니다. Office 365 관리 센터를 사용하면 다음 단계에 따라 사용자가 있는 지리적 위치를 알 수 있습니다.
   
@@ -81,7 +81,7 @@ Office 365 관리 센터에는 많은 유용한 정보가 표시되지만 Office
     
 4. **국가 또는 지역** 제목이 표시될 때까지 아래쪽으로 스크롤합니다.
     
-     ![Office 365 관리 센터의 사용자에 대한 지역 정보 예제입니다.](images/o365_powershell_usage_location.png)
+     ![Office 365 관리 센터의 사용자에 대한 지역 정보 예제입니다.](media/o365-powershell-usage-location.png)
   
 5. 사용자의 표시 이름과 지역을 종이에 적어 두거나 복사한 다음 메모장에 붙여 넣습니다. 
     
@@ -92,7 +92,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> 이 명령을 사용하려면 [Windows Azure Active Directory 모듈](https://technet.microsoft.com/ko-KR/library/jj151815.aspx)을 설치해야 합니다. 
+> 이 명령을 사용하려면 [Windows Azure Active Directory 모듈](https://docs.microsoft.com/powershell/module/Azuread/?view=azureadps-2.0)을 설치해야 합니다. 
   
 다음과 같은 화면이 표시됩니다.
   
@@ -173,13 +173,12 @@ $x | Select DisplayName, UsageLocation
 - $x 변수의 내용을 표시하지만 각 사용자의 이름과 위치만 포함합니다(**$x | Select DisplayName, UsageLocation**).
   
 ## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365에는 Office 365 PowerShell로만 구성할 수 있는 기능이 있습니다.
-<a name="only"> </a>
 
 Office 365 관리 센터는 대부분의 사용자에 적용 되는 가장 일반적이거나 의미있는 관리 작업에 액세스할 수 있도록 하기 위해 고안되었습니다. 다시 말해서 Office 365 관리 센터는 일반적인 관리자가 가장 일반적인 관리 작업을 수행하는 데 사용할 수 있는 도구로 설계되었습니다. 따라서 기본적으로는 Office 365 관리 센터를 통해 완료할 수 없는 작업도 있습니다.
   
 예를 들어 비즈니스용 Skype 온라인 관리 센터에서는 사용자 지정 모임 초대를 만들기 위한 몇 가지 옵션을 제공합니다.
   
-![비즈니스용 Skype Online 관리 센터에 표시된 사용자 지정 모임 초대 예제입니다.](images/o365_powershell_meeting_invitation.png)
+![비즈니스용 Skype Online 관리 센터에 표시된 사용자 지정 모임 초대 예제입니다.](media/o365-powershell-meeting-invitation.png)
   
 이러한 설정을 사용하여 모임 초대를 전문적으로 개인 설정할 수 있습니다. 그러나 모임 구성 설정에는 사용자 지정 모임 초대 만들기 외에도 다양한 기능이 있습니다. 예를 들어 모임에서는 기본적으로 다음과 같은 설정이 가능합니다.
   
@@ -210,7 +209,6 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
 이것은 예에 불과합니다. Office 365 관리자가 Office 365 PowerShell 명령에 익숙해져야 하는 다른 이유도 있습니다.
   
 ## <a name="office-365-powershell-is-great-at-carrying-out-bulk-operations"></a>Office 365 PowerShell은 대량 작업을 수행하는 데 유용함
-<a name="bulk"> </a>
 
 지금까지 Office 365 관리 센터와 같은 시각적 인터페이스는 단일 작업만 수행하면 될 경우에 가장 유용합니다. 예를 들어 사용자 계정 하나를 사용하지 않도록 설정해야 하는 경우 Office 365 관리 센터를 사용하여 확인란을 빠르게 찾은 후 선택을 취소할 수 있습니다. 이 작업은 Office 365 PowerShell에서 유사한 작업을 수행하는 것보다 더 간단할 수 있습니다.
   
@@ -226,7 +224,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
     
 4. **공유** 대화 상자에서 사이트에 대한 사용 권한이 있는 모든 사용자를 표시하는 링크를 클릭합니다.
     
-     ![SharePoint Online 관리 센터에서 SharePoint Online 사이트의 구성원을 보는 예제입니다.](images/o365_powershell_view_permissions.png)
+     ![SharePoint Online 관리 센터에서 SharePoint Online 사이트의 구성원을 보는 예제입니다.](media/o365-powershell-view-permissions.png)
   
 5. **다음 사용자와 공유** 대화 상자에서 **고급** 을 클릭합니다.
     
@@ -241,7 +239,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 이 명령을 사용하려면 [SharePoint Online PowerShell에 연결](https://technet.microsoft.com/library/fp161372.aspx)을 설치해야 합니다. 
+> 이 명령을 사용하려면 [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)을 설치해야 합니다. 
   
 > [!TIP]
 >  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독에서 모든 SharePoint 사이트를 가져오고(**Get-SPOSite**) 각 사이트에 액세스할 수 있는 사용자 목록에서 Ken Meyer를 제거합니다(**ForEach {Remove-SPOUser -Site $\__.Url -LoginName "kenmyer@litwareinc.com"}**).
@@ -258,11 +256,10 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
 >  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독의 모든 SharePoint 사이트를 가져오고 각 사이트의 구성원 그룹에 해당 로그인 이름을 추가하여 Bonnie Kearney의 액세스를 허용합니다(**ForEach {Add-SPOUser -Site $\__.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}**).
   
 ## <a name="office-365-powershell-is-great-at-filtering-data"></a>Office 365 PowerShell은 데이터를 필터링하는 데 유용함
-<a name="filter"> </a>
 
 Office 365 관리 센터에서는 데이터를 필터링하여 대상 정보 하위 집합을 쉽고 빠르게 찾을 수 있는 여러 가지 방법을 제공합니다. 예를 들어 Exchange에서는 사용자 사서함의 사실상 모든 속성을 기준으로 쉽게 필터링을 할 수 있습니다. 예를 들어 다음은 Bloomington에 거주하는 모든 사용자의 사서함 목록입니다.
   
-![Bloomington 시에 거주하는 모든 사용자의 사서함 목록에 대해 Office 365 관리 센터에서 고급 검색을 수행하는 예제입니다.](images/o365_powershell_advanced_search.png)
+![Bloomington 시에 거주하는 모든 사용자의 사서함 목록에 대해 Office 365 관리 센터에서 고급 검색을 수행하는 예제입니다.](media/o365-powershell-advanced-search.png)
   
 Exchange 관리 센터에서도 필터 기준을 조합할 수 있습니다. 예를 들어 Bloomington에 거주하고 재무 부서에서 일하는 모든 사용자에 대한 사서함을 찾을 수 있습니다. 
   
@@ -337,11 +334,10 @@ Get-User -Filter '{LastName -like "*son"}'
 >  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독의 모든 사용자를 가져오지만 성이 "son"으로 끝나는 사용자만 나열하는 필터를 사용합니다(**-Filter '{LastName -like "** son"}'\**). \*는 임의의 문자 집합을 나타내며, 사용자의 성인 경우에는 글자에 해당합니다.
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell을 사용하면 데이터 쉽게 인쇄 또는 저장할 수 있음
-<a name="printsave"> </a>
 
 Office 365 관리 센터에서 데이터 목록을 볼 수 있습니다. 다음은 비즈니스용 Skype 온라인에 대해 사용되도록 설정된 사용자 목록을 표시하는 비즈니스용 Skype 온라인 관리 센터의 예입니다.
   
-![비즈니스용 Skype Online을 사용하도록 설정된 사용자 목록을 표시하는 비즈니스용 Skype Online 관리 센터 예제입니다.](images/o365_powershell_lync_users.png)
+![비즈니스용 Skype Online을 사용하도록 설정된 사용자 목록을 표시하는 비즈니스용 Skype Online 관리 센터 예제입니다.](media/o365-powershell-lync-users.png)
   
 해당 정보를 파일에 저장하려면 복사한 후 문서 또는 Excel에 붙여 넣어야 합니다. 두 경우 모두 복사를 위해 추가 서식이 필요할 수 있습니다. 또한 Office 365 관리 센터에서는 표시된 목록을 바로 인쇄하는 방법을 제공하지 않습니다.
   
@@ -353,7 +349,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 다음과 같은 화면이 표시됩니다.
   
-![쉼표로 구분된 값(CSV) 파일로 저장된 Skype용 비즈니스 Online 사용자 데이터를 Excel 워크시트로 가져온 테이블 예제입니다.](images/o365_powershell_data_in_excel.png)
+![쉼표로 구분된 값(CSV) 파일로 저장된 Skype용 비즈니스 Online 사용자 데이터를 Excel 워크시트로 가져온 테이블 예제입니다.](media/o365-powershell-data-in-excel.png)
   
 > [!TIP]
 >  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독의 모든 비즈니스용 Skype 온라인 사용자를 가져오고(**Get-CsOnlineUser**), 사용자 이름, UPN 및 위치만 가져오고(**Select DisplayName, UserPrincipalName, UsageLocation**), C:\\Logs\\SfBUsers.csv라는 CSV 파일에 해당 정보를 저장합니다(**Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation**).
@@ -368,7 +364,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 인쇄된 문서의 모양은 다음과 같습니다.
   
-![Windows의 기본 프린터에 직접 나열된 Office 365 PowerShell 명령 출력의 인쇄된 문서 예제입니다.](images/o365_powershell_printed_data.png)
+![Windows의 기본 프린터에 직접 나열된 Office 365 PowerShell 명령 출력의 인쇄된 문서 예제입니다.](media/o365-powershell-printed-data.png)
   
 > [!TIP]
 >  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독의 모두 비즈니스용 Skype 온라인 사용자를 가져오고, 사용자 이름, UPN 및 위치만 가져온 다음 기본 Windows 프린터에 해당 정보를 보냅니다(**Out-Printer**).
@@ -376,7 +372,6 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 인쇄된 문서는 Office 365 PowerShell 명령 창 내에 표시되는 것과 동일한 간단한 서식을 가지지만 필요한 항목만 나열하는 Office 365 PowerShell 명령을 만든 경우 명령 끝에 **| Out-Printer**만 추가하여 작업할 하드 카피를 가져올 수 있습니다.
   
 ## <a name="office-365-powershell-lets-you-manage-across-server-products"></a>Office 365 PowerShell을 사용하여 여러 서버 제품을 관리할 수 있음
-<a name="printsave"> </a>
 
 Office 365를 구성하는 여러 다양한 구성 요소는 함께 작동되도록 설계되어 있습니다. 예를 들어 Office 365에 새 사용자를 추가할 때는 사용자의 부서, 전화 번호 등의 정보를 지정합니다. 이러한 정보는 Office 365 서버 제품인 비즈니스용 Skype 온라인, Exchange 또는 SharePoint Online 중 하나를 사용하여 사용자 정보에 액세스하는 경우에 사용할 수 있습니다.
   
@@ -439,9 +434,6 @@ Molly Dempsey           False        True               False
 - 사용자의 목록을 표시하지만 이름, 사용 허가 여부, 사서함 사용 가능 여부와 비즈니스용 Skype Online에 대해 사용되도록 설정되었는지 여부를 나타내는 두 개의 새 속성만 포함합니다(**$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
   
 ## <a name="see-also"></a>참고 항목
-
-
-#### 
 
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
   

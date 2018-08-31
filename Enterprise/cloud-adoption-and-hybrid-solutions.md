@@ -9,13 +9,16 @@ ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 500c86c4fa0accf1c8fb98e6e639d8171ae9b0d4
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915713"
 ---
 <h1>엔터프라이즈 클라우드 솔루션</h1>
 <p>Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요.</p>
@@ -28,7 +31,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_cloud_it_architecture.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-architecture2.svg" alt="A cloud and a ruler" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_architecture.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow.svg" alt="A flow chart" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +69,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-devtest.svg" alt="A cloud with test tubes" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -85,7 +88,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_hybrid.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/hybrid.svg" alt="A building, a cloud, and two arrows" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,7 +107,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_cloud-security.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">

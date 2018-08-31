@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation에 대 한 네트워킹"
+title: Contoso Corporation에 대 한 네트워킹
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 014b3710-e6e9-485c-8550-975d510eb2fc
-description: "요약: 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다."
-ms.openlocfilehash: 1f023364c4b2e9c64af954ec9ba63a6197ebc01a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso 네트워킹 인프라와 ExpressRoute를 사용 하 여 Microsoft의 클라우드 서비스에 최적화 된 액세스에 대 한 하는 방법을 이해 합니다.'
+ms.openlocfilehash: 89d4182d8a5ef44f936977ec51cc002b51f4b379
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915223"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation에 대 한 네트워킹
 
- **요약:** 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다.
+ **요약:** Contoso 네트워킹 인프라와 ExpressRoute를 사용 하 여 Microsoft의 클라우드 서비스에 최적화 된 액세스에 대 한 하는 방법을 이해 합니다.
   
 클라우드 (포함) 인프라를 채택 하는를 Contoso의 네트워크 엔지니어 네트워크 트래픽을 클라우드 기반 서비스 여행 하는 방식으로 기본 shift을 실현 합니다. 온-프레미스 서버와 데이터 센터에 대 한 트래픽만 최적화 하는 대신 인터넷 가장자리 및 인터넷을 통해 트래픽을 최적화와 같은 주의 지불 해야 합니다.
   
@@ -30,7 +31,7 @@ Contoso는 그림 1에 표시 된 네트워킹 인프라입니다.
   
 **그림 1: Contoso의 WAN 인프라**
 
-![본사, 지역 허브 및 위성 사무실을 연결하는 Contoso의 WAN 인프라](images/Contoso_Poster/Contoso_WW_Net.png)
+![본사, 지역 허브 및 위성 사무실을 연결하는 Contoso의 WAN 인프라](media/Contoso-Poster/Contoso-WW-Net.png)
   
 그림 1 전세계로 및 국가 집합이 및 위성 사무실 사이트간 WAN 링크가 Contoso의 사무실을 보여줍니다.
   
@@ -54,7 +55,7 @@ Contoso는 다음 해당 응용 프로그램 및 서버 인프라를 설계 했�
   
 **내부 응용 프로그램에 대 한 그림 2: Contoso의 인프라**
 
-![내부 응용 프로그램에 대한 Contoso의 인프라](images/Contoso_Poster/App_Infra.png)
+![내부 응용 프로그램에 대한 Contoso의 인프라](media/Contoso-Poster/App-Infra.png)
   
 - 내부 웹 사이트 및 자주 액세스 하는 문서를 저장할 로컬 캐싱 서버를 사용 하는 위성 사무실 합니다.
     
@@ -80,7 +81,7 @@ ExpressRoute 연결을 사용할 경우 Microsoft 클라우드 네트워크와 �
   
 **그림 3: Microsoft 클라우드 네트워크 전세계**
 
-![Microsoft 클라우드 네트워크 월드와이드](images/Contoso_Poster/MS_WW_Cloud.png)
+![Microsoft 클라우드 네트워크 월드와이드](media/Contoso-Poster/MS-WW-Cloud.png)
   
 그림 3은 전세계의 다양 한 지역에 대 한 상호 연결 된 Microsoft 클라우드 네트워크를 보여줍니다.
   

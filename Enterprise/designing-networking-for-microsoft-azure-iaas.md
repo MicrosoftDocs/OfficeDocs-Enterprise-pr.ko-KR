@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)"
+title: Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
-description: "요약: Microsoft Azure IaaS에는 작업에 대해 최적화 된 네트워킹을 디자인 하는 방법을 이해 합니다."
-ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Microsoft Azure IaaS에는 작업에 대해 최적화 된 네트워킹을 디자인 하는 방법을 이해 합니다.'
+ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915123"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)
 
@@ -42,7 +45,7 @@ Azure IaaS에서 호스팅되는 IT 작업 부하에 대 한 네트워킹 최적
   
 **그림 1:는 클라우드 전용 VNet**
 
-![그림 1: Azure에 있는 클라우드 전용 Virtual Network](images/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
+![그림 1: Azure에 있는 클라우드 전용 Virtual Network](media/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
   
 그림 1 클라우드 전용 VNet에서 가상 컴퓨터의 집합을 보여줍니다.
   
@@ -50,7 +53,7 @@ A 크로스-프레미스 VNet가을--사이트 마다 S2S ()는 Azure 게이트�
   
 **그림 2: 크로스-프레미스 VNet**
 
-![그림 2: Azure의 크로스-프레미스 Virtual Network](images/caacf007-e0dc-45d3-9531-441109776d25.png)
+![그림 2: Azure의 크로스-프레미스 Virtual Network](media/caacf007-e0dc-45d3-9531-441109776d25.png)
   
 그림 2는 온-프레미스 네트워크에 연결 되는 크로스-프레미스 VNet에서 가상 컴퓨터의 집합을 보여줍니다.
   
@@ -85,9 +88,9 @@ A 크로스-프레미스 VNet가을--사이트 마다 S2S ()는 Azure 게이트�
 
 서브넷에는 VNet, 게이트웨이 서브넷 및 가상 컴퓨터 호스팅 서브넷의는 다음과 같은 두가지 유형이 있습니다.
   
-**그림 3: Azure에서 서브넷의 두 형식**
+**그림 3: Azure에 있는 서브넷 두 종류**
 
-![그림 3: Azure에 있는 서브넷 두 종류](images/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
+![그림 3: Azure에 있는 서브넷 두 종류](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
 그림 3에는 Azure 게이트웨이 및 가상 컴퓨터를 포함 하는 가상 컴퓨터 호스팅 서브넷의 집합을 포함 하는 게이트웨이 서브넷을 포함 하는 VNet 나와 있습니다.
   
@@ -116,7 +119,7 @@ Azure 게이트웨이 서브넷의 주소 공간을 결정 하기 위한 최상�
   
 서브넷 가상 컴퓨터를 호스팅하는 일반적인 역할 또는 응용 프로그램의 또는 서브넷 격리에 대 한 계층 등의 일반적인 온-프레미스 지침에 따라 수행할 수 있는 Azure 가상 컴퓨터를 배치 하는 위치입니다.
   
-Azure의 처음 3 주소를 사용 하 여 각 서브넷에 있습니다. 따라서 Azure 서브넷에서 사용할 수 있는 주소의 수는 2<sup>n</sup> -5, 여기서 n은 호스트 비트 수 있습니다. 표 3에서는 필요에 따라 비트를 호스트 하는 가상 컴퓨터를 필요한 수의 범위 및 해당 서브넷 크기입니다.
+Azure의 처음 3 주소를 사용 하 여 각 서브넷에 있습니다. 따라서 Azure 서브넷에서 사용할 수 있는 주소 수가 2<sup>n</sup> -5, 여기서 n은 호스트 비트 수입니다. 표 3에서는 필요에 따라 비트를 호스트 하는 가상 컴퓨터를 필요한 수의 범위 및 해당 서브넷 크기입니다.
   
 |**필요한 가상 컴퓨터**|**호스트 비트**|**서브넷 크기**|
 |:-----|:-----|:-----|
@@ -157,17 +160,17 @@ Azure 가상 컴퓨터의 DHCP에 의해 DNS 서버 주소를 할당합니다. D
   
 Azure 인터넷 부하 분산을 임의로 부하 분산 된 집합의 구성원에 게 인터넷에서 들어오는 원치 않는 트래픽을 분산 시킵니다.
   
-**그림 4: 외부 부하 분산 장치를 Azure의**
+**그림 4: Azure의 외부 부하 분산 장치**
 
-![그림 4: Azure의 외부 부하 분산 장치](images/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
+![그림 4: Azure의 외부 부하 분산 장치](media/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
   
 그림 4는 인바운드 NAT 규칙 또는 부하 분산 된 집합의 가상 컴퓨터의 집합에는 끝점에서 들어오는 트래픽을 분배 하는 Azure에는 외부 부하 분산 장치를 보여줍니다.
   
 Azure 내부 부하 분산을 임의로 부하 분산 된 집합의 구성원에 게 인트라넷 컴퓨터 또는 다른 Azure Vm에서 임의의 들어오는 트래픽을 분산 시킵니다. 
   
-**그림 5: 내부 부하 분산 장치를 Azure의**
+**그림 5: Azure의 내부 부하 분산 장치**
 
-![그림 5: Azure의 내부 부하 분산 장치](images/d1451b73-6465-449d-b3e6-22160ce51f35.png)
+![그림 5: Azure의 내부 부하 분산 장치](media/d1451b73-6465-449d-b3e6-22160ce51f35.png)
   
 그림 5는 인바운드 NAT 규칙 또는 부하 분산 된 집합의 가상 컴퓨터의 집합에는 끝점에서 들어오는 트래픽을 분배 하는 Azure에는 내부 부하 분산 장치를 표시 합니다.
   
@@ -177,9 +180,9 @@ Azure 내부 부하 분산을 임의로 부하 분산 된 집합의 구성원에
 
 사용자 VNet의 가상 기기에 대 한 트래픽 음성 메일로 착신 전환 해야하는 경우 서브넷에 하나 이상의 사용자 정의 경로 추가 해야할 수 있습니다.
   
-**그림 6: 가상 장비 및 Azure에서 사용자 정의 경로**
+**그림 6: Azure의 가상 어플라이언스 및 사용자 정의 경로**
 
-![그림 6: Azure의 가상 어플라이언스 및 사용자 정의 경로](images/f181d0f4-ebf9-439e-9c98-dec17428c32b.png)
+![그림 6: Azure의 가상 어플라이언스 및 사용자 정의 경로](media/f181d0f4-ebf9-439e-9c98-dec17428c32b.png)
   
 그림 6 크로스-프레미스 VNet 및 가상 기기를 가리키는 가상 컴퓨터 호스팅 서브넷에 할당 된 사용자 정의 경로 보여줍니다.
   
@@ -191,7 +194,7 @@ Azure 내부 부하 분산을 임의로 부하 분산 된 집합의 구성원에
   
 표 5 필터링 하거나 원치 않는 들어오는 트래픽을 검사 하기 위한 메서드를 나열 합니다.
   
-|**메서드**|**배포 모델**|
+|**방법**|**배포 모델**|
 |:-----|:-----|
 |1. 끝점 및 클라우드 서비스에 구성 된 Acl  <br/> |Classic  <br/> |
 |2. 네트워크 보안 그룹  <br/> |리소스 관리자 및 클래식  <br/> |
@@ -200,9 +203,9 @@ Azure 내부 부하 분산을 임의로 부하 분산 된 집합의 구성원에
    
  **표 5: 가상 컴퓨터 및 해당 Azure 배포 모델에 연결 하는 방법**
   
-**그림 7: 인터넷을 통해 Azure 가상 컴퓨터에 연결합니다.**
+**그림 7: 인터넷을 통한 Azure 가상 컴퓨터에 연결**
 
-![그림 7: 인터넷을 통한 Azure 가상 컴퓨터에 연결](images/c5e3531b-170a-4482-a6ff-fb8fbbe81b35.png)
+![그림 7: 인터넷을 통한 Azure 가상 컴퓨터에 연결](media/c5e3531b-170a-4482-a6ff-fb8fbbe81b35.png)
   
 그림 7 끝점을 사용 하 여 클라우드 서비스에서 가상 컴퓨터, 네트워크 보안 그룹을 사용 하 여 서브넷에 가상 컴퓨터 및 가상 컴퓨터에는 외부 부하 분산 장치 및 인바운드 규칙의 NAT 사용 하는 서브넷에 연결 하는 인터넷에 연결 된 컴퓨터를 보여줍니다.
   
@@ -226,7 +229,7 @@ VNets 연결 하는 조직의 사이트에 사용 되는 것과 유사한 토폴
   
 **그림 8: 데이지 체인에 대 한 구성을 VNets**
 
-![그림 8: Azure Virtual Network에 대한 데이지 체인 구성](images/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
+![그림 8: Azure Virtual Network에 대한 데이지 체인 구성](media/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
   
 그림 8 연속적으로 연결 된 구성을 사용 하 여 계열에 있는 연결 된 다섯 개의 VNets를 표시 합니다.
   
@@ -234,7 +237,7 @@ VNets 연결 하는 조직의 사이트에 사용 되는 것과 유사한 토폴
   
 **그림 9: 허브 및 스포크에 대 한 구성을 VNets**
 
-![그림 9: Azure Virtual Network를 위한 스포크 및 허브 구성](images/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
+![그림 9: Azure Virtual Network를 위한 스포크 및 허브 구성](media/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
   
 그림 9 두 VNets는 대화 상대와 두 다른 스포크 VNets에 연결 된 허브 6 VNets를 보여줍니다.
   
@@ -242,7 +245,7 @@ VNets 연결 하는 조직의 사이트에 사용 되는 것과 유사한 토폴
   
 **그림 10: 전체 메쉬 VNets에 대 한 구성**
 
-![그림 10: Azure Virtual Network를 위한 망 구성](images/9dda0738-10db-4a63-95b3-79851a399b71.png)
+![그림 10: Azure Virtual Network를 위한 망 구성](media/9dda0738-10db-4a63-95b3-79851a399b71.png)
   
 그림 10 4 개의 VNets 6 VNet-VNet 연결의 합계를 사용 하 여, 서로 게 연결을 표시 합니다.
   
@@ -275,7 +278,7 @@ VPN 장치에 대 한 자세한 내용은 [사이트 마다 가상 네트워크 
   
 **그림 11: 크로스-프레미스 VNet에 연결 하 네가지 방법**
 
-![그림 11: 크로스-프레미스 Azure Virtual Network에 연결하는 세 가지 방법 ](images/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
+![그림 11: 크로스-프레미스 Azure Virtual Network에 연결하는 세 가지 방법 ](media/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
   
 그림 11에는 다음과 같은 네가지 유형의 연결 된 VNet 나와: P2S 연결 하는 컴퓨터에서 온-프레미스 네트워크에서는 S2S VPN 연결는 온-프레미스 네트워크에서는 ExpressRoute 연결 및 다른 VNet에서 VNet-VNet 연결 합니다. 
   
@@ -307,7 +310,7 @@ VPN 장치에 대 한 자세한 내용은 [사이트 마다 가상 네트워크 
     
 **그림 12: 온-프레미스 VPN 라우터 또는 장치**
 
-![그림 12: 온-프레미스 VPN 라우터 또는 장치](images/bd221468-a660-4730-aa55-0426986480b9.png)
+![그림 12: 온-프레미스 VPN 라우터 또는 장치](media/bd221468-a660-4730-aa55-0426986480b9.png)
   
 그림 12는 온-프레미스 VPN 라우터 또는 장치에 연결 된 크로스-프레미스 VNet를 보여줍니다.
   
@@ -323,7 +326,7 @@ VPN 장치에 대 한 자세한 내용은 [사이트 마다 가상 네트워크 
     
 **그림 13: 온-프레미스 경로 VNet에 접속할 수 있도록 하는 데 필요한**
 
-![그림 13: Azure VNet에 연결하는 데 필요한 온-프레미스 경로](images/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
+![그림 13: Azure VNet에 연결하는 데 필요한 온-프레미스 경로](media/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
   
 그림 13 온-프레미스 라우터 및 VPN 라우터 또는 VNet의 주소 공간을 나타내는 장치에 필요한 라우팅 정보를 보여줍니다.
   
@@ -339,7 +342,7 @@ VPN 장치에 대 한 자세한 내용은 [사이트 마다 가상 네트워크 
     
 **그림 14: ExpressRoute를 사용 하 여 크로스-프레미스 VNet에 연결**
 
-![그림 14: ExpressRoute를 사용해 크로스-프레미스 Azure Virtual Network에 연결](images/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
+![그림 14: ExpressRoute를 사용해 크로스-프레미스 Azure Virtual Network에 연결](media/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
   
 그림 14 크로스-프레미스 VNet 및 온-프레미스 라우터에서 Microsoft Azure로는 ExpressRoute 연결을 표시합니다.
   
@@ -351,7 +354,7 @@ Azure는 라우팅에 대 한는 온-프레미스 또는 다른 VNets는 VNet에
   
 **그림 15: 크로스-프레미스 VNet는 로컬 네트워크 주소 공간**
 
-![그림 15: 크로스-프레미스 Azure Virtual Network에 대한 로컬 네트워크 주소 공간](images/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
+![그림 15: 크로스-프레미스 Azure Virtual Network에 대한 로컬 네트워크 주소 공간](media/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
   
 그림 15 온-프레미스 네트워크에 연결할 수 있는 주소 공간을 나타내는 Azure 게이트웨이에서 크로스-프레미스 VNet 및 로컬 네트워크 주소 공간을 표시 합니다. 
   
@@ -365,7 +368,7 @@ Azure 게이트웨이 요약 된 경로 허용 하지 않으므로 VNet 주소 �
   
 **그림 16: 주소 공간 구멍 VNet 주소 공간에서 만든**
 
-![그림 16: Virtual Network 공간에서 만든 주소 공간 구멍](images/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
+![그림 16: Virtual Network 공간에서 만든 주소 공간 구멍](media/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
   
 그림 16 루트 공간을 사용 하는 주소 공간, 및 VNet 주소 공간 표시를 보여줍니다.
   
@@ -393,7 +396,7 @@ Azure 게이트웨이 요약 된 경로 허용 하지 않으므로 VNet 주소 �
     
 **그림 17: DNS 복제 및 크로스-프레미스 VNet에서 DNS 서버에 대 한 착신 전환**
 
-![그림 17: 크로스-프레미스 Azure Virtual Network의 DNS 서버에 대한 DNS 복제 및 전달](images/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
+![그림 17: 크로스-프레미스 Azure Virtual Network의 DNS 서버에 대한 DNS 복제 및 전달](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
   
 그림 17은 VNet의 서브넷 및 온-프레미스 네트워크에 있는 DNS 서버와 크로스-프레미스 VNet를 표시합니다. DNS 복제 및 전달 두 DNS 서버 간에 구성 되었습니다.
   
@@ -403,7 +406,7 @@ Azure 서브넷에 대 한 기본 시스템 경로 인터넷을 가리킵니다.
   
 **그림 18: 사용자 정의 경로 및 크로스-프레미스 VNet에 대 한 강제 적용 된 터널링**
 
-![그림 18: 크로스-프레미스 Azure Virtual Network에 대한 강제 터널링 및 사용자 정의 경로](images/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
+![그림 18: 크로스-프레미스 Azure Virtual Network에 대한 강제 터널링 및 사용자 정의 경로](media/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
   
 그림 18 Azure 게이트웨이를 가리키도록 설정 하는 서브넷에 대 한 사용자 정의 경로와 크로스-프레미스 VNet를 표시 합니다.
   
@@ -414,7 +417,7 @@ Azure 서브넷에 대 한 기본 시스템 경로 인터넷을 가리킵니다.
   
 **그림 19: Azure IaaS의 가용성이 인트라넷 SharePoint Server 2016 팜**
 
-![Azure IaaS에 팜 된 고가용성 SharePoint Server 2016 ](images/3a922e21-df91-455f-ba90-78abdd48d98d.png)
+![Azure IaaS에 팜 된 고가용성 SharePoint Server 2016 ](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
 그림 19 프런트엔드 및 데이터 계층에 대 한 내부 부하 분산 장치를 사용 하는 크로스-프레미스 VNet에 배포 된 SharePoint Server 2016 팜 9 명의 서버를 표시 합니다. 단계별 디자인 및 배포 지침을 비롯 한 자세한 내용은 [Microsoft Azure의 SharePoint Server 2016](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx)를 참조 하십시오.
   

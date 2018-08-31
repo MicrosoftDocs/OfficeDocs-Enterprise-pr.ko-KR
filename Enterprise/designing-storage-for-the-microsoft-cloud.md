@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 클라우드를 위한 저장소 디자인 (영문)"
+title: Microsoft 클라우드에 대한 저장소 디자인
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
-description: "요약:는 클라우드 저장소 필요한 이유를 이해 하 고 Microsoft의 클라우드 저장소 옵션 및 키 저장소 시나리오 목록을 검토 합니다."
-ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 요약:는 클라우드 저장소 필요한 이유를 이해 하 고 Microsoft의 클라우드 저장소 옵션 및 키 저장소 시나리오 목록을 검토 합니다.
+ms.openlocfilehash: d96992d63115095dd6a1b7277886d0a4bb2bc02f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915233"
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Microsoft 클라우드를 위한 저장소 디자인 (영문)
+# <a name="designing-storage-for-the-microsoft-cloud"></a>Microsoft 클라우드에 대한 저장소 디자인
 
  **요약:** 클라우드 저장소 필요한 이유를 이해 하 고 Microsoft의 클라우드 저장소 옵션 및 키 저장소 시나리오 목록을 검토 합니다.
   
@@ -52,7 +55,7 @@ Microsoft 클라우드 서비스와 함께 저장 장치를 통합 (영문) 광�
 
 다양 한 클라우드 저장소 옵션을 쉽게 이해할 수 있도록, 건설 유추를 사용 합니다.
   
-### <a name="move-in-ready"></a>이동-준비 완료
+### <a name="move-in-ready"></a>이동 준비 완료
 
 기존 서비스와 함께 제공 되는 이러한 미리 패키지 된 솔루션을 사용 합니다. 즉시 및 최소한의 구성으로 사용 합니다.
   
@@ -66,7 +69,7 @@ Microsoft 클라우드 서비스와 함께 저장 장치를 통합 (영문) 광�
     
 - Visual Studio Team Services
     
-- Azure 사이트 복구
+- Azure Site Recovery
     
 - Yammer 사이트 공유
     
@@ -74,7 +77,7 @@ Microsoft 클라우드 서비스와 함께 저장 장치를 통합 (영문) 광�
     
 이러한 각의 세부 정보에 대 한 저장소 옵션 클라우드 [이동-준비](move-in-ready.md)를 참조 하십시오.
   
-### <a name="some-assembly-required"></a>필요한 일부 어셈블리
+### <a name="some-assembly-required"></a>일부 필수 어셈블리
 
 이러한 기존 서비스를 사용 하 여 추가 구성을 사용 하 여 저장소 솔루션에 대 한 시작점 또는 사용자 지정 맞춤에 대 한 구분 합니다.
   
@@ -100,7 +103,7 @@ Microsoft 클라우드 서비스와 함께 저장 장치를 통합 (영문) 광�
     
 이러한 각 클라우드 저장소 옵션의 세부 정보에 대 한 [일부 어셈블리 필요한](some-assembly-required.md)를 참조 합니다.
   
-### <a name="build-from-the-ground-up"></a>처음부터 만들기
+### <a name="build-from-the-ground-up"></a>처음부터 새로 구축
 
 코딩와 함께 이러한 저장소 구성 요소를 사용 하 여 처음부터 직접 앱 또는 저장소 솔루션을 만듭니다.
   

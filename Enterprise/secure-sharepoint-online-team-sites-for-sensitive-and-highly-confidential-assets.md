@@ -1,5 +1,5 @@
 ---
-title: "중요 한 기밀 사항이 자산에 대 한 SharePoint Online 팀 사이트 보호"
+title: 민감한 극비 자산에 대한 SharePoint Online 팀 사이트 보안
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "요약: Contoso 중요 한 보호 및 기밀 사항이 SharePoint Online 팀 사이트에 대 한 더 쉽게을 구현 하는 방법 아직 보안 임원 및 해당 연구 (영문)에 대 한 공동 작업 가운데에 맞춥니다."
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso 중요 한 보호 및 기밀 사항이 SharePoint Online 팀 사이트에 대 한 더 쉽게을 구현 하는 방법 아직 보안 임원 및 해당 연구 (영문)에 대 한 공동 작업 가운데에 맞춥니다.'
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914863"
 ---
-# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>중요 한 기밀 사항이 자산에 대 한 SharePoint Online 팀 사이트 보호
+# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>민감한 극비 자산에 대한 SharePoint Online 팀 사이트 보안
 
  **요약:** 어떻게 구현 Contoso 중요 한 보호 및 기밀 사항이 SharePoint Online 팀 임원 및 해당 하는 리서치 센터에 대 한 보안 하면서도 쉽게, 공동 작업을 위한 사이트입니다.
   
@@ -30,7 +33,7 @@ Contoso의 보안 및 SharePoint 관리자의 IT 부서 중요 한 보호 하 �
   
 **중요 한 보호 및 기밀 사항이 SharePoint Online 팀 사이트의 그림 1: 비교**
 
-![중요한 보호 및 높은 수준의 기밀 SharePoint Online 팀 사이트](images/Contoso_Poster/SP_Solution.png)
+![중요한 보호 및 높은 수준의 기밀 SharePoint Online 팀 사이트](media/Contoso-Poster/SP-Solution.png)
   
 자신의 임원 및 팀이 연구 (영문)에 대 한 보안 SharePoint Online 팀 사이트를 만들려면 다음이 단계를 사용 하는 Contoso 합니다.
   

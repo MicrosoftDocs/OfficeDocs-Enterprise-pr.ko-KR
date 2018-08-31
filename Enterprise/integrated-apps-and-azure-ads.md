@@ -1,5 +1,5 @@
 ---
-title: 통합 된 응용 프로그램 및 Office 365 관리자를 위한 Azure AD
+title: Office 365 관리자를 위한 통합된 앱 및 Azure AD
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,18 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: O365 앱을 통합 하는 방법에 대해 알아봅니다 등록 되 고 Azure AD의 관리
-ms.openlocfilehash: 666bfca5c2621d25f13dff7c5753c5ef47591b68
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: 0482271f15dc5e2b81e36fd265b49da6eba18702
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22213128"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915003"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>통합 된 응용 프로그램 및 Office 365 관리자를 위한 Azure AD
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 관리자를 위한 통합된 앱 및 Azure AD
 
 이 [기능을 통합 된 응용 프로그램 설정 또는 해제](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114)를 방금 보다 통합된 앱을 관리 합니다. Office 365 REST Api의 등장, 사용자가 메일, 일정, 연락처, 사용자, 그룹, 파일 및 폴더와 같은 자신의 Office 365 데이터에 대 한 응용 프로그램 액세스를 부여할 수 있습니다. 기본적으로 사용자를 개별적으로 각 응용 프로그램에 사용 권한을 부여 해야 하지만 전역 관리자 수준에서 한번 앱 권한을 부여 하 고 응용 프로그램 시작 관리자를 통해 전체 조직에 제공 하려는 경우에이 수직 확장 하지 않습니다. 이 작업을 수행 Azure AD에 앱을 등록 해야 합니다. 다음과 같은 Azure AD에 응용 프로그램을 등록할 수 및 Office 365 조직에서 앱을 관리 하는데 도움이 되는 일부 배경 정보가 알고 있어야 하는 전에 수행 해야하는 단계를 수행 합니다. 이 문서는 이러한 리소스를 안내합니다.
   

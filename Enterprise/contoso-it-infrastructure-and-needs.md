@@ -1,5 +1,5 @@
 ---
-title: "Contoso의 IT 인프라 및 요구 사항"
+title: Contoso의 IT 인프라 및 요구 사항
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "요약: Contoso의 기본 구조는 온-프레미스 IT 인프라 및 방법의 비즈니스 요구 하 여 충족할 수 Microsoft의 클라우드 서비스를 이해 합니다."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso의 기본 구조는 온-프레미스 IT 인프라 및 방법의 비즈니스 요구 하 여 충족할 수 Microsoft의 클라우드 서비스를 이해 합니다.'
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915733"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Contoso의 IT 인프라 및 요구 사항
 
@@ -30,7 +31,7 @@ Contoso는 대부분의 중앙 사용 하 여 온-프레미스 파리 본사에�
   
 **그림 1: Contoso의 기존 IT 인프라 관리**
 
-![Contoso의 기존 IT 인프라](images/Contoso_Poster/Existing_IT.png)
+![Contoso의 기존 IT 인프라](media/Contoso-Poster/Existing-IT.png)
   
 그림 1은 응용 프로그램 데이터 센터, DMZ, 및 인터넷 사용 하 여 중앙 사무소를 보여줍니다.
   

@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 디자인 하 고이 솔루션을 구현 하는 방법에 설명 합니다.'
-ms.openlocfilehash: 553b2e6bb9d35ab3dba471b01938914a95af23d6
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56d9fa039bfe533afbc5ac7c1e060d43c0801aef
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161801"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915803"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure에서 SharePoint Server 2013 재해 복구
 
@@ -30,7 +32,7 @@ ms.locfileid: "20161801"
   
 이 문서를 사용 하 여 다음과 같은 솔루션 모델: **Microsoft Azure의 SharePoint 재해 복구**합니다.
   
-[![Azure에 대한 SharePoint 재해 복구 프로세스](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![Azure에 대한 SharePoint 재해 복구 프로세스](media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -63,7 +65,6 @@ ms.locfileid: "20161801"
 - [문제 해결 팁](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
     
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>재해 복구를 위한 Azure 인프라 서비스를 사용 하 여
-<a name="AZ"> </a>
 
 대부분의 조직에서는 하지 않은 재해 복구 환경 sharepoint, 구축 및 온-프레미스를 유지 관리 비용이 매우 많이 값일 수 있습니다. Azure 인프라 서비스 주목할 옵션에 대 한 재해 복구 환경에 더욱 유연 하 고 온-프레미스 대안 보다 저렴을 제공 합니다.
   
@@ -92,7 +93,6 @@ Azure 인프라 서비스를 사용 하는 경우의 이점은 다음과 같습�
 재해 복구 솔루션에 대 한 자세한 내용은 [고가용성 및 재해 복구 개념에 SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) 및 [SharePoint 2013에 대 한 재해 복구 전략 선택](https://go.microsoft.com/fwlink/p/?linkid=203228)을 참조 하십시오.
   
 ## <a name="solution-description"></a>솔루션 설명
-<a name="SOL"> </a>
 
 웜 대기 재해 복구 솔루션에는 다음과 같은 환경을 해야합니다.
   
@@ -106,7 +106,7 @@ Azure 인프라 서비스를 사용 하는 경우의 이점은 다음과 같습�
   
 **그림: Azure의 웜 대기 솔루션 요소**
 
-![Azure의 SharePoint 웜 대기 솔루션 요소](images/AZarch_AZWarmStndby.png)
+![Azure의 SharePoint 웜 대기 솔루션 요소](media/AZarch-AZWarmStndby.png)
   
 SQL Server 로그 전달 분산 파일 시스템 복제 (DFSR)와 Azure에서 복구 팜에 데이터베이스 백업과 트랜잭션 로그를 복사를 사용 합니다. 
   
@@ -157,7 +157,6 @@ SQL Server 로그 전달 분산 파일 시스템 복제 (DFSR)와 Azure에서 �
 이 문서에서 제공 하는 지침에는 온-프레미스 팜에 이미 디자인 및 배포 된 가정 합니다.
   
 ## <a name="detailed-architecture"></a>자세한 아키텍처
-<a name="arch"> </a>
 
 원칙적으로 Azure에서 복구 팜 구성은 프로덕션 팜 온-프레미스, 다음을 비롯 한 비슷합니다.
   
@@ -181,7 +180,7 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
   
 **그림: 토폴로지 및 프로덕션 팜과 웜 대기 복구 팜의 핵심 요소**
 
-![SharePoint 팜 및 웜 대기 복구 팜 토폴로지](images/AZarch_AZWarmStndby.png)
+![SharePoint 팜 및 웜 대기 복구 팜 토폴로지](media/AZarch-AZWarmStndby.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
@@ -211,7 +210,7 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
   
 **가상 컴퓨터를 실행 하는 포함 된 그림: 콜드 대기 복구 팜**
 
-![Azure의 SharePoint 콜드 대기 솔루션 요소](images/AZarch_AZColdStndby.png)
+![Azure의 SharePoint 콜드 대기 솔루션 요소](media/AZarch-AZColdStndby.png)
   
 콜드 대기 환경에 장애 조치 후 모든 가상 컴퓨터를 시작 하 고 메서드를 호출 하는 데이터베이스 서버의 고가용성을 얻을 수를 구성 해야, SQL Server AlwaysOn 가용성 그룹 등입니다.
   
@@ -238,9 +237,8 @@ Azure의 환경에는 프로덕션 팜 중 더 작은 버전 수 있습니다. �
 Windows PowerShell 외에도 SQL Server, SharePoint Server 및 Azure 용 Windows PowerShell 라이브러리도 있습니다. T SQL에도 도움이 구성 및 재해 복구 환경을 유지 관리 시간을 단축 하는 것을 잊지 마십시오.
   
 ## <a name="disaster-recovery-roadmap"></a>재해 복구 로드맵
-<a name="RDmap"> </a>
 
-![SharePoint 재해 복구 로드맵을 시각적으로 보여줍니다.](images/Azure_DRroadmap.png)
+![SharePoint 재해 복구 로드맵을 시각적으로 보여줍니다.](media/Azure-DRroadmap.png)
   
 이 로드맵 프로덕션 환경에 배포 된 SharePoint Server 2013 팜 이미 있다고 가정 합니다.
   
@@ -257,9 +255,8 @@ Windows PowerShell 외에도 SQL Server, SharePoint Server 및 Azure 용 Windows
 |단계 7  <br/> | 장애 조치 및 복구 솔루션의 유효성을 검사 합니다. 다음 절차 및 기술 포함 됩니다. <br/>  로그 전달을 중지 합니다. <br/>  백업을 복원 합니다. <br/>  콘텐츠를 크롤링합니다. <br/>  서비스를 복구 합니다. <br/>  DNS 레코드를 관리 합니다. <br/> |
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>1 단계: 디자인 재해 복구 환경
-<a name="Phase1"> </a>
 
-SharePoint 복구 팜에 포함 하 여 재해 복구 환경을 디자인 하는 [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) 의 지침을 사용 합니다. 디자인 프로세스를 시작 하는 그래픽[Azure의 재해 복구 솔루션을 SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio 파일에 사용할 수 있습니다. Azure 환경에 있는 모든 작업을 시작 하기 전에 전체 환경을 디자인 하는 것이 좋습니다.
+SharePoint 복구 팜에 포함 하 여 재해 복구 환경을 디자인 하는 [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) 의 지침을 사용 합니다. 디자인 프로세스를 시작 하는 그래픽 [Azure의 재해 복구 솔루션을 SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio 파일에 사용할 수 있습니다. Azure 환경에 있는 모든 작업을 시작 하기 전에 전체 환경을 디자인 하는 것이 좋습니다.
   
 가상 네트워크, VPN 연결, Active Directory 및 SharePoint 팜 디자인을 위한 [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) 에서 제공 하는 지침을 외에도 Azure 환경에는 파일 공유 역할을 추가 해야 합니다.
   
@@ -270,7 +267,7 @@ SharePoint 복구 팜에 포함 하 여 재해 복구 환경을 디자인 하는
   
 **그림: 재해 복구 솔루션에 사용 되는 파일 서버 배치**
 
-![SharePoint 데이터베이스 서버 역할을 포함하는 동일한 클라우드 서비스에 추가된 파일 공유 VM을 보여줍니다.](images/AZenv_FSforDFSRandWSFC.png)
+![SharePoint 데이터베이스 서버 역할을 포함하는 동일한 클라우드 서비스에 추가된 파일 공유 VM을 보여줍니다.](media/AZenv-FSforDFSRandWSFC.png)
   
 이 다이어그램에서 파일 공유 가상 컴퓨터는 데이터베이스 서버 역할을 포함 하는 Azure의 동일한 서브넷에 추가 됩니다. SQL Server 역할 등의 다른 서버 역할을 사용 하 여 설정 하는 가용성 파일 공유 가상 컴퓨터를 추가 하지 마십시오.
   
@@ -281,7 +278,6 @@ SharePoint 복구 팜에 포함 하 여 재해 복구 환경을 디자인 하는
 구성 복구 팜에 프로덕션 팜으로 최대한 동일 하 게 서비스 수준 계약 (SLA) 요구 사항을 충족 하 고 비즈니스를 지원 하기 위해 필요한 기능을 제공 합니다. 재해 복구 환경을 디자인할 때도 프로덕션 환경에 대 한 변경 관리 프로세스를 살펴봅니다. 프로덕션 환경으로 복구 환경 동일한 간격으로 업데이트 하 여 복구 환경에 변경 관리 프로세스를 확장 하는 것이 좋습니다. 변경 관리 프로세스의 일부로 팜 구성, 응용 프로그램 및 사용자의 상세 인벤토리를 유지 관리 하는 것이 좋습니다. 
   
 ## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>단계 2: Azure 가상 네트워크 및 VPN 연결 만들기
-<a name="Phase2"> </a>
 
 [Microsoft Azure 가상 네트워크에 연결 온-프레미스 네트워크](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) 계획 하 고 Azure에 가상 네트워크를 배포 하는 방법 및 VPN 연결을 만드는 방법을 표시 합니다. 다음 절차를 완료 하려면 항목의 지침을 따릅니다.
   
@@ -296,13 +292,12 @@ SharePoint 복구 팜에 포함 하 여 재해 복구 환경을 디자인 하는
 - 온-프레미스 네트워크와 가상 네트워크 간의 라우팅을 구성 합니다.
     
 ## <a name="phase-3-deploy-active-directory-and-domain-name-services-to-the-azure-virtual-network"></a>Azure 가상 네트워크를 Active Directory 및 도메인 이름 서비스를 배포 하는 3 단계:
-<a name="Phase3"> </a>
 
 이 단계는 다음 그림에 나와있는 것 처럼 및 [SharePoint 2013에 대 한 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) 의 설명에 따라 Windows Server Active Directory와 DNS 하이브리드 시나리오에서 가상 네트워크에 배포를 포함 합니다.
   
 **그림: 하이브리드 Active Directory 도메인 구성**
 
-![Azure Virtual Network와 SharePoint 팜 서브넷에 배포된 두 가상 컴퓨터: 복제 도메인 컨트롤러 및 DNS 서버](images/AZarch_HyADdomainConfig.png)
+![Azure Virtual Network와 SharePoint 팜 서브넷에 배포된 두 가상 컴퓨터: 복제 도메인 컨트롤러 및 DNS 서버](media/AZarch-HyADdomainConfig.png)
   
 그림에서는 두 가상 컴퓨터는 동일한 서브넷에 배포 됩니다. 이러한 가상 컴퓨터에는 각 호스팅 두 역할은: Active Directory 및 DNS 합니다.
   
@@ -313,7 +308,6 @@ Azure의 도메인 컨트롤러를 설정에 대 한 자세한 지침을 [Azure 
 이 단계 전에 가상 네트워크를 가상 컴퓨터를 배포 하지 않았으므로 있습니다. Active Directory 및 DNS를 호스팅하기 위한 가상 컴퓨터는 가능성이 솔루션에 필요한 가장 큰 가상 컴퓨터 없습니다. 이러한 가상 컴퓨터를 배포 하기 전에 먼저 가상 네트워크에서 사용 하 여 계획 하는 가장 큰 가상 컴퓨터를 만듭니다. 이렇게 하면 솔루션에 필요한 가장 큰 크기를 허용 하는 Azure의 태그에 도착 있는지 확인 합니다. 이 시간에이 가상 컴퓨터를 구성할 필요가 없습니다. 만들고 별도로 설정 하기만 합니다. 이렇게 하지 않으면 하는 경우 충돌할 수 있습니다 나중에 더 큰 가상 컴퓨터를 만들려는 경우 제한 하는 시점의 문제는이 문서 작성 되었습니다. 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>4 단계: Azure의 SharePoint 복구 팜 배포
-<a name="Phase4"> </a>
 
 디자인 계획에 따라 가상 네트워크에서 SharePoint 팜에 배포 합니다. Azure의 SharePoint 역할을 배포 하기 전에 [Azure 인프라 서비스에 SharePoint 2013에 대 한 계획](https://go.microsoft.com/fwlink/p/?LinkId=400984) 을 검토할 수 있습니다.
   
@@ -336,7 +330,6 @@ Azure의 도메인 컨트롤러를 설정에 대 한 자세한 지침을 [Azure 
 - 팜에서 같은 사이트 모음 복원 됩니다 하는 항목을 구성 하지 마십시오. 
     
 ## <a name="phase-5-set-up-dfsr-between-the-farms"></a>5 단계: 팜 간에 DFSR를 설정 합니다.
-<a name="Phase5"> </a>
 
 DFSR를 사용 하 여 파일 복제를 설정 하려면 DNS 관리 스냅인을 사용 합니다. 그러나 DFSR 설치 하기 전에 온-프레미스 파일 서버 및 Azure 파일 서버에 로그온 하 고 Windows에서 서비스를 사용 하도록 설정 합니다.
   
@@ -365,15 +358,13 @@ DFSR를 사용 하 여 파일 복제를 설정 하려면 DNS 관리 스냅인을
 |[Microsoft-파일 캐비닛 블로그 (영문)에서 저장소 팀](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |파일 서비스 및 Windows Server의 저장소 기능에 대 한 블로그 (영문)  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>단계 6: 로그 복구 팜으로 전달 설정
-<a name="Phase6"> </a>
 
-로그 전달이이 환경에서 재해 복구를 설정 하기 위한 중요 한 요소가 있습니다. 로그 전달 보조 데이터베이스 서버 인스턴스를 기본 데이터베이스 서버 인스턴스에서 데이터베이스에 대 한 트랜잭션 로그 파일을 보낼 자동으로 사용할 수 있습니다. 로그 전달을 설정 하려면 [구성에서에서 로그 전달을 SharePoint 2013을](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)참조 하십시오. 
+로그 전달이이 환경에서 재해 복구를 설정 하기 위한 중요 한 요소가 있습니다. 로그 전달 보조 데이터베이스 서버 인스턴스를 기본 데이터베이스 서버 인스턴스에서 데이터베이스에 대 한 트랜잭션 로그 파일을 보낼 자동으로 사용할 수 있습니다. 로그 전달을 설정 하려면 [구성에서에서 로그 전달을 SharePoint 2013을](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping)참조 하십시오. 
   
 > [!IMPORTANT]
 > 에서 로그 전달을 지원 SharePoint 서버는 특정 데이터베이스에 제한 됩니다. 자세한 내용은 [지원 되는 고가용성 및 재해 복구 옵션에 SharePoint 데이터베이스 (SharePoint 2013)을](https://go.microsoft.com/fwlink/p/?LinkId=393121)참조 하십시오. 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>단계 7: 장애 조치 및 복구의 유효성을 검사합니다
-<a name="Phase7"> </a>
 
 이 최종 단계의 목표 재해 복구 솔루션 계획 한 대로 작동 하는지 확인 하는 것입니다. 이 작업을 수행 하려면 프로덕션 팜 종료 되 고 대체할 수 있는으로 복구 팜 시작 되는 장애 조치 이벤트를 만듭니다. 수동으로 또는 스크립트를 사용 하 여 장애 조치 시나리오를 시작할 수 있습니다.
   
@@ -449,7 +440,6 @@ SQL Server Management Studio에서 **WSS_Content** 데이터베이스를 마우�
 2. **검색 관리** 페이지에서 **콘텐츠 원본**을 클릭, 화살표를 클릭 하 고 **전체 크롤링 시작**을 클릭 한 다음 사용할 콘텐츠 원본을 가리킵니다.
     
 ### <a name="recover-farm-services"></a>팜 서비스 복구
-<a name="Reco"> </a>
 
 다음 표에서 로그 전달 데이터베이스, 서비스를 데이터베이스가 되어 있지만 로그 전달 데이터베이스 되지 않은 서비스와 복원 하는 것을 권장 하지 않은 서비스를 복구 하는 방법을 보여줍니다.
   
@@ -479,7 +469,6 @@ SQL Server Management Studio에서 **WSS_Content** 데이터베이스를 마우�
 - 응용 프로그램 풀: SharePoint 서비스 응용 프로그램 
     
 ### <a name="manage-dns-records"></a>DNS 레코드 관리
-<a name="DNS"> </a>
 
 SharePoint 팜의를 가리키도록 DNS 레코드를 수동으로 만들어야 합니다.
   
@@ -487,7 +476,7 @@ SharePoint 팜의를 가리키도록 DNS 레코드를 수동으로 만들어야 
   
 일반적으로 네트워크 부하 분산 설정 하는 경우 클러스터는 단일 IP 주소를 할당 됩니다. 그런 다음 만들면 DNS 호스트 레코드를 DNS 공급자에서 클러스터를 가리키는 네트워크에 대 한 합니다. (이 프로젝트에 대 한는 DNS 서버에에서 배치 Azure에서 온-프레미스 데이터 센터 오류가 발생 하는 경우 복구를 위한.) DNS 레코드를 DNS 관리자에서 Active Directory에서 예, 호출을 만들 수 예를 들어, `http://sharepoint.contoso.com`, 부하 분산 된 클러스터에 대 한 IP 주소를 가리키는 합니다.
   
-SharePoint 팜에 대 한 외부 액세스를 위한 클라이언트가 인트라넷에서 사용 하는 동일한 URL에는 외부 DNS 서버에 호스트 레코드를 만들 수 있습니다 (예를들어, http://sharepoint.contoso.com) 방화벽의 외부 IP 주소를 가리키는 합니다. (이 예제를 사용 하 여 최상의 결과은 외부 DNS 서버 라우팅 DNS 요청 하지 않고 내부 DNS 서버에서 SharePoint 팜 클러스터에 직접 contoso.com 및 경로 요청에 대 한 신뢰할 수 있도록 분할 DNS 설정 합니다.) 그런 다음 클라이언트에 대 한 필요 리소스를 찾을 수 있도록 외부 IP 주소 온-프레미스 클러스터의 내부 IP 주소를 매핑할 수 있습니다.
+SharePoint 팜에 대 한 외부 액세스를 위한 클라이언트가 인트라넷에서 사용 하는 동일한 URL에는 외부 DNS 서버에 호스트 레코드를 만들 수 있습니다 (예를들어, `http://sharepoint.contoso.com`) 방화벽의 외부 IP 주소를 가리키는 합니다. (이 예제를 사용 하 여 최상의 결과 내부 DNS 서버에 대 한 신뢰할 수 있도록 분할 DNS 설정 하는 `contoso.com` 하 고 SharePoint 팜 클러스터에 직접 요청을 라우팅하는 것이 아니라 외부 DNS 서버에 요청 하는 라우팅 DNS.) 그런 다음 클라이언트에 대 한 필요 리소스를 찾을 수 있도록 외부 IP 주소 온-프레미스 클러스터의 내부 IP 주소를 매핑할 수 있습니다.
   
 여기에서 서로 다른 재해 복구 시나리오의 메시지를 몇 충돌할 수 있습니다.
   
@@ -495,10 +484,9 @@ SharePoint 팜에 대 한 외부 액세스를 위한 클라이언트가 인트�
   
  **예제 시나리오: 온-프레미스 데이터 센터를 완전히 손실 됩니다.** 이 시나리오는 자연 재해, 화재 또는 배 등으로 인해 발생할 수 있습니다. 이 경우에 엔터프라이즈에 대 한 가능성이 해야 Azure 서브넷 자체 디렉터리 서비스와 DNS를 비롯 하 여 다른 지역에 호스팅되는 보조 데이터 센터입니다. 이전 재해 시나리오와 같이 Azure SharePoint 팜을 가리키도록 내부 및 외부 DNS 레코드를 리디렉션할 수 있습니다. 다시는 점에 주의 DNS 레코드가 전파 다소 시간이 걸릴 수 있습니다.
   
-[호스트 이름이 지정 된 사이트 모음 아키텍처 및 배포 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120)에서 권장 하는 대로 호스트 이름이 지정 된 사이트 모음을 사용 하는 경우에 SharePoint 팜의 고유와 동일한 웹 응용 프로그램에서 호스트 하는 여러 사이트 모음을 할 수 있습니다. DNS 이름 (예 http://sales.contoso.com 및 http://marketing.contoso.com)합니다. 이 경우 사용자 클러스터의 IP 주소를 가리키는 각 사이트 모음에 대 한 DNS 레코드를 만들 수 있습니다. 요청을 SharePoint 웹 프런트엔드 서버에 도달 하면 후 적절 한 사이트 모음에 각 요청을 라우팅 처리할 수 있습니다.
+[호스트 이름이 지정 된 사이트 모음 아키텍처 및 배포 (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)에서 권장 하는 대로 호스트 이름이 지정 된 사이트 모음을 사용 하는 경우에 SharePoint 팜의 고유와 동일한 웹 응용 프로그램에서 호스트 하는 여러 사이트 모음을 할 수 있습니다. DNS 이름 (예 `http://sales.contoso.com` 및 `http://marketing.contoso.com`). 이 경우 사용자 클러스터의 IP 주소를 가리키는 각 사이트 모음에 대 한 DNS 레코드를 만들 수 있습니다. 요청을 SharePoint 웹 프런트엔드 서버에 도달 하면 후 적절 한 사이트 모음에 각 요청을 라우팅 처리할 수 있습니다.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 개념 증명 환경
-<a name="POC"> </a>
 
 설계 하 고이 솔루션에 대 한 개념 증명 환경을 테스트 합니다. 이 테스트 환경에 대 한 디자인 목표를 배포 하 고 고객 환경에서 찾을 수도 하는 SharePoint 팜을 복구 하는 것 이었습니다. 여러 가정 걸었지만 팜의 모든 사용자 지정 내용을 없이 기본 기능을 제공 하는 데 필요한 있는지 알고 있습니다. 토폴로지 필드 및 제품 그룹에서 모범 사례 지침을 사용 하 여 고가용성을 위해 설계 되었습니다.
   
@@ -576,7 +564,7 @@ SQL server가 SharePoint 2013 서버를 만들기 전에 설치 된 데이터베
     
 - S P-w f e 1 및 SP WFE2 분산된 캐시 호스트를 프로 비전 합니다. 
     
-**Psconfig.exe** 명령줄에서 실행 하는 경우 _skipRegisterAsDistributedCachehost_ 매개 변수를 사용 했습니다. 자세한 내용은[피드 및 SharePoint Server 2013의 분산 캐시 서비스에 대 한 계획](https://go.microsoft.com/fwlink/p/?linkid=270985)을 참조 하십시오. 
+**Psconfig.exe** 명령줄에서 실행 하는 경우 _skipRegisterAsDistributedCachehost_ 매개 변수를 사용 했습니다. 자세한 내용은 [피드 및 SharePoint Server 2013의 분산 캐시 서비스에 대 한 계획](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)을 참조 하십시오. 
   
 복구 환경에서 다음 단계를 반복 하는:
   
@@ -631,7 +619,6 @@ SQL server가 SharePoint 2013 서버를 만들기 전에 설치 된 데이터베
 - 콘텐츠 형식 허브 (전용된 콘텐츠 형식 신디케이션 허브에 대 한 데이터베이스)
     
 ## <a name="troubleshooting-tips"></a>문제 해결 팁
-<a name="Troubleshooting"> </a>
 
 섹션에서는 우리가 테스트 하 고 그 솔루션 하는 동안 발생 하는 문제에 설명 합니다. 
   
@@ -667,7 +654,7 @@ SQL Server 에이전트의 기본 자격 증명 하는 대신 네트워크 자�
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>설치 후 자동으로 시작 하도록 실패 하는 관리 되는 메타 데이터 서비스 (또는 기타 SharePoint 서비스)
 
-서비스를 시작, 성능 및 SharePoint Server의 현재 부하에 따라 몇 분정도 걸릴 수 있습니다. 수동으로 서비스에 대 한 **시작** 을 클릭 하 고 필요에 따라 해당 상태를 모니터링할 서버 화면에서 서비스를 새로 고치는 동안 시작에 대 한 적절 한 시간을 제공 합니다. 서비스가 중지 된 설정을 변경 하거나 하는 경우에 SharePoint 진단 로깅을 사용 하도록 설정, 서비스를 다시 시작 하 고 오류에 대 한 로그를 확인 하려고 합니다. 자세한 내용은[SharePoint 2013에서 진단 로깅을 구성](https://go.microsoft.com/fwlink/p/?LinkId=510884) 을 참조 하십시오.
+서비스를 시작, 성능 및 SharePoint Server의 현재 부하에 따라 몇 분정도 걸릴 수 있습니다. 수동으로 서비스에 대 한 **시작** 을 클릭 하 고 필요에 따라 해당 상태를 모니터링할 서버 화면에서 서비스를 새로 고치는 동안 시작에 대 한 적절 한 시간을 제공 합니다. 서비스가 중지 된 설정을 변경 하거나 하는 경우에 SharePoint 진단 로깅을 사용 하도록 설정, 서비스를 다시 시작 하 고 오류에 대 한 로그를 확인 하려고 합니다. 자세한 내용은 [SharePoint 2013에서 진단 로깅을 구성](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging) 을 참조 하십시오.
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>SharePoint 사이트에 대 한 이전 IP 주소를 사용 하 여 클라이언트 브라우저 계속 Azure 장애 조치 환경으로 DNS를 변경한 후
 
@@ -678,17 +665,14 @@ Ipconfig /flushdns
 ```
 
 ## <a name="additional-resources"></a>추가 리소스
-<a name="Troubleshooting"> </a>
 
-[SharePoint 데이터베이스에 대해 지원되는 고가용성 및 재해 복구 옵션(SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)
+[SharePoint 데이터베이스에 대해 지원되는 고가용성 및 재해 복구 옵션](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
 [SharePoint 2013에 대해 SQL Server 2012 AlwaysOn 가용성 그룹 구성](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
 ## <a name="see-also"></a>참고 항목
 
-<a name="Troubleshooting"> </a>
-
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 
 

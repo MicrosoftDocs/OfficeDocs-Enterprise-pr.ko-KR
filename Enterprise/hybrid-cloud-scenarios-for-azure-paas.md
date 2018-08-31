@@ -1,5 +1,5 @@
 ---
-title: "Azure PaaS에 대 한 하이브리드 클라우드 시나리오"
+title: Azure PaaS용 하이브리드 클라우드 시나리오
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: "요약: 경우 서비스로 (PaaS) Microsoft의 플랫폼에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다."
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: 경우 서비스로 (PaaS) Microsoft의 플랫폼에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.'
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915013"
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS에 대 한 하이브리드 클라우드 시나리오
+# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS용 하이브리드 클라우드 시나리오
 
  **요약:** 서비스로 (PaaS) Microsoft의 플랫폼에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **Azure의 그림 1: Microsoft PaaS 기반 하이브리드 시나리오**
 
-![Azure의 Microsoft PaaS 기반 하이브리드 시나리오](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Azure의 Microsoft PaaS 기반 하이브리드 시나리오](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 아키텍처의 각 레이어에:
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 02/09/2018
     
     하이브리드 PaaS 응용 프로그램을 Azure에서 실행 하 고 온-프레미스 compute 또는 저장소 리소스를 사용 합니다.
     
-- Identity
+- ID
     
     디렉터리 동기화 또는 타사 id 공급자와의 페더레이션을 구성 됩니다.
     
@@ -56,7 +57,7 @@ ms.lasthandoff: 02/09/2018
   
 **그림 2: Azure PaaS 기반 하이브리드 응용 프로그램**
 
-![Azure PaaS 기반 하이브리드 응용 프로그램](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Azure PaaS 기반 하이브리드 응용 프로그램](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 그림 2의 온-프레미스 네트워크 저장소 또는 서버와 프록시 서버를 포함 하는 DMZ에서 앱을 호스팅합니다. 인터넷을 통해 나 ExpressRoute 연결을 사용 하 여 Azure PaaS 서비스에 연결 됩니다.
   
@@ -78,7 +79,7 @@ Azure 응용 프로그램에서 자격 증명을 사용할 수 있습니다.
   
 **그림 3: 예 Azure PaaS 기반 하이브리드 응용 프로그램**
 
-![Azure PaaS 기반 하이브리드 응용 프로그램 예제](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Azure PaaS 기반 하이브리드 응용 프로그램 예제](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 그림 3에서는 LOB 프로그램는 온-프레미스 네트워크 호스트 app. Azure PaaS 사용자 지정 모바일 응용을 프로그램을 호스팅합니다. 인터넷에서 smartphone 온-프레미스 LOB 응용 프로그램에 데이터 요청을 보내는 Azure에서 사용자 지정 모바일 응용 프로그램에 액세스 합니다.
   
@@ -104,7 +105,7 @@ SQL Server 인스턴스, 데이터베이스 또는 단일 테이블도의 내용
   
 **그림 4: SQL server 2016 늘이기 데이터베이스**
 
-![SQL Server 2016에 적용된 스트레치 데이터베이스](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![SQL Server 2016에 적용된 스트레치 데이터베이스](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 그림 4는 온-프레미스 네트워크 작은 로컬 데이터베이스가 있는 SQL Server 2016를 실행 하는 서버를 호스트 합니다. Azure PaaS 데이터베이스의 확장 된 부분으로 Azure SQL Server 전체 확대/축소 데이터베이스의 인스턴스를 호스팅합니다. 온-프레미스 SQL server로 전송 하는 온-프레미스 사용자 로부터 T-SQL 쿼리는 안전 하 게 요청 하는 사용자에 게 결과 반환 하는 Azure SQL 전체 확대/축소 데이터베이스에 전달 됩니다.
   

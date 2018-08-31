@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 클라우드 연결의 일반적인 요소"
+title: Microsoft 클라우드 연결의 공통 요소
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
-description: "요약: 네트워킹 인프라의 일반적인 요소 및 네트워크를 준비 하는 방법을 이해 합니다."
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: '요약: 네트워킹 인프라의 일반적인 요소 및 네트워크를 준비 하는 방법을 이해 합니다.'
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915653"
 ---
-# <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결의 일반적인 요소
+# <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결의 공통 요소
 
  **요약:** 네트워킹 인프라의 공통 요소 및 네트워크를 준비 하는 방법을 이해 합니다.
   
@@ -48,7 +51,7 @@ ms.lasthandoff: 02/13/2018
   
 **Microsoft 클라우드 연결에 대 한 그림 1: 옵션**
 
-![그림 1:  Microsoft 클라우드 연결을 위한 옵션](images/Network_Poster/CommonElements.png)
+![그림 1:  Microsoft 클라우드 연결을 위한 옵션](media/Network-Poster/CommonElements.png)
 
   
 그림 1는 기존 인터넷 파이프 또는 ExpressRoute를 사용 하 여 Microsoft 클라우드 서비스에는 온-프레미스 네트워크 수 연결 하는 방법을 보여줍니다. 인터넷 파이프 DMZ를 나타내며 다음과 같은 구성 요소를 가질 수 있습니다.

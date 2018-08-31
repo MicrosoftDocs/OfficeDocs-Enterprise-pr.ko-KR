@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity, 및 SharePoint Server 2007 지원의 끝에 도달 했습니다. BI 솔루션 업그레이드를 계획 하는이 문서를 읽어보십시오.
-ms.openlocfilehash: 98a02ba3945578171c97a616edd88fe0db1cc57f
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169790"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915103"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 
@@ -32,7 +32,7 @@ Office 2007 서버 및 응용 프로그램 서버 및 비즈니스 인텔리전�
 |SharePoint Server 2007 서비스 팩 3  <br/> |2017년 10월 10일  <br/> |
 |PerformancePoint Server 2007 서비스 팩 3  <br/> |2018년 1월 9일  <br/> |
    
-Office 2007 서버 퇴직 도달 하는 방법에 대 한 자세한 내용은 [Office 2007 서버에 대 한 업그레이드를 계획](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)을 참조 하십시오.
+자세한 내용은 [2007 서버와 클라이언트가 Office에서 업그레이드 하는데 도움이 되는 리소스](upgrade-from-office-2007-servers-and-products.md)를 참조 하십시오.
   
 ## <a name="what-does-end-of-support-mean"></a>지원 의미의 역할 끝 무엇입니까?
 
@@ -73,10 +73,10 @@ ProClarity, SharePoint Server 2007 s p 3 및 PerformancePoint Server 2007 s p 3�
   
 |**옵션**|**온-프레미스 또는 클라우드?**|
 |:-----|:-----|
-|[Excel 온라인 Excel을 사용 하 여](pps-2007-end-of-support.md#ExcelAndOnline) <br/> |모두  <br/> |
-|[Power BI를 사용 하 여](pps-2007-end-of-support.md#PowerBI) <br/> |모두  <br/> |
-|[Reporting Services를 사용 하 여](pps-2007-end-of-support.md#SSRS) <br/> |온-프레미스 전용  <br/> |
-|[PerformancePoint Services를 사용 하 여](pps-2007-end-of-support.md#PPS) <br/> |온-프레미스 전용  <br/> |
+|[Excel 온라인를 사용 하 여 Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
+|[보고 서비스](#use-reporting-services-on-premises) <br/> |온-프레미스 전용  <br/> |
+|[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |온-프레미스 전용  <br/> |
    
 ### <a name="use-excel-with-excel-online-in-the-cloud-or-on-premises"></a>Excel을 사용 하 여 Excel online (클라우드 또는 온-프레미스)에
 
@@ -84,15 +84,15 @@ Excel online-SharePoint Server의 Excel 서비스 라고도-사용자를 확인 
   
 다음 표에서 Office 365와 함께 Excel을 사용 하 여 SharePoint Server와 함께 Excel을 사용 하 여 아래 추가 정보로의 주요 장점 비교 합니다.
   
-|**[Office 365 (클라우드에 있음)를 사용 하 여 Excel](pps-2007-end-of-support.md#ExcelO365)**|**[SharePoint Server (온-프레미스)를 사용 하 여 Excel](pps-2007-end-of-support.md#ExcelSPS)**|
+|**[Office 365 (클라우드에 있음)를 사용 하 여 Excel](#excel-with-office-365-in-the-cloud)**|**[SharePoint Server (온-프레미스)를 사용 하 여 Excel](#excel-with-sharepoint-server-on-premises)**|
 |:-----|:-----|
-|**Excel의 가장 큰의 최신 버전을 가져옵니다**. Office 365와 최신 버전의 강력한 포함 하는 Excel, 새 차트 종류, 기능 빠르고 쉽게, 차트 및 표를 만들고 하 고 더 많은 데이터 원본에 대 한 지원를 얻을 수 있습니다.<br/> <br/> **설치 프로그램은 훨씬 간단 하 게**합니다. Excel 온라인 이므로, 비즈니스용 Office 365와 함께 포함 부품 켜져 없는 쉬워집니다. 등록 하 고, 로그인 및를 실행 하 고 더 빠르고 효율적으로 온-프레미스 서버를 업그레이드 하는 보다 수 있습니다.<br/> <br/> **사용자가 어디에 나 자신의 통합 문서에 대 한 액세스**. 사용자가 어느 장소에서 든, 자신의 컴퓨터, 스마트 전화 및 태블릿을 사용 하 여 통합 문서 안전 하 게 볼 수 있습니다.<br/> <br/> **이** ! [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하십시오 <br/> |**전역 설정을 관리**합니다. SharePoint 관리자는 전역 설정, 보안, 부하 분산, 세션 관리, 통합 문서 캐시 및 외부 데이터 연결 등을 지정할 수 있습니다.<br/> <br/> **PerformancePoint Services와 함께 Excel Services를 사용할 수 있습니다**. SharePoint Server 설치의 일부로 Excel Services 및 PerformancePoint 서비스를 구성할 수 있으며 PerformancePoint 대시보드에서 Excel Services 보고서가 포함 되어 있습니다.<br/> <br/> **이** ! [Excel 및 Excel Services (SharePoint Server 2013)의 비즈니스 인텔리전스](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) 를 참조 하십시오. <br/> |
+|**Excel의 가장 큰의 최신 버전을 가져옵니다**. Office 365와 최신 버전의 강력한 포함 하는 Excel, 새 차트 종류, 기능 빠르고 쉽게, 차트 및 표를 만들고 하 고 더 많은 데이터 원본에 대 한 지원를 얻을 수 있습니다.<br/> <br/> **설치 프로그램은 훨씬 간단 하 게**합니다. Excel 온라인 이므로, 비즈니스용 Office 365와 함께 포함 부품 켜져 없는 쉬워집니다. 등록 하 고, 로그인 및를 실행 하 고 더 빠르고 효율적으로 온-프레미스 서버를 업그레이드 하는 보다 수 있습니다.<br/> <br/> **사용자가 어디에 나 자신의 통합 문서에 대 한 액세스**. 사용자가 어느 장소에서 든, 자신의 컴퓨터, 스마트 전화 및 태블릿을 사용 하 여 통합 문서 안전 하 게 볼 수 있습니다.<br/> <br/> **이**! [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하십시오 <br/> |**전역 설정을 관리**합니다. SharePoint 관리자는 전역 설정, 보안, 부하 분산, 세션 관리, 통합 문서 캐시 및 외부 데이터 연결 등을 지정할 수 있습니다.<br/> <br/> **PerformancePoint Services와 함께 Excel Services를 사용할 수 있습니다**. SharePoint Server 설치의 일부로 Excel Services 및 PerformancePoint 서비스를 구성할 수 있으며 PerformancePoint 대시보드에서 Excel Services 보고서가 포함 되어 있습니다.<br/> <br/> **이**! [Excel 및 Excel Services (SharePoint Server 2013)의 비즈니스 인텔리전스](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) 를 참조 하십시오. <br/> |
    
 #### <a name="excel-with-office-365-in-the-cloud"></a>Office 365 (클라우드에 있음)를 사용 하 여 Excel
 
 Office 365로 이동 하는 경우 최신 서비스 및 응용 프로그램을 Excel 2016 및 Excel 온라인 포함 해야 합니다. PerformancePoint Services 아니므로 Office 365에서 사용할 수 있는 Excel 통합 문서 또는 다른 보고서를 사용 하 여 콘텐츠 PerformancePoint 대시보드를 교체 합니다. Excel 2016 새 차트 종류를 많이 있으며 Excel에서 눈에 띄는 대시보드를 만드는 작업은 이전 보다 쉽게 좋은 소식이 됩니다. 및 새로운 기능을 정기적으로 추가 되 고 됩니다. 자세한 내용은 [Windows 용 Excel 2016의 새로운 기능](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)을 참조 합니다.
   
-및의 자 50 개 이상의 Office 365를 구입 하면 Microsoft FastTrack 팀 수 가져올을 설정 하도록 도와줍니다. 자세한 내용은 [Microsoft FastTrack](https://go.microsoft.com/fwlink/?linkid=780698)을 참조 하십시오.
+및의 자 50 개 이상의 Office 365를 구입 하면 Microsoft FastTrack 팀 수 가져올을 설정 하도록 도와줍니다. 자세한 내용은, [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)을 참고 하십시오.
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>SharePoint Server (온-프레미스)를 사용 하 여 Excel
 

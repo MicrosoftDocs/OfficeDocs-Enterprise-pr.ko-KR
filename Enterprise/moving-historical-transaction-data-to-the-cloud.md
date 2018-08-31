@@ -1,5 +1,5 @@
 ---
-title: "기록 트랜잭션 데이터를 클라우드로 이동"
+title: 트랜잭션 기록 데이터를 클라우드로 이동
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
-description: "요약: Contoso 구현 하는 방법 SQL Server 데이터베이스의 온-프레미스 데이터 저장소 요구 사항 및 비용을 실행 하는 매일 감소를 확대 합니다."
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso 구현 하는 방법 SQL Server 데이터베이스의 온-프레미스 데이터 저장소 요구 사항 및 비용을 실행 하는 매일 감소를 확대 합니다.'
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915723"
 ---
-# <a name="moving-historical-transaction-data-to-the-cloud"></a>기록 트랜잭션 데이터를 클라우드로 이동
+# <a name="moving-historical-transaction-data-to-the-cloud"></a>트랜잭션 기록 데이터를 클라우드로 이동
 
  **요약:** Contoso는 SQL Server 늘이기 데이터베이스의 온-프레미스 데이터 저장소 요구 사항 및 비용을 실행 하는 매일 감소를 구현 하는 방법입니다.
   
@@ -28,7 +31,7 @@ Contoso의 엔터프라이즈 저장소 시스템 많은 양의 마케팅 연구
   
 **그림 1: SQL Server 늘이기 데이터베이스**
 
-![하이브리드 데이터 솔루션으로 사용되는 SQL Server Stretch Database](images/Contoso_Poster/StretchDB01.png)
+![하이브리드 데이터 솔루션으로 사용되는 SQL Server Stretch Database](media/Contoso-Poster/StretchDB01.png)
   
 그림 1은 SQL 클라이언트 Azure PaaS에서 Azure SQL 전체 확대/축소 데이터베이스도 전달 하는 SQL Server 2016를 실행 하는 서버에 T-SQL 쿼리를 전송 하는 방법을 보여줍니다.
   
@@ -52,7 +55,7 @@ SQL Server 2016 파리 본사에서 실행 하는 하나의 서버에 대 한 �
   
 **그림 2: 전체 확대/축소 데이터베이스를 사용 하 여 Contoso의 데이터 센터의 서버에 대 한**
 
-![SQL Server가 실행되는 단일 컴퓨터에 대한 Contoso의 구성 SQL Server Stretch Database](images/Contoso_Poster/StretchDB02.png)
+![SQL Server가 실행되는 단일 컴퓨터에 대한 Contoso의 구성 SQL Server Stretch Database](media/Contoso-Poster/StretchDB02.png)
 
   
 그림 2 Contoso의 데이터 센터에서 응용 프로그램 서버에 대 한 사용자 쿼리를 Azure PaaS에서 Azure SQL 전체 확대/축소 데이터베이스에 전달 되는 SQL 쿼리를 만드는 방법을 보여줍니다.

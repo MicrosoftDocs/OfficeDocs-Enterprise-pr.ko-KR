@@ -1,5 +1,5 @@
 ---
-title: EDiscovery에 대 한 파일 컬렉션을 자동화 합니다.
+title: eDiscovery에 대한 파일 컬렉션 자동화
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: '요약: eDiscovery에 대 한 사용자의 컴퓨터에서 파일 컬렉션을 자동화 하는 방법에 알아봅니다.'
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915753"
 ---
-# <a name="automate-file-collection-for-ediscovery"></a>EDiscovery에 대 한 파일 컬렉션을 자동화 합니다.
+# <a name="automate-file-collection-for-ediscovery"></a>eDiscovery에 대한 파일 컬렉션 자동화
 
  **요약:** EDiscovery에 대 한 사용자의 컴퓨터에서 파일 컬렉션을 자동화 하는 방법에 알아봅니다.
   
@@ -37,21 +40,21 @@ eDiscovery은 기준이 회사 인벤토리에 포함, 검색, 식별, 보존, �
   
 다음 다이어그램에서는 모든 단계 및 솔루션의 요소 안내합니다.
   
-![자동화된 파일 컬렉션 솔루션 개요](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![자동화된 파일 컬렉션 솔루션 개요](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |범례 * * *||
 |:-----|:-----|
-|![자홍색 설명선 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|그룹 정책 개체 (GPO)를 만들고 컬렉션 로그온 스크립트와 연결 합니다.  <br/> |
-|![자홍색 설명선 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Custodians 그룹에만 GPO를 적용할 GPO 보안 필터를 구성 합니다. <br/> |
-|![자홍색 설명선 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|프로그램 관리자가 로그온 하 고 컬렉션 로그온 스크립트를 호출 하는 GPO가 실행 합니다.  <br/> |
-|![자홍색 설명선 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|컬렉션 로그온 스크립트는 재고를 파일에 대 한 검색 하 고 해당 위치를 녹음/녹화 Custodians 컴퓨터에서 모든 로컬에 연결 된 드라이브에 사용 합니다.  <br/> |
-|![자홍색 설명선 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|컬렉션 로그온 스크립트는 준비 서버에서 숨겨진된 파일 공유에 인벤토리에 파일을 복사합니다.  <br/> |
-|![자홍색 설명선 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (옵션 A) Exchange Server 2013에 수집 된 PST 파일을 가져오려면 PST 가져오기 스크립트를 수동으로 실행 합니다. <br/> |
-|![자홍색 설명선 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(옵션 B) Office 365 가져오기 도구 및 프로세스를 사용, Exchange Online에 수집 된 PST 파일을 가져올.  <br/> |
-|![자홍색 설명선 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|MoveToColdStorage System Center 조정자 2012 R2 실행 서와 장기 저장소에 대 한 Azure 파일 공유에 수집 된 모든 파일을 이동 합니다. <br/> |
-|![자홍색 설명선 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|SharePoint 2013과 함께 콜드 저장소 파일 공유에서 파일을 인덱스입니다.  <br/> |
-|![자홍색 설명선 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|콘텐츠 콜드 저장소 및 온-프레미스 Exchange Server 2013에서 eDiscovery를 수행 합니다.  <br/> |
-|![자홍색 설명선 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Office 365의 내용에 대해 eDiscovery를 수행 합니다.  <br/> |
+|![자홍색 설명선 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|그룹 정책 개체 (GPO)를 만들고 컬렉션 로그온 스크립트와 연결 합니다.  <br/> |
+|![자홍색 설명선 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Custodians 그룹에만 GPO를 적용할 GPO 보안 필터를 구성 합니다. <br/> |
+|![자홍색 설명선 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|프로그램 관리자가 로그온 하 고 컬렉션 로그온 스크립트를 호출 하는 GPO가 실행 합니다.  <br/> |
+|![자홍색 설명선 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|컬렉션 로그온 스크립트는 재고를 파일에 대 한 검색 하 고 해당 위치를 녹음/녹화 Custodians 컴퓨터에서 모든 로컬에 연결 된 드라이브에 사용 합니다.  <br/> |
+|![자홍색 설명선 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|컬렉션 로그온 스크립트는 준비 서버에서 숨겨진된 파일 공유에 인벤토리에 파일을 복사합니다.  <br/> |
+|![자홍색 설명선 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (옵션 A) Exchange Server 2013에 수집 된 PST 파일을 가져오려면 PST 가져오기 스크립트를 수동으로 실행 합니다. <br/> |
+|![자홍색 설명선 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(옵션 B) Office 365 가져오기 도구 및 프로세스를 사용, Exchange Online에 수집 된 PST 파일을 가져올.  <br/> |
+|![자홍색 설명선 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|MoveToColdStorage System Center 조정자 2012 R2 실행 서와 장기 저장소에 대 한 Azure 파일 공유에 수집 된 모든 파일을 이동 합니다. <br/> |
+|![자홍색 설명선 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|SharePoint 2013과 함께 콜드 저장소 파일 공유에서 파일을 인덱스입니다.  <br/> |
+|![자홍색 설명선 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|콘텐츠 콜드 저장소 및 온-프레미스 Exchange Server 2013에서 eDiscovery를 수행 합니다.  <br/> |
+|![자홍색 설명선 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Office 365의 내용에 대해 eDiscovery를 수행 합니다.  <br/> |
    
 ## <a name="prerequisites"></a>필수 구성 요소
 
@@ -104,7 +107,7 @@ eDiscovery은 기준이 회사 인벤토리에 포함, 검색, 식별, 보존, �
     
   - **확장된 특성 읽기**
     
-  - **읽기 권한**
+  - **사용 권한 읽기**
     
 6. 다음을 수행 하 여의 경우 $ 파일 공유에 액세스를 테스트 합니다.
     
@@ -266,7 +269,7 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 3. 메모장에서 이동 기능을 사용 합니다. 필요에 따라 다음 변경 내용을 확인 합니다.
     
-|**# 선**|**필요한 변경 하려면**|**필수/선택**|
+|**줄 번호**|**필요한 변경 하려면**|**필수/선택**|
 |:-----|:-----|:-----|
 |71  <br/> |**$FileTypes** 변수입니다. 스크립트를 조사 하 고 배열 변수에서를 수집 하려는 모든 파일 형식 확장명을 포함 합니다.<br/> |옵션  <br/> |
 |76 및 77  <br/> |요구에 맞게 변경 **$CaseNo** 변수 방식으로 작성 됩니다. 스크립트는 현재 날짜와 시간 캡처하고 사용자 이름을 추가 합니다.<br/> |옵션  <br/> |
@@ -324,10 +327,10 @@ $AllFiles | ForEach-Object {
     
 3. 메모장에서 이동 기능을 사용 하 고 필요에 따라 다음 변경 내용을 확인 하십시오.
     
-|**# 선**|**필요한 변경 하려면**|**필수/선택**|
+|**줄 번호**|**필요한 변경 하려면**|**필수/선택**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** 태그 Pst로 가져오는 사서함 폴더를 지정 합니다. 필요한 경우이 변경 합니다.<br/> |옵션  <br/> |
-|17  <br/> |**$ConnectionUri** 를 자체 서버를 설정 해야 합니다. <br/> > [!IMPORTANT]> 다음을 확인 하면 **$ConnectionUri** 하지 https http 위치를 가리킵니다. Https로 작동 하지 않음:.          |필수  <br/> |
+|12   <br/> |**$FolderIdentifier** 태그 Pst로 가져오는 사서함 폴더를 지정 합니다. 필요한 경우이 변경 합니다.<br/> |옵션  <br/> |
+|17   <br/> |**$ConnectionUri** 를 자체 서버를 설정 해야 합니다. <br/> > [!IMPORTANT]> 다음을 확인 하면 **$ConnectionUri** 하지 https http 위치를 가리킵니다. Https로 작동 하지 않음:.          |필수  <br/> |
    
 4. 권한이 있는지 확인 Exchange 신뢰할 수 있는 하위 시스템 계정 읽기, 쓰기 및 실행 하는 \\ \\준비\\의 경우 $ 공유 합니다.
     

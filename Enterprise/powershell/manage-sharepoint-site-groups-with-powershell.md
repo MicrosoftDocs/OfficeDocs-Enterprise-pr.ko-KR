@@ -1,5 +1,5 @@
 ---
-title: Office 365 PowerShell을 사용한 SharePoint Online 사이트 그룹 관리
+title: Manage SharePoint Online site groups with Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,13 +14,14 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: SharePoint Online 사이트 그룹을 관리 하려면 Office 365 PowerShell를 사용 합니다.'
-ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915353"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 SharePoint Online 사이트 그룹 관리
+# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
  **요약:** SharePoint Online 사이트 그룹을 관리 하려면 Office 365 PowerShell을 사용 합니다.
   
@@ -32,12 +33,12 @@ Office 365 관리 센터를 사용할 수 있지만 SharePoint Online 사이트 
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Office 365 PowerShell 사용 하 여 보기 SharePoint를 온라인
 
-SharePoint Online 관리 센터에 사이트 그룹을 관리 하기 위한 일부 사용 하기 쉬운 메서드가 있습니다. 예, 그룹, 그룹 구성원은 https에 대 한 정보를 확인 하려는 경우를 가정해 보겠습니다\://litwareinc.sharepoint.com/sites/finance 사이트입니다. 다음을 수행 해야하는 작업은입니다.
+SharePoint Online 관리 센터에 사이트 그룹을 관리 하기 위한 일부 사용 하기 쉬운 메서드가 있습니다. 예, 그룹 및 그룹 구성원에 대 한 확인 하려는 경우를 가정해 보겠습니다는 `https://litwareinc.sharepoint.com/sites/finance` 사이트입니다. 다음을 수행 해야하는 작업은입니다.
 
 1. Office 365 관리 센터에서 **자원**을 클릭 > **사이트**를 한 다음 사이트의 URL을 클릭 합니다.
 2. 사이트 모음 대화 상자에서 **이 사이트로 이동**합니다.를 클릭 합니다.
 3. 사이트 페이지에서 (페이지의 오른쪽 상단 모서리에 있음) **설정** 아이콘을 클릭 한 다음 **사이트 설정**을 클릭 합니다.</br>
-![SharePoint Online 사이트 설정](images/spo-site-settings.png)</br>
+![SharePoint Online 사이트 설정](media/spo-site-settings.png)</br>
 4. 사이트 설정 페이지의 **사용자 및 사용 권한에서** **사이트 사용 권한** 을 클릭 합니다.
 
 확인하려는 다음 사이트에 대해 프로세스를 반복합니다.
@@ -66,9 +67,9 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 두 경우 모두이 다음과 비슷한 결과가 나타납니다.
 
-![SharePoint Online 사이트 그룹](images/SPO-site-groups.png)
+![SharePoint Online 사이트 그룹](media/SPO-site-groups.png)
 
-다음은 사이트 https에 대해 만들어진 모든 그룹\:/ 해당 그룹에 할당 된 모든 사용자와 litwareinc.sharepoint.com/sites/finance, / 합니다. 그룹 이름은 구성원 에게만에서 별도 그룹 이름 하는데 도움이 되는 노란색에서입니다.
+다음은 사이트에 대해 만들어진 모든 그룹 `https://litwareinc.sharepoint.com/sites/finance`외에 해당 그룹에 할당 된 모든 사용자입니다. 그룹 이름은 구성원 에게만에서 별도 그룹 이름 하는데 도움이 되는 노란색에서입니다.
 
 다른 예로 명령 집합은 그룹 및 모든 SharePoint Online 사이트의 모든 그룹 구성원을 나열 하는 다음과 같습니다.
 
@@ -90,9 +91,9 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>참고 항목
 
-[SharePoint Online PowerShell에 연결](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용 하는 사용자를 추가 합니다.](create-sharepoint-sites-and-add-users-with-powershell.md)
+[SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리](manage-sharepoint-users-and-groups-with-powershell.md)
 

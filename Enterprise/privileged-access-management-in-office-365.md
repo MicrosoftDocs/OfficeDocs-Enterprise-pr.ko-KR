@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365의 액세스 권한을된 관리 기능에 대 한 자세한 내용은이 항목을 사용 하 여
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319209"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915393"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365의에서 관리 기능에 액세스 권한
 
@@ -46,7 +48,7 @@ ms.locfileid: "20319209"
 ### <a name="step-1---create-an-approvers-group"></a>1 단계-승인자의 그룹 만들기
 Office 365 관리 포털에서 **그룹**을 선택 > **그룹 추가**누른 다음 권한이 부여 된 기본 액세스 승인자에 대 한 메일 사용 가능 보안 그룹을 만듭니다. 완료 되 면 만들고 승인자 그룹을 저장 하려면 **추가** 선택 합니다.
 
-![Office 365 관리 포털에 액세스 권한을된 승인자 화면](images/privileged-access-approvers-ui.png)
+![Office 365 관리 포털에 액세스 권한을된 승인자 화면](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > 이 시간에 관리자 액세스 권한 가진 사용자만가 Office 365 특수 액세스에서 요청을 승인 수 있습니다. 나중에 승인자 그룹의 구성원 인 모든 사용자 액세스 요청 승인 됩니다.
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>다음은 Microsoft Graph in Microsoft Azure에 대 한 액세스 관리
 
 > [!IMPORTANT]
-> 이 섹션에서는 Office 365 e 5 및 고급 준수 Sku에서 현재 사용할 수만 공개 베타 Microsoft Graph 기능에 대 한 배포 및 구성 지침에 설명 합니다.
+> 이 섹션에서는 현재 미리 보기에만 사용할 수 있는 기능에 대 한 세부 정보에 설명 합니다.
 
 Microsoft Azure의 Microsoft Graph에 대 한 관리 되는 액세스는 세분화 된 자신의 Office 365 데이터에 대 한 제어 수준을 강력 하는 조직에 도움이 되는 서비스입니다. 이 시스템에는 응용 프로그램 개발자가 해당 데이터와 의견을 대장간을 수 있습니다. 
 

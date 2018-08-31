@@ -1,5 +1,5 @@
 ---
-title: "SharePoint 2013에 대 한 Microsoft Azure 아키텍처"
+title: SharePoint 2013용 Microsoft Azure 아키텍처
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,22 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "요약: SharePoint 2013 솔루션은 Microsoft Azure 가상 컴퓨터에서 호스팅할 수 있습니다. 어떤 유형의 솔루션은 가장 잘 맞는 및 Microsoft Azure 하나는 호스트를 설정 하는 방법에 알아봅니다."
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: SharePoint 2013 솔루션은 Microsoft Azure 가상 컴퓨터에서 호스팅할 수 있습니다. 어떤 유형의 솔루션은 가장 잘 맞는 및 Microsoft Azure 하나는 호스트를 설정 하는 방법에 알아봅니다.'
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915383"
 ---
-# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013에 대 한 Microsoft Azure 아키텍처
+# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013용 Microsoft Azure 아키텍처
 
  **요약:** SharePoint 2013 솔루션은 Microsoft Azure 가상 컴퓨터에서 호스팅할 수 있습니다. 어떤 유형의 솔루션은 가장 잘 맞는 및 Microsoft Azure 하나는 호스트를 설정 하는 방법에 알아봅니다.
   
 Azure는 SharePoint Server 2013 솔루션을 호스팅하기 위한 좋은 환경입니다. 대부분의 경우에서 Office 365 좋지만 Azure에서 호스팅되는 SharePoint 서버 팜의 특정 솔루션에 대 한 적절 한 옵션이 될 수 있습니다. 이 문서에서는 SharePoint 솔루션 좋은 되도록 Azure 플랫폼에 맞게 설계 하는 방법을 설명 합니다. 다음 두 특정 솔루션은 예제로 사용 됩니다.
   
-- [Microsoft Azure의 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+- [Microsoft Azure에서 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
     
 ## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Azure 인프라 서비스에 대 한 권장 되는 SharePoint 솔루션
 
@@ -55,7 +56,7 @@ Azure 인프라 서비스에는 SharePoint 솔루션을 호스팅하기 위한 �
   
 - [SharePoint 2013 IT 전문가 위한 아키텍처 디자인](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
-- [성능 및 SharePoint Server 2013의 용량 관리에 대 한 계획](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [SharePoint Server 2013에서 성능 및 용량 관리 계획](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Active Directory 도메인 유형 결정
 
@@ -76,7 +77,7 @@ Azure 인프라 서비스에는 SharePoint 솔루션을 호스팅하기 위한 �
   
 **Azure에 가상 네트워크를 사용 하는 그림 1: 온-프레미스 환경**
 
-![SharePoint 솔루션에 대한 Microsoft Azure Virtual Network 디자인입니다. Azure Gateway에 대한 하나의 서브넷입니다. 가상 컴퓨터에 대한 하나의 서브넷입니다.](images/OPrrasconWA_AZarch.png)
+![SharePoint 솔루션에 대한 Microsoft Azure Virtual Network 디자인입니다. Azure Gateway에 대한 하나의 서브넷입니다. 가상 컴퓨터에 대한 하나의 서브넷입니다.](media/OPrrasconWA-AZarch.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
@@ -92,7 +93,7 @@ Azure 인프라 서비스에는 SharePoint 솔루션을 호스팅하기 위한 �
   
 **그림 2: Azure 게이트웨이와 온-프레미스 게이트웨이 장치를 사용 하 여 온-프레미스 환경 및 Azure 사이의 사이트 간 연결을 제공 하려면**
 
-![크로스-프레미스 연결(사이트 간 VPN 연결 또는 Express 경로일 수 있음)에 의해 Azure Virtual Network에 연결된 온-프레미스 환경](images/AZarch_VPNgtwyconnct.png)
+![크로스-프레미스 연결(사이트 간 VPN 연결 또는 Express 경로일 수 있음)에 의해 Azure Virtual Network에 연결된 온-프레미스 환경](media/AZarch-VPNgtwyconnct.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
@@ -110,7 +111,7 @@ Windows Server AD Azure의 재해 복구를 위한 배포 및 하이브리드 �
   
 **그림 3: 하이브리드 Active Directory 도메인 구성**
 
-![Azure Virtual Network와 SharePoint 팜 서브넷에 배포된 두 가상 컴퓨터: 복제 도메인 컨트롤러 및 DNS 서버](images/AZarch_HyADdomainConfig.png)
+![Azure Virtual Network와 SharePoint 팜 서브넷에 배포된 두 가상 컴퓨터: 복제 도메인 컨트롤러 및 DNS 서버](media/AZarch-HyADdomainConfig.png)
   
 이 다이어그램 두 가상 컴퓨터에 Windows Server AD 및 DNS 서브넷을 추가 하 여 이전 다이어그램에 구축 합니다. 이러한 가상 컴퓨터는 복제 도메인 컨트롤러 및 DNS 서버입니다. 온-프레미스 Windows Server AD 환경의 확장 됩니다. 
   
@@ -134,7 +135,7 @@ Windows Server AD Azure의 재해 복구를 위한 배포 및 하이브리드 �
   
 **SharePoint 가상 컴퓨터의 그림 4: 배치**
 
-![SharePoint 팜 서브넷 내의 Azure Virtual Network에 추가된 데이터베이스 서버 및 SharePoint 서버 역할](images/AZarch_SPVMsinCloudSer.png)
+![SharePoint 팜 서브넷 내의 Azure Virtual Network에 추가된 데이터베이스 서버 및 SharePoint 서버 역할](media/AZarch-SPVMsinCloudSer.png)
   
 이 다이어그램의 각 계층에서 SharePoint 팜 서버 역할을 추가 하 여 이전 다이어그램에서 만듭니다.
   
@@ -150,7 +151,7 @@ SharePoint 팜에 대해 Azure 아키텍처를 디자인할 때 가용성 집합
   
 **그림 5: SharePoint 팜 계층에 대 한 고가용성을 제공 하려면 사용 하 여 Azure 가용성 집합**
 
-![SharePoint 2013 솔루션용 Azure 인프라의 가용성 집합 구성](images/AZenv_WinAzureAvailSetsHA.png)
+![SharePoint 2013 솔루션용 Azure 인프라의 가용성 집합 구성](media/AZenv-WinAzureAvailSetsHA.png)
   
 이 다이어그램 Azure 인프라 내에서 가용성 집합의 구성이 호출합니다. 다음 역할의 각 별도 가용성 집합을 공유 합니다.
   
@@ -170,7 +171,7 @@ SharePoint 팜 해야할 것이 좋으며 Azure 플랫폼에서 조정 됩니다
   
 **그림 6: 3 계층 팜의 용량 및 성능 목표에 대 한 예제 계획**
 
-![특정 용량 및 성능 목표를 충족하는 구성 요소 할당이 있는 표준 SharePoint 2013 인터넷 사이트 아키텍처](images/AZarch_CapPerfexmpArch.png)
+![특정 용량 및 성능 목표를 충족하는 구성 요소 할당이 있는 표준 SharePoint 2013 인터넷 사이트 아키텍처](media/AZarch-CapPerfexmpArch.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
@@ -186,7 +187,7 @@ SharePoint 팜 해야할 것이 좋으며 Azure 플랫폼에서 조정 됩니다
   
 **미세 조정 하기 전에 그림 7: 응용 프로그램 서버 계층**
 
-![Microsoft Azure 가용성 집합에 맞게 조정하기 전 SharePoint Server 2013 응용 프로그램 서버 계층 예제](images/AZarch_AppServtierBefore.png)
+![Microsoft Azure 가용성 집합에 맞게 조정하기 전 SharePoint Server 2013 응용 프로그램 서버 계층 예제](media/AZarch-AppServtierBefore.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
@@ -202,7 +203,7 @@ SharePoint 팜 해야할 것이 좋으며 Azure 플랫폼에서 조정 됩니다
   
 **그림 8: 응용 프로그램 서버 계층 미세 조정 후**
 
-![Microsoft Azure 가용성 집합에 맞게 조정한 후 SharePoint Server 2013 응용 프로그램 서버 계층 예제](images/AZarch_AppServtierAfter.png)
+![Microsoft Azure 가용성 집합에 맞게 조정한 후 SharePoint Server 2013 응용 프로그램 서버 계층 예제](media/AZarch-AppServtierAfter.png)
   
 이 다이어그램에서는 동일한 4 개의 구성 요소를 사용 하 여 동일 하 게 구성 하는 모든 세 응용 프로그램 서버를 보여줍니다.
   
@@ -210,24 +211,24 @@ SharePoint 팜에 있는 계층에 가용성 집합을 추가할는 구현 완�
   
 **그림 9: 완료 된 SharePoint 팜에 있는 Azure 인프라 서비스**
 
-![Virtual Network, 크로스-프레미스 연결, 서브넷, VM 및 가용성 집합이 있는 Azure 인프라 서비스의 SharePoint 2013 팜 예제](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Virtual Network, 크로스-프레미스 연결, 서브넷, VM 및 가용성 집합이 있는 Azure 인프라 서비스의 SharePoint 2013 팜 예제](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 이 다이어그램에서는 각 계층의 서버에 대 한 장애 도메인을 제공 하려면 가용성 집합을 가진 Azure 인프라 서비스에서 구현 하는 SharePoint 팜을 보여줍니다.
   
-**토론에 참가**
+**토론 참여**
 
-|**문의처**|**설명**|
+|**연락처**|**설명**|
 |:-----|:-----|
-|**클라우드 채택 콘텐츠 합니까 필요 합니까?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 걸쳐 있는 클라우드 채택에 대 한 콘텐츠를 만듭니다. 보겠습니다 작업을 알 사용해 클라우드 채택 콘텐츠를 구상할 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)에 전자 메일을 발송 하 여 특정 콘텐츠를 요청 합니다.<br/> |
-|**클라우드 채택 토론에 참가** <br/> |클라우드 기반 솔루션에 열정을 갖고 인 경우에는 클라우드 채택 자문 보드 (CAAB) Microsoft 콘텐츠 개발자, 업계 전문가는 전세계 어디에서 고객의 더 큰, 생생한 커뮤니티와 연결할에 참가 하는 것이 좋습니다. 참가, Microsoft 기술 커뮤니티의 [CAAB (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 의 구성원으로 자신을 추가 하 고[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내주시기 합니다. 누구나 [CAAB 블로그 (영문)](https://blogs.technet.com/b/solutions_advisory_board/)에서 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원에 게 새 클라우드 채택 리소스 및 솔루션에 설명 하는 개인 웨 초대장을 가져옵니다.<br/> |
-|**여기에서 참조 하 여 아트 가져오기** <br/> |이 문서에서 참조 하는 이미지의 편집 가능한 복사본을 원하는 귀하에 게 보내야 기꺼이 표시 됩니다. URL 및 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)는 이미지의 제목을 포함 하 여 요청을 전자 메일로 보냅니다.<br/> |
+|**어떤 클라우드 채택 콘텐츠가 필요한가요?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 적용되는 클라우드 채택 콘텐츠를 만들고 있습니다. 클라우드 채택 콘텐츠에 대한 의견을 제공하거나 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)으로 이메일을 보내서 특정 콘텐츠를 요청하세요.  <br/> |
+|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 열정을 갖고 인 경우에는 클라우드 채택 자문 보드 (CAAB) Microsoft 콘텐츠 개발자, 업계 전문가는 전세계 어디에서 고객의 더 큰, 생생한 커뮤니티와 연결할에 참가 하는 것이 좋습니다. 참가, Microsoft 기술 커뮤니티의 [CAAB (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 의 구성원으로 자신을 추가 하 고[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내주시기 합니다. 누구나 [CAAB 블로그 (영문)](https://blogs.technet.com/b/solutions_advisory_board/)에서 커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원에 게 새 클라우드 채택 리소스 및 솔루션에 설명 하는 개인 웨 초대장을 가져옵니다.<br/> |
+|**여기에 표시된 아트 받기** <br/> |이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)으로 요청 이메일을 보내주세요.  <br/> |
    
 ## <a name="see-also"></a>참고 항목
 
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
-[SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+[SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
-[Microsoft Azure의 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+[Microsoft Azure에서 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 
 

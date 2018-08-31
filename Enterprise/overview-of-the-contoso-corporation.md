@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: '요약: Contoso Corporation 기업 및 전세계 사무소의 계층된 구조를 이해 합니다.'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915863"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 개요
 
@@ -30,7 +31,7 @@ Contoso의 전세계 지사가 다음 위치에서:
   
 **전세계의 그림 1: Contoso의 사무실**
 
-![전 세계 Contoso Corporation 사무실](images/Contoso_Poster/Contoso_WW_Org.png)
+![전 세계 Contoso Corporation 사무실](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 그림 1 다양 한 대륙에 파리 및 지역 허브에 본사 및 위성 사무실을 보여줍니다.
@@ -67,7 +68,7 @@ Contoso의 IT 설계자는 Microsoft의 클라우드 서비스의 채택을 계�
     
     자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 네트워킹](microsoft-cloud-networking-for-enterprise-architects.md) 포스터를 참조 합니다.
    
-- Identity
+- ID
     
     Contoso는 Windows Server AD 포리스트를 사용 하 여 해당 내부 id 공급자에 대 한 및 고객 및 파트너에 대 한 타사 공급자와 페더레이션도 합니다. Contoso는 내부 Microsoft의 클라우드 서비스에 대 한 계정 집합을 활용 해야 합니다. 고객 및 파트너에 대 한 클라우드 기반 앱에 대 한 액세스를 타사 id 공급자도 활용 해야 합니다.
     

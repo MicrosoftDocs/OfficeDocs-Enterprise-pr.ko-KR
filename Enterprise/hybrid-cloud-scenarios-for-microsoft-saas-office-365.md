@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SaaS (Office 365)에 대 한 하이브리드 클라우드 시나리오"
+title: Microsoft SaaS(Office 365)용 하이브리드 클라우드 시나리오
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: "요약: Microsoft의 SaaS 기반에 대 한 하이브리드 아키텍처 및 시나리오 이해 클라우드 제품 (Office 365)."
-ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Microsoft의 SaaS 기반에 대 한 하이브리드 아키텍처 및 시나리오 이해 클라우드 제품 (Office 365).'
+ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915593"
 ---
-# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Microsoft SaaS (Office 365)에 대 한 하이브리드 클라우드 시나리오
+# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Microsoft SaaS(Office 365)용 하이브리드 클라우드 시나리오
 
  **요약:** Microsoft의 SaaS 기반에 대 한 하이브리드 아키텍처 및 시나리오 이해 클라우드 제품 (Office 365).
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **Office 365에 대 한 그림 1: Microsoft SaaS 기반 하이브리드 시나리오**
 
-![Office 365용 Microsoft SaaS 기반 하이브리드 시나리오](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
+![Office 365용 Microsoft SaaS 기반 하이브리드 시나리오](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
 아키텍처의 각 레이어에:
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 02/09/2018
     
     방법이 Skype와 Exchange Online Business Server 온-프레미스, 제품 간 하이브리드 시나리오에 대 한입니다.
     
-- Identity
+- ID
     
     온-프레미스 Windows Server AD와 디렉터리 동기화를 포함할 수 있습니다. 또는 타사 id 공급자와 페더레이션 할 Azure AD를 구성할 수 있습니다.
     
@@ -66,11 +67,11 @@ ms.lasthandoff: 02/09/2018
   
 **그림 2: 비즈니스 2015 하이브리드 구성에 대 한 Skype**
 
-![비즈니스용 Skype 2015 하이브리드 구성](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB.png)
+![비즈니스용 Skype 2015 하이브리드 구성](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
 그림 2는 온-프레미스 Skype 비즈니스 2015 프런트엔드 풀과 Office 365의 온라인 비즈니스에 대 한 Skype와에 지 서버 통신에 대해 구성 된 비즈니스 2015 하이브리드 구성에 대 한 Skype를 보여줍니다.
   
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 항목을 참조하십시오.
   
 - [비즈니스 서버에 대 한 Skype와 비즈니스 온라인 용 Skype 간의 하이브리드 연결 계획](https://technet.microsoft.com/library/jj205403.aspx)
     
@@ -84,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 **그림 3: 클라우드 비즈니스 서버에 대 한 Skype와 PBX**
 
-![비즈니스용 Skype 서버가 포함된 클라우드 PBX](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB_CloudPBX.png)
+![비즈니스용 Skype 서버가 포함된 클라우드 PBX](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
 그림 3 비즈니스 서버 구성의 경우 온-프레미스 비즈니스를 위한 Skype를 포함 하는 Office 365의 Microsoft 클라우드 PBX에 연결 하는 기존 PBX 또는 Telco 게이트웨이, 비즈니스 서버에 대 한 Skype와 PSTN으로 이루어진 Skype와 클라우드 PBX를 보여줍니다. 온라인.
   
@@ -104,13 +105,13 @@ ms.lasthandoff: 02/09/2018
   
 **그림 4: SharePoint 하이브리드 구성**
 
-![SharePoint 하이브리드 구성](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SP.png)
+![SharePoint 하이브리드 구성](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
 그림 4에는 Office 365의 SharePoint Online과 통신 하는 온-프레미스 SharePoint 팜 구성 된 SharePoint 하이브리드 구성으로를 보여줍니다.
   
 SharePoint 하이브리드 시나리오의 경우:
   
-- [비즈니스를 위한 하이브리드 OneDrive](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
+- [하이브리드 비즈니스용 OneDrive](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
     
 - [하이브리드 팀 사이트](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
@@ -124,7 +125,7 @@ SharePoint 하이브리드 시나리오의 경우:
     
     Office 365의 SharePoint Online 관리 센터에서 사용할 수 있는 하이브리드 구성을 자동화 하는 마법사를 사용 하 여 하이브리드 시나리오를 사용 하는 것이 쉽습니다.
     
-- [확장 가능한 하이브리드 응용 프로그램 시작 관리자](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [확장 가능한 하이브리드 앱 시작 관리자](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
     
     보고 하 여 Office 365 비디오 및 Delve 앱을 사용 하 여 사용자가 허용 하 고 자신의 온-프레미스 SharePoint 팜의 페이지 내에서 발생 합니다.
     
@@ -138,7 +139,7 @@ Exchange Server 2016 하이브리드 사용 하면 기존 Exchange 서버 인프
   
 **그림 5: Exchange 2016 하이브리드 구성**
 
-![Exchange 2016 하이브리드 구성](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_EX.png)
+![Exchange 2016 하이브리드 구성](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
 그림 5는 Exchange Online Protection 및 Office 365에서 사서함와 통신 하는 온-프레미스 Exchange 사서함 서버 구성 된 Exchange 2016 하이브리드 구성 합니다.
   

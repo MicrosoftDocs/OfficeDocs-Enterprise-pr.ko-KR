@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: 2017 년 4 월 11에서 Exchange Server 2007은 지원의 끝에 도달 했습니다. Office 365에 Exchange 2007 또는 Exchange 2016에서 마이그레이션을 시작한 이미 하지 않은 경우 지금 계획 수립 시작 시간을 됩니다.
-ms.openlocfilehash: 4bb8933977c280b4bfaa686e858fc818a1dc4ace
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169810"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915573"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 지원 종료 로드맵
 

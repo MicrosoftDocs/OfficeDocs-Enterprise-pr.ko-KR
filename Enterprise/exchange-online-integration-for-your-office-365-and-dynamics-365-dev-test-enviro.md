@@ -1,5 +1,5 @@
 ---
-title: "Office 365 및 Dynamics 365 개발/테스트 환경을 위한 Exchange Online 통합"
+title: Office 365 및 Dynamics 365 개발/테스트 환경을 위한 Exchange Online 통합
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: "요약: 이 테스트 랩 가이드를 사용하여 Office 365 평가판 구독에서 Exchange Online용 Dynamic 365 통합을 사용하도록 설정할 수 있습니다."
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '요약: 이 테스트 랩 가이드를 사용하여 Office 365 평가판 구독에서 Exchange Online용 Dynamic 365 통합을 사용하도록 설정할 수 있습니다.'
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915503"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경을 위한 Exchange Online 통합
 
@@ -39,13 +42,13 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
 
 다음 단계를 통해 Dynamics 365 및 Exchange Online 통합용 전역 관리자 사서함을 구성할 수 있습니다.
   
-1. 브라우저의 개인 세션을 통해 [http://portal.office.com](http://portal.office.com)으로 이동한 다음 Office 365 전역 관리자 계정으로 로그인할 수 있습니다.
+1. 로 이동 해당 브라우저의 개인 세션을 사용 하 여 [http://portal.office.com](http://portal.office.com) 및 프로그램 Office 365 전역 관리자 계정을 사용 하 여 로그인 합니다.
     
 2. **Microsoft Office Home** 페이지에서 **메일** 타일을 클릭합니다.
     
 3. 브라우저의 새 **메일** 탭에서 **새로 만들기**를 클릭하고 메시지 입력 상자 아래의 창 하단 구석에 내 템플릿 아이콘이 어떻게 표시되는지 확인하세요.
     
-     ![Dynamics 365와 통합되지 않은 비어 있는 새 전자 메일 메시지입니다.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Dynamics 365와 통합되지 않은 비어 있는 새 전자 메일 메시지입니다.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. **취소**를 클릭하고 **메일** 탭을 열어 둡니다.
     
@@ -87,13 +90,13 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
     
 6. 브라우저의 새 **메일** 탭에서 **새로 만들기**를 클릭합니다. 이제 메시지 입력 상자 아래의 창 하단 구석에 Dynamics 365 아이콘이 어떻게 표시되는지 확인하세요.
     
-     ![Dynamics 365와 통합된 비어 있는 새 전자 메일 메시지로, 새 아이콘을 표시합니다.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Dynamics 365와 통합된 비어 있는 새 전자 메일 메시지로, 새 아이콘을 표시합니다.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Dynamics 365 아이콘을 클릭합니다. 이 전자 메일을 추적하거나 템플릿, 판매 문서 또는 기사에 액세스할 수 있는 **Dynamics 365** 창을 확인해야 합니다.
     
 8. 전자 메일 메시지의 **받는 사람** 필드에서 **alex.y.wu@outlook.com**을 입력한 다음 **Dynamics 365** 창에서 **다시 시도**를 클릭합니다. **Dynamics 365** 창에서 **받는 사람** 섹션에 평가판 구독의 샘플 데이터와 함께 제공된 판매 응용 프로그램의 연락처인 Alex Wu에 대한 정보가 표시되어야 합니다.
     
-     ![Dynamics 365에 저장된 판매 연락처에 대한 Dynamics 365 정보 창입니다.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Dynamics 365에 저장된 판매 연락처에 대한 Dynamics 365 정보 창입니다.](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. **취소**를 클릭합니다.
 

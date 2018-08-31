@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기"
+title: Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: "사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다."
-ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: 사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다.
+ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914873"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 
@@ -57,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>긴 버전 (명령에 대 한 세부 정보)
 
-Office 365 사용자 계정 및 Office 365 라이선스는 일대일로 맞출 필요가 없습니다. Office 365 사용자에게 Office 365 라이선스가 없을 수도 있고 사용자에게 할당되지 않은 Office 365 라이선스가 있을 수도 있습니다. 실제로 단일 사용자 계정에서 *여러*  Office 365 라이선스를 보유할 수도 있습니다. 새 Office 365 사용자 계정을 만들 경우(자세한 내용은[ Windows PowerShell을 통해 Office 365 사용자에게 라이선스 할당](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) 문서 참조) 해당 사용자에게 라이선스를 할당할 필요가 없습니다. 이 경우 새 사용자는 유효한 계정이 있지만 Office 365에 로그인할 수 없습니다. 로그인을 시도하면 다음과 유사한 메시지가 나타납니다.
+Office 365 사용자 계정 및 Office 365 라이선스의 일대일 해야: Office 365 사용자는 Office 365 라이선스 없는 하는 것이 불가능 하 고 사용자에 게 할당 하지 않은 Office 365 라이선스를 보유 하는 것이 불가능 합니다. (실제로 단일 사용자 계정도 수도 *여러* Office 365 라이선스.) 만들 때 새 Office 365 사용자 계정 (자세한 내용은 [Office 365 PowerShell을 사용한 사용자 계정에 대 한 라이선스를 할당](assign-licenses-to-user-accounts-with-office-365-powershell.md) 하는 문서를 참조) 하면 해당 사용자에 게 라이선스 할당 하지 않아도: 새 사용자가 사용자는 유효한 계정이 되었지만 자신이 sig 수 없게 됩니다 Office 365로의 n입니다. 로그인 하려고 할 경우 다음과 비슷한를 볼 수 있습니다.
   
-![유효한 Office 365 라이선스가 없는 사용자](images/o365_powershell_no_license.png)
+![유효한 Office 365 라이선스가 없는 사용자](media/o365-powershell-no-license.png)
   
 마찬가지로 유급 휴가나 출산 휴가 등 일정 기간 휴직할 사용자가 있을 수 있습니다. 이 경우 해당 사용자의 사용자 계정을 그대로 유지한 채(즉, 주소, 휴대폰 번호 등의 모든 속성 값을 그대로 유지) 라이선스를 제거할 수 있습니다. 그런 다음 해당 라이선스를 다른 사용자(즉, 해당 사용자 대신 업무에 투입된 임시 작업자)에게 할당할 수 있습니다. 사용자가 복귀하면 새 라이선스를 발급하여 이전처럼 작업을 재개할 수 있습니다.
   
@@ -125,7 +126,6 @@ AlexD@litwareinc.com        Alex Darrow                     True
 확인할 수 있는 것처럼 Belinda Newman의 정보는 반환되지 않습니다. 그 이유는 해결하려면 Belinda 계정의 isLicensed 속성이 True로 설정되어 있지 않기 때문입니다.
   
 ## <a name="see-also"></a>참고 항목
-<a name="SeeAlso"> </a>
 
 이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.
   

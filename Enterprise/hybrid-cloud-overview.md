@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '요약: 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다.'
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915823"
 ---
 # <a name="hybrid-cloud-overview"></a>하이브리드 클라우드 개요
 
@@ -36,7 +39,7 @@ Microsoft 하이브리드 클라우드에는 온-프레미스 구성 요소와 �
     
 **Microsoft 하이브리드 클라우드의 그림 1: 구성 요소**
 
-![Microsoft 하이브리드 클라우드의 구성 요소](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Microsoft 하이브리드 클라우드의 구성 요소](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 그림 1은 인터넷 이나 ExpressRoute 연결에서 Microsoft 하이브리드 클라우드 서비스로 (PaaS) Azure 플랫폼 및 사용할 수 있는 서비스 (IaaS) 서비스로 Azure 인프라 Office 365의 집합에는 온-프레미스 네트워크에서의 구성 요소를 보여줍니다.
   
@@ -70,7 +73,7 @@ Microsoft 시장에서 가장 전체 클라우드 솔루션을 갖기 때문에-
     
     네트워킹 하이브리드 클라우드 시나리오에 대 한 최고 부하에서 성능이 수 있을 만큼 충분 한 대역폭 및 Microsoft 클라우드 플랫폼 및 서비스에 대 한 연결을 포함 합니다. 자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 네트워킹](microsoft-cloud-networking-for-enterprise-architects.md)을 참조 하십시오.
     
-- Identity
+- ID
     
     SaaS 및 Azure PaaS 하이브리드 시나리오에 대 한 id는 온-프레미스 Windows Server AD와 동기화 또는 Windows Server AD 또는 다른 id 공급자와 페더레이션 수 있는 일반적인 id 공급자를으로 Azure AD를 포함할 수 있습니다. 또한 Azure IaaS를 사용 하도록 온-프레미스 Identity 인프라를 확장할 수 있습니다. 자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 Id](microsoft-cloud-it-architecture-resources.md#identity)를 참조 하십시오.
     

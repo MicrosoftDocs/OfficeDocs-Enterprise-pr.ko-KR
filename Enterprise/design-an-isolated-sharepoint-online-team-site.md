@@ -1,5 +1,5 @@
 ---
-title: "격리 된 SharePoint Online 팀 사이트를 디자인 합니다."
+title: 격리된 SharePoint Online 팀 사이트 디자인
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: "격리 된 SharePoint Online 팀 사이트에 대 한 디자인 프로세스를 통해 요약: 단계입니다."
-ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '격리 된 SharePoint Online 팀 사이트에 대 한 디자인 프로세스를 통해 요약: 단계입니다.'
+ms.openlocfilehash: 4807b7cef0a401901eb5abec3d683ca67b2193db
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914843"
 ---
-# <a name="design-an-isolated-sharepoint-online-team-site"></a>격리 된 SharePoint Online 팀 사이트를 디자인 합니다.
+# <a name="design-an-isolated-sharepoint-online-team-site"></a>격리된 SharePoint Online 팀 사이트 디자인
 
  **요약:** 격리 된 SharePoint Online 팀 사이트에 대 한 디자인 프로세스를 단계별로 실행 합니다.
   
@@ -38,7 +41,7 @@ ms.lasthandoff: 02/09/2018
   
 사이트에서 수행 하는 SharePoint 그룹의 구성원 수를 결정 하는 특정 사용 권한 집합 사용 권한 수준입니다. 기본적으로 SharePoint Online 팀 사이트에 대 한 사용 권한 수준이 세: 편집, 읽기 및 모든 권한입니다. 다음 표에서 SharePoint 그룹 및 할당 된 사용 권한 수준을의 기본 상관 관계를 보여줍니다.
   
-|**SharePoint 그룹**|**사용 권한 수준**|
+|**SharePoint 그룹**|**권한 수준**|
 |:-----|:-----|
 |\<사이트 이름 > 구성원  <br/> |편집  <br/> |
 |\<사이트 이름 > 방문자  <br/> |읽기  <br/> |
@@ -48,7 +51,7 @@ ms.lasthandoff: 02/09/2018
   
 다음은 기본 SharePoint 그룹 및 권한 수준입니다.
   
-![SharePoint Online 사이트에 대한 기본 SharePoint 그룹 및 사용 권한 수준입니다.](images/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![SharePoint Online 사이트에 대한 기본 SharePoint 그룹 및 사용 권한 수준입니다.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>2 단계: 액세스 그룹과 사용자에 게 사용 권한 할당
 
@@ -78,7 +81,7 @@ Office 365 용 azure AD 그룹 Office 365 그룹 보다 서로 다릅니다. Azu
   
 격리 된 SharePoint Online 팀 사이트, 권장된 그룹 구조는 다음과 같습니다.
   
-|**SharePoint 그룹**|**Azure AD 기반 액세스 그룹**|**사용 권한 수준**|
+|**SharePoint 그룹**|**Azure AD 기반 액세스 그룹**|**권한 수준**|
 |:-----|:-----|:-----|
 |\<사이트 이름 > 구성원  <br/> |\<사이트 이름 > 구성원  <br/> |편집  <br/> |
 |\<사이트 이름 > 방문자  <br/> |\<사이트 이름 > 뷰어  <br/> |읽기  <br/> |
@@ -88,7 +91,7 @@ Office 365 용 azure AD 그룹 Office 365 그룹 보다 서로 다릅니다. Azu
   
 다음은 기본 SharePoint 그룹 Azure AD 기반 액세스 그룹을 사용 하도록 구성 합니다.
   
-![기본 SharePoint Online 사이트 그룹의 구성원으로 액세스 그룹을 사용합니다.](images/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![기본 SharePoint Online 사이트 그룹의 구성원으로 액세스 그룹을 사용합니다.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 세 액세스 그룹을 디자인할 때 다음 사항에 유의 해야 합니다.
   
@@ -98,7 +101,7 @@ Office 365 용 azure AD 그룹 Office 365 그룹 보다 서로 다릅니다. Azu
     
 SharePoint 그룹 및 ProjectX 라는 격리 된 사이트에 대 한 액세스 그룹의 예는 다음과 같습니다.
   
-![SharePoint Online 사이트인 ProjectX의 액세스 그룹을 사용한 예입니다.](images/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![SharePoint Online 사이트인 ProjectX의 액세스 그룹을 사용한 예입니다.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>3 단계: 사용 하 여 중첩 된 Azure AD 그룹
 
@@ -121,7 +124,7 @@ SharePoint 그룹 및 ProjectX 라는 격리 된 사이트에 대 한 액세스 
   
 중첩 된 Azure AD의 예가 ProjectX 멤버 액세스 그룹에 대 한 그룹과 다음과 같습니다.
   
-![ProjectX 사이트의 구성원 액세스 그룹에 대해 중첩 액세스 그룹을 사용한 예입니다.](images/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![ProjectX 사이트의 구성원 액세스 그룹에 대해 중첩 액세스 그룹을 사용한 예입니다.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 잠재 고객 연구 (영문), 엔지니어링 및 프로젝트에 사용자 계정을 모두 하기 때문에 팀 사이트 구성원이 될 하기 위한 것, 자신의 Azure AD 그룹 ProjectX 멤버 액세스 그룹을 추가 하면 더 쉽습니다.
   
@@ -131,13 +134,13 @@ SharePoint 그룹 및 ProjectX 라는 격리 된 사이트에 대 한 액세스 
   
 ## <a name="see-also"></a>참고 항목
 
-[격리 된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
+[격리된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-sites.md)
   
-[SharePoint Online 팀 사이트를 격리 관리](manage-an-isolated-sharepoint-online-team-site.md)
+[격리된 SharePoint Online 팀 사이트 관리](manage-an-isolated-sharepoint-online-team-site.md)
   
 [보안 솔루션](security-solutions.md)
 
-[SharePoint Online 팀 사이트를 격리를 배포 합니다.](deploy-an-isolated-sharepoint-online-team-site.md)
+[격리된 SharePoint Online 팀 사이트 배포](deploy-an-isolated-sharepoint-online-team-site.md)
 
 
 

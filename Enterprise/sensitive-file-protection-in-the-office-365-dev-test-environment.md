@@ -1,5 +1,5 @@
 ---
-title: "Office 365 개발/테스트 환경에서 중요 한 파일 보호"
+title: Office 365 개발/테스트 환경용 중요 파일 보호
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: "요약: 구성 및 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에 Office 365 정보 권한 관리에 중요 한 파일을 보호 하는 방법을 시연 합니다."
-ms.openlocfilehash: 236272a90bb6ff7f310c95f1494b68750e363f40
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '요약: 구성 및 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에 Office 365 정보 권한 관리에 중요 한 파일을 보호 하는 방법을 시연 합니다.'
+ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915703"
 ---
-# <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에서 중요 한 파일 보호
+# <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 
  **요약:** 구성 하 고 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에 Office 365 정보 권한 관리에 중요 한 파일을 보호 하는 방법을 시연 합니다.
   
@@ -29,7 +32,7 @@ Office 365의 정보 권한 관리 (IRM)는 SharePoint Online 라이브러리 �
 이 문서의 지침을 함께 사용 하도록 설정 및 Office 365 평가판 구독에서 사용할 수 있는 중요 한 정보를 포함 하는 파일에 대 한 Office 365에서 IRM을 테스트 합니다.
   
 > [!TIP]
-> 클릭 [여기](http://aka.ms/catlgstack) 에 한 맵이 하나의 Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서를 시각적으로 표시 합니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경을 구축합니다
 
@@ -50,7 +53,7 @@ Office 365의 정보 권한 관리 (IRM)는 SharePoint Online 라이브러리 �
   
 - 사용하는 컴퓨터(경량 Office 365 개발/테스트 환경)
     
-- (시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경)에 대 한 CLIENT1 가상 컴퓨터로 합니다.
+- CLIENT1 가상 컴퓨터(시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경)
     
 **Windows PowerShell 자격 증명 요청** 대화 상자에서 Office 365 전역 관리자 이름을 입력 합니다 (예: jdoe@contosotoycompany.onmicrosoft.com) 및 Office 365 평가판 구독의 암호입니다.
   
@@ -89,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 다음으로, 개인 임원 그룹을 만들고 새 임원 계정을 추가 합니다.
   
-1. 브라우저에서 [http://portal.office.com](http://portal.office.com) 에서 Office 포털로 이동 하 고 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
+1. 브라우저에서 포털로 이동 하는 Office에서 [http://portal.office.com](http://portal.office.com) 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
     
   - Office 365 개발/테스트 환경 lightweight를 사용 하는 경우 Internet Explorer 또는 브라우저의 개인 세션을 열고 로컬 컴퓨터에서 로그인 합니다.
     
@@ -101,7 +104,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. 목록에서 전역 관리자 계정 이름을 클릭 합니다.
     
-5. **추가**클릭 한 다음 **닫기**를 클릭 합니다.
+5. **추가**를 클릭한 다음 **닫기**를 클릭합니다.
     
 6. 그룹 목록에서 **중역**을 클릭 합니다.
     
@@ -137,7 +140,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. SharePoint 그룹의 목록에서 **임원 구성원**을 클릭 합니다.
     
-9. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭 합니다.
+9. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
 10. **공유 '임원'** **임원**를 입력 하 고 **임원** 그룹을 클릭 한 다음 **공유**를 클릭 합니다.
     
@@ -153,7 +156,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. SharePoint 그룹의 목록에서 **판매 사이트 모음 구성원을**클릭 합니다.
     
-5. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭 합니다.
+5. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
 6. **'영업 사이트 모음의' 공유** **모든 사용자**를 입력 하 고 **외부 사용자를 제외한 모든**를 클릭 한 다음 **공유**를 클릭 합니다.
     
@@ -163,7 +166,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [Http://portal.office.com](http://portal.office.com)로 이동 합니다.
+2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
     
 3. **Office 365 로그인** 페이지에서 **다른 계정 사용**을 클릭 합니다.
     
@@ -201,7 +204,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [Http://portal.office.com](http://portal.office.com)로 이동 합니다.
+2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
     
 3. **Office 365 로그인** 페이지에서 **다른 계정 사용**을 클릭 합니다.
     
@@ -221,7 +224,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [Http://portal.office.com](http://portal.office.com)로 이동 합니다.
+2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
     
 3. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭 하 고 해당 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
@@ -241,7 +244,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 브라우저의 새 탭에서 임원 사이트 모음에 URL을 입력 합니다.
     
-2. **문서**를 클릭 합니다.
+2. **문서**를 클릭합니다.
     
 3. 위 오른쪽에서 설정 아이콘을 클릭 하 고 **라이브러리 설정**을 클릭 합니다.
     
@@ -277,7 +280,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 5. 브라우저에서 **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-6. [Http://portal.office.com](http://portal.office.com)로 이동 합니다.
+6. 이동 [http://portal.office.com](http://portal.office.com)합니다.
     
 7. **Office 365 로그인** 페이지에서 CEO 계정 이름을 클릭 하 고 해당 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
@@ -293,7 +296,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 13. 브라우저의 새 탭에서 Sales 사이트 모음에 URL을 입력 합니다.
     
-14. **문서**를 클릭 합니다.
+14. **문서**를 클릭합니다.
     
 15. **문서** 페이지에서 **업로드**를 클릭, 로컬 폴더, **SensitiveData AfterIRM.docx** 문서를 지정 하 고 **열기**를 클릭 합니다.
     
@@ -303,13 +306,13 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 브라우저에서 **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [Http://portal.office.com](http://portal.office.com)로 이동 합니다.
+2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
     
 3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 해당 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
 4. 브라우저의 새 탭에서 Sales 사이트 모음에 URL을 입력 합니다.
     
-5. **문서**를 클릭 합니다.
+5. **문서**를 클릭합니다.
     
 6. **문서** 페이지에서 **SensitiveData AfterIRM.docx** 문서를 엽니다.
     
@@ -335,6 +338,6 @@ IRM 보호를 참조 하는 다른 방법은 로컬 폴더에 파일에서 확�
   
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
 

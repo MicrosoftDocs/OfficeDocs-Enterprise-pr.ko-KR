@@ -1,5 +1,5 @@
 ---
-title: "구독, 라이선스 및 Contoso Corporation에 대 한 사용자 계정"
+title: Contoso Corporation에 대한 구독, 라이선스 및 사용자 계정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
-description: "요약: Contoso의 클라우드 구독, 라이선스, 사용자 계정 및 테 넌 트의 구조를 이해 합니다."
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso의 클라우드 구독, 라이선스, 사용자 계정 및 테 넌 트의 구조를 이해 합니다.'
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915513"
 ---
-# <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>구독, 라이선스 및 Contoso Corporation에 대 한 사용자 계정
+# <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Contoso Corporation에 대한 구독, 라이선스 및 사용자 계정
 
  **요약:** Contoso의 클라우드 구독, 라이선스, 사용자 계정 및 테 넌 트의 구조를 이해 합니다.
   
@@ -46,7 +49,7 @@ Contoso는 조직 및 해당 구독, 라이선스, 계정 및 테 넌 트에 대
   
 **그림 1: Contoso의 조직, 구독, 라이선스, 사용자 계정 및 테 넌 트**
 
-![Contoso의 조직, 구독, 라이선스, 사용자 계정 및 테넌트](images/Contoso_Poster/Subscriptions.png)
+![Contoso의 조직, 구독, 라이선스, 사용자 계정 및 테넌트](media/Contoso-Poster/Subscriptions.png)
   
 그림 1에는 Contoso 조직 여러 구독을 포함 하 고 Windows Server AD 포리스트 contoso.com에서 동기화 하는 사용자 계정이 포함 된 일반적인 Azure AD 테 넌에 연결 하는 방법을 보여줍니다.
   
@@ -82,7 +85,7 @@ Contoso의 테 넌:
   
 **Azure 구독에 대 한 그림 2: Contoso의 구조**
 
-![Azure Subscription에 대한 Contoso의 구조](images/Contoso_Poster/Subscriptions_Nested.png)
+![Azure Subscription에 대한 Contoso의 구조](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - Contoso의 위쪽에는 Microsoft와 해당 기업 계약에 따라 합니다.
     

@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '요약: 경우 서비스로 (IaaS) Microsoft의 인프라에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.'
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915033"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS용 하이브리드 클라우드 시나리오
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/05/2018
   
 **Azure의 그림 1: Microsoft IaaS 기반 하이브리드 시나리오**
 
-![Azure의 Microsoft IaaS 기반 하이브리드 시나리오](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Azure의 Microsoft IaaS 기반 하이브리드 시나리오](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 아키텍처의 각 레이어에:
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/05/2018
     
     IT 작업은 일반적으로 다중 계층, 항상 사용 가능한 응용 프로그램은 Azure 가상 컴퓨터 (Vm)의 구성 합니다.
     
-- Identity
+- ID
     
     로컬 인증에 대 한 Azure VNets에서 실행 하는 서버 집합에 Windows Server AD 도메인 컨트롤러와 같은 identity 서버를 추가 합니다.
     
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/05/2018
   
 **Azure IaaS에서 Office 365에 대 한 그림 2: 디렉터리 동기화 서버**
 
-![Azure IaaS의 Office 365 디렉터리 동기화 서버](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![Azure IaaS의 Office 365 디렉터리 동기화 서버](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 그림 2의 온-프레미스 네트워크 프록시 서버 및 해당에 지에서 라우터를 사용 하 여 Windows Server AD 인프라를 호스팅합니다. 라우터는 Azure 게이트웨이 사이트 마다 VPN 또는 ExpressRoute 연결에는 Azure VNet의 가장자리에 연결합니다. 디렉터리 동기화 서버는 VNet 내부 Azure AD 연결을 실행합니다.
   
@@ -66,7 +67,7 @@ Office 365에 대 한 디렉터리 동기화 서버는 Office 365 구독의 Azur
   
 디렉터리 동기화 서버는 Windows Server AD 변경 내용에 대 한 폴링 하 고 Office 365 구독을 동기화 합니다.
   
-자세한 내용은 [Office 365 DirSync Azure에서 배포](https://technet.microsoft.com/library/dn635310.aspx)를 참조 하십시오.
+자세한 내용은 [Office 365에 대 한 디렉터리 동기화 설정](set-up-directory-synchronization.md)을 참조 하십시오.
   
 ## <a name="line-of-business-lob-application"></a>기간 업무 (LOB) 응용 프로그램의 줄
 
@@ -74,7 +75,7 @@ Office 365에 대 한 디렉터리 동기화 서버는 Office 365 구독의 Azur
   
 **Azure IaaS에서 그림 3: LOB 응용 프로그램**
 
-![Azure IaaS의 서버 기반 LOB 응용 프로그램](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Azure IaaS의 서버 기반 LOB 응용 프로그램](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 그림 3에서는 온-프레미스 네트워크 id 인프라 및 사용자를 호스트합니다. 사이트 마다 VPN 또는 ExpressRoute 연결에는 Azure IaaS 게이트웨이에 연결 됩니다. Azure IaaS LOB 응용 프로그램의 서버를 포함 하는 가상 네트워크를 호스팅합니다.
   
@@ -112,7 +113,7 @@ Azure Vm에서 호스팅되는 LOB 응용 프로그램의 특성은 다음과 �
   
 **그림 4: 고가용성 SharePoint Server 2016의에서 팜 Azure IaaS**
 
-![Azure IaaS에 팜 된 고가용성 SharePoint Server 2016 ](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Azure IaaS에 팜 된 고가용성 SharePoint Server 2016 ](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 그림 4는 온-프레미스 네트워크 id 인프라 및 사용자를 호스트합니다. 사이트 마다 VPN 또는 ExpressRoute 연결에는 Azure IaaS 게이트웨이에 연결 됩니다. Azure VNet 프런트엔드 서버, 응용 프로그램 서버, SQL Server 클러스터 및 도메인 컨트롤러에 대 한 별도 계층을 포함 하는 SharePoint Server 2016 팜의 서버를 포함 합니다.
   
@@ -138,17 +139,17 @@ Azure Vm에서 호스팅되는 LOB 응용 프로그램의 특성은 다음과 �
   
 1. 평가 및 테스트
     
-    [Microsoft Azure의 SharePoint Server 2016](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx) Azure의 SharePoint Server 2016 실행의 장점을 이해를 참조 하십시오.
+    [Microsoft Azure의 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) Azure의 SharePoint Server 2016 실행의 장점을 이해를 참조 하십시오.
     
-    [Azure 개발/테스트 환경에서 인트라넷 SharePoint Server 2016](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) 시뮬레이션 된 개발/테스트 환경을 구축 하기를 참조 하십시오.
+    [Azure 개발/테스트 환경에서 인트라넷 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) 시뮬레이션 된 개발/테스트 환경을 구축 하기를 참조 하십시오.
     
 2. 디자인
     
-    Azure IaaS 네트워킹, 계산, 및 저장소 요소를 호스팅할 팜 및 설정의 집합을 결정 하는 프로세스를 통해의 8 단계 [Azure의 SharePoint Server 2016 팜 디자인 (영문)을](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) 참조 하십시오.
+    Azure IaaS 네트워킹, 계산, 및 저장소 요소를 호스팅할 팜 및 설정의 집합을 결정 하는 프로세스를 통해의 8 단계 [Azure의 SharePoint Server 2016 팜 디자인 (영문)을](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) 참조 하십시오.
     
 3. 배포
     
-    5 단계에서 끝-구성 고가용성 팜의 각 단계를 수행 하려면 [SharePoint Server 2016 Azure에서 SQL Server AlwaysOn 가용성 그룹으로 배포](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) 참조 하십시오.
+    5 단계에서 끝-구성 고가용성 팜의 각 단계를 수행 하려면 [SharePoint Server 2016 Azure에서 SQL Server AlwaysOn 가용성 그룹으로 배포](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) 참조 하십시오.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Azure의 Office 365에 대 한 페더레이션된 id
 
@@ -156,7 +157,7 @@ Azure의 다중 계층, 항상 사용 가능한 LOB 응용 프로그램의 다�
   
 **그림 5: Azure IaaS에서 Office 365에 대 한 고가용성 페더레이션된 id 인프라를**
 
-![Azure에서 고가용성 Office 365 페더레이션 인증 인프라의 최종 구성.](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![Azure에서 고가용성 Office 365 페더레이션 인증 인프라의 최종 구성.](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 그림 5는 온-프레미스 네트워크 id 인프라 및 사용자를 호스트합니다. 사이트 마다 VPN 또는 ExpressRoute 연결에는 Azure IaaS 게이트웨이에 연결 됩니다. Azure VNet 웹 프록시 서버, Active Directory Federation Services (AD FS) 서버 및 Windows Server Active Directory (AD) 도메인 컨트롤러를 포함 합니다.
   

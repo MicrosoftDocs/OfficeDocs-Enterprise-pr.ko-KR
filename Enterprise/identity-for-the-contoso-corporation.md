@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation 프로그램 id"
+title: Contoso Corporation 프로그램 id
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
-description: "요약: Contoso IDaaS를 활용 하 고 지리적으로 분산 된를 제공 하는 방법 및 해당 사용자에 대 한 중복 인증을 이해 합니다."
-ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Contoso IDaaS를 활용 하 고 지리적으로 분산 된를 제공 하는 방법 및 해당 사용자에 대 한 중복 인증을 이해 합니다.'
+ms.openlocfilehash: 25e708147bda51fa8f8b4d0ea5e83eb4a9cd10b0
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915443"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 프로그램 id
 
@@ -30,7 +31,7 @@ Contoso의 세계 각 지역에 대 한 7 도메인과 contoso.com에 대 한 �
   
 **그림 1: Contoso의 포리스트 및 도메인 전세계**
 
-![Contoso의 전 세계 Windows Server AD 포리스트 및 도메인](images/Contoso_Poster/Contoso_WW_ID.png)
+![Contoso의 전 세계 Windows Server AD 포리스트 및 도메인](media/Contoso-Poster/Contoso-WW-ID.png)
   
 그림 1은 지역 허브를 포함 하는 전세계의 다른 부분에 대 한 지역 도메인으로 구성 된 Contoso 포리스트를 보여줍니다.
   
@@ -46,7 +47,7 @@ Contoso 수 있습니다.
     
 **고객 및 파트너에 대 한 연결 된 인증에 대 한 그림 2: Contoso의 지원**
 
-![고객 및 파트너의 페더레이션 인증을 지원하기 위한 Contoso의 기존 인프라](images/Contoso_Poster/Federated_ID.png)
+![고객 및 파트너의 페더레이션 인증을 지원하기 위한 Contoso의 기존 인프라](media/Contoso-Poster/Federated-ID.png)
   
 그림 2에는 공용 웹사이트, 엑스트라넷, 파트너 및 AD FS 서버 집합이 포함 된 Contoso DMZ 보여줍니다. DMZ 고객 및 파트너 및 인터넷 서비스를 포함 하는 인터넷에 연결 됩니다.
   
@@ -60,7 +61,7 @@ Contoso의 파리 데이터 센터에서 서버 클러스터에서 Azure AD 연�
   
 **그림 3: Contoso의 디렉터리 동기화 인프라**
 
-![Contoso의 디렉터리 동기화 인프라](images/Contoso_Poster/DirSync.png)
+![Contoso의 디렉터리 동기화 인프라](media/Contoso-Poster/DirSync.png)
   
 그림 3은 Azure AD 테 넌 트와 Contoso Windows Server AD 포리스트를 동기화 하는 Azure AD 연결을 실행 하는 서버 클러스터를 보여줍니다.
   
@@ -74,7 +75,7 @@ Contoso가 Contoso의 작업자에 대 한 single sign-on을 제공 하는 연�
   
 **그림 4: 지리적 지사에 대 한 인증 트래픽**
 
-![지역 사무실에 대한 Contoso 인증 트래픽의 지역 사무실](images/Contoso_Poster/Auth_GeoDist.png)
+![지역 사무실에 대한 Contoso 인증 트래픽의 지역 사무실](media/Contoso-Poster/Auth-GeoDist.png)
   
 그림 4 지사에서 클라이언트 컴퓨터, Azure 트래픽 관리자 및 인증 서버의 레이어를 표시합니다. 각 지사를 사용 하 여 웹 프록시 및 AD FS 서버와 Windows Server AD 도메인 컨트롤러 사용자 자격 증명을 인증 합니다.
   
@@ -106,7 +107,7 @@ Contoso가 Contoso의 작업자에 대 한 single sign-on을 제공 하는 연�
   
 **Azure IaaS에서 그림 5: 중복 인증 인프라**
 
-![파리 본사에 대한 Azure IaaS의 중복 인증 인프라입니다.](images/Contoso_Poster/Paris_Auth_Redun.png)
+![파리 본사에 대한 Azure IaaS의 중복 인증 인프라입니다.](media/Contoso-Poster/Paris-Auth-Redun.png)
   
 그림 5에서는 웹 프록시 및 AD FS 서버 DMZ와 추가 집합의 각 크로스-프레미스 Azure 가상 네트워크입니다.
   
