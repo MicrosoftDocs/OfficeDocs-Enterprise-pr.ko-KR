@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '요약: Microsoft Azure에서 개발/테스트 환경으로 간소화된 인트라넷을 만듭니다.'
-ms.openlocfilehash: 03e729e2211320cac1adc88258e59b18b3ff0719
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215850"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915283"
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -30,7 +32,7 @@ ms.locfileid: "20215850"
   
 **그림 1: 기본 구성 개발/테스트 환경**
 
-![CLIENT1 가상 머신을 사용한 Azure의 기본 구성 4단계](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 가상 머신을 사용한 Azure의 기본 구성 4단계](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 그림 1의 기본 구성 개발/테스트 환경은 인터넷에 연결된 단순화된 전용 인트라넷을 시뮬레이트하는 TestLab이라는 클라우드 전용 Azure Virtual Network의 Corpnet 서브넷으로 구성됩니다. 여기에는 WIndows Server 2016에서 실행되는 다음과 같은 3개의 Azure Virtual Machine이 포함되어 있습니다.
   
@@ -67,7 +69,7 @@ Azure 구독이 아직 없으면 [Azure 평가](https://azure.microsoft.com/pric
 > [!NOTE]
 > Azure의 가상 머신은 실행될 때 비용이 계속 발생합니다. 이 비용은 평가판, MSDN 구독 또는 유료 구독과 별도로 청구됩니다. Azure Virtual Machine을 실행하는 비용에 대한 자세한 내용은 [가상 머신 가격 책정 정보](https://azure.microsoft.com/pricing/details/virtual-machines/) 및 [Azure 가격 계산기](https://azure.microsoft.com/pricing/calculator/)를 참조하세요. 비용을 줄이려면 [Azure에서 테스트 환경 가상 머신 비용 최소화](base-configuration-dev-test-environment.md#mincost)를 참조하세요. 
   
-![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft 클라우드의 테스트 랩 가이드](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
@@ -131,7 +133,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 다음은 현재 구성입니다.
   
-![가상 네트워크 및 서브넷을 사용한 Azure의 기본 구성 1단계](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![가상 네트워크 및 서브넷을 사용한 Azure의 기본 구성 1단계](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
 ## <a name="phase-2-configure-dc1"></a>2단계: DC1 구성
 
@@ -235,7 +237,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 다음은 현재 구성입니다.
   
-![DC1 가상 머신을 사용한 Azure의 기본 구성 2단계](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![DC1 가상 머신을 사용한 Azure의 기본 구성 2단계](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
 ## <a name="phase-3-configure-app1"></a>3단계: APP1 구성
 
@@ -289,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 다음은 현재 구성입니다.
   
-![APP1 가상 머신을 사용한 Azure의 기본 구성 3단계](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![APP1 가상 머신을 사용한 Azure의 기본 구성 3단계](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
 ## <a name="phase-4-configure-client1"></a>4단계: CLIENT1 구성
 
@@ -354,7 +356,7 @@ CLIENT1을 다시 시작한 후에 CORP\\User1 계정 이름 및 암호를 사�
     
 다음은 최종 구성입니다.
   
-![CLIENT1 가상 머신을 사용한 Azure의 기본 구성 4단계](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 가상 머신을 사용한 Azure의 기본 구성 4단계](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Azure의 기본 구성은 이제 응용 프로그램 개발 및 테스트나 추가 테스트 환경 구축에 사용할 수 있습니다. 
   

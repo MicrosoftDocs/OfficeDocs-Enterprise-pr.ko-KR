@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 비즈니스용 OneDrive Multi-Geo를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549969"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915253"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>비즈니스용 OneDrive Multi-Geo 테넌트 구성
 
@@ -112,7 +112,7 @@ AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용�
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>AD Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
 
-회사의 사용자가 온-프레미스 AD (Active Directory) 시스템에서 AAD(Azure Active Directory)로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure AD Connect 동기화: 기본 구성 변경](https://docs.microsoft.com/ko-KR/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)의 프로세스에 따라 온-프레미스 AD에서 AAD로의 기본 설정 데이터 위치 동기화를 구성합니다.
+회사의 사용자가 온-프레미스 AD (Active Directory) 시스템에서 AAD(Azure Active Directory)로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure AD Connect 동기화: 기본 구성 변경](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)의 프로세스에 따라 온-프레미스 AD에서 AAD로의 기본 설정 데이터 위치 동기화를 구성합니다.
 
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 
@@ -129,7 +129,7 @@ AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용�
 
 2.  `Connect-MsolService`를 실행하고 테넌트에 대한 전역 관리자 자격 증명을 입력합니다.
 
-3.  [Set-MsolUser](https://docs.microsoft.com/ko-KR/powershell/msonline/v1/set-msoluser) cmdlet을 사용하여 각 사용자에 대한 기본 설정 데이터 위치를 지정합니다. 예를 들면 다음과 같습니다.
+3.  [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet을 사용하여 각 사용자에 대한 기본 설정 데이터 위치를 지정합니다. 예를 들면 다음과 같습니다.
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용�
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 

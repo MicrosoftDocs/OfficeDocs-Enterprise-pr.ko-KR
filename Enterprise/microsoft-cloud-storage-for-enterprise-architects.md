@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 저장소를 디자인합니다.'
-ms.openlocfilehash: 7c8d232c42c203ce1f4fba06d4134693e01e7284
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56f7f8316296b43b96903ad8da5f4f4fbf2733d7
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161811"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915673"
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Microsoft Cloud Storage for Enterprise Architects
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161811"
   
 이 문서는 IT 설계자가 Microsoft 클라우드 서비스와 플랫폼을 사용하여 조직의 저장소를 디자인할 때 알아야 하는 사항을 설명하는 문서 모음으로 연결됩니다. 이 정보를 6페이지로 이루어진 포스터로 표시한 후 타블로이드 형식으로 인쇄할 수도 있습니다(ledger 11 x 17 또는 A3).
   
-[![Microsoft 클라우드 저장소 모델용 축소판 이미지](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+[![Microsoft 클라우드 저장소 모델용 축소판 이미지](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [더 많은 언어](https://www.microsoft.com/download/details.aspx?id=49552)

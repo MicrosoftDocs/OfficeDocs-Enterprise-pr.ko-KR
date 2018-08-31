@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: '요약: 이 테스트 랩 가이드를 사용하여 모든 Microsoft의 클라우드 서비스가 포함된 개발/테스트 환경을 만듭니다.'
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915633"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 개발/테스트 환경
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 이 문서의 지침에 따라 Microsoft Azure 인프라 서비스에서 시뮬레이트된 인트라넷을 만든 후 Microsoft Office 365, Microsoft Enterprise Mobility + Security 및 Microsoft Dynamics 365 구독을 추가합니다. 그 결과 단일 개발/테스트 환경에서 모든 Microsoft 클라우드 서비스를 동시에 사용하는 간소화된 조직이 구현됩니다. 
   
-![Azure, Office 365, EMS 및 Dynamics 365를 사용하는 One Microsoft 클라우드 개발/테스트 환경 3단계](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Azure, Office 365, EMS 및 Dynamics 365를 사용하는 One Microsoft 클라우드 개발/테스트 환경 3단계](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 구성 결과를 사용하여 다음을 수행할 수 있습니다.
   
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/27/2018
   
 **그림 1: Office 365를 사용한 Azure의 시뮬레이트된 인트라넷**
 
-![DirSync를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![DirSync를 사용하는 Office 365 개발/테스트 환경](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > Azure 평가 기간은 30일입니다. Office 365 Enterprise E5 평가 구독 기간은 30일로, 추가로 30일 동안 연장될 수 있습니다. 영구 개발/테스트 환경의 경우 적은 수의 라이선스를 사용하여 새 유료 Azure 구독과 새 유료 Office 365 Enterprise E5 구독을 만듭니다. 
@@ -94,7 +97,7 @@ ms.lasthandoff: 04/27/2018
   
 **그림 2: Office 365 및 EMS를 사용한 Azure의 시뮬레이트된 인트라넷**
 
-![Azure, Office 365 및 EMS를 사용하는 One Microsoft 클라우드 개발/테스트 환경 2단계](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Azure, Office 365 및 EMS를 사용하는 One Microsoft 클라우드 개발/테스트 환경 2단계](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>3단계: Dynamics 365 추가
 
@@ -172,7 +175,7 @@ ms.lasthandoff: 04/27/2018
   
 **그림 3: Office 365, EMS 및 Dynamics 365를 사용한 Azure의 시뮬레이트된 인트라넷**
 
-![Azure, Office 365, EMS 및 Dynamics 365를 사용하는 One Microsoft 클라우드 개발/테스트 환경 3단계](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Azure, Office 365, EMS 및 Dynamics 365를 사용하는 One Microsoft 클라우드 개발/테스트 환경 3단계](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>다음 단계
 

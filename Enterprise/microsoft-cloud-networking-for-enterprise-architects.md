@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 네트워킹을 디자인합니다.'
-ms.openlocfilehash: eebfb0537ba3166ded84c899f22efcd11825601b
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161871"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915403"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking for Enterprise Architects
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161871"
   
 이 문서는 IT 설계자가 Microsoft 클라우드 서비스와 플랫폼을 사용하여 조직의 네트워킹을 디자인할 때 알아야 하는 사항을 설명하는 문서 모음으로 연결됩니다. 이 정보를 12페이지로 이루어진 포스터로 표시한 후 타블로이드 형식으로 인쇄할 수도 있습니다(ledger 11 x 17 또는 A3).
   
-[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [더 많은 언어](https://www.microsoft.com/download/details.aspx?id=54425)

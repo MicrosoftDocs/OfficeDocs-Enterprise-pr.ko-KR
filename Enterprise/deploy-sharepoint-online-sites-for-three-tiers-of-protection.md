@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '요약: 다양한 정보 보호 수준에 맞게 SharePoint Online 팀 사이트를 만들고 구성합니다.'
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631399"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915623"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3단계 보호를 위한 SharePoint Online 사이트 배포
 
@@ -54,7 +56,7 @@ ms.locfileid: "19631399"
     
 구성 결과는 다음과 같습니다.
   
-![공용 SharePoint Online 팀 사이트에 대한 기준 수준 보호입니다.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![공용 SharePoint Online 팀 사이트에 대한 기준 수준 보호입니다.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>개인
 
@@ -80,7 +82,7 @@ ms.locfileid: "19631399"
     
 구성 결과는 다음과 같습니다.
   
-![개인 SharePoint Online 팀 사이트에 대한 기준 수준의 보호입니다.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![개인 SharePoint Online 팀 사이트에 대한 기준 수준의 보호입니다.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>중요 SharePoint Online 팀 사이트
 
@@ -142,7 +144,7 @@ SharePoint 그룹 및 권한 수준은 기본적으로 팀 사이트에 대해 �
     
 다음으로, 새 SharePoint Online 팀 사이트에서 다음 단계를 사용하여 권한을 구성합니다.
   
-1. IT 관리자 또는 사이트에 대한 액세스 요청에 응답하고 처리할 책임이 있는 다른 사용자(belindan@contoso.com - UPN의 한 가지 예)의 UPN(사용자 계정 이름)을 결정합니다. 해당 UPN을 여기에 작성합니다. ![](./images/Common_Images/TableLine.png)
+1. IT 관리자 또는 사이트에 대한 액세스 요청에 응답하고 처리할 책임이 있는 다른 사용자(belindan@contoso.com - UPN의 한 가지 예)의 UPN(사용자 계정 이름)을 결정합니다. 해당 UPN을 여기에 작성합니다. ![](./media/Common-Images/TableLine.png)
     
 2. 도구 모음에서 설정 아이콘을 클릭한 다음, **사이트 권한**을 클릭합니다.
     
@@ -196,7 +198,7 @@ SharePoint 그룹 및 권한 수준은 기본적으로 팀 사이트에 대해 �
     
 구성 결과는 다음과 같습니다.
   
-![격리된 SharePoint Online 팀 사이트에 대한 중요한 수준의 보호입니다.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![격리된 SharePoint Online 팀 사이트에 대한 중요한 수준의 보호입니다.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 사이트 구성원은 이제 액세스 그룹 중 하나의 그룹 구성원 자격을 통해 사이트의 리소스에서 안전하게 공동 작업할 수 있습니다.
   
@@ -256,7 +258,7 @@ SharePoint 그룹 및 권한 수준은 기본적으로 팀 사이트에 대해 �
     
 구성 결과는 다음과 같습니다.
   
-![격리된 SharePoint Online 팀 사이트에 대한 높은 기밀 수준의 보호입니다.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![격리된 SharePoint Online 팀 사이트에 대한 높은 기밀 수준의 보호입니다.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 사이트 구성원은 이제 액세스 그룹 중 하나의 그룹 구성원 자격을 통해 사이트의 리소스에서 안전하게 공동 작업할 수 있습니다.
   

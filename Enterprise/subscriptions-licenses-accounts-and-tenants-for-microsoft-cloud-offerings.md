@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319219"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915203"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 
@@ -62,7 +64,7 @@ Microsoft는 해당 클라우드 제품 간에 일관된 ID 사용 및 요금 �
   
 **그림 1: 여러 개의 조직용 구독 예**
 
-![Microsoft의 클라우드 서비스용 구독이 여러 개 있는 예제 조직입니다.](images/Subscriptions/Subscriptions_Fig1.png)
+![Microsoft의 클라우드 서비스용 구독이 여러 개 있는 예제 조직입니다.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 그림 1에서는 여러 개의 Office 365 구독, 1개의 Intune 구독, Dynamics 365 구독 및 여러 개의 Azure 구독이 있는 단일 조직을 보여줍니다.
@@ -73,7 +75,7 @@ Microsoft의 SaaS 클라우드 서비스의 경우 라이선스가 있으면 특
   
 **그림 2: 조직을 위한 SaaS 기반 구독에 포함된 라이선스**
 
-![Microsoft의 SaaS 기반 클라우드 서비스용 구독에 포함된 여러 라이선스 예제입니다.](images/Subscriptions/Subscriptions_Fig2.png)
+![Microsoft의 SaaS 기반 클라우드 서비스용 구독에 포함된 여러 라이선스 예제입니다.](media/Subscriptions/Subscriptions-Fig2.png)
   
 Azure PaaS 기반 클라우드 서비스의 경우 소프트웨어 라이선스가 서비스 가격에 기본적으로 포함됩니다.
   
@@ -89,7 +91,7 @@ Azure IaaS 기반 가상 머신의 경우 가상 머신 이미지에 설치되�
   
 **그림 3: 동일한 Azure 테넌트를 사용하는 조직의 여러 구독**
 
-![모두 동일한 Azure 테넌트를 사용하는 여러 개의 구독이 있는 예제 조직입니다.](images/Subscriptions/Subscriptions_Fig3.png)
+![모두 동일한 Azure 테넌트를 사용하는 여러 개의 구독이 있는 예제 조직입니다.](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>테넌트
 
@@ -131,7 +133,7 @@ Azure AD 테넌트는 계정 및 그룹에 포함된 Azure AD의 특정 인스�
   
 **그림 4: 조직에 대한 동기화된 온-프레미스 계정 및 IDaaS**
 
-![조직에 대한 IDaaS(Identity as a Service)입니다.](images/Subscriptions/Subscriptions_Fig4.png)
+![조직에 대한 IDaaS(Identity as a Service)입니다.](media/Subscriptions/Subscriptions-Fig4.png)
   
 그림 4는 일반적인 Azure AD 테넌트가 Azure AD Domains Services를 사용하는 Microsoft의 SaaS 클라우드 서비스, Azure PaaS 앱 및 Azure IaaS의 가상 머신에서 사용되는 방법을 보여 줍니다. Azure AD Connect는 온-프레미스 Windows Server AD 포리스트를 Azure AD 테넌트와 동기화합니다.
   

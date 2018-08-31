@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: '요약: 가상의 전형적인 글로벌 조직이 Microsoft 클라우드 서비스로 클라우드 포함 IT 인프라를 채택하는 방법'
-ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: afb1760d1c2fcfe7679d39a14e22f6abfcf0e80c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161781"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915293"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 클라우드의 Contoso
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161781"
   
 이 문서는 파리에 본사를 두고 있는 글로벌 제조 대기업인 Contoso Corporation이 클라우드 포함 IT 인프라를 수용하고, 네트워킹, ID 및 보안에 대한 주요 디자인 결정을 해결한 방법과 비즈니스 문제를 해결하기 위해 엔터프라이즈 클라우드 시나리오를 구현하는 방법을 설명하는 문서 모음으로 연결됩니다. 또한 비즈니스 문제를 해결하기 위해 엔터프라이즈 클라우드 시나리오를 이 정보는 11페이지로 이루어진 포스터로 표시한 후 타블로이드 형식으로 인쇄할 수도 있습니다(ledger 11 x 17 또는 A3).
   
-[![Microsoft 클라우드 포스터의 Contoso 축소판 이미지입니다.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Microsoft 클라우드 포스터의 Contoso 축소판 이미지입니다.](media/Contoso-Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [더 많은 언어](https://www.microsoft.com/download/details.aspx?id=54427)
   

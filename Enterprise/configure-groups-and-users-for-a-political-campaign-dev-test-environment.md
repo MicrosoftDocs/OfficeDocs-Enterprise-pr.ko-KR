@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '요약: 정치적 캠페인 개발/테스트 환경의 사용자 및 그룹을 사용하여 Office 365 및 EMS(Enterprise Mobility + Security) 평가판 구독을 만듭니다.'
-ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: c58782185d0638f7a6a9e14ee7e4516f1852908b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168512"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915693"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>정치적 캠페인 개발/테스트 환경에 대해 그룹 및 사용자 구성
 
@@ -186,11 +188,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 이 개발/테스트 환경에 대해 Office 365 및 EMS 평가판 구독을 사용하려면 이러한 값을 기록해둡니다.
   
-- 평가판 구독 조직 이름: ![](./images/Common_Images/TableLine.png) 
+- 평가판 구독 조직 이름: ![](./media/Common-Images/TableLine.png) 
     
     예를 들어 평가판 구독 도메인 이름 contoso.onmicrosoft.com의 경우 조직 이름은 "contoso"입니다.
     
-- Office 365 전역 관리자 이름: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+- Office 365 전역 관리자 이름: ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     이 계정에 대한 암호와 다른 사용자 계정에 대한 일반적인 초기 암호를 안전한 위치에 기록해둡니다.
     
