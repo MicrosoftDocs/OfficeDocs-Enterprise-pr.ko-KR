@@ -1,5 +1,5 @@
 ---
-title: "처음부터 만들기"
+title: 처음부터 새로 구축
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "요약: 클라우드 집합에 대 한 자세한 내용은 직접 저장소 서비스 또는 솔루션 만들기를 사용할 수 있는 저장소 구성 요소를 가져옵니다."
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: 클라우드 집합에 대 한 자세한 내용은 직접 저장소 서비스 또는 솔루션 만들기를 사용할 수 있는 저장소 구성 요소를 가져옵니다.'
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915683"
 ---
-# <a name="build-from-the-ground-up"></a>처음부터 만들기
+# <a name="build-from-the-ground-up"></a>처음부터 새로 구축
 
  **요약:** 클라우드 집합에 정보를 직접 저장소 서비스 또는 솔루션을 만드는데 사용할 수 있는 저장소 구성 요소를 가져옵니다.
   

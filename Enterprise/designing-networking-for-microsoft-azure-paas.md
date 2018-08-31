@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)"
+title: Microsoft Azure PaaS에 대한 네트워킹 디자인
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "요약: Microsoft Azure PaaS에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다."
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '요약: Microsoft Azure PaaS에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다.'
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915113"
 ---
-# <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)
+# <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS에 대한 네트워킹 디자인
 
  **요약:** Microsoft Azure PaaS에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다.
   
@@ -46,7 +49,7 @@ Azure PaaS에서 호스팅되는 조직 응용 프로그램의 경우 인트라�
     
 **Azure PaaS 서비스를 연결 하기 위한 그림 1: 연결 옵션**
 
-![그림 1: Azure PaaS 서비스에 대한 연결 옵션](images/Network_Poster/PaaS1.png)
+![그림 1: Azure PaaS 서비스에 대한 연결 옵션](media/Network-Poster/PaaS1.png)
   
 그림 1 인터넷 파이프 또는 ExpressRoute을 통해 Azure PaaS 서비스에 연결 하는 온-프레미스 네트워크를 보여줍니다.
   
@@ -56,7 +59,7 @@ Azure PaaS에서 호스팅되는 조직 응용 프로그램의 경우 인트라�
   
 **그림 2: Azure 응용 프로그램 게이트웨이**
 
-![그림 2: Azure 응용 프로그램 Gateway 서비스](images/Network_Poster/PaaS2.png)
+![그림 2: Azure 응용 프로그램 Gateway 서비스](media/Network-Poster/PaaS2.png)
   
 그림 2에서는 Azure 응용 프로그램 게이트웨이 및 인터넷에서 사용자 요청 하는 방식 Azure 웹 앱, 클라우드 서비스 또는 가상 컴퓨터를 라우팅할 수 있습니다.
   
@@ -86,7 +89,7 @@ Azure PaaS에서 호스팅되는 조직 응용 프로그램의 경우 인트라�
   
 **그림 3: Azure 트래픽 관리자**
 
-![그림 3: Azure 트래픽 관리자](images/Network_Poster/PaaS3.png)
+![그림 3: Azure 트래픽 관리자](media/Network-Poster/PaaS3.png)
   
 그림 3은 트래픽 관리자 미국, 유럽 및 아시아에서는 세가지 다른 Azure 웹 응용 프로그램에 대 한 경로 요청을 사용 하 여 기본 프로세스를 보여줍니다. 예제:
   
@@ -98,7 +101,7 @@ Azure PaaS에서 호스팅되는 조직 응용 프로그램의 경우 인트라�
 
 ## <a name="next-step"></a>다음 단계
 
-[Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-azure-iaas.md)
+[Microsoft Azure IaaS에 대한 네트워킹 디자인](designing-networking-for-microsoft-azure-iaas.md)
  
 ## <a name="see-also"></a>참고 항목
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft SaaS에 대 한 네트워킹 디자인 (영문)
+title: Microsoft SaaS에 대한 네트워킹 디자인
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: '요약: Office 365, Microsoft Intune 및 Dynamics 365 포함 한 Microsoft의 SaaS 서비스에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다.'
-ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915473"
 ---
-# <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS에 대 한 네트워킹 디자인 (영문)
+# <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS에 대한 네트워킹 디자인
 
  **요약:** Office 365, Microsoft Intune 및 Dynamics 365 포함 한 Microsoft의 SaaS 서비스에 대 한 액세스에 대 한 네트워크를 최적화 하는 방법을 이해 합니다.
   
@@ -42,9 +45,9 @@ Microsoft SaaS 서비스에 대 한 네트워크를 최적화 하기 위해 다�
 
 인터넷에 지 및 Microsoft SaaS 서비스에 대 한 처리량을 최적화 하는 몇가지 사항을 고려해 야 다음과 같습니다.
   
-**Microsoft SaaS 서비스에 대 한 그림 1: 연결 옵션**
+**그림 1: Microsoft SaaS 서비스를 위한 연결 옵션**
 
-![그림 1: Microsoft SaaS 서비스를 위한 연결 옵션](images/Network_Poster/SaaS1.png)
+![그림 1: Microsoft SaaS 서비스를 위한 연결 옵션](media/Network-Poster/SaaS1.png)
   
 그림 1 인터넷 파이프 또는 ExpressRoute을 통해 Microsoft SaaS 서비스에 연결 하는 온-프레미스 네트워크를 보여줍니다.
   
@@ -178,15 +181,15 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
     
 - 결과 모니터링 하는 대역폭을 사용 하 여 네트워크 변경 (수직/수평, 새 회로 또는 추가 장치)에 대 한 요구를 확인 하려면
     
-자세한 내용은 다음을 참조하세요.
+자세한 내용은 다음 항목을 참조하십시오.
   
-- [네트워크 및 마이그레이션 Office 365에 대 한 계획](https://aka.ms/tune)
+- [Office 365의 네트워크 및 마이그레이션 계획](https://aka.ms/tune)
     
-- [Office 365에 대 한 ExpressRoute](https://aka.ms/expressrouteoffice365)
+- [Office 365용 Express 경로](https://aka.ms/expressrouteoffice365)
 
 ## <a name="next-step"></a>다음 단계
 
-[Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-azure-paas.md)
+[Microsoft Azure PaaS에 대한 네트워킹 디자인](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>참고 항목
 

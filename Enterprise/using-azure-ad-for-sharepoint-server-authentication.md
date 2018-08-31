@@ -2,27 +2,26 @@
 title: SharePoint Server 인증에 Azure AD를 사용
 ms.author: tracyp
 author: MSFTTracyP
-ms.reviewer:
-- kirke
-- josephd
-- kirks
+ms.reviewer: kirke, josephd, kirks
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: '요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다.'
-ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: 465f333638401402c743dc66d3ebecc33be00749
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19856273"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915453"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>SharePoint Server 인증에 Azure AD를 사용
 
@@ -39,7 +38,7 @@ SharePoint Server 2016 쉽게 사용자를 관리 하 여 신뢰할 수 있지�
 
 이 문서에서는 Azure AD를 사용 하 여 온-프레미스 하는 대신 사용자를 인증 하는 방법을 설명 AD DS 합니다. 이 구성에서 Azure AD SharePoint Server 2016에 대 한 신뢰할 수 있는 id 공급자를 됩니다. 이 구성 추가 하는 SharePoint Server 2016 설치 자체에서 사용 하는 AD DS 인증 분리 하는 사용자 인증 방법입니다. 이 문서를 에서도 Ws-federation을 파악 해야 합니다. 자세한 내용은 [Ws-federation 이해를](https://go.microsoft.com/fwlink/p/?linkid=188052)참조 하십시오.
 
-![Azure AD를 사용 하 여 SharePoint 인증에 대 한](images/SAML11/fig1-architecture.png)
+![Azure AD를 사용 하 여 SharePoint 인증에 대 한](media/SAML11/fig1-architecture.png)
 
 이전에이 구성은 필요 했을 페더레이션 서비스와 같은 Azure 서비스 ACS (액세스 제어) 클라우드 또는 환경에서를 호스팅하는 Active Directory Federation Services (AD FS) SAML 1.1 SAML 2.0에서 되는 토큰을 변환 합니다. 이러한 변화는 Azure AD 이제 발급 SAML 1.1 토큰을 통해 더 이상 필요 합니다. 위 다이어그램에서는이 변환을 수행 하려면 중계 장치에 대 한 요구 사항이 더 이상 인지를 보여주는이 구성에서 SharePoint 2016 사용자에 대 한 인증을 작동 하는 방식을 보여줍니다.
 
@@ -66,7 +65,7 @@ SharePoint Server 2016 id 공급자로 Azure AD를 사용 하 여 환경을 설�
 
 Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), 새 디렉터리를 만듭니다. 조직 이름, 초기 도메인 이름 및 국가 또는 지역을 제공 합니다.
 
-![디렉터리를 만들기 (영문)](images/SAML11/fig2-createdirectory.png) 
+![디렉터리를 만들기 (영문)](media/SAML11/fig2-createdirectory.png) 
 
  Microsoft Office 365 또는 Microsoft Azure 구독에 사용 되는 것과 같은 디렉터리에 이미 있는 경우 해당 디렉터리를 대신 사용할 수 있습니다. 디렉터리에 응용 프로그램을 등록할 수 있는 권한이 있어야 합니다.
 
@@ -76,17 +75,17 @@ Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), 새 �
 
 SAML을 사용 하 여 응용 프로그램 SSL을 사용 하도록 구성 해야 합니다. SharePoint 웹 응용 프로그램이 SSL을 사용 하도록 구성 되지 않은, 경우 SSL에 대 한 웹 응용 프로그램을 구성 하는 새로운 자체 서명 된 인증서를 만들려면 다음 단계를 사용 합니다. 이 구성은 랩 환경에 대 한 기능만 및 프로덕션 환경에 대해 되지는지 않습니다. 프로덕션 환경에는 서명 된 인증서를 사용 해야 합니다.
 
-1. **중앙 관리**로 이동 > **응용 프로그램 관리** > **웹 응용 프로그램 관리**, SSL을 사용 하 여 확장 되어야 하는 웹 응용 프로그램을 선택 합니다. 웹 응용 프로그램을 선택 하 고 **확장 리본 메뉴** 단추를 클릭 합니다. 동일한 URL을 사용 하려면 포트 443 사용 하 여 SSL 사용 웹 응용 프로그램을 확장 합니다.</br>![다른 IIS 사이트에 웹 응용 프로그램 확장 (영문)](images/SAML11/fig3-extendwebapptoiis.png)</br>
+1. **중앙 관리**로 이동 > **응용 프로그램 관리** > **웹 응용 프로그램 관리**, SSL을 사용 하 여 확장 되어야 하는 웹 응용 프로그램을 선택 합니다. 웹 응용 프로그램을 선택 하 고 **확장 리본 메뉴** 단추를 클릭 합니다. 동일한 URL을 사용 하려면 포트 443 사용 하 여 SSL 사용 웹 응용 프로그램을 확장 합니다.</br>![다른 IIS 사이트에 웹 응용 프로그램 확장 (영문)](media/SAML11/fig3-extendwebapptoiis.png)</br>
 2. IIS 관리자에서 **서버 인증서**를 두번클릭 합니다.
 3. **동작** 창에서 **자체 서명 된 인증서 만들기**를 클릭 합니다. 인증서 상자에 대 한 친숙 한 이름 지정에는 인증서에 대 한 친숙 한 이름을 입력 한 다음 **확인**을 클릭 합니다.
-4. **사이트 바인딩 편집** 대화 상자에서 호스트 이름은 친숙 한 이름을와 동일 하 게 다음 이미지에 나와있는 것 처럼 확인 합니다.</br>![IIS의 사이트 바인딩 편집](images/SAML11/fig4-editsitebinding.png)</br>
+4. **사이트 바인딩 편집** 대화 상자에서 호스트 이름은 친숙 한 이름을와 동일 하 게 다음 이미지에 나와있는 것 처럼 확인 합니다.</br>![IIS의 사이트 바인딩 편집](media/SAML11/fig4-editsitebinding.png)</br>
 
 각 SharePoint 팜의 웹 프런트엔드 서버에서 IIS의에서 사이트 바인딩에 대 한 인증서 구성 필요 합니다.
 
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>3 단계: Azure AD에 새 엔터프라이즈 응용 프로그램 만들기
 
-1. Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), Azure AD 디렉터리를 엽니다. **엔터프라이즈 응용 프로그램**클릭 한 다음 **새 응용 프로그램**을 클릭 합니다. **비 갤러리 응용 프로그램**을 선택 합니다. *SharePoint SAML 통합* 와 같은 이름을 제공 하 고 **추가**클릭 합니다.</br>![새 갤러리가 아닌 응용 프로그램 추가 (영문)](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), Azure AD 디렉터리를 엽니다. **엔터프라이즈 응용 프로그램**클릭 한 다음 **새 응용 프로그램**을 클릭 합니다. **비 갤러리 응용 프로그램**을 선택 합니다. *SharePoint SAML 통합* 와 같은 이름을 제공 하 고 **추가**클릭 합니다.</br>![새 갤러리가 아닌 응용 프로그램 추가 (영문)](media/SAML11/fig5-addnongalleryapp.png)</br>
 2. 응용 프로그램을 구성 하는 탐색 창의 Single sign on 링크를 클릭 합니다. **SAML 기반 sign-on** 응용 프로그램에 대 한 SAML 구성 속성을 표시 하는 **Single sign-on 모드** 드롭다운을 변경 합니다. 다음과 같은 속성으로 구성 합니다.</br>
     - 식별자:`urn:sharepoint:portal.contoso.local`
     - 회신 URL:`https://portal.contoso.local/_trust/default.aspx`
@@ -100,10 +99,10 @@ SAML을 사용 하 여 응용 프로그램 SSL을 사용 하도록 구성 해야
     - 응용 프로그램 개체 id입니다. </br>
 *식별자* 값을 테이블로 (참조 아래 표 1.) *영역* 속성에 복사
 4. 변경 내용을 저장합니다.
-5. Configure 로그온 페이지에 액세스 하려면 **구성 (응용 프로그램 이름)** 링크를 클릭 합니다.</br>![페이지를 단일 기호 (+)를 구성합니다.](images/SAML11/fig7-configssopage.png)</br> 
+5. Configure 로그온 페이지에 액세스 하려면 **구성 (응용 프로그램 이름)** 링크를 클릭 합니다.</br>![페이지를 단일 기호 (+)를 구성합니다.](media/SAML11/fig7-configssopage.png)</br> 
     -  .Cer 확장명을 가진 파일로 SAML 서명 인증서를 다운로드 하려면 **SAML 서명 인증서-원시** 링크를 클릭 합니다. 복사한 테이블에 다운로드 한 파일의 전체 경로 붙여넣습니다.
     - 복사 및 붙여넣기에 SAML Single Sign-on 서비스 URL 링크를 */wsfed* */saml2* 부분 URL 바꿉니다.</br>
-6.  응용 프로그램에 대 한 **속성** 창으로 이동 합니다. 복사 하 고 개체 ID 값 3 단계에서에서 설정한 테이블에 붙여넣습니다.</br>![응용 프로그램에 대 한 속성 창](images/SAML11/fig8-propertiespane.png)</br>
+6.  응용 프로그램에 대 한 **속성** 창으로 이동 합니다. 복사 하 고 개체 ID 값 3 단계에서에서 설정한 테이블에 붙여넣습니다.</br>![응용 프로그램에 대 한 속성 창](media/SAML11/fig8-propertiespane.png)</br>
 7. 캡처한 값을 사용 하 여, 3 단계에서에서 설정한 테이블 아래 표 1의 형식은 있는지 확인 합니다.
 
 
@@ -143,7 +142,7 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 4. 로그인 페이지 URL 설정에서 **사용자 정의 페이지에서 로그인** 을 선택 하 고 "/_trust/" 값을 제공 합니다. 
 5. **확인**을 클릭합니다.
 
-![인증 공급자 구성](images/SAML11/fig10-configauthprovider.png)
+![인증 공급자 구성](media/SAML11/fig10-configauthprovider.png)
 
 > [!IMPORTANT]
 > 것과 같이 "/_trust/" 페이지에서 사용자 지정 기호를 설정 포함 하는 모든 단계를 수행 하는 것이 중요 합니다. 모든 단계 중 하나를 수행 하지 않으면 구성이 제대로 작동 하지 않습니다.
@@ -162,19 +161,19 @@ Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그
 1. 중앙 관리에서 **응용 프로그램 관리**를 클릭합니다.
 2. **응용 프로그램 관리** 페이지의 **웹 응용 프로그램** 섹션에서 **웹 응용 프로그램 관리를**클릭 합니다.
 3. 해당 웹 응용 프로그램을 클릭한 다음 **사용자 정책**을 클릭합니다.
-4. 웹 응용 프로그램에 대 한 정책에서 **사용자 추가**클릭 합니다.</br>![자신의 이름 클레임 하 여 사용자에 대 한 검색](images/SAML11/fig11-searchbynameclaim.png)</br>
+4. 웹 응용 프로그램에 대 한 정책에서 **사용자 추가**클릭 합니다.</br>![자신의 이름 클레임 하 여 사용자에 대 한 검색](media/SAML11/fig11-searchbynameclaim.png)</br>
 5. **사용자 추가** 대화 상자의 **영역**에서 해당 영역을 클릭하고 **다음**을 클릭합니다.
 6. **사용자 선택** 섹션에서 **웹 응용 프로그램에 대 한 정책** 대화 상자에서 **찾아보기** 아이콘을 클릭 합니다.
 7. **찾을** 텍스트 상자에 디렉터리에 사용자에 대 한 로그인 이름을 입력 하 고 **검색**을 클릭 합니다. </br>예: *demouser@blueskyabove.onmicrosoft.com*합니다.
 8. 목록 보기에서 AzureAD 머리글 아래에서 name 속성을 선택 하 고 **추가** 클릭 한 다음 대화 상자를 닫으려면 **확인** 클릭 합니다.
-9. 사용 권한에서 **모든 권한**을 클릭 합니다.</br>![클레임 사용자에 게 모든 권한 부여](images/SAML11/fig12-grantfullcontrol.png)</br>
+9. 사용 권한에서 **모든 권한**을 클릭 합니다.</br>![클레임 사용자에 게 모든 권한 부여](media/SAML11/fig12-grantfullcontrol.png)</br>
 10. **마침**, **확인**을 차례로 클릭합니다.
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>6 단계: Azure AD에 SAML 1.1 토큰 발급 정책 추가
 
 포털에서 Azure AD 응용 프로그램이 만들어지면 SAML 2.0을 사용 하 여 기본값입니다. SharePoint Server 2016 SAML 1.1 토큰 형식이 필요합니다. 다음 스크립트는 기본 SAML 2.0 정책을 제거 하 고 문제 SAML 1.1 토큰에 새 정책 추가 됩니다. 
 
-> 이 코드는 해당 [Azure Active Directory 그래프와 상호작용을 보여주는 샘플](https://github.com/kaevans/spsaml11/tree/master/scripts)을 다운로드 해야 합니다. Windows 바탕 화면에 GitHub에서 ZIP 파일로 스크립트를 다운로드 하는 경우 차단을 해제 하려면 되어있는지 확인은 `MSGraphTokenLifetimePolicy.psm1` 스크립트 모듈 파일 및 `Initialize.ps1` 스크립트 파일 (속성을 마우스 오른쪽 단추로 클릭, 차단 해제를 선택, 확인을 클릭). ![다운로드 한 파일 차단 해제](images/SAML11/fig17-unblock.png)
+> 이 코드는 해당 [Azure Active Directory 그래프와 상호작용을 보여주는 샘플](https://github.com/kaevans/spsaml11/tree/master/scripts)을 다운로드 해야 합니다. Windows 바탕 화면에 GitHub에서 ZIP 파일로 스크립트를 다운로드 하는 경우 차단을 해제 하려면 되어있는지 확인은 `MSGraphTokenLifetimePolicy.psm1` 스크립트 모듈 파일 및 `Initialize.ps1` 스크립트 파일 (속성을 마우스 오른쪽 단추로 클릭, 차단 해제를 선택, 확인을 클릭). ![다운로드 한 파일 차단 해제](media/SAML11/fig17-unblock.png)
 
 샘플 스크립트를 다운로드 하 고 나면 개체 틀의 다운로드 한 파일 경로로 대체 하는 다음 코드를 사용 하 여 새 PowerShell 스크립트를 만들 `Initialize.ps1` 로컬 컴퓨터에 있습니다. 표 1에 입력 한 응용 프로그램 개체 ID를 가진 응용 프로그램 개체 ID 개체 틀을 대체 합니다. 를 만든 후에 PowerShell 스크립트를 실행 합니다. 
 
@@ -227,15 +226,15 @@ AssignSaml11PolicyToAppPrincipal $pathToInitializeScriptFile $appObjectid
 
 이전 단계에서 사용자가 구성한 웹 응용 프로그램의 URL로 브라우저를 엽니다. Azure AD에 로그인 하는 것이 리디렉션됩니다.
 
-![페더레이션에 대해 구성 된 Azure AD에 로그인](images/SAML11/fig13-examplesignin.png)
+![페더레이션에 대해 구성 된 Azure AD에 로그인](media/SAML11/fig13-examplesignin.png)
 
 로그인 상태를 유지 하려는 경우가 있습니다.
 
-![로그인 유지 것 입니까?](images/SAML11/fig14-staysignedin.png)
+![로그인 유지 것 입니까?](media/SAML11/fig14-staysignedin.png)
 
 마지막으로 테 넌 트 Azure Active Directory에서에서 사용자로 로그인 사이트에 액세스할 수 있습니다.
 
-![SharePoint에 로그인 하는 사용자](images/SAML11/fig15-signedinsharepoint.png)
+![SharePoint에 로그인 하는 사용자](media/SAML11/fig15-signedinsharepoint.png)
 
 ## <a name="managing-certificates"></a>인증서 관리
 것은 위의 4 단계에서 신뢰할 수 있는 id 공급자에 대해 구성 된 서명 인증서가 만료 날짜와 갱신 되기를 이해 하는 것이 중요 합니다. 인증서를 갱신 대 정보에 대 한 문서 [페더레이션 single sign-on 및 Azure Active directory에서에 대 한 관리 인증서](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs) 를 참조 하십시오. Azure AD에 인증서를 갱신 된, 로컬 파일을 다운로드 하 고 다음 스크립트를 사용 하 여 갱신 된 서명 인증서를 사용 하 여 신뢰할 수 있는 id 공급자를 구성 합니다. 
@@ -266,7 +265,7 @@ $t.Update()
 ## <a name="fixing-people-picker"></a>수정 하는 사용자 선택
 사용자가 Azure AD에서 id가 사용 하 여 SharePoint 2016에 이제 로그인 할 수 있지만 여전히 사용자 환경 향상을 위한 기회 있습니다. 예: 사용자에 대 한 검색 사용자 선택에서 여러 검색 결과 제공 합니다. 각 클레임 매핑을에서 만들어진 3 클레임 유형에 대 한 검색 결과 방법이 있습니다. 사용자 선택을 사용 하 여 사용자를 선택 하려면 사용자 이름을 정확 하 게 입력 하 고 **이름** 클레임 결과 선택 해야 합니다.
 
-![클레임 검색 결과](images/SAML11/fig16-claimssearchresults.png)
+![클레임 검색 결과](media/SAML11/fig16-claimssearchresults.png)
 
 맞춤법 오류를 야기할 수 있는 값을 검색에 대 한 유효성을 검사 없이 이거나 잘못 된 실수로 선택 클레임 유형 **성** 등을 할당 하는 사용자가 클레임 합니다. 사용자가 성공적으로 리소스에 액세스 하지 못하도록 방지할 수이 합니다.
 
@@ -276,7 +275,7 @@ $t.Update()
 
 [Ws-federation 이해](https://go.microsoft.com/fwlink/p/?linkid=188052)
   
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
 ## <a name="join-the-discussion"></a>토론 참여
 

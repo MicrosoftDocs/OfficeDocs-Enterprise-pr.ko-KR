@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다.'
-ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188116"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915493"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결을 위한 ExpressRoute
 
@@ -31,7 +33,7 @@ ExpressRoute에 연결 하지 않고 Microsoft 클라우드 네트워킹 경로 
   
 **그림 1: ExpressRoute가 없는 네트워킹 경로**
 
-![그림 1: ExpressRoute가 없는 네트워킹 경로](images/Network_Poster/ExpressRoute.png)
+![그림 1: ExpressRoute가 없는 네트워킹 경로](media/Network-Poster/ExpressRoute.png)
   
 그림 1는 온-프레미스 네트워크 및 Microsoft 클라우드 간에 일반적인 경로 표시 합니다. WAN 통해 인터넷에 연결 하는 온-프레미스 네트워크에 지는 ISP에 대 한 링크입니다. 다음의 트래픽은 인터넷을 통해 Microsoft 클라우드의 가장자리에 있습니다. Microsoft 클라우드 내에서 클라우드 서비스에는 Office 365, Microsoft Azure, Microsoft Intune 및 Dynamics 365 포함 합니다. 조직의 사용자는 온-프레미스 네트워크 또는 인터넷에 있을 수 있습니다.
   
@@ -45,7 +47,7 @@ ISP와 Microsoft 클라우드 가장자리 사이의 경로 최상의 배달 시
   
 **그림 2: ExpressRoute 사용한 네트워킹 경로**
 
-![그림 2: ExpressRoute 사용한 네트워킹 경로](images/Network_Poster/ExpressRoute_post.png)
+![그림 2: ExpressRoute 사용한 네트워킹 경로](media/Network-Poster/ExpressRoute-post.png)
   
 그림 2는 두 네트워킹 경로 보여줍니다. Microsoft Intune로의 트래픽은 기본 인터넷 트래픽와 같은 경로입니다. ExpressRoute 연결, 온-프레미스 네트워크의 가장자리와 Microsoft 클라우드 가장자리 사이의 전용된 경로 통해 Office 365, Microsoft Azure 및 Dynamics 365 여행에 대 한 트래픽입니다.
   
@@ -87,7 +89,7 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
   
 |**클라우드 exchange에 함께 배치**|**지점간 이더넷**|**모든-를-모든 (IP VPN) 연결**|
 |:-----|:-----|:-----|
-|![ExpressRoute 연결 모델: 클라우드 Exchange에 공동으로 배치됨](images/Network_Poster/ER_Conn1.png)|![ExpressRoute 연결 모델: 지점 간 이더넷](images/Network_Poster/ER_Conn2.png)|![ExpressRoute 연결 모델: Any-to-Any(IP VPN) 연결 ](images/Network_Poster/ER_Conn3.png)|
+|![ExpressRoute 연결 모델: 클라우드 Exchange에 공동으로 배치됨](media/Network-Poster/ER-Conn1.png)|![ExpressRoute 연결 모델: 지점 간 이더넷](media/Network-Poster/ER-Conn2.png)|![ExpressRoute 연결 모델: Any-to-Any(IP VPN) 연결 ](media/Network-Poster/ER-Conn3.png)|
 |데이터 센터는 클라우드 exchange와 시설에 있는 공동, 하는 경우에 대 한 가상 크로스-연결 공동 위치 공급자의 이더넷 exchange 통해 Microsoft 클라우드를 주문할 수 있습니다.  <br/> |데이터 센터를 귀하의 구내에 있는 경우에 Microsoft 클라우드에 연결할 지점간 이더넷 링크를 사용할 수 있습니다.  <br/> |이미 조직의 사이트를 연결 하려면 IP VPN (MPLS) 공급자를 사용 하는, 사용자의 개인 WAN에서 다른 위치로 처럼 작동 하는 Microsoft 클라우드에 대 한 ExpressRoute 연결.  <br/> |
    
  **표 1: ExpressRoute 연결 모델**
@@ -98,7 +100,7 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
   
 **그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계**
 
-![그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계](images/Network_Poster/ERPeering.png)
+![그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계](media/Network-Poster/ERPeering.png)
   
 그림 3에 대 한 ExpressRoute 연결을 온-프레미스 네트워크에서 나옵니다. ExpressRoute 연결 세 논리 피어 관계를 포함합니다. Office 365 및 Dynamcs CRM Online 등의 Microsoft SaaS 서비스 Microsoft 피어 링 관계를 이동 합니다. Azure PaaS 서비스 공용 피어 링 관계를 이동합니다. 개인 피어 링 관계 Azure IaaS 하 고 가상 컴퓨터를 호스팅하는 가상 네트워크 게이트웨이 이동 합니다.
   
@@ -128,7 +130,7 @@ Microsoft 피어 링 BGP 관계:
   
 **그림 4: 온-프레미스 SharePoint 팜에 액세스하는 Azure 가상 컴퓨터의 응용 프로그램**
 
-![그림 4: 온-프레미스 SharePoint 팜에 액세스하는 Azure 가상 컴퓨터의 응용 프로그램](images/Network_Poster/ER_App_Flow1.png)
+![그림 4: 온-프레미스 SharePoint 팜에 액세스하는 Azure 가상 컴퓨터의 응용 프로그램](media/Network-Poster/ER-App-Flow1.png)
 
   
 그림 4에서는 응용 프로그램 서버 간에 온-프레미스 SharePoint 팜, 온-프레미스 네트워크 및 Azure IaaS, Azure IaaS 가상 컴퓨터를 사용 하는 트래픽과으로 실행 되는 응용 프로그램 서버에서에서 가상 네트워크 간의 사이트 마다 VPN 연결 흐름 및 SharePoint 팜 합니다.
@@ -139,7 +141,7 @@ Microsoft 피어 링 BGP 관계:
   
 **그림 5: 온-프레미스 SharePoint 팜을 SharePoint Online으로 이동**
 
-![그림 5: 온-프레미스 SharePoint 팜을 SharePoint Online으로 이동](images/Network_Poster/Hairpin1.png)
+![그림 5: 온-프레미스 SharePoint 팜을 SharePoint Online으로 이동](media/Network-Poster/Hairpin1.png)
   
 그림 5 표시 피어 링 관계를 가진 ExpressRoute 연결의 추가 Microsoft SaaS 및 Office 365 하 고 Azure IaaS 가상 네트워크에서 응용 프로그램 서버를 포함 합니다. SharePoint 온-프레미스 팜에 Office 365로 마이그레이션 되었습니다.
   
@@ -157,7 +159,7 @@ Microsoft 및 개인 피어 관계:
   
 **그림 6: SharePoint 팜이 Office 365의 SharePoint Online으로 마이그레이션되었을 때의 트래픽 흐름**
 
-![그림 6: SharePoint 팜이 Office 365의 SharePoint Online으로 마이그레이션되었을 때의 트래픽 흐름](images/Network_Poster/Hairpin2.png)
+![그림 6: SharePoint 팜이 Office 365의 SharePoint Online으로 마이그레이션되었을 때의 트래픽 흐름](media/Network-Poster/Hairpin2.png)
 
   
 그림 6 응용 프로그램 서버와 Office 365의 SharePoint Online 간의 트래픽을 개인 피어 링 관계 온-프레미스 네트워크 경계를 응용 프로그램 서버에서 한 가장자리에서 다음을 통해 Microsoft 피어 링 관계를 통해 흐르는 하는 방법을 보여줍니다. Office 365 합니다.
@@ -186,7 +188,7 @@ Microsoft 클라우드 피어 링 위치에 대 한 ExpressRoute 연결을 만�
   
 **그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예**
 
-![그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예](images/Network_Poster/MSNet1.png)
+![그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예](media/Network-Poster/MSNet1.png)
   
 그림 7 두 위치와 조직 미국, 대한민국 북서쪽에서 위치 1 및 북동쪽에서 위치 2를 보여줍니다. 모든-를-모든 WAN 공급자에서 연결 합니다. 이 조직에 서울에 Microsoft 피어 링 위치로 ExpressRoute 연결이 합니다. 위치 2에서는 동부 지역 데이터 센터에 대해 북동쪽에서 해야 서 부 지역 Microsoft 피어 링 위치에 이르는 모든 조직의 WAN에서 출장 트래픽과 했다가 다시 국가에서 Microsoft 클라우드 네트워크를 통해 동부 데이터 센터입니다.
   
@@ -194,7 +196,7 @@ Microsoft 클라우드 피어 링 위치에 대 한 ExpressRoute 연결을 만�
   
 **그림 8: 지역 데이터 센터로의 최적 전달을 위한 여러 개의 ExpressRoute 연결 사용**
 
-![그림 8: 지역 데이터 센터로의 최적 전달을 위한 여러 개의 ExpressRoute 연결 사용](images/Network_Poster/MSNet2.png)
+![그림 8: 지역 데이터 센터로의 최적 전달을 위한 여러 개의 ExpressRoute 연결 사용](media/Network-Poster/MSNet2.png)
   
 그림 8 지역별로 로컬 Microsoft 피어 링 위치를 각 위치에 대 한 두 ExpressRoute 연결 된 동일한 조직에 나와 있습니다. 이 구성에서 위치 2에서는 동부 지역 데이터 센터에 대해 북동쪽에서 트래픽은 동부 피어 링 위치에 직접, Microsoft 클라우드 네트워크를 다음 동부 지역 데이터 센터에 있습니다.
   
@@ -224,7 +226,7 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
   
 **전세계 Microsoft 클라우드 네트워크의 그림 9:**
 
-![그림 9: 전 세계 Microsoft 클라우드 네트워크](images/Network_Poster/MSNet3.png)
+![그림 9: 전 세계 Microsoft 클라우드 네트워크](media/Network-Poster/MSNet3.png)
   
 그림 9 대륙 및 세계와의 상호 연결의 지역에 걸쳐 있는 네트워크를 사용 하 여 전세계 Microsoft 클라우드 네트워크의 논리 다이어그램을 보여줍니다. 각 대륙에 Microsoft 클라우드 네트워크의 부분을 함께 글로벌 엔터프라이즈 연결을 만듦 ExpressRoute 프리미엄 해당 지역 허브 사무실에서 로컬 Microsoft 피어 링 위치를
   
@@ -264,7 +266,7 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
     
 ## <a name="next-step"></a>다음 단계
 
-[Microsoft SaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-saas.md)
+[Microsoft SaaS에 대한 네트워킹 디자인](designing-networking-for-microsoft-saas.md)
 
 ## <a name="see-also"></a>참고 항목
 
