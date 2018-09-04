@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '요약: Office 365 개발/테스트 환경에 대한 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: 2877fa7f85643057c6ba8630939c690256bb8918
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215860"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915243"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 페더레이션 ID
 
@@ -33,7 +35,7 @@ Office 365은 페더레이션 ID를 지원합니다. 즉, 자격 증명 자체�
   
 **그림 1: Office 365 개발/테스트 환경에 대한 페더레이션 인증**
 
-![Office 365 개발/테스트 환경에 대한 DirSync에 추가된 웹 응용 프로그램 프록시 서버](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![Office 365 개발/테스트 환경에 대한 페더레이션 인증](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 그림 1에 나오는 구성은 다음으로 이루어져 있습니다. 
   
@@ -73,7 +75,7 @@ DNS 공급자에 올바른 DNS 레코드를 만들고 Office 365 평가판 구�
   
 **그림 2: Office 365 개발/테스트 환경에 대한 디렉터리 동기화**
 
-![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 그림 2에서는 Azure Virtual Network에 Office 365와 CLIENT1, APP1 및 DC1 가상 머신이 포함된 Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 보여줍니다.
   
@@ -121,7 +123,7 @@ Restart-Computer
   
 **그림 3: AD FS 서버 추가**
 
-![AD FS 서버가 Office 365에 대한 DirSync 개발/테스트 환경에 추가됨](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![AD FS 서버가 Office 365에 대한 DirSync 개발/테스트 환경에 추가됨](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
 그림 3은 Office 365 개발/테스트 환경에 대한 DirSync에 ADFS1 서버를 추가하는 방법을 보여줍니다.
   
@@ -192,7 +194,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
   
 **그림 4: 웹 응용 프로그램 프록시 서버 추가**
 
-![Office 365 개발/테스트 환경에 대한 DirSync에 추가된 웹 응용 프로그램 프록시 서버](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![Office 365 개발/테스트 환경에 대한 DirSync에 추가된 웹 응용 프로그램 프록시 서버](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 그림 4에서는 PROXY1 서버를 추가하는 방법을 보여줍니다.
   
