@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '요약: 사이트 간 VPN 연결을 사용하여 Office Server 작업용 프레미스 간 Azure Virtual Network를 구성하는 방법을 알아봅니다.'
-ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915323"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
@@ -33,7 +36,7 @@ ms.lasthandoff: 04/27/2018
 
 Azure의 가상 시스템은 온-프레미스 환경에서 격리할 필요가 없습니다. Azure Virtual Machine을 온-프레미스 네트워크 리소스에 연결하려면 프레미스 간 Azure Virtual Network를 구성해야 합니다. 다음 다이어그램은 Azure의 가상 컴퓨터가 있는 프레미스 간 Azure Virtual Network를 배포하는 데 필요한 구성 요소를 표시합니다.
   
-![사이트 간 VPN 연결을 통해 Microsoft Azure에 연결된 온-프레미스 네트워크](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
+![사이트 간 VPN 연결을 통해 Microsoft Azure에 연결된 온-프레미스 네트워크](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
   
 다이어그램에는 사이트 간 VPN 연결로 연결된 두 개 네트워크가 있으며, 하나는 온-프레미스 네트워크이고 하나는 Azure Virtual Network입니다. 사이트 간 VPN 연결은 다음을 나타냅니다.
 
@@ -141,11 +144,11 @@ Azure 가상 네트워크를 만들어서 가상 컴퓨터를 호스트하기 �
   
 |**항목**|**Configuration 요소**|**설명**|**값**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |가상 네트워크 이름  <br/> |Azure Virtual Network(예: DirSyncNet)에 할당할 이름입니다.  <br/> |![](./images/Common_Images/TableLine.png) |
-|2.  <br/> |가상 네트워크 위치  <br/> |가상 네트워크가 포함될 Azure 데이터 센터입니다(예: 미국 서부).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다. IT 부서에서 이 주소를 확인합니다.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |가상 네트워크 주소 공간  <br/> |단일 개인 주소 접두사로 정의된 가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다. 주소 공간은 CIDR(Classless Interdomain Routing) 형식이어야 하며 네트워크 접두사 형식이라고도 합니다. 예를 들어 10.24.64.0/20입니다.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
-|5.  <br/> |IPsec 공유 키  <br/> |사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인한 다음 안전한 위치에 저장합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.<br/> |![](./images/Common_Images/TableLine.png) <br/> |
+|1.  <br/> |가상 네트워크 이름  <br/> |Azure Virtual Network(예: DirSyncNet)에 할당할 이름입니다.  <br/> |![](./media/Common-Images/TableLine.png) |
+|2.  <br/> |가상 네트워크 위치  <br/> |가상 네트워크가 포함될 Azure 데이터 센터입니다(예: 미국 서부).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다. IT 부서에서 이 주소를 확인합니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |가상 네트워크 주소 공간  <br/> |단일 개인 주소 접두사로 정의된 가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다. 주소 공간은 CIDR(Classless Interdomain Routing) 형식이어야 하며 네트워크 접두사 형식이라고도 합니다. 예를 들어 10.24.64.0/20입니다.  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |IPsec 공유 키  <br/> |사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인한 다음 안전한 위치에 저장합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.<br/> |![](./media/Common-Images/TableLine.png) <br/> |
    
 이 솔루션의 서브넷에 대해서는 테이블 S를 채웁니다.
   
@@ -159,8 +162,8 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 |**항목**|**서브넷 이름**|**서브넷 주소 공간**|**용도**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Azure 게이트웨이에서 사용하는 서브넷입니다.  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 게이트웨이에서 사용하는 서브넷입니다.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 가상 네트워크의 가상 컴퓨터에서 사용할 온-프레미스 DNS 서버에 대해서는 테이블 D에 채웁니다. 각 DNS 서버에 식별 이름과 단일 IP 주소를 부여합니다. 식별 이름은 DNS 서버의 컴퓨터 이름 또는 호스트 이름과 일치하지 않아도 됩니다. 두 개의 빈 항목이 나열되어 있지만 추가할 수 있습니다. IT 부서에서 이 목록을 확인합니다.
   
@@ -168,8 +171,8 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 |**항목**|**DNS 서버 식별 이름**|**DNS 서버 IP 주소**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 사이트 간 VPN 연결을 통해 Azure Virtual Network에서 조직 네트워크로 패킷을 라우팅하려면 로컬 네트워크로 가상 네트워크를 구성해야 합니다. 이 로컬 네트워크에는 가상 네트워크의 가상 컴퓨터에 도달해야 하는 온-프레미스 네트워크의 모든 위치에 대한 주소 공간 목록(CIDR 형식)이 포함되어 있습니다. 온-프레미스 네트워크 또는 하위 집합의 모든 위치일 수 있습니다. 로컬 네트워크를 정의하는 주소 공간 목록은 고유해야 하며 이 가상 네트워크 또는 다른 프레미스 간 가상 네트워크에 사용되는 주소 공간과 중복되지 않아야 합니다.
   
@@ -179,9 +182,9 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 |**항목**|**로컬 네트워크 주소 공간**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>배포 로드맵
 <a name="DeploymentRoadmap"> </a>
@@ -201,7 +204,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 구성 결과는 다음과 같습니다.
   
-![온-프레미스 네트워크에는 VPN 장치 쪽을 가리키는 Virtual Network의 주소 공간에 대한 경로가 있어야 합니다.](images/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![온-프레미스 네트워크에는 VPN 장치 쪽을 가리키는 Virtual Network의 주소 공간에 대한 경로가 있어야 합니다.](media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>2단계: Azure에 프레미스 간 가상 네트워크 만들기
 <a name="Phase2"></a>
@@ -293,7 +296,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -A
 
 구성 결과는 다음과 같습니다.
   
-![Virtual Network가 온-프레미스 네트워크에 아직 연결되지 않았습니다.](images/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
+![Virtual Network가 온-프레미스 네트워크에 아직 연결되지 않았습니다.](media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
 다음으로 이러한 명령을 사용하여 사이트 간 VPN 연결의 게이트웨이를 만듭니다.
   
@@ -323,7 +326,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 
 구성 결과는 다음과 같습니다.
   
-![이제 Virtual Network에 게이트웨이가 있습니다.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
+![이제 Virtual Network에 게이트웨이가 있습니다.](media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
 계속해서 Azure VPN 게이트웨이에 연결할 온-프레미스 VPN 장치를 구성합니다. 자세한 내용은 [사이트 간 Azure Virtual Network 연결용 VPN 장치 정보](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)를 참조하세요.
   
@@ -335,7 +338,7 @@ VPN 장치를 구성하려면 다음 항목이 필요합니다.
     
 구성 결과는 다음과 같습니다.
   
-![Virtual Network가 온-프레미스 네트워크에 이제 연결되었습니다.](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
+![Virtual Network가 온-프레미스 네트워크에 이제 연결되었습니다.](media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>3단계(선택 사항): 가상 머신 추가
 
@@ -353,9 +356,8 @@ Azure에서 필요한 가상 머신을 만듭니다. 자세한 내용은 [Azure 
   
 구성 결과는 다음과 같습니다.
   
-![이제 Virtual Network는 온-프레미스 네트워크에서 액세스할 수 있는 가상 머신을 호스트합니다.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![이제 Virtual Network는 온-프레미스 네트워크에서 액세스할 수 있는 가상 머신을 호스트합니다.](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
 ## <a name="next-step"></a>다음 단계
   
-[Microsoft Azure에서 Office 365 DirSync(디렉터리 동기화)를 배포합니다.](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-
+[Microsoft Azure에서 Office 365 디렉터리 동기화 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

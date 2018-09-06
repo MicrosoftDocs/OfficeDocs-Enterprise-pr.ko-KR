@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: '요약: 개발/테스트 환경에서 공용, 개인, 중요 및 극비 SharePoint Online 팀 사이트를 만듭니다.'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193728"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915773"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>개발/테스트 환경의 SharePoint Online 사이트 보호
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193728"
   
 이 문서에서는 [SharePoint Online 사이트 및 파일 보호 솔루션](secure-sharepoint-online-sites-and-files.md)에 대한 네 가지 유형의 SharePoint Online 팀 사이트를 포함하는 개발/테스트 환경을 만드는 단계별 지침을 제공합니다.
   
-![보안 SharePoint Online 개발/테스트 환경의 모든 네 개의 팀 사이트입니다.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![보안 SharePoint Online 개발/테스트 환경의 모든 네 개의 팀 사이트입니다.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 이 개발/테스트 환경을 사용하여 프로덕션 환경에 SharePoint Online 팀 사이트를 배포하기 전에 정보 보호 동작을 실험하고 특정 요구 사항에 맞게 설정을 자세히 조정합니다.
   
@@ -199,9 +201,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 2. **Microsoft Office 홈** 탭에서 **관리** 타일을 클릭합니다.
     
-3. 브라우저의 새 **Office 관리 센터** 탭에서 **관리 센터 > 보안 &amp; 준수**를 차례로 클릭합니다.
+3. 브라우저의 새 **Office 관리 센터** 탭에서 **관리 센터 > 보안 및 준수**를 차례로 클릭합니다.
     
-4. 브라우저의 새 **홈 - 보안 &amp; 준수** 탭에서 **분류 > 레이블**을 차례로 클릭합니다.
+4. 브라우저의 새 **홈 - 보안 및 준수** 탭에서 **분류 > 레이블**을 차례로 클릭합니다.
     
 5. **홈 > 레이블** 창에서 **레이블 만들기**를 클릭합니다.
     
@@ -271,7 +273,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 구성 결과는 다음과 같습니다.
   
-![조직 차원 공용 SharePoint Online 팀 사이트에 대한 기준 수준 보호입니다.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![조직 차원 공용 SharePoint Online 팀 사이트에 대한 기준 수준 보호입니다.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>프로젝트 1 팀 사이트
 
@@ -305,7 +307,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 구성 결과는 다음과 같습니다.
   
-![Project1 개인 SharePoint Online 팀 사이트에 대한 기준 수준의 보호입니다.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Project1 개인 SharePoint Online 팀 사이트에 대한 기준 수준의 보호입니다.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>마케팅 캠페인 팀 사이트
 
@@ -349,7 +351,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 19. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
-20. **공유** 대화 상자에서 **IT 직원**을 입력하고 **공유**를 클릭합니다.
+20. **공유** 대화 상자에서 **IT 직원**를 입력하고 선택한 후 **공유**를 클릭합니다.
     
 21. 브라우저에서 뒤로 단추를 클릭합니다.
     
@@ -381,25 +383,25 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 1. 브라우저의 **Microsoft Office 홈** 탭에서 **보안 &amp; 준수** 타일을 클릭합니다.
     
-2. 브라우저의 새 **보안 &amp; 준수** 탭에서 **데이터 손실 방지 > 정책**을 차례로 클릭합니다.
+2. 브라우저의 새 **보안 및 준수** 탭에서 **데이터 손실 방지 > 정책**을 차례로 클릭합니다.
     
 3. **데이터 손실 방지** 창에서 **+ 정책 만들기**를 클릭합니다.
     
-4. **템플릿으로 시작하거나 사용자 지정 정책 만들기** 창에서 **사용자 지정**, **다음**을 차례로 클릭합니다.
+4. **서식 파일로 시작하거나 사용자 지정 정책 만들기** 창에서 **사용자 지정**, **다음**을 차례로 클릭합니다.
     
 5. **정책 이름 지정** 창의 **이름**에서 **중요 레이블 SharePoint Online 팀 사이트**를 입력하고 **다음**을 클릭합니다.
     
-6. **위치 선택** 창에서 **Let me choose specific locations(특정 위치 직접 선택)** 를 선택하고 **다음**을 클릭합니다.
+6. **위치 선택** 창에서 **특정 위치 선택 허용**을 선택하고 **다음**을 클릭합니다.
     
 7. 위치 목록에서 **Exchange 전자 메일** 및 **OneDrive 계정** 위치를 사용하지 않도록 설정하고 **다음**을 클릭합니다.
     
-8. **보호할 중요 정보 유형 사용자 지정** 창에서 **편집**을 클릭합니다.
+8. **보호할 중요 정보의 유형 사용자 지정** 창에서 **편집**을 클릭합니다.
     
-9. **보호할 콘텐츠 형식 선택** 창의 드롭다운 상자에서 **추가**, **레이블**을 차례로 클릭합니다.
+9. **보호할 콘텐츠 유형 선택** 창의 드롭다운 상자에서 **추가**, **레이블**을 차례로 클릭합니다.
     
-10. **레이블** 창에서 **+ 추가**를 클릭하고, **중요** 레이블을 선택하고, **추가**를 클릭한 다음 **완료**를 클릭합니다.
+10. **레이블** 창에서 **+ 추가**를 클릭하고, **중요** 레이블을 선택하고, **추가**를 클릭한 다음, **완료**를 클릭합니다.
     
-11. **보호할 콘텐츠 형식 선택** 창에서 **저장**을 클릭합니다.
+11. **보호할 콘텐츠 유형 선택** 창에서 **저장**을 클릭합니다.
     
 12. **Customize the types of sensitive info you want to protect(보호할 중요 정보 유형 사용자 지정)** 창에서 **다음**을 클릭합니다.
     
@@ -413,15 +415,15 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 16. **확인**을 클릭합니다.
     
-17. **중요 정보를 검색하는 경우 어떤 작업을 수행하시겠습니까?** 창에서 **공유된 콘텐츠 차단 및 액세스 제한** 확인란의 선택을 취소하고 **다음**을 클릭합니다.
+17. **중요한 정보를 감지하는 경우 어떻게 하시겠어요?** 창에서 **사용자의 공유를 차단하고 공유 콘텐츠에 대한 액세스를 제한** 확인란의 선택을 취소하고 **다음**을 클릭합니다.
     
-18. **먼저 정책을 사용하도록 설정하거나 테스트하시겠습니까?** 창에서 **예**를 클릭하는 대로 사용하도록 설정하고 **다음**을 클릭합니다.
+18. **정책을 켤까요 아니면 먼저 테스트를 수행할까요?** 창에서 **예, 지금 켜겠습니다.** 를 클릭하고 **다음**을 클릭합니다.
     
 19. **설정 검토 창**에서 **만들기**, **닫기**를 차례로 클릭합니다.
     
 구성 결과는 다음과 같습니다.
   
-![격리된 SharePoint Online 팀 사이트의 마케팅 캠페인에 대한 중요한 수준의 보호입니다.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![격리된 SharePoint Online 팀 사이트의 마케팅 캠페인에 대한 중요한 수준의 보호입니다.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>회사 전략 팀 사이트
 
@@ -461,7 +463,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 17. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
-18. **공유** 대화 상자에서 **IT 직원**을 입력하고 **공유**를 클릭합니다.
+18. **공유** 대화 상자에서 **IT 직원**를 입력하고 선택한 후 **공유**를 클릭합니다.
     
 19. 브라우저에서 뒤로 단추를 클릭합니다.
     
@@ -496,25 +498,25 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 2. 브라우저의 **Microsoft Office 홈** 탭에서 **보안 &amp; 준수** 타일을 클릭합니다.
     
-3. 브라우저의 새 **보안 &amp; 준수** 탭에서 **데이터 손실 방지 > 정책**을 차례로 클릭합니다.
+3. 브라우저의 새 **보안 및 준수** 탭에서 **데이터 손실 방지 > 정책**을 차례로 클릭합니다.
     
 4. **데이터 손실 방지** 창에서 **+ 정책 만들기**를 클릭합니다.
     
-5. **템플릿으로 시작하거나 사용자 지정 정책 만들기** 창에서 **사용자 지정**, **다음**을 차례로 클릭합니다.
+5. **서식 파일로 시작하거나 사용자 지정 정책 만들기** 창에서 **사용자 지정**, **다음**을 차례로 클릭합니다.
     
 6. **정책 이름 지정** 창의 **이름**에서 **극비 레이블 SharePoint Online 팀 사이트**를 입력하고 **다음**을 클릭합니다.
     
-7. **위치 선택** 창에서 **Let me choose specific locations(특정 위치 직접 선택)** 를 선택하고 **다음**을 클릭합니다.
+7. **위치 선택** 창에서 **특정 위치 선택 허용**을 선택하고 **다음**을 클릭합니다.
     
 8. 위치 목록에서 **Exchange 전자 메일** 및 **OneDrive 계정** 위치를 사용하지 않도록 설정하고 **다음**을 클릭합니다.
     
-9. **보호할 중요 정보 유형 사용자 지정** 창에서 **편집**을 클릭합니다.
+9. **보호할 중요 정보의 유형 사용자 지정** 창에서 **편집**을 클릭합니다.
     
-10. **보호할 콘텐츠 형식 선택** 창의 드롭다운 상자에서 **추가**, **레이블**을 차례로 클릭합니다.
+10. **보호할 콘텐츠 유형 선택** 창의 드롭다운 상자에서 **추가**, **레이블**을 차례로 클릭합니다.
     
-11. **레이블** 창에서 **+ 추가**를 클릭하고, **극비** 레이블을 선택하고, **추가**를 클릭한 다음 **완료**를 클릭합니다.
+11. **레이블** 창에서 **+ 추가**를 클릭하고, **극비** 레이블을 선택하고, **추가**를 클릭한 다음, **완료**를 클릭합니다.
     
-12. **보호할 콘텐츠 형식 선택** 창에서 **저장**을 클릭합니다.
+12. **보호할 콘텐츠 유형 선택** 창에서 **저장**을 클릭합니다.
     
 13. **Customize the types of sensitive info you want to protect(보호할 중요 정보 유형 사용자 지정)** 창에서 **다음**을 클릭합니다.
     
@@ -530,7 +532,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 18. **중요한 정보를 감지하는 경우 어떻게 하시겠어요?** 창에서 **재정의하려면 비즈니스 사유 필요**를 선택하고 **다음**을 클릭합니다.
     
-19. **먼저 정책을 사용하도록 설정하거나 테스트하시겠습니까?** 창에서 **예**를 클릭하는 대로 사용하도록 설정하고 **다음**을 클릭합니다.
+19. **정책을 켤까요 아니면 먼저 테스트를 수행할까요?** 창에서 **예, 지금 켜겠습니다.** 를 클릭하고 **다음**을 클릭합니다.
     
 20. **설정 검토 창**에서 **만들기**, **닫기**를 차례로 클릭합니다.
     
@@ -542,7 +544,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 2. 브라우저의 별도 탭에서 Azure Portal([https://portal.azure.com](https://portal.azure.com))로 이동합니다.
     
-3. 처음으로 Azure Information Protection을 구성하는 경우 [이러한 지침](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)을 참조하세요.
+3. 처음으로 Azure Information Protection을 구성하는 경우 다음 [지침](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)을 참조하세요.
     
 4. 목록 창에서 **모든 서비스**를 클릭하고 **정보**를 입력한 다음, **Azure Information Protection**을 클릭합니다.
 
@@ -570,7 +572,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 16. **Azure Information Protection** 블레이드에서 **정책 > + 새 정책 추가**를 클릭합니다.
     
-17. **정책 이름**에 **CompanyStrategy**를 입력하고 **설명**에 **회사 전략 팀 사이트의 문서에 대한 레이블**을 입력합니다.
+17. **정책 이름**에 **CompanyStrategy**를 입력하고 **설명**에 **회사 전략 팀 사이트의 문서**를 입력합니다.
     
 18. **이 정책을 가져올 사용자 또는 그룹을 선택합니다 > 사용자/그룹**을 클릭한 후 **C-Suite**를 선택합니다.
     
@@ -584,13 +586,13 @@ Azure Information Protection 및 이 새 레이블을 사용하여 문서를 보
   
 구성 결과는 다음과 같습니다.
   
-![격리된 SharePoint Online 팀 사이트의 회사 전략에 대한 높은 기밀 수준의 보호입니다.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![격리된 SharePoint Online 팀 사이트의 회사 전략에 대한 높은 기밀 수준의 보호입니다.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 이제 이러한 네 가지 사이트에서 문서를 만들고 평가판 구독의 다양한 사용자 계정으로 해당 문서에 대한 액세스를 테스트할 준비가 되었습니다.
   
 다음은 네 가지 SharePoint Online 팀 사이트에 대한 전체 구성입니다.
   
-![보안 SharePoint Online 개발/테스트 환경의 모든 네 개의 팀 사이트입니다.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![보안 SharePoint Online 개발/테스트 환경의 모든 네 개의 팀 사이트입니다.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>다음 단계
 

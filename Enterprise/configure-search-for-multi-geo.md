@@ -11,12 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "18908332"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915063"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>비즈니스용 OneDrive Multi-Geo 검색 구성
 
@@ -82,7 +82,7 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 </tr>
 <tr class="even">
 <td align="left">검색 구체화</td>
-<td align="left">검색은 테넌트의 모든 지리적 위치에서 구체화 결과를 반환한 후 집계합니다. 이러한 집계에는 가능한 최선의 노력이 수반되며, 구체화 개수가 100% 정확하지 않을 수도 있습니다. 대부분의 검색 기반 시나리오에서는 이 정도의 정확도로 충분합니다.</td>
+<td align="left">검색은 테넌트의 모든 지리적 위치에서 구체화 결과를 반환한 후 집계합니다. 이러한 집계에는 가능한 최선의 노력이 수반되며, 구체화 개수가 100% 정확하지 않을 수도 있습니다. 대부분의 검색 기반 시나리오에서는 이 정도의 정확도로 충분합니다. </td>
 <td align="left">구체화 완성도에 의존하는 검색 기반 응용 프로그램의 경우 Multi-Geo 팬아웃을 사용하지 않고 개별적으로 각 지리적 위치를 쿼리합니다.</td>
 </tr>
 <tr class="odd">
@@ -129,7 +129,8 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Multi-Geo 환경에서 검색은 어떤 방식으로 작동하나요?
 
 **모든** 검색 클라이언트는 기존 SharePoint 검색 REST API를 사용하여 검색 인덱스와 상호 작용합니다.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. 검색 클라이언트는 쿼리 속성 EnableMultiGeoSearch가 true인 검색 REST 끝점을 호출합니다.
 2. 쿼리는 테넌트의 모든 지리적 위치로 전송됩니다.
@@ -151,8 +152,8 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 
 3.  설정할 범주를 선택하고 오른쪽 위 모서리에 있는 **설정** 톱니바퀴 아이콘을 클릭한 후 **페이지 편집**을 클릭합니다. 검색 결과 페이지가 편집 모드에서 열립니다.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  검색 결과 웹 파트에서 웹 파트 오른쪽 위 모서리로 포인터를 이동하고 화살표를 클릭한 후 메뉴에서 **웹 파트 편집**을 클릭합니다. 검색 결과 웹 파트 도구 창이 페이지 오른쪽 위의 리본 아래에 열립니다. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  검색 결과 웹 파트에서 웹 파트 오른쪽 위 모서리로 포인터를 이동하고 화살표를 클릭한 후 메뉴에서 **웹 파트 편집**을 클릭합니다. 검색 결과 웹 파트 도구 창이 페이지 오른쪽 위의 리본 아래에 열립니다. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  웹 파트 도구 창의 **설정** 섹션에 있는 **결과 제어 설정**에서 **Multi-Geo 결과 표시**를 선택하여 검색 결과 웹 파트에 모든 지리적 위치의 결과를 표시하도록 합니다.
 
@@ -228,6 +229,7 @@ MultiGeoSearchStatus – SharePoint 검색 API가 요청에 대한 응답으로 
 
 GET 요청을 사용하여 URL에 쿼리 매개 변수를 지정합니다. POST 요청을 사용하여 본문에 JSON(JavaScript 개체 표기법) 형식으로 쿼리 매개 변수를 전달합니다.
 
+
 #### <a name="request-headers"></a>요청 헤더
 
 <table>
@@ -251,7 +253,10 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**일부** 지리적 위치로 팬아웃할 샘플 GET 요청
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> MultiGeoSearchConfiguration 속성의 지리적 위치 목록에있는 쉼표와 콜론 앞에는 **백슬래시** 문자가 있습니다. 이는 GET 요청이 콜론을 사용하여 속성 및 쉼표를 구분하여 속성 인수를 구분하기 때문입니다. 이스케이프 문자로 백슬래시가 없으면 MultiGeoSearchConfiguration 속성이 잘못 해석됩니다.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**모든** 지리적 위치로 팬아웃되는 샘플 POST 요청
 

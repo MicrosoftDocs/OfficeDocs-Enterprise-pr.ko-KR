@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '요약: Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.'
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193538"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915843"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대한 디렉터리 동기화
 
@@ -29,7 +31,7 @@ ms.locfileid: "19193538"
   
 많은 조직에서는 Azure AD Connect 및 디렉터리 동기화를 사용하여 온-프레미스 Windows Server AD(Active Directory) 포리스트의 계정 집합을 Office 365의 계정 집합과 동기화합니다. 이 문서에서는 암호 해시 동기화를 사용한 디렉터리 동기화를 Office 365 개발/테스트 환경에 추가하여 다음과 같이 구성하는 방법을 설명합니다.
   
-![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 이 구성은 다음으로 이루어집니다. 
   
@@ -48,7 +50,7 @@ ms.locfileid: "19193538"
 
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md) 문서의 1, 2 및 3단계 지침을 따릅니다. 구성 결과는 다음과 같습니다.
   
-![Office 365 개발/테스트 환경](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Office 365 개발/테스트 환경](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 이 구성은 다음으로 이루어집니다. 
   
@@ -104,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 구성 결과는 다음과 같습니다.
   
-![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 이 구성은 다음으로 이루어집니다. 
   
