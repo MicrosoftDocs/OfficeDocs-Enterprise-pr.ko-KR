@@ -3,7 +3,7 @@ title: 데이터 이동을 요청하는 방법
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 기존 Office 365 고객은 자신의 새로운 지리적으로 분산 이동가 참여 Office 365 서비스의 고객 데이터를 포함 하기 위해 자신의 국가 대 한 마감 하기 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222980"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839576"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -114,5 +114,15 @@ IP 주소를 추가한 후 새 데이터 센터 지리적으로 분산에 대 �
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>모바일 장치에서 오래된 Exchange 설정을 업데이트하도록 사용자에게 알림
 
 사용자가 모바일 장치를 **m.outlook.com** 또는 **podxxxxx.outlook.com**로 설정 하 고 Exchange 서버와 것이 좋습니다 **outlook.office365.com**전환 자신이 [세트를 동기화 하는 모바일 장치를 구성의 지침에 따라 사용자의 계정으로](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)합니다.
+
+## <a name="related-topics"></a>관련 항목
+
+[핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
+
+[데이터 이동 일반 FAQ](data-move-faq.md)
+
+[Microsoft Dynamics CRM Online에 대 한 새 데이터 센터 geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[지역별 azure 서비스](https://azure.microsoft.com/en-us/regions/)
   
 

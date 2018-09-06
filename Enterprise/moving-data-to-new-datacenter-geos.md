@@ -3,7 +3,7 @@ title: 핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: '새 데이터 센터 geos 용량을 추가 하 고이 진행 중인 고객 제안 및 사용 현황 성장을 지원 하기 위해 리소스를 계산 합니다. 또한 새 데이터 센터 geos 핵심 고객 데이터에 대 한 데이터 residency에서-지리적으로 분산을 제공합니다. 핵심 고객 데이터는 Microsoft Online Services 용어에 정의 된 고객 데이터의 하위 집합을 참조 하는 용어: Exchange Online 사서함 콘텐츠 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일의 콘텐츠) 및 SharePoint Online 사이트 콘텐츠 및 파일 해당 사이트 내에 저장 하 고 파일은 비즈니스용 OneDrive에 업로드 합니다.'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542161"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839586"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동
 

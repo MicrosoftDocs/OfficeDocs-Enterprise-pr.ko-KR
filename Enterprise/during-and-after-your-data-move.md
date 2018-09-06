@@ -3,7 +3,7 @@ title: 데이터 이동 도중 및 이후
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542065"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839606"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -173,4 +173,13 @@ SharePoint Online 데이터를 이동 하는 과정에서 마이그레이션 검
 Exchange Online, SharePoint Online 및 비즈니스용 Skype에 대한 고객 데이터만 이동하며, 다른 서비스에 대한 데이터를 이동하지 않습니다. 이러한 다른 서비스의 고객이나 사용자의 경우 달라지는 것이 없으며 별다른 영향도 받지 않습니다. 이동 프로세스는 이러한 사용자에게 영향을 미치지 않으며 고객 데이터의 위치도 달라지지 않습니다.   
 
   
+## <a name="related-topics"></a>관련 항목 
+ 
+[데이터 이동을 요청하는 방법](request-your-data-move.md)
+    
+[데이터 이동 일반 FAQ](data-move-faq.md)
+  
+[Microsoft Dynamics CRM Online에 대 한 새 데이터 센터 geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[지역별 azure 서비스](https://azure.microsoft.com/en-us/regions/)
 

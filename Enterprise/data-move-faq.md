@@ -3,7 +3,7 @@ title: 데이터 이동 일반 FAQ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 다음은 새 데이터 센터 지리적으로 핵심 데이터를 이동 하는 방법에 대 한 일반적인 질문에 대답 합니다.
-ms.openlocfilehash: 40f83ee94aaa7c919f08d91d888ff131da02df67
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542076"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839596"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -162,4 +162,12 @@ A. 예입니다.
 
 대답: 예. Microsoft는 1,500개가 넘는 ISP(인터넷 서비스 공급자)와 피어링 계약을 맺고 전 세계 23개국에 있는 50여 위치에서 공용 인터넷 연결이 구축된 대규모 전역 네트워크를 제공하고 있습니다. 사용자는 인터넷의 어디에서든지 데이터 센터에 액세스할 수 있습니다.
   
+## <a name="related-topics"></a>관련 항목
 
+[핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
+
+[데이터 이동을 요청하는 방법](request-your-data-move.md)
+
+[Microsoft Dynamics CRM Online에 대 한 새 데이터 센터 geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[지역별 azure 서비스](https://azure.microsoft.com/en-us/regions/)
