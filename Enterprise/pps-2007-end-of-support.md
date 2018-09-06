@@ -3,7 +3,6 @@ title: PerformancePoint Server 2007 지원 종료 로드맵
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/23/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity, 및 SharePoint Server 2007 지원의 끝에 도달 했습니다. BI 솔루션 업그레이드를 계획 하는이 문서를 읽어보십시오.
-ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915103"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831913"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 
-Office 2007 서버 및 응용 프로그램 서버 및 비즈니스 인텔리전스 (BI) 솔루션의 일부로 사용 하 여 수 있는 응용 프로그램을 포함 하 여 지원의 끝에 도달 했습니다.
+Office 2007 서버 및 응용 프로그램 서버 및 비즈니스 인텔리전스 (BI) 솔루션의 일부로 사용 하 여 수 있는 응용 프로그램을 포함 하 여 지원의 끝에 도달 했습니다. 다음 표에 영향을 받는 BI 응용 프로그램:
   
 |**Microsoft BI 응용 프로그램**|**종료 된 날짜 지원**|
 |:-----|:-----|
