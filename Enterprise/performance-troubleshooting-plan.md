@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: 식별 하 고 시퀀스 번호 보다 낮은, 중단, 및 SharePoint Online, 비즈니스, Exchange Online 또는 비즈니스 온라인 용 Skype 비즈니스용 OneDrive 및 클라이언트 컴퓨터 간의 성능 저하를 수정 하기 위해 수행 하는 단계를 파악 해야 합니까? 지원을 호출 하기 전에이 문서의 Office 365 성능 문제를 해결 하 고도 일부 가장 일반적인 문제를 해결할 수 있습니다.
-ms.openlocfilehash: c7eed9498920c601b3b345e8d1879ddbb16c56c3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
+ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542071"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849371"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 성능 문제 해결 계획
 
@@ -120,14 +120,14 @@ Netmon 3.4를 설치한 후 도구를 열고이 단계를 수행 합니다.
   
  **HTTPWatch를 실행 하 고 문제를 재현**
   
-1. HTTPWatch 브라우저 플러그인 이므로 브라우저에서 도구를 표시 하는 것은 각 버전의 Internet Explorer에 대 한 약간 다릅니다. 일반적으로 Internet Explorer 브라우저에서 HTTPWatch 명령 표시줄 아래에서 찾을 수 있습니다.</br></br>브라우저 버전을 확인 클릭 도움말 플러그인 HTTPWatch 보이지 않으면 브라우저 창에서 \> 기어 기호 및 Internet Explorer에 대 한,에 대 한 또는 이후 버전의 Internet Explorer를 클릭 합니다. **명령** 모음을 시작 하려면 Internet Explorer의 메뉴 표시줄을 마우스 오른쪽 단추로 클릭 하 고 **명령 표시줄**을 클릭 합니다. 과거에는 HTTPWatch 연결 하는 명령 및 탐색기 막대를 한 번씩를 설치 하면 **도구**및 도구 모음 아이콘에 대 한 확인 (후에 다시 부팅) 아이콘을 즉시 표시 되지 않으면 합니다. 반드시 도구 모음을 사용자 지정할 수 있는 하 고 옵션을 추가할 수 있습니다.</br>
+1. HTTPWatch 브라우저 플러그인 이므로 브라우저에서 도구를 표시 하는 것은 각 버전의 Internet Explorer에 대 한 약간 다릅니다. 일반적으로 Internet Explorer 브라우저에서 HTTPWatch 명령 표시줄 아래에서 찾을 수 있습니다.</br>브라우저 버전을 확인 클릭 도움말 플러그인 HTTPWatch 보이지 않으면 브라우저 창에서 \> 기어 기호 및 Internet Explorer에 대 한,에 대 한 또는 이후 버전의 Internet Explorer를 클릭 합니다. **명령** 모음을 시작 하려면 Internet Explorer의 메뉴 표시줄을 마우스 오른쪽 단추로 클릭 하 고 **명령 표시줄**을 클릭 합니다. 과거에는 HTTPWatch 연결 하는 명령 및 탐색기 막대를 한 번씩를 설치 하면 **도구**및 도구 모음 아이콘에 대 한 확인 (후에 다시 부팅) 아이콘을 즉시 표시 되지 않으면 합니다. 반드시 도구 모음을 사용자 지정할 수 있는 하 고 옵션을 추가할 수 있습니다.</br>
     ![Internet Explorer의 명령 도구 모음 HTTPWatch 아이콘이 표시 됩니다.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. Internet Explorer 브라우저 창에서 HTTPWatch를 시작 합니다. 해당 창 맨아래에 있는 브라우저에 도킹 된 표시 됩니다. **레코드**를 클릭 합니다.
     
 3. 정확한 단계와 관련 된 성능 문제를 재현 합니다. HTTPWatch에서 **중지** 단추를 클릭 합니다. 
     
-4. HTTPWatch 또는 **전자 메일을 보낼** **저장** 합니다. 날짜 및 시간 정보 및 사용자 조사 좋은 또는 잘못 된 성능의 데모를 포함 하는 여부를 나타내는 값을 포함 되도록 파일 이름을 지정 해야 합니다.</br></br>![Office 365 홈페이지의 페이지 로드에 대한 네트워크 탭을 보여 주는 HTTPWatch입니다.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br></br>
+4. HTTPWatch 또는 **전자 메일을 보낼** **저장** 합니다. 날짜 및 시간 정보 및 사용자 조사 좋은 또는 잘못 된 성능의 데모를 포함 하는 여부를 나타내는 값을 포함 되도록 파일 이름을 지정 해야 합니다.</br>![Office 365 홈페이지의 페이지 로드에 대한 네트워크 탭을 보여 주는 HTTPWatch입니다.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
     이 스크린샷은 HTTPWatch의 전문 버전에서 시작 됩니다. 전문 버전을 사용 하는 컴퓨터에서 기본 버전에서 추적을 열고 읽을 수 수 있습니다. 추가 정보는 해당 메서드를 통해 추적에서 사용할 수 있습니다.
     
 ## <a name="problem-steps-recorder"></a>문제 단계 레코더
