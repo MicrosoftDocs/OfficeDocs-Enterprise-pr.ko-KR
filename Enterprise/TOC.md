@@ -1,4 +1,4 @@
-# 른 클라우드 아키텍처 모델
+# [클라우드 아키텍처 모델](microsoft-cloud-it-architecture-resources.md)
 ## [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [클라우드 연결에 대한 네트워크 발전](evolving-your-network-for-cloud-connectivity.md)
 ### [Microsoft 클라우드 연결의 일반적인 요소](common-elements-of-microsoft-cloud-connectivity.md)
@@ -66,7 +66,7 @@
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
 
-# Office 365 테스트
+# [Office 365 테스트](cloud-adoption-test-lab-guides-tlgs.md)
 ## [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
 ## [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
 ### [Office 365 개발/테스트 환경에 대한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
