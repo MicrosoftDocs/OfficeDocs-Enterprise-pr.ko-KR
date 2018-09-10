@@ -92,7 +92,7 @@
 ### [디렉터리 동기화를 위해 라우팅할 수 없는 도메인을 준비하는 방법](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
 ### [Office 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
-### [Office 365 네트워크 연결 원칙](network-connectivity.md)
+### [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 ### Office 365 끝점
 #### [전 세계 끝점](urls-and-ip-address-ranges.md)
 #### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)

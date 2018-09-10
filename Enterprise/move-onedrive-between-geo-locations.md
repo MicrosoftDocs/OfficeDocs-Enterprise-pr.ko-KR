@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "19174904"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915333"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
@@ -39,6 +39,14 @@ OneDrive 지리적 이동 기간(약 2 ~ 6시간) 동안 사용자의 OneDrive�
 
 이동이 성공적으로 완료되면 OneDrive 작업을 다시 시작할 수 있음을 알리는 전자 메일을 사용자에게 전송해야 합니다.
 
+## <a name="scheduling-onedrive-site-moves"></a>OneDrive 사이트 이동 예약
+
+OneDrive 사이트 이동을 사전에 예약할 수 있습니다(이 문서의 뒷부분에서 설명). 적은 수의 사용자로 시작하여 워크플로 및 통신 전략의 유효성을 검사하는 것이 좋습니다. 프로세스에 익숙해지면 다음과 같이 이동을 예약할 수 있습니다.
+
+- 한 번에 이동을 최대 4,000개 예약할 수 있습니다.
+- 이동이 시작되면 큐와 주어진 시간에 보류 중인 이동 최대 4,000개를 추가로 예약할 수 있습니다.
+- 한 달에 이동 4,000개 이상을 예약하지 않는 것이 좋습니다.
+
 ## <a name="moving-a-onedrive-site"></a>OneDrive 사이트 이동
 
 OneDrive 지리적 이동을 수행하려면 테넌트 관리자는 먼저 사용자의 PDL(기본 설정 데이터 위치)을 해당 지리적 위치로 설정해야 합니다. PDL이 설정되면 OneDrive 지리적 이동을 시작하기 전에 PDL 업데이트가 지리적 위치 간에 동기화될 때까지 24시간 이상 기다립니다.
@@ -51,7 +59,7 @@ OneDrive 지리적 이동을 수행하려면 테넌트 관리자는 먼저 사�
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>환경 유효성 검사
 
@@ -86,7 +94,7 @@ OneDrive를 이동할 준비가 되었으면 Success, 법적 보존 상태이거
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 지리적 이동을 나중을 수행하기 위해 예약하려면 다음 매개 변수 중 하나를 사용합니다.
 
