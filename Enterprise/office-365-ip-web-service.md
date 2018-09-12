@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 네트워크 트래픽을 보다 잘 식별하고 차별화하기 위해 새로운 웹 서비스는 Office 365 끝점을 게시하여 변경 내용을 보다 쉽게 평가하고 구성하며 이러한 변경 내용으로 업데이트하여 최신 상태를 유지할 수 있도록 합니다.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830894"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831903"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 주소 및 URL 웹 서비스**
 
@@ -73,6 +73,8 @@ Microsoft는 매월 말, 경우에 따라 운영 또는 지원 요구 때문에 
 - instance - Office 365 서비스 인스턴스의 짧은 이름입니다.
 - latest - 지정된 인스턴스 끝점의 최신 버전입니다.
 - versions - 지정된 인스턴스에 대한 모든 이전 버전 목록입니다. 이 요소는 AllVersions 매개 변수가 true인 경우에만 포함됩니다.
+
+Microsoft Flow를 사용하여 IP 주소 및 URL에 대한 변경 내용을 이메일로 알림을 받을 수 있습니다. [Microsoft Flow를 사용하여 Office 365 IP 주소 및 Url에 대한 변경 내용을 이메일로 받기](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)를 참조하세요.
 
 ### <a name="examples"></a>**예제:**
 
@@ -487,24 +489,10 @@ else:
 
 [Office 365에 대한 네트워크 연결](network-connectivity.md)
   
-[Office 365용 Azure ExpressRoute](azure-expressroute.md)
-  
-[Office 365 연결에 대한 ExpressRoute 관리](managing-expressroute-for-connectivity.md)
-  
-[Office 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
-  
-[Office 365용 ExpressRoute 구현](implementing-expressroute.md)
-  
-[Office 365용 ExpressRoute 시나리오에서 BGP 커뮤니티 사용(미리 보기)](bgp-communities-in-expressroute.md)
-  
 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [비즈니스용 Skype Online의 네트워크 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
   
 [Office 365 성능 문제 해결 계획](performance-troubleshooting-plan.md)
