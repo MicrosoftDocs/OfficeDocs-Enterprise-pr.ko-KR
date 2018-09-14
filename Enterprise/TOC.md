@@ -120,7 +120,7 @@
 ## [Office 365 Enterprise 서비스 및 응용 프로그램 구성](configure-services-and-applications.md)
 ### [Office 365로 데이터 마이그레이션](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
-### [SharePoint Online](/sharepoint/sharepoint-online.md)
+### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [비즈니스용 Skype](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
 ### [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
 ### [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
