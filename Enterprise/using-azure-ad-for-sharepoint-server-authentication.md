@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: '요약: Azure 액세스 제어 서비스를 무시 하 고 SAML 1.1을 사용 하 여 Azure Active Directory와 SharePoint Server 사용자를 인증 하는 방법에 알아봅니다.'
-ms.openlocfilehash: 465f333638401402c743dc66d3ebecc33be00749
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5c95501d73c59a4af89147d3eec6c5d4e206d067
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915453"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975226"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>SharePoint Server 인증에 Azure AD를 사용
 
@@ -75,34 +75,34 @@ Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), 새 �
 
 SAML을 사용 하 여 응용 프로그램 SSL을 사용 하도록 구성 해야 합니다. SharePoint 웹 응용 프로그램이 SSL을 사용 하도록 구성 되지 않은, 경우 SSL에 대 한 웹 응용 프로그램을 구성 하는 새로운 자체 서명 된 인증서를 만들려면 다음 단계를 사용 합니다. 이 구성은 랩 환경에 대 한 기능만 및 프로덕션 환경에 대해 되지는지 않습니다. 프로덕션 환경에는 서명 된 인증서를 사용 해야 합니다.
 
-1. **중앙 관리**로 이동 > **응용 프로그램 관리** > **웹 응용 프로그램 관리**, SSL을 사용 하 여 확장 되어야 하는 웹 응용 프로그램을 선택 합니다. 웹 응용 프로그램을 선택 하 고 **확장 리본 메뉴** 단추를 클릭 합니다. 동일한 URL을 사용 하려면 포트 443 사용 하 여 SSL 사용 웹 응용 프로그램을 확장 합니다.</br>![다른 IIS 사이트에 웹 응용 프로그램 확장 (영문)](media/SAML11/fig3-extendwebapptoiis.png)</br>
+1. **중앙 관리**로 이동 > **응용 프로그램 관리** > **웹 응용 프로그램 관리**, SSL을 사용 하 여 확장 되어야 하는 웹 응용 프로그램을 선택 합니다. 웹 응용 프로그램을 선택 하 고 **확장 리본 메뉴** 단추를 클릭 합니다. 동일한 URL을 사용 하려면 포트 443 사용 하 여 SSL 사용 웹 응용 프로그램을 확장 합니다.<br/>![다른 IIS 사이트에 웹 응용 프로그램 확장 (영문)](media/SAML11/fig3-extendwebapptoiis.png)<br/>
 2. IIS 관리자에서 **서버 인증서**를 두번클릭 합니다.
 3. **동작** 창에서 **자체 서명 된 인증서 만들기**를 클릭 합니다. 인증서 상자에 대 한 친숙 한 이름 지정에는 인증서에 대 한 친숙 한 이름을 입력 한 다음 **확인**을 클릭 합니다.
-4. **사이트 바인딩 편집** 대화 상자에서 호스트 이름은 친숙 한 이름을와 동일 하 게 다음 이미지에 나와있는 것 처럼 확인 합니다.</br>![IIS의 사이트 바인딩 편집](media/SAML11/fig4-editsitebinding.png)</br>
+4. **사이트 바인딩 편집** 대화 상자에서 호스트 이름은 친숙 한 이름을와 동일 하 게 다음 이미지에 나와있는 것 처럼 확인 합니다.<br/>![IIS의 사이트 바인딩 편집](media/SAML11/fig4-editsitebinding.png)<br/>
 
 각 SharePoint 팜의 웹 프런트엔드 서버에서 IIS의에서 사이트 바인딩에 대 한 인증서 구성 필요 합니다.
 
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>3 단계: Azure AD에 새 엔터프라이즈 응용 프로그램 만들기
 
-1. Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), Azure AD 디렉터리를 엽니다. **엔터프라이즈 응용 프로그램**클릭 한 다음 **새 응용 프로그램**을 클릭 합니다. **비 갤러리 응용 프로그램**을 선택 합니다. *SharePoint SAML 통합* 와 같은 이름을 제공 하 고 **추가**클릭 합니다.</br>![새 갤러리가 아닌 응용 프로그램 추가 (영문)](media/SAML11/fig5-addnongalleryapp.png)</br>
-2. 응용 프로그램을 구성 하는 탐색 창의 Single sign on 링크를 클릭 합니다. **SAML 기반 sign-on** 응용 프로그램에 대 한 SAML 구성 속성을 표시 하는 **Single sign-on 모드** 드롭다운을 변경 합니다. 다음과 같은 속성으로 구성 합니다.</br>
+1. Azure 포털에서 ([https://portal.azure.com](https://portal.azure.com)), Azure AD 디렉터리를 엽니다. **엔터프라이즈 응용 프로그램**클릭 한 다음 **새 응용 프로그램**을 클릭 합니다. **비 갤러리 응용 프로그램**을 선택 합니다. *SharePoint SAML 통합* 와 같은 이름을 제공 하 고 **추가**클릭 합니다.<br/>![새 갤러리가 아닌 응용 프로그램 추가 (영문)](media/SAML11/fig5-addnongalleryapp.png)<br/>
+2. 응용 프로그램을 구성 하는 탐색 창의 Single sign on 링크를 클릭 합니다. **SAML 기반 sign-on** 응용 프로그램에 대 한 SAML 구성 속성을 표시 하는 **Single sign-on 모드** 드롭다운을 변경 합니다. 다음과 같은 속성으로 구성 합니다.<br/>
     - 식별자:`urn:sharepoint:portal.contoso.local`
     - 회신 URL:`https://portal.contoso.local/_trust/default.aspx`
     - 로그온 URL:`https://portal.contoso.local/_trust/default.aspx`
-    - 사용자 Id:`user.userprincipalname`</br>
-    - 참고: *portal.contoso.local* 보안을 유지 하려면 SharePoint 사이트의 URL로 대체 하 여 Url을 변경 해야 합니다.</br>
-3. 다음 행을 포함 하는 표 (아래 표 1에서와 유사함)를 설정 합니다.</br> 
+    - 사용자 Id:`user.userprincipalname`<br/>
+    - 참고: *portal.contoso.local* 보안을 유지 하려면 SharePoint 사이트의 URL로 대체 하 여 Url을 변경 해야 합니다.<br/>
+3. 다음 행을 포함 하는 표 (아래 표 1에서와 유사함)를 설정 합니다.<br/> 
     - Realm
     - 인증서 파일에 서명 하는 SAML에 대 한 전체 경로
     - ( */Wsfed* */saml2* 바꿉니다) 서비스 URL SAML Single Sign-on
-    - 응용 프로그램 개체 id입니다. </br>
+    - 응용 프로그램 개체 id입니다. <br/>
 *식별자* 값을 테이블로 (참조 아래 표 1.) *영역* 속성에 복사
 4. 변경 내용을 저장합니다.
-5. Configure 로그온 페이지에 액세스 하려면 **구성 (응용 프로그램 이름)** 링크를 클릭 합니다.</br>![페이지를 단일 기호 (+)를 구성합니다.](media/SAML11/fig7-configssopage.png)</br> 
+5. Configure 로그온 페이지에 액세스 하려면 **구성 (응용 프로그램 이름)** 링크를 클릭 합니다.<br/>![페이지를 단일 기호 (+)를 구성합니다.](media/SAML11/fig7-configssopage.png)<br/> 
     -  .Cer 확장명을 가진 파일로 SAML 서명 인증서를 다운로드 하려면 **SAML 서명 인증서-원시** 링크를 클릭 합니다. 복사한 테이블에 다운로드 한 파일의 전체 경로 붙여넣습니다.
-    - 복사 및 붙여넣기에 SAML Single Sign-on 서비스 URL 링크를 */wsfed* */saml2* 부분 URL 바꿉니다.</br>
-6.  응용 프로그램에 대 한 **속성** 창으로 이동 합니다. 복사 하 고 개체 ID 값 3 단계에서에서 설정한 테이블에 붙여넣습니다.</br>![응용 프로그램에 대 한 속성 창](media/SAML11/fig8-propertiespane.png)</br>
+    - 복사 및 붙여넣기에 SAML Single Sign-on 서비스 URL 링크를 */wsfed* */saml2* 부분 URL 바꿉니다.<br/>
+6.  응용 프로그램에 대 한 **속성** 창으로 이동 합니다. 복사 하 고 개체 ID 값 3 단계에서에서 설정한 테이블에 붙여넣습니다.<br/>![응용 프로그램에 대 한 속성 창](media/SAML11/fig8-propertiespane.png)<br/>
 7. 캡처한 값을 사용 하 여, 3 단계에서에서 설정한 테이블 아래 표 1의 형식은 있는지 확인 합니다.
 
 
@@ -161,12 +161,12 @@ Azure AD에 로그인 하 고 SharePoint 액세스 사용자가 응용 프로그
 1. 중앙 관리에서 **응용 프로그램 관리**를 클릭합니다.
 2. **응용 프로그램 관리** 페이지의 **웹 응용 프로그램** 섹션에서 **웹 응용 프로그램 관리를**클릭 합니다.
 3. 해당 웹 응용 프로그램을 클릭한 다음 **사용자 정책**을 클릭합니다.
-4. 웹 응용 프로그램에 대 한 정책에서 **사용자 추가**클릭 합니다.</br>![자신의 이름 클레임 하 여 사용자에 대 한 검색](media/SAML11/fig11-searchbynameclaim.png)</br>
+4. 웹 응용 프로그램에 대 한 정책에서 **사용자 추가**클릭 합니다.<br/>![자신의 이름 클레임 하 여 사용자에 대 한 검색](media/SAML11/fig11-searchbynameclaim.png)<br/>
 5. **사용자 추가** 대화 상자의 **영역**에서 해당 영역을 클릭하고 **다음**을 클릭합니다.
 6. **사용자 선택** 섹션에서 **웹 응용 프로그램에 대 한 정책** 대화 상자에서 **찾아보기** 아이콘을 클릭 합니다.
-7. **찾을** 텍스트 상자에 디렉터리에 사용자에 대 한 로그인 이름을 입력 하 고 **검색**을 클릭 합니다. </br>예: *demouser@blueskyabove.onmicrosoft.com*합니다.
+7. **찾을** 텍스트 상자에 디렉터리에 사용자에 대 한 로그인 이름을 입력 하 고 **검색**을 클릭 합니다. <br/>예: *demouser@blueskyabove.onmicrosoft.com*합니다.
 8. 목록 보기에서 AzureAD 머리글 아래에서 name 속성을 선택 하 고 **추가** 클릭 한 다음 대화 상자를 닫으려면 **확인** 클릭 합니다.
-9. 사용 권한에서 **모든 권한**을 클릭 합니다.</br>![클레임 사용자에 게 모든 권한 부여](media/SAML11/fig12-grantfullcontrol.png)</br>
+9. 사용 권한에서 **모든 권한**을 클릭 합니다.<br/>![클레임 사용자에 게 모든 권한 부여](media/SAML11/fig12-grantfullcontrol.png)<br/>
 10. **마침**, **확인**을 차례로 클릭합니다.
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>6 단계: Azure AD에 SAML 1.1 토큰 발급 정책 추가

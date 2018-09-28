@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 서버 및 클라이언트 응용 프로그램에 대 한 지원 곧 종료 하 고 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 지금 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 97a21b3dc715fa90113491be216a8f2da45678e5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d358cfc2e9fbc0ecc829995698b32801e4c55c9f
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915183"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975156"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>2010 서버와 클라이언트에서 Office를 업그레이드 하는데 도움이 되는 리소스
 
@@ -39,8 +39,8 @@ ms.locfileid: "22915183"
 |Office 2010 (Word 2010, Excel 2010, PowerPoint 2010 및 Outlook 2010 포함)  <br/> |[Office 2010 끝날 지원 로드맵](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Exchange 2010 끝날 지원 로드맵](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 또는 SharePoint Server 2010  <br/> |[SharePoint 2010에서 업그레이드](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 </br> | [Project Server 및 Project Online 계획](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
-|Lync Server 2010 </br> | [비즈니스 서버에 대 한 Skype로의 업그레이드 계획](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+|Project Server 2010 <br/> | [Project Server 및 Project Online 계획](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) <br/> |
+|Lync Server 2010 <br/> | [비즈니스 서버에 대 한 Skype로의 업그레이드 계획](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="what-if-im-a-home-user-what-do-i-do"></a>개인 사용자 중일 경우에 어떻게 합니까? 뭐 할까요?
 

@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839606"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975176"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -98,8 +98,8 @@ EDiscovery 및 Office 365 보안에서 기능을 감사 &amp; 준수 센터 지�
   
 ||**Exchange 관리 센터**|**보안 &amp; 준수 센터**|
 |:-----|:-----|:-----|
-|eDiscovery  <br/> | 이동 https://portal.office.com, 다음 **Admin** 타일을 클릭 하 고 있습니다. </br> **관리 센터** 를 클릭 \> **Exchange**합니다. </br> **준수** 관리 \> **원본 위치 eDiscovery &amp; 유지**합니다. | 이동 https://portal.office.com, 다음 Admin 타일을 클릭 하 고 있습니다. </br> **관리 센터** 를 클릭 \> **보안 &amp; 준수**합니다. </br> 선택 **검색 &amp; 조사** \> **eDiscovery**합니다.|
-|감사  <br/> | 이동 https://portal.office.com, 다음 **Admin** 타일을 클릭 하 고 있습니다. </br> **관리 센터** 를 클릭 \> **Exchange**합니다. **준수** 관리 \> **감사**합니다. | 이동 https://portal.office.com, 다음 Admin 타일을 클릭 하 고 있습니다. </br> **관리 센터** 를 클릭 \> **보안 &amp; 준수**합니다. </br> 선택 **검색 &amp; 조사** \> **감사 로그 검색**합니다. |
+|eDiscovery  <br/> | 이동 https://portal.office.com, 다음 **Admin** 타일을 클릭 하 고 있습니다. <br/> **관리 센터** 를 클릭 \> **Exchange**합니다. <br/> **준수** 관리 \> **원본 위치 eDiscovery &amp; 유지**합니다. | 이동 https://portal.office.com, 다음 Admin 타일을 클릭 하 고 있습니다. <br/> **관리 센터** 를 클릭 \> **보안 &amp; 준수**합니다. <br/> 선택 **검색 &amp; 조사** \> **eDiscovery**합니다.|
+|감사  <br/> | 이동 https://portal.office.com, 다음 **Admin** 타일을 클릭 하 고 있습니다. <br/> **관리 센터** 를 클릭 \> **Exchange**합니다. **준수** 관리 \> **감사**합니다. | 이동 https://portal.office.com, 다음 Admin 타일을 클릭 하 고 있습니다. <br/> **관리 센터** 를 클릭 \> **보안 &amp; 준수**합니다. <br/> 선택 **검색 &amp; 조사** \> **감사 로그 검색**합니다. |
    
 ### <a name="mailbox-migration"></a>사서함 마이그레이션
 

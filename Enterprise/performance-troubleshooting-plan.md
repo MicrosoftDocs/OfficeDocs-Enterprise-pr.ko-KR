@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: 식별 하 고 시퀀스 번호 보다 낮은, 중단, 및 SharePoint Online, 비즈니스, Exchange Online 또는 비즈니스 온라인 용 Skype 비즈니스용 OneDrive 및 클라이언트 컴퓨터 간의 성능 저하를 수정 하기 위해 수행 하는 단계를 파악 해야 합니까? 지원을 호출 하기 전에이 문서의 Office 365 성능 문제를 해결 하 고도 일부 가장 일반적인 문제를 해결할 수 있습니다.
-ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0e588d35ff6caaa0796092bb2f964bced15f4e47
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849371"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975186"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 성능 문제 해결 계획
 
@@ -120,14 +120,14 @@ Netmon 3.4를 설치한 후 도구를 열고이 단계를 수행 합니다.
   
  **HTTPWatch를 실행 하 고 문제를 재현**
   
-1. HTTPWatch 브라우저 플러그인 이므로 브라우저에서 도구를 표시 하는 것은 각 버전의 Internet Explorer에 대 한 약간 다릅니다. 일반적으로 Internet Explorer 브라우저에서 HTTPWatch 명령 표시줄 아래에서 찾을 수 있습니다.</br>브라우저 버전을 확인 클릭 도움말 플러그인 HTTPWatch 보이지 않으면 브라우저 창에서 \> 기어 기호 및 Internet Explorer에 대 한,에 대 한 또는 이후 버전의 Internet Explorer를 클릭 합니다. **명령** 모음을 시작 하려면 Internet Explorer의 메뉴 표시줄을 마우스 오른쪽 단추로 클릭 하 고 **명령 표시줄**을 클릭 합니다. 과거에는 HTTPWatch 연결 하는 명령 및 탐색기 막대를 한 번씩를 설치 하면 **도구**및 도구 모음 아이콘에 대 한 확인 (후에 다시 부팅) 아이콘을 즉시 표시 되지 않으면 합니다. 반드시 도구 모음을 사용자 지정할 수 있는 하 고 옵션을 추가할 수 있습니다.</br>
+1. HTTPWatch 브라우저 플러그인 이므로 브라우저에서 도구를 표시 하는 것은 각 버전의 Internet Explorer에 대 한 약간 다릅니다. 일반적으로 Internet Explorer 브라우저에서 HTTPWatch 명령 표시줄 아래에서 찾을 수 있습니다.<br/>브라우저 버전을 확인 클릭 도움말 플러그인 HTTPWatch 보이지 않으면 브라우저 창에서 \> 기어 기호 및 Internet Explorer에 대 한,에 대 한 또는 이후 버전의 Internet Explorer를 클릭 합니다. **명령** 모음을 시작 하려면 Internet Explorer의 메뉴 표시줄을 마우스 오른쪽 단추로 클릭 하 고 **명령 표시줄**을 클릭 합니다. 과거에는 HTTPWatch 연결 하는 명령 및 탐색기 막대를 한 번씩를 설치 하면 **도구**및 도구 모음 아이콘에 대 한 확인 (후에 다시 부팅) 아이콘을 즉시 표시 되지 않으면 합니다. 반드시 도구 모음을 사용자 지정할 수 있는 하 고 옵션을 추가할 수 있습니다.<br/>
     ![Internet Explorer의 명령 도구 모음 HTTPWatch 아이콘이 표시 됩니다.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. Internet Explorer 브라우저 창에서 HTTPWatch를 시작 합니다. 해당 창 맨아래에 있는 브라우저에 도킹 된 표시 됩니다. **레코드**를 클릭 합니다.
     
 3. 정확한 단계와 관련 된 성능 문제를 재현 합니다. HTTPWatch에서 **중지** 단추를 클릭 합니다. 
     
-4. HTTPWatch 또는 **전자 메일을 보낼** **저장** 합니다. 날짜 및 시간 정보 및 사용자 조사 좋은 또는 잘못 된 성능의 데모를 포함 하는 여부를 나타내는 값을 포함 되도록 파일 이름을 지정 해야 합니다.</br>![Office 365 홈페이지의 페이지 로드에 대한 네트워크 탭을 보여 주는 HTTPWatch입니다.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
+4. HTTPWatch 또는 **전자 메일을 보낼** **저장** 합니다. 날짜 및 시간 정보 및 사용자 조사 좋은 또는 잘못 된 성능의 데모를 포함 하는 여부를 나타내는 값을 포함 되도록 파일 이름을 지정 해야 합니다.<br/>![Office 365 홈페이지의 페이지 로드에 대한 네트워크 탭을 보여 주는 HTTPWatch입니다.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)<br/>
     이 스크린샷은 HTTPWatch의 전문 버전에서 시작 됩니다. 전문 버전을 사용 하는 컴퓨터에서 기본 버전에서 추적을 열고 읽을 수 수 있습니다. 추가 정보는 해당 메서드를 통해 추적에서 사용할 수 있습니다.
     
 ## <a name="problem-steps-recorder"></a>문제 단계 레코더
@@ -279,11 +279,11 @@ IP 주소를 가져올 (및 DNS 대기 시간을 확인)를 사용자 Netmon을 
 
 1. Ping을 사용 하는 URL `ping outlook.office365.com` 및 결과에서 이름 및 ping 요청이 전송 된 DNS 서버의 IP 주소를 기록 합니다. 
 2. 네트워크 해당 페이지를 열고 추적 또는 성능 문제를 제공 하는 작업을 수행 하 또는, 네트워크 추적 것 자체를 ping에 높은 대기 시간을 표시 합니다. 
-3. DNS를 위한 Netmon 및 필터에서 추적을 엽니다 (이 필터는 또한 Wireshark를에서 작동 하는 하지만 사례에 대/소문자를 구분 `-- dns`). 다음과 같이 더 많은 문제에 Netmon 필터링 하 고도 수 ping에서 DNS 서버의 이름을 알고 있는 이후: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , 다음과 같은 Wireshark dns에서 및 프레임 "namnorthwest"를 포함 합니다.</br>응답 패킷 열고 Netmon의 프레임 세부 정보 창에서 자세한 정보를 확장 하는 DNS를 클릭 합니다. Office 365-에서 요청을 제공 하기 위해 DNS 서버의 IP 주소를 찾을 수 DNS 정보에서 다음 단계 (PsPing 도구)에 대 한이 IP 주소를 필요 합니다. 필터를 제거, Netmon의 프레임 요약에 대 한 DNS 응답을 마우스 오른쪽 단추로 클릭 \> 대화 찾기 \> DNS는 DNS 쿼리 및 응답--나란히 볼 수 있습니다. 
+3. DNS를 위한 Netmon 및 필터에서 추적을 엽니다 (이 필터는 또한 Wireshark를에서 작동 하는 하지만 사례에 대/소문자를 구분 `-- dns`). 다음과 같이 더 많은 문제에 Netmon 필터링 하 고도 수 ping에서 DNS 서버의 이름을 알고 있는 이후: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , 다음과 같은 Wireshark dns에서 및 프레임 "namnorthwest"를 포함 합니다.<br/>응답 패킷 열고 Netmon의 프레임 세부 정보 창에서 자세한 정보를 확장 하는 DNS를 클릭 합니다. Office 365-에서 요청을 제공 하기 위해 DNS 서버의 IP 주소를 찾을 수 DNS 정보에서 다음 단계 (PsPing 도구)에 대 한이 IP 주소를 필요 합니다. 필터를 제거, Netmon의 프레임 요약에 대 한 DNS 응답을 마우스 오른쪽 단추로 클릭 \> 대화 찾기 \> DNS는 DNS 쿼리 및 응답--나란히 볼 수 있습니다. 
 4. Netmon에서 DNS 요청 및 응답 사이의 시간 오프셋 열을 note도 있습니다. 다음 단계에서는, 간단한 설치 및 사용 [PsPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) 도구에는 매우 간편 하 게 방화벽에서 ICMP이 차단 종종와 PsPing 세련 되 대기 시간 (밀리초) 추적 합니다. PsPing에 주소와 포트 (사용해의 사례 열린 포트 443의)에 대 한 TCP 연결을 완료합니다. 
 5. PsPing를 설치 합니다. 
 6. 명령 프롬프트를 엽니다 (시작 \> 실행 \> cmd 또는 Windows 키를 입력 \> 에 cmd를 입력) 디렉터리 PsPing 명령을 실행 하는 PsPing 설치한 디렉터리를 변경 합니다. 내 예제에서 볼 수 있습니다 C.의 루트에 있는 'Perf' 폴더를 만든 I 빠른 실행에 대해 동일 하 게 수행할 수 있습니다. 
-7. Netmon 추적에 이전 버전에서 Office 365 DNS 서버의 IP 주소에 대해 사용자 PsPing 대신 걸 수 있도록 명령은 입력--포트 번호를 추가 해야 합니다. </br>즉, `psping -n 20 132.245.24.82:445`합니다. 이의 20 ping 샘플링을 제공 되며, PsPing를 중지 하는 경우 대기 시간을 평균. 
+7. Netmon 추적에 이전 버전에서 Office 365 DNS 서버의 IP 주소에 대해 사용자 PsPing 대신 걸 수 있도록 명령은 입력--포트 번호를 추가 해야 합니다. <br/>즉, `psping -n 20 132.245.24.82:445`합니다. 이의 20 ping 샘플링을 제공 되며, PsPing를 중지 하는 경우 대기 시간을 평균. 
 
 Office 365에서 프록시 서버를 통해 야 하는 경우이 단계는 약간 달라 집니다. 프록시/탈출 및 뒤로, 시간 (밀리초)의 평균 대기 시간 값을 가져올 프록시 서버에 처음 PsPing 것 하 고 또는 (한 Office 365 및 뒤로) 누락 된 값을 가져오려면 인터넷에 직접 연결 된 컴퓨터는 프록시에 PsPing 실행 중 하나는 다음 키를 누릅니다.  
 

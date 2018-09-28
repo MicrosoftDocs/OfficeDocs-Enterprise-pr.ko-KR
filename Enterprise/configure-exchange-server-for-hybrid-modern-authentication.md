@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: 하이브리드 현대 인증 (HMA)는 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542063"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975196"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
@@ -81,7 +81,7 @@ Azure AD Spn. Spn은 클라이언트 컴퓨터 및 장치에서 인증 및 권�
     
 https:// 포함 되어야 하는이 명령의 출력을 메모해 두십시오 (및 나중에 비교에 대 한 스크린샷)를 수행 * 자동 검색 합니다. *사용자* .com * 및 https:// *mail.yourdomain.com* URL 대개 00000002-0000-0ff1-ce00-000000000000로 시작 하는 Spn을 구성 하지만 / 합니다. Https:// Url에서 온-프레미스 누락 된 경우이 목록에 해당 특정 레코드를 추가 하는 것이 할 수 있습니다. 
   
-3. 아래 명령을 사용 하 여 추가 해야이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드 보이지 않으면 (이 예제에서는 Url은 '`mail.corp.contoso.com`'및'`owa.contoso.com`', **자신의 예제 Url을 교체** 했지만) : </br>
+3. 아래 명령을 사용 하 여 추가 해야이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드 보이지 않으면 (이 예제에서는 Url은 '`mail.corp.contoso.com`'및'`owa.contoso.com`', **자신의 예제 Url을 교체** 했지만) : <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
