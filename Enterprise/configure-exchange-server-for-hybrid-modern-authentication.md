@@ -3,7 +3,7 @@ title: 하이브리드 최신 인증을 사용하도록 Exchange Server 온-프�
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 3/23/2018
+ms.date: 09/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: 하이브리드 현대 인증 (HMA)는 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
+ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975196"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347608"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
@@ -63,13 +63,12 @@ Azure AD Spn. Spn은 클라이언트 컴퓨터 및 장치에서 인증 및 권�
   
 먼저, AAD에 추가 하는 모든 Url을 수집 합니다. 이러한 명령을 온-프레미스를 실행 합니다.
   
-- Get-MapiVirtualDirectory | FL 서버\*url\*
-    
-- Get-webservicesvirtualdirectory | FL 서버\*url\*
-    
-- **Get-activesyncvirtualdirectory | FL 서버\*url\***
-    
-- Get-oabvirtualdirectory | FL 서버\*url\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
+```
     
 클라이언트가 수 AAD에서 HTTPS 서비스 사용자 이름으로 나열 된 연결할 Url을 확인 합니다.
   
@@ -77,17 +76,19 @@ Azure AD Spn. Spn은 클라이언트 컴퓨터 및 장치에서 인증 및 권�
     
 2. Exchange에 대 한 관련된 Url에 다음 명령을 입력 합니다.
     
-- Get-MsolServicePrincipal-AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | -ExpandProperty ServicePrincipalNames를 선택 합니다.
-    
-https:// 포함 되어야 하는이 명령의 출력을 메모해 두십시오 (및 나중에 비교에 대 한 스크린샷)를 수행 * 자동 검색 합니다. *사용자* .com * 및 https:// *mail.yourdomain.com* URL 대개 00000002-0000-0ff1-ce00-000000000000로 시작 하는 Spn을 구성 하지만 / 합니다. Https:// Url에서 온-프레미스 누락 된 경우이 목록에 해당 특정 레코드를 추가 하는 것이 할 수 있습니다. 
+```powershell
+Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+```
+
+https:// *autodiscover.yourdomain.com* 및 https:// *mail.yourdomain.com* URL 포함 되어야 하지만 대개로 시작 하는 Spn을 구성 하는이 명령의 출력을 메모해 두십시오 (및 나중에 비교에 대 한 스크린샷)를 수행 00000002-0000-0ff1-ce00-000000000000 / 합니다. Https:// Url에서 온-프레미스 누락 된 경우이 목록에 해당 특정 레코드를 추가 하는 것이 할 수 있습니다. 
   
 3. 아래 명령을 사용 하 여 추가 해야이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드 보이지 않으면 (이 예제에서는 Url은 '`mail.corp.contoso.com`'및'`owa.contoso.com`', **자신의 예제 Url을 교체** 했지만) : <br/>
-```
-- $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
-- $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
-- Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```powershell
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
+$x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
 4. 마찬가지로 2 단계에서 Get MsolServicePrincipal 명령을 실행 하 고 출력을 통해을 찾고 추가 된 새 레코드를 확인 합니다. 목록 비교 / Spn (수도 있습니다 스크린샷 새 목록에 레코드에 대 한)의 새 목록에 앞에서 스크린샷. 성공한, 두 새 Url 목록에 표시 됩니다. 이 예제에서 이동, Spn 목록이 이제 포함 됩니다 특정 Url `https://mail.corp.contoso.com` 및 `https://owa.contoso.com`합니다. 
@@ -96,28 +97,27 @@ https:// 포함 되어야 하는이 명령의 출력을 메모해 두십시오 (
 
 이제 확인 OAuth에서 제대로 설정 되어 Exchange 모든 가상 디렉터리 Outlook에서 다음 명령을 실행 하 여 사용할 수:
 
-```
-Get-MapiVirtualDirectory | FL server,\*url\*,\*auth\* 
-Get-WebServicesVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-OABVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*,*auth* 
+Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
+Get-OABVirtualDirectory | FL server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
 이러한 VDirs의 각에서 검사 **OAuth** 있는지 확인 하려면 출력을 사용할지, 모양과 동일 하 게 다음과 같이 (이며 살펴보는 것 'OAuth'); 
-  
- **[PS] C:\Windows\system32\>Get MapiVirtualDirectory | fl 서버\*url\*,\*인증\***
-  
- **서버: EX1**
-  
- **InternalUrl:`https://mail.contoso.com/mapi`**
-  
- **ExternalUrl:`https://mail.contoso.com/mapi`**
-  
- **IISAuthenticationMethods: {Ntlm, OAuth, 협상}**
-  
- **InternalAuthenticationMethods: {Ntlm, OAuth, 협상}**
-  
- **ExternalAuthenticationMethods: {Ntlm, OAuth, 협상}**
+
+```powershell
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+```
+
+```
+Server                        : EX1
+InternalUrl                   : https://mail.contoso.com/mapi
+ExternalUrl                   : https://mail.contoso.com/mapi
+IISAuthenticationMethods      : {Ntlm, OAuth, Negotiate}
+InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+```
   
 OAuth 서버 및 4 개의 가상 디렉터리의 모든에서 누락 된 경우 계속 하기 전에 관련 명령을 사용 하 여 추가 해야 합니다.
   
@@ -125,8 +125,10 @@ OAuth 서버 및 4 개의 가상 디렉터리의 모든에서 누락 된 경우 
 
 이 마지막 명령에 대 한 온-프레미스 Exchange 관리 셸을 반환 합니다. 이제 evoSTS 인증 공급자에 대 한 온-프레미스에 항목이 있는지 확인할 수 있습니다.
   
-`Get-AuthServer | where {$_.Name -eq "EvoSts"}`
-    
+```powershell
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
+```
+
 사용자가 출력 한 AuthServer 이름 EvoSts의 표시 및 'Enabled' 상태 True 여야 합니다. 이 표시 되지 않으면를 다운로드 하 고 하이브리드 구성 마법사의 최신 버전을 실행 해야 합니다.
   
  **중요 한** 환경에서 Exchange 2010을 실행 하는 경우에 EvoSTS 인증 공급자를 만들 수 없습니다. 
@@ -135,7 +137,7 @@ OAuth 서버 및 4 개의 가상 디렉터리의 모든에서 누락 된 경우 
 
 온-프레미스 Exchange 관리 셸에서 다음 명령을 실행 합니다.
 
-```
+```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
