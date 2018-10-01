@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915203"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022077"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 
@@ -180,7 +180,3 @@ Azure 및 Office 365 구독으로 따로 구입했으며 Azure 구독에서 Offi
   
 [하이브리드 솔루션](hybrid-solutions.md)
   
-[Contoso Corporation에 대한 구독, 라이선스 및 사용자 계정](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)
-
-
-
