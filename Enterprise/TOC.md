@@ -36,6 +36,10 @@
 ### [Office 365용 Azure ExpressRoute](azure-expressroute.md)
 ### [최신 인증이 Office 2013 및 Office 2016 클라이언트 앱에 작동하는 방식](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 테넌트 간 공동 작업](office-365-inter-tenant-collaboration.md)
+## Office 365 클라이언트 지원
+### [조건부 액세스](office-365-client-support-conditional-access.md)
+### [모바일 응용 프로그램 관리](office-365-client-support-mobile-application-management.md)
+### [현대 인증](office-365-client-support-modern-authentication.md)
 ## 하이브리드 옵션
 ### [하이브리드 최신 인증과 비즈니스용 Skype 서버 및 Exchange Server에 대한 필수 구성 요소](hybrid-modern-auth-overview.md)
 ### [하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -169,6 +173,8 @@
 ### [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
 ### [Exchange Online 성능 조정](tune-exchange-online-performance.md)
 ### [SharePoint Online 성능 조정](tune-sharepoint-online-performance.md)
+#### [SharePoint Online의 성능 조정 소개](introduction-to-performance-tuning-for-sharepoint-online.md)
+#### [SharePoint Online의 성능 문제 진단](diagnosing-performance-issues-with-sharepoint-online.md)
 ### [Skype 비즈니스 온라인 성능에 대 한 조정](tune-skype-for-business-online-performance.md)
 ### [Project Online 성능 튜닝](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [Office 365 성능 문제 해결 계획](performance-troubleshooting-plan.md)

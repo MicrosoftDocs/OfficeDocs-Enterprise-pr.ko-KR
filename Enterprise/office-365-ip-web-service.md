@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 네트워크 트래픽을 보다 잘 식별하고 차별화하기 위해 새로운 웹 서비스는 Office 365 끝점을 게시하여 변경 내용을 보다 쉽게 평가하고 구성하며 이러한 변경 내용으로 업데이트하여 최신 상태를 유지할 수 있도록 합니다.
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831903"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961827"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 주소 및 URL 웹 서비스**
 
@@ -183,8 +183,8 @@ Worldwide,2018063000
 - tcpPorts - 끝점 집합에 대한 TCP 포트입니다. 모든 포트 요소는 쉼표로 구분된 포트 목록 또는 대시 문자(-)로 구분된 포트 범위로 서식이 지정됩니다. 포트는 해당 범주에 대한 해당 끝점 집합에 있는 모든 IP 주소 및 모든 URL에 적용됩니다. 비워 두면 생략됩니다.
 - udpPorts - 이 끝점 집합의 IP 주소 범위에 대한 UDP 포트입니다. 비워 두면 생략됩니다.
 - ips - 나열된 TCP 또는 UDP 포트와 연결된 이 끝점 집합과 연결된 IP 주소 범위입니다. IP 주소 범위의 JSON 배열입니다. 비워 두면 생략됩니다.
-- category - 끝점 집합에 대한 연결 범주입니다. 유효한 값은 Optimize, Allow 및 Default입니다. 필수 항목입니다.
-- expressRoute - 이 끝점 집합이 ExpressRoute를 통해 라우팅되는 경우 True 또는 False입니다.
+- 범주 - 엔드포인트 집합의 연결 범주입니다. 유효한 값은 최적화, 허용 및 기본입니다. 엔드포인트 데이터를 사용하여 IP 주소 또는 URL의 범주를 검색하는 경우 쿼리가 여러 범주를 반환할 수 있습니다. 이러한 문제가 발생하는 이유로는 몇 가지가 있습니다. 이러한 문제가 발생하는 경우 최고 우선 순위 범주의 권장 사항을 따라야 합니다. 예를 들어 엔드포인트가 최적화와 허용 모두에서 나타나는 경우 최적화의 요구 사항을 따라야 합니다. 이는 필수입니다. 
+- expressRoute - 이 엔드포인트 집합이 ExpressRoute를 통해 라우팅되는 경우 True 또는 False입니다.
 - required - Office 365에 대한 연결이 지원되기 위해 이 끝점 집합이 필요한 경우 True입니다. 이 끝점 집합이 선택 사항이면 False입니다.
 - notes - 선택적 끝점의 경우 이 텍스트는 네트워크 계층에서 이 끝점 집합의 IP 주소나 URL에 액세스할 수 없는 경우 손실되는 Office 365 기능에 대해 설명합니다. 비워 두면 생략됩니다.
 

@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive 및 SharePoint Online의 다중 위치 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012738"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위치 기능
 
-OneDrive 및 SharePoint Online의 여러 위치 기능을 사용하여 조직은 Office 365 사용 범위를 기존 테넌트 내의 여러 지리적 지역 및/또는 국가로 확장할 수 있습니다. 또한 Microsoft 계정 팀에 연락하여 비즈니스용 OneDrive Multi-Geo에 귀하의 다국적 기업을 등록합니다.
+OneDrive 및 SharePoint Online의 Multi-Geo 기능을 사용하여 조직은 Office 365 사용 범위를 기존 테넌트 내의 여러 지리적 지역 및/또는 국가로 확장할 수 있습니다. 또한 Microsoft 계정 팀에 연락하여 비즈니스용 OneDrive Multi-Geo에 귀하의 다국적 기업을 등록할 수 있습니다.
   
 OneDrive Multi-Geo를 사용하여 데이터 상주 요구 사항을 충족하기 위해 선택한 지리적 위치에서 미사용 데이터를 프로비전 및 저장하고, 동시에 귀하의 전 세계 작업자들이 최신 생산선 환경을 활용하도록 할 수 있습니다.
   
@@ -69,6 +70,8 @@ OneDrive Multi-Geo는 현재 다음 지역 및 국가에서 제공됩니다.
 - 캐나다
     
 - EMEA(유럽 연합)
+
+- 프랑스
     
 - 일본
     
@@ -80,7 +83,6 @@ OneDrive Multi-Geo는 현재 다음 지역 및 국가에서 제공됩니다.
       
 예정된 지리적 위치:
   
-- 프랑스
 - 인도
     
 ## <a name="getting-started"></a>시작
