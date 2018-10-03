@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 네트워크는 Office 365에 액세스할 수 있는 이러한, 네트워크 및 프록시 관리자 Fqdn, Url의 목록을 관리할 필요가 및 있는 IP 주소와 동일 하 게 네트워크에 있는 컴퓨터에서 Office 365 끝점을 목록으로 구성 되도록 인터넷에 대 한 액세스를 제한 하도록 설계 되었습니다. 이러한 필요가 파일 확인 네트워크 요청을 프록시 또는 방화벽 규칙 및 PAC에 추가할 수는 Office 365에 연결할 수 있습니다.
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831923"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359500"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831923"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>업데이트 방화벽의 아웃 바운드 허용 목록
 
-모든 신뢰할 수 있는 방화벽을 통해 직접 Office 365 네트워크 요청 보내기, 모든 추가 패킷 수준 검사를 무시 하거나 처리 하 여 네트워크를 최적화할 수 있습니다. 대기 시간에서 성능 저하 줄이고 경계 용량 요구 사항을 줄일 수 있습니다. 신뢰 하도록 요청 하는 네트워크를 선택 하는 것이 가장 편리 방법은 위의 **프록시** 탭에 있는 미리 작성된 된 PAC 파일을 사용 하는 것입니다. 
+모든 신뢰할 수 있는 방화벽을 통해 직접 Office 365 네트워크 요청 보내기, 모든 추가 패킷 수준 검사를 무시 하거나 처리 하 여 네트워크를 최적화할 수 있습니다. 대기 시간에서 성능 저하 줄이고 경계 용량 요구 사항을 줄일 수 있습니다. 신뢰 하도록 요청 하는 네트워크를 선택 하는 것이 가장 편리 방법은 사용해 [미리 작성된 된 PAC 파일](managing-office-365-endpoints.md#pacfiles)을 사용 하는 것입니다. 
   
 모든 IP 되도록 알면에 방화벽 블록 아웃 바운드 트래픽 및 Fqdn이 [XML 파일](https://go.microsoft.com/fwlink/?LinkId=533185) 에 **필요한** 로 표시 하는 경우에 허용 목록에 있습니다. 모든 서비스에는 일부 타사 서비스를 사용 해야 인식 합니다. 인증서 공급자의 경우 콘텐츠 배달 네트워크 DNS 공급자와 같은 이러한 타사 서비스에 대 한 IP 주소를 제공 하 고 등 하지 했습니다. 전체 Office 365 기능에 대 한 대상에 대 한 게시는 정보의 양을 관계 없이 Office 365에서 요청한 모든 대상에 연결할 수 있어야 합니다. 
   
