@@ -3,7 +3,7 @@ title: 데이터 이동 도중 및 이후
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975176"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361506"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -35,7 +35,7 @@ ms.locfileid: "23975176"
 |오스트레일리아, 뉴질랜드, 피지  <br/> |2017년 10월 31일  <br/> |
 |일본  <br/> |2018년 10월 31일  <br/> |
 |인도	  <br/> |2018년 10월 31일  <br/> |
-|캐나다	  <br/> |2018년 10월 31일  <br/> |
+|캐나다	  <br/> |2019 년 6 월 30,  <br/> |
 |대한민국  <br/> |2018년 10월 31일  <br/> |
 |영국  <br/> |2019년 9월 15일  <br/> |
 |프랑스  <br/> |2020년 9월 15일  <br/> |
