@@ -3,7 +3,7 @@ title: Office 2007 또는 2010 서버와 클라이언트에서 업그레이드�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: 이것이 이전 버전의 Office 제품 및 서버에서 업그레이드를 계획 하는 시간입니다. 이러한 리소스를 사용 하 여 계획을 문서화할 시작 합니다.
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Office 2007 또는 Office 2010을 사용 하는 경우 업그레이드를 계획 하는 시간입니다. 이러한 리소스를 사용 하 여 계획을 문서화할 시작 합니다.
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915163"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363171"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버와 클라이언트에서 업그레이드를 계획
 
@@ -54,9 +54,11 @@ ms.locfileid: "22915163"
 
 을 사용 중인 Office 2007 또는 Office 2010에서 초기화 하는 경우 다음 옵션을 고려 합니다.
 
+- **사용 하 여 Office Online에 대 한 약속**합니다. 만들기, 보고, 하 및 브라우저에서 Office 파일을 편집 하 고 인터넷에 액세스할 수 있는 모든 장치에서 해당 파일에 액세스할 수입니다. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) [Word 온라인](http://go.microsoft.com/fwlink/p/?linkid=746664), [온라인 Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint 온라인](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote 온라인](http://go.microsoft.com/fwlink/p/?linkid=746674), [라](http://go.microsoft.com/fwlink/p/?linkid=746675), [전자 메일](http://go.microsoft.com/fwlink/p/?linkid=746676), [일정](http://go.microsoft.com/fwlink/p/?linkid=746678)및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)를 포함합니다. 시작 하려면 [office.com](https://office.com) 을 방문 하 고 Microsoft 계정을 사용 하 여 로그인 합니다. (Microsoft 계정을 설치 하지 않은 경우 만들 수 있습니다 office.com에 하나씩.)
+
 - **가정용 Office 365 시도 하십시오입니다**. [Office 365 개인](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) 또는 [Office 365 홈](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 구독 중에서 선택 합니다. 및 평가판을 등록 합니다. 등록 (영문), 하 고 Windows 또는 Mac 컴퓨터, 사용자 iOS 또는 Android smartphone 및 프로그램 iOS 또는 Android 태블릿 최신 버전의 Office 설치 합니다. Office 365와 onedrive에 클라우드 저장소를 즐길 수 하 고 가져옵니다 모바일로 Skype 전화의 60 분 및 일반 전화선 번호 각 월, 다른 많은 유용한 기능을 얻을 수 있습니다. [Office 365를 참조 하 고 홈에 대 한 가격](https://products.office.com/explore-office-for-home)입니다.
     
-- **구매 Office 홈 &amp; 학생 2016**합니다. 이 옵션을 선택 하는 경우에 1 회 구매 하 고 [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) 또는 [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)에 Office 2016를 설치 합니다. 
+- **구매 Office 홈 &amp; 학생 2016**합니다. 이 옵션을 선택 하는 경우에 1 회 구매 하 고 [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) 또는 [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)에 Office 2016를 설치 합니다. 이것은 구독; 되지 않습니다. 이것이 컴퓨터 한 대 한 일회성, 영구 사용 라이선스입니다.
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>업그레이드 하지 않으면 어떻게 됩니까?
