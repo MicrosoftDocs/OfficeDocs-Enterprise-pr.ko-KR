@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365에서 디렉터리 동기화 문제의 일반적인 원인에 설명 하 고 문제를 해결 하 고 해결 하는데 몇 메서드를 제공 합니다.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541980"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405131"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365의 디렉터리 동기화 문제 해결
 
@@ -63,7 +63,7 @@ Azure Active Directory 동기화에서 Azure AD 연결을 업데이트 하려면
 - [Azure Active Directory 중지 되거나 사용자에 대 한 디렉터리 동기화는 사용자에 게 경고 메시지 동기화 하지 않은 하루 이상에 등록 하는](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**암호 해시 동기화 되지 않은 또는 최근 암호 해시 동기화 된 하지 않은 Office 365 관리 센터에서 알림을 표시**
-- [Azure AD 연결 동기화를 사용 하 여 암호 해시 동기화를 구현합니다.](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Azure AD 연결 동기화를 사용 하 여 암호 해시 동기화를 구현합니다.](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**개체 할당량을 초과 하는 알림이 표시**
 - 서비스를 보호 하는 기본 제공 개체 할당량을 제공 됩니다. Office 365와 동기화 하는 디렉터리에 너무 많은 개체를 사용 하는 경우 프로그램 할당량을 늘릴 수를 [비즈니스 제품에 대 한 지원 되는 대화 상대](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) 게 해야 합니다.
