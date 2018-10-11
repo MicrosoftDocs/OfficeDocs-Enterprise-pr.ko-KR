@@ -3,7 +3,7 @@ title: Office 365 서비스의 IPv6 지원
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '요약: IPv6 지원 Office 365 government 제품 및 Microsoft Office 365 구성 요소에 설명합니다.'
-ms.openlocfilehash: 74752988803728ef4c319e368150b90f7e5d2599
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
+ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223130"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25493833"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 서비스의 IPv6 지원
 
@@ -79,7 +79,9 @@ I p v 6을 해제 하지 않는 것이 좋습니다. 자세한 내용은 참조 
 
 - BlackBerry i p v 6이 지원 되지 않으므로 i p v 6 BlackBerry® Enterprise Server (BES)를 지원 하지 않습니다.
 
-짧은 링크를 다시 사용할 수는 다음과 같습니다.[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+- Office 365와 Active Directory Federation Services (AD FS)를 사용 하는 경우 Office 365에 AD FS 네트워크 끝점 광고 i p v 6을 사용 하 여 지원 되지 않습니다. Exchange Online을 사용 하는 경우 AD FS DNS 항목에서 AAAA 레코드를 포함 되지 않습니다. 
+
+다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>참고 항목
 
