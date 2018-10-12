@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/20/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Office 365 PowerShell을 사용 하 여 조직에서 사용자를 위한 Office 365 서비스에 대 한 액세스를 사용 하지 않도록 설정 하는 방법에 설명 합니다.
-ms.openlocfilehash: d65308746ac5c2b60f4749588455fa66471069e3
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 3bab553bd23d6179eb60ff61ae3edb56c528946d
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914993"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498238"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.
 
@@ -57,7 +57,7 @@ Office 365 계정을 라이선스 계획에서 라이선스를 할당 된, Offic
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-    다음 예제에서는 이름이 지정 된 라이선스 계획에서 Office Online 및 SharePoint Online 서비스를 사용 하지 않도록 설정 하는 **LicenseOptions** 개체를 `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).
+  다음 예제에서는 이름이 지정 된 라이선스 계획에서 Office Online 및 SharePoint Online 서비스를 사용 하지 않도록 설정 하는 **LicenseOptions** 개체를 `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -71,13 +71,13 @@ Office 365 계정을 라이선스 계획에서 라이선스를 할당 된, Offic
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
-    다음 예제에서는 라이선스를 할당 하 고 1 단계에서에서 설명 하는 서비스를 사용 하지 않도록 설정 하는 Allie Bellew에 대 한 새 계정을 만듭니다.
+  다음 예제에서는 라이선스를 할당 하 고 1 단계에서에서 설명 하는 서비스를 사용 하지 않도록 설정 하는 Allie Bellew에 대 한 새 계정을 만듭니다.
     
   ```
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-    Office 365 PowerShell의 사용자 계정 만들기 (영문) 하는 방법에 대 한 자세한 내용은 [Office 365 PowerShell을 사용한 사용자 계정 만들기를](create-user-accounts-with-office-365-powershell.md)참조 하십시오.
+  Office 365 PowerShell의 사용자 계정 만들기 (영문) 하는 방법에 대 한 자세한 내용은 [Office 365 PowerShell을 사용한 사용자 계정 만들기를](create-user-accounts-with-office-365-powershell.md)참조 하십시오.
     
   - 기존 사용이 허가 된 사용자에 대 한 서비스를 사용 하지 않으려면 다음 구문을 사용 합니다.
     
@@ -85,7 +85,7 @@ Office 365 계정을 라이선스 계획에서 라이선스를 할당 된, Offic
   Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
   ```
 
-    BelindaN@litwareinc.com 사용자에 대 한 서비스를 해제 하는이 예제입니다.
+  BelindaN@litwareinc.com 사용자에 대 한 서비스를 해제 하는이 예제입니다.
     
   ```
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
@@ -108,7 +108,7 @@ Office 365 계정을 라이선스 계획에서 라이선스를 할당 된, Offic
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-    다음 예제에서는 미국에서 Sales 부서에 있는 사용자에 대 한 서비스를 비활성화합니다.
+  다음 예제에서는 미국에서 Sales 부서에 있는 사용자에 대 한 서비스를 비활성화합니다.
     
   ```
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
@@ -125,7 +125,7 @@ Office 365 계정을 라이선스 계획에서 라이선스를 할당 된, Offic
   kakers@contoso.com
   ```
 
-    이 예제에서는 텍스트 파일은 c:\\My Documents\\Accounts.txt 합니다.
+  이 예제에서는 텍스트 파일은 c:\\My Documents\\Accounts.txt 합니다.
     
 2. 다음 명령을 실행합니다.
     

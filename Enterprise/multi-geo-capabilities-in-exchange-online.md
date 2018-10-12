@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online의 다중-지리적으로 분산 기능을 사용 하는 여러 지리적 영역을 Office 365 현재 상태를 확장 합니다.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914783"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498228"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online의 다중-지리적으로 분산 기능
 
@@ -52,7 +52,7 @@ Office 365의 다중-지리적으로 분산 기능 여러 지리적 위치 (Geos
 - 미국
 
 ## <a name="prerequisite-configuration"></a>필수 구성 요소 구성
-수를 시작 하기 전에 사용 하 여 다중-지리적으로 분산 기능 Exchange Online Microsoft 다중-지리적으로 분산 지원에 대 한 Exchange Online 테 넌 트를 구성 해야 합니다. 라이선스 및 다중-지리적으로 분산 된 테 넌 트에 표시 순서 후이 일회성 구성 프로세스가 트리거됩니다. 이 일회성 구성 프로세스를 완료 하려면 30 일 보다 작은 걸릴 일반적으로 해야 합니다.
+수를 시작 하기 전에 사용 하 여 다중-지리적으로 분산 기능 Exchange Online Microsoft 다중-지리적으로 분산 지원에 대 한 Exchange Online 테 넌 트를 구성 해야 합니다. 라이선스 및 지리적 다중 테 넌 트에 표시 순서 후이 일회성 구성 프로세스가 트리거됩니다. 이 일회성 구성 프로세스를 완료 하려면 30 일 보다 작은 걸릴 일반적으로 해야 합니다. 다중-지리적으로 분산 주문 하려면 Microsoft 담당자에 게 문의 합니다. 자세한 내용은 참조 https://aka.ms/Multi-Geo합니다.
 
 구성 완료 되 면 [Office 365 메시지 센터](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) 에서 알림이 표시 됩니다. 다중-지리적으로 분산 라이선스 테 넌 트에 표시 되 면 자동으로 구성이 트리거됩니다.
 
