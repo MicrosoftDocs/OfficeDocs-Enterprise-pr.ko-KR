@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell에 연결 합니다.'
-ms.openlocfilehash: b4d7b163bfba433196f46046030078c5559c4459
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915833"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575263"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
@@ -44,6 +44,8 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
   - Windows 10
     
   - Windows 8.1 또는 Windows 8
+    
+  - Windows Server 2019
     
   - Windows Server 2016
     
@@ -125,7 +127,7 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
 다음 그래프 모듈에 대 한 Active Directory Azure PowerShell을 사용 하는 경우 단일 블록에 있는 모든 명령을입니다. 사용자 도메인 호스트의 이름을 지정 하 고 모두 한번에 실행 합니다.
   
 ```
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -142,7 +144,7 @@ Import-PSSession $SccSession -Prefix cc
 또는 다음은 모든 명령 단일 블록의 Microsoft Azure Active Directory 모듈에 대 한 Windows PowerShell 모듈을 사용 하는 경우입니다. 사용자 도메인 호스트의 이름을 지정 하 고 모두 한번에 실행 합니다.
   
 ```
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -168,7 +170,7 @@ Azure AD에 연결 하는 단일 블록에서 모든 명령을 사항은 SharePo
 
 ````
 $acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-AzureAD
 #SharePoint Online
@@ -182,7 +184,7 @@ Import-PSSession $sfboSession
 
 ````
 $acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-MsolService
 #SharePoint Online

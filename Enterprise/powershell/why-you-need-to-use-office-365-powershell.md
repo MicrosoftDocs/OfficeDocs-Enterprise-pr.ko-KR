@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: 7149478efcbffcec56423a6c8ade5377992f3352
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915043"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575272"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
@@ -43,12 +43,6 @@ Office 365 관리 센터를 사용하면 Office 365 사용자 계정과 라이�
   
 ```
 Get-Mailbox
-```
-
-이 명령을 실행하여 SharePoint Online의 모든 웹앱에 대한 모든 사이트의 전체 목록에 포함된 항목 수를 계산할 수도 있습니다.
-  
-```
-Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Microsoft.SharePoint.SPDocumentLibrary]} | % {$total+= $_.ItemCount}; $total
 ```
 
 Office 365 관리 센터를 사용하여 사서함 목록을 쉽게 가져올 수도 있지만 모든 웹앱에 대한 모든 사이트의 전체 목록에 포함된 항목 수를 계산하는 일은 쉽지 않을 수 있습니다.
