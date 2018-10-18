@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 사용 하 여 명령줄에서 관리 센터 작업을 수행 하 여 Office 365 조직에 연결 합니다.'
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575282"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601642"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -89,6 +89,10 @@ Connect-AzureAD
 **계정에 로그인** 대화 상자에서 Office 365 작업 또는 학교 계정 사용자 이름 및 암호를 입력 한 다음 **확인**을 클릭 합니다.
 
 MFA를 사용 하는 경우 지침에 따라 추가 대화 상자에서을 확인 코드 등의 더 많은 인증 정보를 제공 합니다.
+
+>[!Tip]
+>Office 365 독일에 연결할 [PowerShell을 사용 하 여 Azure 독일에 연결](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)을 참조 합니다.
+>
     
 를 연결한 후 [그래프 모듈에 대 한 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)에 대 한 새 cmdlet을 사용할 수 있습니다.
   
@@ -122,6 +126,9 @@ Connect-MsolService
 
 MFA를 사용 하는 경우 지침에 따라 추가 대화 상자에서을 확인 코드 등의 더 많은 인증 정보를 제공 합니다.
 
+>[!Tip]
+>Office 365 독일에 연결할 [PowerShell을 사용 하 여 Azure 독일에 연결](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)을 참조 합니다.
+>
     
 ### <a name="how-do-you-know-this-worked"></a>작동 여부는 어떻게 확인하나요?
 
