@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id를 관리 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 0fb6e77aef4495b2284256c13cb21320e6292746
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 14d1ec8a3ebc4620a72f831c0ec80253f7b3072c
+ms.sourcegitcommit: dcb57859ad40090cf70586ac350472eb0fc8d9c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914983"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25639637"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 ID 및 Azure Active Directory 이해
 
@@ -53,7 +53,7 @@ Azure AD에서 온-프레미스 디렉터리 개체에 대 한 인증을 사용 
   
 ### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>원활 하 게 single sign-on 통과 인증
 
-하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하 여 온-프레미스 Active Directory를 사용 하 여 직접 사용자의 유효성을 검사 하려면 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 합니다. 통과 인증 (설명)을 사용 하면 Office 365와 온-프레미스 Active Directory 사용자 계정 개체 동기화 및 사용자가 온-프레미스를 관리 합니다. 사용자가 온-프레미스 및 Office 365 리소스 및 온-프레미스 계정 및 암호를 사용 하는 응용 프로그램에 로그인 하도록 허용 합니다. 이 구성은 Office 365에 암호 해시를 보내지 않고 온-프레미스 Active Directory에 대해 직접 사용자의 암호의 유효성을 검사 합니다. 온-프레미스 사용자 계정을 즉시 적용 하려면 보안 요구 사항이 있는 회사 상태, 암호 정책 및 로그온 시간에이 인증 방법을 사용 합니다. 원활 하 게 single sign-on, 사용자는 자동으로 로그인을 통해 회사 장치에는 및 회사 네트워크에 연결 된 경우 Azure AD 합니다.
+하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하 여 온-프레미스 Active Directory를 사용 하 여 직접 사용자의 유효성을 검사 하려면 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 합니다. 통과 인증 (설명)을 사용 하면 Office 365와 온-프레미스 Active Directory 사용자 계정 개체 동기화 및 사용자가 온-프레미스를 관리 합니다. 사용자가 온-프레미스 및 Office 365 리소스 및 온-프레미스 계정 및 암호를 사용 하는 응용 프로그램에 로그인 하도록 허용 합니다. 이 구성은 Office 365에 암호 해시를 보내지 않고 온-프레미스 Active Directory에 대해 직접 사용자 암호의 유효성을 검사 합니다. 온-프레미스 사용자 계정을 즉시 적용 하려면 보안 요구 사항이 있는 회사 상태, 암호 정책 및 로그온 시간에이 인증 방법을 사용 합니다. 원활 하 게 single sign-on, 사용자는 자동으로 로그인을 통해 회사 장치에는 및 회사 네트워크에 연결 된 경우 Azure AD 합니다.
   
 [통과 인증을 선택](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) 하 고 [원활 하 게 single sign on](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)하는 방법에 대 한 자세한 내용은.
   
