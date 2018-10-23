@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 네트워크 트래픽을 보다 잘 식별하고 차별화하기 위해 새로운 웹 서비스는 Office 365 끝점을 게시하여 변경 내용을 보다 쉽게 평가하고 구성하며 이러한 변경 내용으로 업데이트하여 최신 상태를 유지할 수 있도록 합니다.
-ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
-ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
+ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
+ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24961827"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25697984"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 주소 및 URL 웹 서비스**
 
@@ -107,8 +107,8 @@ Microsoft Flow를 사용하여 IP 주소 및 URL에 대한 변경 내용을 이�
 ]
 ```
 
-[!IMPORTANT]
-이러한 URI의 ClientRequestID 매개 변수에 대한 GUID는 예제에 불과합니다. 웹 서비스 URL을 사용해보려면 자체 GUID를 생성합니다. 이러한 예제에 표시되는 GUID는 앞으로 웹 서비스에 의해 차단될 수 있습니다.
+> [!IMPORTANT]
+> 이러한 URI의 ClientRequestID 매개 변수에 대한 GUID는 예제에 불과합니다. 웹 서비스 URL을 사용해보려면 자체 GUID를 생성합니다. 이러한 예제에 표시되는 GUID는 앞으로 웹 서비스에 의해 차단될 수 있습니다.
 
 예제 2 요청 URI: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
