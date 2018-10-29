@@ -1,9 +1,9 @@
 ---
-title: 추가 Office 365 IP 주소 및 웹 서비스에 포함되지 않은 URL
+title: Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 9/13/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,24 +20,24 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: ''
-description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되지 않습니다.'
+description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되어 있지 않습니다.'
 hideEdit: true
-ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
-ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
+ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719012"
 ---
-# <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>추가 Office 365 IP 주소 및 웹 서비스에 포함되지 않은 URL
+# <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 
-일부 네트워크 끝점은 이전에 게시되었으며 웹 서비스에 포함되지 않았습니다. 웹 서비스 범위는 엔터프라이즈 경계 네트워크에서 Office 365 최종 사용자의 연결에 필요한 네트워크 끝점입니다. 현재는 다음 내용이 포함되어 있지 않습니다.
+일부 네트워크 끝점은 이전에 게시되었으며 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)에 포함되어 있지 않습니다. 웹 서비스 범위는 엔터프라이즈 경계 네트워크에서 Office 365 사용자의 연결에 필요한 네트워크 끝점입니다. 현재는 다음 내용이 포함되어 있지 않습니다.
 
-1. Microsoft 데이터 센터에서 고객 네트워크(인바운드 하이브리드 서버 네트워크 트래픽)로 연결 시 필요할 수 있는 네트워크 연결
-2. 고객 네트워크의 서버에서 엔터프라이즈 경계(아웃 바운드 서버 네트워크 트래픽) 전체에 네트워크 연결
-3. 한 사용자의 네트워크 연결 요구 사항에 대한 일반적이지 않은 시나리오
-4. DNS 확인 연결 요구 사항(아래 나열되지 않음)
-5. Internet Explorer 또는 Microsoft Edge의 신뢰할 수 있는 사이트
+1. Microsoft 데이터 센터에서 고객 네트워크(인바운드 하이브리드 서버 네트워크 트래픽)로 연결 시 필요할 수 있는 네트워크 연결.
+2. 고객 네트워크의 서버에서 엔터프라이즈 경계(아웃 바운드 서버 네트워크 트래픽) 전체에 네트워크 연결.
+3. 한 사용자의 네트워크 연결 요구 사항에 대한 일반적이지 않은 시나리오.
+4. DNS 확인 연결 요구 사항(아래 나열되지 않음).
+5. Internet Explorer 또는 Microsoft Edge의 신뢰할 수 있는 사이트.
 
 DNS 외에도 설명된 특정 시나리오가 필요하지 않는 경우 대부분의 고객에게 이러한 사항은 모두 선택 사항입니다.
 
@@ -53,10 +53,13 @@ DNS 외에도 설명된 특정 시나리오가 필요하지 않는 경우 대부
 | 7  | [Exchange 하이브리드](https://docs.microsoft.com/exchange/exchange-deployment-assistant) 프록시 인증 | 고객 온-프레미스 STS | 인바운드 서버 트래픽 |
 | 8  | Exchange Hybrid 구성 마법사를 사용하여 [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant)를 구성하는 데 사용됩니다. <br> 참고 :이 끝점은 Exchange 하이브리드 구성에만 필요합니다  | TCP 포트 80 및 443의 ```domains.live.com```는 Exchange 2010 SP3 하이브리드 구성 마법사에만 필요합니다. | 아웃바운드 서버 전용 트래픽 |
 | 9  | AutoDetect 서비스는 [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant) 시나리오에서 [iOS 및 Android용 Outlook을 통한 하이브리드 최신 인증](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)과 함께 사용됩니다. <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | TCP 443의 고객 온-프레미스 Exchange 서버 | 인바운드 서버 트래픽 |
-| 10  | **인증 및 ID FQDN** <br> 작동하려면 FQDN ```secure.aadcdn.microsoftonline-p.com```가 클라이언트의 Internet Explorer(IE) 또는 Edge의 신뢰할 수있는 사이트 영역에 있어야 합니다. |  | 신뢰할 수 있는 사이트 |
-| 11  |  **Microsoft Teams FQDN** <br> Internet Explorer 또는 Microsoft Edge를 사용하는 경우 먼저 제3자 쿠키를 사용하고 팀의 FQDN을 신뢰할 수있는 사이트에 추가해야 합니다. 이는 위에 나열된 제품군 전체의 FQDN, CDN 및 원격 분석 외에 추가되는 사항입니다. 자세한 내용은 [Microsoft Teams대한 알려진 문제점](https://docs.microsoft.com/microsoftteams/known-issues)을 참조하세요. |  | 신뢰할 수 있는 사이트 |
-| 12  |  **SharePoint Online 및 비즈니스용 OneDrive FQDN** <br> FQDN의 '\< tenant>'가있는 모든 '.sharepoint.com' FQDN은 클라이언트의 IE 또는 Microsoft Edge 신뢰할 수있는 사이트 영역에 있어야 작동할 수 있습니다. 위에 나열된 제품군 전체 FQDN, CDN 및 원격 측정 외에도 이러한 끝점을 추가해야 합니다. |  | 신뢰할 수 있는 사이트 |
-| 13  | **Yammer**  <br> Yammer는 브라우저에서만 사용할 수 있으며 인증된 사용자는 프록시를 통해 전달되어야 합니다. 모든 Yammer FQDN은 클라이언트의 IE 또는 Edge의 신뢰할 수있는 사이트 영역에 있어야 작동할 수 있습니다. |  | 신뢰할 수 있는 사이트 |
+| 10  | Office 2016의 비즈니스용 Skype에는 UDP 포트를 사용하는 비디오 기반 화면 공유 기능이 포함되어 있습니다. Office 2013 이하의 이전 비즈니스용 Skype 클라이언트에서는 TCP 포트 443을 사용하는 RDP를 이용했었습니다. | 52.112.0.0/14에 열린 TCP 포트 443 | Office 2013 이하의 비즈니스용 Skype 이전 클라이언트 버전 |
+| 11  | 비즈니스용 Skype Online에 대한 비즈니스용 Skype 하이브리드 온-프레미스 서버 연결 | 13.107.64.0/18, 52.112.0.0/14 UDP 포트 50,000-59,999 <BR>  TCP 포트 50,000~59,999 | 비즈니스용 Skype 온-프레미스 서버 아웃바운드 연결 |
+| 12  | 온-프레미스 하이브리드 연결을 사용하는 클라우드 PSTN에는 온-프레미스 호스트에 열린 네트워크 연결이 필요합니다. 비즈니스용 Skype Online 하이브리드 구성에 대한 자세한 내용은  | [비즈니스용 Skype 하이브리드 솔루션](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions)을 참조하세요. | 비즈니스용 Skype 온-프레미스 하이브리드 인바운드 |
+| 13  | **인증 및 ID FQDN** <br> 작동하려면 FQDN ```secure.aadcdn.microsoftonline-p.com```가 클라이언트의 Internet Explorer(IE) 또는 Edge의 신뢰할 수있는 사이트 영역에 있어야 합니다. |  | 신뢰할 수 있는 사이트 |
+| 14  |  **Microsoft Teams FQDN** <br> Internet Explorer 또는 Microsoft Edge를 사용하는 경우 먼저 제3자 쿠키를 사용하고 팀의 FQDN을 신뢰할 수있는 사이트에 추가해야 합니다. 이는 위에 나열된 제품군 전체의 FQDN, CDN 및 원격 분석 외에 추가되는 사항입니다. 자세한 내용은 [Microsoft Teams대한 알려진 문제점](https://docs.microsoft.com/microsoftteams/known-issues)을 참조하세요. |  | 신뢰할 수 있는 사이트 |
+| 15  |  **SharePoint Online 및 비즈니스용 OneDrive FQDN** <br> FQDN의 '\< tenant>'가있는 모든 '.sharepoint.com' FQDN은 클라이언트의 IE 또는 Microsoft Edge 신뢰할 수있는 사이트 영역에 있어야 작동할 수 있습니다. 위에 나열된 제품군 전체 FQDN, CDN 및 원격 측정 외에도 이러한 끝점을 추가해야 합니다. |  | 신뢰할 수 있는 사이트 |
+| 16  | **Yammer**  <br> Yammer는 브라우저에서만 사용할 수 있으며 인증된 사용자는 프록시를 통해 전달되어야 합니다. 모든 Yammer FQDN은 클라이언트의 IE 또는 Edge의 신뢰할 수있는 사이트 영역에 있어야 작동할 수 있습니다. |  | 신뢰할 수 있는 사이트 |
 
 ## <a name="related-topics"></a>관련 항목
 
