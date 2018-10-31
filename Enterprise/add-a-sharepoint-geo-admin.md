@@ -1,5 +1,5 @@
 ---
-title: 지리적으로 분산 관리자 추가 또는 제거
+title: 지역 관리자 추가 또는 제거
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: 추가 또는 OneDrive에 대 한 비즈니스 다중-지리적으로 분산 지리적으로 분산 관리자를 제거 하는 방법에 알아봅니다.
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849814"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>추가 또는 OneDrive에 대 한 Busniess 다중-지리적으로 분산 지리적으로 분산 관리자 제거
 
@@ -20,7 +21,7 @@ ms.lasthandoff: 05/03/2018
 
 용어 저장소-등의 일부 서비스-중앙 위치에서 관리 되며 위성 위치에 복제 됩니다. 중앙 위치에 대 한 지리적으로 분산 관리는 위성 위치에 대 한 지리적으로 분산 admins 하지 하는 반면, 여기에 액세스할 수 있습니다.
 
-전역 관리자 및 SharePoint Online 관리자가 모든 지리적 위치에 있는 설정에 대 한 액세스를 계속 합니다.
+전역 관리자 및 SharePoint Online 관리자가 중앙 위치 및 위성 위치를 모두의 설정에 대 한 액세스를 계속 합니다.
 
 ## <a name="configuring-geo-administrators"></a>지리적으로 분산 관리자 구성
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/03/2018
 
 지리적으로 분산 관리자로 보안 그룹 또는 메일 사용이 가능한 보안 그룹을 추가할 수 있습니다. (메일 그룹 및 Office 365 그룹 지원 되지 않습니다.)
 
-지리적으로 분산 관리 권한으로 그룹을 추가 하려면 실행`Add-SPOGeoAdministrator -GroupAlias <alias>`
+지리적으로 분산 관리자 권한으로 그룹을 추가 하려면 실행`Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-지리적으로 분산 관리 권한으로 그룹을 제거 하려면 다음을 실행합니다`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+지리적으로 분산 관리자 권한으로 그룹을 제거 하려면 다음을 실행합니다`Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
 참고는 일부 보안 그룹의 경우 그룹 별칭입니다. 그룹 목록을 검색 하려면 [Get MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) 실행 하는 별칭 없는 보안 그룹을 추가 하려는 경우 보안 그룹의 ObjectID 찾아 다음을 실행 합니다.
 

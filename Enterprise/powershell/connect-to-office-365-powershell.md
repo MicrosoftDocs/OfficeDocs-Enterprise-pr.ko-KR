@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 사용 하 여 명령줄에서 관리 센터 작업을 수행 하 여 Office 365 조직에 연결 합니다.'
-ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601642"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849894"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -80,20 +80,22 @@ Cmdlet 이름에 **AzureAD** 를 포함 하는 [그래프에 대 한 Azure Activ
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2 단계: Office 365 구독에 대 한 Azure AD에 연결
 
-*다단계 인증 (MFA)* 또는 계정 이름 및 암호를 사용한 Office 365 구독에 대 한 Azure AD에 연결할 (없는 상승 된 되도록) Windows PowerShell 명령 프롬프트에서이 명령을 실행 합니다.
-    
-```
-Connect-AzureAD
-```
+*다단계 인증 (MFA)* 또는 계정 이름 및 암호를 사용한 Office 365 구독에 대 한 Azure AD에 연결할 (없는 상승 된 되도록) Windows PowerShell 명령 프롬프트에서 다음이 명령 중 하나를 실행 합니다.
+
+|||
+|:-------|:-----|
+| **Office 365 클라우드** | **명령** |
+| Office 365 전세계 (+ GCC) | `Connect-AzureAD` |
+| Office 365에서 21 Vianet 운영 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 미국 정부 DoD 및 Office 365 미국 정부 GCC 높음 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+|||
 
 **계정에 로그인** 대화 상자에서 Office 365 작업 또는 학교 계정 사용자 이름 및 암호를 입력 한 다음 **확인**을 클릭 합니다.
 
 MFA를 사용 하는 경우 지침에 따라 추가 대화 상자에서을 확인 코드 등의 더 많은 인증 정보를 제공 합니다.
 
->[!Tip]
->Office 365 독일에 연결할 [PowerShell을 사용 하 여 Azure 독일에 연결](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)을 참조 합니다.
->
-    
+
 를 연결한 후 [그래프 모듈에 대 한 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)에 대 한 새 cmdlet을 사용할 수 있습니다.
   
 
@@ -116,27 +118,28 @@ Windows PowerShell용 Microsoft Azure Active Directory 모듈의 명령에는 cm
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2 단계: Office 365 구독에 대 한 Azure AD에 연결
 
-*다단계 인증 (MFA)* 또는 계정 이름 및 암호를 사용한 Office 365 구독에 대 한 Azure AD에 연결할 (없는 상승 된 되도록) Windows PowerShell 명령 프롬프트에서이 명령을 실행 합니다.
-    
-```
-Connect-MsolService
-```
+*다단계 인증 (MFA)* 또는 계정 이름 및 암호를 사용한 Office 365 구독에 대 한 Azure AD에 연결할 (없는 상승 된 되도록) Windows PowerShell 명령 프롬프트에서 다음이 명령 중 하나를 실행 합니다.
+
+|||
+|:-------|:-----|
+| **Office 365 클라우드** | **명령** |
+| Office 365 전세계 (+ GCC) | `Connect-MsolService` |
+| Office 365에서 21 Vianet 운영 | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Germany | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 미국 정부 DoD 및 Office 365 미국 정부 GCC 높음 | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+|||
 
 **계정에 로그인** 대화 상자에서 Office 365 작업 또는 학교 계정 사용자 이름 및 암호를 입력 한 다음 **확인**을 클릭 합니다.
 
 MFA를 사용 하는 경우 지침에 따라 추가 대화 상자에서을 확인 코드 등의 더 많은 인증 정보를 제공 합니다.
 
->[!Tip]
->Office 365 독일에 연결할 [PowerShell을 사용 하 여 Azure 독일에 연결](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)을 참조 합니다.
->
-    
 ### <a name="how-do-you-know-this-worked"></a>작동 여부는 어떻게 확인하나요?
 
 어떠한 오류도 전송되지 않으면 성공적으로 연결되었음을 의미합니다. 빠른 테스트는 Office 365 cmdlet(예: **Get-MsolUser** )을 실행하여 결과를 확인하는 것입니다.
   
 오류가 발생하면 다음 요구 사항을 확인합니다.
   
-- 가장 흔한 문제는 암호를 잘못 입력한 경우입니다. 두 가지 단계를 다시 실행하고 1단계에서 사용자 이름과 암호를 입력할 때 신중하게 확인합니다.
+- **일반적인 문제는 잘못 된 암호는**입니다. 2 단계를 다시 실행 합니다. 및 입력 하면 사용자 이름 및 암호를 살펴보아야 합니다.
     
 - **Windows PowerShell용 Microsoft Azure Active Directory 모듈을 사용하려면 컴퓨터에서 Microsoft .NET Framework 3.5.* x* 기능이 사용되도록 설정되어야 합니다.** 컴퓨터 최신 버전(예: 4 또는 4.5.* x*)이 설치되어 있을 수 있지만 이전 버전의 .NET Framework와의 호환성이 사용되거나 사용되지 않도록 설정되어 있을 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
     
