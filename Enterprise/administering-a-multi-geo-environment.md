@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경의 SharePoint 및 OneDrive 서비스 관리에 대해 알아봅니다.
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550061"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849884"
 ---
 # <a name="administering-a-multi-geo-environment"></a>다중 위치 환경 관리
 
@@ -27,7 +27,7 @@ OneDrive 및 SharePoint 서비스가 다중 위치 환경에서 작동하는 방
 
 #### <a name="taxonomy"></a>분류
 
-회사에 대한 중앙 위치에 마스터가 호스트된 상태로, 여러 지리적 위치의 엔터프라이즈 관리 메타데이터에 대해 통합된 [분류](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)를 지원합니다. 중앙 위치에서 전역 분류를 관리하고, 위치별 용어는 위성 지리적 위치의 불륨에만 추가하는 것이 좋습니다. 전역 분류는 위성 지리적 위치와 동기화됩니다.
+회사에 대한 중앙 위치에 마스터가 호스트된 상태로, 여러 지리적 위치의 엔터프라이즈 관리 메타데이터에 대해 통합된 [분류](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)를 지원합니다. 중앙 위치에서 전역 분류를 관리하고, 위치별 용어는 위성 위치의 불륨에만 추가하는 것이 좋습니다. 전역 분류는 위성 위치와 동기화됩니다.
 
 #### <a name="sharing"></a>공유
 
@@ -43,7 +43,7 @@ OneDrive Multi-Geo의 경우, 공유 설정이 테넌트 전체에서 동기화�
 
 #### <a name="bcs-secure-store-apps"></a>BCS, 보안 저장소, 앱
 
-BCS, 보안 저장소 및 앱은 모두 별도의 지리적 인스턴스를 유지하므로, SharePoint Online 관리자는 이러한 항목을 제공하려는 각 지리적 인스턴스에서 이러한 서비스를 관리하고 구성해야 합니다.
+BCS, 보안 저장소 및 앱은 모두 각 위성 위치에서 별도의 인스턴스를 유지하므로, SharePoint Online 관리자는 이러한 서비스를 각 위성 위치와는 별도로 관리하고 구성해야 합니다.
 
 #### <a name="security-and-compliance-admin-center"></a>보안 및 준수 관리 센터
 
@@ -63,10 +63,10 @@ DLP 정책은 각 지리적 위치에 적용할 수 있는지에 따라 자동�
 
 Office 365 전역 관리자는 다른 사용자들이 eDiscovery를 수행할 수 있도록 하기 위해 eDiscovery 관리자 권한을 할당해야 하며, 해당 준수 보안 필터에서 “Region” 매개 변수를 할당하여 eDiscovery 수행 지역을 위성 위치로 지정해야 합니다. 그렇지 않으면 해당 위성 위치에 대해 eDiscovery가 수행되지 않습니다.
 
-특정 지리적 위치에 대해 eDiscovery 관리자(manager) 또는 관리자(administrator) 역할이 설정되면 해당 eDiscovery 관리자(manager) 또는 관리자(administrator)만 해당 지리적 위치에 있는 SharePoint 사이트 및 OneDrive 사이트에 대해 eDiscovery 검색 작업을 수행할 수 있습니다. eDiscovery 관리자(manager) 또는 관리자(administrator)가 지정된 지역 외부의 SharePoint 또는 OneDrive 사이트를 검색하려고 하면 결과가 반환되지 않습니다. 또한 지역에 대한 eDiscovery 관리자(manager) 또는 관리자(administrator)가 내보내기를 트리거할 경우 데이터가 해당 지역의 Azure 인스턴스로 내보내집니다. 이를 통해 제어 경계 너머로 콘텐츠가 내보내지지 않게 되므로 조직은 준수 상태를 유지할 수 있습니다.
+특정 위성 위치에 대해 eDiscovery 관리자(manager) 또는 관리자(administrator) 역할이 설정되면 해당 eDiscovery 관리자(manager) 또는 관리자(administrator)만 해당 위성 위치에 있는 SharePoint 사이트 및 OneDrive 사이트에 대해 eDiscovery 검색 작업을 수행할 수 있습니다. eDiscovery 관리자(manager) 또는 관리자(administrator)가 지정된 위성 위치 외부의 SharePoint 또는 OneDrive 사이트를 검색하려고 하면 결과가 반환되지 않습니다. 또한 지역에 대한 eDiscovery 관리자(manager) 또는 관리자(administrator)가 내보내기를 트리거할 경우 데이터가 해당 지역의 Azure 인스턴스로 내보내집니다. 이를 통해 제어 경계 너머로 콘텐츠가 내보내지지 않게 되므로 조직은 준수 상태를 유지할 수 있습니다.
 
 > [!NOTE]
-> eDiscovery 관리자가 여러 SharePoint 지역에 걸쳐 검색해야 할 경우 OneDrive 또는 SharePoint 사이트가 있는 대체 지역을 지정하는 eDiscovery 관리자에 대해 다른 사용자 계정을 만들어야 합니다.
+> eDiscovery 관리자가 여러 SharePoint 위성 위치에 걸쳐 검색해야 할 경우 OneDrive 또는 SharePoint 사이트가 있는 대체 위성 위치를 지정하는 eDiscovery 관리자에 대해 다른 사용자 계정을 만들어야 합니다.
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ Office 365 전역 관리자는 다른 사용자들이 eDiscovery를 수행할 �
 2.  다음을 입력합니다.  
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Office 365 전역 관리자는 다른 사용자들이 eDiscovery를 수행할 �
 
 #### <a name="audit-log-search"></a>감사 로그 검색
 
-모든 지리적 위치에 대한 통합된 [감사 로그](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)를 Office 365 감사 로그 검색 페이지에서 사용할 수 있습니다. 여러 지역의 모든 감사 로그 항목을 볼 수 있습니다. 예를 들어, NAM 및 EUR 지역 사용자의 활동은 하나의 조직 보기에 표시되며, 기존 필터를 적용하여 특정 사용자 활동을 볼 수 있습니다.
+모든 위성 위치에 대한 통합된 [감사 로그](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)를 Office 365 감사 로그 검색 페이지에서 사용할 수 있습니다. 여러 지역의 모든 감사 로그 항목을 볼 수 있습니다. 예를 들어, NAM 및 EUR 지역 사용자의 활동은 하나의 조직 보기에 표시되며, 기존 필터를 적용하여 특정 사용자 활동을 볼 수 있습니다.

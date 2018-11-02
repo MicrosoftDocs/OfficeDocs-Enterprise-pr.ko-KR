@@ -11,16 +11,16 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915063"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849914"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>비즈니스용 OneDrive Multi-Geo 검색 구성
 
-Multi-Geo SPO(SharePoint Online) 환경에서 조직은 하나의 Office 365 테넌트를 유지할 수 있지만 하나의 중앙 위치와 하나 이상의 위성 지리적 위치로 이루어진 다중 지리적 위치에 해당 SharePoint 콘텐츠를 저장할 수 있습니다.
+비즈니스용 OneDrive Multi-Geo 환경에서 조직은 하나의 Office 365 테넌트를 유지할 수 있지만 하나의 중앙 위치와 하나 이상의 위성 위치로 이루어진 다중 지리적 위치에 해당 OneDrive 콘텐츠를 저장할 수 있습니다.
 
 각 지리적 위치에는 자체 검색 인덱스 및 검색 센터가 있습니다. 사용자가 검색을 하면 쿼리가 모드 인덱스로 팬아웃되고 반환된 결과는 병합됩니다.
 
@@ -48,7 +48,7 @@ Multi-Geo 환경이 설정되는 즉시, OneDrive에서 검색하는 사용자�
 
 Multi-Geo 환경이 설정되는 즉시, Delve에서 검색하는 사용자는 모든 지리적 위치에서 결과를 얻습니다.
 
-Delve 피드 및 프로필 카드는 **중앙** 위치에 저장된 파일의 미리 보기만 표시합니다. 위성 지리적 위치에 저장된 파일의 경우 대신 해당 파일 형식에 대한 아이콘이 표시됩니다.
+Delve 피드 및 프로필 카드는 **중앙** 위치에 저장된 파일의 미리 보기만 표시합니다. 위성 위치에 저장된 파일의 경우 대신 해당 파일 형식에 대한 아이콘이 표시됩니다.
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint 홈페이지
 
