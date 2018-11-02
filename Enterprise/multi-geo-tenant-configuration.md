@@ -11,16 +11,16 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 비즈니스용 OneDrive Multi-Geo를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915253"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849874"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>비즈니스용 OneDrive Multi-Geo 테넌트 구성
 
-비즈니스용 OneDrive Multi-Geo에 대한 테넌트를 구성하기 전에 [비즈니스용 OneDrive Multi-Geo 계획](plan-for-multi-geo.md)을 읽어야 합니다. 이 문서에 나와 있는 단계를 수행하려면 사용하도록 설정하려는 위치와 해당 위치에 대해 프로비전할 테스트 사용자 목록이 필요합니다.
+비즈니스용 OneDrive Multi-Geo에 대한 테넌트를 구성하기 전에 [비즈니스용 OneDrive Multi-Geo 계획](plan-for-multi-geo.md)을 읽어야 합니다. 이 문서에 나와 있는 단계를 수행하려면 위성 위치로 사용하도록 설정하려는 지리적 위치와 해당 위치에 대해 프로비전할 테스트 사용자 목록이 필요합니다.
 
 ## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>테넌트에 Office 365 요금제의 Multi-Geo 기능 추가
 
@@ -30,9 +30,9 @@ _Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금�
 
 테넌트가 _Office 365의 Multi-Geo 기능_ 요금제로 프로비전되면 [OneDrive 관리 센터](https://admin.onedrive.com)에서 **지리적 위치** 탭을 사용할 수 있게 됩니다.
 
-## <a name="set-the-allowed-data-locations-adl-to-your-tenant"></a>ADL(허용 데이터 위치)을 테넌트로 설정
+## <a name="add-satellite-locations-to-your-tenant"></a>테넌트에 위성 위치 추가
 
-비즈니스용 OneDrive를 사용하려는 각 지리적 위치에 대해 SharePoint의 허용 데이터 위치를 설정해야 합니다. 사용 가능한 지리적 위치는 다음 표에 나와 있습니다.
+비즈니스용 OneDrive를 사용하려는 각 지리적 위치에 대해 위성 위치를 추가해야 합니다. 사용 가능한 지리적 위치는 다음 표에 나와 있습니다.
 
 <table>
 <thead>
@@ -81,7 +81,7 @@ _Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금�
 </tbody>
 </table>
 
-위성 지리적 위치를 추가하려면
+위성 위치를 추가하려면
 
 1. [OneDrive 관리 센터](https://admin.onedrive.com)를 엽니다.
 
@@ -98,32 +98,32 @@ _Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금�
 테넌트의 크기에 따라 프로비전하는 데 몇 시간에서 72시간까지 걸릴 수 있습니다. 위성 위치의 프로비전이 완료되면 전자 메일 확인이 수신됩니다. 새 지리적 위치가 OneDrive 관리 센터의 **지리적 위치** 탭의 지도에 파란색으로 표시되면 사용자의 기본 설정 데이터 위치를 해당 지리적 위치로 설정할 수 있습니다. 
 
 > [!IMPORTANT]
-> 이 경우 해당 지리적 위치를 로컬 준수 요구에 적합하게 구성할 수 있습니다.
+> 새 위성 위치가 기본 설정으로 지정됩니다. 이 경우 해당 위성 위치를 로컬 준수 요구에 적절하게 구성할 수 있습니다.
 
 ## <a name="setting-users-preferred-data-location"></a>사용자의 기본 설정 데이터 위치 지정
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-필요한 데이터 위치를 사용하도록 설정한 경우, 해당 데이터 위치를 사용하도록 사용자 계정을 업데이트할 수 있습니다. 해당 사용자가 기본 데이터 위치에 있더라도, 모든 사용자의 기본 설정 데이터 위치를 지정하는 것이 좋습니다.
+필요한 위성 위치를 사용하도록 설정한 경우, 해당 기본 설정 데이터 위치를 사용하도록 사용자 계정을 업데이트할 수 있습니다. 해당 사용자가 기본 데이터 위치에 있더라도, 모든 사용자의 중앙 위치를 지정하는 것이 좋습니다.
 
 > [!TIP]
-> Multi-Geo 기능을 보다 광범위한 조직으로 롤아웃하기 전에 테스트 사용자 또는 소규모의 사용자 그룹을 사용하여 유효성 검사를 시작하는 것이 좋습니다.
+> Multi-Geo를 보다 광범위한 조직으로 롤아웃하기 전에 테스트 사용자 또는 소규모의 사용자 그룹을 사용하여 유효성 검사를 시작하는 것이 좋습니다.
 
 AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용자와 동기화된 사용자가 있습니다. 사용자 유형에 적합한 지침을 따르세요.
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>AD Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
 
-회사의 사용자가 온-프레미스 AD (Active Directory) 시스템에서 AAD(Azure Active Directory)로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure AD Connect 동기화: 기본 구성 변경](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)의 프로세스에 따라 온-프레미스 AD에서 AAD로의 기본 설정 데이터 위치 동기화를 구성합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure AD Connect 동기화: 기본 구성 변경](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)의 프로세스에 따라 온-프레미스 Active Directory에서 Azure Active Directory로의 기본 설정 데이터 위치 동기화를 구성합니다.
 
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 
 > [!IMPORTANT]
-> OneDrive가 프로비전되지 않은 새로운 사용자의 경우, 사용자의 PDL이 AAD와 동기화된 후에 변경 내용이 전파될 수 있게 24시간 넘게 기다렸다가 사용자가 비즈니스용 OneDrive에 로그인하도록 합니다. 사용자가 로그인하여 비즈니스용 OneDrive를 프로비전하기 전에 기본 설정 데이터 위치를 지정하면 사용자의 새 OneDrive가 올바른 위치에 프로비전됩니다.)
+> OneDrive가 프로비전되지 않은 새로운 사용자의 경우, 사용자의 PDL이 Azure Active Directory와 동기화된 후에 변경 내용이 전파될 수 있게 24시간 넘게 기다렸다가 사용자가 비즈니스용 OneDrive에 로그인하도록 합니다. 사용자가 로그인하여 비즈니스용 OneDrive를 프로비전하기 전에 기본 설정 데이터 위치를 지정하면 사용자의 새 OneDrive가 올바른 위치에 프로비전됩니다.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>클라우드 전용 사용자를 위한 기본 설정 데이터 위치 지정 
 
-회사의 사용자가 온-프레미스 AD(Active Directory) 시스템에서 AAD(Azure Active Directory)로 동기화되지 않을 경우, 즉 Office 365 또는 AAD에서 생성될 경우 AAD PowerShell을 사용하여 PDL을 설정해야 합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되지 않을 경우, 즉 Office 365 또는 AAD에서 생성될 경우 AAD PowerShell을 사용하여 PDL을 설정해야 합니다.
 
-이 섹션의 절차를 수행하려면 [Windows PowerShell용 Microsoft Azure Active Directory 모듈](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)이 필요합니다. AAD PowerShell이 이미 설치된 경우 최신 버전으로 업데이트해야 합니다.
+이 섹션의 절차를 수행하려면 [Windows PowerShell용 Microsoft Azure Active Directory 모듈](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)이 필요합니다. Azure Active Directory PowerShell이 이미 설치된 경우 최신 버전으로 업데이트해야 합니다.
 
 1.  Windows PowerShell용 Microsoft Azure Active Directory 모듈을 엽니다.
 
@@ -142,13 +142,13 @@ AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용�
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 
 > [!IMPORTANT]
-> OneDrive가 프로비전되지 않은 새로운 사용자의 경우, 사용자의 PDL이 설정된 후에 변경 내용이 전파될 수 있게 24시간 넘게 기다렸다가 사용자가 SharePoint OneDrive에 로그인하도록 합니다. 사용자가 로그인하여 비즈니스용 OneDrive를 프로비전하기 전에 기본 설정 데이터 위치를 지정하면 사용자의 새 OneDrive가 올바른 위치에 프로비전됩니다.)
+> OneDrive가 프로비전되지 않은 새로운 사용자의 경우, 사용자의 PDL이 설정된 후에 변경 내용이 전파될 수 있게 24시간 넘게 기다렸다가 사용자가 OneDrive에 로그인하도록 합니다. 사용자가 로그인하여 비즈니스용 OneDrive를 프로비전하기 전에 기본 설정 데이터 위치를 지정하면 사용자의 새 OneDrive가 올바른 위치에 프로비전됩니다.)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive 프로비전 및 PDL의 영향
 
 사용자의 OneDrive 사이트가 이미 테넌트에 만들어진 경우 해당 PDL을 설정해도 기존 OneDrive가 자동으로 이동되지 않습니다. 사용자의 OneDrive를 이동하려면 [비즈니스용 OneDrive 지리적 이동](move-onedrive-between-geo-locations.md)을 참조하세요. 또한 두 지리적 위치 간의 OneDrive 이동 지침을 따르세요.
 
-테넌트 내에 OneDrive 사이트가 없으면 해당 사용자의 PDL이 회사의 ADL(허용 데이터 위치) 중 하나와 일치한다고 가정할 경우 해당 PDL 값에 따라 OneDrive가 프로비전됩니다.
+테넌트 내에 OneDrive 사이트가 없으면 해당 사용자의 PDL가 회사의 위성 위치 중 하나와 일치한다고 가정할 경우 해당 PDL 값에 따라 OneDrive가 프로비전됩니다.
 
 ## <a name="configuring-multi-geo-search"></a>Multi-Geo 검색 구성
 

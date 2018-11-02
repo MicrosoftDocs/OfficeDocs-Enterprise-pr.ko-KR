@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경의 SharePoint 및 OneDrive 사용자 작업 환경에 대해 알아봅니다.
-ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849834"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>다중 위치 환경의 사용자 작업 환경
 
