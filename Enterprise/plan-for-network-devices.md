@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '요약: Office 365에 연결하는 데 사용되는 네트워크 용량, WAN 가속기 및 부하 분산 장치에 대한 고려 사항을 설명합니다.'
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223070"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933125"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 서비스에 연결되는 네트워크 장치 계획
 
@@ -37,7 +37,7 @@ ms.locfileid: "23223070"
   
 비즈니스 도움말 문서에 대 한 다음 Skype 비즈니스 설정에 대 한 Skype 하는 방법에 대 한 자세한 내용은 있습니다.
   
-- [Skype 비즈니스 로그인 오류 (관리자)에 대 한 문제해결](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [관리자를 위한 비즈니스 Online 로그인 오류에 대 한 문제해결 Skype](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [비즈니스, 용 Skype에 연결할 수 없거나 특정 기능이 작동 하지 않으면 온-프레미스 방화벽이 연결을 차단 하기 때문에](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
