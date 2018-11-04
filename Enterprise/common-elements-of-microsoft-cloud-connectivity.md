@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: '요약: 네트워킹 인프라의 일반적인 요소 및 네트워크를 준비 하는 방법을 이해 합니다.'
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915653"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897031"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결의 공통 요소
 
@@ -82,7 +82,7 @@ Microsoft의 클라우드 서비스 중 하나를 채택 하는 경우 네트워
 
 ## <a name="next-step"></a>다음 단계
 
-[Microsoft 클라우드 연결에 대 한 ExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
+[Microsoft 클라우드 연결에 대한 ExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: 않을까요 인터넷 연결 고속 항상 이었으며 하지 아래쪽 하는 경우? 아마도 그 날 상태가 됩니다. 하지만 동시에 다음과 같은 사항을 실제적인 balky 네트워크를 해결 하 고 여전히 일상적인 작업을 수행 하기 위해 할 수 있는.
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542165"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933145"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Office 365를 사용 하 여 저속 네트워크에 연결 하는 것에 대 한 모범 사례
 
@@ -162,7 +162,7 @@ OneDrive 비즈니스 동기화 응용 프로그램을 사용 하기 위한 일�
 
 웹 페이지를 사용자 지정할 때 페이지와 함께 성능 저하를 실수로 발생할 수 있습니다. 다양 한 요인은 복잡성과 크기는 페이지, 목록 또는 라이브러리 항목 수에 처음 표시 되는 얼마나 많은 웹 파트가 추가 되어 및 페이지 코드 하는 방법의 예:는 영향을 줄 수 있습니다.
   
-자세한 내용은 [SharePoint Online 조정 성능](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint)을 참조 하십시오.
+자세한 내용은 [SharePoint Online 조정 성능](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)을 참조 하십시오.
   
 ## <a name="best-practices-for-using-project-online"></a>Project Online을 사용 하기 위한 모범 사례
 
