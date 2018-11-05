@@ -45,7 +45,7 @@
 ### [하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법](configure-exchange-server-for-hybrid-modern-authentication.md)
 ### [하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
 ### [비즈니스용 Skype 및 Exchange에서 하이브리드 최신 인증 제거 또는 사용 안 함](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [Office 2007 또는 2010 제품에서의 업그레이드 계획](plan-upgrade-previous-versions-office.md)
+## [Office 업그레이드](plan-upgrade-previous-versions-office.md)
 ### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
 #### [Office 2010 데스크톱](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 #### [Exchange 2010](exchange-2010-end-of-support.md)
