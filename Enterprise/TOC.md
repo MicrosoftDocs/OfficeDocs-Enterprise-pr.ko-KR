@@ -81,13 +81,13 @@
 ## [조직을 위해 Office 365 Enterprise 배포](setup-overview-for-enterprises.md)
 ### [Office 365 배포 계획 검사 목록](deployment-planning-checklist.md)
 ### [Office 365에 대한 보안 모범 사례](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
-## 네트워크 설정
+## [네트워크 설정](set-up-network-for-office-365.md)
 ### [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
 ### [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 ### [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
 ### [Office 365에 대한 네트워크 연결](network-connectivity.md)
 ### [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)
-### Office 365 IP 주소 및 URL
+### [Office 365 IP 주소 및 URL](office-365-endpoints.md)
 #### [Office 365 끝점 관리](managing-office-365-endpoints.md)
 #### [전 세계 끝점](urls-and-ip-address-ranges.md)
 #### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)
