@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 description: Office 365와 사용자 연결의 대략적인 기준선을 설정할 수 있는 비즈니스 간의 연결 성능을 확인 하는 간단한 방법과 있습니다. 클라이언트의 성능 기록 컴퓨터 연결 알면 초기 새로 등장 문제를 검색 하 고 식별 하 고, 문제를 예측 하 하는 데 도움이 수 있습니다.
-ms.openlocfilehash: bb1fe1e1450798e43c15a07610e27450bce6ea5b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 30a0903d95ccfcd2018d8971c74c7f80223c005d
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542067"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024690"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정
 
@@ -196,7 +196,7 @@ Office 365 서비스의 시험 사용 중 보다 초기 계획을 만들기 시�
 ![클라이언트, 프록시 및 클라우드, 및 추천 PSPing, TraceTCP, 도구를 사용 하 여 기본 네트워크 및 네트워크 추적을 실행 합니다.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP 표시, 시간을 밀리초 단위로 요청 걸리는 프로세스 및 얼마나 많은 네트워크 홉 또는 연결에는 다음에 한 컴퓨터에서 요청을 대상에 도달 하는 시간이 위한 유용한 도구 이기 때문에이 화면에 포함 됩니다. TraceTCP 홉 지원에는 Microsoft Office 365 문제 해결사에 유용할 수 있는 하는 동안 사용 되는 서버의 이름을 제공할 수도 있습니다. > TraceTCP 명령을와 같은 매우 간단한 수: > `tracetcp.exe outlook.office365.com:443`> 명령에 포트 번호를 포함 하도록 기억! > [TraceTCP](https://simulatedsimian.github.io/tracetcp.mdl) 는 무료 다운로드 하지만 Wincap에 의존 합니다. Wincap는 또한 사용 되 고 Netmon 하 여 설치 하는 도구입니다. 또한 네트워크 모니터를 사용 하 여 고급 방법 섹션에서 합니다. 
+> TraceTCP 표시, 시간을 밀리초 단위로 요청 걸리는 프로세스 및 얼마나 많은 네트워크 홉 또는 연결에는 다음에 한 컴퓨터에서 요청을 대상에 도달 하는 시간이 위한 유용한 도구 이기 때문에이 화면에 포함 됩니다. TraceTCP 홉 지원에는 Microsoft Office 365 문제 해결사에 유용할 수 있는 하는 동안 사용 되는 서버의 이름을 제공할 수도 있습니다. > TraceTCP 명령을와 같은 매우 간단한 수: > `tracetcp.exe outlook.office365.com:443`> 명령에 포트 번호를 포함 하도록 기억! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) 는 무료 다운로드 하지만 Wincap에 의존 합니다. Wincap는 또한 사용 되 고 Netmon 하 여 설치 하는 도구입니다. 또한 네트워크 모니터를 사용 하 여 고급 방법 섹션에서 합니다. 
   
  여러 사무실을 설치한 경우에 해당 위치의 각 클라이언트에서 데이터 집합을 변경 하지 않으려면 필요 합니다. 이 테스트는이 경우에 Office 365 및 Office 365의 요청에 대 한 응답을 요청을 보내는 클라이언트 사이의 시간을 설명 하는 숫자 값은 대기 시간을 측정 합니다. 테스트는 클라이언트 컴퓨터에서 도메인 내 발생 하 고를 Office 365에 인터넷을 통해 탈출 지점의 통해 네트워크 내부에서 대 한 왕복을 측정 하 여 백업를 찾습니다. 
   

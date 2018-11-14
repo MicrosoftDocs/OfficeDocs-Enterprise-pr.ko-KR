@@ -13,27 +13,18 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 이 문서에서는 SharePoint Online에서 최상의 성능을 위해 페이지를 디자인할 때 고려 해야할 어떤 특정 측면에 설명 합니다.
-ms.openlocfilehash: 96aeec19a6b582d0dc8701cd2e99329ec8ce156b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541917"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219878"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online의 성능 조정 소개
 
 이 문서에서는 SharePoint Online에서 최상의 성능을 위해 페이지를 디자인할 때 고려 해야할 어떤 특정 측면에 설명 합니다.
-  
-## <a name="in-this-article"></a>이 문서의 내용
-
-- [SharePoint Online의 메트릭](introduction-to-performance-tuning-for-sharepoint-online.md#spometrics) 및 [데이터 때문에 도달 결론](introduction-to-performance-tuning-for-sharepoint-online.md#data)
-    
-- [성능 확인할 때 표준 사용자 계정을 사용 하 여](introduction-to-performance-tuning-for-sharepoint-online.md#standuser)
-    
-- [성능 조정에 대 한 연결 종류](introduction-to-performance-tuning-for-sharepoint-online.md#connect): [서버 연결](introduction-to-performance-tuning-for-sharepoint-online.md#server), [네트워크 연결](introduction-to-performance-tuning-for-sharepoint-online.md#network)및 [브라우저 연결](introduction-to-performance-tuning-for-sharepoint-online.md#browser)
-    
+     
 ## <a name="sharepoint-online-metrics"></a>SharePoint Online 메트릭
-<a name="spometrics"> </a>
 
 SharePoint Online에 대한 다음의 광범위한 메트릭은 성능의 실제 데이터를 제공합니다.
   
@@ -46,7 +37,6 @@ SharePoint Online에 대한 다음의 광범위한 메트릭은 성능의 실제
 - 성능 저하를 유발하는 기타 사항
     
 ### <a name="conclusions-reached-because-of-the-data"></a>데이터로 인해 도달한 결론
-<a name="data"> </a>
 
 데이터를 통해 알 수 있는 사항은 다음과 같습니다.
   
@@ -61,7 +51,6 @@ SharePoint Online에 대한 다음의 광범위한 메트릭은 성능의 실제
 사용할 수 있는 한 가지 간단한 벤치마크 테스트는 사용자 지정된 일부 기능을 사용하면서 자체 포털의 로드 시간을 비즈니스용 OneDrive 홈 페이지의 로드 시간과 비교하여 성능을 측정하는 것입니다. 지원 서비스에서 사용자가 네트워크 성능 문제를 해결할 때 필요한 첫 번째 단계가 바로 여기에 해당합니다.
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>성능 확인할 때 표준 사용자 계정을 사용 하 여
-<a name="standuser"> </a>
 
 사이트 모음 관리자, 사이트 소유자, 편집기 또는 참가자 추가 보안 그룹에 속해, 추가 권한이 되어 있으므로 SharePoint 페이지에 로드 되는 추가 요소 합니다.
   
@@ -70,15 +59,14 @@ SharePoint 온-프레미스 및 SharePoint Online에 적용할 수 있는 반드
 올바르게 페이지는 사용자에 대해 수행 하는 방식 평가 하기 위해 제작 컨트롤 및 보안 그룹에 관련 된 추가 트래픽 로드를 방지 하기 위해 표준 사용자 계정을 사용 해야 합니다.
   
 ## <a name="connection-categories-for-performance-tuning"></a>성능 조정에 대한 연결 범주
-<a name="connect"> </a>
 
 서버와 사용자 간의 연결을 세 가지 주요 구성 요소로 분류할 수 있습니다. 로드 시간을 고려하여 SharePoint Online 페이지를 설계할 때는 다음 사항에 유의하세요.
   
-- **서버.** Microsoft 데이터 센터에서 호스팅하는 서버입니다.
+- **서버** Microsoft 데이터 센터에서 호스팅하는 서버입니다.
     
-- **네트워크.** Microsoft 네트워크, 인터넷 및 온-프레미스 네트워크 간에 데이터 센터 및 사용자에 게 합니다.
+- **네트워크** Microsoft 네트워크, 인터넷 및 온-프레미스 네트워크 간에 데이터 센터 및 사용자에 게 합니다.
     
-- **브라우저.** 여기서는 페이지가 로드 됩니다.
+- **브라우저** 여기서는 페이지가 로드 됩니다.
     
 이러한 세 가지 연결에서 느린 페이지의 95%를 차지하는 5가지 일반적인 원인이 있습니다. 다음과 같은 각 원인이 이 문서에 설명되어 있습니다.
   
@@ -93,19 +81,18 @@ SharePoint 온-프레미스 및 SharePoint Online에 적용할 수 있는 반드
 - 웹 파트 처리
     
 ### <a name="server-connection"></a>서버 연결
-<a name="server"> </a>
 
 SharePoint 온-프레미스의 성능에 영향을 주는 많은 문제가 SharePoint Online에도 적용됩니다.
   
 예상할 수 있듯이 온-프레미스 SharePoint를 사용하면 서버의 성능을 훨씬 더 강력하게 제어할 수 있습니다. SharePoint Online을 사용하는 경우 상황이 약간 달라집니다. 서버가 수행하는 작업이 많을수록 페이지를 렌더링하는 데 더 오래 걸립니다. SharePoint를 사용하는 경우 이러한 측면에서 가장 큰 원인은 여러 웹 파트가 있는 복잡한 페이지입니다.
   
+SharePoint Server 온-프레미스
+  
+![온-프레미스 서버의 스크린샷](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+  
 SharePoint Online
   
-![온라인 서버의 스크린샷](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
-  
-SharePoint
-  
-![온-프레미스 서버의 스크린샷](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![온라인 서버의 스크린샷](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 SharePoint Online을 사용하는 경우에는 특정 페이지 요청이 실제로 여러 서버 호출을 발생할 수 있습니다. 개별 요청에 대해 서버 간에 단계별 요청 구조가 발생할 수 있습니다. 이러한 상호 작용은 페이지 부하 측면에서는 많은 비용을 초래하며 속도를 저하시킵니다.
   
@@ -118,7 +105,6 @@ SharePoint Online을 사용하는 경우에는 특정 페이지 요청이 실제
 서버 상호 작용을 저하시킬 수 있는 기타 요인으로는 캐시 누락이 있습니다. 온-프레미스 SharePoint와 달리, 이전에 방문한 페이지에 동일한 서버가 사용될 가능성이 아주 적으므로 개체 캐싱이 더 이상 사용되지 않습니다.
   
 ### <a name="network-connection"></a>네트워크 연결
-<a name="network"> </a>
 
 사용할 수 있도록 하지 WAN의 온-프레미스 sharepoint를 데이터 센터와 최종 사용자에 게 간의 고속 연결을 사용할 수 있습니다. 일반적으로 작업에는 네트워크의 관점에서 관리 하기 어렵습니다.
   
@@ -138,12 +124,11 @@ SharePoint Online을 사용하는 경우 다음과 같은 몇 가지 요인을 �
     
 - 서버와의 큰 실제 거리
     
-SharePoint Online에서 활용할 수 있는 기능 중 하나는 Microsoft CDN (콘텐츠 배달 네트워크)입니다. CDN는 기본적으로 여러 데이터 센터에 배포 된 서버의 분산된 컬렉션입니다. CDN와 경우에 클라이언트 멀리 떨어져 원래 SharePoint 서버에서 클라이언트에 근접 한 서버에서 페이지에 콘텐츠를 호스팅할 수 있습니다. Microsoft 됩니다 수를 사용 하 여이 더 나중에 SharePoint Online 관리자 홈 페이지 같은 수 없는 사용자 지정할 수 있는 페이지의 로컬 인스턴스를 저장 합니다. Cdn 하는 방법에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](https://support.office.com/article/Content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)를 참조 하십시오.
+SharePoint Online에서 활용할 수 있는 기능 중 하나는 Microsoft CDN (콘텐츠 배달 네트워크)입니다. CDN는 기본적으로 여러 데이터 센터에 배포 된 서버의 분산된 컬렉션입니다. CDN와 경우에 클라이언트 멀리 떨어져 원래 SharePoint 서버에서 클라이언트에 근접 한 서버에서 페이지에 콘텐츠를 호스팅할 수 있습니다. Microsoft 됩니다 수를 사용 하 여이 더 나중에 SharePoint Online 관리자 홈 페이지 같은 수 없는 사용자 지정할 수 있는 페이지의 로컬 인스턴스를 저장 합니다. Cdn 하는 방법에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)를 참조 하십시오.
   
 고려해야 하지만 많은 작업을 수행할 수는 없는 측면이 바로 ISP의 연결 속도입니다. 간단한 속도 테스트 도구로 연결 속도를 알 수 있습니다.
   
 ### <a name="browser-connection"></a>브라우저 연결
-<a name="browser"> </a>
 
 성능 측면에서 웹 브라우저에 대해 고려해야 할 몇 가지 요소가 있습니다.
   

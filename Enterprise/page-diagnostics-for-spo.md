@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: SharePoint 도구에 대 한 페이지 진단을 사용 하 여 SharePoint Online에 대 한 권장 되는 최상의 방법에 대해 클래식 페이지를 분석 합니다.
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975166"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253619"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>SharePoint Online에 대 한 페이지 진단 도구를 사용 하 여
 
 이 문서에서는 페이지 진단 도구를 사용 하 여 클래식 게시 페이지 및 **SharePoint Online**에서 권장 되는 방법의 하위 집합에 대해 클래식 팀 사이트의 페이지를 분석 하는 방법을 설명 합니다. 
   
 팀 사이트 게시를 사용할 수 없는 Cdn의 사용 하 여 만들 수 없습니다 하지만 나머지 규칙 모두에 해당 합니다. 게시는 페이지 로드 시간에 부정적인 영향는 것 처럼 CDN 기능을 가져오기 위해 게시 설정 하지 않도록 하므로 추가 오버 헤드를 추가 합니다.
+
+**참고 V1.05에 릴리스된 업데이트 보십시오 이미 설치 된 경우 확장**합니다. 확실 하지 않은 경우 있는 버전을 다음 링크를 클릭 하십시오는 "에 대 한 정보" 것을 확인 합니다.
   
 > [!IMPORTANT]
-> SharePoint 사이트 페이지를 검토 하는 도구는 정상적으로 시스템 페이지 또는 문서 라이브러리에 대해 페이지 진단 도구 실행 되지 않습니다. *Allitems.aspx* 페이지는 시스템 페이지입니다. 시스템 페이지에서 도구를 실행 하려고 하면 읽는 메시지가, "이 응용이 프로그램의 SharePoint 페이지에만 적용 됩니다."<br/> ![SharePoint 페이지에서 실행 해야 합니다.](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>라이브러리 또는 시스템 페이지 평가에 값이 없는 그대로 도구에서 오류가 아닙니다. 이 도구를 사용 하 여 비 시스템 SharePoint 페이지로 이동 하십시오. 에 대 한 피드백을 제공 하려는 도구 정보 탭을 클릭을 따라 하십시오 [피드백 링크를 제공](https://go.microsoft.com/fwlink/?linkid=874109)합니다. 
+> SharePoint 사이트 페이지를 검토 하는 도구는 정상적으로 시스템 페이지 또는 문서 라이브러리에 대해 페이지 진단 도구 실행 되지 않습니다. *Allitems.aspx* 페이지는 시스템 페이지입니다. 시스템 페이지에서 도구를 실행 하려고 하면 읽는 메시지가, "이 응용이 프로그램의 SharePoint 페이지에만 적용 됩니다."<br/> ![SharePoint 페이지에서 실행 해야 합니다.](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>라이브러리 또는 시스템 페이지 평가에 값이 없는 그대로 도구에서 오류가 아닙니다. 이 도구를 사용 하 여 비 시스템 SharePoint 페이지로 이동 하십시오. SharePoint 페이지에서이 발생 하는 경우 다음 확인 하십시오는 MasterPage 고객 SharePoint 메타 태그를 제거 하 고 다음 페이지는 더이상 SharePoint 페이지 살펴본 것 처럼. 에 대 한 피드백을 제공 하려는 도구 정보 탭을 클릭을 따라 하십시오 [피드백 링크를 제공](https://go.microsoft.com/fwlink/?linkid=874109)합니다. 
   
 ## <a name="install-the-page-diagnostic-tool"></a>페이지 진단 도구를 설치 합니다.
 

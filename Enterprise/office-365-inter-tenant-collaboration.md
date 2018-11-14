@@ -3,7 +3,7 @@ title: Office 365 테넌트 간 공동 작업
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: 테 넌 트 및 조직 전체에서 Office 365 공동 작업을 작동 하는 방법을 설명 합니다.
-ms.openlocfilehash: 932c837f9dc09dd0469a17ad4e6a05f09966d29c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ec844f78a0ae31469c2ca92c5cb97d965bdb3508
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541973"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219888"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 테넌트 간 공동 작업
 
@@ -33,7 +33,7 @@ Office 365 테 넌 트 공동 작업 옵션 포함 하는 중앙 위치를 사�
 
 |**공유 목표**|**관리 작업**|**사용 방법 정보**|
 |:-----|:-----|:-----|
-|다른 Office 365 조직과 일정 공유  <br/> |관리자를 설정할 수 다양 한 수준의 일정 액세스 Exchange Online 기업용 다른 비즈니스와 일정 (약속 있음/없음 정보)를 공유 하는 사용자가 다른 사용자와 공동 작업을 수행할 수 있도록  <br/> |[Exchange Online의 공유](https://technet.microsoft.com/en-us/library/jj916670%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 조직 관계](https://technet.microsoft.com/en-us/library/jj916658%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 조직 관계 만들기](https://technet.microsoft.com/en-us/library/jj916671%28v=exchg.150%29.aspx) <br/> [수정 및 Exchange Online에서 조직 관계](https://technet.microsoft.com/en-us/library/jj916659%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 조직 관계 제거](https://technet.microsoft.com/en-us/library/jj916657%28v=exchg.150%29.aspx) <br/> [외부 사용자와 일정 공유](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
+|다른 Office 365 조직과 일정 공유  <br/> |관리자를 설정할 수 다양 한 수준의 일정 액세스 Exchange Online 기업용 다른 비즈니스와 일정 (약속 있음/없음 정보)를 공유 하는 사용자가 다른 사용자와 공동 작업을 수행할 수 있도록  <br/> |[Exchange Online의 공유](https://technet.microsoft.com/en-us/library/jj916670%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 조직 관계](https://technet.microsoft.com/en-us/library/jj916658%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 조직 관계 만들기](https://technet.microsoft.com/en-us/library/jj916671%28v=exchg.150%29.aspx) <br/> [수정 및 Exchange Online에서 조직 관계](https://technet.microsoft.com/en-us/library/jj916659%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 조직 관계 제거](https://technet.microsoft.com/en-us/library/jj916657%28v=exchg.150%29.aspx) <br/> [외부 사용자와 사이트 공유](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
 |사용자가 자신의 일정 조직 외부의 사용자와 공유 하는 방법을 제어 합니다.  <br/> |관리자가 사용자와 공유할 수 있는 및 부여 된 액세스 수준을 제어 하는 사서함에 공유 정책 적용  <br/> |[Exchange Online에서 정책 공유](https://technet.microsoft.com/en-us/library/jj916673%28v=exchg.150%29.aspx) <br/> [Exchange Online에서 공유 정책 만들기](https://technet.microsoft.com/en-us/library/jj916676%28v=exchg.150%29.aspx) <br/> [Exchange Online의 사서함에 공유 정책 적용](https://technet.microsoft.com/en-us/library/jj916672%28v=exchg.150%29.aspx) <br/> [수정, 해제 또는 Exchange Online에서 공유 정책 제거](https://technet.microsoft.com/en-us/library/jj916674%28v=exchg.150%29.aspx) <br/> |
 |안전한 전자 메일 채널을 구성 하 고 파트너 조직을 사용 하 여 메일 흐름을 제어 합니다.  <br/> |관리자가 파트너 조직 또는 서비스 공급자와 메일 교환에 보안을 적용 하려면 커넥터를 만듭니다. 커넥터 제한 도메인 이름에 만들 수 있으며 전송 계층 보안 (TLS)를 통해 암호화 적용 또는 IP 주소 범위를 파트너 보내기 전자 메일을 합니다.  <br/> |[Office 365의 전자 메일 연결 보안을 위해 Exchange Online에서 TLS를 사용하는 방법](https://technet.microsoft.com/en-us/library/mt163898.aspx) <br/> [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/en-us/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Exchange Online의 원격 도메인](https://technet.microsoft.com/en-us/library/jj966211%28v=exchg.150%29.aspx) <br/> [파트너 조직의 보안 메일 흐름에 대 한 커넥터 설정](https://technet.microsoft.com/en-us/library/dn751021%28v=exchg.150%29.aspx) <br/> [Exchange Online 및 Office 365 (개요)에 대 한 메일 흐름 모범 사례](https://technet.microsoft.com/en-us/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
    
@@ -49,7 +49,7 @@ Office 365 테 넌 트 공동 작업 옵션 포함 하는 중앙 위치를 사�
 
 |**공유 목표**|**관리 작업**|**사용 방법 정보**|
 |:-----|:-----|:-----|
-|비즈니스 사용자를 위한 다른 Skype와 비즈니스 온라인-IM, 통화 및 현재 상태에 대 한 Skype  <br/> |관리자가 IM 온라인 비즈니스 사용자가 자신의 Skype를 설정 하 고 오디오/비디오 통화를 확인 하 고 Office 365 테 넌 트를 다른 사용자와 현재 상태를 볼 수 있습니다.  <br/> |[비즈니스 사용자를 위한 외부 Skype에 연락 하는 사용자를 허용 합니다.](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
+|비즈니스 사용자를 위한 다른 Skype와 비즈니스 온라인-IM, 통화 및 현재 상태에 대 한 Skype  <br/> |관리자가 IM 온라인 비즈니스 사용자가 자신의 Skype를 설정 하 고 오디오/비디오 통화를 확인 하 고 Office 365 테 넌 트를 다른 사용자와 현재 상태를 볼 수 있습니다.  <br/> |[사용자가 외부 비즈니스용 Skype 사용자와 연락하도록 허용](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
 |비즈니스 온라인-IM, 통화 및 Skype (소비자) 사용자와 현재 상태에 대 한 Skype  <br/> |관리자는 IM 온라인 비즈니스 사용자가 자신의 Skype를 설정 하 고 전화를 걸 Skype (소비자) 사용자와 현재 상태를 볼 수 있습니다.  <br/> |[Skype 연락처를 추가 하는 비즈니스 사용자를 위한 Skype 사용](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B 공동 작업 옵션
@@ -77,7 +77,13 @@ Office 365 테 넌 트 공동 작업 옵션 포함 하는 중앙 위치를 사�
 |조직 외부의 사용자와 팀에서 공동 작업  <br/> |초대 Office 365 테 넌 트에 대 한 전역 관리자 팀에서 외부 공동 작업을 사용 하도록 설정 해야 합니다. 이제 전역 관리자 및 팀 소유자는 팀에서 공동 작업을 수행 하는 전자 메일 주소를 가진 모든 사용자를 초대할 수 있습니다.  <br/> 또한 Admins 관리 하 고 자신의 테 넌 트에 이미 존재 하는 게스트를 편집할 수 있습니다.  <br/> |[게스트 액세스 권한을 부여합니다](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [팀에 대 한 게스트 액세스 설정 또는 해제](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [PowerShell을 사용 하 여 게스트 액세스를 제어 하려면](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [게스트 액세스 검사 목록](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [게스트 사용자 보기](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [게스트 사용자 정보 편집](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
 |팀 소유자 초대 하 고 게스트 해당 팀 내에서 공동 작업 하는 방법을 관리할 수 있습니다.  <br/> |팀 소유자는 게스트 해당 팀 내에서 수행할 수 있는 추가 컨트롤을 포함 합니다.  <br/> |[게스트를 추가 합니다.](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [팀에 추가 되는 게스트](https://docs.microsoft.com/en-us/microsoftteams/add-guests) <br/> [팀에 대 한 게스트 액세스 관리](https://docs.microsoft.com/en-us/microsoftteams/manage-guests) <br/> [채널 또는 팀에서 사용 하는 참조](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
 |다른 테 넌 트에서 게스트 팀의 콘텐츠를 보려면 및 다른 구성원과 공동 작업을 수행할 수 있습니다.  <br/> |없음  <br/> |[게스트 액세스 환경](https://docs.microsoft.com/en-us/microsoftteams/guest-experience) <br/> |
-   
+
+## <a name="power-bi-collaboration-options"></a>Power BI 공동 작업 옵션
+
+|**공유 목표**|**관리 작업**|**사용 방법 정보**|
+|:-----|:-----|:-----|
+|Power BI에는 외부 게스트 사용자를 자신에 게 링크를 통해 공유 콘텐츠를 사용할 수 있습니다. 이렇게 하면 조직에서 사용자가 안전한 방식으로 조직 전체에서 콘텐츠를 배포할 수 있습니다.<br/> | Power BI 관리 사용자가 조직 내에서 콘텐츠를 볼 수 있는 외부 사용자를 초대할 수 있는지 여부를 제어할 수 있습니다. <br/> |[Azure AD B2B와 외부 게스트 사용자에 게 Power BI 콘텐츠를 배포 합니다.](https://docs.microsoft.com/en-us/power-bi/service-admin-azure-ad-b2b) <br/> |
+ 
 ## <a name="points-to-be-aware-of-about-office-365-inter-tenant-collaboration"></a>Office 365 테 넌 트 공동 작업에 대 한 주의 해야하는 포인트
 
 ### <a name="sharing-of-user-accounts-licenses-subscriptions-and-storage"></a>사용자 계정, 라이선스, 구독 및 저장소의 공유
