@@ -93,8 +93,8 @@
 #### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)
 #### [미국 정부 GCC High 끝점](office-365-u-s-government-gcc-high-endpoints.md)
 #### [21Vianet에서 운영하는 Office 365 끝점](urls-and-ip-address-ranges-21vianet.md)
-#### [Office 365 Germany 끝점](office-365-germany-endpoints.md)
-#### [Mac용 Office 2016의 네트워크 요청](network-requests-in-office-2016-for-mac.md)
+#### [Office 365 Germany 엔드포인트](office-365-germany-endpoints.md)
+#### [Mac용 Office의 네트워크 요청](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 #### [웹 서비스에 포함되지 않는 추가 끝점](additional-office365-ip-addresses-and-urls.md)
 ### [콘텐츠 배달 네트워크](content-delivery-networks.md)
@@ -191,5 +191,5 @@
 ### [클라이언트 연결](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [보안 및 규정 준수](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 비즈니스 에디션](https://support.office.com/office365admin)
+# [Office 365 비즈니스 에디션](https://docs.microsoft.com/office365/admin/admin-home)
   

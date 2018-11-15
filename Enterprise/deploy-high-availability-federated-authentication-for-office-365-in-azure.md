@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: '요약: Microsoft Azure에서 Office 365 구독에 대한 고가용성 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: c72090638bcdcb580353baa7a733051971598e66
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9ab2cf992a0170e8b6528c74c868f0db5feeb6e1
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914903"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024660"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure에서 Office 365용 고가용성 페더레이션 인증 배포
 
@@ -88,15 +88,15 @@ ms.locfileid: "22914903"
 
 이 작업은 다음과 같은 단계로 배포됩니다.
   
-- [고가용성 페더레이션 인증 1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md). 리소스 그룹, 저장소 계정, 가용성 집합 및 프레미스 간 가상 네트워크를 만듭니다.
+- [1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md). 리소스 그룹, 저장소 계정, 가용성 집합 및 프레미스 간 가상 네트워크를 만듭니다.
     
-- [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). 복제본 Windows Server AD(Active Directory) 도메인 컨트롤러를 만들고 DirSync 서버를 구성합니다.
+- [2단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). 복제본 Windows Server AD(Active Directory) 도메인 컨트롤러를 만들고 DirSync 서버를 구성합니다.
     
-- [고가용성 페더레이션 인증 3단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) . 2개의 AD FS 서버를 만들고 구성합니다.
+- [3단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). 2개의 AD FS 서버를 만들고 구성합니다.
     
-- [고가용성 페더레이션 인증 4단계: 웹 응용 프로그램 프록시 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). 2개의 웹 응용 프로그램 프록시 서버를 만들고 구성합니다.
+- [4단계: 웹 응용 프로그램 프록시 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). 2개의 웹 응용 프로그램 프록시 서버를 만들고 구성합니다.
     
-- [고가용성 페더레이션 인증 5단계: Office 365용 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Office 365 구독에 대한 페더레이션 인증을 구성합니다.
+- [5단계: Office 365용 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Office 365 구독에 대한 페더레이션 인증을 구성합니다.
     
 이러한 문서에서는 Azure 인프라 서비스의 Office 365용 고가용성 페더레이션 인증 기능을 만들기 위해 미리 정의된 아키텍처에 대한 단계별 규범 지침을 제공합니다. 다음 사항에 유의해야 합니다.
   

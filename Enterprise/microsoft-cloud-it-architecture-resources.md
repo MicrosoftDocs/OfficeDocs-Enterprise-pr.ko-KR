@@ -3,7 +3,7 @@ title: Microsoft 클라우드 IT 아키텍처 리소스
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다.'
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022097"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525849"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -38,7 +38,6 @@ ms.locfileid: "24022097"
     - [Microsoft Cloud Security for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#security)
     - [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#networking)
     - [Microsoft Mobility and Security for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [Microsoft Cloud Storage for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#storage)
     - [Microsoft Hybrid Cloud for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [일반적인 공격 및 조직을 보호하는 Microsoft 기능](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
@@ -112,15 +111,6 @@ Microsoft 클라우드 서비스 및 플랫폼의 모바일 기능과 관련하�
 |**항목**|**설명**|
 |:-----|:-----|
 |[![Office 365 정보 보호 포스터 축소판 이미지](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>비즈니스용 상위 모바일 앱 </li><li>모바일 앱을 개발하기 위한 플랫폼, 서비스 및 리소스 </li><li>모바일 장치에서 클라우드 기반 응용 프로그램 및 데이터에 대한 액세스 관리 </li><li>Office 365 MDM, Azure Active Directory Premium 및 Intune의 기능 및 플랫폼 지원 비교 </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Microsoft Cloud Storage for Enterprise Architects
-
-Microsoft 클라우드 서비스 및 플랫폼의 저장소 옵션과 관련하여 IT 설계자가 파악해야 하는 사항
-  
-|**항목**|**설명**|
-|:-----|:-----|
-|[![Microsoft 클라우드 저장소 모델용 축소판 이미지](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [문서](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[추가 언어](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>클라우드 저장소 및 주요 시나리오를 사용하는 이유 </li><li>기존 서비스와 함께 포함된 클라우드 저장소 옵션 </li><li>저장소 솔루션의 시작 위치로 사용할 수 있는 저장소 옵션 </li><li>저장소 문서 블록을 사용하여 자체 저장소 솔루션 또는 앱용 저장소 만들기</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud for Enterprise Architects

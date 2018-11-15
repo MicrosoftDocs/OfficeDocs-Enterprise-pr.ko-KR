@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다.'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915493"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525839"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결을 위한 ExpressRoute
 
@@ -63,7 +63,7 @@ ExpressRoute 연결의 경우와 인증서 해지 목록 확인 하 고, 일부 
   
 자세한 내용은 다음의 추가 리소스를 참조 하십시오.
   
-- [Office 365용 Express 경로](https://aka.ms/expressrouteoffice365)
+- [Office 365용 ExpressRoute](https://aka.ms/expressrouteoffice365)
     
 - [Azure에 대 한 ExpressRoute](https://azure.microsoft.com/services/expressroute/)
     
@@ -102,7 +102,7 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
 
 ![그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계](media/Network-Poster/ERPeering.png)
   
-그림 3에 대 한 ExpressRoute 연결을 온-프레미스 네트워크에서 나옵니다. ExpressRoute 연결 세 논리 피어 관계를 포함합니다. Office 365 및 Dynamcs CRM Online 등의 Microsoft SaaS 서비스 Microsoft 피어 링 관계를 이동 합니다. Azure PaaS 서비스 공용 피어 링 관계를 이동합니다. 개인 피어 링 관계 Azure IaaS 하 고 가상 컴퓨터를 호스팅하는 가상 네트워크 게이트웨이 이동 합니다.
+그림 3에 대 한 ExpressRoute 연결을 온-프레미스 네트워크에서 나옵니다. ExpressRoute 연결에는 세 논리 피어 관계에 있습니다. Office 365 및 Dynamcs CRM Online 등의 Microsoft SaaS 서비스 Microsoft 피어 링 관계를 이동 합니다. Azure PaaS 서비스 공용 피어 링 관계를 이동합니다. 개인 피어 링 관계 Azure IaaS 하 고 가상 컴퓨터를 호스팅하는 가상 네트워크 게이트웨이 이동 합니다.
   
 Microsoft 피어 링 BGP 관계: 
   
@@ -186,9 +186,9 @@ Microsoft 클라우드 피어 링 위치에 대 한 ExpressRoute 연결을 만�
   
 이 모든-를-모든 연결 모델에 대 한 로컬 Microsoft 데이터 센터에 최적이 아닌 배달 될 수 있습니다.
   
-**그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예**
+**단일 ExpressRoute 연결을 사용 하는 지리적으로 분산 된 조직의 그림 7: 예**
 
-![그림 7: 단일 ExpressRoute 연결을 사용하는 지리적으로 분산된 조직의 예](media/Network-Poster/MSNet1.png)
+![단일 ExpressRoute 연결을 사용 하는 지리적으로 분산 된 조직의 그림 7: 예](media/Network-Poster/MSNet1.png)
   
 그림 7 두 위치와 조직 미국, 대한민국 북서쪽에서 위치 1 및 북동쪽에서 위치 2를 보여줍니다. 모든-를-모든 WAN 공급자에서 연결 합니다. 이 조직에 서울에 Microsoft 피어 링 위치로 ExpressRoute 연결이 합니다. 위치 2에서는 동부 지역 데이터 센터에 대해 북동쪽에서 해야 서 부 지역 Microsoft 피어 링 위치에 이르는 모든 조직의 WAN에서 출장 트래픽과 했다가 다시 국가에서 Microsoft 클라우드 네트워크를 통해 동부 데이터 센터입니다.
   
@@ -236,7 +236,7 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
     
 - 다른 대륙에 office 365 데이터 센터 intercontinental Microsoft 클라우드 네트워크를 통해 전달 됩니다.
     
-자세한 내용은 다음 항목을 참조하십시오.
+자세한 내용은 다음을 참조하세요.
   
 - [Office 365 교육에 대 한 azure ExpressRoute](https://channel9.msdn.com/series/aer/)
     
@@ -258,7 +258,7 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
     
 자세한 내용은 다음의 추가 리소스를 참조 하십시오.
   
-- [Office 365용 Express 경로](https://aka.ms/expressrouteoffice365)
+- [Office 365용 ExpressRoute](https://aka.ms/expressrouteoffice365)
     
 - [Office 365 교육에 대 한 azure ExpressRoute](https://channel9.msdn.com/series/aer/)
     

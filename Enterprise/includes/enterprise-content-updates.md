@@ -135,3 +135,22 @@
 | 2018/11/2 | [Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges) | 수정한 날짜 |
 | 2018/11/2 | [2007 서버와 클라이언트에서 Office를 업그레이드 하는데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 수정한 날짜 |
 | 2018/11/2 | [2010 서버와 클라이언트에서 Office를 업그레이드 하는데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 수정한 날짜 |
+
+
+## <a name="week-of-november-05-2018"></a>2018 년 11 월 5 일 주간
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 11/5/2018 | [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 수정한 날짜 |
+| 11/5/2018 | [Microsoft Azure에서 Office 365 디렉터리 동기화 배포](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 수정한 날짜 |
+| 11/5/2018 | [Office 365의 네트워크 설정](/Office365/Enterprise/set-up-network-for-office-365) | 추가 |
+| 11/6/2018 | [Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 수정한 날짜 |
+| 11/6/2018 | [Azure에서 Office 365용 고가용성 페더레이션 인증 배포](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 수정한 날짜 |
+| 11/6/2018 | [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | 수정한 날짜 |
+| 11/7/2018 | [Office 365 엔드포인트](/Office365/Enterprise/office-365-endpoints) | 추가 |
+| 11/7/2018 | [Office 365의 네트워크 설정](/Office365/Enterprise/set-up-network-for-office-365) | 수정한 날짜 |
+| 2018 8/11 / | [Mac 용 Office의 네트워크 요청](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | 수정한 날짜 |
+| 2018 8/11 / | [Office 365 테넌트 간 공동 작업](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 수정한 날짜 |
+| 2018 8/11 / | [SharePoint Online의 성능 조정 소개](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 수정한 날짜 |
+| 11/9/2018 | [SharePoint Online에 대 한 페이지 진단 도구를 사용 하 여](/Office365/Enterprise/page-diagnostics-for-spo) | 수정한 날짜 |
