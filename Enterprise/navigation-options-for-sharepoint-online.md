@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 이 문서에서는 SharePoint 게시 SharePoint Online에서 사용할 수 있는 탐색 옵션 사이트를 설명 합니다. 선택 및 구성 탐색의 성능 및 SharePoint Online에서 사이트의 확장성에 영향을 현저 하 게 됩니다.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957453"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547180"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대한 탐색 옵션
 
@@ -193,7 +193,7 @@ SharePoint 페이지의 성능 분석, Internet Explorer에서 F12 개발자 도
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. 결과 self.nodes 배열에 할당 된 및 배열 self.heirarchy에 출력을 할당 하는 linq.js를 사용 하 여 개체에서 계층 구조를 작성 합니다. 이 배열에는 HTML에 바인딩된 개체입니다. 이 작업은 toggleView() 함수에서 ko.applyBinding() 함수에는 자체 개체를 전달 하 여 수행 됩니다.<br/>그런 다음이 위치를 선택 하면 계층 구조 배열의 다음 HTML에 바인딩할 수 있습니다:<br/>
+8. 결과 self.nodes 배열에 할당 된 및 배열 self.hierarchy에 출력을 할당 하는 linq.js를 사용 하 여 개체에서 계층 구조를 작성 합니다. 이 배열에는 HTML에 바인딩된 개체입니다. 이 작업은 toggleView() 함수에서 ko.applyBinding() 함수에는 자체 개체를 전달 하 여 수행 됩니다.<br/>그런 다음이 위치를 선택 하면 계층 구조 배열의 다음 HTML에 바인딩할 수 있습니다:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>

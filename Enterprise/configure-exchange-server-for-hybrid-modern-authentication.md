@@ -3,7 +3,7 @@ title: 하이브리드 최신 인증을 사용하도록 Exchange Server 온-프�
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: 하이브리드 현대 인증 (HMA)는 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347608"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547160"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 클라이언트가 수 AAD에서 HTTPS 서비스 사용자 이름으로 나열 된 연결할 Url을 확인 합니다.
   
-1. 먼저, [이러한 지침](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell)과 함께 AAD에 연결 합니다.
+1. 먼저, [이러한 지침](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)과 함께 AAD에 연결 합니다. 
+
+ **참고 사항** 아래 명령을 사용할 수 있도록이 페이지에서 Connect-msolservice 옵션을 사용 해야 합니다. 
     
 2. Exchange에 대 한 관련된 Url에 다음 명령을 입력 합니다.
     
@@ -148,7 +150,7 @@ HMA를 사용 하도록 설정 되 면 클라이언트의 다음 로그인 하�
   
 또한 Outlook 클라이언트 (도: Windows 알림 트레이)에 대 한 아이콘 마우스 오른쪽 단추로 클릭 하는 동시에 CTRL 키를 누른 하 고 ' 연결 상태 '를 클릭 해야 합니다. 'Authn' 형식에 대해 클라이언트의 SMTP 주소를 찾습니다 ' Bearer\*'를 사용 하 여 OAuth bearer 토큰을 나타냅니다.
   
- **참고 사항** HMA를 사용 하 여 비즈니스를 위한 Skype 구성 해야 합니까? 두 문서를 수행 해야: [지원 되는 토폴로지](https://technet.microsoft.com/en-us/library/mt803262.aspx)를 나열 하 고 하나 [구성 작업을 수행 하는 방법](configure-skype-for-business-for-hybrid-modern-authentication.md)을 보여줍니다.
+ **참고 사항** HMA를 사용 하 여 비즈니스를 위한 Skype 구성 해야 합니까? 두 문서를 수행 해야: [지원 되는 토폴로지](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)를 나열 하 고 하나 [구성 작업을 수행 하는 방법](configure-skype-for-business-for-hybrid-modern-authentication.md)을 보여줍니다.
   
 
 ## <a name="related-topics"></a>관련 항목
