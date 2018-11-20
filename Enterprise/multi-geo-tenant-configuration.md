@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 비즈니스용 OneDrive Multi-Geo를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849874"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539140"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>비즈니스용 OneDrive Multi-Geo 테넌트 구성
 
@@ -112,7 +112,7 @@ AAD에는 두 가지 유형의 사용자 개체인, 클라우드 전용 사용�
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>AD Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
 
-회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure AD Connect 동기화: 기본 구성 변경](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)의 프로세스에 따라 온-프레미스 Active Directory에서 Azure Active Directory로의 기본 설정 데이터 위치 동기화를 구성합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure Active Directory Connect 동기화: Office 365 리소스의 기본 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)의 프로세스에 따라 온-프레미스 Active Directory에서 Azure Active Directory로의 기본 설정 데이터 위치 동기화를 구성합니다.
 
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 

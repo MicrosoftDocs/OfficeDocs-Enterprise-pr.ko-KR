@@ -133,6 +133,7 @@
 ##### [지리적 위치 삭제](delete-a-geo-location.md)
 ##### [다중 위치 환경의 사용자 작업 환경](multi-geo-user-experience.md)
 #### [비즈니스용 OneDrive Multi-Geo 구성](multi-geo-tenant-configuration.md)
+##### [기본 설정 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### [비즈니스용 OneDrive Multi-Geo 검색 구성](configure-search-for-multi-geo.md)
 #### [OneDrive 라이브러리를 다른 지리적 위치로 이동](move-onedrive-between-geo-locations.md)
 ### [Exchange Online에서 Multi-Geo 기능](multi-geo-capabilities-in-exchange-online.md)
