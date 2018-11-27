@@ -3,7 +3,6 @@ title: Office 365 IdFix 도구 설치 및 실행
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 f1_keywords:
@@ -16,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: 설치 하 고 Office 365로 동기화 하기 전에 active directory 정리를 위해 Office 365 IdFix 도구를 실행 하는 방법입니다.
-ms.openlocfilehash: 642273c0171603d627a19273a78fe66662f4caaf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541929"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674432"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix 도구 설치 및 실행
 
@@ -36,30 +35,30 @@ Office 365로 동기화 하기 전에 IdFix 예: 중복 항목 및 디렉터리 
     
 ## <a name="what-you-need-to-run-idfix"></a>IdFix를 실행하는 데 필요한 사항
 
-IdFix를 준비 하는 방식으로 작업을 쉽게 수행 및 실행 중인 사용자의 도메인에 가입 된 컴퓨터에 설치 하는 것입니다. 하려고 하지만 필요 없는 경우 도메인 컨트롤러에서 해당를 실행할 수 있습니다.
+IdFix를 준비 하는 방식으로 작업을 쉽게 수행 및 실행 중인 사용자의 도메인에 가입 된 컴퓨터에 설치 하는 것입니다. 원하는 하지만 필요 없는 경우 도메인 컨트롤러에서 해당를 실행할 수 있습니다.
   
 ### <a name="idfix-hardware-requirements"></a>IdFix 하드웨어 요구 사항
 
-IdFix를 설치하는 컴퓨터는 다음과 같은 하드웨어 요구 사항을 충족해야 합니다.
+IdFix를 설치 하는 컴퓨터에서 이러한 최소 하드웨어 요구 사항을 충족 해야 합니다.
   
-- 4GB RAM(최소)
-- 2GB의 하드 디스크 공간(최소)
+- 4GB RAM
+- 2GB의 하드 디스크 공간
     
 ### <a name="idfix-software-requirements"></a>IdFix 소프트웨어 요구 사항
 
-IdFix 요구를 설치할 컴퓨터 사용자를 Office 365에 동기화 하려는 동일한 Active Directory 도메인에 가입 해야 합니다. 또한 컴퓨터.NET Framework 4.0을 설치 해야 합니다. 
+IdFix를 설치 하는 컴퓨터에서 Office 365로 사용자 동기화 하려는 동일한 Active Directory 도메인에 가입 해야 합니다. 또한 컴퓨터.NET Framework 4.0을 설치 해야 합니다. 
   
-Windows Server 2008 또는 Windows Server 2012를 실행 하는.NET Framework 설치 이미 됩니다. [다운로드 센터에서.NET 4.0을 다운로드할](https://go.microsoft.com/fwlink/p/?LinkId=400475) 수 그렇지 않은 경우 또는 Windows Update를 사용 하 여 합니다. 
+Windows Server 2008 또는 Windows Server 2012를 실행 하는.NET Framework 설치 이미 됩니다. [다운로드 다운로드 센터에서.NET 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475) 수 없는 경우 또는 Windows Update를 통해 합니다. 
   
 ### <a name="idfix-permissions-requirements"></a>IdFix 권한 요구 사항
 
 IdFix를 실행하는 데 사용하는 사용자 계정은 디렉터리에 대해 읽기/쓰기 액세스 권한이 있어야 합니다.
   
-이러한 요구를 충족 하는 사용자 계정 하 고 확인 하는 방법을 모를 경우 확실 하지 않은, 하는 경우 여전히를 설치 하 고 실행할 수 IdFix 엔터티입니다. 사용자 계정에 적절 한 사용 권한이 없으면 스크립트를 실행 하려고 하면 IdFix 오류가 표시 하면 됩니다.
+이러한 요구를 충족 하는 사용자 계정 하 고 확인 하는 방법을 모를 경우 확실 하지 않은, 설치 하 게 및 IdFix를 실행 하 게 여전히 수 있습니다. 사용자 계정에 적절 한 사용 권한이 없으면 스크립트를 실행 하려고 하면 IdFix 오류가 표시 하면 됩니다.
   
 ## <a name="install-idfix"></a>IdFix 설치
 
-IdFix를 설치하려면 다음 단계에 설명된 대로 **IdFix.exe**를 다운로드하고 압축을 풉니다. 
+IdFix를 설치 하려면 다운로드 하 고 **IdFix.exe**압축을 풉니다. 
   
 1. IdFix 도구를 설치하려는 컴퓨터에 로그온합니다.
     
@@ -69,7 +68,7 @@ IdFix를 설치하려면 다음 단계에 설명된 대로 **IdFix.exe**를 다�
     
 4. 대화 상자가 나타나면 **실행**을 선택 합니다.
     
-5. **WinZip Self-extractor** 대화 상자의 **폴더로 Unzip** 텍스트 상자에 입력 하거나 IdFix 도구를 설치 하려는 위치를 찾습니다. 기본적으로 IdFix C:\Deployment 도구에 설치\. 
+5. **WinZip Self-extractor** 대화 상자의 **폴더로 Unzip** 텍스트 상자에 입력 하거나 IdFix 도구를 설치 하려는 위치를 찾습니다. 기본적으로 IdFix로 설치 `C:\Deployment Tools\`합니다. 
     
 6. **압축을 풉니다**를 선택 합니다.
     
@@ -79,7 +78,7 @@ IdFix를 설치한 후 이 도구를 실행하여 디렉터리의 문제를 검�
   
 1. 해당 디렉터리에 대해 읽기/쓰기 액세스 권한이 있는 계정을 사용하여 IdFix를 설치한 컴퓨터에 로그온합니다.
     
-2. 파일 탐색기에서 IdFix를 설치한 위치로 이동합니다. 설치 중에 기본 폴더를 선택한 경우 C:\Deployment Tools\IdFix로 이동합니다.
+2. 파일 탐색기에서 IdFix를 설치한 위치로 이동 합니다. 설치 하는 동안 기본 폴더를 선택한 경우 이동 하 여 `C:\Deployment Tools\IdFix`합니다.
     
 3. **IdFix.exe**를 두 번 클릭합니다. 
     
@@ -97,7 +96,7 @@ IdFix를 설치한 후 이 도구를 실행하여 디렉터리의 문제를 검�
     
     ![IdFix 쿼리 및 오류 수입니다.](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. IdFix가 쿼리를 완료하고 디렉터리에 오류가 없으면 계속해서 디렉터리를 동기화할 수 있습니다. 디렉터리에 문제가 있는 경우 먼저 수정한 후 동기화하는 것이 좋습니다. 오류 유형에 대한 보다 구체적인 정보와 각 오류를 수정하는 최선의 방법에 대한 권장 지침을 보려면 이 항목 끝에 제공되는 링크를 참고하세요. 
+7. IdFix는 쿼리를 완료 한 후에 계속 진행 수 있으며 오류가 없으면 하는 경우 디렉터리를 동기화 할 수 있습니다. 디렉터리에 오류가 있으면는 문제를 해결할 때 동기화 하기 전에 것이 좋습니다. 오류의 종류에 대 한 보다 구체적인 정보 및 쿼리하고 각 해결 하는 가장 좋은 방법은 하는 방법에 대 한 권장 사항을 하려는 경우이 항목의 끝에 링크를 참조 하십시오. 
     
     동기화하기 전에 오류를 반드시 수정해야 하는 것은 아니지만 적어도 IdFix에서 반환한 오류를 모두 검토하는 것이 좋습니다.
     
@@ -121,8 +120,8 @@ IdFix를 설치한 후 이 도구를 실행하여 디렉터리의 문제를 검�
 - [참조: IdFix 제외 및 지원 개체/특성](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [참조: Office 365 IdFix 트랜잭션 로그](idfix-transaction-log.md)
     
-## <a name="video-training"></a>비디오 교육
+## <a name="video-training"></a>동영상 교육
 
-자세한 내용은 LinkedIn 학습에 의해 제공자 단원 [설치 및 사용 하 여 IDFix 도구를](https://support.office.com/article/4d81d73c-f172-4fd5-8542-f601c0c96aa9.aspx)참조 합니다.
+자세한 내용은 LinkedIn 학습에 의해 제공자 단원 [설치 및 사용 하 여 IDFix 도구를](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)참조 합니다.
   
 

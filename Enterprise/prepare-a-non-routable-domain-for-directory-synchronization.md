@@ -3,7 +3,6 @@ title: 디렉터리 동기화를 위한 라우팅할 수 없는 도메인을 준
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Office 365와 동기화 하기 전에 온-프레미스 사용자와 연결 된 비 routale 도메인을 사용 하는 경우 취해야 할 조치에 대해 알아봅니다.
-ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542179"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674442"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>디렉터리 동기화를 위한 라우팅할 수 없는 도메인을 준비 합니다.
 Office 365와 온-프레미스 디렉터리를 동기화 할 때 Azure Active Directory에서 확인 된 도메인을 포함 해야 합니다. 만 사용자 이름 (UPN) 온-프레미스 도메인 연관 된 동기화 됩니다. 에 있는 라우팅할 수 없는 도메인 (예: billa@contoso.local).local 같은 포함 된 모든 UPN를 동기화 하는 반면는. onmicrosoft.com 도메인 (예: billa@contoso.onmicrosoft.com). 
@@ -32,7 +31,7 @@ Active Directory에서 사용자 계정에 대 한 현재.local 도메인을 사
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>경우에 어떻게.local 온-프레미스 도메인만가?
 
-Azure Active Directory에 Active Directory 동기화 (영문)에 대해 사용할 수 있는 가장 최근의 도구에는 Azure AD 연결 이라고 합니다. 자세한 내용은 [Azure Active Directory를 사용 하 여 온-프레미스 id가 통합 (영문)을](https://go.microsoft.com/fwlink/p/?LinkId=624168)참조 하십시오.
+Azure Active Directory에 Active Directory 동기화 (영문)에 대해 사용할 수 있는 가장 최근의 도구에는 Azure AD 연결 이라고 합니다. 자세한 내용은 [Azure Active Directory를 사용 하 여 온-프레미스 id가 통합 (영문)을](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)참조 하십시오.
   
 사용자가 로그인 할 수 있도록 사용자의 UPN과 암호 동기화를 azure AD 연결 온-프레미스를 사용 하는 동일한 자격 증명으로 로그인 합니다. 그러나 Azure AD 연결 사용자가 Office 365에 의해 검증 된 도메인에만 동기화 합니다. 이 도메인도 확인 Azure Active Directory를 통해 Office 365 id가 Azure Active Directory에서 관리 되므로 것을 의미 합니다. 즉, 도메인은 유효한 인터넷 도메인 (예.com,.org,.net,.us 등) 이어야 합니다. 내부 Active Directory를 라우팅할 수 없는 도메인 (예:.local)에 사용 하 여,이 Office 365에 있는 확인 된 도메인과 일치 가능 수는 없습니다. 두 프로그램 온-프레미스 Active Directory에서에서 기본 도메인을 변경 하 여 또는 하나 이상의 UPN 접미사를 추가 하 여이 문제를 해결할 수 있습니다.
   

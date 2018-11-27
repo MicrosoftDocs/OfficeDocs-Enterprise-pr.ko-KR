@@ -3,7 +3,6 @@ title: Office 365와 Azure 통합
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Office 365 구독 Azure AD에 대 한 구독을 포함합니다. 온-프레미스 환경 암호 동기화 또는 single sign-on을 사용할 경우 Azure AD와 Office 365를 통합 합니다.
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531841"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674422"
 ---
 # <a name="azure-integration-with-office-365"></a>Office 365와 Azure 통합
 
@@ -57,7 +56,7 @@ Office 365와 Azure AD 하는 방법에 대 한 자세한 내용은 [Office 365 
    
 Microsoft 클라우드 및 Office 365에 대 한 기타 리소스에 대 한 다음이 리소스를 참조 합니다.
   
-- [Microsoft Cloud ID for Enterprise Architects](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [Microsoft Cloud ID for Enterprise Architects](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Microsoft Azure에서 Office 365 DirSync(디렉터리 동기화)를 배포합니다.](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
