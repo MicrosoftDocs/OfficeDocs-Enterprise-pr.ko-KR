@@ -3,7 +3,7 @@ title: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell에 연결 합니다.'
-ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
+ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575263"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706692"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
@@ -32,6 +32,10 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
 ![동시에 실행되는 5개의 Windows PowerShell 콘솔](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 이 교차 서비스 관리에 대 한 이러한 5 개의 창 사이에서 데이터를 교환할 수 없습니다 때문에 Office 365를 관리 하기 위한 최적의있지 않습니다. 이 항목에서는 Office 365, 비즈니스 Online, Exchange Online, SharePoint Online 용 Skype 및 보안을 관리할 수 있는 Windows PowerShell의 단일 인스턴스를 사용 하는 방법을 설명 &amp; 준수 센터입니다.
+
+>[!Note]
+>이 문서 현재만 포함 하 여 Office 365 전세계 (+ GCC) 클라우드 연결 하기 위해 명령 합니다. 추가 메모는 다른 Office 365 구름 모양에 연결 하는 방법에 대 한 정보가 포함 된 문서에 대 한 링크를 제공 합니다.
+>
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -117,12 +121,20 @@ PowerShell을 사용 하 여 Office 365를 관리 하는 Office 365 관리 센�
   Import-PSSession $exchangeSession
   ```
 
+>[!Note]
+>Worldwide 아닌 다른 Office 365 구름 모양에 대 한 Exchange Online에 연결을 하려면 [Exchange Online PowerShell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)을 참조 합니다.
+>
+
 7. 보안에 연결 하려면 다음이 명령을 실행 &amp; 준수 센터입니다.
     
   ```
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
+
+>[!Note]
+>보안에 연결할 &amp; Worldwide, 아닌 다른 Office 365 구름 모양에 대 한 준수 센터 [연결 하 고 Office 365 보안 및 규정 준수 센터 PowerShell를](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)참조 하십시오.
+>
 
 다음 그래프 모듈에 대 한 Active Directory Azure PowerShell을 사용 하는 경우 단일 블록에 있는 모든 명령을입니다. 사용자 도메인 호스트의 이름을 지정 하 고 모두 한번에 실행 합니다.
   
