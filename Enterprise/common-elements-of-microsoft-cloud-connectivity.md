@@ -3,7 +3,7 @@ title: Microsoft 클라우드 연결의 공통 요소
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: '요약: 네트워킹 인프라의 일반적인 요소 및 네트워크를 준비 하는 방법을 이해 합니다.'
-ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
-ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
+ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25897031"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872219"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결의 공통 요소
 
@@ -62,7 +62,7 @@ ms.locfileid: "25897031"
     
 - **프록시 서버:** 인트라넷 사용자를 대신 하 여 웹 콘텐츠에 대 한 요청을 처리 합니다. 역방향 프록시는 원하지 않는 인바운드 요청을 허용합니다.
     
-- **외부 방화벽:** 아웃 바운드 트래픽 및 지정 된 인바운드 트래픽을 허용합니다. 주소 번역을 수행할 수 있습니다.
+- **외부 방화벽:** 아웃 바운드 트래픽 및 지정 된 인바운드 트래픽을 허용합니다. 주소 변환, 패킷 검사, SSL 중단 하 고 검사, 또는 데이터 손실 방지를 수행할 수 있습니다.
     
 - **ISP에 대 한 WAN 연결:** 연결 및 라우팅에 대 한 인터넷을 통한 피어가 ISP에 통신사업자 기반 연결 합니다.
     

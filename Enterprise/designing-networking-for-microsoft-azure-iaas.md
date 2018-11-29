@@ -1,9 +1,9 @@
 ---
-title: Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)
+title: Microsoft Azure IaaS에 대한 네트워킹 디자인
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,14 +14,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: '요약: Microsoft Azure IaaS에는 작업에 대해 최적화 된 네트워킹을 디자인 하는 방법을 이해 합니다.'
-ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915123"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872339"
 ---
-# <a name="designing-networking-for-microsoft-azure-iaas"></a>Microsoft Azure IaaS에 대 한 네트워킹 디자인 (영문)
+# <a name="designing-networking-for-microsoft-azure-iaas"></a>Microsoft Azure IaaS에 대한 네트워킹 디자인
 
  **요약:** Microsoft Azure IaaS에는 작업에 대해 최적화 된 네트워킹을 디자인 하는 방법을 이해 합니다.
   
@@ -92,11 +92,11 @@ A 크로스-프레미스 VNet가을--사이트 마다 S2S ()는 Azure 게이트�
 
 ![그림 3: Azure에 있는 서브넷 두 종류](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-그림 3에는 Azure 게이트웨이 및 가상 컴퓨터를 포함 하는 가상 컴퓨터 호스팅 서브넷의 집합을 포함 하는 게이트웨이 서브넷을 포함 하는 VNet 나와 있습니다.
+그림 3에는 Azure 게이트웨이 및 가상 컴퓨터를 포함 하는 가상 컴퓨터 호스팅 서브넷 집합이 있는 게이트웨이 서브넷을 포함 하는 VNet 나와 있습니다.
   
 Azure 게이트웨이 서브넷은 Azure 게이트웨이 두 가상 컴퓨터 호스트를 위해 Azure가 필요 합니다. 29 비트 접두사 길이 사용 하 여 주소 공간 지정 (예: 192.168.15.248/29). ExpressRoute를 사용 하 여 계획 하는 경우에 특히 28 비트 또는 더 작은 접두사 길이 것이 좋습니다.
   
-Azure 게이트웨이 서브넷의 주소 공간을 결정 하기 위한 최상의 방법 다음과 같습니다.
+Azure 게이트웨이 서브넷의 주소 공간을 결정 하기 위한 가장 좋은 방법은입니다.
   
 1. 게이트웨이 서브넷의 크기를 결정 합니다.
     
@@ -123,11 +123,11 @@ Azure의 처음 3 주소를 사용 하 여 각 서브넷에 있습니다. 따라
   
 |**필요한 가상 컴퓨터**|**호스트 비트**|**서브넷 크기**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
  **표 3: 가상 컴퓨터 요구 사항 및 서브넷 크기에 따라**
   
@@ -419,22 +419,17 @@ Azure 서브넷에 대 한 기본 시스템 경로 인터넷을 가리킵니다.
 
 ![Azure IaaS에 팜 된 고가용성 SharePoint Server 2016 ](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-그림 19 프런트엔드 및 데이터 계층에 대 한 내부 부하 분산 장치를 사용 하는 크로스-프레미스 VNet에 배포 된 SharePoint Server 2016 팜 9 명의 서버를 표시 합니다. 단계별 디자인 및 배포 지침을 비롯 한 자세한 내용은 [Microsoft Azure의 SharePoint Server 2016](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx)를 참조 하십시오.
+그림 19 프런트엔드 및 데이터 계층에 대 한 내부 부하 분산 장치를 사용 하는 크로스-프레미스 VNet에 배포 된 SharePoint Server 2016 팜 9 명의 서버를 표시 합니다. 단계별 디자인 및 배포 지침을 비롯 한 자세한 내용은 [Microsoft Azure의 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure)를 참조 하십시오.
   
 > [!TIP]
-> 시뮬레이션 된 크로스-프레미스 VNet에서 단일 서버 SharePoint Server 2016 팜을 만들려면 [Azure 개발/테스트 환경에서 인트라넷 SharePoint Server 2016](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)를 참조 합니다. 
+> 시뮬레이션 된 크로스-프레미스 VNet에서 단일 서버 SharePoint Server 2016 팜을 만들려면 [Azure 개발/테스트 환경에서 인트라넷 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)를 참조 합니다. 
   
-가상는 크로스-프레미스 Azure에 가상 컴퓨터에 배포 하는 IT 작업의 추가 예제를 보려면 네트워크 [Azure IaaS에 대 한 하이브리드 클라우드 시나리오](https://technet.microsoft.com/library/mt750502.aspx)를 참조 하십시오.
+가상는 크로스-프레미스 Azure에 가상 컴퓨터에 배포 하는 IT 작업의 추가 예제를 보려면 네트워크 [Azure IaaS에 대 한 하이브리드 클라우드 시나리오](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas)를 참조 하십시오.
   
 ## <a name="see-also"></a>참고 항목
-
-<a name="cross_prem"> </a>
 
 [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

@@ -3,7 +3,7 @@ title: 클라우드 연결을 위해 네트워크 확장
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: '요약: 클라우드 채택 네트워크 인프라 투자를 하는 새로운 방법이 필요 하는 방법을 이해 합니다.'
-ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915143"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872259"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>클라우드 연결을 위해 네트워크 확장
 
@@ -44,6 +44,8 @@ ms.locfileid: "22915143"
 - **서비스 (PaaS)으로 azure 플랫폼** Microsoft SaaS 서비스에 대 한 투자를 외에도 다중 사이트 또는 지리적으로 분산 된 PaaS 응용 프로그램은 클라이언트 트래픽을 분산 하기 위해 Azure 트래픽 관리자 설계 필요할 수 있습니다. 진행 중인 투자 성능 및 트래픽 배포 모니터링 및 장애 조치 테스트를 포함 합니다.
     
 - **Azure 인프라 서비스 (IaaS)** Microsoft SaaS 및 PaaS 서비스에 대 한 투자를 외에도 디자인 필요 IaaS에서 IT 작업 부하를 실행 하 고 해당 가상 컴퓨터를 호스팅할, 고, 라우팅, IP를 실행 하는 응용 프로그램에 대 한 보안 연결 구성 azure 가상 네트워크 주소 지정, DNS 및 부하 분산 진행 중인 투자 성능과 보안을 모니터링 하 고 문제를 해결을 포함 합니다.
+
+[Microsoft 365](https://www.microsoft.com/microsoft-365) 은 Office 365, 엔터프라이즈 관리 + 보안 (EMS) 및 Windows 10의 조합입니다. 여러 SaaS 및 Azure 서비스 하는 모든 사용자가 수 기업용 완료, 지능적인 솔루션에 대 한 Microsoft 365 결합 하 고 안전 하 게 공동 작업 합니다.
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>클라우드에서 성공에 대 한 투자 네트워킹의 영역
 
@@ -59,7 +61,7 @@ ms.locfileid: "22915143"
   
 ### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Azure에 높은 SLA에 대 한 Office 365 및 Dynamics 365 ExpressRoute 사용 됩니다.
 
-경계 네트워크에서 현재 인터넷 연결을 활용할 수 있습니다, 있지만 트래픽을 Microsoft 클라우드 서비스에서 인터넷 하려고 하는 다른 인트라넷 트래픽과 파이프를 공유 해야 합니다. 또한 Microsoft 클라우드 서비스에 대 한 트래픽을 인터넷 교통 혼잡 사실을 따라 달라 집니다.
+경계 네트워크에서 사용자의 현재 인터넷 연결을 사용할 수 있지만 Microsoft 클라우드 서비스 간에 트래픽을 인터넷 하려고 하는 다른 인트라넷 트래픽과 파이프를 공유 해야 합니다. 또한 Microsoft 클라우드 서비스에 대 한 트래픽을 인터넷 교통 혼잡 사실을 따라 달라 집니다.
   
 높은 SLA 및 최상의 성능을 ExpressRoute, 네트워크 및 Azure, Office 365, Dynamics 365 또는 모든 3 사이는 전용된 WAN 연결을 사용 합니다. 
   
