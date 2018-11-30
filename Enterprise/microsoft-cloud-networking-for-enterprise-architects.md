@@ -3,7 +3,7 @@ title: Microsoft Cloud Networking for Enterprise Architects
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 네트워킹을 디자인합니다.'
-ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915403"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872229"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking for Enterprise Architects
 
@@ -35,7 +35,7 @@ ms.locfileid: "22915403"
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [더 많은 언어](https://www.microsoft.com/download/details.aspx?id=54425)
   
-[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://aka.ms/cloudarchitecture)를 살펴볼 수도 있습니다.
+또한 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)에서 모든 모델을 볼 수 있습니다.
   
 다음 섹션을 참조하세요.
   
@@ -51,11 +51,11 @@ ms.locfileid: "22915403"
     
     ExpressRoute는 Microsoft 클라우드에 대해 개인, 전용, 고처리량의 네트워크 연결을 제공합니다.
     
-- [Microsoft SaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-saas.md)
+- [Microsoft SaaS에 대한 네트워킹 디자인](designing-networking-for-microsoft-saas.md)
     
-    Microsoft SaaS 서비스에 대한 네트워크를 최적화하려면 인터넷 에지, 클라이언트 장치 및 일반적인 IT 운영을 신중하게 분석해야 합니다.
+    Microsoft SaaS 서비스를 위해 네트워크를 최적화하려면 Microsoft SaaS 서비스로 다양한 범주의 트래픽을 라우팅하기 위해 내부 장치와 에지 장치를 구성해야 합니다.
     
-- [Microsoft Azure PaaS에 대 한 네트워킹 디자인 (영문)](designing-networking-for-microsoft-azure-paas.md)
+- [Microsoft Azure PaaS에 대한 네트워킹 디자인](designing-networking-for-microsoft-azure-paas.md)
     
     Azure PaaS 앱용 네트워킹을 최적화하려면 적절한 인터넷 대역폭이 필요하고 여러 사이트 또는 앱 간에 네트워크 트래픽을 분산해야 합니다.
     
@@ -66,13 +66,9 @@ ms.locfileid: "22915403"
 이 포스터의 핵심 포인트에 대한 30분 요약은 [Microsoft 클라우드 제품에 대한 네트워크 최적화](https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy 코스를 참조하세요.
   
 > [!NOTE]
-> 이러한 문서에서는 Microsoft Cloud Networking for Enterprise Architects의 **2017년 6월** 릴리스를 반영합니다.
+> 이러한 문서에는 Microsoft Cloud Networking for Enterprise Architects의 **2018년 12월** 릴리스가 포함되어 있습니다.
   
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
