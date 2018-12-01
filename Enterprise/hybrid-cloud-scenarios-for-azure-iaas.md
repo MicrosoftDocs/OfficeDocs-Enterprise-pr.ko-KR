@@ -3,7 +3,7 @@ title: Azure IaaS용 하이브리드 클라우드 시나리오
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '요약: 경우 서비스로 (IaaS) Microsoft의 인프라에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.'
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915033"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123245"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS용 하이브리드 클라우드 시나리오
 
@@ -67,7 +67,7 @@ Office 365에 대 한 디렉터리 동기화 서버는 Office 365 구독의 Azur
   
 디렉터리 동기화 서버는 Windows Server AD 변경 내용에 대 한 폴링 하 고 Office 365 구독을 동기화 합니다.
   
-자세한 내용은 [Office 365에 대 한 디렉터리 동기화 설정](set-up-directory-synchronization.md)을 참조 하십시오.
+자세한 내용은 [Microsoft Azure에서 Office 365 디렉터리 동기화 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)를 참조 하십시오.
   
 ## <a name="line-of-business-lob-application"></a>기간 업무 (LOB) 응용 프로그램의 줄
 
@@ -157,7 +157,7 @@ Azure의 다중 계층, 항상 사용 가능한 LOB 응용 프로그램의 다�
   
 **그림 5: Azure IaaS에서 Office 365에 대 한 고가용성 페더레이션된 id 인프라를**
 
-![Azure에서 고가용성 Office 365 페더레이션 인증 인프라의 최종 구성.](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![고가용성 Office 365 페더레이션 Azure에서 인증 인프라](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 그림 5는 온-프레미스 네트워크 id 인프라 및 사용자를 호스트합니다. 사이트 마다 VPN 또는 ExpressRoute 연결에는 Azure IaaS 게이트웨이에 연결 됩니다. Azure VNet 웹 프록시 서버, Active Directory Federation Services (AD FS) 서버 및 Windows Server Active Directory (AD) 도메인 컨트롤러를 포함 합니다.
   
@@ -177,19 +177,11 @@ Azure의 다중 계층, 항상 사용 가능한 LOB 응용 프로그램의 다�
     
     5 단계에서 끝-구성 고가용성 AD FS 인프라의 각 단계를 수행 하 [Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포를](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 참조 하십시오.
     
-다음의 추가 리소스를 참조 하십시오.
-  
-- [하이브리드 클라우드 환경 설계](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [디자인 및 Azure의 LOB 응용 프로그램 구축](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft Hybrid Cloud for Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

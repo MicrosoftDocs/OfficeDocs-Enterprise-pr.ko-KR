@@ -3,7 +3,7 @@ title: Azure PaaS용 하이브리드 클라우드 시나리오
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: '요약: 경우 서비스로 (PaaS) Microsoft의 플랫폼에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.'
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915013"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123335"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS용 하이브리드 클라우드 시나리오
 
@@ -95,33 +95,9 @@ Azure 응용 프로그램에서 자격 증명을 사용할 수 있습니다.
     
 온-프레미스 id 공급자를 Azure AD와 동기화 하기 때문에 사용자 지정 모바일 응용 프로그램 및 LOB 응용 프로그램을 모두 요청 하는 사용자의 계정 이름을 확인할 수 있습니다.
   
-## <a name="stretch-database-with-sql-server-2016"></a>SQL Server 2016에 적용된 스트레치 데이터베이스
-
-늘이기 데이터베이스는 투명 하 게 하 고 안전 하 게 Azure에서 SQL 전체 확대/축소 데이터베이스에 고객 주문 정보를 포함 하는 대규모 테이블에서 닫힌된 비즈니스 데이터와 같은 정지 데이터를 이동할 수 있도록 하는 SQL Server 2016의 기능입니다.
-  
-SQL Server 인스턴스, 데이터베이스 또는 단일 테이블도의 내용을 맞춰지거나 때 SQL Server 2016 서버에서 로컬 데이터와 Azure에서 원격 데이터의 조합 합니다. 전체 확대/축소에 대 한 대상이 되는 데이터는 SQL Server 2016 하 여 Azure에 자동으로 이동 됩니다.
-  
-그림 4 SQL Server 2016를 사용 하 여 전체 확대/축소 데이터베이스를 보여줍니다.
-  
-**그림 4: SQL server 2016 늘이기 데이터베이스**
-
-![SQL Server 2016에 적용된 스트레치 데이터베이스](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-그림 4는 온-프레미스 네트워크 작은 로컬 데이터베이스가 있는 SQL Server 2016를 실행 하는 서버를 호스트 합니다. Azure PaaS 데이터베이스의 확장 된 부분으로 Azure SQL Server 전체 확대/축소 데이터베이스의 인스턴스를 호스팅합니다. 온-프레미스 SQL server로 전송 하는 온-프레미스 사용자 로부터 T-SQL 쿼리는 안전 하 게 요청 하는 사용자에 게 결과 반환 하는 Azure SQL 전체 확대/축소 데이터베이스에 전달 됩니다.
-  
- Azure SQL 전체 확대/축소 데이터베이스에 기록 데이터를 포함 하는 사용자 쿼리를 전달 투명 하 게 됩니다. 쿼리는 테이블을 확대 하는 경우에를 다시 쓰도록 필요는 없습니다.
-  
-늘이기 데이터베이스 장기 저장소 및 기록 데이터를 투명 하 게 액세스를 위한 비용 효율적인 옵션을 제공합니다. 또한 성능과 테이블 매우 큰 될 때 발생 하는 가용성 문제를 해결 합니다.
-  
-자세한 내용은 [전체 확대/축소 데이터베이스](https://msdn.microsoft.com/library/dn935011.aspx)를 참조 하십시오.
-  
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft Hybrid Cloud for Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

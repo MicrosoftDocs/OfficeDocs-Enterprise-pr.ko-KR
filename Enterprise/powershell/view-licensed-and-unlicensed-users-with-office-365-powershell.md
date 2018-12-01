@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다.
-ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 61f94664a62b6a5cb178579c1a5777b208d0b2ec
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914873"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123365"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 
@@ -34,10 +34,8 @@ ms.locfileid: "22914873"
     
 - _-All_ 매개 변수를 사용하지 않고 **Get-MsolUser** cmdlet을 사용하는 경우 처음 500개의 계정만 반환됩니다.
     
-## <a name="the-short-version-instructions-without-explanations"></a>간략 한 (설명 없이 지침)
+## <a name="viewing-licensed-and-unlicensed-users"></a>사용이 허가 된 사용자와 허가 되지 않은 사용자 보기
 
-이 여기서도 바라지 나 불필요 한 설명을 하지 않고 절차를 제공합니다. 질문이 있거나 자세한 내용을 확인 하려면 해당 항목의 나머지 부분을 읽을 수 있습니다.
-  
 조직에서 모든 사용자 계정 및 라이선스 상태 목록을 보려는 다음 명령에서 실행 Office 365 PowerShell.
   
 ```
@@ -56,75 +54,6 @@ Get-MsolUser -All -UnlicensedUsersOnly
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>긴 버전 (명령에 대 한 세부 정보)
-
-Office 365 사용자 계정 및 Office 365 라이선스의 일대일 해야: Office 365 사용자는 Office 365 라이선스 없는 하는 것이 불가능 하 고 사용자에 게 할당 하지 않은 Office 365 라이선스를 보유 하는 것이 불가능 합니다. (실제로 단일 사용자 계정도 수도 *여러* Office 365 라이선스.) 만들 때 새 Office 365 사용자 계정 (자세한 내용은 [Office 365 PowerShell을 사용한 사용자 계정에 대 한 라이선스를 할당](assign-licenses-to-user-accounts-with-office-365-powershell.md) 하는 문서를 참조) 하면 해당 사용자에 게 라이선스 할당 하지 않아도: 새 사용자가 사용자는 유효한 계정이 되었지만 자신이 sig 수 없게 됩니다 Office 365로의 n입니다. 로그인 하려고 할 경우 다음과 비슷한를 볼 수 있습니다.
-  
-![유효한 Office 365 라이선스가 없는 사용자](media/o365-powershell-no-license.png)
-  
-마찬가지로 유급 휴가나 출산 휴가 등 일정 기간 휴직할 사용자가 있을 수 있습니다. 이 경우 해당 사용자의 사용자 계정을 그대로 유지한 채(즉, 주소, 휴대폰 번호 등의 모든 속성 값을 그대로 유지) 라이선스를 제거할 수 있습니다. 그런 다음 해당 라이선스를 다른 사용자(즉, 해당 사용자 대신 업무에 투입된 임시 작업자)에게 할당할 수 있습니다. 사용자가 복귀하면 새 라이선스를 발급하여 이전처럼 작업을 재개할 수 있습니다.
-  
-이는 계정이 있지만 라이선스가 없는 사용자를 유지할 수 있으며 그 반대의 경우도 가능함을 의미합니다.
-  
-[라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.](view-licenses-and-services-with-office-365-powershell.md) 문서에서는 조직이 구매한 Office 365 라이선스 수를 확인하는 방법과 사용자에게 할당된 해당 라이선스의 수를 확인하는 방법을 설명합니다. 이것은 중요한 정보입니다. 그렇지만 이와 마찬가지로 이러한 라이선스가 할당된 사용자와 할당되지 않은 사용자를 아는 것도 중요합니다. 이 문서에서는 이러한 정보를 확인하는 방법도 알려줍니다.
-  
-아시다시피 Get-MsolUser cmdlet은 모든 O365_W14_2nd 사용자 계정에 대한 정보를 반환합니다. 모든 O365_W14_2nd 사용자에 대한 정보를 빠르게 확인하고 싶습니까? 그리고 다음 명령을 실행합니다.
-  
-```
-Get-MsolUser
-```
-
-그러면 Get-MsolUser에서 다음과 유사한 데이터를 반환합니다.
-  
-```
-UserPrincipalName           DisplayName                     isLicensed
------------------           -----------                     ----------
-ZrinkaM@litwareinc.com      Zrinka Makovac                  True
-BelindaN@litwareinc.com     Belinda Newman                  False
-BonnieK@litwareinc.com      Bonnie Kearney                  True
-FabriceC@litwareinc.com     Fabrice Canel                   True
-AnneW@litwareinc.com        Anne Wallace                    True
-AlexD@litwareinc.com        Alex Darrow                     True
-```
-
-위 예에서 볼 수 있듯이 반환된 속성 값 중 하나에 isLicensed 속성 값이 있습니다. isLicensed가 False와 같은 경우 이는 사용자에게 O365_W14_2nd에 대한 라이선스가 없음을 의미합니다. 따라서 필요한 경우 사용자 목록을 스크롤하여 isLicensed 속성이 False로 설정된 사용자를 선택할 수 있습니다.
-  
-사용자 목록을 스크롤하여 라이선스가 없는 사용자를 선택하는 작업은 사용자 수가 비교적 적은 경우에 효과적입니다. 그러나 사용자 수가 많은 경우에는 목록을 스크롤하는 것이 매우 지루한 작업이 될 것입니다. 또한 Windows PowerShell이 구성된 방식에 따라 스크롤이 불가능할 수도 있습니다. Windows PowerShell 콘솔에 한 번에 표시할 수 있는 출력 줄 수에는 제한이 있기 때문입니다.
-  
-이 점을 염두에 둔다면 라이선스가 없는 사용자를 나열하는 방법은 스크롤 대신 다음 명령을 실행하는 것이 훨씬 효과적입니다.
-  
-```
-Get-MsolUser -UnlicensedUsersOnly
-```
-
-이 명령은 Office 365에 대한 라이선스가 없는 사용자만 반환합니다. 위의 명령이 반환하는 결과는 다음과 같습니다.
-  
-```
-UserPrincipalName           DisplayName                     isLicensed
------------------           -----------                     ----------
-BelindaN@litwareinc.com     Belinda Newman                  False
-```
-
-라이선스가 없는 사용자가 한 명임을 알 수 있습니다. 그렇다면 우리에게  *라이선스가 있는*  사용자의 목록만 필요하다면 어떻게 됩니까? 이러한 경우라고 해도 아주 약간 더 복잡해질 뿐입니다.
-  
-```
-Get-MsolUser | Where-Object {$_.isLicensed -eq $true}
-```
-
-이 명령은 isLicensed 속성이 True인 모든 사용자 계정을 찾으며 다음과 비슷한 정보를 반환합니다.
-  
-```
-UserPrincipalName           DisplayName                     isLicensed
------------------           -----------                     ----------
-ZrinkaM@litwareinc.com      Zrinka Makovac                  True
-BonnieK@litwareinc.com      Bonnie Kearney                  True
-FabriceC@litwareinc.com     Fabrice Canel                   True
-AnneW@litwareinc.com        Anne Wallace                    True
-AlexD@litwareinc.com        Alex Darrow                     True
-```
-
-확인할 수 있는 것처럼 Belinda Newman의 정보는 반환되지 않습니다. 그 이유는 해결하려면 Belinda 계정의 isLicensed 속성이 True로 설정되어 있지 않기 때문입니다.
-  
 ## <a name="see-also"></a>참고 항목
 
 이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.

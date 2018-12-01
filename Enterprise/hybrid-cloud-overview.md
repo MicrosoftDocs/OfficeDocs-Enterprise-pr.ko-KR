@@ -3,7 +3,7 @@ title: 하이브리드 클라우드 개요
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '요약: 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다.'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915823"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123315"
 ---
 # <a name="hybrid-cloud-overview"></a>하이브리드 클라우드 개요
 
@@ -55,7 +55,7 @@ Microsoft 시장에서 가장 전체 클라우드 솔루션을 갖기 때문에-
   
 - SaaS
     
-    Microsoft SaaS 서비스는 Office 365, Microsoft Intune 및 Microsoft Dynamics 365 포함 됩니다. 온-프레미스 서비스 또는 응용 프로그램을 이러한 서비스를 결합 하는 Microsoft SaaS를 사용한 하이브리드 클라우드 시나리오입니다. 예, Office 365에서 실행 되는 Exchange Online와 통합 될 수는 온-프레미스로 배포 하는 비즈니스 2015 용 Skype 합니다.
+    Microsoft SaaS 서비스는 Office 365, Microsoft Intune 및 Microsoft Dynamics 365 포함 됩니다. 온-프레미스 서비스 또는 응용 프로그램을 이러한 서비스를 결합 하는 Microsoft SaaS를 사용한 하이브리드 클라우드 시나리오입니다. 예, Office 365에서 실행 되는 Exchange Online와 통합 될 수는 온-프레미스로 배포 하는 비즈니스 2019 용 Skype 합니다.
     
 - Azure PaaS
     
@@ -90,8 +90,4 @@ Microsoft 시장에서 가장 전체 클라우드 솔루션을 갖기 때문에-
 [Microsoft Hybrid Cloud for Enterprise Architects](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 
