@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다.'
-ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525849"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985763"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -137,7 +137,7 @@ Microsoft 서비스 및 플랫폼용 하이브리드 클라우드와 관련하�
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![The Santa Cloud 포스터의 축소판 이미지](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)          ](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |말썽꾸러기와 착한 아이를 결정하고 12월 24일에 배달한 선물을 확인하기 위해 산타클로스와 요정 IT 부서는 Office 365, Azure, Dynamics 365 및 Intune을 사용합니다.  <br/>|
+|[![The Santa Cloud 포스터의 축소판 이미지](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [온라인으로 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) 보기](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| <br/> |말썽꾸러기 또는 착한 아이를 결정하고 12월 24일에 배달한 선물을 확인하기 위해 산타클로스와 요정 IT 부서는 Office 365, Azure, Dynamics 365 및 Intune을 사용합니다.  <br/>|
    
 <a name="BKMK_o365solutions"> </a>
 ## <a name="office-365-enterprise-solution-series"></a>Office 365 Enterprise 솔루션 시리즈

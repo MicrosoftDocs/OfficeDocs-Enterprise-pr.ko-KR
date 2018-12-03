@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼을 사용하는 하이브리드 시나리오와 관련하여 IT 설계자가 파악해야 하는 사항'
-ms.openlocfilehash: a2859d6ce677a37541948d481530aee8f46adf7b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915553"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872249"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud for Enterprise Architects
 
@@ -36,7 +36,7 @@ ms.locfileid: "22915553"
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
 [더 많은 언어](https://www.microsoft.com/download/details.aspx?id=54424)
   
-[Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md) 에서 모든 모델을 보고[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://aka.ms/cloudarchitecture)를 살펴볼 수도 있습니다.
+또한 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)에서 모든 모델을 볼 수 있습니다.
   
 다음 섹션을 참조하세요.
   
