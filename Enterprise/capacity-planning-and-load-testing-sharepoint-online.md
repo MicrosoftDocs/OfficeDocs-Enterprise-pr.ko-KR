@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 이 문서에서는 배포 하는 방법 SharePoint Online으로 허용 되지 않은 이후 전통적인 부하 테스트를 수행 하지 않고에 대해 설명 합니다.
-ms.openlocfilehash: 06649942f20dc18abfcae0e56df7e3ea56ed9165
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
+ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542181"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "27134673"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>용량 계획 및 부하 테스트를 SharePoint Online
 
-이 문서에서는 배포 하는 방법 SharePoint Online으로 허용 되지 않은 이후 전통적인 부하 테스트를 수행 하지 않고에 대해 설명 합니다.
+이 문서에서는 배포 하는 방법 SharePoint online 권장 되므로 일반적인 부하 테스트를 수행 하지 않고에 대해 설명 합니다.
   
 현재 부하를 SharePoint Online에서 테스트는 권장 하는 다른 방법도 있습니다 수 있는지 확인 하는 사이트를 실행 하는 경우 사이트 불량 사용자 환경을 생성 하지 않습니다. 
   
