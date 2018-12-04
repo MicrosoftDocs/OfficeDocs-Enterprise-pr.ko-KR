@@ -3,7 +3,7 @@ title: Microsoft Hybrid Cloud for Enterprise Architects
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼을 사용하는 하이브리드 시나리오와 관련하여 IT 설계자가 파악해야 하는 사항'
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872249"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123375"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud for Enterprise Architects
 
@@ -33,8 +33,7 @@ ms.locfileid: "26872249"
 [![Microsoft 하이브리드 클라우드 모델의 축소판 이미지](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[더 많은 언어](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 또한 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)에서 모든 모델을 볼 수 있습니다.
   
@@ -61,13 +60,9 @@ ms.locfileid: "26872249"
     Azure IaaS 하이브리드 시나리오 아키텍처와 Azure IaaS에서 호스트되는 LOB(기간 업무) 응용 프로그램에 대한 설명
     
 > [!NOTE]
-> 이 문서에서는 Microsoft Hybrid Cloud for Enterprise Architects 포스터의 **2017년 6월** 버전을 반영합니다.
+> 이러한 문서에는 Microsoft Hybrid Cloud for Enterprise Architects 포스터의 **2018년 12월** 릴리스가 포함되어 있습니다.
   
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft의 엔터프라이즈 클라우드 로드맵: IT 의사 결정권자를 위한 리소스](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

@@ -3,7 +3,6 @@ title: Microsoft 클라우드 IT 아키텍처 리소스
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,68 +15,68 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다.'
-ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
-ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
+description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다. Windows 10 및 Office ProPlus가 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.'
+ms.openlocfilehash: 88ff136002ea1a5a580d5d03e4e64aa7dd81d368
+ms.sourcegitcommit: bd50d505b134da4e46606c9580d67f34f6199ecb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26985763"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118171"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
- **요약:** Microsoft 클라우드 서비스 및 플랫폼에 대해 자세히 알아봅니다. 엔터프라이즈 클라우드 로드맵을 검토하고, 클라우드 아키텍처 시리즈를 살펴봅니다.
+ **요약:** Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다. Windows 10 및 Office ProPlus가 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.
   
-이러한 아키텍처 도구 및 포스터는 Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, 사설 클라우드 데이터 센터, 하이브리드 온-프레미스 및 클라우드 솔루션을 포함하여 Microsoft 클라우드 서비스 및 플랫폼에 대한 정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다. 
+이러한 아키텍처 도구 및 포스터는 Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, 하이브리드 온-프레미스 및 클라우드 솔루션을 포함하여 Microsoft 클라우드 서비스 및 플랫폼에 대한 정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다. 
   
-- **[Microsoft의 엔터프라이즈 클라우드 로드맵](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway)
+<!---**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) --->
     
-- **[Microsoft Cloud for Enterprise Architects 시리즈](microsoft-cloud-it-architecture-resources.md#cloudarch)** 
-    - [Microsoft 클라우드 서비스 및 플랫폼 옵션](microsoft-cloud-it-architecture-resources.md#platformoptions)
-    - [Microsoft Cloud ID for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity)
+- **[Microsoft Cloud for Enterprise Architects 시리즈](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!--- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) --->
+    - [Microsoft Cloud Identity for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity)
     - [Microsoft Cloud Security for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#security)
     - [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#networking)
-    - [Microsoft Mobility and Security for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#mobility)
     - [Microsoft Hybrid Cloud for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [일반적인 공격 및 조직을 보호하는 Microsoft 기능](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
-- **[Office 365 Enterprise 솔루션 시리즈](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
-    - [Office 365의 정보 보호 기능](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect)
-    - [Office 365용 ID 및 장치 보호](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
+- **[Office 365 Enterprise 솔루션 시리즈](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:   <!--- [Information Protection for Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect) --->
+    - [Office 365용 ID 및 디바이스 보호](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Office 365의 파일 보호 솔루션](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
-    - [Office 365 클라이언트의 변경 관리](microsoft-cloud-it-architecture-resources.md#changemgmt)
     - [Microsoft와 함께 안전한 최신 데스크톱 배포](microsoft-cloud-it-architecture-resources.md#msd)
     
-> [!TIP]
-> 이 페이지에 있는 대부분의 포스터는 중국어, 영어, 프랑스어, 독일어, 이탈리아어, 일본어, 한국어, 포르투갈어, 러시아어 및 스페인어 등의 다중 언어로 제공됩니다. 이러한 언어 중 하나로 제공되는 포스터를 다운로드하려면 해당 포스터의 **추가 언어** 링크를 클릭합니다.
+
   
-여러분의 의견을 알려주세요! [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)에 전자 메일을 보내주세요. 
-  
+여러분의 의견을 알려주세요! [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)에 이메일을 보내주세요. 
+
+<!---
 <a name="roadmap"> </a>
-## <a name="microsofts-enterprise-cloud-roadmap"></a>Microsoft의 엔터프라이즈 클라우드 로드맵
+## Microsoft's Enterprise Cloud Roadmap
 
-업계에서 가장 완벽한 클라우드 솔루션을 설명하는 포스터, 아이콘 집합, 커뮤니티 공간 및 기타 리소스를 참조하세요.
+See the posters, icon sets, community venues, and other resources that describe the industry's most complete cloud solution.
   
-|**항목**|**설명**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![엔터프라이즈 클라우드 로드맵의 축소판 그림](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft의 엔터프라이즈 클라우드 로드맵](https://aka.ms/cloudarchitecture)(https://aka.ms/cloudarchitecture) <br/> |이 Sway 환경에서는 업계에서 가장 완벽한 클라우드 솔루션을 설명하는 리소스를 살펴볼 수 있습니다.  <br/> |
-   
+|[![Thumbnail for Enterprise Cloud Roadmap](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Swipe through this Sway experience for the resources that describe the industry's most complete cloud solution.  <br/> |
+--->
+  
 <a name="cloudarch"> </a>
-## <a name="microsoft-cloud-for-enterprise-architects-series"></a>Microsoft Cloud for Enterprise Architects 시리즈
+## Microsoft Cloud for Enterprise Architects 시리즈
 
-이러한 클라우드 아키텍처 포스터는 Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, 사설 클라우드 데이터 센터, 하이브리드 온-프레미스 및 클라우드 솔루션을 포함하여 Microsoft 클라우드 서비스 및 플랫폼에 대한정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다.
-  
+이러한 클라우드 아키텍처 포스터는 Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, 하이브리드 온-프레미스 및 클라우드 솔루션을 포함하여 Microsoft 클라우드 서비스 및 플랫폼에 대한 정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다.
+
+<!---  
 <a name="platformoptions"> </a>
-### <a name="microsoft-cloud-services-and-platform-options"></a>Microsoft 클라우드 서비스 및 플랫폼 옵션
+### Microsoft Cloud Services and Platform Options
 
-Microsoft 클라우드 서비스 및 플랫폼 제품 간의 주요 차이점을 알아봅니다. 솔루션에 가장 적합한 플랫폼을 찾아보세요.
+Learn key differences between Microsoft cloud services and platform offerings. Find the best fit for your solution.
   
-|**항목**|**설명**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![클라우드 아키텍처 모델(서비스 옵션 포함)용 축소판 이미지](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | 이 모델에서는 다음을 설명합니다. <ul><li>  Office 365를 포함하는 SaaS(Software as a Service) 제품 </li><li>  Microsoft Azure의 PaaS(Platform as a Service) 기능 </li><li>  Microsoft Azure의 IaaS(Infrastructure as a Service) 기능 </li><li>  Windows Server 및 System Center를 사용하는 사설 클라우드 데이터 센터 기능 </li><li>  Microsoft의 IT 부서에서 이러한 클라우드 서비스로 마이그레이션하고 하이브리드 클라우드를 구축하는 방법을 살펴보세요. </li></ul><br/>|
+|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
+--->
+
    
 <a name="identity"> </a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft Cloud ID for Enterprise Architects
+### Microsoft Cloud Identity for Enterprise Architects
 
 Microsoft 클라우드 서비스 및 플랫폼을 사용하는 조직용으로 ID를 설계하는 과정과 관련하여 IT 설계자가 파악해야 하는 사항
   
@@ -103,14 +102,6 @@ Microsoft 클라우드 서비스 및 플랫폼의 네트워킹과 관련하여 I
 |:-----|:-----|
 |[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [문서](https://technet.microsoft.com/library/mt733214.aspx) <br/>[추가 언어](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 이 모델에는 다음과 같은 페이지가 포함되어 있습니다. <ul><li> **클라우드 연결을 위해 네트워크 개선** 클라우드 마이그레이션으로 인해 회사 네트워크 내부 및 외부의 트래픽 흐름 양과 특성이 달라지고 있습니다. 또한 보안 위험을 완화시키는 방법도 영향을 받고 있습니다.</li><li> **Microsoft 클라우드 연결의 일반 요소** 네트워킹을 Microsoft 클라우드와 통합하면 보다 폭넓은 서비스에 최적 상태로 액세스할 수 있습니다. </li><li> **Microsoft 클라우드 연결의 ExpressRoute** ExpressRoute는 Microsoft 클라우드에 대해 개인, 전용, 고처리량의 네트워크 연결을 제공합니다. </li><li> **Microsoft SaaS에 대한 네트워킹 설계(Office 365, Microsoft Intune 및 Dynamics CRM Online)** Microsoft SaaS 서비스에 대한 네트워크를 최적화하려면 인터넷 에지, 클라이언트 장치 및 일반적인 IT 운영을 신중하게 분석해야 합니다. </li><li> **Azure PaaS에 대한 네트워킹 설계** Azure PaaS 앱용 네트워킹을 최적화하려면 적절한 인터넷 대역폭이 필요하고 여러 사이트 또는 앱 간에 네트워크 트래픽을 분산해야 합니다. </li><li> **Azure IaaS에 대한 네트워킹 설계** 서브넷, 주소 공간, 라우팅, DNS, 부하 분산을 비롯한 서버 기반 IT 워크로드를 호스트하기 위한 최적의 Azure Virtual Network(VNet)와 온-프레미스 네트워크, 기타 VNet 및 인터넷에 대한 연결을 만들기 위한 디자인 프로세스를 안내합니다. </li></ul><br/>  이 아키텍처 포스터를 기준으로 하는 새로운 Microsoft Virtual Academy 과정인 [Microsoft 클라우드 제품을 위한 네트워크 최적화](https://aka.ms/optimizecloudnetworkingmva)를 이수하세요.  <br/>|
    
-<a name="mobility"> </a>
-### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>Microsoft Mobility and Security for Enterprise Architects
-
-Microsoft 클라우드 서비스 및 플랫폼의 모바일 기능과 관련하여 IT 설계자가 파악해야 하는 사항
-  
-|**항목**|**설명**|
-|:-----|:-----|
-|[![Office 365 정보 보호 포스터 축소판 이미지](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>비즈니스용 상위 모바일 앱 </li><li>모바일 앱을 개발하기 위한 플랫폼, 서비스 및 리소스 </li><li>모바일 장치에서 클라우드 기반 응용 프로그램 및 데이터에 대한 액세스 관리 </li><li>Office 365 MDM, Azure Active Directory Premium 및 Intune의 기능 및 플랫폼 지원 비교 </li></ul><br/> |
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud for Enterprise Architects
@@ -143,20 +134,22 @@ Microsoft 서비스 및 플랫폼용 하이브리드 클라우드와 관련하�
 ## <a name="office-365-enterprise-solution-series"></a>Office 365 Enterprise 솔루션 시리즈
 
 Office 365 Enterprise 솔루션 시리즈는 Office 365의 기능을 구현하기 위한 지침을 기술 중심으로 설명합니다.
-  
-<a name="BKMK_infoprotect"> </a>
-### <a name="information-protection-for-office-365"></a>Office 365의 정보 보호 기능
 
-회사 자산 보호를 위한 엔터프라이즈 조직의 기능
+<!---  
+<a name="BKMK_infoprotect"> </a>
+### Information Protection for Office 365
+
+Capabilities for enterprise organizations to protect corporate assets.
   
-|**항목**|**설명**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Office 365의 정보 보호 기능](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft는 회사 자산을 보호하기 위한 가장 완벽한 기능 집합을 제공합니다. 기능을 구현할 때 이 모델은 조직의 체계적인 방법 실행에 도움이 됩니다.  <br/>|
+|[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
+--->
    
 <a name="BKMK_O365IDP"> </a>
-### <a name="identity-and-device-protection-for-office-365"></a>Office 365용 ID 및 장치 보호
+### Office 365용 ID 및 디바이스 보호
 
-Azure AD 응용프로그램 프록시를 사용하여 게시한 온-프레미스 응용 프로그램, Office 365 및 다른 SaaS 서비스에 액세스하는 ID 및 장치를 보호하기 위해 권장되는 기능입니다.
+Azure AD 애플리케이션 프록시를 사용하여 게시한 온-프레미스 응용 프로그램, Office 365 및 다른 SaaS 서비스에 액세스하는 ID 및 디바이스를 보호하기 위해 권장되는 기능입니다.
   
 |**항목**|**설명**|
 |:-----|:-----|
@@ -171,14 +164,6 @@ Azure AD 응용프로그램 프록시를 사용하여 게시한 온-프레미스
 |:-----|:-----|
 |[![Office 365 미니 포스터 집합의 파일 보호 솔루션에 대한 미리 보기](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |데이터, ID 및 장치 전반에 걸쳐 일관된 보호 수준을 사용하는 것이 중요합니다. 이 문서에는 Office 365의 파일을 보호하는 기능에 대한 자세한 정보가 비교되어 있습니다.  <br/> |
    
-<a name="changemgmt"> </a>
-### <a name="change-management-for-office-365-clients"></a>Office 365 클라이언트의 변경 관리
-
-Office 365 클라이언트 응용 프로그램 및 Windows 10용 릴리스 관리와 관련하여 IT 설계자가 파악해야 하는 사항 
-  
-|**항목**|**설명**|
-|:-----|:-----|
-|[![모델 포스터: Office 365 클라이언트의 변경 관리](media/fd0705af-5103-438f-9e1a-fa38eb1af2cc.png)          ](https://www.microsoft.com/download/details.aspx?id=49141) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=626681)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=626680)| 이 모델에는 다음이 포함됩니다. <ul><li>Windows 10 및 Office 365 클라이언트 응용 프로그램용 서비스 모델 </li><li>  릴리스 옵션 </li><li>  릴리스 흐름 </li><li>  변경 유형 </li><li>  역할 및 책임 </li><li>  업데이트 배포 관리 </li></ul><br/>  문서 양식의 정보 보기: [Office 365 클라이언트의 변경 사항 관리](https://docs.microsoft.com/DeployOffice/change-management-for-office-365-clients)  <br/> |
    
 <a name="msd"> </a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Microsoft와 함께 안전한 최신 데스크톱 배포
