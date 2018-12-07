@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '요약: 경우 서비스로 (IaaS) Microsoft의 인프라에 대 한 하이브리드 아키텍처 및 시나리오 이해-Azure의 클라우드 서비스를 기반으로 합니다.'
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123245"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181039"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS용 하이브리드 클라우드 시나리오
 
@@ -51,13 +51,13 @@ ms.locfileid: "27123245"
     
     Azure에서 실행 하는 identity 서버와 동기화 되는 identity 서버가 포함 됩니다. Azure에서 실행 중인 Vm에 액세스할 수 있는, 저장소 및 시스템 관리 인프라와 같은 리소스를 포함할 수도 있습니다.
     
-## <a name="dirsync-server-for-office-365"></a>Office 365에 대 한 디렉터리 동기화 서버
+## <a name="directory-synchronization-server-for-office-365"></a>Office 365에 대 한 디렉터리 동기화 서버
 
-그림 2와 같이 Azure VNet에서 디렉터리 동기화 (DirSync) 서버를 실행 하는 것은 컴퓨팅 및 id 인프라가 클라우드로 확장 (영문)의 예입니다.
+그림 2와 같이 Azure VNet에서 디렉터리 동기화 서버를 실행 하는 것은 컴퓨팅 및 id 인프라가 클라우드로 확장 (영문)의 예입니다.
   
 **Azure IaaS에서 Office 365에 대 한 그림 2: 디렉터리 동기화 서버**
 
-![Azure IaaS의 Office 365 디렉터리 동기화 서버](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Azure IaaS에서 Office 365에 대 한 디렉터리 동기화 서버](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 그림 2의 온-프레미스 네트워크 프록시 서버 및 해당에 지에서 라우터를 사용 하 여 Windows Server AD 인프라를 호스팅합니다. 라우터는 Azure 게이트웨이 사이트 마다 VPN 또는 ExpressRoute 연결에는 Azure VNet의 가장자리에 연결합니다. 디렉터리 동기화 서버는 VNet 내부 Azure AD 연결을 실행합니다.
   
