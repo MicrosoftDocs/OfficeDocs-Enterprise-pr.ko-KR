@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online의 다중-지리적으로 분산 기능을 사용 하는 여러 지리적 영역을 Office 365 현재 상태를 확장 합니다.
-ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849924"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200741"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online의 다중-지리적으로 분산 기능
 
@@ -41,7 +41,7 @@ Office 365의 다중-지리적으로 분산 기능 여러 지리적 위치에 �
 
 - 프랑스
 
-- 인도 (현재 인도에서 대금 청구 주소를 가진 고객에 게에 사용할 수)
+- 인도
 
 - 일본
 
