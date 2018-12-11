@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/27/2018
+ms.date: 12/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 설명 합니다.
-ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223110"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213955"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기
 
@@ -63,30 +63,6 @@ Office 365에서 라이선스를 제공 계획 라이선스를 (또한 호출된
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
-```
-
-특정 서비스를 사용하거나 사용하지 않도록 허가된 모든 사용자를 찾으려면 다음 구문을 사용합니다.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled" -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled"...}
-```
-
-이러한 예제는 다음 정보를 사용합니다.
-  
-- 관심 있는 우리가 하는 Office 365 서비스에 대 한 액세스를 제공 하는 라이선스는 (의 인덱스 번호는 0) 하는 모든 사용자에 게 할당 된 첫번째 라이선스입니다.
-    
-- 관심 있는 우리는 Office 365 서비스를 Skype 비즈니스 온라인 및 Exchange Online에 대 한 됩니다. 라이선스 계획 연관 된 라이선스에 대 한 온라인 비즈니스에 대 한 Skype는 나열 된 6 서비스 (인덱스 번호는 5), Exchange Online은 9 서비스 및 (인덱스 번호는 8) 나열 합니다.
-    
-이 예제에서는 비즈니스 온라인 및 Exchange Online에 대 한 Skype에 대해 사용할 수 있는 모든 사용이 허가 된 사용자를 반환 합니다.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-Skype 비즈니스 온라인 또는 Exchange Online에 대 한 사용 하도록 설정 되지 않은 모든 사용이 허가 된 사용자를 반환 하는이 예제입니다.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
 *여러 라이선스*할당 된 사용자에 대 한 모든 서비스를 보려면 다음 구문을 사용 합니다.

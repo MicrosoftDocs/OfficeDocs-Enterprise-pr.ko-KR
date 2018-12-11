@@ -3,7 +3,7 @@ title: Microsoft 클라우드 연결을 위한 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872329"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213975"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결을 위한 ExpressRoute
 
@@ -222,11 +222,11 @@ ExpressRoute 프리미엄와 모든 대륙에 어떤 Microsoft 피어 링 위치
     
 - 로컬 ExpressRoute 연결을 사용할 수 없게 하는 경우 전역 Microsoft 클라우드로 가용성을 향상 합니다.
     
-ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니다. 그러나 500 개 보다 사용이 허가 된 사용자와 기업에 대 한 추가 비용 없이 방법이 있습니다.
+ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니다.
   
 **전세계 Microsoft 클라우드 네트워크의 그림 9:**
 
-![그림 9: 전 세계 Microsoft 클라우드 네트워크](media/Network-Poster/MSNet3.png)
+![전세계 Microsoft 클라우드 네트워크의 그림 9:](media/Network-Poster/MSNet3.png)
   
 그림 9 대륙 및 세계와의 상호 연결의 지역에 걸쳐 있는 네트워크를 사용 하 여 전세계 Microsoft 클라우드 네트워크의 논리 다이어그램을 보여줍니다. 각 대륙에 Microsoft 클라우드 네트워크의 부분을 함께 글로벌 엔터프라이즈 연결을 만듦 ExpressRoute 프리미엄 해당 지역 허브 사무실에서 로컬 Microsoft 피어 링 위치를
   
