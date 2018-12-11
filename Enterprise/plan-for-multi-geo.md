@@ -3,7 +3,6 @@ title: 비즈니스용 OneDrive Multi-Geo 계획
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 비즈니스용 OneDrive Multi-Geo, 다중 위치 작동 방식 및 데이터 저장소에 사용할 수 있는 지리적 위치에 대해 알아봅니다.
-ms.openlocfilehash: d40f84ea3636b4eca2711a48bd9d70c73a242cfd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: de856bdeb0c0f1ca8e718439ddb98d738843bc5a
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849864"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200721"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>비즈니스용 OneDrive Multi-Geo 계획
 
@@ -80,6 +79,10 @@ Multi-Geo를 사용하려면 다음 4가지 주요 단계가 필요합니다.
 <td align="left">FRA</td>
 </tr>
 <tr class="odd">
+<td align="left">인도</td>
+<td align="left">IND</td>
+</tr>
+<tr class="odd">
 <td align="left">일본</td>
 <td align="left">JPN</td>
 </tr>
@@ -97,10 +100,6 @@ Multi-Geo를 사용하려면 다음 4가지 주요 단계가 필요합니다.
 </tr>
 </tbody>
 </table>
-
-예정된 지리적 위치:
-  
-- 인도
 
 다중 위치를 구성할 경우 Office 365로 마이그레이션하는 동안 온-프레미스 인프라를 통합할 기회를 고려하는 것이 좋습니다. 예를 들어, 싱가포르 및 말레이시아에 온-프레미스 팜이 있는 경우, 데이터 상주 요구에 맞을 경우 APC 위성 위치로 통합할 수 있습니다.
 

@@ -3,7 +3,6 @@ title: OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위�
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive 및 SharePoint Online의 다중 위치 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849824"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200731"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위치 기능
 
@@ -64,27 +63,25 @@ OneDrive Multi-Geo를 사용하여 데이터 상주 요구 사항을 충족하�
 OneDrive Multi-Geo는 현재 다음 지역 및 국가에서 제공됩니다.
   
 - 아시아 태평양
-    
+
 - 오스트레일리아
-    
+
 - 캐나다
-    
+
 - EMEA(유럽 연합)
 
 - 프랑스
-    
-- 일본
-    
-- 영국
-    
-- 미국(북미)
-    
-- 한국
-      
-예정된 지리적 위치:
-  
+
 - 인도
-    
+
+- 일본
+
+- 영국
+
+- 미국(북미)
+
+- 한국
+
 ## <a name="getting-started"></a>시작
 
 비즈니스용 OneDrive Multi-Geo를 시작하려는 경우 첫 번째 단계는 [비즈니스용 OneDrive Multi-Geo 환경 계획](plan-for-multi-geo.md)입니다. 다음은 [다중 위치 환경 관리 방법 알아보기](administering-a-multi-geo-environment.md) 및 [사용자가 다중 위치 환경을 경험하는 방식](multi-geo-user-experience.md)입니다. 비즈니스용 OneDrive Multi-Geo를 설정할 준비가 되면 [다중 위치에 대한 테넌트를 구성](multi-geo-tenant-configuration.md)하고 [기존 OneDrive 사이트를 새 지리적 위치로 이동](move-onedrive-between-geo-locations.md)한 후 [검색을 설정](configure-search-for-multi-geo.md)합니다.
