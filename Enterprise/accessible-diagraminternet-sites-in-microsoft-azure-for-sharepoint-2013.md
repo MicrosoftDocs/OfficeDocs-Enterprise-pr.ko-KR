@@ -1,5 +1,5 @@
 ---
-title: "액세스할 수 있는 다이어그램-SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트"
+title: 액세스할 수 있는 다이어그램-SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "이 문서는 SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트를 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다."
+description: 이 문서는 SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트를 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다.
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503051"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>액세스할 수 있는 다이어그램-SharePoint 2013에 대 한 Microsoft Azure의 인터넷 사이트
 

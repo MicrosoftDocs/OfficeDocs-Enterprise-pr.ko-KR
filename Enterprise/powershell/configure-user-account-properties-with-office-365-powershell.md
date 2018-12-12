@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성"
+title: Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: "요약: Office 365 테 넌 트에 개인 또는 여러 사용자 계정 속성을 구성 하려면 Office 365 PowerShell를 사용 합니다."
+description: '요약: Office 365 테 넌 트에 개인 또는 여러 사용자 계정 속성을 구성 하려면 Office 365 PowerShell를 사용 합니다.'
 ms.openlocfilehash: 60b3c1d91df0cb28f19f60a285093de7337904a9
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552691"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 

@@ -1,5 +1,5 @@
 ---
-title: "액세스할 수 있는 다이어그램-네트워크 통합의 Microsoft Office 서버 제품"
+title: 액세스할 수 있는 다이어그램-네트워크 통합의 Microsoft Office 서버 제품
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
-description: "이 문서에는 네트워크 통합의 Microsoft Office 서버 제품 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다."
+description: 이 문서에는 네트워크 통합의 Microsoft Office 서버 제품 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다.
 ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504431"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>액세스할 수 있는 다이어그램-네트워크 통합의 Microsoft Office 서버 제품
 

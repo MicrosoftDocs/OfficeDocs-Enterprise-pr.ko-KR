@@ -1,5 +1,5 @@
 ---
-title: "액세스할 수 있는 다이어그램-Microsoft SharePoint 2013 플랫폼 옵션"
+title: 액세스할 수 있는 다이어그램-Microsoft SharePoint 2013 플랫폼 옵션
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
-description: "이 문서에는 Microsoft SharePoint 2013 플랫폼 옵션 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다."
+description: 이 문서에는 Microsoft SharePoint 2013 플랫폼 옵션 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다.
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504321"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>액세스할 수 있는 다이어그램-Microsoft SharePoint 2013 플랫폼 옵션
 

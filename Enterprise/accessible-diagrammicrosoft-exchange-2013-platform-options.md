@@ -1,5 +1,5 @@
 ---
-title: "액세스할 수 있는 다이어그램-Microsoft Exchange 2013 플랫폼 옵션"
+title: 액세스할 수 있는 다이어그램-Microsoft Exchange 2013 플랫폼 옵션
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
-description: "이 문서에는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다."
+description: 이 문서에는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다.
 ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503131"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>액세스할 수 있는 다이어그램-Microsoft Exchange 2013 플랫폼 옵션
 

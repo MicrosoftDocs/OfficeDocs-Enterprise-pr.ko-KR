@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리"
+title: Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: "요약:는 Office 365 PowerShell을 사용 하 여 Skype 정책 사용 하 여 비즈니스 온라인 사용자 계정 속성을 관리할 수 있습니다."
+description: 요약:는 Office 365 PowerShell을 사용 하 여 Skype 정책 사용 하 여 비즈니스 온라인 사용자 계정 속성을 관리할 수 있습니다.
 ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114917"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
 

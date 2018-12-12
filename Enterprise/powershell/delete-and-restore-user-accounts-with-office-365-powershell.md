@@ -1,5 +1,5 @@
 ---
-title: "삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다."
+title: 삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Office 365 PowerShell을 사용하여 Office 365 사용자 계정을 삭제하고 복원하는 방법에 대해 알아보세요."
+description: Office 365 PowerShell을 사용하여 Office 365 사용자 계정을 삭제하고 복원하는 방법에 대해 알아보세요.
 ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552781"
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다.
 

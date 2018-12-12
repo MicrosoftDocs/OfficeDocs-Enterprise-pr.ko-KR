@@ -1,5 +1,5 @@
 ---
-title: "액세스할 수 있는 다이어그램-Microsoft Lync 2013 플랫폼 옵션"
+title: 액세스할 수 있는 다이어그램-Microsoft Lync 2013 플랫폼 옵션
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
-description: "이 문서에는 기술 다이어그램에서 사용할 수 있는 Microsoft Lync 2013 플랫폼 옵션 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다."
+description: 이 문서에는 기술 다이어그램에서 사용할 수 있는 Microsoft Lync 2013 플랫폼 옵션 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다.
 ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504091"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>액세스할 수 있는 다이어그램-Microsoft Lync 2013 플랫폼 옵션
 

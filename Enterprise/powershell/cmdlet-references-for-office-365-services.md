@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193608"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Office 365 서비스에 대한 cmdlet 참조
 

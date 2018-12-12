@@ -1,5 +1,5 @@
 ---
-title: "액세스할 수 있는 다이어그램-온-프레미스 eDiscovery 흐름"
+title: 액세스할 수 있는 다이어그램-온-프레미스 eDiscovery 흐름
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: "이 문서에는 온-프레미스 eDiscovery 흐름 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다."
+description: 이 문서에는 온-프레미스 eDiscovery 흐름 라는 다이어그램의 액세스할 수 있는 텍스트 버전입니다.
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503061"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>액세스할 수 있는 다이어그램-온-프레미스 eDiscovery 흐름
 
