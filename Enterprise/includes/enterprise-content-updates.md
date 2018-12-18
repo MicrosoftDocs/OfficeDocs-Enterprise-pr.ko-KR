@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>2018년 11월 5일 주
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 2018년 11월 5일 | [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 수정한 날짜 |
-| 2018년 11월 5일 | [Microsoft Azure에서 Office 365 디렉터리 동기화 배포](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 수정한 날짜 |
-| 2018년 11월 5일 | [Office 365의 네트워크 설정](/Office365/Enterprise/set-up-network-for-office-365) | 추가 |
-| 11/6/2018 | [Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 수정한 날짜 |
-| 11/6/2018 | [Azure에서 Office 365용 고가용성 페더레이션 인증 배포](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 수정한 날짜 |
-| 11/6/2018 | [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | 수정한 날짜 |
-| 11/7/2018 | [Office 365 엔드포인트](/Office365/Enterprise/office-365-endpoints) | 추가 |
-| 11/7/2018 | [Office 365의 네트워크 설정](/Office365/Enterprise/set-up-network-for-office-365) | 수정한 날짜 |
-| 2018 8/11 / | [Mac용 Office의 네트워크 요청](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | 수정한 날짜 |
-| 2018 8/11 / | [Office 365 테넌트 간 공동 작업](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 수정한 날짜 |
-| 2018 8/11 / | [SharePoint Online의 성능 조정 소개](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 수정한 날짜 |
-| 11/9/2018 | [SharePoint Online에 대 한 페이지 진단 도구를 사용 하 여](/Office365/Enterprise/page-diagnostics-for-spo) | 수정한 날짜 |
-
-
 ## <a name="week-of-november-12-2018"></a>2018년 11월 12일 주
 
 
@@ -86,7 +67,7 @@
 | 11/30/2018 | [Microsoft Cloud Networking for Enterprise Architects](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | 수정한 날짜 |
 | 11/30/2018 | [Microsoft Hybrid Cloud for Enterprise Architects](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | 수정한 날짜 |
 | 11/30/2018 | [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
-| 11/30/2018 | [Office 365 PowerShell을 사용하여 사용자 계정에서 라이선스 제거](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | 수정한 날짜 |
+| 11/30/2018 | [Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센스를 제거 합니다.](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | 수정한 날짜 |
 | 11/30/2018 | [Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | 수정한 날짜 |
 | 11/30/2018 | [Office 365 PowerShell을 사용한 사용자 계정 보기](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | 수정한 날짜 |
 
@@ -104,3 +85,12 @@
 | 12/7/2018 | [Exchange Online의 다중-지리적으로 분산 기능](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | 수정한 날짜 |
 | 12/7/2018 | [비즈니스용 OneDrive Multi-Geo 테넌트 구성](/Office365/Enterprise/multi-geo-tenant-configuration) | 수정한 날짜 |
 | 12/7/2018 | [비즈니스용 OneDrive Multi-Geo 계획](/Office365/Enterprise/plan-for-multi-geo) | 수정한 날짜 |
+
+
+## <a name="week-of-december-10-2018"></a>2018 년 12 월 10 일 주간
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 12/10/2018 | [Microsoft 클라우드 연결에 대 한 ExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 수정한 날짜 |
+| 12/10/2018 | [Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | 수정한 날짜 |

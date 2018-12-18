@@ -3,7 +3,7 @@ title: Office 365용 ExpressRoute를 사용한 라우팅
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/7/2017
+ms.date: 12/14/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure ExpressRoute를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 제대로 이해 하려면 핵심 ExpressRoute 라우팅 요구 사항 및 ExpressRoute 회로 및 라우팅 도메인의 파악 하는 필요 합니다. 이러한 개체는 Office 365 고객을 사용 하는 ExpressRoute를 사용 하기 위한 기본 사항 배치 합니다.
-ms.openlocfilehash: e80ce78c0b229881349a4d02c7708fb9509748a9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d8fa0c606a5aedd3760236cb46bcf9e1c584ecb8
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541956"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294478"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 사용한 라우팅
 
@@ -53,13 +53,11 @@ Office 365 프런트엔드 서버는 인터넷 및 ExpressRoute에 액세스할 
   
 Office 365에서 온-프레미스 네트워크 통신을 시작할 수는 시나리오는 다음과 같습니다. 네트워크 디자인을 단순화 하려면 인터넷 경로 통해 이러한 라우팅 하는 것이 좋습니다.
   
+- 온-프레미스 호스트에는 Exchange Online 테 넌 트에서 메일 또는 SharePoint Online에서 온-프레미스 호스트에 전송 하는 SharePoint Online 메일 등의 SMTP 서비스입니다. SMTP 프로토콜 경로 접두사 ExpressRoute 회로 통해 공유 및 광고 온-프레미스 ExpressRoute 통해 SMTP 서버가 포함 될 오류와 이러한 다른 서비스 보다 더 광범위 하 게 Microsoft의 네트워크 내에서 사용 됩니다.
+
 - 로그인에 대 한 암호 유효성 검사 하는 동안 ADFS 합니다.
 
 - [Exchange Server 하이브리드 배포](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)합니다.
-
-- 온-프레미스 호스트에는 Exchange Online 테 넌 트에서 메일입니다.
-
-- SharePoint Online 메일 SharePoint Online에서 온-프레미스 호스트에 보냅니다.
 
 - [SharePoint 하이브리드 검색 페더레이션](https://technet.microsoft.com/library/dn197174.aspx)합니다.
 
@@ -69,7 +67,13 @@ Office 365에서 온-프레미스 네트워크 통신을 시작할 수는 시나
 
 - [비즈니스 클라우드 커넥터에 대 한 Skype](https://technet.microsoft.com/library/mt605227.aspx )합니다.
 
-이러한 양방향 트래픽 흐름에 대 한 네트워크 다시 회람 하는 microsoft의 경우, Microsoft와 온-프레미스 장치에 BGP 경로 공유 합니다.
+이러한 양방향 트래픽 흐름에 대 한 네트워크 다시 회람 하는 microsoft의 경우, Microsoft와 온-프레미스 장치에 BGP 경로 공유 합니다. ExpressRoute를 통해 Microsoft에 경로 접두사를 알릴 때 이러한 모범 사례를 따라야 합니다.
+
+1) 동일한 공용 IP 주소 경로 접두사 공용 인터넷 및 ExpressRoute을 통해 알리지 않습니다. 인터넷으로 보급 된 모든 범위에서 ExpressRoute 통해 Microsoft에 IP BGP 경로 접두사 광고는 것이 좋습니다. 사용 가능한 IP 주소 공간으로 인해 목표를 달성할 수 없는 경우 다음 반드시 모든 인터넷 회로 보다 ExpressRoute을 통해 보다 구체적인 범위를 알릴 수 있도록 합니다.
+
+2) ExpressRoute 회로 당 별도 NAT IP 풀을 사용 하 고 있는 인터넷 회로를 구분 합니다.
+
+3) Microsoft에 보급 모든 경로의이 아니라 해당 하는 작업에 대 한 경로 보급 네트워크에 ExpressRoute을 통해 Microsoft의 네트워크에 있는 모든 서버에서 네트워크 트래픽을 유치 됩니다에 유의 합니다. 라우팅 시나리오 정의 되 고 팀에서 잘 이해 하는 서버에 대 한 경로가 알립니다. 각 네트워크에서 여러 ExpressRoute 회로 마다 별도 IP 주소 경로 접두사를 알립니다. 
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>ExpressRoute을 통해 라우팅 응용 프로그램 및 기능을 결정 합니다.
 
@@ -222,7 +226,7 @@ ExpressRoute를 사용 하 여 선택적 라우팅을에 필요할 수 다양 �
 
 4. **BGP 커뮤니티** - [BGP 커뮤니티 태그](https://aka.ms/bgpexpressroute365) 에 따라 필터링 확인 하는 Office 365 응용 프로그램을 ExpressRoute 통과 됩니다 하 고 인터넷을 통과 하는 고객 수 있습니다.
 
-짧은 링크를 다시 사용할 수는 다음과 같습니다.[https://aka.ms/erorouting](https://aka.ms/erorouting)
+다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>관련 항목
 
@@ -236,13 +240,13 @@ ExpressRoute를 사용 하 여 선택적 라우팅을에 필요할 수 다양 �
   
 [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
   
-[미디어 품질 및 온라인 비즈니스 Skype 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[비즈니스 온라인 용 Skype에 대 한 네트워크를 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[비즈니스용 Skype Online의 네트워크 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute 및 온라인 비즈니스에 대 한 Skype에서 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute를 사용 하 여 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [ExpressRoute BGP 커뮤니티를 사용 하 여 Office 365 시나리오에 대 한](bgp-communities-in-expressroute.md)
   

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '요약: IPv6 지원 Office 365 government 제품 및 Microsoft Office 365 구성 요소에 설명합니다.'
-ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
-ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
+ms.openlocfilehash: 75ed1c8ffe96ed1b09aa8802e11ae195ad60a4f2
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25493833"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294468"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 서비스의 IPv6 지원
 
@@ -51,9 +51,7 @@ SharePoint Online에 연결 하는데 사용할 프로그램이 i p v 6을 지 �
   
 ### <a name="skype-for-business-and-ipv6"></a>비즈니스 및 i p v 6에 대 한 Skype
 
-Microsoft은 Skype 비즈니스에 대 한 i p v 6를 사용 하도록 설정 공용 다중 테 넌 트 클라우드 및 Office 365 Government G1/G3/G4/K1 구독에서 사용자의 요청에 있습니다. 것은 사용 하도록 설정한 후, 비즈니스를 위한 Skype에 연결 하는데 사용할 프로그램이 i p v 6을 지 원하는 경우, 기본적으로 i p v 6을 사용 합니다. 비즈니스를 위한 Skype에 대 한 통신을 제어 하려는 경우 [Office 365 Url 및 IP 주소 범위에서](https://go.microsoft.com/fwlink/?LinkId=293744)IP 주소 범위를 사용 합니다.
-  
-I p v 6을 모든 지역에서 사용할 수 없으면 및 Microsoft를 지금은 테 넌 트에 대 한 활성화 수에 주의 해야 합니다.
+I p v 6은 비즈니스에 대 한 Skype에서 지원 되지 않으며 더이상 사용할 수 없습니다 주의 해야 합니다.
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection 및 IPv6
 
