@@ -1,7 +1,7 @@
 ---
 title: Office 365에 대 한 세션 제한 시간
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: tracyp
+author: MSFTTracyP
 manager: scotv
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 description: 세션 제한 시간 securtiy로 Office 365 클라이언트 응용 프로그램에 대 한 액세스를 간편 하 게 균형을 조정 하는 데 사용 됩니다.
-ms.openlocfilehash: dda13f280149c969354ae1f0eac336f1d8ed23e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
+ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542033"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27378494"
 ---
 # <a name="session-timeouts-for-office-365"></a>Office 365에 대 한 세션 제한 시간
 
