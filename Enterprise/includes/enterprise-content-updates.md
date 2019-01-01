@@ -3,16 +3,6 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>2018 년 11 월 19 일 주간
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 11/19/2018 | [PerformancePoint Server 2007 지원 종료 로드맵](/Office365/Enterprise/pps-2007-end-of-support) | 수정한 날짜 |
-| 11/19/2018 | [Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 수정한 날짜 |
-| 11/19/2018 | [Office 365 관리자를 위한 통합된 앱 및 Azure AD](/Office365/Enterprise/integrated-apps-and-azure-ads) | 수정한 날짜 |
-
-
 ## <a name="week-of-november-26-2018"></a>2018년 11월 26일 주
 
 
@@ -90,3 +80,10 @@
 | 12/19/2018 | [최신 인증이 Office 2013 및 Office 2016 클라이언트 앱에 작동하는 방식](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 수정한 날짜 |
 | 12/19/2018 | [Office 365에 대 한 세션 제한 시간](/Office365/Enterprise/session-timeouts) | 수정한 날짜 |
 | 12/20/2018 | [Exchange 2010 끝날 지원 로드맵](/Office365/Enterprise/exchange-2010-end-of-support) | 수정한 날짜 |
+
+
+## <a name="week-of-december-24-2018"></a>2018 년 12 월 24 일 주간
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
