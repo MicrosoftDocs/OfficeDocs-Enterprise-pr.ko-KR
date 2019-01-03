@@ -3,7 +3,7 @@ title: Microsoft 클라우드 연결을 위한 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '요약: ExpressRoute 하는 방법 더욱 빠르고 안정적 연결을 포함 하는 Microsoft의 클라우드 서비스와 플랫폼을 이해 합니다.'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470170"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결을 위한 ExpressRoute
 
@@ -96,25 +96,19 @@ Office 365와 함께 ExpressRoute를 사용 하는 것에 대 한 최신 권장 
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Microsoft 클라우드 서비스에 대 한 ExpressRoute 피어 링 관계
 
-단일 ExpressRoute 연결에 최대 3 개의 서로 다른 테두리 게이트웨이 프로토콜 (BGP) 피어 링 관계 Microsoft 클라우드의 다른 부분을 지원합니다. BPG 피어 관계를 사용 하 여 트러스트를 설정 하 고 라우팅 정보를 교환 합니다.
+단일 ExpressRoute 연결 최대 2 개의 서로 다른 테두리 게이트웨이 프로토콜 (BGP) 피어 링 관계 Microsoft 클라우드의 다른 부분을 지원합니다. BPG 피어 관계를 사용 하 여 트러스트를 설정 하 고 라우팅 정보를 교환 합니다.
   
-**그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계**
+**그림 3: 두 다른 BGP 관계에 대 한 단일 ExpressRoute 연결**
 
-![그림 3: 단일 ExpressRoute 연결의 세 가지 다른 BGP 관계](media/Network-Poster/ERPeering.png)
+![그림 3: 두 다른 BGP 관계에 대 한 단일 ExpressRoute 연결](media/Network-Poster/ERPeering.png)
   
-그림 3에 대 한 ExpressRoute 연결을 온-프레미스 네트워크에서 나옵니다. ExpressRoute 연결에는 세 논리 피어 관계에 있습니다. Office 365 및 Dynamcs CRM Online 등의 Microsoft SaaS 서비스 Microsoft 피어 링 관계를 이동 합니다. Azure PaaS 서비스 공용 피어 링 관계를 이동합니다. 개인 피어 링 관계 Azure IaaS 하 고 가상 컴퓨터를 호스팅하는 가상 네트워크 게이트웨이 이동 합니다.
+그림 3에 대 한 ExpressRoute 연결을 온-프레미스 네트워크에서 나옵니다. ExpressRoute 연결에는 두 논리 피어 관계에 있습니다. Microsoft SaaS 서비스를 Office 365, Dynamcs 365 및 Azure PaaS 서비스를 포함 한 Microsoft 피어 링 관계를 이동 합니다. 개인 피어 링 관계 Azure IaaS 하 고 가상 컴퓨터를 호스팅하는 가상 네트워크 게이트웨이 이동 합니다.
   
 Microsoft 피어 링 BGP 관계: 
   
-- Office 365 및 Dynamics 365 서비스의 공용 주소로 DMZ에서 라우터에서 시작 됩니다. 
+- Office 365, Dynamics 365 및 Azure 서비스의 공용 주소로 DMZ에서 라우터에서 시작 됩니다. 
     
 - 양방향 시작 하는 통신을 지원합니다.
-    
-공용 피어 링 BGP 관계:
-  
-- Azure 서비스 공용 IP 주소를 DMZ에서 라우터에서 시작 됩니다.
-    
-- 온-프레미스 시스템에만에서 시작 된 단방향 통신을 지원 합니다. 피어 링 관계 Azure PaaS 서비스에서 시작 된 통신을 지원 하지 않습니다.
     
 개인 피어 링 BGP 관계:
   
@@ -123,6 +117,10 @@ Microsoft 피어 링 BGP 관계:
 - 양방향 시작 하는 통신을 지원합니다.
     
 - 조직 네트워크 내부적으로 일관 된 주소 지정 및 라우팅을 사용 하 여 전체 Microsoft 클라우드를 확장 한 것입니다.
+
+>[!Note]
+>이전 버전의이 문서 뒷부분에 있는 공용 피어 링 BGP 관계는 사용 되지 않습니다.
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>ExpressRoute 사용 하 여 응용 프로그램 배포 및 트래픽 흐름의 예
 
@@ -250,7 +248,7 @@ ExpressRoute 프리미엄 Office 365 기반 ExpressRoute 연결에 필요 합니
   
 - **에 지에 대 한 보안:** 예: 트래픽 검사 또는 침입/맬웨어 감지 ExpressRoute 연결을 통해 보내고 받은 트래픽에 대 한 고급 보안을 제공 하려면 보안 어플라이언스 DMZ 내에서 또는 인트라넷의 테두리에 트래픽 경로에 배치 합니다.
     
-    Azure Vm 인터넷 위치를 사용 하 여 직접 트래픽을 시작 하지 못하도록 하려면 Vm에 대 한 인터넷 트래픽을 Microsoft에 기본 경로 알립니다. 인터넷에 대 한 트래픽 ExpressRoute 연결을 통해 및 온-프레미스 프록시 서버를 통해 라우팅됩니다. Azure Vm 트래픽은 Azure PaaS 서비스 또는 Office 365 ExpressRoute 연결을 통해 다시 라우팅됩니다.
+- **Vm에 대 한 인터넷 트래픽을:** Azure Vm 인터넷 위치를 사용 하 여 직접 트래픽을 시작 하지 못하도록 하려면 Microsoft에 기본 경로를 알립니다. 인터넷에 대 한 트래픽 ExpressRoute 연결을 통해 및 온-프레미스 프록시 서버를 통해 라우팅됩니다. Azure Vm 트래픽은 Azure PaaS 서비스 또는 Office 365 ExpressRoute 연결을 통해 다시 라우팅됩니다.
     
 - **WAN 최적화 프로그램이:** 크로스-프레미스 Azure에 대 한 개인 피어 링 연결의 양쪽에 WAN 최적화 프로그램이 배포할 수 가상 네트워크 (VNet). Azure VNet 내부 Azure 마켓플레이스 및 라우팅 사용자 정의에서 WAN 최적화 프로그램이 네트워크 기기 기기를 통해 트래픽을 라우팅 하는데 사용 합니다.
     
