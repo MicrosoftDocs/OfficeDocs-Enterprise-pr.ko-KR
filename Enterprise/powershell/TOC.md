@@ -1,8 +1,8 @@
 
-# [Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+# [Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 ## [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 ### [Office 365 PowerShell을 사용해야 하는 이유](why-you-need-to-use-office-365-powershell.md)
-### [Office 365 PowerShell에 연결](connect-to-office-365-powershell.md)
+### [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)
 ### [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Office 365 서비스에 대한 cmdlet 참조](cmdlet-references-for-office-365-services.md)
