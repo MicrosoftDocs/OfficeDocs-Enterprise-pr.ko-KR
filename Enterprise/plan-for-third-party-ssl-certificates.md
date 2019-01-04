@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '요약: AD FS, Exchange Online 서비스 및 Exchange 웹 서비스를 사용하는 Exchange 온-프레미스 및 하이브리드와 SSO에 필요한 SSL 인증서를 설명합니다.'
-ms.openlocfilehash: 82e37ebb058b8a6b4b618649bea31a4137897690
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975216"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546519"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365용 타사 SSL 인증서 계획
 
  **요약:** Exchange 온-프레미스 및 하이브리드, AD FS를 사용 하 여 SSO에 필요한 SSL 인증서를 설명 Exchange Online 서비스 및 Exchange 웹 서비스. 
   
-클라이언트와 theOffice 365Office 365 환경 간의 통신을 암호화 하려면 인프라 서버에 타사 Secure Socket Layer (SSL) 인증서를 설치 해야 합니다.
+클라이언트와 Office 365 환경 간의 통신을 암호화 하려면 인프라 서버에 타사 Secure Socket Layer (SSL) 인증서를 설치 해야 합니다.
 
 ||
 |:-----|

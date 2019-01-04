@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/29/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,26 +15,39 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다.
-ms.openlocfilehash: 61f94664a62b6a5cb178579c1a5777b208d0b2ec
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 0648fae89a45b080bd48561bb079184f0e97dd36
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123365"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546509"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 
 **요약:** Office 365 PowerShell을 사용하여 허가되거나 허가되지 않은 사용자 계정을 확인할 수 있습니다.
   
 사용자 계정에 사용자 Office 365 조직 일부, 또는 전체 조직에서 사용할 수 있는 라이센스 계획에서 할당 된 사용 가능한 라이선스 중 있을 수 있습니다. 사용할 수 있습니다 Office 365 PowerShell 조직에서 허가 된 / 허가 되지 않은 사용자를 빠르게 찾을 수 있습니다.
-  
-## <a name="before-you-begin"></a>시작하기 전에
 
-- 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
-    
-- _-All_ 매개 변수를 사용하지 않고 **Get-MsolUser** cmdlet을 사용하는 경우 처음 500개의 계정만 반환됩니다.
-    
-## <a name="viewing-licensed-and-unlicensed-users"></a>사용이 허가 된 사용자와 허가 되지 않은 사용자 보기
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell을 사용 하 여 그래프 모듈에 대 한
+
+첫째, [Office 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+ 
+할당 되지 않은 사용자의 라이선스 계획 (허가 되지 않은 사용자) 중 하나는 조직에서 모든 사용자 계정 목록을 보려면 다음 명령을 실행 합니다.
+  
+```
+Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $user.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
+```
+
+된 조직에서 모든 사용자 계정 목록을 보려면 다음 명령을 실행 하 여 라이선스 계획 (사용이 허가 된 사용자) 중 하나를 할당 합니다.
+  
+```
+Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $user.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} } }
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
+
+첫째, [Office 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
 
 조직에서 모든 사용자 계정 및 라이선스 상태 목록을 보려는 다음 명령에서 실행 Office 365 PowerShell.
   
@@ -56,10 +69,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="see-also"></a>참고 항목
 
-이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.
+[Office 365 PowerShell을 사용하여 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+  
+[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

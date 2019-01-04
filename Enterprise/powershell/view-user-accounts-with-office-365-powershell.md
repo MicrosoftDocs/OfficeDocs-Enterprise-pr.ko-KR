@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용한 사용자 계정 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/30/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '요약: 보기, 목록, 또는 사용자 계정을 Office 365 powershell 다양 한 방식으로 표시 합니다.'
-ms.openlocfilehash: f2743197456cc56f654e99e682108230420384c9
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123255"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546529"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정 보기
 
@@ -28,15 +28,11 @@ ms.locfileid: "27123255"
   
 Office 365 관리 센터를 사용 하 여 Office 365 테 넌 트에 대 한 계정을 볼 수 있지만 Office 365 PowerShell을 사용 하 여 수 및 Office 365 관리 센터 수 없는 일부 작업을 수행 해야 합니다.
   
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell을 사용 하 여 그래프 모듈에 대 한
 
-이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
+첫째, [Office 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
   
-## <a name="display-office-365-user-account-information-with-azure-active-directory-powershell-for-graph"></a>Azure Active Directory powershell 그래프에 대 한 Office 365 사용자 계정 정보를 표시 합니다. 
-
-다음 섹션에서는 사용자 계정 정보를 표시 하는 방법에 설명 합니다.
-
-### <a name="all-accounts"></a>모든 계정
+### <a name="view-all-accounts"></a>모든 계정 보기
 
 사용자 계정의 전체 목록을 표시 하려면이 명령을 실행 합니다.
   
@@ -57,7 +53,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="a-specific-account"></a>특정 계정
+### <a name="view-a-specific-account"></a>특정 계정 보기
 
 특정 사용자 계정으로 표시 하려면 사용자 계정의 사용자 계정 이름 (UPN)를 입력, 제거는 "<" 및 ">" 문자를 하 고이 명령을 실행 합니다.
   
@@ -65,7 +61,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 Get-AzureADUser -ObjectID <UPN of user account>
 ```
 
-### <a name="additional-property-values-for-a-specific-account"></a>특정 계정에 대 한 추가 속성 값
+### <a name="view-additional-property-values-for-a-specific-account"></a>특정 계정에 대 한 추가 속성 값을 보려면
 
 기본적으로 **Get AzureADUser** cmdlet만 계정의 ObjectID, DisplayName 및 UserPrincipalName 속성을 표시 합니다.
 
@@ -93,7 +89,7 @@ Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
 Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>일반 속성을 기준으로 일부 계정
+### <a name="view-some-accounts-based-on-a-common-property"></a>일반 속성을 기준으로 일부 계정 보기
 
 더 많은 수를 표시 하기 위해 계정 목록에 대 한 선택적 사용할 수 있습니다 **Where-object** cmdlet은 **Get AzureADUser** cmdlet과 함께. 두 cmdlet을 결합 하는, 사용 하 여 풀에 "파이프" 문자 "|", 그래프를 하나의 명령의 결과 가져간에 다음 명령을 보낼 용 Azure Active Directory PowerShell에 지시 하는 합니다. 지정 되지 않은 사용 위치를 가진 사용자 계정을 표시 하는 명령의 예가 나와 다음과 같습니다.
   
@@ -123,11 +119,11 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 >  이 예제에 표시 된 **Where-object** cmdlet에 대 한 구문은 **Where-object {$\_.** [사용자 계정 속성 이름] [비교 연산자] [값] **}**. > equals에 대 한 **-eq** , 같지에 대 한 **-ne** , 보다 작음, 보다 큼에 대 한 **-gt** 하 고 다른 사용자에 대 한 **-lt** [비교 연산자] 됩니다.  [값]은 일반적으로 문자열 (문자, 숫자, 및 기타 문자 시퀀스), 숫자 값 또는 **$Null** 지정 되지 않은 대 한 > 자세한 내용은 [Where-object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) 를 참조 하십시오.
   
 
-## <a name="display-office-365-user-account-information-with-microsoft-azure-active-directory-module-for-windows-powershell"></a>Microsoft Azure Active Directory 모듈에 대 한 Windows PowerShell을 사용한 Office 365 사용자 계정 정보를 표시 합니다.
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
 
-다음 섹션에서는 사용자 계정 정보를 표시 하는 방법에 설명 합니다.
+첫째, [Office 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
 
-### <a name="all-accounts"></a>모든 계정
+### <a name="view-all-accounts"></a>모든 계정 보기
 
 사용자 계정의 전체 목록을 표시 하려면이 명령을 실행 합니다.
   
@@ -166,7 +162,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 표시를 필터링 할 추가 매개 변수에 대 한 자세한 내용은 표시 하는 사용자 계정 집합 [Get-msoluser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100))를 참조 하십시오.
   
 
-### <a name="a-specific-account"></a>특정 계정
+### <a name="view-a-specific-account"></a>특정 계정 보기
 
 특정 사용자 계정으로 표시 하려면 사용자 계정의 사용자 계정 이름 (UPN)를 입력, 제거는 "<" 및 ">" 문자를 하 고이 명령을 실행 합니다.
   
@@ -174,7 +170,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Get-MsolUser -UserPrincipalName <UPN of user account>
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>일반 속성을 기준으로 일부 계정
+### <a name="view-some-accounts-based-on-a-common-property"></a>일반 속성을 기준으로 일부 계정 보기
 
 더 많은 수를 표시 하기 위해 계정 목록에 대 한 선택적 사용할 수 있습니다 **Where-object** cmdlet은 **Get-msoluser** cmdlet과 함께. 두 cmdlet을 결합 하는, 사용 하 여 풀에 "파이프" 문자 "|", 하나의 명령의 결과 가져와서에 다음 명령을 보낼를 Office 365 PowerShell에 지시 하는 합니다. 지정 되지 않은 사용 위치를 가진 사용자 계정을 표시 하는 명령의 예가 나와 다음과 같습니다.
   
@@ -219,7 +215,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-### <a name="additional-property-values-for-accounts"></a>계정에 대 한 추가 속성 값
+### <a name="view-additional-property-values-for-accounts"></a>계정에 대 한 추가 속성 값을 보려면
 
 기본적으로 **Get-msoluser** cmdlet은 사용자 계정의 세 속성을 표시 합니다.
   
@@ -291,13 +287,9 @@ Scott Wallace            Operations
 ```
 
     
-## <a name="new-to-office-365"></a>Office 365의 새로운 기능
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-  
 ## <a name="see-also"></a>참고 항목
 
-[사용자 계정 및 Office 365 PowerShell을 사용하여 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
