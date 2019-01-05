@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 사용 하는 방법은 Office 365 PowerShell 에 대 한 사용자 계정을 만드는 Office 365.
-ms.openlocfilehash: e601b472086727be836de4726c247b9a91e0bbfd
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 902f44dd4fc42d8f29ce92748cbbf1ce03c6615b
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546499"
+ms.locfileid: "27730313"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정 만들기
 
@@ -68,10 +68,10 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 개별 계정을 만들려면 다음 구문을 사용합니다.
   
 ```
-New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <AccountSkuID> [-Password <Password>]
+New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <licensing plan name> [-Password <Password>]
 ```
 
-사용할 수 있는 AccountSkuID 목록을 보려면 다음 명령을 사용합니다.
+사용 가능한 라이선스 계획 이름을 열거하려면 이 명령을  사용합니다:
 
 ````
 Get-MsolAccountSku
