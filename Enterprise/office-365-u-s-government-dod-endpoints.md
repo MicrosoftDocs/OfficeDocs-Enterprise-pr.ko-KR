@@ -3,7 +3,7 @@ title: Office 365 미국 정부 DoD 끝점
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 01/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: '요약: Office 365에서 인터넷에 연결을 해야합니다. 아래 끝점 Office 365 미국 정부 DoD 계획만을 사용 하는 고객을 위한 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: d0a0bc820e5a202a09e438b4fba682e9ce309805
-ms.sourcegitcommit: e3fa9998321f6fa5d31217d107b672258993826e
+ms.openlocfilehash: 3809298c012d41126271c3eec0981b5a6b7415c9
+ms.sourcegitcommit: 79ffc3bfded032ee510b800426a0619e19e46915
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "27746128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27896378"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 미국 정부 DoD 끝점
 
@@ -37,7 +37,7 @@ ms.locfileid: "27746128"
   
 |||
 |:-----|:-----|
-|01/07/2019 **마지막 업데이트 날짜:** - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** [JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 형식의 전체 목록은 <br/> |
+|01/11/2019 **마지막 업데이트 날짜:** - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** [JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 형식의 전체 목록은 <br/> |
    
  이 데이터를 사용 하 여 네트워크 연결을 관리 하기 위한 권장 사항 이해 하려면 [Office 365 관리 끝점](managing-office-365-endpoints.md) 으로 시작 합니다. 새 IP 주소 및 활성화 되 고 전 30 일 게시 된 Url 사용 하 여 각 월의 시작 부분에 끝점 데이터가 업데이트 됩니다. 이 사용 하지 않도록 아직 새 연결이 필요 하기 전에 해당 프로세스를 완료 하려면 업데이트 자동 고객 수 있습니다. 주소 지원 에스컬레이션, 보안 문제 또는 기타 즉시 운영 요구 사항에 필요한 경우에 끝점 달 하는 동안 업데이트 될 수 있습니다. 이 페이지 아래에 표시 되는 데이터는 모든 REST 기반 웹 서비스에서 생성 됩니다. 스크립트 또는 네트워크 장치를 사용 하 여이 데이터에 액세스 하는, [웹 서비스](office-365-ip-web-service.md) 에 직접 서 해야 합니다.
 
