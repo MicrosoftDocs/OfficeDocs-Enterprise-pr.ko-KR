@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 네트워크 연결에 대 한 네트워크 계획을 시작 하기 전에는 안전 하 게 Office 365 트래픽을 관리 하 고 사용 가능한 최고의 성능을 연결 원칙을 이해 하는 것이 중요 합니다. 이 문서는 안전 하 게 Office 365 네트워크 연결을 최적화 하는 것에 대 한 최신 지침을 이해 하는데 도움이 됩니다.
-ms.openlocfilehash: be41162833a7442ac65af1e973a00923841fca6b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d319d99cdd413fe1df9e8f88d18742ad464bbb3b
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542073"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021809"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 네트워크 연결 원칙
 
@@ -54,8 +54,8 @@ Office 365 (즉 종종 부재중 또는 네트워크 기획자 하 여을 잘못
   
 네트워크 디자인의 주요 목표는 Microsoft 글로벌 네트워크 대기 시간이 적은 Microsoft의 데이터 센터의 모든 상호 연결 하는 Microsoft의 공용 네트워크 백본에 네트워크에서 왕복 시간 (RTT)을 줄이면 대기 시간을 최소화 하기 위해 여야 합니다. 사서함과 클라우드 전세계에 분산 응용 프로그램 진입점입니다. Microsoft 글로벌 네트워크 [어떻게 Microsoft 구축 하는 신속 하 고 신뢰할 수 있는 전역 네트워크에](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)대 한 자세한 내용을 알아보십시오.
   
-### <a name="identify-and-differentiate-office-365-traffic"></a>식별 하 고 Office 365 트래픽을 구분합니다
 <a name="BKMK_P1"> </a>
+### <a name="identify-and-differentiate-office-365-traffic"></a>식별 하 고 Office 365 트래픽을 구분합니다
 
 ![Office 365 트래픽을 확인합니다](media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
@@ -67,10 +67,10 @@ Office 365 끝점 범주 및 최적화 방법에 대 한 자세한 내용은 [�
   
 Microsoft는 이제 모든 Office 365 끝점을 웹 서비스로 게시 하 고이 데이터를 사용 하 여 최상의 방법에 대 한 지침을 제공 합니다. 반입 및 Office 365 끝점을 사용 하는 방법에 대 한 자세한 내용은 [Office 365 Url 및 IP 주소 범위는](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)문서를 참조 하십시오.
   
-### <a name="egress-network-connections-locally"></a>로컬로 탈출 네트워크 연결
 <a name="BKMK_P2"> </a>
+### <a name="egress-network-connections-locally"></a>네트워크 연결을 로컬로 송신
 
-![로컬로 탈출 네트워크 연결](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![네트워크 연결을 로컬로 송신](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 로컬 DNS 및 인터넷 탈출은 연결 대기 시간 감소 하 고 Office 365 서비스에 대 한 항목의 가장 가까운 지점에 대해 사용자 연결을 확인 하는 것에 대 한 중요 한 중요 합니다. 복잡 한 네트워크 토폴로지를 로컬 DNS 및 로컬 인터넷 송신 모두를 함께 구현 하는 것이 중요 됩니다. Office 365 항목의 가장 가까운 지점에 대 한 클라이언트 연결을 회람 하는 방법에 대 한 자세한 내용은 [클라이언트 연결](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)문서를 참조 하십시오.
   
@@ -102,8 +102,8 @@ Office 365 전세계 모든 프런트엔드 서버를 포함 하는 Microsoft �
 - 로컬 탈출 허용 하 여 회사 네트워크 인프라에서 부하를 줄입니다.
 - 클라이언트 끝점 보안 및 클라우드 보안 기능을 활용 하 여 양쪽 끝에서 연결을 보호 합니다.
 
-### <a name="avoid-network-hairpins"></a>네트워크 hairpins 방지
 <a name="BKMK_P3"> </a>
+### <a name="avoid-network-hairpins"></a>네트워크 헤어핀 방지
 
 ![Hairpins 방지](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
@@ -115,8 +115,8 @@ Office 365 연결 로컬 탈출 경우에도 네트워크 hairpins에 따라 달
   
 Office 365 진입점 및 최종 사용자에 게 자신의 근접 분산된 위치 많기 때문에 모든 제 3 자 네트워크 또는 보안 공급자에 게 Office 365 트래픽 라우팅에 미칠 수 부정적인 영향을 Office 365 연결 공급자 네트워크 없는 경우 최적의 Office 365 피어 링를 구성합니다.
   
-### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>바이패스 프록시, 트래픽 검사 장치 및 중복 된 보안 기술
 <a name="BKMK_P4"> </a>
+### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>바이패스 프록시, 트래픽 검사 장치 및 중복 된 보안 기술
 
 ![바이패스 프록시, 트래픽 검사 장치 및 중복 된 보안 기술](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
@@ -124,8 +124,8 @@ Office 365 진입점 및 최종 사용자에 게 자신의 근접 분산된 위�
   
 대부분의 기업 네트워크 프록시, SSL 검사, 패킷 검사 및 데이터 손실 방지 시스템와 같은 기술을 사용 하 여 인터넷 트래픽에 대 한 네트워크 보안을 강화 합니다. 이러한 기술을 일반 인터넷 요청에 대 한 중요 한 위험 완화를 제공 하지만 성능, 확장성 및 Office 365 끝점에 적용 하면 최종 사용자 경험의 품질을 대폭 절감할 수 있습니다.
   
-#### <a name="office-365-endpoints-web-service"></a>Office 365 끝점 웹 서비스
 <a name="BKMK_WebSvc"> </a>
+#### <a name="office-365-endpoints-web-service"></a>Office 365 끝점 웹 서비스
 
 Office 365 관리자 스크립트를 사용 하 여 또는 끝점을 Office 365 끝점에서 구조적된 목록 사용 (영문)를 호출할 때 REST 웹 서비스를 경계 방화벽 구성과 다른 네트워크 장치를 업데이트 합니다. 이렇게 하면 Office 365에 대 한 바운드 트래픽을 식별, 적절 하 게 처리 이며 있는지 일반적이 고 자주 알 수 없는 인터넷 웹사이트에 대 한 바운드 네트워크 트래픽으로부터 다른 방법으로 관리 합니다. 웹 서비스에는 Office 365 끝점을 사용 하는 방법에 대 한 자세한 내용은 [Office 365 Url 및 IP 주소 범위는](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)문서를 참조 하십시오.
   
@@ -151,7 +151,7 @@ Office 365 끝점은 네트워크 주소 및 서브넷의 다양 한 집합을 �
   
 Office 365 트래픽을 관리 하기 위한 사용해 이전 지침을에서 끝점을 된 범주로 구성 두, **필수** 와 **선택**합니다. 각 범주 내의 끝점을 필요한 서비스의 중요성에 따라 다른 최적화 하 고 Office 365 Url 및 IP 주소의 전체 목록은을 동일한 네트워크 최적화의 응용 프로그램의 당위성에 다 수의 고객에 직면 합니다. 
   
-새 모델 끝점 **최적화**, **필수** 및 **기본**, 우선순위 기반 피벗 최상의 성능 향상을 실현 하는 데 네트워크 최적화 노력을 집중을 위치를 제공 하 세 범주에 분리 되 고 투자 수익률을 반환 합니다. 끝점은 시나리오의 네트워크 품질, 볼륨 및 성능을 봉투 및 구현의 용이성 유효 사용자 경험의 우편물 종류에 따라 위의 범주에 통합 됩니다. 지정된 된 범주에 대 한 모든 끝점에 동일한 방식으로 권장된 최적화를 적용할 수 있습니다.
+새 모델의 끝점 **최적화**, **허용** 및 **기본값**을 우선순위 기반 피벗 최상의 성능 향상을 실현 하 고 반환할 네트워크 최적화 노력을 집중을 위치를 제공 하 세 범주도 구분할는 투자 합니다. 끝점은 시나리오의 네트워크 품질, 볼륨 및 성능을 봉투 및 구현의 용이성 유효 사용자 경험의 우편물 종류에 따라 위의 범주에 통합 됩니다. 지정된 된 범주에 대 한 모든 끝점에 동일한 방식으로 권장된 최적화를 적용할 수 있습니다.
   
 - 모든 Office 365 서비스에 대 한 연결에 대 한 필요 하 고 넘는 Office 365 대역폭, 연결 및 데이터 볼륨의 75%를 차지 하는 끝점을 **최적화** 합니다. 이러한 끝점 네트워크 성능, 대기 시간 및 가용성을 가장 중요 한 되는 Office 365 시나리오를 나타냅니다. 모든 끝점 Microsoft 데이터 센터에서 호스팅됩니다. 이 종류의 끝점을 변경 하는 횟수 다른 두 종류의 끝점에 대 한 보다 훨씬 더 낮은 것으로 예상 됩니다. 이 범주에는 (~ 10)의 순서에 매우 작은 Url 및 IP 서브넷의 정의 된 집합 비즈니스 온라인 및 팀이 Microsoft Exchange Online, SharePoint Online, Skype와 같은 핵심 Office 365 작업을 하기 위한 전용 키 집합을 포함 합니다.
 
