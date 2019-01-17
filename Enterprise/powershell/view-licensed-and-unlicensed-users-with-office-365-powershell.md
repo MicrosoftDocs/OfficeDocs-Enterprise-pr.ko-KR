@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다.
-ms.openlocfilehash: 79f7bf1966d515634c5fc038db650c19547259aa
-ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
+ms.openlocfilehash: eb1ca1d9812b08a6ea932fde546351f664c93066
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27730343"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327330"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 
@@ -36,13 +36,13 @@ ms.locfileid: "27730343"
 할당 되지 않은 사용자의 라이선스 계획 (허가 되지 않은 사용자) 중 하나는 조직에서 모든 사용자 계정 목록을 보려면 다음 명령을 실행 합니다.
   
 ```
-Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $user.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
+Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
 된 조직에서 모든 사용자 계정 목록을 보려면 다음 명령을 실행 하 여 라이선스 계획 (사용이 허가 된 사용자) 중 하나를 할당 합니다.
   
 ```
-Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $user.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
+Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '요약: 정 및 Microsoft 하이브리드 클라우드의 요소를 이해 합니다.'
-ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123315"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327350"
 ---
 # <a name="hybrid-cloud-overview"></a>하이브리드 클라우드 개요
 
@@ -79,7 +79,7 @@ Microsoft 시장에서 가장 전체 클라우드 솔루션을 갖기 때문에-
     
 - 보안
     
-    하이브리드 클라우드 시나리오에 대 한 보안 보호 및 id, 데이터 보호, 관리 권한 관리, 위협 인식 및 거 버 넌 스 및 보안 정책 구현에 대 한 관리를 포함합니다. 자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 보안](https://technet.microsoft.com/library/dn919927.aspx#security)을 참조 하십시오.
+    하이브리드 클라우드 시나리오에 대 한 보안 보호 및 id, 데이터 보호, 관리 권한 관리, 위협 인식 및 거 버 넌 스 및 보안 정책 구현에 대 한 관리를 포함합니다. 자세한 내용은 [엔터프라이즈 설계자에 대 한 Microsoft 클라우드 보안](microsoft-cloud-it-architecture-resources.md#security)을 참조 하십시오.
     
 - 관리
     
