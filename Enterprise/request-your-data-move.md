@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 기존 Office 365 고객은 자신의 새로운 지리적으로 분산 이동가 참여 Office 365 서비스의 고객 데이터를 포함 하기 위해 자신의 국가 대 한 마감 하기 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839576"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604509"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -80,7 +80,7 @@ Office 365 관리 센터의 왼쪽에 있는 탐색 창에서 페이지에 액�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 팀의 Microsoft 팀에 대 한 데이터 residency를 사용할 수 있는 국가에 데이터 센터에 지역에서에서 나머지 부분에서 고객 콘텐츠 마이그레이션 아직 지원 하지 않습니다.  따라서, Microsoft 팀의 데이터 residency을 지원 하 고 새 지역에서 국가 내에 저장 된 데이터의 모든 새 고객만 해야 합니다.  Office 365 데이터 residency에서 회사 위치에 대 한 하는 방법에 대 한 자세한 내용은 [가 다음에 있는 데이터?](https://office/com/datamaps)   
+Microsoft 팀의 Microsoft 팀에 대 한 데이터 residency를 사용할 수 있는 국가에 데이터 센터에 지역에서에서 나머지 부분에서 고객 콘텐츠 마이그레이션 아직 지원 하지 않습니다.  따라서, Microsoft 팀의 데이터 residency을 지원 하 고 새 지역에서 국가 내에 저장 된 데이터의 모든 새 고객만 해야 합니다.  Office 365 데이터 residency에서 회사 위치에 대 한 하는 방법에 대 한 자세한 내용은 [가 다음에 있는 데이터?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>이동 요청 전 선택적 작업
 

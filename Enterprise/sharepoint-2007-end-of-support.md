@@ -3,7 +3,7 @@ title: SharePoint Server 2007 지원 종료 로드맵
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 2017 년 10 월 10 년에서 SharePoint Server 2007에 대 한 지원을 끝냈습니다. 업그레이드 옵션, 문제해결, 모범 사례, 시스템 요구 사항, 업그레이드 단계 및 Microsoft 파트너 로부터 도움을 받을 하는 방법에 대해 자세히 알아보려면이 문서를 읽어보십시오.
-ms.openlocfilehash: b548e7623a72d57793c18409a80506bb832df858
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: b0d3eda690733b45ee82054e145642a5c76125d5
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169800"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604519"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 지원 종료 로드맵
 
@@ -60,7 +60,7 @@ SharePoint Server 같은 거의 모든 Microsoft 제품에는 주기가 지원 �
 > [!TIP]
 > 마이그레이션 또는 업그레이드에 대 한 계획 된 이미 하지 않은 경우를 참조 하십시오: [SharePoint 2007 마이그레이션 옵션을 고려해 야](sharepoint-2007-migration-options.md)을 시작할 위치를의 몇가지 예입니다. 업그레이드 또는 Office 365 마이그레이션 (또는 둘 모두)를 도와줄 수는 [Microsoft 파트너](https://go.microsoft.com/fwlink/?linkid=841249) 에 대 한 검색할 수 있습니다. 
   
-Office 2007 서버 지원의 끝에 도달 하는 방법에 대 한 자세한 내용은 [Office 2007 서버에 대 한 업그레이드를 계획](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)을 참조 하십시오.
+Office 2007 서버 지원의 끝에 도달 하는 방법에 대 한 자세한 내용은 [2007 서버와 클라이언트가 Office에서 업그레이드 하는데 도움이 되는 리소스](upgrade-from-office-2007-servers-and-products.md)를 참조 합니다.
   
 ## <a name="what-are-my-options"></a>내 옵션은 무엇입니까?
 
