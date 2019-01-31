@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 라이선스 계획, 서비스 및 Office 365 조직에서 사용할 수 있는 라이선스에 대 한 정보를 보려면 Office 365 PowerShell을 사용 하는 방법에 설명 합니다.
-ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
-ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
+ms.openlocfilehash: bce181445523a2f043caa932f3d4e0ddd81d89cc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "27786154"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651212"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 결과에는 다음 정보가 포함됩니다.
   
-- **SkuPartNumber:** 조직에 대 한 사용 가능한 라이선스 계획을 표시합니다. 예, `ENTERPRISEPACK` Office 365 Enterprise E3에 대 한 시스템 이름입니다.
+- **SkuPartNumber:** 조직에 대 한 사용 가능한 라이선스 계획을 표시합니다. 예, `ENTERPRISEPACK` Office 365 Enterprise E3에 대 한 라이선스 계획 이름입니다.
     
 - **사용:** 특정 라이선스 계획에 대 한 구입한 라이선스 개수입니다.
     
@@ -74,7 +74,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ````
 
-\<인덱스 >은 표시에서 라이선스 계획의 행 번호를 지정 하는 정수는 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령 1을 뺀 값입니다.
+\<index>은 표시에서 라이선스 계획의 행 번호를 지정 하는 정수는 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령 1을 뺀 값입니다.
 
 예, 하는 경우의 표시는 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령은이:
 
@@ -136,7 +136,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
-| `MCOSTANDARD` <br/> |비즈니스용 Skype 온라인  <br/> |
+| `MCOSTANDARD` <br/> |비즈니스용 Skype Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 계획 2  <br/> |
