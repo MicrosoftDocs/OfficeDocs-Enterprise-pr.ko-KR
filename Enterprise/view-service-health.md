@@ -20,12 +20,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 활성 서비스 중단 되었는지 확인 하려면 지원팀에 문의 하기 전에 Office 365 서비스의 상태를 확인 합니다.
-ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
+ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651192"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29696355"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Office 365 서비스 상태를 확인하는 방법
 
@@ -108,7 +108,7 @@ ms.locfileid: "29651192"
    
 ## <a name="history"></a>기록
 
-서비스 상태를 통해 현재 상태를 확인하고 지난 30일간의 모든 서비스 권고 및 인시던트 기록을 볼 수 있습니다. 모든 서비스의 과거 상태를 보려면 **서비스 상태** 페이지에서 **기록 보기**를 선택합니다. 
+서비스 상태를 사용 하 여 현재 상태를 확인 하 고 있는 모든 서비스 권고와가 테 넌 트 지난 30 일간의 영향을 받는 사고의 기록을 볼 수 있습니다. 모든 서비스의 지난 상태를 보려면 **서비스 상태** 페이지에서 **기록 보기를** 선택 합니다. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
