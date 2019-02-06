@@ -1,8 +1,8 @@
 ---
-title: PowerShell 사용한 Office 365 그룹 관리
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: PowerShell을 사용하여 Office 365 그룹 관리
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 이 문서는 Microsoft PowerShell에서 그룹에 대 한 일반적인 관리 작업을 수행 하는 단계를 제공 합니다.
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542149"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741231"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>PowerShell 사용한 Office 365 그룹 관리
+# <a name="manage-office-365-groups-with-powershell"></a>PowerShell을 사용하여 Office 365 그룹 관리
 
  *마지막 업데이트 된-18 년 4 월, 2018* 
   
@@ -35,9 +35,9 @@ ms.locfileid: "22542149"
 
 - [Office 365 그룹에 업그레이드 메일 그룹](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f.aspx)
     
-- [Office 365 그룹을 만들 수 있는 사용자를 관리 합니다.](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
+- [Office 365 그룹을 만들 수 있는 사용자 관리](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [Office 365 그룹에 대 한 게스트 액세스 관리](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [Office 365 그룹에 대한 게스트 액세스 관리](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [Azure Active Directory에서 동적으로 그룹 관리](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -204,7 +204,7 @@ Private로 설정:
   
 ## <a name="office-365-groups-cmdlets"></a>Office 365 그룹 cmdlet
 
-Office 365 그룹에는 다음 cmdlet은 사용할 수 최근에 했습니다. 이 사용할 수 없는 경우 Office 365 구독 업데이트 되지 않은이 기능을 가진 아직 합니다. 메시지 센터 및 [Office 365 로드맵](http://roadmap.office.com/en-us)확인 합니다.
+Office 365 그룹에는 다음 cmdlet은 사용할 수 최근에 했습니다. 이 사용할 수 없는 경우 Office 365 구독 업데이트 되지 않은이 기능을 가진 아직 합니다. 메시지 센터 및 [Microsoft 365 로드맵](https://www.microsoft.com/microsoft-365/roadmap)확인 합니다.
   
 |**cmdlet 이름**|**설명**|
 |:-----|:-----|
@@ -218,4 +218,4 @@ Office 365 그룹에는 다음 cmdlet은 사용할 수 최근에 했습니다. �
    
 ## <a name="for-more-information"></a>자세한 내용
 
-[Office 365 PowerShell 사용한 Office 365 관리](powershell/manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](powershell/manage-office-365-with-office-365-powershell.md)

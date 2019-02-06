@@ -1,8 +1,8 @@
 ---
-title: PowerShell 사용한 Office 365 그룹 관리
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: PowerShell을 사용하여 Office 365 그룹 관리
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 마지막 업데이트 된-18 년 4 월, 2018
-ms.openlocfilehash: 8def3b304a19ad57887c992aa6342ea2cf14ba28
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 518f845099a72d9addac13388d1b281ca63ee408
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542260"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741221"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>PowerShell 사용한 Office 365 그룹 관리
+# <a name="manage-office-365-groups-with-powershell"></a>PowerShell을 사용하여 Office 365 그룹 관리
 
  *마지막 업데이트 된-18 년 4 월, 2018* 
   
@@ -32,11 +32,11 @@ ms.locfileid: "22542260"
   
 ## <a name="common-tasks-for-managing-office-365-groups"></a>Office 365 그룹을 관리 하기 위한 일반 작업
 
-- [Outlook에서 Office 365 그룹에 업그레이드 메일 그룹](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
+- [Outlook에서 배포 목록을 Office 365 그룹으로 업그레이드](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
     
-- [Office 365 그룹을 만들 수 있는 사용자를 관리 합니다.](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
+- [Office 365 그룹을 만들 수 있는 사용자 관리](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
     
-- [Office 365 그룹에 대 한 게스트 액세스 관리](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
+- [Office 365 그룹에 대한 게스트 액세스 관리](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
     
 - [Azure Active Directory에서 동적으로 그룹 관리](https://go.microsoft.com/fwlink/?linkid=847632)
     
