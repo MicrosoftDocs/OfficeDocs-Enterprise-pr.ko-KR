@@ -15,341 +15,344 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 위치 또는 콘텐츠를 액세스 하는 방식에 관계 없이 SharePoint Online 자산 모든 사용자에 게 배달 속도를 Office 365의 기본 제공 콘텐츠 배달 네트워크 (CDN)를 사용 하는 방법을 설명 합니다.
-ms.openlocfilehash: 958f01419a74e4b8cd007b2627585884496bdfdf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fd118e8df404961e1c35c6297a788397f810d1a2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541940"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547116"
 ---
-# <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a><span data-ttu-id="b5e42-103">Office 365 콘텐츠 배달 네트워크를 사용 하 여 SharePoint Online을 사용한</span><span class="sxs-lookup"><span data-stu-id="b5e42-103">Use the Office 365 content delivery network with SharePoint Online</span></span>
+# <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a><span data-ttu-id="9f95e-103">Office 365 콘텐츠 배달 네트워크를 사용 하 여 SharePoint Online을 사용한</span><span class="sxs-lookup"><span data-stu-id="9f95e-103">Use the Office 365 content delivery network with SharePoint Online</span></span>
 
-<span data-ttu-id="b5e42-p101">SharePoint Online 페이지에 대 한 더 나은 성능을 제공 하기 위해 Office 365 콘텐츠 배달 네트워크 (CDN)의 정적 자산을 호스트할 수 있습니다. 정적 자산이 이미지, 비디오 및 오디오, 스타일 시트, 글꼴 및 JavaScript 파일 처럼 매우를 자주 변경 하지 않는 파일입니다. CDN 정적 자산을 요청 하는 브라우저에 더 가깝게를 캐시 하 여 지리적으로 분산 된 캐싱 프록시로 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p101">You can host static assets in the Office 365 content delivery network (CDN) to provide better performance for your SharePoint Online pages. Static assets are files that don't change very often, like images, video and audio, style sheets, fonts, and JavaScript files. The CDN works as a geographically distributed caching proxy, by caching static assets closer to the browsers requesting them.</span></span> 
+<span data-ttu-id="9f95e-p101">SharePoint Online 페이지에 대 한 더 나은 성능을 제공 하기 위해 Office 365 콘텐츠 배달 네트워크 (CDN)의 정적 자산을 호스트할 수 있습니다. 정적 자산이 이미지, 비디오 및 오디오, 스타일 시트, 글꼴 및 JavaScript 파일 처럼 매우를 자주 변경 하지 않는 파일입니다. CDN 정적 자산을 요청 하는 브라우저에 더 가깝게를 캐시 하 여 지리적으로 분산 된 캐싱 프록시로 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p101">You can host static assets in the Office 365 content delivery network (CDN) to provide better performance for your SharePoint Online pages. Static assets are files that don't change very often, like images, video and audio, style sheets, fonts, and JavaScript files. The CDN works as a geographically distributed caching proxy, by caching static assets closer to the browsers requesting them.</span></span> 
   
-<span data-ttu-id="b5e42-p102">Cdn이 작동 하는 방법에 익숙한 경우를 설정 하는 몇 단계를 완료 해야 합니다. 이 항목에서는 설명 방법입니다. Office 365 CDN 및 호스팅 정적 자산을 시작 하는 방법에 대 한 정보에 대 한에서 읽었습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p102">If you are already familiar with the way that CDNs work, you only need to complete a few steps to set it up. This topic describes how. Read on for information about the Office 365 CDN and how to get started hosting your static assets.</span></span>
+<span data-ttu-id="9f95e-p102">Cdn이 작동 하는 방법에 익숙한 경우를 설정 하는 몇 단계를 완료 해야 합니다. 이 항목에서는 설명 방법입니다. Office 365 CDN 및 호스팅 정적 자산을 시작 하는 방법에 대 한 정보에 대 한에서 읽었습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p102">If you are already familiar with the way that CDNs work, you only need to complete a few steps to set it up. This topic describes how. Read on for information about the Office 365 CDN and how to get started hosting your static assets.</span></span>
   
- <span data-ttu-id="b5e42-110">**네트워크를 계획 하 [고 Office 365에 대 한 성능 조정](https://aka.ms/tune)헤드 백업합니다.**</span><span class="sxs-lookup"><span data-stu-id="b5e42-110">**Head back to [Network planning and performance tuning for Office 365](https://aka.ms/tune).**</span></span>
+ <span data-ttu-id="9f95e-110">**네트워크를 계획 하 [고 Office 365에 대 한 성능 조정](https://aka.ms/tune)헤드 백업합니다.**</span><span class="sxs-lookup"><span data-stu-id="9f95e-110">**Head back to [Network planning and performance tuning for Office 365](https://aka.ms/tune).**</span></span>
   
-## <a name="office-365-cdn-basics"></a><span data-ttu-id="b5e42-111">Office 365 CDN 기본 (영문)</span><span class="sxs-lookup"><span data-stu-id="b5e42-111">Office 365 CDN basics</span></span>
+## <a name="office-365-cdn-basics"></a><span data-ttu-id="9f95e-111">Office 365 CDN 기본 (영문)</span><span class="sxs-lookup"><span data-stu-id="9f95e-111">Office 365 CDN basics</span></span>
 
-<span data-ttu-id="b5e42-p103">Office 365 CDN 구독이 SharePoint Online의 일부로 포함 됩니다. 것에 대 한 추가 지불 필요가 없습니다. Office 365 두 개인에 대 한 지원 및 일반 액세스를 제공 하 고 여러 위치 또는 출처의 호스트 정적 자산 할 수 있습니다. Office 365 CDN Azure CDN 같지는 않습니다. CDN를 사용 하는 이유에 대 한 또는 일반 CDN 개념에 대 한 자세한 정보를 해야하는 경우 [콘텐츠 배달 네트워크](content-delivery-networks.md)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p103">The Office 365 CDN is included as part of your SharePoint Online subscription. You don't have to pay extra for it. Office 365 provides support for both private and public access and allows you to host static assets in multiple locations, or origins. The Office 365 CDN is not the same as the Azure CDN. If you need more information about why to use a CDN or about general CDN concepts, see [Content delivery networks](content-delivery-networks.md).</span></span>
+<span data-ttu-id="9f95e-p103">Office 365 CDN 구독이 SharePoint Online의 일부로 포함 됩니다. 것에 대 한 추가 지불 필요가 없습니다. Office 365 두 개인에 대 한 지원 및 일반 액세스를 제공 하 고 여러 위치 또는 출처의 호스트 정적 자산 할 수 있습니다. Office 365 CDN Azure CDN 같지는 않습니다. CDN를 사용 하는 이유에 대 한 또는 일반 CDN 개념에 대 한 자세한 정보를 해야하는 경우 [콘텐츠 배달 네트워크](content-delivery-networks.md)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p103">The Office 365 CDN is included as part of your SharePoint Online subscription. You don't have to pay extra for it. Office 365 provides support for both private and public access and allows you to host static assets in multiple locations, or origins. The Office 365 CDN is not the same as the Azure CDN. If you need more information about why to use a CDN or about general CDN concepts, see [Content delivery networks](content-delivery-networks.md).</span></span>
   
-## <a name="how-the-cdn-grants-access-to-end-users"></a><span data-ttu-id="b5e42-117">CDN 최종 사용자에 대 한 액세스를 부여 하는 방법</span><span class="sxs-lookup"><span data-stu-id="b5e42-117">How the CDN grants access to end users</span></span>
+## <a name="how-the-cdn-grants-access-to-end-users"></a><span data-ttu-id="9f95e-117">CDN 최종 사용자에 대 한 액세스를 부여 하는 방법</span><span class="sxs-lookup"><span data-stu-id="9f95e-117">How the CDN grants access to end users</span></span>
 
-<span data-ttu-id="b5e42-p104">Office 365 CDN의 정적 자산에 대 한 개인 액세스는 SharePoint Online에서 생성 된 토큰에 의해 권한이 부여 됩니다. 이미 출처에 의해 지정 된 라이브러리 또는 폴더에 액세스할 수 있는 권한을 가진 사용자는 토큰에 자동으로 부여 됩니다. SharePoint Online은 CDN에 대 한 항목 수준 사용 권한의 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p104">Private access to static assets in the Office 365 CDN is granted by tokens generated by SharePoint Online. Users who already have permission to access to the folder or library designated by the origin will automatically be granted tokens. SharePoint Online does not support item-level permissions for the CDN.</span></span>
+<span data-ttu-id="9f95e-p104">Office 365 CDN의 정적 자산에 대 한 개인 액세스는 SharePoint Online에서 생성 된 토큰에 의해 권한이 부여 됩니다. 이미 출처에 의해 지정 된 라이브러리 또는 폴더에 액세스할 수 있는 권한을 가진 사용자는 토큰에 자동으로 부여 됩니다. SharePoint Online은 CDN에 대 한 항목 수준 사용 권한의 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p104">Private access to static assets in the Office 365 CDN is granted by tokens generated by SharePoint Online. Users who already have permission to access to the folder or library designated by the origin will automatically be granted tokens. SharePoint Online does not support item-level permissions for the CDN.</span></span>
   
-<span data-ttu-id="b5e42-121">예에 있는 파일에 대 한 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, 다음을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-121">For example, for a file located at `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, given the following:</span></span>
+<span data-ttu-id="9f95e-121">예에 있는 파일에 대 한 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, 다음을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-121">For example, for a file located at `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, given the following:</span></span>
   
-- <span data-ttu-id="b5e42-122">1 사용자에 게 image1.jpg folder1에 대 한 액세스</span><span class="sxs-lookup"><span data-stu-id="b5e42-122">User 1 has access to folder1 and to image1.jpg</span></span>
+- <span data-ttu-id="9f95e-122">1 사용자에 게 image1.jpg folder1에 대 한 액세스</span><span class="sxs-lookup"><span data-stu-id="9f95e-122">User 1 has access to folder1 and to image1.jpg</span></span>
     
-- <span data-ttu-id="b5e42-123">사용자 2에는 folder1에 액세스할 수 없는 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-123">User 2 does not have access to folder1</span></span>
+- <span data-ttu-id="9f95e-123">사용자 2에는 folder1에 액세스할 수 없는 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-123">User 2 does not have access to folder1</span></span>
     
-- <span data-ttu-id="b5e42-124">사용자 3 folder1에 액세스할 수 없는 되지는 않지만 image1.jpg SharePoint Online을 통해 액세스할 수 있는 명시적 권한을 부여 됩니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-124">User 3 does not have access to folder1 but is granted explicit permission to access image1.jpg through SharePoint Online</span></span>
+- <span data-ttu-id="9f95e-124">사용자 3 folder1에 액세스할 수 없는 되지는 않지만 image1.jpg SharePoint Online을 통해 액세스할 수 있는 명시적 권한을 부여 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-124">User 3 does not have access to folder1 but is granted explicit permission to access image1.jpg through SharePoint Online</span></span>
     
-- <span data-ttu-id="b5e42-125">사용자 4 folder1에 액세스할 수 있지만 image1.jpg에 대 한 액세스 명시적으로 거부 되었음을</span><span class="sxs-lookup"><span data-stu-id="b5e42-125">User 4 has access to folder1 but has been explicitly denied access to image1.jpg</span></span>
+- <span data-ttu-id="9f95e-125">사용자 4 folder1에 액세스할 수 있지만 image1.jpg에 대 한 액세스 명시적으로 거부 되었음을</span><span class="sxs-lookup"><span data-stu-id="9f95e-125">User 4 has access to folder1 but has been explicitly denied access to image1.jpg</span></span>
     
-<span data-ttu-id="b5e42-126">다음은 다음은 true입니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-126">Then the following are true:</span></span>
+<span data-ttu-id="9f95e-126">다음은 다음은 true입니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-126">Then the following are true:</span></span>
   
-- <span data-ttu-id="b5e42-127">사용자 1이 고 사용자 4 image1.jpg CDN을 통해 액세스할 수 없게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-127">User 1 and User 4 will be able to access image1.jpg through the CDN.</span></span>
+- <span data-ttu-id="9f95e-127">사용자 1이 고 사용자 4 image1.jpg CDN을 통해 액세스할 수 없게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-127">User 1 and User 4 will be able to access image1.jpg through the CDN.</span></span>
     
-- <span data-ttu-id="b5e42-128">사용자 2와 사용자 3 image1.jpg CDN을 통해 액세스할 수 없게 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-128">User 2 and User 3 will not be able to access image1.jpg through the CDN.</span></span>
+- <span data-ttu-id="9f95e-128">사용자 2와 사용자 3 image1.jpg CDN을 통해 액세스할 수 없게 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-128">User 2 and User 3 will not be able to access image1.jpg through the CDN.</span></span>
     
-    <span data-ttu-id="b5e42-129">그러나 사용자 3 계속 액세스할 수 자산 image1.jpg 직접 SharePoint Online을 통해 동안 사용자 4 SharePoint Online을 통해 자산에 액세스할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-129">However, User 3 can still access the asset image1.jpg directly through SharePoint Online while User 4 cannot access the asset through SharePoint Online.</span></span>
+    <span data-ttu-id="9f95e-129">그러나 사용자 3 계속 액세스할 수 자산 image1.jpg 직접 SharePoint Online을 통해 동안 사용자 4 SharePoint Online을 통해 자산에 액세스할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-129">However, User 3 can still access the asset image1.jpg directly through SharePoint Online while User 4 cannot access the asset through SharePoint Online.</span></span>
     
-## <a name="overview-of-working-with-the-office-365-cdn"></a><span data-ttu-id="b5e42-130">Office 365 CDN (영문)의 개요 (영문)</span><span class="sxs-lookup"><span data-stu-id="b5e42-130">Overview of working with the Office 365 CDN</span></span>
+## <a name="overview-of-working-with-the-office-365-cdn"></a><span data-ttu-id="9f95e-130">Office 365 CDN (영문)의 개요 (영문)</span><span class="sxs-lookup"><span data-stu-id="9f95e-130">Overview of working with the Office 365 CDN</span></span>
 
-<span data-ttu-id="b5e42-131">Office 365 CDN를 설정 하려면 다음 기본 단계를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-131">To set up the Office 365 CDN, you follow these basic steps:</span></span>
+<span data-ttu-id="9f95e-131">Office 365 CDN를 설정 하려면 다음 기본 단계를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-131">To set up the Office 365 CDN, you follow these basic steps:</span></span>
   
-- <span data-ttu-id="b5e42-132">CDN 배포를 계획 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-132">Plan for CDN deployment:</span></span>
+- <span data-ttu-id="9f95e-132">CDN 배포를 계획 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-132">Plan for CDN deployment:</span></span>
     
-  - <span data-ttu-id="b5e42-p105">Office 365 CDN에서를 호스트 하려는 정적 자산을 결정 합니다. 이러한 항목을 선택 하는 방법에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](content-delivery-networks.md)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p105">Determine which static assets you want to host on the Office 365 CDN. For detailed information about how to make these choices, refer to [Content delivery networks](content-delivery-networks.md).</span></span>
+  - <span data-ttu-id="9f95e-p105">Office 365 CDN에서를 호스트 하려는 정적 자산을 결정 합니다. 이러한 항목을 선택 하는 방법에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](content-delivery-networks.md)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p105">Determine which static assets you want to host on the Office 365 CDN. For detailed information about how to make these choices, refer to [Content delivery networks](content-delivery-networks.md).</span></span>
     
-  - <span data-ttu-id="b5e42-p106">[자산을 저장 하려면 확인](use-office-365-cdn-with-spo.md#CDNStoreAssets)합니다. 이 위치는 폴더 또는 SharePoint 라이브러리 이며 원점 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p106">[Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets). This location is a folder or SharePoint library and is called an origin.</span></span>
+  - <span data-ttu-id="9f95e-p106">[자산을 저장 하려면 확인](use-office-365-cdn-with-spo.md#CDNStoreAssets)합니다. 이 위치는 폴더 또는 SharePoint 라이브러리 이며 원점 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p106">[Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets). This location is a folder or SharePoint library and is called an origin.</span></span>
     
-  - <span data-ttu-id="b5e42-p107">자산을 공개 또는 비공개로 유지 하는지 여부를 결정 합니다. 이 경우에 수행에 필요한 [각 출처를 공용 또는 개인으로 지정할지 여부를 선택](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)합니다. 원할 경우 일부 공용는 여러 출처를 포함할 수 하 고 일부는 개인 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p107">Determine whether the assets should be made public or kept private. You do this when you [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). If you want, you can have multiple origins in which some are public, and some are private.</span></span>
+  - <span data-ttu-id="9f95e-p107">자산을 공개 또는 비공개로 유지 하는지 여부를 결정 합니다. 이 경우에 수행에 필요한 [각 출처를 공용 또는 개인으로 지정할지 여부를 선택](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)합니다. 원할 경우 일부 공용는 여러 출처를 포함할 수 하 고 일부는 개인 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p107">Determine whether the assets should be made public or kept private. You do this when you [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). If you want, you can have multiple origins in which some are public, and some are private.</span></span>
     
-- <span data-ttu-id="b5e42-p108">[설정 및 SharePoint Online 관리 셸을 사용 하 여 Office 365 CDN 구성](use-office-365-cdn-with-spo.md#CDNSetupinPShell)합니다. 이 단계를 완료 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p108">[Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell). When you complete this step, you will have:</span></span>
+- <span data-ttu-id="9f95e-p108">[설정 및 SharePoint Online 관리 셸을 사용 하 여 Office 365 CDN 구성](use-office-365-cdn-with-spo.md#CDNSetupinPShell)합니다. 이 단계를 완료 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p108">[Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell). When you complete this step, you will have:</span></span>
     
-  - <span data-ttu-id="b5e42-142">조직에 대 한 CDN를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-142">Enabled the CDN for your organization.</span></span>
+  - <span data-ttu-id="9f95e-142">조직에 대 한 CDN를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-142">Enabled the CDN for your organization.</span></span>
     
-  - <span data-ttu-id="b5e42-p109">프로그램 출처를 추가 합니다. 공용 또는 개인으로 각 출처를 식별 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p109">Added your origins. You identify each origin as public or private.</span></span>
+  - <span data-ttu-id="9f95e-p109">프로그램 출처를 추가 합니다. 공용 또는 개인으로 각 출처를 식별 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p109">Added your origins. You identify each origin as public or private.</span></span>
     
-<span data-ttu-id="b5e42-145">한번, 설치 하 여 시간에 따른 [관리 Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) 마친:</span><span class="sxs-lookup"><span data-stu-id="b5e42-145">Once you're done with setup, [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:</span></span> 
+<span data-ttu-id="9f95e-145">한번, 설치 하 여 시간에 따른 [관리 Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) 마친:</span><span class="sxs-lookup"><span data-stu-id="9f95e-145">Once you're done with setup, [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:</span></span> 
   
-- <span data-ttu-id="b5e42-146">추가, 업데이트 및 자산을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-146">Adding, updating, and removing assets</span></span>
+- <span data-ttu-id="9f95e-146">추가, 업데이트 및 자산을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-146">Adding, updating, and removing assets</span></span>
     
-- <span data-ttu-id="b5e42-147">추가 (영문) 및 출처를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-147">Adding and removing origins</span></span>
+- <span data-ttu-id="9f95e-147">추가 (영문) 및 출처를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-147">Adding and removing origins</span></span>
     
-- <span data-ttu-id="b5e42-148">CDN 정책 구성</span><span class="sxs-lookup"><span data-stu-id="b5e42-148">Configuring CDN policies</span></span>
+- <span data-ttu-id="9f95e-148">CDN 정책 구성</span><span class="sxs-lookup"><span data-stu-id="9f95e-148">Configuring CDN policies</span></span>
     
-- <span data-ttu-id="b5e42-149">필요한 경우 Office 365 CDN 사용 하지 않도록 설정</span><span class="sxs-lookup"><span data-stu-id="b5e42-149">If necessary, disabling the Office 365 CDN</span></span>
+- <span data-ttu-id="9f95e-149">필요한 경우 Office 365 CDN 사용 하지 않도록 설정</span><span class="sxs-lookup"><span data-stu-id="9f95e-149">If necessary, disabling the Office 365 CDN</span></span>
     
-## <a name="determine-where-you-want-to-store-your-assets"></a><span data-ttu-id="b5e42-150">자산을 저장 하려면 확인</span><span class="sxs-lookup"><span data-stu-id="b5e42-150">Determine where you want to store your assets</span></span>
+## <a name="determine-where-you-want-to-store-your-assets"></a><span data-ttu-id="9f95e-150">자산을 저장 하려면 확인</span><span class="sxs-lookup"><span data-stu-id="9f95e-150">Determine where you want to store your assets</span></span>
 
-<span data-ttu-id="b5e42-p110">CDN 호출 하는 원본 위치에서 자산을 가져옵니다. Office 365에 대 한 원점 SharePoint 라이브러리 또는 URL에 액세스할 수 있는 폴더입니다. 조직에 대 한 출처를 지정 하는 경우 유연 하 게 있습니다. 예, 여러 출처 또는 모든 CDN 자산을 배치 하려는 하는 단일 출처를 지정할 수 있습니다. 조직에 대 한 공용 또는 개인 출처를 선택할 수 있습니다. 대부분의 조직에서는 둘의 조합을 구현 하려면 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p110">The CDN fetches your assets from a location called an origin. For Office 365, an origin is a SharePoint library or folder that is accessible by a URL. You have great flexibility when you specify origins for your organization. For example, you can specify multiple origins, or, a single origin where you want to put all your CDN assets. You can choose to have both public or private origins for your organization. Most organizations will choose to implement a combination of the two.</span></span>
+<span data-ttu-id="9f95e-p110">CDN 호출 하는 원본 위치에서 자산을 가져옵니다. Office 365에 대 한 원점 SharePoint 라이브러리 또는 URL에 액세스할 수 있는 폴더입니다. 조직에 대 한 출처를 지정 하는 경우 유연 하 게 있습니다. 예, 여러 출처 또는 모든 CDN 자산을 배치 하려는 하는 단일 출처를 지정할 수 있습니다. 조직에 대 한 공용 또는 개인 출처를 선택할 수 있습니다. 대부분의 조직에서는 둘의 조합을 구현 하려면 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p110">The CDN fetches your assets from a location called an origin. For Office 365, an origin is a SharePoint library or folder that is accessible by a URL. You have great flexibility when you specify origins for your organization. For example, you can specify multiple origins, or, a single origin where you want to put all your CDN assets. You can choose to have both public or private origins for your organization. Most organizations will choose to implement a combination of the two.</span></span>
   
-<span data-ttu-id="b5e42-p111">수백 개의 출처를 정의 하는 경우 가능성이 저하에 미칠 요청을 처리 하는데 걸리는 시간입니다. 약 100 개가 넘는 출처 있는 아키텍처를 다시 생각 하 게 사용할 수는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p111">If you define hundreds of origins, it will likely have a negative impact on the time it takes to process requests. We recommend that if you have more than about 100 origins you might want to rethink your architecture.</span></span>
+<span data-ttu-id="9f95e-p111">수백 개의 출처를 정의 하는 경우 가능성이 저하에 미칠 요청을 처리 하는데 걸리는 시간입니다. 약 100 개가 넘는 출처 있는 아키텍처를 다시 생각 하 게 사용할 수는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p111">If you define hundreds of origins, it will likely have a negative impact on the time it takes to process requests. We recommend that if you have more than about 100 origins you might want to rethink your architecture.</span></span>
   
-## <a name="choose-whether-each-origin-should-be-public-or-private"></a><span data-ttu-id="b5e42-159">각 출처를 공용 또는 개인으로 지정할지 여부를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-159">Choose whether each origin should be public or private</span></span>
+## <a name="choose-whether-each-origin-should-be-public-or-private"></a><span data-ttu-id="9f95e-159">각 출처를 공용 또는 개인으로 지정할지 여부를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-159">Choose whether each origin should be public or private</span></span>
 
-<span data-ttu-id="b5e42-p112">출처를 식별 하는 경우 공용 또는 개인 될 해야 하는지 여부를 지정할 수 있습니다. 어떤 옵션을 선택 하면에 관계 없이 Microsoft 자체 CDN의 관리를 수행할 때 하면 모든 쉬워집니다를 수행 합니다. 또한 변경할 수 있습니다 마음이 나중에 CDN 설정 했을 때 하 여 출처를 식별 한 후.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p112">When you identify an origin, you specify whether it should be made public or private. Regardless of which option you choose, Microsoft does all the heavy lifting for you when it comes to administration of the CDN itself. Also, you can change your mind later, after you've set up the CDN and identified your origins.</span></span>
+<span data-ttu-id="9f95e-p112">출처를 식별 하는 경우 공용 또는 개인 될 해야 하는지 여부를 지정할 수 있습니다. 어떤 옵션을 선택 하면에 관계 없이 Microsoft 자체 CDN의 관리를 수행할 때 하면 모든 쉬워집니다를 수행 합니다. 또한 변경할 수 있습니다 마음이 나중에 CDN 설정 했을 때 하 여 출처를 식별 한 후.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p112">When you identify an origin, you specify whether it should be made public or private. Regardless of which option you choose, Microsoft does all the heavy lifting for you when it comes to administration of the CDN itself. Also, you can change your mind later, after you've set up the CDN and identified your origins.</span></span>
   
-<span data-ttu-id="b5e42-163">공용 및 개인 옵션은 향상 된 성능을 제공 했으나 각각 고유한 특성 및 장점이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-163">Both public and private options provide performance improvements, but each has unique attributes and advantages.</span></span>
+<span data-ttu-id="9f95e-163">공용 및 개인 옵션은 향상 된 성능을 제공 했으나 각각 고유한 특성 및 장점이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-163">Both public and private options provide performance improvements, but each has unique attributes and advantages.</span></span>
   
- <span data-ttu-id="b5e42-164">**특성 및 공용 출처의 자산 호스팅의 장점**</span><span class="sxs-lookup"><span data-stu-id="b5e42-164">**Attributes and advantages of hosting assets in a public origin**</span></span>
+ <span data-ttu-id="9f95e-164">**특성 및 공용 출처의 자산 호스팅의 장점**</span><span class="sxs-lookup"><span data-stu-id="9f95e-164">**Attributes and advantages of hosting assets in a public origin**</span></span>
   
-- <span data-ttu-id="b5e42-165">공용 출처에서 노출 자산 익명으로 모든 사용자가 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-165">Assets exposed in a public origin are accessible by everyone anonymously.</span></span>
+- <span data-ttu-id="9f95e-165">공용 출처에서 노출 자산 익명으로 모든 사용자가 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-165">Assets exposed in a public origin are accessible by everyone anonymously.</span></span>
     
     > [!IMPORTANT]
-    > <span data-ttu-id="b5e42-166">프로그램 CDN에서 공용 출처를 식별 하는 경우 리소스 것으로 간주 되 조직에 중요 한 공용 원본이 나 SharePoint 온라인 라이브러리에 두지 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-166">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in a public origin or SharePoint Online library.</span></span> 
+    > <span data-ttu-id="9f95e-166">프로그램 CDN에서 공용 출처를 식별 하는 경우 리소스 것으로 간주 되 조직에 중요 한 공용 원본이 나 SharePoint 온라인 라이브러리에 두지 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-166">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in a public origin or SharePoint Online library.</span></span> 
   
-- <span data-ttu-id="b5e42-167">자산을 캐시;에서 최대 30 일 동안 사용할 수 있도록 계속 될 수 있습니다 공용 원점에서 자산을 제거 하는 경우 그러나 15 분 이내 CDN에서 자산에 대 한 링크를 무효화 됩니다 했습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-167">If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
+- <span data-ttu-id="9f95e-167">자산을 캐시;에서 최대 30 일 동안 사용할 수 있도록 계속 될 수 있습니다 공용 원점에서 자산을 제거 하는 경우 그러나 15 분 이내 CDN에서 자산에 대 한 링크를 무효화 됩니다 했습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-167">If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
     
-- <span data-ttu-id="b5e42-p113">공용 출처에 스타일 시트 (CSS 파일)를 호스트 하는 경우 코드 내에서 Uri 및 상대 경로 사용할 수 있습니다. 즉, 배경 이미지 및 메서드를 호출 하는 자산의 위치를 기준으로 다른 개체의 위치를 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p113">When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.</span></span>
+- <span data-ttu-id="9f95e-p113">공용 출처에 스타일 시트 (CSS 파일)를 호스트 하는 경우 코드 내에서 Uri 및 상대 경로 사용할 수 있습니다. 즉, 배경 이미지 및 메서드를 호출 하는 자산의 위치를 기준으로 다른 개체의 위치를 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p113">When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.</span></span>
     
-- <span data-ttu-id="b5e42-p114">공용 출처의 URL, 하드 코딩 하는 동안 이렇게 하면 있으므로 권장 되지 않습니다. 이 대 한 설명 CDN에 대 한 액세스를 사용할 수 없게 하는 경우 URL SharePoint Online에서 조직에 자동으로 해결 되지 것입니다 되 고 되 끊어진된 링크 및 기타 오류가 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p114">While you can hard code a public origin's URL, doing so is not recommended. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.</span></span>
+- <span data-ttu-id="9f95e-p114">공용 출처의 URL, 하드 코딩 하는 동안 이렇게 하면 있으므로 권장 되지 않습니다. 이 대 한 설명 CDN에 대 한 액세스를 사용할 수 없게 하는 경우 URL SharePoint Online에서 조직에 자동으로 해결 되지 것입니다 되 고 되 끊어진된 링크 및 기타 오류가 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p114">While you can hard code a public origin's URL, doing so is not recommended. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.</span></span>
     
-- <span data-ttu-id="b5e42-p115">공용 출처에 대 한 포함 된 기본 파일 형식은.css,.eot,.gif,.ico,.jpeg,.jpg,.js,.map,.png,.svg,.ttf, 및.woff 됩니다. 추가 파일 형식을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p115">The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff. You can specify additional file types.</span></span>
+- <span data-ttu-id="9f95e-p115">공용 출처에 대 한 포함 된 기본 파일 형식은.css,.eot,.gif,.ico,.jpeg,.jpg,.js,.map,.png,.svg,.ttf, 및.woff 됩니다. 추가 파일 형식을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p115">The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff. You can specify additional file types.</span></span>
     
-- <span data-ttu-id="b5e42-p116">원할 경우 사용자가 지정한 사이트 분류 하 여 식별 된 자산을 제외 하는 정책을 구성할 수 있습니다. 예는 허용 되는 파일 형식 및 공용 출처에 있는 경우에 "confidential" 또는 "제한"으로 표시 되는 모든 자산을 제외 하도록 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p116">If you want, you can configure a policy to exclude assets that have been identified by site classifications that you specify. For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.</span></span>
+- <span data-ttu-id="9f95e-p116">원할 경우 사용자가 지정한 사이트 분류 하 여 식별 된 자산을 제외 하는 정책을 구성할 수 있습니다. 예는 허용 되는 파일 형식 및 공용 출처에 있는 경우에 "confidential" 또는 "제한"으로 표시 되는 모든 자산을 제외 하도록 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p116">If you want, you can configure a policy to exclude assets that have been identified by site classifications that you specify. For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.</span></span>
     
- <span data-ttu-id="b5e42-176">**특성 및 개인 출처의 자산 호스팅의 장점**</span><span class="sxs-lookup"><span data-stu-id="b5e42-176">**Attributes and advantages of hosting assets in a private origin**</span></span>
+ <span data-ttu-id="9f95e-176">**특성 및 개인 출처의 자산 호스팅의 장점**</span><span class="sxs-lookup"><span data-stu-id="9f95e-176">**Attributes and advantages of hosting assets in a private origin**</span></span>
   
-- <span data-ttu-id="b5e42-p117">이렇게 권한이 있는 경우 사용자가 개인 원점에서 자산을 액세스할만 수 있습니다. 이러한 자산에 대 한 익명 액세스 차단 됩니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p117">Users can only access the assets from a private origin if they are authorized to do so. Anonymous access to these assets is prevented.</span></span>
+- <span data-ttu-id="9f95e-p117">이렇게 권한이 있는 경우 사용자가 개인 원점에서 자산을 액세스할만 수 있습니다. 이러한 자산에 대 한 익명 액세스 차단 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p117">Users can only access the assets from a private origin if they are authorized to do so. Anonymous access to these assets is prevented.</span></span>
     
-- <span data-ttu-id="b5e42-179">자산을 캐시;에서 1 시간까지 사용할 수 있는 계속 될 수 있습니다 개인 원점에서 자산을 제거 하는 경우 그러나 15 분 이내 CDN에서 자산에 대 한 링크를 무효화 됩니다 했습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-179">If you remove an asset from the private origin, the asset may continue to be available for up to an hour from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
+- <span data-ttu-id="9f95e-179">자산을 캐시;에서 1 시간까지 사용할 수 있는 계속 될 수 있습니다 개인 원점에서 자산을 제거 하는 경우 그러나 15 분 이내 CDN에서 자산에 대 한 링크를 무효화 됩니다 했습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-179">If you remove an asset from the private origin, the asset may continue to be available for up to an hour from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
     
-- <span data-ttu-id="b5e42-p118">개인 출처에 대 한 포함 된 기본 파일 형식에는.gif,.ico,.jpeg,.jpg,.js, 및.png 됩니다. 추가 파일 형식을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p118">The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.</span></span>
+- <span data-ttu-id="9f95e-p118">개인 출처에 대 한 포함 된 기본 파일 형식에는.gif,.ico,.jpeg,.jpg,.js, 및.png 됩니다. 추가 파일 형식을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p118">The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.</span></span>
     
-- <span data-ttu-id="b5e42-182">공용 출처와 마찬가지로 와일드 카드를 사용 하 여 폴더 또는 사이트 라이브러리 내의 모든 자산을 포함 하는 경우에를 지정 하는 사이트 분류 하 여 식별 된 자산을 제외 하는 정책을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-182">Just like public origins, you can configure a policy to exclude assets that have been identified by site classifications that you specify even if you use wildcards to include all assets within a folder or Site Library.</span></span>
+- <span data-ttu-id="9f95e-182">공용 출처와 마찬가지로 와일드 카드를 사용 하 여 폴더 또는 사이트 라이브러리 내의 모든 자산을 포함 하는 경우에를 지정 하는 사이트 분류 하 여 식별 된 자산을 제외 하는 정책을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-182">Just like public origins, you can configure a policy to exclude assets that have been identified by site classifications that you specify even if you use wildcards to include all assets within a folder or Site Library.</span></span>
     
-## <a name="default-office-365-cdn-origins"></a><span data-ttu-id="b5e42-183">기본 Office 365 CDN 출처</span><span class="sxs-lookup"><span data-stu-id="b5e42-183">Default Office 365 CDN origins</span></span>
+## <a name="default-office-365-cdn-origins"></a><span data-ttu-id="9f95e-183">기본 Office 365 CDN 출처</span><span class="sxs-lookup"><span data-stu-id="9f95e-183">Default Office 365 CDN origins</span></span>
 
-<span data-ttu-id="b5e42-p119">별도로 지정 하지 않으면 Office 365 설정 하는 일부 기본 출처를 하면 Office 365 CDN를 사용 하도록 설정 하면 됩니다. 처음를 제외 하면 해당 하는 경우에 설치를 완료 한 후 이러한 출처를 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p119">Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN. If you initially exclude them, you can add these origins after you complete setup.</span></span>
+<span data-ttu-id="9f95e-p119">별도로 지정 하지 않으면 Office 365 설정 하는 일부 기본 출처를 하면 Office 365 CDN를 사용 하도록 설정 하면 됩니다. 처음를 제외 하면 해당 하는 경우에 설치를 완료 한 후 이러한 출처를 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p119">Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN. If you initially exclude them, you can add these origins after you complete setup.</span></span>
   
-<span data-ttu-id="b5e42-186">기본 개인 출처:</span><span class="sxs-lookup"><span data-stu-id="b5e42-186">Default private origins:</span></span>
+<span data-ttu-id="9f95e-186">기본 개인 출처:</span><span class="sxs-lookup"><span data-stu-id="9f95e-186">Default private origins:</span></span>
   
-- <span data-ttu-id="b5e42-187">\*/userphoto.aspx</span><span class="sxs-lookup"><span data-stu-id="b5e42-187">\*/userphoto.aspx</span></span>
+- <span data-ttu-id="9f95e-187">\*/userphoto.aspx</span><span class="sxs-lookup"><span data-stu-id="9f95e-187">\*/userphoto.aspx</span></span>
     
-- <span data-ttu-id="b5e42-188">\*/siteassets</span><span class="sxs-lookup"><span data-stu-id="b5e42-188">\*/siteassets</span></span>
+- <span data-ttu-id="9f95e-188">\*/siteassets</span><span class="sxs-lookup"><span data-stu-id="9f95e-188">\*/siteassets</span></span>
     
-<span data-ttu-id="b5e42-189">기본 공용 출처:</span><span class="sxs-lookup"><span data-stu-id="b5e42-189">Default public origins:</span></span>
+<span data-ttu-id="9f95e-189">기본 공용 출처:</span><span class="sxs-lookup"><span data-stu-id="9f95e-189">Default public origins:</span></span>
   
-- <span data-ttu-id="b5e42-190">\*/masterpage</span><span class="sxs-lookup"><span data-stu-id="b5e42-190">\*/masterpage</span></span>
+- <span data-ttu-id="9f95e-190">\*/masterpage</span><span class="sxs-lookup"><span data-stu-id="9f95e-190">\*/masterpage</span></span>
     
-- <span data-ttu-id="b5e42-191">\*/style 라이브러리</span><span class="sxs-lookup"><span data-stu-id="b5e42-191">\*/style library</span></span>
-    
-## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a><span data-ttu-id="b5e42-192">설정 및 SharePoint Online 관리 셸을 사용 하 여 Office 365 CDN 구성</span><span class="sxs-lookup"><span data-stu-id="b5e42-192">Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell</span></span>
+- <span data-ttu-id="9f95e-191">\*/style 라이브러리</span><span class="sxs-lookup"><span data-stu-id="9f95e-191">\*/style library</span></span>
 
-<span data-ttu-id="b5e42-p120">이 항목의 절차를 사용 하면를 사용 하 여 SharePoint Online 관리 셸 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p120">The procedures in this topic require you to use the SharePoint Online Management Shell to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
-  
-<span data-ttu-id="b5e42-195">설정 및 SharePoint Online에서 정적 자산을 호스트 하는 Office 365 CDN를 구성 하려면 다음이 단계를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-195">Complete these steps to set up and configure the Office 365 CDN to host your static assets in SharePoint Online.</span></span>
-  
-### <a name="to-enable-your-organization-to-use-the-office-365-cdn"></a><span data-ttu-id="b5e42-196">Office 365 CDN를 사용 하 여 조직에 사용 하도록 설정 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-196">To enable your organization to use the Office 365 CDN</span></span>
+> [!NOTE]
+> <span data-ttu-id="9f95e-p120">Clientsideassets은 해당 시간 공용 CDN 전의 하는 경우에 자동으로 추가 되는 항목을 참조 편리할 되도록 하지만 나중에 만든 경우의 2017 년 12 월에에서 추가 된 기본 공용 원점, 자동으로이 변경 내용을 볼 수 있습니다. 이 CDN 출처를 사용 하는 예제 읽기, 참조 하려는 경우: [호스트 Office 365 CDN (Hello World 부 4)에서 클라이언트쪽 웹 파트](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)</span><span class="sxs-lookup"><span data-stu-id="9f95e-p120">Clientsideassets is a default public origin that was added in Dec of 2017 so that, if you had a public CDN before that time, you wouldn't see the entry automatically added, but if you created afterward, you'd see this change automatically. If you'd like to read an example of using this CDN origin, see: [Host your client-side web part from Office 365 CDN (Hello World part 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)</span></span>
+    
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a><span data-ttu-id="9f95e-194">설정 및 SharePoint Online 관리 셸을 사용 하 여 Office 365 CDN 구성</span><span class="sxs-lookup"><span data-stu-id="9f95e-194">Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell</span></span>
 
-<span data-ttu-id="b5e42-p121">**집합 SPOTenantCdnEnabled** cmdlet를 사용 하 여 Office 365 CDN를 사용 하 여 조직에 사용 하도록 설정 합니다. 공용 출처, 개인 출처 또는 CDN와 둘 모두를 사용 하 여 조직의 설정할 수 있습니다. Office 365 CDN를 사용 하도록 설정 하면 기본 출처의 설치를 건너뛸지를 구성할 수 있습니다. 항상 이러한 출처를 나중에이 항목의 설명에 따라 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p121">Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use either public origins, private origins, or both with the CDN. You can also configure the Office 365 CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.</span></span> 
+<span data-ttu-id="9f95e-p121">이 항목의 절차를 사용 하면를 사용 하 여 SharePoint Online 관리 셸 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p121">The procedures in this topic require you to use the SharePoint Online Management Shell to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
   
-<span data-ttu-id="b5e42-201">SharePoint Online에 대 한 Windows powershell:</span><span class="sxs-lookup"><span data-stu-id="b5e42-201">In Windows Powershell for SharePoint Online:</span></span>
+<span data-ttu-id="9f95e-197">설정 및 SharePoint Online에서 정적 자산을 호스트 하는 Office 365 CDN를 구성 하려면 다음이 단계를 완료 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-197">Complete these steps to set up and configure the Office 365 CDN to host your static assets in SharePoint Online.</span></span>
+  
+### <a name="to-enable-your-organization-to-use-the-office-365-cdn"></a><span data-ttu-id="9f95e-198">Office 365 CDN를 사용 하 여 조직에 사용 하도록 설정 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-198">To enable your organization to use the Office 365 CDN</span></span>
+
+<span data-ttu-id="9f95e-p122">**집합 SPOTenantCdnEnabled** cmdlet를 사용 하 여 Office 365 CDN를 사용 하 여 조직에 사용 하도록 설정 합니다. 공용 출처, 개인 출처 또는 CDN와 둘 모두를 사용 하 여 조직의 설정할 수 있습니다. Office 365 CDN를 사용 하도록 설정 하면 기본 출처의 설치를 건너뛸지를 구성할 수 있습니다. 항상 이러한 출처를 나중에이 항목의 설명에 따라 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p122">Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use either public origins, private origins, or both with the CDN. You can also configure the Office 365 CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.</span></span> 
+  
+<span data-ttu-id="9f95e-203">SharePoint Online에 대 한 Windows powershell:</span><span class="sxs-lookup"><span data-stu-id="9f95e-203">In Windows Powershell for SharePoint Online:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
-<span data-ttu-id="b5e42-202">예, CDN와 공용 및 개인 출처를 사용 하 여 조직을 활성화 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-202">For example, to enable your organization to use both public and private origins with the CDN, type the following command:</span></span>
+<span data-ttu-id="9f95e-204">예, CDN와 공용 및 개인 출처를 사용 하 여 조직을 활성화 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-204">For example, to enable your organization to use both public and private origins with the CDN, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
-<span data-ttu-id="b5e42-203">조직 CDN 함께 공용 및 개인 출처를 사용 하지만 기본 출처를 건너뛸 수를 사용 하도록 설정 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-203">To enable your organization to use both public and private origins with the CDN but skip setting up the default origins, type the following command:</span></span>
+<span data-ttu-id="9f95e-205">조직 CDN 함께 공용 및 개인 출처를 사용 하지만 기본 출처를 건너뛸 수를 사용 하도록 설정 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-205">To enable your organization to use both public and private origins with the CDN but skip setting up the default origins, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-<span data-ttu-id="b5e42-204">CDN와 공용 출처를 사용 하 여 조직을 사용 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-204">To enable your organization to use public origins with the CDN, type the following command:</span></span>
+<span data-ttu-id="9f95e-206">CDN와 공용 출처를 사용 하 여 조직을 사용 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-206">To enable your organization to use public origins with the CDN, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-<span data-ttu-id="b5e42-205">CDN와 개인 출처를 사용 하 여 조직을 사용 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-205">To enable your organization to use private origins with the CDN, type the following command:</span></span>
+<span data-ttu-id="9f95e-207">CDN와 개인 출처를 사용 하 여 조직을 사용 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-207">To enable your organization to use private origins with the CDN, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-<span data-ttu-id="b5e42-206">이 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-206">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
+<span data-ttu-id="9f95e-208">이 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-208">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
   
-### <a name="optional-to-change-the-list-of-file-types-to-include-in-the-office-365-cdn"></a><span data-ttu-id="b5e42-207">(선택 사항) Office 365 CDN에 포함할 파일 형식의 목록을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-207">(Optional) To change the list of file types to include in the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-208"><a name="Office365CDNforSPOFileType"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-208"></span></span>
+### <a name="optional-to-change-the-list-of-file-types-to-include-in-the-office-365-cdn"></a><span data-ttu-id="9f95e-209">(선택 사항) Office 365 CDN에 포함할 파일 형식의 목록을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-209">(Optional) To change the list of file types to include in the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-210"><a name="Office365CDNforSPOFileType"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-210"></span></span>
 
 > [!TIP]
-> <span data-ttu-id="b5e42-p122">**집합 SPOTenantCdnPolicy** cmdlet을 사용 하 여 파일 형식을 정의 하는 경우에 현재 정의 된 목록을 덮어씁니다. 추가 파일 형식 목록에 추가 하려는 경우 cmdlet은 먼저 찾는데 사용할 파일 형식을 이미 허용 되 고 새 항목과 함께 목록에 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p122">When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.</span></span> 
+> <span data-ttu-id="9f95e-p123">**집합 SPOTenantCdnPolicy** cmdlet을 사용 하 여 파일 형식을 정의 하는 경우에 현재 정의 된 목록을 덮어씁니다. 추가 파일 형식 목록에 추가 하려는 경우 cmdlet은 먼저 찾는데 사용할 파일 형식을 이미 허용 되 고 새 항목과 함께 목록에 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p123">When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.</span></span> 
   
-<span data-ttu-id="b5e42-p123">CDN에서 공용 및 개인 출처에서 호스팅할 수 있는 정적 파일 형식 정의 **집합 SPOTenantCdnPolicy** cmdlet을 사용 합니다. 기본적으로 일반 자산 종류 예제.css,.gif,.jpg, 및.js 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p123">Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.</span></span> 
+<span data-ttu-id="9f95e-p124">CDN에서 공용 및 개인 출처에서 호스팅할 수 있는 정적 파일 형식 정의 **집합 SPOTenantCdnPolicy** cmdlet을 사용 합니다. 기본적으로 일반 자산 종류 예제.css,.gif,.jpg, 및.js 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p124">Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.</span></span> 
   
-<span data-ttu-id="b5e42-213">SharePoint Online에 대 한 Windows powershell:</span><span class="sxs-lookup"><span data-stu-id="b5e42-213">In Windows PowerShell for SharePoint Online:</span></span>
+<span data-ttu-id="9f95e-215">SharePoint Online에 대 한 Windows powershell:</span><span class="sxs-lookup"><span data-stu-id="9f95e-215">In Windows PowerShell for SharePoint Online:</span></span>
   
 ```
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
-<span data-ttu-id="b5e42-214">파일 유형을 현재 CDN에 의해 걸러지고 남은 보려면 **Get SPOTenantCdnPolicies** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-214">To see what file types are currently allowed by the CDN, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
+<span data-ttu-id="9f95e-216">파일 유형을 현재 CDN에 의해 걸러지고 남은 보려면 **Get SPOTenantCdnPolicies** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-216">To see what file types are currently allowed by the CDN, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
   
 ```
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-<span data-ttu-id="b5e42-215">이러한 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 및 [Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-215">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
+<span data-ttu-id="9f95e-217">이러한 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 및 [Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-217">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
   
-### <a name="optional-to-change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a><span data-ttu-id="b5e42-216">(선택 사항) Office 365 CDN에서 제외 하려는 사이트 분류의 목록을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-216">(Optional) To change the list of site classifications you want to exclude from the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-217"><a name="Office365CDNforSPOSiteClassification"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-217"></span></span>
+### <a name="optional-to-change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a><span data-ttu-id="9f95e-218">(선택 사항) Office 365 CDN에서 제외 하려는 사이트 분류의 목록을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-218">(Optional) To change the list of site classifications you want to exclude from the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-219"><a name="Office365CDNforSPOSiteClassification"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-219"></span></span>
 
 > [!TIP]
-> <span data-ttu-id="b5e42-p124">**집합 SPOTenantCdnPolicy** cmdlet을 사용 하 여 사이트 분류를 제외 하는 경우에 현재 정의 된 목록을 덮어씁니다. 사이트에 추가 분류 제외 하려는 경우 cmdlet을 사용 처음에 어떤 분류 이미 제외 확인 하 고 새 항목과 함께 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p124">When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.</span></span> 
+> <span data-ttu-id="9f95e-p125">**집합 SPOTenantCdnPolicy** cmdlet을 사용 하 여 사이트 분류를 제외 하는 경우에 현재 정의 된 목록을 덮어씁니다. 사이트에 추가 분류 제외 하려는 경우 cmdlet을 사용 처음에 어떤 분류 이미 제외 확인 하 고 새 항목과 함께 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p125">When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.</span></span> 
   
-<span data-ttu-id="b5e42-p125">CDN을 통해 사용할 수 있도록 하려면 사이트 분류를 제외 하려면 **집합 SPOTenantCdnPolicy** cmdlet을 사용 합니다. 기본적으로 사이트 사용할 수 있는 분류 제외 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p125">Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.</span></span> 
+<span data-ttu-id="9f95e-p126">CDN을 통해 사용할 수 있도록 하려면 사이트 분류를 제외 하려면 **집합 SPOTenantCdnPolicy** cmdlet을 사용 합니다. 기본적으로 사이트 사용할 수 있는 분류 제외 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p126">Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.</span></span> 
   
-<span data-ttu-id="b5e42-222">SharePoint Online에 대 한 Windows powershell:</span><span class="sxs-lookup"><span data-stu-id="b5e42-222">In Windows PowerShell for SharePoint Online:</span></span>
+<span data-ttu-id="9f95e-224">SharePoint Online에 대 한 Windows powershell:</span><span class="sxs-lookup"><span data-stu-id="9f95e-224">In Windows PowerShell for SharePoint Online:</span></span>
   
 ```
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications >"
 ```
 
-<span data-ttu-id="b5e42-223">어떤 사이트 분류는 현재 제한 된 참조를 **Get SPOTenantCdnPolicies** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-223">To see what site classifications are currently restricted, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
+<span data-ttu-id="9f95e-225">어떤 사이트 분류는 현재 제한 된 참조를 **Get SPOTenantCdnPolicies** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-225">To see what site classifications are currently restricted, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
   
 ```
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-<span data-ttu-id="b5e42-224">이러한 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 및 [Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-224">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
+<span data-ttu-id="9f95e-226">이러한 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 및 [Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-226">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
   
-### <a name="to-add-an-origin-for-your-assets"></a><span data-ttu-id="b5e42-225">자산에 대 한 출처를 추가 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-225">To add an origin for your assets</span></span>
-<span data-ttu-id="b5e42-226"><a name="Office365CDNforSPOOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-226"></span></span>
+### <a name="to-add-an-origin-for-your-assets"></a><span data-ttu-id="9f95e-227">자산에 대 한 출처를 추가 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-227">To add an origin for your assets</span></span>
+<span data-ttu-id="9f95e-228"><a name="Office365CDNforSPOOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-228"></span></span>
 
-<span data-ttu-id="b5e42-p126">원점 정의 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다. 여러 출처를 정의할 수 있습니다. 출처는 SharePoint 라이브러리 또는 CDN에 의해 호스트 될 하려는 자산 들어 있는 폴더를 가리키는 URL입니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p126">Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span> 
+<span data-ttu-id="9f95e-p127">원점 정의 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다. 여러 출처를 정의할 수 있습니다. 출처는 SharePoint 라이브러리 또는 CDN에 의해 호스트 될 하려는 자산 들어 있는 폴더를 가리키는 URL입니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p127">Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="b5e42-230">프로그램 CDN에서 공용 출처를 식별 하는 경우 리소스 것으로 간주 되 조직에 중요 한 공용 원본이 나 SharePoint 온라인 라이브러리에 두지 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-230">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in the public origin or SharePoint Online library.</span></span> 
+> <span data-ttu-id="9f95e-232">프로그램 CDN에서 공용 출처를 식별 하는 경우 리소스 것으로 간주 되 조직에 중요 한 공용 원본이 나 SharePoint 온라인 라이브러리에 두지 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-232">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in the public origin or SharePoint Online library.</span></span> 
   
 ```
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path >
 ```
 
-<span data-ttu-id="b5e42-p127">여기서 경로 자산 포함 된 폴더의 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다. 예를 포함 하려면 모든 자산 모든 사이트에 대 한 masterpages 폴더에서 CDN 내에서 공용 원점으로 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p127">Where path is the path to the folder that contains the assets. You can use wildcards in addition to relative paths. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:</span></span>
+<span data-ttu-id="9f95e-p128">여기서 경로 자산 포함 된 폴더의 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다. 예를 포함 하려면 모든 자산 모든 사이트에 대 한 masterpages 폴더에서 CDN 내에서 공용 원점으로 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p128">Where path is the path to the folder that contains the assets. You can use wildcards in addition to relative paths. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:</span></span>
   
 ```
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-<span data-ttu-id="b5e42-234">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-234">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+<span data-ttu-id="9f95e-236">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-236">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
   
-<span data-ttu-id="b5e42-p128">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p128">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+<span data-ttu-id="9f95e-p129">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p129">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
   
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a><span data-ttu-id="b5e42-237">예: SharePoint Online에 대 한 마스터 페이지에 대 한 및 스타일 라이브러리에 대 한 공용 원본 구성</span><span class="sxs-lookup"><span data-stu-id="b5e42-237">Example: Configure a public origin for your master pages and for your style library for SharePoint Online</span></span>
-<span data-ttu-id="b5e42-238"><a name="ExamplePublicOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-238"></span></span>
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a><span data-ttu-id="9f95e-239">예: SharePoint Online에 대 한 마스터 페이지에 대 한 및 스타일 라이브러리에 대 한 공용 원본 구성</span><span class="sxs-lookup"><span data-stu-id="9f95e-239">Example: Configure a public origin for your master pages and for your style library for SharePoint Online</span></span>
+<span data-ttu-id="9f95e-240"><a name="ExamplePublicOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-240"></span></span>
 
-<span data-ttu-id="b5e42-p129">일반적으로 이러한 출처는를 설정 하면 기본적으로 Office 365 CDN에 대 한 공용 출처를 사용 하도록 설정 하면 합니다. 그러나 수동으로 수 있도록 하려는 경우 다음이 단계를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p129">Normally, these origins are set up for you by default when you enable public origins for the Office 365 CDN. However, if you want to enable them manually, follow these steps.</span></span>
+<span data-ttu-id="9f95e-p130">일반적으로 이러한 출처는를 설정 하면 기본적으로 Office 365 CDN에 대 한 공용 출처를 사용 하도록 설정 하면 합니다. 그러나 수동으로 수 있도록 하려는 경우 다음이 단계를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p130">Normally, these origins are set up for you by default when you enable public origins for the Office 365 CDN. However, if you want to enable them manually, follow these steps.</span></span>
   
-- <span data-ttu-id="b5e42-241">Office 365 CDN 내에서 공용 원점으로 스타일 라이브러리를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-241">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the style library as a public origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="9f95e-243">Office 365 CDN 내에서 공용 원점으로 스타일 라이브러리를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-243">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the style library as a public origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
   ```
 
-- <span data-ttu-id="b5e42-242">Office 365 CDN 내에서 공용 원점으로 마스터 페이지를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-242">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the master pages as a public origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="9f95e-244">Office 365 CDN 내에서 공용 원점으로 마스터 페이지를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-244">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the master pages as a public origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-- <span data-ttu-id="b5e42-243">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-243">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+- <span data-ttu-id="9f95e-245">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-245">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
     
-    <span data-ttu-id="b5e42-p130">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p130">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+    <span data-ttu-id="9f95e-p131">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p131">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
     
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a><span data-ttu-id="b5e42-246">예: SharePoint Online에 대 한 사이트 자산, 사이트 페이지 및 게시 이미지의 개인 원본 구성</span><span class="sxs-lookup"><span data-stu-id="b5e42-246">Example: Configure a private origin for your site assets, site pages, and publishing images for SharePoint Online</span></span>
-<span data-ttu-id="b5e42-247"><a name="ExamplePrivateOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-247"></span></span>
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a><span data-ttu-id="9f95e-248">예: SharePoint Online에 대 한 사이트 자산, 사이트 페이지 및 게시 이미지의 개인 원본 구성</span><span class="sxs-lookup"><span data-stu-id="9f95e-248">Example: Configure a private origin for your site assets, site pages, and publishing images for SharePoint Online</span></span>
+<span data-ttu-id="9f95e-249"><a name="ExamplePrivateOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-249"></span></span>
 
-- <span data-ttu-id="b5e42-248">Office 365 CDN 내 개인 원점으로 사이트 자산 폴더를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-248">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site assets folder as a private origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="9f95e-250">Office 365 CDN 내 개인 원점으로 사이트 자산 폴더를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-250">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site assets folder as a private origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
-- <span data-ttu-id="b5e42-249">Office 365 CDN 내 개인 원점으로 사이트 페이지 폴더를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-249">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site pages folder as a private origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="9f95e-251">Office 365 CDN 내 개인 원점으로 사이트 페이지 폴더를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-251">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site pages folder as a private origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
   ```
 
-- <span data-ttu-id="b5e42-250">Office 365 CDN 내 개인 원점으로 게시 이미지 폴더를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-250">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the publishing images folder as a private origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="9f95e-252">Office 365 CDN 내 개인 원점으로 게시 이미지 폴더를 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-252">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the publishing images folder as a private origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-    <span data-ttu-id="b5e42-251">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-251">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+    <span data-ttu-id="9f95e-253">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-253">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
     
-    <span data-ttu-id="b5e42-p131">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p131">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+    <span data-ttu-id="9f95e-p132">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p132">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
     
-### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a><span data-ttu-id="b5e42-254">예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성</span><span class="sxs-lookup"><span data-stu-id="b5e42-254">Example: Configure a private origin for a site collection for SharePoint Online</span></span>
-<span data-ttu-id="b5e42-255"><a name="ExamplePrivateOriginSiteCollection"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-255"></span></span>
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a><span data-ttu-id="9f95e-256">예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성</span><span class="sxs-lookup"><span data-stu-id="9f95e-256">Example: Configure a private origin for a site collection for SharePoint Online</span></span>
+<span data-ttu-id="9f95e-257"><a name="ExamplePrivateOriginSiteCollection"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-257"></span></span>
 
-<span data-ttu-id="b5e42-p132">Office 365 CDN 내 개인 원점으로 사이트 모음을 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다. 예를 들어</span><span class="sxs-lookup"><span data-stu-id="b5e42-p132">Use the **Add-SPOTenantCdnOrigin** cmdlet to define a site collection as a private origin within the Office 365 CDN. For example,</span></span> 
+<span data-ttu-id="9f95e-p133">Office 365 CDN 내 개인 원점으로 사이트 모음을 정의 하려면 **추가 SPOTenantCdnOrigin** cmdlet을 사용 합니다. 예를 들어</span><span class="sxs-lookup"><span data-stu-id="9f95e-p133">Use the **Add-SPOTenantCdnOrigin** cmdlet to define a site collection as a private origin within the Office 365 CDN. For example,</span></span> 
   
 ```
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-<span data-ttu-id="b5e42-258">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-258">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+<span data-ttu-id="9f95e-260">이 명령 및 구문에 대 한 자세한 내용은 [추가 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-260">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
   
-<span data-ttu-id="b5e42-p133">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p133">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+<span data-ttu-id="9f95e-p134">명령을 실행 했을 때, 되 면 시스템 데이터 센터 구성을 동기화 합니다. 이 수식의 계산 시간이 15 분.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p134">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
   
-## <a name="manage-the-office-365-cdn"></a><span data-ttu-id="b5e42-261">Office 365 관리 CDN</span><span class="sxs-lookup"><span data-stu-id="b5e42-261">Manage the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-262"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-262"></span></span>
+## <a name="manage-the-office-365-cdn"></a><span data-ttu-id="9f95e-263">Office 365 관리 CDN</span><span class="sxs-lookup"><span data-stu-id="9f95e-263">Manage the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-264"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-264"></span></span>
 
-<span data-ttu-id="b5e42-263">CDN 설정한 후 변경할 수 있습니다를 구성 요구 사항이 변경 됨, 또는 콘텐츠를 업데이트할 때이 섹션의 설명에 따라 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-263">Once you've set up the CDN, you can make changes to your configuration as you update content or as your needs change, as described in this section.</span></span>
+<span data-ttu-id="9f95e-265">CDN 설정한 후 변경할 수 있습니다를 구성 요구 사항이 변경 됨, 또는 콘텐츠를 업데이트할 때이 섹션의 설명에 따라 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-265">Once you've set up the CDN, you can make changes to your configuration as you update content or as your needs change, as described in this section.</span></span>
   
-### <a name="to-add-update-or-remove-assets-from-the-office-365-cdn"></a><span data-ttu-id="b5e42-264">추가, 업데이트 하 고, 또는 Office 365 CDN에서 자산을 제거 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-264">To add, update, or remove assets from the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-265"><a name="Office365CDNforSPOaddremoveasset"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-265"></span></span>
+### <a name="to-add-update-or-remove-assets-from-the-office-365-cdn"></a><span data-ttu-id="9f95e-266">추가, 업데이트 하 고, 또는 Office 365 CDN에서 자산을 제거 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-266">To add, update, or remove assets from the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-267"><a name="Office365CDNforSPOaddremoveasset"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-267"></span></span>
 
-<span data-ttu-id="b5e42-p134">설치 단계를 완료 한 후 새 자산을 추가할 수 및 업데이트 하거나 원할 경우 언제 든 지 기존 자산을 제거 합니다. 폴더 또는 원점으로 식별 하는 SharePoint 라이브러리의 자산을 변경 것입니다. 새 자산을 추가 하는 경우 가능 하다는 CDN를 통해 즉시 합니다. 그러나 자산을 업데이트 하는 경우 전파 되 고 CDN에서 사용할 수 있게 하 고 새 복사본에 대 한 최대 15 분 걸립니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p134">Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it is available through the CDN immediately. However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.</span></span>
+<span data-ttu-id="9f95e-p135">설치 단계를 완료 한 후 새 자산을 추가할 수 및 업데이트 하거나 원할 경우 언제 든 지 기존 자산을 제거 합니다. 폴더 또는 원점으로 식별 하는 SharePoint 라이브러리의 자산을 변경 것입니다. 새 자산을 추가 하는 경우 가능 하다는 CDN를 통해 즉시 합니다. 그러나 자산을 업데이트 하는 경우 전파 되 고 CDN에서 사용할 수 있게 하 고 새 복사본에 대 한 최대 15 분 걸립니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p135">Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it is available through the CDN immediately. However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.</span></span>
   
-<span data-ttu-id="b5e42-p135">원점의 위치를 검색 해야하는 경우에 **Get SPOTenantCdnOrigins** cmdlet을 사용할 수 있습니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [Get SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p135">If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).</span></span>
+<span data-ttu-id="9f95e-p136">원점의 위치를 검색 해야하는 경우에 **Get SPOTenantCdnOrigins** cmdlet을 사용할 수 있습니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [Get SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p136">If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).</span></span>
   
-### <a name="to-remove-an-origin-from-the-office-365-cdn"></a><span data-ttu-id="b5e42-272">Office 365 CDN에서 한 출처를 제거 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-272">To remove an origin from the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-273"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-273"></span></span>
+### <a name="to-remove-an-origin-from-the-office-365-cdn"></a><span data-ttu-id="9f95e-274">Office 365 CDN에서 한 출처를 제거 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-274">To remove an origin from the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-275"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-275"></span></span>
 
-<span data-ttu-id="b5e42-p136">필요한 경우에 폴더 또는 원점으로 식별 하는 SharePoint 라이브러리에 대 한 액세스를 제거할 수 있습니다. 이 작업을 수행 하려면 **제거 SPOTenantCdnOrigin** cmdlet을 사용 합니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [제거 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p136">If you need to, you can remove access to a folder or SharePoint library that you identified as an origin. To do this, use the **Remove-SPOTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).</span></span>
+<span data-ttu-id="9f95e-p137">필요한 경우에 폴더 또는 원점으로 식별 하는 SharePoint 라이브러리에 대 한 액세스를 제거할 수 있습니다. 이 작업을 수행 하려면 **제거 SPOTenantCdnOrigin** cmdlet을 사용 합니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [제거 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p137">If you need to, you can remove access to a folder or SharePoint library that you identified as an origin. To do this, use the **Remove-SPOTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).</span></span>
   
-### <a name="to-modify-an-origin-in-the-office-365-cdn"></a><span data-ttu-id="b5e42-277">Office 365 CDN의 원점을 수정 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-277">To modify an origin in the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-278"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-278"></span></span>
+### <a name="to-modify-an-origin-in-the-office-365-cdn"></a><span data-ttu-id="9f95e-279">Office 365 CDN의 원점을 수정 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-279">To modify an origin in the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-280"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-280"></span></span>
 
-<span data-ttu-id="b5e42-p137">만들었고 원점을 수정할 수 없습니다. 대신, 출처를 제거 하 고 새를 추가 합니다. 자세한 내용은 [Office 365 CDN에서 원점을 제거 하](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) 고 [자산에 대 한 출처를 추가 하려면](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p137">You can't modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).</span></span>
+<span data-ttu-id="9f95e-p138">만들었고 원점을 수정할 수 없습니다. 대신, 출처를 제거 하 고 새를 추가 합니다. 자세한 내용은 [Office 365 CDN에서 원점을 제거 하](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) 고 [자산에 대 한 출처를 추가 하려면](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p138">You can't modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).</span></span>
   
-### <a name="to-disable-the-office-365-cdn"></a><span data-ttu-id="b5e42-282">Office 365 CDN를 사용 하지 않도록 설정 하려면</span><span class="sxs-lookup"><span data-stu-id="b5e42-282">To disable the Office 365 CDN</span></span>
-<span data-ttu-id="b5e42-283"><a name="Office365CDNforSPODisable"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-283"></span></span>
+### <a name="to-disable-the-office-365-cdn"></a><span data-ttu-id="9f95e-284">Office 365 CDN를 사용 하지 않도록 설정 하려면</span><span class="sxs-lookup"><span data-stu-id="9f95e-284">To disable the Office 365 CDN</span></span>
+<span data-ttu-id="9f95e-285"><a name="Office365CDNforSPODisable"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-285"></span></span>
 
-<span data-ttu-id="b5e42-p138">**집합 SPOTenantCdnEnabled** cmdlet을 사용 하면 조직에 대 한 CDN를 사용 하지 않도록 설정 합니다. 모두 공용 및 개인 출처 CDN를 사용 하도록 설정 하는 경우 다음 예제에 표시 된 대로 두번 cmdlet을 실행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p138">Use the **Set-SPOTenantCdnEnabled** cmdlet to disable the CDN for your organization. If you have both the public and private origins enabled for the CDN, you need to run the cmdlet twice as shown in the following examples.</span></span> 
+<span data-ttu-id="9f95e-p139">**집합 SPOTenantCdnEnabled** cmdlet을 사용 하면 조직에 대 한 CDN를 사용 하지 않도록 설정 합니다. 모두 공용 및 개인 출처 CDN를 사용 하도록 설정 하는 경우 다음 예제에 표시 된 대로 두번 cmdlet을 실행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p139">Use the **Set-SPOTenantCdnEnabled** cmdlet to disable the CDN for your organization. If you have both the public and private origins enabled for the CDN, you need to run the cmdlet twice as shown in the following examples.</span></span> 
   
-<span data-ttu-id="b5e42-286">SharePoint Online 용 Windows Powershell에서 CDN에서 공용 출처 사용 하지 않도록 설정 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-286">To disable use of public origins in the CDN, in Windows Powershell for SharePoint Online, enter the following command:</span></span>
+<span data-ttu-id="9f95e-288">SharePoint Online 용 Windows Powershell에서 CDN에서 공용 출처 사용 하지 않도록 설정 하려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-288">To disable use of public origins in the CDN, in Windows Powershell for SharePoint Online, enter the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
-<span data-ttu-id="b5e42-287">CDN에서 개인 출처의 사용을 사용 하지 않으려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-287">To disable use of the private origins in the CDN, enter the following command:</span></span>
+<span data-ttu-id="9f95e-289">CDN에서 개인 출처의 사용을 사용 하지 않으려면 다음 명령을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-289">To disable use of the private origins in the CDN, enter the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-<span data-ttu-id="b5e42-288">이 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="b5e42-288">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
+<span data-ttu-id="9f95e-290">이 cmdlet에 대 한 자세한 내용은 [집합 SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)을 참조 하십시오.</span><span class="sxs-lookup"><span data-stu-id="9f95e-290">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
   
-## <a name="troubleshooting-your-office-365-cdn-configuration"></a><span data-ttu-id="b5e42-289">Office 365 CDN 구성 문제해결</span><span class="sxs-lookup"><span data-stu-id="b5e42-289">Troubleshooting your Office 365 CDN configuration</span></span>
-<span data-ttu-id="b5e42-290"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="b5e42-290"></span></span>
+## <a name="troubleshooting-your-office-365-cdn-configuration"></a><span data-ttu-id="9f95e-291">Office 365 CDN 구성 문제해결</span><span class="sxs-lookup"><span data-stu-id="9f95e-291">Troubleshooting your Office 365 CDN configuration</span></span>
+<span data-ttu-id="9f95e-292"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="9f95e-292"></span></span>
 
-<span data-ttu-id="b5e42-p139">끝점 즉시 되지 않습니다에 사용 하기 위해 사용할 수 있는 전체에 전파 되는데 CDN 등록을 위한 시간이 걸립니다. 구성 15 분이 걸립니다.</span><span class="sxs-lookup"><span data-stu-id="b5e42-p139">The endpoint will not immediately be available for use, as it takes time for the registration to propagate through the CDN. Configuration takes 15 minutes.</span></span>
+<span data-ttu-id="9f95e-p140">끝점 즉시 되지 않습니다에 사용 하기 위해 사용할 수 있는 전체에 전파 되는데 CDN 등록을 위한 시간이 걸립니다. 구성 15 분이 걸립니다.</span><span class="sxs-lookup"><span data-stu-id="9f95e-p140">The endpoint will not immediately be available for use, as it takes time for the registration to propagate through the CDN. Configuration takes 15 minutes.</span></span>
   
 

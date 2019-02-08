@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: ce79b11ccd298a35c23a3ffcd5dd9daa1b594204
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22915023"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "27745322"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365 공동 작업, 보안 및 규정 준수, 이동성 및 intellgence 및 분석을 사용 하도록 설정 하는 강력한 온라인 클라우드 서비스를 제공 합니다. 이 페이지에서는 관리자 및 배포, 구성 및 Office를 관리 하는 IT 전문가 위한 지침에 대 한 링크를 제공&nbsp;엔터프라이즈 조직에서 365 서비스입니다.</p>
@@ -243,7 +243,7 @@ ms.locfileid: "22915023"
 </ul>
 
 <hr>
-<h2>커뮤니티 및 지원</h2>
+<h2>추가 리소스</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -273,8 +273,25 @@ ms.locfileid: "22915023"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>지원 받기</h3>
+                        <h3>지원</h3>
                         <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Office에 대 한 지원에 대 한 지원 문의&nbsp;365 합니다.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Microsoft 365 Caret image" data-linktype="external">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft 365</h3>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">Microsoft 365에 대해 알아봅니다.</a></p>
                     </div>
                 </div>
             </div>
