@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 네트워크 최적화는 SaaS 서비스, Office 365 네트워킹의 목표에 대 한 중요 한 이유에 대해 설명 하며 SaaS 다른 작업에서 서로 다른 네트워킹을 요구 하는 방법입니다.
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002357"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897211"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 네트워크 연결 개요 (영문)
 
@@ -84,7 +84,7 @@ Office 365 끝점 보안 및 경계 보안을 적용에 대 한 필요성을 줄
 > [!NOTE]
 > _분산 서비스 앞면 도어_ 인프라는 지리적으로 분산 된 위치에는 Microsoft 글로벌 네트워크의 사용 가능한과 확장성이 높은 네트워크 지 합니다. 최종 사용자 연결을 종료 하 고 Microsoft 글로벌 네트워크 내에서를 효율적으로 라우팅합니다. Microsoft 글로벌 네트워크 [어떻게 Microsoft 구축 하는 신속 하 고 신뢰할 수 있는 전역 네트워크에](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)대 한 자세한 내용을 알아보십시오.
 
-Office 365 네트워크 연결 원칙을 적용 하 고 이해 (영문)에 대 한 자세한 내용은 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles#office-365-connectivity-principles)을 참조 하십시오.
+Office 365 네트워크 연결 원칙을 적용 하 고 이해 (영문)에 대 한 자세한 내용은 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)을 참조 하십시오.
 
 ## <a name="conclusion"></a>결론
 

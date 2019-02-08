@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: SharePoint Online 사이트 그룹을 관리 하려면 Office 365 PowerShell를 사용 합니다.'
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975146"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897161"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
@@ -69,7 +69,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 ![SharePoint Online 사이트 그룹](media/SPO-site-groups.png)
 
-다음은 사이트에 대해 만들어진 모든 그룹 `https://litwareinc.sharepoint.com/sites/finance`외에 해당 그룹에 할당 된 모든 사용자입니다. 그룹 이름은 구성원 에게만에서 별도 그룹 이름 하는데 도움이 되는 노란색에서입니다.
+다음은 사이트에 대해 만들어진 모든 그룹 `https://litwareinc.sharepoint.com/sites/finance`, 하 고 해당 그룹에 할당 된 모든 사용자입니다. 그룹 이름은 구성원 에게만에서 별도 그룹 이름 하는데 도움이 되는 노란색에서입니다.
 
 다른 예로 명령 집합은 그룹 및 모든 SharePoint Online 사이트의 모든 그룹 구성원을 나열 하는 다음과 같습니다.
 
@@ -97,7 +97,7 @@ foreach ($y in $x)
 
 [Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

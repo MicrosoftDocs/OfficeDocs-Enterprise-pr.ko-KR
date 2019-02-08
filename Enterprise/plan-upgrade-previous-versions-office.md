@@ -3,7 +3,7 @@ title: Office 2007 또는 2010 서버와 클라이언트에서 업그레이드�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/03/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,58 +12,57 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Office 2007 또는 Office 2010을 사용 하는 경우 업그레이드를 계획 하는 시간입니다. 이러한 리소스를 사용 하 여 계획을 문서화할 시작 합니다.
-ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
-ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
+description: Office 2007 또는 Office 2010을 사용 하는 경우 업그레이드를 계획 하는 시간입니다. 오래 된 apps 문의할 수 하지 마십시오. 이러한 리소스를 사용 하 여 계획을 문서화할 시작 합니다.
+ms.openlocfilehash: e14479e9c313b228dc42f0c3da0d945ddd563a13
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "25363171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911412"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버와 클라이언트에서 업그레이드를 계획
 
-이전 버전의 Office 제품 및 서버를 사용 하는 경우 업그레이드 계획을 시작 하기 좋은 시간입니다. Office 2007 제품 및 서비스 지원의 끝에 도달한 및 Office 2010 제품 및 서비스 거의 가득 차지 지원의 끝입니다. 
-
-이 섹션의 리소스를 사용 하 여 시작 합니다.
+이전 버전의 Office 제품 및 서버를 사용 하는 경우 업그레이드 계획을 시작 하기 좋은 시간입니다. Office 2007 제품 및 서비스 지원의 끝에 도달한 및 Office 2010 제품 및 서비스 거의 가득 차지 지원의 끝입니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
 
 - [Office 2010 서버와 클라이언트에서 업그레이드](upgrade-from-office-2010-servers-and-products.md)
 
 - [Office 2007 서버와 클라이언트에서 업그레이드](upgrade-from-office-2007-servers-and-products.md)
 
+## <a name="what-happens-if-i-dont-upgrade"></a>업그레이드 하지 않으면 어떻게 됩니까?
+
+지금은 업그레이드 하지 않도록 선택할 수 있습니다. 온-프레미스 서버와 응용 프로그램은 계속 실행 합니다. 그러나 보안 업데이트를 받을 더이상 또는 지원 옵션을 하는 경우 또는 조직에 취약할 수 없습니다 보안 위반 합니다. 강력 하 게 계획 하 여 업그레이드 가능한 한 빨리 Office 365로 여부 또는 온-프레미스 서버와 응용 프로그램의 최신 버전에는 것이 좋습니다.
+
 ## <a name="what-upgrade-options-are-available"></a>어떤 업그레이드 옵션을 사용할 수 있습니까?      
 
 조직은 여러 옵션을 고려해 야 합니다.
 
-- **Microsoft 365로 이동**: 많은 고객을 위한는 효율적이 고 경제적인 솔루션은 클라우드로 이동 합니다. 설치 및 유지 관리를 보다 쉽게 되며 모든 최신 기능 및 보안 업데이트를 가져옵니다. 자세한 내용은 참조는 [Microsoft 365 란?](#what-is-microsoft-365) 이 문서의 섹션입니다.
+- **Microsoft 365로 이동**: 많은 고객을 위한는 효율적이 고 경제적인 솔루션은 클라우드로 이동 합니다. 설치 및 유지 관리를 보다 쉽게 되며 모든 최신 기능 및 보안 업데이트를 가져옵니다. 자세한 내용은 참조 [Microsoft 365 란?](#what-is-microsoft-365) (이 문서의).
     
-- **온-프레미스 서버와 응용 프로그램을 업그레이드 합니다.** [Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange](exchange-2010-end-of-support.md), [SharePoint](upgrade-from-sharepoint-2010.md), [Project Server 및 Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)및 [Skype 비즈니스에 대 한](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) 콘텐츠 계획을 참조 하십시오. 
+- **온-프레미스 서버와 응용 프로그램을 업그레이드 합니다.** Office 제품 및 서버 응용 프로그램을 사용 하 여 온-프레미스 중인을 하는 경우는 [Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange](exchange-2010-end-of-support.md), [SharePoint](upgrade-from-sharepoint-2010.md), [Project Server 및 Project Online](project-server-2010-end-of-support.md)및 [Skype 비즈니스에 대 한](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) 콘텐츠 계획을 참조 합니다. 
     
-- **Office 365를 포함 하 여 하이브리드 솔루션을 구현** 하 고 온-프레미스 서버와 응용 프로그램입니다. 참조 [Office 365 하이브리드 클라우드 솔루션 개요.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
+- **Office 365를 포함 하 여 하이브리드 솔루션을 구현** 하 고 온-프레미스 서버와 응용 프로그램입니다. 참조 [Office 365 하이브리드 클라우드 솔루션 개요.](hybrid-cloud-overview.md)
     
 ### <a name="help-is-available-for-your-organization"></a>도움말을 조직에 대해 사용할 수
 
-업그레이드 계획에 대 한 도움을 시작 하는 것이 좋습니다.
+업그레이드 계획에 대 한 도움을 하려는 경우에 다음 옵션 중 하나 이상을 고려 하십시오.
 
-- 파트너 또는 볼륨 라이선스 전문가 사용을 고려 합니다. **[Office 365 파트너 또는 대리점을 찾습니다](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
+- 파트너 또는 볼륨 라이선스 전문가와 작동 합니다. **[Office 365 파트너 또는 대리점을 찾습니다](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 
-- 일정 한 수의 Microsoft 클라우드 라이선스를 구입 하는 조직, 하는 경우이 FastTrack 팀 설치 프로세스를 통해 수 있습니다. 자세한 내용은, [FastTrack](https://www.microsoft.com/fasttrack)을 참고 하십시오.
+- 일정 한 수의 Microsoft 클라우드 라이선스를 구입 하는 조직, 하는 경우이 FastTrack 팀 설치 프로세스를 통해 수 있습니다. 자세한 내용은 [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)을 참조 합니다.
 
-- 하 고 있는 경우 부분에서는 소규모 조직 또는 있습니다 업그레이드를 직접 처리, 참조 하려면 [관리자: 사용자에 게 비즈니스를 위한 Office 365를 사용 하 여 최신 Office 클라이언트를 업그레이드](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx)합니다. 
+- 소규모 조직에서는의 일부 경우 또는 처리 하는 것을 선호 하는 경우 조직의 Office 사용자가 직접 업그레이드 [최신 Office 클라이언트에 비즈니스 사용자를 위한 Office 365 업그레이드](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)을 참조 하십시오. 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>홈 사용자를 결정 합니다. 뭐 할까요?
 
 을 사용 중인 Office 2007 또는 Office 2010에서 초기화 하는 경우 다음 옵션을 고려 합니다.
 
-- **사용 하 여 Office Online에 대 한 약속**합니다. 만들기, 보고, 하 및 브라우저에서 Office 파일을 편집 하 고 인터넷에 액세스할 수 있는 모든 장치에서 해당 파일에 액세스할 수입니다. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) [Word 온라인](http://go.microsoft.com/fwlink/p/?linkid=746664), [온라인 Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint 온라인](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote 온라인](http://go.microsoft.com/fwlink/p/?linkid=746674), [라](http://go.microsoft.com/fwlink/p/?linkid=746675), [전자 메일](http://go.microsoft.com/fwlink/p/?linkid=746676), [일정](http://go.microsoft.com/fwlink/p/?linkid=746678)및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)를 포함합니다. 시작 하려면 [office.com](https://office.com) 을 방문 하 고 Microsoft 계정을 사용 하 여 로그인 합니다. (Microsoft 계정을 설치 하지 않은 경우 만들 수 있습니다 office.com에 하나씩.)
+- **사용 하 여 Office Online에 대 한 약속**합니다. 만들기, 보고, 하 및 브라우저에서 Office 파일을 편집 하 고 인터넷에 액세스할 수 있는 모든 장치에서 해당 파일에 액세스할 수입니다. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) [Word 온라인](http://go.microsoft.com/fwlink/p/?linkid=746664), [온라인 Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint 온라인](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote 온라인](http://go.microsoft.com/fwlink/p/?linkid=746674), [라](http://go.microsoft.com/fwlink/p/?linkid=746675), [전자 메일](http://go.microsoft.com/fwlink/p/?linkid=746676), [일정](http://go.microsoft.com/fwlink/p/?linkid=746678)및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)를 포함합니다. 시작 하려면 [office.com](https://office.com) 을 방문 하 고 [Microsoft 계정을](https://account.microsoft.com/account)사용 하 여 로그인 합니다. (Microsoft 계정을 설치 하지 않은 경우 만들 수 있습니다 [office.com](https://office.com)에 하나씩.)
 
 - **가정용 Office 365 시도 하십시오입니다**. [Office 365 개인](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) 또는 [Office 365 홈](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 구독 중에서 선택 합니다. 및 평가판을 등록 합니다. 등록 (영문), 하 고 Windows 또는 Mac 컴퓨터, 사용자 iOS 또는 Android smartphone 및 프로그램 iOS 또는 Android 태블릿 최신 버전의 Office 설치 합니다. Office 365와 onedrive에 클라우드 저장소를 즐길 수 하 고 가져옵니다 모바일로 Skype 전화의 60 분 및 일반 전화선 번호 각 월, 다른 많은 유용한 기능을 얻을 수 있습니다. [Office 365를 참조 하 고 홈에 대 한 가격](https://products.office.com/explore-office-for-home)입니다.
     
 - **구매 Office 홈 &amp; 학생 2016**합니다. 이 옵션을 선택 하는 경우에 1 회 구매 하 고 [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) 또는 [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)에 Office 2016를 설치 합니다. 이것은 구독; 되지 않습니다. 이것이 컴퓨터 한 대 한 일회성, 영구 사용 라이선스입니다.
 
-
-## <a name="what-happens-if-i-dont-upgrade"></a>업그레이드 하지 않으면 어떻게 됩니까?
-
-지금은 업그레이드 하지 않도록 선택할 수 있습니다. 온-프레미스 서버와 응용 프로그램은 계속 실행 합니다. 그러나 보안 업데이트를 받을 더이상 또는 지원 옵션을 하는 경우 또는 조직에 취약할 수 없습니다 보안 위반 합니다. 강력 하 게 계획 하 여 업그레이드 가능한 한 빨리 Office 365로 여부 또는 온-프레미스 서버와 응용 프로그램의 최신 버전에는 것이 좋습니다.
+지금은 업그레이드 하지 않도록 선택할 수 있습니다. Office 앱 계속 실행 됩니다. 그러나 업그레이드 하는 귀하에 게 액세스할 수 보안 업데이트를 포함 하 여 새롭고 향상 된 기능을 합니다. 
    
 ## <a name="what-is-microsoft-365"></a>Microsoft 365 란?
 

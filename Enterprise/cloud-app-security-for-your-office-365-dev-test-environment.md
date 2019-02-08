@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '요약: 구성 및 Office 365 개발/테스트 환경에서 Office 365 클라우드 응용 프로그램 보안을 시연 합니다.'
-ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915763"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897061"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
  **요약:** 구성 하 고 Office 365 개발/테스트 환경에서 Office 365 클라우드 응용 프로그램 보안을 시연 합니다.
   
-이전에 Office 365 고급 보안 관리 라고 office 365 클라우드 응용 프로그램 보안에 대 한 모니터링 하 고 알리기 위해 Office 365 구독에 의심 스러운 활동의 조사 하 고 가능한 수행할 수 있도록 하는 정책을 만들 수 있습니다. 업데이트 관리 작업입니다. 자세한 내용은 [개요의 클라우드 앱 Office 365의 보안](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)을 참조 하십시오.
+이전에 Office 365 고급 보안 관리에 대 한 모니터링 하 고 알리기 위해 Office 365 구독에 의심 스러운 활동의 조사 하 고 가능한 복구를 수행할 수 있도록 하는 정책을 만들 수 있습니다 라고 office 365 클라우드 응용 프로그램 보안 동작 합니다. 자세한 내용은 [개요의 클라우드 앱 Office 365의 보안](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)을 참조 하십시오.
   
 이 문서의 지침을 사용 하도록 설정 하 고 Office 365 평가판 구독에서 클라우드 응용 프로그램 보안 테스트 합니다.
   
@@ -81,13 +81,13 @@ ms.locfileid: "22915763"
 
 1. Office 365 포털에 이동 ([https://portal.office.com](https://portal.office.com)) 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
     
-2. **Admin** 타일을 클릭 합니다. **Office 관리 센터** 탭을 클릭 **관리 센터 > 보안 및 규정 준수**합니다.
+2. **Admin** 타일을 클릭 합니다. **Office 관리 센터** 탭에서 **관리 gt_ 보안 & 준수 센터**를 클릭 합니다.
     
-3. 왼쪽된 탐색 창의 클릭 **알림 > 고급 알림 관리**합니다.
+3. 왼쪽된 탐색 창의 **알림 gt_ 관리 알림 고급**을 클릭 합니다.
     
 4. **고급 알림 관리** 페이지에서 **Office 365 클라우드 응용 프로그램 보안 설정**를 클릭 한 다음 **Office 365 클라우드 응용 프로그램 보안으로 이동**를 클릭 합니다.
     
-5. 새 **대시보드** 탭을 클릭 **제어 > 정책**합니다.
+5. 새 **대시보드** 탭에서 **제어 gt_ 정책을**클릭 합니다.
     
 6. **정책** 페이지에서 **정책 만들기**클릭 한 다음 **활동 정책**을 클릭 합니다.
     
@@ -111,7 +111,7 @@ ms.locfileid: "22915763"
 
 1. 위 오른쪽에서 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다.
     
-2. 이동 [https://portal.office.com](https://portal.office.com)합니다.
+2. [https://portal.office.com](https://portal.office.com)으로 이동합니다.
     
 3. Office 365 로그인 페이지에서 **다른 계정 사용**을 클릭합니다.
     
@@ -135,7 +135,7 @@ ms.locfileid: "22915763"
     
 13. 위 오른쪽에 있는 사용자 아이콘을 클릭 하 고 **로그 아웃**을 클릭 합니다. 
     
-14. 이동 [https://portal.office.com](https://portal.office.com)합니다.
+14. [https://portal.office.com](https://portal.office.com)으로 이동합니다.
     
 15. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭합니다.
     
@@ -145,7 +145,7 @@ ms.locfileid: "22915763"
     
 18. 클릭 하 고 **보안 &amp; 준수** 바둑판식으로 배열 합니다.
     
-19. 왼쪽된 탐색 창의 클릭 **알림 > 고급 알림 관리**합니다.
+19. 왼쪽된 탐색 창의 **알림 gt_ 관리 알림 고급**을 클릭 합니다.
     
 20. **고급 알림 관리** 페이지에서 **Office 365 클라우드 응용 프로그램 보안으로 이동**합니다.를 클릭 합니다.
     

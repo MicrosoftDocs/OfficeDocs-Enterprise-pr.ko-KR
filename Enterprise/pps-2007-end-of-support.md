@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity, 및 SharePoint Server 2007 지원의 끝에 도달 했습니다. BI 솔루션 업그레이드를 계획 하는이 문서를 읽어보십시오.
-ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 03db75b38bfaa32df20eafb8ede745e403bc964f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26617881"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 
@@ -152,5 +152,7 @@ PerformancePoint Services로 업그레이드할 때 즐길 수 몇가지 새로�
 [2007 서버와 클라이언트에서 Office를 업그레이드 하는데 도움이 되는 리소스](upgrade-from-office-2007-servers-and-products.md)
   
 [Office 퇴직 그룹 (Microsoft 기술 커뮤니티)](https://go.microsoft.com/fwlink/?linkid=842065)
+
+
   
 

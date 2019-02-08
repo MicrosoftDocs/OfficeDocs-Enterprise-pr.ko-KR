@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 이 세 단계를 통해 Office 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542162"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897521"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 전역 관리자 계정 보호
 
@@ -94,9 +94,9 @@ Microsoft는 조직를 보호 하는 기능을 제공 하지만 사용 하는 �
   
 - 전화 통화
     
-- 임의로 생성 된 암호
+- 임의로 생성된 암호
     
-- 스마트 카드 (가상 또는 실제)
+- 스마트 카드(가상 또는 실제)
     
 - 생체 인식 장치
     
@@ -120,7 +120,7 @@ MFA 및 PowerShell Office 365 서비스에 연결할 [이 문서](https://blogs.
   
 ## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>3 단계입니다. 의심 스러운 전역 관리자 계정 작업에 대 한 모니터링
 
-Office 365 클라우드 응용 프로그램 보안을 사용 하면 사용자에 게 알리도록 구독에서 의심 스러운 동작의 정책을 만들 수 있습니다. 클라우드 App 보안은 Office 365 e 5에 되었지만 별도 서비스도도 제공 됩니다. 예, Office 365 e 5에 하지 않은 경우 전역 관리자, 보안 관리자 및 규정 준수 관리자 역할에 할당 된 사용자 계정에 대 한 개별 클라우드 앱 보안 라이선스를 구입할 수 있습니다.
+Office 365 클라우드 응용 프로그램 보안을 통해 사용자에 게 알리도록 구독에서 의심 스러운 동작의 정책을 만들 수 있습니다. 클라우드 App 보안은 Office 365 e 5에 되었지만 별도 서비스도도 제공 됩니다. 예, Office 365 e 5에 하지 않은 경우 전역 관리자, 보안 관리자 및 규정 준수 관리자 역할에 할당 된 사용자 계정에 대 한 개별 클라우드 앱 보안 라이선스를 구입할 수 있습니다.
   
 Office 365 구독에서 클라우드 응용 프로그램 보안을 설치한 경우 다음이 단계를 따라 합니다.
   

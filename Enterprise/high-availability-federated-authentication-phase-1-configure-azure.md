@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '요약: Microsoft Azure 인프라를 구성하여 Office 365 페더레이션 인증의 고가용성을 호스트합니다.'
-ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915463"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897481"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>고가용성 페더레이션 인증 1단계: Azure 구성
 
@@ -94,7 +94,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
    
  **테이블 D: 온-프레미스 DNS 서버**
   
-사이트 간 VPN 연결을 통해 프레미스 간 네트워크에서 조직 네트워크로 패킷을 라우팅하려면, 조직의 온-프레미스 네트워크에 있는 연결 가능한 모든 위치의 주소 공간 목록(CIDR 표기법)을 포함한 로컬 네트워크로 가상 네트워크를 구성해야 합니다. 로컬 네트워크를 정의하는 주소 공간 목록은 고유해야 하며 다른 가상 네트워크 또는 다른 로컬 네트워크에 사용되는 주소 공간과 중복되면 안 됩니다.
+사이트 마다 VPN 연결을 통해 조직의 네트워크에 크로스-프레미스 네트워크에서 패킷이 경로에 연결할 수 있는 모든 CIDR 표기법으로 주소 공간 목록이 들어 있는 로컬 네트워크와 가상 네트워크를 구성 해야 조직의 온-프레미스 네트워크에 위치 합니다. 로컬 네트워크를 정의 하는 주소 공간 목록이 고유 해야 하며 다른 가상 네트워크 또는 다른 로컬 네트워크에 사용 되는 주소 공간으로 중첩 되지 않아야 합니다.
   
 로컬 네트워크 주소 공간의 집합에 대해서는 테이블 L을 채웁니다. 세 개의 빈 항목이 나열되지만 일반적으로 더 많이 필요합니다. IT 부서에서 주소 공간의 목록을 확인합니다.
   
@@ -118,7 +118,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> 모든이 문서와 사용자 지정 설정을 기반으로 준비 간편 실행 PowerShell 명령 블록을 생성 하는 Microsoft Excel 구성 통합 문서에 PowerShell 명령을 포함 하는 텍스트 파일에 대 한 Office 365에 대 한 페더레이션 인증 [에서 참조 Azure 배포 키트](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)합니다. 
+> 이 문서와 사용자 지정 설정을 기반으로 준비 간편 실행 PowerShell 명령 블록을 생성 하는 Microsoft Excel 구성 통합 문서에서 PowerShell 명령의 모든 텍스트 파일을 Azure의 Office 365에 대 한 페더레이션 인증 [를 참조 하십시오. 배포 키트](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)합니다. 
   
 다음 명령을 사용하여 구독 이름을 가져옵니다.
   
@@ -199,7 +199,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-그다음 가상 컴퓨터를 포함하는 각 서브넷의 네트워크 보안 그룹을 만듭니다. 서브넷 격리를 수행하려면 서브넷의 네트워크 보안 그룹에서 허용되거나 거부되는 특정 유형의 트래픽에 대한 규칙을 추가할 수 있습니다.
+다음으로, 네트워크 가상 컴퓨터에 있는 각 서브넷에 대 한 보안 그룹을 만듭니다. 서브넷 격리를 수행 하 여 특정 유형의 트래픽 허용 또는 서브넷의 네트워크 보안 그룹에 대 한 거부에 대 한 규칙을 추가할 수 있습니다.
   
 ```
 # Create network security groups

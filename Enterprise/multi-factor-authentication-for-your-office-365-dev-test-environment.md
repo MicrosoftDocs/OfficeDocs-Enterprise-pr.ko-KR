@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: '요약: Office 365 개발/테스트 환경에서 스마트폰으로 전송 하는 텍스트 메시지를 사용 하 여 다단계 인증을 구성 합니다.'
-ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6e2aefa9309e7e268c937055f7fe59600f8c87da
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897451"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 다단계 인증
 
  **요약:** Office 365 개발/테스트 환경에서 스마트폰으로 전송 하는 텍스트 메시지를 사용 하 여 다단계 인증을 구성 합니다.
   
-추가 된 Office 365 구독에 로그인 하는 것에 대 한 보안 수준을 대 한 사용자 이름 및 암호 계정을 확인 하려면 단순한 필요로 하는 Azure 다단계 인증을 사용할 수 있습니다. Office 365에 대 한 다단계 인증을 사용 하면 사용자가 전화 통화, 텍스트 메시지를 열고 전송 확인 코드를 입력 하거나 올바르게 자신의 암호를 입력 한 후 스마트 전화 앱 암호를 지정 해야 합니다. 이 두번째 인증 요소를 충족 된 후에에 로그인 수 있습니다. 
+추가 된 Office 365 구독에 로그인 하는 것에 대 한 보안 수준을 대 한 사용자 이름 및 계정 인증 암호 단순한 필요로 하는 Azure 다단계 인증을 사용할 수 있습니다. Office 365에 대 한 다단계 인증을 사용 하면 사용자가 전화 통화, 텍스트 메시지를 열고 전송 확인 코드를 입력 하거나 올바르게 자신의 암호를 입력 한 후 스마트 전화 앱 암호를 지정 해야 합니다. 이 두번째 인증 요소를 충족 된 후에에 로그인 수 있습니다. 
   
 이 문서에서는 설정 하 고 특정 Office 365 계정에 대 한 텍스트 메시지 기반 인증을 테스트 하는 방법에 설명 합니다.
   
@@ -60,7 +60,7 @@ ms.locfileid: "22915663"
     
 3. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
-4. 현재 사용자가 창에서 클릭 **더 > 설치 Azure 다단계 인증**합니다.
+4. 현재 사용자가 창에서 **더 많은 gt_ 설치 Azure 다단계 인증**을 클릭 합니다.
     
 5. 목록에서 **사용자 2** 계정을 선택 합니다.
     
@@ -78,7 +78,7 @@ ms.locfileid: "22915663"
   
 1. 브라우저의 새 인스턴스를 엽니다.
     
-2. Office 365 포털에 이동 ([https://portal.office.com](https://portal.office.com))와 사용자 2 계정 사용 하 여 로그인 (@ 사용자 2가\<조직 이름 >. onmicrosoft.com) 및 암호입니다.
+2. Office 365 포털에 이동 ([https://portal.office.com](https://portal.office.com))와 사용자 2 계정 사용 하 여 로그인 (@ user2\<조직 name>.onmicrosoft.com) 및 암호입니다.
     
 3. 로그인 한 후 추가 보안 유효성 검사에 대 한 계정을 설정 하 라는 메시지가 표시 됩니다. **지금 설정**를 클릭 합니다.
     
@@ -110,5 +110,5 @@ ms.locfileid: "22915663"
   
 [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 배포에 대 한 다중 요소 인증에 대 한 계획](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Office 365 배포의 다단계 인증 계획](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

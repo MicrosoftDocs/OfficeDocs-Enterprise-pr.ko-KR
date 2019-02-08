@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365에 대 한 ExpressRoute 대체 라우팅 경로를 제공 많은 인터넷 마주보는 Office 365 서비스 합니다. Office 365에 대 한 ExpressRoute의 아키텍처는 이미 액세스할 수 있는 인터넷을 통해 해당 IP 접두사에 후속 재배포에 대 한 프로 비전 된 ExpressRoute 회로에 Office 365 서비스의 공용 IP 접두사 광고 기반 네트워크입니다. ExpressRoute와 여러 서로 다른 라우팅 경로 인터넷을 통해 및 ExpressRoute를 통해 다양 한 Office 365 서비스에 대 한 효과적으로 사용 합니다. 네트워크에서 라우팅의이 상태는 내부 네트워크 토폴로지를 설계 하는 방법에 중요 한 변경이 나타낼 수 있습니다.
-ms.openlocfilehash: c4479a236d1419293dbd433e8d3c10a11ea5fb45
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542264"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25715874"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
@@ -115,6 +115,7 @@ Office 365에 대 한 ExpressRoute 대체 라우팅 경로를 제공 많은 인�
 |**경로 대칭 컨트롤** <br/> |**방법**: NAT 원본  <br/> **인터넷 경로**: 소스 NAT 인바운드 192.168.5.5에 대 한 연결  <br/> |**ExpressRoute 경로**: 192.168.1.0 (Chicago) 및 192.168.2.0 (달라스)에 대 한 원본 NAT 연결  <br/> |
 
 아웃 바운드만 되는 서비스의 예제는 다음과 같습니다.
+
 |**Connection 속성**|**값**|
 |:-----|:-----|
 |**네트워크 트래픽 방향** <br/> |아웃바운드  <br/> |
@@ -563,7 +564,7 @@ QoS는 Skype에 대 한 온라인 비즈니스에 대 한 음성 및 회의 혜�
   
 ExpressRoute에 대 한 네트워크 구성을 확인 하는데 필요한 ExpressRoute 연결 된 Office 365를 배포 하는 동안 최적으로 설계 된 유념 하 고 클라이언트 컴퓨터와 같은 네트워크에 다른 구성 요소를 최적화도 했을 때 키를 누릅니다. 이 계획 가이드를 사용 하 여 부재중 단계 문제를 해결 하려면, 외에 쓴 [성능 문제해결 Office 365에 대 한 계획](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c) 합니다.
   
-짧은 링크를 다시 사용할 수는 다음과 같습니다.[https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
 ## <a name="related-topics"></a>관련 항목
 
@@ -577,15 +578,15 @@ ExpressRoute에 대 한 네트워크 구성을 확인 하는데 필요한 Expres
   
 [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
   
-[ExpressRoute BGP 커뮤니티를 사용 하 여 Office 365 시나리오 (미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365용 ExpressRoute 시나리오에서 BGP 커뮤니티 사용(미리 보기)](bgp-communities-in-expressroute.md)
   
-[미디어 품질 및 온라인 비즈니스 Skype 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[비즈니스 온라인 용 Skype에 대 한 네트워크를 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[비즈니스용 Skype Online의 네트워크 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute 및 온라인 비즈니스에 대 한 Skype에서 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute를 사용 하 여 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
   

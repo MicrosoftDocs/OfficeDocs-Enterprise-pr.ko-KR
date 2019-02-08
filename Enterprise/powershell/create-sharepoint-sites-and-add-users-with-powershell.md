@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 새 SharePoint Online 사이트를 만들고 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
-ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975206"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897171"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
 
@@ -32,7 +32,7 @@ Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>1 단계: Office 365 PowerShell을 사용 하 여 새 사이트 모음 만들기
 
-Office 365 PowerShell 및 제공 하는 예제 코드 및 메모장을 사용 하 여 만든.csv 파일을 사용 하 여 여러 사이트를 만듭니다. 이 절차에 대 한 사용자의 사이트 및 테 넌 트 관련 정보로 괄호 안에 표시 되는 개체 틀 정보를 교체 합니다. 이 프로세스를 사용 하면 단일 파일을 만들고 해당 파일을 사용 하는 단일 Office 365 PowerShell 명령을 실행할 수 있습니다. 이 반복 및 휴대용 모두를 수행 하는 작업을 만들고 하는 경우 SharePoint Online 관리 셸에 입력 하는 long 명령에서 발생할 수 있는 모든 오류를 여러 명 제거 합니다. 이 절차를 두 부분으로 구성 있습니다. .Csv 파일을 만들 먼저 하 고를 사용 하 여 해당 콘텐츠는 사이트를 만들 Office 365 PowerShell을 사용 하 여 해당.csv 파일을 참조 합니다.
+Office 365 PowerShell 및 제공 하는 예제 코드 및 메모장을 사용 하 여 만든.csv 파일을 사용 하 여 여러 사이트를 만듭니다. 이 절차에 대 한 사용자의 사이트 및 테 넌 트 관련 정보로 괄호 안에 표시 되는 개체 틀 정보를 교체 합니다. 이 프로세스를 사용 하 여 단일 파일을 만들고 해당 파일을 사용 하는 단일 Office 365 PowerShell 명령을 실행할 수 있습니다. 이 반복 및 휴대용 모두를 수행 하는 작업을 만들고 하는 경우 SharePoint Online 관리 셸에 입력 하는 long 명령에서 발생할 수 있는 모든 오류를 여러 명 제거 합니다. 이 절차를 두 부분으로 구성 있습니다. .Csv 파일을 만들 먼저 하 고를 사용 하 여 해당 콘텐츠는 사이트를 만들 Office 365 PowerShell을 사용 하 여 해당.csv 파일을 참조 합니다.
 
 Office 365 PowerShell cmdlet은.csv 파일 가져오고 중괄호 안에 열 머리글로 파일의 첫 줄을 읽고 하는 루프에 파이프 합니다. Office 365 PowerShell cmdlet은 다음 나머지 레코드를 반복, 각 레코드에 대 한 새 사이트 모음을 만들고 열 머리글에 따라 사이트 모음의 속성을 할당 합니다.
 
@@ -154,7 +154,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [SharePoint Online 사이트 그룹 Office 365 PowerShell 관리](manage-sharepoint-site-groups-with-powershell.md)
 
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

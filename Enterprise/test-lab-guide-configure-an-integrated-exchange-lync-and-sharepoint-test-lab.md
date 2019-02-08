@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: '요약: Exchange Server 2013을 실행 하는 서버, Lync Server 2013을 실행 하는 서버 및 SharePoint Server 2013을 실행 하는 서버를 포함 하는 통합 된 테스트 랩을 만들고 하는 방법에 알아봅니다.'
-ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915603"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897051"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>테스트 랩 가이드: 통합된 Exchange, Lync 및 SharePoint 테스트 랩 구성
 
@@ -30,7 +30,7 @@ ms.locfileid: "22915603"
  
 확장 구성 하 고 다중 제품 시나리오 및 Exchange Server 2013을 실행 하는 서버를 사용 하는 솔루션을 시연 하는 세 유형의 서버 간에 서버-서버 인증을 포함 하는이 구성의 결과로 발생 하는 테스트 랩을 사용할 수는 Lync Server 2013을 실행 하는 서버와 SharePoint Server 2013을 실행 하는 서버입니다.
   
-이 문서에는 다음 작업을 위한 지침이 나와 있습니다.
+이 문서에 대 한 지침을 포함 합니다.
   
 1. Windows Server 2012 기본 구성 테스트 랩을 구성합니다.
     

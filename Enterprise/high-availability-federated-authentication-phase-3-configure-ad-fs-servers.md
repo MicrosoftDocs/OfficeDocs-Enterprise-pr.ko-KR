@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: '요약: Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 AD FS(Active Directory Federation Service) 서버를 만들고 구성합니다.'
-ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 16a8173f009ea89ec109a848e058ae02d29d3d12
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915433"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897261"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>고가용성 페더레이션 인증 3단계: AD FS 서버 구성
 
@@ -48,10 +48,10 @@ PowerShell 명령의 다음 블록을 사용하여 두 AD FS 서버의 가상 �
 > [!NOTE]
 > 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
-첫째, Azure 내부 부하 분산 장치를 두 ad FS 서버를 만듭니다. 제거 하는 변수에 대 한 값을 지정 된 \< 및 > 문자입니다. 모든 적절 한 값을 제공한 경우 PowerShell ISE 또는 Azure PowerShell 명령 프롬프트에서 결과 블록을 실행 합니다.
+첫째, Azure 내부 부하 분산 장치를 두 ad FS 서버를 만듭니다. 제거 된 변수에 대 한 값을 지정은 \< 및 gt_ 문자입니다. 모든 적절 한 값을 제공한 경우 PowerShell ISE 또는 Azure PowerShell 명령 프롬프트에서 결과 블록을 실행 합니다.
   
 > [!TIP]
-> 모든이 문서와 사용자 지정 설정을 기반으로 준비 간편 실행 PowerShell 명령 블록을 생성 하는 Microsoft Excel 구성 통합 문서에 PowerShell 명령을 포함 하는 텍스트 파일에 대 한 Office 365에 대 한 페더레이션 인증 [에서 참조 Azure 배포 키트](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)합니다. 
+> 이 문서와 사용자 지정 설정을 기반으로 준비 간편 실행 PowerShell 명령 블록을 생성 하는 Microsoft Excel 구성 통합 문서에서 PowerShell 명령의 모든 텍스트 파일을 Azure의 Office 365에 대 한 페더레이션 인증 [를 참조 하십시오. 배포 키트](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)합니다. 
   
 ```
 # Set up key variables

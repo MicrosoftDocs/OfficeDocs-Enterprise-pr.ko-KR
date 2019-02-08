@@ -3,7 +3,7 @@ title: Office 365용 Azure Express 경로
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365와 Azure ExpressRoute를 사용 하는 방법 및 Office 365에 사용 하기 위한 Azure ExpressRoute를 배포 하는 경우 필요할 수 있는 네트워크 구현 프로젝트를 계획 하는 방법에 알아봅니다.
-ms.openlocfilehash: 5a82576b541e27c70bca490ff8dfe887ee879c83
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541946"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911402"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365용 Azure Express 경로
 
-Office 365와 Azure ExpressRoute를 사용 하는 방법 및 Office 365에 사용 하기 위한 Azure ExpressRoute를 배포 하는 경우 필요할 수 있는 네트워크 구현 프로젝트를 계획 하는 방법에 알아봅니다. Azure에서 실행 중인 인프라 및 플랫폼 서비스 네트워크 아키텍처 및 성능 고려 사항이 해결 하 여 사용 하면 좋은 됩니다. 이러한 경우 azure ExpressRoute를 좋습니다. Office 365 및 Dynamics 365 빌드되어에 안전 하 게 하 고 안정적으로 인터넷을 통해 액세스할 수와 동일 하 게 하는 서비스 제품으로 소프트웨어입니다. 그에 따라,만 것이 좋습니다 ExpressRoute를 특정 시나리오에서 이러한 응용 프로그램에 대 한 합니다. 인터넷 성능 및 보안에 대 한 및 좋습니다 Azure ExpressRoute Office 365에 대 한 문서 [Office 365에 대 한 네트워크 연결](network-connectivity.md)에서 읽을 수 있습니다.
+Office 365와 Azure ExpressRoute를 사용 하는 방법 및 Office 365에 사용 하기 위한 Azure ExpressRoute를 배포 하는 경우 필요할 수 있는 네트워크 구현 프로젝트를 계획 하는 방법에 알아봅니다. Azure에서 실행 중인 인프라 및 플랫폼 서비스 네트워크 아키텍처 및 성능 고려 사항이 해결 하 여 사용 하면 좋은 됩니다. 이러한 경우 azure ExpressRoute를 좋습니다. Office 365 및 Dynamics 365 빌드되어에 안전 하 게 하 고 안정적으로 인터넷을 통해 액세스할 수와 동일 하 게 하는 서비스 제품으로 소프트웨어입니다. 인터넷 성능 및 보안에 대 한 및 좋습니다 Azure ExpressRoute Office 365에 대 한 문서 [Office 365에 대 한 네트워크 연결](network-connectivity.md)에서 읽을 수 있습니다.
 
 > [!NOTE]
-> 2017 년 7 월 31, 시작 Microsoft Peering Azure 관리 콘솔 또는 PowerShell을 사용 하 여에서 직접 사용할 수 있습니다. Microsoft Peering를 설정한 후에 특정 BGP 경로 알림의 받을 경로 필터를 만들 수 있습니다. Office 365에 대 한 필터를 만들기 위한 인증을이 필요 하 고이 정보를 언제 든 지 Dynamics 365 고객 계약 응용 프로그램 (이전의 CRM Online) 필터를 만들 수 있습니다. Office 365 경로 필터를 만드는 권한 부여를 얻으려고 하는 프로세스에 대 한 Microsoft 계정 팀에 게 문의 합니다. Office 365에 대 한 경로 필터를 만들 권한이 없는 구독 [오류 메시지](https://support.microsoft.com/kb/3181709) 를 받습니다.
+> Office 365에 대 한 ExpressRoute를 사용 하는 데 Microsoft 인증이 필요 합니다. Microsoft는 모든 고객의 요청을 검토 하 고 요구 사항을 규정 하는 고객의 요구 하는 경우 직접 연결 하는 경우 Office 365 사용 현황에 대 한 ExpressRoute에 권한을 부여 합니다. 이러한 요구 사항, 있는 경우 Microsoft 검토를 시작 하려면 [Office 365 요청 양식에 대 한 ExpressRoute](https://aka.ms/O365ERReview) 에 직접 연결 필요 하다는 것을 의미를 해석 하는 규정을 텍스트 발췌문 및 웹 링크를 제공 하십시오. Office 365에 대 한 경로 필터를 만들 권한이 없는 구독 [오류 메시지](https://support.microsoft.com/kb/3181709)를 받습니다. 
 
 선택한 Office 365 네트워크 트래픽에 대 한 Office 365에 대 한 네트워크에 직접 연결을 추가할 수 있습니다. Azure ExpressRoute 직접 연결을 예측 가능한 성능을 제공 하 고 Microsoft 네트워킹 구성 요소에 대 한 가동 시간 SLA 99.95%와 함께 제공 합니다. Azure ExpressRoute을 통해 지원 하지 않는 서비스에 대 한 인터넷에 연결을 여전히 필요할 수 있습니다.
 
@@ -96,14 +96,13 @@ Office 365에 대 한 ExpressRoute에 포함 되지 않은 서비스는 Office 3
 
 Office 365에 대 한 ExpressRoute를 구입 하려면 하나 이상의 [공급자 승인](https://azure.microsoft.com/documentation/articles/expressroute-locations/) 원하는 수 및 크기 회로 ExpressRoute 프리미엄 구독을 프로 비전을 함께 작동 하도록 필요 합니다. 추가 라이선스가 Office 365에서 구입할 수 있습니다.
 
-짧은 링크를 다시 사용할 수는 다음과 같습니다.[https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 [Office 365에 대 한 ExpressRoute](https://aka.ms/ert)에 대 한로 등록을 준비?
 
 ([Office 365 용 azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="related-topics"></a>관련 항목
-<a name="BKMK_End"> </a>
 
 [Office 365에 대한 네트워크 연결](network-connectivity.md)
 
@@ -115,14 +114,14 @@ Office 365에 대 한 ExpressRoute를 구입 하려면 하나 이상의 [공급�
 
 [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
 
-[ExpressRoute BGP 커뮤니티를 사용 하 여 Office 365 시나리오 (미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365용 ExpressRoute 시나리오에서 BGP 커뮤니티 사용(미리 보기)](bgp-communities-in-expressroute.md)
 
-[미디어 품질 및 온라인 비즈니스 Skype 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
 
 [Office 365 성능 문제 해결 계획](performance-troubleshooting-plan.md)
 
-[Office 365 URL 및 IP 주소 범위](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URL 및 IP 주소 범위](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)

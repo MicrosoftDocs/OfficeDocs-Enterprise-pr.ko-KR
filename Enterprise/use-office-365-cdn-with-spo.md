@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 위치 또는 콘텐츠를 액세스 하는 방식에 관계 없이 SharePoint Online 자산 모든 사용자에 게 배달 속도를 Office 365의 기본 제공 콘텐츠 배달 네트워크 (CDN)를 사용 하는 방법을 설명 합니다.
-ms.openlocfilehash: 958f01419a74e4b8cd007b2627585884496bdfdf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fd118e8df404961e1c35c6297a788397f810d1a2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541940"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547116"
 ---
 # <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a>Office 365 콘텐츠 배달 네트워크를 사용 하 여 SharePoint Online을 사용한
 
@@ -138,6 +138,9 @@ CDN 호출 하는 원본 위치에서 자산을 가져옵니다. Office 365에 �
 - \*/masterpage
     
 - \*/style 라이브러리
+
+> [!NOTE]
+> Clientsideassets은 해당 시간 공용 CDN 전의 하는 경우에 자동으로 추가 되는 항목을 참조 편리할 되도록 하지만 나중에 만든 경우의 2017 년 12 월에에서 추가 된 기본 공용 원점, 자동으로이 변경 내용을 볼 수 있습니다. 이 CDN 출처를 사용 하는 예제 읽기, 참조 하려는 경우: [호스트 Office 365 CDN (Hello World 부 4)에서 클라이언트쪽 웹 파트](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
     
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>설정 및 SharePoint Online 관리 셸을 사용 하 여 Office 365 CDN 구성
 

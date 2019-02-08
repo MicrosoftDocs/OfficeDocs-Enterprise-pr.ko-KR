@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: 이 문서에서는 SharePoint Server 2013 온-프레미스 및 SharePoint Online에서 개체 캐시를 사용 하 여 간의 차이 설명 합니다.
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056167"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769857"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint online에서 개체 캐시 사용
 
@@ -34,7 +34,7 @@ SharePoint Online 배포에서 개체 캐시에 의존할 경우 큰 문제가 �
   
 결과적으로 사용자가 페이지를 두 번째로 방문하면 페이지 로드 시간이 줄어듭니다. 같은 페이지가 최소 네 번 로드되면 페이지는 모든 프런트 엔드 웹 서버에서 캐시됩니다.
   
-반면, SharePoint Online는 서버를 더 많은 하지만 더 많은 사이트에도 있습니다. 각 사용자 채워진 캐시를 갖고 있지 않은 다른 프런트엔드 웹 서버에 연결할 수 있습니다. 한 서버에 대 한 캐시는 자동으로 입력 아마도 또는 하지만 해당 프런트엔드 웹 서버에는 다음 사용자는 다른 사이트에서 페이지를 요청 합니다. 또는 다음 사용자가 같은 페이지에 자신의 이전 방문할 때를 요청 하는 경우에 해당 페이지의 캐시에 없는 다른 프런트엔드 웹 서버에 부하 분산 된 것이 있습니다. 이 지난 경우 캐싱 (영문) 되지 않습니다 사용자 전혀 도움이 됩니다.
+반면, SharePoint Online는 서버를 더 많은 하지만 더 많은 사이트에도 있습니다. 각 사용자 채워진 캐시를 갖고 있지 않은 다른 프런트엔드 웹 서버에 연결할 수 있습니다. 또는 아마도 캐시는 자동으로 입력 한 서버를 포함 하지만 다음 사용자에 대 한 페이지를 해당 프런트엔드 웹 서버 요청을 다른 사이트에서 합니다. 또는 다음 사용자가 같은 페이지에 자신의 이전 방문할 때를 요청 하는 경우에 해당 페이지의 캐시에 없는 다른 프런트엔드 웹 서버에 부하 분산 된 것이 있습니다. 이 지난 경우 캐싱 (영문) 되지 않습니다 사용자 전혀 도움이 됩니다.
   
 다음 그림에서 각 점은 사용자가 요청을 하고 캐시되는 페이지를 나타냅니다. SaaS 인프라를 공유하여 사용하는 여러 다른 고객이 다른 색상으로 표시되어 있습니다.
   

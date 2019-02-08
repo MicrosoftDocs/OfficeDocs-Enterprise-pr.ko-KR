@@ -3,7 +3,6 @@ title: Office 365의 디렉터리 동기화 문제 해결
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365에서 디렉터리 동기화 문제의 일반적인 원인에 설명 하 고 문제를 해결 하 고 해결 하는데 몇 메서드를 제공 합니다.
-ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
-ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
+ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405131"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897311"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365의 디렉터리 동기화 문제 해결
 
@@ -54,12 +53,12 @@ Azure Active Directory 동기화에서 Azure AD 연결을 업데이트 하려면
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**동기화 된 개체에 표시 되지 않거나 온라인으로 업데이트 또는 서비스에서 동기화 오류 보고서 나타남 합니다.**
 
-- [Identity 동기화 및 복제 특성 복구](https://go.microsoft.com/fwlink/p/?LinkID=798300)
+- [Identity 동기화 및 복제 특성 복구](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Office 365 관리 센터에서 알림을 I 또는 최근 동기화 이벤트 된 하지 않은 자동된 전자 메일이 받고**
-- [Azure AD 연결 연결 문제를 해결 합니다.](https://go.microsoft.com/fwlink/p/?LinkId=820597)
+- [Azure AD 연결 연결 문제를 해결 합니다.](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD 연결 계정 및 사용 권한](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD 연결 동기화: Azure AD 서비스 계정을 관리 하는 방법](https://go.microsoft.com/fwlink/p/?LinkId=820599)
+- [Azure AD 연결 동기화: Azure AD 서비스 계정을 관리 하는 방법](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Azure Active Directory 중지 되거나 사용자에 대 한 디렉터리 동기화는 사용자에 게 경고 메시지 동기화 하지 않은 하루 이상에 등록 하는](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**암호 해시 동기화 되지 않은 또는 최근 암호 해시 동기화 된 하지 않은 Office 365 관리 센터에서 알림을 표시**
@@ -79,7 +78,7 @@ Azure Active Directory 동기화에서 Azure AD 연결을 업데이트 하려면
    
 ## <a name="other-resources"></a>기타 리소스
 
-- [중복 된 사용자 계정 이름을 수정 하는 스크립트](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [Script to fix duplicate user principal names](https://go.microsoft.com/fwlink/p/?LinkId=396725)(중복된 사용자 계정 이름을 수정하기 위한 스크립트)
     
 - [디렉터리 동기화를 위한 라우팅할 수 없는 도메인 (예:.local 도메인)를 준비 하는 방법](prepare-a-non-routable-domain-for-directory-synchronization.md)
     

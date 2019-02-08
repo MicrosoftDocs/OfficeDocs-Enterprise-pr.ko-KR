@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: 간의 계층 3 연결을 제공 하는 Office 365에 대 한 ExpressRoute는 네트워크 및 Microsoft의 데이터 센터입니다. 회로 테두리 게이트웨이 프로토콜 (BGP) 경로 광고 Office 365의 프런트엔드 서버를 사용합니다. 온-프레미스 장치로의 관점에서 Office 365 올바른 TCP/IP 경로 선택 하는 데 필요한 Azure ExpressRoute 인터넷 하는 대신 표시 됩니다.
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542158"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897231"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 사용한 네트워크 계획
 
@@ -35,10 +35,10 @@ Azure ExpressRoute 지원 되는 기능 및 Microsoft의 데이터 센터 내에
 |:-----|:-----|:-----|
 | 필요한 인터넷 서비스를 포함 하 여;에 대 한 액세스  <br/>  DNS 이름 확인  <br/>  인증서 해지 확인  <br/>  콘텐츠 배달 네트워크  <br/> |예  <br/> |Microsoft에 대 한 요청 소유 하 고 DNS 및/또는 CDN 인프라 ExpressRoute 네트워크를 사용할 수 있습니다.  <br/> |
 | Office 365 서비스를 포함 하 여;에 대 한 액세스  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  비즈니스용 Skype Online  <br/>  Office Online  <br/>  Office 365 포털 및 인증  <br/> |예, 모든 응용 프로그램 및 기능  <br/> |예, [특정 응용 프로그램 및 기능](https://aka.ms/o365endpoints) <br/> |
-|온-프레미스 보안 경계에 있습니다.  <br/> |예  <br/> |예  <br/> |
+|온-프레미스 보안 경계에 있습니다.  <br/> |예  <br/> |예   <br/> |
 |고가용성 계획 합니다.  <br/> |대체 인터넷 네트워크 연결에 대 한 장애 조치  <br/> |장애 조치에 대 한 대체 ExpressRoute 연결 하려면  <br/> |
 |예측 가능한 네트워크 프로필을 사용 하 여 직접 연결 합니다.  <br/> |아니요  <br/> |예  <br/> |
-|IPv6 연결 합니다.  <br/> |예  <br/> |예  <br/> |
+|IPv6 연결 합니다.  <br/> |예  <br/> |예   <br/> |
 
 더 많은 네트워크 계획 지침에 대 한 제목 아래를 확장 합니다. 정보 (영문) 보다 심도 있는 10 부 [Office 365 교육에 대 한 Azure ExpressRoute](https://channel9.msdn.com/series/aer) 시리즈를 기록 했을 때 했습니다.
 
@@ -106,7 +106,7 @@ Woodgrove Bank Azure ExpressRoute 구현 고려 하는 및 결정는 [Office 365
   
 Woodgrove, 여러 대륙의 위치를 가진 다국적 조직에 대 한 보안 모든 경계에 걸쳐 해야 합니다. Woodgrove에 대 한 최적의 연결 옵션에는 각 대륙에 직원 들의 요구를 처리 하 여 전세계 여러 피어 링 위치와 다중 포인트 연결입니다. 각 대륙 대륙 내에서 중복 Azure ExpressRoute 회로 포함 하 고 대부분의 보안 확장 해야 합니다.
   
-Woodgrove의 기존 인프라 안정적이 고 추가 작업을 처리할 수 있습니다, 그리고 결과적으로, Woodgrove Bank은 자신의 Azure ExpressRoute 및 인터넷 경계 보안에 대 한 인프라를 사용할 수 있게 합니다. 대/소문자를 받지이 하는 경우에 Woodgrove가 기존 장비를 보완 하기 위해 또는 다른 종류의 연결을 처리 하려면 추가 장비를 구입 하도록 선택할 수 있습니다.
+Woodgrove의 기존 인프라 안정적이 고 추가 작업을 처리할 수 있는, 결과적으로, Woodgrove Bank가 자신의 Azure ExpressRoute 및 인터넷 경계 보안에 대 한 인프라를 사용할 수 있습니다. 대/소문자를 받지이 하는 경우에 Woodgrove가 기존 장비를 보완 하기 위해 또는 다른 종류의 연결을 처리 하려면 추가 장비를 구입 하도록 선택할 수 있습니다.
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>고가용성 및 장애 조치 Azure ExpressRoute와
 <a name="BKMK_high-availability"> </a>
@@ -185,7 +185,7 @@ Woodgrove Bank에서 네트워크 구성은 몇가지 주요 원칙에 기반으
   
 지점간, 다중 포인트 또는 호스팅된 최상의 연결 옵션을 선택 하 여 공급자 또는 공급자를 사용 합니다. 혼합 하 고 대역폭 및 기타 중복 구성 요소 지원 라우팅 및 높은 가용성 디자인을 연결 옵션을 일치 해야 합니다.
   
-짧은 링크를 다시 사용할 수는 다음과 같습니다.[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>관련 항목
 <a name="BKMK_high-availability"> </a>
@@ -200,15 +200,15 @@ Woodgrove Bank에서 네트워크 구성은 몇가지 주요 원칙에 기반으
   
 [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
   
-[ExpressRoute BGP 커뮤니티를 사용 하 여 Office 365 시나리오 (미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365용 ExpressRoute 시나리오에서 BGP 커뮤니티 사용(미리 보기)](bgp-communities-in-expressroute.md)
   
-[미디어 품질 및 온라인 비즈니스 Skype 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[비즈니스 온라인 용 Skype에 대 한 네트워크를 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[비즈니스용 Skype Online의 네트워크 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute 및 온라인 비즈니스에 대 한 Skype에서 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute를 사용 하 여 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
   

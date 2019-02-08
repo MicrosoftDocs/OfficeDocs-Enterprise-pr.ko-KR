@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: '요약: 구성 및 시연 데이터 분류 하 고 Azure 정보 보호 (AIP) 클라이언트를 사용 하 여 Office 365 개발/테스트 환경에서 레이블을 지정 합니다.'
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914853"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897441"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정
 
@@ -48,7 +48,7 @@ Azure 정보 보호 클라이언트를 사용 하면 Office 365의 SharePoint On
     
 2. **Microsoft Office 홈** 탭에서 **관리** 타일을 클릭 합니다.
     
-3. Office 365 관리자 탭의 왼쪽된 탐색 영역에서 클릭 **대금 청구 > 구매 서비스**합니다.
+3. Office 365 관리자 탭의 왼쪽된 탐색 영역에서 **gt_ 서비스 구매 대금 청구**를 클릭 합니다.
     
 4. **서비스 구매** 페이지 **Azure 정보 보호 프리미엄 P2** 항목을 찾습니다. 마우스 포인터로 하 고 **무료 평가판을 시작**을 클릭 합니다.
     
@@ -80,7 +80,7 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
   
 1. 브라우저를 사용 하 고 [Azure 포털](http://portal.azure.com)로 이동 합니다.
     
-2. 클릭 **리소스 그룹 >** [자원 그룹 이름] **> CLIENT1 > 연결**합니다.
+2. **자원 그룹 gt_** [자원 그룹 이름] **gt_ CLIENT1 gt_ 연결을**클릭 합니다.
     
 3. CLIENT1에서 Internet Explorer를 실행, Office 포털에서 이동 [http://portal.office.com](http://portal.office.com), 다음 User5 계정 이름과 암호를 사용 하 여 로그인 하 고 있습니다.
     
@@ -118,15 +118,15 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
     
 5. 빈 문서에서 텍스트를 입력 합니다.
     
-6. 클릭 **파일 > 저장** **BeforeAIP**이름을 입력 한 다음 **확인**을 클릭 합니다. 
+6. **파일 gt_ 저장**을 클릭 하 고 **BeforeAIP**이름을 입력 한 다음 **확인**을 클릭 합니다. 
     
 7. 문서 클래스의 행을 **비밀**대 한 아래쪽 화살표를 클릭 하 고 **모든 회사**를 클릭 한 다음 합니다.
     
-8. 클릭 **파일 > 다른이름으로** **AfterAIP**이름을 입력 한 다음 **확인**을 클릭 합니다.
+8. **파일 gt_ 이름으로 저장**을 클릭 하 고 **AfterAIP**이름을 입력 한 다음 **확인**을 클릭 합니다.
     
 9. 작업 표시줄에서 **파일 탐색기** 를 클릭 한 다음 **문서** 폴더를 엽니다.
     
-    Note **BeforeAIP** 및 **AfterAIP** 문서의 다른 파일 크기입니다. AfterAIP 문서는 분류 정보를 제공 하기 때문에 큽니다.
+    Note **BeforeAIP** 및 **AfterAIP** 문서의 다른 파일 크기입니다. 다음은 AfterAIP 문서 분류 정보 되었기 때문에 큽니다.
     
 다음으로 모든 사용자가 지원 사이트 모음에 액세스 허용 합니다.
   
@@ -150,11 +150,11 @@ Office 365 개발/테스트 환경을 현재가지고 있습니다.
   
 1. 오른쪽 위에 있는 **Microsoft Office 홈** 탭에서 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
+2. [http://portal.office.com](http://portal.office.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 로그인 합니다.
     
-4. **Microsoft Office 홈** 탭에서 클릭 **SharePoint > 사이트 모음을 지원**합니다.
+4. **Microsoft Office 홈** 탭에서 **SharePoint gt_ 지원 사이트 모음을**클릭 합니다.
     
 5. **문서**, **업로드**를 클릭 하 고 **AfterAIP** 문서를 클릭 한 다음 **열기**를 클릭 합니다.
     

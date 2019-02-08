@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 사용 하 여 명령줄에서 관리 센터 작업을 수행 하 여 Office 365 조직에 연결 합니다.'
-ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849894"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897201"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
  **요약:** Office 365 PowerShell을 사용 하 여 명령줄에서 관리 작업을 수행 하 여 Office 365 조직에 연결 합니다.
   
-Office 365 PowerShell을 사용 하면 명령줄에서 Office 365 설정을 관리할 수 있습니다. 필요한 소프트웨어를 설치 하 고 다음 Office 365 조직에 연결 과정은 Office 365 PowerShell에 연결 합니다. 
+Office 365 PowerShell를 사용 하면 명령줄에서 Office 365 설정을 관리할 수 있습니다. 필요한 소프트웨어를 설치 하 고 다음 Office 365 조직에 연결 과정은 Office 365 PowerShell에 연결 합니다. 
 
 Office 365에 연결 하 고 사용자 계정, 그룹 및 라이선스 관리를 사용 하는 PowerShell 모듈의 두 버전 가지가 있습니다.
 
