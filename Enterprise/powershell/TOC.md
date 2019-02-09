@@ -22,6 +22,7 @@
 ### [사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
 ### [사용자 계정 보기](view-user-accounts-with-office-365-powershell.md)
 ### [사용자 계정 속성 구성](configure-user-account-properties-with-office-365-powershell.md)
+## [그룹 관리](manage-office-365-groups-with-powershell.md)
 ## [SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
 ### [SharePoint Online 사이트 만들기 및 사용자 추가](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [SharePoint Online 사용자 및 그룹 관리](manage-sharepoint-users-and-groups-with-powershell.md)
