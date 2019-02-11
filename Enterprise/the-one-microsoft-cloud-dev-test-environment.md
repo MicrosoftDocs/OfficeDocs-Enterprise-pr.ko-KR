@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: '요약: 이 테스트 랩 가이드를 사용하여 모든 Microsoft의 클라우드 서비스가 포함된 개발/테스트 환경을 만듭니다.'
-ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915633"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897151"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 개발/테스트 환경
 
@@ -140,7 +140,7 @@ ms.locfileid: "22915633"
     
     설치가 완료될 때까지 기다립니다.
     
-    설치가 완료되면 내역 구독에 포함된 샘플 데이터를 기준으로 하는 판매 활동 대시보드가 표시됩니다. 몇 분 정도 할애하여 **평가판 시작** 비디오를 시청하세요. 완료되면 비디오 창을 닫습니다.
+    설치가 완료되면 평가판 구독에 포함된 샘플 데이터를 기반으로 하는 판매 활동 대시보드가 표시됩니다. 잠시만 시간을 내어 **평가판 시작** 비디오를 시청하세요. 완료되면 비디오 창을 닫습니다.
     
 3. 맨 위에 있는 도구 모음에서 **판매** 옆에 있는 아래쪽 화살표를 클릭하고 **설정**을 클릭한 후 **보안**을 클릭합니다.
     

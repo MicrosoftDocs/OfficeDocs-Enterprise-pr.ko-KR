@@ -3,11 +3,13 @@ title: Office 365 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '요약: 이 테스트 랩 가이드를 사용하여 평가 또는 개발/테스트를 위한 Office 365 평가판 구독을 만듭니다.'
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897271"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -38,7 +41,7 @@ Office 365 평가판 구독을 사용하여 응용 프로그램에 대한 Office
 > [!NOTE]
 > 30일 간의 Office 365 평가판 구독 기간이 끝난 후에도 이 환경에 필요할 수 있는 특정 값을 기록해 두려면 이 문서를 인쇄할 수 있습니다. 추가로 30일 동안 내역 구독을 연장할 수 있습니다. 영구 개발/테스트 환경의 경우 소수의 라이선스를 사용해서 유료 구독을 새로 만듭니다. 
   
-![Microsoft 클라우드의 테스트 랩 가이드](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft 클라우드의 테스트 랩 가이드](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
@@ -51,7 +54,7 @@ Azure 구독이 필요합니다. 이 구성을 위해 [Azure 무료 평가판](h
   
 구성 결과는 다음과 같습니다.
   
-![Azure의 기본 구성 개발/테스트 환경](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Azure의 기본 구성 개발/테스트 환경](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ Azure 구독이 필요합니다. 이 구성을 위해 [Azure 무료 평가판](h
 
 Office 365 E5 평가판 구독을 시작하려면 먼저 가상의 회사 이름 및 새 Microsoft 계정이 필요합니다.
   
-1. 회사 이름으로 Microsoft 샘플 콘텐츠에 사용되는 가상의 회사인 Contoso의 변형을 사용하는 것이 좋지만 필수는 아닙니다. 여기에 가상의 회사 이름을 기록하세요. ![](./images/Common_Images/TableLine.png)
+1. 회사 이름으로 Microsoft 샘플 콘텐츠에 사용되는 가상의 회사인 Contoso의 변형을 사용하는 것이 좋지만 필수는 아닙니다. 여기에 가상의 회사 이름을 기록하세요. ![](./media/Common-Images/TableLine.png)
     
 2. 새 Microsoft 계정을 등록하려면으로 [https://outlook.com](https://outlook.com)으로 이동한 후 새 전자 메일 계정 및 주소를 사용하여 계정을 만듭니다. 이 계정을 사용하여 Office 365에 등록합니다.
     
-  - 여기에 새 계정의 이름과 성을 기록합니다. ![](./images/Common_Images/TableLine.png)
+  - 여기에 새 계정의 이름과 성을 기록합니다. ![](./media/Common-Images/TableLine.png)
     
-  - 여기서 새 전자 메일 계정 주소를 기록합니다. ![](./images/Common_Images/TableLine.png)@outlook.com
+  - 여기서 새 전자 메일 계정 주소를 기록합니다. ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 평가판 구독 등록
 
@@ -97,7 +100,7 @@ Office 365 E5 평가판 구독을 시작하려면 먼저 가상의 회사 이름
     
     입력한 암호를 안전한 위치에 기록해둡니다.
     
-    **조직 이름**으로 지칭될 가상의 회사 이름을 여기에 기록합니다. ![](./images/Common_Images/TableLine.png)
+    **조직 이름**으로 지칭될 가상의 회사 이름을 여기에 기록합니다. ![](./media/Common-Images/TableLine.png)
     
 5. **내 계정 만들기**를 클릭합니다.
     
@@ -105,9 +108,9 @@ Office 365 E5 평가판 구독을 시작하려면 먼저 가상의 회사 이름
     
 7. 받은 문자 메시지의 확인 코드를 입력하고 **다음**을 클릭합니다.
     
-8. 여기에 로그인 페이지 URL을 기록합니다(선택 후 복사). ![](./images/Common_Images/TableLine.png)
+8. 여기에 로그인 페이지 URL을 기록합니다(선택 후 복사). ![](./media/Common-Images/TableLine.png)
     
-9. 여기에 사용자 ID를 기록합니다(선택 후 복사). ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. 여기에 사용자 ID를 기록합니다(선택 후 복사). ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     이 값은 **Office 365 전역 관리자 이름**으로 사용됩니다.
     
@@ -119,7 +122,7 @@ Office Online 서비스 및 Office 365 관리 센터에 액세스할 수 있는 
   
 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경의 경우 결과 구성은 다음과 같습니다.
   
-![Office 365 개발/테스트 환경](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Office 365 개발/테스트 환경](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 이 구성은 다음으로 이루어집니다. 
   
@@ -184,8 +187,10 @@ New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalNam
   
 다음으로, 판매, 프로덕션 및 지원 부서를 위해 3개의 SharePoint Online 팀 사이트를 새로 만듭니다.
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>3개의 새로운 SharePoint Online 팀 사이트 만들기
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>4단계: 3개의 새로운 SharePoint Online 팀 사이트 만들기(선택 사항)
 
+이 단계에서는 SharePoint Online 팀 사이트의 집합을 구성합니다.
+  
 1. [SharePoint Online 관리 셸](https://go.microsoft.com/fwlink/p/?LinkId=255251)(x64 버전)을 설치합니다.
     
 2. **시작**을 클릭하고 **sharepoint**를 입력한 후 **SharePoint Online 관리 셸**을 클릭합니다.
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 이 테스트 환경에서 추가 테스트 랩 가이드를 사용하거나 배포하려면 다음 값을 기록해둡니다.
   
-- Office 365 전역 관리자 이름: ![](./images/Common_Images/TableLine.png).onmicrosoft.com(2단계의 9번째 작업 단계)
+- Office 365 전역 관리자 이름: ![](./media/Common-Images/TableLine.png).onmicrosoft.com(2단계의 9번째 작업 단계)
     
     이 계정의 암호도 안전한 위치에 적어둡니다.
     
-- 평가판 구독 조 직 이름: ![](./images/Common_Images/TableLine.png)(4단계의 2번째 작업 단계)
+- 평가판 구독 조 직 이름: ![](./media/Common-Images/TableLine.png)(4단계의 2번째 작업 단계)
     
 - 사용자 2, 사용자 3, 사용자 4, 사용자 5에 대한 계정을 나열하려면 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
     
@@ -237,27 +242,27 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     여기에 계정 이름을 기록합니다.
     
-  - 사용자 2 계정 이름: user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - 사용자 2 계정 이름: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 사용자 3 계정 이름: user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - 사용자 3 계정 이름: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 사용자 4 계정 이름: user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - 사용자 4 계정 이름: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 사용자 5 계정 이름: user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - 사용자 5 계정 이름: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-    이러한 계정의 암호도 안전한 위치에 적어둡니다.
+    해당 계정의 암호도 안전한 위치에 적어둡니다.
     
-- 판매, 프로덕션 및 지원 팀 사이트에 대한 URL을 나열하려면 SharePoint Online 관리 셸 프롬프트에서 다음 명령을 실행합니다.
+- (선택 사항) 판매, 프로덕션 및 지원 팀 사이트에 대한 URL을 나열하려면 SharePoint Online 관리 셸 프롬프트에서 다음 명령을 실행합니다.
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 프로덕션 사이트 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - 프로덕션 사이트 URL: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/production
     
-  - 판매 사이트 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - 판매 사이트 URL: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - 지원 사이트 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - 지원 사이트 URL: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>다음 단계
 

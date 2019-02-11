@@ -3,7 +3,7 @@ title: Microsoft Azure에서 Office 365 디렉터리 동기화 배포
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,50 +17,43 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: '요약: Azure의 가상 머신에 Azure AD Connect를 배포하여 온-프레미스 디렉터리 및 Office 365 구독의 Azure 테넌트 간에 계정을 동기화합니다.'
-ms.openlocfilehash: 01dede756142c08722e3cf21d91a0028eb815051
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c2aba481f789e52d027ccd8f5a91217e825ed8bf
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915643"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25976704"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure에서 Office 365 디렉터리 동기화 배포
 
- **요약:** Azure의 가상 머신에 Azure AD Connect를 배포하여 온-프레미스 디렉터리 및 Office 365 구독의 Azure 테넌트 간에 계정을 동기화합니다.
+ **요약:** Azure 인프라 서비스의 가상 머신에 Azure AD Connect를 배포하여 온-프레미스 디렉터리 및 Office 365 구독의 Azure 테넌트 간에 계정을 동기화합니다.
   
-Azure AD(Active Directory) Connect(이전 명칭은 디렉터리 동기화 도구 또는 DirSync.exe 도구)는 온-프레미스 Windows Server Active Directory 사용자를 Office 365 구독의 Azure Active Directory 테넌트와 동기화하기 위해 도메인에 가입된 서버에 설치하는 서버 기반 응용 프로그램입니다. 온-프레미스 서버에 Azure AD Connect를 설치할 수 있지만 다음과 같은 이유로 Azure의 가상 머신에 설치할 수도 있습니다.
+Azure AD(Active Directory) Connect(이전 명칭은 디렉터리 동기화 도구 또는 DirSync.exe 도구)는 도메인에 가입한 서버에 설치하는 응용 프로그램으로, 온-프레미스 Windows Server AD(Active Directory) 사용자를 Office 365 구독의 Azure AD 테넌트에 동기화합니다. Office 365는 디렉터리 서비스를 위해 Azure AD(Active Directory)를 사용합니다. Office 365 구독은 Azure AD 테넌트를 포함합니다. 이 테넌트는 Azure의 기타 SaaS 응용 프로그램 및 앱을 포함한 기타 클라우드 워크로드로 조직의 ID를 관리하기 위해 사용될 수도 있습니다.
+
+온-프레미스 서버에 Azure AD Connect를 설치할 수 있으며, 다음과 같은 이유로 Azure의 가상 머신에 설치할 수도 있습니다.
   
-- 클라우드 기반 서비스를 더 빠르게 프로비전하고 구성하여 사용자들이 서비스를 더 빠르게 사용하도록 할 수 있습니다.
-    
+- 클라우드 기반 서비스를 더 빠르게 프로비저닝하고 구성하여 사용자가 서비스를 더 빠르게 사용하도록 할 수 있습니다.
 - Azure에서는 더 적은 노력으로 더 나은 사이트 가용성을 제공합니다.
-    
 - 조직의 온-프레미스 서버 수를 줄일 수 있습니다.
-    
-> [!IMPORTANT]
-> 이 솔루션을 사용하려면 온-프레미스 네트워크와 Azure Virtual Network가 연결되어 있어야 합니다. 자세한 내용은 [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)을 참조하세요. 
-  
-> [!IMPORTANT]
-> 이 문서는 단일 포리스트의 단일 도메인 동기화에 대해 설명합니다. Azure AD Connect는 Active Directory 포리스트의 모든 Windows Server AD 도메인을 Office 365와 동기화합니다. Office 365와 동기화할 Active Directory 포리스트가 여러 개 있으면 [Single Sign-On과 다중 포리스트 디렉터리 동기화 시나리오](https://go.microsoft.com/fwlink/p/?LinkId=393091)를 참조하세요. 
+
+이 솔루션을 사용하려면 온-프레미스 네트워크와 Azure Virtual Network가 연결되어 있어야 합니다. 자세한 내용은 [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)을 참조하세요. 
   
 > [!NOTE]
-> Office 365에서는 해당 디렉터리 서비스에 대해 Azure AD(Azure Active Directory)를 사용합니다. Office 365 구독에는 Azure AD 테넌트가 포함되어 있습니다. 이 테넌트는 Azure의 기타 SaaS 응용 프로그램 및 앱을 비롯한 기타 클라우드 워크로드에서 조직의 ID를 관리하는 데 사용할 수도 있습니다. 
+> 이 문서는 단일 포리스트의 단일 도메인 동기화에 대해 설명합니다. Azure AD Connect는 Active Directory 포리스트의 모든 Windows Server AD 도메인을 Office 365와 동기화합니다. Office 365와 동기화할 Active Directory 포리스트가 여러 개 있으면 [Single Sign-On과 다중 포리스트 디렉터리 동기화 시나리오](https://go.microsoft.com/fwlink/p/?LinkId=393091)를 참조하세요. 
   
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Azure에서 Office 365 디렉터리 동기화 배포 개요
 
-다음 다이어그램에서는 온-프레미스 Windows Server AD 포리스트를 Office 365 구독과 동기화하는 Azure의 가상 머신(디렉터리 동기화 서버)에서 실행되는 Azure AD Connect를 보여줍니다.
+다음 다이어그램에서는 온-프레미스 Windows Server AD 포리스트를 Office 365 구독과 동기화하는 Azure의 가상 머신(디렉터리 동기화 서버)에서 실행되는 Azure AD Connect를 보여 줍니다.
   
 ![트래픽 흐름을 사용하여 온-프레미스 계정을 Office 365 구독의 Azure AD 테넌트와 동기화하는 Azure의 가상 컴퓨터에 있는 Azure AD Connect 도구](media/CP-DirSyncOverview.png)
   
 다이어그램에는 사이트 간 VPN 또는 ExpressRoute 연결로 연결되는 2개의 네트워크가 있습니다. Windows Server AD 도메인 컨트롤러가 있는 온-프레미스 네트워크가 있고, [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)가 실행되는 가상 머신에 해당하는 디렉터리 동기화 서버를 포함하는 Azure Virtual Network가 있습니다. 디렉터리 동기화 서버에서 시작하는 다음과 같은 두 가지 주요 트래픽 흐름이 있습니다.
   
 -  Azure AD Connect는 온-프레미스 네트워크의 도메인 컨트롤러에서 계정 및 암호 변경 내용을 쿼리합니다.
-    
 -  Azure AD Connect는 계정 및 암호 변경 내용을 Office 365 구독의 Azure AD 인스턴스로 보냅니다. 디렉터리 동기화 서버가 온-프레미스 네트워크의 확장된 영역에 있기 때문에 이러한 변경 내용은 온-프레미스 네트워크의 프록시 서버를 통해 전송됩니다.
     
 > [!NOTE]
 > 이 솔루션은 단일 포리스트의 단일 Active Directory 포리스트에서 단일 Active Directory 도메인의 동기화에 대해 설명합니다. Azure AD Connect는 Active Directory 포리스트의 모든 Active Directory 도메인을 Office 365와 동기화합니다. Office 365와 동기화할 Active Directory 포리스트가 여러 개 있으면 [Single Sign-On과 다중 포리스트 디렉터리 동기화 시나리오](https://go.microsoft.com/fwlink/p/?LinkId=393091)를 참조하세요. 
-  
-두 경우 모두 Azure Virtual Machine에서 실행되는 Azure AD Connect에서 시작된 트래픽은 Azure의 가상 네트워크에 있는 게이트웨이로 전달된 후 사이트 간 VPN 또는 ExpressRoute 연결을 통해 온-프레미스 네트워크의 VPN Gateway 장치로 전달됩니다. 그런 후에 온-프레미스 네트워크의 라우팅 인프라는 도메인 컨트롤러 또는 프록시 서버와 같은 목적지로 트래픽을 전달합니다.
   
 이 솔루션을 배포할 때는 다음과 같은 두 가지 주요 단계가 진행됩니다.
   
@@ -74,7 +67,7 @@ Azure AD(Active Directory) Connect(이전 명칭은 디렉터리 동기화 도�
     
     Azure AD Connect를 구성하려면 Azure AD 관리자 계정 및 Windows Server AD 엔터프라이즈 관리자 계정의 자격 증명(사용자 이름 및 암호)이 필요합니다. Azure AD Connect 즉시 실행되며 계속해서 온-프레미스 Windows Server AD 포리스트를 Office 365와 동기화합니다.
     
-이 솔루션을 프로덕션 환경에 배포하기 전에 [Office 365 개발/테스트 환경에 대한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 사용하여 이 구성을 개념 증명, 데모 또는 실험용으로 설정합니다.
+이 솔루션을 프로덕션 환경에 배포하기 전에 [Office 365 개발/테스트 환경에 대한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 사용하여 이 구성을 개념 증명, 데모 또는 실험용으로 설정할 수 있습니다.
   
 > [!IMPORTANT]
 > Azure AD Connect 구성이 완료될 때 Windows Server AD 엔터프라이즈 관리자 계정 자격 증명이 저장되지는 않습니다. 
@@ -95,9 +88,9 @@ Azure AD(Active Directory) Connect(이전 명칭은 디렉터리 동기화 도�
     
 - Active Directory 통합 기능을 포함하는 Office 365 구독이 있어야 합니다. Office 365 구독에 대한 내용은 [Office 365 구독 페이지](https://products.office.com/compare-all-microsoft-office-products?tab=2)를 참조하세요.
     
-- Azure AD Connect를 실행하여 온-프레미스 Windows Server AD 포리스트를 Office 365와 동기화하는 하나의 Azure Virtual Machine을 프로비전합니다.
+- Azure AD Connect를 실행하여 온-프레미스 Windows Server AD 포리스트를 Office 365와 동기화하는 하나의 Azure Virtual Machine을 프로비저닝합니다.
     
-    Windows Server AD 엔터프라이즈 관리자 계정 및 Azure Active Directory 관리자 계정에 대한 자격 증명(이름 및 암호)이 있어야 합니다.
+    Windows Server AD 엔터프라이즈 관리자 계정 및 Azure AD 관리자 계정의 자격 증명(이름 및 암호)이 있어야 합니다.
     
 ### <a name="solution-architecture-design-assumptions"></a>솔루션 아키텍처 디자인 가정
 
@@ -125,7 +118,7 @@ Azure의 가상 머신에 Azure AD Connect를 배포하는 과정은 다음 세 
     
 - 3단계: Azure AD Connect 설치 및 구성
     
-배포 후에 Office 365에서 새 사용자 계정에 대한 위치 및 라이선스를 할당해야 합니다.
+배포 후 Office 365에서 새 사용자 계정에 위치 및 라이선스를 할당해야 합니다.
   
 > [!TIP]
 > [Azure Deployment Kit의 디렉터리 동기화 서버](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)에는 이 솔루션을 빌드하기 위한 모든 Azure PowerShell 블록, Microsoft PowerPoint 및 Visio 형식 다이어그램, 설정에 맞게 사용자 지정된 Azure PowerShell 명령 블록을 생성하는 Microsoft Excel 구성 통합 문서가 포함되어 있습니다.
@@ -183,17 +176,17 @@ Azure AD Connect가 인터넷 리소스에 액세스할 수 있게 하려면 온
 
 Azure AD Connect는 온-프레미스 Windows Server AD에서 Office 365 구독에 계정을 추가하지만, 사용자가 Office 365에 로그인하고 해당 서비스를 사용하려면 계정의 위치 및 라이선스를 구성해야 합니다. 다음 단계에 따라 해당 사용자 계정에 대한 위치를 추가하고 라이선스를 활성화하세요.
   
-1. [Office 365 포털 페이지](https://portal.office.com)에 로그인하고 **관리자**를 클릭합니다.
+1. [Office 365 포털 페이지](https://portal.office.com)에 로그인한 다음 **관리자**를 클릭합니다.
     
 2. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
 3. 사용자 계정 목록에서 정품 인증하려는 사용자 옆에 있는 확인란을 선택합니다.
     
-4. 사용자에 대한 페이지에서 **제품 라이선스**에 대한 **편집**을 클릭합니다.
+4. 사용자 페이지에서 **제품 라이선스**에 대해 **편집**을 클릭합니다.
     
-5. **제품 라이선스** 페이지에서 **위치**로 사용자의 위치를 선택하고, 사용자에 대한 적절한 라이선스를 사용하도록 설정합니다.
+5. **제품 라이선스** 페이지에서 **위치**로 사용자의 위치를 선택한 다음, 사용자를 위한 적절한 라이선스를 사용하도록 설정합니다.
     
-6. 완료되면 **저장**을 클릭하고 **닫기**를 차례로 두 번 클릭합니다.
+6. 완료되면 **저장**을 클릭한 다음 **닫기**를 두 번 클릭합니다.
     
 7. 추가 사용자가 있으면 3단계로 돌아갑니다.
     

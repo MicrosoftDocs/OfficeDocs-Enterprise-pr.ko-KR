@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '요약: Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.'
-ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 12a352bda387b79016edcc62c08ff15b0bf96ee9
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915843"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897501"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대한 디렉터리 동기화
 

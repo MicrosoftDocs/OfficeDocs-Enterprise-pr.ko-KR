@@ -3,7 +3,7 @@ title: 온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '요약: 사이트 간 VPN 연결을 사용하여 Office Server 작업용 프레미스 간 Azure Virtual Network를 구성하는 방법을 알아봅니다.'
-ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 145c7a082aff436ee3c3bb873f299f9706db72df
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915323"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25976714"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
@@ -36,8 +36,8 @@ ms.locfileid: "22915323"
 
 Azure의 가상 시스템은 온-프레미스 환경에서 격리할 필요가 없습니다. Azure Virtual Machine을 온-프레미스 네트워크 리소스에 연결하려면 프레미스 간 Azure Virtual Network를 구성해야 합니다. 다음 다이어그램은 Azure의 가상 컴퓨터가 있는 프레미스 간 Azure Virtual Network를 배포하는 데 필요한 구성 요소를 표시합니다.
   
-![사이트 간 VPN 연결을 통해 Microsoft Azure에 연결된 온-프레미스 네트워크](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
-  
+![사이트 간 VPN 연결을 통해 Microsoft Azure에 연결된 온-프레미스 네트워크](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+ 
 다이어그램에는 사이트 간 VPN 연결로 연결된 두 개 네트워크가 있으며, 하나는 온-프레미스 네트워크이고 하나는 Azure Virtual Network입니다. 사이트 간 VPN 연결은 다음을 나타냅니다.
 
 - 주소 지정이 가능하고 공용 인터넷에 있는 두 끝점 사이에서 형성됩니다.
@@ -49,7 +49,7 @@ Azure Virtual Network는 가상 머신을 호스트합니다. Azure Virtual Netw
 >조직 및 Microsoft 네트워크 간의 직접 연결에 해당하는 [ExpressRoute](https://azure.microsoft.com/services/expressroute/)를 사용할 수도 있습니다. ExpressRoute를 통한 트래픽은 공용 인터넷을 통해 전달되지 않습니다. 이 문서는 ExpressRoute의 사용에 대해 설명하지 않습니다.
 >
   
-Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설정하려면 다음 단계를 수행합니다. 
+Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설정하려면 다음 단계를 따르세요. 
   
 1. **온-프레미스:** 온-프레미스 VPN 장치를 가리키는 Azure Virtual Network의 주소 공간에 대한 온-프레미스 네트워크 경로를 정의하고 만듭니다.
     
@@ -174,7 +174,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
-사이트 간 VPN 연결을 통해 Azure Virtual Network에서 조직 네트워크로 패킷을 라우팅하려면 로컬 네트워크로 가상 네트워크를 구성해야 합니다. 이 로컬 네트워크에는 가상 네트워크의 가상 컴퓨터에 도달해야 하는 온-프레미스 네트워크의 모든 위치에 대한 주소 공간 목록(CIDR 형식)이 포함되어 있습니다. 온-프레미스 네트워크 또는 하위 집합의 모든 위치일 수 있습니다. 로컬 네트워크를 정의하는 주소 공간 목록은 고유해야 하며 이 가상 네트워크 또는 다른 프레미스 간 가상 네트워크에 사용되는 주소 공간과 중복되지 않아야 합니다.
+사이트 간 VPN 연결을 통해 Azure Virtual Network에서 조직 네트워크로 패킷을 라우팅하려면 로컬 네트워크로 가상 네트워크를 구성해야 합니다. 이 로컬 네트워크에는 가상 네트워크의 가상 머신에 도달해야 하는 온-프레미스 네트워크의 모든 위치에 대한 주소 공간 목록(CIDR 형식)이 포함되어 있습니다. 온-프레미스 네트워크 또는 하위 집합의 모든 위치일 수 있습니다. 로컬 네트워크를 정의하는 주소 공간 목록은 고유해야 하며 이 가상 네트워크 또는 다른 프레미스 간 가상 네트워크에 사용되는 주소 공간과 중복되지 않아야 합니다.
   
 로컬 네트워크 주소 공간의 집합에 대해서는 테이블 L을 채웁니다. 세 개의 빈 항목이 나열되지만 일반적으로 더 많이 필요합니다. IT 부서에서 이 목록을 확인합니다.
   
@@ -212,7 +212,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 먼저 Azure PowerShell 프롬프트를 엽니다. Azure PowerShell을 설치하지 않은 경우 [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요.
   
 > [!NOTE]
-> 이러한 명령은 Azure PowerShell 1.0 이상에서 사용할 수 있습니다. 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일은 [여기](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)를 클릭합니다. 
+> 해당 명령은 Azure PowerShell 1.0 이상에서 사용할 수 있습니다. 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일은 [여기](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)를 클릭합니다. 
   
 그런 다음 이 명령을 사용하여 Azure 계정에 로그인합니다.
   
@@ -248,28 +248,7 @@ New-AzureRMResourceGroup -Name $rgName -Location $locName
 
 ```
 
-리소스 관리자 기반 가상 컴퓨터에는 리소스 관리자 기반 저장소 계정이 있어야 합니다. 소문자와 숫자만 포함하는 저장소 계정의 고유한 이름을 전역으로 선택해야 합니다. 이 명령을 사용하여 기존 저장소 계정을 나열할 수 있습니다.
-  
-```
-Get-AzureRMStorageAccount | Sort Name | Select Name
-```
-
-이 명령을 사용하여 제안된 저장소 계정 이름이 고유한지 테스트할 수 있습니다.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-새 저장소 계정을 만들려면 이러한 명령을 실행합니다.
-  
-```
-$rgName="<your new resource group name>"
-$locName="<the location of your new resource group>"
-$saName="<unique storage account name>"
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
-다음으로 Azure Virtual Network를 만듭니다.
+그런 다음, Azure Virtual Network를 만듭니다.
   
 ```
 # Fill in the variables from previous values and from Tables V, S, and D
@@ -346,11 +325,9 @@ Azure에서 필요한 가상 머신을 만듭니다. 자세한 내용은 [Azure 
   
 다음 설정을 사용합니다.
   
-- **기초** 창에서 사용자 가상 네트워크와 동일한 구독과 리소스 그룹을 선택합니다. 사용자 이름과 암호를 안전한 위치에 기록합니다. 나중에 가상 컴퓨터에 로그인하려면 이러한 정보가 필요합니다.
+- **기본** 탭에서 동일한 구독과 리소스 그룹을 가상 머신으로 선택합니다. 나중에 가상 머신에 로그인할 때 필요한 항목입니다. **인스턴스 세부 정보** 섹션에서 적합한 가상 머신 크기를 선택합니다. 관리자 계정 사용자 이름과 암호를 안전한 위치에 기록합니다. 
     
-- **크기** 창에서 적절한 크기를 선택합니다.
-    
-- **설정** 창의 **저장소** 섹션에서 가상 네트워크로 설정된 **표준** 저장소 유형과 저장소 계정을 선택합니다. **네트워크** 섹션에서 가상 네트워크 이름과 가상 컴퓨터를 호스트하는 서브넷(GatewaySubnet 제외)을 선택합니다. 다른 설정은 기본값을 그대로 사용합니다.
+- **네트워킹** 탭에서 가상 머신의 이름과 가상 머신을 호스트하는 서브넷(GatewaySubnet 제외)을 선택합니다. 다른 설정은 기본값을 그대로 사용합니다.
     
 내부 DNS를 확인하여 가상 컴퓨터가 올바르게 DNS를 사용하고 있는지 확인합니다. 주소(A) 레코드가 새 가상 컴퓨터에 추가되어야 합니다. 인터넷에 액세스하려면 Azure Virtual Machine이 온-프레미스 네트워크의 프록시 서버에 구성되어야 합니다. 네트워크 관리자에게 이 서버에서 수행할 수 있는 추가 구성 단계를 문의합니다.
   

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022077"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897321"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 

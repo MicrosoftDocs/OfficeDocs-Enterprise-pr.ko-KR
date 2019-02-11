@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell을 사용하여 Sway에 대한 액세스 비활성화"
+title: Office 365 PowerShell을 사용하여 Sway에 대한 액세스 비활성화
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: "Office 365 조직에서 Sway에 액세스하지 못하게 할 수 있는 ManageSway.ps1 PowerShell 스크립트를 다운로드할 수 있는 위치를 알아봅니다."
-ms.openlocfilehash: 261a192195950c7ca21cbc33dd39307ee64b552e
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: Office 365 조직에서 Sway에 액세스하지 못하게 할 수 있는 ManageSway.ps1 PowerShell 스크립트를 다운로드할 수 있는 위치를 알아봅니다.
+ms.openlocfilehash: 38f50a483f7bb42ad2d944cf95c49050cf35bfb1
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897091"
 ---
 # <a name="disable-access-to-sway-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 Sway에 대한 액세스 비활성화
 
@@ -30,8 +33,8 @@ ManageSway.ps1 PowerShell 스크립트를 사용하면 Office 365 조직에서 S
     
 이 스크립트와 연결된 두 개의 파일을 다운로드해야 합니다.
   
-- ManageSway.ps1 스크립트: [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)
+- [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)에서 ManageSway.ps1 스크립트 다운로드
     
-- 스크립트에 대한 도움말 파일: [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)
+- [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)에서 스크립트의 도움말 파일 다운로드
     
 

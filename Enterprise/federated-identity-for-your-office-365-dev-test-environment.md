@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '요약: Office 365 개발/테스트 환경에 대한 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d22f23d2c5c36f45cff7fde3185e1de3e4961ef9
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915243"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897551"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 페더레이션 ID
 
@@ -105,7 +105,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일은 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0)를 클릭합니다.
+> 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일을 보려면 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0)를 클릭합니다.
   
 다음으로, [Azure Portal](http://portal.azure.com)에서 ADFS1 로컬 관리자 계정 이름과 암호를 사용하여 ADFS1 가상 머신에 연결하고 Windows PowerShell 명령 프롬프트를 엽니다.
   
@@ -161,7 +161,7 @@ Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-A
 
 다음으로, [Azure Portal](http://portal.azure.com)에서 PROXY1 로컬 관리자 계정 이름과 암호를 사용하여 PROXY1 가상 머신에 연결하고 PROXY1에서 Windows PowerShell 명령 프롬프트를 엽니다.
   
-PROXY1과 DC1 사이의 이름 확인 및 네트워크 통신을 확인하려면 **ping dc1.corp.contoso.com** 명령을 실행하고 4개의 응답이 있는지 확인합니다.
+RPOXY1과 DC1 사이의 이름 확인 및 네트워크 통신을 확인하려면 **ping dc1.corp.contoso.com** 명령을 실행하고 4개의 응답이 있는지 확인합니다.
   
 다음으로, PROXY1의 Windows PowerShell 프롬프트에 다음 명령을 사용하여 PROXY1 가상 머신을 CORP 도메인에 가입합니다.
   

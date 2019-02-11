@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '요약: Microsoft Azure에서 개발/테스트 환경으로 간소화된 인트라넷을 만듭니다.'
-ms.openlocfilehash: 9ffa35a6318d83d489ec51051547ce22c16b5b5f
-ms.sourcegitcommit: 9ce1da973b8c91b0926142a28c5b90f95f0422d8
+ms.openlocfilehash: 71470a20586a0d1992cfafd35f213ec80286419b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353314"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897381"
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -372,7 +372,7 @@ Restart-Computer
   
 CLIENT1을 다시 시작한 후에 CORP\\User1 계정 이름 및 암호를 사용하여 연결한 후 관리자 수준 Windows PowerShell 명령 프롬프트를 엽니다.
   
-그런 후 CLIENT1에서 APP1의 웹 및 파일 공유 리소스에 액세스할 수 있는지 확인합니다.
+그런 다음, CLIENT1에서 APP1의 웹 및 파일 공유 리소스에 액세스할 수 있는지 확인합니다.
   
 1. 서버 관리자의 트리 창에서 **로컬 서버**를 클릭합니다.
     

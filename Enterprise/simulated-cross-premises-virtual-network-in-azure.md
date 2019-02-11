@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '요약: 시뮬레이션된 프레미스 간 가상 네트워크를 Microsoft Azure에 개발/테스트 환경으로 만듭니다.'
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915343"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897141"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>시뮬레이션된 Azure의 크로스-프레미스 가상 네트워크
 
@@ -81,7 +81,7 @@ Azure IaaS 하이브리드 클라우드 프로덕션 환경을 시뮬레이트�
 > [!NOTE]
 > 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/ko-KR/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
-다음 명령을 사용하여 Azure 계정에 로그인합니다.
+이 명령을 사용하여 Azure 계정에 로그인합니다.
   
 ```
 Login-AzureRMAccount
@@ -90,7 +90,7 @@ Login-AzureRMAccount
 > [!TIP]
 > 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일을 가져오려면 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)를 클릭합니다.
   
-다음 명령을 사용하여 구독 이름을 가져옵니다.
+이 명령을 사용하여 구독 이름을 가져옵니다.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name

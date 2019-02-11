@@ -11,12 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849914"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26705462"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>비즈니스용 OneDrive Multi-Geo 검색 구성
 
@@ -167,6 +167,9 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>사용자 지정 검색 응용 프로그램에서 전체 또는 일부 지리적 위치의 결과를 표시하도록 지정
 
 사용자 지정 검색 응용 프로그램은 SharePoint 검색 REST API에 대한 요청을 통해 쿼리 매개 변수를 지정하여 전체 또는 일부 지리적 위치에서 결과를 가져옵니다. 쿼리 매개 변수에 따라, 쿼리는 모든 지리적 위치 또는 일부 지리적 위치로 팬아웃됩니다. 예를 들어, 관련 정보를 찾기 위해 지리적 위치의 하위 집합만 쿼리하면 될 경우 팬아웃을 이러한 위치로만 제어할 수 있습니다. 요청이 성공하면 SharePoint 검색 REST API가 응답 데이터를 반환됩니다.
+
+#### <a name="requirement"></a>요구 사항 #### 
+각 지역 위치의 경우 조직의 모든 사용자가 루트 웹 사이트(예: contoso**APAC**.sharepoint.com/ 및 contoso**EU**.sharepoint.com/) **읽기** 권한 수준을 받아야 합니다. [권한에 대해 자세히 알아보세요](https://support.office.com/ko-KR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>쿼리 매개 변수
 
