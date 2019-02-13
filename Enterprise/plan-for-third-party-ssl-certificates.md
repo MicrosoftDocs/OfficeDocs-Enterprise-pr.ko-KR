@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '요약: AD FS, Exchange Online 서비스 및 Exchange 웹 서비스를 사용하는 Exchange 온-프레미스 및 하이브리드와 SSO에 필요한 SSL 인증서를 설명합니다.'
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546519"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952474"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365용 타사 SSL 인증서 계획
 
@@ -49,7 +49,7 @@ ms.locfileid: "27546519"
   
 ## <a name="certificates-for-single-sign-on"></a>Single Sign-On용 인증서
 
-단순한 single sign on 환경을 강력한 보안이 포함 된 사용자에 게을 제공 하려면 다음 표에 표시 된 인증서는 페더레이션 서버 또는 페더레이션 서버 프록시에 필요 합니다. 아래 표에 Active Directory Federation Services (AD FS)에 중점을 두고, 것 권한도 부여 [타사 id 공급자를 사용 하 여](https://go.microsoft.com/fwlink/?LinkId=532869)대 한 자세한 내용은 합니다.
+단순한 single sign on 환경을 강력한 보안이 포함 된 사용자에 게을 제공 하려면 다음 표에 표시 된 인증서는 페더레이션 서버 또는 페더레이션 서버 프록시에 필요 합니다. 아래 표에 Active Directory Federation Services (AD FS)에 중점을 두고, 것 권한도 부여 [타사 id 공급자를 사용 하 여](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility)대 한 자세한 내용은 합니다.
   
 ||||
 |:-----|:-----|:-----|
