@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,46 +14,91 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 설명 합니다.
-ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+description: office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
+ms.openlocfilehash: 113107df75880a21210991d5b301245d75c5c739
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213955"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052972"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기
 
-**요약:** Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 설명 합니다.
+**요약:** office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
   
-Office 365에서 라이선스를 제공 계획 라이선스를 (또한 호출된 Sku 또는 Office 365 계획) 사용자가 이러한 계획에 대해 정의 된 Office 365 서비스에 액세스 권한을 부여 합니다. 그러나 사용자 자신에 게 현재 할당 된 라이선스에서 사용할 수 있는 모든 서비스에 대 한 액세스를 권한이 없는 합니다. Office 365 PowerShell을 사용 하 여 사용자 계정에서 서비스의 상태를 보려면 수 있습니다. 
+office 365에서는 라이선스 요금제 (sku 또는 Office 365 요금제 라고도 함)의 라이선스를 사용자에 게 해당 요금제에 대해 정의 된 Office 365 서비스에 대 한 액세스 권한을 부여 합니다. 그러나 사용자에 게는 현재 할당 되어 있는 라이선스에서 사용 가능한 모든 서비스에 대 한 액세스 권한이 없을 수 있습니다. Office 365 PowerShell을 사용 하 여 사용자 계정에 대 한 서비스 상태를 볼 수 있습니다. 
 
-## <a name="before-you-begin"></a>시작하기 전에
+라이선스 계획, 라이선스 및 서비스에 대 한 자세한 내용은 [Office 365 PowerShell을 사용 하 여 라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)를 참조 하세요.
 
-- 이 항목의 절차를 수행하려면 Office 365 PowerShell에 연결되어 있어야 합니다. 지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
-    
-- 명령을 사용 하 여 `Get-MsolAccountSku` 및 `(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus` 다음 정보를 찾을 수 있습니다.
-    
-  - 조직에서 사용할 수 있는 라이선스 계획.
-    
-  - 각 라이선스 계획에서 사용할 수 있는 서비스 및 서비스 나열 순서(인덱스 번호).
-    
-     계획, 라이선스 및 서비스 라이선스에 대 한 자세한 내용은 [보기 라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를](view-licenses-and-services-with-office-365-powershell.md)참조 하십시오.
-    
-- 명령을 사용 하 여 `Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses` (인덱스 번호)를 나열 된 자신이 하는 사용자 및 순서에 할당 된 라이선스를 찾을 수 있습니다.
-    
-- 사용 하는 경우는 **Get-MsolUser** cmdlet을 사용 하지 않고는 _All_ 매개 변수를 처음 500 개의 계정만 반환 됩니다.
-    
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
-## <a name="to-view-services-for-a-user-account"></a>사용자 계정에 대 한 서비스를 보려면
+먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+  
+그런 다음이 명령을 사용 하 여 테 넌 트에 대 한 라이선스 계획을 나열 합니다.
 
-사용자에 액세스할 수 있는 모든 Office 365 서비스를 보려면 다음 구문을 사용 합니다.
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+이러한 명령을 사용 하 여 각 라이선스 계획에서 사용할 수 있는 서비스를 나열 합니다.
+
+```
+$allSKUs=Get-AzureADSubscribedSku
+$licArray = @()
+for($i = 0; $i -lt $allSKUs.Count; $i++)
+{
+$licArray += "Service Plan: " + $allSKUs[$i].SkuPartNumber
+$licArray +=  Get-AzureADSubscribedSku -ObjectID $allSKUs[$i].ObjectID | Select -ExpandProperty ServicePlans
+$licArray +=  ""
+}
+$licArray
+````
+
+이러한 명령을 사용 하 여 사용자 계정에 할당 된 라이선스를 나열 합니다.
+
+````
+$userUPN="<user account UPN, such as belindan@contoso.com>"
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+````
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
+
+먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
+
+다음으로이 명령을 실행 하 여 조직에서 사용할 수 있는 라이선스 계획을 나열 합니다. 
+
+```
+Get-MsolAccountSku
+```
+
+다음으로, 각 라이선스 계획에서 사용할 수 있는 서비스와 이러한 서비스가 나열 되는 순서 (인덱스 번호)를 나열 하려면이 명령을 실행 합니다.
+
+````
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
+````
+  
+이 명령을 사용 하 여 사용자에 게 할당 된 라이선스와 해당 라이선스가 나열 되는 순서 (인덱스 번호)를 나열 합니다.
+
+````
+Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
+````
+
+>[!Note]
+>사용 하는 경우는 **Get-MsolUser** cmdlet을 사용 하지 않고는 _All_ 매개 변수를 처음 500 개의 계정만 반환 됩니다.
+>
+   
+
+### <a name="to-view-services-for-a-user-account"></a>사용자 계정에 대 한 서비스를 보려면
+
+사용자가 액세스할 수 있는 모든 Office 365 서비스를 보려면 다음 구문을 사용 합니다.
   
 ```
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-이 예제에서는 BelindaN@litwareinc.com 사용자가 액세스할 수 있는 서비스입니다. 이 사용자 계정에 할당 된 모든 라이선스와 연결 된 서비스를 보여줍니다.
+이 예에서는 사용자 BelindaN@litwareinc.com에 게 액세스 권한이 있는 서비스를 표시 합니다. 여기에는 해당 계정에 할당 된 모든 라이선스와 연결 된 서비스가 표시 됩니다.
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
@@ -65,7 +110,7 @@ Office 365에서 라이선스를 제공 계획 라이선스를 (또한 호출된
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
-*여러 라이선스*할당 된 사용자에 대 한 모든 서비스를 보려면 다음 구문을 사용 합니다.
+*여러 라이선스가*할당 된 사용자의 모든 서비스를 보려면 다음 구문을 사용 합니다.
 
 ```
 $userAccountUPN="<user account UPN>"
@@ -81,35 +126,14 @@ $licArray
 ```
 
   
-## <a name="see-also"></a>참고 항목
-
-Office 365 PowerShell을 사용 하여 사용자를 관리에 대하여 다음과 같은 추가 항목을 참조 하십시오.
-  
-- [Office 365 PowerShell을 사용 하 여 사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
-    
-- [삭제 한 사용자 계정 Office 365 PowerShell을 사용 하 여 복원 합니다.](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [블록 사용자 계정 Office 365 PowerShell을 사용 하 여](block-user-accounts-with-office-365-powershell.md)
-    
-- [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센스를 제거 합니다.](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-    
-이 항목에서 사용된 cmdlet에 대한 자세한 내용은 다음 항목을 참조하십시오.
-  
-- [ConvertTo Html](https://go.microsoft.com/fwlink/p/?LinkId=113290)
-    
-- [Format-List](https://go.microsoft.com/fwlink/p/?LinkId=113302)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [선택 개체](https://go.microsoft.com/fwlink/p/?LinkId=113387)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-
-  
 ## <a name="new-to-office-365"></a>Office 365의 새로운 기능
 
-
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
+## <a name="see-also"></a>참고 항목
+
+[Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+  
+[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+  
+[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
