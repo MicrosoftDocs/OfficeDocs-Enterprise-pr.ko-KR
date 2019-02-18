@@ -1,5 +1,5 @@
 ---
-title: OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위치 기능
+title: Office 365의 OneDrive에 있는 Multi-Geo 기능
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: OneDrive 및 SharePoint Online의 다중 위치 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: OneDrive Online의 Multi-Geo 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200731"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052992"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive 및 Office 365의 SharePoint Online에 제공되는 다중 위치 기능
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Office 365의 OneDrive에 있는 Multi-Geo 기능
 
-OneDrive 및 SharePoint Online의 Multi-Geo 기능을 사용하여 조직은 Office 365 사용 범위를 기존 테넌트 내의 여러 지리적 지역 및/또는 국가로 확장할 수 있습니다. 또한 Microsoft 계정 팀에 연락하여 비즈니스용 OneDrive Multi-Geo에 귀하의 다국적 기업을 등록할 수 있습니다.
+OneDrive Online의 Multi-Geo 기능을 사용하여 조직은 Office 365 사용 범위를 기존 테넌트 내의 여러 지리적 지역 및/또는 국가로 확장할 수 있습니다. 또한 Microsoft 계정 팀에 연락하여 비즈니스용 OneDrive Multi-Geo에 귀하의 다국적 기업을 등록할 수 있습니다.
   
 OneDrive Multi-Geo를 사용하여 데이터 상주 요구 사항을 충족하기 위해 선택한 지리적 위치에서 미사용 데이터를 프로비전 및 저장하고, 동시에 귀하의 전 세계 작업자들이 최신 생산선 환경을 활용하도록 할 수 있습니다.
   
