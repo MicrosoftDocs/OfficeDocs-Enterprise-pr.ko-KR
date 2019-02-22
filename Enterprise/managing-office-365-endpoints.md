@@ -3,7 +3,7 @@ title: Office 365 끝점 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/11/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크에서는 일반 인터넷 위치에 대 한 액세스를 제한 하거나, 상당한 백 또는 네트워크 트래픽 처리를 포함 합니다. 이와 같은 네트워크의 컴퓨터가 office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자가 office 365 끝점 목록을 구성 하는 fqdn, url 및 IP 주소 목록을 관리 해야 합니다. 네트워크 요청이 Office 365에 도달할 수 있도록 하려면 이러한 사항을 직접 경로, 프록시 바이패스 및/또는 방화벽 규칙 및 PAC 파일에 추가 해야 합니다.
-ms.openlocfilehash: ed3a64ad3cd840987d105ae99a5ba5cbf41567e9
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 469c1fa91fc2695c4175a4eccea26a0ffc46c52a
+ms.sourcegitcommit: bc565081b64d374d43b1bf3bb3d92edaaa24e4c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30053002"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30176748"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -30,7 +30,7 @@ office [365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md) 를 �
 
 중요 한 office 365 네트워크 트래픽을 관리 하는 방법에 관계 없이 office 365을 사용 하려면 인터넷에 연결 해야 합니다. 연결이 필요한 기타 네트워크 끝점은 [Office 365 IP 주소 및 URL 웹 서비스에 포함 되지 않은 추가 끝점](additional-office365-ip-addresses-and-urls.md) 에 나열 되어 있습니다.
 
-Office 365 네트워크 끝점을 사용 하는 방법은 엔터프라이즈 조직 네트워크 아키텍처에 따라 달라 집니다. 이 문서에서는 엔터프라이즈 네트워크 아키텍처에서 Office 365 IP 주소 및 url과 통합할 수 있는 여러 가지 방법을 간략하게 설명 합니다. 신뢰할 네트워크 요청을 선택할 수 있는 가장 쉬운 방법은 각 사무실 위치에서 자동 Office 365 구성을 지 원하는 sdwan 장치를 사용 하는 것입니다. 
+Office 365 네트워크 끝점을 사용 하는 방법은 엔터프라이즈 조직 네트워크 아키텍처에 따라 달라 집니다. 이 문서에서는 엔터프라이즈 네트워크 아키텍처에서 Office 365 IP 주소 및 url과 통합할 수 있는 여러 가지 방법을 간략하게 설명 합니다. 신뢰할 네트워크 요청을 선택할 수 있는 가장 쉬운 방법은 각 사무실 위치에서 자동 Office 365 구성을 지 원하는 sdwan 장치를 사용 하는 것입니다.
 
 ## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>중요 한 Office 365 네트워크 트래픽의 로컬 분기 송신을 위한 sdwan
 
@@ -43,13 +43,13 @@ Microsoft는 sdwan 공급자와 협력 하 여 자동화 된 구성을 사용 �
 
 PAC 또는 WPAD 파일을 사용 하 여 Office 365에 연결 되어 있지만 IP 주소가 없는 네트워크 요청을 관리 합니다. 프록시 또는 경계 장치를 통해 전송 되는 일반적인 네트워크 요청에 대 한 대기 시간이 길어집니다. SSL 침입 및 검사에서는 가장 큰 대기 시간을 만들기 때문에 프록시 인증 및 신뢰도 조회와 같은 다른 서비스를 사용 하면 성능이 저하 되 고 사용자 환경이 잘못 될 수 있습니다. 또한 이러한 경계 네트워크 장치는 모든 네트워크 연결 요청을 처리 하기에 충분 한 용량을 필요로 합니다. 직접적인 Office 365 네트워크 요청에 대해 프록시 또는 검사 장치를 바이패스 하는 것이 좋습니다.
   
-[powershell Gallery PacFile](https://www.powershellgallery.com/packages/Get-PacFile) 는 Office 365 IP 주소 및 URL 웹 서비스에서 최신 네트워크 끝점을 읽고 샘플 PAC 파일을 만드는 PowerShell 스크립트입니다. 기존 PAC 파일 관리와 통합 되도록 스크립트를 수정할 수 있습니다. 
+[powershell Gallery PacFile](https://www.powershellgallery.com/packages/Get-PacFile) 는 Office 365 IP 주소 및 URL 웹 서비스에서 최신 네트워크 끝점을 읽고 샘플 PAC 파일을 만드는 PowerShell 스크립트입니다. 기존 PAC 파일 관리와 통합 되도록 스크립트를 수정할 수 있습니다.
 
 ![방화벽 및 프록시를 통해 Office 365에 연결](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
 **그림 1-간단한 엔터프라이즈 네트워크 경계**
 
-PAC 파일은 그림 1의 포인트 1에 있는 웹 브라우저에 배포 됩니다. 중요 한 Office 365 네트워크 트래픽을 직접 송신 하기 위해 PAC 파일을 사용 하는 경우에는 네트워크 경계 방화벽에서 이러한 url 뒤에 오는 IP 주소에 대 한 연결도 허용 해야 합니다. 이 작업은 PAC 파일에 지정 된 것과 같은 Office 365 끝점 범주에 대 한 IP 주소를 가져오고 해당 주소를 기반으로 방화벽 acl을 만드는 방법으로 수행 됩니다. 방화벽은 그림 1의 포인트 3입니다. 
+PAC 파일은 그림 1의 포인트 1에 있는 웹 브라우저에 배포 됩니다. 중요 한 Office 365 네트워크 트래픽을 직접 송신 하기 위해 PAC 파일을 사용 하는 경우에는 네트워크 경계 방화벽에서 이러한 url 뒤에 오는 IP 주소에 대 한 연결도 허용 해야 합니다. 이 작업은 PAC 파일에 지정 된 것과 같은 Office 365 끝점 범주에 대 한 IP 주소를 가져오고 해당 주소를 기반으로 방화벽 acl을 만드는 방법으로 수행 됩니다. 방화벽은 그림 1의 포인트 3입니다.
 
 별도로 범주 끝점을 최적화 하기 위해 직접 라우팅만 선택한 경우 프록시 서버에 보내는 모든 필수 허용 범주 끝점이 프록시 서버에 나열 되어야 더 이상 처리 되지 않습니다. 예를 들어 SSL 중단 및 검사 및 프록시 인증은 최적화 및 허용 범주 끝점과 모두 호환 되지 않습니다. 프록시 서버는 그림 1의 포인트 2입니다.
 
@@ -64,7 +64,7 @@ PacFile 스크립트는 두 가지 유형의 PAC 파일을 생성 합니다.
 
 다음은 PowerShell 스크립트를 호출 하는 간단한 예입니다.
 
-```
+```powershell
 Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
 
@@ -79,20 +79,20 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 다음은 추가 매개 변수를 사용 하 여 PowerShell 스크립트를 호출 하는 또 다른 예입니다.
 
+```powershell
+Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
-Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
-```
 
-## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>프록시 서버 바이패스 Office 365 네트워크 트래픽 처리 
+## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>프록시 서버 바이패스 Office 365 네트워크 트래픽 처리
 
-직접 아웃 바운드 트래픽에 대해 PAC 파일을 사용 하지 않는 경우에도 프록시 서버를 구성 하 여 네트워크 경계에서 처리를 우회 하려고 합니다. 일부 프록시 서버 공급 업체에서는 [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)에 설명 된 것 처럼 자동화 된 구성을 사용 하도록 설정 했습니다. 
+직접 아웃 바운드 트래픽에 대해 PAC 파일을 사용 하지 않는 경우에도 프록시 서버를 구성 하 여 네트워크 경계에서 처리를 우회 하려고 합니다. 일부 프록시 서버 공급 업체에서는 [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)에 설명 된 것 처럼 자동화 된 구성을 사용 하도록 설정 했습니다.
 
-이 작업을 수동으로 수행 하는 경우 Office 365 IP 주소 및 URL 웹 서비스에서 최적화 및 허용 끝점 범주 데이터를 가져오고 이러한 항목에 대 한 처리를 우회 하도록 프록시 서버를 구성 해야 합니다. 최적화 및 허용 범주 끝점에 대해 SSL 중단 및 검사 및 프록시 인증을 방지 하는 것이 중요 합니다. 
+이 작업을 수동으로 수행 하는 경우 Office 365 IP 주소 및 URL 웹 서비스에서 최적화 및 허용 끝점 범주 데이터를 가져오고 이러한 항목에 대 한 처리를 우회 하도록 프록시 서버를 구성 해야 합니다. 최적화 및 허용 범주 끝점에 대해 SSL 중단 및 검사 및 프록시 인증을 방지 하는 것이 중요 합니다.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Office 365 IP 주소 및 url에 대 한 변경 관리
 
-네트워크 경계에 적합 한 구성을 선택 하는 것 외에도 Office 365 끝점에 대 한 변경 관리 프로세스를 채택 하는 것이 중요 합니다. 이러한 끝점은 정기적으로 변경 되며, 변경 사항을 관리 하지 않으면 새 IP 주소 또는 URL을 추가한 후 사용자가 차단 되거나 성능 저하로 인해 완료 될 수 있습니다. 
+네트워크 경계에 적합 한 구성을 선택 하는 것 외에도 Office 365 끝점에 대 한 변경 관리 프로세스를 채택 하는 것이 중요 합니다. 이러한 끝점은 정기적으로 변경 되며, 변경 사항을 관리 하지 않으면 새 IP 주소 또는 URL을 추가한 후 사용자가 차단 되거나 성능 저하로 인해 완료 될 수 있습니다.
 
 Office 365 IP 주소 및 url에 대 한 변경 내용은 보통 매월 말일에 게시 됩니다. 운영, 지원 또는 보안 요구 사항으로 인해 변경 내용이 해당 일정 외부에 게시 되는 경우가 있습니다.
 
@@ -100,7 +100,7 @@ IP 주소 또는 URL이 추가 되어 작업을 수행 해야 하는 변경 내�
 
 ### <a name="change-notification-using-the-web-service"></a>웹 서비스를 사용 하 여 알림 변경
 
-Office 365 IP 주소 및 URL 웹 서비스를 사용 하 여 변경 알림을 가져올 수 있습니다. Office 365에 연결 하는 데 사용 하는 끝점의 버전을 확인 하려면 한 시간 한 번 **/version** 웹 메서드를 호출 하는 것이 좋습니다. 사용 중인 버전과 비교 하 여이 버전이 변경 되는 경우에는 **/pndweb** 메서드에서 최신 끝점 데이터를 가져오고 필요에 따라 **/changes** 웹 메서드를 통해 차이를 가져와야 합니다. 찾은 버전을 변경 하지 않은 경우에는 **/tendpoints** 또는 **/dweb** 메서드를 호출 하지 않아도 됩니다. 
+Office 365 IP 주소 및 URL 웹 서비스를 사용 하 여 변경 알림을 가져올 수 있습니다. Office 365에 연결 하는 데 사용 하는 끝점의 버전을 확인 하려면 한 시간 한 번 **/version** 웹 메서드를 호출 하는 것이 좋습니다. 사용 중인 버전과 비교 하 여이 버전이 변경 되는 경우에는 **/pndweb** 메서드에서 최신 끝점 데이터를 가져오고 필요에 따라 **/changes** 웹 메서드를 통해 차이를 가져와야 합니다. 찾은 버전을 변경 하지 않은 경우에는 **/tendpoints** 또는 **/dweb** 메서드를 호출 하지 않아도 됩니다.
 
 자세한 내용은 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)를 참조 하세요.
 
@@ -110,7 +110,7 @@ Office 365 IP 주소 및 URL 웹 서비스는 Outlook에서 구독할 수 있는
 
 ### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Microsoft 흐름을 사용 하 여 알림 및 승인 검토 변경
 
-각 월별로 제공 되는 네트워크 끝점 변경에 대 한 수동 처리가 여전히 필요할 수 있다는 것을 이해 하 고 있습니다. Microsoft 흐름을 사용 하 여 전자 메일로 알리는 흐름을 만들고 Office 365 네트워크 끝점에 변경 내용이 있을 때 변경 내용에 대 한 승인 프로세스를 선택적으로 실행할 수 있습니다. 검토가 완료 되 면 흐름에서 방화벽 및 프록시 서버 관리 팀에 변경 내용을 자동으로 전자 메일로 보낼 수 있습니다. 
+각 월별로 제공 되는 네트워크 끝점 변경에 대 한 수동 처리가 여전히 필요할 수 있다는 것을 이해 하 고 있습니다. Microsoft 흐름을 사용 하 여 전자 메일로 알리는 흐름을 만들고 Office 365 네트워크 끝점에 변경 내용이 있을 때 변경 내용에 대 한 승인 프로세스를 선택적으로 실행할 수 있습니다. 검토가 완료 되 면 흐름에서 방화벽 및 프록시 서버 관리 팀에 변경 내용을 자동으로 전자 메일로 보낼 수 있습니다.
 
 microsoft flow 샘플과 템플릿에 대 한 자세한 내용은 [Office 365 IP 주소 및 url 변경에 대 한 전자 메일을 받으려면 microsoft flow 사용](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651) 을 참조 하세요.
   
@@ -131,7 +131,7 @@ Office 365 연결에 대 한 자주 묻는 관리자의 질문:
 
  **피어 링 위치** 는 [Microsoft와의 피어 링](https://www.microsoft.com/peering)에 자세히 설명 되어 있습니다.
   
-2500 개 이상의 ISP 피어 링 관계를 전역적으로 또는 70 지점에 연결 하는 경우 네트워크에서 우리에 게 가져오는 것이 원활 해야 합니다. ISP의 피어 링 관계가 가장 최적이 되도록 몇 분 정도의 시간이 소요 되는 것을 방지할 수는 있지만,이에 대 한 [몇 가지 예는](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) 네트워크에 대 한 좋은 피어 링 모범 사례입니다. 
+2500 개 이상의 ISP 피어 링 관계를 전역적으로 또는 70 지점에 연결 하는 경우 네트워크에서 우리에 게 가져오는 것이 원활 해야 합니다. ISP의 피어 링 관계가 가장 최적이 되도록 몇 분 정도의 시간이 소요 되는 것을 방지할 수는 있지만,이에 대 한 [몇 가지 예는](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) 네트워크에 대 한 좋은 피어 링 모범 사례입니다.
   
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>게시 된 목록에 없는 IP 주소에 대 한 네트워크 요청이 표시 됨, 액세스 권한을 제공 해야 하나요?
 <a name="bkmk_MissingIP"> </a>
@@ -144,12 +144,25 @@ Office 365 연결에 대 한 자주 묻는 관리자의 질문:
 2. 파트너가 [whois 쿼리](https://dnsquery.org/)를 사용 하 여 IP를 소유 하는지 확인 합니다. 해당 Microsoft가 소유 하 고 있으면 내부 파트너가 될 수 있습니다.
 3. 인증서 확인 브라우저에서 *HTTPS://\<IP_ADDRESS\> * 을 사용 하 여 ip 주소에 연결 하 고, 인증서에 나열 된 도메인을 확인 하 여 ip 주소와 연결 된 도메인을 파악 합니다. microsoft 소유의 ip 주소이 고 Office 365 IP 주소 목록이 아닌 경우 ip 주소는 *MSOCDN.NET* 또는 다른 microsoft 도메인과 같은 microsoft CDN에 ip 정보를 게시 하지 않은 상태로 연결 될 수 있습니다. 인증서에서 도메인을 찾는 경우 IP 주소를 나열 하는 것은 사용자에 게 알려 주세요.
 
+<a name="bkmk_cname"> </a>
+### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>일부 Office 365 url은 DNS에서 레코드가 아닌 CNAME 레코드를 가리킵니다. CNAME 레코드를 사용 하 여 수행 해야 하는 작업
+
+클라이언트 컴퓨터에는 클라우드 서비스에 연결 하는 데 필요한 IP 주소가 하나 이상 포함 된 DNS a 또는 AAAA 레코드가 필요 합니다. Office 365에 포함 된 일부 url은 A 또는 AAAA 레코드 대신 CNAME 레코드를 표시 합니다. 이러한 CNAME 레코드는 중개 레코드로, 체인에 여러 개 있을 수 있습니다. 항상 IP 주소에 대 한 A 또는 AAAA 레코드로 확인 됩니다. 예를 들어 궁극적으로 IP 주소 _IP_1_으로 확인 되는 다음과 같은 일련의 DNS 레코드를 고려해 야 합니다.
+
+```
+serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
+```
+
+이러한 CNAME 리디렉션은 DNS의 일반적인 부분이 며 클라이언트 컴퓨터에 투명 하며 프록시 서버에 대해 투명 합니다. 부하 분산, 콘텐츠 배달 네트워크, 고가용성 및 서비스 인시던트 완화에 사용 됩니다. Microsoft는 중개 CNAME 레코드를 게시 하지 않으며, 언제 든 지 변경 될 수 있으며, 프록시 서버에서 허용 되는 것으로 구성할 필요가 없습니다.
+
+프록시 서버는 위의 예에서 serviceA.office.com이 고이 url이 office 365 게시에 포함 되어 있는 초기 URL의 유효성을 검사 합니다. 프록시 서버는 해당 URL의 DNS 확인을 IP 주소로 요청 하 고 IP_1를 다시 수신 합니다. 중간 CNAME 리디렉션 레코드의 유효성을 검사 하지 않습니다.
+
+간접 Office 365 fqdn을 기반으로 하드 코드 된 구성 또는 허용 목록이 Microsoft에서 지원 하지 않는 것이 좋으며, 고객 연결 문제를 야기 하는 것으로 알려져 있습니다. CNAME 리디렉션에서 차단 되거나 Office 365 DNS 항목을 잘못 확인 하는 dns 솔루션은 dns 재귀를 사용 하도록 설정 된 dns 조건부 전달 (office 365 fqdn으로 범위가 지정 됨)을 통해 해결할 수 있습니다. 많은 타사 네트워크 경계 제품은 [office 365 IP 주소 및 URL 웹 서비스](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service)를 사용 하 여 권장 되는 office 365 끝점 허용 목록이을 구성에 기본적으로 통합 합니다.
+
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft 도메인 이름에 nsatc.net 또는 akadns.net와 같은 이름이 표시 되는 이유는 무엇 인가요?
 <a name="bkmk_akamai"> </a>
 
-office 365 및 기타 Microsoft 서비스에서는 Akamai 및 markmonitor와 같은 몇 가지 타사 서비스를 사용 하 여 Office 365 환경을 개선 합니다. 가능한 최상의 환경을 유지 하기 위해 나중에 이러한 서비스를 변경할 수 있습니다. 이렇게 하면 타사 소유의 도메인, 레코드 또는 IP 주소를 가리키는 CNAME 레코드를 게시 하는 경우가 많습니다. 타사 도메인은 CDN 같은 콘텐츠를 호스팅하거나 지역 트래픽 관리 서비스와 같은 서비스를 호스팅할 수 있습니다. 이러한 제 3 자에 대 한 연결이 표시 되 면 해당 사용자는 클라이언트의 초기 요청이 아닌 리디렉션 또는 조회 형식입니다. 일부 고객은 타사 서비스가 사용할 수 있는 잠재적 fqdn의 긴 목록을 명시적으로 추가 하지 않고도이 형태의 참조와 리디렉션을 통과할 수 있도록 해야 합니다.
-  
-서비스 목록은 언제 든 지 변경 될 수 있습니다. 현재 사용 중인 서비스 중 일부는 다음과 같습니다.
+office 365 및 기타 Microsoft 서비스에서는 Akamai 및 markmonitor와 같은 몇 가지 타사 서비스를 사용 하 여 Office 365 환경을 개선 합니다. 가능한 최상의 환경을 유지 하기 위해 나중에 이러한 서비스를 변경할 수 있습니다. 타사 도메인은 CDN 같은 콘텐츠를 호스팅하거나 지역 트래픽 관리 서비스와 같은 서비스를 호스팅할 수 있습니다. 현재 사용 중인 서비스 중 일부는 다음과 같습니다.
   
 * \*nsatc.net* 를 포함 하는 요청을 볼 때 [markmonitor](https://www.markmonitor.com/) 가 사용 되 고 있습니다. 이 서비스는 도메인 이름 보호 및 모니터링을 제공 하 여 악의적인 동작 으로부터 보호 합니다.
   
