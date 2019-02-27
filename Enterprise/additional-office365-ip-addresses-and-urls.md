@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되어 있지 않습니다.'
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723375"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242090"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 
@@ -56,7 +56,7 @@ DNS 외에도 설명된 특정 시나리오가 필요하지 않는 경우 대부
 | 10  | AutoDetect 서비스는 [Exchange 하이브리드](https://docs.microsoft.com/exchange/exchange-deployment-assistant) 시나리오에서 [iOS 및 Android용 Outlook을 통한 하이브리드 최신 인증](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)과 함께 사용됩니다. <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | TCP 443의 고객 온-프레미스 Exchange 서버 | 인바운드 서버 트래픽 |
 | 11  | Office 2016의 비즈니스용 Skype에는 UDP 포트를 사용하는 비디오 기반 화면 공유 기능이 포함되어 있습니다. Office 2013 이하의 이전 비즈니스용 Skype 클라이언트에서는 TCP 포트 443을 사용하는 RDP를 이용했었습니다. | 52.112.0.0/14에 열린 TCP 포트 443 | Office 2013 이전의 비즈니스용 Skype 이전 클라이언트 버전 |
 | 12  | 비즈니스용 Skype Online에 대한 비즈니스용 Skype 하이브리드 온-프레미스 서버 연결 | 13.107.64.0/18, 52.112.0.0/14 UDP 포트 50,000-59,999 <BR>  TCP 포트 50,000~59,999 | 비즈니스용 Skype 온-프레미스 서버 아웃바운드 연결 |
-| 13  | 온-프레미스 하이브리드 연결을 사용하는 클라우드 PSTN에는 온-프레미스 호스트에 열린 네트워크 연결이 필요합니다. 비즈니스용 Skype Online 하이브리드 구성에 대한 자세한 내용은  | [비즈니스용 Skype 하이브리드 솔루션](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions)을 참조하세요. | 비즈니스용 Skype 온-프레미스 하이브리드 인바운드 |
+| 13  | 온-프레미스 하이브리드 연결을 사용하는 클라우드 PSTN에는 온-프레미스 호스트에 열린 네트워크 연결이 필요합니다. 비즈니스용 Skype Online 하이브리드 구성에 대한 자세한 내용은  | [비즈니스용 Skype 서버 및 Office 365 간 하이브리드 연결 플랜](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity)을 참조하세요. | 비즈니스용 Skype 온-프레미스 하이브리드 인바운드 |
 | 14  | **인증 및 ID FQDN** <br> 작동하려면 FQDN ```secure.aadcdn.microsoftonline-p.com```가 클라이언트의 Internet Explorer(IE) 또는 Edge의 신뢰할 수 있는 사이트 영역에 있어야 합니다. |  | 신뢰할 수 있는 사이트 |
 | 15  |  **Microsoft Teams FQDN** <br> Internet Explorer 또는 Microsoft Edge를 사용하는 경우 먼저 제3자 쿠키를 사용하고 팀의 FQDN을 신뢰할 수 있는 사이트에 추가해야 합니다. 이는 14번째 줄에 나열된 제품군 전체의 FQDN, CDN 및 원격 분석 외에 추가되는 사항입니다. 자세한 내용은 [Microsoft Teams에 대한 알려진 문제점](https://docs.microsoft.com/microsoftteams/known-issues)을 참조하세요. |  | 신뢰할 수 있는 사이트 |
 | 16  |  **SharePoint Online 및 비즈니스용 OneDrive FQDN** <br> FQDN의 '\< tenant>'가 있는 모든 '.sharepoint.com' FQDN은 클라이언트의 IE 또는 Microsoft Edge 신뢰할 수 있는 사이트 영역에 있어야 작동할 수 있습니다. 14번째 줄에 나열된 제품군 전체 FQDN, CDN 및 원격 측정 외에도 이러한 끝점을 추가해야 합니다. |  | 신뢰할 수 있는 사이트 |
