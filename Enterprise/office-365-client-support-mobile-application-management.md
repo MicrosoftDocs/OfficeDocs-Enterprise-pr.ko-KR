@@ -7,16 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: Normal
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- M365-subscription-management
 search.appverid:
 - MET150
 description: 모바일 응용 프로그램 관리에 대 한 Office 365 클라이언트 앱 지원 이해
-ms.openlocfilehash: c5cfe356e9c25fd23df298b52100e38b4064655c
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 6f8461a9a0cdb49123c2a0fc2b55c2c27b74ca5b
+ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085047"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303592"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Office 365 클라이언트 앱 지원-모바일 응용 프로그램 관리
 
