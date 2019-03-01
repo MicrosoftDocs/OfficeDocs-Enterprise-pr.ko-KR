@@ -1,5 +1,5 @@
 ---
-title: Office 365 Germany 엔드포인트
+title: Office 365 Germany 끝점
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,24 +8,26 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: 조직 Office 365를 사용 하 여 사용할 수 있는 네트워크에 있는 컴퓨터에서 인터넷에 연결할 수 없도록 제한 한 경우 아래를 찾을 수 (Fqdn, 포트, Url 및 IPv4 및 IPv6 주소 범위)는 끝점에 포함 되어야 하는 프로그램 아웃 바운드 허용 목록을 확인 하 여 컴퓨터에는 Office 365 성공적으로 사용할 수 있습니다.
+description: 조직에서 Office 365을 사용 하 고 네트워크의 컴퓨터를 인터넷에 연결 하지 못하도록 제한 하는 경우 아래에서 아웃 바운드 허용 목록에 포함 해야 하는 끝점 (fqdn, 포트, url 및 IPv4 및 IPv6 주소 범위)을 확인 하 여 컴퓨터에서 Office 365을 정상적으로 사용할 수 있습니다.
 hideEdit: true
-ms.openlocfilehash: 05bbcb1cb4e6b90b3f7a61d84ae3488ce97245c2
-ms.sourcegitcommit: e3fa9998321f6fa5d31217d107b672258993826e
+ms.openlocfilehash: 397d51f9fb6f176de2ea19d76ca7832ad90ec2e9
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "27746138"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341969"
 ---
-# <a name="office-365-germany-endpoints"></a>Office 365 Germany 엔드포인트
+# <a name="office-365-germany-endpoints"></a>Office 365 Germany 끝점
 
- *적용 대상: Office 365 관리*
+ *적용 대상: Office 365 관리자*
 
-**요약:** Office 365를 사용 하려면 인터넷에 연결을 해야 합니다. 아래 끝점 **Office 365 독일** 계획만을 사용 하는 고객을 위한 연결할 수 있어야 합니다.
+**요약:** Office 365를 사용 하려면 인터넷에 연결 해야 합니다. 아래 끝점은 **Office 365 독일** 요금제만 사용 하는 고객에 게 연결할 수 있어야 합니다.
   
 > [!NOTE]
 > Microsoft는 이 페이지에 있는 IP 주소와 FQDN 항목을 위해 REST 기반 웹 서비스를 출시했습니다. 이 새로운 서비스는 방화벽 및 프록시 서버와 같은 네트워크 경계 장치를 구성하고 업데이트하는 작업을 도와줍니다. 끝점, 최신 버전의 목록 또는 특정 변경 사항의 목록을 다운로드할 수 있습니다. 이 서비스는 2018년 10월 2일부터 사용되지 않는 이 페이지에 연결된 XML 문서를 대체합니다. 새로운 서비스를 실행하려면 [웹 서비스](office-365-ip-web-service.md)로 이동하세요.
@@ -34,11 +36,11 @@ ms.locfileid: "27746138"
   
 |||
 |:-----|:-----|
-|01/07/2019 **마지막 업데이트 날짜:** - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> |
+|**마지막 업데이트:** 2019년 1월 7일 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> |
 
-이 데이터를 사용 하 여 네트워크 연결을 관리 하기 위한 권장 사항 이해 하려면 [Office 365 관리 끝점](managing-office-365-endpoints.md) 으로 시작 합니다. 새 IP 주소 및 활성화 되 고 전 30 일 게시 된 Url 사용 하 여 각 월의 시작 부분에 끝점 데이터가 업데이트 됩니다. 이 사용 하지 않도록 아직 새 연결이 필요 하기 전에 해당 프로세스를 완료 하려면 업데이트 자동 고객 수 있습니다. 주소 지원 에스컬레이션, 보안 문제 또는 기타 즉시 운영 요구 사항에 필요한 경우에 끝점 달 하는 동안 업데이트 될 수 있습니다. [로그 구독을 변경](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)하려면 항상 참조할 수 있습니다.
+[Office 365 끝점 관리](managing-office-365-endpoints.md) 를 시작 하 여이 데이터를 사용 하 여 네트워크 연결을 관리 하기 위한 권장 사항을 이해 합니다. 끝점 데이터는 각 월의 시작 부분에서 새 IP 주소와 30 일이 지난 후에 게시 된 url을 사용 하 여 업데이트 됩니다. 이렇게 하면 새 연결이 필요 하기 전에 아직 자동화 된 업데이트를 통해 프로세스를 완료할 수 있습니다. 지원 되는 에스컬레이션, 보안 문제 또는 기타 즉각적인 운영 요구 사항을 해결 해야 하는 경우에는 한 달 동안에도 끝점이 업데이트 될 수 있습니다. 언제 든 지 [변경 로그 구독](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)을 참조할 수 있습니다.
 
-이 페이지 아래에 표시 되는 데이터는 모든 REST 기반 웹 서비스에서 생성 됩니다. 스크립트 또는 네트워크 장치를 사용 하 여이 데이터에 액세스 하는, [웹 서비스](office-365-ip-web-service.md) 에 직접 서 해야 합니다.
+아래이 페이지에 표시 된 데이터는 모두 REST 기반 웹 서비스에서 생성 됩니다. 스크립트나 네트워크 장치를 사용 하 여이 데이터에 액세스 하는 경우에는 [웹 서비스로](office-365-ip-web-service.md) 직접 이동 해야 합니다.
 
 아래의 끝점 데이터는 사용자의 컴퓨터에서 Microsoft Office 365에 연결할 때의 요구 사항을 나열합니다. 이는 하이브리드 또는 인바운드 네트워크 연결이라 불리며 Microsoft에서 고객 네트워크로의 네트워크 연결을 포함하지 않습니다.
 
