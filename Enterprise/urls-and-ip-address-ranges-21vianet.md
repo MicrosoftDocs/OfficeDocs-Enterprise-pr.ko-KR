@@ -8,6 +8,9 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
 search.appverid:
 - GMA150
 - GPA150
@@ -15,12 +18,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: 이 문서는 중국의 21Vianet에서 운영하는 Microsoft Office 365에 적용됩니다. 이 문서는 21Vianet에서 운영하는 Microsoft Office 365에서 사용하는 URL 및 IP 주소 범위를 나열합니다.
 hideEdit: true
-ms.openlocfilehash: 0e07d8d1d4163bcb2e6cf11daceb3349444cabfe
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 5ab1da87673d422001aa826ec9411ce31fa323d1
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872289"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341979"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet에서 운영하는 Microsoft Office 365 URL 및 IP 주소 범위
 
