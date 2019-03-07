@@ -15,20 +15,20 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크에서는 일반 인터넷 위치에 대 한 액세스를 제한 하거나, 상당한 백 또는 네트워크 트래픽 처리를 포함 합니다. 이와 같은 네트워크의 컴퓨터가 office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자가 office 365 끝점 목록을 구성 하는 fqdn, url 및 IP 주소 목록을 관리 해야 합니다. 네트워크 요청이 Office 365에 도달할 수 있도록 하려면 이러한 사항을 직접 경로, 프록시 바이패스 및/또는 방화벽 규칙 및 PAC 파일에 추가 해야 합니다.
-ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341989"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458358"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
-여러 사무실 위치 및 연결 WAN이 있는 대부분의 엔터프라이즈 조직은 office 365 네트워크 연결에 대 한 구성을 필요로 합니다. 모든 추가 패킷 수준 검사 또는 처리를 무시 하 고 모든 신뢰할 수 있는 Office 365 네트워크 요청을 방화벽을 통해 직접 보내 네트워크를 최적화할 수 있습니다. 이렇게 하면 대기 시간 및 경계 용량 요구 사항이 줄어듭니다. Office 365 네트워크 트래픽은 사용자에 게 최적의 성능을 제공 하기 위한 첫 번째 단계 인지 확인 하는 것이 좋습니다. office 365 네트워크 연결에 대 한 자세한 내용은 [office 365 네트워크 연결 원리](office-365-network-connectivity-principles.md) 를 참조 하세요.
+여러 사무실 위치 및 연결 WAN이 있는 대부분의 엔터프라이즈 조직은 office 365 네트워크 연결에 대 한 구성을 필요로 합니다. 모든 추가 패킷 수준 검사 또는 처리를 무시 하 고 모든 신뢰할 수 있는 Office 365 네트워크 요청을 방화벽을 통해 직접 보내 네트워크를 최적화할 수 있습니다. 이렇게 하면 대기 시간 및 경계 용량 요구 사항이 줄어듭니다. Office 365 네트워크 트래픽은 사용자에 게 최적의 성능을 제공 하기 위한 첫 번째 단계 인지 확인 하는 것이 좋습니다. office 365 네트워크 연결에 대 한 자세한 내용은 [office 365 네트워크 연결 원리](office-365-network-connectivity-principles.md)를 참조 하세요.
 
-office [365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md) 를 사용 하 여 office 365 네트워크 끝점과 변경 사항에 액세스 하는 것이 좋습니다.
+office [365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)를 사용 하 여 office 365 네트워크 끝점과 변경 사항에 액세스 하는 것이 좋습니다.
 
-중요 한 office 365 네트워크 트래픽을 관리 하는 방법에 관계 없이 office 365을 사용 하려면 인터넷에 연결 해야 합니다. 연결이 필요한 기타 네트워크 끝점은 [Office 365 IP 주소 및 URL 웹 서비스에 포함 되지 않은 추가 끝점](additional-office365-ip-addresses-and-urls.md) 에 나열 되어 있습니다.
+중요 한 office 365 네트워크 트래픽을 관리 하는 방법에 관계 없이 office 365을 사용 하려면 인터넷에 연결 해야 합니다. 연결이 필요한 기타 네트워크 끝점은 [Office 365 IP 주소 및 URL 웹 서비스에 포함 되지 않은 추가 끝점](additional-office365-ip-addresses-and-urls.md)에 나열 되어 있습니다.
 
 Office 365 네트워크 끝점을 사용 하는 방법은 엔터프라이즈 조직 네트워크 아키텍처에 따라 달라 집니다. 이 문서에서는 엔터프라이즈 네트워크 아키텍처에서 Office 365 IP 주소 및 url과 통합할 수 있는 여러 가지 방법을 간략하게 설명 합니다. 신뢰할 네트워크 요청을 선택할 수 있는 가장 쉬운 방법은 각 사무실 위치에서 자동 Office 365 구성을 지 원하는 sdwan 장치를 사용 하는 것입니다.
 
@@ -112,7 +112,7 @@ Office 365 IP 주소 및 URL 웹 서비스는 Outlook에서 구독할 수 있는
 
 각 월별로 제공 되는 네트워크 끝점 변경에 대 한 수동 처리가 여전히 필요할 수 있다는 것을 이해 하 고 있습니다. Microsoft 흐름을 사용 하 여 전자 메일로 알리는 흐름을 만들고 Office 365 네트워크 끝점에 변경 내용이 있을 때 변경 내용에 대 한 승인 프로세스를 선택적으로 실행할 수 있습니다. 검토가 완료 되 면 흐름에서 방화벽 및 프록시 서버 관리 팀에 변경 내용을 자동으로 전자 메일로 보낼 수 있습니다.
 
-microsoft flow 샘플과 템플릿에 대 한 자세한 내용은 [Office 365 IP 주소 및 url 변경에 대 한 전자 메일을 받으려면 microsoft flow 사용](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651) 을 참조 하세요.
+microsoft flow 샘플과 템플릿에 대 한 자세한 내용은 [microsoft flow를 사용 하 여 Office 365 IP 주소 및 url 변경에 대 한 전자 메일 받기를](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)참조 하세요.
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 네트워크 끝점 FAQ
@@ -194,7 +194,7 @@ Office 365 제품군은 주요 서비스 지역으로 분류 되어 있습니다
 |**Exchange** <br/> |exchange online 및 exchange online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online 및 비즈니스용 OneDrive <br/> |
 |**비즈니스용 Skype Online 및 Microsoft Teams** <br/> |비즈니스용 Skype 및 Microsoft 팀 <br/> |
-|**일반** <br/> |office 365 Pro Plus, office Online, Azure AD 및 기타 일반 네트워크 끝점 <br/> |
+|**대개** <br/> |office 365 Pro Plus, office Online, Azure AD 및 기타 일반 네트워크 끝점 <br/> |
 
 기본 인터넷 서비스 외에, 기능 통합에만 사용 되는 타사 서비스도 있습니다. 이러한 작업은 통합에 필요 하지만, 끝점에 액세스할 수 없는 경우 서비스의 핵심 기능이 계속 작동 하 게 된다는 것을 Office 365 endpoints 문서에 선택적으로 표시 합니다. 필요한 모든 네트워크 끝점은 필수 특성이 true로 설정 됩니다. 선택 사항인 모든 네트워크 끝점에는 필수 특성이 false로 설정 되 고, notes 특성은 연결이 차단 되는 경우 예상 되는 누락 된 기능을 자세히 설명 합니다.
   
@@ -203,7 +203,7 @@ Office 365을 사용 하려는 경우 타사 서비스를 찾을 수 없는 경�
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Microsoft의 소비자 서비스에 대 한 액세스를 차단 하는 방법
 <a name="bkmk_consumer"> </a>
 
-소비자 서비스에 대 한 액세스를 제한 해야 하는 경우 사용자의 위험에 대 한 보안을 차단 하는 유일한 방법은 *login.live.com* FQDN에 대 한 액세스를 제한 하는 것입니다. 이 FQDN은 MSDN, TechNet 등의 소비자가 아닌 서비스를 포함 하는 광범위 한 서비스 집합에서 사용 됩니다. 이 FQDN은 microsoft 지원의 보안 파일 교환 프로그램 에서도 사용 되며 microsoft 제품에 대 한 문제 해결을 용이 하 게 하기 위해 파일을 전송 해야 합니다.  이 FQDN에 대 한 액세스를 제한 하면 이러한 서비스에 연결 된 네트워크 요청에 대 한 규칙에 대 한 예외도 포함 해야 할 수도 있습니다.
+소비자 서비스에 대 한 액세스를 제한 하는 작업은 사용자의 위험에 따라 수행 해야 합니다. 소비자 서비스를 차단 하는 유일한 방법은 *login.live.com* FQDN에 대 한 액세스를 제한 하는 것입니다. 이 FQDN은 MSDN, TechNet 등의 소비자가 아닌 서비스를 포함 하는 광범위 한 서비스 집합에서 사용 됩니다. 이 FQDN은 microsoft 지원의 보안 파일 교환 프로그램 에서도 사용 되며 microsoft 제품에 대 한 문제 해결을 용이 하 게 하기 위해 파일을 전송 해야 합니다.  이 FQDN에 대 한 액세스를 제한 하면 이러한 서비스에 연결 된 네트워크 요청에 대 한 규칙에 대 한 예외도 포함 해야 할 수도 있습니다.
   
 Microsoft 소비자 서비스에 대 한 액세스를 차단 하더라도 Office 365 테 넌 트 또는 기타 서비스를 사용 하 여 네트워크의 누군가가 정보를 exfiltrate는 것을 방지할 수 있습니다.
   
@@ -221,6 +221,6 @@ Microsoft 소비자 서비스에 대 한 액세스를 차단 하더라도 Office
   
 [Office 365 URL 및 IP 주소 범위](urls-and-ip-address-ranges.md)
   
-[Office 365 연결에 대한 ExpressRoute 관리](managing-expressroute-for-connectivity.md)
+[Office 365 연결에 대 한 express 관리](managing-expressroute-for-connectivity.md)
   
 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
