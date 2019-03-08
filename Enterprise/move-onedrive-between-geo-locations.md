@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29547136"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458328"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
@@ -68,6 +68,8 @@ OneDrive 지리적 이동을 시작하기 전에 환경이 유효한지 검사�
 모든 지리적 위치가 호환되는지 확인하려면 다음을 실행합니다.
 
 `Get-SPOGeoMoveCrossCompatibilityStatus`
+
+지리적 위치 목록을 확인할 수 있고, 지리적 위치 사이에서 콘텐츠가 이동할 수 있는지 여부는 “호환”으로 표시됩니다. 명령에서 “호환되지 않음”을 반환하는 경우 나중에 상태 유효성 검사를 다시 시도하세요.
 
 OneDrive가 법적 보존 상태이거나 하위 사이트가 포함되어 있으면 이동할 수 없습니다. -ValidationOnly 매개 변수와 함께 Start-SPOUserAndContentMove cmdlet을 사용하여 OneDrive를 이동할 수 있는지 확인할 수 있습니다.
 
