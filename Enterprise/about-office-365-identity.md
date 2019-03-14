@@ -1,5 +1,5 @@
 ---
-title: Office 365 ID 및 Azure Active Directory 이해
+title: Office 365 id 및 Azure Active Directory 이해
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
+- M365-security-compliance
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -17,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 0b0dd133979a5f94f7f8322c532c61fd24719359
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085427"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372895"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 ID 및 Azure Active Directory 이해
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 id 및 Azure Active Directory 이해
 
 Office 365에서는 클라우드 기반 사용자 id 및 인증 서비스 azure Active Directory (azure AD)를 사용 하 여 사용자를 관리 합니다. 온-프레미스 조직과 Office 365 간에 id 관리를 구성 하는 방법을 선택 하는 것은 클라우드 인프라의 기초 중 하나입니다. 나중에이 구성을 변경 하기가 어려울 수 있으므로 조직의 요구에 가장 적합 한 작업을 결정 하는 옵션을 신중 하 게 고려해 야 합니다. Office 365에서 두 가지 기본 인증 모델을 선택 하 여 사용자 계정을 설정 및 관리할 수 있습니다. **클라우드 인증** 및 **페더레이션 인증**
   

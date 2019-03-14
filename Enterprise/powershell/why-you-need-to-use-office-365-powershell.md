@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용해야 하는 이유
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897471"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538996"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
@@ -65,13 +65,13 @@ Office 365 관리 센터에는 많은 유용한 정보가 표시되지만 Office
   
 ![Office 365 관리 센터의 사용자 및 그룹 표시 예제입니다.](media/o365-powershell-users-and-groups.png)
   
-다양 한 용도로 알아두어야 할 정보가 표시 됩니다. 그러나 더 필요한 경우 경우가 있습니다. 예, Office 365 라이선스 (및 사용자에 게 제공 되는 Office 365 기능)에 따라 다릅니다 부분적으로 해당 사용자의 지리적 위치입니다. 정책 및 사용자에 게는 미국에 거주 하 고 확장할 수 기능 아닐 수 있습니다는 동일 정책 및 기능을 사용자에 게 벨기에 또는 인도에 거주 하 고 확장할 수 있습니다. 다음이 단계와 사용자의 지리적 위치를 확인 하는 Office 365 관리 센터를 사용할 수 있습니다.
+여기에는 다양한 용도로 사용자가 알아야 하는 정보가 표시됩니다. 그러나 더 많은 정보가 필요한 경우도 있습니다. 예를 들어 office 365 라이선스 (및 사용자가 사용할 수 있는 office 365 기능)는 부분적으로 해당 사용자의 지리적 위치에 따라 달라 집니다. 가령 미국 사용자에 대해 확장 가능한 정책과 기능은 인도나 벨기에 사용자에 대해 확장 가능한 정책과 기능은 서로 다를 수 있습니다. Office 365 관리 센터를 사용하면 다음 단계에 따라 사용자가 있는 지리적 위치를 알 수 있습니다.
   
 1. 사용자의 **표시 이름** 을 두 번 클릭합니다.
     
 2. 사용자 속성 표시 창에서 **세부 정보** 를 클릭합니다.
     
-3. 세부 정보 표시에서 **추가 정보** 를 클릭합니다.
+3. 세부 정보 표시에서 **추가 정보**를 클릭합니다.
     
 4. **국가 또는 지역** 제목이 표시될 때까지 아래쪽으로 스크롤합니다.
     
@@ -93,7 +93,6 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell을 사용하면 데이터 쉽게 인쇄 또는 저장할 수 있음
 
-Office 365 관리 센터를 사용 하면 데이터의 목록을 볼 수 있습니다. 비즈니스 Online 용 Skype를 사용할 수 있는 사용자 목록을 표시 하는 비즈니스 온라인 관리 센터에 대 한 Skype의 예는 다음과 같습니다.
+Office 365 관리 센터를 사용 하면 데이터 목록을 볼 수 있습니다. 다음은 비즈니스용 Skype 온라인에 대해 사용되도록 설정된 사용자 목록을 표시하는 비즈니스용 Skype 온라인 관리 센터의 예입니다.
   
 ![비즈니스용 Skype Online을 사용하도록 설정된 사용자 목록을 표시하는 비즈니스용 Skype Online 관리 센터 예제입니다.](media/o365-powershell-lync-users.png)
   
@@ -407,7 +404,6 @@ $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False

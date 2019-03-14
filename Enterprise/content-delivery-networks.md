@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 cdns (콘텐츠 배달 네트워크) 및 Office 365에서이를 활용 하는 방법에 대해 알아봅니다. cdns 도움말은 최종 사용자가 Office 365을 빠르고 안정적으로 유지 합니다. cdns를 사용 하 여 Office 365와 같은 클라우드 서비스는 웹 클라이언트를 통해 서비스를 사용 하는 경우 사용자의 브라우저에 아이콘과 같은 일반 콘텐츠를 빠르게 다운로드 합니다.
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458338"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492958"
 ---
 # <a name="content-delivery-networks"></a>콘텐츠 배달 네트워크
 
@@ -77,7 +77,7 @@ microsoft는 고객의 요구를 지원 하기 위한 새로운 방법을 지속
   
 ## <a name="is-my-data-safe"></a>데이터를 안전 하 게 보호 하나요?
 
-비즈니스를 실행 하는 데이터를 보호 하는 데 도움이 되는 정보를 제공 합니다. cdns에 저장 된 고객 관련 데이터는 전송 및 휴지에서 모두 암호화 되며 CDN에 저장 되지 않은 데이터와 같은 파일 수준 사용 권한으로 보호 됩니다.
+비즈니스를 실행 하는 데이터를 보호 하는 데 도움이 되는 정보를 제공 합니다. cdns에 저장 된 고객 관련 데이터는 전송 및 휴지에서 모두 암호화 됩니다.
 
 CDN 공급자에는 Office 365 보안 센터에서 설명 하는 것과는 다른 개인 정보 보호 및 준수 표준이 포함 될 수 있습니다. CDN 서비스를 통해 캐시 된 데이터는 Microsoft DPT (데이터 처리 조건)를 준수 하지 않을 수 있으며 Office 365 보안 센터 규정 준수 경계를 벗어날 수 있습니다.
 
@@ -89,7 +89,7 @@ Office 365 CDN 공급자에 대 한 개인 정보 및 데이터 보호에 대 �
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>이러한 모든 타사 서비스를 사용 하 여 네트워크를 보호 하려면 어떻게 해야 하나요?
 
-광범위 한 파트너 서비스 집합을 사용 하면 office 365에서 가용성 요구 사항을 확장 및 충족할 수 있을 뿐만 아니라 office 365을 사용할 때의 사용자 환경도 향상 됩니다. 타사 서비스 Office 365 활용에는 인증서 해지 목록 두 가지가 모두 포함 됩니다. crl.microsoft.com, sa.symcb.com 및 cdns와 같이 합니다. (예: r3.res.outlook.com) 모든 CDN fqdn office 365은 사용자 지정 fqdn을 사용 하 여 office 365의 요청에 대해 fqdn으로 전송 하는 경우 해당 위치의 fqdn과 기본 콘텐츠를 제어할 수 있습니다.
+광범위 한 파트너 서비스 집합을 사용 하면 office 365에서 가용성 요구 사항을 확장 및 충족할 수 있을 뿐만 아니라 office 365을 사용할 때의 사용자 환경도 향상 됩니다. 타사 서비스 Office 365 활용에는 인증서 해지 목록 두 가지가 모두 포함 됩니다. crl.microsoft.com, sa.symcb.com 및 cdns와 같이 합니다. (예: r3.res.outlook.com) 모든 CDN FQDN office 365는 office 365에 대 한 사용자 지정 FQDN을 사용 합니다. Office 365 요청의 fqdn으로 보낸 경우 CDN 공급자가 해당 위치의 fqdn과 기본 콘텐츠를 제어할 수 있습니다.
   
 Microsoft 또는 office 365 데이터 센터에 대해 전송 되는 요청을 타사에 게 전송 되는 요청으로 분리 하려는 고객의 경우 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)에 대 한 지침이 작성 되었습니다.
   
