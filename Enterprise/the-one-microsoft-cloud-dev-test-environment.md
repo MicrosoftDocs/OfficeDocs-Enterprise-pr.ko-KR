@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: '요약: 이 테스트 랩 가이드를 사용하여 모든 Microsoft의 클라우드 서비스가 포함된 개발/테스트 환경을 만듭니다.'
-ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897151"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573662"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 개발/테스트 환경
 
@@ -59,7 +59,7 @@ ms.locfileid: "25897151"
 
 이 단계에서는 EMS 평가판 구독을 등록하고 Office 365 평가판 구독과 동일한 조직에 추가합니다.
   
-1. 데스크톱 컴퓨터 또는 CLIENT1의 브라우저에서 전역 관리자 계정의 자격 증명을 사용하여 [https://portal.office.comhttps://portal.office.com](https://portal.office.com)의 Office 365 포털에 로그인합니다.
+1. 데스크톱 컴퓨터 또는 CLIENT1의 브라우저에서 전역 관리자 계정의 자격 증명을 사용하여 [https://www.office.comhttps://portal.office.com](https://www.office.com)의 Office 365 포털에 로그인합니다.
     
 2. **관리** 타일을 클릭합니다.
     
@@ -103,11 +103,11 @@ ms.locfileid: "25897151"
 
 이 단계에서는 Dynamics 365  평가판 구독을 등록하고 Office 365 및 EMS 평가판 구독과 동일한 조직에 추가합니다.
   
-1. 데스크톱 컴퓨터 또는 CLIENT1의 브라우저에서 전역 관리자 계정의 자격 증명을 사용하여 [https://portal.office.comhttps://portal.office.com](https://portal.office.com)의 Office 365 포털에 로그인합니다.
+1. 데스크톱 컴퓨터 또는 CLIENT1의 브라우저에서 전역 관리자 계정의 자격 증명을 사용하여 [https://www.office.comhttps://portal.office.com](https://www.office.com)의 Office 365 포털에 로그인합니다.
     
 2. **관리** 타일을 클릭합니다.
     
-3. **Office 관리 센터** 탭에 있는 왼쪽 탐색 영역에서 **대금 청구 > 서비스 구매**를 차례로 클릭합니다.
+3. **Microsoft 365 관리 센터** 탭에 있는 왼쪽 탐색 영역에서 **대금 청구 > 서비스 구매**를 차례로 클릭합니다.
     
 4. **구매 서비스** 페이지에서 **Dynamics 365 Plan 1 Enterprise Edition** 항목을 찾습니다. 마우스 포인터를 가져간 후 **평가판 시작**을 클릭합니다.
     
@@ -120,7 +120,7 @@ ms.locfileid: "25897151"
   
 다음 단계에 따라 전역 관리자, 사용자 2 및 사용자 3 계정에 Dynamics 365 라이선스를 할당하고 시스템 관리자로 지정합니다.
   
-1. **Office 관리 센터** 탭에서 **사용자 > 활성 사용자**를 클릭합니다.
+1. **Microsoft 365 관리 센터** 탭에서 **사용자 > 활성 사용자**를 클릭합니다.
     
 2. 활성 사용자 목록에서 전역 관리자 계정을 클릭한 다음, **제품 라이선스**에 대해 **편집**을 클릭합니다.
     
@@ -128,7 +128,7 @@ ms.locfileid: "25897151"
     
 4. 사용자 2 및 사용자 3 계정에 대해 2, 3단계를 수행합니다.
     
-5. **Office 관리 센터** 탭을 닫습니다.
+5. **Microsoft 365 관리 센터** 탭을 닫습니다.
     
 다음 단계를 사용하여 사용자 2 및 사용자 3 계정을 Dynamics 365 시스템 관리자로 구성합니다.
   
