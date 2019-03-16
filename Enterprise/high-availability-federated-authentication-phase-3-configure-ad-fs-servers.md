@@ -1,9 +1,9 @@
 ---
-title: 고가용성 페더레이션 인증 단계 3 구성 AD FS 서버
+title: 고가용성 페더레이션 인증 3 단계 AD FS 서버 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: '요약: Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 AD FS(Active Directory Federation Service) 서버를 만들고 구성합니다.'
-ms.openlocfilehash: 16a8173f009ea89ec109a848e058ae02d29d3d12
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: b2ea785aa5bb2237df5509a2a4d4401cd149f36d
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897261"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650141"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>고가용성 페더레이션 인증 3단계: AD FS 서버 구성
 
@@ -25,7 +25,7 @@ ms.locfileid: "25897261"
   
 이 단계에서는 Azure 인프라 서비스의 Office 365 페더레이션 인증의 고가용성을 배포하며 내부 부하 분산 장치 및 두 개의 AD FS 서버를 만듭니다.
   
-레코드로 이동 하기 전에이 단계를 완료 해야 [고가용성 페더레이션 인증 4 단계: 웹 응용 프로그램 프록시를 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)합니다. 모든 단계에 대 한 [Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포를](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 참조 하십시오.
+[High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)으로 넘어가기 전에 이 단계를 완료해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Azure에서 AD FS 서버 가상 컴퓨터 만들기
 
@@ -43,15 +43,17 @@ PowerShell 명령의 다음 블록을 사용하여 두 AD FS 서버의 가상 �
     
 - 테이블 A, 가용성 집합
     
-표 M에서 정의한 회수 [고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러를 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 및 테이블 R, V, S, I 및 A에서 [고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)합니다.
+고가용성 [페더레이션 인증 2 단계: 도메인 컨트롤러](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 와 테이블 R, V, S, I 및 A를 고가용성 [페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)에서 정의한 테이블 M을 정의 합니다.
   
 > [!NOTE]
 > 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
-첫째, Azure 내부 부하 분산 장치를 두 ad FS 서버를 만듭니다. 제거 된 변수에 대 한 값을 지정은 \< 및 gt_ 문자입니다. 모든 적절 한 값을 제공한 경우 PowerShell ISE 또는 Azure PowerShell 명령 프롬프트에서 결과 블록을 실행 합니다.
+먼저, 두 개의 AD FS 서버용 Azure 내부 부하 분산 장치를 만듭니다. 변수 값을 지정 하 \< 고 및 > 문자를 제거 합니다. 모든 적절한 값이 제공되면 Azure PowerShell 명령 프롬프트나 PowerShell ISE에서 결과 블록을 실행합니다.
   
+<!--
 > [!TIP]
-> 이 문서와 사용자 지정 설정을 기반으로 준비 간편 실행 PowerShell 명령 블록을 생성 하는 Microsoft Excel 구성 통합 문서에서 PowerShell 명령의 모든 텍스트 파일을 Azure의 Office 365에 대 한 페더레이션 인증 [를 참조 하십시오. 배포 키트](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)합니다. 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
 ```
 # Set up key variables
@@ -61,15 +63,15 @@ $subnetName="<Table R - Item 2 - Subnet name column>"
 $privIP="<Table I - Item 4 - Value column>"
 $rgName=<Table R - Item 4 - Resource group name column>"
 
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
 
-$frontendIP=New-AzureRMLoadBalancerFrontendIpConfig -Name "ADFSServers-LBFE" -PrivateIPAddress $privIP -Subnet $subnet
-$beAddressPool=New-AzureRMLoadBalancerBackendAddressPoolConfig -Name "ADFSServers-LBBE"
+$frontendIP=New-AzLoadBalancerFrontendIpConfig -Name "ADFSServers-LBFE" -PrivateIPAddress $privIP -Subnet $subnet
+$beAddressPool=New-AzLoadBalancerBackendAddressPoolConfig -Name "ADFSServers-LBBE"
 
-$healthProbe=New-AzureRMLoadBalancerProbeConfig -Name WebServersProbe -Protocol "TCP" -Port 443 -IntervalInSeconds 15 -ProbeCount 2
-$lbrule=New-AzureRMLoadBalancerRuleConfig -Name "HTTPSTraffic" -FrontendIpConfiguration $frontendIP -BackendAddressPool $beAddressPool -Probe $healthProbe -Protocol "TCP" -FrontendPort 443 -BackendPort 443
-New-AzureRMLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
+$healthProbe=New-AzLoadBalancerProbeConfig -Name WebServersProbe -Protocol "TCP" -Port 443 -IntervalInSeconds 15 -ProbeCount 2
+$lbrule=New-AzLoadBalancerRuleConfig -Name "HTTPSTraffic" -FrontendIpConfiguration $frontendIP -BackendAddressPool $beAddressPool -Probe $healthProbe -Protocol "TCP" -FrontendPort 443 -BackendPort 443
+New-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
 다음으로 AD FS 서버 가상 컴퓨터를 만듭니다.
@@ -86,13 +88,13 @@ $rgNameTier="<Table R - Item 2 - Resource group name column>"
 $rgNameInfra="<Table R - Item 4 - Resource group name column>"
 
 $rgName=$rgNameInfra
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
-$backendSubnet=Get-AzureRMVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $vnet
-$webLB=Get-AzureRMLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers"
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
+$backendSubnet=Get-AzVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $vnet
+$webLB=Get-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers"
 
 $rgName=$rgNameTier
-$avSet=Get-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName
+$avSet=Get-AzAvailabilitySet -Name $avName -ResourceGroupName $rgName
 
 # Create the first ADFS server virtual machine
 $vmName="<Table M - Item 4 - Virtual machine name column>"
@@ -100,15 +102,15 @@ $vmSize="<Table M - Item 4 - Minimum size column>"
 $staticIP="<Table I - Item 5 - Value column>"
 $diskStorageType="<Table M - Item 4 - Storage type column>"
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
 
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the first AD FS server." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 # Create the second AD FS virtual machine
 $vmName="<Table M - Item 5 - Virtual machine name column>"
@@ -116,15 +118,15 @@ $vmSize="<Table M - Item 5 - Minimum size column>"
 $staticIP="<Table I - Item 6 - Value column>"
 $diskStorageType="<Table M - Item 5 - Storage type column>"
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName  -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName  -Subnet $backendSubnet -LoadBalancerBackendAddressPool $webLB.BackendAddressPools[0] -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
 
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the second AD FS server." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 ```
 
@@ -146,7 +148,7 @@ Restart-Computer
   
 **3단계: Azure의 고가용성 페더레이션 인증 인프라용 AD FS 서버 및 내부 부하 분산 장치**
 
-![AD FS 서버를 포함한 Azure에서 고가용성 Office 365 페더레이션 인증 인프라 3단계](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![AD FS 서버를 사용 하는 Azure의 고가용성 Office 365 페더레이션 인증 인프라 3 단계](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>다음 단계
 

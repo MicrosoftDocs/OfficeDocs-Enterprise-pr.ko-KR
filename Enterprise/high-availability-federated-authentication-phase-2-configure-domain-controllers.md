@@ -1,9 +1,9 @@
 ---
-title: 고가용성 페더레이션 인증 단계 2 구성 도메인 컨트롤러
+title: 고가용성 페더레이션 인증 2 단계 도메인 컨트롤러 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,24 +11,24 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: '요약: Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 도메인 컨트롤러 및 DirSync 서버를 구성합니다.'
-ms.openlocfilehash: 88e96c8173a209eb9a0a371b65eacda769e1f50f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증용 도메인 컨트롤러 및 DirSync 서버를 구성 합니다.'
+ms.openlocfilehash: 5ca31f33ef75aeb00dee724dfc6bc86df51cbfef
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897221"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650131"
 ---
-# <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>고가용성 페더레이션 인증 2단계: 도메인 컨트롤러 구성
+# <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러 구성
 
- **요약:** Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 도메인 컨트롤러 및 DirSync 서버를 구성합니다.
+ **요약:** Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증을 위한 도메인 컨트롤러 및 DirSync 서버를 구성 합니다.
   
-이 단계에서는 Azure 인프라 서비스의 Office 365 페더레이션 인증의 고가용성을 배포하며 Azure Virtual Network에 두 도메인 컨트롤러와 DirSync 서버를 구성합니다. 인증용 클라이언트 웹 요청은 온-프레미스 네트워크에 대한 사이트 간 VPN 연결을 통한 인증 트래픽을 전송이 아닌 Azure Virtual Network에서 인증될 수 있습니다.
+azure 인프라 서비스의 Office 365 페더레이션 인증을 위해 고가용성을 배포 하는이 단계에서는 azure virtual network에서 두 개의 도메인 컨트롤러와 DirSync 서버를 구성 합니다. 인증에 대 한 클라이언트 웹 요청은 온-프레미스 네트워크에 대 한 사이트 간 VPN 연결을 통해 인증 트래픽을 전송 하는 것이 아니라 Azure virtual network에서 인증 될 수 있습니다.
   
 > [!NOTE]
-> AD FS(Active Directory Federation Service)는 Windows Server AD 도메인 컨트롤러의 대안으로 Azure Active Directory 도메인 서비스를 사용할 수 없습니다. 
+> AD FS (Active directory Federation Services)는 Windows Server AD 도메인 컨트롤러 대신 Azure active directory 도메인 서비스를 사용할 수 없습니다. 
   
-레코드로 이동 하기 전에이 단계를 완료 해야 [고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)합니다. 모든 단계에 대 한 [Azure의 Office 365에 대 한 고가용성 연결 된 인증 배포를](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 참조 하십시오.
+[고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)으로 이동 하기 전에이 단계를 완료 해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Azure에서 도메인 컨트롤러 가상 컴퓨터 만들기
 
@@ -38,17 +38,17 @@ ms.locfileid: "25897221"
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)(첫 번째 도메인 컨트롤러, 예: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)(두 번째 도메인 컨트롤러, 예: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(디렉터리 동기화 서버를 d s 1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)(첫번째 AD FS 서버, ADFS1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png)(두번째 AD FS 서버, ADFS2 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(첫번째 웹 응용 프로그램 프록시 서버, WEB1 예제)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(두번째 웹 응용 프로그램 프록시 서버, 예제 w e b 2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(DirSync 서버, 예: DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)(첫 번째 AD FS 서버, 예: ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)(두 번째 AD FS 서버, 예:: adfs2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(첫 번째 웹 응용 프로그램 프록시 서버, 예: WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(두 번째 웹 응용 프로그램 프록시 서버, 예: WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **표 M-Azure의 Office 365에 대 한 고가용성 연결 된 인증에 대 한 가상 컴퓨터**
+ **테이블 M-Azure의 Office 365에 대 한 고가용성 페더레이션 인증용 가상 컴퓨터**
   
 가상 컴퓨터 크기의 전체 목록은 [가상 컴퓨터 크기](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)를 참조하세요.
   
-Azure PowerShell 명령 블록은 다음 두 도메인 컨트롤러에 대 한 가상 컴퓨터를 만듭니다. 제거 된 변수에 대 한 값을 지정은 \< 및 gt_ 문자입니다. Note이 Azure PowerShell 명령 블록 다음 테이블에서 값을 사용 합니다.
+다음 Azure PowerShell 명령 블록은 두 도메인 컨트롤러에 대 한 가상 컴퓨터를 만듭니다. 변수 값을 지정 하 \< 고 및 > 문자를 제거 합니다. 이 Azure PowerShell 명령 블록은 다음 테이블의 값을 사용 합니다.
   
 - 테이블 M, 가상 컴퓨터
     
@@ -62,15 +62,17 @@ Azure PowerShell 명령 블록은 다음 두 도메인 컨트롤러에 대 한 �
     
 - 테이블 A, 가용성 집합
     
-테이블 R, V, S, I 및 A에서 정의한 회수 [고가용성 페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)합니다.
+[고가용성 페더레이션 인증 1 단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md)에서 테이블 R, V, S, I 및 A를 정의한 것을 기억 합니다.
   
 > [!NOTE]
 > 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 올바른 값을 모두 제공하면 Azure PowerShell 프롬프트나 로컬 컴퓨터의 PowerShell ISE(통합 스크립트 환경)에서 결과 블록을 실행합니다.
   
+<!--
 > [!TIP]
-> 이 문서와 사용자 지정 설정을 기반으로 준비 간편 실행 PowerShell 명령 블록을 생성 하는 Microsoft Excel 구성 통합 문서에서 PowerShell 명령의 모든 텍스트 파일을 Azure의 Office 365에 대 한 페더레이션 인증 [를 참조 하십시오. 배포 키트](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)합니다. 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
 ```
 # Set up variables common to both virtual machines
@@ -82,11 +84,11 @@ $rgNameTier="<Table R - Item 1 - Resource group name column>"
 $rgNameInfra="<Table R - Item 4 - Resource group name column>"
 
 $rgName=$rgNameInfra
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName
 
 $rgName=$rgNameTier
-$avSet=Get-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName 
+$avSet=Get-AzAvailabilitySet -Name $avName -ResourceGroupName $rgName 
 
 # Create the first domain controller
 $vmName="<Table M - Item 1 - Virtual machine name column>"
@@ -95,17 +97,17 @@ $staticIP="<Table I - Item 1 - Value column>"
 $diskStorageType="<Table M - Item 1 - Storage type column>"
 $diskSize=<size of the extra disk for Windows Server AD data in GB>
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-$diskConfig=New-AzureRmDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
-$dataDisk1=New-AzureRmDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
-$vm=Add-AzureRmVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+$diskConfig=New-AzDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
+$dataDisk1=New-AzDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
+$vm=Add-AzVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the first domain controller." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 # Create the second domain controller
 $vmName="<Table M - Item 2 - Virtual machine name column>"
@@ -114,17 +116,17 @@ $staticIP="<Table I - Item 2 - Value column>"
 $diskStorageType="<Table M - Item 2 - Storage type column>"
 $diskSize=<size of the extra disk for Windows Server AD data in GB>
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-$diskConfig=New-AzureRmDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
-$dataDisk1=New-AzureRmDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
-$vm=Add-AzureRmVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+$diskConfig=New-AzDiskConfig -AccountType $diskStorageType -Location $locName -CreateOption Empty -DiskSizeGB $diskSize
+$dataDisk1=New-AzDisk -DiskName ($vmName + "-DataDisk1") -Disk $diskConfig -ResourceGroupName $rgName
+$vm=Add-AzVMDataDisk -VM $vm -Name ($vmName + "-DataDisk1") -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the second domain controller." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 # Create the DirSync server
 $vmName="<Table M - Item 3 - Virtual machine name column>"
@@ -132,25 +134,25 @@ $vmSize="<Table M - Item 3 - Minimum size column>"
 $staticIP="<Table I - Item 3 - Value column>"
 $diskStorageType="<Table M - Item 3 - Storage type column>"
 
-$nic=New-AzureRMNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize
+$nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for the DirSync server." 
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType $diskStorageType
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> 이러한 가상 컴퓨터는 인트라넷 응용 프로그램에 대 한 되므로 하지 공용 IP 주소 또는 DNS 도메인 이름 레이블 할당 되며 인터넷에 노출 됩니다. 그러나, 즉, Azure 포털에서 자신에 게 연결할 수 없습니다. 가상 컴퓨터의 속성을 볼 때에 **연결** 옵션을 사용할 수 없습니다. 원격 데스크톱 연결 액세서리 또는 다른 원격 데스크톱 도구를 사용 하 여 해당 개인 IP 주소 또는 인트라넷 DNS 이름을 사용 하 여 가상 컴퓨터에 연결 합니다.
+> 이러한 가상 컴퓨터는 인트라넷 응용 프로그램용이므로 공용 IP 주소나 DNS 도메인 이름 레이블에 할당되지 않으며 인터넷에 표시되지 않습니다. 그러나 이는 Azure Portal에서 연결할 수 없음을 의미합니다. 가상 컴퓨터의 속성을 보면 이 **연결** 옵션을 사용할 수 없습니다. 원격 데스크톱 연결 액세서리 또는 다른 원격 데스크톱 도구를 사용하여 개인 IP 주소나 인트라넷 DNS 이름을 사용하는 가상 컴퓨터에 연결할 수 있습니다.
   
 ## <a name="configure-the-first-domain-controller"></a>첫 번째 도메인 컨트롤러 구성
 
 원하는 원격 데스크톱 클라이언트를 사용하고 첫 번째 도메인 컨트롤러 가상 컴퓨터에 대한 원격 데스크톱 연결을 만듭니다. 인트라넷 DNS나 컴퓨터 이름 및 로컬 관리자 계정의 자격 증명을 사용합니다.
   
-다음으로는 Windows PowerShell 명령 프롬프트에서 **에서 첫번째 도메인 컨트롤러 가상 컴퓨터에서**이 명령 사용 하 여 첫번째 도메인 컨트롤러에 연결 하려면 추가 데이터 디스크를 추가 합니다.
+다음으로 **첫 번째 도메인 컨트롤러 가상 컴퓨터의**Windows PowerShell 명령 프롬프트에서 다음 명령을 사용 하 여 첫 번째 도메인 컨트롤러에 추가 데이터 디스크를 추가 합니다.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +177,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 원하는 원격 데스크톱 클라이언트를 사용하고 두 번째 도메인 컨트롤러 가상 컴퓨터에 대한 원격 데스크톱 연결을 만듭니다.  인트라넷 DNS나 컴퓨터 이름 및 로컬 관리자 계정의 자격 증명을 사용합니다.
   
-다음으로 한 Windows PowerShell 명령 프롬프트에 **에서 두번째 도메인 컨트롤러 가상 컴퓨터에서**이 명령 사용 하 여 두번째 도메인 컨트롤러에 추가 데이터 디스크를 추가 해야 합니다.
+다음으로 **두 번째 도메인 컨트롤러 가상 컴퓨터의**Windows PowerShell 명령 프롬프트에서 다음 명령을 사용 하 여 추가 데이터 디스크를 두 번째 도메인 컨트롤러에 추가 해야 합니다.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -193,7 +195,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 도메인 관리자 계정의 자격 증명을 제공하라는 메시지가 나타납니다. 컴퓨터가 다시 시작됩니다.
   
-다음으로, 해당 Azure 가상 컴퓨터의 DNS 서버로 사용 하 여 새 도메인 컨트롤러의 IP 주소를 할당 하므로 가상 네트워크에 대 한 DNS 서버를 업데이트 해야 합니다. 변수 입력 한 다음 로컬 컴퓨터에서 Windows PowerShell 명령 프롬프트에서 이러한 명령을 실행 합니다.
+다음으로 Azure가 두 개의 새 도메인 컨트롤러의 IP 주소를 DNS 서버로 사용할 가상 컴퓨터를 할당하도록 가상 네트워크의 DNS 서버를 업데이트해야 합니다. 변수를 입력 하 고 로컬 컴퓨터의 Windows PowerShell 명령 프롬프트에서 다음 명령을 실행 합니다.
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -207,19 +209,19 @@ $staticIP2="<Table I - Item 2 - Value column>"
 $firstDCName="<Table M - Item 1 - Virtual machine name column>"
 $secondDCName="<Table M - Item 2 - Virtual machine name column>"
 
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 $vnet.DhcpOptions.DnsServers.Add($staticIP1)
 $vnet.DhcpOptions.DnsServers.Add($staticIP2) 
 $vnet.DhcpOptions.DnsServers.Remove($onpremDNSIP1)
 $vnet.DhcpOptions.DnsServers.Remove($onpremDNSIP2) 
-Set-AzureRMVirtualNetwork -VirtualNetwork $vnet
-Restart-AzureRMVM -ResourceGroupName $adrgName -Name $firstDCName
-Restart-AzureRMVM -ResourceGroupName $adrgName -Name $secondDCName
+Set-AzVirtualNetwork -VirtualNetwork $vnet
+Restart-AzVM -ResourceGroupName $adrgName -Name $firstDCName
+Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 ```
 
 이제 온-프레미스 DNS 서버가 DNS 서버로 구성되지 않도록 두 도메인 컨트롤러를 다시 시작합니다. 모두 DNS 서버이므로 도메인 컨트롤러로 수준을 올리면 온-프레미스 DNS 서버가 DNS 전달자로 자동 구성됩니다.
   
-다음으로 Azure Virtual Network의 서버가 로컬 도메인 컨트롤러를 사용하도록 Active Directory 복제 사이트를 만들어야 합니다. 도메인 관리자 계정으로 도메인 컨트롤러 중 하나에 연결하고 관리자 수준 Windows PowerShell 프롬프트에서 다음 명령을 실행합니다.
+다음으로 Azure Virtual Network의 서버가 로컬 도메인 컨트롤러를 사용하도록 Active Directory 복제 사이트를 만들어야 합니다. 도메인 관리자 계정을 사용 하 여 도메인 컨트롤러에 연결 하 고 관리자 수준 Windows PowerShell 프롬프트에서 다음 명령을 실행 합니다.
   
 ```
 $vnet="<Table V - Item 1 - Value column>"
@@ -230,9 +232,9 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-dirsync-server"></a>DirSync 서버 구성
 
-사용자가 선택한 원격 데스크톱 클라이언트를 사용 하 고 디렉터리 동기화 서버 가상 컴퓨터에 원격 데스크톱 연결을 만듭니다. 인트라넷 DNS 또는 컴퓨터 이름 및 로컬 관리자 계정의 자격 증명을 사용 합니다.
+원하는 원격 데스크톱 클라이언트를 사용 하 고 DirSync 서버 가상 컴퓨터에 대 한 원격 데스크톱 연결을 만듭니다. 인트라넷 DNS나 컴퓨터 이름 및 로컬 관리자 계정의 자격 증명을 사용합니다.
   
-Windows PowerShell 프롬프트에 있는 이러한 명령을 사용하여 적합한 Windows Server AD 도메인에 참가시킵니다.
+다음으로, windows PowerShell 프롬프트에서 다음 명령을 사용 하 여 해당 windows Server AD 도메인에 참가 시킵니다.
   
 ```
 $domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
@@ -241,15 +243,15 @@ Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```
 
-이 단계를 성공적으로 완료하면 자리 표시자 컴퓨터 이름과 함께 이 구성을 얻을 수 있습니다.
+이 단계를 성공적으로 완료하면 자리 표시자 컴퓨터 이름이 포함된 다음 구성이 설정됩니다.
   
-**2단계: Azure의 고가용성 페더레이션 인증 인프라용 도메인 컨트롤러 및 DirSync 서버를 구성합니다.**
+**2 단계: Azure의 고가용성 페더레이션 인증 인프라에 대 한 도메인 컨트롤러 및 DirSync 서버**
 
-![도메인 컨트롤러를 포함한 Azure에서 고가용성 Office 365 페더레이션 인증 인프라 2단계](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![도메인 컨트롤러를 사용한 고가용성 Office 365 Azure의 페더레이션 인증 인프라 2 단계](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>다음 단계
 
-[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)을 사용하여 이 작업을 계속 구성합니다.
+[고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) 을 사용 하 여이 작업을 계속 구성 합니다.
   
 ## <a name="see-also"></a>참고 항목
 
@@ -259,6 +261,6 @@ Restart-Computer
   
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
-[연결 된 인증 옵션](about-office-365-identity.md#federated-authentication-options)
+[페더레이션 인증 옵션](about-office-365-identity.md#federated-authentication-options)
 
 
