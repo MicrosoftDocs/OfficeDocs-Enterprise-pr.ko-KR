@@ -3,7 +3,7 @@ title: 데이터 이동을 요청하는 방법
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,20 +11,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
-description: 기존 Office 365 고객은 자신의 새로운 지리적으로 분산 이동가 참여 Office 365 서비스의 고객 데이터를 포함 하기 위해 자신의 국가 대 한 마감 하기 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
-ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
+description: 기존 office 365 고객은 가맹 office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
+ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604509"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650081"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
 > [!NOTE]
-> 이 페이지의 정보를 고객에 게 자신의 지리적으로 분산에서 새 데이터 센터를 시작 하기 전에 기존 Office 365 테 넌 트 명의에 적용 됩니다. 
+> 이 페이지의 정보는 해당 지역의 새 데이터 센터가 시작 되기 전에 기존 Office 365 테 넌 트가 있었던 고객 에게만 적용 됩니다. 
   
-기존 Office 365 고객은 자신의 새로운 지리적으로 분산 이동가 참여 Office 365 서비스의 고객 데이터를 포함 하기 위해 자신의 국가 대 한 마감 하기 전에 요청을 제출 해야 합니다. 
+기존 office 365 고객은 가맹 office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다. 
   
 각 지역의 마감 날짜 이후에는 이동 요청을 수락할 수 없습니다. 
   
@@ -39,15 +39,14 @@ ms.locfileid: "29604509"
 |영국  <br/> |2017년 3월 15일   <br/> |2017년 9월 15일  <br/> |
 |대한민국  <br/> |2017년 5월 1일  <br/> |2017년 10월 31일  <br/> |
 |프랑스  <br/> |2018년 3월 14일  <br/> |2018년 9월 15일  <br/> |
+|아랍에미리트  <br/> |하려고  <br/> |하려고  <br/> |
+|남아프리카 공화국  <br/> |하려고  <br/> |하려고  <br/> |
    
 ## <a name="how-to-request-a-move"></a>이동을 요청하는 방법
 
-> [!NOTE]
-> 이 옵션은 Office 365 관리 센터 미리 보기에서 사용할 수만 있습니다. 이 액세스 하는 방법에 대 한 지침, [비즈니스-관리자 도움말에 대 한 Office 365](https://aka.ms/365admin)를 참조 하십시오. 이동에 대 한 모든 요청은 Office 365 관리 센터를 통해 작업을 수행 해야 합니다. 지원 하기에 대 한이 옵션을이 선택 하거나 선택 영역을 재정의 하 수 없습니다. 
+적격 고객은 [Office 365 관리 센터](https://aka.ms/365admin)에서 페이지를 볼 수 있으며,이를 통해 핵심 고객 데이터가 새 데이터 센터 지역으로 이동 하 게 됩니다.  
   
-가능한 고객 자신의 [Office 365 관리 센터](https://aka.ms/365admin)를 선택 하면가 새로운 데이터 센터 지역으로 이동 핵심 고객 데이터를 요청 하도록 하는 페이지에 표시 됩니다.  
-  
-Office 365 관리 센터의 왼쪽에 있는 탐색 창에서 페이지에 액세스 하려면 **설정**을 확장 하 고 **조직 프로필**을 클릭 합니다.
+Office 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 창에서 **설정을**확장 하 고 **조직 프로필**을 클릭 합니다.
   
 ![조직 프로필이 강조 표시된 설정 메뉴](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
@@ -55,7 +54,7 @@ Office 365 관리 센터의 왼쪽에 있는 탐색 창에서 페이지에 액�
   
 ![데이터 상주 카드](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
-**표시 되는이 섹션은 다음 중 하나를 적용 하는 경우**:
+**다음 중 하나에 해당 하는 경우이 섹션이 표시 되지 않을 수**있습니다.
 - 테넌트가 이동 프로그램 대상이 아닙니다. 
 - 모든 데이터가 이미 새 지역에 있습니다(페이지의 데이터 위치 섹션 참조). 
   
@@ -80,7 +79,7 @@ Office 365 관리 센터의 왼쪽에 있는 탐색 창에서 페이지에 액�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 팀의 Microsoft 팀에 대 한 데이터 residency를 사용할 수 있는 국가에 데이터 센터에 지역에서에서 나머지 부분에서 고객 콘텐츠 마이그레이션 아직 지원 하지 않습니다.  따라서, Microsoft 팀의 데이터 residency을 지원 하 고 새 지역에서 국가 내에 저장 된 데이터의 모든 새 고객만 해야 합니다.  Office 365 데이터 residency에서 회사 위치에 대 한 하는 방법에 대 한 자세한 내용은 [가 다음에 있는 데이터?](https://products.office.com/where-is-your-data-located)   
+microsoft 팀에서는 microsoft 팀에 대 한 데이터 상주를 사용할 수 있는 지역에서 국내 데이터 센터에 이르기까지 나머지 지역의 고객 콘텐츠 마이그레이션을 아직 지원 하지 않습니다.  따라서 Microsoft 팀이 데이터 상주를 지 원하는 새로운 지역에서는 새 고객만 모든 데이터를 국가 내에 저장 합니다.  회사 위치에 대 한 Office 365 데이터 상주에 대 한 자세한 내용은 [어디에서 찾을 수 있나요?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>이동 요청 전 선택적 작업
 
@@ -89,31 +88,26 @@ Microsoft 팀의 Microsoft 팀에 대 한 데이터 residency를 사용할 수 �
 ### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>IP 기반 방화벽을 사용하는 경우 새 IP 주소에 대한 허용 규칙 추가
 
 IP 주소 대신 방화벽에 대해 DNS 필터링을 사용하는 것이 좋습니다. 필요한 새 DNS 항목은 없습니다.
-
   
-인터넷 연결에 대 한 IP 기반 방화벽을 사용 하는 경우 허용 대상 데이터 센터 지리적으로 분산에 대 한 새 IP 주소에 대 한 규칙을 추가 해야 합니다. 새 서버 외에도 새 데이터 센터 geos에 대 한 IP 주소는 계속 해 서 [Office 365 Url 및 IP 주소 범위](https://go.microsoft.com/fwlink/p/?LinkId=229631)에 추가 됩니다.
+인터넷 연결을 위해 IP 기반 방화벽을 사용하는 경우 대상 데이터 센터 지역의 새 IP 주소에 대해 허용 규칙을 추가해야 합니다. 새 데이터 센터에 대 한 IP 주소도 새 서버와 함께 [Office 365 url 및 IP 주소 범위](https://go.microsoft.com/fwlink/p/?LinkId=229631)에 지속적으로 추가 됩니다.
   
 허용 규칙(허용 목록이라고도 함)을 추가하는 방법에 대한 자세한 내용은 방화벽 설명서를 참조하세요.
-
   
-IP 주소를 추가한 후 새 데이터 센터 지리적으로 분산에 대 한 연결을 테스트 하는 것이 좋습니다. 이 작업을 수행 하려면 새 데이터 센터 지리적으로 분산을 사용할 수는 즉시 [새 30 일 무료 평가판](https://go.microsoft.com/fwlink/?LinkId=522463) 테 넌 트를 만드는 것이 좋습니다. 
+IP 주소를 추가한 후 새 데이터 센터 지역에 대한 연결을 테스트할 수 있습니다. 이 작업을 수행 하려면 새 데이터 센터 geo를 사용할 수 있는 즉시 [새로운 무료 30 일 평가판](https://go.microsoft.com/fwlink/?LinkId=522463) 테 넌 트를 만드는 것이 좋습니다. 
   
 ### <a name="test-using-a-new-tenant"></a>새 테넌트를 사용하여 테스트
 
-
-이동 하기 전에 연결을 테스트 하려는 경우 새 데이터 센터 지리적으로 분산 교육은 후 [새 무료 30 일 평가판 테 넌 트](https://go.microsoft.com/fwlink/?LinkId=522463) 를 설정할 수 있으며 새 데이터 센터 지리적으로 분산에서 호스팅되는 Office 365 환경을 사용 하려면 사용. 
+이동 전에 연결을 테스트 하려는 경우 새 데이터 센터 geo를 사용할 수 있는 후 [새로운 무료 30 일 평가판 테 넌 트](https://go.microsoft.com/fwlink/?LinkId=522463) 를 설정 하 고이를 사용 하 여 Office 365를 새 데이터 센터 지역에서 호스팅하는 환경을 경험할 수 있습니다. 
   
-평가판 테 넌 트 기존 테 넌 트와 함께 사용할 수 없습니다.
+평가판 테 넌 트를 기존 테 넌 트와 함께 사용할 수 없습니다.
   
 - 사용자는 테스트를 위해 별도 평가판 계정을 사용해야 합니다.
     
-- 	테넌트 간에 데이터를 이동할 방법은 없습니다.
-
-
+- 테넌트 간에 데이터를 이동할 방법은 없습니다.
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>모바일 장치에서 오래된 Exchange 설정을 업데이트하도록 사용자에게 알림
 
-사용자가 모바일 장치를 **m.outlook.com** 또는 **podxxxxx.outlook.com**로 설정 하 고 Exchange 서버와 것이 좋습니다 **outlook.office365.com**전환 자신이 [세트를 동기화 하는 모바일 장치를 구성의 지침에 따라 사용자의 계정으로](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)합니다.
+사용자가 Exchange Server가 **m.outlook.com** 또는 **podxxxxx.outlook.com**로 설정 된 모바일 장치를 사용 하는 경우에는 **** [동기화 하도록 모바일 장치 설정의 지침에 따라 outlook.office365.com로 전환 하는 것이 좋습니다. ](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
@@ -121,8 +115,8 @@ IP 주소를 추가한 후 새 데이터 센터 지리적으로 분산에 대 �
 
 [데이터 이동 일반 FAQ](data-move-faq.md)
 
-[Microsoft Dynamics CRM Online에 대 한 새 데이터 센터 geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Microsoft Dynamics CRM Online에 대 한 새로운 데이터 센터 지역](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[지역별 azure 서비스](https://azure.microsoft.com/en-us/regions/)
+[지역별 Azure services](https://azure.microsoft.com/en-us/regions/)
   
 
