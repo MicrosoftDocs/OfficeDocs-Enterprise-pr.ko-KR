@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: '요약: Microsoft Azure에서 Office 365 구독에 대한 고가용성 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: 9ab2cf992a0170e8b6528c74c868f0db5feeb6e1
-ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
+ms.openlocfilehash: 7c039cd72fabdd6c3ab66a61ce9fd7b861a97f8e
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "26024660"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650121"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure에서 Office 365용 고가용성 페더레이션 인증 배포
 
@@ -110,7 +110,8 @@ ms.locfileid: "26024660"
 
 [고가용성 페더레이션 인증 1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md) 를 사용하여 이 작업의 구성을 시작합니다. 
   
+<!--
 > [!TIP]
-> Azure에서 Office 365용 고가용성 페더레이션 인증을 더욱 빠르게 배포하기 위한 파일 집합에 대해 알아보려면 [Azure 배포 키트의 Office 365용 페더레이션 인증](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)을 참조하세요. 
- 
+> For a set of files to more quickly deploy your high availability federated authentication for Office 365 in Azure, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+--> 
 
