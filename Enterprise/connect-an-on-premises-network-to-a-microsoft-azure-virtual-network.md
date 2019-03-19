@@ -3,7 +3,7 @@ title: 온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '요약: 사이트 간 VPN 연결을 사용하여 Office Server 작업용 프레미스 간 Azure Virtual Network를 구성하는 방법을 알아봅니다.'
-ms.openlocfilehash: 145c7a082aff436ee3c3bb873f299f9706db72df
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 0bcf5aebf3a469f75ffac6c5df3d1f808038a299
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25976714"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650151"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
@@ -210,33 +210,35 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 <a name="Phase2"></a>
 
 먼저 Azure PowerShell 프롬프트를 엽니다. Azure PowerShell을 설치하지 않은 경우 [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요.
-  
+
+<!--  
 > [!NOTE]
-> 해당 명령은 Azure PowerShell 1.0 이상에서 사용할 수 있습니다. 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일은 [여기](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)를 클릭합니다. 
+> These commands are for Azure PowerShell 1.0 and above. For a text file that has all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
+-->
   
 그런 다음 이 명령을 사용하여 Azure 계정에 로그인합니다.
   
 ```
-Login-AzureRMAccount
+Connect-AzAccount
 ```
 
 다음 명령을 사용하여 구독 이름을 가져옵니다.
   
 ```
-Get-AzureRMSubscription | Sort SubscriptionName | Select SubscriptionName
+Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
 이러한 명령을 사용하여 Azure 구독을 설정합니다. <and> 문자를 포함하여 따옴표 안에 있는 모든 것을 올바른 구독 이름으로 바꿉니다.
   
 ```
 $subscrName="<subscription name>"
-Select-AzureRMSubscription -SubscriptionName $subscrName -Current
+Select-AzSubscription -SubscriptionName $subscrName -Current
 ```
 
 다음으로 가상 네트워크에 새 리소스 그룹을 만듭니다. 고유한 리소스 그룹 이름을 확인하려면 이 명령을 사용하여 기존 리소스 그룹을 나열합니다.
   
 ```
-Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 이러한 명령을 사용하여 새 리소스 그룹을 만듭니다.
@@ -244,7 +246,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 $rgName="<resource group name>"
 $locName="<Table V - Item 2 - Value column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 
 ```
 
@@ -260,17 +262,17 @@ $gwSubnetPrefix="<Table S - Item 1 - Subnet address space column>"
 $SubnetName="<Table S - Item 2 - Subnet name column>"
 $SubnetPrefix="<Table S - Item 2 - Subnet address space column>"
 $dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
-$locShortName=(Get-AzureRmResourceGroup -Name $rgName).Location
+$locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
 # Create the Azure virtual network and a network security group that allows incoming remote desktop connections to the subnet that is hosting virtual machines
-$gatewaySubnet=New-AzureRmVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnetPrefix
-$vmSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name $SubnetName -AddressPrefix $SubnetPrefix
-New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gatewaySubnet,$vmSubnet -DNSServer $dnsServers
-$rule1=New-AzureRMNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
-New-AzureRMNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Location $locShortName -SecurityRules $rule1
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
+$gatewaySubnet=New-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnetPrefix
+$vmSubnet=New-AzVirtualNetworkSubnetConfig -Name $SubnetName -AddressPrefix $SubnetPrefix
+New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gatewaySubnet,$vmSubnet -DNSServer $dnsServers
+$rule1=New-AzNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
+New-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Location $locShortName -SecurityRules $rule1
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$nsg=Get-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
 ```
 
 구성 결과는 다음과 같습니다.
@@ -285,22 +287,22 @@ $vnetName="<Table V - Item 1 - Value column>"
 $localGatewayIP="<Table V - Item 3 - Value column>"
 $localNetworkPrefix=@( <comma-separated, double-quote enclosed list of the local network address prefixes from Table L, example: "10.1.0.0/24", "10.2.0.0/24"> )
 $vnetConnectionKey="<Table V - Item 5 - Value column>"
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
 # Attach a virtual network gateway to a public IP address and the gateway subnet
 $publicGatewayVipName="PublicIPAddress"
 $vnetGatewayIpConfigName="PublicIPConfig"
-New-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$publicGatewayVip=Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
-$vnetGatewayIpConfig=New-AzureRMVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -SubnetId $vnet.Subnets[0].Id
+New-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$publicGatewayVip=Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
+$vnetGatewayIpConfig=New-AzVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -SubnetId $vnet.Subnets[0].Id
 # Create the Azure gateway
 $vnetGatewayName="AzureGateway"
-$vnetGateway=New-AzureRMVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
+$vnetGateway=New-AzVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
 # Create the gateway for the local network
 $localGatewayName="LocalNetGateway"
-$localGateway=New-AzureRMLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
+$localGateway=New-AzLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
 # Create the Azure virtual network VPN connection
 $vnetConnectionName="S2SConnection"
-$vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
+$vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 ```
 
 구성 결과는 다음과 같습니다.
@@ -311,7 +313,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
   
 VPN 장치를 구성하려면 다음 항목이 필요합니다.
   
-- 가상 네트워크의 Azure VPN 게이트웨이의 공용 IPv4 주소. **Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** 명령을 사용하여 주소를 표시합니다.
+- 가상 네트워크의 Azure VPN 게이트웨이의 공용 IPv4 주소. **Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** 명령을 사용하여 주소를 표시합니다.
     
 - 사이트 간 VPN 연결용 IPsec 미리 공유한 키(테이블 V - 항목 5 - 값 열).
     
