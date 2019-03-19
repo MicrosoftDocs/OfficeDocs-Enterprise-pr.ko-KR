@@ -30,20 +30,58 @@
 | 3/8/2019 | [용량 계획 및 부하 테스트 SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | 수정한 날짜 |
 
 
-## <a name="week-of-february-04-2019"></a>2019년 2월 4일에 해당하는 주
+## <a name="week-of-march-11-2019"></a>3 월 11 일 주 2019
 
 
 | 게시된 날짜 |항목 제목 | 변경 사항 |
 |------|------------|--------|
-| 2/5/2019 | [PowerShell을 사용하여 Office 365 그룹 관리](/Office365/Enterprise/manage-office-365-groups-with-powershell) | 수정한 날짜 |
-| 2/5/2019 | [Microsoft 클라우드 IT 아키텍처 리소스](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 수정한 날짜 |
-| 2/5/2019 | [PowerShell을 사용하여 Office 365 그룹 관리](/Office365/Enterprise/powershell/manage-office-365-groups-with-powershell) | 수정한 날짜 |
-| 2/6/2019 | PowerShell을 사용하여 Office 365 그룹 관리 | 제거 |
-| 2/6/2019 | [PowerShell을 사용하여 Office 365 그룹 관리](/Office365/Enterprise/powershell/manage-office-365-groups-with-powershell) | 수정한 날짜 |
-| 2/7/2019 | [Office 365 끝점 관리](/Office365/Enterprise/managing-office-365-endpoints) | 수정한 날짜 |
-| 2/7/2019 | [Office 365 클라이언트 앱 지원-조건부 액세스](/Office365/Enterprise/office-365-client-support-conditional-access) | 수정한 날짜 |
-| 2/7/2019 | [Office 365 클라이언트 앱 지원-모바일 응용 프로그램 관리](/Office365/Enterprise/office-365-client-support-mobile-application-management) | 수정한 날짜 |
-| 2/7/2019 | [Office 365 클라이언트 앱 지원-최신 인증](/Office365/Enterprise/office-365-client-support-modern-authentication) | 수정한 날짜 |
+| 3/11/2019 | [Microsoft 클라우드 IT 아키텍처 리소스](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 수정한 날짜 |
+| 3/11/2019 | [Office 365 PowerShell을 사용한 사용자 계정 보기](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | 수정한 날짜 |
+| 3/11/2019 | [Office 365 PowerShell을 사용해야 하는 이유](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경용 고급 eDiscovery](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경용 Advanced Threat Protection](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [클라우드 채택 tlgs (테스트 랩 가이드)를 사용 하 여 Office 365 테스트](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경용 Cloud App Security](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Microsoft Azure에서 Office 365 디렉터리 동기화 배포](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경에 대한 디렉터리 동기화](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 및 Dynamics 365 개발/테스트 환경용 Exchange Online 통합](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | 수정한 날짜 |
+| 3/13/2019 | [Microsoft 클라우드 연결에 대 한 ExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경용 페더레이션된 ID](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [엔터프라이즈 설계자 용 Microsoft 클라우드 네트워킹](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경용 다단계 인증](/Office365/Enterprise/multi-factor-authentication-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Office 365에 대 한 네트워크 및 마이그레이션 계획](/Office365/Enterprise/network-and-migration-planning) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 및 Dynamics 365 개발/테스트 환경](/Office365/Enterprise/office-365-and-dynamics-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경](/Office365/Enterprise/office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 PowerShell을 사용하여 Exchange Online 관리](/Office365/Enterprise/powershell/manage-exchange-online-with-office-365-powershell) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 PowerShell을 사용하여 SharePoint Online 관리](/Office365/Enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) | 수정한 날짜 |
+| 3/13/2019 | [Manage SharePoint Online site groups with Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-site-groups-with-powershell) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리](/Office365/Enterprise/powershell/manage-sharepoint-users-and-groups-with-powershell) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](/Office365/Enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) | 수정한 날짜 |
+| 3/13/2019 | [PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행](/Office365/Enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365) | 수정한 날짜 |
+| 3/13/2019 | [PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션 수행](/Office365/Enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 PowerShell을 사용해야 하는 이유](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 전역 관리자 계정 보호](/Office365/Enterprise/protect-your-global-administrator-accounts) | 수정한 날짜 |
+| 3/13/2019 | [Office 365 개발/테스트 환경용 중요 파일 보호](/Office365/Enterprise/sensitive-file-protection-in-the-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/13/2019 | [Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | 수정한 날짜 |
+| 3/13/2019 | [One Microsoft Cloud 개발/테스트 환경](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | 수정한 날짜 |
+| 3/14/2019 | [콘텐츠 배달 네트워크](/Office365/Enterprise/content-delivery-networks) | 수정한 날짜 |
+| 3/14/2019 | [Office 365 비디오 네트워킹에 대 한 질문과 대답](/Office365/Enterprise/office-365-video-networking-faq) | 수정한 날짜 |
+| 3/15/2019 | [핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 수정한 날짜 |
+| 3/15/2019 | [데이터 이동 도중 및 이후](/Office365/Enterprise/during-and-after-your-data-move) | 수정한 날짜 |
+| 3/15/2019 | [기본 구성 개발/테스트 환경](/Office365/Enterprise/base-configuration-dev-test-environment) | 수정한 날짜 |
+| 3/15/2019 | [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 수정한 날짜 |
+| 3/15/2019 | [Azure에서 Office 365용 고가용성 페더레이션 인증 배포](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 수정한 날짜 |
+| 3/15/2019 | [Microsoft Azure에서 Office 365 디렉터리 동기화 배포](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 수정한 날짜 |
+| 3/15/2019 | [Office 365 개발/테스트 환경용 페더레이션된 ID](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 3/15/2019 | [고가용성 페더레이션 인증 1 단계 Azure 구성](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | 수정한 날짜 |
+| 3/15/2019 | [고가용성 페더레이션 인증 2 단계 도메인 컨트롤러 구성](/Office365/Enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers) | 수정한 날짜 |
+| 3/15/2019 | [고가용성 페더레이션 인증 3 단계 AD FS 서버 구성](/Office365/Enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers) | 수정한 날짜 |
+| 3/15/2019 | [고가용성 페더레이션 인증 4 단계 웹 응용 프로그램 프록시 구성](/Office365/Enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro) | 수정한 날짜 |
+| 3/15/2019 | [Office 365 개발/테스트 환경](/Office365/Enterprise/office-365-dev-test-environment) | 수정한 날짜 |
+| 3/15/2019 | [데이터 이동을 요청하는 방법](/Office365/Enterprise/request-your-data-move) | 수정한 날짜 |
+| 3/15/2019 | [시뮬레이트된 Azure의 크로스-프레미스 가상 네트워크](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 수정한 날짜 |
 
 
 ## <a name="week-of-february-11-2019"></a>2019년 2월 11일의 주

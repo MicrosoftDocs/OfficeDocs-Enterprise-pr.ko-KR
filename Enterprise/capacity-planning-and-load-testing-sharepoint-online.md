@@ -3,7 +3,7 @@ title: 용량 계획 및 부하 테스트 SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/18/2016
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 이 문서에서는 허용 되지 않으므로 기존 부하 테스트를 수행 하지 않고 SharePoint Online에 배포 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: ef5d6c043b4be2e8c5358a9c060459b4c6a92156
-ms.sourcegitcommit: 468c8e8d2f951e08cf50301445ad650ef17328aa
+ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512723"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "30665191"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>용량 계획 및 부하 테스트 SharePoint Online.
 
