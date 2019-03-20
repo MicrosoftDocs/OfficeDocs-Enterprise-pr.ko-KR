@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용한 사용자 계정 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/11/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '요약: Office 365 PowerShell을 사용 하 여 다양 한 방식으로 사용자 계정을 보거나, 나열 하거나, 표시 합니다.'
-ms.openlocfilehash: 10b6d209e76f94b8b001718abd35368f9d1bc29c
-ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
+ms.openlocfilehash: 717a7c11f4e7f6d2e5e0c452854df7d4c419007e
+ms.sourcegitcommit: 1dc7b4731cf9899c5ae867624ed142dbab0c517f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30539016"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30683705"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정 보기
 
@@ -287,7 +287,7 @@ Scott Wallace            Operations
 디렉터리 동기화를 사용 하 여 office 365 사용자를 만들고 관리 하는 경우 office 365 사용자가 프로젝션 한 로컬 계정을 표시할 수 있습니다. 다음은 azure ad connect가 ObjectGUID의 기본 원본 앵커를 사용 하도록 구성 된 것으로 가정 합니다 (원본 앵커 구성에 대 한 자세한 내용은 [azure ad connect: Design 개념](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)참조) 및 powershell 용 Active Directory 모듈에 대 한 것으로 가정 설치 된 경우 ( [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)참조):
 
 ```
-(Get-ADUser [guid][system.convert]::frombase64string((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).Guid
+Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
     
