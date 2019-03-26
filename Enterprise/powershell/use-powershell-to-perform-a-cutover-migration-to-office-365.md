@@ -11,11 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 요약:Windows PowerShell을 사용하여 Office 365로 단독형 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574082"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행
 
@@ -49,7 +50,7 @@ Exchange Online PowerShell cmdlet을 사용하려면 로그인한 후 cmdlet을 
     
   - [Exchange 2010: "외부에서 Outlook 사용" 설정](https://go.microsoft.com/fwlink/?LinkID=187249)
     
-  - [Exchange 2007: "외부에서 Outlook 사용" 설정 방법](https://go.microsoft.com/fwlink/?LinkID=167210)
+  - [Exchange 2007: 외부에서 Outlook 사용 설정 방법](https://go.microsoft.com/fwlink/?LinkID=167210)
     
   - [Exchange 2003: RPC over HTTP에 대한 배포 시나리오](https://go.microsoft.com/fwlink/?LinkID=73657)
     
@@ -74,7 +75,7 @@ Exchange Online PowerShell cmdlet을 사용하려면 로그인한 후 cmdlet을 
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **온-프레미스 사용자 계정을 Exchange 조직에서 사서함에 액세스 하는 데 필요한 사용 권한을 할당 합니다.** (마이그레이션 관리자에 게가 라고도 함) 하 여 온-프레미스 Exchange 조직에 연결을 사용 하는 온-프레미스 사용자 계정에는 Office 365로 마이그레이션할 수 있는 온-프레미스 사서함에 액세스 하는 데 필요한 권한이 있어야 합니다. 이 사용자 계정은 온-프레미스 조직으로 마이그레이션 끝점을 만드는 데 사용 됩니다.
+- **온-프레미스 사용자 계정에 Exchange 조직의 사서함에 액세스하는 데 필요한 사용 권한 할당** 온-프레미스 Exchange 조직에 연결 하는 데 사용 하는 온-프레미스 사용자 계정 (마이그레이션 관리자 라고도 함)에는 Office 365로 마이그레이션할 온-프레미스 사서함에 액세스 하는 데 필요한 권한이 있어야 합니다. 이 사용자 계정은 온-프레미스 조직에 대한 마이그레이션 끝점을 만드는 데 사용됩니다.
     
     다음 목록에는 단독형 마이그레이션을 사용하여 사서함을 마이그레이션하는 데 필요한 관리 권한이 나와 있으며, 세 개의 옵션이 제공됩니다.
     
@@ -194,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>섹션 7: 사용자 라이선스 할당
 <a name="BK_Step7"> </a>
 
- **라이선스를 할당하여 마이그레이션된 계정에 대한 Office 365 사용자 계정을 활성화합니다.** 라이선스를 할당하지 않은 경우 30일 유예 기간이 끝나면 사서함을 사용할 수 없습니다. Office 365 관리 센터에서 라이선스를 할당하려면[비즈니스용 Office 365 라이선스 할당 또는 할당 취소](https://go.microsoft.com/fwlink/?LinkId=536681)를 참조하세요.
+ **라이선스를 할당하여 마이그레이션된 계정에 대한 Office 365 사용자 계정을 활성화합니다.** 라이선스를 할당하지 않은 경우 30일 유예 기간이 끝나면 사서함을 사용할 수 없습니다. Microsoft 365 관리 센터에서 라이선스를 할당 하려면[비즈니스용 Office 365에 대 한 라이선스 할당 또는](https://go.microsoft.com/fwlink/?LinkId=536681)할당 해제를 참조 하세요.
   
 ### <a name="step-8-complete-post-migration-tasks"></a>8단계: 마이그레이션 후 작업 완료
 <a name="BK_Step8"> </a>
@@ -220,7 +221,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
   - [Exchange 2010 수정 또는 제거](https://go.microsoft.com/fwlink/?LinkId=217936)
     
-  - [Exchange 2007 조직 제거 방법](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [Exchange 2007 조직을 제거하는 방법](https://go.microsoft.com/fwlink/?LinkID=100485)
     
   - [Exchange Server 2003 제거 방법](https://go.microsoft.com/fwlink/?LinkID=56561)
     

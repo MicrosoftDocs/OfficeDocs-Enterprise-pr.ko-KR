@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 windows powershell 창에서 모든 Office 365 서비스에 windows powershell을 연결 합니다.'
-ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
-ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
+ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339516"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573972"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
  **요약:** 별도의 PowerShell 콘솔 창에서 서로 다른 office 365 서비스를 관리 하는 대신, 모든 office 365 서비스에 연결 하 여 단일 콘솔 창의 관리를 관리할 수 있습니다.
   
-PowerShell을 사용 하 여 office 365을 관리 하는 경우 office 365 관리 센터, SharePoint online, Exchange online, 비즈니스용 Skype Online, 보안 &amp;준수 센터 별도의 Windows PowerShell 세션에서 5 가지 서로 다른 연결 방법을 사용 하는 경우 데스크톱은 다음과 같이 표시 될 수 있습니다.
+PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 관리 센터, SharePoint online, Exchange online, 비즈니스용 Skype Online 및 보안에 해당 하는 Windows powershell 세션이 최대 5 개까지 있을 수 있습니다. &amp; 준수 센터 별도의 Windows PowerShell 세션에서 5 가지 서로 다른 연결 방법을 사용 하는 경우 데스크톱은 다음과 같이 표시 될 수 있습니다.
   
 ![동시에 실행되는 5개의 Windows PowerShell 콘솔](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   

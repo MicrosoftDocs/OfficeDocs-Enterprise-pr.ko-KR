@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: '요약: 이 테스트 랩 가이드를 사용하여 Office 365 평가판 구독에서 Exchange Online용 Dynamic 365 통합을 사용하도록 설정할 수 있습니다.'
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897121"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574022"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경을 위한 Exchange Online 통합
 
@@ -42,11 +42,11 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
 
 다음 단계를 통해 Dynamics 365 및 Exchange Online 통합용 전역 관리자 사서함을 구성할 수 있습니다.
   
-1. 로 이동 해당 브라우저의 개인 세션을 사용 하 여 [http://portal.office.com](http://portal.office.com) 및 프로그램 Office 365 전역 관리자 계정을 사용 하 여 로그인 합니다.
+1. 브라우저의 개인 세션을 사용 하 여 Office 365 [http://admin.microsoft.com](http://admin.microsoft.com) 전역 관리자 계정으로 이동 하 여 로그인 합니다.
     
 2. **Microsoft Office Home** 페이지에서 **메일** 타일을 클릭합니다.
     
-3. 브라우저에서 새 **메일** 탭에서 **새로 만들기** 를 클릭 하 고 메시지를 입력 하는 것에 대 한 상자 아래에 있는 창의 아래쪽 모서리 내 서식 파일에 대 한 아이콘을에 하는 방법을 확인할 수 있습니다.
+3. 브라우저의 새 **메일** 탭에서 **새로 만들기** 를 클릭 하 고 메시지를 입력 하는 상자 아래 창의 아래쪽 모서리에 내 서식 파일 아이콘이 있는지 확인 합니다.
     
      ![Dynamics 365와 통합되지 않은 비어 있는 새 전자 메일 메시지입니다.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
     
 5. 브라우저에서 **Microsoft Office Home** 탭을 클릭한 다음 **메일** 타일을 클릭합니다.
     
-6. 브라우저에서 새 **메일** 탭에서 **새로 만들기**를 클릭 합니다. 이제는 다음 메시지를 입력 하는 것에 대 한 상자 아래에 있는 창의 아래쪽 모서리 Dynamics 365 대 한 아이콘에 있는지 확인 합니다.
+6. 브라우저의 새 **메일** 탭에서 **새로 만들기**를 클릭 합니다. 이제 메시지를 입력 하는 상자 아래 창의 맨 아래 모서리에 Dynamics 365 아이콘이 표시 됩니다.
     
      ![Dynamics 365와 통합된 비어 있는 새 전자 메일 메시지로, 새 아이콘을 표시합니다.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

@@ -15,49 +15,49 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: '요약: 구성 및 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에 Office 365 정보 권한 관리에 중요 한 파일을 보호 하는 방법을 시연 합니다.'
-ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: '요약: 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 Office 365 정보 권한 관리가 중요 한 파일을 보호 하는 방법을 구성 하 고 설명 합니다.'
+ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574072"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 
- **요약:** 구성 하 고 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에 Office 365 정보 권한 관리에 중요 한 파일을 보호 하는 방법을 시연 합니다.
+ **요약:** Office 365 정보 권한 관리가 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 중요 한 파일을 보호 하는 방법을 구성 하 고 보여 줍니다.
   
-Office 365의 정보 권한 관리 (IRM)는 SharePoint Online 라이브러리 및 목록에서 다운로드 하는 문서를 보호 하기 위해 기능 집합입니다. 다운로드 한 파일 저장, 열기, 복사본을 포함 및 저장 된 SharePoint Online 라이브러리를 반영 하는 권한이 인쇄 암호화 됩니다.
+Office 365의 IRM (정보 권한 관리)은 SharePoint Online 라이브러리 및 목록에서 다운로드 되는 문서를 보호 하는 기능 집합입니다. 다운로드 된 파일은 암호화 되며 저장 된 SharePoint Online 라이브러리를 반영 하는 열기, 복사, 저장 및 인쇄 권한을 포함 합니다.
   
-이 문서의 지침을 함께 사용 하도록 설정 및 Office 365 평가판 구독에서 사용할 수 있는 중요 한 정보를 포함 하는 파일에 대 한 Office 365에서 IRM을 테스트 합니다.
+이 문서의 지침을 사용 하 여 office 365 평가판 구독에서 가능한 중요 한 정보가 포함 된 파일에 대 한 IRM을 설정 하 고 office 365에서 테스트 합니다.
   
 > [!TIP]
 > [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
-## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경을 구축합니다
+## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경 구축
 
-최소 요구 사항을 경량 방식으로 중요 한 파일 보호 기능을 테스트 하려면 2와 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)의 3 단계에서 지침을 따릅니다.
+최소 요구 사항에 따라 간단한 방법으로 중요 한 파일 보호를 테스트 하려는 경우에는 [Office 365 개발/테스트 환경의](office-365-dev-test-environment.md)2, 3 단계의 지침을 따릅니다.
   
-시뮬레이션 된 엔터프라이즈에서 중요 한 파일 보호 기능을 테스트 하려는 경우 [Office 365 개발/테스트 환경에 대 한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지시를 따릅니다.
+시뮬레이트된 엔터프라이즈에서 중요 한 파일 보호를 테스트 하려면 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따릅니다.
   
 > [!NOTE]
-> 중요 한 파일 보호를 테스트 하지 않아도 인터넷에 연결 하는 시뮬레이션 된 인트라넷을 포함 하는 시뮬레이션 된 엔터프라이즈 개발/테스트 환경 및 Windows Server AD 포리스트에 대 한 디렉터리 동기화 합니다. 제공은 중요 한 파일 보호 기능을 테스트 하 고 일반적인 조직을 대표 하는 환경에서 사용해 수 있도록 하는 옵션으로 여기 합니다. 
+> 중요 한 파일 보호를 테스트 하는 경우에는 Windows Server AD 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 중요 한 파일 보호 기능을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
   
-## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>2 단계: 사용 권한으로 보호 된 사이트에서 문서 수 유출 하는 방법을 보여줍니다.
+## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>2 단계: 사용 권한으로 보호 되는 사이트의 문서가 누수 될 수 있는 방식 설명
 
-이 단계는 다른 사용자 수는 사용 권한으로 보호 된 사이트에서 문서를 다운로드 하 고 다음 널리 개방 된 사용 권한이 있는 사이트에 업로드를 보여줍니다.
+이 단계에서는 누군가가 사용 권한으로 보호 된 사이트에서 문서를 다운로드 한 다음, 사용자를 사이트에 업로드 하 여 파일을 광범위 하 게 사용할 수 있도록 하는 방법을 보여 줍니다.
   
-먼저, 임원 진술 하 고 Office 365 E5 라이선스를 할당 하는 3 개의 새 사용자 계정을 추가 합니다.
+먼저 임원을 나타내는 새 사용자 계정을 세 개 추가 하 고 Office 365 E5 라이선스를 할당 합니다.
   
-[Office 365 PowerShell 연결](https://technet.microsoft.com/library/dn975125.aspx) 에 지침을 사용 하 여 PowerShell 모듈 (필요한 경우)를 설치 하 고에서 새로운 Office 365 구독에 연결 합니다.
+[Office 365 powershell에 연결](https://technet.microsoft.com/library/dn975125.aspx) 의 지침을 사용 하 여 powershell 모듈 (필요한 경우)을 설치 하 고 다음에서 새 Office 365 구독에 연결 합니다.
   
 - 사용하는 컴퓨터(경량 Office 365 개발/테스트 환경)
     
 - CLIENT1 가상 컴퓨터(시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경)
     
-**Windows PowerShell 자격 증명 요청** 대화 상자에서 Office 365 전역 관리자 이름을 입력 합니다 (예: jdoe@contosotoycompany.onmicrosoft.com) 및 Office 365 평가판 구독의 암호입니다.
+**Windows PowerShell 자격 증명 요청** 대화 상자에서 office 365 전역 관리자 이름 (예: jdoe@contosotoycompany.onmicrosoft.com)과 office 365 평가판 구독의 암호를 입력 합니다.
   
-조직 이름을 입력 (예: contosotoycompany) 및 사용자 위치에 대 한 코드 및 Windows Azure Active Directory 모듈에 대 한 Windows PowerShell 프롬프트에서 다음 명령을 실행 하는 다음 두 자리 국가:
+조직 이름 (예: contosotoycompany)과 해당 위치에 대 한 두 문자로 된 국가 코드를 입력 한 다음 windows PowerShell 프롬프트 용 windows Azure Active Directory 모듈에서 다음 명령을 실행 합니다.
   
 ```
 $orgName="<organization name>"
@@ -68,7 +68,7 @@ New-MsolUser -DisplayName "CEO" -FirstName "Chief" -LastName "Executive Officer"
 
 ```
 
-**New-msoluser** 명령의 디스플레이에서 CEO 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
+**get-msoluser** 명령을 표시할 때 CEO 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
   
 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
   
@@ -78,7 +78,7 @@ New-MsolUser -DisplayName "CFO" -FirstName "Chief" -LastName "Financial Officer"
 
 ```
 
-**New-msoluser** 명령의 디스플레이에서 CFO 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
+**get-msoluser** 명령을 표시 하 고 CFO 계정에 대해 생성 된 암호를 확인 하 여 안전한 위치에 기록 합니다.
   
 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
   
@@ -88,247 +88,247 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
 
 ```
 
-**New-msoluser** 명령의 디스플레이에서 COO 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
+**get-msoluser** 명령을 표시할 때 coo 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
   
-다음으로, 개인 임원 그룹을 만들고 새 임원 계정을 추가 합니다.
+다음으로, 비공개 임원 그룹을 만들고 새 executive 계정을 추가 합니다.
   
-1. 브라우저에서 포털로 이동 하는 Office에서 [http://portal.office.com](http://portal.office.com) 전역 관리자 계정 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
+1. 브라우저에서 office 포털로 이동 [http://admin.microsoft.com](http://admin.microsoft.com) 하 여 전역 관리자 계정을 사용 하 여 office 365 평가판 구독에 로그인 합니다.
     
-  - Office 365 개발/테스트 환경 lightweight를 사용 하는 경우 Internet Explorer 또는 브라우저의 개인 세션을 열고 로컬 컴퓨터에서 로그인 합니다.
+  - 경량 Office 365 개발/테스트 환경을 사용 하는 경우 Internet Explorer 또는 브라우저의 개인 세션을 열고 로컬 컴퓨터에서 로그인 합니다.
     
-  - 시뮬레이션 된 엔터프라이즈 Office 365 개발/테스트 환경을 사용 하는 경우 Azure 포털을 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음 CLIENT1에서 로그인 합니다.
+  - 시뮬레이트된 enterprise Office 365 개발/테스트 환경을 사용 하는 경우 Azure portal을 사용 하 여 client1 가상 컴퓨터에 연결한 다음, client1에서 로그인 합니다.
     
-2. **Microsoft Office 홈** 탭에서 클릭 **관리 > 그룹 > 그룹**, **그룹 추가**클릭 하 고 있습니다.
+2. **Microsoft Office 홈** 탭에서 **Admin > groups > groups**를 클릭 한 다음 **그룹 추가**를 클릭 합니다.
     
-3. **추가 그룹**에서 그룹 종류에 대 한 **Office 365 그룹** 을 선택, **임원** **이름과 **그룹 Id**를** 입력 **개인** **개인정보 보호**대 한 선택한 다음 클릭 **소유자를 선택**합니다.
+3. **그룹 추가**에서 그룹 유형에 대해 **Office 365 그룹** 을 선택 하 고 **이름** 및 **그룹 Id**에 **임원** 을 입력 한 다음 **** 개인 **정보 보호**를 선택 하 고 **소유자 선택을**클릭 합니다.
     
 4. 목록에서 전역 관리자 계정 이름을 클릭 합니다.
     
 5. **추가**를 클릭한 다음 **닫기**를 클릭합니다.
     
-6. 그룹 목록에서 **중역**을 클릭 합니다.
+6. 그룹 목록에서 **임원**을 클릭 합니다.
     
-7. **구성원에 대 한 편집**을 클릭 합니다.
+7. **구성원에 대해 편집을**클릭 합니다.
     
-8. **구성원 추가**클릭 합니다. 구성원 목록에서 다음 사용자 계정을 선택 합니다.
+8. **구성원 추가**를 클릭 합니다. 구성원 목록에서 다음 사용자 계정을 선택 합니다.
     
-  - 중역이 책임자
+  - 경영 최고 책임자
     
-  - 회계 부 책임자
+  - 최고 회계 담당자
     
-  - 작업 책임자
+  - 운영 책임자 최고
     
-9. **저장**을 클릭 한 다음 **닫기**를 클릭 합니다.
+9. **저장**을 클릭 하 고 **닫기를**클릭 합니다.
     
 10. **Office 관리 센터** 탭을 닫습니다.
     
-다음으로 임원 사이트 모음을 만들고에 대 한 액세스는 임원 그룹의 구성원만 허용 합니다.
+다음에는 임원 사이트 모음을 만들고 중역 그룹의 구성원만 액세스할 수 있도록 허용 합니다.
   
 1. **Microsoft Office 홈** 탭에서 **관리** 타일을 클릭 합니다.
     
-2. **Office 관리 센터** 탭을 클릭 **관리 센터 > SharePoint**합니다.
+2. **Office 관리 센터** 탭에서 **관리 센터 > SharePoint**를 클릭 합니다.
     
-3. **SharePoint 관리 센터** 탭을 클릭 **새로 만들기 > 개인 사이트 모음**합니다.
+3. **SharePoint 관리 센터** 탭에서 **새 > 개인 사이트 모음**을 클릭 합니다.
     
-4. 새 사이트 모음 창에서 **임원** **제목**, 경영진의 URL 상자에서에 입력 하 고 **관리자**, 전역 관리자 계정의 이름을 지정 한 다음 **확인**을 클릭 합니다.
+4. 새 사이트 모음 창에서 **제목**에 **임원** , URL 상자에 임원을 차례로 입력 하 고 **관리자**에 게 전역 관리자 계정의 이름을 지정한 다음 **확인**을 클릭 합니다.
     
-5. 새 사이트 모음도 만들지 않은 때까지 기다립니다. 완료 되 면 새 임원 사이트 모음의 URL을 복사 하 고 브라우저의 새 탭에 붙여넣습니다.
+5. 새 사이트 모음을 만들 때까지 기다립니다. 완료 되 면 새 임원 사이트 모음의 URL을 복사 하 여 브라우저의 새 탭에 붙여넣습니다.
     
-6. **임원** 사이트 모음의 오른쪽 위에 있는 설정 아이콘을 클릭 하 고 **공유 대상을**클릭 합니다.
+6. **임원** 사이트 모음의 오른쪽 위에 있는 설정 아이콘을 클릭 한 다음 **공유를**클릭 합니다.
     
-7. **공유 '임원'** **고급**을 클릭 합니다.
+7. **' 임원 ' 공유**에서 **고급**을 클릭 합니다.
     
-8. SharePoint 그룹의 목록에서 **임원 구성원**을 클릭 합니다.
+8. SharePoint 그룹 목록에서 **임원 구성원**을 클릭 합니다.
     
 9. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
-10. **공유 '임원'** **임원**를 입력 하 고 **임원** 그룹을 클릭 한 다음 **공유**를 클릭 합니다.
+10. **' 임원 ' 공유**에 **임원**을 입력 하 고 **임원** 그룹을 클릭 한 다음 **공유**를 클릭 합니다.
     
 11. **사용자 및 그룹** 탭을 닫습니다.
     
-다음으로 모든 사용자가 판매 사이트 모음에 액세스 허용 합니다.
+다음으로, 모든 사용자가 Sales 사이트 모음에 액세스할 수 있도록 허용 합니다.
   
-1. **SharePoint 관리 센터** 탭에서 Sales 사이트 모음의 URL을 복사 하 고 브라우저의 새 탭에 붙여넣습니다.
+1. **SharePoint 관리 센터** 탭에서 Sales 사이트 모음의 URL을 복사 하 여 브라우저의 새 탭에 붙여넣습니다.
     
-2. 오른쪽 위에 있는 설정 아이콘을 클릭 하 고 **공유 대상을**클릭 합니다.
+2. 오른쪽 위에 있는 설정 아이콘을 클릭 한 다음 **공유를**클릭 합니다.
     
-3. **공유 '영업 사이트 모음의'** **고급**을 클릭 합니다.
+3. **공유 ' 판매 사이트 모음 '** 에서 **고급**을 클릭 합니다.
     
-4. SharePoint 그룹의 목록에서 **판매 사이트 모음 구성원을**클릭 합니다.
+4. SharePoint 그룹 목록에서 **판매 사이트 모음 구성원**을 클릭 합니다.
     
 5. **사용자 및 그룹** 페이지에서 **새로 만들기**를 클릭합니다.
     
-6. **'영업 사이트 모음의' 공유** **모든 사용자**를 입력 하 고 **외부 사용자를 제외한 모든**를 클릭 한 다음 **공유**를 클릭 합니다.
+6. **' 판매 사이트 모음 ' 공유**에 **모든 사람**을 입력 하 고 **외부 사용자를 제외한 모든 사람**을 클릭 한 다음 **공유**를 클릭 합니다.
     
-7. 다음은 **Sales 사이트 모음** 및 **SharePoint** 탭을 닫습니다.
+7. **Sales 사이트 모음** 및 **SharePoint** 탭을 닫습니다.
     
-다음으로, 임원 계정을 사용 하 여 로그인 및 임원 사이트 모음에서 문서를 만듭니다.
+다음으로 중역 계정으로 로그인 하 고 임원 사이트 모음에 문서를 만듭니다.
   
-1. **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
+1. **Microsoft Office 홈** 탭의 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
+2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 **다른 계정 사용**을 클릭 합니다.
     
-4. **CEO** 계정 이름 및 해당 암호를 입력 하 고 **로그인**을 클릭 합니다.
+4. **CEO** 계정 이름 및 암호를 입력 하 고 **로그인**을 클릭 합니다.
     
-5. 브라우저의 새 탭에서 임원 사이트 모음에 URL을 입력 합니다 ( **https://**\<조직 이름 >**.sharepoint.com/sites/executives**).
+5. 브라우저의 새 탭에서 임원 사이트 모음 ( **https://**\<조직 name>**. sharepoint.com/sites/executives**)에 대 한 URL을 입력 합니다.
     
-6. **문서**를 클릭 하 고 **새로 만들기** 를 클릭 한 다음 **Word 문서**를 클릭 합니다.
+6. **문서**를 클릭 하 고 **새로 만들기를** 클릭 한 다음 **Word 문서**를 클릭 합니다.
     
-7. 제목 표시줄에서 클릭 하 고 **SensitiveData BeforeIRM**를 입력 합니다.
+7. 제목 표시줄을 클릭 하 고 **SensitiveData-BeforeIRM**를 입력 합니다.
     
-8. 문서 본문에 클릭 하 고 **최신 보드 모임에서 시간 (분)을**입력 한 다음 **경영진**을 클릭 하 고 합니다.
+8. 문서 본문을 클릭 하 고 **최신 보드 회의에서 의사록**을 입력 한 다음 **중역**을 클릭 합니다.
     
-     **문서** 폴더에 **SensitiveData BeforeIRM.docx** 표시 됩니다.
+     **문서** 폴더에 **SensitiveData-BeforeIRM** 가 표시 됩니다.
     
-다음으로 SensitiveData BeforeIRM.docx 문서의 로컬 복사본을 다운로드 하 고 Sales 사이트 모음을 실수로 게시 합니다.
+다음으로, SensitiveData-BeforeIRM의 로컬 복사본을 다운로드 한 후 실수로 판매 사이트 모음에 게시 합니다.
   
-1. 로컬 컴퓨터에서 새 폴더를 만듭니다 (예: c:\\Tlg\\SensitiveDataTestFiles).
+1. 로컬 컴퓨터에서 새 폴더를 만듭니다 (예를 들어, C:\\tlgs\\SensitiveDataTestFiles).
     
-2. 브라우저에서 **문서** 탭에서 **SensitiveData BeforeIRM.docx** 문서를 선택, 있는 줄임표를 클릭 하 고 **다운로드**를 클릭 합니다.
+2. 브라우저의 **문서** 탭에서 **SensitiveData-BeforeIRM** 문서를 선택 하 고 줄임표를 클릭 한 다음 **다운로드**를 클릭 합니다.
     
-3. 1 단계에서 만든 폴더에 **SensitiveData BeforeIRM.docx** 문서를 저장 합니다.
+3. 1 단계에서 만든 폴더에 **SensitiveData-BeforeIRM** 문서를 저장 합니다.
     
-4. 브라우저의 새 탭에서 Sales 사이트 모음에 URL을 입력 합니다 ( **https://**\<조직 이름 >**.sharepoint.com/sites/sales**).
+4. 브라우저의 새 탭에서 Sales site collection ( **https://**\<조직 name>**. sharepoint.com/sites/sales**)의 URL을 입력 합니다.
     
-5. **판매 사이트 모음을 사이트**의 **문서** 폴더를 클릭 합니다.
+5. **Sales 사이트 모음의** **문서** 폴더를 클릭 합니다.
     
-6. **업로드**를 클릭 하 고 1 단계에서 만든 폴더에 **SensitiveData BeforeIRM.docx** 문서를 지정 하 고 **확인**을 클릭 합니다.
+6. **업로드**를 클릭 하 고 1 단계에서 만든 폴더에 **SensitiveData-BeforeIRM** 문서를 지정한 다음 **확인**을 클릭 합니다.
     
-7. **문서** 폴더에 **SensitiveData BeforeIRM.docx** 문서 인지 확인 합니다.
+7. **SensitiveData-BeforeIRM** 문서가 **문서** 폴더에 있는지 확인 합니다.
     
-8. **판매** 및 **SharePoint** 탭을 닫습니다.
+8. **영업** 및 **SharePoint** 탭을 닫습니다.
     
-다음으로 User5로 로그인 한 Sales 사이트 모음에서 SensitiveData BeforeIRM.docx 문서를 열려고 시도 합니다.
+다음에는 User5으로 로그인 하 고 Sales site collection에서 SensitiveData-BeforeIRM 문서를 엽니다.
   
-1. **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
+1. **Microsoft Office 홈** 탭의 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
+2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 **다른 계정 사용**을 클릭 합니다.
     
-4. User5 계정 이름 및 해당 암호를 입력 하 고 **로그인**을 클릭 합니다.
+4. User5 계정 이름 및 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
-5. 브라우저의 새 탭에서 Sales 사이트 모음에 URL을 입력 합니다.
+5. 브라우저의 새 탭에서 판매 사이트 모음의 URL을 입력 합니다.
     
-6. **판매 사이트 모음을 사이트**의 **문서** 폴더를 **SensitiveData BeforeIRM.docx** 문서를 클릭 합니다.
+6. **영업 사이트 모음의** **문서** 폴더에서 **SensitiveData-BeforeIRM** 문서를 클릭 합니다.
     
-    해당 내용을 표시 됩니다.
+    해당 콘텐츠가 표시 됩니다.
     
-7. 다음은 **문서** 및 **판매 사이트 모음** 탭을 닫습니다.
+7. **문서** 및 **판매 사이트 모음** 탭을 닫습니다.
     
-영업 사이트 모음의 SensitiveData BeforeIRM.docx 문서를 실수로 게시, 하 여 CEO 임원 사이트 모음의 사용 권한 보안을 무시 됩니다.
+실수로 영업 사이트 모음에 SensitiveData-BeforeIRM 문서를 게시 하면 CEO가 임원 사이트 모음의 사용 권한 보안을 무시 합니다.
   
-단계 3과 4에 대 한 Office 365를 준비 하려면 SharePoint Online에 대 한 IRM을 사용 하도록 설정 합니다.
+3 ~ 4 단계에 대해 Office 365을 준비 하려면 SharePoint Online에 대해 IRM을 사용 하도록 설정 합니다.
   
-1. **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
+1. **Microsoft Office 홈** 탭의 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
+2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
     
-3. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭 하 고 해당 암호를 입력 한 다음 **로그인**을 클릭 합니다.
+3. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
-4. **Microsoft Office 홈** 탭에서 클릭 **관리 > 관리 센터 > SharePoint**합니다.
+4. **Microsoft Office 홈** 탭에서 **admin > 관리 센터 > SharePoint**를 클릭 합니다.
     
-5. **SharePoint 관리 센터** 탭에서 **설정**을 클릭 합니다.
+5. **SharePoint 관리 센터** 탭에서 **설정을**클릭 합니다.
     
-6. **설정** 페이지의 **정보 권한 관리 (IRM)** 섹션에서 **구성에 지정 된 IRM 서비스를 사용 하 여**를 선택한 다음 **새로고침 IRM 설정**을 선택 합니다.
+6. **설정** 페이지의 **IRM (정보 권한 관리** ) 섹션에서 **구성에 지정 된 IRM 서비스 사용**을 선택 하 고 **IRM 설정 새로 고침**을 선택 합니다.
     
 7. **SharePoint 관리 센터** 탭을 닫습니다.
     
-## <a name="phase-3-use-sharepoint-information-rights-management-with-an-office-365-private-group"></a>Office 365 개인 그룹과 3 단계: 사용 하 여 SharePoint 정보 권한 관리
+## <a name="phase-3-use-sharepoint-information-rights-management-with-an-office-365-private-group"></a>3 단계: Office 365 전용 그룹에서 SharePoint 정보 권한 관리 사용
 
-이 단계에서 열기 권한으로 사이트에 게시 하는 경우에 중요 한 정보를 사용 하 여 문서에 대 한 액세스를 보호 하기 위해 Office 365 개인 그룹과 SharePoint 정보 권한 관리를 사용 합니다.
+이 단계에서는 Office 365 전용 그룹의 SharePoint 정보 권한 관리를 사용 하 여 문서에 대 한 액세스 권한이 열려 있는 사이트에 게시 된 경우에도 해당 정보를 보호 합니다.
   
-첫째, 사용 하도록 설정 및 임원 사이트 모음의 문서 라이브러리에 대 한 IRM을 구성 합니다. 
+먼저, 임원 사이트 모음의 문서 라이브러리에 대해 IRM을 사용 하도록 설정 하 고 구성 합니다. 
   
-1. 브라우저의 새 탭에서 임원 사이트 모음에 URL을 입력 합니다.
+1. 브라우저의 새 탭에서 임원 사이트 모음의 URL을 입력 합니다.
     
 2. **문서**를 클릭합니다.
     
-3. 위 오른쪽에서 설정 아이콘을 클릭 하 고 **라이브러리 설정**을 클릭 합니다.
+3. 오른쪽 위에서 설정 아이콘을 클릭 한 다음 **라이브러리 설정을**클릭 합니다.
     
 4. **설정** 페이지의 **사용 권한 및 관리**에서 **정보 권한 관리**를 클릭 합니다.
     
-5. **정보 권한 관리 설정** 페이지 수행 합니다.
+5. **정보 권한 관리 설정** 페이지에서 다음을 수행 합니다.
     
-  - **다운로드 시이 라이브러리에서 문서에 대 한 사용 권한을 제한**을 선택 합니다.
+  - **다운로드 시이 라이브러리의 문서에 대 한 사용 권한 제한을**선택 합니다.
     
-  - **권한 정책 제목 만들기**대 한 **경영진**을 입력 합니다.
+  - **권한 정책 제목 만들기**에 대해 **임원**을 입력 합니다.
     
-  - **추가 권한 정책 설명**대 한 **중역에 대 한 IRM**을 입력 합니다.
+  - **권한 정책 설명 추가**에 대해 **임원에 IRM**을 입력 합니다.
     
-6. **옵션 표시**를 클릭 합니다.
+6. **옵션 표시**를 클릭합니다.
     
-7. **추가 IRM 라이브러리 설정을**에서 **IRM을 지원 하지 않는 문서를 업로드할 수 없도록 함**을 선택 합니다.
+7. **추가 irm 라이브러리 설정 설정**에서 irm을 **지원 하지 않는 문서를 사용자가 업로드 하도록 허용**안 함을 선택 합니다.
     
-8. **구성 문서 액세스 권한** **허용 뷰어 인쇄** 하 고 **허용 뷰어 다운로드 한 문서의 복사본에 쓸 수**를 선택 합니다.
+8. **문서 액세스 권한 구성**에서 보기 **허용** 을 선택 하 고 **다운로드 한 문서 복사본에 보는 사람이 쓰기**저장을 허용 합니다.
     
-9. **그룹 보호 및 자격 증명 간격 설정**에서 **허용 그룹 보호** 를 선택 하 고 **기본 그룹**에 대 한 **경영진**을 입력 합니다.
+9. **그룹 보호 및 자격 증명 간격 설정**에서 **그룹 보호 허용** 및 **기본 그룹**에 **임원**을 입력 합니다.
     
 10. **확인**을 클릭합니다.
     
-다음으로, CEO 역할을 있습니다 임원 문서 폴더에 새 문서를 업로드, 다운로드, 다음 실수로 Sales 문서 폴더에 업로드 합니다.
+다음으로, CEO 역할을 하 여 임원 문서 폴더에 새 문서를 업로드 하 고 다운로드 한 다음 판매 문서 폴더에 실수로 업로드 합니다.
   
-1. **SensitiveData BeforeIRM.docx** 문서를 저장 하는 로컬 폴더를 엽니다.
+1. **SensitiveData-BeforeIRM** 문서를 저장 한 로컬 폴더를 엽니다.
     
-2. **SensitiveData BeforeIRM.docx**마우스 오른쪽 단추로 클릭 한 다음 **복사**를 클릭 합니다.
+2. **SensitiveData-BeforeIRM**를 마우스 오른쪽 단추로 클릭 한 다음 **복사**를 클릭 합니다.
     
-3. 폴더를 마우스 오른쪽 **붙여넣기**를 클릭 합니다.
+3. 폴더 내에서 마우스 오른쪽 단추를 클릭 하 고 **붙여넣기**를 클릭 합니다.
     
-4. 새 **SensitiveData-BeforeIRM-Copy.docx** 파일을 **SensitiveData AfterIRM.docx**을 바꿉니다.
+4. 새 **SensitiveData** 파일의 이름을 **SensitiveData-AfterIRM**로 바꿉니다.
     
-5. 브라우저에서 **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
+5. 브라우저의 **Microsoft Office 홈** 탭에서 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-6. 이동 [http://portal.office.com](http://portal.office.com)합니다.
+6. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
     
-7. **Office 365 로그인** 페이지에서 CEO 계정 이름을 클릭 하 고 해당 암호를 입력 한 다음 **로그인**을 클릭 합니다.
+7. **Office 365 로그인** 페이지에서 CEO 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
-8. 브라우저의 새 탭에서 임원 사이트 모음에 URL을 입력 합니다.
+8. 브라우저의 새 탭에서 임원 사이트 모음의 URL을 입력 합니다.
     
-9. **문서** 페이지에서 **업로드**를 클릭, 로컬 폴더, **SensitiveData AfterIRM.docx** 문서를 지정 하 고 **열기**를 클릭 합니다.
+9. **문서** 페이지에서 **업로드**를 클릭 하 고 로컬 폴더에 **SensitiveData-AfterIRM** 문서를 지정한 다음 **열기**를 클릭 합니다.
     
-10. **문서** 페이지에서 새 **SensitiveData AfterIRM.docx** 문서를 선택 하 고 메뉴 모음에서 줄임표 (...)를 클릭 한 다음 **다운로드**를 클릭 합니다.
+10. **문서** 페이지에서 새 **SensitiveData-AfterIRM** 문서를 선택 하 고 메뉴 모음에서 줄임표 (...)를 클릭 한 다음 **다운로드**를 클릭 합니다.
     
-11. 대화 상자가 나타나면 원래 버전을 덮어쓰지 로컬 폴더, **SensitiveData AfterIRM.docx** 문서를 저장 합니다.
+11. 메시지가 표시 되 면 로컬 폴더에 **SensitiveData-AfterIRM** 문서를 저장 하 고 원본 버전을 덮어씁니다.
     
 12. **문서** 페이지에 대 한 탭을 닫습니다.
     
-13. 브라우저의 새 탭에서 Sales 사이트 모음에 URL을 입력 합니다.
+13. 브라우저의 새 탭에서 판매 사이트 모음의 URL을 입력 합니다.
     
 14. **문서**를 클릭합니다.
     
-15. **문서** 페이지에서 **업로드**를 클릭, 로컬 폴더, **SensitiveData AfterIRM.docx** 문서를 지정 하 고 **열기**를 클릭 합니다.
+15. **문서** 페이지에서 **업로드**를 클릭 하 고 로컬 폴더에 **SensitiveData-AfterIRM** 문서를 지정한 다음 **열기**를 클릭 합니다.
     
-16. 다음은 **Sales 사이트 모음** 및 **SharePoint** 탭을 닫습니다.
+16. **Sales 사이트 모음** 및 **SharePoint** 탭을 닫습니다.
     
-다음으로 일반 사용자 역할을 하려고 하면 Sales 문서 폴더에 **SensitiveData AfterIRM.docx** 문서에 액세스 합니다.
+다음으로, 일반 사용자 역할을 하 고 영업 문서 폴더의 **SensitiveData-AfterIRM** 문서에 액세스 하려고 합니다.
   
-1. 브라우저에서 **Microsoft Office 홈** 탭에서 위 오른쪽에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
+1. 브라우저의 **Microsoft Office 홈** 탭에서 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. 이동 [http://portal.office.com](http://portal.office.com)합니다.
+2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
     
-3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 해당 암호를 입력 한 다음 **로그인**을 클릭 합니다.
+3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
-4. 브라우저의 새 탭에서 Sales 사이트 모음에 URL을 입력 합니다.
+4. 브라우저의 새 탭에서 판매 사이트 모음의 URL을 입력 합니다.
     
 5. **문서**를 클릭합니다.
     
-6. **문서** 페이지에서 **SensitiveData AfterIRM.docx** 문서를 엽니다.
+6. **문서** 페이지에서 **SensitiveData-AfterIRM** 문서를 엽니다.
     
-    "사과, Word 온라인 정보 권한 관리 (IRM)를 통해 보호 되어 있으므로이 문서를 열 수 없습니다." 되었다는 메시지가 나타나야 합니다. 
+    "죄송 하지만이 문서는 IRM (정보 권한 관리)으로 보호 되어 있어 Word Online에서 열 수 없습니다." 라는 메시지가 표시 됩니다. 
     
-7. **Word에서 편집**을 클릭 합니다. 메시지가 표시 되는 파일을 열 하려는 경우. **예**를 클릭 합니다.
+7. **Word에서 편집을**클릭 합니다. 파일을 열 것인지 묻는 메시지가 표시 됩니다. **예**를 클릭합니다.
     
-8. 로그인 하는 메시지가 User5 계정의 계정 이름을 입력 하 고 **다음**을 클릭 합니다.
+8. 로그인 하 라는 메시지가 표시 됩니다. User5 계정의 계정 이름을 입력 하 고 **다음**을 클릭 합니다.
     
-9. 암호를 제공 하 라는 메시지가 표시 됩니다. User5 계정에 대 한 암호를 입력 한 다음 **로그인**을 클릭 합니다. 
+9. 암호를 입력 하 라는 메시지가 표시 됩니다. User5 계정의 암호를 입력 하 고 **로그인**을 클릭 합니다. 
     
-    확인할 수는 없다는 메시지: "없는이 문서를 열 수 있도록 하는 자격 증명입니다."
+    "이 문서를 열 수 있는 자격 증명을가지고 있지 않습니다." 라는 메시지가 표시 됩니다.
     
 10. **아니요**를 클릭 합니다.
     
-IRM 보호를 참조 하는 다른 방법은 로컬 폴더에 파일에서 확인 하는 것입니다. **SensitiveData AfterIRM.docx** **SensitiveData BeforeIRM.docx** 파일 보다 훨씬 더 큰 있어야 합니다. **SensitiveData AfterIRM.docx** 파일은 암호화 및 IRM 보호 정보를 사용 하 여 추가 합니다.
+IRM 보호를 확인 하는 또 다른 방법은 로컬 폴더의 파일을 확인 하는 것입니다. **SensitiveData-AfterIRM** 는 **SensitiveData-BeforeIRM** 파일 보다 훨씬 커야 합니다. **SensitiveData-AfterIRM** 파일은 암호화 되며 IRM 보호 정보가 추가 됩니다.
   
 ## <a name="see-also"></a>참고 항목
 

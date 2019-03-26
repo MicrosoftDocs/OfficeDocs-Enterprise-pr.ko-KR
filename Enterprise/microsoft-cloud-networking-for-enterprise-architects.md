@@ -3,7 +3,7 @@ title: Microsoft Cloud Networking for Enterprise Architects
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: '요약: Microsoft 클라우드 서비스 및 플랫폼에 맞게 네트워킹을 디자인합니다.'
-ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 6b224ce2db0d247c553428a2e4bfd6ba475fc89a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123355"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573902"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking for Enterprise Architects
 
@@ -63,8 +63,6 @@ ms.locfileid: "27123355"
     
     서브넷, 주소 공간, 라우팅, DNS, 부하 분산을 비롯한 서버 기반 IT 워크로드를 호스트하기 위한 최적의 Azure Virtual Network(VNet)와 온-프레미스 네트워크, 기타 VNet 및 인터넷에 대한 연결을 만들기 위한 디자인 프로세스를 안내합니다.
     
-이 포스터의 핵심 포인트에 대한 30분 요약은 [Microsoft 클라우드 제품에 대한 네트워크 최적화](https://mva.microsoft.com/ko-KR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy 코스를 참조하세요.
-  
 > [!NOTE]
 > 이러한 문서에는 Microsoft Cloud Networking for Enterprise Architects의 **2018년 12월** 릴리스가 포함되어 있습니다.
   

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: '요약: Azure의 가상 머신에 Azure AD Connect를 배포하여 온-프레미스 디렉터리 및 Office 365 구독의 Azure 테넌트 간에 계정을 동기화합니다.'
-ms.openlocfilehash: c2aba481f789e52d027ccd8f5a91217e825ed8bf
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 4b248dd0a5f6fc775fca322b696703545a1ef465
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25976704"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574032"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure에서 Office 365 디렉터리 동기화 배포
 
@@ -119,9 +119,11 @@ Azure의 가상 머신에 Azure AD Connect를 배포하는 과정은 다음 세 
 - 3단계: Azure AD Connect 설치 및 구성
     
 배포 후 Office 365에서 새 사용자 계정에 위치 및 라이선스를 할당해야 합니다.
-  
+
+<!--  
 > [!TIP]
-> [Azure Deployment Kit의 디렉터리 동기화 서버](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)에는 이 솔루션을 빌드하기 위한 모든 Azure PowerShell 블록, Microsoft PowerPoint 및 Visio 형식 다이어그램, 설정에 맞게 사용자 지정된 Azure PowerShell 명령 블록을 생성하는 Microsoft Excel 구성 통합 문서가 포함되어 있습니다.
+> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
+-->
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>1단계: Azure Virtual Network 만들기 및 구성
 
@@ -176,7 +178,7 @@ Azure AD Connect가 인터넷 리소스에 액세스할 수 있게 하려면 온
 
 Azure AD Connect는 온-프레미스 Windows Server AD에서 Office 365 구독에 계정을 추가하지만, 사용자가 Office 365에 로그인하고 해당 서비스를 사용하려면 계정의 위치 및 라이선스를 구성해야 합니다. 다음 단계에 따라 해당 사용자 계정에 대한 위치를 추가하고 라이선스를 활성화하세요.
   
-1. [Office 365 포털 페이지](https://portal.office.com)에 로그인한 다음 **관리자**를 클릭합니다.
+1. [Office 365 포털 페이지](https://www.office.com)에 로그인한 다음 **관리자**를 클릭합니다.
     
 2. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
@@ -200,7 +202,8 @@ Azure AD Connect는 온-프레미스 Windows Server AD에서 Office 365 구독�
   
 [Office 365의 디렉터리 동기화 설정](set-up-directory-synchronization.md)
   
-[Azure Deployment Kit의 디렉터리 동기화 서버](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
-
+<!--
+[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+-->
 
 
