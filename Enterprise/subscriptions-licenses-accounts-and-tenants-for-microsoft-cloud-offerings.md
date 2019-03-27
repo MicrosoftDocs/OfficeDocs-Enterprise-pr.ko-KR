@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897321"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574052"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 
@@ -145,14 +145,14 @@ Microsoft 클라우드 제품 간의 ID 통합에 대한 자세한 내용은 [Mi
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |해당 없음  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |Office 365 포털에서 조직에 Intune/EMS 구독을 추가합니다.  <br/> |Office 365 포털에서 조직에 Dynamics 365 구독을 추가합니다.  <br/> |
+|**Office 365** <br/> |해당 없음  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |Microsoft 365 관리 센터에서 조직에 Intune/EMS 구독을 추가합니다.  <br/> |Microsoft 365 관리 센터에서 조직에 Dynamics 365 구독을 추가합니다.  <br/> |
 |**Azure** <br/> |조직에 Office 365 구독을 추가합니다.  <br/> |해당 없음  <br/> |조직에 Intune/EMS 구독을 추가합니다.  <br/> |조직에 Dynamics 365 구독을 추가합니다.  <br/> |
 |**Intune/EMS** <br/> |조직에 Office 365 구독을 추가합니다.  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |해당 없음  <br/> |조직에 Dynamics 365 구독을 추가합니다.  <br/> |
 |**Dynamics 365** <br/> |조직에 Office 365 구독을 추가합니다.  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |조직에 Intune/EMS 구독을 추가합니다.  <br/> |해당 없음  <br/> |
    
 Office 365 관리 센터를 사용하면 Microsoft SaaS 기반 서비스를 위해 조직에 구독을 쉽게 추가할 수 있습니다.
   
-1. 전역 관리자 계정을 사용하여 Office 365 포털([https://portal.office.com](https://portal.office.com))에 로그인하고 **관리자**를 클릭합니다.
+1. 글로벌 관리자 계정을 사용하여 Microsoft 365 관리 센터([https://admin.microsoft.com](https://admin.microsoft.com))에 로그인합니다.
     
 2. **관리 센터** 홈페이지의 왼쪽 탐색 창에서 **청구**를 클릭하고 **서비스 구매**를 클릭합니다.
     
