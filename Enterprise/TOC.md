@@ -100,7 +100,6 @@
 #### [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
 #### [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
 #### [Office 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
-
 ## 구독 설정
 ### [디렉터리 동기화를 통해 사용자를 Office 365에 프로비전하기 위한 준비](prepare-for-directory-synchronization.md)
 ### [IdFix 도구를 사용하여 Office 365와의 동기화를 위한 디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md)
@@ -125,18 +124,27 @@
 ### [비즈니스용 Skype 클라이언트 배포](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [모바일 앱 배포 및 관리](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 ## [사용자 교육](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
-## Multi-geo
-### [비즈니스용 OneDrive Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
-#### [비즈니스용 OneDrive Multi-Geo 계획](plan-for-multi-geo.md)
-#### [다중 위치 환경 관리](administering-a-multi-geo-environment.md)
-##### [지역 관리자 추가 또는 제거](add-a-sharepoint-geo-admin.md)
-##### [지리적 위치 삭제](delete-a-geo-location.md)
-##### [다중 위치 환경의 사용자 작업 환경](multi-geo-user-experience.md)
-#### [비즈니스용 OneDrive Multi-Geo 구성](multi-geo-tenant-configuration.md)
-##### [기본 설정 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [비즈니스용 OneDrive Multi-Geo 검색 구성](configure-search-for-multi-geo.md)
-#### [OneDrive 라이브러리를 다른 지리적 위치로 이동](move-onedrive-between-geo-locations.md)
-### [Exchange Online에서 Multi-Geo 기능](multi-geo-capabilities-in-exchange-online.md)
+
+## [Office 365 Multi-Geo](office-365-multi-geo.md)
+### [OneDrive 및 SharePoint Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+### [Exchange Multi-Geo](multi-geo-capabilities-in-exchange-online.md)
+### [Multi-Geo 플랜](plan-for-multi-geo.md)
+#### [관리 환경](administering-a-multi-geo-environment.md)
+#### [Multi-Geo 환경의 사용자 작업 환경](multi-geo-user-experience.md)
+### [Multi-Geo 구성](multi-geo-tenant-configuration.md)
+#### [기본 설정 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+#### [검색 구성](configure-search-for-multi-geo.md)
+### Multi-Geo 환경 관리
+#### [SharePoint 할당량 관리](sharepoint-multi-geo-storage-quota.md)
+#### [OneDrive 사이트 이동](move-onedrive-between-geo-locations.md)
+#### [SharePoint 사이트 이동](move-sharepoint-between-geo-locations.md).
+#### [지역 관리자 추가 또는 제거](add-a-sharepoint-geo-admin.md)
+#### [지리적 위치로 콘텐츠 제한](restrict-content-to-geo-location.md)
+#### [Office 365 Multi-Geo eDiscovery 구성](multi-geo-ediscovery-configuration.md)
+#### [특정 PDL로 그룹 만들기](multi-geo-add-group-with-pdl.md)
+#### [지리적 위치 삭제](delete-a-geo-location.md)
+#### [Exchange Multi-Geo 관리](administering-exchange-online-multi-geo.md)
+
 ## [새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
 ### [데이터 이동을 요청하는 방법](request-your-data-move.md)
 ### [데이터 이동 도중 및 이후](during-and-after-your-data-move.md)
