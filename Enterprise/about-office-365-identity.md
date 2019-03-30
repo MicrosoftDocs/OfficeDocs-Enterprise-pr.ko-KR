@@ -1,5 +1,5 @@
 ---
-title: Office 365 id 및 Azure Active Directory 이해
+title: Office 365 ID 및 Azure Active Directory 이해
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372895"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001561"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 id 및 Azure Active Directory 이해
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 ID 및 Azure Active Directory 이해
 
 Office 365에서는 클라우드 기반 사용자 id 및 인증 서비스 azure Active Directory (azure AD)를 사용 하 여 사용자를 관리 합니다. 온-프레미스 조직과 Office 365 간에 id 관리를 구성 하는 방법을 선택 하는 것은 클라우드 인프라의 기초 중 하나입니다. 나중에이 구성을 변경 하기가 어려울 수 있으므로 조직의 요구에 가장 적합 한 작업을 결정 하는 옵션을 신중 하 게 고려해 야 합니다. Office 365에서 두 가지 기본 인증 모델을 선택 하 여 사용자 계정을 설정 및 관리할 수 있습니다. **클라우드 인증** 및 **페더레이션 인증**
   
@@ -37,7 +37,7 @@ Office 365에서는 클라우드 기반 사용자 id 및 인증 서비스 azure 
   
 ### <a name="cloud-only"></a>클라우드 전용
 
-클라우드 전용 모델을 사용 하는 경우에는 Office 365 에서만 사용자 계정을 관리할 수 있습니다. 온-프레미스 서버가 필요 하지 않습니다. 이 클라우드는 Azure AD에 의해 클라우드에서 모두 처리 됩니다. Office 365 관리 센터에서 또는 Windows PowerShell [PowerShell cmdlet](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) 을 사용 하 여 사용자를 만들고 관리 하는 경우 Azure AD가 클라우드에서 완전히 처리 합니다. 일반적으로 다음과 같은 경우에는 클라우드 전용 모델을 사용 하는 것이 좋습니다. 
+클라우드 전용 모델을 사용 하는 경우에는 Office 365 에서만 사용자 계정을 관리할 수 있습니다. 온-프레미스 서버가 필요 하지 않습니다. 이 클라우드는 Azure AD에 의해 클라우드에서 모두 처리 됩니다. [Microsoft 365 관리 센터](https://admin.microsoft.com) 에서 또는 Windows PowerShell [PowerShell cmdlet](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) 을 사용 하 여 사용자를 만들고 관리 하는 경우 Azure AD가 클라우드에서 완전히 처리 합니다. 일반적으로 다음과 같은 경우에는 클라우드 전용 모델을 사용 하는 것이 좋습니다. 
   
 - 다른 온-프레미스 사용자 디렉터리는 없습니다.
     

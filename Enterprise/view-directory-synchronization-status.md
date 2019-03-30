@@ -3,7 +3,6 @@ title: Office 365에서 디렉터리 동기화 상태 보기
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,20 +17,22 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 디렉터리 동기화를 비활성화 하는 방법에 대해 알아보세요. 또한 해당 상태를 볼 수 있습니다.
-ms.openlocfilehash: 4803cbadd17dbc1ee23d019f39144ff1ffaefd9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085057"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001571"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Office 365에서 디렉터리 동기화 상태 보기
+
 온-프레미스 환경을 Office 365와 동기화 하 여 온-프레미스 Active Directory를 Azure AD와 통합 한 경우에도 동기화 상태를 확인할 수 있습니다.
   
 ## <a name="view-directory-synchronization-status"></a>디렉터리 동기화 상태 보기
-- Office 365 관리 센터에 로그인 하 고 홈 페이지에서 **DirSync 상태** 를 선택 합니다. 
+
+- [Microsoft 365 관리 센터](https://admin.microsoft.com) 에 로그인 하 고 홈 페이지에서 **DirSync 상태** 를 선택 합니다.
 - 또는 **사용자** \> **활성 사용자**로 이동 하 여 **활성 사용자** 페이지에서 **더 많은** \> **디렉터리 동기화**를 선택 합니다. **디렉터리 동기화** 창에서 **DirSync 관리로 이동을**선택 합니다.
-    
+
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>디렉터리 동기화 관리 페이지에 대 한 정보
 
 다음 표에서는 페이지에 대 한 정보를 얻을 수 있는 기능을 보여 줍니다.

@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 지원 서비스를 호출 하기 전에 Office 365 서비스의 상태를 확인 하 여 활성 서비스가 중단 되었는지 확인 합니다.
-ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085297"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001581"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Office 365 서비스 상태를 확인하는 방법
 
-관리 센터의 office 365 **서비스 상태** 페이지에서 office 365, Yammer, microsoft Dynamics CRM 및 microsoft Intune 클라우드 서비스의 상태를 볼 수 있습니다. 클라우드 서비스에 문제가 발생 하는 경우 서비스 상태를 확인 하 여 지원 또는 시간 문제 해결을 호출 하기 전에 진행 중인 해결 방법에 알려진 문제가 있는지 확인할 수 있습니다. 
+[microsoft 365 관리 센터](https://admin.microsoft.com)의 office 365 **서비스 상태** 페이지에서 office 365, Yammer, microsoft Dynamics CRM 및 microsoft Intune 클라우드 서비스의 상태를 볼 수 있습니다. 클라우드 서비스와 관련된 문제가 발생한 경우 지원 서비스에 문의하거나 문제 해결에 시간을 소비하기 전에 먼저 서비스 상태를 확인하여 이 문제가 현재 해결이 진행 중인 상태인 알려진 문제인지 확인할 수 있습니다. 
 
 서비스 포털에 로그인 할 수 없는 경우 [서비스 상태 페이지](https://status.office365.com) 를 사용 하 여 테 넌 트에 로그인 하지 못하도록 하는 알려진 문제를 확인할 수 있습니다.
   
@@ -43,7 +43,7 @@ ms.locfileid: "30085297"
     > [!NOTE]
     > 전역 관리자 또는 서비스 관리자 역할이 할당된 사용자는 서비스 상태를 볼 수 있습니다. Exchange, SharePoint 및 비즈니스용 Skype 관리자가 서비스 상태를 볼 수 있도록 하려면 이러한 관리자에게도 서비스 관리자 역할을 할당해야 합니다.
   
-2. 서비스 상태를 열려면 관리 센터에서 **상태** > **서비스 상태**를 이동 하거나 **홈 대시보드에서** **서비스 상태 카드** 를 클릭 합니다. 대시보드 카드에는 활성 서비스 문제가 있는지와 자세한 서비스 상태 페이지에 대 한 링크가 표시 됩니다.
+2. 서비스 상태를 열려면 관리 센터에서 **상태** > **서비스 상태**를 이동 하거나 **홈 대시보드에서** **서비스 상태 카드** 를 클릭 합니다. 대시보드 카드에는 활성 서비스 문제가 있는지와 자세한 서비스 상태 페이지에 대한 링크가 표시됩니다.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -54,7 +54,7 @@ ms.locfileid: "30085297"
   
 ### <a name="view-details-of-posted-service-health"></a>게시된 서비스 상태의 세부 정보 보기
 
-기본 보기에서는 모든 서비스와 해당 현재 상태가 표시 됩니다. 현재 인시던트가 발생 하는 서비스에 대 한 보기를 필터링 하려면 왼쪽의 음영 막대에서 **인시던트** 를 선택 합니다. **권고** 를 선택 하면 현재 권고가 게시 된 서비스만 표시 됩니다. **모든 서비스** 보기에서 표시 된 서비스 상태를 클릭 하면 권고 또는 인시던트의 요약 보기가 열립니다. 
+기본 보기에서는 모든 서비스와 해당 현재 상태가 표시됩니다. 현재 인시던트가 발생 하는 서비스에 대 한 보기를 필터링 하려면 왼쪽의 음영 막대에서 **인시던트** 를 선택 합니다. **권고** 를 선택 하면 현재 권고가 게시 된 서비스만 표시 됩니다. **모든 서비스** 보기에서 표시 된 서비스 상태를 클릭 하면 권고 또는 인시던트의 요약 보기가 열립니다. 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
@@ -111,7 +111,7 @@ ms.locfileid: "30085297"
    
 ## <a name="history"></a>기록
 
-서비스 상태를 통해 현재 상태를 확인 하 고 최근 30 일 이내에 테 넌 트에 영향을 준 모든 서비스 권고 및 인시던트 기록을 볼 수 있습니다. 모든 서비스의 이전 상태를 보려면 **서비스 상태** 페이지에서 **기록 보기** 를 선택 합니다. 
+서비스 상태를 통해 현재 상태를 확인 하 고 최근 30 일 이내에 테 넌 트에 영향을 준 모든 서비스 권고 및 인시던트 기록을 볼 수 있습니다. 모든 서비스의 과거 상태를 보려면 **서비스 상태** 페이지에서 **기록 보기**를 선택합니다. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -119,7 +119,7 @@ ms.locfileid: "30085297"
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-지난 7 일간 또는 지난 30 일간의 상태 기록을 볼 수 있습니다. 해당 문제에 대 한 자세한 내용을 보려면 행을 선택 합니다.
+지난 7일간 또는 지난 30일간의 상태 기록을 볼 수 있습니다. 해당 문제에 대 한 자세한 내용을 보려면 행을 선택 합니다.
   
 가동 시간에 대 한 자세한 내용은 [Office 365의 투명 작업](https://go.microsoft.com/fwlink/?linkid=848695)을 참조 하세요.
   
@@ -127,9 +127,6 @@ ms.locfileid: "30085297"
 
 Microsoft의 목표는 진행 중인 문제에 대해 고객에게 제공하는 정보가 시기적절하고 정확하며 유용하도록 하는 것입니다. Microsoft에 대해 평가하려면 별 등급을 선택하세요. 별 1~5개 등급으로 점수를 입력하면 특정 세부 정보에 대한 사용자 의견을 남길 수 있습니다. Microsoft에서는 사용자 의견을 사용하여 서비스 상태 시스템을 세밀하게 조정합니다.
   
-![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
-  
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 관리 센터의 활동 보고서](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
+[Microsoft 365 관리 센터의 활동 보고서](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

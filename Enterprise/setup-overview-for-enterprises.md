@@ -3,11 +3,10 @@ title: 조직을 위해 Office 365 Enterprise 배포
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 다음 개요 단계는 Office 365를 배포하고 Active Directory를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
-ms.openlocfilehash: 76421a7870358e48798f21866d69672509084c6a
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303602"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004409"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>조직을 위해 Office 365 Enterprise 배포
 온 - 프레미스 인프라와 함께 Office 365 Enterprise를 배포하고 통합할 준비가 되셨나요? 다음 개요 단계는 디렉토리를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
