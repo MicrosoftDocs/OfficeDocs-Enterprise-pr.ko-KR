@@ -143,6 +143,7 @@
 #### [Office 365 Multi-Geo eDiscovery 구성](multi-geo-ediscovery-configuration.md)
 #### [특정 PDL로 그룹 만들기](multi-geo-add-group-with-pdl.md)
 #### [지리적 위치 삭제](delete-a-geo-location.md)
+#### [위성 지리적 위치에서 SharePoint Multi-Geo 사용](enabling-SP-multigeo-satellite-geolocation.md)
 #### [Exchange Multi-Geo 관리](administering-exchange-online-multi-geo.md)
 
 ## [새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
