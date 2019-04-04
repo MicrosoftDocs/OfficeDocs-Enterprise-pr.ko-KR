@@ -3,7 +3,7 @@ title: sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(C
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039505"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396926"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -288,7 +288,7 @@ _excludeifnoscriptdisabled_ 속성은 사이트 수준 _noscript_ 특성 설정�
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-_path_ 값은 자산이 포함 된 라이브러리 또는 폴더의 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다. 원본 URL 앞에는 와일드 카드를 지원 합니다. 이를 통해 여러 사이트에 걸쳐 있는 원본을 만들 수 있습니다. 예를 들어 모든 사이트에 대 한 masterpages 폴더의 모든 자산을 CDN 내의 공용 근원으로 포함 하려면 다음 명령을 입력 합니다.
+_path_ 값은 자산이 포함 된 라이브러리 또는 폴더에 대 한 상대 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다. 원본 URL 앞에는 와일드 카드를 지원 합니다. 이를 통해 여러 사이트에 걸쳐 있는 원본을 만들 수 있습니다. 예를 들어 모든 사이트에 대 한 masterpages 폴더의 모든 자산을 CDN 내의 공용 근원으로 포함 하려면 다음 명령을 입력 합니다.
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - 와일드 카드 수정자 ***/** 는 경로의 시작 부분 에서만 사용할 수 있으며 지정 된 url의 모든 URL 세그먼트와 일치 합니다.
 - 경로는 문서 라이브러리, 폴더 또는 사이트를 가리킬 수 있습니다. 예를 들어 경로 _*/site1_ 은 사이트 아래의 모든 문서 라이브러리와 일치 합니다.
 
-상대 경로 또는 전체 경로를 사용 하 여 특정 경로를 갖는 원점을 추가할 수 있습니다.
+특정 상대 경로를 사용 하 여 원본을 추가할 수 있습니다. 전체 경로를 사용 하 여 원점을 추가할 수는 없습니다.
 
-이 예제에서는 상대 경로를 사용 하 여 특정 사이트에 siteassets 라이브러리의 비공개 원본을 추가 합니다.
+이 예제에서는 특정 사이트에 siteassets 라이브러리의 개인 출처를 추가 합니다.
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-이 예제에서는 전체 경로를 사용 하 여 사이트 모음의 사이트 자산 라이브러리에 _folder1_ 폴더의 개인 출처를 추가 합니다.
+이 예제에서는 사이트 모음의 사이트 자산 라이브러리에 _folder1_ 폴더의 개인 출처를 추가 합니다.
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.
@@ -469,7 +469,7 @@ Office 365 CDN을 사용 하도록 설정 하는 경우 기본적으로 프로 �
 
 ### <a name="add-an-office-365-cdn-origin"></a>Office 365 CDN 원본 추가
 
-> [!NOTE]
+> [!IMPORTANT]
 > 조직에 중요 한 것으로 간주 되는 리소스를 공공 근원으로 구성 된 SharePoint 문서 라이브러리에 배치 해서는 안 됩니다.
 
 [spo cdn 원본 add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) 명령을 사용 하 여 cdn 원본을 정의 합니다. 여러 원본을 정의할 수 있습니다. 원점은 CDN에서 호스팅할 자산이 포함 된 SharePoint 라이브러리 또는 폴더를 가리키는 URL입니다.
@@ -478,7 +478,7 @@ Office 365 CDN을 사용 하도록 설정 하는 경우 기본적으로 프로 �
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-여기서 `path` 은 자산이 포함 된 폴더의 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다.
+여기서 `path` 은 자산이 포함 된 폴더에 대 한 상대 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다.
 
 모든 사이트의 **마스터 페이지 갤러리** 에 있는 모든 자산을 공용 원점으로 포함 하려면 다음을 실행 합니다.
 
