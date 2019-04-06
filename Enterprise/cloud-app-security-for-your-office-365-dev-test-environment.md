@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '요약: office 365 개발/테스트 환경에서 office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
-ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573682"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038042"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
@@ -41,7 +41,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
 시뮬레이트된 엔터프라이즈에서 Cloud App Security를 테스트 하려면 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따르세요.
   
 > [!NOTE]
-> 클라우드 앱 보안을 테스트 하는 경우 Windows Server AD 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지는 않습니다. 클라우드 앱 보안을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
+> 클라우드 앱 보안을 테스트 하는 경우 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 클라우드 앱 보안을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>2 단계: Cloud App Security를 사용 하도록 설정 하 고 정책을 만들기 전
 
@@ -57,7 +57,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
     
 2. 기본 포털 페이지에서 **관리자**를 클릭합니다.
     
-3. 	왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
+3. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
 4. **User 4** 계정을 클릭합니다.
     
@@ -123,7 +123,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
     
 7. 관리자 연락처 정보를 업데이트하라는 메시지가 표시되면 필요한 경우 **취소**를 클릭합니다.
     
-8. 기본 포탈 페이지에서 **관리자**를 클릭합니다.
+8. 기본 포털 페이지에서 **관리자**를 클릭합니다.
     
 9. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     

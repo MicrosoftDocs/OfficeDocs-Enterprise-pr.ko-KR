@@ -3,7 +3,7 @@ title: Office 365 개발/테스트 환경용 중요 파일 보호
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '요약: 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 Office 365 정보 권한 관리가 중요 한 파일을 보호 하는 방법을 구성 하 고 설명 합니다.'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574072"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037972"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 
@@ -232,7 +232,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 5. **SharePoint 관리 센터** 탭에서 **설정을**클릭 합니다.
     
-6. **설정** 페이지의 **IRM (정보 권한 관리** ) 섹션에서 **구성에 지정 된 IRM 서비스 사용**을 선택 하 고 **IRM 설정 새로 고침**을 선택 합니다.
+6. 페이지의 **IRM (정보 권한 관리** ) 섹션에서 **구성에 지정 된 IRM 서비스 사용**을 선택 하 고 **IRM 설정 새로 고침**을 선택 합니다.
     
 7. **SharePoint 관리 센터** 탭을 닫습니다.
     
@@ -264,7 +264,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. **문서 액세스 권한 구성**에서 보기 **허용** 을 선택 하 고 **다운로드 한 문서 복사본에 보는 사람이 쓰기**저장을 허용 합니다.
     
-9. **그룹 보호 및 자격 증명 간격 설정**에서 **그룹 보호 허용** 및 **기본 그룹**에 **임원**을 입력 합니다.
+9. **그룹 보호 및 자격 증명 간격 설정**에서 **그룹 보호 허용을 선택 합니다. 기본 그룹**을 선택한 다음 **임원**을 입력 합니다.
     
 10. **확인**을 클릭합니다.
     

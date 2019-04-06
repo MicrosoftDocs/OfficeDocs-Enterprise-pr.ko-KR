@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '요약: Office 365 개발/테스트 환경의 샘플 데이터로 Office 365 고급 eDiscovery를 구성하고 보여 줍니다.'
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573822"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038022"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 고급 eDiscovery
 
@@ -39,7 +39,7 @@ office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
 시뮬레이트된 엔터프라이즈에서 고급 eDiscovery를 테스트 하려면 [Office 365 개발/테스트 환경에 대 한 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따르세요.
   
 > [!NOTE]
-> 고급 eDiscovery를 테스트 하는 경우에는 Windows Server AD 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 환경이 필요 하지 않습니다. 일반적인 조직을 나타내는 환경에서 테스트 및 시험을 수행할 수 있도록 여기에 옵션으로 제공 됩니다. 
+> 고급 eDiscovery를 테스트 하는 경우에는 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 환경이 필요 하지 않습니다. 일반적인 조직을 나타내는 환경에서 테스트 및 시험을 수행할 수 있도록 여기에 옵션으로 제공 됩니다. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>2단계: 고급 eDiscovery의 예제 데이터 만들기
 

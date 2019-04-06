@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: '요약: 이 테스트 랩 가이드를 사용하여 Office 365 평가판 구독에서 Exchange Online용 Dynamic 365 통합을 사용하도록 설정할 수 있습니다.'
-ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 47153f9321284d0bb30f59645dfe56ab40cb7982
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574022"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038002"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 및 Dynamics 365 개발/테스트 환경을 위한 Exchange Online 통합
 
@@ -36,7 +36,7 @@ Dynamics 365의 전자 메일 및 기타 메시징 레코드를 저장하려면 
 [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)의 지침을 사용하여 Office 365 및 Dynamics 365 개발/테스트 환경의 경량 또는 시뮬레이트된 엔터프라이즈 버전 중 하나를 만들 수 있습니다.
   
 > [!NOTE]
-> 이 문서의 구성에는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요하지 않습니다. 해당 환경에는 Windows Server Active Directory(AD) 포리스트의 디렉터리 동기화 및 인터넷에 연결된 시뮬레이트된 인트라넷이 포함되어 있습니다. 여기서는 옵션으로 제공되므로 일반적인 조직을 나타내는 환경에서 Office 365 및 Dynamics 365를 실험할 수 있습니다. 
+> 이 문서에서 설명 하는 구성에는 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 이 기능은 일반적인 조직을 나타내는 환경에서 Office 365 및 Dynamics 365을 사용해 볼 수 있도록 여기에 제공 됩니다. 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>2단계: Exchange Online에서 Dynamics 365 통합 구성 및 설명
 

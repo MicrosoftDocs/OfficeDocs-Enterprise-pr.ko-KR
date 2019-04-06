@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365에서 발생 하는 디렉터리 동기화 문제의 일반적인 원인에 대해 설명 하 고 이러한 문제를 해결 하는 데 도움이 되는 몇 가지 방법을 제공 합니다.
-ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085397"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001841"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365의 디렉터리 동기화 문제 해결
 
@@ -30,7 +30,7 @@ ms.locfileid: "30085397"
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>무엇이 잘못 되었는지 어떻게 알 수 있나요?
 
-무언가가 잘못 되었음을 나타내는 첫 번째 방법은 Office 365 관리 센터의 DirSync 상태 타일이 문제가 있음을 나타낼 때입니다.
+무언가가 잘못 되었음을 나타내는 첫 번째 방법은 Microsoft 365 관리 센터의 DirSync 상태 타일이 문제가 있음을 나타낼 때입니다.
   
 ![관리 센터 미리 보기의 DirSync 상태 타일](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
@@ -38,13 +38,9 @@ ms.locfileid: "30085397"
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Connect 도구를 가져오려면 어떻게 해야 합니까?
 
-Office 365 관리 센터에서 * * 사용자 * * \> **활성 사용자**로 이동 합니다. **기타** 메뉴를 클릭 하 고 **디렉터리 동기화**를 선택 합니다. 
+[Microsoft 365 관리 센터](https://admin.microsoft.com)에서 * * 사용자 * * \> **활성 사용자**로 이동 합니다. **기타** 메뉴를 클릭 하 고 **디렉터리 동기화**를 선택 합니다. 
   
 ![기타 메뉴에서 디렉터리 동기화를 선택 합니다.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
-  
-이전 Office 365 관리 센터에서 **사용자** \> **활성 사용자**로 이동한 후 **active Directory 동기화**옆에 있는 **설정을** 선택 합니다. 
-  
-![Active Directory 동기화 옆에 있는 설정 선택](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
 [마법사의 지침](set-up-directory-synchronization.md) 에 따라 Azure AD Connect를 다운로드 합니다. 
   
@@ -58,25 +54,25 @@ azure Active Directory 동기화에서 azure AD Connect로의 연결을 업데�
 
 - [id 동기화 및 중복 특성 복구](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Office 365 관리 센터에 경고가 있거나 최근 동기화 이벤트가 없는 자동 전자 메일을 받는 경우**
+### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**관리 센터에 경고가 있거나 최근 동기화 이벤트가 없는 자동 전자 메일을 받는 경우**
 - [Azure AD Connect와의 연결 문제 해결](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD Connect 계정 및 사용 권한](https://go.microsoft.com/fwlink/p/?LinkId=820598)
 - [azure ad Connect 동기화: azure ad 서비스 계정을 관리 하는 방법](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Azure Active directory에 대 한 디렉터리 동기화가 중지 되거나 동기화가 하루 이상 등록 되지 않았다는 경고가 표시 됨](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**암호 해시가 동기화 되지 않거나 최근 암호 해시 동기화가 아직 없는 경우 Office 365 관리 센터에 경고가 표시 됨**
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**암호 해시가 동기화 되지 않거나 최근 암호 해시 동기화가 아직 없는 경우 관리 센터에서 경고가 표시 됨**
 - [Azure AD Connect 동기화를 사용 하 여 암호 해시 동기화 구현](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**개체 할당량이 초과 되었음을 알리는 경고가 표시 됨**
 - 서비스를 보호 하는 데 도움이 되는 기본 제공 개체 할당량이 있습니다. 디렉터리에 Office 365와 동기화 해야 하는 개체가 너무 많은 경우에는 [비즈니스 제품 지원에 문의](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) 하 여 할당량을 늘려야 합니다.
 
-### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**동기화되는 특성을 확인해야 함**
+### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**동기화 되는 특성을 확인 해야 합니다.**
 - 온-프레미스와 클라우드 간에 동기화 되는 모든 특성의 목록을 [여기](https://go.microsoft.com/fwlink/p/?LinkId=396719)에서 확인할 수 있습니다.
 
 ### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**클라우드와 동기화 된 개체를 관리 하거나 제거할 수 없습니다.**
 - 클라우드에서만 개체를 관리할 준비가 되셨습니까? 또는 온-프레미스에서 삭제 되었지만 클라우드에서는 개체가 없습니까? 이러한 문제를 해결 하는 방법에 대 한 지침은 동기화 및 [지원 문서](https://go.microsoft.com/fwlink/p/?LinkId=396720) 에서이 [문제 해결 오류](https://go.microsoft.com/fwlink/p/?linkid=842044) 를 참조 하세요.
 
-### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**회사에서 동기화할 수 있는 개체 수가 초과되었다는 오류 메시지가 표시됨**
+### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**회사에서 동기화 할 수 있는 개체 수가 초과 되었다는 오류 메시지가 표시 됨**
 - [여기](https://go.microsoft.com/fwlink/p/?LinkId=396721)에서이 문제에 대 한 자세한 내용을 확인할 수 있습니다.
    
 ## <a name="other-resources"></a>기타 리소스
