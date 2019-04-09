@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '요약: Microsoft Azure에서 개발/테스트 환경으로 간소화된 인트라넷을 만듭니다.'
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948619"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037982"
 ---
 # <a name="base-configuration-devtest-environment"></a>기본 구성 개발/테스트 환경
 
@@ -121,10 +121,8 @@ Azure 구독이 아직 없으면 [Azure 평가](https://azure.microsoft.com/pric
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일을 가져오려면 [여기](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d)를 클릭합니다.
 
 다음 명령을 사용하여 구독 이름을 가져옵니다.
   
@@ -173,7 +171,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPre
   
 ### <a name="step-2-configure-dc1"></a>2단계: DC1 구성
 
-이 단계에서는 DC1 가상 머신을 만들고 Windows Server AD(Active Directory) 도메인 corp.contoso.com 및 TestLab 가상 네트워크의 가상 머신에 대한 DNS 서버의 도메인 컨트롤러로 구성합니다.
+이 단계에서는 DC1 가상 머신을 만들고 Active Directory Domain Services (AD DS) 도메인 corp.contoso.com 및 TestLab 가상 네트워크의 가상 머신에 대한 DNS 서버의 도메인 컨트롤러로 구성합니다.
 
 > [!NOTE]
 > 다음 명령 블록을 실행하기 전에 선택한 Azure 지역(위치)이 기본적으로 Standard_A1으로 설정된 Azure Virtual Machine 크기를 지원하는지 확인합니다. [여기](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines)를 클릭하여 Azure Virtual Machine 크기 및 위치에 대한 최신 정보를 확인합니다.

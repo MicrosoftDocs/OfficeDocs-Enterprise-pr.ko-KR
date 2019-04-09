@@ -3,27 +3,28 @@ title: DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 요약:Office 365에 대한 Windows PowerShell을 사용하여 대체 도메인 이름을 기존 고객 테넌트에 추가합니다.
-ms.openlocfilehash: f99039ffa9f921b33829767a08f33db500a5d2ed
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114697"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001781"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 클라이언트 테넌트에 도메인 추가
 
  **요약:** Office 365에 대한 Windows PowerShell을 사용하여 대체 도메인 이름을 기존 고객 테넌트에 추가합니다.
   
-Office 365 관리 센터를 사용하는 것보다 빠른Office 365용 Windows PowerShell이 포함된 고객의 테넌트로 새로운 도메인을 만들고 연결할 수 있습니다.
+Office 365 관리 센터를 사용하는 것보다 빠른 Microsoft 365용 Windows PowerShell이 포함된 고객의 테넌트로 새로운 도메인을 만들고 연결할 수 있습니다.
   
 DAP(위임된 액세스 권한) 파트너는 Syndication 및 CSP(클라우드 솔루션 공급자) 파트너입니다. 이러한 공급자는 다른 회사의 네트워크 또는 전자 통신 공급자인 경우가 많습니다. 이러한 공급자는 서비스와 Office 365 구독을 통합해서 고객에게 제공합니다. Office 365 구독을 판매하는 경우 고객 테넌트에 대한 AOBO(관리 위임자) 권한이 자동으로 부여되므로 고객 테넌트를 관리하고 보고할 수 있습니다.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '요약: 사이트 간 VPN 연결을 사용하여 Office Server 작업용 프레미스 간 Azure Virtual Network를 구성하는 방법을 알아봅니다.'
-ms.openlocfilehash: ea5ecf6e44c11f8381a8fa75f523a765ce1669f6
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f6ee25d7e1564ce5770bada709934e68dd6888ee
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948629"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037992"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
@@ -83,7 +83,7 @@ Azure Virtual Network와 온-프레미스 네트워크 간에 VPN 연결을 설�
     
 - Windows Server 2016 또는 Windows Server 2012에서 RRAS(라우팅 및 원격 액세스 서비스)를 사용하여 온-프레미스 네트워크와 Azure Virtual Network 간의 IPsec 사이트 간 VPN 연결을 설정할 수 있습니다. Cisco 또는 Juniper Networks VPN 장치와 같은 다른 옵션을 사용할 수도 있습니다.
     
-- 온-프레미스 네트워크에는 Windows Server AD(Active Directory), DNS(Domain Name System) 및 프록시 서버와 같은 네트워크 서비스가 아직 있을 수 있습니다. 사용자의 요구 사항에 따라 Azure Virtual Network에서 이러한 네트워크 리소스를 배치하는 것이 좋을 수도 있습니다.
+- 온-프레미스 네트워크에는 Active Directory Domain Services(AD DS), DNS(Domain Name System) 및 프록시 서버와 같은 네트워크 서비스가 아직 있을 수 있습니다. 사용자의 요구 사항에 따라 Azure Virtual Network에서 이러한 네트워크 리소스를 배치하는 것이 좋을 수도 있습니다.
     
 하나 이상의 서브넷이 있는 기존 Azure Virtual Network의 경우 사용자의 요구 사항에 따라 필요한 가상 컴퓨터를 호스트할 추가 서브넷을 위한 남은 주소가 있는지 확인합니다. 추가 서브넷을 위한 남은 주소 공간이 없으면 자체 사이트 간 VPN 연결이 있는 추가 가상 네트워크를 만듭니다.
   
@@ -211,10 +211,8 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 
 먼저 Azure PowerShell 프롬프트를 엽니다. Azure PowerShell을 설치하지 않은 경우 [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요.
 
-<!--  
-> [!NOTE]
-> These commands are for Azure PowerShell 1.0 and above. For a text file that has all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
--->
+> [!TIP]
+> 이 문서의 PowerShell 명령을 모두 포함하는 텍스트 파일을 보려면 [여기](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)를 클릭합니다. 
   
 그런 다음 이 명령을 사용하여 Azure 계정에 로그인합니다.
   

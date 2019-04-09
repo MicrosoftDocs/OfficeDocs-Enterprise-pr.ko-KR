@@ -3,20 +3,22 @@ title: DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 요약:Syndication 및 CSP(클라우드 솔루션 공급자) 파트너에서는 Windows PowerShell을 사용하여 Office 365 고객 테넌트를 관리할 수 있습니다.
-ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001801"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 Office 365 관리
 

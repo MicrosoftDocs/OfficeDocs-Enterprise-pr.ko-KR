@@ -18,25 +18,25 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '요약: Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.'
-ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573952"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037912"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에 대한 디렉터리 동기화
 
  **요약:** Office 365 개발/테스트 환경에 대한 디렉터리 동기화를 구성합니다.
   
-많은 조직에서는 Azure AD Connect 및 디렉터리 동기화를 사용하여 온-프레미스 Windows Server AD(Active Directory) 포리스트의 계정 집합을 Office 365의 계정 집합과 동기화합니다. 이 문서에서는 암호 해시 동기화를 사용한 디렉터리 동기화를 Office 365 개발/테스트 환경에 추가하여 다음과 같이 구성하는 방법을 설명합니다.
+많은 조직에서는 Azure AD Connect 및 디렉터리 동기화를 사용하여 온-프레미스 Active Directory Domain Services(AD DS) 포리스트의 계정 집합을 Office 365의 계정 집합과 동기화합니다. 이 문서에서는 암호 해시 동기화를 사용한 디렉터리 동기화를 Office 365 개발/테스트 환경에 추가하여 다음과 같이 구성하는 방법을 설명합니다.
   
 ![디렉터리 동기화를 사용하는 Office 365 개발/테스트 환경](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 이 구성은 다음으로 이루어집니다. 
   
 - Office 365 E5 평가판 구독: 만들고 30일 후에 만료됩니다.
-- 인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 3개의 가상 머신(DC1, APP1 및 CLIENT1)으로 구성됩니다. Azure AD Connect는 APP1에서 실행되며 Windows Server AD 도메인을 Office 365와 동기화합니다.
+- 인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 3개의 가상 머신(DC1, APP1 및 CLIENT1)으로 구성됩니다. Azure AD Connect는 APP1에서 실행되며 AD DS 도메인을 Office 365와 동기화합니다.
     
 이 개발/테스트 환경의 2가지 주요 설정 단계는 다음과 같습니다.
   
@@ -59,7 +59,7 @@ ms.locfileid: "30573952"
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>2단계: APP1에 Azure AD Connect 설치
 
-일단 설치 및 구성되면, Azure AD Connect는 CORP Windows Server AD 도메인의 계정 집합을 Office 365 평가판 구독의 계정 집합과 동기화합니다. 다음 절차에서는 APP1에 Azure AD Connect를 설치하고 작동하는지 확인하는 과정을 안내합니다.
+일단 설치 및 구성되면, Azure AD Connect는 CORP AD DS 도메인의 계정 집합을 Office 365 평가판 구독의 계정 집합과 동기화합니다. 다음 절차에서는 APP1에 Azure AD Connect를 설치하고 작동하는지 확인하는 과정을 안내합니다.
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>APP1에 Azure AD Connect 설치 및 구성
 
@@ -98,7 +98,7 @@ Stop-Process -Name Explorer -Force
     
 14. 왼쪽 탐색에서 **사용자 > 활성화된 사용자**를 클릭합니다.
     
-    **User1** 계정을 확인합니다. 이 계정은 CORP Windows Server AD 도메인에서 가져온 것이며 디렉터리 동기화가 진행되었다는 증거입니다.
+    **User1** 계정을 확인합니다. 이 계정은 CORP AD DS 도메인에서 가져온 것이며 디렉터리 동기화가 진행되었다는 증거입니다.
     
 15. **User1** 계정을 클릭합니다. 제품 라이선스에 대해 **편집**을 클릭합니다.
     
@@ -111,7 +111,7 @@ Stop-Process -Name Explorer -Force
 이 구성은 다음으로 이루어집니다. 
   
 - Office 365 E5 평가판 구독
-- 인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 DC1, APP1 및 CLIENT1 가상 머신으로 구성됩니다. Azure AD Connect는 APP1에서 실행되며 30분 간격으로 CORP Windows Server AD 도메인을 Office 365와 동기화합니다.
+- 인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network 서브넷에 있는 DC1, APP1 및 CLIENT1 가상 머신으로 구성됩니다. Azure AD Connect는 APP1에서 실행되며 30분 간격으로 CORP AD DS 도메인을 Office 365와 동기화합니다.
     
 ## <a name="next-step"></a>다음 단계
 

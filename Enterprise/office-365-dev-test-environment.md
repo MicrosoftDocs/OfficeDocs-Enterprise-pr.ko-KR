@@ -3,7 +3,7 @@ title: Office 365 개발/테스트 환경
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 04/02/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '요약: 이 테스트 랩 가이드를 사용하여 평가 또는 개발/테스트를 위한 Office 365 평가판 구독을 만듭니다.'
-ms.openlocfilehash: 7a7b12038acf914667655decee52993286faab1e
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: a49ba10ab9ddded36f21ca9cc92f0482cbe7a4fb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574002"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038034"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -132,11 +132,9 @@ Office Online 서비스 및 Microsoft 365 관리 센터에 액세스할 수 있�
     
 ## <a name="phase-3-configure-your-office-365-trial-subscription"></a>3단계: Office 365 평가판 구독 구성
 
-이 단계에서는 추가된 사용자와 SharePoint Online 팀 사이트를 사용하여 Office 365 구독을 구성합니다.
+이 단계에서는 추가 사용자로 Office 365 구독을 구성하고 Office 365 E5 라이선스를 할당합니다.
   
-먼저, 4명의 새 사용자를 추가하고 E5 라이선스를 할당합니다.
-  
-[Office 365 PowerShell에 연결](https://technet.microsoft.com/library/dn975125.aspx)에 제공되는 지침을 사용하여 PowerShell 모듈을 설치하고 다음에서 새 Office 365 구독에 연결합니다.
+[Office 365 PowerShell에 연결](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)의 지침을 사용하여 그래프 모듈용 Azure Active Directory PowerShell을 사용하여 Office 365 구독에 연결합니다.
   
 - 사용하는 컴퓨터(경량 Office 365 개발/테스트 환경)
     
@@ -144,50 +142,45 @@ Office Online 서비스 및 Microsoft 365 관리 센터에 액세스할 수 있�
     
  Windows PowerShell 자격 증명 요청 대화 상자에서 Office 365 전역 관리자 이름(예: jdoe@contosotoycompany.onmicrosoft.com)과 암호를 입력합니다.
   
-조직 이름(예: contosotoycompany), 위치에 대한 2자리 국가 코드를 입력한 후 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
-  
+조직 이름(예 : contosotoycompany), 위치에 대한 2 자리 국가 코드, 공통 계정 암호를 입력 한 다음 PowerShell 프롬프트에서 다음 명령을 실행합니다.
+
 ```
 $orgName="<organization name>"
 $loc="<two-character country code, such as US>"
-$licAssignment= $orgName + ":ENTERPRISEPREMIUM"
-$userName= "user2@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
+$commonPW="<common user account password>"
+$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password=$commonPW
+
+$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
+
 <!--
 > [!TIP]
 > Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) to get a text file that has all the PowerShell commands in this article.
 -->
 
-**New-MsolUser** 명령 표시에서 사용자 2 계정에 대해 생성된 암호를 적어둔 후 안전한 위치에 보관합니다.
-  
-Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
-  
-```
-$userName= "user3@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 3" -FirstName User -LastName 3 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
-```
-
-**New-MsolUser** 명령 표시에서 사용자 3 계정에 대해 생성된 암호를 적어둔 후 안전한 위치에 보관합니다.
-  
-Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
-  
-```
-$userName= "user4@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
-```
-
-**New-MsolUser** 명령 표시에서 사용자 4 계정에 대해 생성된 암호를 적어둔 후 안전한 위치에 보관합니다.
-  
-Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
-  
-```
-$userName= "user5@" + $orgName + ".onmicrosoft.com"
-New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
-```
-
-**New-MsolUser** 명령 표시에서 사용자 5 계정에 대해 생성된 암호를 적어둔 후 안전한 위치에 보관합니다.
-  
-다음으로, 판매, 프로덕션 및 지원 부서를 위해 3개의 SharePoint Online 팀 사이트를 새로 만듭니다.
   
 ## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>4단계: 3개의 새로운 SharePoint Online 팀 사이트 만들기(선택 사항)
 
@@ -239,7 +232,7 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 - 사용자 2, 사용자 3, 사용자 4, 사용자 5에 대한 계정을 나열하려면 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
     
   ```
-  Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName
+  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     여기에 계정 이름을 기록합니다.
