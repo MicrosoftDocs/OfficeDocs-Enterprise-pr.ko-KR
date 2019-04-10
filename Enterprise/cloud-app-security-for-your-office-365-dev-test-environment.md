@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '요약: office 365 개발/테스트 환경에서 office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
-ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038042"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741264"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
@@ -32,7 +32,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
 이 문서의 지침을 사용 하 여 Office 365 평가판 구독에서 Cloud App Security를 사용 하도록 설정 하 고 테스트 합니다.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> Office 365 테스트 랩 가이드 스택의 모든 문서에 대 한 시각적 맵을 [보려면 여기](http://aka.ms/catlgstack) 를 클릭 하십시오.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>1단계: 경량 또는 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 구축합니다.
 
@@ -63,9 +63,9 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
     
 5. **User 4** 페이지에서 **규칙** 열에 대한 **편집**을 클릭합니다.
     
-6. **사용자 역할 편집** 페이지에서 **전역 관리자**를 클릭하고 **대체 전자 메일 주소**에 **user4@contoso.com**을 입력한 다음 **저장**을 클릭합니다. **닫기**를 두 번 클릭합니다.
+6. **사용자 역할 편집** 페이지에서 **전역 관리자**를 클릭 하 고 **user4@contoso.com** **대체 전자 메일 주소**를 입력 한 다음 **저장**을 클릭 합니다. **닫기**를 두 번 클릭합니다.
     
-7. 	왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **메일**을 선택합니다.
+7. 왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **메일**을 선택합니다.
     
 8. 30분간 기다립니다. 사용자 4의 역할이 전역 관리자로 변경 되었음을 알리는 받은 편지함에 전자 메일 메시지가 없는 것을 볼 수 있습니다.
     
@@ -131,7 +131,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
     
 11. **User 5** 페이지에서 **규칙** 열에 대한 **편집**을 클릭합니다.
     
-12. **사용자 역할 편집** 페이지에서 **사용자 지정된 관리자**를 클릭하고 **암호 관리자** 및 **사용자 관리 관리자**를 클릭한 다음 **대체 전자 메일 주소**에 **user5@contoso.com**을 입력하고 **저장**을 클릭합니다. **닫기**를 두 번 클릭합니다.
+12. **사용자 역할 편집** 페이지에서 사용자 지정 된 **관리자**를 클릭 하 고 **암호 관리자** 및 **사용자 관리 관리자**를 **user5@contoso.com** 클릭 한 다음 **대체 전자 메일 주소**를 입력 하 고 **저장**을 클릭 합니다. **닫기**를 두 번 클릭합니다.
     
 13. 오른쪽 위에서 사용자 아이콘을 클릭한 다음 **로그아웃**을 클릭합니다. 
     

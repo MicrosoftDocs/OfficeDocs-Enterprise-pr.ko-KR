@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: '요약: Office 365 개발/테스트 환경에서 Azure Information Protection (aip) 클라이언트를 사용 하 여 데이터 분류 및 레이블을 구성 하 고 보여 줍니다.'
-ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573962"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741354"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정
 
@@ -30,7 +30,7 @@ ms.locfileid: "30573962"
 Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 365의 SharePoint Online 폴더에 업로드 하기 전에 분류할 수 있습니다. 이 문서의 지침을 사용 하 여 Azure Information Protection 클라이언트를 설치 하 고 데이터 분류를 보여 줍니다. 자세한 내용은 [Azure information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)을 참조 하세요.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> Office 365 테스트 랩 가이드 스택의 모든 문서에 대 한 시각적 맵을 [보려면 여기](http://aka.ms/catlgstack) 를 클릭 하십시오.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경 구축
 

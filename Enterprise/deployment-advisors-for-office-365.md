@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: office 365의 배포 마법사를 사용 하 여 office 365 설정에 대 한 셀프 기반 지원을 제공 합니다.
-ms.openlocfilehash: d948363c640896c8c14e695c5588f322756c92d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: office 365에 대 한 배포 관리자는 office 365 설정에 대 한 셀프 기반 지원을 제공 합니다.
+ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085437"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741475"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Office 365 서비스 배포 관리자
 
-office 365 배포 관리자는 조직에 대해 office 365을 설정 하기 위한 자가 안내가 제공 됩니다. 마법사를 선택 하 고 Office 365에 로그인 하기만 하면 됩니다. 
+office 365 배포 관리자는 조직에 대해 office 365을 설정 하기 위한 자가 안내가 제공 됩니다. 설치 가이드 또는 관리자를 선택 하 고 Office 365에 로그인 합니다. 
 
-배포할 기능 및 옵션을 선택할 때 마법사는 필요에 따라 사용자 지정 된 단계별 설치 계획을 작성 합니다. 전체 지침, 비디오, 참조 문서 및 스크립트를 볼 수 있습니다. 일부 마법사에서는 자동화 기능을 사용 하 여 일부 설정을 변경 하 고 마법사의 다른 영역에서는 설정 및 데이터를 사용자가 안내 하는 마법사로 변경 합니다. Office 365 기능 및 옵션에 대 한 자세한 내용은 계획 중 또는 서비스를 이미 설정한 후에도 이러한 마법사를 언제 든 지 사용할 수 있습니다.
+배포할 기능 및 옵션을 선택할 때 관리자는 필요에 따라 사용자 지정 된 단계별 설치 계획을 작성 합니다. 전체 지침, 비디오, 참조 문서 및 스크립트를 볼 수 있습니다. 일부 관리자는 일부 설정을 변경 하는 자동화 기능을 사용 하 고 사용자가 설정을 안내 하는 관리자의 다른 영역에서 설정 및 데이터를 변경 합니다. Office 365 기능 및 옵션에 대 한 자세한 내용은 계획 중 또는 서비스를 이미 설정한 후에도 이러한 관리자를 언제 든 지 사용할 수 있습니다.
   
 ## <a name="windows-10-with-office-365"></a>Windows 10 (Office 365 포함)
 
 [Microsoft 365 배포 관리자](https://aka.ms/microsoft365setupguide)
   
-Microsoft 365은 Office 365, Windows 10 및 Enterprise Mobility + Security가 포함 된 완전 한 지능형 솔루션입니다. Microsoft 365는 모든 사용자가 창의적인 작업을 수행 하 고 안전 하 게 함께 작업할 수 있도록 합니다. 이 가이드를 사용 하 여 windows 10 장치를 설정 하거나, Office 앱, windows Analytics 및 Windows Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 요금제만 해당) 배포를 사용 하 여 사용자 컴퓨터를 windows 10으로 업그레이드할 수 있습니다.
+Microsoft 365은 Office 365, Windows 10 및 Enterprise Mobility + Security가 포함 된 완전 한 지능형 솔루션입니다. Microsoft 365는 모든 사용자가 창의적인 작업을 수행 하 고 안전 하 게 함께 작업할 수 있도록 합니다. 이 관리자를 사용 하 여 windows 10 장치를 설정 하거나 사용자 컴퓨터를 windows 10으로 업그레이드할 수 있습니다 (예를 들어, Office 앱, windows Analytics 및 Windows Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 요금제에만 해당).
 
 
 ## <a name="mail-migration-and-protection"></a>메일 마이그레이션 및 보호
@@ -46,7 +46,7 @@ Microsoft 365은 Office 365, Windows 10 및 Enterprise Mobility + Security가 �
 ### <a name="exchange-migration-advisor"></a>Exchange 마이그레이션 관리자
 [office 365 mail 마이그레이션 관리자](https://aka.ms/office365setup) 는 자동 도구 및 단계별 지침을 사용 하 여 현재 메일 시스템에서 office 365의 Exchange Online으로 사서함을 이동 하는 데 도움을 제공 합니다. 현재 메일 시스템, 마이그레이션할 사서함 수, 사용자 및 사용자 액세스 관리를 계획 하는 방법에 따라 조직에 가장 적합 한 마이그레이션 경로를 사용 하는 것이 좋습니다.
   
-[gmail 연락처 및 일정 도우미](https://aka.ms/gmailcontactscalendar) 는 gmail 연락처 및 Google 일정 항목을 Office 365로 마이그레이션하기 위한 단계별 지침을 제공 합니다. 사용자의 Gmail 사서함을 Office 365로 마이그레이션하는 경우 전자 메일 메시지가 마이그레이션되고 연락처 및 일정 항목은 마이그레이션되지 않습니다. 이 마법사는 Gmail 연락처 및 Google 일정 항목을 Office 365로 가져오는 단계를 제공 합니다.
+[gmail 연락처 및 일정 도우미](https://aka.ms/gmailcontactscalendar) 는 gmail 연락처 및 Google 일정 항목을 Office 365로 마이그레이션하기 위한 단계별 지침을 제공 합니다. 사용자의 Gmail 사서함을 Office 365로 마이그레이션하는 경우 전자 메일 메시지가 마이그레이션되고 연락처 및 일정 항목은 마이그레이션되지 않습니다. 이 가이드에서는 Gmail 연락처 및 Google 일정 항목을 Office 365로 가져오는 단계를 제공 합니다.
   
 ### <a name="exchange-online-protection"></a>Exchange Online Protection
 Microsoft [EOP (Exchange Online Protection)](https://aka.ms/EOPguidance) 는 스팸 및 맬웨어로부터 조직을 보호 하 고 메시징 정책 위반 으로부터 조직을 보호 하는 기능을 포함 하는 클라우드 기반 전자 메일 필터링 서비스입니다.
@@ -57,7 +57,7 @@ Microsoft [EOP (Exchange Online Protection)](https://aka.ms/EOPguidance) 는 스
 ### <a name="office-365-proplus"></a>Office 365 ProPlus
 [office ProPlus 빠른 시작 가이드](https://aka.ms/OPPquickstartguide) 는 PC 또는 회사의 Mac에 office를 설치 하는 단계를 안내 하 고 모든 사용자가 office를 시작 하도록 하는 데 유용한 팁을 제공 합니다.
 
-[office ProPlus 배포 관리자](https://aka.ms/o365proplusdeploy) 는 사용자에 게 최신 버전의 Office를 설치 하 고 실행 하는 데 도움이 되는 정보를 제공 합니다. 이 관리자는 사용자가 office 365 portal에서 직접 office를 설치 하거나 온-프레미스 위치에서 사용자에 게 office를 배포 하는 데 도움이 되는 단계를 안내 합니다. System Center Configuration Manager, 그룹 정책 시작 스크립트, 운영 체제 디스크 이미지 또는 RDS (원격 데스크톱 서비스) 공유 활성화를 사용 하는 방법에 대 한 지침이 포함 되어 있습니다.
+[office ProPlus 배포 관리자](https://aka.ms/o365proplusdeploy) 는 사용자에 게 최신 버전의 Office를 설치 하 고 실행 하는 데 도움이 되는 정보를 제공 합니다. 이 관리자는 사용자가 office 365 포털에서 직접 office를 설치 하거나 온-프레미스 위치에서 사용자에 게 office를 배포 하는 데 도움이 되는 단계를 안내 합니다. System Center Configuration Manager, 그룹 정책 시작 스크립트, 운영 체제 디스크 이미지 또는 RDS (원격 데스크톱 서비스) 공유 활성화를 사용 하는 방법에 대 한 지침이 포함 되어 있습니다.
 
 ### <a name="onedrive-for-business"></a>비즈니스용 OneDrive
 비즈니스용 onedrive [빠른 시작 가이드](https://aka.ms/ODfBquickstartguide) 를 사용 하 여 파일 저장, 공유 및 동기화를 위한 비즈니스용 onedrive를 빠르게 시작할 수 있습니다.
@@ -66,7 +66,7 @@ Microsoft [EOP (Exchange Online Protection)](https://aka.ms/EOPguidance) 는 스
   
 [sharepoint Online 빠른 시작](https://aka.ms/SPOquickstartguide) 에서는 클라우드에서 문서 저장 및 콘텐츠 관리를 위해 sharepoint를 설정 하는 방법을 보여 줍니다. 이 기본 설치는 많은 양의 데이터를 마이그레이션하거나 하이브리드 설치에서 계속 실행 하려는 온-프레미스 SharePoint Server가 없는 경우에만 필요 합니다.
   
-[sharepoint online 배포 관리자](https://aka.ms/spoguidance) 는 조직에 가장 적합 한 배포 옵션을 선택 하 고 비즈니스 요구에 맞게 SharePoint online 기능을 구성 하는 단계를 제공 하는 데 도움이 됩니다. 클라우드 배포, 하이브리드 배포 또는 온-프레미스 마이그레이션에서 선택 합니다. 그런 다음 파일 저장 및 공유, 외부 파일 공유, 사이트 모음, 전역 설정 및 사용자 프로필, Office 365 팀 사이트와 같은 SharePoint Online 기능을 구성 하기 위한 단계를 수행 합니다.
+[sharepoint online 배포 관리자](https://aka.ms/spoguidance) 는 조직에 가장 적합 한 배포 옵션을 선택 하 고 비즈니스 요구에 맞게 SharePoint online 기능을 구성 하는 단계를 제공 하는 데 도움이 됩니다. 클라우드 배포, 하이브리드 배포 또는 온-프레미스 마이그레이션에서 선택 합니다. 그런 다음 파일 저장 및 공유, 외부 파일 공유, 사이트 모음, 전역 설정, 사용자 프로필 및 Office 365 팀 사이트와 같은 SharePoint Online 기능을 구성 하기 위한 단계를 수행 합니다.
   
 ## <a name="security-and-identity"></a>보안 및 id
 
@@ -76,7 +76,7 @@ Microsoft [EOP (Exchange Online Protection)](https://aka.ms/EOPguidance) 는 스
 ### <a name="azure"></a>Azure
 [azure AD Basic 설정 가이드](https://aka.ms/azureadbasic) 는 그룹 기반 액세스 관리, 클라우드 응용 프로그램에 대 한 셀프 서비스 암호 재설정, 온-프레미스 웹 응용 프로그램 게시용 Azure Active Directory 응용 프로그램 프록시 등의 기능을 설정 하는 데 도움이 됩니다.
   
-[azure ad premium 설정 가이드](https://aka.ms/aadpguidance) 를 사용 하면 다단계 인증, SSO (single sign-on), 장치 등록 등의 id 관리 기능을 제공 하는 azure ad premium (azure Active Directory premium) 기능을 사용할 수 있습니다. 셀프 서비스 암호 및 그룹 관리, 보안 모니터링
+[azure ad premium 설치 가이드](https://aka.ms/aadpguidance) 는 다단계 인증, SSO (single sign-on), 장치 등록 같은 id 관리 기능을 제공 하는 azure ad premium (azure Active Directory premium)의 다양 한 기능을 사용 하도록 설정 하는 데 도움이 됩니다. 셀프 서비스 암호 및 그룹 관리, 보안 모니터링
   
 ### <a name="verify-your-domain"></a>Verify your domain
 [office의 도메인 확인 관리자에서](https://aka.ms/verifyyourdomaino365) 사용자의 도메인 이름 (웹 사이트 이름이 라고도 함)을 추가 하 여 office 365를 사용자 지정 하는 데 도움이 됩니다.
@@ -102,7 +102,7 @@ IM (인스턴트 메시징), 현재 상태, 온라인 모임 및 화면 공유�
   
 [비즈니스용 Skype 배포 관리자](https://aka.ms/skypeguidance)
   
-비즈니스용 skype 배포 관리자는 비즈니스용 skype Online을 시작 하 고 실행 하는 데 도움이 됩니다. 이 마법사에서는 IM (인스턴트 메시징), 온라인 모임, 비디오 회의, 공중 전화망 (PSTN) 회의, PBX (cloud 사설 브랜드 교환) 및 skype 모임 브로드캐스트와 같은 비즈니스용 Skype 기능을 설정 하는 방법을 보여 줍니다. 비즈니스용 skype Online을 온-프레미스 비즈니스용 skype 배포에 연결 하는 하이브리드 환경을 설정 하기 위한 단계가 포함 되어 있습니다.
+비즈니스용 skype 배포 관리자는 비즈니스용 skype Online을 시작 하 고 실행 하는 데 도움이 됩니다. 이 관리자는 IM (인스턴트 메시징), 온라인 모임, 비디오 회의, 공중 전화망 (PSTN) 회의, PBX (cloud 사설 브랜드 교환) 및 skype 모임 브로드캐스트와 같은 비즈니스용 Skype 기능을 설정 하는 방법을 보여 줍니다. 비즈니스용 skype Online을 온-프레미스 비즈니스용 skype 배포에 연결 하는 하이브리드 환경을 설정 하기 위한 단계가 포함 되어 있습니다.
   
 ### <a name="yammer"></a>Yammer
 

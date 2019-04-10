@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '요약: Office 365 개발/테스트 환경의 샘플 데이터로 Office 365 고급 eDiscovery를 구성하고 보여 줍니다.'
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038022"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741455"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 고급 eDiscovery
 
@@ -30,7 +30,7 @@ office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
 이 기사의 지침에 따라 가상 계약 분쟁에 대한 작은 데이터 집합을 만들고 고급 eDiscovery로 이를 분석합니다.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> Office 365 테스트 랩 가이드 스택의 모든 문서에 대 한 시각적 맵을 [보려면 여기](http://aka.ms/catlgstack) 를 클릭 하십시오.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>1단계: Office 365 개발/테스트 환경 만들기
 
@@ -53,7 +53,7 @@ office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
     
 2. **Outlook 메일** 탭에서 **새 전자 메일**을 클릭합니다.
     
-3. **대상**에 평가판 구독의 User6 계정 전자 메일 주소 ( **User6 @** 를 입력 합니다.<organization name> **. onmicrosoft.com**)
+3. **대상**에 평가판 구독의 User6 계정 전자 메일 주소를 입력 합니다 ( ** user6@.**<organization name> **. onmicrosoft.com**)
     
 4. 제목에 **테스트 전자 메일 1**을 입력합니다.
     
@@ -195,6 +195,6 @@ office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
   
 [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
+[Office 365 고급 eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 
 

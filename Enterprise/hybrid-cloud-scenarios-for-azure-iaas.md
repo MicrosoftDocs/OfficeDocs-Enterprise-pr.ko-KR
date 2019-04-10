@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '요약: Azure에서 Microsoft의 IaaS (Infrastructure as a Service) 기반 클라우드 제품에 대 한 하이브리드 아키텍처 및 시나리오를 이해 합니다.'
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037932"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741364"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS용 하이브리드 클라우드 시나리오
 
@@ -41,7 +41,7 @@ vnet (크로스-프레미스 Azure virtual network)에서 실행 되는 IT 작�
     
 - ID
     
-    Windows Server AD 도메인 컨트롤러와 같은 id 서버를 Azure vnet에서 로컬 인증을 실행 하는 서버 집합에 추가 합니다.
+    AD DS (Active Directory 도메인 서비스) 도메인 컨트롤러와 같은 id 서버를 Azure vnet에서 로컬 인증을 실행 하는 서버 집합에 추가 합니다.
     
 - 네트워크
     
@@ -59,13 +59,13 @@ vnet (크로스-프레미스 Azure virtual network)에서 실행 되는 IT 작�
 
 ![Azure IaaS의 Office 365에 대 한 디렉터리 동기화 서버](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-그림 2에서는 온-프레미스 네트워크가 프록시 서버와 해당 가장자리에 라우터를 사용 하 여 Windows Server AD 인프라를 호스트 합니다. 라우터는 사이트 간 VPN 또는 express 간 연결을 사용 하 여 azure VNet의에 지에서 azure 게이트웨이에 연결 합니다. VNet 내부에서 디렉터리 동기화 서버는 Azure AD Connect를 실행 합니다.
+그림 2에서는 온-프레미스 네트워크가 AD DS 인프라를 호스트 하며 프록시 서버와 해당 가장자리에 라우터가 있습니다. 라우터는 사이트 간 VPN 또는 express 간 연결을 사용 하 여 azure VNet의에 지에서 azure 게이트웨이에 연결 합니다. VNet 내부에서 디렉터리 동기화 서버는 Azure AD Connect를 실행 합니다.
   
-office 365에 대 한 디렉터리 동기화 서버는 Windows server AD의 계정 목록과 Office 365 구독의 Azure AD 테 넌 트를 동기화 합니다.
+office 365에 대 한 디렉터리 동기화 서버는 AD DS의 계정 목록과 Office 365 구독의 Azure AD 테 넌 트를 동기화 합니다.
   
 디렉터리 동기화 서버는 Azure AD Connect를 실행 하는 Windows 기반 서버입니다. 구축 속도를 빠르게 하거나 조직의 온-프레미스 서버 수를 줄이려면 Azure IaaS의 VNet (가상 네트워크)에서 디렉터리 동기화 서버를 배포 합니다.
   
-디렉터리 동기화 서버는 Windows server AD에서 변경 내용을 폴링한 후 Office 365 구독과 동기화 합니다.
+디렉터리 동기화 서버는 변경 된 AD DS를 폴링하여 Office 365 구독과 동기화 합니다.
   
 자세한 내용은 [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)를 참조 하세요.
   
@@ -163,7 +163,7 @@ Azure의 고가용성 LOB 응용 프로그램에 대 한 또 다른 예로는 Of
   
 이 구성에는 Azure의 LOB 응용 프로그램에 대 한 다음과 같은 특성이 있습니다.
   
-- **계층:** 웹 프록시 서버, AD FS 서버 및 Windows Server AD 도메인 컨트롤러에 대 한 계층이 있습니다.
+- **계층:** 웹 프록시 서버, ad FS 서버 및 ad DS 도메인 컨트롤러에 대 한 계층이 있습니다.
     
 - **부하 분산:** 외부 azure 부하 분산 장치는 들어오는 클라이언트 인증 요청을 웹 프록시에 배포 하 고 내부 Azure 부하 분산 장치는 AD FS 서버에 인증 요청을 배포 합니다.
     
