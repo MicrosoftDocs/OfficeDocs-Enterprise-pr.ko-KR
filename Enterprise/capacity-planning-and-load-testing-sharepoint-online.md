@@ -1,9 +1,9 @@
 ---
 title: 용량 계획 및 부하 테스트 SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/14/2019
+ms.date: 04/10/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 이 문서에서는 허용 되지 않으므로 기존 부하 테스트를 수행 하지 않고 SharePoint Online에 배포 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
+ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665191"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31765060"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>용량 계획 및 부하 테스트 SharePoint Online.
 
@@ -44,7 +44,7 @@ ms.locfileid: "30665191"
 - 클라우드 소비에 사용 되는 모든 페이지/기능/사용자 지정은 여러 위치에 최적화 되어 서로 다른 영역이 나 지역의 사용자에 게 일관 된 환경이 적용 됩니다. 클라우드는 분산 사용자 기반을 최적화 하기 위해 CDN (콘텐츠 배달 네트워크)과 같은 최적화 기능을 제공 합니다.
 
 SharePoint Online의 클래식 게시 페이지의 경우 사용자가 사용 하는 주요 랜딩 페이지를 분석 하는 데 도움이 되는 [페이지 진단 도구](https://aka.ms/perftool) Chrome 확장을 사용할 수 있습니다.
-브라우저나 [Fiddler](https://www.telerik.com/download/fiddler) 의 F12 개발자 도구를 사용 하 여 페이지의 가중치를 검토 하 고 전체 페이지 부하를 검토 및 최적화 하는 데 영향을 주는 통화 및 요소 수를 확인할 수 있습니다. 콘텐츠 배달 네트워크 및 기타 최적화를 사용 하는 것을 비롯 한 권장 사항 목록은 [SharePoint Online 성능 조정](https://aka.ms/spoperformance) 문서를 참조 하십시오.
+브라우저나 [Fiddler](https://www.telerik.com/download/fiddler) 의 F12 개발자 도구를 사용 하 여 페이지의 가중치를 검토 하 고 전체 페이지 부하를 검토 및 최적화 하는 데 영향을 주는 통화 및 요소 수를 확인할 수 있습니다. 콘텐츠 배달 네트워크 및 기타 최적화를 사용 하는 것을 비롯 한 권장 사항 목록은 [SharePoint Online 성능 조정](https://aka.ms/tuneSPO) 문서를 참조 하십시오.
 
 ### <a name="wave--phase-approach"></a>웨이브/위상 방식
 사이트 시작에 대 한 기존의 큰 느낌표 방식을 사용 하면 사용자 지정, 외부 원본, 서비스 또는 프로세스가 적절 한 배율로 테스트 되었음을 효과적으로 확인할 수 없습니다. 또한 사용 현황 및 예측 사용량에 따라 용량을 확장 하 고 사이트 시작에 대 한 알림을 받지 않아도 되는 경우에는 아래 지침을 따라 성공을 확인 해야 합니다.
