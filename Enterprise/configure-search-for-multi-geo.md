@@ -19,7 +19,7 @@ ms.locfileid: "30931837"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 검색 구성
 
-다중 지역 환경에서 각 지리적 위치에는 자체 검색 색인과 검색 센터가 있습니다. 사용자가 검색을 하면 쿼리가 모드 인덱스로 팬아웃되고 반환된 결과는 병합됩니다.
+다중 지역 환경에서 각 지리적 위치에는 자체 검색 인덱스와 검색 센터가 있습니다. 사용자가 검색을 하면 쿼리가 모드 인덱스로 팬아웃되고 반환된 결과는 병합됩니다.
 
 예를 들어, 한 지리적 위치에 있는 사용자가 다른 지리적 위치에 저장된 콘텐츠를 검색하거나, 다른 지리적 위치로 제한된 SharePoint 사이트에서 콘텐츠를 검색할 수 있습니다. 사용자가 이 콘텐츠에 액세스할 수 있으면 검색 결과가 표시됩니다.
 
@@ -74,7 +74,7 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 <tbody>
 <tr class="odd">
 <td align="left">승격된 결과</td>
-<td align="left">전체 수준의 테넌트, 사이트 모음 또는 사이트에 대해 승격된 결과가 포함 된 쿼리 규칙을 만들 수 있습니다. 다중 지역 환경에서 테넌트 수준의 승격된 결과를 정의하여 모든 지역의 검색 센터에 결과를 홍보하십시오. 사이트 모음 또는 사이트의 위치에 있는 검색 센터에서만 결과를 승격하려면 사이트 모음 또는 사이트 수준에서 승격된 결과를 정의하십시오. 이 결과는 다른 지리적 위치에서 승격되지 않습니다.</td>
+<td align="left">전체 수준의 테넌트, 사이트 모음 또는 사이트에 대해 승격된 결과가 포함 된 쿼리 규칙을 만들 수 있습니다. Multi-Geo 환경에서 테넌트 수준의 승격된 결과를 정의하여 모든 지역의 검색 센터로 결과를 승격하십시오. 사이트 모음 또는 사이트의 위치에 있는 검색 센터에서만 결과를 승격하려면 사이트 모음 또는 사이트 수준에서 승격된 결과를 정의하십시오. 이 결과는 다른 지리적 위치에서 승격되지 않습니다.</td>
 <td align="left">지리적 위치별로 승격된 다른 결과가 필요하지 않을 경우(예: 여행에 대해 다른 규칙 지정) 테넌트 수준에서 승격된 결과를 정의하는 것이 좋습니다.</td>
 </tr>
 <tr class="even">
@@ -90,7 +90,7 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 <tr class="even">
 <td align="left">문서 ID</td>
 <td align="left">문서 ID에 의존하는 검색 기반 응용 프로그램을 개발하는 경우 Multi-Geo 환경의 문서 ID가 지리적 위치 간에 고유하지 않으며 지리적 위치별로 고유합니다.</td>
-<td align="left">위치 정보를 식별 할 수 있는 열을 추가했습니다. 고유성을 얻으려면 이 열을 사용하십시오. 이 열은 "GeoLocationSource"이라고 합니다.</td>
+<td align="left">위치 정보를 식별 할 수 있는 열을 추가했습니다. 고유성을 얻으려면 이 열을 사용하십시오. 이 열은 "GeoLocationSource"라고 합니다.</td>
 </tr>
 <tr class="odd">
 <td align="left">결과의 수</td>
@@ -141,7 +141,7 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Microsoft는 모든 지리적 위치에서 결과를 얻을 때까지 검색 결과를 병합하지 않습니다. 즉, 다중 지리 정보 검색은 지리적 위치가 하나 뿐인 환경에서의 검색보다 대기 시간이 길어집니다.
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Microsoft는 모든 지리적 위치에서 결과를 얻을 때까지 검색 결과를 병합하지 않습니다. 즉, Multi-Geo 정보 검색은 지리적 위치가 하나뿐인 환경에서의 검색보다 대기 시간이 길어집니다.
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
 ## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>검색 센터에서 모든 지리적 위치의 결과를 표시하도록 지정
@@ -155,7 +155,7 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 3.  설정할 범주를 선택하고 오른쪽 위 모서리에 있는 **설정** 톱니바퀴 아이콘을 클릭한 후 **페이지 편집**을 클릭합니다. 검색 결과 페이지가 편집 모드에서 열립니다.
 
      ![](media/configure-search-for-multi-geo-image2.png)
-1.  검색 결과 웹 파트에서 웹 파트 오른쪽 위 모서리로 포인터를 이동하고 화살표를 클릭한 후 메뉴에서 **웹 파트 편집**을 클릭합니다. 검색 결과 웹 파트 도구 창은 페이지 오른쪽 위에있는 리본 아래에 열립니다. ![](media/configure-search-for-multi-geo-image3.png)
+1.  검색 결과 웹 파트에서 웹 파트 오른쪽 위 모서리로 포인터를 이동하고 화살표를 클릭한 후 메뉴에서 **웹 파트 편집**을 클릭합니다. 검색 결과 웹 파트 도구 창은 페이지 오른쪽 위에 있는 리본 아래에 열립니다. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  웹 파트 도구 창의 **설정** 섹션에 있는 **결과 제어 설정**에서 **Multi-Geo 결과 표시**를 선택하여 검색 결과 웹 파트에 모든 지리적 위치의 결과를 표시하도록 합니다.
 
@@ -176,11 +176,11 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 
 ### <a name="query-parameters"></a>쿼리 매개 변수
 
-EnableMultiGeoSearch -이 쿼리는 다중 지오 테넌트의 다른 지리적 위치의 인덱스로 쿼리를 팬 아웃할지 여부를 지정하는 부울 값입니다. **true**로 설정하면 쿼리가 적용됩니다. **false**로 설정하면 쿼리가 팬 아웃되지 않습니다. 기본값은 **false**입니다. 이 매개 변수를 포함하지 않으면 쿼리가 다른 지리적 위치로 이동되지 않습니다. 다중 지역이 아닌 환경에서 매개 변수를 사용하면 매개 변수가 무시됩니다.
+EnableMultiGeoSearch - 이 쿼리는 Multi-Geo 테넌트의 다른 지리적 위치의 인덱스로 쿼리를 팬아웃할지 여부를 지정하는 부울 값입니다. **true**로 설정하면 쿼리가 적용됩니다. **false**로 설정하면 쿼리가 팬 아웃되지 않습니다. 기본값은 **false**입니다. 이 매개 변수를 포함하지 않으면 쿼리가 다른 지리적 위치로 이동되지 않습니다. Multi-Geo가 아닌 환경에서 매개 변수를 사용하면 매개 변수가 무시됩니다.
 
-ClientType- 이것은 문자열입니다. 각 검색 응용 프로그램에 대해 고유한 클라이언트 이름을 입력하십시오. 이 매개 변수를 포함하지 않으면 쿼리가 다른 지리적 위치로 이동되지 않습니다.
+ClientType - 이것은 문자열입니다. 각 검색 응용 프로그램에 대해 고유한 클라이언트 이름을 입력하십시오. 이 매개 변수를 포함하지 않으면 쿼리가 다른 지리적 위치로 이동되지 않습니다.
 
-MultiGeoSearchConfiguration-**EnableMultiGeoSearch **가 **true**일 때 쿼리를 내보내는 다중 지역 테넌트의 지리적 위치에 대한 선택적 목록입니다. 이 매개 변수를 포함하지 않거나 공백으로 두면 모든 지리적 위치로 쿼리가 이동됩니다. 각 지리적 위치에 대해 JSON 형식으로 다음 항목을 입력하십시오.
+MultiGeoSearchConfiguration -**EnableMultiGeoSearch **가 **true**일 때 쿼리를 내보내는 Multi-Geo 테넌트의 지리적 위치에 대한 선택적 목록입니다. 이 매개 변수를 포함하지 않거나 공백으로 두면 모든 지리적 위치로 쿼리가 이동됩니다. 각 지리적 위치에 대해 JSON 형식으로 다음 항목을 입력하십시오.
 
 <table>
 <thead>
@@ -262,7 +262,7 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
-> MultiGeoSearchConfiguration 속성의 지리적 위치 목록에 있는 쉼표와 콜론 앞에는 **백슬래시** 문자가 있습니다. 이는 GET 요청이 콜론을 사용하여 속성과 쉼표를 구분하여 속성 인수를 구분하기 때문입니다. 이스케이프 문자로 백 슬래시가 없으면 MultiGeoSearchConfiguration 속성이 잘못 해석됩니다.
+> MultiGeoSearchConfiguration 속성의 지리적 위치 목록에 있는 쉼표와 콜론 앞에는 **백슬래시** 문자가 있습니다. 이는 GET 요청이 콜론을 사용하여 속성과 쉼표를 구분하여 속성 인수를 구분하기 때문입니다. 이스케이프 문자로 백슬래시가 없으면 MultiGeoSearchConfiguration 속성이 잘못 해석됩니다.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**모든** 지리적 위치로 팬아웃되는 샘플 POST 요청
 
