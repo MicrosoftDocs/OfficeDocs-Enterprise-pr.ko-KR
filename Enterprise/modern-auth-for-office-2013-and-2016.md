@@ -1,5 +1,5 @@
 ---
-title: 최신 인증이 Office 2013 및 office 2016 클라이언트 앱에 작동 하는 방식
+title: Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -21,17 +21,20 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: office 2013 및 2016 클라이언트 앱에 대해 office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 0e7b1a91a13fdd1ea5bb5fd3b42fcda60c704d6f
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: 5e42ec2fcf8f27990af187e4ad26ba65909ac709
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957699"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>최신 인증이 Office 2013 및 office 2016 클라이언트 앱에 작동 하는 방식
+# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
 이 문서를 읽으면 office 2013 및 office 2016 클라이언트 앱이 Exchange online, SharePoint online 및 비즈니스용 Skype online에 대 한 office 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
-  
+
+> [!NOTE]
+> office 2010 및 office for Mac 2011와 같은 레거시 클라이언트 앱은 최신 인증을 지원 하지 않으며 기본 인증만 사용할 수 있습니다.
+
 ## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 서비스에 대 한 최신 인증의 가용성
 
 Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같습니다.
