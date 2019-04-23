@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 요약:Microsoft Exchange Online용 원격Windows PowerShell을 사용하여 개별 고객 테넌트에서 보고서를 검색합니다.
-ms.openlocfilehash: 8df88e8b00cbd8e14558e423f41f45ea5f9bf26a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 478cd8736a837dae571e20f38187be087b48231a
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992828"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 고객 테넌트 보고 데이터 검색
 
@@ -26,8 +26,7 @@ Syndication 및 CSP(클라우드 솔루션 공급자) 파트너는 Exchange Onli
   
 이 문서에서는 Exchange Online용 원격Windows PowerShell을 사용하여 단일 고객 테넌트에 연결하고 보고서를 검색합니다. 기본적으로 Windows PowerShell은 여러 고객 테넌트에서 보고 데이터 집계를 지원하지 않습니다. 이 절차를 사용하여 검색하는 보고서는 연결되는  _DelegatedOrg_에만 해당합니다.
   
-모든 고객 테넌트에 대해 단일 보고서를 검색하려는 경우 이를 수행할 샘플 스크립트는 [DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 통해 고객 보고 데이터 집계](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)에서 찾을 수 있습니다.
-  
+ 
 ## <a name="before-you-begin"></a>시작하기 전에
 
 - 원격 Windows PowerShell을 사용하여 Exchange Online 테넌트에 연결해야 합니다. 자세한 내용은 [DAP(위임된 액세스 권한) 파트너용 원격 Windows PowerShell을 사용하여 Exchange Online 테넌트에 연결](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)을 참조하세요.

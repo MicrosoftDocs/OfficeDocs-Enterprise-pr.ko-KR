@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: e216f61806ea5d648519ac7217acf7dbaddd1419
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30934063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992838"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -55,7 +55,7 @@ Office 365 Multi-Geo는 현재 다음 지역 및 국가에서 제공됩니다.
 
 Multi-Geo를 시작하려면 이러한 단계를 따르세요.
 
-1. 계정 팀과 협의하여 추가 하려면 계정 팀에서 작업 하는 _Office 365의 Multi-Geo 기능_ 서비스 계획을 추가합니다. 필요한 라이선스 수를 추가하는 과정이 안내됩니다.
+1. 계정 팀과 협의하여 _Office 365의 Multi-Geo 기능_ 서비스 계획을 추가합니다. 계정 팀이 필요한 라이센스 수를 추가할 수 있도록 안내합니다. 현재 Multi-Geo 기능은 Office 365 구독을 2,500개 이상 보유한 고객에게 제공됩니다.
 
    Office 365 Multi-Geo를 사용하려면 먼저 Microsoft에서 Multi-Geo 지원을 위해 Exchange Online 테넌트를 구성해야 합니다. 이 일회성 구성 프로세스는 *Office 365의 Multi-Geo 기능* 서비스 계획을 주문하고 테넌트에 라이선스가 표시된 후에 실행됩니다. Multi-Geo 라이선스가 적용되면 [Office 365 메시지 센터](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)에서 알림을 받게 되며 Office 365 Multi-Geo 기능을 구성하고 사용하기 시작할 수 있습니다.
 
@@ -69,8 +69,8 @@ Multi-Geo를 시작하려면 이러한 단계를 따르세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[Aka.ms/GoMultiGeo ](https://Aka.ms/GoMultiGeo)
+[Exchange Online 및 OneDrive의 Multi-Geo](https://Aka.ms/GoMultiGeo)
 
-[OneDrive 및 SharePoint Online의 Multi-Geo 기능](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+[OneDrive 및 SharePoint Online의 Multi-Geo 기능](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
-[Exchange Online의 Multi-Geo 기능](multi-geo-capabilities-in-exchange-online.md)
+[Exchange Online의 Multi-Geo 기능](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)

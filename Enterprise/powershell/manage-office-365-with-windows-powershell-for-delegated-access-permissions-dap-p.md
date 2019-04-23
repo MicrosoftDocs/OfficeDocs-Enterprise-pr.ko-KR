@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 요약:Syndication 및 CSP(클라우드 솔루션 공급자) 파트너에서는 Windows PowerShell을 사용하여 Office 365 고객 테넌트를 관리할 수 있습니다.
-ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 93b323d8de7016008ba7e4f75ff4b1c011adb9f2
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992818"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 Office 365 관리
 
@@ -36,6 +36,6 @@ DAP(위임된 액세스 권한) 파트너는 Syndication 및 CSP(클라우드 �
     
 - [DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 고객 테넌트 보고 데이터 검색](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
     
-- [DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 통해 고객 보고 데이터 집계](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
+
     
 
