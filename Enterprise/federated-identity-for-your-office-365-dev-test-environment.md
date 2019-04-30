@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '요약: Office 365 개발/테스트 환경에 대한 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948639"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741424"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 페더레이션 ID
 
@@ -39,9 +39,9 @@ Office 365은 페더레이션 ID를 지원합니다. 즉, 자격 증명 자체�
   
 그림 1에 나오는 구성은 다음으로 이루어져 있습니다. 
   
-- Office 365 E5 평가판 구독: 만든 날로부터 30일 이후에 만료됩니다.
+- Office 365 E5 평가판 구독: 만들고 30일 후에 만료됩니다.
     
-- 인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network의 하위 집합에 있는 5개의 가상 머신(DC1, APP1, CLIENT1, ADFS1 및 PROXY1)으로 구성되어 있습니다. Azure AD Connect가 APP1에서 실행되며 Windows Server AD 도메인의 계정 목록을 Office 365와 동기화합니다. PROXY1은 들어오는 인증 요청을 수신합니다. ADFS1은 DC1을 사용하여 자격 증명이 유효한지 검사하고 보안 토큰을 발급합니다.
+- 인터넷에 연결된 간소화된 조직 인트라넷: Azure Virtual Network의 하위 집합에 있는 5개의 가상 머신(DC1, APP1, CLIENT1, ADFS1 및 PROXY1)으로 구성되어 있습니다. Azure AD Connect가 APP1에서 실행되며 AD DS(Active Directory Domain Services) 도메인의 계정 목록을 Office 365와 동기화합니다. PROXY1은 들어오는 인증 요청을 수신합니다. ADFS1은 DC1을 사용하여 자격 증명이 유효한지 검사하고 보안 토큰을 발급합니다.
     
 이 개발/테스트 환경의 5가지 주요 설정 단계는 다음과 같습니다.
   
@@ -61,11 +61,11 @@ Office 365은 페더레이션 ID를 지원합니다. 즉, 자격 증명 자체�
 > Azure 평가판 구독으로는 이 개발/테스트 환경을 구성할 수 없습니다. 
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>1단계: DirSync를 사용하여 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경 만들기
 
-[Office 365 개발/테스트 환경에 대한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지침에 따라 APP1을 DirSync 서버로 사용하여 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 만들고, DC1에서 Office 365와 Windows Server AD 계정 간에 ID를 동기화합니다.
+[Office 365 개발/테스트 환경에 대한 디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)의 지침에 따라 APP1을 DirSync 서버로 사용하여 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 만들고, DC1에서 Office 365와 AD DS(Active Directory Domain Services) 계정 간에 ID를 동기화합니다.
   
 다음으로, 현재 도메인 이름에 따라 새 공용 DNS 도메인 이름을 만든 후 Office 365 구독에 추가합니다. 이름 **testlab.**\<공용 도메인>을 사용하는 것이 좋습니다. 예를 들어, 공용 도메인 이름이 contoso.com이면 공용 도메인 이름 testlab.contoso.com을 추가합니다.
   
@@ -422,7 +422,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
     **Microsoft Office 홈** 페이지가 표시됩니다.
     
-이 절차에서는 Office 365 평가판 구독이 DC1에 호스트된 Windows Server AD corp.contoso.com 도메인과 페더레이션되는 방법을 보여줍니다. 다음은 인증 프로세스의 기본 사항입니다.
+이 절차에서는 Office 365 평가판 구독이 DC1에 호스트된 AD DS corp.contoso.com 도메인과 페더레이션되는 방법을 보여줍니다. 다음은 인증 프로세스의 기본 사항입니다.
   
 1. 1단계에서 만든 페더레이션 도메인을 로그인 계정 이름 내에서 사용할 경우 Office 365는 페더레이션 서비스 FQDN 및 PROXY1으로 브라우저를 리디렉션합니다.
     
@@ -444,7 +444,7 @@ Azure의 Office 365에 대해 프로덕션에서 사용할 수 있는 고가용�
   
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 채택 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   

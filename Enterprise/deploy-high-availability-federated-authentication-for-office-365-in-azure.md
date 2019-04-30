@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: '요약: Microsoft Azure에서 Office 365 구독에 대한 고가용성 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: 9e671cabf2e9ca764f4948822da6aa0fb57ef5b5
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 9139019cf53b3a43bcc6d8ebcfbad5d4f7f5506f
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038052"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741274"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure에서 Office 365용 고가용성 페더레이션 인증 배포
 
@@ -54,7 +54,7 @@ ms.locfileid: "31038052"
 > [!NOTE]
 > 이 VNet이 온-프레미스 네트워크에 연결되어 있으므로 이 구성에는 jumpbox 또는 관리 서브넷의 가상 컴퓨터 모니터링이 포함되지 않습니다. 자세한 내용은 [N 계층 아키텍처에 대해 Windows VM 실행](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)을 참조하세요. 
   
-이 구성을 완료하면 모든 Office 365 사용자에 대한 페더레이션 인증을 가지게 됩니다. 즉, 사용자가 Office 365 계정 대신 자신의 Windows Server Active Directory 자격 증명을 사용하여 로그인할 수 있습니다. 페더레이션 인증 인프라는 온-프레미스 경계 네트워크 대신 Azure 인프라 서비스에 더욱 쉽게 배포되는 중복 서버 집합을 사용합니다.
+이 구성을 완료하면 모든 Office 365 사용자에 대한 페더레이션 인증을 가지게 됩니다. 즉, 사용자가 Office 365 계정 대신 자신의 Active Directory Domain Services 자격 증명을 사용하여 로그인할 수 있습니다. 페더레이션 인증 인프라는 온-프레미스 경계 네트워크 대신 Azure 인프라 서비스에 더욱 쉽게 배포되는 중복 서버 집합을 사용합니다.
   
 ## <a name="bill-of-materials"></a>제품 구성 정보(BOM)
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '요약: 시뮬레이션된 프레미스 간 가상 네트워크를 Microsoft Azure에 개발/테스트 환경으로 만듭니다.'
-ms.openlocfilehash: 9ef0424bad831294066e4ff4b5f7d602babc0a48
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: 57262ee58f539fffbb0fc5b92c3a24f4c9204293
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948599"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741214"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>시뮬레이션된 Azure의 크로스-프레미스 가상 네트워크
 
@@ -62,7 +62,7 @@ Azure IaaS 하이브리드 클라우드 프로덕션 환경을 시뮬레이트�
 ![Microsoft 클라우드의 테스트 랩 가이드](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>1단계: TestLab 가상 네트워크 구성
 

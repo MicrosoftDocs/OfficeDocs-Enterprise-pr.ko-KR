@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '요약: 이 테스트 랩 가이드를 사용하여 평가 또는 개발/테스트를 위한 Office 365 평가판 구독을 만듭니다.'
-ms.openlocfilehash: a49ba10ab9ddded36f21ca9cc92f0482cbe7a4fb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038034"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741244"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -44,7 +44,7 @@ Office 365 평가판 구독을 사용하여 응용 프로그램에 대한 Office
 ![Microsoft 클라우드의 테스트 랩 가이드](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 One Microsoft 클라우드 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>1단계: Azure에서 기본 구성 만들기
 
@@ -267,7 +267,7 @@ Office 365 개발/테스트 환경에서 다음 문서를 사용하세요.
     
 - [Office 365 개발/테스트 환경용 Multi-Factor Authentication](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경용 페더레이션된 ID](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 페더레이션 ID](federated-identity-for-your-office-365-dev-test-environment.md)
     
 - [Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
@@ -277,21 +277,13 @@ Office 365 개발/테스트 환경에서 다음 문서를 사용하세요.
     
 - [Office 365 개발/테스트 환경용 중요 파일 보호](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [개발/테스트 환경에서 격리된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [격리된 SharePoint Online 팀 사이트 개발/테스트 환경](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
 - [Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-추가 Microsoft 클라우드 서비스를 포함하도록 Office 365 개발/테스트 환경을 확장합니다.
-  
-- [Microsoft 365 Enterprise 개발/테스트 환경](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-- [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
-    
 ## <a name="see-also"></a>참고 항목
 
-- [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
-  
-- [Office 365 및 Dynamics 365 개발/테스트 환경](office-365-and-dynamics-365-dev-test-environment.md)
+- [클라우드 채택 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 

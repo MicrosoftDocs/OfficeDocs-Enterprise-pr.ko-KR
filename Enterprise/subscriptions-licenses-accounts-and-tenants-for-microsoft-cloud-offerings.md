@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574052"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741324"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 
@@ -85,7 +85,7 @@ Azure IaaS 기반 가상 머신의 경우 가상 머신 이미지에 설치되�
   
 ### <a name="user-accounts"></a>사용자 계정
 
-모든 Microsoft의 클라우드 서비스에 대한 사용자 계정은 사용자 계정 및 그룹을 포함하는 Azure AD(Active Directory) 테넌트에 저장됩니다. Azure AD 테넌트는 Windows 서버 기반 서비스인 Azure AD Connect를 사용하여 기존 Windows Server AD 계정과 동기화될 수 있습니다. 이것을 DirSync(디렉터리 동기화)라고 합니다.
+모든 Microsoft의 클라우드 서비스에 대한 사용자 계정은 사용자 계정 및 그룹을 포함하는 Azure AD(Active Directory) 테넌트에 저장됩니다. Azure AD 테넌트는 Windows 서버 기반 서비스인 Azure AD Connect를 사용하여 기존 AD DS(Active Directory Domain Services) 계정과 동기화될 수 있습니다. 이것을 DirSync(디렉터리 동기화)라고 합니다.
   
 그림 3은 조직 계정이 포함된 일반적인 Azure 테넌트를 사용하는 조직의 여러 구독 예를 보여줍니다.
   
@@ -129,13 +129,13 @@ Azure AD 테넌트는 계정 및 그룹에 포함된 Azure AD의 특정 인스�
     
   - 일반적인 Azure AD 테넌트에 있는 조직의 사용자 계정
     
-여러 Microsoft 클라우드 서비스 구독이 공통 ID 공급자의 역할을 하는 동일한 Azure 테넌트를 사용할 수 있습니다. 온-프레미스 Windows Server AD의 동기화된 계정을 포함하는 중앙 Azure AD 테넌트는 조직에 클라우드 기반 IDaaS(Identity as a Service)를 제공합니다. 이 내용은 그림 4에 나와 있습니다.
+여러 Microsoft 클라우드 서비스 구독이 공통 ID 공급자의 역할을 하는 동일한 Azure 테넌트를 사용할 수 있습니다. 온-프레미스 AD DS(Active Directory Domain Services)의 동기화된 계정을 포함하는 중앙 Azure AD 테넌트는 조직에 클라우드 기반 IDaaS(Identity as a Service)를 제공합니다. 이 내용은 그림 4에 나와 있습니다.
   
 **그림 4: 조직에 대한 동기화된 온-프레미스 계정 및 IDaaS**
 
 ![조직에 대한 IDaaS(Identity as a Service)입니다.](media/Subscriptions/Subscriptions-Fig4.png)
   
-그림 4는 일반적인 Azure AD 테넌트가 Azure AD Domains Services를 사용하는 Microsoft의 SaaS 클라우드 서비스, Azure PaaS 앱 및 Azure IaaS의 가상 머신에서 사용되는 방법을 보여 줍니다. Azure AD Connect는 온-프레미스 Windows Server AD 포리스트를 Azure AD 테넌트와 동기화합니다.
+그림 4는 일반적인 Azure AD 테넌트가 Azure AD Domains Services를 사용하는 Microsoft의 SaaS 클라우드 서비스, Azure PaaS 앱 및 Azure IaaS의 가상 머신에서 사용되는 방법을 보여 줍니다. Azure AD Connect는 온-프레미스 AD DS(Active Directory Domain Services) 포리스트를 Azure AD 테넌트와 동기화합니다.
   
 Microsoft 클라우드 제품 간의 ID 통합에 대한 자세한 내용은 [Microsoft Cloud Identity for Enterprise Architects](https://aka.ms/cloudarchidentity)를 참조하세요.
   
@@ -174,7 +174,7 @@ Azure 및 Office 365 구독으로 따로 구입했으며 Azure 구독에서 Offi
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   
-[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 채택 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
