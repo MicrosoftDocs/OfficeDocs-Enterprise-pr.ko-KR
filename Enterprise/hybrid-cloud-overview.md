@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '요약: Microsoft 하이브리드 클라우드의 정의 및 요소를 이해 합니다.'
 ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741434"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491162"
 ---
 # <a name="hybrid-cloud-overview"></a>하이브리드 클라우드 개요
 

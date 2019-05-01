@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: office 365에 대 한 배포 관리자는 office 365 설정에 대 한 셀프 기반 지원을 제공 합니다.
 ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741475"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490084"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Office 365 서비스 배포 관리자
 

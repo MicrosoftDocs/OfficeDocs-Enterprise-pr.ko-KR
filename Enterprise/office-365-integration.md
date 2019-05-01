@@ -1,5 +1,5 @@
 ---
-title: '도메인을 사용하여 온-프레미스 전자 메일과 통합(예: 디렉터리 서비스 사용)'
+title: 온-프레미스 환경과 Office 365 통합
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Office 365를 기존 디렉터리 서비스와 통합 하는 방법에 대해 알아봅니다.
 ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085337"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487410"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>도메인을 사용하여 온-프레미스 전자 메일과 통합(예: 디렉터리 서비스 사용)
+# <a name="office-365-integration-with-on-premises-environments"></a>온-프레미스 환경과 Office 365 통합
 
 Office 365을 기존 디렉터리 서비스와 통합 하 고 Exchange server의 온-프레미스 설치, 비즈니스용 Skype 서버 2015 또는 SharePoint Server 2013와 통합할 수 있습니다.
   

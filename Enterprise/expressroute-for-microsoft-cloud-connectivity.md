@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '요약: Microsoft의 클라우드 서비스 및 플랫폼에 대 한 더 빠르고 안정적인 연결을 지원 하기 위한 방법에 대해 알아봅니다.'
 ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574012"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33488170"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft 클라우드 연결을 위한 ExpressRoute
 
@@ -266,7 +266,7 @@ Microsoft 클라우드 네트워크를 통한 intercontinental 트래픽의 경�
 
 ## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 설계자 용 Microsoft 클라우드 네트워킹](microsoft-cloud-networking-for-enterprise-architects.md)
+[Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
 

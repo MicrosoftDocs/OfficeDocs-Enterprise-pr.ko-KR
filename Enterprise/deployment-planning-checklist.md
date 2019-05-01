@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 이 검사 목록은 조직에 Office 365로의 마이그레이션을 계획 하 고 준비 하는 데 도움이 됩니다. 검사 목록의 단계와 단계는 온 보 딩 센터에서 제공 하는 지침에 따라 정렬 됩니다.
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085307"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490104"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 배포 계획 검사 목록
 
@@ -37,7 +37,7 @@ Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비�
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**배포 작업/이벤트** <br/> |**시작 날짜** <br/> |**완료 날짜** <br/> |**리소스** <br/> |**종속성** <br/> |
+|**배포 작업/이벤트** <br/> |**시작 날짜** <br/> |**완료 날짜** <br/> |**리소스** <br/> |**의존** <br/> |
 |**배포 목표 결정** <br/> |||||
 | 내부 및 외부 관련자와 함께:<br>  -범위 및 일정에 동의 <br>  -프로젝트 추적 메커니즘에 동의 합니다.  <br>  -[Office 365을 사용 하 여](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) 성공 기준 및 [통신](https://fasttrack.microsoft.com/office) / 시작|||||
 |**현재 환경 인벤토리 및 주요 배포 결정 사항 만들기** |||||

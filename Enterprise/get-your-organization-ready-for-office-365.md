@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: fasttrack 배포를 옵트아웃 했으며 기본 배포 단계에서 필요한 사항을 찾지 못하는 경우에는이 작업을 시작 합니다.
 ms.openlocfilehash: a15bd73efe2fd2e2dfd13b3a444f77b9d0bfc764
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085377"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487744"
 ---
 # <a name="get-your-organization-ready-for-office-365-enterprise"></a>조직에서 Office 365 Enterprise를 사용할 수 있도록 준비
 
@@ -35,7 +35,7 @@ Office 365를 설치하는 데 도움이 필요하면 [FastTrack](https://fasttr
 |**시작 하려면 하나 이상의 항목을 선택 합니다.**||
 |:-----|:-----|
 | [Office의 시스템 요구 사항](https://products.office.com/office-system-requirements) |-Microsoft Office Professional, Office 365, office 365 ProPlus 및 Windows, Mac, iOS 및 Android 용 Office 응용 프로그램에는 모두 특정 시스템 요구 사항이 있습니다. 하드웨어 및 소프트웨어가 최소 시스템 요구 사항을 충족 하는지 확인 합니다.|
-|**대부분** 의 고객은 온-프레미스 디렉터리를 Office 365에 연결 합니다. [네트워크에서 idfix를 설치 및 실행](https://www.microsoft.com/download/details.aspx?id=36832)하 여 디렉터리 준비에 대 한 시작을 확인 하세요.<br> [AAD Connect advisor](https://aka.ms/aadconnectpwsync) 및 [Azure AD Premium 설정 가이드](https://aka.ms/aadpguidance) 를 사용 하 여 사용자 지정 된 설정 지침을 확인 하세요. <br> |- [사용자 계정의 유효성을 검사](https://support.office.com/article/Prepare-to-provision-users-through-directory-synchronization-to-Office-365-01920974-9e6f-4331-a370-13aea4e82b3e)하기 위해 디렉터리에 대 한 자동화 된 검사가 자동으로 동기화 됩니다. <br> -디렉터리 개체를 변경 하 고 변경 내용을 자동화 하기 위한 서비스를 제공 합니다. <br> - [idfix 도구 사용에 대 한 자세한 내용](prepare-directory-attributes-for-synch-with-idfix.md) |
+|**대부분** 의 고객은 온-프레미스 디렉터리를 Office 365에 연결 합니다. [네트워크에서 idfix를 설치 및 실행](https://www.microsoft.com/download/details.aspx?id=36832)하 여 디렉터리 준비에 대 한 시작을 확인 하세요. <br> [AAD Connect advisor](https://aka.ms/aadconnectpwsync) 및 [Azure AD Premium 설정 가이드](https://aka.ms/aadpguidance) 를 사용 하 여 사용자 지정 된 설정 지침을 확인 하세요. <br> |- [사용자 계정의 유효성을 검사](https://support.office.com/article/Prepare-to-provision-users-through-directory-synchronization-to-Office-365-01920974-9e6f-4331-a370-13aea4e82b3e)하기 위해 디렉터리에 대 한 자동화 된 검사가 자동으로 동기화 됩니다. <br> -디렉터리 개체를 변경 하 고 변경 내용을 자동화 하기 위한 서비스를 제공 합니다. <br> - [idfix 도구 사용에 대 한 자세한 내용](prepare-directory-attributes-for-synch-with-idfix.md) |
 |[네트워크 성능 지침](https://aka.ms/tune) 을 **읽고** 도구를 사용 하 여 사용자에 게 최상의 환경을 제공 하는 데 필요한 연결성 및 성능 구성을 확인 합니다.  <br> | -office 365에 연결할 수 있는지 확인 하 고, 아웃 바운드 트래픽을 필터링 하거나 검사 하는 경우 조직에 대 한 [Office 365 끝점을 관리](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a) 하는 방법을 이해 하는 것이 좋습니다.  <br>  - 보다 예측 가능한 환경을 위해 [네트워크 용량을 모델링 및 테스트 하 고](https://support.office.com/article/Network-and-migration-planning-for-Office-365-f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132) [Office 365 회로에 대 한 Azure express](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd) 주소로 이동 합니다.   |
 |[계획 검사 목록을](https://support.office.com/article/Deployment-planning-checklist-for-Office-365-5fa4f6ef-35ad-4840-91c1-4834df3df5a0) **사용** 하 여 고유한 배포 계획을 작성 하는 것이 적절 한 방법입니다.  <br> | 자세한 내용은 계획에 도움이 되는 참조 또는 방법 정보에 대 한 링크를 계획 해야 할 수 있습니다. |
 |[Exchange Server 대규모 항목 스크립트](https://gallery.technet.microsoft.com/Exchange-Server-Large-Item-b9546cc6) 를 **사용** 하 여 마이그레이션할 수 없는 메일 항목을 찾습니다.  <br> | -Exchange 웹 서비스를 사용 하 여 사용자가 지정한 파일 크기에 대해 사서함을 가장, 액세스, 검색 하 고, 결과를 CSV 파일로 덤프 합니다. [스크립트 사용 방법에 대 한 자세한 지침](https://blogs.technet.com/b/mikehall/archive/2013/06/27/large-mail-item-script.aspx)을 읽으십시오. |

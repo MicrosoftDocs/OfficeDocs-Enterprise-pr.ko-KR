@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 Office 365에서 cdns (콘텐츠 배달 네트워크)를 사용 하 여 성능을 개선 하는 방법에 대해 알아봅니다.
 ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039485"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490446"
 ---
 # <a name="content-delivery-networks-cdns"></a>cdns (콘텐츠 배달 네트워크)
 
@@ -186,7 +186,7 @@ cdns를 사용 하는 것은 sharepoint Online 컨텍스트에서 적합 하며 
 
 [Office 365 끝점 관리](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
-[Office 365 URL 및 IP 주소 범위 ](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[Office 365 URL 및 IP 주소 범위](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [SharePoint Online에서 Office 365 콘텐츠 배달 네트워크 사용](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 

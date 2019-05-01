@@ -12,33 +12,33 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: 이 문서에서는 이미지를 로드 하는 지연 시간을 JavaScript를 사용 하 여 및 대기 페이지 로드 한 다음 이전에 필수적이 지 않은 JavaScript를 로드 하 여 SharePoint Online 페이지 로드 시간을 줄일 수는 방법을 설명 합니다.
+description: 이 문서에서는 페이지를 로드할 때까지 javascript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
 ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542145"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490300"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online에서 이미지 및 JavaScript 로드 지연
 
-이 문서에서는 이미지를 로드 하는 지연 시간을 JavaScript를 사용 하 여 및 대기 페이지 로드 한 다음 이전에 필수적이 지 않은 JavaScript를 로드 하 여 SharePoint Online 페이지 로드 시간을 줄일 수는 방법을 설명 합니다. 
+이 문서에서는 페이지를 로드할 때까지 javascript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다. 
   
-이미지는 SharePoint Online의 페이지 로드 시 속도가 저하될 수 있습니다. 기본적으로 대부분의 최신 인터넷 브라우저는 HTML 페이지를 로드할 때 이미지를 미리 가져옵니다. 이로 인해 아래로 스크롤할 때까지 이미지가 화면에 표시되지 않을 경우 페이지를 로드할 때 불필요하게 느려질 수 있습니다. 이미지는 브라우저에서 페이지의 보이는 부분을 로드하지 못하게 차단할 수 있습니다. 이 문제를 해결하려면 JavaScript를 사용하여 먼저 이미지 로드를 건너뛰면 됩니다. 또한 필수적이지 않은 JavaScript를 로드하면 SharePoint 페이지의 로드 시간이 느려질 수 있습니다. 이 항목에서는 SharePoint Online에서 JavaScript를 사용하여 페이지 로드 시간을 향상시키는 데 사용할 수 있는 몇 가지 방법에 대해 설명합니다. 
+이미지는 SharePoint Online의 페이지 로드 속도에 부정적인 영향을 줄 수 있습니다. 기본적으로 대부분의 최신 인터넷 브라우저는 HTML 페이지를 로드할 때 이미지를 미리 페치 합니다. 이로 인해 사용자가 아래로 스크롤할 때까지 이미지가 화면에 표시 되지 않는 경우 페이지가 불필요 하 게 더 느리게 로드 될 수 있습니다. 이미지는 브라우저가 페이지의 표시 되는 부분을 로드 하지 못하게 차단할 수 있습니다. 이 문제를 해결 하려면 JavaScript를 사용 하 여 이미지 로드를 먼저 건너뛸 수 있습니다. 또한 중요 하지 않은 JavaScript를 로드 하면 SharePoint 페이지의 로드 시간도 느려질 수 있습니다. 이 항목에서는 SharePoint Online에서 JavaScript의 페이지 로드 시간을 개선 하는 데 사용할 수 있는 몇 가지 방법에 대해 설명 합니다. 
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript를 사용하여 SharePoint Online 페이지의 이미지 로드를 지연시켜 페이지 로드 시간 개선
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript를 사용 하 여 SharePoint Online 페이지에서 이미지 로드를 지연 시켜 페이지 로드 시간 개선
 
-사전 반입 이미지에서 웹 브라우저를 방지 하기 위해 JavaScript를 사용할 수 있습니다. 전체 문서 렌더링 속도가 향상 됩니다. src 특성의 값을 제거 하면이 작업을 수행 하는 \<img\> 태그를 지정 하 고 같은 데이터 특성에 파일의 경로를 교체: 데이터 src 합니다. 예를 들어:
+JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예를 들어:
   
 ```
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-이 메서드를 사용 하 여 브라우저에서 이미지를 즉시 다운로드 하지 않습니다. 이미지의 뷰포트에 이미 있으면 JavaScript 데이터 특성에서 URL을 검색 하 고 src 특성에 대 한 값으로 삽입 브라우저에 지시 합니다. 까지 스크롤하면으로만 로드 하는 이미지 및 보기에 제공 합니다.
+이 메서드를 사용 하면 브라우저에서 이미지를 즉시 다운로드 하지 않습니다. 이미지가 이미 뷰포트에 있으면 JavaScript가 데이터 특성에서 URL을 검색 하 고이를 src 특성 값으로 삽입 하도록 브라우저에 지시 합니다. 사용자가 스크롤하면 이미지가 스크롤되어 표시 됩니다.
   
-이 모든 것을 확인 하려면 들 해야 JavaScript를 사용 합니다.
+이러한 모든 작업을 수행 하려면 JavaScript를 사용 해야 합니다.
   
-텍스트 파일에서 **isElementInViewport()** 함수를 정의하여 요소가 사용자에게 표시되는 브라우저의 일부인지 여부를 확인합니다. 
+텍스트 파일에서 **iselementinviewport ()** 함수를 정의 하 여 요소가 사용자에 게 표시 되는 브라우저의 일부 인지 여부를 확인 합니다. 
   
 ```
 function isElementInViewport(el) {
@@ -55,7 +55,7 @@ function isElementInViewport(el) {
 
 ```
 
-그런 다음 **loadItemsInView()** 함수에 **isElementInViewport()** 를 사용합니다. **loadItemsInView()** 함수는 이미지가 사용자에게 표시되는 브라우저의 일부인 경우 data-src 특성 값이 있는 모든 이미지를 로드합니다. 텍스트 파일에 다음 함수를 추가합니다. 
+그런 다음 **loaditemsinview ()** 함수에서 **iselementinviewport ()** 를 사용 합니다. 사용자에 게 표시 되는 브라우저 부분에 있는 경우 **loaditemsinview ()** 함수는 데이터 src 특성에 대 한 값이 있는 모든 이미지를 로드 합니다. 텍스트 파일에 다음 함수를 추가 합니다. 
   
 ```
 function loadItemsInView() {
@@ -71,7 +71,7 @@ function loadItemsInView() {
 }
 ```
 
-마지막으로 다음 예제와 같이 **window.onscroll()** 내에서 **loadItemsInView()** 를 호출합니다. 이렇게 하면 뷰포트의 이미지가 사용자에게 필요하기 전까지 로드되지 않습니다. 텍스트 파일에 다음을 추가합니다. 
+마지막으로, 다음 예와 같이 **window. onscroll ()** 내에서 **loaditemsinview ()** 를 호출 합니다. 이렇게 하면 사용자가 필요에 따라 뷰포트의 모든 이미지가 로드 되 고 앞에는 표시 되지 않습니다. 텍스트 파일에 다음을 추가 합니다. 
   
 ```
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -81,7 +81,7 @@ $(window).on("scroll", function () {
 
 ```
 
-SharePoint Online에 대 한 다음 함수는 스크롤 이벤트는 #s4-작업에 연결 해야하는 \<div\> 태그입니다. 즉, 창 이벤트는 페이지의 위쪽에 연결 된 리본 메뉴 유지 하기 위해 재정의 됩니다.
+SharePoint Online의 경우 #s4-workspace \<div\> 태그의 scroll 이벤트에 다음 함수를 연결 해야 합니다. 이는 리본 메뉴가 페이지 맨 위에 계속 연결 되도록 하기 위해 창 이벤트가 재정의 되기 때문입니다.
   
 ```
 //Keep the ribbon at the top of the page
@@ -90,35 +90,35 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-텍스트 파일을 확장명이 .js인 JavaScript 파일(예: delayLoadImages.js)로 저장합니다.
+확장명이 .js 인 JavaScript 파일로 텍스트 파일을 저장 합니다 (예: delayloadimages.js)로).
   
-DelayLoadImages.js 작성 (영문)을 완료 한 후에 SharePoint Online에서 마스터 페이지에 파일의 내용을 추가할 수 있습니다. 마스터 페이지의 머리글에 스크립트 링크를 추가 하 여이 작업을 수행 합니다. 다음은 마스터 페이지, 되 면 해당 마스터 페이지 레이아웃을 사용 하는 SharePoint Online 사이트의 모든 페이지에 JavaScript 적용 됩니다. 또는 사이트의 한 페이지에만이 사용 하려는 경우 사용 하 여 스크립트 편집기 웹 파트 페이지에 JavaScript를 포함 합니다. 자세한 내용은 다음이 항목을 참조 하십시오.
+delayloadimages.js)로를 작성 한 후에는 SharePoint Online의 마스터 페이지에 파일 내용을 추가할 수 있습니다. 마스터 페이지의 머리글에 스크립트 링크를 추가 하 여이 작업을 수행 합니다. 마스터 페이지에 있는 JavaScript는 해당 마스터 페이지 레이아웃을 사용 하는 SharePoint Online 사이트의 모든 페이지에 적용 됩니다. 또는 사이트의 한 페이지 에서만이 항목을 사용 하려는 경우 스크립트 편집기 웹 파트를 사용 하 여 JavaScript를 페이지에 포함 합니다. 자세한 내용은 다음 항목을 참조 하십시오.
   
-- [방법: 마스터 페이지를 SharePoint 2013에서 사이트에 적용](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [방법: SharePoint 2013에서 사이트에 마스터 페이지 적용](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
-- [방법: SharePoint 2013의 페이지 레이아웃 만들기](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [방법: SharePoint 2013에서 페이지 레이아웃 만들기](https://go.microsoft.com/fwlink/p/?LinkId=525628)
     
- **예: SharePoint Online의 마스터 페이지에서 JavaScript delayLoadImages.js 파일 참조**
+ **예제: SharePoint Online의 마스터 페이지에서 JavaScript delayloadimages.js)로 파일 참조**
   
-이를 위해서는 마스터 페이지에서 jQuery를 참조해야 합니다. 다음 예는 초기 페이지 로드에서 이미지가 하나만 로드되었으나 페이지에 여러 이미지가 더 있는 상황을 보여줍니다.
+이 작업을 수행 하려면 마스터 페이지에서 jQuery도 참조 해야 합니다. 다음 예제에서는 이미지가 하나만 로드 되었지만 페이지에 몇 개 더 추가 된 초기 페이지 로드를 볼 수 있습니다.
   
 ![페이지에 로드된 하나의 이미지를 보여 주는 스크린샷](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-다음 스크린샷에는 보기로 스크롤한 후에 다운로드되는 나머지 이미지가 나와 있습니다.
+다음 스크린샷은 보기로 스크롤한 후에 다운로드 되는 나머지 이미지를 보여 줍니다.
   
 ![페이지에 로드된 여러 페이지를 보여 주는 스크린샷](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-JavaScript를 사용하여 이미지 로드를 지연시키는 방식은 성능이 향상되는 효과적인 방법이 될 수 있지만, 이 방법을 공용 웹 사이트에 적용하면 검색 엔진이 일반적인 형식의 이미지를 크롤링할 때와 같은 방식으로 이미지를 크롤링할 수 없습니다. 이 경우 이미지 자체의 메타데이터가 페이지를 로드할 때까지는 실제로 존재하지 않으므로 검색 엔진의 순위에 영향을 줄 수 있습니다. 검색 엔진 크롤러는 HTML만 읽으므로 이미지가 페이지의 콘텐츠로 표시되지 않습니다. 이미지는 검색 결과에서 페이지 순위를 매기는 데 사용되는 요소 중 하나입니다. 이 문제를 해결하는 한 가지 방법은 이미지에 대한 소개 텍스트를 사용하는 것입니다.
+JavaScript를 사용 하 여 이미지 로드를 지연 시키는 것은 성능 향상의 효과적인 방법이 될 수 있습니다. 그러나 공용 웹 사이트에이 기술이 적용 되는 경우에는 검색 엔진에서 정기적으로 구성 된 이미지를 크롤링하는 것과 같은 방식으로 이미지를 크롤링할 수 없습니다. 이는 페이지를 로드 하기 전 까지는 이미지 자체의 메타 데이터가 실제로 나타나지 않으므로 검색 엔진의 순위에 영향을 줄 수 있습니다. 검색 엔진 크롤러에는 HTML만 읽고 있으므로 페이지에서 이미지를 콘텐츠로 표시 하지 않습니다. 이미지는 검색 결과에서 페이지의 순위를 지정 하는 데 사용 되는 요인 중 하나입니다. 이 문제를 해결 하는 한 가지 방법은 이미지에 소개 텍스트를 사용 하는 것입니다.
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub 코드 샘플: JavaScript를 삽입하여 성능 향상
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub 코드 샘플: JavaScript를 삽입 하 여 성능 개선
 
-GitHub에서 제공 하는 [JavaScript 주입](https://go.microsoft.com/fwlink/p/?LinkId=524759) 에서 문서 및 코드 샘플을 놓치지 마십시오. 
+GitHub에서 제공 되는 [JavaScript 주입](https://go.microsoft.com/fwlink/p/?LinkId=524759) 에 대 한 문서 및 코드 예제를 놓치지 마세요. 
   
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 ProPlus 및 Office 2013에서 지원 되는 브라우저](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[office 2013 및 office 365 ProPlus의 지원 되는 브라우저](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[방법: 마스터 페이지를 SharePoint 2013에서 사이트에 적용](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[방법: SharePoint 2013에서 사이트에 마스터 페이지 적용](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
-[방법: SharePoint 2013의 페이지 레이아웃 만들기](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[방법: SharePoint 2013에서 페이지 레이아웃 만들기](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 

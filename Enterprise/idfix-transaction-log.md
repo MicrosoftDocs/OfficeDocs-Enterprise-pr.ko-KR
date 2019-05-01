@@ -18,25 +18,25 @@ search.appverid:
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: 예제를 제공 하 고 Office 365 idfix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085067"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490944"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 idfix 트랜잭션 로그
 
 예제를 제공 하 고 Office 365 idfix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
   
-## <a name="idfix-transaction-log-location"></a>IdFix 트랜잭션 로그 위치
+## <a name="idfix-transaction-log-location"></a>idfix 트랜잭션 로그 위치
 
-Office 365 idfix 도구는 idfix에서 **Apply** 를 클릭 하 고 변경 내용을 Active Directory 포리스트에 적용할 때마다 새 트랜잭션 로그를 만듭니다. 트랜잭션 로그는 idfix를 설치한 동일한 폴더에 저장 됩니다. 기본적으로이 폴더는 c:\deployment tools\idfix.입니다. 트랜잭션 로그 파일 이름에 날짜 및 시간 스탬프 형식을 사용 하는 경우 (예: verbose 6-1-2018 6-17-22 pm)에는 6:17:22 pm의 2018에서 생성 된 파일을 나타냅니다. 자세한 내용은 로깅 수준을 나타냅니다. 
+Office 365 idfix 도구는 idfix에서 **Apply** 를 클릭 하 고 변경 내용을 Active Directory 포리스트에 적용할 때마다 새 트랜잭션 로그를 만듭니다. 트랜잭션 로그는 idfix를 설치한 동일한 폴더에 저장 됩니다. 기본적으로이 폴더는 c:\deployment tools\idfix.입니다. 트랜잭션 로그 파일 이름에 날짜 및 시간 스탬프 형식을 사용 하는 경우 (예: Verbose 6-1-2018 6-17-22 pm)에는 2018 년 6 월 1 일에 생성 된 파일을 나타냅니다. Verbose 로깅 수준을 나타냅니다. 
   
-## <a name="idfix-transaction-log-logging-level"></a>IdFix 트랜잭션 로그 로깅 수준
+## <a name="idfix-transaction-log-logging-level"></a>idfix 트랜잭션 로그 로깅 수준
 
-트랜잭션 로그 파일에 나오는 단어 verbose는 파일의 로깅 수준을 나타냅니다. Verbose는 로그에 최대 양의 정보가 캡쳐됨을 의미합니다. 이것이 기본 로깅 수준입니다. 지금은 로깅 수준을 변경할 수 없습니다.
+트랜잭션 로그 파일 이름의 단어 verbose는 파일의 로깅 수준을 나타냅니다. Verbose는 로그에서 정보의 양이 최대한 포착 됨을 의미 합니다. 기본 로깅 수준입니다. 현재로 서는 로깅 수준을 변경할 수 없습니다.
   
-## <a name="idfix-transaction-log-format"></a>IdFix 트랜잭션 로그 형식
+## <a name="idfix-transaction-log-format"></a>idfix 트랜잭션 로그 형식
 
 idfix는 다음 예제와 같이 각 **업데이트** 작업의 결과를 트랜잭션 로그에 씁니다.
   

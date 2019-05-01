@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Microsoft 365 관리 센터에서 디렉터리 동기화 오류를 확인 하는 방법에 대해 알아봅니다.
 ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001811"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491270"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Office 365에서 디렉터리 동기화 오류 보기
 

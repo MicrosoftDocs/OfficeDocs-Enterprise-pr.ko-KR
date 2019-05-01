@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: Office 365 조직에서 Sway에 액세스하지 못하게 할 수 있는 ManageSway.ps1 PowerShell 스크립트를 다운로드할 수 있는 위치를 알아봅니다.
 ms.openlocfilehash: 38f50a483f7bb42ad2d944cf95c49050cf35bfb1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897091"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491304"
 ---
 # <a name="disable-access-to-sway-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 Sway에 대한 액세스 비활성화
 

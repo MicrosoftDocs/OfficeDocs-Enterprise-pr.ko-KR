@@ -1,5 +1,5 @@
 ---
-title: Office 365 관리자를 위한 통합된 앱 및 Azure AD
+title: Office 365 관리자를 위한 통합 앱 및 Azure AD
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: O365 통합 앱이 Azure AD에서 등록 되 고 관리 되는 방법 알아보기
 ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001881"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487125"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 관리자를 위한 통합된 앱 및 Azure AD
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 관리자를 위한 통합 앱 및 Azure AD
 
 통합 앱을 [설정 하거나 해제](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114)하는 것 보다 통합 앱을 관리 하는 것이 더 많습니다. office 365 REST api의 등장으로 사용자는 메일, 일정, 연락처, 사용자, 그룹, 파일 및 폴더와 같은 office 365 데이터에 대 한 액세스 권한을 앱에 부여할 수 있습니다. 기본적으로 사용자는 각 앱에 개별적으로 사용 권한을 부여 해야 하지만, 전역 관리자 수준에서 앱을 한 번 인증 하 고 앱 시작 관리자를 통해 전체 조직에 배포 하려는 경우에는 제대로 확장 되지 않습니다. 이 작업을 수행 하려면 Azure AD에 앱을 등록 해야 합니다. Azure AD에 앱을 등록 하 고 Office 365 조직에서 앱을 관리 하는 데 도움이 되는 정보를 확인 하기 위해 수행 해야 하는 몇 가지 단계가 있습니다. 이 문서에서는 이러한 리소스를 안내 합니다.
   

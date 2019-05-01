@@ -1,5 +1,5 @@
 ---
-title: 하이브리드 최신 인증을 사용 하도록 비즈니스용 Skype 온-프레미스를 구성 하는 방법
+title: 하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,14 +14,14 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for business 비즈니스를 사용할 수 있습니다.
-ms.openlocfilehash: 23a9262659ae47f5aeb5577b9bb45ea2c1aad235
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372935"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490330"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용 하도록 비즈니스용 Skype 온-프레미스를 구성 하는 방법
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
 
 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for business 비즈니스를 사용할 수 있습니다.
   
@@ -87,8 +87,10 @@ ms.locfileid: "30372935"
     
 모든 SfB 2015 풀에 배포 된 내부 및 외부 웹 서비스 URL이 필요 합니다. 이러한 사항을 가져오려면 비즈니스용 Skype 관리 셸에서 다음을 실행 합니다.
   
-Get-csservice-WebServer | 선택-개체 poolfqdn, internalfqdn, externalfqdn | FL
-  
+```
+Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
+```
+
 - Ex. 내https://lyncwebint01.contoso.com
     
 - Ex. 외부로https://lyncwebext01.contoso.com
@@ -115,41 +117,46 @@ Standard Edition 서버를 사용 하는 경우 내부 URL은 비어 있습니�
   
  **참고 사항** spn (서비스 사용자 이름)은 웹 서비스를 식별 하 고이를 보안 주체 (예: 계정 이름 또는 그룹)와 연결 하 여 인증 된 사용자를 대신 하 여 서비스를 수행할 수 있도록 합니다. 서버에 인증 하는 클라이언트는 spn에 포함 된 정보를 사용 합니다. 
   
-1. 먼저 [다음 지침](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)을 사용 하 여 AAD에 연결 합니다.
+1. 먼저 [다음 지침](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)을 사용 하 여 AAD에 연결 합니다.
     
 2. 온-프레미스에서이 명령을 실행 하 여 SFB 웹 서비스 url의 목록을 가져옵니다.
+
+   appprincipalid는로 `00000004`시작 합니다. 이는 비즈니스용 Skype Online에 해당 합니다.
     
-  - (new-msolserviceprincipal-appprincipalid 00000004-0000-0ff1-ce00-000000000000 | ExpandProperty ServicePrincipalNames을 선택 합니다.
+   메모 작성 및 현재 상태 URL을 포함 하는이 명령의 출력이 며, 대부분은로 `00000004-0000-0ff1-ce00-000000000000/`시작 하는 spn으로 구성 됩니다.
     
-    appprincipalid는 ' 00000004 '로 시작 합니다. 이는 비즈니스용 Skype Online에 해당 합니다.
-    
-    메모 작성 (및 이후 비교)이 명령의 출력은 SE 및 WS URL을 포함 하지만, 대부분은 00000004-0000-0ff1-ce00-000000000000/로 시작 하는 spn으로 구성 됩니다.
+```
+Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+```
     
 3. https://lyncwebint01.contoso.com 예 https://lyncwebext01.contoso.com) 를 들어 온-프레미스의 내부 **또는** 외부 SFB url이 없는 경우에는이 목록에 특정 레코드를 추가 해야 합니다. 
     
     아래의 *예제 url* 을 추가 명령에 있는 실제 url로 바꿔야 합니다. 
-    
-  - $x = (new-msolserviceprincipal-appprincipalid 00000004-0000-0ff1-ce00-000000000000
-    
-  - ServicePrincipalnames (" *https://lyncwebint01.contoso.com/* ")를 $x 합니다. 
-    
-  - ServicePrincipalnames (" *https://lyncwebext01.contoso.com/* ")를 $x 합니다. 
-    
-  - (new-msolserviceprincipal-appprincipalid 00000004-0000-0ff1-ce00-000000000000-ServicePrincipalNames $x ServicePrincipalNames
-    
-4. 2 단계에서 (new-msolserviceprincipal 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 url이 표시 됩니다. 예를 들어, spn 목록에는 이제 특정 url https://lyncweb01.contoso.com 과 https://autodiscover.contoso.com가 포함 됩니다.
+  
+```  
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```
+  
+4. 2 단계에서 (new-msolserviceprincipal 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 url이 표시 됩니다. 예를 들어, spn 목록에는 이제 특정 url https://lyncweb01.contoso.com 과 https://lyncwebext01.contoso.com/가 포함 됩니다.
     
 ### <a name="create-the-evosts-auth-server-object"></a>evosts 인증 서버 개체 만들기
 
 비즈니스용 Skype 관리 셸에서 다음 명령을 실행 합니다.
   
-- 새-csoauthserver-Identity evosts https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true-Type AzureAD
+```
+New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
+```
     
 ### <a name="enable-hybrid-modern-authentication"></a>하이브리드 최신 인증 사용
 
 실제로 MA를 설정 하는 단계입니다. 클라이언트 인증 흐름을 변경 하지 않고 앞의 모든 단계를 미리 실행할 수 있습니다. 인증 흐름을 변경할 준비가 되 면 비즈니스용 Skype 관리 셸에서이 명령을 실행 합니다. 
   
-- Set-csoauthconfiguration-clientauthorizationoauthserveridentity evosts
+```
+Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
+```
     
 ## <a name="verify"></a>지
 

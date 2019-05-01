@@ -15,10 +15,11 @@ ms.custom:
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 요약:Office 365 PowerShell의 중요성을 살펴보고 Office 365 테넌트에 연결하여 도움말을 확인하세요.
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491234"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell 시작
 

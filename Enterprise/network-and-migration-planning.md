@@ -1,5 +1,5 @@
 ---
-title: Office 365에 대 한 네트워크 및 마이그레이션 계획
+title: Office 365의 네트워크 및 마이그레이션 계획
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
 ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574042"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487282"
 ---
-# <a name="network-and-migration-planning-for-office-365"></a>Office 365에 대 한 네트워크 및 마이그레이션 계획
+# <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
 
 이 문서에는 네트워크 계획 및 테스트에 대 한 정보와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
   
@@ -108,8 +108,8 @@ Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려�
     
 - [Office 365 비디오 네트워킹에 대 한 질문과 대답 (faq)](office-365-video-networking-faq.md)
     
-- [Office 365 서비스에 연결 되는 네트워크 장치 계획](plan-for-network-devices.md)
+- [Office 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
     
-- [Office 365 서비스에 대 한 배포 관리자](deployment-advisors-for-office-365.md)
+- [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
     
 

@@ -16,11 +16,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크에서는 일반 인터넷 위치에 대 한 액세스를 제한 하거나, 상당한 백 또는 네트워크 트래픽 처리를 포함 합니다. 이와 같은 네트워크의 컴퓨터가 office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자가 office 365 끝점 목록을 구성 하는 fqdn, url 및 IP 주소 목록을 관리 해야 합니다. 네트워크 요청이 Office 365에 도달할 수 있도록 하려면 이러한 사항을 직접 경로, 프록시 바이패스 및/또는 방화벽 규칙 및 PAC 파일에 추가 해야 합니다.
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458358"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487092"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -221,6 +221,6 @@ Microsoft 소비자 서비스에 대 한 액세스를 차단 하더라도 Office
   
 [Office 365 URL 및 IP 주소 범위](urls-and-ip-address-ranges.md)
   
-[Office 365 연결에 대 한 express 관리](managing-expressroute-for-connectivity.md)
+[Office 365 연결에 대한 ExpressRoute 관리](managing-expressroute-for-connectivity.md)
   
 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)

@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Office 365 구독에는 Azure AD에 대 한 구독이 포함 되어 있습니다. 온-프레미스 환경에 대 한 암호 동기화 또는 single sign-on을 사용 하려면 Office 365와 Azure AD를 통합 합니다.
 ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085477"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490144"
 ---
 # <a name="azure-integration-with-office-365"></a>Office 365와 Azure 통합
 
@@ -54,14 +54,14 @@ office 365 및 azure AD에 대 한 자세한 내용은 [office 365 id 및 azure 
 
 |**기능**|**설명**|
 |:-----|:-----|
-|통합 앱  <br/> |개별 앱에 메일, 일정, 연락처, 사용자, 그룹, 파일 및 폴더와 같은 Office 365 데이터에 대 한 액세스 권한을 부여할 수 있습니다. 또한 전역 관리자 수준에서 이러한 앱에 권한을 부여 하 고 Azure AD에 앱을 등록 하 여 전체 회사에서 사용할 수 있도록 설정할 수도 있습니다. 자세한 내용은 [Office 365 관리자를 위한 통합 앱 및 Azure AD를](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a)참조 하세요.<br/> [Azure AD 응용 프로그램 갤러리 및 single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604)도 참조 하세요.  <br/> |
-|PowerApps  <br/> | Power apps는 SharePoint 목록 및 기타 데이터 앱과 같은 기존 데이터 원본에 연결할 수 있는 모바일 장치용으로 중요 한 앱입니다. 자세한 내용은 SharePoint Online 및 [PowerApps 페이지](https://powerapps.microsoft.com/) [에서 목록에 대 한 PowerApp 만들기](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) 를 참조 하세요.<br/> |
+|통합 앱  <br/> |개별 앱에 메일, 일정, 연락처, 사용자, 그룹, 파일 및 폴더와 같은 Office 365 데이터에 대 한 액세스 권한을 부여할 수 있습니다. 또한 전역 관리자 수준에서 이러한 앱에 권한을 부여 하 고 Azure AD에 앱을 등록 하 여 전체 회사에서 사용할 수 있도록 설정할 수도 있습니다. 자세한 내용은 [Office 365 관리자를 위한 통합 앱 및 Azure AD를](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a)참조 하세요.  <br/> [Azure AD 응용 프로그램 갤러리 및 single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604)도 참조 하세요.  <br/> |
+|PowerApps  <br/> | Power apps는 SharePoint 목록 및 기타 데이터 앱과 같은 기존 데이터 원본에 연결할 수 있는 모바일 장치용으로 중요 한 앱입니다. 자세한 내용은 SharePoint Online 및 [PowerApps 페이지](https://powerapps.microsoft.com/) [에서 목록에 대 한 PowerApp 만들기](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) 를 참조 하세요.  <br/> |
    
 Microsoft Cloud 및 Office 365에 대 한 기타 리소스는 다음 리소스를 참조 하세요.
   
-- [Microsoft Cloud ID for Enterprise Architects](https://go.microsoft.com/fwlink/p/?LinkId=524586)
+- [엔터프라이즈 설계자 용 Microsoft 클라우드 id](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
-- [Microsoft Azure에서 Office 365 DirSync(디렉터리 동기화)를 배포합니다.](https://go.microsoft.com/fwlink/p/?LinkId=517887)
+- [Microsoft Azure에서 Office 365 DirSync(디렉터리 동기화)를 배포](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
 
 자세한 내용은 [통합 앱 및 azure ad for Office 365 관리자](integrated-apps-and-azure-ads.md) 및 [azure ad application gallery 및 single sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)을 참고 하세요.

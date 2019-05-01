@@ -1,5 +1,5 @@
 ---
-title: Office 365 PowerShell로 Office 365 관리
+title: Office 365 PowerShell 사용한 Office 365 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: '요약: Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, Office 365 보안 및 준수 센터에 Office 365 PowerShell을 사용하는 방법을 알아봅니다.'
 ms.openlocfilehash: eb5b9a91a81d03a2de14d3507ef9a9172f44ec58
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "18609010"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491174"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell로 Office 365 관리
 
