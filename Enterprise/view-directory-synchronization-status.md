@@ -1,5 +1,5 @@
 ---
-title: Office 365에서 디렉터리 동기화 상태 보기
+title: Office 365의 디렉터리 동기화 상태 보기
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 디렉터리 동기화를 비활성화 하는 방법에 대해 알아보세요. 또한 해당 상태를 볼 수 있습니다.
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001571"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492104"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Office 365에서 디렉터리 동기화 상태 보기
+# <a name="view-directory-synchronization-status-in-office-365"></a>Office 365의 디렉터리 동기화 상태 보기
 
 온-프레미스 환경을 Office 365와 동기화 하 여 온-프레미스 Active Directory를 Azure AD와 통합 한 경우에도 동기화 상태를 확인할 수 있습니다.
   

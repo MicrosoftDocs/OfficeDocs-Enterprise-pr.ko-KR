@@ -14,11 +14,11 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: office 2007 또는 office 2010을 사용 하는 경우에는 업그레이드를 계획할 수 있습니다. 오래 된 앱에서는 중지 되지 않습니다. 이러한 리소스를 사용 하 여 계획을 시작 하세요.
 ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838230"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492055"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>office 2007 또는 office 2010 서버 및 클라이언트에서 업그레이드 계획
 
