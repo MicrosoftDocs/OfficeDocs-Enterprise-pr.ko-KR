@@ -1,5 +1,5 @@
 ---
-title: Skype 비즈니스 온라인 성능에 대 한 조정
+title: 비즈니스용 Skype Online 성능 조정
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,47 +16,47 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: 이 문서에서는 네트워크 대역폭 요구 사항에 대 한 계획 하려는 또는 비즈니스 Online 용 Skype의 성능을 향상 시키기 위해 필요로 하는 시스템 관리자에 대 한 링크를 제공 합니다.
+description: 이 문서에서는 네트워크 대역폭 요구 사항을 계획 하거나 비즈니스용 Skype Online의 성능을 개선 해야 하는 시스템 관리자를 위한 링크를 제공 합니다.
 ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542219"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492004"
 ---
-# <a name="tune-skype-for-business-online-performance"></a>Skype 비즈니스 온라인 성능에 대 한 조정
+# <a name="tune-skype-for-business-online-performance"></a>비즈니스용 Skype Online 성능 조정
 
-이 문서에서는 네트워크 대역폭 요구 사항에 대 한 계획 하려는 또는 비즈니스 Online 용 Skype의 성능을 향상 시키기 위해 필요로 하는 시스템 관리자에 대 한 링크를 제공 합니다. 
+이 문서에서는 네트워크 대역폭 요구 사항을 계획 하거나 비즈니스용 Skype Online의 성능을 개선 해야 하는 시스템 관리자를 위한 링크를 제공 합니다. 
   
-## <a name="fine-tuning-skype-for-business-online-performance"></a>미세 Skype 비즈니스 온라인 성능에 대 한 조정
+## <a name="fine-tuning-skype-for-business-online-performance"></a>비즈니스용 Skype 온라인 성능 미세 조정
 
-- **설정 및 유지 관리 하 여 조직에 대 한 통화 품질에 대 한 메트릭에 대해 자세히 알아보려면**것이 중요 [미디어 품질 및 네트워크 연결 성능 비즈니스 온라인 용 Skype에서](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)읽을 수 있습니다. 이 문서 게 배포 유형 및 하면 필요한 기타 정보에 대 한 ExpressRoute, 사용 하려는 경우 정보를 제공 합니다.
+- **조직의 통화 품질을 유지 관리 하기 위한 설정 및 메트릭에 대 한**자세한 내용은 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능을](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)확인 하는 것이 중요 합니다. 이 문서에서는 express를 사용 하려는 경우 필요한 배포 유형 및 기타 정보에 대 한 정보를 제공 합니다.
     
-- **온-프레미스 및 하이브리드 배포에 대 한**대역폭을 볼 수 있습니다 Skype에 대 한 요구 사항을 비즈니스 서버에서 전화 접속 회의 대 한 [비즈니스 서버 2015 용 Skype의 전화 접속 회의 대 한 계획을](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing)참조 합니다.
+- 온 **-프레미스 및 하이브리드 배포의**경우 비즈니스용 skype 서버 전화 접속 회의에 대 한 대역폭 요구 사항을 확인할 수 있습니다. 비즈니스용 [skype 서버 2015에서 전화 접속 회의 계획](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing)을 참조 하세요.
     
-## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Skype 비즈니스 온라인 성능을 개선 하는 방법
+## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>비즈니스용 Skype 온라인 성능을 향상 시킬 수 있는 더 많은 방법
 
-- [ExpressRoute 및 비즈니스 온라인 용 Skype에서 QoS](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Office 365 및 Skype Azure ExpressRoute를 사용 하 여 온라인 비즈니스에 대 한 전용된 네트워크 연결을 통해 Office 365에 연결 합니다. 
+- [비즈니스용 skype online의 express 경로 및 QoS](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): office 365 및 비즈니스용 skype online에 대 한 Azure express를 사용 하 여 전용 네트워크 연결을 통해 office 365에 연결 합니다. 
     
-- [설정 하며, 비즈니스 온라인 용 Skype에서 통화 품질 대시보드를 사용 하 여](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard):에서 통화 품질 대시보드 (CQD)을 사용 하면를 모니터링 하 고 Skype을 사용 하 여 비즈니스 서비스에 대 한 통화 품질에 대 한 통찰력 확보 수 있습니다. 
+- [비즈니스용 skype Online에서 통화 품질 대시보드 켜기 및 사용](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): cqd (통화 품질 대시보드)를 사용 하 여 비즈니스용 skype 서비스를 사용 하 여 수행한 통화 품질을 모니터링 하 고 정보를 파악할 수 있습니다. 
     
-## <a name="articles-on-setting-up-skype-for-business-online"></a>비즈니스 온라인 용 Skype 설정에 대 한 문서
+## <a name="articles-on-setting-up-skype-for-business-online"></a>비즈니스용 Skype Online 설정에 대 한 문서
 
-- [비즈니스 온라인 용 Skype 설정](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [비즈니스용 Skype 온라인 설정](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [비즈니스 및 팀이 Microsoft Skype에 대 한 오디오 회의를 설정합니다](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+- [비즈니스용 Skype 및 Microsoft 팀을 위한 오디오 회의 설정](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
-- [(비즈니스를 위한 Skype) 계획을 호출 하는 설정](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
+- [통화 요금제 설정 (비즈니스용 Skype)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Office 365에서 전화 시스템과 하면 다음과 같습니다.](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Office 365에서 전화 시스템을 사용 하 여 얻을 수 있는 것은 다음과 같습니다.](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>참고 항목
 
 [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
   
-[비즈니스 온라인 용 Skype에 대 한 네트워크를 최적화](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
+[비즈니스용 Skype Online의 네트워크 최적화](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute 및 온라인 비즈니스에 대 한 Skype에서 QoS](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[비즈니스용 Skype Online의 express 경로 및 QoS](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[ExpressRoute를 사용 하 여 호출 흐름](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[express를 사용 하는 호출 흐름](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 
