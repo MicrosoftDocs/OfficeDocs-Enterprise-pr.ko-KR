@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 description: Office 365 Multi-Geo에서 지역 관리자를 추가하거나 제거하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 28af776f3afe4e3cc666817eb2d5faff846aa1af
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: 54850252d133e3e26b02cabe3ead0900287e832c
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30931667"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490914"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Office 365 Multi-Geo에서 지역 관리자 추가 또는 제거
 

@@ -11,11 +11,11 @@ localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Office 365 Multi-Geo 구성하는 방법을 알아봅니다.
 ms.openlocfilehash: 6a3282c65da79480fe9d7ed1aac24b5e7941c1fc
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30931817"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487568"
 ---
 # <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 다중 지역 테넌트 구성
 

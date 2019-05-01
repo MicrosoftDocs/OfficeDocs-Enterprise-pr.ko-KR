@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '요약: Office 365 개발/테스트 환경에 대한 페더레이션 인증을 구성합니다.'
 ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741424"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487970"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 페더레이션 ID
 
@@ -444,7 +444,7 @@ Azure의 Office 365에 대해 프로덕션에서 사용할 수 있는 고가용�
   
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
+[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
   

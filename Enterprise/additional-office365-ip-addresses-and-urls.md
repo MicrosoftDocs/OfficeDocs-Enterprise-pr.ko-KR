@@ -23,11 +23,11 @@ ms.assetid: ''
 description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되어 있지 않습니다.'
 hideEdit: true
 ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
-ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30374411"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490904"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 

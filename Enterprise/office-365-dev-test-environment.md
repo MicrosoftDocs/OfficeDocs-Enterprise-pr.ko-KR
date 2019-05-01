@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '요약: 이 테스트 랩 가이드를 사용하여 평가 또는 개발/테스트를 위한 Office 365 평가판 구독을 만듭니다.'
 ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741244"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487600"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -267,7 +267,7 @@ Office 365 개발/테스트 환경에서 다음 문서를 사용하세요.
     
 - [Office 365 개발/테스트 환경용 Multi-Factor Authentication](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 개발/테스트 환경용 페더레이션 ID](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 페더레이션된 ID](federated-identity-for-your-office-365-dev-test-environment.md)
     
 - [Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
@@ -277,13 +277,13 @@ Office 365 개발/테스트 환경에서 다음 문서를 사용하세요.
     
 - [Office 365 개발/테스트 환경용 중요 파일 보호](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [격리된 SharePoint Online 팀 사이트 개발/테스트 환경](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [개발/테스트 환경에서 격리된 SharePoint Online 팀 사이트](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
 - [Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 ## <a name="see-also"></a>참고 항목
 
-- [클라우드 채택 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
+- [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
