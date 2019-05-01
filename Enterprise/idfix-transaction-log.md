@@ -18,27 +18,27 @@ search.appverid:
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: 예제를 제공 하 고 Office 365 idfix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085067"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490944"
 ---
-# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="66c04-103">Office 365 idfix 트랜잭션 로그</span><span class="sxs-lookup"><span data-stu-id="66c04-103">Office 365 IdFix transaction log</span></span>
+# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="4c46c-103">Office 365 idfix 트랜잭션 로그</span><span class="sxs-lookup"><span data-stu-id="4c46c-103">Office 365 IdFix transaction log</span></span>
 
-<span data-ttu-id="66c04-104">예제를 제공 하 고 Office 365 idfix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="66c04-104">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
+<span data-ttu-id="4c46c-104">예제를 제공 하 고 Office 365 idfix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-104">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
   
-## <a name="idfix-transaction-log-location"></a><span data-ttu-id="66c04-105">IdFix 트랜잭션 로그 위치</span><span class="sxs-lookup"><span data-stu-id="66c04-105">IdFix transaction log location</span></span>
+## <a name="idfix-transaction-log-location"></a><span data-ttu-id="4c46c-105">idfix 트랜잭션 로그 위치</span><span class="sxs-lookup"><span data-stu-id="4c46c-105">IdFix transaction log location</span></span>
 
-<span data-ttu-id="66c04-p101">Office 365 idfix 도구는 idfix에서 **Apply** 를 클릭 하 고 변경 내용을 Active Directory 포리스트에 적용할 때마다 새 트랜잭션 로그를 만듭니다. 트랜잭션 로그는 idfix를 설치한 동일한 폴더에 저장 됩니다. 기본적으로이 폴더는 c:\deployment tools\idfix.입니다. 트랜잭션 로그 파일 이름에 날짜 및 시간 스탬프 형식을 사용 하는 경우 (예: verbose 6-1-2018 6-17-22 pm)에는 6:17:22 pm의 2018에서 생성 된 파일을 나타냅니다. 자세한 내용은 로깅 수준을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="66c04-p101">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest. The transaction log is saved in the same folder where you installed IdFix. By default, this folder is C:\Deployment Tools\IDFix. The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM. Verbose indicates the logging level.</span></span> 
+<span data-ttu-id="4c46c-106">Office 365 idfix 도구는 idfix에서 **Apply** 를 클릭 하 고 변경 내용을 Active Directory 포리스트에 적용할 때마다 새 트랜잭션 로그를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-106">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="4c46c-107">트랜잭션 로그는 idfix를 설치한 동일한 폴더에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-107">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="4c46c-108">기본적으로이 폴더는 c:\deployment tools\idfix.입니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-108">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="4c46c-109">트랜잭션 로그 파일 이름에 날짜 및 시간 스탬프 형식을 사용 하는 경우 (예: Verbose 6-1-2018 6-17-22 pm)에는 2018 년 6 월 1 일에 생성 된 파일을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-109">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="4c46c-110">Verbose 로깅 수준을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-110">Verbose indicates the logging level.</span></span> 
   
-## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="66c04-111">IdFix 트랜잭션 로그 로깅 수준</span><span class="sxs-lookup"><span data-stu-id="66c04-111">IdFix transaction log logging level</span></span>
+## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="4c46c-111">idfix 트랜잭션 로그 로깅 수준</span><span class="sxs-lookup"><span data-stu-id="4c46c-111">IdFix transaction log logging level</span></span>
 
-<span data-ttu-id="66c04-p102">트랜잭션 로그 파일에 나오는 단어 verbose는 파일의 로깅 수준을 나타냅니다. Verbose는 로그에 최대 양의 정보가 캡쳐됨을 의미합니다. 이것이 기본 로깅 수준입니다. 지금은 로깅 수준을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="66c04-p102">The word verbose in the transaction log file name indicates the level of logging in the file. Verbose means that the maximum amount of information is captured in the log. This is the default logging level. At this time, you cannot change the logging level.</span></span>
+<span data-ttu-id="4c46c-112">트랜잭션 로그 파일 이름의 단어 verbose는 파일의 로깅 수준을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-112">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="4c46c-113">Verbose는 로그에서 정보의 양이 최대한 포착 됨을 의미 합니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-113">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="4c46c-114">기본 로깅 수준입니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-114">This is the default logging level.</span></span> <span data-ttu-id="4c46c-115">현재로 서는 로깅 수준을 변경할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-115">At this time, you cannot change the logging level.</span></span>
   
-## <a name="idfix-transaction-log-format"></a><span data-ttu-id="66c04-116">IdFix 트랜잭션 로그 형식</span><span class="sxs-lookup"><span data-stu-id="66c04-116">IdFix transaction log format</span></span>
+## <a name="idfix-transaction-log-format"></a><span data-ttu-id="4c46c-116">idfix 트랜잭션 로그 형식</span><span class="sxs-lookup"><span data-stu-id="4c46c-116">IdFix transaction log format</span></span>
 
-<span data-ttu-id="66c04-117">idfix는 다음 예제와 같이 각 **업데이트** 작업의 결과를 트랜잭션 로그에 씁니다.</span><span class="sxs-lookup"><span data-stu-id="66c04-117">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
+<span data-ttu-id="4c46c-117">idfix는 다음 예제와 같이 각 **업데이트** 작업의 결과를 트랜잭션 로그에 씁니다.</span><span class="sxs-lookup"><span data-stu-id="4c46c-117">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

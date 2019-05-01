@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Ent_O365
 ms.date: 2/14/2018
 ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915713"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490054"
 ---
 <h1>엔터프라이즈 클라우드 솔루션</h1>
 <p>Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요.</p>
