@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 이러한 클라우드 채택 TLG(테스트 랩 가이드)를 사용하여 Office 365의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.'
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741174"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490235"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>클라우드 채택 TLG(테스트 랩 가이드)로 Office 365 테스트
 
@@ -54,11 +54,11 @@ TLG를 사용하면 Microsoft 제품을 빠르게 학습할 수 있습니다. �
     
 Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Office 365의 엔터프라이즈 기능을 보여 줍니다.
   
-- [Office 365 개발/테스트 환경용 Multi-Factor Authentication](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 다단계 인증](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
     Office 365 구독 계정을 위해 스마트폰에 전송된 구독 텍스트 메시지를 사용하여 보조 인증을 구성하고 테스트합니다.
     
-- [Office 365 개발/테스트 환경용 페더레이션 ID](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Office 365 개발/테스트 환경용 페더레이션된 ID](federated-identity-for-your-office-365-dev-test-environment.md)
     
     AD DS(Active Directory Domain Services) 도메인의 계정을 사용하여 페더레이션된 인증을 구성하고 보여 줍니다.
     
@@ -91,7 +91,7 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
 
 이러한 문서를 사용하여 Azure Virtual Network, 시뮬레이션된 온-프레미스 네트워크 등의 프레미스 간 개발/테스트 환경을 만들 수 있습니다.
   
-- [시뮬레이션된 Azure의 크로스-프레미스 가상 네트워크](simulated-cross-premises-virtual-network-in-azure.md)
+- [시뮬레이트된 Azure의 크로스-프레미스 가상 네트워크](simulated-cross-premises-virtual-network-in-azure.md)
     
     하이브리드 클라우드 구성에서 Azure Virtual Network에 연결된 시뮬레이션된 인트라넷을 만듭니다.
     
@@ -118,7 +118,7 @@ Office 365 개발/테스트 환경의 경우 이러한 문서를 사용하여 Of
     
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   

@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Microsoft PowerShell을 사용하여 Exchange Online Multi-Geo 설정을 관리하는 방법을 알아보세요.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765050"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490884"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Multi-Geo 환경에서 Exchange Online 사서함 관리
 
@@ -42,7 +42,7 @@ Office 365 환경에서 Multi-Geo 속성을 보고 구성하려면 원격 PowerS
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   예를 들어 연결하려는 지리적 위치의 유효한 이메일 주소가 olga@contoso.onmicrosoft.com인 경우 다음 명령을 실행합니다.
+   예를 들어 olga@contoso.onmicrosoft.com이 연결할 지리적 위치의 유효한 사서함 전자 메일 주소인 경우 다음 명령을 실행합니다.
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -86,7 +86,7 @@ Exchange Online PowerShell의 **Get-Mailbox** cmdlet은 사서함에 다음과 �
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-예를 들어 사서함 chris@contoso.onmicrosoft.com의 지리적 위치 정보를 보려면 다음 명령을 실행합니다.
+예를 들어 chris@contoso.onmicrosoft.com의 사서함 위치 정보를 보려면 다음 명령을 실행합니다.
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -112,7 +112,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalName,PreferredDataLocation
 ```
 
-예를 들어 사용자michelle@contoso.onmicrosoft.com의 **PreferredDataLocation** 값을 보려면 다음 명령을 실행합니다.
+예를 들어 사용자 michelle@contoso.onmicrosoft.com의 **PreferredDataLocation** 값을 보려면 다음 명령을 실행합니다.
 
 ```powershell
 Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
@@ -124,7 +124,7 @@ Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoLocationCode>
 ```
 
-예를 들어 사용자michelle@contoso.onmicrosoft.com의 **PreferredDataLocation** 값을 유럽 연합 (EU) 지역으로 설정하려면 다음 명령을 실행합니다.
+예를 들어 사용자 michelle@contoso.onmicrosoft.com의 유럽 연합(EUR) 지역에 **PreferredDataLocation** 값을 설정하려면 다음 명령을 실행합니다.
 
 ```powershell
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
@@ -168,7 +168,7 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 
 이 예제에서는 다음 값을 사용하여 Elizabeth Brunner를 위한 새 사용자 계정을 만듭니다.
 
-- UPN(사용자 계정 이름): ebrunner@contoso.onmicrosoft.com
+- 사용자 계정 이름: ebrunner@contoso.onmicrosoft.com
 
 - 이름: Elizabeth
 
@@ -225,4 +225,4 @@ Microsoft 365 관리자 센터의 **Multi-Geo 사용 보고서**는 지리적 �
 
 ## <a name="see-also"></a>참고 항목
 
-[Windows PowerShell을 사용하여 Office 365 및 Exchange Online 관리](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)
+[Windows PowerShell로 Office 365 및 Exchange Online 관리](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)
