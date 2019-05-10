@@ -3,7 +3,7 @@ title: Office 365 IP 주소 및 URL 웹 서비스
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/1/2019
+ms.date: 5/7/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 네트워크 트래픽을 보다 잘 식별하고 차별화하기 위해 새로운 웹 서비스는 Office 365 끝점을 게시하여 변경 내용을 보다 쉽게 평가하고 구성하며 이러한 변경 내용으로 업데이트하여 최신 상태를 유지할 수 있도록 합니다.
-ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
-ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
+ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33512684"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655792"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스
 
@@ -122,7 +122,6 @@ Microsoft Flow를 사용하여 IP 주소 및 URL에 대한 변경 내용을 이�
  "instance": "Worldwide",
  "latest": "2018063000"
 }
-
 ```
 
 예제 3 요청 URI: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
@@ -166,7 +165,6 @@ Worldwide,2018063000
 <link>https://endpoints.office.com/changes/Worldwide/2018080200?singleVersion&clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7</link> <description>Version 2018080200 includes 2 changes. IPs: 2 added and 0 removed.</description>
 <pubDate>Thu, 02 Aug 2018 00:00:00 Z</pubDate>
 </item>
-...
 ```
 
 ## <a name="endpoints-web-method"></a>엔드포인트 웹 메서드
@@ -178,7 +176,7 @@ Worldwide,2018063000
 - **ServiceAreas=<공통 | 교환 | SharePoint | Skype> ** - 쉼표로 구분 된 서비스 영역 목록입니다. 유효한 항목은 _공통_, _Exchange_, _SharePoint_ 및 _Skype_입니다. 공통 서비스 영역 항목은 다른 모든 서비스 영역의 전제 조건이므로 웹 서비스에 항상 포함됩니다. 이 매개 변수를 포함하지 않으면 모든 서비스 영역이 반환됩니다.
 - **TenantName=<tenant_name >** - Office 365 테넌트 이름. 웹 서비스는 제공된 이름을 가져와 테넌트 이름이 포함된 URL의 일부에 삽입합니다. 테넌트 이름을 제공하지 않으면 URL의 해당 부분에 와일드 카드 문자(\*)가 있습니다.
 - **NoIPv6=<true | false>** - 네트워크에서 IPv6를 사용하지 않는 경우 출력에서 IPv6 주소를 제외하려면 이 매개 변수를 true로 설정합니다.
-- **인스턴스=<전세계 | 중국 | 독일 | USGovDoD | USGovGCCHigh> ** -이 필수 매개 변수는 엔드포인트을 반환할 인스턴스를 지정합니다. 유효한 인스턴스는 전세계, 중국, 독일, USGovDoD, USGovGCCHigh입니다.
+- **인스턴스=<전세계 | 중국 | 독일 | USGovDoD | USGovGCCHigh> ** -이 필수 매개 변수는 엔드포인트을 반환할 인스턴스를 지정합니다. 유효한 인스턴스는 _전세계_, _중국_, _독일_, _USGovDoD_, _USGovGCCHigh_입니다.
 
 엔드포인트 웹 메서드를 동일한 클라이언트 IP 주소에서 여러 번 호출하면 HTTP 응답 코드 429(너무 많은 요청)가 수신될 수 있습니다. 이것은 대부분의 사용자에게 표시되지 않습니다. 이 응답 코드를 받은 경우, 다시 요청을 반복하기까지 1시간을 기다리세요. 버전 웹 메서드가 사용 가능한 새 버전이 있음을 나타내면 엔드포인트 웹 메소드만 호출하도록 계획합니다.
 
@@ -243,7 +241,7 @@ Worldwide,2018063000
 
 변경 내용 웹 메서드에 대한 필수 매개 변수입니다.
 
-- ** 버전 = \<YYYYMMDDNN>** - 필수 URL 경로 매개 변수입니다. 이 값은 현재 구현한 버전이어야 합니다. 웹 서비스는 해당 버전 이후의 변경 사항을 반환합니다. 형식은 _YYYYMMDDNN_, 여기서 _NN_은 0입니다. 웹 서비스는 이 매개 변수가 정확히 10 자리를 포함하도록 요구합니다.
+- ** 버전 = \<YYYYMMDDNN>** - 필수 URL 경로 매개 변수입니다. 이 값은 현재 구현한 버전이어야 합니다. 웹 서비스는 해당 버전 이후의 변경 사항을 반환합니다. 형식은 _YYYYMMDD_입니다. 여기서 _NN_은 하루 동안 게시해야하는 여러 버전이 있는 경우 자연수 증가분이고 _00_은 해당 날짜의 첫 번째 업데이트를 나타냅니다. 웹 서비스는 _버전_ 매개 변수가 정확히 10 자리를 포함하도록 요구합니다.
 
 변경 웹 메서드는 엔드 포인트 웹 메서드와 같은 방식으로 비율이 제한됩니다. 429 HTTP 응답 코드를 받은 경우, 다시 요청을 반복하기까지 1시간을 기다리세요.
 
@@ -252,7 +250,7 @@ Worldwide,2018063000
 - id - 변경 레코드의 변경이 불가능한 ID입니다.
 - endpointSetId - 변경된 끝점 집합 레코드의 ID입니다.
 - disposition - change, add 또는 remove일 수 있으며, 끝점 세트 레코드에 대해 수행된 변경을 설명합니다.
-- impact - 모든 변경이 모든 환경에서 동일하게 중요한 것은 아닙니다. 이 요소는 이 변경의 결과로 엔터프라이즈 네트워크 주변 환경에 대해 예상되는 영향을 설명합니다. 이 특성은 버전 2018112800 이상의 변경 레코드에만 포함됩니다. impact에 대한 옵션은 다음과 같습니다.
+- impact - 모든 변경이 모든 환경에서 동일하게 중요한 것은 아닙니다. 이 요소는 이 변경의 결과로 엔터프라이즈 네트워크 주변 환경에 대해 예상되는 영향을 설명합니다. 이 특성은 버전 **2018112800** 이상의 변경 레코드에만 포함됩니다. impact에 대한 옵션은 다음과 같습니다.
   - AddedIp - IP 주소가 Office 365에 추가되었으며 곧 서비스될 예정입니다. 이 옵션은 방화벽 또는 기타 계층 3 네트워크 주변 디바이스에서 수행해야 하는 변경을 나타냅니다. 사용을 시작하기 전에 이 옵션을 추가하지 않으면 중단이 발생할 수 있습니다.
   - AddedUrl - URL이 Office 365에 추가되었으며 곧 서비스에 게시됩니다. 이는 프록시 서버 또는 URL 파싱 네트워크 주변 장치에서 수행해야하는 변경 사항을 나타냅니다. 사용하기 전에 이것을 먼저 추가하지 않으면 중단이 발생할 수 있습니다.
   - AddedIpAndUrl - IP 주소 및 URL이 둘 다 추가되었습니다. 이 옵션은 방화벽 계층 3 디바이스 또는 프록시 서버나 URL 구문 분석 디바이스에서 수행해야 하는 변경을 나타냅니다. 사용을 시작하기 전에 이 옵션을 추가하지 않으면 중단이 발생할 수 있습니다.
@@ -508,11 +506,8 @@ Microsoft는 Office 365 서비스의 최신 URI를 가져오기 위해 REST 서�
 모듈을 가져온 후에는 REST 서비스를 호출할 수 있습니다. 이렇게 하면 현재 URI를 PowerShell에서 직접 처리할 수 있는 컬렉션이 반환됩니다. 다음 명령의 설명처럼 Office 365 테넌트의 이름을 입력해야 합니다.
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant]
+    Invoke-O365EndpointService -tenantName [Name of your tenant]
 ```
-
-> [!NOTE]
-> 이 cmdlet의 문자는 **Invoke-O365EnpointService**이며 문자는 _d_입니다. 이는 오타가 아닙니다.
 
 #### <a name="parameters"></a>매개 변수 
 
@@ -525,13 +520,13 @@ Microsoft는 Office 365 서비스의 최신 URI를 가져오기 위해 REST 서�
 IPv6 주소를 포함한 모든 URI의 전체 목록을 반환
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
 ```
 
 Exchange 온라인 서비스의 IP 주소만 반환
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
 ```
 
 ### <a name="exporting-a-proxy-pac-file"></a>프록시 PAC 파일 내보내기
@@ -539,7 +534,7 @@ Exchange 온라인 서비스의 IP 주소만 반환
 이 모듈을 사용해 프록시 PAC 파일을 만들 수 있습니다. 이 예제에서는 먼저 엔드포인트를 가져오고 결과를 필터링하여 URL을 선택합니다. 이러한 URL은 명령을 통해 내보내기됩니다.  
 
 ```powershell
- Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+ Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
 ```
 
 ## <a name="related-topics"></a>관련 항목

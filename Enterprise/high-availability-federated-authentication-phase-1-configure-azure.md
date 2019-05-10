@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '요약: Microsoft Azure 인프라를 구성하여 Office 365 페더레이션 인증의 고가용성을 호스트합니다.'
-ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487440"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867713"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>고가용성 페더레이션 인증 1단계: Azure 구성
 
@@ -29,7 +29,7 @@ Azure는 다음과 같은 기본 구성 요소로 구축 해야 합니다.
   
 - 리소스 그룹
     
-- azure virtual machines를 호스팅하기 위한 서브넷이 있는 프레미스 간 azure VNet (가상 네트워크)
+- Azure virtual machines를 호스팅하기 위한 서브넷이 있는 프레미스 간 Azure VNet (가상 네트워크)
     
 - 수행 중인 서브넷 격리용 네트워크 보안 그룹
     
@@ -41,7 +41,7 @@ Azure 구성 요소를 구성하기 전에 다음 테이블을 채워야 합니�
   
 |**항목**|**구성 설정**|**설명**|**값**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 이름  <br/> |VNet에 할당할 이름 (예:: fedauthnet)입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 이름  <br/> |VNet에 할당할 이름 (예:: Fedauthnet)입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 위치  <br/> |가상 네트워크를 포함 하는 지역별 Azure 데이터 센터입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet 주소 공간  <br/> |가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -63,10 +63,10 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 |**항목**|**서브넷 이름**|**서브넷 주소 공간**|**용도**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD DS (Active Directory 도메인 서비스) 도메인 컨트롤러 및 DirSync 서버 가상 컴퓨터 (vm)에서 사용 하는 서브넷입니다.  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS vm에서 사용 하는 서브넷입니다.  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |웹 응용 프로그램 프록시 vm에서 사용 하는 서브넷입니다.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 게이트웨이 vm에서 사용 하는 서브넷입니다.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD DS (Active Directory 도메인 서비스) 도메인 컨트롤러 및 DirSync 서버 가상 컴퓨터 (Vm)에서 사용 하는 서브넷입니다.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm에서 사용 하는 서브넷입니다.  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |웹 응용 프로그램 프록시 Vm에서 사용 하는 서브넷입니다.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 게이트웨이 Vm에서 사용 하는 서브넷입니다.  <br/> |
    
  **테이블 S: 가상 네트워크의 서브넷**
   
@@ -218,6 +218,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -Addre
 New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
 $nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 다음으로 이러한 명령을 사용하여 사이트 간 VPN 연결의 게이트웨이를 만듭니다.
@@ -303,7 +304,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 **1 단계: Office 365에 대 한 고가용성 페더레이션 인증용 Azure 인프라**
 
-![azure 인프라를 사용 하 여 azure의 고가용성 Office 365 페더레이션 인증 1 단계](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Azure 인프라를 사용 하 여 Azure의 고가용성 Office 365 페더레이션 인증 1 단계](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>다음 단계
 
