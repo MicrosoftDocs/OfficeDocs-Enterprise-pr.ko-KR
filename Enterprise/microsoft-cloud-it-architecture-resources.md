@@ -83,11 +83,8 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 -->
 
    
-<span data-ttu-id="2670d-131"><a name="identity">
-
-</a>
-### Microsoft Cloud Identity for Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="2670d-131"><a name="identity"></a>
-### Microsoft cloud identity for enterprise architects</span></span>
+<a name="identity"></a>
+### <span data-ttu-id="2670d-131">Microsoft Cloud Identity for Enterprise Architects</span><span class="sxs-lookup"><span data-stu-id="2670d-131">Microsoft cloud identity for enterprise architects</span></span>
 
 <span data-ttu-id="2670d-132">Microsoft 클라우드 서비스 및 플랫폼을 사용하는 조직용으로 ID를 설계하는 과정과 관련하여 IT 설계자가 파악해야 하는 사항</span><span class="sxs-lookup"><span data-stu-id="2670d-132">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
