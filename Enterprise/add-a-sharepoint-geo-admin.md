@@ -3,17 +3,17 @@ title: 지역 관리자 추가 또는 제거
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 description: Office 365 Multi-Geo에서 지역 관리자를 추가하거나 제거하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 54850252d133e3e26b02cabe3ead0900287e832c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 767dcf5284e93b9a2e908d4ec837f034b29cb6db
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490914"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068474"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Office 365 Multi-Geo에서 지역 관리자 추가 또는 제거
 
@@ -59,4 +59,5 @@ ObjectID를 사용하여 그룹을 제거하려면 다음을 실행하세요. `R
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[보안 그룹에 대한 별칭(MailNickName) 설정](https://docs.microsoft.com/ko-KR/powershell/module/azuread/set-azureadgroup)
+
+  [보안 그룹에 대한 별칭(MailNickName) 설정](https://docs.microsoft.com/ko-KR/powershell/module/azuread/set-azureadgroup)

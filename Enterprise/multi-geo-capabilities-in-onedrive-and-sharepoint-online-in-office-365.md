@@ -3,7 +3,7 @@ title: OneDrive 및 SharePoint Online의 Multi-Geo 기능
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online의 Multi-Geo 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: ce5a846391fd62daafd174baea4144ac1d1aba37
-ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
+ms.openlocfilehash: 9f430c18150eb60975e0866ca318d90b78f19280
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "31992848"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069974"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 및 SharePoint Online의 Multi-Geo 기능
 

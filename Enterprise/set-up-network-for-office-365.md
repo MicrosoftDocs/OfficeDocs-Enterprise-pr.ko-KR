@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '요약: Office 365의 네트워킹을 이해하려면 다음 문서를 참조하세요.'
-ms.openlocfilehash: b86d4afaf204cfdd22cb4ca7c85608b384ca431a
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: 6fb1d4d441719f61886b9263b30cdf27cbe7eaf4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070824"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Office 365의 네트워크 설정
 

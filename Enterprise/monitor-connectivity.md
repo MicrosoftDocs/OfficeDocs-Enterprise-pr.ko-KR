@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용하여 Office 365 연결을 유지할 수 있습니다. 느린 네트워크에서 Office 365를 사용하기 위한 최상의 방법뿐만 아니라 공식적인 서비스 상태 및 연속성 지침을 이해할 수 있습니다. 또한 Office 365 관리자 앱을 이용하고 비즈니스용 Office 365 - 관리자 도움말을 북마크할 수도 있습니다.
-ms.openlocfilehash: 80e1f56ed3ef7ae2e013239ac286e2a804bd9696
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070054"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 연결 모니터링
 
@@ -35,7 +35,7 @@ Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용�
 |**System Center를 사용하여 Office 365를 모니터링 하기** <br/> |Microsoft System Center를 사용하는 경우 [Office 365용 System Center 관리 팩](https://www.microsoft.com/download/details.aspx?id=43708)을 다운로드하여 Office 365 모니터링을 시작할 수 있습니다. 자세한 지침은 관리 팩 작업 가이드 또는이 블로그 게시물의 [System Center Operations Manager를 사용하여 Office365 모니터링](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx)을 참조하세요. <br/> |
 |**Azure ExpressRoute**의 상태 모니터링 <br/> |Office 365용 Azure ExpressRoute를 사용하여 Office 365에 연결하는 경우 Azure의 [Azure 리소스 상태로 인한 문제 해결 시간을 단축](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/)뿐만 아니라 Office 365 서비스 상태 대시보드도 사용하고 있는지 확인해야 합니다. <br/> |
 |**AD FS와 Azure Active Directory Connect Health 사용** <br/> |Office 365에서 Single Sign-On AD FS를 사용하는 경우 Azure AD Connect Health를 사용하여 [AD FS 인프라 모니터링](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)을 시작할 수 있습니다.  <br/> |
-|**프로그래밍 방식으로 Office 365 모니터링** <br/> |[Office 365 관리 API](https://msdn.microsoft.com/library/jj984343%28v=office.15%29.aspx)에 대한 지침을 참조하세요.  <br/> |
+|**프로그래밍 방식으로 Office 365 모니터링** <br/> |[Office 365 관리 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)에 대한 지침을 참조하세요.  <br/> |
 
 다음의 간단한 링크를 사용할 수 있습니다. [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
