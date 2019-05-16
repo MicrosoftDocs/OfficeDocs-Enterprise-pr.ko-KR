@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/13/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,33 +14,33 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 113107df75880a21210991d5b301245d75c5c739
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+description: Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
+ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071124"
 ---
-# <a name="view-account-license-and-service-details-with-office-365-powershell"></a><span data-ttu-id="4e375-103">Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기</span><span class="sxs-lookup"><span data-stu-id="4e375-103">View account license and service details with Office 365 PowerShell</span></span>
+# <a name="view-account-license-and-service-details-with-office-365-powershell"></a><span data-ttu-id="f556f-103">Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기</span><span class="sxs-lookup"><span data-stu-id="f556f-103">View account license and service details with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="4e375-104">**요약:** office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 office 365 서비스를 확인 하는 방법에 대해 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-104">**Summary:** Explains how to use Office 365 PowerShell to determine the Office 365 services that have been assigned to users.</span></span>
+<span data-ttu-id="f556f-104">**요약:** Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 대해 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-104">**Summary:** Explains how to use Office 365 PowerShell to determine the Office 365 services that have been assigned to users.</span></span>
   
-<span data-ttu-id="4e375-p101">office 365에서는 라이선스 요금제 (sku 또는 Office 365 요금제 라고도 함)의 라이선스를 사용자에 게 해당 요금제에 대해 정의 된 Office 365 서비스에 대 한 액세스 권한을 부여 합니다. 그러나 사용자에 게는 현재 할당 되어 있는 라이선스에서 사용 가능한 모든 서비스에 대 한 액세스 권한이 없을 수 있습니다. Office 365 PowerShell을 사용 하 여 사용자 계정에 대 한 서비스 상태를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-p101">In Office 365, licenses from licensing plans (also called SKUs or Office 365 plans) give users access to the Office 365 services that are defined for those plans. However, a user might not have access to all the services that are available in a license that's currently assigned to them. You can use Office 365 PowerShell to view the status of services on user accounts.</span></span> 
+<span data-ttu-id="f556f-105">Office 365에서는 라이선스 요금제 (Sku 또는 Office 365 요금제 라고도 함)의 라이선스를 사용자에 게 해당 요금제에 대해 정의 된 Office 365 서비스에 대 한 액세스 권한을 부여 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-105">In Office 365, licenses from licensing plans (also called SKUs or Office 365 plans) give users access to the Office 365 services that are defined for those plans.</span></span> <span data-ttu-id="f556f-106">그러나 사용자는 현재 할당된 라이선스에서 사용할 수 있는 모든 서비스에 액세스하지 못할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-106">However, a user might not have access to all the services that are available in a license that's currently assigned to them.</span></span> <span data-ttu-id="f556f-107">Office 365 PowerShell을 사용 하 여 사용자 계정에 대 한 서비스 상태를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-107">You can use Office 365 PowerShell to view the status of services on user accounts.</span></span> 
 
-<span data-ttu-id="4e375-108">라이선스 계획, 라이선스 및 서비스에 대 한 자세한 내용은 [Office 365 PowerShell을 사용 하 여 라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="4e375-108">For more information about licensing plans, license, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="f556f-108">라이선스 계획, 라이선스 및 서비스에 대 한 자세한 내용은 [Office 365 PowerShell을 사용 하 여 라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="f556f-108">For more information about licensing plans, license, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="4e375-109">Graph 모듈용 Azure Active Directory PowerShell 사용하기</span><span class="sxs-lookup"><span data-stu-id="4e375-109">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="f556f-109">Graph 모듈용 Azure Active Directory PowerShell 사용하기</span><span class="sxs-lookup"><span data-stu-id="f556f-109">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="4e375-110">먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-110">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="f556f-110">먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-110">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-<span data-ttu-id="4e375-111">그런 다음이 명령을 사용 하 여 테 넌 트에 대 한 라이선스 계획을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-111">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="f556f-111">그런 다음이 명령을 사용 하 여 테 넌 트에 대 한 라이선스 계획을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-111">Next, list the license plans for your tenant with this command.</span></span>
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="4e375-112">이러한 명령을 사용 하 여 각 라이선스 계획에서 사용할 수 있는 서비스를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-112">Use these commands to list the services that are available in each licensing plan.</span></span>
+<span data-ttu-id="f556f-112">이러한 명령을 사용 하 여 각 라이선스 계획에서 사용할 수 있는 서비스를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-112">Use these commands to list the services that are available in each licensing plan.</span></span>
 
 ```
 $allSKUs=Get-AzureADSubscribedSku
@@ -54,7 +54,7 @@ $licArray +=  ""
 $licArray
 ````
 
-<span data-ttu-id="4e375-113">이러한 명령을 사용 하 여 사용자 계정에 할당 된 라이선스를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-113">Use these commands to list the licenses that are assigned to a user account.</span></span>
+<span data-ttu-id="f556f-113">이러한 명령을 사용 하 여 사용자 계정에 할당 된 라이선스를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-113">Use these commands to list the licenses that are assigned to a user account.</span></span>
 
 ````
 $userUPN="<user account UPN, such as belindan@contoso.com>"
@@ -63,54 +63,54 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ````
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="4e375-114">Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기</span><span class="sxs-lookup"><span data-stu-id="4e375-114">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="f556f-114">Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기</span><span class="sxs-lookup"><span data-stu-id="f556f-114">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="4e375-115">먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-115">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="f556f-115">먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-115">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="4e375-116">다음으로이 명령을 실행 하 여 조직에서 사용할 수 있는 라이선스 계획을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-116">Next, run this command to list the licensing plans that are available in your organization.</span></span> 
+<span data-ttu-id="f556f-116">다음으로이 명령을 실행 하 여 조직에서 사용할 수 있는 라이선스 계획을 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-116">Next, run this command to list the licensing plans that are available in your organization.</span></span> 
 
 ```
 Get-MsolAccountSku
 ```
 
-<span data-ttu-id="4e375-117">다음으로, 각 라이선스 계획에서 사용할 수 있는 서비스와 이러한 서비스가 나열 되는 순서 (인덱스 번호)를 나열 하려면이 명령을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-117">Next, run this command to list the services that are available in each licensing plan, and the order in which they are listed (the index number).</span></span>
+<span data-ttu-id="f556f-117">다음으로, 각 라이선스 계획에서 사용할 수 있는 서비스와 이러한 서비스가 나열 되는 순서 (인덱스 번호)를 나열 하려면이 명령을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-117">Next, run this command to list the services that are available in each licensing plan, and the order in which they are listed (the index number).</span></span>
 
 ````
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
 ````
   
-<span data-ttu-id="4e375-118">이 명령을 사용 하 여 사용자에 게 할당 된 라이선스와 해당 라이선스가 나열 되는 순서 (인덱스 번호)를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-118">Use this command to list the licenses that are assigned to a user, and the order in which they are listed (the index number).</span></span>
+<span data-ttu-id="f556f-118">이 명령을 사용 하 여 사용자에 게 할당 된 라이선스와 해당 라이선스가 나열 되는 순서 (인덱스 번호)를 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-118">Use this command to list the licenses that are assigned to a user, and the order in which they are listed (the index number).</span></span>
 
 ````
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ````
 
 >[!Note]
-><span data-ttu-id="4e375-119">사용 하는 경우는 **Get-MsolUser** cmdlet을 사용 하지 않고는 _All_ 매개 변수를 처음 500 개의 계정만 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-119">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 accounts are returned.</span></span>
+><span data-ttu-id="f556f-119">사용 하는 경우는 **Get-MsolUser** cmdlet을 사용 하지 않고는 _All_ 매개 변수를 처음 500 개의 계정만 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-119">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 accounts are returned.</span></span>
 >
    
 
-### <a name="to-view-services-for-a-user-account"></a><span data-ttu-id="4e375-120">사용자 계정에 대 한 서비스를 보려면</span><span class="sxs-lookup"><span data-stu-id="4e375-120">To view services for a user account</span></span>
+### <a name="to-view-services-for-a-user-account"></a><span data-ttu-id="f556f-120">사용자 계정에 대 한 서비스를 보려면</span><span class="sxs-lookup"><span data-stu-id="f556f-120">To view services for a user account</span></span>
 
-<span data-ttu-id="4e375-121">사용자가 액세스할 수 있는 모든 Office 365 서비스를 보려면 다음 구문을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-121">To view all the Office 365 services that a user has access to, use the following syntax:</span></span>
+<span data-ttu-id="f556f-121">사용자가 액세스할 수 있는 모든 Office 365 서비스를 보려면 다음 구문을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-121">To view all the Office 365 services that a user has access to, use the following syntax:</span></span>
   
 ```
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-<span data-ttu-id="4e375-p102">이 예에서는 사용자 BelindaN@litwareinc.com에 게 액세스 권한이 있는 서비스를 표시 합니다. 여기에는 해당 계정에 할당 된 모든 라이선스와 연결 된 서비스가 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-p102">This example shows the services to which the user BelindaN@litwareinc.com has access. This shows the services that are associated with all licenses that are assigned to her account.</span></span>
+<span data-ttu-id="f556f-122">이 예에서는 사용자 BelindaN@litwareinc.com에 게 액세스 권한이 있는 서비스를 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-122">This example shows the services to which the user BelindaN@litwareinc.com has access.</span></span> <span data-ttu-id="f556f-123">사용자의 계정에 할당된 모든 라이선스와 관련된 서비스를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-123">This shows the services that are associated with all licenses that are assigned to her account.</span></span>
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
-<span data-ttu-id="4e375-124">이 예제에서는 사용자 BelindaN@litwareinc.com이 계정에 할당된 첫 번째 라이선스(인덱스 번호: 0)에서 액세스할 수 있는 서비스를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-124">This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).</span></span>
+<span data-ttu-id="f556f-124">이 예제에서는 사용자 BelindaN@litwareinc.com이 계정에 할당된 첫 번째 라이선스(인덱스 번호: 0)에서 액세스할 수 있는 서비스를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-124">This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).</span></span>
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
-<span data-ttu-id="4e375-125">*여러 라이선스가*할당 된 사용자의 모든 서비스를 보려면 다음 구문을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e375-125">To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:</span></span>
+<span data-ttu-id="f556f-125">*여러 라이선스가*할당 된 사용자의 모든 서비스를 보려면 다음 구문을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f556f-125">To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:</span></span>
 
 ```
 $userAccountUPN="<user account UPN>"
@@ -126,14 +126,14 @@ $licArray
 ```
 
   
-## <a name="new-to-office-365"></a><span data-ttu-id="4e375-126">Office 365의 새로운 기능</span><span class="sxs-lookup"><span data-stu-id="4e375-126">New to Office 365?</span></span>
+## <a name="new-to-office-365"></a><span data-ttu-id="f556f-126">Office 365의 새로운 기능</span><span class="sxs-lookup"><span data-stu-id="f556f-126">New to Office 365?</span></span>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a><span data-ttu-id="4e375-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4e375-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f556f-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f556f-127">See also</span></span>
 
-[<span data-ttu-id="4e375-128">Office 365 PowerShell로 사용자 계정 및 라이선스 관리</span><span class="sxs-lookup"><span data-stu-id="4e375-128">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="f556f-128">Office 365 PowerShell로 사용자 계정 및 라이선스 관리</span><span class="sxs-lookup"><span data-stu-id="f556f-128">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="4e375-129">Office 365 PowerShell로 Office 365 관리</span><span class="sxs-lookup"><span data-stu-id="4e375-129">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="f556f-129">Office 365 PowerShell을 사용하여 Office 365 관리</span><span class="sxs-lookup"><span data-stu-id="f556f-129">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="4e375-130">Office 365 PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="4e375-130">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="f556f-130">Office 365 PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="f556f-130">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
