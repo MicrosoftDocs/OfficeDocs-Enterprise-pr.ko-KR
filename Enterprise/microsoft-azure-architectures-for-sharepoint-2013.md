@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: '요약: SharePoint 2013 솔루션을 Microsoft Azure 가상 컴퓨터에서 호스트할 수 있습니다. 적합 한 솔루션 유형과 Microsoft Azure를 설정 하 여이를 호스트 하는 방법에 대해 알아봅니다.'
-ms.openlocfilehash: 7e40b7c4d37e5646d44a14f12a80a9c6cd25834b
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 913910af1acf1353c3ee9b553178c4f0736eb290
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070294"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013용 Microsoft Azure 아키텍처
 
@@ -81,7 +81,7 @@ Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰�
   
 다음은 이 다이어그램에 대한 설명입니다.
   
-- Azure의 가상 네트워크는 온-프레미스 환경에 나란히 표시 됩니다. 두 환경은 교차-프레미스 연결에 의해 아직 연결 되지 않으며, 사이트 간 VPN 연결 또는 express 경로일 수 있습니다.
+- Azure의 가상 네트워크는 온-프레미스 환경에 나란히 표시 됩니다. 두 환경은 교차-프레미스 연결에 의해 아직 연결 되지 않으며, 사이트 간 VPN 연결 또는 Express 경로일 수 있습니다.
     
 - 이 시점에서 가상 네트워크에는 서브넷과 다른 아키텍처 요소가 포함 되지 않습니다. 한 서브넷은 Azure gateway를 호스팅하고 다른 서브넷은 SharePoint 팜의 계층을 호스트 하 고, Active Directory 및 DNS를 추가로 사용 합니다.
     
@@ -91,13 +91,13 @@ Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰�
   
 크로스-프레미스 연결을 계획할 때는 Azure 게이트웨이와 온-프레미스 게이트웨이 장치에 대 한 연결을 정의 하 고 만듭니다.
   
-**그림 2: azure 게이트웨이와 온-프레미스 게이트웨이 장치를 사용 하 여 온-프레미스 환경 및 Azure 간의 사이트 간 연결 제공**
+**그림 2: Azure 게이트웨이와 온-프레미스 게이트웨이 장치를 사용 하 여 온-프레미스 환경 및 Azure 간의 사이트 간 연결 제공**
 
-![사이트 간 VPN 연결 또는 express 경로일 수 있는 크로스-프레미스 연결을 통해 Azure virtual network에 연결 된 온-프레미스 환경](media/AZarch-VPNgtwyconnct.png)
+![사이트 간 VPN 연결 또는 Express 경로일 수 있는 크로스-프레미스 연결을 통해 Azure virtual network에 연결 된 온-프레미스 환경](media/AZarch-VPNgtwyconnct.png)
   
 다음은 이 다이어그램에 대한 설명입니다.
   
-- 이전 다이어그램에 추가 하는 경우 온-프레미스 환경은 크로스-프레미스 연결 (사이트 간 VPN 연결 또는 express 가능)에 의해 Azure virtual network에 연결 됩니다.
+- 이전 다이어그램에 추가 하는 경우 온-프레미스 환경은 크로스-프레미스 연결 (사이트 간 VPN 연결 또는 Express 가능)에 의해 Azure virtual network에 연결 됩니다.
     
 - Azure 게이트웨이가 게이트웨이 서브넷에 있습니다.
     
@@ -107,7 +107,7 @@ Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰�
   
 ## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>AD DS (Active Directory 도메인 서비스) 및 DNS 추가
 
-azure의 재해 복구에서는 windows server ad가 온-프레미스와 Azure 가상 컴퓨터 모두에 배포 되는 하이브리드 시나리오에서 windows server ad와 DNS를 배포 합니다.
+Azure의 재해 복구에서는 Windows Server ad가 온-프레미스와 Azure 가상 컴퓨터 모두에 배포 되는 하이브리드 시나리오에서 Windows Server AD와 DNS를 배포 합니다.
   
 **그림 3: 하이브리드 Active Directory 도메인 구성**
 
@@ -127,7 +127,7 @@ azure의 재해 복구에서는 windows server ad가 온-프레미스와 Azure �
 |IP 주소  <br/> |고정 IP 주소를 사용 하 고 도메인 컨트롤러를 구성한 후에는 가상 네트워크의 가상 컴퓨터에 이러한 주소를 할당 하도록 가상 네트워크를 구성 합니다.  <br/> |
    
 > [!IMPORTANT]
-> azure에서 Active directory를 배포 하기 전에 [azure 가상 컴퓨터에 Windows Server Active directory를 배포 하기 위한 지침](https://go.microsoft.com/fwlink/p/?linkid=392681)을 읽어 보십시오. 다음은 솔루션에 다른 아키텍처 또는 다른 구성 설정이 필요한 지를 결정 하는 데 도움이 되는 정보입니다. 
+> Azure에서 Active Directory를 배포 하기 전에 [Azure 가상 컴퓨터에 Windows Server Active directory를 배포 하기 위한 지침](https://go.microsoft.com/fwlink/p/?linkid=392681)을 읽어 보십시오. 다음은 솔루션에 다른 아키텍처 또는 다른 구성 설정이 필요한 지를 결정 하는 데 도움이 되는 정보입니다. 
   
 ## <a name="add-the-sharepoint-farm"></a>SharePoint 팜 추가
 
@@ -135,7 +135,7 @@ SharePoint 팜의 가상 컴퓨터를 해당 서브넷의 계층에 배치 합�
   
 **그림 4: SharePoint 가상 컴퓨터 배치**
 
-![sharepoint 팜 서브넷 내의 Azure virtual network에 추가 된 데이터베이스 서버 및 sharepoint 서버 역할](media/AZarch-SPVMsinCloudSer.png)
+![SharePoint 팜 서브넷 내의 Azure virtual network에 추가 된 데이터베이스 서버 및 SharePoint 서버 역할](media/AZarch-SPVMsinCloudSer.png)
   
 이 다이어그램은 해당 계층에 SharePoint 팜 서버 역할을 추가 하 여 이전 다이어그램을 작성 합니다.
   
@@ -211,7 +211,7 @@ SharePoint 팜의 계층에 가용성 집합을 추가 하면 구현이 완료 �
   
 **그림 9: Azure 인프라 서비스의 완료 된 SharePoint 팜**
 
-![가상 네트워크, 크로스-프레미스 연결, 서브넷, vm 및 가용성 집합이 있는 Azure 인프라 서비스의 SharePoint 2013 팜 예](media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![가상 네트워크, 크로스-프레미스 연결, 서브넷, Vm 및 가용성 집합이 있는 Azure 인프라 서비스의 SharePoint 2013 팜 예](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 이 다이어그램에서는 각 계층의 서버에 대 한 장애 도메인을 제공 하기 위한 가용성 집합과 함께 Azure 인프라 서비스에서 구현 되는 SharePoint 팜을 보여 줍니다.
   
@@ -220,7 +220,7 @@ SharePoint 팜의 계층에 가용성 집합을 추가 하면 구현이 완료 �
 |**연락처**|**설명**|
 |:-----|:-----|
 |**어떤 클라우드 채택 콘텐츠가 필요한가요?** <br/> |여러 Microsoft 클라우드 플랫폼 및 서비스에 적용되는 클라우드 채택 콘텐츠를 만들고 있습니다. 클라우드 채택 콘텐츠에 대한 의견을 제공하거나 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)으로 이메일을 보내서 특정 콘텐츠를 요청하세요.<br/> |
-|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 관심이 있다면 CAAB(클라우드 채택 자문 위원회)에 가입하여 Microsoft 콘텐츠 개발자, 산업 전문가 및 전 세계 고객으로 구성된 더 크고 활발한 커뮤니티에 연결할 수 있습니다. 참가 하려면 자신을 Microsoft 기술 커뮤니티의 [caab (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 에 추가 하 고[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내 주세요. 모든 사용자가 [caab 블로그에서](https://blogs.technet.com/b/solutions_advisory_board/)커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원은 새 클라우드 채택 리소스와 솔루션에 대해 설명하는 비공개 웹 세미나에 초대됩니다.  <br/> |
+|**클라우드 채택 토론에 가입** <br/> |클라우드 기반 솔루션에 관심이 있다면 CAAB(클라우드 채택 자문 위원회)에 가입하여 Microsoft 콘텐츠 개발자, 산업 전문가 및 전 세계 고객으로 구성된 더 크고 활발한 커뮤니티에 연결할 수 있습니다. 참가 하려면 자신을 Microsoft 기술 커뮤니티의 [Caab (클라우드 채택 자문 위원회) 공간](https://aka.ms/caab) 에 추가 하 고[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)에서 빠른 전자 메일을 보내 주세요. 모든 사용자가 [Caab 블로그에서](https://blogs.technet.com/b/solutions_advisory_board/)커뮤니티 관련 콘텐츠를 읽을 수 있습니다. 그러나 CAAB 구성원은 새 클라우드 채택 리소스와 솔루션에 대해 설명하는 비공개 웹 세미나에 초대됩니다.  <br/> |
 |**여기에 표시된 아트 받기** <br/> |이 문서에 표시된 아트의 편집 가능한 복사본을 원하시면 보내드리겠습니다. 아트의 URL과 제목을 적어서 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)으로 요청 이메일을 보내주세요.  <br/> |
    
 ## <a name="see-also"></a>참고 항목

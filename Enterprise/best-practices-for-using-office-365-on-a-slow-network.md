@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: End User
+audience: End User
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: 인터넷 연결이 항상 빠른 속도로 작동 하지 않는 경우에는 유용 하지 않을까요? 해당 일이 곧 제공 될 예정입니다. 그러나이 경우에도 balky 네트워크를 해결 하기 위해 수행할 수 있는 실질적인 작업을 계속 해 서 수행 해야 합니다.
-ms.openlocfilehash: 3ddc6483956657485b75a20a540ea83a55b61564
-ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
+ms.openlocfilehash: 479947eb2e785ddfdf77fa2715007afd41d20763
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33655772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068244"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>저속 네트워크에서의 Office 365 사용에 대 한 모범 사례
 

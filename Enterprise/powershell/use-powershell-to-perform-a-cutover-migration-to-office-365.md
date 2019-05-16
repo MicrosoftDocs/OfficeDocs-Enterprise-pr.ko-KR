@@ -3,7 +3,7 @@ title: PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 요약:Windows PowerShell을 사용하여 Office 365로 단독형 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574082"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071204"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행
 
@@ -221,7 +221,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
   - [Exchange 2010 수정 또는 제거](https://go.microsoft.com/fwlink/?LinkId=217936)
     
-  - [Exchange 2007 조직을 제거하는 방법](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [Exchange 2007 조직 제거 방법](https://go.microsoft.com/fwlink/?LinkID=100485)
     
   - [Exchange Server 2003 제거 방법](https://go.microsoft.com/fwlink/?LinkID=56561)
     

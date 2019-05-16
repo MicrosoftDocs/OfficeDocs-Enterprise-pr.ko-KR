@@ -4,7 +4,7 @@ ms.author: twerner
 author: twernermsft
 manager: scotv
 ms.date: 5/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,17 +15,17 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
-description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 office 365 조 직 용 office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: ec851fc85273e9f871c20d5075b16cb97472f975
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 Office 365 조 직 용 Office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
+ms.openlocfilehash: 34040d11a1ef4d5da2d7a0e980b28e7ef0eba7fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957639"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070504"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
 
-office 365 관리자는 중앙 집중식 배포 기능을 통해 사용자에 게 office 추가 기능을 배포할 수 있습니다 ( [office 365 관리 센터에서 office 추가 기능 배포](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)참조). office 365 관리 센터를 통해 office 추가 기능을 배포 하는 것 외에도 Microsoft PowerShell을 사용할 수 있습니다. [Windows PowerShell 용 O365 중앙화 된 추가 기능 배포 모듈](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)을 설치 합니다. 
+Office 365 관리자는 중앙 집중식 배포 기능을 통해 사용자에 게 Office 추가 기능을 배포할 수 있습니다 ( [office 365 관리 센터에서 Office 추가 기능 배포](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)참조). Office 365 관리 센터를 통해 Office 추가 기능을 배포 하는 것 외에도 Microsoft PowerShell을 사용할 수 있습니다. [Windows PowerShell 용 O365 중앙화 된 추가 기능 배포 모듈](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)을 설치 합니다. 
     
 ## <a name="connect-using-your-admin-credentials"></a>관리자 자격 증명을 사용 하 여 연결
 
@@ -50,7 +50,7 @@ office 365 관리자는 중앙 집중식 배포 기능을 통해 사용자에 �
   ```
 
 > [!NOTE]
-> PowerShell을 사용 하는 방법에 대 한 자세한 내용은 [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585)를 참조 하세요. 
+> PowerShell을 사용 하는 방법에 대 한 자세한 내용은 [Connect To Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585)를 참조 하세요. 
   
 ## <a name="upload-an-add-in-manifest"></a>추가 기능 매니페스트 업로드
 
@@ -78,10 +78,10 @@ New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-
 
 _AssetId_ 매개 변수의 값을 확인 하기 위해 추가 기능에 대 한 Office 스토어 웹 페이지의 URL에서이를 복사할 수 있습니다. AssetIds는 항상 "WA" 다음에 숫자를 사용 하 여 시작 합니다. 예를 들어 이전 예제에서 WA104099688의 AssetId 값에 대 한 원본은 추가 기능의 Office 스토어 웹 페이지 URL입니다 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
   
-_Locale_ 매개 변수와 _contentmarket_ 매개 변수의 값은 동일 하며 추가 기능을 설치 하려고 하는 국가/지역을 나타냅니다. 형식은 en-us, fr-fr입니다. 등이 있습니다. 
+_Locale_ 매개 변수와 _contentmarket_ 매개 변수의 값은 동일 하며 추가 기능을 설치 하려고 하는 국가/지역을 나타냅니다. 형식은 en-us, fr-FR입니다. 등이 있습니다. 
   
 > [!NOTE]
-> office 스토어에서 업로드 된 추가 기능은 office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다. 
+> Office 스토어에서 업로드 된 추가 기능은 Office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다. 
   
 ## <a name="get-details-of-an-add-in"></a>추가 기능의 세부 정보 가져오기
 
@@ -152,7 +152,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> office 스토어에서 업로드 된 추가 기능은 office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다. 
+> Office 스토어에서 업로드 된 추가 기능은 Office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다. 
   
 ## <a name="delete-an-add-in"></a>추가 기능 삭제
 
@@ -164,7 +164,7 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>각 cmdlet에 대 한 자세한 도움말 보기
 
-get-help cmdlet을 사용 하 여 각 cmdlet에 대 한 자세한 도움말을 확인할 수 있습니다. 예를 들어 다음 cmdlet은 OrganizationAddIn cmdlet에 대 한 자세한 정보를 제공 합니다.
+Get-help cmdlet을 사용 하 여 각 cmdlet에 대 한 자세한 도움말을 확인할 수 있습니다. 예를 들어 다음 cmdlet은 OrganizationAddIn cmdlet에 대 한 자세한 정보를 제공 합니다.
   
 ```
 Get-help Remove-OrganizationAddIn -Full

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 이 문서에서는 SharePoint Online에서 최상의 성능을 위해 페이지를 디자인할 때 고려해 야 할 특정 측면에 대해 설명 합니다.
-ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4743364f6e8a1e84800085d0875abad84491780b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067214"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online의 성능 조정 소개
 
@@ -54,7 +54,7 @@ SharePoint Online에 대 한 다음의 광범위 한 메트릭은 성능에 대 
 
 사이트 모음 관리자, 사이트 소유자, 편집자 또는 기여자는 추가 보안 그룹에 속하며 추가 사용 권한을 가지 므로 SharePoint에서 페이지에 로드 하는 추가 요소를 포함 합니다.
   
-이는 sharepoint 온-프레미스 및 sharepoint online에 적용 되지만, 온-프레미스 시나리오에서는 sharepoint online 에서처럼 차이점이 쉽게 발견 되지 않습니다.
+이는 sharepoint 온-프레미스 및 SharePoint Online에 적용 되지만, 온-프레미스 시나리오에서는 SharePoint Online 에서처럼 차이점이 쉽게 발견 되지 않습니다.
   
 사용자에 대해 페이지가 어떻게 실행 되는 방식을 올바르게 평가 하려면 표준 사용자 계정을 사용 하 여 제작 컨트롤 및 보안 그룹과 관련 된 추가 트래픽을 로드 하지 않도록 해야 합니다.
   
@@ -82,7 +82,7 @@ SharePoint Online에 대 한 다음의 광범위 한 메트릭은 성능에 대 
     
 ### <a name="server-connection"></a>서버 연결
 
-sharepoint 온-프레미스의 성능에 영향을 주는 많은 문제가 sharepoint Online에도 적용 됩니다.
+SharePoint 온-프레미스의 성능에 영향을 주는 많은 문제가 SharePoint Online에도 적용 됩니다.
   
 예상 대로 서버에서 온-프레미스 SharePoint를 수행 하는 방법을 보다 강력 하 게 제어할 수 있습니다. SharePoint Online을 사용 하는 경우는 약간 다릅니다. 서버에서 수행 하는 작업이 많을 수록 페이지를 렌더링 하는 데 시간이 오래 걸립니다. SharePoint를 사용 하는 경우 이러한 측면에서 가장 큰 이유는 여러 웹 파트를 포함 하는 복잡 한 페이지입니다.
   
@@ -124,7 +124,7 @@ SharePoint Online에서는 몇 가지 요인을 더 고려해 야 합니다. 예
     
 - 서버에 대 한 큰 실제 거리
     
-SharePoint Online에서 활용할 수 있는 한 가지 기능은 Microsoft CDN (콘텐츠 배달 네트워크)입니다. CDN은 기본적으로 여러 데이터 센터에 배포 된 서버의 분산 모음입니다. CDN을 사용 하는 경우 클라이언트가 원래 SharePoint 서버와 멀리 떨어진 경우에도 클라이언트에 가까운 서버에서 페이지의 콘텐츠를 호스팅할 수 있습니다. Microsoft는 앞으로 사용자 지정할 수 없는 페이지의 로컬 인스턴스 (예: SharePoint Online 관리 홈 페이지)를 저장 하는 데이 더 많은 방법을 사용할 예정입니다. cdns에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)를 참조 하세요.
+SharePoint Online에서 활용할 수 있는 한 가지 기능은 Microsoft CDN (콘텐츠 배달 네트워크)입니다. CDN은 기본적으로 여러 데이터 센터에 배포 된 서버의 분산 모음입니다. CDN을 사용 하는 경우 클라이언트가 원래 SharePoint 서버와 멀리 떨어진 경우에도 클라이언트에 가까운 서버에서 페이지의 콘텐츠를 호스팅할 수 있습니다. Microsoft는 앞으로 사용자 지정할 수 없는 페이지의 로컬 인스턴스 (예: SharePoint Online 관리 홈 페이지)를 저장 하는 데이 더 많은 방법을 사용할 예정입니다. CDNs에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)를 참조 하세요.
   
 알고 있어야 하지만, ISP의 연결 속도가 더 많은 작업을 수행 하지 못할 수 있습니다. 간단한 속도 테스트 도구를 통해 연결 속도를 파악할 수 있습니다.
   
@@ -132,7 +132,7 @@ SharePoint Online에서 활용할 수 있는 한 가지 기능은 Microsoft CDN 
 
 성능 측면에서 웹 브라우저에 대해 고려해 야 할 몇 가지 요소가 있습니다.
   
-복잡 한 페이지를 방문 하면 성능에 영향을 줍니다. 대부분의 브라우저에는 90mb를 초과 하는 작은 캐시만 있지만 평균 웹 페이지는 일반적으로 1.6 mb를 초과 합니다. 이 작업을 수행 하는 데 시간이 오래 걸리지 않습니다.
+복잡 한 페이지를 방문 하면 성능에 영향을 줍니다. 대부분의 브라우저에는 90MB를 초과 하는 작은 캐시만 있지만 평균 웹 페이지는 일반적으로 1.6 MB를 초과 합니다. 이 작업을 수행 하는 데 시간이 오래 걸리지 않습니다.
   
 대역폭도 문제가 될 수 있습니다. 예를 들어 사용자가 다른 세션에서 비디오를 시청 하 고 있으면 SharePoint 페이지의 성능에 영향을 줍니다. 사용자가 미디어를 스트리밍하는 것을 방지할 수는 없지만 사용자가 페이지를 로드 하는 방식을 제어할 수 있습니다.
   

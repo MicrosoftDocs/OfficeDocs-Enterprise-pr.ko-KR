@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,18 +17,18 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487282"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069924"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
 
 이 문서에는 네트워크 계획 및 테스트에 대 한 정보와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
   
-처음으로 배포 하거나 office 365로 마이그레이션하기 전에 다음 항목의 정보를 사용 하 여 필요한 대역폭을 예상 하 고 테스트 하 여 Office 365로 배포 하거나 마이그레이션할 대역폭이 충분 한지 확인할 수 있습니다.
+처음으로 배포 하거나 Office 365로 마이그레이션하기 전에 다음 항목의 정보를 사용 하 여 필요한 대역폭을 예상 하 고 테스트 하 여 Office 365로 배포 하거나 마이그레이션할 대역폭이 충분 한지 확인할 수 있습니다.
 
 ||
 |:-----|
@@ -36,7 +36,7 @@ ms.locfileid: "33487282"
 
 |||
 |:-----|:-----|
-|![엔터프라이즈 설계자 포스터 용 Microsoft 클라우드 네트워킹 참조](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|Office 365 및 기타 Microsoft 클라우드 플랫폼 및 서비스에 대 한 네트워크를 최적화 하는 단계는 [microsoft 클라우드 네트워킹 for 엔터프라이즈 설계자](https://aka.ms/cloudarchnetworking) 포스터를 참조 하세요. |
+|![엔터프라이즈 설계자 포스터 용 Microsoft 클라우드 네트워킹 참조](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|Office 365 및 기타 Microsoft 클라우드 플랫폼 및 서비스에 대 한 네트워크를 최적화 하는 단계는 [Microsoft 클라우드 네트워킹 For 엔터프라이즈 설계자](https://aka.ms/cloudarchnetworking) 포스터를 참조 하세요. |
    
 ## <a name="estimate-network-bandwidth-requirements"></a>네트워크 대역폭 요구 사항 예상
 <a name="EstimateBandwidthRequirements"> </a>
@@ -58,24 +58,24 @@ Office 365을 사용 하면 조직의 인터넷 회로 사용률이 향상 될 �
 
  **네트워크 도구** 인터넷 대역폭을 테스트 하 고 유효성을 검사 하 여 다운로드, 업로드 및 대기 시간 제한을 확인 합니다. 이러한 도구는 마이그레이션에 대 한 네트워크 기능 뿐 아니라 완벽 하 게 배포 된 후에도 결정 하는 데 도움이 됩니다. 
   
-- [Microsoft message analyzer](https://technet.microsoft.com/library/jj649776.aspx): 메시지 분석기는 네트워크 문제 해결을 위한 효과적인 도구입니다. 메시지 분석기는 프로토콜 기반 메시징 트래픽 및 시스템 메시지를 캡처, 표시 및 분석 합니다. 또한 메시지 분석기를 사용 하 여 로그 및 추적 파일에서 데이터를 가져오고, 집계 하 고, 분석할 수 있습니다.
+- [Microsoft Message analyzer](https://technet.microsoft.com/library/jj649776.aspx): 메시지 분석기는 네트워크 문제 해결을 위한 효과적인 도구입니다. 메시지 분석기는 프로토콜 기반 메시징 트래픽 및 시스템 메시지를 캡처, 표시 및 분석 합니다. 또한 메시지 분석기를 사용 하 여 로그 및 추적 파일에서 데이터를 가져오고, 집계 하 고, 분석할 수 있습니다.
     
 - [Microsoft 원격 연결 분석기](https://go.microsoft.com/fwlink/p/?LinkId=517243): Exchange Online 환경에서 연결을 테스트 합니다.
     
-- [office 365 용 Microsoft 지원 및 복구 도우미](https://diagnostics.office.com/#/Download?env=SOC) 를 사용 하 여 Outlook 및 Office 365 문제를 해결 합니다. 
+- [Office 365 용 Microsoft 지원 및 복구 도우미](https://diagnostics.office.com/#/Download?env=SOC) 를 사용 하 여 Outlook 및 Office 365 문제를 해결 합니다. 
     
 ## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>네트워크 계획을 위한 모범 사례 및 Office 365의 마이그레이션 성능 개선
 <a name="BestPractices"> </a>
 
 Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려면 이러한 모범 사례를 자세히 살펴보겠습니다.
   
-1. 사용자를 즉시 활용할 수 있도록 하기 원하십니까? 네트워크가 너무 많이 사용 되지 않는 경우 SharePoint online, Exchange online, Lync Online 등 office 365 사용에 대 한 팁을 보려면 [느린 네트워크에서 office 365을 사용할](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) 때 유용한 정보를 참조 하세요. 이 문서에서는 office 365 환경을 최적화 하기 위해 TechNet 및 Support.office.com의 콘텐츠 로드에 대해 설명 하 고, 웹 페이지를 사용자 지정 하는 간편한 방법 및 최상의 office 365 환경을 위한 Internet Explorer 설정을 설정 하는 방법에 대 한 정보를 제공 합니다. 
+1. 사용자를 즉시 활용할 수 있도록 하기 원하십니까? 네트워크가 너무 많이 사용 되지 않는 경우 SharePoint Online, Exchange Online, Lync Online 등 Office 365 사용에 대 한 팁을 보려면 [느린 네트워크에서 office 365을 사용할](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) 때 유용한 정보를 참조 하세요. 이 문서에서는 Office 365 환경을 최적화 하기 위해 TechNet 및 Support.office.com의 콘텐츠 로드에 대해 설명 하 고, 웹 페이지를 사용자 지정 하는 간편한 방법 및 최상의 Office 365 환경을 위한 Internet Explorer 설정을 설정 하는 방법에 대 한 정보를 제공 합니다. 
     
-2. office [365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 을 읽고 office 365 트래픽을 안전 하 게 관리 하 고 가능한 최적의 성능을 얻는 데 필요한 연결 원칙을 이해 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다. 
+2. Office [365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 을 읽고 office 365 트래픽을 안전 하 게 관리 하 고 가능한 최적의 성능을 얻는 데 필요한 연결 원칙을 이해 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다. 
     
 3. Windows 업데이트 일정을 신중 하 게 관리 하 여 메일 마이그레이션 성능을 향상 시킵니다. 클라이언트 컴퓨터를 일괄적으로 업데이트 하 고 네트워크 대역폭 사용을 조정 하기 위해 Office 365로 마이그레이션하기 전에 모든 클라이언트 컴퓨터가 업데이트 되는지 확인할 수 있습니다. 자세한 내용은 [최신 업데이트에 대 한 Office 365 데스크톱 수동 업데이트 및 구성을](https://support.microsoft.com/gp/office-2013-365-update)참조 하십시오.
     
-4. Office 365 네트워크 트래픽은 신뢰할 수 있는 인터넷 서비스로 취급 되 고 일부 조직에서 신뢰할 수 없는 인터넷 서비스에 대 한 네트워크 트래픽을 수행 하는 일반적인 필터링 및 검색 기능을 많이 사용 하지 않을 때 가장 적합 합니다. 여기에는 일반적으로 프록시 사용자 인증 및 패킷 검사와 같은 아웃 바운드 처리를 제거 하 고 올바른 NAT (Network Address Translation)를 사용 하 여 인터넷에 대 한 로컬 송신을 보장 하 고 증가 된 대역폭 용량을 처리할 수 있는 충분 한 공간이 포함 됩니다 네트워크 요청 네트워크에서 신뢰할 수 있는 인터넷 서비스로 office 365를 처리 하도록 네트워크를 구성 하는 방법에 대 한 추가 지침은 [office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)를 참조 하세요.
+4. Office 365 네트워크 트래픽은 신뢰할 수 있는 인터넷 서비스로 취급 되 고 일부 조직에서 신뢰할 수 없는 인터넷 서비스에 대 한 네트워크 트래픽을 수행 하는 일반적인 필터링 및 검색 기능을 많이 사용 하지 않을 때 가장 적합 합니다. 여기에는 일반적으로 프록시 사용자 인증 및 패킷 검사와 같은 아웃 바운드 처리를 제거 하 고 올바른 NAT (Network Address Translation)를 사용 하 여 인터넷에 대 한 로컬 송신을 보장 하 고 증가 된 대역폭 용량을 처리할 수 있는 충분 한 공간이 포함 됩니다 네트워크 요청 네트워크에서 신뢰할 수 있는 인터넷 서비스로 Office 365를 처리 하도록 네트워크를 구성 하는 방법에 대 한 추가 지침은 [office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)를 참조 하세요.
     
 1. [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)를 확인 합니다. Office 365로 들어오는 추가 트래픽으로 인해 아웃 바운드 프록시 연결이 증가 하 고 TLS/SSL을 통한 보안 트래픽이 증가 합니다.
     
@@ -106,7 +106,7 @@ Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려�
     
 - [Office 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples)
     
-- [Office 365 비디오 네트워킹에 대 한 질문과 대답 (faq)](office-365-video-networking-faq.md)
+- [Office 365 비디오 네트워킹에 대 한 질문과 대답 (FAQ)](office-365-video-networking-faq.md)
     
 - [Office 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
     

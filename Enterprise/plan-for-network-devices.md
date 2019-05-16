@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '요약: Office 365에 연결 하는 데 사용 되는 네트워크 용량, WAN 가속기 및 부하 분산 장치에 대 한 고려 사항을 설명 합니다.'
-ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069374"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 서비스에 연결되는 네트워크 장치 계획
 
@@ -33,9 +33,9 @@ ms.locfileid: "33492072"
 |:-----|
 | 이 문서는 [Office 365의 네트워크 계획 및 성능 조정](https://aka.ms/tune)의 일부입니다.|
 
-온-프레미스 나가는 인터넷 프록시 설정도 클라이언트 응용 프로그램에 대 한 Office 365 서비스 연결에 영향을 줍니다. 또한 Microsoft 클라우드 서비스 url 및 응용 프로그램에 대 한 연결을 허용 하도록 네트워크 프록시 장치를 구성 해야 합니다. 모든 조직은 서로 다릅니다. Microsoft가이 프로세스를 관리 하는 방법 및 구축 하는 대역폭의 양에 대 한 아이디어를 얻으려면 [사례 연구를 읽어보십시오](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+온-프레미스 나가는 인터넷 프록시 설정도 클라이언트 응용 프로그램에 대 한 Office 365 서비스 연결에 영향을 줍니다. 또한 Microsoft 클라우드 서비스 Url 및 응용 프로그램에 대 한 연결을 허용 하도록 네트워크 프록시 장치를 구성 해야 합니다. 모든 조직은 서로 다릅니다. Microsoft가이 프로세스를 관리 하는 방법 및 구축 하는 대역폭의 양에 대 한 아이디어를 얻으려면 [사례 연구를 읽어보십시오](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
-다음 비즈니스용 skype 도움말 문서에는 비즈니스용 skype 설정에 대 한 자세한 정보가 나와 있습니다.
+다음 비즈니스용 Skype 도움말 문서에는 비즈니스용 Skype 설정에 대 한 자세한 정보가 나와 있습니다.
   
 - [관리자에 대 한 비즈니스용 Skype Online 로그인 오류 해결](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
@@ -54,7 +54,7 @@ ms.locfileid: "33492072"
   
 ## <a name="wan-accelerators"></a>WAN 가속기
 
-조직에서 WAN (wide area network) 가속 프록시 기기를 사용 하는 경우에는 Office 365 서비스에 액세스할 때 문제가 발생할 수 있습니다. 사용자가 Office 365에 액세스할 때 일관 된 환경을 유지 하도록 네트워크 장치 또는 장치를 최적화 해야 할 수 있습니다. 예를 들어 office 365 서비스는 일부 Office 365 콘텐츠 및 TCP 헤더를 암호화 합니다. 장치가 이러한 유형의 트래픽을 처리 하지 못할 수 있습니다.
+조직에서 WAN (wide area network) 가속 프록시 기기를 사용 하는 경우에는 Office 365 서비스에 액세스할 때 문제가 발생할 수 있습니다. 사용자가 Office 365에 액세스할 때 일관 된 환경을 유지 하도록 네트워크 장치 또는 장치를 최적화 해야 할 수 있습니다. 예를 들어 Office 365 서비스는 일부 Office 365 콘텐츠 및 TCP 헤더를 암호화 합니다. 장치가 이러한 유형의 트래픽을 처리 하지 못할 수 있습니다.
   
 [Office 365에서 WAN 최적화 컨트롤러 또는 트래픽/검사 장치를 사용 하는](https://support.microsoft.com/kb/2690045)방법에 대 한 지원 설명을 읽으십시오.
   
@@ -66,7 +66,7 @@ Windows Server에 기본 제공 되는 소프트웨어 기반 NLB 솔루션을 �
   
 ## <a name="firewalls-and-proxies"></a>방화벽과 프록시
 
-office 365에 연결 하기 위한 방화벽 및 프록시 구성에 대 한 자세한 내용은 [office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), office [365에 대 한 네트워크 연결](network-connectivity.md)및 [office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 에 대 한 자세한 내용을 참조 하세요.
+Office 365에 연결 하기 위한 방화벽 및 프록시 구성에 대 한 자세한 내용은 [office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), office [365에 대 한 네트워크 연결](network-connectivity.md)및 [office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 에 대 한 자세한 내용을 참조 하세요.
   
 ## <a name="see-also"></a>참고 항목
 

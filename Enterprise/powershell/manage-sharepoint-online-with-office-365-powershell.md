@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/01/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 요약:Office 365 PowerShell을 사용하여 SharePoint Online 사용자, 그룹 및 사이트 그룹을 관리합니다.
-ms.openlocfilehash: c033e006f61ce34ff1e8925e50552c2041c11884
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 2721639ca3ef83b39f85f6da70e47ba90f93f558
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068874"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 SharePoint Online 관리
 
  **요약:** Office 365 PowerShell을 사용하여 SharePoint Online 사용자, 그룹 및 사이트 그룹을 관리합니다.
   
-SharePoint Online 관리자의 기본 작업 중 하나는 사이트, 사이트 그룹 및 사용자를 관리하는 것입니다. Microsoft 365 관리 센터에서 이러한 작업 중 일부를 수행할 수 있지만 Office 365 PowerShell의 다른 작업은 훨씬 더 빠르고 쉽습니다. 자세한 내용은 다음 항목을 참조하십시오.
+SharePoint Online 관리자의 기본 작업 중 하나는 사이트, 사이트 그룹 및 사용자를 관리하는 것입니다. Office 365 관리 센터에서 이러한 작업 중 일부를 수행할 수 있지만 Office 365 PowerShell에서 훨씬 더 빠르고 쉽게 수행할 수 있는 작업도 있습니다. 자세한 내용은 다음 항목을 참조하세요.
 
 - [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   

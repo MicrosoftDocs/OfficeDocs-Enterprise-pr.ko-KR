@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,42 +15,42 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
-description: Office 365는 전세계 고객에 게 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 설계 되었습니다. 서비스 발전 함에 따라 보안, 성능 및 안정성을 Office 365는 향상 된 기반 서비스에 대 한 연결을 설정 하는 인터넷을 사용 하는 고객에 있습니다.
-ms.openlocfilehash: da086aa3fcd23ccb4a82cde2a1f7d812c111071a
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
+ms.openlocfilehash: 4510cb073c0fde64abc4ee796a55d7ef32662f8c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25911392"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069874"
 ---
 # <a name="network-connectivity-to-office-365"></a>Office 365에 대한 네트워크 연결
 
-Office 365는 전세계 고객에 게 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 설계 되었습니다. 서비스 발전 함에 따라 보안, 성능 및 안정성을 Office 365는 향상 된 기반 서비스에 대 한 연결을 설정 하는 인터넷을 사용 하는 고객에 있습니다.
+Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
   
-Office 365를 사용 하 여 계획 하는 고객 배포 프로젝트의 일부로 자신의 기존 수준과 예상 인터넷 연결 요구를 평가 해야 합니다. 엔터프라이즈 클래스 배포에 대 한 안정적이 고 적절 한 크기의 인터넷 연결이 사용 (영문) Office 365 기능 및 시나리오의 중요 한 부분입니다.
+Office 365을 사용 하려는 고객은 기존 및 예상 인터넷 연결 요구 사항을 배포 프로젝트의 일부로 평가 해야 합니다. 엔터프라이즈 클래스 배포를 안정적이 고 적절 한 크기의 인터넷 연결을 사용 하는 것은 Office 365 기능과 시나리오를 소비 하는 중요 한 부분입니다.
   
-대부분의 다른 사용자 및 크기 및 기본 설정에 따라 조직에서 네트워크 평가 수행할 수 있습니다. 평가의 네트워크 범위도 배포 프로세스에서에 위치에 따라 달라질 수 있습니다. 보다 잘 이해 하는 네트워크 평가 수행 하는 데 걸리는 얻을 수 있도록, 사용할 수 있는 옵션을 이해 하는데 도움이 되는 네트워크 평가 가이드를 생성 했을 때 했습니다. 이 평가 단계 및 리소스 필요한 정보 성공적으로 Office 365를 채택할 수 있도록 하는 배포 프로젝트에 추가할 수를 결정 합니다.
+네트워크 평가는 크기 및 기본 설정에 따라 다양 한 사용자 및 조직에서 수행할 수 있습니다. 또한 평가의 네트워크 범위는 배포 프로세스의 위치에 따라 달라질 수 있습니다. 네트워크 평가를 수행 하는 데 필요한 정보를 보다 쉽게 이해할 수 있도록 지원 되는 옵션을 이해 하는 데 도움이 되는 네트워크 평가 가이드를 만들었습니다. 이 평가에서는 Office 365을 성공적으로 채택할 수 있도록 배포 프로젝트에 추가 해야 하는 단계 및 리소스를 결정 합니다.
   
-[Skype 작업 프레임 워크](https://www.skypeoperationsframework.com/) 에서 설명한 것과 같은 포괄적인 네트워크 평가, 네트워킹 구현 세부 사항 함께 디자인 문제를 해결할 수를 제공 합니다. 대부분의 네트워크 평가 Office 365에 대 한 네트워크 연결을 사용 하 여 [보조 구성 또는 디자인 변경](https://aka.ms/manageo365endpoints) 기존 네트워크와 인터넷 탈출 인프라를 수용할 수 있습니다 표시 됩니다.
+포괄적인 네트워크 평가는 [Skype 작업 프레임 워크](https://www.skypeoperationsframework.com/) 에 규정 된 것과 마찬가지로 구현 정보와 함께 네트워킹 디자인 문제에 대 한 가능한 솔루션을 제공 합니다. 대부분의 네트워크 평가는 기존 네트워크 및 인터넷 송신 인프라에 대 한 [경미한 구성 또는 디자인 변경을](https://aka.ms/manageo365endpoints) 통해 Office 365에 대 한 네트워크 연결을 수용할 수 있음을 나타냅니다.
 
-일부 평가 Office 365에 대 한 네트워크 연결에는 네트워킹 구성 요소에 대 한 추가 투자가 필요 표시 됩니다. WAN 대역폭 또는 인터넷을 통해 연결 Office 365를 지원 하기 위해 최적화 된 라우팅 인프라 투자 예입니다. 필요에 따라 평가 사용 하는 Office 365에 대 한 네트워크 연결 [비즈니스 온라인 미디어 품질에 대 한 Skype](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)등의 시나리오에 대 한 규정 또는 성능 요구 사항에 의해 영향을 받습니다 표시 됩니다. 이러한 추가 요구 사항에 투자 한 인터넷 연결 인프라, 라우팅 최적화 및 특수 직접 연결 될 수 있습니다.
+Office 365에 대 한 네트워크 연결을 나타내는 몇 가지 평가는 네트워킹 구성 요소에 대 한 추가 투자가 필요 합니다. 예를 들어, Office 365에 대 한 인터넷 연결을 지원 하기 위해 WAN 대역폭에 투자 하거나 최적화 된 라우팅 인프라를 사용할 수 있습니다. 경우에 따라 평가는 Office 365에 대 한 네트워크 연결이 [비즈니스용 Skype 온라인 미디어 품질과](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)같은 시나리오에 대 한 규제 또는 성능 요구 사항의 영향을 받게 되는 경우가 있습니다. 이러한 추가 요구 사항에 따라 인터넷 연결 인프라, 라우팅 최적화 및 특수 직접 연결에 대 한 투자가 발생할 수 있습니다.
   
 > [!NOTE]
-> Office 365에 대 한 ExpressRoute를 사용 하는 데 Microsoft 인증이 필요 합니다. Microsoft는 모든 고객 요청을 검토 하 고만 권한을 부여 ExpressRoute Office 365 사용 현황에 대 한 요구 사항을 규정 하는 고객의 요구 하는 경우 직접 연결 하는 경우. 이러한 요구 사항, 있는 경우 Microsoft 검토를 시작 하려면 [Office 365 요청 양식에 대 한 ExpressRoute](https://aka.ms/O365ERReview) 에 직접 연결 필요 하다는 것을 의미를 해석 하는 규정을 텍스트 발췌문 및 웹 링크를 제공 하십시오. Office 365에 대 한 경로 필터를 만들 권한이 없는 구독 [오류 메시지](https://support.microsoft.com/kb/3181709)를 받습니다.
+> Microsoft authorization는 Office 365 용 Express 경로를 사용 하는 데 필요 합니다. 고객의 규정 요구 사항에 직접 연결 하는 경우 Microsoft는 모든 고객 요청을 검토 하 고 Office 365 사용에 대 한 사용자만 권한 부여를 승인 합니다. 이러한 요구 사항을 충족 하는 경우 해석 하는 규정에 대 한 텍스트 발췌문 및 웹 링크를 제공 하 여 Microsoft 검토를 시작 하기 [위한 Office 365의 express 경로 요청 양식에](https://aka.ms/O365ERReview) 직접 연결이 필요 하다는 것을 의미 합니다. 인증 되지 않은 구독에서 Office 365에 대 한 경로 필터를 만들려고 하면 [오류 메시지가](https://support.microsoft.com/kb/3181709)표시 됩니다.
   
-Office 365에 대 한 네트워크 평가 계획할 때 고려할 주요 내용을:
+Office 365에 대 한 네트워크 평가를 계획할 때 고려해 야 할 주요 사항은 다음과 같습니다.
   
-- Office 365는 공용 인터넷을 통해 실행 되는 보안, 안정성, 높은 성능을 서비스입니다. 서비스의 이러한 측면을 향상 시키기 위해 투자 계속 합니다. 모든 Office 365 서비스는 인터넷 연결을 통해 사용할 수 있습니다.
+- Office 365은 공용 인터넷을 통해 실행 되는 안전 하 고 신뢰할 수 있는 고성능 서비스입니다. 서비스의 이러한 측면을 개선 하기 위해 계속 투자 하 고 있습니다. 인터넷 연결을 통해 모든 Office 365 서비스를 사용할 수 있습니다.
 
-- 가용성, 글로벌 예: Office 365의 측면에 도달 하는 핵심을 지속적으로 최적화는 우리 하 고 인터넷에 대 한 성능 기반 연결 합니다. 등 대부분의 Office 365 서비스 인터넷에 연결 합니다 지 노드를 확장 집합을 활용 합니다. 이 지 네트워크 가장 근접 및 성능 인터넷을 통해 들어오는 연결을 제공 합니다.
+- Microsoft는 가용성, 글로벌, 인터넷 기반 연결에 대 한 성능과 같은 Office 365의 핵심 측면을 지속적으로 최적화 하 고 있습니다. 예를 들어 많은 Office 365 서비스는 확장 된 인터넷 연결에 지 노드 집합을 활용 합니다. 이에 지 네트워크는 인터넷을 통해 들어오는 연결에 대해 가장 적합 한 근접성 및 성능을 제공 합니다.
 
-- Office 365를 사용 하 여 비즈니스 온라인 음성, 비디오, 또는 모임 기능에 대 한 Skype와 같은 포함 된 서비스 중 하나에 대 한 고려 하 고, 고객을 종단간 네트워크 평가 완료 하 고이 Skype 작업 프레임 워크를 사용 하 여 요구 사항을 충족 해야 합니다. 이러한 고객 ExpressRoute를 포함 하 여 클라우드 연결에 대 한 특정 요구를 충족 하기 위해 여러 옵션이 됩니다.
+- 비즈니스용 Skype Online 음성, 비디오 또는 모임 기능과 같은 포함 된 서비스에 대해 Office 365을 사용 하는 경우, 고객은 종단 간 네트워크 평가를 완료 하 고 Skype 운영 프레임 워크를 사용 하 여 요구 사항을 충족 해야 합니다. 이러한 고객은 Express 경로를 포함 하 여 클라우드 연결에 대 한 특정 요구 사항을 충족 하는 여러 옵션을 사용할 수 있습니다.
 
-Microsoft의 사례 연구 [Microsoft Office 365에 대 한 네트워크 성능 최적화를](https://msdn.microsoft.com/en-us/library/mt450488.aspx)보세요. Office 365를 평가 하 고 및 되지 않은 경우 네트워크 평가로 시작 하거나 네트워크 디자인을 찾을 수 있는 위치를 Microsoft 계정 팀과 함께 작업 하십시오 극복 하기 위해 지원 해야 과제 있는지 확인 합니다.
+Microsoft [Office 365의 네트워크 성능 최적화](https://msdn.microsoft.com/en-us/library/mt450488.aspx)를 확인 합니다. Office 365을 평가 중 이며 네트워크 평가로 시작할 위치를 잘 모르거나 문제를 해결 하는 데 도움이 필요한 네트워크 디자인 문제가 있는지 확실 하지 않은 경우 Microsoft 계정 팀에 문의 하세요.
   
-또한 안전 하 게 Office 365 트래픽을 관리 하 고 사용 가능한 최고의 성능을 연결 원칙을 이해 하려면 [Office 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 읽어보십시오. 이 문서는 안전 하 게 Office 365 네트워크 연결을 최적화 하는 것에 대 한 최신 지침을 이해 하는데 도움이 됩니다.
+또한 [office 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 을 읽으면 office 365 트래픽을 안전 하 게 관리 하 고 가능한 최적의 성능을 얻는 데 필요한 연결 원리를 파악할 수 있습니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다.
   
-다음은 짧은 링크를 다시 사용할 수 있습니다: [ https://aka.ms/o365networkconnectivity합니다.](https://aka.ms/o365networkconnectivity)
+여기서는 다음을 수행 [ https://aka.ms/o365networkconnectivity하는 데 사용할 수 있는 간단한 링크를 제공 합니다.](https://aka.ms/o365networkconnectivity)
   
 ## <a name="see-also"></a>참고 항목
 
@@ -66,7 +66,7 @@ Microsoft의 사례 연구 [Microsoft Office 365에 대 한 네트워크 성능 
   
 [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
   
-[Office 365용 ExpressRoute 시나리오에서 BGP 커뮤니티 사용(미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365의 Express에서 BGP 커뮤니티 사용 (미리 보기)](bgp-communities-in-expressroute.md)
   
 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

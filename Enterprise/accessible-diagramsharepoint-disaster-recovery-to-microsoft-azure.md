@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: 이 문서는 Microsoft Azure에 대 한 SharePoint 재해 복구 라는 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068524"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>액세스 가능한 다이어그램-Microsoft Azure로의 SharePoint 재해 복구
 
@@ -126,7 +126,7 @@ Microsoft 컨설팅 서비스 또는 파트너가 처리할 수 있는 추가 �
   
 - 사용자 지정 팜 솔루션 동기화 
     
-- 온-프레미스 데이터 원본에 대 한 연결 (BDC (Business data Connectivity) 및 search content sources) 
+- 온-프레미스 데이터 원본에 대 한 연결 (BDC (Business Data Connectivity) 및 search content sources) 
     
 - 검색 복원 시나리오 
     
@@ -180,7 +180,7 @@ VPN (가상 사설망) 게이트웨이를 통해 Azure virtual network와의 온
   
 ### <a name="azure-virtual-network"></a>Azure virtual network
 
-vpn 게이트웨이는 활성 vpn 게이트웨이 서브넷과 상호 작용 합니다. 
+VPN 게이트웨이는 활성 VPN 게이트웨이 서브넷과 상호 작용 합니다. 
   
 Azure virtual network에는 다음과 같은 세 가지 클라우드 서비스가 있습니다. 
   
@@ -192,7 +192,7 @@ Azure virtual network에는 다음과 같은 세 가지 클라우드 서비스�
     
 ### <a name="build-the-ad-ds-hybrid-environment"></a>AD DS 하이브리드 환경 구축
 
-이 솔루션에 대 한 ad ds의 구성은 ad ds가 부분적으로 온-프레미스에 배포 되 고 Azure 가상 컴퓨터에 부분적으로 배포 되는 하이브리드 배포 시나리오를 구성 합니다. 
+이 솔루션에 대 한 AD DS의 구성은 AD DS가 부분적으로 온-프레미스에 배포 되 고 Azure 가상 컴퓨터에 부분적으로 배포 되는 하이브리드 배포 시나리오를 구성 합니다. 
   
 중요 — Azure에서 AD DS를 배포 하기 전에 Microsoft Azure 가상 컴퓨터 (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)에 Windows Server Active Directory를 배포 하기 위한 지침을 읽어 보십시오. 
   
@@ -210,6 +210,6 @@ Active Directory 환경의 디자인 및 배포에 대 한 자세한 지침은�
     
 - 역할 — 도메인 컨트롤러에 Windows DNS를 설치 하 고 구성 합니다. 
     
-- IP 주소-동적 ip 주소를 사용 합니다. 이렇게 하려면 Azure Virtual Network를 만들어야 합니다. 
+- IP 주소-동적 IP 주소를 사용 합니다. 이렇게 하려면 Azure Virtual Network를 만들어야 합니다. 
     
 

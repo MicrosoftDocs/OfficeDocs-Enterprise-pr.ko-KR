@@ -4,7 +4,7 @@ ms.author: krowley
 author: tracyp
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: 이 문서에서는 Exchange Online의 성능을 개선 하는 방법을 설명 하는 일반적인 팁과 기타 리소스에 대 한 링크를 제공 합니다.
-ms.openlocfilehash: f75869ba6d83a92b1e19743c8b38c4bcbb6762cf
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d736568687da5ffe0ebed5a57a6afa6f93173c54
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372855"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070354"
 ---
 # <a name="tune-exchange-online-performance"></a>Exchange Online 성능 조정
 
@@ -40,7 +40,7 @@ ms.locfileid: "30372855"
 
 ## <a name="general-advice"></a>일반 조언
 
-- outlook.office.com에 대 한 DNS 조회가 해당 위치에 대 한 논리적 입력 위치의 MS datacenter에 진입 하는지 확인 합니다.
+- Outlook.office.com에 대 한 DNS 조회가 해당 위치에 대 한 논리적 입력 위치의 MS datacenter에 진입 하는지 확인 합니다.
 
 - 사서함 캐싱을 조사 하 고 적절 한 옵션 (re)을 선택 합니다. 캐싱 기간, 공유 사서함 캐싱, et cetera).
 

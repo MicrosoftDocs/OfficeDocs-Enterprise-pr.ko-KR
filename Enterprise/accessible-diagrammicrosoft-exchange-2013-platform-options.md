@@ -3,27 +3,27 @@ title: 액세스 가능한 다이어그램-Microsoft Exchange 2013 플랫폼 옵
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487802"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068594"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft Exchange 2013 플랫폼 옵션
 
 **요약:** 이 문서는 [기술 다이어그램](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
   
-이 포스터는 exchange Online 및 exchange Server 배포와 관련 하 여 다음과 같은 비즈니스 의사 결정권자 (BDMs) 및 설계자가 파악 해야 하는 사항에 대해 설명 합니다. 
+이 포스터는 Exchange Online 및 Exchange Server 배포와 관련 하 여 다음과 같은 비즈니스 의사 결정권자 (BDMs) 및 설계자가 파악 해야 하는 사항에 대해 설명 합니다. 
   
-- exchange Online (Office 365), exchange 하이브리드, exchange Server 온-프레미스 및 공급자 호스트 exchange에 대해 사용 가능한 4 가지 플랫폼 옵션을 비교 합니다. 
+- Exchange Online (Office 365), Exchange 하이브리드, Exchange Server 온-프레미스 및 공급자 호스트 exchange 2013에 대해 사용 가능한 4 가지 플랫폼 옵션을 비교 합니다. 
     
 - Exchange 2013에 새로 추가 되었거나 업데이트 된 기능에 대해 설명 합니다. 
     
@@ -47,7 +47,7 @@ ms.locfileid: "33487802"
 
 Office 365의 효율성을 확보 하 고 비용을 절감할 수 있습니다.
   
-함께 제공 되는 다이어그램에서는 온-프레미스 AD DS (active directory 도메인 서비스) 환경 및 azure active directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 azure active directory 테 넌 트와의 Exchange Online을 보여 줍니다. single sign-on에는 AD FS (Active Directory Federation Services)가 필요 합니다. 
+함께 제공 되는 다이어그램에서는 온-프레미스 AD DS (Active Directory 도메인 서비스) 환경 및 Azure Active Directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure Active Directory 테 넌 트와의 Exchange Online을 보여 줍니다. Single sign-on에는 AD FS (Active Directory Federation Services)가 필요 합니다. 
   
 기능에 대 한 설명:
   
@@ -61,13 +61,13 @@ Office 365의 효율성을 확보 하 고 비용을 절감할 수 있습니다.
     
 - 99.9% SLA (서비스 수준 계약)를 사용한 기본 제공 고가용성
     
-- 온-프레미스 AD DS (active directory 도메인 서비스) 및 Azure Active directory 테 넌 트 간의 암호를 포함 하는 디렉터리 동기화 single sign-on에는 AD FS (Active Directory Federation Services)가 필요 합니다.
+- 온-프레미스 AD DS (Active Directory 도메인 서비스) 및 Azure Active Directory 테 넌 트 간의 암호를 포함 하는 디렉터리 동기화 Single sign-on에는 AD FS (Active Directory Federation Services)가 필요 합니다.
     
 #### <a name="exchange-hybrid"></a>Exchange 하이브리드
 
 Exchange Server 온-프레미스를 유지 관리 하면서 Office 365의 이점을 활용할 수 있습니다.
   
-함께 제공 되는 다이어그램에는 일부 사용자가 온-프레미스에 있고 일부 사용자가 온라인 상태에 있는 Office 365에서 Exchange Online이 표시 됩니다. 또한 온-프레미스 AD DS (active directory 도메인 서비스) 환경 및 azure active directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 azure active directory 테 넌 트도 표시 됩니다.
+함께 제공 되는 다이어그램에는 일부 사용자가 온-프레미스에 있고 일부 사용자가 온라인 상태에 있는 Office 365에서 Exchange Online이 표시 됩니다. 또한 온-프레미스 AD DS (Active Directory 도메인 서비스) 환경 및 Azure Active Directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure Active Directory 테 넌 트도 표시 됩니다.
   
 기능에 대 한 설명:
   
@@ -75,9 +75,9 @@ Exchange Server 온-프레미스를 유지 관리 하면서 Office 365의 이점
     
 - 기존 Exchange Server 인프라를 활용 합니다.
     
-- 일정에 따라 시간에 따라 exchange 온-프레미스에서 exchange Online으로 마이그레이션
+- 일정에 따라 시간에 따라 Exchange 온-프레미스에서 Exchange Online으로 마이그레이션
     
-- Lync Online 및 SharePoint online을 비롯 한 다른 Office 365 응용 프로그램과 통합 됩니다.
+- Lync Online 및 SharePoint Online을 비롯 한 다른 Office 365 응용 프로그램과 통합 됩니다.
     
 #### <a name="exchange-server-on-premises"></a>Exchange Server 온-프레미스
 
@@ -91,7 +91,7 @@ Exchange Server 온-프레미스를 유지 관리 하면서 Office 365의 이점
     
 - 부하 분산 계층에서 세션 선호도를 유지 관리 하는 방법에 대 한 종속성이 없습니다.
     
-- dag (데이터베이스 사용 가능 그룹)를 사용 하는 단순 고가용성 및 사이트 복구
+- Dag (데이터베이스 사용 가능 그룹)를 사용 하는 단순 고가용성 및 사이트 복구
     
 - 뛰어난 사용자 환경을 유지 관리 하는 데 도움이 되는 관리 되는 가용성
     
@@ -99,7 +99,7 @@ Exchange Server 온-프레미스를 유지 관리 하면서 Office 365의 이점
     
 #### <a name="provider-hosted-exchange"></a>공급자 호스팅 Exchange
 
-exchange 서버 작업을 exchange server 솔루션 공급자에 게 외주 시킬 수 있습니다.
+Exchange 서버 작업을 Exchange Server 솔루션 공급자에 게 외주 시킬 수 있습니다.
   
 함께 제공 되는 다이어그램에는 공급자가 운영 하 고 유지 관리 하는 Exchange Server 환경이 나와 있습니다.
   
@@ -121,13 +121,13 @@ exchange 서버 작업을 exchange server 솔루션 공급자에 게 외주 시�
   
 - 온-프레미스 Exchange 배포에 대 한 운영 비용을 줄이기 위해 조직
     
-- SharePoint online 및 Lync Online과 같은 다른 Office 365 제품을 활용할 계획을 수립 하는 조직입니다.
+- SharePoint Online 및 Lync Online과 같은 다른 Office 365 제품을 활용할 계획을 수립 하는 조직입니다.
     
 #### <a name="exchange-hybrid"></a>Exchange 하이브리드
 
 이 배포 옵션은 다음과 같은 경우에 가장 적합 합니다.
   
-- exchange 온-프레미스에서 exchange Online으로의 마이그레이션을 촉진 합니다.
+- Exchange 온-프레미스에서 Exchange Online으로의 마이그레이션을 촉진 합니다.
     
 - 지점 인프라에 대해 투자 하지 않고 원격 사이트를 지원 합니다.
     
@@ -182,7 +182,7 @@ exchange 서버 작업을 exchange server 솔루션 공급자에 게 외주 시�
 
 Office 365 및 온-프레미스 환경 둘 다에 대 한 아키텍처 작업 외에도 다음을 수행 합니다.
   
-- single sign-on 환경을 제공할지 여부를 결정 합니다.
+- Single sign-on 환경을 제공할지 여부를 결정 합니다.
     
 - 온-프레미스 조직을 통해 또는 Exchange Online Protection을 통해 인바운드 인터넷 메일을 라우트할 것인지 여부를 결정 합니다.
     
@@ -222,7 +222,7 @@ Office 365 및 온-프레미스 환경 둘 다에 대 한 IT 전문가 책임 �
   
 - 필요한 경우 AD FS (Active Directory Federation Services)를 single sign-on으로 구성 합니다.
     
-- exchange 2013 서버와 Office 365 간의 보안 통신을 위해 exchange 인증서를 구성 합니다.
+- Exchange 2013 서버와 Office 365 간의 보안 통신을 위해 Exchange 인증서를 구성 합니다.
     
 - 원하는 인바운드 인터넷 메일 경로에 대 한 DNS 레코드를 구성 합니다.
     
@@ -264,7 +264,7 @@ Exchange Online (Office 365)에 대 한 자세한 내용은 다음을 참조 하
     
 Exchange 하이브리드에 대 한 자세한 내용은 다음 항목을 참조 하십시오.
   
-- [Exchange 2013 하이브리드 배포](https://aka.ms/ExchangeHybrid) exchange 2013 하이브리드 서버 및 exchange 2007 조직이 exchange 2013 또는 exchange 2010 하이브리드 서버를 사용 하는 경우에는 다음과 같은 시나리오에 하이브리드 서버 라이선스가 필요 하다는 것을 유의 해야 합니다.
+- [Exchange 2013 하이브리드 배포](https://aka.ms/ExchangeHybrid) Exchange 2013 하이브리드 서버 및 exchange 2007 조직이 exchange 2013 또는 exchange 2010 하이브리드 서버를 사용 하는 2010 경우에는 다음과 같은 시나리오에 하이브리드 서버 라이선스가 필요 하다는 것을 유의 해야 합니다.
     
 - [Office 365 로그인](https://aka.ms/HybridKey)
     
@@ -286,17 +286,17 @@ Exchange Server 온-프레미스에 대 한 자세한 내용은 다음을 참조
 
 EOP (Exchange Online Protection)는 데이터 센터의 전역 네트워크 전체에 배포 되는 보호 기능을 제공 하 여 모든 배포에 대 한 스팸 방지 및 맬웨어 방지 보호를 제공 합니다. 이를 통해 메시징 환경 관리를 단순화할 수 있습니다. EOP는 Exchange Online 구독에 포함 되어 있지만 하이브리드 및 온-프레미스 배포에도 사용할 수 있습니다.
   
-함께 제공 되는 다이어그램은 전역 네트워크에 EOP 레이어를 포함 하는 exchange Online, exchange 하이브리드 및 exchange 온-프레미스에 대 한 배포를 보여 줍니다.
+함께 제공 되는 다이어그램은 전역 네트워크에 EOP 레이어를 포함 하는 Exchange Online, Exchange 하이브리드 및 Exchange 온-프레미스에 대 한 배포를 보여 줍니다.
   
 ### <a name="exchange-server-deployment-assistant"></a>Exchange Server 배포 도우미
 
-exchange server 배포 도우미는 현재 환경에 대 한 몇 가지 질문을 한 다음, 다양 한 유형의 시나리오에 대해 Exchange Server를 배포 하는 데 도움이 되는 사용자 지정 단계별 검사 목록을 생성 하는 웹 기반 도구입니다. 이전 버전의 exchange에서 exchange 2013로 마이그레이션하거나 exchange Online으로 마이그레이션하거나 하이브리드 인프라를 계획 하는 경우 exchange Server 배포 도우미는 시나리오에 대해 사용자 지정 된 배포 검사 목록을 만듭니다.
+Exchange Server 배포 도우미는 현재 환경에 대 한 몇 가지 질문을 한 다음, 다양 한 유형의 시나리오에 대해 Exchange Server를 배포 하는 데 도움이 되는 사용자 지정 단계별 검사 목록을 생성 하는 웹 기반 도구입니다. 이전 버전의 Exchange에서 Exchange 2013로 마이그레이션하거나 exchange Online으로 마이그레이션하거나 하이브리드 인프라를 계획 하는 경우 Exchange Server 배포 도우미는 시나리오에 대해 사용자 지정 된 배포 검사 목록을 만듭니다.
   
 다음 스크린샷에는 Exchange Server 배포 도우미를 사용 하 여 만든 예제 검사 목록이 나와 있습니다.
   
 ### <a name="integration-with-lync-and-sharepoint"></a>Lync 및 SharePoint와의 통합
 
-Exchange Server 2013에는 Lync server 2013 및 SharePoint server 2013과 통합 되는 많은 기능이 포함 되어 있습니다. 이러한 제품은 다양 한 기능을 제공 하며 조직 전체에서 공동 작업을 개선 합니다. 
+Exchange Server 2013에는 Lync Server 2013 및 SharePoint Server 2013과 통합 되는 많은 기능이 포함 되어 있습니다. 이러한 제품은 다양 한 기능을 제공 하며 조직 전체에서 공동 작업을 개선 합니다. 
   
 함께 제공 되는 다이어그램은 서버 간 인증 포스터를 보여 주고 포스터 링크를 포함 합니다. 
   
@@ -308,7 +308,7 @@ Exchange Server 2013에는 Lync server 2013 및 SharePoint server 2013과 통합
     
 - 고해상도 사용자 사진
     
-- outlook 및 outlook Web App에서 Lync 현재 상태
+- Outlook 및 Outlook Web App에서 Lync 현재 상태
     
 - 서버 간 인증
     

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '요약: 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 Office 365 정보 권한 관리가 중요 한 파일을 보호 하는 방법을 구성 하 고 설명 합니다.'
-ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070894"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 
@@ -29,10 +29,10 @@ ms.locfileid: "31741304"
   
 Office 365의 IRM (정보 권한 관리)은 SharePoint Online 라이브러리 및 목록에서 다운로드 되는 문서를 보호 하는 기능 집합입니다. 다운로드 된 파일은 암호화 되며 저장 된 SharePoint Online 라이브러리를 반영 하는 열기, 복사, 저장 및 인쇄 권한을 포함 합니다.
   
-이 문서의 지침을 사용 하 여 office 365 평가판 구독에서 가능한 중요 한 정보가 포함 된 파일에 대 한 IRM을 설정 하 고 office 365에서 테스트 합니다.
+이 문서의 지침을 사용 하 여 Office 365 평가판 구독에서 가능한 중요 한 정보가 포함 된 파일에 대 한 IRM을 설정 하 고 Office 365에서 테스트 합니다.
   
 > [!TIP]
-> Office 365 테스트 랩 가이드 스택의 모든 문서에 대 한 시각적 맵을 [보려면 여기](http://aka.ms/catlgstack) 를 클릭 하십시오.
+> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경 구축
 
@@ -41,7 +41,7 @@ Office 365의 IRM (정보 권한 관리)은 SharePoint Online 라이브러리 �
 시뮬레이트된 엔터프라이즈에서 중요 한 파일 보호를 테스트 하려면 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따릅니다.
   
 > [!NOTE]
-> 중요 한 파일 보호를 테스트 하려면 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 중요 한 파일 보호 기능을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
+> 중요 한 파일 보호를 테스트 하려면 AD DS (Active Directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 중요 한 파일 보호 기능을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>2 단계: 사용 권한으로 보호 되는 사이트의 문서가 누수 될 수 있는 방식 설명
 
@@ -57,7 +57,7 @@ Office 365의 IRM (정보 권한 관리)은 SharePoint Online 라이브러리 �
     
 **Windows PowerShell 자격 증명 요청** 대화 상자에서 office 365 전역 관리자 이름 (예: jdoe@contosotoycompany.onmicrosoft.com)과 office 365 평가판 구독의 암호를 입력 합니다.
   
-조직 이름 (예: contosotoycompany)과 해당 위치에 대 한 두 문자로 된 국가 코드를 입력 한 다음 windows PowerShell 프롬프트 용 windows Azure Active Directory 모듈에서 다음 명령을 실행 합니다.
+조직 이름 (예: contosotoycompany)과 해당 위치에 대 한 두 문자로 된 국가 코드를 입력 한 다음 windows PowerShell 프롬프트 용 Windows Azure Active Directory 모듈에서 다음 명령을 실행 합니다.
   
 ```
 $orgName="<organization name>"
@@ -68,7 +68,7 @@ New-MsolUser -DisplayName "CEO" -FirstName "Chief" -LastName "Executive Officer"
 
 ```
 
-**get-msoluser** 명령을 표시할 때 CEO 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
+**Get-msoluser** 명령을 표시할 때 CEO 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
   
 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
   
@@ -78,7 +78,7 @@ New-MsolUser -DisplayName "CFO" -FirstName "Chief" -LastName "Financial Officer"
 
 ```
 
-**get-msoluser** 명령을 표시 하 고 CFO 계정에 대해 생성 된 암호를 확인 하 여 안전한 위치에 기록 합니다.
+**Get-msoluser** 명령을 표시 하 고 CFO 계정에 대해 생성 된 암호를 확인 하 여 안전한 위치에 기록 합니다.
   
 Windows PowerShell 프롬프트에 대한 Microsoft Azure Active Directory 모듈에서 다음 명령을 실행합니다.
   
@@ -88,17 +88,17 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
 
 ```
 
-**get-msoluser** 명령을 표시할 때 coo 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
+**Get-msoluser** 명령을 표시할 때 coo 계정에 대해 생성 된 암호를 확인 하 고 안전한 위치에 기록 합니다.
   
 다음으로, 비공개 임원 그룹을 만들고 새 executive 계정을 추가 합니다.
   
-1. 브라우저에서 office 포털로 이동 [http://admin.microsoft.com](http://admin.microsoft.com) 하 여 전역 관리자 계정을 사용 하 여 office 365 평가판 구독에 로그인 합니다.
+1. 브라우저에서 Office 포털로 이동 [http://admin.microsoft.com](http://admin.microsoft.com) 하 여 전역 관리자 계정을 사용 하 여 office 365 평가판 구독에 로그인 합니다.
     
   - 경량 Office 365 개발/테스트 환경을 사용 하는 경우 Internet Explorer 또는 브라우저의 개인 세션을 열고 로컬 컴퓨터에서 로그인 합니다.
     
-  - 시뮬레이트된 enterprise Office 365 개발/테스트 환경을 사용 하는 경우 Azure portal을 사용 하 여 client1 가상 컴퓨터에 연결한 다음, client1에서 로그인 합니다.
+  - 시뮬레이트된 enterprise Office 365 개발/테스트 환경을 사용 하는 경우 Azure portal을 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음, CLIENT1에서 로그인 합니다.
     
-2. **Microsoft Office 홈** 탭에서 **Admin > groups > groups**를 클릭 한 다음 **그룹 추가**를 클릭 합니다.
+2. **Microsoft Office 홈** 탭에서 **Admin _GT_ groups > groups**를 클릭 한 다음 **그룹 추가**를 클릭 합니다.
     
 3. **그룹 추가**에서 그룹 유형에 대해 **Office 365 그룹** 을 선택 하 고 **이름** 및 **그룹 Id**에 **임원** 을 입력 한 다음 **** 개인 **정보 보호**를 선택 하 고 **소유자 선택을**클릭 합니다.
     
@@ -110,7 +110,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 7. **구성원에 대해 편집을**클릭 합니다.
     
-8. **구성원 추가**를 클릭 합니다. 구성원 목록에서 다음 사용자 계정을 선택 합니다.
+8. **구성원 추가**를 클릭합니다. 구성원 목록에서 다음 사용자 계정을 선택 합니다.
     
   - 경영 최고 책임자
     

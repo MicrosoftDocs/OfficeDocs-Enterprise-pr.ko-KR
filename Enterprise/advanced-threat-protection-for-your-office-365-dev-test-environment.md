@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '요약: Office 365 개발/테스트 환경의 Office 365 Advanced Threat Protection을 구성하고 보여 줍니다.'
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068304"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Advanced Threat Protection
 
@@ -38,7 +38,7 @@ Office 365 ATP(Advanced Threat Protection)는 EOP(Exchange Online Protection)의
 시뮬레이트된 엔터프라이즈에서 ATP를 테스트 하려면 [Office 365 개발/테스트 환경에 대 한 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따르세요.
   
 > [!NOTE]
-> ATP 테스트에는 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 이 기능은 나중에 일반적인 조직을 나타내는 환경에서 ATP를 테스트 하 고 시험해 볼 수 있도록 옵션으로 제공 됩니다. 
+> ATP 테스트에는 AD DS (Active Directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 이 기능은 나중에 일반적인 조직을 나타내는 환경에서 ATP를 테스트 하 고 시험해 볼 수 있도록 옵션으로 제공 됩니다. 
   
 ## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>2 단계: Office 365의 기본 전자 메일 배달 동작을 보여 줍니다.
 
@@ -149,7 +149,7 @@ Office 365 ATP(Advanced Threat Protection)는 EOP(Exchange Online Protection)의
 11. 제목이 **FW: 새 키**인 메시지를 두 번 클릭합니다. ATP에서이 메시지를 처리 한 후 받은 편지 함으로 배달 하는 방법을 확인 하세요. 이 창을 닫습니다.
     
     > [!NOTE]
-    > 안전한 첨부 파일 정책의 목적은 악성 코드에 대 한 첨부 파일 검색을 시작 하는 것 이었습니다. getkeys .js 첨부 파일이 악성으로 확인 되지 않았으므로 허용 되지 않았습니다. 이 단계에서는 ATP가 첨부 파일 검사를 수행 했는지를 보여 줍니다. 
+    > 안전한 첨부 파일 정책의 목적은 악성 코드에 대 한 첨부 파일 검색을 시작 하는 것 이었습니다. GetKeys .js 첨부 파일이 악성으로 확인 되지 않았으므로 허용 되지 않았습니다. 이 단계에서는 ATP가 첨부 파일 검사를 수행 했는지를 보여 줍니다. 
   
 12. 제목이 **FW: 새 여행 웹 사이트**인 메시지를 두 번 클릭합니다. 이 메시지는 받은 편지 함으로 배달 되었습니다.
     

@@ -4,19 +4,19 @@ ms.author: dstrome
 author: dstrome
 manager: laurawi
 ms.date: 1/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
-description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 exchange Online으로의 업그레이드를 준비 하거나 exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: d9dcc2120f549c55fedc78483689dbded0a4464f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 Exchange Online으로의 업그레이드를 준비 하거나 Exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
+ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067574"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 지원 로드맵 종료
 
@@ -34,23 +34,23 @@ Exchange 2010가 2020 년 1 월 14 일에 지원 종료에 도달 하면 더 이
 
 이 날짜 후에도 Exchange 2010 설치가 계속 실행 됩니다. 그러나 위에 나열 된 변경 사항으로 인해 가능한 한 빨리 Exchange 2010에서 마이그레이션하는 것이 좋습니다.
 
-지원 종료에 가까운 office 2010 서버에 대 한 자세한 내용은 [office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이](https://docs.microsoft.com/en-us/office365/enterprise/upgrade-from-office-2010-servers-and-products)되는 리소스를 참조 하십시오.
+지원 종료에 가까운 Office 2010 서버에 대 한 자세한 내용은 [office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이](https://docs.microsoft.com/en-us/office365/enterprise/upgrade-from-office-2010-servers-and-products)되는 리소스를 참조 하십시오.
 
 ## <a name="what-are-my-options"></a>내 옵션 이란?
 
 Exchange 2010이 지원 종료에 도달 하면이를 통해 옵션을 살펴보고 마이그레이션 계획을 준비할 수 있습니다. 예를 들어 다음을 수행할 수 있습니다.
 
 - Office 365로 전체 마이그레이션을 완료 합니다. 가공선, 최소 하이브리드 또는 전체 하이브리드 마이그레이션을 사용 하 여 사서함을 마이그레이션한 다음 온-프레미스 Exchange 서버와 Active Directory를 제거 합니다.
-- 온-프레미스 서버에서 exchange 2010 서버를 exchange 2016로 마이그레이션합니다.
+- 온-프레미스 서버에서 exchange 2010 서버를 Exchange 2016로 마이그레이션합니다.
 
 > [!IMPORTANT]
-> 조직에서 사서함을 Office 365로 마이그레이션하도록 결정 하지만, 온-프레미스 Active Directory에서 사용자 계정을 계속 관리 하기 위해 DirSync 또는 Azure AD Connect를 유지 하려는 경우에는 하나 이상의 Exchange 서버를 온-프레미스로 유지 해야 합니다. 마지막 exchange 서버를 제거 하는 경우 exchange Online에서 exchange 받는 사람을 변경할 수 없게 됩니다. 이는 기관 원본이 온-프레미스 Active Directory에 남아 있으며 변경 해야 하기 때문입니다. 이 시나리오에서는 다음과 같은 옵션을 사용할 수 있습니다.
+> 조직에서 사서함을 Office 365로 마이그레이션하도록 결정 하지만, 온-프레미스 Active Directory에서 사용자 계정을 계속 관리 하기 위해 DirSync 또는 Azure AD Connect를 유지 하려는 경우에는 하나 이상의 Exchange 서버를 온-프레미스로 유지 해야 합니다. 마지막 Exchange 서버를 제거 하는 경우 exchange Online에서 Exchange 받는 사람을 변경할 수 없게 됩니다. 이는 기관 원본이 온-프레미스 Active Directory에 남아 있으며 변경 해야 하기 때문입니다. 이 시나리오에서는 다음과 같은 옵션을 사용할 수 있습니다.
 
-- (**권장**) 사서함을 office 365로 마이그레이션하고 업그레이드할 수 있으면 Exchange 2010을 사용 하 여 office 365에 연결 하 고 사서함을 마이그레이션합니다. 다음으로, exchange 2016를 exchange 2010로 마이그레이션하고 나머지 exchange 2010 서버를 해제 합니다.
-- 2020 년 1 월 14 일에 사서함 마이그레이션 및 온-프레미스 서버 업그레이드를 완료할 수 없는 경우 온-프레미스 exchange 2010 서버를 먼저 exchange 2016로 업그레이드 한 다음 exchange 2016을 사용 하 여 Office 365에 연결 하 고 사서함을 마이그레이션합니다.
+- (**권장**) 사서함을 office 365로 마이그레이션하고 2020 업그레이드할 수 있으면 Exchange 2010을 사용 하 여 office 365에 연결 하 고 사서함을 마이그레이션합니다. 다음으로, Exchange 2016를 Exchange 2010로 마이그레이션하고 나머지 Exchange 2010 서버를 해제 합니다.
+- 2020 년 1 월 14 일에 사서함 마이그레이션 및 온-프레미스 서버 업그레이드를 완료할 수 없는 경우 온-프레미스 Exchange 2010 서버를 먼저 Exchange 2016로 업그레이드 한 다음 Exchange 2016을 사용 하 여 Office 365에 연결 하 고 사서함을 마이그레이션합니다.
 
 > [!NOTE]
-> 다소 복잡 하 게 인해 온-프레미스 exchange 2010 서버를 Exchange 2016로 마이그레이션하는 동안 사서함을 Office 365로 마이그레이션할 수도 있습니다.
+> 다소 복잡 하 게 인해 온-프레미스 Exchange 2010 서버를 Exchange 2016로 마이그레이션하는 동안 사서함을 Office 365로 마이그레이션할 수도 있습니다.
 
 다음 섹션에서는 각 옵션에 대해 자세히 알아봅니다.
 
@@ -70,7 +70,7 @@ Exchange 2010 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
 - 서버 과열 및 냉각에 대 한 비용 지불
 - 보안, 제품 및 표준 시간대 수정 사항에 대해 최신 상태를 유지 합니다.
 - 준수 요구 사항을 지원 하기 위해 저장소 및 소프트웨어 유지 관리
-- 새 버전의 exchange로 업그레이드-항상 Office 365에서 최신 exchange 버전을 사용 하 고 있습니다.
+- 새 버전의 Exchange로 업그레이드-항상 Office 365에서 최신 Exchange 버전을 사용 하 고 있습니다.
 
 ### <a name="how-should-i-migrate-to-office-365"></a>Office 365로 마이그레이션하는 방법
 
@@ -96,7 +96,7 @@ Exchange 2010 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
 - 모든 온-프레미스 사서함이 Office 365로 이동 됩니다.
 - 사용자 사서함의 콘텐츠를 읽을 수 있는 권한이 있는 온-프레미스 관리자 계정이 필요 합니다.
 - Office 365에서 사용 하려는 Exchange 2010 허용 도메인은 서비스에서 확인 된 도메인으로 추가 해야 합니다.
-- 마이그레이션을 시작 하는 시간과 완료 단계를 시작할 때 사이에 office 365에서는 주기적으로 office 365 및 온-프레미스 사서함을 동기화 합니다. 이를 통해 온-프레미스 사서함에 남아 있는 전자 메일을 걱정 하지 않고 마이그레이션을 완료할 수 있습니다.
+- 마이그레이션을 시작 하는 시간과 완료 단계를 시작할 때 사이에 Office 365에서는 주기적으로 Office 365 및 온-프레미스 사서함을 동기화 합니다. 이를 통해 온-프레미스 사서함에 남아 있는 전자 메일을 걱정 하지 않고 마이그레이션을 완료할 수 있습니다.
 - 사용자가 처음으로 사서함에 로그인 할 때 변경 해야 하는 Office 365 계정에 대 한 새로운 임시 암호를 받게 됩니다.
 - 마이그레이션하려는 각 사용자 사서함에 대해 Exchange Online을 포함 하는 Office 365 라이선스가 필요 합니다.
 - 사용자가 각 장치에서 새 Outlook 프로필을 설정 하 고 전자 메일을 다시 다운로드 해야 합니다. Outlook에서 다운로드 하는 전자 메일의 양은 다를 수 있습니다. 자세한 내용은 [오프 라인으로 유지할 메일 양 변경](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&rs=en-US&ad=US&fromAR=1)정보를 확인 하세요.
@@ -114,7 +114,7 @@ Exchange 2010 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
 
 최소한의 하이브리드 마이그레이션을 수행 하는 것이 생각 되는 경우 다음과 같은 몇 가지 사항을 고려해 야 합니다.
 
-- 온-프레미스 Active directory 서버와 Office 365 간에 일회성 디렉터리 동기화를 수행 해야 합니다.
+- 온-프레미스 Active Directory 서버와 Office 365 간에 일회성 디렉터리 동기화를 수행 해야 합니다.
 - 사용자는 사서함이 마이그레이션될 때 사용 중인 것과 동일한 사용자 이름과 암호를 사용 하 여 Office 365 사서함에 로그인 할 수 있습니다.
 - 마이그레이션하려는 각 사용자 사서함에 대해 Exchange Online을 포함 하는 Office 365 라이선스가 필요 합니다.
 - 사용자가 대부분의 장치에서 새 Outlook 프로필을 설정할 필요는 없지만 일부 이전 Android 휴대폰에는 새 프로필이 필요할 수 있으므로 전자 메일을 다시 다운로드할 필요가 없습니다.
@@ -138,13 +138,13 @@ Exchange 2010 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
 전체 하이브리드 마이그레이션을 수행 하는 방법을 고려할 때 고려해 야 할 몇 가지 사항은 다음과 같습니다.
 
 - 전체 하이브리드 마이그레이션은 모든 유형의 조직에 적합 하지 않습니다. 전체 하이브리드 마이그레이션의 복잡도로 인해 사서함 수가 수백 개 미만인 조직은 일반적으로 작업을 설정 하는 데 필요한 노력과 비용을 정당화 하는 이점을 제공 하지 않습니다. 조직 처럼 생각 되는 경우에는 대신 하나 또는 최소한의 하이브리드 마이그레이션을 수행 하는 것이 좋습니다.
-- 온-프레미스 Active directory 서버와 Office 365 간에 Azure Active directory Connect (AADConnect)를 사용 하 여 디렉터리 동기화를 설정 해야 합니다.
-- 사용자는 로컬 네트워크에 로그인 할 때 사용 하는 것과 동일한 사용자 이름과 암호를 사용 하 여 Office 365 사서함에 로그인 할 수 있습니다 (암호 동기화 및/또는 Active Directory Federation Services를 사용 하는 Azure Active directory Connect 필요).
+- 온-프레미스 Active Directory 서버와 Office 365 간에 Azure Active Directory Connect (AADConnect)를 사용 하 여 디렉터리 동기화를 설정 해야 합니다.
+- 사용자는 로컬 네트워크에 로그인 할 때 사용 하는 것과 동일한 사용자 이름과 암호를 사용 하 여 Office 365 사서함에 로그인 할 수 있습니다 (암호 동기화 및/또는 Active Directory Federation Services를 사용 하는 Azure Active Directory Connect 필요).
 - 마이그레이션하려는 각 사용자 사서함에 대해 Exchange Online을 포함 하는 Office 365 라이선스가 필요 합니다.
 - 사용자가 대부분의 장치에서 새 Outlook 프로필을 설정할 필요는 없지만 일부 이전 Android 휴대폰에는 새 프로필이 필요할 수 있으므로 전자 메일을 다시 다운로드할 필요가 없습니다.
 
 > [!IMPORTANT]
-> 조직에서 사서함을 Office 365로 마이그레이션하도록 결정 하지만, 온-프레미스 Active Directory에서 사용자 계정을 계속 관리 하기 위해 DirSync 또는 Azure AD Connect를 유지 하려는 경우에는 하나 이상의 Exchange 서버를 온-프레미스로 유지 해야 합니다. 마지막 exchange 서버를 제거 하는 경우 exchange Online에서 exchange 받는 사람을 변경할 수 없게 됩니다. 이는 기관 원본이 온-프레미스 Active Directory에 남아 있으며 변경 해야 하기 때문입니다.
+> 조직에서 사서함을 Office 365로 마이그레이션하도록 결정 하지만, 온-프레미스 Active Directory에서 사용자 계정을 계속 관리 하기 위해 DirSync 또는 Azure AD Connect를 유지 하려는 경우에는 하나 이상의 Exchange 서버를 온-프레미스로 유지 해야 합니다. 마지막 Exchange 서버를 제거 하는 경우 exchange Online에서 Exchange 받는 사람을 변경할 수 없게 됩니다. 이는 기관 원본이 온-프레미스 Active Directory에 남아 있으며 변경 해야 하기 때문입니다.
 
 전체 하이브리드 마이그레이션이 적절 하 게 재생 되는 경우 마이그레이션에 도움이 되는 다음 리소스를 확인 하세요.
 
@@ -156,11 +156,11 @@ Exchange 2010 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>새 버전의 Exchange Server 온-프레미스로 업그레이드
 
-Office 365로 마이그레이션을 통해 최상의 가치와 사용자 환경을 얻을 수 있다고 확신 하지만 일부 조직에서는 일부 Exchange 서버를 온-프레미스로 유지 해야 한다는 것도 이해 하 고 있습니다. 이는 규정 요구 사항, 데이터가 다른 국가에 있는 데이터 센터에 저장 되지 않도록 하거나, 클라우드에서 충족할 수 없는 고유한 설정이 나 요구 사항이 있거나, Exchange가 필요한 경우에만 발생할 수 있다는 것입니다. 여전히 Active Directory 온-프레미스를 사용 하기 때문에 클라우드 사서함을 관리 합니다. exchange 온-프레미스를 선택 하거나 유지 해야 하는 경우에는 exchange 2010 환경을 exchange 2013 또는 exchange 2016 이상으로 업그레이드 해야 하며, 지원 날짜 보다 끝나기 전에 exchange 2010이 제거 되어 있어야 합니다.
+Office 365로 마이그레이션을 통해 최상의 가치와 사용자 환경을 얻을 수 있다고 확신 하지만 일부 조직에서는 일부 Exchange 서버를 온-프레미스로 유지 해야 한다는 것도 이해 하 고 있습니다. 이는 규정 요구 사항, 데이터가 다른 국가에 있는 데이터 센터에 저장 되지 않도록 하거나, 클라우드에서 충족할 수 없는 고유한 설정이 나 요구 사항이 있거나, Exchange가 필요한 경우에만 발생할 수 있다는 것입니다. 여전히 Active Directory 온-프레미스를 사용 하기 때문에 클라우드 사서함을 관리 합니다. Exchange 온-프레미스를 선택 하거나 유지 해야 하는 경우에는 Exchange 2010 환경을 exchange 2013 또는 Exchange 2016 이상으로 업그레이드 해야 하며, 지원 날짜 보다 끝나기 전에 Exchange 2010이 제거 되어 있어야 합니다.
 
-최상의 환경을 위해 남은 온-프레미스 환경을 Exchange 2016으로 업그레이드 하는 것이 좋습니다. exchange server 2010에서 exchange server 2016로 바로 이동 하려면 exchange server 2013을 설치 하지 않아도 됩니다.
+최상의 환경을 위해 남은 온-프레미스 환경을 Exchange 2016으로 업그레이드 하는 것이 좋습니다. Exchange server 2010에서 Exchange Server 2016로 바로 이동 하려면 Exchange Server 2013을 설치 하지 않아도 됩니다.
 
-exchange 2016에는 이전 버전의 exchange에 포함 된 모든 기능 및 향상 된 기능이 포함 되어 있으며, 일부 기능은 office 365 에서만 사용할 수 있지만 office 365에서 사용할 수 있는 환경과 가장 밀접 하 게 일치 합니다. 누락 된 항목 중 몇 가지만 확인 하세요.
+Exchange 2016에는 이전 버전의 Exchange에 포함 된 모든 기능 및 향상 된 기능이 포함 되어 있으며, 일부 기능은 Office 365 에서만 사용할 수 있지만 Office 365에서 사용할 수 있는 환경과 가장 밀접 하 게 일치 합니다. 누락 된 항목 중 몇 가지만 확인 하세요.
 
 | **Exchange 릴리스**                     | **기능**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -175,13 +175,13 @@ exchange 2016에는 이전 버전의 exchange에 포함 된 모든 기능 및 �
 
 | **있다는**                        | **추가 정보**                                                                                                                                                                                                                                        |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 지원 날짜 종료                     | exchange 2010와 마찬가지로 각 exchange 버전의 지원 종료 날짜는 다음과 같습니다.                                                                                                                                                                        |
+| 지원 날짜 종료                     | Exchange 2010와 마찬가지로 각 Exchange 버전의 지원 종료 날짜는 다음과 같습니다.                                                                                                                                                                        |
 |                                          | **Exchange 2013** -2023 년 4 월                                                                                                                                                                                                                       |
 |                                          | **Exchange 2016** -2025 년 10 월                                                                                                                                                                                                                     |
 |                                          | 지원 날짜가 끝나면 이전에 다른 마이그레이션을 수행 해야 합니다. 4 월 2023은 생각 보다 훨씬 더 가깝습니다.                                                                                                                 |
-| Exchange 2013 또는 2016의 마이그레이션 경로  | exchange 2013 또는 exchange 2016을 선택할 때 exchange 2010에서 새 버전으로의 마이그레이션 경로는 동일 합니다.                                                                                                                              |
-|                                          | 기존 exchange 2010 조직에 exchange 2013 또는 2016을 설치 하 고 exchange 2013 또는 2016에 사서함 및 공용 폴더를 exchange 2013 또는 2016 서비스 해제 남은 exchange 2010 서버로 이동 합니다.  |
-| 버전 동시 사용                      | exchange 2013 또는 exchange 2016로 마이그레이션할 때 기존 Exchange 2010 조직에 두 버전을 모두 설치할 수 있습니다. 이를 통해 하나 이상의 exchange 2013 또는 exchange 2016 서버를 설치 하 고 마이그레이션을 수행할 수 있습니다.             |
+| Exchange 2013 또는 2016의 마이그레이션 경로  | Exchange 2013 또는 Exchange 2016을 선택할 때 Exchange 2010에서 새 버전으로의 마이그레이션 경로는 동일 합니다.                                                                                                                              |
+|                                          | 기존 Exchange 2010 조직에 Exchange 2013 또는 2016을 설치 하 고 Exchange 2013 또는 2016에 사서함 및 공용 폴더를 exchange 2013 또는 2016 서비스 해제 남은 Exchange 2010 서버로 이동 합니다.  |
+| 버전 동시 사용                      | Exchange 2013 또는 Exchange 2016로 마이그레이션할 때 기존 Exchange 2010 조직에 두 버전을 모두 설치할 수 있습니다. 이를 통해 하나 이상의 Exchange 2013 또는 Exchange 2016 서버를 설치 하 고 마이그레이션을 수행할 수 있습니다.             |
 | 서버 하드웨어                          | 서버 하드웨어 요구 사항이 Exchange 2010에서 변경 되었습니다. 사용할 하드웨어가 호환 되는지 확인 해야 합니다. 각 버전의 하드웨어 요구 사항에 대 한 자세한 내용은 여기에서 확인할 수 있습니다.                                      |
 |                                          | [Exchange 2016 시스템 요구 사항](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx)                                                                                                                                      |
 |                                          | [Exchange 2013 시스템 요구 사항](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx)                                                                                                                                      |
@@ -208,9 +208,9 @@ exchange 2016에는 이전 버전의 exchange에 포함 된 모든 기능 및 �
 
 ## <a name="what-if-i-need-help"></a>도움이 필요한 경우 어떻게 하나요?
 
-Office 365로 마이그레이션하는 경우 Microsoft fasttrack 서비스를 사용할 수 있는 자격이 있을 수 있습니다. fasttrack은 Office 365로의 마이그레이션을 최대한 원활 하 게 수행할 수 있는 모범 사례, 도구 및 리소스를 제공 합니다. 무엇 보다도, 마지막 사서함 마이그레이션에 대 한 모든 방법을 계획 및 디자인에서 안내 하는 실제 지원 엔지니어가 제공 됩니다. fasttrack에 대해 자세히 알아보려면 [Microsoft fasttrack](https://fasttrack.microsoft.com/)을 확인 하세요.
+Office 365로 마이그레이션하는 경우 Microsoft FastTrack 서비스를 사용할 수 있는 자격이 있을 수 있습니다. FastTrack은 Office 365로의 마이그레이션을 최대한 원활 하 게 수행할 수 있는 모범 사례, 도구 및 리소스를 제공 합니다. 무엇 보다도, 마지막 사서함 마이그레이션에 대 한 모든 방법을 계획 및 디자인에서 안내 하는 실제 지원 엔지니어가 제공 됩니다. FastTrack에 대해 자세히 알아보려면 [Microsoft FastTrack](https://fasttrack.microsoft.com/)을 확인 하세요.
 
-Office 365로 마이그레이션하는 동안 문제가 발생 하 여 fasttrack를 사용 하지 않는 경우 또는 최신 버전의 Exchange Server로 마이그레이션하는 경우에는 다음 작업을 수행 하는 데 도움이 됩니다. 사용할 수 있는 몇 가지 리소스는 다음과 같습니다.
+Office 365로 마이그레이션하는 동안 문제가 발생 하 여 FastTrack를 사용 하지 않는 경우 또는 최신 버전의 Exchange Server로 마이그레이션하는 경우에는 다음 작업을 수행 하는 데 도움이 됩니다. 사용할 수 있는 몇 가지 리소스는 다음과 같습니다.
 
 - [기술 커뮤니티](https://social.technet.microsoft.com/Forums/office/en-US/home?category=exchangeserver)
 - [고객 지원](https://support.microsoft.com/en-us/gp/support-options-for-business)

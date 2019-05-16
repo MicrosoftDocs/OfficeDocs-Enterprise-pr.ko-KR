@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
-description: '요약: office 365 개발/테스트 환경에서 office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
-ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: '요약: Office 365 개발/테스트 환경에서 Office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
+ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490124"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068104"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
- **요약:** office 365 개발/테스트 환경에서 office 365 Cloud App Security를 구성 하 고 시연 합니다.
+ **요약:** Office 365 개발/테스트 환경에서 Office 365 Cloud App Security를 구성 하 고 시연 합니다.
   
-office 365 Cloud App security (이전에는 office 365 Advanced Security Management)를 사용 하 여 office 365 구독에서 의심 스러운 활동을 모니터링 하 고이를 조사 하 고 문제를 해결 하는 데 도움이 되는 정책을 만들 수 있습니다. 동작은. 자세한 내용은 [Office 365의 Cloud App Security 개요](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)를 참조 하세요.
+Office 365 Cloud App Security (이전에는 Office 365 Advanced Security Management)를 사용 하 여 Office 365 구독에서 의심 스러운 활동을 모니터링 하 고이를 조사 하 고 문제를 해결 하는 데 도움이 되는 정책을 만들 수 있습니다. 동작은. 자세한 내용은 [Office 365의 Cloud App Security 개요](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)를 참조 하세요.
   
 이 문서의 지침을 사용 하 여 Office 365 평가판 구독에서 Cloud App Security를 사용 하도록 설정 하 고 테스트 합니다.
   
@@ -41,7 +41,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
 시뮬레이트된 엔터프라이즈에서 Cloud App Security를 테스트 하려면 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따르세요.
   
 > [!NOTE]
-> 클라우드 앱 보안을 테스트 하는 경우 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 클라우드 앱 보안을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
+> 클라우드 앱 보안을 테스트 하는 경우 AD DS (Active Directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 개발/테스트 환경이 필요 하지 않습니다. 클라우드 앱 보안을 테스트 하 고 일반적인 조직을 나타내는 환경에서 테스트해 볼 수 있도록 여기에 제공 되는 옵션입니다. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>2 단계: Cloud App Security를 사용 하도록 설정 하 고 정책을 만들기 전
 
@@ -81,11 +81,11 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
 
 1. Microsoft 365 관리 센터 ([https://admin.microsoft.com](https://admin.microsoft.com))로 이동 하 고 전역 관리자 계정을 사용 하 여 Office 365 평가판 구독에 로그인 합니다.
     
-2. **관리** 타일을 클릭합니다. **Office 관리 센터** 탭에서 **관리 센터 > Security & 준수**를 클릭 합니다.
+2. **관리** 타일을 클릭합니다. **Office 관리 센터** 탭에서 **관리 센터 _GT_ Security & 준수**를 클릭 합니다.
     
 3. 왼쪽 탐색 창에서 **경고 > 고급 알림 관리**를 클릭 합니다.
     
-4. **고급 알림 관리** 페이지에서 **office 365 cloud app security 사용**을 클릭 하 고 **office 365 cloud app security로 이동을**클릭 합니다.
+4. **고급 알림 관리** 페이지에서 **Office 365 Cloud app security 사용**을 클릭 하 고 **office 365 cloud app security로 이동을**클릭 합니다.
     
 5. 새 **대시보드** 탭에서 **> 정책 제어**를 클릭 합니다.
     
@@ -153,7 +153,7 @@ office 365 Cloud App security (이전에는 office 365 Advanced Security Managem
     
 22. **Microsoft Office 홈** 탭에서 **메일**을 클릭 합니다. 최대 30분을 기다립니다. 
     
-    받은 편지함에 제목 **Microsoft Azure AD 알림 서비스**와 함께 새 전자 메일 메시지가 두 개 표시 됩니다. 한 메시지는 사용자 5 계정이 **암호 관리자** 역할에 추가 되었으며, 다른 메시지가 사용자의 5 계정이 **사용자 관리자** 역할에 추가 되었음을 나타냅니다 (사용자 관리 관리자 역할 ( Office 365 관리 센터).
+    받은 편지함에 제목 **Microsoft AZURE AD 알림 서비스**와 함께 새 전자 메일 메시지가 두 개 표시 됩니다. 한 메시지는 사용자 5 계정이 **암호 관리자** 역할에 추가 되었으며, 다른 메시지가 사용자의 5 계정이 **사용자 관리자** 역할에 추가 되었음을 나타냅니다 (사용자 관리 관리자 역할 ( Office 365 관리 센터).
     
 이제이 환경을 사용 하 여 새 정책을 만들고 Office 365 Cloud App Security를 추가로 경험해 볼 수 있습니다. 추가 구성 문서에 대 한 링크는 [Office 365 Cloud App Security 준비](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) 를 참조 하세요.
   

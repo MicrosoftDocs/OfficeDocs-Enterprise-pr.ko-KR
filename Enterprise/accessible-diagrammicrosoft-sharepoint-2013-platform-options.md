@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: 이 문서는 Microsoft SharePoint 2013 플랫폼 옵션 이라는 그림의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4a0b068ffb8abbe11c2286f3daa70c5f62295425
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068604"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft SharePoint 2013 플랫폼 옵션
 
@@ -26,7 +26,7 @@ Office 365, Microsoft Azure 및 온-프레미스 배포에 대해 알아야 할 
   
 이 포스터에는 두 가지 섹션이 있습니다. 
   
-- sharepoint의 sharepoint 2013, Azure 및 온-프레미스 배포와 sharepoint 2013의 온-프레미스 배포를 포함 하는 office 365의 microsoft 하이브리드와 같은 네 가지 배포를 비교 합니다. 
+- Sharepoint의 sharepoint 2013, Azure 및 온-프레미스 배포와 sharepoint 2013의 온-프레미스 배포를 포함 하는 office 365의 microsoft 365 하이브리드와 같은 네 가지 2013 배포를 비교 합니다. 
     
 - Azure로 이동할 일반적인 3 가지 작업에 대 한 설명입니다. 
     
@@ -50,7 +50,7 @@ Office 365, Microsoft Azure 및 온-프레미스 배포에 대해 알아야 할 
 
 Office 365 다중 테 넌 트 요금제를 사용 하 여 비용을 효율적으로 확보 하 고 최적화 합니다. 
   
-함께 제공 되는 다이어그램에서는 온-프레미스 Active directory 환경과 azure active directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 azure active directory 테 넌 트를 사용 하 여 SharePoint Online을 보여 줍니다. 
+함께 제공 되는 다이어그램에서는 온-프레미스 Active Directory 환경과 Azure Active Directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure Active Directory 테 넌 트를 사용 하 여 SharePoint Online을 보여 줍니다. 
   
 기능 설명: 
   
@@ -60,21 +60,21 @@ Office 365 다중 테 넌 트 요금제를 사용 하 여 비용을 효율적으
     
 - Azure Active Directory 테 넌 트를 포함 합니다 (다른 응용 프로그램과 함께 사용 가능). 
     
-- 디렉터리 통합에는 온-프레미스 Active directory 환경과 Azure active directory 테 넌 트 사이에 계정 이름과 암호를 동기화 하는 작업이 포함 됩니다. 
+- 디렉터리 통합에는 온-프레미스 Active Directory 환경과 Azure Active Directory 테 넌 트 사이에 계정 이름과 암호를 동기화 하는 작업이 포함 됩니다. 
     
-- sso (single sign-on)가 요구 되는 경우에는 AD FS (Active Directory Federation Services)를 구현할 수 있습니다. 
+- SSO (single sign-on)가 요구 되는 경우에는 AD FS (Active Directory Federation Services)를 구현할 수 있습니다. 
     
 - 암호화 및 인증 된 액세스 (포트 443)를 통해 인터넷을 통한 클라이언트 통신 
     
 - 데이터 마이그레이션은 인터넷을 통해 업로드할 수 있는 것으로 제한 됩니다. 
     
-- 사용자 지정: Office, sharepoint 및 sharepoint Designer 2013 용 앱입니다. 
+- 사용자 지정: Office, SharePoint 및 SharePoint Designer 2013 용 앱입니다. 
     
 #### <a name="hybrid-with-office-365"></a>Office 365 하이브리드
 
 Office 365의 혜택을 온-프레미스 SharePoint 2013 배포와 결합 합니다. 
   
-함께 제공 되는 다이어그램은 BCS (Business Connectivity Services)를 사용 하 여 sharepoint Online과 함께 온-프레미스 SharePoint Server 2013 팜에 연결 하는 Office 365를 보여 줍니다. 
+함께 제공 되는 다이어그램은 BCS (Business Connectivity Services)를 사용 하 여 SharePoint Online과 함께 온-프레미스 SharePoint Server 2013 팜에 연결 하는 Office 365를 보여 줍니다. 
   
 다음 중 통합 기능을 선택 합니다. 
   
@@ -96,7 +96,7 @@ SharePoint Online에서 사용자는 온-프레미스 SAP 시스템에 대해 �
 
 플랫폼 및 기능에 대 한 모든 권한을 유지 관리 하면서 클라우드를 활용 합니다. 
   
-함께 제공 되는 다이어그램에는 두 개의 클라우드 서비스, SharePoint 2013 팜 및 인터넷을 통해 사용자에 게 DNS를 연결 하거나 VPN 터널을 통해 온-프레미스 Active directory에 연결 하는 Windows Server Active directory가 포함 된 Azure가 표시 됩니다. 
+함께 제공 되는 다이어그램에는 두 개의 클라우드 서비스, SharePoint 2013 팜 및 인터넷을 통해 사용자에 게 DNS를 연결 하거나 VPN 터널을 통해 온-프레미스 Active Directory에 연결 하는 Windows Server Active Directory가 포함 된 Azure가 표시 됩니다. 
   
 기능에는 다음이 포함 됩니다. 
   
@@ -158,7 +158,7 @@ Office 365 전용 구독 계획을 사용 하는 추가 기능:
     
 - IPSec 보안 VPN 또는 고객 소유 개인 연결을 통한 클라이언트 통신 2 단계 인증은 선택 사항입니다. 
     
-- itar 지원 계획 
+- ITAR 지원 계획 
     
 #### <a name="hybrid-with-office-365"></a>Office 365 하이브리드
 
@@ -190,7 +190,7 @@ Office 365 전용 구독 계획을 사용 하는 추가 기능:
 
 - 국내 팜 (데이터가 관할지 내에 있어야 하는 경우) 
     
-- bi 데이터와 근접해 야 하는 복잡 한 BI 솔루션 
+- BI 데이터와 근접해 야 하는 복잡 한 BI 솔루션 
     
 - 사설 클라우드 솔루션 
     
@@ -198,7 +198,7 @@ Office 365 전용 구독 계획을 사용 하는 추가 기능:
     
 - Azure 인프라 서비스에서 지원 되지 않는 하드웨어 및 소프트웨어에 의존 하는 타사 구성 요소를 사용 하는 레거시 솔루션 
     
-- Azure active directory를 사용 하는 Active directory 계정의 동기화를 방지 하는 개인 정보 제한 (Office 365에 대 한 요구 사항) 
+- Azure Active Directory를 사용 하는 Active Directory 계정의 동기화를 방지 하는 개인 정보 제한 (Office 365에 대 한 요구 사항) 
     
 - 전체 플랫폼과 솔루션의 제어를 선호 하는 조직 
     
@@ -372,7 +372,7 @@ Azure에서 Office 365 디렉터리 통합 구성 요소를 배포 하는 것은
 
 온-프레미스 환경에 64 비트 디렉터리 동기화 서버를 배포 하는 대신 Azure에서 가상 컴퓨터를 프로 비전 합니다. 
   
-함께 제공 되는 다이어그램에서는 온-프레미스 Active directory 환경과 azure active directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 azure active directory 테 넌 트를 사용 하 여 SharePoint Online을 보여 줍니다. 
+함께 제공 되는 다이어그램에서는 온-프레미스 Active Directory 환경과 Azure Active Directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure Active Directory 테 넌 트를 사용 하 여 SharePoint Online을 보여 줍니다. 
   
 #### <a name="directory-synchronization-plus-ad-fs"></a>디렉터리 동기화 및 AD FS
 
@@ -380,7 +380,7 @@ Azure에서 Office 365 디렉터리 통합 구성 요소를 배포 하는 것은
   
 - 디렉터리 통합 구성 요소는 Azure에 있습니다. 
     
-- ad fs는 Azure에서 ad fs 프록시를 통해 인터넷에 게시 됩니다. 
+- AD FS는 Azure에서 AD FS 프록시를 통해 인터넷에 게시 됩니다. 
     
 - 모든 위치에서 연결 하는 사용자에 대 한 클라이언트 인증 트래픽은 Azure에 배포 되는 AD FS 서버 및 프록시에서 처리 됩니다. 
     
@@ -400,7 +400,7 @@ Azure에 인터넷 사이트를 배치 하 여 수요를 간편 하 게 확장�
 
 Azure AD는 클라우드 서비스에 대 한 id 관리 및 액세스 제어 기능을 제공 합니다. 기능에는 디렉터리 데이터를 위한 클라우드 기반 저장소와 사용자 로그온 프로세스, 인증 서비스 및 AD FS 등의 핵심 id 서비스가 포함 됩니다. Azure AD에 포함 된 id 서비스는 온-프레미스 Active Directory 배포와 쉽게 통합 되며 타사 id 공급자를 완벽 하 게 지원 합니다. 
   
-함께 제공 되는 다이어그램에서는 인터넷 연결 사이트에 중요 한 영역 및 인증의 구성을 보여 줍니다. 다음 다이어그램에는 두 개의 영역이 포함 된 azure의 SharePoint 팜을 포함 하는 azure Active Directory 테 넌 트가 나와 있습니다. 
+함께 제공 되는 다이어그램에서는 인터넷 연결 사이트에 중요 한 영역 및 인증의 구성을 보여 줍니다. 다음 다이어그램에는 두 개의 영역이 포함 된 Azure의 SharePoint 팜을 포함 하는 Azure Active Directory 테 넌 트가 나와 있습니다. 
   
 - 익명 및 인증 된 방문자 및 네트워크 외부의 고객과 상호 작용 하는 인터넷 영역 
     
@@ -430,6 +430,6 @@ Azure AD는 클라우드 서비스에 대 한 id 관리 및 액세스 제어 기
 
 완전히 크기 있는 팜이 프로 비전 되 고 대기 모드에서 실행 되 고 있습니다. 
   
-함께 제공 되는 다이어그램에는 Azure에서 SharePoint 재해 복구 환경과 상호 작용 하는 온-프레미스 팜이 나와 있습니다. 온-프레미스 데이터베이스는 VPN 터널을 통한 sql Server 로그 전달을 사용 하 여 sharepoint 데이터베이스, 두 개의 웹 프런트 엔드 서버 및 두 개의 sharepoint를 포함 하는 두 개의 SQL 데이터베이스 서버를 포함 하는 sharepoint 재해 복구 환경에 액세스 합니다. 응용 프로그램 서버 
+함께 제공 되는 다이어그램에는 Azure에서 SharePoint 재해 복구 환경과 상호 작용 하는 온-프레미스 팜이 나와 있습니다. 온-프레미스 데이터베이스는 VPN 터널을 통한 SQL Server 로그 전달을 사용 하 여 sharepoint 데이터베이스, 두 개의 웹 프런트 엔드 서버 및 두 개의 SharePoint를 포함 하는 두 개의 SQL 데이터베이스 서버를 포함 하는 SharePoint 재해 복구 환경에 액세스 합니다. 응용 프로그램 서버 
   
 

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 04/09/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: Office 365의 성능을 개선 하는 방법을 설명 하는 교육 과정, 블로그, 문서 및 기타 리소스에 대 한 링크입니다.
-ms.openlocfilehash: c44a930c9dabed0061096b456c2535b61f326cfd
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 8369bf15d25d4c2aad00c2de4b21e4585056c04d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741184"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070714"
 ---
 # <a name="tune-office-365-performance"></a>Office 365 성능 조정
 
@@ -32,6 +32,6 @@ ms.locfileid: "31741184"
 
 Paul Collinge에서 [Office 365 네트워크 연결을 최적화 하 고 문제를 해결 하기 위한 10 가지 팁](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) 을 살펴봅니다. 
   
-office 365에서 네트워크 주소 변환을 사용 하는 방법에 대 한 자세한 내용은 [NAT support with office 365](nat-support-with-office-365.md)를 참조 하세요.
+Office 365에서 네트워크 주소 변환을 사용 하는 방법에 대 한 자세한 내용은 [NAT support With office 365](nat-support-with-office-365.md)를 참조 하세요.
   
 

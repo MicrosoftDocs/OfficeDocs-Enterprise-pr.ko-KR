@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 2/23/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: 이 문서에서는 Internet Explorer 개발자 도구를 사용 하 여 SharePoint Online 사이트의 일반적인 문제를 진단할 수 있는 방법을 보여 줍니다.
-ms.openlocfilehash: 89d4544bfabf6424b5f401bad7d63bd7fa41b5ca
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: dfc66822a98ce26bfd9fd94d9d58882b8b140831
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067864"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online의 성능 문제 진단
 
@@ -65,7 +65,7 @@ SharePoint Online 사이트의 페이지에서 사용자 지정 내용에 대 �
 ## <a name="viewing-sharepoint-response-header-information"></a>SharePoint 응답 헤더 정보 보기
 <a name="F12ToolInfo"> </a>
 
-sharepoint Online 및 sharepoint Server 2013에서 각 파일의 응답 헤더에 브라우저로 다시 전송 되는 정보에 액세스할 수 있습니다. 성능 문제를 진단 하는 데 가장 유용한 두 가지 값은 sprequestduration 및 X-SharePointHealthScore입니다.
+SharePoint Online 및 SharePoint Server 2013에서 각 파일의 응답 헤더에 브라우저로 다시 전송 되는 정보에 액세스할 수 있습니다. 성능 문제를 진단 하는 데 가장 유용한 두 가지 값은 SPRequestDuration 및 X-SharePointHealthScore입니다.
   
 - **SPRequestDuration**
     
@@ -92,7 +92,7 @@ sharepoint Online 및 sharepoint Server 2013에서 각 파일의 응답 헤더�
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>SharePoint Online에서 성능 문제가 발생 하는 이유는 무엇 인가요?
 <a name="F12ToolInfo"> </a>
 
-[SharePoint Online의 탐색 옵션](navigation-options-for-sharepoint-online.md) 은 sprequestduration 값을 사용 하 여 복잡 한 구조적 탐색로 인해 서버에서 처리 하는 데 시간이 오래 걸리는 지를 확인 하는 예제를 보여 줍니다. 기본 사이트 (사용자 지정 하지 않음)에 대 한 값을 사용 하 여 특정 파일을 로드 하는 데 오래 걸리는 시간을 확인할 수 있습니다. [SharePoint Online의 탐색 옵션](navigation-options-for-sharepoint-online.md) 에 사용 되는 예제는 기본 .aspx 파일입니다. 이 파일에는 페이지를 로드 하기 위해 실행 되는 대부분의 ASP.NET 코드가 포함 되어 있습니다. 사용 하는 사이트 서식 파일에 따라 .aspx, home.aspx, default.aspx 또는 홈 페이지를 사용자 지정 하는 경우 다른 이름을 사용할 수 있습니다. 이 수가 기본 사이트 보다 훨씬 높으면 페이지에서 성능 문제가 발생 하는 작업이 복잡해 지는 것을 나타내는 것이 좋습니다. 
+[SharePoint Online의 탐색 옵션](navigation-options-for-sharepoint-online.md) 은 SPRequestDuration 값을 사용 하 여 복잡 한 구조적 탐색로 인해 서버에서 처리 하는 데 시간이 오래 걸리는 지를 확인 하는 예제를 보여 줍니다. 기본 사이트 (사용자 지정 하지 않음)에 대 한 값을 사용 하 여 특정 파일을 로드 하는 데 오래 걸리는 시간을 확인할 수 있습니다. [SharePoint Online의 탐색 옵션](navigation-options-for-sharepoint-online.md) 에 사용 되는 예제는 기본 .aspx 파일입니다. 이 파일에는 페이지를 로드 하기 위해 실행 되는 대부분의 ASP.NET 코드가 포함 되어 있습니다. 사용 하는 사이트 서식 파일에 따라 .aspx, home.aspx, default.aspx 또는 홈 페이지를 사용자 지정 하는 경우 다른 이름을 사용할 수 있습니다. 이 수가 기본 사이트 보다 훨씬 높으면 페이지에서 성능 문제가 발생 하는 작업이 복잡해 지는 것을 나타내는 것이 좋습니다. 
   
 사이트 관련 문제를 파악 한 후에는 페이지 사용자 지정 같은 모든 가능한 원인을 제거한 다음 사이트에 하나씩 다시 추가 하는 것이 가장 좋은 방법입니다. 페이지에서 제대로 작동 하는 사용자 지정 내용을 충분히 제거한 후에는 특정 사용자 지정 내용을 하나씩 추가할 수 있습니다.
   

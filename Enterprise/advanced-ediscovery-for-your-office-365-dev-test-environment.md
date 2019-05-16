@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '요약: Office 365 개발/테스트 환경의 샘플 데이터로 Office 365 고급 eDiscovery를 구성하고 보여 줍니다.'
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068344"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 고급 eDiscovery
 
  **요약:** Office 365 개발/테스트 환경의 샘플 데이터로 Office 365 고급 eDiscovery를 구성하고 보여 줍니다.
   
-office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비롯 하 여 office 365에 저장 된 데이터를 통해 관련 정보를 신속 하 게 찾고 분석할 수 있습니다. 특히 소송 상황에서 엄청난 시간과 비용을 절약할 수 있습니다. 자세한 내용은 [Office 365 고급 eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)를 참조하세요.
+Office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비롯 하 여 Office 365에 저장 된 데이터를 통해 관련 정보를 신속 하 게 찾고 분석할 수 있습니다. 특히 소송 상황에서 엄청난 시간과 비용을 절약할 수 있습니다. 자세한 내용은 [Office 365 고급 eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)를 참조하세요.
   
 이 기사의 지침에 따라 가상 계약 분쟁에 대한 작은 데이터 집합을 만들고 고급 eDiscovery로 이를 분석합니다.
   
@@ -39,7 +39,7 @@ office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
 시뮬레이트된 엔터프라이즈에서 고급 eDiscovery를 테스트 하려면 [Office 365 개발/테스트 환경에 대 한 DirSync](dirsync-for-your-office-365-dev-test-environment.md)의 지침을 따르세요.
   
 > [!NOTE]
-> 고급 eDiscovery를 테스트 하는 경우에는 AD DS (Active directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 환경이 필요 하지 않습니다. 일반적인 조직을 나타내는 환경에서 테스트 및 시험을 수행할 수 있도록 여기에 옵션으로 제공 됩니다. 
+> 고급 eDiscovery를 테스트 하는 경우에는 AD DS (Active Directory 도메인 서비스) 포리스트의 인터넷 및 디렉터리 동기화에 연결 된 시뮬레이트된 인트라넷을 포함 하는 시뮬레이트된 엔터프라이즈 환경이 필요 하지 않습니다. 일반적인 조직을 나타내는 환경에서 테스트 및 시험을 수행할 수 있도록 여기에 옵션으로 제공 됩니다. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>2단계: 고급 eDiscovery의 예제 데이터 만들기
 

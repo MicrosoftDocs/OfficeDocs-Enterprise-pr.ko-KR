@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.openlocfilehash: 7f07de4fcca57dd2ad744a7c8c594ca88ddd5f4e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838210"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070214"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
@@ -39,9 +39,8 @@ Office 2007 제품 및 서비스에 대 한 지원이 종료 되었습니다. �
 |**콘텐츠 계획**|**지원 종료 날짜**|
 |:-----|:-----|
 |[Office 2007 지원 로드맵 종료](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |2017년 10월 10일  <br/> |
-|[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |2017년 4월 11일  <br/> |
-|
-  [SharePoint Server 2007 지원 로드맵 최종본](sharepoint-2007-end-of-support.md) <br/> |2017년 10월 10일  <br/> |
+|[Exchange 2007 지원 종료 로드맵](exchange-2007-end-of-support.md) <br/> |2017년 4월 11일  <br/> |
+|[SharePoint Server 2007 지원 종료 로드맵](sharepoint-2007-end-of-support.md) <br/> |2017년 10월 10일  <br/> |
 |[Project Server 2007 지원 종료 로드맵](project-server-2007-end-of-support.md) <br/> |2017년 10월 10일  <br/> |
 |[Office Communications Server에서 업그레이드](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |2018 년 1 월 8 일  <br/> |
 |[PerformancePoint Server 2007 지원 종료 로드맵](pps-2007-end-of-support.md) <br/> |2018년 1월 9일  <br/> |
@@ -60,6 +59,6 @@ Microsoft 제품에 대 한 지원이 종료 되 면 새로운 보안 업데이�
   
 [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[office 2007 또는 office 2010 서버 및 클라이언트에서 업그레이드 계획](plan-upgrade-previous-versions-office.md)
+[Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획](plan-upgrade-previous-versions-office.md)
   
 

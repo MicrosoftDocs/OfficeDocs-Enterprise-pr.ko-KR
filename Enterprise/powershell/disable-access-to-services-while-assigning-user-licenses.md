@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-ms.openlocfilehash: c93f54fcd5716a0ea53290c24a2594b8bc63cecf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 82a448e4fc7f068fab3b04519b9689506208bee8
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069054"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함
 
@@ -40,15 +40,15 @@ Get-MsolAccountSku
 
 `Get-MsolAccountSku` 명령 표시에서 다음을 수행 합니다.
   
-- **AccountSkuId** 은 OrganizationName>: \<\<Subscription> 형식으로 조직에 대 한 구독입니다. \<OrganizationName>는 Office 365에서 등록할 때 제공한 값으로, 조직에서 고유 합니다. \<Subscription> 값은 특정 구독에 대 한 것입니다. 예를 들어 litwareinc: enterprisepack의 경우 조직 이름은 litwareinc이 고 구독 이름은 enterprisepack (Office 365 Enterprise E3)입니다.
+- **AccountSkuId** 은 OrganizationName>: \<\<Subscription> 형식으로 조직에 대 한 구독입니다. \<OrganizationName>는 Office 365에서 등록할 때 제공한 값으로, 조직에서 고유 합니다. \<Subscription> 값은 특정 구독에 대 한 것입니다. 예를 들어 litwareinc: ENTERPRISEPACK의 경우 조직 이름은 litwareinc이 고 구독 이름은 ENTERPRISEPACK (Office 365 Enterprise E3)입니다.
     
-- **activeunits** 는 구독을 위해 구매한 라이선스 수입니다.
+- **Activeunits** 는 구독을 위해 구매한 라이선스 수입니다.
     
 - **WarningUnits** 은 갱신 되지 않고 30 일 유예 기간 후에 만료 되는 구독의 라이선스 수입니다.
     
 - **ConsumedUnits** 은 구독에 대해 사용자에 게 할당 한 라이선스 수입니다.
     
-라이선스를 부여할 사용자가 포함 된 Office 365 구독에 대 한 AccountSkuId를 확인 합니다. 또한 할당 하기에 충분 한 라이선스가 있는지 확인 하세요 ( **activeunits** 에서 **ConsumedUnits** 빼기).
+라이선스를 부여할 사용자가 포함 된 Office 365 구독에 대 한 AccountSkuId를 확인 합니다. 또한 할당 하기에 충분 한 라이선스가 있는지 확인 하세요 ( **Activeunits** 에서 **ConsumedUnits** 빼기).
   
 다음으로, 다음 명령을 실행 하 여 모든 구독에서 사용할 수 있는 Office 365 서비스 계획에 대 한 세부 정보를 확인 합니다.
   
@@ -95,7 +95,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 ```
 
-다음은 contoso: enterprisepack 라이선스에 대해 belindan@contoso.com 이라는 계정에 대 한 명령 블록이 며, 사용 하지 않도록 설정 하는 서비스 계획은 RMS_S_ENTERPRISE, SWAY, INTUNE_O365 및 YAMMER_ENTERPRISE입니다.
+다음은 contoso: ENTERPRISEPACK 라이선스에 대해 belindan@contoso.com 이라는 계정에 대 한 명령 블록이 며, 사용 하지 않도록 설정 하는 서비스 계획은 RMS_S_ENTERPRISE, SWAY, INTUNE_O365 및 YAMMER_ENTERPRISE입니다.
   
 ```
 $userUPN="belindan@contoso.com"

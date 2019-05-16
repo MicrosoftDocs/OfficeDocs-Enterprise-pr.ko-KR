@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '요약: Office 365 PowerShell을 사용 하 여 정책으로 비즈니스용 Skype Online 사용자 계정 속성을 관리 합니다.'
-ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037902"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068844"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
 
@@ -62,11 +62,11 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-이 예에서이 정책 내의 값은 페더레이션 사용자와의 통신에 사용 될 수 있는 작업을 결정 합니다. 예를 들어 사용자가 조직 외부의 사용자와 통신할 수 있도록 enableout간 액세스 속성을 True로 설정 해야 합니다. 이 속성은 Office 365 관리 센터에 나타나지 않습니다. 대신 사용자가 선택한 다른 항목에 따라 속성이 자동으로 True 또는 False로 설정 됩니다. 다른 두 가지 주요 속성은 다음과 같습니다.
+이 예에서이 정책 내의 값은 페더레이션 사용자와의 통신에 사용 될 수 있는 작업을 결정 합니다. 예를 들어 사용자가 조직 외부의 사용자와 통신할 수 있도록 Enableout간 액세스 속성을 True로 설정 해야 합니다. 이 속성은 Office 365 관리 센터에 나타나지 않습니다. 대신 사용자가 선택한 다른 항목에 따라 속성이 자동으로 True 또는 False로 설정 됩니다. 다른 두 가지 주요 속성은 다음과 같습니다.
   
 - **EnableFederationAccess** 는 사용자가 페더레이션 도메인의 사용자와 통신할 수 있는지 여부를 나타냅니다.
     
-- **enablepubliccloudaccess** 는 사용자가 Windows Live 사용자와 통신할 수 있는지 여부를 나타냅니다.
+- **Enablepubliccloudaccess** 는 사용자가 Windows Live 사용자와 통신할 수 있는지 여부를 나타냅니다.
     
 따라서 사용자 계정 (예: **EnableFederationAccess $True**)에서 페더레이션 관련 속성을 직접 변경 하지 않습니다. 대신 미리 구성 된 원하는 속성 값을 가진 외부 액세스 정책에 계정을 할당 합니다. 사용자가 페더레이션 사용자와 Windows Live 사용자와 통신할 수 있게 하려면 해당 사용자 계정에 이러한 유형의 통신을 허용 하는 정책이 할당 되어야 합니다.
   
@@ -86,13 +86,13 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
   
 정책을 만들거나 수정 하기 위한 cmdlet은 없습니다. 사전에 Office 365에서 제공 하는 정책을 사용 해야 합니다. 사용 가능한 다양 한 정책을 확인 하려면 다음 명령을 사용할 수 있습니다.
   
-- Get-csclientpolicy       
-- get-csconferencingpolicy        
-- Get-csdialplan 플랜            
-- get-csexternalaccesspolicy                         
-- set-cshostedvoicemailpolicy                        
-- get-cspresencepolicy                               
-- set-csvoicepolicy                                  
+- Get-CsClientPolicy       
+- Get-csconferencingpolicy        
+- Get-CsDialPlan 플랜            
+- Get-csexternalaccesspolicy                         
+- Set-cshostedvoicemailpolicy                        
+- Get-cspresencepolicy                               
+- Set-csvoicepolicy                                  
 
 > [!NOTE]
 > 비즈니스용 Skype Online 다이얼 플랜은 이름을 제외한 모든 관점에서 정책입니다. Office Communications Server 및 Exchange와의 이전 버전과의 호환성을 제공 하기 위해 "전화 걸기 정책" 대신 "다이얼 플랜" 이라는 이름이 선택 되었습니다. 
@@ -111,7 +111,7 @@ Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
 
-적용 범위 ableto 매개 변수는 반환 된 데이터를 지정 된 사용자에 게 할당할 수 있는 정책 (예: Alex darrow)으로 제한 합니다. 라이선스 및 사용 위치 제한에 따라 사용 가능한 모든 정책의 하위 집합을 나타낼 수 있습니다. 
+적용 범위 Ableto 매개 변수는 반환 된 데이터를 지정 된 사용자에 게 할당할 수 있는 정책 (예: Alex Darrow)으로 제한 합니다. 라이선스 및 사용 위치 제한에 따라 사용 가능한 모든 정책의 하위 집합을 나타낼 수 있습니다. 
   
 정책 속성이 Office 365에서 사용 되지 않는 경우도 있고, 일부 경우에는 Microsoft 지원 담당자만 관리할 수 있습니다. 
   
@@ -127,7 +127,7 @@ Get-CsClientPolicy -Identity "Global"
 
 [Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

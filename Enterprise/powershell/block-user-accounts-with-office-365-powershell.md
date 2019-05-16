@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,19 +13,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: office 365 PowerShell을 사용 하 여 office 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 0e1ac3f61acafedd77c2af760b8316aa6b936e7b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Office 365 PowerShell을 사용 하 여 Office 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법에 대해 설명 합니다.
+ms.openlocfilehash: a2edecf7bc47d39aa9aeb965c7b2834e37820a36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069214"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>블록 사용자 계정 Office 365 PowerShell을 사용 하 여
 
-**요약:**  office 365 PowerShell을 사용 하 여 office 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법에 대해 설명 합니다.
+**요약:**  Office 365 PowerShell을 사용 하 여 Office 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법에 대해 설명 합니다.
   
-office 365 계정에 대 한 액세스를 차단 하면 사용자가 계정을 사용 하 여 office 365 조직의 서비스 및 데이터에 로그인 하 고 액세스할 수 없습니다. Office 365 PowerShell을 사용 하 여 개별 및 여러 사용자 계정에 대 한 액세스를 차단할 수 있습니다.
+Office 365 계정에 대 한 액세스를 차단 하면 사용자가 계정을 사용 하 여 Office 365 조직의 서비스 및 데이터에 로그인 하 고 액세스할 수 없습니다. Office 365 PowerShell을 사용 하 여 개별 및 여러 사용자 계정에 대 한 액세스를 차단할 수 있습니다.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
@@ -62,7 +62,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-이 예에서는 caleb 창턱 라는 사용자에 대 한 사용자 계정 UPN을 표시 합니다.
+이 예에서는 Caleb 창턱 라는 사용자에 대 한 사용자 계정 UPN을 표시 합니다.
   
 ```
 $userName="Caleb Sills"
@@ -93,7 +93,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-다음 명령에서 예제 텍스트 파일은 C:\My documents\accounts.txt입니다 .입니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
+다음 명령에서 예제 텍스트 파일은 C:\My Documents\accounts.txt입니다 .입니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
   
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
@@ -147,7 +147,7 @@ akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
   ```
-다음 명령에서 예제 텍스트 파일은 C:\My documents\accounts.txt입니다 .입니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
+다음 명령에서 예제 텍스트 파일은 C:\My Documents\accounts.txt입니다 .입니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
     
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     

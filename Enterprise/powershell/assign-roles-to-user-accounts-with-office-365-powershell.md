@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '요약: Office 365 PowerShell을 사용 하 여 사용자 계정에 역할을 할당 합니다.'
-ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d7177dc05aff8725a72edf7c9ab7b6ef93c36aaf
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491994"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069224"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.
 
@@ -35,7 +35,7 @@ Office 365 PowerShell을 사용 하 여 사용자 계정에 쉽고 빠르게 역
 다음으로, 역할 이름을 확인 합니다. 이 [관리자 역할 권한 목록을 Azure Active Directory에서](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)사용 합니다.
 
 >[!Note]
->이 문서의 참고 사항에 주의 하십시오. 일부 역할 이름은 Azure AD PowerShell에 따라 다릅니다. 예를 들어 Microsoft 365 관리 센터의 "sharepoint 관리자" 역할에는 Azure AD PowerShell에 대 한 "sharepoint Service 관리자" 라는 이름이 지정 됩니다.
+>이 문서의 참고 사항에 주의 하십시오. 일부 역할 이름은 Azure AD PowerShell에 따라 다릅니다. 예를 들어 Microsoft 365 관리 센터의 "SharePoint 관리자" 역할에는 Azure AD PowerShell에 대 한 "SharePoint Service 관리자" 라는 이름이 지정 됩니다.
 >
 
 다음으로, 로그인 및 역할 이름을 입력 하 고 다음 명령을 실행 합니다.
@@ -113,7 +113,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-명령을 복사 하 여 메모장에 붙여 넣습니다. **$dispName** 및 **$roleName** 변수의 경우 설명 텍스트를 해당 값으로 바꾸고, \< 및 > 문자를 제거 하 고, 따옴표를 남겨 두어야 합니다. 수정 된 줄을 복사 하 여 windows PowerShell 용 windows Azure Active Directory 모듈 창에 붙여 넣어 실행 합니다. 또는 Windows PowerShell ISE (통합 스크립트 환경)를 사용할 수 있습니다.
+명령을 복사 하 여 메모장에 붙여 넣습니다. **$DispName** 및 **$roleName** 변수의 경우 설명 텍스트를 해당 값으로 바꾸고, \< 및 > 문자를 제거 하 고, 따옴표를 남겨 두어야 합니다. 수정 된 줄을 복사 하 여 Windows PowerShell 용 Windows Azure Active Directory 모듈 창에 붙여 넣어 실행 합니다. 또는 Windows PowerShell ISE (통합 스크립트 환경)를 사용할 수 있습니다.
   
 다음은 완성 된 명령 집합의 예입니다.
   

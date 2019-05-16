@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,18 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: be117dd2e4eaa7f3e2e95cd0d2444bd5b813bccb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071154"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
  **요약:** 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.
   
-Microsoft 365 관리 센터를 사용 하 여 office 365 사용자 계정 및 라이선스를 관리할 수 있을 뿐만 아니라 Exchange, 비즈니스용 Skype Online, SharePoint Online 등의 office 365 server 제품을 관리할 수도 있습니다. 그러나 Office 365 PowerShell 명령을 사용하여 이러한 요소를 관리할 수도 있습니다, 이 경우 속도, 자동화 및 추가 기능을 위한 명령줄 및 스크립팅 언어 환경을 활용할 수 있습니다.
+Microsoft 365 관리 센터를 사용 하 여 Office 365 사용자 계정 및 라이선스를 관리할 수 있을 뿐만 아니라 Exchange, 비즈니스용 Skype Online, SharePoint Online 등의 Office 365 server 제품을 관리할 수도 있습니다. 그러나 Office 365 PowerShell 명령을 사용하여 이러한 요소를 관리할 수도 있습니다, 이 경우 속도, 자동화 및 추가 기능을 위한 명령줄 및 스크립팅 언어 환경을 활용할 수 있습니다.
   
 이 문서에서는 Office 365 PowerShell을 사용하여 Office 365를 관리하는 다음과 같은 방법을 설명합니다.
   
@@ -47,7 +47,7 @@ Get-Mailbox
 
 Microsoft 365 관리 센터를 사용 하 여 사서함 목록을 쉽게 가져올 수 있지만 모든 웹 앱에 대 한 모든 사이트의 모든 목록에 있는 항목 수를 계산 하는 작업을 쉽게 수행할 수 없습니다.
   
-office 365 PowerShell은 Microsoft 365 관리 센터를 교체 하는 것이 아니라 office 365 관리 기능을 개선 하 고 향상 시 키도 록 설계 되었습니다. Office 365 PowerShell 명령으로만 수행할 수 있는 일부 구성 절차가 있으므로 Office 365 관리자는 적어도 Office 365 PowerShell을 사용하는 데 익숙해야 합니다. 이러한 경우 다음 방법을 이해해야 합니다.
+Office 365 PowerShell은 Microsoft 365 관리 센터를 교체 하는 것이 아니라 Office 365 관리 기능을 개선 하 고 향상 시 키도 록 설계 되었습니다. Office 365 PowerShell 명령으로만 수행할 수 있는 일부 구성 절차가 있으므로 Office 365 관리자는 적어도 Office 365 PowerShell을 사용하는 데 익숙해야 합니다. 이러한 경우 다음 방법을 이해해야 합니다.
   
 - Office 365 PowerShell 모듈 설치(각 관리자 컴퓨터에 대해 한번만 수행)
     
@@ -65,7 +65,7 @@ Microsoft 365 관리 센터는 유용한 정보를 많이 표시 하지만이는
   
 ![Microsoft 365 관리 센터의 사용자 및 그룹 표시 예제입니다.](media/o365-powershell-users-and-groups.png)
   
-여기에는 다양한 용도로 사용자가 알아야 하는 정보가 표시됩니다. 그러나 더 많은 정보가 필요한 경우도 있습니다. 예를 들어 office 365 라이선스 (및 사용자가 사용할 수 있는 office 365 기능)는 부분적으로 해당 사용자의 지리적 위치에 따라 달라 집니다. 가령 미국 사용자에 대해 확장 가능한 정책과 기능은 인도나 벨기에 사용자에 대해 확장 가능한 정책과 기능은 서로 다를 수 있습니다. 다음 단계에 따라 Microsoft 365 관리 센터를 사용 하 여 사용자의 지리적 위치를 확인할 수 있습니다.
+여기에는 다양한 용도로 사용자가 알아야 하는 정보가 표시됩니다. 그러나 더 많은 정보가 필요한 경우도 있습니다. 예를 들어 Office 365 라이선스 (및 사용자가 사용할 수 있는 Office 365 기능)는 부분적으로 해당 사용자의 지리적 위치에 따라 달라 집니다. 가령 미국 사용자에 대해 확장 가능한 정책과 기능은 인도나 벨기에 사용자에 대해 확장 가능한 정책과 기능은 서로 다를 수 있습니다. 다음 단계에 따라 Microsoft 365 관리 센터를 사용 하 여 사용자의 지리적 위치를 확인할 수 있습니다.
   
 1. 사용자의 **표시 이름** 을 두 번 클릭합니다.
     
@@ -378,7 +378,7 @@ Office 365를 구성하는 여러 다양한 구성 요소는 함께 작동되도
     
 - 사용자가 비즈니스용 Skype 온라인을 사용할 수 있도록 설정되었는지 여부
     
-현재 Microsoft 365 관리 센터를 사용 하 여 이러한 보고서를 쉽게 만들 수는 없습니다. 대신, Excel 워크시트와 같은 정보를 저장 하는 별도의 문서를 만들고, Microsoft 365 관리 센터에서 사서함 정보를 가져오고, Exchange 관리 센터에서 사용자 이름 및 라이선스 정보를 얻으려면 비즈니스용 Skype를 사용 해야 합니다. 비즈니스용 Skype online 관리 센터에서 비즈니스 온라인 정보를 찾은 다음이 정보를 한 부씩 인쇄 하 고 결합 합니다.
+현재 Microsoft 365 관리 센터를 사용 하 여 이러한 보고서를 쉽게 만들 수는 없습니다. 대신, Excel 워크시트와 같은 정보를 저장 하는 별도의 문서를 만들고, Microsoft 365 관리 센터에서 사서함 정보를 가져오고, Exchange 관리 센터에서 사용자 이름 및 라이선스 정보를 얻으려면 비즈니스용 Skype를 사용 해야 합니다. 비즈니스용 Skype Online 관리 센터에서 비즈니스 온라인 정보를 찾은 다음이 정보를 한 부씩 인쇄 하 고 결합 합니다.
   
 이 방법 대신 Office 365 PowerShell 스크립트를 사용하여 해당 보고서를 컴파일할 수 있습니다.
   

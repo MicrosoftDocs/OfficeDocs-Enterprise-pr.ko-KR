@@ -1,9 +1,9 @@
 ---
-title: eDiscovery에 대 한 파일 컬렉션 자동화
+title: EDiscovery에 대 한 파일 컬렉션 자동화
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,29 +13,29 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: '요약: eDiscovery를 위해 사용자 컴퓨터에서 파일 컬렉션을 자동화 하는 방법을 알아봅니다.'
-ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068424"
 ---
-# <a name="automate-file-collection-for-ediscovery"></a>eDiscovery에 대 한 파일 컬렉션 자동화
+# <a name="automate-file-collection-for-ediscovery"></a>EDiscovery에 대 한 파일 컬렉션 자동화
 
- **요약:** eDiscovery에 대 한 사용자 컴퓨터에서 파일 컬렉션을 자동화 하는 방법을 알아봅니다.
+ **요약:** EDiscovery에 대 한 사용자 컴퓨터에서 파일 컬렉션을 자동화 하는 방법을 알아봅니다.
   
 모든 회사에는 소송 또는 기타 법적 작업 유형이 있습니다. 법적 부서는 이러한 노출을 줄이기 위해 노력 하지만, 소송은 비즈니스 수명에 대 한 사실입니다. 회사는 법적 조치를 취할 때 법률 검색 프로세스를 통해 모든 관련 documentary 자료를 경기장 및 상반 되는 자문 위원에 게 제공 해야 합니다. 
   
-eDiscovery는 회사에서 전자 양식에 있는 관련 documentary 자료를 재고, 검색, 식별, 보존, 필터링 및 사용 가능 하 게 하는 프로세스입니다. sharepoint 2013, Exchange Server 2013, Lync Server 2013, sharepoint online 및 Exchange online에는 많은 양의 documentary 콘텐츠가 포함 될 수 있습니다. 버전에 따라 이러한 제품은 eDiscovery 및 현재 위치 유지 (Lync to Exchange Server)를 지원할 수 있으므로 법률 팀이 지정 된 사례에 대해 가장 관련성이 높은 콘텐츠를 보다 쉽게 색인화 하 고 식별 하 고 유지 하 고 필터링 합니다.
+eDiscovery는 회사에서 전자 양식에 있는 관련 documentary 자료를 재고, 검색, 식별, 보존, 필터링 및 사용 가능 하 게 하는 프로세스입니다. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online 및 Exchange Online에는 많은 양의 documentary 콘텐츠가 포함 될 수 있습니다. 버전에 따라 이러한 제품은 eDiscovery 및 현재 위치 유지 (Lync to Exchange Server)를 지원할 수 있으므로 법률 팀이 지정 된 사례에 대해 가장 관련성이 높은 콘텐츠를 보다 쉽게 색인화 하 고 식별 하 고 유지 하 고 필터링 합니다.
   
 많은 문서가 사용자 (Custodians) 로컬 컴퓨터에 중앙 위치에 저장 되어 있지 않습니다. 이를 통해 SharePoint 2013에서 검색을 수행할 수 없으며, 검색이 불가능 한 경우 eDiscovery에 포함할 수 없습니다. 이 솔루션은 Exchange Server 용 로그온 스크립트, System Center Orchestrator 2012 R2 및 Windows PowerShell을 사용 하 여 사용자 컴퓨터에서 documentary 자료의 식별 및 컬렉션을 자동화 하는 방법을 보여 줍니다.
   
 ## <a name="what-this-solution-does"></a>솔루션에서 수행 하는 작업
 
-이 솔루션은 전역 보안 그룹, 그룹 정책 및 Windows PowerShell 스크립트를 사용 하 여 사용자 로컬 컴퓨터에서 숨겨진 파일 공유로의 콘텐츠 및 Outlook 개인 저장소 (PST) 파일을 찾고, 재고를 관리 하 고 수집 합니다. 여기서는 PST 파일을 exchange Server 2013 또는 exchange Online으로 가져올 수 있습니다. 그런 다음 SharePoint 2013에서 장기간 저장 하 고 인덱싱하기 위해 System Center Orchestrator 2012 R2 runbook을 사용 하 여 Microsoft Azure의 다른 파일 공유로 모든 파일을 이동 합니다. 그런 다음 정기적으로 ediscovery를 수행 하는 동안 온-프레미스 sharepoint 2013 배포 또는 SharePoint Online에서 ediscovery 센터를 사용 합니다. 
+이 솔루션은 전역 보안 그룹, 그룹 정책 및 Windows PowerShell 스크립트를 사용 하 여 사용자 로컬 컴퓨터에서 숨겨진 파일 공유로의 콘텐츠 및 Outlook 개인 저장소 (PST) 파일을 찾고, 재고를 관리 하 고 수집 합니다. 여기서는 PST 파일을 Exchange Server 2013 또는 Exchange Online으로 가져올 수 있습니다. 그런 다음 SharePoint 2013에서 장기간 저장 하 고 인덱싱하기 위해 System Center Orchestrator 2012 R2 runbook을 사용 하 여 Microsoft Azure의 다른 파일 공유로 모든 파일을 이동 합니다. 그런 다음 정기적으로 eDiscovery를 수행 하는 동안 온-프레미스 SharePoint 2013 배포 또는 SharePoint Online에서 eDiscovery 센터를 사용 합니다. 
   
 > [!IMPORTANT]
-> 이 솔루션은 robocopy를 사용 하 여 custodian의 컴퓨터에서 중앙 집중식 파일 공유로 파일을 복사 합니다. robocopy는 열려 있거나 잠겨 있는 파일을 복사 하지 않으므로 PST 파일을 포함 하 여 custodian에서 열린 파일은 수집 되지 않습니다. 이러한 항목은 수동으로 수집 해야 합니다. 이 솔루션은 복사할 수 없는 파일과 각 파일의 전체 경로를 명시적으로 식별 하는 목록을 제공 합니다. 
+> 이 솔루션은 robocopy를 사용 하 여 custodian의 컴퓨터에서 중앙 집중식 파일 공유로 파일을 복사 합니다. Robocopy는 열려 있거나 잠겨 있는 파일을 복사 하지 않으므로 PST 파일을 포함 하 여 custodian에서 열린 파일은 수집 되지 않습니다. 이러한 항목은 수동으로 수집 해야 합니다. 이 솔루션은 복사할 수 없는 파일과 각 파일의 전체 경로를 명시적으로 식별 하는 목록을 제공 합니다. 
   
 다음 다이어그램에서는 솔루션의 모든 단계와 요소를 보여 줍니다.
   
@@ -44,11 +44,11 @@ eDiscovery는 회사에서 전자 양식에 있는 관련 documentary 자료를 
 |범례 * * * *||
 |:-----|:-----|
 |![자홍 설명선 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|GPO (그룹 정책 개체)를 만든 후 컬렉션 로그온 스크립트와 연결 합니다.  <br/> |
-|![자홍 설명선 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| gpo 보안 필터를 구성 하 여 Custodians 그룹에만 gpo를 적용 합니다. <br/> |
+|![자홍 설명선 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Gpo 보안 필터를 구성 하 여 Custodians 그룹에만 GPO를 적용 합니다. <br/> |
 |![자홍 설명선 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Custodian가 로그온 되 고 GPO가 실행 되어 컬렉션 로그온 스크립트를 호출 합니다.  <br/> |
 |![자홍 설명선 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|컬렉션 로그온 스크립트는 Custodians 컴퓨터의 로컬로 연결 된 모든 드라이브를 인벤토리 하 고, 원하는 파일을 검색 하 고, 해당 위치를 기록 합니다.  <br/> |
 |![자홍 설명선 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|컬렉션 로그온 스크립트는 인벤토리에 포함 된 파일을 준비 서버에 있는 숨겨진 파일 공유에 복사 합니다.  <br/> |
-|![자홍 통화](media/99589726-0c7e-406b-a276-44301a135768.png)| (옵션 A) pst 가져오기 스크립트를 수동으로 실행 하 여 수집 된 pst 파일을 Exchange Server 2013로 가져옵니다. <br/> |
+|![자홍 통화](media/99589726-0c7e-406b-a276-44301a135768.png)| (옵션 A) PST 가져오기 스크립트를 수동으로 실행 하 여 수집 된 PST 파일을 Exchange Server 2013로 가져옵니다. <br/> |
 |![자홍 설명선 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(옵션 B) Office 365 가져오기 도구와 프로세스를 사용 하 여 수집 된 PST 파일을 Exchange Online으로 가져옵니다.  <br/> |
 |![자홍 설명선 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|MoveToColdStorage System Center Orchestrator 2012 R2 runbook을 사용 하 여 수집 된 모든 파일을 장기 저장소에 대 한 Azure 파일 공유로 이동 합니다. <br/> |
 |![자홍 설명선 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|SharePoint 2013의 콜드 저장소 파일 공유에 있는 파일을 인덱싱합니다.  <br/> |
@@ -66,15 +66,15 @@ eDiscovery는 회사에서 전자 양식에 있는 관련 documentary 자료를 
 |AD DS (Active Directory 도메인 서비스) 도메인  <br/> ||
 |온-프레미스 네트워크 로부터의 인터넷 연결  <br/> ||
 |SharePoint 2013 및 System Center Orchestrator 2012 R2를 지원 하기 위한 SQL Server 2012  <br/> |[System Center Orchestrator-2012 배포](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-| eDiscovery에 대 한 온-프레미스 또는 Azure 기반 SharePoint 2013 (옵션 A에 필요) <br/> ||
+| EDiscovery에 대 한 온-프레미스 또는 Azure 기반 SharePoint 2013 (옵션 A에 필요) <br/> ||
 |준비를 위해 온-프레미스 파일 공유 서버  <br/> ||
 |PST 가져오기를 위한 온-프레미스 Exchange Server 2013  <br/> |CU5 (15.913.22)은 [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426)에서 사용할 수 있습니다.  <br/> |
 |System Center Orchestrator 2012 R2  <br/> |[System Center Orchestrator-2012 배포](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-|Exchange online 및 SharePoint online을 사용 하는 Office 365 (E3 계획) (옵션 B에 필요 함)  <br/> |office 365 e3 구독에 등록 하려면 [office 365 e3 구독](https://go.microsoft.com/fwlink/p/?LinkId=613504)을 참조 하세요.  <br/> |
+|Exchange Online 및 SharePoint Online을 사용 하는 Office 365 (E3 계획) (옵션 B에 필요 함)  <br/> |Office 365 E3 구독에 등록 하려면 [office 365 e3 구독](https://go.microsoft.com/fwlink/p/?LinkId=613504)을 참조 하세요.  <br/> |
 |가상 컴퓨터를 사용한 Azure 구독  <br/> |Azure에 등록 하려면 [Windows Azure 구독을](https://go.microsoft.com/fwlink/p/?LinkId=512010) 참조 하세요. <br/> |
 |온-프레미스 네트워크와 Azure 구독 간의 VPN 연결  <br/> |Azure 구독과 온-프레미스 네트워크 간에 VPN 터널을 설정 하려면 [온-프레미스 네트워크를 Microsoft Azure virtual network에 연결](https://go.microsoft.com/fwlink/p/?LinkId=613507)을 참조 하십시오.  <br/> |
-|sharepoint 2013 eDiscovery는 sharepoint 및 Exchange Server 2013 및 선택적 Lync Server 2013에서 검색 하도록 구성 되어 있습니다.  <br/> |이 방식으로 ediscovery를 구성 하려면 [configure ediscovery in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) 및[test lab Guide: Exchange, Lync, SharePoint 및 Windows 파일 공유 테스트 랩에 대해](https://go.microsoft.com/fwlink/p/?LinkId=393130)ediscovery 구성을 참조 하십시오.  <br/> |
-|SharePoint online 및 Exchange online에 대 한 Office 365의 eDiscovery  <br/> |Office 365에서 ediscovery를 구성 하려면 [SharePoint Online에서 ediscovery 센터 설정을](https://go.microsoft.com/fwlink/p/?LinkId=613628)참조 하세요.  <br/> |
+|Sharepoint 2013 eDiscovery는 SharePoint 및 Exchange Server 2013 및 선택적 Lync Server 2013에서 검색 하도록 구성 되어 있습니다.  <br/> |이 방식으로 eDiscovery를 구성 하려면 [Configure ediscovery In SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) 및[test Lab Guide: Exchange, Lync, SharePoint 및 Windows 파일 공유 테스트 랩에 대해](https://go.microsoft.com/fwlink/p/?LinkId=393130)ediscovery 구성을 참조 하십시오.  <br/> |
+|SharePoint Online 및 Exchange Online에 대 한 Office 365의 eDiscovery  <br/> |Office 365에서 eDiscovery를 구성 하려면 [SharePoint Online에서 Ediscovery 센터 설정을](https://go.microsoft.com/fwlink/p/?LinkId=613628)참조 하세요.  <br/> |
    
 ## <a name="configure-the-environment"></a>환경 구성
 
@@ -84,7 +84,7 @@ eDiscovery는 회사에서 전자 양식에 있는 관련 documentary 자료를 
 
 1. 온-프레미스 도메인에서 Custodians 라는 전역 보안 그룹을 만듭니다.
     
-2. Custodians 컴퓨터에서 수집 된 파일에 대 한 숨겨진 파일 공유를 만듭니다. 이는 온-프레미스 서버에 있어야 합니다. 예를 들어 준비 라는 서버에서 case $ 라는 파일 공유를 만듭니다. **$** 은이를 숨겨진 공유로 설정 하는 데 필요 합니다.
+2. Custodians 컴퓨터에서 수집 된 파일에 대 한 숨겨진 파일 공유를 만듭니다. 이는 온-프레미스 서버에 있어야 합니다. 예를 들어 준비 라는 서버에서 Case $ 라는 파일 공유를 만듭니다. **$** 은이를 숨겨진 공유로 설정 하는 데 필요 합니다.
     
 3. 다음 공유 사용 권한을 설정 합니다.
     
@@ -114,7 +114,7 @@ eDiscovery는 회사에서 전자 양식에 있는 관련 documentary 자료를 
     
 2. 서비스 케이스 $ 폴더에 파일을 저장 합니다.
     
-3. 사용자는 준비 서버로 이동 하 여 (예: \\ \\준비 공유로 이동) 사용 가능한 공유를 확인 합니다. $ share가 나열 되어 있는 **경우** 는 표시 되지 않습니다.
+3. 사용자는 준비 서버로 이동 하 여 (예: \\ \\준비 공유로 이동) 사용 가능한 공유를 확인 합니다. $ Share가 나열 되어 있는 **경우** 는 표시 되지 않습니다.
     
 4. 서비스 케이스 공유에 대 한 전체 경로를 탐색기에 수동으로 입력 합니다. 그러면 사례 $ 공유가 열립니다.
     
@@ -264,7 +264,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 
   ```
 
-2. 위의 스크립트를 collectionscript로 저장 합니다. \ C:\\afcscripts와 같이 쉽게 찾을 수 있는 위치에 있습니다.
+2. 위의 스크립트를 CollectionScript로 저장 합니다. \ C:\\afcscripts와 같이 쉽게 찾을 수 있는 위치에 있습니다.
     
 3. 메모장에서 이동 기능을 사용 합니다. 필요에 따라 다음 사항을 변경 합니다.
     
@@ -274,7 +274,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 |76 및 77  <br/> |사용자의 요구에 맞게 **$CaseNo** 변수가 작성 되는 방식을 변경 합니다. 이 스크립트는 현재 날짜와 시간을 캡처하여 사용자 이름을 추가 합니다. <br/> |선택  <br/> |
 |80  <br/> |** \\ \\준비\\사례 $** 와 같은 **$CaseRootLocation** 변수를 준비 서버 모음 파일 공유로 설정 해야 합니다. <br/> |필수  <br/> |
    
-4. 도메인 컨트롤러의 Netlogon 파일 공유에 collectionscript. ps1 파일을 배치 합니다. 
+4. 도메인 컨트롤러의 Netlogon 파일 공유에 CollectionScript. ps1 파일을 배치 합니다. 
     
 ### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>로그온 스크립트 및 Custodians 그룹에 대해 GPO를 구성 합니다.
 
@@ -329,7 +329,7 @@ $AllFiles | ForEach-Object {
 |**줄 번호**|**변경 해야 하는 내용**|**Required/optional**|
 |:-----|:-----|:-----|
 |12   <br/> |**$FolderIdentifier** pst를 가져올 사서함 폴더에 태그를 붙여 넣습니다. 필요한 경우이를 변경 합니다. <br/> |선택  <br/> |
-|17   <br/> |**$ConnectionUri** 를 자체 서버로 설정 해야 합니다. <br/> > [!IMPORTANT]>는 **$ConnectionUri** 가 https가 아닌 http 위치를 가리키는지 확인 합니다. https:로 작동 하지 않습니다.          |필수  <br/> |
+|17   <br/> |**$ConnectionUri** 를 자체 서버로 설정 해야 합니다. <br/> > [!IMPORTANT]>는 **$ConnectionUri** 가 https가 아닌 http 위치를 가리키는지 확인 합니다. Https:로 작동 하지 않습니다.          |필수  <br/> |
    
 4. Exchange 신뢰할 수 있는 하위 시스템 계정에 \\ \\준비\\사례 $ 공유에 대 한 읽기, 쓰기 및 실행 권한이 있는지 확인 합니다.
     
@@ -343,13 +343,13 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST 가져오기 옵션 B, Exchange Online
 
--  가져온 PST 파일을 배치할 사서함 구조를 만듭니다. exchange online에서 사용자 사서함을 만드는 방법에 대 한 자세한 내용은[exchange online에서 사용자 사서함 만들기](https://go.microsoft.com/fwlink/p/?LinkId=615118)를 참조 하세요.
+-  가져온 PST 파일을 배치할 사서함 구조를 만듭니다. Exchange Online에서 사용자 사서함을 만드는 방법에 대 한 자세한 내용은[Exchange online에서 사용자 사서함 만들기](https://go.microsoft.com/fwlink/p/?LinkId=615118)를 참조 하세요.
     
 ### <a name="cold-storage"></a>콜드 저장소
 
 1. 수집 된 모든 파일이 저장 될 Azure Virtual Machine 파일 공유 (예: \\ \\AZFile1\\contentcoldstorage)를 만듭니다.
     
-2. 기본 콘텐츠 액세스 계정에 최소한 공유 및 모든 하위 폴더와 파일에 대 한 읽기 권한을 부여 합니다. sharepoint 2013 검색을 구성 하는 방법에 대 한 자세한 내용은 [Create and configure a Search service application in sharepoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940)을 참조 하십시오.
+2. 기본 콘텐츠 액세스 계정에 최소한 공유 및 모든 하위 폴더와 파일에 대 한 읽기 권한을 부여 합니다. SharePoint 2013 검색을 구성 하는 방법에 대 한 자세한 내용은 [Create and configure a Search service application In Sharepoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940)을 참조 하십시오.
     
 3. \\ \\AZFile1\\contentcoldstorage에서 PST 파일을 가져오는 것이 예상 되는 경우 Exchange의 신뢰할 수 있는 하위 시스템 읽기, 쓰기 및 실행 권한을 공유에 부여 합니다.
     
@@ -357,11 +357,11 @@ $AllFiles | ForEach-Object {
 
 1. Microsoft 다운로드 센터에서[ MoveToColdStorage runbook](https://go.microsoft.com/fwlink/?LinkId=616095) 을 다운로드 합니다.
     
-2. **runbook Designer**를 열고 **연결** 창에서 runbook을 가져올 폴더를 클릭 합니다. **작업** 메뉴를 클릭 하 고 **가져오기를**클릭 합니다. **가져오기** 대화 상자가 표시 됩니다.
+2. **Runbook Designer**를 열고 **연결** 창에서 runbook을 가져올 폴더를 클릭 합니다. **작업** 메뉴를 클릭 하 고 **가져오기를**클릭 합니다. **가져오기** 대화 상자가 표시 됩니다.
     
 3. **파일 위치** 상자에 가져올 runbook의 경로 및 파일 이름을 입력 하거나, 줄임표 ( **...**)를 클릭 하 여 가져올 파일을 찾습니다. 
     
-4. **runbook 가져오기를** 선택 하 고 **Orchestrator encrypted data를 가져옵니다**. **카운터**, **일정**, **변수**, **컴퓨터 그룹**, **전역 구성 가져오기**및 **기존 전역 구성 덮어쓰기**의 선택을 취소 합니다.
+4. **Runbook 가져오기를** 선택 하 고 **Orchestrator Encrypted data를 가져옵니다**. **카운터**, **일정**, **변수**, **컴퓨터 그룹**, **전역 구성 가져오기**및 **기존 전역 구성 덮어쓰기**의 선택을 취소 합니다.
     
 5. **마침**을 클릭합니다.
     
@@ -371,17 +371,17 @@ $AllFiles | ForEach-Object {
     
 2. **폴더 활동 삭제** - **경로** 를 모음 파일 공유 ( \\ \\예:\\준비 사례 $\\*)로 설정 하 고 **모든 파일 및 하위 폴더 삭제**를 선택 합니다. 
     
-7. [runbook 배포](https://go.microsoft.com/fwlink/p/?LinkId=615120)의 절차에 따라 **MoveToColdStorage** runbook을 배포 합니다.
+7. [Runbook 배포](https://go.microsoft.com/fwlink/p/?LinkId=615120)의 절차에 따라 **MoveToColdStorage** runbook을 배포 합니다.
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>콜드 저장소에 대 한 SharePoint 온-프레미스 검색
 
-1. Azure의 콜드 저장소 공유에 대 한 SharePoint 2013 팜에서 새 콘텐츠 원본을 만듭니다 (예: \\ \\AZFile1\\contentcoldstorage). 콘텐츠 원본을 관리 하는 방법에 대 한 자세한 내용은 [Add, edit, or delete a content source in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004) 을 참조 하세요.
+1. Azure의 콜드 저장소 공유에 대 한 SharePoint 2013 팜에서 새 콘텐츠 원본을 만듭니다 (예: \\ \\AZFile1\\contentcoldstorage). 콘텐츠 원본을 관리 하는 방법에 대 한 자세한 내용은 [Add, edit, or delete a content source In SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004) 을 참조 하세요.
     
 2. 전체 크롤링을 시작 합니다. 자세한 내용은 [SharePoint Server 2013에서 크롤링 시작, 일시 중지, 다시 시작 또는 중지](https://go.microsoft.com/fwlink/p/?LinkId=615005)를 참조 하세요.
     
 ## <a name="using-the-solution"></a>솔루션 사용
 
-이 솔루션을 사용 하는 경우에는 다섯 가지 주요 단계로, PST 파일을 exchange Server 2013 및 exchange Online 둘 다로 가져오지 않으려고 합니다. 이 섹션에서는 모든 기능에 대 한 절차를 제공 합니다. 솔루션과의 기본 상호 작용은 다음과 같은 작업을 수행 합니다.
+이 솔루션을 사용 하는 경우에는 다섯 가지 주요 단계로, PST 파일을 Exchange Server 2013 및 Exchange Online 둘 다로 가져오지 않으려고 합니다. 이 섹션에서는 모든 기능에 대 한 절차를 제공 합니다. 솔루션과의 기본 상호 작용은 다음과 같은 작업을 수행 합니다.
   
 1. Custodians 그룹에서 사용자 구성원 자격을 관리 합니다.
     
@@ -393,15 +393,15 @@ $AllFiles | ForEach-Object {
     
 다른 모든 단계는이 솔루션에 국한 되지 않습니다. SharePoint 2013 및 Office 365 및 Azure에서 수행 하는 표준 관리 작업입니다. 이 솔루션은 회사의 요구 사항에 따라 다음과 같이 작업을 수행 하는 데 필요한 지침을 제공 하지 않습니다.
   
-1. eDiscovery 사례 및 해당 사례와 연결 된 Custodians을 추적 합니다.
+1. EDiscovery 사례 및 해당 사례와 연결 된 Custodians을 추적 합니다.
     
-2. eDiscovery 사례와 연결 되는 파일 모음 집합 추적
+2. EDiscovery 사례와 연결 되는 파일 모음 집합 추적
     
 3. 가져오기 타이밍을 조정 하 고 콜드 저장소 단계로 이동 합니다.
     
 4. Azure에서 사용 되는 파일 공간 관리
     
-5. pst를 가져올 사서함 관리
+5. Pst를 가져올 사서함 관리
     
 6. 모든 온-프레미스 데이터의 백업 및 복원
     
@@ -424,7 +424,7 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-a-for-exchange-server-2013"></a>Exchange Server 2013에 대 한 PST 가져오기 옵션
 
-1. 모음 파일 공유를 호스트 하는 서버에 로그온 하 고 (예: **Staging**) Windows PowerShell을 엽니다. windows powershell을 시작 하는 방법에 대 한 자세한 내용은[windows Server에서 windows powershell 시작](https://go.microsoft.com/fwlink/p/?LinkId=615115)을 참조 하십시오.
+1. 모음 파일 공유를 호스트 하는 서버에 로그온 하 고 (예: **Staging**) Windows PowerShell을 엽니다. Windows PowerShell을 시작 하는 방법에 대 한 자세한 내용은[Windows Server에서 Windows Powershell 시작](https://go.microsoft.com/fwlink/p/?LinkId=615115)을 참조 하십시오.
     
 2. 실행 정책을 무제한으로 설정 합니다. Windows `Set-ExecutionPolicy Unrestricted -Scope Process` PowerShell에 입력 한 다음 enter 키를 누릅니다.
     
@@ -448,6 +448,6 @@ $AllFiles | ForEach-Object {
 
 1. 콜드 저장소 파일 공유의 전체 크롤링을 일정으로 실행 하거나 크롤링을 시작할 수 있습니다. 전체 또는 증분 크롤링 시작에 대 한 자세한 내용은 [SharePoint Server 2013에서 크롤링 시작, 일시 중지, 다시 시작 또는 중지](https://go.microsoft.com/fwlink/p/?LinkId=615005)를 참조 하세요.
     
-2. PST 파일에 a 옵션을 사용 하 여 sharepoint 2013에서 ediscovery 사례를 만들거나, 옵션 B를 사용한 경우 sharepoint Online에서 ediscovery 사례를 만듭니다.
+2. PST 파일에 A 옵션을 사용 하 여 SharePoint 2013에서 eDiscovery 사례를 만들거나, 옵션 B를 사용한 경우 SharePoint Online에서 eDiscovery 사례를 만듭니다.
     
 

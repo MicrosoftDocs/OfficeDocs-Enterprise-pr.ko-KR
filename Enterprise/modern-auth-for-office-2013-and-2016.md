@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/1/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,20 +20,20 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: office 2013 및 2016 클라이언트 앱에 대해 office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 5e42ec2fcf8f27990af187e4ad26ba65909ac709
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
+ms.openlocfilehash: 80a5f557fc1f3d189e8852ac3039521cfc31fb2c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957699"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070064"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
-이 문서를 읽으면 office 2013 및 office 2016 클라이언트 앱이 Exchange online, SharePoint online 및 비즈니스용 Skype online에 대 한 office 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
+이 문서를 읽으면 Office 2013 및 Office 2016 클라이언트 앱이 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 Office 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
 
 > [!NOTE]
-> office 2010 및 office for Mac 2011와 같은 레거시 클라이언트 앱은 최신 인증을 지원 하지 않으며 기본 인증만 사용할 수 있습니다.
+> Office 2010 및 Office for Mac 2011와 같은 레거시 클라이언트 앱은 최신 인증을 지원 하지 않으며 기본 인증만 사용할 수 있습니다.
 
 ## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 서비스에 대 한 최신 인증의 가용성
 
@@ -53,7 +53,7 @@ Office 2013 클라이언트 앱은 기본적으로 레거시 인증을 지원 �
   
 Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, 클라이언트에서 이러한 새 흐름을 사용 하는 데 필요한 작업은 없습니다. 그러나 레거시 인증을 사용 하려면 명시적 작업을 수행 해야 합니다.
   
-최신 인증이 설정 되어 있는지 여부에 따라 office 2013 및 office 2016 클라이언트 인증이 office 365 services에서 작동 하는 방식을 확인 하려면 아래 링크를 클릭 하십시오.
+최신 인증이 설정 되어 있는지 여부에 따라 office 2013 및 Office 2016 클라이언트 인증이 Office 365 services에서 작동 하는 방식을 확인 하려면 아래 링크를 클릭 하십시오.
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -63,7 +63,7 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
     
 ### <a name="exchange-online"></a>Exchange Online
 
-다음 표에서는 최신 인증을 사용 하지 않고 Exchange Online에 연결할 때 office 2013 또는 office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
+다음 표에서는 최신 인증을 사용 하지 않고 Exchange Online에 연결할 때 Office 2013 또는 Office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 (기본값) * * * *|테 넌 트에 대 한 최신 인증을 끈 인증 동작 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
@@ -76,7 +76,7 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
 ### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
 
-다음 표에서는 최신 인증을 사용 하지 않고 SharePoint Online에 연결할 때 office 2013 또는 office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
+다음 표에서는 최신 인증을 사용 하지 않고 SharePoint Online에 연결할 때 Office 2013 또는 Office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 (기본값) * * * *|테 넌 트에 대 한 최신 인증을 끈 인증 동작 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
@@ -89,7 +89,7 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
 ### <a name="skype-for-business-online"></a>비즈니스용 Skype Online
 <a name="BK_SFBO"> </a>
 
-다음 표에서는 최신 인증을 사용 하는 경우 또는 포함 하지 않고 비즈니스용 Skype Online에 연결할 때 office 2013 또는 office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
+다음 표에서는 최신 인증을 사용 하는 경우 또는 포함 하지 않고 비즈니스용 Skype Online에 연결할 때 Office 2013 또는 Office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 * * * *|테 넌 트에 대해 최신 인증을 끈 인증 동작 (기본값) * * * *|
 |:-----|:-----|:-----|:-----|:-----|
@@ -103,6 +103,6 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
 
 [Windows 장치에서 Office 2013에 대 한 최신 인증을 사용 하도록 설정](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
-[office 365 배포에 대 한 다단계 인증 계획 (office 365 관리자 용)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Office 365 배포에 대 한 다단계 인증 계획 (Office 365 관리자 용)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [2 단계 인증을 사용 하 여 Office 365에 로그인 (최종 사용자 용)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)

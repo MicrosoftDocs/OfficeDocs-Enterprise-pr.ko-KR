@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: '요약: 클라우드 채택으로 인해 네트워크 인프라 투자에 대 한 새로운 접근 방법이 필요한 방식에 대해 설명 합니다.'
-ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 47d24a4f545cfae8a6bd1c507a61f48b6d26cc7d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487244"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067634"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>클라우드 연결을 위해 네트워크 개선
 
@@ -37,11 +37,11 @@ ms.locfileid: "33487244"
     
 네트워크 인프라 투자가 연결로 시작 됩니다. 추가 투자는 클라우드 서비스의 범주에 따라 달라 집니다.
   
-- **SaaS (Software as a Service)** microsoft SaaS 서비스에는 Office 365, microsoft Intune 및 microsoft Dynamics 365가 포함 됩니다. 사용자가 SaaS 서비스를 성공적으로 채택 해야 하는 경우에는 가용성이 높고 인터넷에 대 한 고성능 연결을 사용 하거나 Microsoft 클라우드 서비스에 직접 의존 해야 합니다.
+- **SaaS (Software as a Service)** Microsoft SaaS 서비스에는 Office 365, Microsoft Intune 및 Microsoft Dynamics 365가 포함 됩니다. 사용자가 SaaS 서비스를 성공적으로 채택 해야 하는 경우에는 가용성이 높고 인터넷에 대 한 고성능 연결을 사용 하거나 Microsoft 클라우드 서비스에 직접 의존 해야 합니다.
     
     네트워크 아키텍처는 안정적이 고 중복 된 연결 및 충분 한 대역폭을 중심으로 합니다. 지속적인 투자에는 성능 모니터링 및 조정 등이 포함 됩니다.
     
-- **Azure PaaS (Platform as a Service)** Microsoft SaaS 서비스에 대 한 투자 외에도 다중 사이트 또는 지리적으로 분산 된 PaaS 응용 프로그램은 클라이언트 트래픽을 분산 하기 위해 Azure traffic Manager를 설계 해야 할 수 있습니다. 지속적인 투자에는 성능 및 트래픽 분산 모니터링 및 장애 조치 (failover) 테스트가 포함 됩니다.
+- **Azure PaaS (Platform as a Service)** Microsoft SaaS 서비스에 대 한 투자 외에도 다중 사이트 또는 지리적으로 분산 된 PaaS 응용 프로그램은 클라이언트 트래픽을 분산 하기 위해 Azure Traffic Manager를 설계 해야 할 수 있습니다. 지속적인 투자에는 성능 및 트래픽 분산 모니터링 및 장애 조치 (failover) 테스트가 포함 됩니다.
     
 - **Azure IaaS (인프라 as a Service)** Microsoft SaaS 및 PaaS 서비스에 대 한 투자 외에도, IaaS에서 IT 작업을 실행 하는 경우 가상 컴퓨터를 호스트 하는 Azure virtual network의 디자인 및 구성, 라우팅, IP에서 실행 되는 응용 프로그램에 대 한 보안 연결 필요 주소 지정, DNS 및 부하 분산 지속적인 투자에는 성능 및 보안 모니터링과 문제 해결이 포함 됩니다.
 
@@ -59,13 +59,13 @@ ms.locfileid: "33487244"
 
 일상 생산성 트래픽이 클라우드로 이동 하는 경우에도 최신 상태를 유지 하 고 고가용성을 제공 하 고 최대 부하를 충족 하기에 충분 한 용량을 갖게 하려면에 지 네트워크의 시스템 집합을 면밀 하 게 검토 해야 합니다.
   
-### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Azure, Office 365 및 Dynamics 365에 대 한 높은 SLA를 보려면 express를 사용 합니다.
+### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Azure, Office 365 및 Dynamics 365에 대 한 높은 SLA를 보려면 Express를 사용 합니다.
 
 에 지 네트워크에서 현재 인터넷 연결을 사용할 수 있지만 Microsoft 클라우드 서비스와의 트래픽은 인터넷으로 들어오는 다른 인트라넷 트래픽과 파이프를 공유 해야 합니다. 또한 Microsoft 클라우드 서비스에 대 한 트래픽은 인터넷 트래픽 혼잡의 영향을 받습니다.
   
 높은 SLA 및 최적의 성능을 위해서는 네트워크와 Azure, Office 365, Dynamics 365 또는 3 모두 간의 전용 WAN 연결을 사용 하는 방법 \ 사용자를 사용할 것을 권장 합니다. 
   
-express에서 전용 연결을 위해 기존 네트워크 공급자를 활용할 수 있습니다. 이 방법으로는 국내 분산 조직의 경우에도, 기본적으로로 연결 된 리소스는 WAN에 있는 것 처럼 나타납니다.
+Express에서 전용 연결을 위해 기존 네트워크 공급자를 활용할 수 있습니다. 이 방법으로는 국내 분산 조직의 경우에도, 기본적으로로 연결 된 리소스는 WAN에 있는 것 처럼 나타납니다.
   
 자세한 내용은 [Microsoft 클라우드 연결용 express](expressroute-for-microsoft-cloud-connectivity.md)를 참조 하세요.
   

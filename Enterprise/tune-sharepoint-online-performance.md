@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online의 페이지 다운로드 시간 성능을 개선 하는 방법을 설명 하는 기타 문서에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 8c4f3c0545408457b2c0b5150ea062b9666f7e44
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070674"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online 성능 조정
 

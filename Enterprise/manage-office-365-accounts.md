@@ -1,10 +1,9 @@
 ---
 title: Office 365 계정 관리 도구
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 사용자를 관리 하는 데 사용할 도구와 사용자 id를 관리 하는 방법에 따라 사용할 수 있는 작업에 대해 알아봅니다. '
-ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067194"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 계정 관리 도구
 
@@ -38,7 +37,7 @@ ms.locfileid: "33487074"
 
 - [클라우드 인증](about-office-365-identity.md#cloud-authentication) -관리 센터에서 사용자를 만들고 관리 하 고, Windows PowerShell 또는 Azure Active Directory를 사용 하 여 사용자를 관리할 수도 있습니다. 
     
-- [원활한 single sign-on을 사용한 암호 해시 동기화](about-office-365-identity.md) -Azure AD의 온-프레미스 디렉터리 개체에 대 한 인증을 사용 하도록 설정 하는 가장 간단한 방법입니다. 암호 해시 동기화 (phs)를 사용 하 여 온-프레미스 Active Directory 사용자 계정 개체를 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 
+- [원활한 single sign-on을 사용한 암호 해시 동기화](about-office-365-identity.md) -Azure AD의 온-프레미스 디렉터리 개체에 대 한 인증을 사용 하도록 설정 하는 가장 간단한 방법입니다. 암호 해시 동기화 (PHS)를 사용 하 여 온-프레미스 Active Directory 사용자 계정 개체를 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 
     
 - [원활한 single sign-on을 통한 통과 인증](about-office-365-identity.md) -하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하 여 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 하 여 사용자의 유효성을 직접 검사 합니다. 온-프레미스 Active Directory 
     
@@ -54,7 +53,7 @@ ms.locfileid: "33487074"
   
 - Office 365와 온-프레미스 디렉터리 간에 id를 연결 하려면 온-프레미스 환경 내의 서버에 디렉터리 동기화 소프트웨어를 설치 해야 합니다.
     
-- SSO 옵션을 비롯 한 디렉터리 동기화 옵션을 사용 하려면 온-프레미스 디렉터리 특성이 표준을 충족 해야 합니다. 디렉터리에서 사용 되는 특성에 대 한 구체적인 내용과 필요한 정리 (있는 경우)는 [Office 365에 대 한 디렉터리 동기화를 통한 사용자 프로 비전 준비](prepare-for-directory-synchronization.md)에서 설명 합니다. idfix를 사용 하 여 디렉터리 정리를 자동화 하는 방법에 대 한 지침은 [Office 365 idfix 도구 설치 및 실행](install-and-run-idfix.md) 을 참조 하세요. 
+- SSO 옵션을 비롯 한 디렉터리 동기화 옵션을 사용 하려면 온-프레미스 디렉터리 특성이 표준을 충족 해야 합니다. 디렉터리에서 사용 되는 특성에 대 한 구체적인 내용과 필요한 정리 (있는 경우)는 [Office 365에 대 한 디렉터리 동기화를 통한 사용자 프로 비전 준비](prepare-for-directory-synchronization.md)에서 설명 합니다. IdFix를 사용 하 여 디렉터리 정리를 자동화 하는 방법에 대 한 지침은 [Office 365 idfix 도구 설치 및 실행](install-and-run-idfix.md) 을 참조 하세요. 
     
 - Office 365 계정을 만드는 방법을 계획 합니다.
     
@@ -66,14 +65,14 @@ ms.locfileid: "33487074"
 |Windows PowerShell  <br/> |[Windows PowerShell을 사용 하 여 Office 365 관리](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Windows PowerShell 스크립트를 사용 하 여 사용자를 대량 사용자에 게 추가할 수 있습니다.  <br/>  계정을 만드는 방법에 관계 없이 계정에 위치 및 라이선스를 할당 하는 데 사용할 수 있습니다.  <br/> |
 |대량 가져오기  <br/> |[Office 365에 여러 사용자를 동시에 추가 - 관리자 도움말](add-several-users-at-the-same-time.md) <br/>  CSV 파일을 가져와서 Office 365에 사용자 그룹을 추가할 수 있도록 허용 합니다.  <br/>  SSO 옵션과 함께 사용할 수 없습니다.  <br/> |
 |Azure Active Directory  <br/> |Office 365 구독을 사용 하 여 무료 버전의 Azure Active Directory를 사용할 수 있습니다. 클라우드 사용자에 대해 셀프 서비스 암호 재설정 및 무료 버전을 사용 하 여 로그인 및 액세스 패널 페이지의 사용자 지정과 같은 기능을 수행할 수 있습니다. 향상 된 기능을 얻으려면 기본 버전 또는 premium edition으로 업그레이드 하면 됩니다. 지원 되는 기능 목록은 [Azure Active Directory edition](https://go.microsoft.com/fwlink/p/?LinkId=698465) 를 참조 하세요.  <br/> |
-|디렉터리 동기화  <br/> |[Azure Active Directory에 온-프레미스 id 통합](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  암호 동기화 여부와 관계 없이 디렉터리 동기화의 경우 [빠른 설정으로 Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkID=698537)를 사용 합니다.  <br/>  여러 포리스트와 SSO 옵션에 대해 [Azure AD Connect의 사용자 지정 설치](https://go.microsoft.com/fwlink/p/?LinkId=698430)를 사용 합니다.  <br/>  SSO를 사용 하도록 설정 하는 데 필요한 인프라를 제공 합니다.  <br/>  다양 한 하이브리드 시나리오에 필요 합니다.  <br/>  미리 구성된 마이그레이션  <br/>  하이브리드 Exchange  <br/>  온-프레미스 디렉터리의 보안 및 메일 사용 가능 그룹을 동기화 합니다.  <br/> |
+|디렉터리 동기화  <br/> |[Azure Active Directory에 온-프레미스 id 통합](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  암호 동기화 여부와 관계 없이 디렉터리 동기화의 경우 [빠른 설정으로 AZURE AD Connect](https://go.microsoft.com/fwlink/p/?LinkID=698537)를 사용 합니다.  <br/>  여러 포리스트와 SSO 옵션에 대해 [AZURE AD Connect의 사용자 지정 설치](https://go.microsoft.com/fwlink/p/?LinkId=698430)를 사용 합니다.  <br/>  SSO를 사용 하도록 설정 하는 데 필요한 인프라를 제공 합니다.  <br/>  다양 한 하이브리드 시나리오에 필요 합니다.  <br/>  미리 구성된 마이그레이션  <br/>  하이브리드 Exchange  <br/>  온-프레미스 디렉터리의 보안 및 메일 사용 가능 그룹을 동기화 합니다.  <br/> |
    
 - 사용자 계정을 Office 365에 추가 하려는 방법에 관계 없이 라이선스 할당, 위치 지정 등 여러 가지 계정 기능을 관리 해야 합니다. 이러한 기능은 관리 센터에서 장기간 관리할 수 있거나 [Office 365 PowerShell을 사용 하 여 사용자 계정을 만들](https://go.microsoft.com/fwlink/p/?LinkId=717083)수도 있습니다.
     
     관리 센터를 통해 모든 사용자를 추가 하 고 관리 하는 경우 Office 365 계정을 만드는 것과 동일한 시간에 위치를 지정 하 고 라이선스를 할당 합니다. 따라서 계획은 그다지 많지 않아도 됩니다.
     
     > [!IMPORTANT]
-    > 라이선스 (예: SharePoint Online에)를 할당 하지 않고 office 365에서 계정을 만드는 것은 계정 소유자가 Office 365 포털을 볼 수 있지만 회사 구독 내의 어떤 서비스에도 액세스 하지 못하는 것을 의미 합니다. 위치 및 라이선스를 할당 한 후에는 할당 한 서비스에 계정이 복제 됩니다. 사용자는 자신의 계정에 로그인 하 고 할당 한 서비스를 사용할 수 있습니다. 
+    > 라이선스 (예: SharePoint Online에)를 할당 하지 않고 Office 365에서 계정을 만드는 것은 계정 소유자가 Office 365 포털을 볼 수 있지만 회사 구독 내의 어떤 서비스에도 액세스 하지 못하는 것을 의미 합니다. 위치 및 라이선스를 할당 한 후에는 할당 한 서비스에 계정이 복제 됩니다. 사용자는 자신의 계정에 로그인 하 고 할당 한 서비스를 사용할 수 있습니다. 
   
 ## <a name="next-steps"></a>다음 단계
 

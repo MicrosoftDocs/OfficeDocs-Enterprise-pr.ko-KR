@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 이 문서에서는 허용 되지 않으므로 기존 부하 테스트를 수행 하지 않고 SharePoint Online에 배포 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f8de9ee2eb28b4cafef469a078a3700b1ffbbbb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068164"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>용량 계획 및 부하 테스트 SharePoint Online.
 
-이 문서에서는 sharepoint online에서 부하 테스트가 허용 되지 않으므로 기존 부하 테스트 없이 sharepoint online에 배포 하는 방법에 대해 설명 합니다. SharePoint Online은 클라우드 서비스 이며, 서비스의 부하에 대 한 부하와 전반적인 균형은 Microsoft에 의해 관리 됩니다.
+이 문서에서는 SharePoint Online에서 부하 테스트가 허용 되지 않으므로 기존 부하 테스트 없이 SharePoint Online에 배포 하는 방법에 대해 설명 합니다. SharePoint Online은 클라우드 서비스 이며, 서비스의 부하에 대 한 부하와 전반적인 균형은 Microsoft에 의해 관리 됩니다.
   
 사이트 실행 성공을 보장 하는 가장 좋은 방법은 아래 강조 표시 되는 기본 원칙, 사례 및 권장 사항을 따르는 것입니다.
   
@@ -37,7 +37,7 @@ ms.locfileid: "33490222"
 ## <a name="how-do-i-plan-for-a-site-launch"></a>사이트 시작을 계획 하는 방법
 
 ### <a name="optimize-pages-by-following-recommended-guidelines"></a>권장 지침에 따라 페이지 최적화
-온-프레미스 배포의 페이지는 sharepoint online에 대 한 권장 지침에 따라 검토 하지 않고 sharepoint online으로 수행 하면 안 됩니다.
+온-프레미스 배포의 페이지는 sharepoint online에 대 한 권장 지침에 따라 검토 하지 않고 SharePoint Online으로 수행 하면 안 됩니다.
 
 다음과 같은 몇 가지 주요 요인을 고려해 야 합니다.
 - 온-프레미스 배포에서 개체 캐시와 같은 전통적인 서버 쪽 캐시를 사용할 수 있지만, 클라우드의 토폴로지 차이로 인해 이러한 옵션은 사용이 가능 하지 않습니다.

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,25 +12,25 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 요약:Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
-ms.openlocfilehash: a91803316972337aa31e2b979f841ac1cfbe8566
-ms.sourcegitcommit: 053db5479f93478a65d4c36ffe44c6a7bcb60e3c
+ms.openlocfilehash: 33c7247686cc8eb308b8db6d4900c89f693004fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965195"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068734"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
 
  **요약:** Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
   
-정책 관리는 비즈니스 온라인 관리자에 대 한 모든 Skype의 기본 작업 중 하나입니다. Office 365 관리 센터에서 이러한 작업에 대해 작업을 수행할 수 있습니다, 있지만 훨씬 더 쉽고 빠르게 Office 365 PowerShell에서 다른 작업은 있습니다. 
+비즈니스용 Skype 온라인 관리자의 기본 작업 중 하나는 정책을 관리하는 것입니다. 이러한 작업 중 일부는 Office 365 관리 센터에서 수행할 수 있지만 Office 365 PowerShell의 다른 작업은 훨씬 더 빠르고 쉽습니다. 
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-다운로드 하 고 [비즈니스 온라인 커넥터 모듈에 대 한 Skype](https://www.microsoft.com/en-us/download/details.aspx?id=39366)설치 하 고 컴퓨터를 다시 시작 하 라는 메시지를 표시 하는 경우.
+[비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/en-us/download/details.aspx?id=39366)을 다운로드 하 여 설치한 다음 메시지가 표시 되 면 컴퓨터를 다시 시작 합니다.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>온라인 비즈니스 관리자의 계정 이름 및 암호를 Skype를 사용 하 여 연결
+## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>비즈니스용 Skype 온라인 관리자 계정 이름 및 암호를 사용 하 여 연결
 
 1. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
     
@@ -41,10 +41,10 @@ ms.locfileid: "23965195"
   Import-PSSession $sfbSession
   ```
 
-2. **Windows PowerShell 자격 증명 요청** 대화 상자에서 사용자 Skype 비즈니스 온라인 관리자 계정 이름 및 암호를 입력 하 고 **확인**을 클릭 합니다.
+2. **Windows PowerShell 자격 증명 요청** 대화 상자에서 비즈니스용 Skype Online 관리자 계정 이름 및 암호를 입력 하 고 **확인**을 클릭 합니다.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>다단계 인증을 사용 하는 비즈니스 온라인 관리자 계정에 대 한 Skype를 사용 하 여 연결
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>다단계 인증을 사용 하 여 비즈니스용 Skype Online 관리자 계정을 사용 하 여 연결
 
 1. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다.
 
@@ -54,15 +54,15 @@ ms.locfileid: "23965195"
   Import-PSSession $sfbSession
   ```
 
-2. **새로 만들기 CsOnlineSession** 명령에 의해 대화 상자가 나타나면 비즈니스 온라인 관리자 계정 이름에 대 한 사용자 Skype를 입력 합니다.
+2. **CsOnlineSession** 명령에서 메시지가 표시 되 면 비즈니스용 Skype Online 관리자 계정 이름을 입력 합니다.
 
-3. **사용자의 계정에 로그인** 대화 상자에서 온라인 비즈니스 관리자 암호에 대 한 사용자 Skype를 입력 하 고 **로그인**을 클릭 합니다.
+3. **계정에 로그인** 대화 상자에서 비즈니스용 Skype Online 관리자 암호를 입력 하 고 **로그인**을 클릭 합니다.
 
-4. 지침에 따라 **사용자의 계정에 로그인** 대화 상자에서을 확인 코드와 같은 추가 인증 정보를 제공 하 고 **확인**을 클릭 합니다.
+4. **계정에 로그인** 대화 상자의 지침에 따라 확인 코드와 같은 추가 인증 정보를 제공 하 고 **확인**을 클릭 합니다.
 
-자세한 내용은 다음 항목을 참조하십시오.
+자세한 내용은 다음 항목을 참조하세요.
   
-- [Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 정책 관리](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
 - [Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
@@ -72,5 +72,5 @@ ms.locfileid: "23965195"
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
-[비즈니스 PowerShell cmdlet 참조에 대 한 Skype](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[비즈니스용 Skype PowerShell cmdlet 참조](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

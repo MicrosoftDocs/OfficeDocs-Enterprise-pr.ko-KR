@@ -3,28 +3,28 @@ title: Office 365 PowerShell 커뮤니티 리소스
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: '요약: 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대한 도움말을 볼 수 있습니다.'
-ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+description: '요약: 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대 한 도움말을 볼 수 있습니다.'
+ms.openlocfilehash: c2b02ab5d764ef954b9615ed2320eab821e0cb3d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "20017394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068784"
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell 커뮤니티 리소스
 
- **요약:** 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대한 도움말을 볼 수 있습니다.
+ **요약:** 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대 한 도움말을 볼 수 있습니다.
   
-커뮤니티 포럼 및 Wiki 신속 하 게 하 고 정확 하 게 응답 하 여 Office 365 PowerShell 질문을 얻고 동료가에 연결 된 작업을 하를 사용 합니다. 
+이러한 커뮤니티 포럼과 Wiki를 사용 하 여 피어에 연결 하 고 Office 365 PowerShell 질문에 빠르고 올바르게 답변을 받을 수 있습니다. 
   
-- [Office 365 기술 커뮤니티를 방문 합니다.](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Office 365 기술 커뮤니티 방문](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
 - [Office 365 기술 커뮤니티](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     

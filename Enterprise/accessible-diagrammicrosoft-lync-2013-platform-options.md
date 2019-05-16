@@ -3,27 +3,27 @@ title: 액세스 가능한 다이어그램-Microsoft Lync 2013 플랫폼 옵션
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Lync 2013 Platform Options 라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068614"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft Lync 2013 플랫폼 옵션
 
 **요약:** 이 문서는 [기술 다이어그램](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)에서 사용할 수 있는 Microsoft Lync 2013 Platform Options 라는 액세스 가능한 텍스트 버전입니다.
   
-이 포스터는 BDMs (비즈니스 의사 결정권자) 및 설계자가 lync Online (Office 365) 및 lync Server 배포에 대해 알아야 할 사항에 대해 설명 합니다.
+이 포스터는 BDMs (비즈니스 의사 결정권자) 및 설계자가 Lync Online (Office 365) 및 Lync Server 배포에 대해 알아야 할 사항에 대해 설명 합니다.
   
-- lync online (Office 365), lync online/Server Hybrid, lync server 및 Provider Hosted Lync server의 네 가지 서로 다른 배포 옵션을 비교 합니다. 
+- Lync Online (Office 365), Lync Online/Server Hybrid, Lync Server 및 Provider Hosted Lync Server의 네 가지 서로 다른 배포 옵션을 비교 합니다. 
     
 - Lync 2013 배포에 대 한 두 가지 예제 시나리오
     
@@ -47,7 +47,7 @@ ms.locfileid: "33487801"
 
 Office 365 다중 테 넌 트 요금제를 사용 하 여 비용을 효율성과 최적화 합니다.
   
-함께 제공 되는 다이어그램에는 온-프레미스 AD DS (active directory 도메인 서비스) 환경 및 azure active directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 azure active directory 테 넌 트를 사용한 Lync Online이 나와 있습니다. 
+함께 제공 되는 다이어그램에는 온-프레미스 AD DS (Active Directory 도메인 서비스) 환경 및 Azure Active Directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure Active Directory 테 넌 트를 사용한 Lync Online이 나와 있습니다. 
   
 기능에 대 한 설명:
   
@@ -57,9 +57,9 @@ Office 365 다중 테 넌 트 요금제를 사용 하 여 비용을 효율성과
     
 - 다른 응용 프로그램과 함께 사용할 수 있는 온라인 계정에 대 한 Azure Active Directory 테 넌 트를 포함 합니다. 
     
-- 디렉터리 통합에는 온-프레미스 AD DS (active directory 도메인 서비스) 환경 및 Azure Active directory 테 넌 트 사이에 계정 이름과 암호를 동기화 하는 작업이 포함 됩니다.
+- 디렉터리 통합에는 온-프레미스 AD DS (Active Directory 도메인 서비스) 환경 및 Azure Active Directory 테 넌 트 사이에 계정 이름과 암호를 동기화 하는 작업이 포함 됩니다.
     
-- sso (single sign-on)가 요구 되는 경우에는 AD FS (Active Directory Federation Services)를 구현 해야 합니다. 
+- SSO (single sign-on)가 요구 되는 경우에는 AD FS (Active Directory Federation Services)를 구현 해야 합니다. 
     
 - 인터넷을 통한 클라이언트 통신은 암호화 되 고 인증 됩니다.
     
@@ -79,9 +79,9 @@ Office 365의 혜택을 온-프레미스 Lync 2013 배포와 결합할 수 있�
     
 - PSTN이 필요 하지 않은 경우 새 Lync Online 사용자를 쉽게 추가할 수 있습니다.
     
-- 일정에 따라 lync 온-프레미스에서 lync Online으로 마이그레이션
+- 일정에 따라 Lync 온-프레미스에서 Lync Online으로 마이그레이션
     
-- Exchange online 및 SharePoint online을 비롯 한 다른 Office 365 응용 프로그램과 통합 됩니다.
+- Exchange Online 및 SharePoint Online을 비롯 한 다른 Office 365 응용 프로그램과 통합 됩니다.
     
 #### <a name="lync-server"></a>Lync Server
 
@@ -103,7 +103,7 @@ Office 365의 혜택을 온-프레미스 Lync 2013 배포와 결합할 수 있�
     
 - Lync Server 2013 인프라를 PSTN에 연결 합니다.
     
-- pbx (private branch 교환의)와 같은 기존 전화 장비와의 통합
+- Pbx (private branch 교환의)와 같은 기존 전화 장비와의 통합
     
 #### <a name="provider-hosted-lync-server"></a>공급자 호스트 Lync Server
 
@@ -123,7 +123,7 @@ Office 365의 혜택을 온-프레미스 Lync 2013 배포와 결합할 수 있�
     
 - 장애 조치 (failover) 및 재해 복구 유지 관리
     
-- pbx (private branch 교환의)와 같은 기존 전화 장비와의 통합
+- Pbx (private branch 교환의)와 같은 기존 전화 장비와의 통합
     
 - 또한 공급자는 다음과 같은 작업을 수행할 수 있습니다.
     
@@ -147,9 +147,9 @@ Office 365의 혜택을 온-프레미스 Lync 2013 배포와 결합할 수 있�
 
 - 원격 사용자에 대해 Lync Online을 사용 하 고 비즈니스 파트너와 통합 합니다.
     
-- lync 온-프레미스에서 lync Online으로 쉽게 마이그레이션할 수 있습니다.
+- Lync 온-프레미스에서 Lync Online으로 쉽게 마이그레이션할 수 있습니다.
     
-- branch office 어플라이언스를 사용 하지 않고 원격 사이트를 지원 합니다.
+- Branch office 어플라이언스를 사용 하지 않고 원격 사이트를 지원 합니다.
     
 - 새로운 비즈니스 인수에 대 한 Lync 지원을 쉽게 추가할 수 있습니다.
     
@@ -303,7 +303,7 @@ Office 365 및 온-프레미스 환경 둘 다에 대 한 작업 외에도 다�
 
 요청 시 가상 컴퓨터를 배포 하는 기능으로 인해 Azure에서 Office 365 디렉터리 동기화 구성 요소를 배포 하는 것이 더 빠릅니다.
   
-함께 제공 되는 다이어그램에는 온-프레미스 Active directory 환경과 azure active directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure active directory 테 넌 트를 사용한 Lync Online이 나와 있습니다.
+함께 제공 되는 다이어그램에는 온-프레미스 Active Directory 환경과 Azure Active Directory 테 넌 트 간의 계정 이름과 암호를 동기화 하는 Azure Active Directory 테 넌 트를 사용한 Lync Online이 나와 있습니다.
   
  **디렉터리 동기화 서버에만**해당 합니다. 온-프레미스 환경에 64 비트 디렉터리 동기화 서버를 배포 하는 대신, 인터넷을 통해 Azure에서 가상 컴퓨터를 프로 비전 합니다.
   
@@ -311,25 +311,25 @@ Office 365 및 온-프레미스 환경 둘 다에 대 한 작업 외에도 다�
   
 - 디렉터리 통합 구성 요소는 Azure 가상 컴퓨터로 실행 됩니다.
     
-- Azure 가상 컴퓨터로 실행 되는 ad fs 프록시를 통해 ad fs가 인터넷에 게시 됩니다.
+- Azure 가상 컴퓨터로 실행 되는 AD fs 프록시를 통해 AD FS가 인터넷에 게시 됩니다.
     
 - 모든 위치에서 연결 하는 사용자에 대 한 클라이언트 인증 트래픽은 Azure 가상 컴퓨터로 배포 되는 AD FS 서버 및 프록시에서 처리 됩니다.
     
 ### <a name="lync-integration-with-exchange-and-sharepoint-in-office-365"></a>Office 365의 Exchange 및 SharePoint와의 Lync 통합
 
-#### <a name="lync-server-with-exchange-online-and-sharepoint-online"></a>Exchange online 및 SharePoint online을 사용 하는 Lync Server
+#### <a name="lync-server-with-exchange-online-and-sharepoint-online"></a>Exchange Online 및 SharePoint Online을 사용 하는 Lync Server
 
-함께 제공 되는 다이어그램에는 온-프레미스 Lync Server 2013 팜에 연결 된 Exchange online 및 SharePoint online의 Office 365이 나와 있습니다.
+함께 제공 되는 다이어그램에는 온-프레미스 Lync Server 2013 팜에 연결 된 Exchange Online 및 SharePoint Online의 Office 365이 나와 있습니다.
   
 이 배포를 사용 하면 다음과 같은 이점이 있습니다.
   
 - Lync Server 2013의 전체 기능 집합을 사용 합니다.
     
-- pbx와 같은 기존 온-프레미스 전화 장비를 활용 합니다.
+- Pbx와 같은 기존 온-프레미스 전화 장비를 활용 합니다.
     
 - 전자 메일에 대 한 Exchange Online을 사용 하 여 온-프레미스 전자 메일 서버 및 저장소에 대 한 부담을 오프에서 로드 합니다.
     
-- 공동 작업을 위해 SharePoint Online을 사용 하 여 온-프레미스 sharepoint 서버를 유지 관리 하는 부담을 해제 합니다.
+- 공동 작업을 위해 SharePoint Online을 사용 하 여 온-프레미스 SharePoint 서버를 유지 관리 하는 부담을 해제 합니다.
     
 - Office 365의 UM (통합 메시징)을 포함 하 여 Lync, Exchange 및 SharePoint 통합 기능을 사용 합니다.
     

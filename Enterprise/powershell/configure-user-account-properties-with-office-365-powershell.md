@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: '요약: office 365 PowerShell을 사용 하 여 office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.'
-ms.openlocfilehash: 4db63482fdcc1d6cb186e663fd55c13186b33813
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: '요약: Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.'
+ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069243"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 
- **요약:** office 365 PowerShell을 사용 하 여 office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.
+ **요약:** Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.
   
-office 365 관리 센터를 사용 하 여 office 365 테 넌 트의 사용자 계정에 대 한 속성을 구성할 수도 있지만 office 365 PowerShell을 사용 하 여 office 365 관리 센터에서 수행할 수 없는 작업도 수행 하면 됩니다.
+Office 365 관리 센터를 사용 하 여 Office 365 테 넌 트의 사용자 계정에 대 한 속성을 구성할 수도 있지만 office 365 PowerShell을 사용 하 여 Office 365 관리 센터에서 수행할 수 없는 작업도 수행 하면 됩니다.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
@@ -40,11 +40,11 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사�
   
 - -부서 "\<부서 name>"
     
-- -DisplayName "\<full user name>"
+- -DisplayName "\<Full user name>"
     
 - -FacsimilieTelephoneNumber "\<fax number>"
     
-- -GivenName "\<user first name>"
+- -GivenName "\<User first name>"
     
 - -성 "\<사용자 마지막 name>"
     
@@ -62,7 +62,7 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사�
     
 - -PostalCode "\<우편 번호 code>"
     
-- -country "\<country name>"
+- -Country "\<country name>"
     
 - -TelephoneNumber "\<사무실 전화 number>"
     
@@ -94,14 +94,14 @@ $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-이 예에서는 caleb 창턱의 표시 이름을 사용 하 여 사용자 계정에 대 한 사용자 보안 주체 이름을 표시 합니다.
+이 예에서는 Caleb 창턱의 표시 이름을 사용 하 여 사용자 계정에 대 한 사용자 보안 주체 이름을 표시 합니다.
   
 ```
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-**$upn** 변수를 사용 하 여 개별 계정을 표시 이름에 따라 변경할 수 있습니다. 다음은 Belinda newman의 사용 위치를 프랑스로 설정 하 고 사용자 계정 이름이 아닌 표시 이름을 지정 하는 예제입니다.
+**$Upn** 변수를 사용 하 여 개별 계정을 표시 이름에 따라 변경할 수 있습니다. 다음은 Belinda Newman의 사용 위치를 프랑스로 설정 하 고 사용자 계정 이름이 아닌 표시 이름을 지정 하는 예제입니다.
   
 ```
 $userName="Belinda Newman"
@@ -141,7 +141,7 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
-Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여 사용자 계정에 대 한 속성을 구성 하려면 get-msoluser cmdlet을 사용 하 고 설정 하거나 변경할 속성을 지정 합니다. 
+Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여 사용자 계정에 대 한 속성을 구성 하려면 Get-msoluser cmdlet을 사용 하 고 설정 하거나 변경할 속성을 지정 합니다. 
 
 먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
   
@@ -153,21 +153,21 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
   
 - -구/\<군/시 "구 name>"
     
-- -country "\<country name>"
+- -Country "\<country name>"
     
 - -부서 "\<부서 name>"
     
-- -DisplayName "\<full user name>"
+- -DisplayName "\<Full user name>"
     
-- -fax "\<팩스 number>"
+- -Fax "\<팩스 number>"
     
-- -FirstName "\<user first name>"
+- -FirstName "\<User first name>"
     
 - -LastName "\<사용자의 마지막 name>"
     
 - -MobilePhone "\<휴대폰 number>"
     
-- -office "\<office location>"
+- -Office "\<office location>"
     
 - -PhoneNumber "\<사무실 전화 number>"
     
@@ -179,7 +179,7 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
     
 - -StreetAddress "\<번 지 address>"
     
-- -title "\<title name>"
+- -Title "\<title name>"
     
 - -UsageLocation "\<2 자 국가 또는 지역 code>"
     
@@ -210,14 +210,14 @@ $userName="<Display name>"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-이 예제에서는 caleb 창턱 라는 사용자에 대 한 사용자 계정 이름을 표시 합니다.
+이 예제에서는 Caleb 창턱 라는 사용자에 대 한 사용자 계정 이름을 표시 합니다.
   
 ```
 $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-**$upn** 변수를 사용 하 여 개별 계정을 표시 이름에 따라 변경할 수 있습니다. 다음은 Belinda newman의 사용 위치를 프랑스로 설정 하 고 사용자 계정 이름이 아닌 표시 이름을 지정 하는 예제입니다.
+**$Upn** 변수를 사용 하 여 개별 계정을 표시 이름에 따라 변경할 수 있습니다. 다음은 Belinda Newman의 사용 위치를 프랑스로 설정 하 고 사용자 계정 이름이 아닌 표시 이름을 지정 하는 예제입니다.
   
 ```
 $userName="<display name>"

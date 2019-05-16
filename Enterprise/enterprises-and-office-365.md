@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/8/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,29 +16,29 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: 엔터프라이즈 조직의 Office 365를 계획 하 고 관리 하기 위한 리소스입니다.
-ms.openlocfilehash: 7d28f68b0f33e02c9101abcac479d75675f1d0bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33489738"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067694"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>엔터프라이즈 조직 및 Office 365
 
-it 전문가가 직원을 보유 하 고 있는 대규모 조직에서는 사용자 환경을 유지 관리 하기 위한 특정 요구 사항 및 표준을 사용 합니다. 다음은 기업에 맞게 Office 365를 계획 하 고 관리 하는 데 필요한 정보입니다.
+IT 전문가가 직원을 보유 하 고 있는 대규모 조직에서는 사용자 환경을 유지 관리 하기 위한 특정 요구 사항 및 표준을 사용 합니다. 다음은 기업에 맞게 Office 365를 계획 하 고 관리 하는 데 필요한 정보입니다.
   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d08b637c-66dc-4f0e-afc2-56da92e99589?autoplay=false]
   
 ## <a name="key-resources"></a>주요 리소스
 
-![fasttrack-사전 비전을 위한 눈 기호](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
+![FastTrack-사전 비전을 위한 눈 기호](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
   
- **fasttrack에서 지원 받기**
+ **FastTrack에서 지원 받기**
   
-fasttrack의 도움말을 사용 하 여 데이터를 계획, 설정 및 Office 365로 마이그레이션합니다.
+FastTrack의 도움말을 사용 하 여 데이터를 계획, 설정 및 Office 365로 마이그레이션합니다.
   
-[fasttrack 받기](https://go.microsoft.com/fwlink/?linkid=238431)
+[FastTrack 받기](https://go.microsoft.com/fwlink/?linkid=238431)
   
 ![보안 및 규정 준수 기호](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   
@@ -74,7 +74,7 @@ LinkedIn 학습에서 제공 하는 무료 비디오 코스를 검색 합니다.
   
 [고급 교육](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
   
-![Microsoft 학습 인증: MTA, MCSE, mcsa](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
+![Microsoft 학습 인증: MTA, MCSE, MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
   
  **Microsoft 학습**
   

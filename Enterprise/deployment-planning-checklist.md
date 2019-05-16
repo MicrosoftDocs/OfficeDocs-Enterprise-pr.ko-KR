@@ -1,10 +1,9 @@
 ---
 title: Office 365 배포 계획 검사 목록
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 이 검사 목록은 조직에 Office 365로의 마이그레이션을 계획 하 고 준비 하는 데 도움이 됩니다. 검사 목록의 단계와 단계는 온 보 딩 센터에서 제공 하는 지침에 따라 정렬 됩니다.
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067884"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 배포 계획 검사 목록
 
 엔터프라이즈 조직을 Office 365로 이동 하는 경우에는 수행 해야 하는 단계, 수행할 작업 및 작업을 수행 하는 사람을 정확히 계획 하는 것이 중요 합니다. 이 검사 목록은 조직에 Office 365로의 마이그레이션을 계획 하 고 준비 하는 데 도움이 됩니다. 검사 목록의 단계와 단계는 [온 보 딩 센터](https://go.microsoft.com/fwlink/?LinkId=517115)에서 제공 하는 지침에 따라 정렬 됩니다. 조직의 요구에 맞게이 검사 목록을 조정 합니다.
 
 ## <a name="need-help-with-your-deployment"></a>배포에 도움이 필요 하세요?
-Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비스에 대 한](deployment-advisors-for-office-365.md) [fasttrack](https://fasttrack.microsoft.com/office) 또는 배포 관리자 사용을 고려 합니다.
+Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비스에 대 한](deployment-advisors-for-office-365.md) [Fasttrack](https://fasttrack.microsoft.com/office) 또는 배포 관리자 사용을 고려 합니다.
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 엔터프라이즈 배포에 대 한 샘플 검사 목록
 
@@ -58,7 +57,7 @@ Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비�
 | [사용자가 연결할](https://go.microsoft.com/fwlink/?LinkId=534821) 수 있는 장치 (원격, 모바일 장치 또는 네트워크에서) |||||
 |**잠재적인 배포 차단 수정** |||||
 |Microsoft의 도구 및 지침을 제공 합니다. |||||
-| active directory 계정 정리 ( [지침](https://go.microsoft.com/fwlink/?LinkId=534825) 및 [도구](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
+| Active directory 계정 정리 ( [지침](https://go.microsoft.com/fwlink/?LinkId=534825) 및 [도구](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
 | 마이그레이션 준비 ( [전자 메일](https://go.microsoft.com/fwlink/?LinkId=534823) 및 [파일](https://go.microsoft.com/fwlink/?LinkId=534824))를 위한 데이터 가져오기 |||||
 | 네트워크 준비 ( [지침 및 도구](https://aka.ms/tune)) |||||
 | 클라이언트 소프트웨어 버전 업데이트 ( [지침](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
@@ -80,4 +79,4 @@ Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비�
 |기능 확인 후 최종 단계 완료 |||||
 | [Office 365을 가리키도록 DNS 설정](https://go.microsoft.com/fwlink/?LinkId=534835) 마이그레이션 |||||
 | 사용자에 게 [Office 365 사용을 시작할](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) 수 있는지 설명 |||||
-| office 365 ( [office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Mac 용 Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [모바일 장치](https://go.microsoft.com/fwlink/?LinkId=534840))에 연결 하도록 클라이언트 시스템을 다시 구성 합니다.  |||||
+| Office 365 ( [office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Mac 용 Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [모바일 장치](https://go.microsoft.com/fwlink/?LinkId=534840))에 연결 하도록 클라이언트 시스템을 다시 구성 합니다.  |||||

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: 테 넌 트 및 조직에서 Office 365 공동 작업을 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069674"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 테넌트 간 공동 작업
 
@@ -44,21 +44,21 @@ Office 365 테 넌 트 공동 작업 옵션에는 파일 및 대화에 대 한 �
 |**목표 공유**|**관리 작업**|**방법 정보**|
 |:-----|:-----|:-----|
 |외부 사용자와 사이트 및 문서 공유  <br/> |관리자가 테 넌 트 또는 Microsoft 계정 인증, 회사 또는 학교 계정 인증 또는 게스트 계정에 대 한 사이트 모음 수준에서 공유를 구성 합니다.  <br/> |
-  [SharePoint Online 환경에 대해 외부 공유 관리](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online 및 비즈니스용 OneDrive의 제한 된 도메인 공유](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online을 b2b (business to business) 엑스트라넷 솔루션으로 사용](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+  [SharePoint Online 환경에 대해 외부 공유 관리](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online 및 비즈니스용 OneDrive의 제한 된 도메인 공유](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online을 B2B (business to business) 엑스트라넷 솔루션으로 사용](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |최종 사용자에 대 한 외부 공유 추적 및 제어  <br/> |비즈니스용 OneDrive 파일 소유자 및 SharePoint Online 최종 사용자 사이트 및 문서 공유를 구성 하 고 공유를 추적 하도록 알림을 설정 합니다.  <br/> |[비즈니스용 OneDrive에 대 한 외부 공유에 대 한 알림 구성](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Office 365에서 SharePoint 파일 또는 폴더 공유](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>비즈니스용 Skype 공동 작업 옵션
 
 |**공유 목표**|**관리 작업**|**방법 정보**|
 |:-----|:-----|:-----|
-|비즈니스용 skype Online-메신저 대화, 통화 및 현재 상태와 기타 비즈니스용 skype 사용자  <br/> |관리자는 비즈니스용 Skype Online 사용자가 IM으로 사용 하도록 설정 하 고, 오디오/비디오 통화를 수행 하 고, 다른 Office 365 테 넌 트에서 사용자에 게 현재 상태를 볼 수 있습니다.  <br/> |[사용자가 외부 비즈니스용 Skype 사용자와 연락하도록 허용](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
-|비즈니스용 skype Online-IM, 통화 및 현재 상태를 Skype (소비자) 사용자와 함께 사용  <br/> |관리자는 비즈니스용 skype 온라인 사용자가 IM을 사용 하도록 설정 하 고 전화를 걸고, skype (소비자) 사용자에 게 현재 상태를 볼 수 있습니다.  <br/> |[비즈니스용 skype 사용자가 skype 대화 상대를 추가할 수 있도록 허용](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
+|비즈니스용 Skype Online-메신저 대화, 통화 및 현재 상태와 기타 비즈니스용 Skype 사용자  <br/> |관리자는 비즈니스용 Skype Online 사용자가 IM으로 사용 하도록 설정 하 고, 오디오/비디오 통화를 수행 하 고, 다른 Office 365 테 넌 트에서 사용자에 게 현재 상태를 볼 수 있습니다.  <br/> |[사용자가 외부 비즈니스용 Skype 사용자와 연락하도록 허용](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
+|비즈니스용 Skype Online-IM, 통화 및 현재 상태를 Skype (소비자) 사용자와 함께 사용  <br/> |관리자는 비즈니스용 Skype 온라인 사용자가 IM을 사용 하도록 설정 하 고 전화를 걸고, Skype (소비자) 사용자에 게 현재 상태를 볼 수 있습니다.  <br/> |[비즈니스용 Skype 사용자가 Skype 대화 상대를 추가할 수 있도록 허용](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B 공동 작업 옵션
 
 |**공유 목표**|**관리 작업**|**방법 정보**|
 |:-----|:-----|:-----|
-|Azure AD B2B 공동 작업-조직의 디렉터리에 있는 그룹에 외부 사용자를 추가 하 여 콘텐츠 공유  <br/> |한 office 365 테 넌 트에 대 한 전역 관리자는 다른 office 365 테 넌 트의 사용자를 자신의 디렉터리에 참가 하도록 초대 하 고, 해당 사용자를 그룹에 추가 하 고, 그룹에 대 한 SharePoint 사이트 및 라이브러리와 같은 콘텐츠에 대 한 액세스 권한을 부여할 수 있습니다.  <br/> |[Azure AD B2B 공동 작업 미리 보기 란?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: 새로운 업데이트가 비즈니스에 collab 쉽게 수행 됩니다.](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 외부 공유 및 Azure Active Directory B2B 공동 작업](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B 공동 작업 API 및 사용자 지정](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [azure ad 및 id 표시: azure ad B2B 공동 작업 (business to business](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
+|Azure AD B2B 공동 작업-조직의 디렉터리에 있는 그룹에 외부 사용자를 추가 하 여 콘텐츠 공유  <br/> |한 Office 365 테 넌 트에 대 한 전역 관리자는 다른 Office 365 테 넌 트의 사용자를 자신의 디렉터리에 참가 하도록 초대 하 고, 해당 사용자를 그룹에 추가 하 고, 그룹에 대 한 SharePoint 사이트 및 라이브러리와 같은 콘텐츠에 대 한 액세스 권한을 부여할 수 있습니다.  <br/> |[Azure AD B2B 공동 작업 미리 보기 란?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: 새로운 업데이트가 비즈니스에 collab 쉽게 수행 됩니다.](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 외부 공유 및 Azure Active Directory B2B 공동 작업](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B 공동 작업 API 및 사용자 지정](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD 및 Id 표시: Azure AD B2B 공동 작업 (Business to Business](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
    
 ## <a name="office-365-collaboration-options"></a>Office 365 공동 작업 옵션
 
@@ -70,7 +70,7 @@ Office 365 테 넌 트 공동 작업 옵션에는 파일 및 대화에 대 한 �
 
 |**공유 목표**|**관리 작업**|**방법 정보**|
 |:-----|:-----|:-----|
-|Yammer-엔터프라이즈 소셜 미디어를 통한 공동 작업  <br/> |외부 그룹을 만드는 기능이 yammer 관리자에 의해 사용 하지 않도록 설정 된 경우 사용자는 외부 그룹을 만들어 대화를 통해 Yammer에서 공동 작업 하 고, 좋아요를 수행 하 고, 파일을 공유 하 고, 온라인으로 채팅을 수행할 수 있습니다.  <br/> |[Yammer의 외부 그룹 만들기 및 관리](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
+|Yammer-엔터프라이즈 소셜 미디어를 통한 공동 작업  <br/> |외부 그룹을 만드는 기능이 Yammer 관리자에 의해 사용 하지 않도록 설정 된 경우 사용자는 외부 그룹을 만들어 대화를 통해 Yammer에서 공동 작업 하 고, 좋아요를 수행 하 고, 파일을 공유 하 고, 온라인으로 채팅을 수행할 수 있습니다.  <br/> |[Yammer의 외부 그룹 만들기 및 관리](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
    
 ## <a name="teams-collaboration-options"></a>팀 공동 작업 옵션
 
@@ -94,13 +94,13 @@ Office 365 테 넌 트 공동 작업 옵션에는 파일 및 대화에 대 한 �
   
 - **사용자 계정:** 계정을 공유할 수 없으며 온-프레미스 Active Directory 디렉터리 서비스의 테 넌 트 또는 파티션 간에 계정을 복제할 수 없습니다. 
     
-- **라이선스 &amp; 구독:** office 365에서는 라이선스 요금제 (sku 또는 Office 365 요금제 라고도 함)의 라이선스를 사용자에 게 해당 요금제에 대해 정의 된 Office 365 서비스에 대 한 액세스 권한을 부여 합니다. 
+- **라이선스 &amp; 구독:** Office 365에서는 라이선스 요금제 (Sku 또는 Office 365 요금제 라고도 함)의 라이선스를 사용자에 게 해당 요금제에 대해 정의 된 Office 365 서비스에 대 한 액세스 권한을 부여 합니다. 
     
 - **저장소:** Office 365 계획에서 SharePoint Online에 대 한 소프트웨어 경계와 제한은 사서함 저장 용량 제한과 별개로 관리 됩니다. 사서함 저장소 제한은 Exchange Online을 사용 하 여 설정 및 관리 됩니다. 두 시나리오에서 저장소는 상호 테 넌 트를 공유할 수 없습니다. 
     
 ### <a name="can-we-share-domain-namespaces-across-office-365-tenants"></a>Office 365 테 넌 트에서 도메인 네임 스페이스를 공유할 수 있나요?
 
-아니요. fabrikam.com 또는 tailspintoys.com와 같은 베 니 티 도메인은 한 번에 하나의 테 넌 트 에서만 연결 하 여 사용할 수 있습니다. 각 테 넌 트에는 자체 네임 스페이스가 있어야 합니다. UPN, SMTP 및 SIP 네임 스페이스는 테 넌 트 간에 공유할 수 없습니다.
+아니요. Fabrikam.com 또는 tailspintoys.com와 같은 베 니 티 도메인은 한 번에 하나의 테 넌 트 에서만 연결 하 여 사용할 수 있습니다. 각 테 넌 트에는 자체 네임 스페이스가 있어야 합니다. UPN, SMTP 및 SIP 네임 스페이스는 테 넌 트 간에 공유할 수 없습니다.
   
 ### <a name="what-about-hybrid-components-and-office-365-inter-tenant-collaboration"></a>하이브리드 구성 요소 및 Office 365 테 넌 트 간 공동 작업에 대 한 자세한 내용은 무엇 인가요?
 

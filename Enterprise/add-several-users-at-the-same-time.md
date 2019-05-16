@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_AddUsersCSV
@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '스프레드시트 또는 기타 CSV 형식의 파일에 있는 목록에서 비즈니스용 Office 365에 여러 사용자를 추가 하는 방법에 대해 알아봅니다. Office 365에 계정을 추가 하는 방법을 설명 하는 YouTube의 비디오를 시청 하세요. 이 프로세스가 끝나면 계정이 있는 각 사용자에 게 Office 365 사서함이 포함 됩니다. '
-ms.openlocfilehash: 1f91821ee552b59201ca01bdbce7edc0406929d6
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491564"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068694"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
 
@@ -85,9 +85,9 @@ ms.locfileid: "33491564"
 
 - 이러한 사용자는 계정을 갖고 있으므로 [PC 또는 Mac에 office 365 또는 office 2016을 다운로드 하 여 설치 하거나 다시](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)설치 해야 합니다. 팀의 각 사용자는 최대 5대의 PC 또는 Mac에 Office 365를 설치할 수 있습니다. 
     
-- 각 사용자는 최대 5 대의 태블릿 및 5 대의 휴대폰, iphone, ipad, Android 휴대폰 및 태블릿과 같은 [모바일 장치에서 Office 앱 및 전자 메일을 설정할](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) 수도 있습니다. 이렇게 하면 어디서나 Office 파일을 편집할 수 있습니다. 
+- 각 사용자는 최대 5 대의 태블릿 및 5 대의 휴대폰, Iphone, Ipad, Android 휴대폰 및 태블릿과 같은 [모바일 장치에서 Office 앱 및 전자 메일을 설정할](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) 수도 있습니다. 이렇게 하면 어디서나 Office 파일을 편집할 수 있습니다. 
     
-    설치 단계에 대 한 종단 간 목록을 보려면 [Set up Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 을 참조 하십시오. 
+    설치 단계에 대 한 종단 간 목록을 보려면 [Set Up Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 을 참조 하십시오. 
     
 ## <a name="more-information-about-how-to-add-users-to-office-365"></a>Office 365에 사용자를 추가하는 방법에 대한 자세한 정보
 <a name="bk_preview"> </a>

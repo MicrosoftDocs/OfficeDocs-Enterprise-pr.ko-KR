@@ -3,7 +3,7 @@ title: PowerShell을 사용하여 Office 365 그룹 관리
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,18 +17,18 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell에서 Office 365 그룹에 대 한 일반적인 관리 작업을 수행 하는 방법을 알아봅니다.
-ms.openlocfilehash: 6d7841595315507b0b7f28f6b86f9349705f1d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491768"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069024"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell을 사용하여 Office 365 그룹 관리
 
  *마지막 업데이트 18 4 월, 2018* 
   
-이 문서에서는 Microsoft PowerShell의 그룹에 대 한 일반적인 관리 작업을 수행 하는 단계를 제공 합니다. 또한 그룹에 대 한 PowerShell cmdlet도 나열 합니다. sharepoint 사이트 관리에 대 한 자세한 내용은 [PowerShell을 사용 하 여 sharepoint Online 사이트 관리](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)를 참조 하세요.
+이 문서에서는 Microsoft PowerShell의 그룹에 대 한 일반적인 관리 작업을 수행 하는 단계를 제공 합니다. 또한 그룹에 대 한 PowerShell cmdlet도 나열 합니다. SharePoint 사이트 관리에 대 한 자세한 내용은 [PowerShell을 사용 하 여 Sharepoint Online 사이트 관리](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)를 참조 하세요.
 
 ## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Office 365 그룹에 연결 사용 지침
 <a name="BK_LinkToGuideLines"> </a>
@@ -44,7 +44,7 @@ Azure Active Directory PowerShell을 사용 하 여 사용자가 조직의 Offic
 ## <a name="allow-users-to-send-as-the-office-365-group"></a>사용자가 Office 365 그룹으로 메일을 보낼 수 있도록 허용
 <a name="BK_LinkToGuideLines"> </a>
   
-Office 365 그룹을 "다른 사람 이름으로 보내기"로 설정 하려는 경우 [add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) 및 [add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) cmdlet을 사용 하 여이를 구성 합니다. 이 설정을 사용 하도록 설정 하면 office 365 그룹 사용자가 outlook 또는 웹용 outlook을 사용 하 여 office 365 그룹으로 전자 메일을 보내고 회신할 수 있습니다. 사용자는 그룹으로 이동 하 여 새 전자 메일을 만들고 "다른 사람 이름으로 보내기" 필드를 그룹의 전자 메일 주소로 변경할 수 있습니다. 
+Office 365 그룹을 "다른 사람 이름으로 보내기"로 설정 하려는 경우 [add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) 및 [add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) cmdlet을 사용 하 여이를 구성 합니다. 이 설정을 사용 하도록 설정 하면 Office 365 그룹 사용자가 Outlook 또는 웹용 Outlook을 사용 하 여 Office 365 그룹으로 전자 메일을 보내고 회신할 수 있습니다. 사용자는 그룹으로 이동 하 여 새 전자 메일을 만들고 "다른 사람 이름으로 보내기" 필드를 그룹의 전자 메일 주소로 변경할 수 있습니다. 
 
 ([Exchange 관리 센터 에서도이 작업을 수행할 수](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)있습니다.)
   
@@ -99,9 +99,9 @@ Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact>
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-exchange online powershell을 사용 하는 방법에 대 한 자세한 내용은 exchange [online에서 powershell을 사용 하 여](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) 확인 하 고 [exchange online powershell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 합니다. 
+Exchange online PowerShell을 사용 하는 방법에 대 한 자세한 내용은 exchange [online에서 powershell을 사용 하 여](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) 확인 하 고 [exchange Online powershell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 합니다. 
   
-이러한 설정을 사용 하도록 설정 하면 그룹 소유자가 웹 및 outlook의 outlook에 있는 드롭다운 메뉴에서 분류를 선택 하 고 그룹 **편집** 페이지에서이를 저장할 수 있습니다. 
+이러한 설정을 사용 하도록 설정 하면 그룹 소유자가 웹 및 Outlook의 Outlook에 있는 드롭다운 메뉴에서 분류를 선택 하 고 그룹 **편집** 페이지에서이를 저장할 수 있습니다. 
   
 ![Office 365 그룹 분류 선택](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
   
@@ -119,7 +119,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 
 다른 조직의 사용자가 Office 365 그룹에 전자 메일을 보낼 수 없도록 하려면 해당 그룹의 설정을 변경 하면 됩니다. 이를 통해 내부 사용자만 그룹에 전자 메일을 보낼 수 있습니다. 외부 사용자가 해당 그룹에 메시지를 보내려고 하면 해당 그룹이 거부 됩니다.
   
-다음과 같이 remove-unifiedgroup cmdlet을 실행 하 여이 설정을 업데이트할 수 있습니다.
+다음과 같이 Remove-unifiedgroup cmdlet을 실행 하 여이 설정을 업데이트할 수 있습니다.
 
 ```
 Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
@@ -144,7 +144,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-display-name-of-the-office-365-group"></a>Office 365 그룹의 표시 이름 변경
 
-표시 이름 Office 365 그룹의 이름을 지정 합니다. exchange 관리 센터 또는 Office 365 관리자 포털에서이 이름을 볼 수 있습니다. remove-unifiedgroup 명령을 실행 하 여 그룹의 표시 이름을 편집 하거나 표시 이름을 기존 Office 365 그룹에 할당할 수 있습니다.
+표시 이름 Office 365 그룹의 이름을 지정 합니다. Exchange 관리 센터 또는 Office 365 관리자 포털에서이 이름을 볼 수 있습니다. Remove-unifiedgroup 명령을 실행 하 여 그룹의 표시 이름을 편집 하거나 표시 이름을 기존 Office 365 그룹에 할당할 수 있습니다.
 
 ```
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -173,16 +173,16 @@ Office 365 그룹에서는 다음과 같은 cmdlet을 사용할 수 있습니다
   
 |**cmdlet 이름**|**설명**|
 |:-----|:-----|
-|[remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |이 cmdlet을 사용 하 여 기존 Office 365 그룹을 조회 하 고 group 개체의 속성을 볼 수 있습니다.  <br/> |
-|[remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |특정 Office 365 그룹의 속성 업데이트  <br/> |
-|[remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |새 Office 365 그룹을 만듭니다. 이 cmdlet은 최소 매개 변수 집합을 제공 하며, 확장 속성에 대해 값을 설정 하려면 새 그룹을 만든 후 remove-unifiedgroup을 사용 합니다.  <br/> |
-|[remove-unifiedgroup을 제거 합니다.](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |기존 Office 365 그룹 삭제  <br/> |
-|[add-unifiedgrouplinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Office 365 그룹에 대 한 멤버 자격 및 소유자 정보 검색  <br/> |
-|[add-unifiedgrouplinks 추가](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |기존 Office 365 그룹에 수백 또는 수천 명의 사용자 또는 새 소유자를 추가 합니다.  <br/> |
-|[add-unifiedgrouplinks을 제거 합니다.](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |기존 Office 365 그룹에서 소유자 및 구성원을 제거 합니다.  <br/> |
-|[userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |계정에 연결 된 사용자 사진에 대 한 정보를 확인 하는 데 사용 됩니다. Active Directory에 사용자 사진 저장  <br/> |
-|[userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |사용자 사진을 계정에 연결 하는 데 사용 됩니다. Active Directory에 사용자 사진 저장  <br/> |
-|[userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Office 365 그룹의 사진 제거  <br/> |
+|[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |이 cmdlet을 사용 하 여 기존 Office 365 그룹을 조회 하 고 group 개체의 속성을 볼 수 있습니다.  <br/> |
+|[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |특정 Office 365 그룹의 속성 업데이트  <br/> |
+|[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |새 Office 365 그룹을 만듭니다. 이 cmdlet은 최소 매개 변수 집합을 제공 하며, 확장 속성에 대해 값을 설정 하려면 새 그룹을 만든 후 Remove-unifiedgroup을 사용 합니다.  <br/> |
+|[Remove-unifiedgroup을 제거 합니다.](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |기존 Office 365 그룹 삭제  <br/> |
+|[Add-unifiedgrouplinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Office 365 그룹에 대 한 멤버 자격 및 소유자 정보 검색  <br/> |
+|[Add-unifiedgrouplinks 추가](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |기존 Office 365 그룹에 수백 또는 수천 명의 사용자 또는 새 소유자를 추가 합니다.  <br/> |
+|[Add-unifiedgrouplinks을 제거 합니다.](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |기존 Office 365 그룹에서 소유자 및 구성원을 제거 합니다.  <br/> |
+|[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |계정에 연결 된 사용자 사진에 대 한 정보를 확인 하는 데 사용 됩니다. Active Directory에 사용자 사진 저장  <br/> |
+|[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |사용자 사진을 계정에 연결 하는 데 사용 됩니다. Active Directory에 사용자 사진 저장  <br/> |
+|[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Office 365 그룹의 사진 제거  <br/> |
 
 ## <a name="related-topics"></a>관련 항목
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: '요약: Microsoft Azure PaaS에 대 한 액세스를 위해 네트워크를 최적화 하는 방법을 알아봅니다.'
-ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fafc3de1c5f755e891da6c07ae8993fb869bc5e1
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067824"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS에 대한 네트워킹 디자인
 
@@ -29,15 +29,15 @@ Azure PaaS 앱용 네트워킹을 최적화하려면 적절한 인터넷 대역�
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Azure에서 조직 PaaS 응용 프로그램을 호스팅하기 위한 계획 단계
 
-1. [microsoft 클라우드 연결의 공통 요소](common-elements-of-microsoft-cloud-connectivity.md)에 있는 **microsoft 클라우드 서비스용 네트워크 섹션을 준비 하는 단계** 를 진행 합니다.
+1. [Microsoft 클라우드 연결의 공통 요소](common-elements-of-microsoft-cloud-connectivity.md)에 있는 **microsoft 클라우드 서비스용 네트워크 섹션을 준비 하는 단계** 를 진행 합니다.
     
-2. [microsoft saas에 대 한 네트워킹 디자인](designing-networking-for-microsoft-saas.md)에서 **microsoft saas 서비스용 네트워크 준비** 섹션의 단계 2-4을 사용 하 여 인터넷 대역폭을 최적화 합니다.
+2. [Microsoft saas에 대 한 네트워킹 디자인](designing-networking-for-microsoft-saas.md)에서 **microsoft saas 서비스용 네트워크 준비** 섹션의 단계 2-4을 사용 하 여 인터넷 대역폭을 최적화 합니다.
     
-3. Azure에 대 한 express 간 연결이 필요한 지 여부를 결정 합니다.
+3. Azure에 대 한 Express 간 연결이 필요한 지 여부를 결정 합니다.
     
 4. 웹 기반 작업을 수행 하는 경우 Azure 응용 프로그램 게이트웨이가 필요한 지 여부를 결정 합니다.
     
-5. 서로 다른 데이터 센터에 있는 여러 끝점에 대 한 트래픽을 분산 하려면 Azure traffic Manager가 필요한 지 여부를 결정 합니다.
+5. 서로 다른 데이터 센터에 있는 여러 끝점에 대 한 트래픽을 분산 하려면 Azure Traffic Manager가 필요한 지 여부를 결정 합니다.
     
 ## <a name="internet-bandwidth-for-organization-paas-applications"></a>조직 PaaS 응용 프로그램에 대 한 인터넷 대역폭
 
@@ -45,13 +45,13 @@ Azure PaaS에서 호스트 되는 조직 응용 프로그램에는 인트라넷 
   
 - **옵션 1:** 최대 부하를 처리 하기 위해 용량과의 인터넷 트래픽에 최적화 된 기존 파이프를 사용 합니다. 인터넷에 지에 대 한[Microsoft SaaS에 대 한 네트워킹 디자인](designing-networking-for-microsoft-saas.md) , 클라이언트 사용량 및 IT 작업 고려 사항을 참조 하세요.
     
-- **옵션 2:** 고대역폭 또는 낮은 대기 시간 요구 사항에 대 한 자세한 내용은 Azure에 대 한 express 연결을 사용 합니다.
+- **옵션 2:** 고대역폭 또는 낮은 대기 시간 요구 사항에 대 한 자세한 내용은 Azure에 대 한 Express 연결을 사용 합니다.
     
 **그림 1: Azure PaaS 서비스 연결에 대 한 연결 옵션**
 
 ![그림 1: Azure PaaS 서비스에 대 한 연결 옵션](media/Network-Poster/PaaS1.png)
   
-그림 1에서는 인터넷 파이프 또는 express를 통해 Azure PaaS 서비스에 연결 되는 온-프레미스 네트워크를 보여 줍니다.
+그림 1에서는 인터넷 파이프 또는 Express를 통해 Azure PaaS 서비스에 연결 되는 온-프레미스 네트워크를 보여 줍니다.
   
 ## <a name="azure-application-gateway"></a>Azure 응용 프로그램 게이트웨이
 
@@ -61,7 +61,7 @@ Azure PaaS에서 호스트 되는 조직 응용 프로그램에는 인트라넷 
 
 ![그림 2: Azure 응용 프로그램 게이트웨이 서비스](media/Network-Poster/PaaS2.png)
   
-그림 2는 azure 응용 프로그램 게이트웨이를 보여 주고, 인터넷 으로부터의 사용자 요청을 azure web apps, 클라우드 서비스 또는 가상 컴퓨터로 라우팅할 수 있는 방법을 보여줍니다.
+그림 2는 Azure 응용 프로그램 게이트웨이를 보여 주고, 인터넷 으로부터의 사용자 요청을 Azure web apps, 클라우드 서비스 또는 가상 컴퓨터로 라우팅할 수 있는 방법을 보여줍니다.
   
 응용 프로그램 게이트웨이는 현재 다음에 대 한 계층 7 응용 프로그램 전달을 지원 합니다.
   

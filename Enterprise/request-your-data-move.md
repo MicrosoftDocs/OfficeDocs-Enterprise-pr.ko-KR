@@ -4,27 +4,27 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
-description: 기존 office 365 고객은 가맹 office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071014"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
 > [!NOTE]
 > 이 페이지의 정보는 해당 지역의 새 데이터 센터가 시작 되기 전에 기존 Office 365 테 넌 트가 있었던 고객 에게만 적용 됩니다. 
   
-기존 office 365 고객은 가맹 office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다. 
+기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다. 
   
 각 지역의 마감 날짜 이후에는 이동 요청을 수락할 수 없습니다. 
   
@@ -79,7 +79,7 @@ Office 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 �
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-microsoft 팀에서는 microsoft 팀에 대 한 데이터 상주를 사용할 수 있는 지역에서 국내 데이터 센터에 이르기까지 나머지 지역의 고객 콘텐츠 마이그레이션을 아직 지원 하지 않습니다.  따라서 Microsoft 팀이 데이터 상주를 지 원하는 새로운 지역에서는 새 고객만 모든 데이터를 국가 내에 저장 합니다.  회사 위치에 대 한 Office 365 데이터 상주에 대 한 자세한 내용은 [어디에서 찾을 수 있나요?](https://products.office.com/where-is-your-data-located)   
+Microsoft 팀에서는 Microsoft 팀에 대 한 데이터 상주를 사용할 수 있는 지역에서 국내 데이터 센터에 이르기까지 나머지 지역의 고객 콘텐츠 마이그레이션을 아직 지원 하지 않습니다.  따라서 Microsoft 팀이 데이터 상주를 지 원하는 새로운 지역에서는 새 고객만 모든 데이터를 국가 내에 저장 합니다.  회사 위치에 대 한 Office 365 데이터 상주에 대 한 자세한 내용은 [어디에서 찾을 수 있나요?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>이동 요청 전 선택적 작업
 

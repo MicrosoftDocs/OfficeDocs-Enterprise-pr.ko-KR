@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/19/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 변환 및 스프라이트를 사용 하 여 SharePoint Online 웹 사이트의 이미지 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 313046dec885a38062635254699301bcf556d698
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487377"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067374"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>SharePoint Online에 대한 이미지 최적화
 
@@ -28,7 +28,7 @@ ms.locfileid: "33487377"
 
 |||
 |:-----|:-----|
-| 이미지 스프라이트에는 여러 개의 작은 이미지가 포함 됩니다. CSS 사용 절대 위치 지정을 사용 하 여 페이지의 특정 부분에 표시할 합성 이미지 부분을 선택 합니다. 기본적으로 여러 이미지를 로드 하는 대신 단일 이미지를 페이지 주위에 이동 하 고, 필요한 스프라이트 이미지 부분이 최종 사용자에 게 표시 되는 작은 창을 통해 해당 이미지의 일부분을 볼 수 있도록 합니다. SharePoint Online에서는 스프라이트를 사용 하 여 sprite spcommon .png에 다양 한 아이콘을 표시 합니다.  <br/>  여기서 설명 하는 내용은 다음과 같습니다.  <br/>  이미지 압축  <br/>  이미지 최적화  <br/>  SharePoint 이미지 변환  <br/> |![spcommon.png의 스크린샷](media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+| 이미지 스프라이트에는 여러 개의 작은 이미지가 포함 됩니다. CSS 사용 절대 위치 지정을 사용 하 여 페이지의 특정 부분에 표시할 합성 이미지 부분을 선택 합니다. 기본적으로 여러 이미지를 로드 하는 대신 단일 이미지를 페이지 주위에 이동 하 고, 필요한 스프라이트 이미지 부분이 최종 사용자에 게 표시 되는 작은 창을 통해 해당 이미지의 일부분을 볼 수 있도록 합니다. SharePoint Online에서는 스프라이트를 사용 하 여 sprite spcommon .png에 다양 한 아이콘을 표시 합니다.  <br/>  여기서 설명 하는 내용은 다음과 같습니다.  <br/>  이미지 압축  <br/>  이미지 최적화  <br/>  SharePoint 이미지 변환  <br/> |![Spcommon.png의 스크린샷](media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
    
 이렇게 하면 몇 개의 이미지를 하나만 다운로드 한 다음 캐시 하 여 해당 이미지를 다시 사용 하기 때문에 성능을 향상 시킬 수 있습니다. 이미지가 여러 이미지 대신 단일 이미지를 포함 하 여 캐시 된 상태로 유지 되지 않더라도이 메서드는 서버에 대 한 총 HTTP 요청 수를 줄여 페이지 로드 시간을 줄입니다. 이는 실제로 이미지 묶음 형태입니다. 위에서 설명한 SharePoint 예에서와 같이 이미지가 자주 변경 되지 않는 경우 (예: 아이콘)에는이 방법이 매우 유용 합니다. Microsoft Visual Studio에서 [웹 Essentials](http://vswebessentials.com/), 오픈 소스, 커뮤니티 기반 프로젝트를 사용 하 여이를 쉽게 활용 하는 방법을 사용할 수 있습니다. 자세한 내용은 [SharePoint Online의 축소 및 번들](https://go.microsoft.com/fwlink/?LinkId=708698)를 참조 하세요.
   
@@ -47,7 +47,7 @@ ms.locfileid: "33487377"
   
 이미지 변환 크기 조정은 정의한 가장 작은 크기 (폭/높이)를 수행한 다음 이미지 크기를 조정 하 여 잠긴 가로 세로 비율에 따라 다른 치수의 크기를 자동으로 조정 하도록 하는 방식으로 작동 합니다. 기본적으로 나머지 크기 만큼 가운데에서 이미지를 자릅니다. 예를 들어, 100 px 와이드 및 50px high의 변환을 정의 하 고 원래 이미지의 크기는 1000px이 하 인 경우 800px 차원이 이제 50px이 고 1000px 차원 (현재가 중 px)가 이미지 가운데에서 잘리는 방향으로 조정 됩니다.
   
-단계는 비교적 간단 하지만 이미지 변환을 사용 하 여 이미지를 추가 하기 전에 SharePoint 사이트에서 변환을 수행 해야 합니다. 또한 sharepoint server 게시 인프라 (사이트 모음 수준) 및 sharepoint server 게시 (사이트 수준) 기능이 설정 되어 있어야 합니다.
+단계는 비교적 간단 하지만 이미지 변환을 사용 하 여 이미지를 추가 하기 전에 SharePoint 사이트에서 변환을 수행 해야 합니다. 또한 SharePoint Server 게시 인프라 (사이트 모음 수준) 및 SharePoint Server 게시 (사이트 수준) 기능이 설정 되어 있어야 합니다.
   
  **이미지 변환을 추가 하 여 페이지 로드 속도 향상**
   

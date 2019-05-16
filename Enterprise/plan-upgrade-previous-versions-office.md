@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: office 2007 또는 office 2010을 사용 하는 경우에는 업그레이드를 계획할 수 있습니다. 오래 된 앱에서는 중지 되지 않습니다. 이러한 리소스를 사용 하 여 계획을 시작 하세요.
-ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Office 2007 또는 Office 2010을 사용 하는 경우에는 업그레이드를 계획할 수 있습니다. 오래 된 앱에서는 중지 되지 않습니다. 이러한 리소스를 사용 하 여 계획을 시작 하세요.
+ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069334"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>office 2007 또는 office 2010 서버 및 클라이언트에서 업그레이드 계획
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
-조직에서 이전 버전의 Office 제품 및 서버를 사용 하는 경우에는 업그레이드 계획을 시작 하는 것이 좋습니다. office 2007 제품 및 서비스가 지원 종료에 도달 했으며 office 2010 제품 및 서비스가 지원에 곧 제공 됩니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
+조직에서 이전 버전의 Office 제품 및 서버를 사용 하는 경우에는 업그레이드 계획을 시작 하는 것이 좋습니다. Office 2007 제품 및 서비스가 지원 종료에 도달 했으며 Office 2010 제품 및 서비스가 지원에 곧 제공 됩니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
 
 - [Office 2010 서버 및 클라이언트에서 업그레이드](upgrade-from-office-2010-servers-and-products.md)
 
@@ -58,21 +58,21 @@ ms.locfileid: "33492055"
 
 - 파트너 또는 볼륨 라이선스 전문가와 함께 작업 합니다. **[Office 365 파트너 또는 대리점을 찾습니다](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 
-- 조직에서 특정 수의 Microsoft 클라우드 라이선스를 구매 하는 경우 fasttrack 팀은 설정 프로세스를 진행 하는 데 도움을 받을 수 있습니다. 자세한 내용은 **[Microsoft 365의 fasttrack](https://www.microsoft.com/fasttrack/microsoft-365)** 를 참조 하십시오.
+- 조직에서 특정 수의 Microsoft 클라우드 라이선스를 구매 하는 경우 FastTrack 팀은 설정 프로세스를 진행 하는 데 도움을 받을 수 있습니다. 자세한 내용은 **[Microsoft 365의 Fasttrack](https://www.microsoft.com/fasttrack/microsoft-365)** 를 참조 하십시오.
 
-- 소규모 조직의 일부인 경우 또는 조직의 office 업그레이드를 직접 처리 하려는 경우에 **[는 office 365 for business users to the the 최근의 office client를](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)** 참조 하세요. 
+- 소규모 조직의 일부인 경우 또는 조직의 Office 업그레이드를 직접 처리 하려는 경우에 **[는 office 365 for business users to the the 최근의 office client를](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)** 참조 하세요. 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>저는 가정 사용자입니다. What do I do?
 
-재택 office 2007 또는 office 2010을 사용 하는 경우 다음 옵션을 고려 하세요.
+재택 Office 2007 또는 Office 2010을 사용 하는 경우 다음 옵션을 고려 하세요.
 
-- **Office Online을 무료로 사용**합니다. 브라우저에서 Office 파일을 만들고, 보고, 편집 하 고, 인터넷에 액세스 하는 모든 장치에서 이러한 파일에 액세스할 수 있도록 합니다. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) 에는 [Word online](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel online](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [전자 메일](http://go.microsoft.com/fwlink/p/?linkid=746676), [일정](http://go.microsoft.com/fwlink/p/?linkid=746678)및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)가 포함 되어 있습니다. 시작 하려면 [office.com](https://office.com) 를 방문 하 여 [Microsoft 계정을](https://account.microsoft.com/account)사용 하 여 로그인 합니다. (Microsoft 계정이 없는 경우 [office.com](https://office.com)에서 만들 수 있습니다.)
+- **Office Online을 무료로 사용**합니다. 브라우저에서 Office 파일을 만들고, 보고, 편집 하 고, 인터넷에 액세스 하는 모든 장치에서 이러한 파일에 액세스할 수 있도록 합니다. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) 에는 [Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel online](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [전자 메일](http://go.microsoft.com/fwlink/p/?linkid=746676), [일정](http://go.microsoft.com/fwlink/p/?linkid=746678)및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)가 포함 되어 있습니다. 시작 하려면 [office.com](https://office.com) 를 방문 하 여 [Microsoft 계정을](https://account.microsoft.com/account)사용 하 여 로그인 합니다. (Microsoft 계정이 없는 경우 [office.com](https://office.com)에서 만들 수 있습니다.)
 
-- **home 사용을 위해 Office 365을 사용해 보세요**. [요구 사항을](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)검토 한 후 [office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 또는 [office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)을 선택 합니다. 평가판을 시작 하 고 Office 365이 어떻게 작동 하는지 확인 합니다. Office 365에서는 OneDrive를 사용 하 여 클라우드 저장소를 즐길 수 있으며 매달 모바일 및 일반 전화선으로 번호로의 Skype 통화를 60 분 정도 받을 수 있으며, 그 외에도 다양 한 기능을 제공 받을 수 있습니다. 자세한 내용은 office 365를 [사용 하 여 office의 최대 정보 얻기](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)를 참조 하세요.
+- **Home 사용을 위해 Office 365을 사용해 보세요**. [요구 사항을](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)검토 한 후 [office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 또는 [office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)을 선택 합니다. 평가판을 시작 하 고 Office 365이 어떻게 작동 하는지 확인 합니다. Office 365에서는 OneDrive를 사용 하 여 클라우드 저장소를 즐길 수 있으며 매달 모바일 및 일반 전화선으로 번호로의 Skype 통화를 60 분 정도 받을 수 있으며, 그 외에도 다양 한 기능을 제공 받을 수 있습니다. 자세한 내용은 office 365를 [사용 하 여 office의 최대 정보 얻기](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)를 참조 하세요.
     
 - **Office Home &amp; Student를 구매**합니다. 이 옵션을 선택 하면 일회성 구매를 수행한 다음 Windows PC 또는 Mac에 Office를 설치 합니다. 구독이 아닙니다. 한 컴퓨터에 대 한 일회용 정품 사용권입니다. [요구 사항을](http://office.com/systemrequirements)확인 하 고 사용할 버전을 선택 합니다.
-    - windows PC에서 windows 10을 실행 하는 경우 [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)를 구하는 것이 좋습니다.
-    - windows PC에서 windows 7, 8 또는 8.1을 실행 중이 고 현재 windows 10으로 업그레이드 하 고 있지 않은 경우 공인 대리점에서 Office Home & Student 2016 (또는 Microsoft Office의 다른 버전)을 가져오는 것이 좋습니다.
+    - Windows PC에서 Windows 10을 실행 하는 경우 [Office Home _AMP_ Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)를 구하는 것이 좋습니다.
+    - Windows PC에서 windows 7, 8 또는 8.1을 실행 중이 고 현재 Windows 10으로 업그레이드 하 고 있지 않은 경우 공인 대리점에서 Office Home & Student 2016 (또는 Microsoft Office의 다른 버전)을 가져오는 것이 좋습니다.
 
 지금은 업그레이드 하지 않도록 선택할 수도 있습니다. Office 앱이 계속 실행 됩니다. Office 지원 날짜에 대 한 일정은 [여기](https://go.microsoft.com/fwlink/p/?linkid=2085724)에서 확인할 수 있습니다. 그러나 업그레이드를 통해 보안 업데이트를 비롯 한 새로운 기능과 향상 된 기능에 액세스할 수 있습니다. 
    
@@ -80,9 +80,9 @@ ms.locfileid: "33492055"
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) 는 Office 365, Windows 10 및 EMS (Enterprise Mobility + Security)를 조합 하 여 모든 사용자가 창의적인 작업을 수행 하 고 안전 하 게 함께 작업할 수 있도록 완벽 한 지능형 솔루션을 제공 합니다. 
   
-office 2007 또는 office 2010 서버와 클라이언트를 office 365로 마이그레이션할 수는 있지만 Microsoft 365에는 조직이 최신 Windows 운영 체제 및 장치 (예: Windows, iOS 및 Android는 인증 및 데이터 보호가 필요한 정책으로 등록 되 고 안전 하 게 유지 됩니다. 또한 최신 기능과 보안 업데이트를 포함 하기 위해 Windows 10 및 Office 365 클라이언트 소프트웨어는 계속 해 서 업데이트 됩니다.
+Office 2007 또는 Office 2010 서버와 클라이언트를 Office 365로 마이그레이션할 수는 있지만 Microsoft 365에는 조직이 최신 Windows 운영 체제 및 장치 (예: Windows, iOS 및 Android는 인증 및 데이터 보호가 필요한 정책으로 등록 되 고 안전 하 게 유지 됩니다. 또한 최신 기능과 보안 업데이트를 포함 하기 위해 Windows 10 및 Office 365 클라이언트 소프트웨어는 계속 해 서 업데이트 됩니다.
   
-microsoft 365는 microsoft 클라우드에서 지속적으로 개선 하 고 보호 하는 장치 및 생산성 환경을 사용 하 여 비즈니스를 디지털로 변환 하는 방법입니다.
+Microsoft 365는 Microsoft 클라우드에서 지속적으로 개선 하 고 보호 하는 장치 및 생산성 환경을 사용 하 여 비즈니스를 디지털로 변환 하는 방법입니다.
   
 |**리소스**|**설명**|
 |:-----|:-----|

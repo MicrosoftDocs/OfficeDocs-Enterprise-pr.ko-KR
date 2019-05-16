@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 search.appverid:
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067734"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -51,8 +51,8 @@ ms.locfileid: "33487234"
   
 |**구성**|**설명**|
 |:-----|:-----|
-|사용자에게 다른 사서함에 대한 사서함 폴더 권한이 있음  <br/> |제한될 수 있습니다.  <br/> 사용자 a와 사서함 b가 테 넌 트 이동 중에 같은 지역에 있지 않은 경우 사용자 a는 사서함 b의 특정 폴더에 대 한 사용 권한이 있는 경우 Outlook Web Access에서 사서함 b의 폴더를 열 수 없습니다.  <br/> 공유 폴더를 추가하려면 왼쪽 탐색 패널에서 사용자 이름을 마우스 오른쪽 단추로 클릭하고 **공유 폴더 추가**를 선택합니다.  <br/> |
-|사용자에게 다른 사서함에 대한 모든 사서함 권한이 있음  <br/> |완전히 지원됩니다.  <br/> 사용자 a에 게 사서함 b에 대 한 "모든 권한" 권한이 있으면 사용자 a가 Outlook Web Access의 왼쪽 탐색 패널에서 공유 폴더를 클릭 하 여 사서함 b가 표시 된 창을 열 수 있습니다.  사용자는 부정적인 영향을 주지 않으면 서 이동 하는 동안 Outlook Web Access를 사용 하 여 공유 사서함을 열 수 있습니다. 이러한 제한 사항은 사서함의 폴더 수준 공유에만 적용됩니다.           |
+|사용자에게 다른 사서함에 대한 사서함 폴더 권한이 있음  <br/> |제한될 수 있습니다.  <br/> 사용자 a와 사서함 B가 테 넌 트 이동 중에 같은 지역에 있지 않은 경우 사용자 a는 사서함 B의 특정 폴더에 대 한 사용 권한이 있는 경우 Outlook Web Access에서 사서함 B의 폴더를 열 수 없습니다.  <br/> 공유 폴더를 추가하려면 왼쪽 탐색 패널에서 사용자 이름을 마우스 오른쪽 단추로 클릭하고 **공유 폴더 추가**를 선택합니다.  <br/> |
+|사용자에게 다른 사서함에 대한 모든 사서함 권한이 있음  <br/> |완전히 지원됩니다.  <br/> 사용자 A에 게 사서함 B에 대 한 "모든 권한" 권한이 있으면 사용자 A가 Outlook Web Access의 왼쪽 탐색 패널에서 공유 폴더를 클릭 하 여 사서함 B가 표시 된 창을 열 수 있습니다.  사용자는 부정적인 영향을 주지 않으면 서 이동 하는 동안 Outlook Web Access를 사용 하 여 공유 사서함을 열 수 있습니다. 이러한 제한 사항은 사서함의 폴더 수준 공유에만 적용됩니다.           |
    
 ### <a name="public-folders"></a>공용 폴더
 
@@ -60,7 +60,7 @@ ms.locfileid: "33487234"
   
 ### <a name="online-archives"></a>온라인 보관 파일
 
-이동이 진행 되는 동안 Outlook for Mac을 통해 연결 하는 사용자가 자신의 온라인 보관 사서함에 연결 하지 못할 수 있습니다. outlook 및 outlook Web Access를 사용 하 여 연결 하는 사용자의 보관 사서함에 대 한 액세스를 지원 합니다.
+이동이 진행 되는 동안 Outlook for Mac을 통해 연결 하는 사용자가 자신의 온라인 보관 사서함에 연결 하지 못할 수 있습니다. Outlook 및 Outlook Web Access를 사용 하 여 연결 하는 사용자의 보관 사서함에 대 한 액세스를 지원 합니다.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -125,7 +125,7 @@ SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 �
 
 ## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>팀, Yammer 및 Power BI를 비롯 한 다른 서비스에 대 한 데이터
 
-Exchange online, SharePoint Online 및 비즈니스용 Skype에 대 한 고객 데이터만 이동 합니다. 다른 서비스에 대 한 데이터는 이동 하지 않습니다. 이러한 서비스에 대 한 고객 또는 사용자는 변경 하거나 영향을 받지 않습니다. 이동 프로세스는 이러한 작업에 영향을 주지 않으며, 고객 데이터의 위치는 변경 되지 않은 상태로 유지 됩니다.
+Exchange Online, SharePoint Online 및 비즈니스용 Skype에 대 한 고객 데이터만 이동 합니다. 다른 서비스에 대 한 데이터는 이동 하지 않습니다. 이러한 서비스에 대 한 고객 또는 사용자는 변경 하거나 영향을 받지 않습니다. 이동 프로세스는 이러한 작업에 영향을 주지 않으며, 고객 데이터의 위치는 변경 되지 않은 상태로 유지 됩니다.
   
 ## <a name="related-topics"></a>관련 항목 
  

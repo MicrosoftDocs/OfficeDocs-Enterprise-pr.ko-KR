@@ -4,26 +4,26 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: '요약: Microsoft azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.'
-ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.'
+ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067324"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>고가용성 페더레이션 인증 5단계: Office 365에 대해 페더레이션 인증 구성
 
- **요약:** Microsoft azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.
+ **요약:** Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.
  
-Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이션 인증을 배포 하는 마지막 단계에서는 공개 인증 기관에서 발급 한 인증서를 가져오고 설치 하 고, 구성을 확인 한 다음 Azure AD를 설치 및 실행 합니다. 디렉터리 동기화 서버에서 연결 합니다. Azure ad Connect는 페더레이션 인증을 위해 Office 365 구독 및 AD FS (Active Directory Federation Services) 및 웹 응용 프로그램 프록시 서버를 구성 합니다.
+Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이션 인증을 배포 하는 마지막 단계에서는 공개 인증 기관에서 발급 한 인증서를 가져오고 설치 하 고, 구성을 확인 한 다음 Azure AD를 설치 및 실행 합니다. 디렉터리 동기화 서버에서 연결 합니다. Azure AD Connect는 페더레이션 인증을 위해 Office 365 구독 및 AD FS (Active Directory Federation Services) 및 웹 응용 프로그램 프록시 서버를 구성 합니다.
   
 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
@@ -53,9 +53,9 @@ Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이�
     
 - 공용 도메인 이름을 기반으로 하는 페더레이션 서비스 FQDN을 결정 했습니다.
     
-- 페더레이션 서비스 FQDN에 대 한 공용 DNS a 레코드는 웹 응용 프로그램 프록시 서버에 대 한 인터넷 연결에 사용 되는 Azure 부하 분산 장치의 공용 IP 주소를 가리킵니다.
+- 페더레이션 서비스 FQDN에 대 한 공용 DNS A 레코드는 웹 응용 프로그램 프록시 서버에 대 한 인터넷 연결에 사용 되는 Azure 부하 분산 장치의 공용 IP 주소를 가리킵니다.
     
-- 페더레이션 서비스 FQDN에 대 한 개인 DNS a 레코드는 AD FS 서버에 대 한 내부 Azure 부하 분산 장치의 개인 IP 주소를 가리킵니다.
+- 페더레이션 서비스 FQDN에 대 한 개인 DNS A 레코드는 AD FS 서버에 대 한 내부 Azure 부하 분산 장치의 개인 IP 주소를 가리킵니다.
     
 - 페더레이션 서비스 FQDN으로 설정 된 SAN과의 SSL 연결에 적합 한 공용 인증 기관-isssued 디지털 인증서는 디렉터리 동기화 서버에 저장 되는 PFX 파일입니다.
     
@@ -69,7 +69,7 @@ Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이�
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Azure AD Connect를 실행 하 여 페더레이션 인증 구성
 
-Azure ad Connect 도구는 다음 단계를 사용 하 여 페더레이션 인증을 위해 AD FS 서버, 웹 응용 프로그램 프록시 서버 및 Office 365을 구성 합니다.
+Azure AD Connect 도구는 다음 단계를 사용 하 여 페더레이션 인증을 위해 AD FS 서버, 웹 응용 프로그램 프록시 서버 및 Office 365을 구성 합니다.
   
 1. 로컬 관리자 권한이 있는 도메인 계정을 사용 하 여 디렉터리 동기화 서버에 대 한 원격 데스크톱 연결을 만듭니다.
     
@@ -77,7 +77,7 @@ Azure ad Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
     
 3. **Microsoft Azure Active Directory 연결** 페이지에서 **다운로드**를 클릭 한 다음 **실행**을 클릭 합니다.
     
-4. **Azure AD Connect 시작** 페이지에서 **동의 함**을 클릭 하 고 계속을 클릭 **합니다.**
+4. **AZURE AD Connect 시작** 페이지에서 **동의 함**을 클릭 하 고 계속을 클릭 **합니다.**
     
 5. **기본 설정** 페이지에서 **사용자 지정**을 클릭합니다.
     
@@ -85,11 +85,11 @@ Azure ad Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
     
 7. **사용자 로그인** 페이지에서 **AD FS로 페더레이션**을 클릭하고 **다음**을 클릭합니다.
     
-8. **Azure AD에 연결** 페이지에서 Office 365 구독에 대 한 전역 관리자 계정의 이름과 암호를 입력 하 고 **다음**을 클릭 합니다.
+8. **AZURE AD에 연결** 페이지에서 Office 365 구독에 대 한 전역 관리자 계정의 이름과 암호를 입력 하 고 **다음**을 클릭 합니다.
     
 9. **디렉터리 연결** 페이지에서 온-프레미스 AD DS (Active Directory 도메인 서비스) 포리스트가 **포리스트에서**선택 되어 있는지 확인 하 고 도메인 관리자 계정의 이름과 암호를 입력 한 다음 **디렉터리 추가**를 클릭 하 고 **다음**을 클릭 합니다.
     
-10. **Azure AD 로그인 구성** 페이지에서 **다음**을 클릭 합니다.
+10. **AZURE AD 로그인 구성** 페이지에서 **다음**을 클릭 합니다.
     
 11. **도메인 및 OU 필터링** 페이지에서 **다음**을 클릭 합니다.
     
@@ -99,7 +99,7 @@ Azure ad Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
     
 14. **선택적 기능** 페이지에서 **다음**을 클릭 합니다.
     
-15. **ad fs 팜** 페이지에서 **새 AD FS 팜 구성을**클릭 합니다.
+15. **AD fs 팜** 페이지에서 **새 AD FS 팜 구성을**클릭 합니다.
     
 16. **찾아보기를** 클릭 하 고 공용 인증 기관에서 SSL 인증서의 위치와 이름을 지정 합니다.
     
@@ -107,7 +107,7 @@ Azure ad Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
     
 18. **주체 이름** 및 **페더레이션 서비스 이름이** 페더레이션 서비스 FQDN으로 설정 되어 있는지 확인 하 고 **다음**을 클릭 합니다.
     
-19. **ad fs 서버** 페이지에서 첫 번째 AD fs 서버의 이름 (테이블 M-항목 4-가상 컴퓨터 이름 열)을 입력 하 고 **추가**를 클릭 합니다.
+19. **AD fs 서버** 페이지에서 첫 번째 AD fs 서버의 이름 (테이블 M-항목 4-가상 컴퓨터 이름 열)을 입력 하 고 **추가**를 클릭 합니다.
     
 20. 두 번째 AD FS 서버 이름 (테이블 M-항목 5-가상 컴퓨터 이름 열)을 입력 하 고 **추가**를 클릭 한 후 **다음**을 클릭 합니다.
     
@@ -119,7 +119,7 @@ Azure ad Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
     
 24. **AD FS 서비스 계정** 페이지에서 엔터프라이즈 관리자 계정의 사용자 이름과 암호를 입력 한 후 **다음**을 클릭 합니다.
     
-25. **Azure AD 도메인** 페이지의 **도메인**에서 조직의 DNS 도메인 이름을 선택 하 고 **다음**을 클릭 합니다.
+25. **AZURE AD 도메인** 페이지의 **도메인**에서 조직의 DNS 도메인 이름을 선택 하 고 **다음**을 클릭 합니다.
     
 26. **구성 준비 완료** 페이지에서 **설치**를 클릭합니다.
     

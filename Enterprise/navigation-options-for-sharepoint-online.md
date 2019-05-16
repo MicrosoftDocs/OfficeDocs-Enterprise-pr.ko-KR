@@ -1,9 +1,9 @@
 ---
-title: SharePoint Online에 대한 탐색 옵션
+title: SharePoint Online에 대 한 탐색 옵션
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,112 +11,112 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: 이 문서에서는 SharePoint 게시 SharePoint Online에서 사용할 수 있는 탐색 옵션 사이트를 설명 합니다. 선택 및 구성 탐색의 성능 및 SharePoint Online에서 사이트의 확장성에 영향을 현저 하 게 됩니다.
-ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
-ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
+description: 이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다. 탐색을 선택 하 고 구성 하는 것은 SharePoint Online의 사이트 성능 및 확장성에 큰 영향을 줍니다.
+ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547180"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069944"
 ---
-# <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대한 탐색 옵션
+# <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대 한 탐색 옵션
 
-이 문서에서는 SharePoint 게시 SharePoint Online에서 사용할 수 있는 탐색 옵션 사이트를 설명 합니다. 선택 및 구성 탐색의 성능 및 SharePoint Online에서 사이트의 확장성에 영향을 현저 하 게 됩니다.
+이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다. 탐색을 선택 하 고 구성 하는 것은 SharePoint Online의 사이트 성능 및 확장성에 큰 영향을 줍니다.
 
 ## <a name="overview"></a>개요
 
-탐색 공급자 구성 전체 사이트에 대 한 성능에 영향을 줄 크게 수 및 탐색 공급자 및 SharePoint 사이트의 요구 사항에 대 한 효과적으로 확장할 수 있는 구성 선택 하려면 신중 하 게 고려를 수행 해야 합니다. 사용자 지정 탐색 구현을 뿐아니라 두의 기본 탐색 공급자 있습니다.
+탐색 공급자 구성은 전체 사이트에 대 한 성능을 크게 향상 시킬 수 있으며, SharePoint 사이트의 요구 사항에 맞게 효율적으로 확장 되는 탐색 공급자 및 구성을 선택 하기 위해 신중 하 게 고려해 야 합니다. 두 가지 기본 탐색 공급자와 사용자 지정 탐색 구현도 있습니다.
 
-첫번째 옵션 [**(메타 데이터) 관리 되는 탐색**](#using-managed-navigation-and-metadata-in-sharepoint-online)것이 좋으며, SharePoint Online에서 기본 옵션 중 하나입니다. 그러나 보안 조정 필요 하지 않은 경우 사용할 수 없도록 하는 것이 좋습니다. 이 탐색 공급자 간의 보안 기본 설정으로 상태가 보안 조정 그러나 대부분의 사이트 탐색 요소를 자주 사이트의 모든 사용자에 대해 일관성는 이후 보안 조정의 오버 헤드를 필요 하지 않습니다. 보안 조정을 사용 하지 않으려면 권장 구성과이 탐색 공급자 사이트 구조를 열거 하는 것 필요 하지 않은 이며 적절 한 성능 영향을 주는 뛰어납니다.
+첫 번째 옵션인 [**관리 (메타 데이터) 탐색**](#using-managed-navigation-and-metadata-in-sharepoint-online)은 권장 되며 SharePoint Online의 기본 옵션 중 하나입니다. 그러나 필요 하지 않은 경우에는 보안 조정을 사용 하지 않는 것이 좋습니다. 보안 트리밍이이 탐색 공급자의 기본 설정으로 사용 하도록 설정 됩니다. 그러나 대부분의 사이트에서는 사이트의 모든 사용자에 대해 탐색 요소가 대개 일치 하므로 보안 트리밍이 오버 헤드가 발생 하지 않습니다. 보안 조정을 사용 하지 않도록 설정 하기 위한 권장 구성을 사용 하는 경우에는이 탐색 공급자가 사이트 구조를 열거할 필요가 없으며 적절 한 성능 영향을 통해 확장성이 뛰어납니다.
 
-두번째 옵션, [**구조적 탐색**](#using-structural-navigation-in-sharepoint-online) **하지 SharePoint Online에서 권장된 탐색 옵션입니다**. 이 탐색 공급자는 온-프레미스 토폴로지를 제한적으로 SharePoint Online에서 지원에 대 한 설계 되었습니다. 일부 추가 집합의 다른 탐색 옵션 비교 기능을 제공 하는 동시에 보안 조정 및 사이트 구조 열거형을 포함 하 여 이러한 기능을 사용 하는 경우 과도 한 서버 통화 및 영향 확장성 및 성능 비용에 가져옵니다. 과도 한 리소스를 사용 하는 사이트 structed 탐색을 사용 하 여 제한에 따라 달라 집니다 수 있습니다.
+두 번째 옵션인 [**구조적 탐색**](#using-structural-navigation-in-sharepoint-online)은 **SharePoint Online에서 권장 되는 탐색 옵션이 아닙니다**. 이 탐색 공급자는 SharePoint Online에서 온-프레미스 토폴로지의 지원을 제한적으로 만든 것입니다. 이 기능에서는 다른 탐색 옵션과 비교 하 여 몇 가지 추가 기능을 제공 하지만, 보안 트리밍 및 사이트 구조 열거를 비롯 한 이러한 기능은 과도 한 서버 호출 비용을 갖고 사용 시 확장성과 성능에 영향을 줍니다. Structed 탐색을 사용 하 여 과도 한 리소스를 소비 하는 사이트는 제한 될 수 있습니다.
 
-다 수의 고객의 기본 탐색 공급자 외에도 대체 사용자 지정 탐색 구현을 성공적으로 구현 했습니다. 탐색 노드의 로컬 캐시를 저장 하는 클라이언트 렌더링 된 디자인 패턴 채택 하는 사용자 지정 탐색 구현의 일반적인 클래스 중 하나입니다. ( **[검색 기반 클라이언트쪽 스크립팅](#using-search-driven-client-side-scripting)** 이 문서에서 참조 합니다.)
+기본 탐색 공급자 외에도 많은 고객이 대체 사용자 지정 탐색 구현을 성공적으로 구현 했습니다. 사용자 지정 탐색 구현의 한 가지 일반적인 클래스는 탐색 노드의 로컬 캐시를 저장 하는 클라이언트 렌더링 디자인 패턴을 사용 합니다. (이 문서의 **[검색 기반 클라이언트 쪽 스크립팅](#using-search-driven-client-side-scripting)** 참조)
 
-이러한 탐색 공급자가 메시지를 몇 주요 장점: 
-- 일반적으로 응답 페이지 디자인을 제대로 작동 합니다.
-- 매우 확장성 및 성능이 자신이 못할 수 있기 때문에 자원 비용 (없고 시간이 초과 후 백그라운드에서 새로고침). 
-- 이러한 탐색 공급자는 단순한 정적 구성에서 다양 한 동적 데이터 공급자에 이르기까지 다양 한 전략을 사용 하 여 탐색 데이터를 검색할 수 있습니다. 
+이러한 탐색 공급자에는 다음과 같은 몇 가지 주요 이점이 있습니다. 
+- 일반적으로 페이지 디자인이 정상적으로 작동 합니다.
+- 리소스 비용 없이 렌더링할 수 있으며 시간 초과 후 백그라운드에서 새로 고침을 통해 성능이 크게 향상 되 고 성능이 뛰어납니다. 
+- 이러한 탐색 공급자는 간단한 정적 구성에서 다양 한 동적 데이터 공급자에 이르기까지 다양 한 전략을 사용 하 여 탐색 데이터를 검색할 수 있습니다. 
 
-데이터 공급자의 예로는 **검색 기반 탐색**, 탐색 노드를 열거 하 고 효율적으로 조정 하는 보안 처리에 대 한 유연성을 허용 하는 사용 하는 것입니다. 
+**검색 기반 탐색 기능**을 사용 하 여 탐색 노드를 열거 하 고 보안 조정을 효율적으로 처리할 수 있도록 하는 데이터 공급자의 예입니다. 
 
-**사용자 정의 탐색 공급자**작성 인기 있는 다른 옵션이 있습니다. 사용자 정의 탐색 공급자 만들기 (영문)에 대 한 추가 지침에 대 한 [SharePoint 온라인 포털에 대 한 탐색 솔루션](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) 을 검토 하십시오.
+**사용자 지정 탐색 공급자**를 빌드하기 위한 기타 옵션이 많이 있습니다. 사용자 지정 탐색 공급자를 작성 하는 방법에 대 한 자세한 내용은 [SharePoint Online 포털에 대 한 탐색 솔루션](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) 을 검토 하십시오.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>전문가 및 SharePoint Online의 단점 탐색 옵션
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>SharePoint Online 탐색 옵션의 장단점
 
-다음 표에 각 옵션의 장단점이 있습니다. 
+다음 표에는 각 옵션의 장단점을 요약 하 여 설명 합니다. 
 
 
-|관리 탐색  |구조적 탐색  |검색 기반 탐색  |사용자 정의 탐색 공급자  |
+|관리 탐색  |구조적 탐색  |검색 기반 탐색  |사용자 지정 탐색 공급자  |
 |---------|---------|---------|---------|
-|장점:<br/><br/>쉬운 유지 관리<br/>권장 되는 옵션<br/>     |장점:<br/><br/>쉬운 구성<br/>보안 조정이 적용<br/>콘텐츠 추가 됨에 따라 자동으로 업데이트<br/>|장점:<br/><br/>보안 조정이 적용<br/>사이트를 추가할 때 자동으로 업데이트<br/>빠른 로드 시간 및 로컬로 캐시된 탐색 구조<br/>|장점:<br/><br/>사용 가능한 옵션에 더 넓은 선택<br/>Fast 캐싱 때 로드 되는 올바르게<br/>다양 한 옵션 응답 페이지 디자인 잘 작동<br/>|
-|단점:<br/><br/>사이트 구조를 반영하도록 자동으로 업데이트되지 않음<br/>보안 조정을 사용 하도록 설정 하는 경우 성능에 미치는<br/>|단점:<br/><br/>**권장하지 않음**<br/>**영향을 미치는 성능 및 확장성**<br/>**제한 적용**<br/>|단점:<br/><br/>사이트를 쉽게 정렬하는 기능이 없음<br/>마스터 페이지의 사용자 지정 필요(기술 필요)<br/>|단점:<br/><br/>사용자 지정 개발이 필요<br/>외부 데이터 원본을 저장 캐시 필요한 / 예: Azure<br/>|
+|들은<br/><br/>쉬운 유지 관리<br/>권장 옵션<br/>     |들은<br/><br/>쉬운 구성<br/>보안 트리밍<br/>콘텐츠가 추가 될 때 자동으로 업데이트<br/>|들은<br/><br/>보안 트리밍<br/>사이트가 추가 될 때 자동으로 업데이트 됩니다.<br/>빠른 로드 시간 및 로컬로 캐시 된 탐색 구조<br/>|들은<br/><br/>사용 가능한 옵션의 폭넓은 선택<br/>캐싱이 올바르게 사용 되는 경우의 빠른 로드<br/>대부분의 옵션은 응답성이 뛰어난 페이지 디자인에서 제대로 작동 합니다.<br/>|
+|장단점이<br/><br/>사이트 구조를 반영 하도록 자동으로 업데이트 되지 않음<br/>보안 트리밍이 설정 된 경우 성능에 영향을 줍니다.<br/>|장단점이<br/><br/>**권장하지 않음**<br/>**성능 및 확장성에 영향을 줍니다.**<br/>**제한 주체**<br/>|장단점이<br/><br/>사이트를 쉽게 정렬 하는 기능이 없음<br/>마스터 페이지의 사용자 지정 필요 (기술 필요)<br/>|장단점이<br/><br/>사용자 지정 개발 필요<br/>외부 데이터 원본/캐시가 저장 됨 (예: Azure)이 필요 합니다.<br/>|
 
-사이트에 대 한 가장 적절 한 옵션에는 사이트 요구 사항 및 기술 사용자 기능에 따라 달라 집니다. 확장 가능한의 기본 탐색 공급자를 사용할 경우 사용 하지 않도록 설정 하는 보안 조정을 사용 하 여 관리 되는 탐색 매우 유용한 옵션입니다. 
+사이트에 가장 적합 한 옵션은 사이트 요구 사항과 기술 기능에 따라 달라 집니다. 확장 가능한 기본 탐색 공급자를 사용 하려는 경우에는 보안 트리밍이 해제 된 관리 탐색을 사용 하는 것이 좋습니다. 
 
-관리 되는 탐색 옵션을 통해 유지할 수 구성, 코드 사용자 지정 파일을 포함 하지 않는 한 구조적 탐색 보다 훨씬 빠릅니다. 보안 조정 필요 및 사용자 지정 마스터 페이지를 사용 하 여 능숙 하 게은 SharePoint Online에 대 한 기본 마스터 페이지에서 발생할 수 있는 변경 내용을 유지 관리 하기 위해 조직에서 일부 기능이 있어야 하는 경우 다음 검색을 통해 구동 옵션 생성 될 수 있습니다를 좋음 사용자 경험 합니다. 보다 복잡 한 요구 사항에 있는 사용자 지정 탐색 공급자에서 올바른 선택을 수 있습니다. 구조적 탐색 권장 되지 않습니다.
+관리 되는 탐색 옵션은 구성을 통해 유지 관리할 수 있으며, 코드 사용자 지정 파일을 포함 하지 않으며, 구조적 탐색 보다 훨씬 빠릅니다. 보안 조정이 필요 하 고 사용자 지정 마스터 페이지를 사용 하 고 조직에서 SharePoint Online의 기본 마스터 페이지에서 발생할 수 있는 변경 내용을 유지 관리할 수 있는 기능을 제공 하는 경우에는 검색 기반 옵션이 더 효율적으로 생성 될 수 있습니다. 사용자 환경 복잡 한 요구 사항이 있는 경우에는 사용자 지정 탐색 공급자를 적절 하 게 선택할 수 있습니다. 구조적 탐색은 권장 되지 않습니다.
 
-마지막으로 추가 탐색 공급자 및 기능 보다 플랫된 사이트 계층 구조 및 SharePoint 허브 사이트를 사용 하 여 허브 및 스포크 모델을 활용 하는 현대 SharePoint 사이트 아키텍처에 대 한 SharePoint를 추가 하는 것이 중요 합니다. 이 통해 다양 한 시나리오를 구현할 수 필요가 없는 경우 SharePoint 게시 기능을 사용 하 고 이러한 탐색 구성은 확장성과 SharePoint Online 내 대기 시간에 대해 최적화 된 키를 누릅니다. 볼록한 구조를 SharePoint 게시 사이트의 전체 구조를 단순화 하는 동일한 원칙-적용 자주 전반적인 쿼리 성능을 높일 기록한도 확장 합니다. 이 것을 의미는 수백 개의 사이트 (하위 웹)와 단일 사이트 모음을 대신 더 나은 방법은 거의 하위 사이트 (하위 웹) 포함 하는 여러 사이트 모음을 합니다.
+마지막으로 SharePoint는 보다 평면화 된 사이트 계층 구조를 활용 하 고 SharePoint 허브 사이트와 함께 허브 및 스포크 모델을 사용 하는 최신 SharePoint 사이트 아키텍처에 대 한 탐색 공급자 및 기능을 추가 하 고 있다는 점을 유의 해야 합니다. 이렇게 하면 SharePoint 게시 기능을 사용할 필요가 없는 많은 시나리오가 가능 하며, 이러한 탐색 구성은 SharePoint Online 내의 확장성 및 대기 시간에 맞게 최적화 됩니다. 동일한 원칙을 적용 하 여 SharePoint 게시 사이트의 전체 구조를 flatter 구조로 단순화 하는 경우가 많지만 전반적인 성능 및 확장에도 도움이 됩니다. 즉, 수백 개의 사이트 (하위 웹)에 단일 사이트 모음을 사용 하는 대신 여러 하위 사이트 (하위 웹)를 사용 하 여 많은 사이트가 있는 경우이 방법을 사용 하는 것이 더 좋습니다.
 
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>SharePoint Online에서 관리 되는 탐색 및 메타 데이터를 사용 하 여
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>SharePoint Online에서 관리 탐색 및 메타 데이터 사용
 
-관리 되는 탐색은 대부분의 구조적 탐색와 동일한 기능을 다시 사용할 수 있는 다른의 기본 옵션입니다. 보안 조정 사용 하거나 사용 하지 않도록 설정 하려면 관리 되는 메타 데이터를 구성할 수 있습니다. 사용 하지 않도록 설정 하는 보안 조정을 구성 하는 경우 서버 통화 상수 번호와 함께 모든 탐색 링크를 로드 하는 것 처럼 관리 되는 탐색이 매우 효율적입니다. 그러나 관리 되는 탐색의 장점 중 일부를 부정 보안 조정 사용 하도록 설정 하 고 고객 최적의 성능 및 확장성에 대 한 사용자 지정 탐색 솔루션 중 하나를 탐색 하도록 선택할 수 있습니다.
+관리 탐색은 구조적 탐색과 동일한 기능을 대부분 다시 만드는 데 사용할 수 있는 또 다른 기본 옵션입니다. 보안 트리밍이 사용 하거나 사용 하지 않도록 설정 되도록 관리 되는 메타 데이터를 구성할 수 있습니다. 보안 트리밍이 사용 하지 않도록 설정 된 경우 관리 되는 탐색은 일정 한 수의 서버 호출을 사용 하 여 모든 탐색 링크를 로드 하는 것과 매우 효율적으로 수행 됩니다. 그러나 보안 조정을 사용 하도록 설정 하면 관리 되는 탐색의 몇 가지 이점이 무효화 되며, 고객은 최적의 성능 및 확장성을 위해 사용자 지정 탐색 솔루션 중 하나를 선택할 수 있습니다.
 
-대부분의 사이트의 탐색 구조는 사이트의 모든 사용자에 대해 일관성 종종으로 보안 조정을 필요 하지 않습니다. 보안 조정을 사용 하지 않으면 모든 사용자가 액세스할 수 있는 탐색 링크가 추가 하는 경우 링크에는 여전히 표시 되지만 액세스 거부 메시지가 하 게 될 합니다. 콘텐츠를 실수로 액세스의 위험은 없습니다.
+사이트의 모든 사용자가 탐색 구조를 일관 되 게 유지 하는 경우가 많으므로 대부분의 사이트에서는 보안 조정이 필요 하지 않습니다. 보안 트리밍이 사용 하지 않도록 설정 되 고 모든 사용자에 게 액세스 권한이 없는 탐색에 링크가 추가 된 경우에도 링크가 계속 나타나지만 액세스 거부 메시지가 표시 됩니다. 콘텐츠에 실수로 액세스 하는 위험은 없습니다.
 
-### <a name="how-to-implement-managed-navigation-and-the-results"></a>관리 탐색 및 결과의 구현 방법
+### <a name="how-to-implement-managed-navigation-and-the-results"></a>관리 탐색 및 결과를 구현 하는 방법
 
-여러 문서에는 Docs.Microsoft.com 관리 되는 탐색의 세부 정보에 대 한 예 [SharePoint Server의 관리 탐색 개요 (영문)를](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)참조 하십시오.
+관리 되는 탐색 세부 정보에 대 한 Docs.Microsoft.com에 대 한 몇 가지 문서는 [SharePoint Server의 관리 탐색 개요](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)를 참조 하십시오.
 
-관리 되는 탐색을 구현 하기 위해 설정한 용어 Url이 포함 된 사이트의 탐색 구조에 해당 합니다. 관리 되는 탐색 대부분의 경우에서 구조적 탐색을 바꾸려면 수동으로 curated도 수 있습니다. 예를 들어:
+관리 되는 탐색을 구현 하려면 사이트의 탐색 구조에 해당 하는 Url을 사용 하 여 용어를 설정 합니다. 관리 탐색은 대부분의 경우 구조적 탐색을 대체 하기 위해 수동으로 맞게 조정 된 수도 있습니다. 예를 들면 다음과 같습니다.
 
 ![SharePoint Online 사이트 구조](media/SPONavOptionsListOfSites.png)
 
-아래 예에서는 관리 탐색을 사용한 경우의 복잡한 탐색의 성능을 보여 줍니다.
+다음 예제에서는 관리 탐색을 사용한 복잡 한 탐색의 성능을 보여 줍니다.
 
-![관리 되는 탐색을 사용 하 여 복잡 한 탐색의 성능](media/SPONavOptionsComplexNavPerf.png)
+![관리 되는 탐색을 사용한 복잡 한 탐색 성능](media/SPONavOptionsComplexNavPerf.png)
 
-지속적으로 관리 되는 탐색을 사용 하 여 구조적 탐색 접근 방식에 비해 성능이 향상 됩니다.
+관리 되는 탐색을 일관 되 게 사용 하면 구조적 탐색 방식 보다 성능이 향상 됩니다.
   
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>SharePoint Online에서 구조적 탐색 사용
 
-이것은 기본적으로 사용의 기본 탐색 하 고는 가장 간단한 솔루션 했으나 이와 같이 비용이 많이 드는 성능이 떨어질 있습니다. 모든 사용자 지정이 필요 하지 않습니다 및 비 기술적인 사용자 수도 쉽게 항목을 추가, 항목을 숨기려면 설정 페이지에서 탐색을 관리 합니다. 그러나도 쉽게 관리 하 고 수와 제어 하는 true 되므로으로 관리 되는 탐색을 사용 하는 것이 좋습니다. 관리 되는 탐색에 대 한 향상 된 성능입니다.
+기본적으로 사용 되는 기본 탐색 이며 가장 간단한 솔루션 이지만 성능 면에서 부담이 높은 수준입니다. 또한 사용자 지정이 필요 하지 않으며, 기술 외의 사용자는 설정 페이지에서 쉽게 항목을 추가 하 고 항목을 숨기고 탐색을 관리할 수 있습니다. 또한 관리 되는 탐색의 경우에도 마찬가지 이므로 관리 되는 탐색을 사용 하는 것이 좋지만 향상 된 성능 에서도 쉽게 관리 하 고 제어할 수 있습니다.
 
-![선택한 표시 하위 사이트를 사용 하 여 구조적 탐색](media/SPONavOptionsStructuredShowSubsites.png)
+![하위 사이트 표시 선택 된 구조적 탐색](media/SPONavOptionsStructuredShowSubsites.png)
   
 ### <a name="turning-on-structural-navigation-in-sharepoint-online"></a>SharePoint Online에서 구조적 탐색 설정
 
-구조적 탐색 하 고 표시 된 표준 SharePoint Online 솔루션에서 성능 옵션을 하위 하는 방법을 설명 하기 위해 설정 합니다. 다음은 **사이트 설정** 페이지에서 찾은 설정 스크린샷 \> **탐색**합니다.
+구조적 탐색 및 하위 사이트 표시 옵션을 설정 하는 표준 SharePoint Online 솔루션의 성능을 보여 주기 위해 다음은 페이지 **사이트 설정** \> **탐색**에서 찾은 설정의 스크린샷입니다.
   
 ![하위 사이트를 보여 주는 스크린샷](media/5b6a8841-34ed-4f61-b6d3-9d3e78d393e7.png)
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>SharePoint Online의 구조적 탐색 성능 분석
 
-SharePoint 페이지의 성능 분석, Internet Explorer에서 F12 개발자 도구에 있는 **네트워크** 탭을 사용 합니다. 
+SharePoint 페이지의 성능을 분석 하려면 Internet Explorer에서 F12 개발자 도구의 **네트워크** 탭을 사용 합니다. 
   
 ![F12 개발자 도구 네트워크 탭을 보여 주는 스크린샷](media/SPONavOptionsNetworks.png)
   
-1. **네트워크** 탭에서 로드할 .aspx 페이지와 **세부 정보** 탭을 차례로 클릭합니다.<br/> ![세부 정보 탭을 보여 주는 스크린샷](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
-2. **응답 헤더**를 클릭합니다. <br/>![세부 정보 탭의 스크린샷](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint 응답 헤더에 유용한 진단 정보를 반환합니다. 
-3. **SPRequestDuration** 요청 되는데 걸린 시간 서버에서 프로세스의 밀리초에서 값은 정보의 가장 유용한 항목 중 하나입니다. 다음 스크린샷에 **표시 하위** 선택 되지 않습니다 구조적 탐색에 대 한. 전역 탐색에서 사이트 모음 링크는 것을 의미 합니다.<br/>![부하 시간을 요청 기간으로 나타내는 스크린샷](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
-4. **SPRequestDuration** 키 245 시간 (밀리초)의 값을 갖습니다. 요청을 반환 하는데 걸린 시간을 나타냅니다. 사이트 탐색 항목을 하나만 이므로 SharePoint Online 수행 되는 방법을 굵은 탐색 하지 않고에 대 한 좋은 벤치 마크입니다. 다음 스크린샷은 추가 (영문)의 하위 사이트에서이 키에 주는 영향을 보여줍니다.<br/>![2502ms의 요청 기간을 나타내는 스크린샷](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
+1. **네트워크** 탭에서 로드할 .aspx 페이지를 클릭 한 다음 **세부 정보** 탭을 클릭 합니다.<br/> ![세부 정보 탭을 보여 주는 스크린샷](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
+2. **응답 헤더**를 클릭 합니다. <br/>![세부 정보 탭의 스크린샷](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint는 응답 헤더에 몇 가지 유용한 진단 정보를 반환 합니다. 
+3. 가장 유용한 정보 중 하나는 서버에서 요청을 처리 하는 데 걸린 시간 값을 밀리초 단위로 나타내는 **Sprequestduration** 입니다. 다음 스크린샷에서는 구조적 탐색에 대해 **하위 사이트** 를 선택 하지 않은 상태로 표시 합니다. 즉, 전역 탐색에는 사이트 모음 링크만 있습니다.<br/>![부하 시간을 요청 기간으로 나타내는 스크린샷](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+4. **Sprequestduration** 키의 값은 245 밀리초입니다. 요청을 반환 하는 데 걸린 시간을 나타냅니다. 사이트에는 탐색 항목이 하나 뿐 이므로이는 SharePoint Online이 더 이상 탐색 없이 수행 되는 방식에 대 한 훌륭한 벤치 마크입니다. 다음 스크린샷은 하위 사이트의 추가에서이 키에 미치는 영향을 보여 줍니다.<br/>![2502ms의 요청 기간을 나타내는 스크린샷](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
-하위 사이트 추가 (영문)이 비교적 간단 샘플 사이트에 대 한 페이지 요청을 반환 하는데 걸리는 시간을 크게 증가 했습니다. 복잡 한 사이트 계층 구조, 탐색 영역에서 페이지 및 기타 구성 및 토폴로지 옵션을 포함 하 여에이 영향을 더욱 크게 향상 시킬 수 있습니다.
+하위 사이트를 더 많이 추가 하면 비교적 간단한이 예제 사이트용 페이지 요청을 반환 하는 데 걸리는 시간이 크게 증가 했습니다. 탐색의 페이지를 포함 하는 복잡 한 사이트 계층 구조와 기타 구성 및 토폴로지 옵션은 이러한 영향을 더 크게 높일 수 있습니다.
 
 ## <a name="using-search-driven-client-side-scripting"></a>검색 기반 클라이언트 쪽 스크립팅 사용
 
-검색을 사용 하는 연속 크롤링을 사용 하 여 백그라운드에서 제작 하는 인덱스를 활용할 수 있습니다. 검색 인덱스에서 검색 결과 가져오는 및 결과 보안 조정이 적용 됩니다. 보안 조정 필요할 때 일반적으로의 기본 탐색 공급자 보다 더 빠릅니다입니다. 구조적 탐색에 대 한 검색을 사용 하는 복잡 한 사이트 구조를 포함 하는 경우에 특히 더 빠르게 처리할 페이지 로드 시간이 훨씬 합니다. 관리 되는 탐색을 통해이의 주요 이점은 보안 조정에서 이점이 있습니다.
+검색을 사용 하면 연속 크롤링을 사용 하 여 백그라운드로 작성 되는 인덱스를 활용할 수 있습니다. 검색 결과가 검색 인덱스에서 추출 되 고 결과가 보안 트리밍 됩니다. 이는 보안 조정이 필요한 경우 일반적으로 기본 탐색 공급자 보다 빠릅니다. 구조적 탐색에 대해 검색 사용 (특히 사이트 구조가 복잡 한 경우) 페이지 로드 시간이 크게 단축 됩니다. 이에 대 한 관리 방식의 주요 이점은 보안 트리밍이 향상 된다는 것입니다.
 
-이 방법은 사용자 지정 마스터 페이지를 만들고 사용자 지정 HTML의 기본 탐색 코드 바꿉니다 수 있습니다. 파일에서 탐색 코드를 교체 하려면 다음 예제에 설명 된이 절차에 따라 `seattle.html`합니다. 하면이 예제에서는 열립니다는 `seattle.html` 파일 및 전체 요소 `id=”DeltaTopNavigation”` 사용자 지정 HTML 코드를 사용 합니다.
+이 방법에는 사용자 지정 마스터 페이지를 만들고 기본 탐색 코드를 사용자 지정 HTML로 바꾸는 작업이 포함 됩니다. 다음 예제에 나와 있는이 절차에 따라 파일 `seattle.html`의 탐색 코드를 바꿉니다. 이 예제에서는 `seattle.html` 파일을 열고 전체 요소 `id=”DeltaTopNavigation”` 를 사용자 지정 HTML 코드로 바꿉니다.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>예: 마스터 페이지에서의 기본 탐색 코드를 대체 합니다.
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>예: 마스터 페이지에서 기본 탐색 코드 교체
 
-1.  사이트 설정 페이지로 이동합니다.
-2.  **마스터 페이지**를 클릭하여 마스터 페이지 갤러리를 엽니다.
-3.  여기에서 라이브러리를 통해 이동 및 파일을 다운로드할 수 있는 `seattle.master`합니다.
-4.  텍스트 편집기를 사용하여 코드를 편집하고 아래의 스크린샷과 같이 코드 블록을 삭제합니다.<br/>![표시 된 코드 블록을 삭제 합니다.](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. 사이 코드를 제거는 `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` 및 `<\SharePoint:AjaxDelta>` 태그를 지정 하 고 다음 코드 조각으로 대체 합니다.<br/>
+1.  사이트 설정 페이지로 이동 합니다.
+2.  **마스터 페이지**를 클릭 하 여 마스터 페이지 갤러리를 엽니다.
+3.  여기에서 라이브러리를 탐색 하 고 파일 `seattle.master`을 다운로드할 수 있습니다.
+4.  텍스트 편집기를 사용 하 여 코드를 편집 하 고 다음 스크린 샷에서 코드 블록을 삭제 합니다.<br/>![표시 된 코드 블록 삭제](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` 와 `<\SharePoint:AjaxDelta>` 태그 사이에 있는 코드를 제거 하 고 다음 코드 조각으로 바꿉니다.<br/>
 
 ```
 <div id="loading">
@@ -186,24 +186,24 @@ SharePoint 페이지의 성능 분석, Internet Explorer에서 F12 개발자 도
 </div>
 ```
 <br/>
-6. 대체 URL을 로드 하는 사이트 모음에 로드 이미지에 대 한 링크와 시작 부분에 앵커 태그 이미지입니다. 변경 된 내용을 변경한 파일 이름을 바꾼 다음 마스터 페이지 갤러리에 업로드 합니다. 새.master 파일을 생성 합니다.<br/>
-7. 이 HTML은 JavaScript 코드에서 반환 하는 검색 결과에서 채울 하는 기본 태그입니다. Var 루트에 대 한 값을 변경 하는 코드 편집 해야하는 다음 코드 조각에서 볼 수 있듯이 "사이트 모음 URL" =:<br/>
+6. 로드 이미지 앵커 태그의 URL을 사이트 모음의 로드 이미지에 연결 하 여 처음에 바꿉니다. 변경 작업을 수행한 후 파일의 이름을 바꾸고 마스터 페이지 갤러리에 업로드 합니다. 이렇게 하면 새 .master 파일이 생성 됩니다.<br/>
+7. 이 HTML은 JavaScript 코드에서 반환 되는 검색 결과로 채워지는 기본 태그입니다. 다음 코드 조각에서와 같이 var root = "site collection URL"에 대 한 값을 변경 하려면 다음과 같은 코드로 편집 해야 합니다.<br/>
 
 ```
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. 결과 self.nodes 배열에 할당 된 및 배열 self.hierarchy에 출력을 할당 하는 linq.js를 사용 하 여 개체에서 계층 구조를 작성 합니다. 이 배열에는 HTML에 바인딩된 개체입니다. 이 작업은 toggleView() 함수에서 ko.applyBinding() 함수에는 자체 개체를 전달 하 여 수행 됩니다.<br/>그런 다음이 위치를 선택 하면 계층 구조 배열의 다음 HTML에 바인딩할 수 있습니다:<br/>
+8. 결과가 자체 nodes 배열에 할당 되 고 계층 구조는 배열형을 사용 하 여 배열 자체에 출력을 할당 하는 개체를 기반으로 작성 됩니다. 이 배열은 HTML에 바인딩된 개체입니다. 이 작업은 자체 개체를 ko-kr Binding () 함수에 전달 하 여 toggleView () 함수에서 수행 됩니다.<br/>이렇게 하면 계층 구조 배열이 다음 HTML에 바인딩됩니다.<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
-에 대 한 이벤트 처리기 `mouseenter` 및 `mouseexit` 에서 작업을 수행 하는 하위 사이트 드롭다운 메뉴를 처리할 수 있는 최상위 탐색 모음에 추가 되는 `addEventsToElements()` 함수입니다.
+And `mouseenter` `mouseexit` 에 대 한 이벤트 처리기는 `addEventsToElements()` 함수에서 수행 되는 하위 사이트 드롭다운 메뉴를 처리 하기 위해 최상위 탐색에 추가 됩니다.
 
-복잡 한 탐색이 예제에서는 새 페이지는 관리 되는 탐색 방식으로 비슷한 결과 얻을 수 벤치 마크 구조적 탐색에서 서버에 소요 된 시간 줄이기 된 로컬 캐싱 표시 하지 않고 로드 합니다.
+복잡 한 탐색 예제에서 로컬 캐싱을 사용 하지 않고 새로운 페이지 로드를 수행 하면 서버에 소요 된 시간이 벤치 마크 구조적 탐색에서 아래로 세분화 되어 관리 되는 탐색 방법과 비슷한 결과가 표시 됩니다.
 
-### <a name="about-the-javascript-file"></a>JavaScript 파일에 대 한...
+### <a name="about-the-javascript-file"></a>JavaScript 파일 정보 ...
 
 전체 JavaScript 파일은 다음과 같습니다.
 
@@ -440,27 +440,27 @@ function addEventsToElements() {
 
 ``` 
 
-위에 표시 된 코드를 요약 하는 `jQuery $(document).ready` 방법이 함수는 `viewModel object` 만든 다음는 `loadNavigationNodes()` 해당 개체에 대해 함수를 호출 합니다. 이 함수는 클라이언트 브라우저의 HTML5 로컬 저장소에 저장 된 이전에 작성된 된 탐색 계층 구조를 로드 하는 중 하나 또는 함수를 호출 하 `queryRemoteInterface()`합니다.
+위에 표시 된 코드를 요약 하려면이 `jQuery $(document).ready` 함수를 `viewModel object` 만든 다음 해당 개체에 대 `loadNavigationNodes()` 한 함수를 호출 합니다. 이 함수는 클라이언트 브라우저의 HTML5 로컬 저장소에 저장 된 이전에 작성 된 탐색 계층 구조를 로드 하거나 함수 `queryRemoteInterface()`를 호출 합니다.
 
-`QueryRemoteInterface()`사용 하 여 요청을 작성은 `getRequest()` 함수는 쿼리 매개 변수와 함께 스크립트 앞부분에서 정의한 하 고 다음 서버에서 데이터를 반환 합니다. 이 데이터는 기본적으로 다양 한 속성으로 표시 되는 데이터 전송 개체로 표현 하는 사이트 모음에 있는 모든 사이트의 배열입니다. 
+`QueryRemoteInterface()`스크립트 앞부분에서 정의한 쿼리 `getRequest()` 매개 변수와 함께 함수를 사용 하 여 요청을 작성 하 고 서버에서 데이터를 반환 합니다. 이 데이터는 기본적으로 사이트 모음에서 다양 한 속성과 함께 데이터 전송 개체로 표시 되는 모든 사이트의 배열입니다. 
 
-이 데이터는 다음 구문 분석 되는 이전에 정의 된으로 `SPO.Models.NavigationNode` 개체를 사용 하는 `Knockout.js` 데이터 이전에 정의한 하는 HTML로 값 바인딩 (영문)에서 사용 하기 위해 눈에 띄는 속성을 만들 수 있습니다. 
+이 데이터는 이전에 정의한 HTML에 값 `SPO.Models.NavigationNode` 을 데이터 바인딩할 `Knockout.js` 때 사용할 예측 가능한 속성을 만들기 위해 사용 하는 이전에 정의 된 개체로 구문 분석 됩니다. 
 
-그런 다음 개체는 결과 배열에 배치 됩니다. 이 배열은 녹아웃을 사용 하 여 JSON으로 구문 분석 되 고 이후 페이지 로드에서 성능 향상된을 위해 로컬 브라우저 저장소에 저장 합니다.
+그런 다음 개체를 결과 배열에 추가 합니다. 이 배열은 나중에 페이지를 로드할 때 성능을 개선 하기 위해 녹아웃을 사용 하 여 JSON으로 구문 분석 되며 로컬 브라우저 저장소에 저장 됩니다.
 
-### <a name="benefits-of-this-approach"></a>이 방법을 사용의 이점
+### <a name="benefits-of-this-approach"></a>이 방법의 장점
 
-[이 방법](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) 의 주요 이점 중 하나는 HTML5 로컬 저장소를 사용 하 여 탐색 저장 되어 로컬로 사용자에 대 한 다음에 페이지를 로드 합니다. 검색 API를 사용 하 여 구조적 탐색;에 대 한 주요 성능 향상을 얻게 그러나 일부 기술 기능을 실행 하 고이 기능을 사용자 지정을 걸립니다. 
+[이 방법](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) 의 주요 이점 중 하나는 HTML5 로컬 저장소를 사용 하 여 다음에 페이지를 로드할 때 탐색이 로컬로 저장 된다는 것입니다. 구조적 탐색에는 검색 API를 사용 하는 것과 관련 하 여 성능을 크게 향상 시킬 수 있습니다. 그러나이 기능을 실행 하 고 사용자 지정 하는 데는 몇 가지 기술적인 기능이 있습니다. 
 
-[구현 하는 예제](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)사이트의 기본 구조적 탐색;와 동일한 방식으로 정렬 됩니다. 사전순으로 보여줍니다. 이 순서에서 파생 하는 하고자 하는 경우는 것이 더 복잡 하 고 유지 관리, 개발 합니다. 또한이 방법을 사용을 사용 하면 지원 되는 마스터 페이지에서 파생 하는으로 해야 합니다. 사용자 지정 마스터 페이지, 유지 하지 않는 경우 사이트를에 업데이트 및 마스터 페이지를 Microsoft에 게 하는 향상 된 기능입니다.
+[예제 구현](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)에서 사이트는 기본 구조적 탐색과 동일한 방식으로 정렬 됩니다. 사전순 이 순서를 그대로 유지 하려는 경우에는 개발 및 관리가 훨씬 복잡해 집니다. 또한이 방법을 사용 하려면 지원 되는 마스터 페이지에서 벗어난 사항을 충족 해야 합니다. 사용자 지정 마스터 페이지가 유지 관리 되지 않으면 사이트에서 마스터 페이지에 대 한 업데이트 및 향상 된 기능을 놓치지 않습니다.
 
-[위의 코드는](#about-the-javascript-file) 다음과 같은 종속성에 있습니다.
+[위의 코드](#about-the-javascript-file) 에는 다음과 같은 종속성이 있습니다.
 
-- jQuery-http://jquery.com/
-- KnockoutJS-http://knockoutjs.com/
-- Linq.js- http://linqjs.codeplex.com/, 또는 github.com/neuecc/linq.js
+- jQueryhttp://jquery.com/
+- KnockoutJS -http://knockoutjs.com/
+- Linq .js- http://linqjs.codeplex.com/또는 github.com/neuecc/linq.js
 
-LinqJS의 현재 버전 위의 코드에 사용 되는 ByHierarchy 메서드를 포함 하지 않는 및 탐색 코드의 연결이 끊어집니다. 이 문제를 해결 하려면 다음 메서드를 줄 앞 Linq.js 파일에 추가 `Flatten: function ()`합니다.
+현재 버전의 LinqJS에는 위의 코드에서 사용 된 ByHierarchy 메서드가 포함 되지 않으며 탐색 코드가 손상 됩니다. 이 문제를 해결 하려면 명령줄 `Flatten: function ()`앞에 있는 Linq .js 파일에 다음 메서드를 추가 합니다.
 
 ```
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

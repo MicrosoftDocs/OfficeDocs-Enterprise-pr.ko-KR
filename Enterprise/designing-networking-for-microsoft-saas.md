@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: '요약: Office 365, Microsoft Intune 및 Dynamics 365를 포함 하 여 Microsoft의 SaaS 서비스에 액세스할 수 있도록 네트워크를 최적화 하는 방법을 알아봅니다.'
-ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 695e3255bf1afcb5314985caccb15ead410d93f6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067774"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS에 대한 네트워킹 디자인
 
@@ -31,11 +31,11 @@ Microsoft SaaS 서비스를 위해 네트워크를 최적화하려면 Microsoft 
 
 다음 단계에 따라 Microsoft SaaS 서비스에 대 한 네트워크를 최적화 합니다.
   
-1. [microsoft 클라우드 연결의 공통 요소](common-elements-of-microsoft-cloud-connectivity.md)에 있는 **microsoft 클라우드 서비스용 네트워크 섹션을 준비 하는 단계** 를 진행 합니다.
+1. [Microsoft 클라우드 연결의 공통 요소](common-elements-of-microsoft-cloud-connectivity.md)에 있는 **microsoft 클라우드 서비스용 네트워크 섹션을 준비 하는 단계** 를 진행 합니다.
     
 2. 각 사무실에 인터넷 연결을 추가 합니다.
     
-3. 모든 인터넷 연결에 대 한 isp에서 로컬 IP 주소가 있는 DNS 서버를 사용 하는지 확인 합니다.
+3. 모든 인터넷 연결에 대 한 Isp에서 로컬 IP 주소가 있는 DNS 서버를 사용 하는지 확인 합니다.
     
 4. 네트워크 헤어핀 방지 클라우드 기반 보안 서비스와 같은 중간 대상을 검사 하 고 가능한 경우 제거 합니다.
     
@@ -47,7 +47,7 @@ Microsoft SaaS 트래픽의 범주에는 다음 세 가지가 있습니다.
 
 - 최적화
 
-  모든 microsoft saas 서비스에 연결 하 고 microsoft saas 대역폭, 연결 및 데이터 양을 75% 이상으로 표시 하는 데 필요 합니다.
+  모든 Microsoft SaaS 서비스에 연결 하 고 Microsoft SaaS 대역폭, 연결 및 데이터 양을 75% 이상으로 표시 하는 데 필요 합니다.
 
 - 허용
 
@@ -65,7 +65,7 @@ Microsoft SaaS 트래픽의 범주에는 다음 세 가지가 있습니다.
 그림 1에는 다음과 같은 지사, 지역 또는 중앙 it를 비롯 한 모든 사무실의 권장 구성이 나와 있습니다.
 
 - **기본** 범주 및 일반 인터넷 트래픽은 인터넷 기반 보안 위험 으로부터 보호를 제공 하기 위해 프록시 서버 및 기타에 지 장치를 포함 하는 사무실로 라우팅됩니다.
-- **최적화** 및 **허용** 범주 트래픽은 프록시 서버 및 기타에 지 장치를 바이패스 하 여 연결 하는 사용자를 포함 하는 office에 가장 가까운 Microsoft 네트워크 프런트 엔드의 모서리로 바로 전달 됩니다.
+- **최적화** 및 **허용** 범주 트래픽은 프록시 서버 및 기타에 지 장치를 바이패스 하 여 연결 하는 사용자를 포함 하는 Office에 가장 가까운 Microsoft 네트워크 프런트 엔드의 모서리로 바로 전달 됩니다.
 
 지사의 SD (wide area network) 장치에는 다음과 같은 개별 트래픽이 사용 되도록 별도의 트래픽을 사용 합니다. 
 

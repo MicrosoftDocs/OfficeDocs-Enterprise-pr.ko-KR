@@ -1,9 +1,9 @@
 ---
 title: 조직을 위해 Office 365 Enterprise 배포
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 다음 개요 단계는 Office 365를 배포하고 Active Directory를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
-ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
-ms.translationtype: HT
+ms.openlocfilehash: 16e6c60404a9e1f2c49b2e8e23920540e1dd8e49
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070814"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>조직을 위해 Office 365 Enterprise 배포
 온 - 프레미스 인프라와 함께 Office 365 Enterprise를 배포하고 통합할 준비가 되셨나요? 다음 개요 단계는 디렉토리를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
@@ -31,7 +31,7 @@ ms.locfileid: "31004409"
 Office 365 Enterprise가 없습니까? 중소기업을 위한 지침은 [비즈니스 용 Office 365 설정](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)을 참조하세요. 
   
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>FastTrack을 사용한 기업용 Office 365 설치 프로세스
-Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** 은 Office 365를 배포하는 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내하고 단계별로 질문에 답변할 수 있습니다. 파트너로부터 자가 진단 또는 지침을 원하는 경우 [Office 365 설치 가이드](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), [Office 365 설치 마법사](https://aka.ms/o365fasttrack) 또는 [공식 파트너를 찾으십시오](https://partnercenter.microsoft.com/ko-KR/pcv/search).
+Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** 은 Office 365를 배포하는 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내하고 단계별로 질문에 답변할 수 있습니다. 파트너로부터 자가 진단 또는 지침을 원하는 경우 [Office 365 설치 가이드](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), [Office 365 설치 마법사](https://aka.ms/o365fasttrack) 또는 [공식 파트너를 찾으십시오](https://partnercenter.microsoft.com/en-us/pcv/search).
 
 ## <a name="self-deployment-of-office-365"></a>Office 365의 자체 배포
 직접 Office 365를 배포하려는 경우 다음 배포 단계가 도움을 드립니다.

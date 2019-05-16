@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: '요약: Azure의 Microsoft PaaS (Platform as a Service) 기반 클라우드 제품에 대 한 하이브리드 아키텍처 및 시나리오를 이해 합니다.'
-ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fcc335d0e53463dea4e7ac73c3885b39734db38e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491208"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067534"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS용 하이브리드 클라우드 시나리오
 
@@ -45,11 +45,11 @@ ms.locfileid: "33491208"
     
 - 네트워크
     
-    기존 인터넷 파이프 또는 공용 피어 링을 통해 Azure PaaS로가는 express 연결로 구성 됩니다. Azure PaaS 응용 프로그램에서 온-프레미스 계산 또는 저장소 리소스에 액세스 하는 방법을 포함 해야 합니다.
+    기존 인터넷 파이프 또는 공용 피어 링을 통해 Azure PaaS로가는 Express 연결로 구성 됩니다. Azure PaaS 응용 프로그램에서 온-프레미스 계산 또는 저장소 리소스에 액세스 하는 방법을 포함 해야 합니다.
     
 - 온-프레미스
     
-    id 및 보안 인프라와 Azure PaaS 응용 프로그램에서 안전 하 게 액세스할 수 있는 기존 LOB (기간 업무) 응용 프로그램 또는 데이터베이스 서버로 구성 됩니다.
+    Id 및 보안 인프라와 Azure PaaS 응용 프로그램에서 안전 하 게 액세스할 수 있는 기존 LOB (기간 업무) 응용 프로그램 또는 데이터베이스 서버로 구성 됩니다.
     
 ## <a name="azure-paas-hybrid-application"></a>Azure PaaS hybrid 응용 프로그램
 
@@ -59,7 +59,7 @@ ms.locfileid: "33491208"
 
 ![Azure PaaS 기반 하이브리드 응용 프로그램](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
-그림 2에서는 온-프레미스 네트워크가 서버의 저장소 또는 앱과 프록시 서버를 포함 하는 DMZ를 호스트 합니다. 인터넷을 통해 또는 express 연결을 통해 Azure PaaS 서비스에 연결 됩니다.
+그림 2에서는 온-프레미스 네트워크가 서버의 저장소 또는 앱과 프록시 서버를 포함 하는 DMZ를 호스트 합니다. 인터넷을 통해 또는 Express 연결을 통해 Azure PaaS 서비스에 연결 됩니다.
   
 조직은 다음을 수행 하 여 Azure PaaS hybrid 응용 프로그램에서 해당 계산 또는 저장소 리소스를 사용할 수 있습니다.
   
@@ -69,7 +69,7 @@ ms.locfileid: "33491208"
     
 Azure 앱은 다음의 자격 증명을 사용할 수 있습니다.
   
-- Azure ad: ad DS (Active Directory 도메인 서비스)와 같은 온-프레미스 id 공급자와 동기화 할 수 있습니다.
+- Azure AD: AD DS (Active Directory 도메인 서비스)와 같은 온-프레미스 id 공급자와 동기화 할 수 있습니다.
     
 - 타사 id 공급자
     

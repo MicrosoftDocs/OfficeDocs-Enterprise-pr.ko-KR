@@ -4,23 +4,23 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: 이 문서는 Microsoft Office server 제품-SharePoint server, Exchange server, Lync Server 및 Office Online에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
+ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487814"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068774"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>액세스 가능한 다이어그램-Microsoft Office Server 제품 간 기능 통합
 
-**요약:** 이 문서는 Microsoft Office server 제품-SharePoint server, Exchange server, Lync Server 및 Office Online에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
+**요약:** 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
   
 이 다이어그램은이 문서의 섹션 제목으로 표시 되는 여러 탭으로 구성 됩니다.
   
@@ -86,7 +86,7 @@ Windows phone을 사용 하거나 QR 코드 판독기를 다운로드 하 여 �
     
 - Lync
     
-- office Online (이전의 office Web Apps) 
+- Office Online (이전의 Office Web Apps) 
     
 고해상도 사용자 사진 이 기능은 다음에 적용할 수 있습니다. 
   
@@ -130,15 +130,15 @@ Outlook Web App의 Lync 현재 상태 이 기능은 다음에 적용할 수 있�
     
 ### <a name="office-web-apps-server"></a>Office Web Apps 서버
 
-office Web Apps 서버는 office 파일용 브라우저 기반 파일 보기 및 편집 서비스를 제공 하는 office 서버 제품입니다. Office web Apps 서버는 웹 응용 프로그램 오픈 플랫폼 인터페이스 프로토콜 (WOPI)을 지 원하는 제품 및 서비스에서 작동 합니다. 호스트 라고 하는 이러한 제품에는 SharePoint 2013, Lync Server 2013 및 Exchange Server 2013가 포함 됩니다. 
+Office Web Apps 서버는 office 파일용 브라우저 기반 파일 보기 및 편집 서비스를 제공 하는 Office 서버 제품입니다. Office Web Apps 서버는 웹 응용 프로그램 오픈 플랫폼 인터페이스 프로토콜 (WOPI)을 지 원하는 제품 및 서비스에서 작동 합니다. 호스트 라고 하는 이러한 제품에는 SharePoint 2013, Lync Server 2013 및 Exchange Server 2013가 포함 됩니다. 
   
-office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka.ms/OfficeWebAppsPosteroffice web apps 배포 간소화 포스터를 다운로드 하세요. 
+Office Web Apps 서버에 대 한 자세한 내용을 보려면에서 http://aka.ms/OfficeWebAppsPosterOffice web apps 배포 간소화 포스터를 다운로드 하세요. 
   
 ## <a name="server-to-server-authentication-tab"></a>서버 간 인증 탭
 
 ### <a name="servicing-resource-requests-between-servers"></a>서버 간의 리소스 요청 서비스
 
-서버 간 인증은 서버에서 사용자를 대신 하 여 다른 서버의 리소스를 요청 하는 데 사용할 수 있는 Exchange server 2013, Lync server 2013 및 SharePoint server 2013의 새로운 기능입니다. 이 기능은 업계 OAuth (standard Open Authorization) 2.0 프로토콜을 사용 합니다. 서버 간 인증을 사용 하면 eDiscovery, 고해상도 사용자 사진 및 사이트 사서함과 같은 여러 가지 새로운 시나리오를 사용할 수 있습니다. 
+서버 간 인증은 서버에서 사용자를 대신 하 여 다른 서버의 리소스를 요청 하는 데 사용할 수 있는 Exchange Server 2013, Lync Server 2013 및 SharePoint Server 2013의 새로운 기능입니다. 이 기능은 업계 OAuth (standard Open Authorization) 2.0 프로토콜을 사용 합니다. 서버 간 인증을 사용 하면 eDiscovery, 고해상도 사용자 사진 및 사이트 사서함과 같은 여러 가지 새로운 시나리오를 사용할 수 있습니다. 
   
  **서버 제품**
   
@@ -152,7 +152,7 @@ office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
 
 서버가 들어오는 리소스 요청을 처리 하려면 요청을 수행 하는 서버를 신뢰 해야 합니다. 이 트러스트를 설정 하려면 서버 간 트러스트 관계를 구성 해야 합니다. 
   
-서버 간 트러스트 관계는 단방향입니다. sharepoint 2013를 실행 하는 서버를 구성 하 여 exchange 2013 서버를 신뢰 하는 경우 sharepoint server를 실행 하는 서버가 exchange 서버의 리소스 요청을 신뢰 하지만 exchange 서버는 실행 되는 서버의 리소스 요청을 신뢰 하지 않습니다. SharePoint Server 원활한 통합을 위해 양방향 트러스트를 설정 해야 합니다. 
+서버 간 트러스트 관계는 단방향입니다. SharePoint 2013를 실행 하는 서버를 구성 하 여 Exchange 2013 서버를 신뢰 하는 경우 SharePoint Server를 실행 하는 서버가 Exchange 서버의 리소스 요청을 신뢰 하지만 Exchange 서버는 실행 되는 서버의 리소스 요청을 신뢰 하지 않습니다. SharePoint Server 원활한 통합을 위해 양방향 트러스트를 설정 해야 합니다. 
   
 함께 제공 되는 다이어그램은 양방향 트러스트로 설정 된 서버 간 트러스트 관계를 보여줍니다. Exchange 서버, SharePoint 서버 및 Lync Server 사이에 표시 되는 양방향 트러스트 관계는 다음과 같습니다. 각 서버 유형에는 서로 다른 두 서버에 대 한 양방향 신뢰가 있습니다. 
   
@@ -162,35 +162,35 @@ office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
   
 다음 표에는 각 서버의 JSON 메타 데이터 끝점이 나와 있습니다. 표에 다음이 나와 있습니다. 
   
-- https://<server name>/autodiscover/metadata/json/1의 JSON 메타 데이터 끝점이 있는 Exchange 서버 
+- Https://<server name>/AUTODISCOVER/METADATA/JSON/1의 JSON 메타 데이터 끝점이 있는 Exchange 서버 
     
-- https://<server name>/metadata/json/1의 JSON 메타 데이터 끝점이 있는 Lync server 
+- Https://<server name>/METADATA/JSON/1의 JSON 메타 데이터 끝점이 있는 Lync server 
     
-- https://<web app name>/_layouts/15/metadata/json/1의 JSON 메타 데이터 끝점이 있는 SharePoint server 
+- Https://<web app name>/_LAYOUTS/15/METADATA/JSON/1의 JSON 메타 데이터 끝점이 있는 SharePoint server 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>예제: SharePoint 및 Exchange 간의 eDiscovery에 대 한 서버 간 인증 작동 방식
 
-이 예에서는 서버 간 트러스트를 사용 하 여 SharePoint server를 실행 하는 서버를 신뢰 하도록 Exchange 2013 서버를 구성 합니다. SharePoint server를 실행 하는 서버의 eDiscovery 센터가 Exchange 서버의 사서함에 데이터를 포함 하도록 구성 되어 있습니다. 
+이 예에서는 서버 간 트러스트를 사용 하 여 SharePoint Server를 실행 하는 서버를 신뢰 하도록 Exchange 2013 서버를 구성 합니다. SharePoint Server를 실행 하는 서버의 eDiscovery 센터가 Exchange 서버의 사서함에 데이터를 포함 하도록 구성 되어 있습니다. 
   
 다른 서버의 리소스 요청은 대상 서버의 웹 서버 서비스에 전송 되는 액세스 토큰 형식을 사용 합니다. 
   
 함께 제공 되는 다이어그램에서는 두 서버 간에 쿼리 및 액세스 토큰이 이동 하는 방식을 보여 줍니다. 
   
-1. eDiscovery 관리자가 SharePoint server를 실행 하는 서버에 Exchange 서버에 대 한 리소스를 포함 하는 쿼리를 보냅니다. 
+1. EDiscovery 관리자가 SharePoint Server를 실행 하는 서버에 Exchange 서버에 대 한 리소스를 포함 하는 쿼리를 보냅니다. 
     
-2. SharePoint server를 실행 하는 서버에서 사용자 및 요청 된 리소스를 식별 하는 액세스 토큰을 생성 합니다. 
+2. SharePoint Server를 실행 하는 서버에서 사용자 및 요청 된 리소스를 식별 하는 액세스 토큰을 생성 합니다. 
     
-3. SharePoint server를 실행 하는 서버가 액세스 토큰을 Exchange 서버로 전송 합니다. 
+3. SharePoint Server를 실행 하는 서버가 액세스 토큰을 Exchange 서버로 전송 합니다. 
     
 4. Exchange 서버는 액세스 토큰의 유효성을 검사 하 고 쿼리 결과를 전송 합니다. 
     
-5. SharePoint server를 실행 하는 서버는 ediscovery 관리자의 컴퓨터를 통해 ediscovery 쿼리 결과를 보냅니다. 
+5. SharePoint Server를 실행 하는 서버는 ediscovery 관리자의 컴퓨터를 통해 eDiscovery 쿼리 결과를 보냅니다. 
     
 ## <a name="high-resolution-user-photos-tab"></a>고해상도 사용자 사진 탭
 
 ### <a name="larger-profile-picture-used-across-all-office-applications"></a>모든 Office 응용 프로그램에서 사용 되는 큰 프로필 사진
 
-**고해상도 사용자 사진** 탭을 사용 하 여 최대 648 x 648 픽셀의 Exchange 2013에 사진을 저장할 수 있습니다. 그런 다음 outlook, outlook Web App, SharePoint 2013, Lync 2013 및 모바일 전자 메일 클라이언트를 포함 하 여 클라이언트 응용 프로그램에서 액세스할 수 있습니다. 저해상도의 사진도 Active Directory에 저장됩니다.
+**고해상도 사용자 사진** 탭을 사용 하 여 최대 648 x 648 픽셀의 Exchange 2013에 사진을 저장할 수 있습니다. 그런 다음 Outlook, Outlook Web App, SharePoint 2013, Lync 2013 및 모바일 전자 메일 클라이언트를 포함 하 여 클라이언트 응용 프로그램에서 액세스할 수 있습니다. 저해상도의 사진도 Active Directory에 저장됩니다.
   
  **서버 제품**
   
@@ -212,17 +212,17 @@ office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
   
 - Exchange 2013 자동 검색 서비스를 시작 하 고 구성 합니다. 
     
-- SharePoint에 대 한 외부 url을 설정 합니다. 다음은 SharePoint에서 Exchange의 사진에 액세스할 때 사용 하는 url입니다. 
+- SharePoint에 대 한 외부 Url을 설정 합니다. 다음은 SharePoint에서 Exchange의 사진에 액세스할 때 사용 하는 Url입니다. 
     
  **SharePoint Server 2013**
   
-- Exchange 웹 서비스 관리 되는 API를 설치 합니다. gacutil.exe를 사용 하 여 WebServices를 GAC (전역 어셈블리 캐시)에 로드 합니다. 
+- Exchange 웹 서비스 관리 되는 API를 설치 합니다. Gacutil.exe를 사용 하 여 WebServices를 GAC (전역 어셈블리 캐시)에 로드 합니다. 
     
 - Windows PowerShell을 사용 하 여 Exchange와의 사진 동기화를 구성 합니다. 
     
  **작동 방법**
   
-- 사용자는 OWA (outlook Web App) 또는 outlook 2013의 계정 설정에서 내 계정 페이지를 사용 하 여 사진을 업로드 합니다. 
+- 사용자는 OWA (Outlook Web App) 또는 Outlook 2013의 계정 설정에서 내 계정 페이지를 사용 하 여 사진을 업로드 합니다. 
     
 - Exchange는 AD DS (48 x 48 픽셀)에서 사용할 이미지 크기를 자동으로 조정 하며, OWA 및 Outlook 2013 클라이언트 (96 x 96 픽셀)를 비롯 한 다른 Office 응용 프로그램을 사용 합니다. 
     
@@ -230,11 +230,11 @@ office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
   
 - 64 × 64는 AD 축소판 그림에 사용 됩니다. 
     
-- 96 × 96는 outlook Web Access, Outlook, lync Web Access 및 Lync 2013에 사용 됩니다. 
+- 96 × 96는 Outlook Web Access, Outlook, Lync Web Access 및 Lync 2013에 사용 됩니다. 
     
-- 648 × 648는 lync Web Access 및 lync 2013에 사용 됩니다. 
+- 648 × 648는 Lync Web Access 및 Lync 2013에 사용 됩니다. 
     
-구성 스크립트 예를 보려면 jens trier Rasmussen의 블로그 문서를 참조 하십시오. 
+구성 스크립트 예를 보려면 Jens Trier Rasmussen의 블로그 문서를 참조 하십시오. 
   
 - SharePoint Server 2013에서 Exchange 2013 고해상도 사진 사용 (http://aka.ms/Bhr4d2) 
     
@@ -249,17 +249,17 @@ office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
 2. 사용자는 다음과 같은 다양 한 방법을 사용 하 여 사진을 업데이트할 수 있습니다. 
     
 3. 
-  - Exchange 클라이언트 액세스 서버에 대 한 HTTP 포트 443을 통해 outlook 클라이언트나 OWA (outlook Web App)를 사용 합니다. 
+  - Exchange 클라이언트 액세스 서버에 대 한 HTTP 포트 443을 통해 Outlook 클라이언트나 OWA (Outlook Web App)를 사용 합니다. 
     
-  - HTTP를 통한 내 사이트 또는 SharePoint 서버에 대 한 HTTPS SharePoint는 내 사이트 데이터베이스 (Https: 443)에서 사용자를 캐시 합니다. exchange에 설정 된 외부 url을 사용 하는 exchange 클라이언트 액세스 서버와의 SharePoint server 인터페이스 
+  - HTTP를 통한 내 사이트 또는 SharePoint 서버에 대 한 HTTPS SharePoint는 내 사이트 데이터베이스 (Https: 443)에서 사용자를 캐시 합니다. Exchange에 설정 된 외부 Url을 사용 하는 Exchange 클라이언트 액세스 서버와의 SharePoint server 인터페이스 
     
-  - Lync 2013 클라이언트-사진 업데이트를 가져오기 위해 Exchange 서버와의 getconnection (HTTPS get request-443)을 유지 합니다. 
+  - Lync 2013 클라이언트-사진 업데이트를 가져오기 위해 Exchange 서버와의 GetConnection (HTTPS Get request-443)을 유지 합니다. 
     
-4. exchange 클라이언트 액세스 서버는 내부 exchange 통신을 사용 하 여 exchange 사서함 서버에 연결 합니다. 
+4. Exchange 클라이언트 액세스 서버는 내부 Exchange 통신을 사용 하 여 Exchange 사서함 서버에 연결 합니다. 
     
-5. exchange 사서함 서버는 exchange 2013을 사용 하 여 고해상도 사용자 사진을 AD DS (LDAP: 389)에 푸시합니다. 
+5. Exchange 사서함 서버는 Exchange 2013을 사용 하 여 고해상도 사용자 사진을 AD DS (LDAP: 389)에 푸시합니다. 
     
-6. 레거시 클라이언트가 같은 사진을 가져올 수 있도록 AD DS (Active Directory 도메인 서비스)에서 lync 서버의 ABS (주소록 서비스)로 동기화 합니다. 
+6. 레거시 클라이언트가 같은 사진을 가져올 수 있도록 AD DS (Active Directory 도메인 서비스)에서 Lync 서버의 ABS (주소록 서비스)로 동기화 합니다. 
     
 7. 이제 레거시 Lync 클라이언트에 사진에 대 한 액세스 권한이 있습니다. 
     
@@ -267,7 +267,7 @@ office web apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
 
 ### <a name="exchange-2013-is-the-contact-store-for-all-office-applications"></a>Exchange 2013는 모든 Office 응용 프로그램의 연락처 저장소입니다.
 
-UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연락처 환경을 제공 합니다. 사용자는 Exchange 2013 사서함에 모든 연락처 정보를 저장 합니다. Lync, Exchange, outlook 및 outlook Web App에서 전역적으로 동일한 연락처 정보를 사용할 수 있습니다. 
+UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연락처 환경을 제공 합니다. 사용자는 Exchange 2013 사서함에 모든 연락처 정보를 저장 합니다. Lync, Exchange, Outlook 및 Outlook Web App에서 전역적으로 동일한 연락처 정보를 사용할 수 있습니다. 
   
  **서버 제품**
   
@@ -277,19 +277,19 @@ UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연
     
  **구성**
   
-- Exchange server 2013와 Lync server 2013 간에 서버 간 인증을 구성 합니다. 
+- Exchange Server 2013와 Lync Server 2013 간에 서버 간 인증을 구성 합니다. 
     
 - Lync 2013에서 통합 연락처 저장소 정책을 사용 하도록 설정 합니다 (기본값은 사용 하도록 설정 됨). 
     
-구성 스크립트 예를 보려면 jens trier Rasmussen의 블로그 문서를 참조 하십시오. 
+구성 스크립트 예를 보려면 Jens Trier Rasmussen의 블로그 문서를 참조 하십시오. 
   
 - Exchange 2013 및 Lync Server 2013 통합 (http://aka.ms/Oyg7fh) 
     
  **작동 방법**
   
-- 사용자가 lync 2013을 사용 하 여 로그인 할 때 사용자나의 lync 연락처가 Exchange 2013로 자동으로 마이그레이션됩니다. 
+- 사용자가 Lync 2013을 사용 하 여 로그인 할 때 사용자나의 Lync 연락처가 Exchange 2013로 자동으로 마이그레이션됩니다. 
     
-- 사용자는 lync 2013, outlook 2013 또는 Outlook Web access에서 lync 연락처에 액세스 하 고 관리할 수 있습니다. 
+- 사용자는 Lync 2013, Outlook 2013 또는 Outlook Web Access에서 Lync 연락처에 액세스 하 고 관리할 수 있습니다. 
     
 사용자의 연락처가 다음과 같은 경우 Exchange 2013 서버로 자동으로 마이그레이션됩니다. 
   
@@ -297,21 +297,21 @@ UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연
     
 2. Exchange 2013 사서함으로 프로 비전 되었으며 사서함에 적어도 한 번 로그인 되어 있습니다. 
     
-3. lync 2013 리치 클라이언트를 사용 하 여 lync에 로그인 합니다. 
+3. Lync 2013 리치 클라이언트를 사용 하 여 Lync에 로그인 합니다. 
     
-lync 2013 리치 클라이언트를 사용 하 여 lync에 로그인 합니다. 
+Lync 2013 리치 클라이언트를 사용 하 여 Lync에 로그인 합니다. 
   
-1. HTTPS/443을 통해 outlook 클라이언트나 OWA (outlook Web App)를 사용 하 여 exchange 클라이언트 액세스 서버에서 exchange 2013 사서함에 로그인 합니다. exchange 사서함 서버는 내부 exchange 통신을 사용 하 여 exchange 클라이언트 액세스 서버와 통신 합니다. 
+1. HTTPS/443을 통해 Outlook 클라이언트나 OWA (Outlook Web App)를 사용 하 여 Exchange 클라이언트 액세스 서버에서 Exchange 2013 사서함에 로그인 합니다. Exchange 사서함 서버는 내부 Exchange 통신을 사용 하 여 Exchange 클라이언트 액세스 서버와 통신 합니다. 
     
-2. Lync 2013에 로그인 합니다. lync 클라이언트는 lync server에 SIP/5061 HTTPS/443을 통해 연락 합니다. 
+2. Lync 2013에 로그인 합니다. Lync 클라이언트는 Lync server에 SIP/5061 HTTPS/443을 통해 연락 합니다. 
     
-3. lync 클라이언트는 사용자가 SIP/5061을 통해 통합 연락처 저장소를 사용할 수 있음을 lync server에 알려 줍니다. 
+3. Lync 클라이언트는 사용자가 SIP/5061을 통해 통합 연락처 저장소를 사용할 수 있음을 Lync server에 알려 줍니다. 
     
-4. lync server는 lync Storage Service를 사용 하 여 exchange 클라이언트 액세스 서버에서 사용자의 연락처를 exchange 2013로 마이그레이션합니다. 
+4. Lync server는 Lync Storage Service를 사용 하 여 Exchange 클라이언트 액세스 서버에서 사용자의 연락처를 Exchange 2013로 마이그레이션합니다. 
     
 5. 변경 내용이 표시 되도록 사용자는 로그 아웃 하 고 Lync 2013에 로그인 해야 합니다 (다이어그램에 표시 되지 않음). 
     
-6. 마이그레이션 후 lync 클라이언트는 EWS (Exchange 웹 서비스)를 사용 하 여 lync 연락처를 읽고 유지 관리 합니다. 
+6. 마이그레이션 후 Lync 클라이언트는 EWS (Exchange 웹 서비스)를 사용 하 여 Lync 연락처를 읽고 유지 관리 합니다. 
     
 ## <a name="site-mailboxes-tab"></a>사이트 사서함 탭
 
@@ -395,7 +395,7 @@ Exchange 서버에서 사이트 사서함 프로 비전 정책을 정의할 수 
 
 ### <a name="synchronizing-tasks-among-sharepoint-server-2013-project-server-2013-and-exchange-server-2013"></a>SharePoint Server 2013, Project Server 2013 및 Exchange Server 2013 간에 작업 동기화
 
-exchange 작업 동기화를 사용 하 여 SharePoint server 2013 및 Project server 2013에서 작업을 exchange Server 2013과 동기화 할 수 있습니다. 사용자는 Outlook 2013 또는 내 사이트에서 자신의 작업을 보고 관리할 수 있습니다. 
+Exchange 작업 동기화를 사용 하 여 SharePoint Server 2013 및 Project Server 2013에서 작업을 Exchange Server 2013과 동기화 할 수 있습니다. 사용자는 Outlook 2013 또는 내 사이트에서 자신의 작업을 보고 관리할 수 있습니다. 
   
  **서버 제품**
   
@@ -423,7 +423,7 @@ SharePoint Server 2013에서 다음을 수행 합니다.
     
 - 사용자에 게 기존 내 사이트가 있습니다. 
     
-- project Service 응용 프로그램 (project Server 작업 집계) 
+- Project Service 응용 프로그램 (Project Server 작업 집계) 
     
 - 각 웹 프런트 엔드 서버에 있는 Exchange 웹 서비스 API (설치 해야 하는 별도의 다운로드 가능한 .exe 파일) 
     
@@ -435,17 +435,17 @@ Project Server 2013에서 다음을 수행 합니다.
   
 내 사이트의 내 작업 보기를 열거나 새로 고치면 다음과 같은 작업이 수행 됩니다. 
   
-- 작업 관리 서비스 응용 프로그램은 SharePoint server와 Project Server 간에 동기화 됩니다. 
+- 작업 관리 서비스 응용 프로그램은 SharePoint Server와 Project Server 간에 동기화 됩니다. 
     
-- exchange 동기화 타이머 작업은 작업 관리 서비스 응용 프로그램을 호출 하 여 작업을 Exchange Server 2013와 동기화 합니다. 
+- Exchange 동기화 타이머 작업은 작업 관리 서비스 응용 프로그램을 호출 하 여 작업을 Exchange Server 2013와 동기화 합니다. 
     
 - 내 사이트의 내 작업 페이지가 새로 고쳐집니다. 
     
 Exchange 동기화 타이머 작업을 실행 하는 경우: 
   
-- 작업 관리 서비스 응용 프로그램은 SharePoint server, Project Server 및 Exchange server 간에 동기화 됩니다. 
+- 작업 관리 서비스 응용 프로그램은 SharePoint Server, Project Server 및 Exchange Server 간에 동기화 됩니다. 
     
-함께 제공 되는 다이어그램은 SharePoint server 2013, Exchange Server 2013, Outlook 2013 및 Project Server 2013 간의 상호 작용을 보여 줍니다. 
+함께 제공 되는 다이어그램은 SharePoint Server 2013, Exchange Server 2013, Outlook 2013 및 Project Server 2013 간의 상호 작용을 보여 줍니다. 
   
 SharePoint Server 2013에서는 다음과 같은 작업 및 응용 프로그램을 실행 합니다. 
   
@@ -499,13 +499,13 @@ Exchange 동기화 타이머 작업은 다음과 같습니다.
     
 옵트인 
   
-- 사용자가 exchange 작업을 내 사이트와 동기화 하거나, SharePoint server 2013 및 Project server 2013 작업을 exchange Server 2013과 함께 사용 하도록 옵트인 해야 합니다. 
+- 사용자가 Exchange 작업을 내 사이트와 동기화 하거나, SharePoint Server 2013 및 Project Server 2013 작업을 Exchange Server 2013과 함께 사용 하도록 옵트인 해야 합니다. 
     
 ## <a name="lync-presence-in-office-2013-outlook-web-app-and-sharepoint-server-tab"></a>Office 2013, Outlook Web App 및 SharePoint Server 탭의 Lync 현재 상태
 
 ### <a name="lync-server-as-the-authoritative-source-of-presence-information"></a>Lync Server에서 현재 상태 정보의 신뢰할 수 있는 원본으로
 
-lync 현재 상태 정보를 사용 하면 lync, Outlook 및 SharePoint 간에 현재 상태 정보의 보기를 일관 되 게 설정할 수 있습니다. outlook에서는 outlook과 동일한 컴퓨터에 로컬로 설치 되는 Lync에서 직접 현재 상태 정보를 쿼리 합니다. 사용자가 SharePoint Server에서 현재 상태 정보를 볼 때 로컬 컴퓨터의 Lync에서 현재 상태 정보를 쿼리 합니다.
+Lync 현재 상태 정보를 사용 하면 Lync, Outlook 및 SharePoint 간에 현재 상태 정보의 보기를 일관 되 게 설정할 수 있습니다. Outlook에서는 Outlook과 동일한 컴퓨터에 로컬로 설치 되는 Lync에서 직접 현재 상태 정보를 쿼리 합니다. 사용자가 SharePoint Server에서 현재 상태 정보를 볼 때 로컬 컴퓨터의 Lync에서 현재 상태 정보를 쿼리 합니다.
   
 클라이언트 제품: 
   
@@ -531,19 +531,19 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
   
 먼저 사용자가 Outlook Web App에 로그인 하는 방법을 보여 주고 현재 상태 정보를 사용 하 여 Lync Server를 쿼리 합니다. 
   
-1. 사용자가 Outlook Web App에 로그인 합니다. 클라이언트 컴퓨터는 HTTPS/443을 통해 exchange 클라이언트 액세스 서버 (CAS)에 액세스 하 고 내부 exchange 통신을 사용 하 여 exchange 사서함 서버를 호출 합니다. 
+1. 사용자가 Outlook Web App에 로그인 합니다. 클라이언트 컴퓨터는 HTTPS/443을 통해 Exchange 클라이언트 액세스 서버 (CAS)에 액세스 하 고 내부 Exchange 통신을 사용 하 여 Exchange 사서함 서버를 호출 합니다. 
     
-2. 사용자는 exchange 2013 사서함에 로그인 하 고 exchange CAS는 Lync Server에 SIP/MTLS: 5061을 통해 현재 상태 정보를 쿼리 합니다. 
+2. 사용자는 Exchange 2013 사서함에 로그인 하 고 Exchange CAS는 Lync Server에 SIP/MTLS: 5061을 통해 현재 상태 정보를 쿼리 합니다. 
     
-자세한 내용은 [microsoft Lync Server 2013 및 microsoft Outlook Web App 2013 통합](https://go.microsoft.com/fwlink/?LinkId=313522)을 참조 하세요.
+자세한 내용은 [Microsoft Lync Server 2013 및 Microsoft Outlook Web App 2013 통합](https://go.microsoft.com/fwlink/?LinkId=313522)을 참조 하세요.
   
 두 번째 다이어그램에서는 Outlook 및 SharePoint Server에서 Lync 2013을 사용 하 여 사용자의 현재 상태 정보를 표시 하는 방법을 보여 줍니다. 
   
-1. 사용자가 lync server를 호출 하는 SIP/TLS: 5061을 통해 lync 2013에 로그인 합니다. 
+1. 사용자가 lync server를 호출 하는 SIP/TLS: 5061을 통해 Lync 2013에 로그인 합니다. 
     
-2. 대답. 사용자는 Office 2013의 Outlook을 통해 Exchange 2013 사서함에 로그인 합니다. 클라이언트 컴퓨터는 HTTPS/443을 통해 exchange 클라이언트 액세스 서버 (CAS)에 액세스 하며, 내부 exchange 통신을 사용 하 여 exchange 사서함 서버를 호출 합니다. 
+2. 대답. 사용자는 Office 2013의 Outlook을 통해 Exchange 2013 사서함에 로그인 합니다. 클라이언트 컴퓨터는 HTTPS/443을 통해 Exchange 클라이언트 액세스 서버 (CAS)에 액세스 하며, 내부 Exchange 통신을 사용 하 여 Exchange 사서함 서버를 호출 합니다. 
     
-3. 대답. outlook이 현재 상태 정보를 검색 하기 위해 outlook과 동일한 컴퓨터에 설치 된 Lync를 호출 합니다. 
+3. 대답. Outlook이 현재 상태 정보를 검색 하기 위해 Outlook과 동일한 컴퓨터에 설치 된 Lync를 호출 합니다. 
     
 4. B. 사용자가 sharepoint server를 호출 하는 HTTP 또는 HTTPS를 통해 내 사이트에 연결 합니다. 
     
@@ -569,7 +569,7 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
  **작동 방법**
   
-수신자의 활성 끝점에서 수신자가 호출에 응답 하지 않으면 Lync server는 통화를 exchange UM (예: exchange 사서함 서버)의 음성 메일로 라우팅합니다. 
+수신자의 활성 끝점에서 수신자가 호출에 응답 하지 않으면 Lync Server는 통화를 Exchange UM (예: Exchange 사서함 서버)의 음성 메일로 라우팅합니다. 
   
 함께 제공 되는 다이어그램에서는 두 가지 시나리오에 대 한 호출 라우팅을 보여 줍니다. 
   
@@ -583,9 +583,9 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
 2. 통화가 수신자의 Lync home 서버로 라우팅됩니다. 
     
-3. lync Server는 lync 2013에서 수신자의 활성 끝점을 울립니다. 
+3. Lync Server는 Lync 2013에서 수신자의 활성 끝점을 울립니다. 
     
-4. 호출이 응답 하지 않으면 통화가 exchange CAS (통화 라우터)에서 음성 메일 (exchange UM)으로 라우팅됩니다. 
+4. 호출이 응답 하지 않으면 통화가 Exchange CAS (통화 라우터)에서 음성 메일 (Exchange UM)으로 라우팅됩니다. 
     
 발신자가 Lync 2013을 사용 하 여 전화를 시작 합니다. 
   
@@ -595,9 +595,9 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
 3. 중재 서버는 수신자의 Lync home server 호출을 routs 합니다. 
     
-4. lync Server는 lync 2013에서 수신자의 활성 끝점을 울립니다. 
+4. Lync Server는 Lync 2013에서 수신자의 활성 끝점을 울립니다. 
     
-5. 호출이 응답 하지 않으면 통화가 exchange CAS (통화 라우터)에서 음성 메일 (exchange UM)으로 라우팅됩니다. 
+5. 호출이 응답 하지 않으면 통화가 Exchange CAS (통화 라우터)에서 음성 메일 (Exchange UM)으로 라우팅됩니다. 
     
 ## <a name="meeting-recordings-tab"></a>모임 녹음 탭
 
@@ -617,7 +617,7 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
 준비 
   
-- lync 2013-모임 녹음은 lync 2013의 클라이언트 쪽 기능입니다. 
+- Lync 2013-모임 녹음은 Lync 2013의 클라이언트 쪽 기능입니다. 
     
 - SharePoint 2013-팀 사이트에 이미 모임 기록을 저장 하 고 실행 중 이어야 합니다. 
     
@@ -645,7 +645,7 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
 ### <a name="preparing-for-publishing-meeting-recordings"></a>모임 기록 게시 준비
 
-이 다이어그램에는 SharePoint server 2013이 팀 사이트, 중앙 관리 센터 및 IIS (인터넷 정보 서비스) 서버와 함께 표시 됩니다. 
+이 다이어그램에는 SharePoint Server 2013이 팀 사이트, 중앙 관리 센터 및 IIS (인터넷 정보 서비스) 서버와 함께 표시 됩니다. 
   
 팀 사이트에는 다음이 포함 됩니다. 
   
@@ -655,7 +655,7 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
 중앙 관리 센터에는 웹 응용 프로그램 일반 설정이 포함 되어 있습니다. 
   
-iis 서버에는 iis 설정이 포함 됩니다. 
+IIS 서버에는 IIS 설정이 포함 됩니다. 
   
 모임 기록 게시를 준비 하려면 다음을 수행 합니다. 
   
@@ -663,7 +663,7 @@ iis 서버에는 iis 설정이 포함 됩니다.
     
 2. SharePoint 중앙 관리에서 팀 사이트 모음이 포함 된 웹 응용 프로그램에 대 한 최대 업로드 크기 설정을 변경 합니다. 
     
-3. iis 서버 설정에서 팀 사이트 모음이 포함 된 웹 사이트에 대 한 iis 연결 시간 제한을 늘립니다. 
+3. IIS 서버 설정에서 팀 사이트 모음이 포함 된 웹 사이트에 대 한 IIS 연결 시간 제한을 늘립니다. 
     
  **디지털 자산 라이브러리**
   
@@ -679,7 +679,7 @@ iis 서버에는 iis 설정이 포함 됩니다.
     
 2. 모임 중에 모임 콘텐츠가 MP4 파일에 기록 됩니다. 
     
-3. 모임이\\종료 되 면 컴퓨터의 기록 폴더에 MP4 녹음 (C: Users\\<username>\\동영상\\Lync 녹음)이 표시 됩니다. 필요한 경우 lync 클라이언트와 함께 설치 되는 lync 레코딩 관리자 앱을 사용 하 여 모임 기록을 사용자 지정할 수 있습니다. 
+3. 모임이\\종료 되 면 컴퓨터의 기록 폴더에 MP4 녹음 (C: Users\\<username>\\동영상\\Lync 녹음)이 표시 됩니다. 필요한 경우 Lync 클라이언트와 함께 설치 되는 Lync 레코딩 관리자 앱을 사용 하 여 모임 기록을 사용자 지정할 수 있습니다. 
     
 4. 모임 녹음을 SharePoint 자산 라이브러리로 끌어서 놓습니다. 
     

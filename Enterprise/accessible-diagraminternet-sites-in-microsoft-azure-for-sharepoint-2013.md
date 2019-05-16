@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: 이 문서는 SharePoint 2013 용 Microsoft Azure의 인터넷 사이트 라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068644"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>액세스 가능한 다이어그램-SharePoint 용 Microsoft Azure 2013의 인터넷 사이트
 
@@ -30,9 +30,9 @@ ms.locfileid: "33487695"
     
 - Active Directory 모델을 선택 합니다. 
     
-- id 관리, 영역 및 인증을 위한 디자인 
+- Id 관리, 영역 및 인증을 위한 디자인 
     
-- 교차 사이트 게시용 사이트 및 url을 디자인 합니다. 
+- 교차 사이트 게시용 사이트 및 Url을 디자인 합니다. 
     
 - Azure 환경을 디자인 합니다. 
     
@@ -64,7 +64,7 @@ TechNet의 SharePoint 2013에 대 한 토폴로지, 용량 및 성능 지침을 
   
 #### <a name="application-servers"></a>응용 프로그램 서버
 
-응용 프로그램 서버 섹션에는 3 개의 응용 프로그램 서버 (호스트 d, 호스트 E 및 호스트 F)가 있습니다. 호스트 d에는 크롤링, 관리, 분석 및 콘텐츠 처리 구성 요소가 포함 되어 있습니다. 호스트 E에는 크롤링, 관리 및 콘텐츠 처리 구성 요소가 포함 됩니다. 호스트 F에는 크롤링 및 콘텐츠 처리 구성 요소가 포함 되어 있습니다. 
+응용 프로그램 서버 섹션에는 3 개의 응용 프로그램 서버 (호스트 D, 호스트 E 및 호스트 F)가 있습니다. 호스트 D에는 크롤링, 관리, 분석 및 콘텐츠 처리 구성 요소가 포함 되어 있습니다. 호스트 E에는 크롤링, 관리 및 콘텐츠 처리 구성 요소가 포함 됩니다. 호스트 F에는 크롤링 및 콘텐츠 처리 구성 요소가 포함 되어 있습니다. 
   
 수평 확장 하려면 크롤링 구성 요소가 포함 된 응용 프로그램 서버 한 대와 콘텐츠 처리 구성 요소를 추가 하 여 초당 추가 40 문서를 처리 합니다. 
   
@@ -72,7 +72,7 @@ TechNet의 SharePoint 2013에 대 한 토폴로지, 용량 및 성능 지침을 
 
 데이터베이스 서버 섹션에는 호스트 G와 호스트 H의 두 서버가 있습니다. 데이터베이스 서버는 내결함성을 위한 쌍을 이룬 호스트에 있습니다. 
   
-호스트 G에는 검색 관리 데이터베이스, 링크 데이터베이스, 두 개의 크롤링 데이터베이스, 분석 데이터베이스 및 기타 모든 sharepoint 데이터베이스를 비롯 한 모든 sharepoint 데이터베이스가 포함 됩니다. 호스트 H에는 sql 클러스터링, 미러링 또는 sql Server 2012 AlwaysOn을 사용 하 여 모든 데이터베이스의 중복 복사본을 포함 하 여 모든 SharePoint 데이터베이스가 포함 됩니다. 
+호스트 G에는 검색 관리 데이터베이스, 링크 데이터베이스, 두 개의 크롤링 데이터베이스, 분석 데이터베이스 및 기타 모든 SharePoint 데이터베이스를 비롯 한 모든 SharePoint 데이터베이스가 포함 됩니다. 호스트 H에는 SQL 클러스터링, 미러링 또는 SQL Server 2012 AlwaysOn을 사용 하 여 모든 데이터베이스의 중복 복사본을 포함 하 여 모든 SharePoint 데이터베이스가 포함 됩니다. 
   
 ## <a name="fine-tune-for-azure"></a>Azure에 대 한 미세 조정
 
@@ -108,7 +108,7 @@ Azure 플랫폼에서 가용성 집합에 맞게 SharePoint 팜을 미세 조정
     
 - 옵션 2: 사이트 간 VPN 연결을 통해 온-프레미스 도메인을 확장 합니다. 사이트 간 VPN 연결을 통해 온-프레미스 도메인을 확장 하면 사용자는 온-프레미스에 호스트 된 것 처럼 SharePoint 팜에 액세스 합니다. 기존 Active Directory 및 DNS 구현을 활용할 수 있습니다. 
     
-## <a name="design-for-identity-management-zones-and-authentication"></a>id 관리, 영역 및 인증을 위한 디자인
+## <a name="design-for-identity-management-zones-and-authentication"></a>Id 관리, 영역 및 인증을 위한 디자인
 
 ### <a name="design-for-accounts-and-authentication"></a>계정 및 인증에 대 한 디자인
 
@@ -138,7 +138,7 @@ SharePoint 2013에서 id 관리는 영역 및 인증 구성에 대 한 것입니
     
 - 이 디자인을 사용 하 여 영역 정책을 사용 하 여 웹 응용 프로그램 내에서 고객 작업을 제한할 수 있습니다. 
     
-- 이 디자인은 고객 계정 및 내부 계정에 대해 서로 다른 url을 생성 합니다. 
+- 이 디자인은 고객 계정 및 내부 계정에 대해 서로 다른 Url을 생성 합니다. 
     
 이 예제의 특징은 다음과 같습니다. 
   
@@ -158,7 +158,7 @@ SharePoint 2013에서 id 관리는 영역 및 인증 구성에 대 한 것입니
     
 - 영역: 인증 된 사용자에 대 한 엑스트라넷 
     
-내부 계정이 있는 사용자는 azure ad에 대 한 VPN 터널을 통해 온-프레미스 환경에서 ad DS 및 ad FS의 azure Active Directory 테 넌 트에 액세스 합니다. 기본 영역은 Windows 인증 (NTLM)을 제공 합니다. 
+내부 계정이 있는 사용자는 Azure AD에 대 한 VPN 터널을 통해 온-프레미스 환경에서 AD DS 및 AD FS의 Azure Active Directory 테 넌 트에 액세스 합니다. 기본 영역은 Windows 인증 (NTLM)을 제공 합니다. 
   
 ### <a name="design-for-connecting-to-azure-ad"></a>Azure AD에 연결 하기 위한 디자인
 
@@ -166,15 +166,15 @@ SharePoint 2013에서 id 관리는 영역 및 인증 구성에 대 한 것입니
   
 함께 제공 되는 다이어그램에서는 다음과 같은 시나리오를 보여 줍니다. 
   
-azure Active Directory와 함께 SharePoint 2013을 통합 하는 경우에는 ACS (액세스 제어 서비스)가 다음과 같은 두 가지 용도로 사용 됩니다. 
+Azure Active Directory와 함께 SharePoint 2013을 통합 하는 경우에는 ACS (액세스 제어 서비스)가 다음과 같은 두 가지 용도로 사용 됩니다. 
   
--  Azure AD는 saml 2.0을 사용 하며, SharePoint는 saml 1.1 에서만 작동 합니다. ACS는 두 가지 형식을 모두 이해 하 고 SharePoint 및 Azure AD 간에 토큰 형식을 변환 하기 위한 중개 역할을 합니다.
+-  Azure AD는 SAML 2.0을 사용 하며, SharePoint는 SAML 1.1 에서만 작동 합니다. ACS는 두 가지 형식을 모두 이해 하 고 SharePoint 및 Azure AD 간에 토큰 형식을 변환 하기 위한 중개 역할을 합니다.
     
 - ACS는이 SAML 시나리오에 대해 id 공급자 STS (security token service)에 대 한 요구를 대체 합니다. 
     
 자세한 내용은 TechNet 라이브러리에서 SharePoint 2013을 사용 하 여 Azure AD 구성를 참조 하세요. 
   
-## <a name="design-sites-and-urls-for-cross-site-publishing"></a>교차 사이트 게시용 사이트 및 url 디자인
+## <a name="design-sites-and-urls-for-cross-site-publishing"></a>교차 사이트 게시용 사이트 및 Url 디자인
 
 게시 시나리오에는 하나의 웹 응용 프로그램 디자인을 사용 하는 것이 좋습니다. 
   
@@ -188,7 +188,7 @@ azure Active Directory와 함께 SharePoint 2013을 통합 하는 경우에는 A
     
 - 다른 모든 사이트 모음을 호스트 이름으로 된 사이트 모음으로 만듭니다. 
     
-웹 응용 프로그램 및 루트 사이트 url 
+웹 응용 프로그램 및 루트 사이트 Url 
   
 - 웹 응용 프로그램 URL에 내부 이름을 사용 합니다. 다른 이름이 지정 되지 않은 경우 SharePoint에서 로컬 컴퓨터 이름을 기본 이름으로 사용 합니다. 내부 네트워크 환경에 예약 된 도메인 이름을 사용할 수 있습니다. 
     
@@ -238,7 +238,7 @@ Azure 환경의 선택적 요소인 온-프레미스 환경에는 다음과 같�
     
 - AD DS 
     
-- Windows Server 및 AD DS에서 활성 vpn 게이트웨이 서브넷으로의 VPN 게이트웨이 
+- Windows Server 및 AD DS에서 활성 VPN 게이트웨이 서브넷으로의 VPN 게이트웨이 
     
 Azure virtual network 환경에는 다음과 같은 구성 요소가 포함 됩니다. 
   
@@ -246,7 +246,7 @@ Azure virtual network 환경에는 다음과 같은 구성 요소가 포함 됩�
     
 - AD DS 및 DNS 가용성 집합을 포함 하는 클라우드 서비스 (서버 2 대) 
     
-- 프런트 엔드 서버 가용성 집합 (sharepoint 서버 3 대) 및 앱 서버 가용성 집합 (3 개의 sharepoint 서버)이 포함 된 클라우드 서비스 
+- 프런트 엔드 서버 가용성 집합 (SharePoint 서버 3 대) 및 앱 서버 가용성 집합 (3 개의 SharePoint 서버)이 포함 된 클라우드 서비스 
     
 - 두 개의 데이터베이스 사용 가능 집합이 포함 된 클라우드 서비스 
     
