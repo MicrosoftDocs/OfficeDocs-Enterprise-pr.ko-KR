@@ -13,20 +13,20 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 또는 Office 2010을 사용 하는 경우에는 업그레이드를 계획할 수 있습니다. 오래 된 앱에서는 중지 되지 않습니다. 이러한 리소스를 사용 하 여 계획을 시작 하세요.
-ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069334"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102436"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
-조직에서 이전 버전의 Office 제품 및 서버를 사용 하는 경우에는 업그레이드 계획을 시작 하는 것이 좋습니다. Office 2007 제품 및 서비스가 지원 종료에 도달 했으며 Office 2010 제품 및 서비스가 지원에 곧 제공 됩니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
-
-- [Office 2010 서버 및 클라이언트에서 업그레이드](upgrade-from-office-2010-servers-and-products.md)
+조직에서 이전 버전의 Office 제품 및 서버를 사용 하는 경우에는 업그레이드 계획을 시작 하는 것이 좋습니다. Office 2007 제품 및 서비스가 지원 종료 및 Office 2010 제품에 도달 했을 때, 서비스는 **2020 년 10 월 13 일**에 지원 끝까지 도달 하 게 됩니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
 
 - [Office 2007 서버 및 클라이언트에서 업그레이드](upgrade-from-office-2007-servers-and-products.md)
+
+- [Office 2010 서버 및 클라이언트에서 업그레이드](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>업그레이드 하지 않으면 어떻게 되나요?
 

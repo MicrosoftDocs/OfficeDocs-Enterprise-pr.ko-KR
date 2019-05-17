@@ -21,7 +21,8 @@
 ### [Office 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
 ### [Office 365용 타사 SSL 인증서 계획](plan-for-third-party-ssl-certificates.md)
 ### [Office 365 ID 및 Azure Active Directory 이해](about-office-365-identity.md)
-### [MDM과 Intune 중에서 선택](https://docs.microsoft.com/ko-KR/office365/securitycompliance/choose-between-mdm-and-intune)
+### 
+  [MDM과 Intune 중에서 선택](https://docs.microsoft.com/ko-KR/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Office 365의 네트워크 및 마이그레이션 계획](network-and-migration-planning.md)
 ### [Office 365에 대한 네트워크 연결](network-connectivity.md)
 ### [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
@@ -32,9 +33,11 @@
 ### [최신 인증이 Office 2013 및 Office 2016 클라이언트 앱에 작동하는 방식](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 테넌트 간 공동 작업](office-365-inter-tenant-collaboration.md)
 ## Office 365 클라이언트 지원
+### [인증서 기반 인증](office-365-client-support-certificate-based-authentication.md)
 ### [조건부 액세스](office-365-client-support-conditional-access.md)
 ### [모바일 응용 프로그램 관리](office-365-client-support-mobile-application-management.md)
 ### [최신 인증](office-365-client-support-modern-authentication.md)
+### [Single Sign-On](office-365-client-support-single-sign-on.md)
 ## 하이브리드 옵션
 ### [하이브리드 최신 인증과 비즈니스용 Skype 서버 및 Exchange Server에 대한 필수 구성 요소](hybrid-modern-auth-overview.md)
 ### [하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -72,7 +75,7 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [조직을 위해 Office 365 Enterprise 배포](setup-overview-for-enterprises.md)
 ### [Office 365 배포 계획 검사 목록](deployment-planning-checklist.md)
-### [Office 365에 대한 보안 모범 사례](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
+### [Office 365에 대한 보안 모범 사례](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
 ## [네트워크 설정](set-up-network-for-office-365.md)
 ### [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
 ### [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
@@ -161,8 +164,10 @@
 # Office 365 관리
 ## [서비스 상태](view-service-health.md)
 ### [연결 모니터링](monitor-connectivity.md)
-### [지원 옵션](https://support.office.com/ko-KR/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [관리 도구](https://support.office.com/ko-KR/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### 
+  [지원 옵션](https://support.office.com/ko-KR/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## 
+  [관리 도구](https://support.office.com/ko-KR/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Office 365 계정 관리 도구](manage-office-365-accounts.md)
 ### [Office 365에 여러 사용자를 동시에 추가 - 관리자 도움말](add-several-users-at-the-same-time.md)
 ### [사용자 사서함에서 지운 편지함 복구 - 관리자 도움말](recover-deleted-items-in-a-mailbox.md)

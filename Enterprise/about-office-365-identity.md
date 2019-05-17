@@ -1,5 +1,5 @@
 ---
-title: Office 365 ID 및 Azure Active Directory 이해
+title: Office 365 id 모델 및 Azure Active Directory
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,69 +18,81 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 85cfce4b08236bfcee74b6fe6d9c29766e7211c6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cd7fb1db2d5372097f3da0e6a2521335d7933015
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068764"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102471"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 ID 및 Azure Active Directory 이해
+# <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 id 모델 및 Azure Active Directory
 
-Office 365에서는 클라우드 기반 사용자 id 및 인증 서비스 Azure Active Directory (Azure AD)를 사용 하 여 사용자를 관리 합니다. 온-프레미스 조직과 Office 365 간에 id 관리를 구성 하는 방법을 선택 하는 것은 클라우드 인프라의 기초 중 하나입니다. 나중에이 구성을 변경 하기가 어려울 수 있으므로 조직의 요구에 가장 적합 한 작업을 결정 하는 옵션을 신중 하 게 고려해 야 합니다. Office 365에서 두 가지 기본 인증 모델을 선택 하 여 사용자 계정을 설정 및 관리할 수 있습니다. **클라우드 인증** 및 **페더레이션 인증**
-  
-이러한 인증 및 id 모델 중 어떤 것을 시작 하 고 실행 하는 데 사용할 것인지 신중히 고려해 야 합니다. 각 인증 및 id 옵션을 구현 및 유지 관리 하는 데 드는 시간, 기존 복잡성 및 비용에 대해 생각해 봅니다. 이러한 요인은 조직 마다 다릅니다. 그리고 배포에 사용 하려는 인증 및 id 모델을 선택 하는 데 도움이 되는 id 옵션의 주요 개념을 이해 해야 합니다.
-  
-## <a name="cloud-authentication"></a>클라우드 인증
+Office 365에서는 office 365 구독에 포함 되어 있는 Azure Active Directory (Azure AD), 클라우드 기반 사용자 id 및 인증 서비스를 사용 하 여 office 365에 대 한 id 및 인증을 관리 합니다. 조직에 대 한 Office 365 사용자 액세스 및 사용 권한을 관리 하려면 id 인프라를 올바르게 구성 하는 것이 중요 합니다.
 
-온-프레미스에 기존 Active Directory 환경이 있거나 없는 경우에 따라 Office 365을 사용 하 여 사용자에 대 한 인증 및 id 서비스를 관리 하는 몇 가지 옵션을 사용할 수 있습니다.
-  
-### <a name="cloud-only"></a>클라우드 전용
+시작 하기 전에이 비디오에서 Office 365 및 Microsoft 365에 대 한 id 모델 및 인증에 대 한 개요를 시청 하세요.
 
-클라우드 전용 모델을 사용 하는 경우에는 Office 365 에서만 사용자 계정을 관리할 수 있습니다. 온-프레미스 서버가 필요 하지 않습니다. 이 클라우드는 Azure AD에 의해 클라우드에서 모두 처리 됩니다. [Microsoft 365 관리 센터](https://admin.microsoft.com) 에서 또는 Windows PowerShell [PowerShell cmdlet](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) 을 사용 하 여 사용자를 만들고 관리 하는 경우 Azure AD가 클라우드에서 완전히 처리 합니다. 일반적으로 다음과 같은 경우에는 클라우드 전용 모델을 사용 하는 것이 좋습니다. 
-  
-- 다른 온-프레미스 사용자 디렉터리는 없습니다.
-    
-- 매우 복잡 한 온-프레미스 디렉터리를 사용 하며 작업을 통합 하지 않을 수 있습니다.
-    
-- 기존 온-프레미스 디렉터리가 있지만 Office 365의 평가판 또는 파일럿을 실행 하려고 합니다. 나중에 온-프레미스 디렉터리에 연결할 준비가 되 면 클라우드 사용자를 온-프레미스 사용자에 게 일치 시킬 수 있습니다.
-    
-클라우드 id를 시작 하려면 [Set Up Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)을 참조 하세요.
-  
-### <a name="password-hash-sync-with-seamless-single-sign-on"></a>원활한 single sign-on을 사용한 암호 해시 동기화
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Azure AD의 온-프레미스 디렉터리 개체에 대 한 인증을 사용 하도록 설정 하는 가장 간단한 방법입니다. 암호 해시 동기화 (PHS)를 사용 하 여 온-프레미스 Active Directory 사용자 계정 개체를 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 사용자는 온-프레미스 Active Directory에서 Azure AD로 동기화 되며, 사용자는 온 보와 클라우드에서 동일한 암호를 사용할 수 있습니다. 암호가 변경 되거나 온-프레미스에서 다시 설정 되 면 새 암호 해시가 Azure AD와 동기화 되어 사용자가 항상 클라우드 리소스 및 온-프레미스 리소스에 대해 동일한 암호를 사용할 수 있습니다. 암호가 Azure AD로 전송 되지 않거나 Azure AD에서 일반 텍스트로 저장 됩니다. Id 보호와 같은 Azure AD의 일부 프리미엄 기능은 선택한 인증 방법에 관계 없이 PHS를 요구 합니다. 원활한 single sign-on을 사용 하면 사용자가 회사 장치에 있고 회사 네트워크에 연결 되어 있을 때 Azure AD에 자동으로 로그인 됩니다.
-  
-[암호 해시 동기화](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) 및 [원활한 single Sign-on](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)선택에 대해 더 자세히 알아보세요.
-  
-### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>원활한 single sign-on을 사용한 통과 인증
+첫 번째 계획 선택은 Office 365 id 모델입니다.
 
-온-프레미스 Active Directory를 사용 하 여 사용자의 유효성을 직접 검사 하기 위해 하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하는 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 합니다. PTA (통과 인증)를 사용 하는 경우 온-프레미스 Active Directory 사용자 계정 개체를 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레미스 및 Office 365 리소스와 응용 프로그램 모두에 로그인 할 수 있습니다. 이 구성은 암호 해시를 Office 365로 보내지 않고 온-프레미스 Active Directory에 대해 직접 사용자 암호의 유효성을 검사 합니다. 온-프레미스 사용자 계정 상태, 암호 정책 및 로그온 시간을 즉시 적용 해야 하는 보안 요구 사항이 있는 회사는이 인증 방법을 사용 합니다. 원활한 single sign-on을 사용 하면 사용자가 회사 장치에 있고 회사 네트워크에 연결 되어 있을 때 Azure AD에 자동으로 로그인 됩니다.
-  
-[통과 인증](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) 및 [원활한 single Sign-on](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)선택에 대해 자세히 알아보세요.
-  
-## <a name="federated-authentication-options"></a>페더레이션 인증 옵션
+## <a name="office-365-identity-models"></a>Office 365 id 모델
 
-기존 Active Directory 환경이 온-프레미스에 있는 경우 페더레이션 인증을 사용 하 여 office 365 365에서 사용자에 대 한 인증 및 id 서비스를 관리 하는 방법을 포함 하 여 디렉터리와 사무실을 통합할 수 있습니다.
-  
-### <a name="federated-identity-with-active-directory-federation-services-ad-fs"></a>AD FS (Active Directory Federation Services)와 페더레이션 된 id
+사용자 계정을 계획 하려면 먼저 Microsoft 365에서 두 가지 id 모델을 이해 해야 합니다. 조직의 id는 클라우드에서만 유지 관리할 수 있으며, 사용자가 Microsoft 365 클라우드 서비스에 액세스할 때 온-프레미스 AD DS (Active Directory 도메인 서비스) id를 유지 관리 하 고 인증에 사용할 수 있습니다.  
 
-인증 요구 사항이 보다 복잡 한 대규모 엔터프라이즈 조직의 경우 온-프레미스 디렉터리 개체는 Office 365와 동기화 되 고 사용자 계정은 온-프레미스에서 관리 됩니다. AD FS를 사용 하는 경우 사용자는 온-프레미스와 클라우드에서 동일한 암호를 사용 하며, Office 365를 사용할 수 있도록 다시 로그인 할 필요가 없습니다. 이 페더레이션 인증 모델은 스마트 카드 기반 인증 또는 타사 다단계 인증과 같은 추가 인증 요구 사항을 제공할 수 있으며, 일반적으로 조직에 인증 요구 사항이 있는 경우에 필요 합니다. Azure AD에서 기본적으로 지원 되지 않습니다.
-  
-자세한 내용은 [AD FS를 사용 하 여 페더레이션 id 선택을](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)참고 하세요.
-  
-### <a name="third-party-authentication-and-identity-providers"></a>타사 인증 및 id 공급자
+다음은 두 가지 유형의 id와 가장 적합 한 일치 및 장점입니다.
 
-온-프레미스 디렉터리 개체는 Office 365와 동기화 될 수 있으며, 클라우드 리소스 액세스는 주로 타사 id 공급자 (IdP)를 통해 관리 됩니다. 조직에서 타사 페더레이션 솔루션을 사용 하는 경우 타사 페더레이션 솔루션이 Azure AD와 호환 되는 경우 Office 365에 대 한 해당 솔루션에 대 한 로그온을 구성할 수 있습니다.
-  
-자세한 내용은 [AZURE AD 페더레이션 호환성](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)을 확인 하세요.
-  
-## <a name="configuring-identity-and-authentication-with-office-365"></a>Office 365를 사용 하 여 id 및 인증 구성
+|||
+|:-------|:-----|:-----|
+|  | 클라우드 전용 id | 하이브리드 id |
+| 정의 | 사용자 계정이 Microsoft 365 구독의 azure AD (Active Directory) 테 넌 트에만 있습니다. | 사용자 계정이 AD DS에 있고 복사본은 Microsoft 365 구독의 Azure AD 테 넌 트에도 있습니다. 또한 Azure AD의 사용자 계정에는 사용자 계정 암호의 해시 된 버전을 포함할 수 있습니다. |
+| Microsoft 365에서 사용자 자격 증명을 인증 하는 방법 | Microsoft 365 구독의 Azure AD 테 넌 트는 클라우드 id 계정을 사용 하 여 인증을 수행 합니다. | Microsoft 365 구독에 대 한 Azure AD 테 넌 트가 인증 프로세스를 처리 하거나 사용자를 다른 id 공급자로 리디렉션합니다. |
+| 최적 ... | 온-프레미스 AD DS가 없거나 필요 하지 않은 조직 | AD DS 또는 다른 id 공급자를 사용 하는 조직 |
+| 가장 큰 혜택 | 간편 하 게 사용할 수 있습니다. 추가 디렉터리 도구 또는 서버가 필요 하지 않습니다. | 사용자는 온-프레미스 또는 클라우드 기반 리소스에 액세스할 때 동일한 자격 증명을 사용할 수 있습니다. |
+||||
 
-[AZURE Ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)를 사용 하 여 온-프레미스 디렉터리를 Office 365 및 azure ad와의 통합이 간소화 되었습니다. Azure AD Connect는 디렉터리를 연결 하는 최상의 방법 이며, 조직에서 사용자를 클라우드로 동기화 하기 위한 권장 사항입니다.
+### <a name="cloud-only-identity"></a>클라우드 전용 id
+
+클라우드 전용 id는 Azure AD에만 있는 사용자 계정을 사용 합니다. 클라우드 id는 일반적으로 온-프레미스 서버가 없거나 AD DS를 사용 하 여 로컬 id를 관리 하지 않는 소규모 조직에서 사용 됩니다. 
+
+다음은 클라우드 전용 id의 기본 구성 요소입니다.
+ 
+![](./media/about-office-365-identity/cloud-only-identity.png)
+
+온-프레미스 및 원격 (온라인)은 모두 Azure AD 사용자 계정 및 암호를 사용 하 여 Office 365 클라우드 서비스에 액세스 합니다. Azure AD는 저장 된 사용자 계정 및 암호를 기반으로 사용자 자격 증명을 인증 합니다.
+
+#### <a name="administration"></a>관리
+사용자 계정은 Azure AD에만 저장 되므로 Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 [Microsoft 365 관리 센터](https://admin.microsoft.com) 및 Windows PowerShell과 같은 도구를 사용 하 여 클라우드 id를 관리 합니다. 
+
+## <a name="hybrid-identity"></a>하이브리드 id
+
+하이브리드 id는 온-프레미스 AD DS에서 시작 되 고 Microsoft 365 구독의 Azure AD 테 넌 트에 복사본을 포함 하는 계정을 사용 합니다. 그러나 대부분의 변경 내용은 단방향 으로만 흐릅니다. AD DS 사용자 계정에 대해 수행한 변경 내용이 Azure AD에서 해당 복사본에 동기화 됩니다. 그러나 새 사용자 계정과 같은 Azure AD의 클라우드 기반 계정에 대 한 변경 내용은 AD DS와 동기화 되지 않습니다.
+
+Azure AD Connect는 진행 중인 계정 동기화를 제공 합니다. 이 도구는 온-프레미스 서버에서 실행 되 고, AD DS의 변경 내용을 확인 하 고, 해당 변경 내용을 Azure AD로 전달 합니다. Azure AD Connect는 동기화 되는 계정 및 해시 된 버전의 사용자 암호를 동기화 (암호 해시 동기화 (PHS)) 할지 여부를 필터링 하는 기능을 제공 합니다.
+
+하이브리드 id를 구현 하는 경우 온-프레미스 AD DS가 계정 정보에 대 한 신뢰할 수 있는 원본입니다. 즉, 관리 작업을 주로 온-프레미스로 수행한 다음 Azure AD와 동기화 합니다. 
+
+하이브리드 id의 구성 요소는 다음과 같습니다.
+
+![](./media/about-office-365-identity/hybrid-identity.png)
+
+Azure AD 테 넌 트에는 AD DS 계정의 복사본이 있습니다. 이 구성에서 Microsoft 365 클라우드 서비스에 액세스 하는 온-프레미스 및 원격 사용자 둘 다 Azure AD에 대해 인증을 수행 합니다.
+
+>[!Note]
+>하이브리드 id에 대해 사용자 계정을 동기화 하려면 항상 Azure AD Connect를 사용 해야 합니다. 라이선스 할당 및 그룹 관리, 사용 권한 구성 및 사용자 계정을 포함 하는 기타 관리 작업을 수행 하려면 Azure AD에서 동기화 된 사용자 계정이 필요 합니다.
+>
+
+#### <a name="administration"></a>관리
+
+원본 및 신뢰할 수 있는 사용자 계정이 온-프레미스 AD DS에 저장 되기 때문에 Active Directory 사용자 및 컴퓨터 도구와 같은 도구를 사용 하 여 AD DS와 동일한 도구로 id를 관리 합니다. 
+
+Microsoft 365 관리 센터 또는 Windows PowerShell을 사용 하 여 Azure AD에서 동기화 된 사용자 계정을 관리 하지는 않습니다.
+
+
+## <a name="next-step"></a>다음 단계
+
+하이브리드 id 모델이 필요한 경우 [에는 동기화 된 id 및 인증 방법에 대 한 계획](plan-for-directory-synchronization.md)을 참조 하세요.
   
-Azure ad advisor: [AZURE Ad Connect advisor](https://aka.ms/aadconnectpwsync), [AD FS 배포 관리자](https://aka.ms/adfsguidance)및 [azure ad Premium 설치 가이드](https://aka.ms/aadpguidance)를 사용할 수도 있습니다.
-  
+
 ## <a name="video-training"></a>동영상 교육
 
-자세한 내용은 LinkedIn 학습을 통해 가져온 [Office 365: AZURE AD Connect를 사용 하 여 Id 관리](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)를 참조 하세요.
+LinkedIn 학습을 통해 가져온 [Office 365: AZURE AD Connect를 사용 하 여 Id 관리](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)코스를 참조 하세요.

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증을 위한 웹 응용 프로그램 프록시 서버를 구성 합니다.'
-ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067334"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102536"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>고가용성 페더레이션 인증 4단계: 웹 응용 프로그램 프록시 구성
 
@@ -170,8 +170,5 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 [Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
-
-[페더레이션 인증 옵션](about-office-365-identity.md#federated-authentication-options)
-
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
 
