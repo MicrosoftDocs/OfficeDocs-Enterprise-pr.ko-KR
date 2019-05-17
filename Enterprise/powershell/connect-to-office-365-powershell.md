@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
@@ -14,29 +14,30 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: '요약: Office 365 PowerShell을 사용 하 여 Office 365 조 직에 연결 하 여 명령줄에서 관리 센터 작업을 수행 합니다.'
-ms.openlocfilehash: 4c70f067558773ce7e2a6e27bab78f5c64965872
-ms.sourcegitcommit: 0516a15c72f4bc8423a1d8112fd4d3e5f69896c8
-ms.translationtype: MT
+description: '요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 센터 작업을 수행합니다.'
+ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069094"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
- **요약:** Office 365 PowerShell을 사용 하 여 Office 365 조직에 연결 하 여 명령줄에서 관리 작업을 수행 합니다.
+ **요약:** Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 작업을 수행합니다.
   
-Office 365 PowerShell을 사용 하면 명령줄에서 Office 365 설정을 관리할 수 있습니다. Office 365 PowerShell에 연결 하는 작업은 필요한 소프트웨어를 설치 하 고 Office 365 조직에 연결 하는 간단한 프로세스입니다. 
+Office 365 PowerShell을 사용하여 명령줄에서 Office 365 설정을 관리할 수 있습니다. Office 365 PowerShell에 연결하려면 필요한 소프트웨어를 설치하고 Office 365 조직에 연결하는 간단한 과정을 수행합니다. 
 
-Office 365에 연결 하 고 사용자 계정, 그룹 및 라이선스를 관리 하는 데 사용 하는 PowerShell 모듈의 두 가지 버전이 있습니다.
+Office 365 및 관리자 계정, 그룹 및 라이선스에 연결하는 데 사용하는 두 가지 버전의 PowerShell 모듈이 있습니다.
 
-- Graph 용 Azure Active Directory PowerShell (이름에 **AzureAD** 포함) 
-- Windows PowerShell 용 Microsoft Azure Active Directory 모듈 (이름에 **Msol** 이 포함 된 cmdlet) 
+- Azure Active Directory PowerShell for Graph(cmdlet의 이름에 **AzureAD** 포함) 
+- Windows PowerShell용 Microsoft Azure Active Directory 모듈(cmdlet의 이름에 **MSol** 포함) 
 
-이 문서의 날짜에 따라 Graph 모듈에 대 한 Azure Active Directory PowerShell은 사용자, 그룹 및 라이선스 관리용 Windows PowerShell 모듈에 대 한 Microsoft Azure Active Directory 모듈 cmdlet의 기능을 완전히 대체 하지 않습니다. . 대부분의 경우 두 버전을 모두 사용 해야 합니다. 동일한 컴퓨터에 두 버전을 모두 안전 하 게 설치할 수 있습니다.
+이 문서의 날짜를 기준으로, Azure Active Directory PowerShell for Graph 모듈이 사용자, 그룹 및 라이선스 관리를 위해 Windows PowerShell용 Microsoft Azure Active Directory 모듈을 완전히 대체하는 것은 아닙니다. 대부분의 경우, 두 버전을 사용해야 합니다. 동일한 컴퓨터에 두 버전을 안전하게 설치할 수 있습니다.
 
 > [!TIP]
-> **PowerShell을 처음 사용하시나요?** [PowerShell의 비디오 개요](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)를 보고 LinkedIn Learning을 통해 가져올 수 있습니다. 
+> 
+  **PowerShell을 처음 사용하시나요?** [PowerShell의 비디오 개요](https://support.office.com/ko-KR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)를 보고 LinkedIn Learning을 통해 가져올 수 있습니다. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용
 
@@ -44,24 +45,24 @@ Office 365에 연결 하 고 사용자 계정, 그룹 및 라이선스를 관리
     
 - 다음 Windows 버전을 사용할 수 있습니다.
     
-  - Windows 10, Windows 8.1, Windows 8 또는 Windows 7 서비스 팩 1 (SP1) 
+  - Windows 10, Windows 8.1, Windows 8 또는 Windows 7 서비스팩 1(SP1) 
     
-  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows server 2012 또는 Windows server 2008 R2 SP1
+  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2 SP1
     
     > [!NOTE]
     >Windows 64비트 버전을 사용하세요. 32비트 버전의 Microsoft PowerShell용 Windows Azure Active Directory 모듈은 2014년 10월에 중단되었습니다.
     
--  이러한 절차는 Office 365 관리자 역할의 구성원 인 사용자를 위해 작성 되었습니다. 자세한 내용은 [Office 365 관리자 역할 정보](https://go.microsoft.com/fwlink/p/?LinkId=532367)를 참조하세요.
+-  이러한 절차는 Office 365 관리자 역할의 구성원인 사용자를 대상으로 합니다. 자세한 내용은 [Office 365 관리자 역할 정보](https://go.microsoft.com/fwlink/p/?LinkId=532367)를 참조하세요.
 
 
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 연결
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>그런 다음, Azure Active Directory PowerShell for Graph 모듈에 연결합니다.
 
-[Graph 모듈에 대 한 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 의 명령에는 cmdlet 이름에 **AzureAD** 가 있습니다.
+[Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 모듈의 명령에는 cmdlet 이름에 **AzureAD**가 있습니다.
 
-Graph 모듈에 대 한 Azure Active Directory PowerShell에서 새 cmdlet을 필요로 하는 절차를 수행 하려면 다음 단계를 사용 하 여 모듈을 설치 하 고 Office 365 구독에 연결 합니다.
+Azure Active Directory PowerShell for Graph 모듈에서 새 cmdlet을 필요로 하는 프로시저의 경우, 이러한 단계를 사용해서 모듈을 설치하고 Office 365 구독에 연결할 수 있습니다.
 
 >[!Note]
->다른 버전의 Microsoft Windows에 대 한 지원에 대 한 자세한 내용은 [Graph 모듈에 대 한 Azure Active Directory PowerShell를](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 참조 하세요.
+>Microsoft Windows의 여러 버전에 대한 지원 정보는 [Azure Active Directory PowerShell for Graph 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)을 참조하세요.
 >
 
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
@@ -78,25 +79,25 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell에서 새 cmdlet을 �
 
 신뢰할 수 없는 리포지토리에서 모듈을 설치할지 묻는 메시지가 표시되면 **Y**를 입력하고 Enter 키를 누릅니다.
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2 단계: Office 365 구독에 대해 Azure AD에 연결
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2단계: Office 365 구독을 위해 Azure AD에 연결
 
-계정 이름, 암호 또는 *MFA (multi-factor authentication)* 를 사용 하 여 Office 365 구독에 대해 Azure AD에 연결 하려면 Windows PowerShell 명령 프롬프트에서 다음 명령 중 하나를 실행 합니다 (상승 될 필요는 없음).
+계정 이름 및 암호를 사용하여 또는 *MFA(다중 요소 인증)* 을 사용하여 Office 365 구독을 위해 Azure AD에 연결하려면, Windows PowerShell 명령 프롬프트(관리자 권한이 아니어도 됨)에서 이 명령 중 하나를 실행하세요.
 
 |||
 |:-------|:-----|
 | **Office 365 클라우드** | **명령** |
-| 전 세계 Office 365 (+ GCC) | `Connect-AzureAD` |
-| 21 Vianet 되며 운영 하는 Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Worldwide(+GCC) | `Connect-AzureAD` |
+| 21 Vianet이 운영하는 Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
 | Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
-| Office 365 U.S. 정부 DoD 및 Office 365 미국 정부 GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+| Office 365 미국 국방부(DoD) 및 Office 365 미국 정부 GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-**계정에 로그인** 대화 상자에서 Office 365 회사 또는 학교 계정 사용자 이름과 암호를 입력 한 다음 **확인**을 클릭 합니다.
+**계정에 로그인하세요** 대화 상자에서, Office 365 회사 또는 학교 계정 사용자 이름 및 암호를 입력한 다음, **확인**을 클릭하세요.
 
-MFA를 사용 하는 경우에는 추가 대화 상자의 지침에 따라 확인 코드와 같은 인증 정보를 더 많이 제공 합니다.
+MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 추가 인증 정보(예: 확인 코드)를 제공하세요.
 
 
-연결한 후에는 [Graph 모듈에 대 한 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)에 대해 새 cmdlet을 사용할 수 있습니다.
+연결이 되면 [zure Active Directory PowerShell for Graph 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)의 새 cmdlet을 사용할 수 있습니다.
   
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈에 연결
@@ -116,22 +117,22 @@ Windows PowerShell용 Microsoft Azure Active Directory 모듈의 명령에는 cm
   - NuGet 공급자를 설치할지 묻는 메시지가 표시되면 **Y**를 입력하고 Enter 키를 누릅니다.
   - PSGallery에서 모듈을 설치할지 묻는 메시지가 표시되면 **Y**를 입력하고 Enter 키를 누릅니다.
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2 단계: Office 365 구독에 대해 Azure AD에 연결
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2단계: Office 365 구독을 위해 Azure AD에 연결
 
-계정 이름, 암호 또는 *MFA (multi-factor authentication)* 를 사용 하 여 Office 365 구독에 대해 Azure AD에 연결 하려면 Windows PowerShell 명령 프롬프트에서 다음 명령 중 하나를 실행 합니다 (상승 될 필요는 없음).
+계정 이름 및 암호를 사용하여 또는 *MFA(다중 요소 인증)* 을 사용하여 Office 365 구독을 위해 Azure AD에 연결하려면, Windows PowerShell 명령 프롬프트(관리자 권한이 아니어도 됨)에서 이 명령 중 하나를 실행하세요.
 
 |||
 |:-------|:-----|
 | **Office 365 클라우드** | **명령** |
-| 전 세계 Office 365 (+ GCC) | `Connect-MsolService` |
-| 21 Vianet 되며 운영 하는 Office 365 | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
+| Office 365 Worldwide(+GCC) | `Connect-MsolService` |
+| 21 Vianet이 운영하는 Office 365 | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
 | Office 365 Germany | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
-| Office 365 U.S. 정부 DoD 및 Office 365 미국 정부 GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
+| Office 365 미국 국방부(DoD) 및 Office 365 미국 정부 GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-**계정에 로그인** 대화 상자에서 Office 365 회사 또는 학교 계정 사용자 이름과 암호를 입력 한 다음 **확인**을 클릭 합니다.
+**계정에 로그인하세요** 대화 상자에서, Office 365 회사 또는 학교 계정 사용자 이름 및 암호를 입력한 다음, **확인**을 클릭하세요.
 
-MFA를 사용 하는 경우에는 추가 대화 상자의 지침에 따라 확인 코드와 같은 인증 정보를 더 많이 제공 합니다.
+MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 추가 인증 정보(예: 확인 코드)를 제공하세요.
 
 ### <a name="how-do-you-know-this-worked"></a>작동 여부는 어떻게 확인하나요?
 
@@ -139,7 +140,7 @@ MFA를 사용 하는 경우에는 추가 대화 상자의 지침에 따라 확�
   
 오류가 발생하면 다음 요구 사항을 확인합니다.
   
-- **일반적인 문제는 잘못 된 암호**입니다. 2 단계를 다시 실행 합니다. 입력 하는 사용자 이름과 암호를 자세히 확인 합니다.
+- **가장 흔한 문제는 암호를 잘못 입력한 경우입니다**. 2단계를 다시 실행합니다. 사용자 이름과 암호를 입력할 때 신중하게 확인합니다.
     
 - **Windows PowerShell용 Microsoft Azure Active Directory 모듈을 사용하려면 컴퓨터에서 Microsoft .NET Framework 3.5.* x* 기능이 사용되도록 설정되어야 합니다.** 컴퓨터 최신 버전(예: 4 또는 4.5.* x*)이 설치되어 있을 수 있지만 이전 버전의 .NET Framework와의 호환성이 사용되거나 사용되지 않도록 설정되어 있을 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
     
@@ -147,7 +148,7 @@ MFA를 사용 하는 경우에는 추가 대화 상자의 지침에 따라 확�
     
   - Windows 7 또는 Windows Server 2008 R2의 경우 [Windows PowerShell용 Azure Active Directory 모듈을 열 수 없음](https://go.microsoft.com/fwlink/p/?LinkId=532370)을 참조하세요.
 
-  - Windows 10, Windows 8.1 및 Windows 8의 경우 [windows 10, windows 8.1 및 windows 8에 .Net Framework 3.5 설치](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10) 를 참조 하세요.
+  - Windows 10, Windows 8.1 및 Windows 8의 경우, [Windows 10, Windows 8.1 및 Windows 8에 .NET Framework 3.5 설치](https://docs.microsoft.com/ko-KR/dotnet/framework/install/dotnet-35-windows-10)를 참조하세요.
 
   
 - **사용자의 Microsoft PowerShell용 Windows Azure Active Directory 모듈 버전이 오래되었을 수 있습니다.** 확인하려면 Microsoft PowerShell용 Windows Azure Active Directory 모듈 또는 Office 365 PowerShell에서 다음 명령을 실행하세요.
