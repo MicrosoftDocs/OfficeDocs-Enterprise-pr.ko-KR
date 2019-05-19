@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '요약: Office 365 개발/테스트 환경의 Office 365 Advanced Threat Protection을 구성하고 보여 줍니다.'
-ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068304"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162421"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Advanced Threat Protection
 
@@ -167,8 +167,6 @@ Office 365 ATP(Advanced Threat Protection)는 EOP(Exchange Online Protection)의
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
 [Office 365 개발/테스트 환경용 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 개발/테스트 환경용 Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md) 
 

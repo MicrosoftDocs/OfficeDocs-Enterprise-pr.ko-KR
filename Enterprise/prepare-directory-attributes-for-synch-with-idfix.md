@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Office 365와 동기화 하기 전에 IdFix를 사용 하 여 온-프레미스 디렉터리를 준비 하 고 정리 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 134f9cd60e65b64b91fb42fd7cbfa300626fc867
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071074"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162371"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix 도구를 사용하여 Office 365와의 동기화를 위한 디렉터리 특성 준비
 이 항목에는 IdFix 도구 실행에 대 한 자세한 지침, 발생할 수 있는 몇 가지 일반적인 오류, 제안 되는 수정 작업, 예제 및 많은 오류가 발생 했을 때 수행 해야 하는 상황에 대 한 모범 사례가 포함 되어 있습니다.
@@ -81,3 +81,7 @@ IdFix를 다시 실행 하 여 수정한 내용에 새 오류가 발생 하지 �
   
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>IdFix GUI를 사용 하 여 변경 내용 롤백
 **적용** 을 클릭 하 여 변경 내용을 적용 하면 idfix 도구가 방금 수행한 변경 내용을 나열 하는 트랜잭션 로그 라는 별도의 파일을 만듭니다. 실수로 작업을 수행 하는 경우 트랜잭션 로그를 사용 하 여 가장 최근 로그에 있는 변경 내용만 롤백할 수 있습니다. 업데이트 하는 동안 실수를 한 경우 **실행 취소**를 클릭 하 여 가장 최근에 적용 한 변경 내용을 취소할 수 있습니다. **실행 취소**를 클릭 하면 idfix는 트랜잭션 로그를 사용 하 여 가장 최근 트랜잭션 로그에 있는 변경 내용만 롤백합니다. 트랜잭션 로그를 사용 하는 방법에 대 한 자세한 내용은 [Reference: Office 365 IdFix transaction log](idfix-transaction-log.md)를 참조 하십시오.
+
+## <a name="next-step"></a>다음 단계
+
+[디렉터리 동기화 설정](set-up-directory-synchronization.md)

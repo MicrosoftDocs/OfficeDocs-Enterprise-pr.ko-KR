@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 네트워크 연결에 대 한 네트워크 계획을 시작 하기 전에 Office 365 트래픽을 안전 하 게 관리 하 고 가능한 최상의 성능을 얻기 위한 연결 원리를 이해 하는 것이 중요 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다.
-ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069824"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162501"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 네트워크 연결 원칙
 
@@ -200,7 +200,7 @@ Microsoft는 광범위 한 Office 365 보안 기능을 제공 하며, Office 365
   
 - **MFA (multi-factor authentication) 사용** MFA는 사용자가 자신의 암호를 올바르게 입력 한 후 전화 통화, 문자 메시지 또는 스마트 전화에서 앱 알림을 승인 하도록 요구 하 여 강력한 암호 전략에 추가 보호 계층을 추가 합니다.
 
-- **Office 365 Cloud App Security 사용** 비정상적인 작업을 추적 하 고 작동 하도록 정책을 설정 합니다. 관리자가 많은 양의 데이터를 다운로드 하거나, 로그인을 여러 번 수행 하거나, 알 수 없는 또는 위험 IP 주소 로부터의 연결을 검토 하는 등의 비정상적 이거나 위험한 사용자 활동을 검토할 수도 있도록 Office 365 Cloud App Security를 사용 하 여 경고를 설정 합니다.
+- **Microsoft Cloud App Security 사용** 비정상적인 작업을 추적 하 고 작동 하도록 정책을 설정 합니다. 관리자가 많은 양의 데이터를 다운로드 하거나, 로그인을 여러 번 수행 하거나, 알 수 없는 또는 위험한 IP 주소에서 연결 하는 것과 같은 비정상적 이거나 위험한 사용자 활동을 검토 하도록 Microsoft Cloud App Security를 사용 하 여 알림을 설정 합니다.
 
 - **DLP (데이터 손실 방지) 구성** DLP를 사용 하면 중요 한 데이터를 식별 하 고 사용자가 실수로 또는 의도적으로 데이터를 공유 하지 못하게 하는 정책을 만들 수 있습니다. DLP는 Exchange Online, SharePoint Online 및 OneDrive를 포함 하는 Office 365에서 작동 하 여 사용자가 워크플로를 중단 하지 않고 준수 상태를 유지할 수 있도록 합니다.
 
