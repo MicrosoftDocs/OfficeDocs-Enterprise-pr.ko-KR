@@ -15,35 +15,65 @@ ms.collection:
 - M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 다음 개요 단계는 Office 365를 배포하고 Active Directory를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
-ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+description: 이러한 개요 단계는 네트워크를 설정 하 고, id를 만들고, Office 365 ProPlus를 배포 하 고, 데이터를 마이그레이션하고, 조직의 사용자가 Office 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
+ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102546"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249506"
 ---
-# <a name="deploy-office-365-enterprise-for-your-organization"></a><span data-ttu-id="8d3a8-103">조직을 위해 Office 365 Enterprise 배포</span><span class="sxs-lookup"><span data-stu-id="8d3a8-103">Deploy Office 365 Enterprise for your organization</span></span>
-<span data-ttu-id="8d3a8-p101">온 - 프레미스 인프라와 함께 Office 365 Enterprise를 배포하고 통합할 준비가 되셨나요? 다음 개요 단계는 디렉토리를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p101">Ready to deploy and integrate Office 365 Enterprise with your on-premises infrastructure? These overview steps are designed to help you connect your directory, migrate your data, and help the people in your organization begin using the latest version of Office 2016.</span></span>
-  
-<span data-ttu-id="8d3a8-106">이 단계는 Office 365 Enterprise의 사용자 지정 배포를 시작하려는 비즈니스 및 [비영리 기관](https://go.microsoft.com/fwlink/?LinkId=627221)을 위한 단계입니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-106">These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Office 365 Enterprise.</span></span> 
-  
-<span data-ttu-id="8d3a8-p102">Office 365 Enterprise가 없습니까? 중소기업을 위한 지침은 [비즈니스 용 Office 365 설정](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p102">Don't have Office 365 Enterprise? See [Set up Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) for instructions for small businesses.</span></span> 
-  
-## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a><span data-ttu-id="8d3a8-109">FastTrack을 사용한 기업용 Office 365 설치 프로세스</span><span class="sxs-lookup"><span data-stu-id="8d3a8-109">Guided enterprise Office 365 setup process with FastTrack</span></span>
-<span data-ttu-id="8d3a8-p103">Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** 은 Office 365를 배포하는 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내하고 단계별로 질문에 답변할 수 있습니다. 파트너로부터 자가 진단 또는 지침을 원하는 경우 [Office 365 설치 가이드](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), [Office 365 설치 마법사](https://aka.ms/o365fasttrack) 또는 [공식 파트너를 찾으십시오](https://partnercenter.microsoft.com/en-us/pcv/search).</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p103">Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** is the best method for deploying Office 365. FastTrack guides you through the most common deployment configurations and can answer questions along the way. If you want to self-help or guidance from a partner, use our [Office 365 setup guide](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), our [Office 365 setup wizards](https://aka.ms/o365fasttrack), or [find a qualified partner](https://partnercenter.microsoft.com/en-us/pcv/search).</span></span>
+# <a name="deploy-office-365-enterprise-for-your-organization"></a><span data-ttu-id="799a7-103">조직을 위해 Office 365 Enterprise 배포</span><span class="sxs-lookup"><span data-stu-id="799a7-103">Deploy Office 365 Enterprise for your organization</span></span>
 
-## <a name="self-deployment-of-office-365"></a><span data-ttu-id="8d3a8-113">Office 365의 자체 배포</span><span class="sxs-lookup"><span data-stu-id="8d3a8-113">Self-deployment of Office 365</span></span>
-<span data-ttu-id="8d3a8-114">직접 Office 365를 배포하려는 경우 다음 배포 단계가 도움을 드립니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-114">If you want to deploy Office 365 on your own, the following deployment steps are here to help.</span></span>
+<span data-ttu-id="799a7-104">Office 365 Enterprise를 배포 하 고, 온-프레미스 인프라와 통합 하 고, 직원 들이 클라우드 기반 생산성 및 공동 작업을 활용할 수 있도록 준비 되었습니까?</span><span class="sxs-lookup"><span data-stu-id="799a7-104">Are you ready to deploy Office 365 Enterprise, integrate it with your on-premises infrastructure, and enable your employees to take advantage of cloud-based productivity and collaboration?</span></span>
 
-1. <span data-ttu-id="8d3a8-p104">**[Office 365를 준비합니다](get-your-organization-ready-for-office-365.md)**. 이러한 도구와 리소스를 통해 네트워크, 디렉터리 및 최종 사용자가 Office 365를 이용할 준비를 하는 데 도움이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p104">**[Get ready for Office 365](get-your-organization-ready-for-office-365.md)**. These tools and resources will help you get your network, directory, and end users ready for Office 365.</span></span>
+<span data-ttu-id="799a7-105">이 문서에서는 사용자가 도움을 받을 수 있도록 할지 여부와 관계 없이 두 가지 배포 옵션을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-105">This article describes two deployment options, whether you want help or are doing it on your own.</span></span> <span data-ttu-id="799a7-106">각각의 경우에 Microsoft는 배포 성공을 위해 사용할 수 있는 안내 경로를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-106">In each case, Microsoft provides a guided path for you to follow for deployment success.</span></span>
 
-2. <span data-ttu-id="8d3a8-117">**로그인 하 고 Office 365에 인터넷 도메인을 추가**합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-117">**Sign in and add your internet domain(s) to Office 365**.</span></span> <span data-ttu-id="8d3a8-118">[Microsoft 365 관리 센터](https://portal.microsoft.com)에 로그인 하 고 **설치 > 도메인**을 클릭 한 다음 **새 도메인**을 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-118">Sign into the [Microsoft 365 admin center](https://portal.microsoft.com), click **Setup > Domains**, and then click **New domain**.</span></span> <span data-ttu-id="8d3a8-119">사용자를 추가 하거나 전자 메일을 마이그레이션하지 않고 Office 365 구독에 하나 이상의 도메인을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-119">Add one or more domains to your Office 365 subscription without adding users or migrating email.</span></span> 
+## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a><span data-ttu-id="799a7-107">FastTrack을 사용한 기업용 Office 365 설치 프로세스</span><span class="sxs-lookup"><span data-stu-id="799a7-107">Guided enterprise Office 365 setup process with FastTrack</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="8d3a8-120">온-프레미스 디렉토리에서 사용자를 동기화하거나 Single Sign-On을 사용하려는 경우 기본 설치 지침이 작동하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-120">The basic set up instructions won't work if you want to synchronize your users from an on-premises directory or utilize Single Sign-On.</span></span>
+<span data-ttu-id="799a7-108">Office 365 배포를 위한 **[Fasttrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 이 가장 좋은 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-108">**[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** is the best method for deploying Office 365.</span></span> <span data-ttu-id="799a7-109">FastTrack은 가장 일반적인 배포 구성을 안내 하며, 방식에 따라 질문에 답할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-109">FastTrack guides you through the most common deployment configurations and can answer questions along the way.</span></span> 
 
-3. <span data-ttu-id="8d3a8-p106">**[디렉터리를 Office 365에 연결합니다](about-office-365-identity.md)**. ID 동기화 및/또는 Single Sign-On 구성 옵션을 안내합니다. 사용자 지정된 설정 지침을 확인하려면 [AAD Connect 관리자](https://aka.ms/aadconnectpwsync) 및 [Azure AD Premium 설정 가이드](https://aka.ms/aadpguidance)를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p106">**[Connect your directory to Office 365](about-office-365-identity.md)**. Guide to the identity synchronization and/or single sign-on configuration options. Use the [AAD Connect advisor](https://aka.ms/aadconnectpwsync) and the [Azure AD Premium setup guide](https://aka.ms/aadpguidance) to get customized set up guidance.</span></span>
-4. <span data-ttu-id="8d3a8-p107">**[Office 365 서비스 및 응용 프로그램을 구성합니다](configure-services-and-applications.md)**. 전자 메일, 파일 공유, 인스턴트 메시징 또는 다른 Office 365 서비스 및 응용 프로그램 중 하나를 구성하려면 여기에서 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p107">**[Configure Office 365 services and applications](configure-services-and-applications.md)**. Start here to configure email, file sharing, instant messaging, or any of the other Office 365 services and applications.</span></span>
-5. <span data-ttu-id="8d3a8-p108">**[데이터를 Office 365로 마이그레이션합니다](migrate-data-to-office-365.md)**. 서비스가 구성되면 데이터 마이그레이션을 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p108">**[Migrate data to Office 365](migrate-data-to-office-365.md)**. Once the services are configured, you can start migrating data.</span></span>
-6. <span data-ttu-id="8d3a8-p109">**[사용자가 Office 365를 사용하도록 합니다](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)**. 조직의 사용자가 Office 365와 리소스를 사용하는 데 자신감을 갖도록 돕습니다.</span><span class="sxs-lookup"><span data-stu-id="8d3a8-p109">**[Get people using Office 365](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)**. Help people in your organization build confidence using Office 365 with these resources.</span></span>
+<span data-ttu-id="799a7-110">일련의 설치 가이드에 액세스 하려면 Office 365 구독에 로그인 한 다음 [office 365 설정](https://aka.ms/o365fasttrack)으로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-110">To access a series of setup guides, sign in to your Office 365 subscription, and then go to [Setting up Office 365](https://aka.ms/o365fasttrack).</span></span>
+
+>[!Note]
+><span data-ttu-id="799a7-111">[Microsoft 파트너](https://www.microsoft.com/solution-providers/home)로부터 도움을 받을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-111">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
+>
+
+## <a name="self-deployment-of-office-365-enterprise"></a><span data-ttu-id="799a7-112">Office 365 Enterprise의 자체 배포</span><span class="sxs-lookup"><span data-stu-id="799a7-112">Self-deployment of Office 365 Enterprise</span></span>
+
+<span data-ttu-id="799a7-113">Office 365 Enterprise를 직접 배포 하려면 자세한 조사를 수행 하 여 클라우드 서비스 구성 및 사용자 채택을 간소화 하는 디자인 결정을 내려야 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-113">Deploying Office 365 Enterprise on your own requires that you perform detailed research to make the design decisions that streamline cloud service configuration and user adoption.</span></span> <span data-ttu-id="799a7-114">계획을 시작 [](get-your-organization-ready-for-office-365.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-114">Start your planning [here](get-your-organization-ready-for-office-365.md).</span></span>
+
+<span data-ttu-id="799a7-115">Office 365 Enterprise를 직접 배포 하려면 다음 단계를 수행 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-115">To deploy Office 365 Enterprise on your own, here are the recommended steps.</span></span>
+
+1. <span data-ttu-id="799a7-116">네트워크 설정</span><span class="sxs-lookup"><span data-stu-id="799a7-116">Set up your network</span></span>
+
+   <span data-ttu-id="799a7-117">인터넷 도메인을 추가 하 고 온-프레미스 사용자의 네트워크 성능 최적화를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-117">Includes adding your Internet domains and optimizing the network performance for your on-premises users.</span></span> <span data-ttu-id="799a7-118">[여기](set-up-network-for-office-365.md)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-118">Start [here](set-up-network-for-office-365.md).</span></span>
+ 
+2. <span data-ttu-id="799a7-119">Id 설정</span><span class="sxs-lookup"><span data-stu-id="799a7-119">Set up your identities</span></span>
+
+   <span data-ttu-id="799a7-120">온-프레미스 AD DS (Active Directory 도메인 서비스) 및 Office 365 구독 간에 디렉터리 동기화를 설정 하는 id 모델 (클라우드 전용 또는 하이브리드)을 확인 하 고 하이브리드 id에 대 한 설정을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-120">Includes determining an identity model (cloud-only or hybrid), and for hybrid identity, setting up directory synchronization between your on-premises Active Directory Domain Services (AD DS) and your Office 365 subscription.</span></span> <span data-ttu-id="799a7-121">[여기](protect-your-global-administrator-accounts.md)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-121">Start [here](protect-your-global-administrator-accounts.md).</span></span>
+
+3. <span data-ttu-id="799a7-122">보안 기능 구현</span><span class="sxs-lookup"><span data-stu-id="799a7-122">Implement security capabilities</span></span>
+
+   <span data-ttu-id="799a7-123">최초 30 일, 90 일 및 그 이상에서 테 넌 트 및 id에 대 한 기본 및 향상 된 보안, 위협 및 정보 보호를 구성 하 고 배포 하는 방법을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-123">Includes configuring and rolling out basic and enhanced security, threat, and information protections for your tenant and identities in the first 30 days, 90 days, and beyond.</span></span> <span data-ttu-id="799a7-124">[여기](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-124">Start [here](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).</span></span>
+ 
+4. <span data-ttu-id="799a7-125">클라이언트 소프트웨어 배포</span><span class="sxs-lookup"><span data-stu-id="799a7-125">Deploy client software</span></span>
+
+   <span data-ttu-id="799a7-126">장치에 Office 제품군 (Word, Excel, PowerPoint 및 기타)의 클라우드 업데이트 및 현재 버전의 office 365 ProPlus를 배포 하는 작업이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-126">Includes deploying Office 365 ProPlus, the cloud-updated and always-current version of the Office suite (Word, Excel, PowerPoint, and others) on your devices.</span></span> <span data-ttu-id="799a7-127">모든 Office 365 클라이언트 라이선스에는 Office 365 ProPlus에 대 한 라이선스가 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-127">Every Office 365 client license includes a license for Office 365 ProPlus.</span></span> <span data-ttu-id="799a7-128">[여기](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-128">Start [here](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus).</span></span>
+ 
+5. <span data-ttu-id="799a7-129">모바일 장치 관리 설정</span><span class="sxs-lookup"><span data-stu-id="799a7-129">Set up mobile device management</span></span>
+
+   <span data-ttu-id="799a7-130">Office 365 엔터프라이즈에는 사용자의 모바일 장치를 보호 하 고 관리 하는 데 사용할 수 있는 모바일 장치 관리 기능이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-130">Office 365 Enterprise includes mobile device management capabilities that help you secure and manage your users' mobile devices.</span></span> <span data-ttu-id="799a7-131">[여기](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-131">Start [here](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).</span></span>
+ 
+6. <span data-ttu-id="799a7-132">서비스 및 응용 프로그램 구성</span><span class="sxs-lookup"><span data-stu-id="799a7-132">Configure services and applications</span></span>
+
+   <span data-ttu-id="799a7-133">데이터 마이그레이션에 대 한 정보와 Exchange Online, SharePoint Online 및 팀과 같은 주요 Office 365 서비스를 시작 하는 문서에 대 한 링크가 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-133">Includes information on migration of your data and links to articles that get you started on key Office 365 services such as Exchange Online, SharePoint Online, and Teams.</span></span> <span data-ttu-id="799a7-134">[여기](configure-services-and-applications.md)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-134">Start [here](configure-services-and-applications.md).</span></span>
+ 
+7. <span data-ttu-id="799a7-135">사용자 교육</span><span class="sxs-lookup"><span data-stu-id="799a7-135">Train your users</span></span>
+
+   <span data-ttu-id="799a7-136">사용자에 게 Office 365를 빠르게 최대한 활용할 수 있도록 돕는 짧은 비디오가 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-136">Includes short videos that help your users get the most out of Office 365 quickly.</span></span> <span data-ttu-id="799a7-137">[여기](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-137">Start [here](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users).</span></span>
+ 
+
+>[!Note]
+><span data-ttu-id="799a7-138">이러한 단계는 Office 365 Enterprise의 [](https://go.microsoft.com/fwlink/?LinkId=627221) 사용자 지정 배포를 시작 하려는 비즈니스 및 비영리에도 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="799a7-138">These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Office 365 Enterprise.</span></span> 
+>
