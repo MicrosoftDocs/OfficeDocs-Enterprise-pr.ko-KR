@@ -15,35 +15,65 @@ ms.collection:
 - M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 다음 개요 단계는 Office 365를 배포하고 Active Directory를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
-ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+description: 이러한 개요 단계는 네트워크를 설정 하 고, id를 만들고, Office 365 ProPlus를 배포 하 고, 데이터를 마이그레이션하고, 조직의 사용자가 Office 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
+ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102546"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249506"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>조직을 위해 Office 365 Enterprise 배포
-온 - 프레미스 인프라와 함께 Office 365 Enterprise를 배포하고 통합할 준비가 되셨나요? 다음 개요 단계는 디렉토리를 연결하며 데이터를 마이그레이션하고 조직의 사용자가 최신 버전의 Office 2016 사용을 시작할 수 있도록 설계되었습니다.
-  
-이 단계는 Office 365 Enterprise의 사용자 지정 배포를 시작하려는 비즈니스 및 [비영리 기관](https://go.microsoft.com/fwlink/?LinkId=627221)을 위한 단계입니다. 
-  
-Office 365 Enterprise가 없습니까? 중소기업을 위한 지침은 [비즈니스 용 Office 365 설정](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)을 참조하세요. 
-  
+
+Office 365 Enterprise를 배포 하 고, 온-프레미스 인프라와 통합 하 고, 직원 들이 클라우드 기반 생산성 및 공동 작업을 활용할 수 있도록 준비 되었습니까?
+
+이 문서에서는 사용자가 도움을 받을 수 있도록 할지 여부와 관계 없이 두 가지 배포 옵션을 설명 합니다. 각각의 경우에 Microsoft는 배포 성공을 위해 사용할 수 있는 안내 경로를 제공 합니다.
+
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>FastTrack을 사용한 기업용 Office 365 설치 프로세스
-Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** 은 Office 365를 배포하는 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내하고 단계별로 질문에 답변할 수 있습니다. 파트너로부터 자가 진단 또는 지침을 원하는 경우 [Office 365 설치 가이드](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), [Office 365 설치 마법사](https://aka.ms/o365fasttrack) 또는 [공식 파트너를 찾으십시오](https://partnercenter.microsoft.com/en-us/pcv/search).
 
-## <a name="self-deployment-of-office-365"></a>Office 365의 자체 배포
-직접 Office 365를 배포하려는 경우 다음 배포 단계가 도움을 드립니다.
+Office 365 배포를 위한 **[Fasttrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 이 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내 하며, 방식에 따라 질문에 답할 수 있습니다. 
 
-1. **[Office 365를 준비합니다](get-your-organization-ready-for-office-365.md)**. 이러한 도구와 리소스를 통해 네트워크, 디렉터리 및 최종 사용자가 Office 365를 이용할 준비를 하는 데 도움이 됩니다.
+일련의 설치 가이드에 액세스 하려면 Office 365 구독에 로그인 한 다음 [office 365 설정](https://aka.ms/o365fasttrack)으로 이동 합니다.
 
-2. **로그인 하 고 Office 365에 인터넷 도메인을 추가**합니다. [Microsoft 365 관리 센터](https://portal.microsoft.com)에 로그인 하 고 **설치 > 도메인**을 클릭 한 다음 **새 도메인**을 클릭 합니다. 사용자를 추가 하거나 전자 메일을 마이그레이션하지 않고 Office 365 구독에 하나 이상의 도메인을 추가 합니다. 
+>[!Note]
+>[Microsoft 파트너](https://www.microsoft.com/solution-providers/home)로부터 도움을 받을 수도 있습니다.
+>
 
->[!IMPORTANT] 
->온-프레미스 디렉토리에서 사용자를 동기화하거나 Single Sign-On을 사용하려는 경우 기본 설치 지침이 작동하지 않습니다.
+## <a name="self-deployment-of-office-365-enterprise"></a>Office 365 Enterprise의 자체 배포
 
-3. **[디렉터리를 Office 365에 연결합니다](about-office-365-identity.md)**. ID 동기화 및/또는 Single Sign-On 구성 옵션을 안내합니다. 사용자 지정된 설정 지침을 확인하려면 [AAD Connect 관리자](https://aka.ms/aadconnectpwsync) 및 [Azure AD Premium 설정 가이드](https://aka.ms/aadpguidance)를 사용합니다.
-4. **[Office 365 서비스 및 응용 프로그램을 구성합니다](configure-services-and-applications.md)**. 전자 메일, 파일 공유, 인스턴트 메시징 또는 다른 Office 365 서비스 및 응용 프로그램 중 하나를 구성하려면 여기에서 시작합니다.
-5. **[데이터를 Office 365로 마이그레이션합니다](migrate-data-to-office-365.md)**. 서비스가 구성되면 데이터 마이그레이션을 시작할 수 있습니다.
-6. **[사용자가 Office 365를 사용하도록 합니다](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)**. 조직의 사용자가 Office 365와 리소스를 사용하는 데 자신감을 갖도록 돕습니다.
+Office 365 Enterprise를 직접 배포 하려면 자세한 조사를 수행 하 여 클라우드 서비스 구성 및 사용자 채택을 간소화 하는 디자인 결정을 내려야 합니다. 계획을 시작 [](get-your-organization-ready-for-office-365.md)합니다.
+
+Office 365 Enterprise를 직접 배포 하려면 다음 단계를 수행 하는 것이 좋습니다.
+
+1. 네트워크 설정
+
+   인터넷 도메인을 추가 하 고 온-프레미스 사용자의 네트워크 성능 최적화를 포함 합니다. [여기](set-up-network-for-office-365.md)에서 시작 합니다.
+ 
+2. Id 설정
+
+   온-프레미스 AD DS (Active Directory 도메인 서비스) 및 Office 365 구독 간에 디렉터리 동기화를 설정 하는 id 모델 (클라우드 전용 또는 하이브리드)을 확인 하 고 하이브리드 id에 대 한 설정을 포함 합니다. [여기](protect-your-global-administrator-accounts.md)에서 시작 합니다.
+
+3. 보안 기능 구현
+
+   최초 30 일, 90 일 및 그 이상에서 테 넌 트 및 id에 대 한 기본 및 향상 된 보안, 위협 및 정보 보호를 구성 하 고 배포 하는 방법을 설명 합니다. [여기](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)에서 시작 합니다.
+ 
+4. 클라이언트 소프트웨어 배포
+
+   장치에 Office 제품군 (Word, Excel, PowerPoint 및 기타)의 클라우드 업데이트 및 현재 버전의 office 365 ProPlus를 배포 하는 작업이 포함 됩니다. 모든 Office 365 클라이언트 라이선스에는 Office 365 ProPlus에 대 한 라이선스가 포함 되어 있습니다. [여기](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)에서 시작 합니다.
+ 
+5. 모바일 장치 관리 설정
+
+   Office 365 엔터프라이즈에는 사용자의 모바일 장치를 보호 하 고 관리 하는 데 사용할 수 있는 모바일 장치 관리 기능이 포함 되어 있습니다. [여기](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)에서 시작 합니다.
+ 
+6. 서비스 및 응용 프로그램 구성
+
+   데이터 마이그레이션에 대 한 정보와 Exchange Online, SharePoint Online 및 팀과 같은 주요 Office 365 서비스를 시작 하는 문서에 대 한 링크가 포함 되어 있습니다. [여기](configure-services-and-applications.md)에서 시작 합니다.
+ 
+7. 사용자 교육
+
+   사용자에 게 Office 365를 빠르게 최대한 활용할 수 있도록 돕는 짧은 비디오가 포함 되어 있습니다. [여기](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)에서 시작 합니다.
+ 
+
+>[!Note]
+>이러한 단계는 Office 365 Enterprise의 [](https://go.microsoft.com/fwlink/?LinkId=627221) 사용자 지정 배포를 시작 하려는 비즈니스 및 비영리에도 적용 됩니다. 
+>

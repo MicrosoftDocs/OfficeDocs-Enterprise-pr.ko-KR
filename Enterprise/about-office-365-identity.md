@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162391"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249466"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 id 모델 및 Azure Active Directory
 
@@ -91,7 +91,7 @@ Microsoft 365 관리 센터 또는 Windows PowerShell을 사용 하 여 Azure AD
 
 클라우드 전용 id 모델이 필요한 경우 [클라우드 전용](cloud-only-identities.md)id를 참조 하세요.
 
-하이브리드 id 모델이 필요한 경우 [에는 동기화 된 id 및 인증 방법에 대 한 계획](plan-for-directory-synchronization.md)을 참조 하세요.
+하이브리드 id 모델이 필요한 경우 [디렉터리 동기화](plan-for-directory-synchronization.md)를 참조 하세요.
   
 
 ## <a name="video-training"></a>동영상 교육
