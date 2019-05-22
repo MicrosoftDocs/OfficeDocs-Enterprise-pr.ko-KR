@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: 98a47f9527b3922767bfd8240790d7cfdeb14936
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c86d794d0952faf59a724976fa2a180084646baa
+ms.sourcegitcommit: ffa5c7a2d0e1eaa40b84ea1e9fb6992d1f05aa86
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068044"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34332625"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
@@ -91,7 +91,6 @@ Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | 
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
 $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
