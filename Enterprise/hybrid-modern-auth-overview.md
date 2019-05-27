@@ -4,7 +4,6 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
+ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067204"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34404220"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
 
@@ -30,7 +29,7 @@ ms.locfileid: "34067204"
     
 - [온-프레미스 환경의 최신 인증 상태 확인](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
     
-- [최신 인증 필수 구성 요소를 충족 합니까?](hybrid-modern-auth-overview.md#BKMK_MeetPrereq)
+- [최신 인증 필수 구성 요소를 충족 합니까?](#do-you-meet-modern-authentication-prerequisites)
     
 - [시작 하기 전에 알아야 할 사항](hybrid-modern-auth-overview.md#BKMK_Whatelse)
     
@@ -43,7 +42,7 @@ ms.locfileid: "34067204"
   
 최신 인증은 인증 및 권한 부여 방법을 함께 사용할 수 있는 포괄적인 용어 뿐 아니라 이미 익숙한 액세스 정책을 사용 하는 몇 가지 보안 수단을 포함 합니다. 여기에는 다음이 포함 됩니다.
   
-- **인증 방법**: multi-factor Authentication; 클라이언트 인증서 기반 인증 Active Directory 인증 라이브러리 ( [ADAL](https://technet.microsoft.com/en-us/library/mt710548.aspx))를 확인 합니다.
+- **인증 방법**: multi-factor Authentication; 클라이언트 인증서 기반 인증
     
 - **권한 부여 방법**: Microsoft의 개방형 권한 부여 (OAuth) 구현 
     
@@ -98,7 +97,7 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
   
   - 아래에 나열 된 것과 같은 최대 2 개의 서로 다른 서버 버전을 포함 하는 배포
   
-     - 비즈니스용 Skype 서버 2015 및 비즈니스용 Skype 서버 2019
+     - 비즈니스용 skype 서버 2015 및 비즈니스용 Skype 서버 2019
      
   - 모든 비즈니스용 Skype 서버에는 최신 cummulative 업데이트가 설치 되어 있어야 하며, [비즈니스용 Skype 서버 업데이트](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) 에서 사용 가능한 모든 업데이트를 찾고 관리 하는 방법을 참조 하세요.
   - 하이브리드 환경에 Lync Server 2010 또는 2013이 없습니다.
