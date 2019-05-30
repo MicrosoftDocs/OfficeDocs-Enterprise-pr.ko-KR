@@ -121,7 +121,7 @@
 #### [디렉터리 동기화 준비](prepare-for-directory-synchronization.md)
 #### IdFix 도구 실행
 ##### [IdFix 도구로 디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [IdFix 도구 설치 및 실행](install-and-run-idfix.md)
+##### [IdFix 도구 다운로드 및 실행](install-and-run-idfix.md)
 ##### [IdFix 제외 및 지원 개체/특성](idfix-excluded-and-supported-objects-and-attributes.md)
 ##### [IdFix 트랜잭션 로그](idfix-transaction-log.md)
 #### [디렉터리 동기화 설정](set-up-directory-synchronization.md)
