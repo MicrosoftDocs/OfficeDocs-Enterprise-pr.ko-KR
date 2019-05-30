@@ -1,7 +1,7 @@
 ---
 title: Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 계획
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/12/2019
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 또는 Office 2010을 사용 하는 경우에는 업그레이드를 계획할 수 있습니다. 오래 된 앱에서는 중지 되지 않습니다. 이러한 리소스를 사용 하 여 계획을 시작 하세요.
-ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102436"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539280"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
