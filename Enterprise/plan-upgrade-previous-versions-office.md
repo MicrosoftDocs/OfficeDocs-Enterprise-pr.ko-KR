@@ -3,7 +3,7 @@ title: Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2019
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 또는 Office 2010을 사용 하는 경우에는 업그레이드를 계획할 수 있습니다. 오래 된 앱에서는 중지 되지 않습니다. 이러한 리소스를 사용 하 여 계획을 시작 하세요.
-ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 1867661c158667a6da6108380841f8d9d692ba15
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539280"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704109"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
-조직에서 이전 버전의 Office 제품 및 서버를 사용 하는 경우에는 업그레이드 계획을 시작 하는 것이 좋습니다. Office 2007 제품 및 서비스가 지원 종료 및 Office 2010 제품에 도달 했을 때, 서비스는 **2020 년 10 월 13 일**에 지원 끝까지 도달 하 게 됩니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
+조직에서 이전 버전의 Office 제품 및 서버를 사용 하는 경우에는 업그레이드 계획을 시작 하는 것이 좋습니다. Office 2007 제품 및 서비스가 지원 종료에 도달 했습니다. Exchange 2010는 **2020 년 1 월 14**일에 지원 종료에 도달 합니다. 기타 Office 2010 제품 및 서비스는 **2020 년 10 월 13 일**에 지원 종료에 도달 합니다. 이 섹션의 리소스를 사용 하 여 시작 합니다.
 
 - [Office 2007 서버 및 클라이언트에서 업그레이드](upgrade-from-office-2007-servers-and-products.md)
 
@@ -71,7 +71,7 @@ ms.locfileid: "34539280"
 - **Home 사용을 위해 Office 365을 사용해 보세요**. [요구 사항을](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)검토 한 후 [office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 또는 [office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)을 선택 합니다. 평가판을 시작 하 고 Office 365이 어떻게 작동 하는지 확인 합니다. Office 365에서는 OneDrive를 사용 하 여 클라우드 저장소를 즐길 수 있으며 매달 모바일 및 일반 전화선으로 번호로의 Skype 통화를 60 분 정도 받을 수 있으며, 그 외에도 다양 한 기능을 제공 받을 수 있습니다. 자세한 내용은 office 365를 [사용 하 여 office의 최대 정보 얻기](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)를 참조 하세요.
     
 - **Office Home &amp; Student를 구매**합니다. 이 옵션을 선택 하면 일회성 구매를 수행한 다음 Windows PC 또는 Mac에 Office를 설치 합니다. 구독이 아닙니다. 한 컴퓨터에 대 한 일회용 정품 사용권입니다. [요구 사항을](http://office.com/systemrequirements)확인 하 고 사용할 버전을 선택 합니다.
-    - Windows PC에서 Windows 10을 실행 하는 경우 [Office Home _AMP_ Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)를 구하는 것이 좋습니다.
+    - Windows PC에서 Windows 10을 실행 하는 경우 [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)를 구하는 것이 좋습니다.
     - Windows PC에서 windows 7, 8 또는 8.1을 실행 중이 고 현재 Windows 10으로 업그레이드 하 고 있지 않은 경우 공인 대리점에서 Office Home & Student 2016 (또는 Microsoft Office의 다른 버전)을 가져오는 것이 좋습니다.
 
 지금은 업그레이드 하지 않도록 선택할 수도 있습니다. Office 앱이 계속 실행 됩니다. Office 지원 날짜에 대 한 일정은 [여기](https://go.microsoft.com/fwlink/p/?linkid=2085724)에서 확인할 수 있습니다. 그러나 업그레이드를 통해 보안 업데이트를 비롯 한 새로운 기능과 향상 된 기능에 액세스할 수 있습니다. 

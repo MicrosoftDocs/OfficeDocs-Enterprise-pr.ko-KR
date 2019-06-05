@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-april-15-2019"></a>2019년 4월 15일 주중
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 4/18/2019 | [최신 인증이 Office 2013 및 Office 2016 클라이언트 앱에 작동하는 방식](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 수정한 날짜 |
-| 4/18/2019 | [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
-| 4/18/2019 | [Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
-| 4/18/2019 | [Office 365용 ExpressRoute를 사용한 라우팅](/Office365/Enterprise/routing-with-expressroute) | 수정한 날짜 |
-| 4/18/2019 | [중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | 수정한 날짜 |
-
-
-## <a name="week-of-april-22-2019"></a>2019년 4월 22일 주중
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 4/22/2019 | [OneDrive 및 SharePoint Online의 Multi-Geo 기능](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 수정한 날짜 |
-| 4/22/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 수정한 날짜 |
-| 4/22/2019 | DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 통해 고객 보고 데이터 집계 | 제거 |
-| 4/22/2019 | [DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 Office 365 관리](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | 수정한 날짜 |
-| 4/22/2019 | [DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 고객 테넌트 보고 데이터 검색](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | 수정한 날짜 |
-
-
 ## <a name="week-of-april-29-2019"></a>4 월 29 일 주 2019
 
 
@@ -341,3 +317,38 @@
 | 5/17/2019 | [Office 365 전역 관리자 계정 보호](/Office365/Enterprise/protect-your-global-administrator-accounts) | 수정한 날짜 |
 | 5/17/2019 | [Office 365의 디렉터리 동기화 설정](/Office365/Enterprise/set-up-directory-synchronization) | 수정한 날짜 |
 | 5/17/2019 | [시뮬레이트된 Azure의 크로스-프레미스 가상 네트워크](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 수정한 날짜 |
+
+
+## <a name="week-of-may-20-2019"></a>5 월 20 일 주 2019
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 5/20/2019 | [Office 365 id 모델 및 Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | 수정한 날짜 |
+| 5/20/2019 | [Office 365 배포 계획 검사 목록](/Office365/Enterprise/deployment-planning-checklist) | 수정한 날짜 |
+| 5/20/2019 | [Office 365 Enterprise 계획](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 수정한 날짜 |
+| 5/20/2019 | [조직을 위해 Office 365 Enterprise 배포](/Office365/Enterprise/setup-overview-for-enterprises) | 수정한 날짜 |
+| 5/21/2019 | [하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | 수정한 날짜 |
+| 5/21/2019 | SharePoint Online에서 콘텐츠 배달 네트워크 사용 | 제거 |
+| 5/22/2019 | [하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소](/Office365/Enterprise/hybrid-modern-auth-overview) | 수정한 날짜 |
+| 5/22/2019 | SharePoint Server 인증에 Azure AD를 사용 | 제거 |
+
+
+## <a name="week-of-may-27-2019"></a>5 월 27 일 주 2019
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 5/28/2019 | [Office 365 Enterprise](/Office365/Enterprise/index) | 수정한 날짜 |
+| 5/28/2019 | [Office 365 IdFix 도구 다운로드 및 실행](/Office365/Enterprise/install-and-run-idfix) | 수정한 날짜 |
+| 5/28/2019 | [Office 365 계정 관리 도구](/Office365/Enterprise/manage-office-365-accounts) | 수정한 날짜 |
+| 5/28/2019 | [IdFix 도구를 사용하여 Office 365와의 동기화를 위한 디렉터리 특성 준비](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | 수정한 날짜 |
+| 5/28/2019 | [Office 365에 대 한 디렉터리 동기화 준비](/Office365/Enterprise/prepare-for-directory-synchronization) | 수정한 날짜 |
+| 5/28/2019 | [Office 365 계정 관리 도구](/Office365/Enterprise/tools-to-manage-office-365-accounts) | 수정한 날짜 |
+| 5/28/2019 | [Office 365 미국 정부 DoD 끝점](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 수정한 날짜 |
+| 5/28/2019 | [Office 365 미국 정부 GCC 높은 끝점](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 수정한 날짜 |
+| 5/28/2019 | [Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges) | 수정한 날짜 |
+| 5/29/2019 | [Microsoft 클라우드 IT 아키텍처 리소스](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 수정한 날짜 |
+| 5/29/2019 | [Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 계획](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 수정한 날짜 |
+| 5/29/2019 | [Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 수정한 날짜 |
+| 5/30/2019 | [Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
