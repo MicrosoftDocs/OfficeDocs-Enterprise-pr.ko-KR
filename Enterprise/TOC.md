@@ -20,7 +20,7 @@
 ### [구독, 라이선스 및 테넌트](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### 네트워크 계획
-#### [Office 365에 대한 네트워크 연결](network-connectivity.md)
+#### [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 #### [Office 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
 #### [Office 365의 네트워크 및 마이그레이션 계획](network-and-migration-planning.md)
 
@@ -92,7 +92,7 @@
 ### [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
 ### [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 ### [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
-### [Office 365에 대한 네트워크 연결](network-connectivity.md)
+### [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 ### [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)
 ### Office 365 IP 주소 및 URL
 #### [Office 365 엔드포인트](office-365-endpoints.md)
