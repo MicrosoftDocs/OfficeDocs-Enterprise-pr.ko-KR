@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
-ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068184"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722577"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용
 
@@ -67,7 +67,7 @@ Contoso Corporation은 현재 Exchange Online 및 SharePoint Online 용 Office 3
 
 |**사용 되는 BGP 커뮤니티 태그**|**Azure Express를 통해 라우팅할 수 있는 기능**|**인터넷 경로 필요**|
 |:-----|:-----|:-----|
-|비즈니스용 Skype  <br/> (12076:5030)  <br/> |Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office Online  <br/>  비즈니스용 Skype 원격 분석, Skype 클라이언트 빠른 팁, 공용 IM 연결  <br/>  Exchange Online, Exchange Online Protection 및 SharePoint Online  <br/> |
+|비즈니스용 Skype  <br/> (12076:5030)  <br/> |Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office Online  <br/>  비즈니스용 skype 원격 분석, Skype 클라이언트 빠른 팁, 공용 IM 연결  <br/>  Exchange Online, Exchange Online Protection 및 SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>시나리오 3: Office 365 서비스 전용 Azure Express 범위 지정
 
@@ -103,7 +103,7 @@ BGP 커뮤니티를 활용 하 여 고객 네트워크를 통해 거가 보급 �
   
 ## <a name="related-topics"></a>관련 주제
 
-[Office 365에 대한 네트워크 연결](network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
   
 [Office 365용 Azure ExpressRoute](azure-expressroute.md)
   
