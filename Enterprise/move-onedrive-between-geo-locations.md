@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 3315c14debf14c6876e2da90a2ade10ca8a7499a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 352e8317a3f62e23c4dc0faed4cb412707f525d8
+ms.sourcegitcommit: 921545ad533001a7ab055d3e6b19bfc8869df286
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070134"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814720"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
@@ -88,9 +88,6 @@ OneDrive를 이동할 준비가 되었으면 Success, 법적 보존 상태이거
 -   _UserPrincipalName_ - OneDrive을 이동할 사용자의 UPN입니다.
 
 -   _DestinationDataLocation_ - OneDrive를 이동해야 하는 지리적 위치입니다. 사용자의 기본 설정 데이터 위치와 동일해야 합니다.
-
-> [!NOTE]
-> OneDrive 지리적 이동을 시작하기 전에 `ValidationOnly`를 사용하여 `Get-SPOGeoMoveStateCompatibility`를 실행하는 것이 좋습니다.
 
 예를 들어, matt@contosoenergy.onmicrosoft.com의 OneDrive를 EUR에서 AUS로 이동하려면 다음을 실행합니다.
 
