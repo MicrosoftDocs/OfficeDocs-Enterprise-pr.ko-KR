@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>4 월 29 일 주 2019
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 2019년 4월 30일 | [하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법](/Office365/Enterprise/configure-skype-for-business-for-hybrid-modern-authentication) | 수정한 날짜 |
-| 2019년 4월 30일 | [Microsoft Azure IaaS에 대한 네트워킹 디자인](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | 수정한 날짜 |
-| 2019년 4월 30일 | [하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소](/Office365/Enterprise/hybrid-modern-auth-overview) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365 연결 모니터링](/Office365/Enterprise/monitor-connectivity) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365 Germany 엔드포인트](/Office365/Enterprise/office-365-germany-endpoints) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365 IP 주소 및 URL 웹 서비스](/Office365/Enterprise/office-365-ip-web-service) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365 미국 정부 DoD 끝점](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365 미국 정부 GCC 높은 끝점](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365용 ExpressRoute를 사용한 라우팅](/Office365/Enterprise/routing-with-expressroute) | 수정한 날짜 |
-| 2019년 4월 30일 | [Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges) | 수정한 날짜 |
-| 2019년 4월 30일 | [SharePoint Server 인증에 Azure AD를 사용](/Office365/Enterprise/using-azure-ad-for-sharepoint-server-authentication) | 수정한 날짜 |
-| 5/1/2019 | [Office 365 IP 주소 및 URL 웹 서비스](/Office365/Enterprise/office-365-ip-web-service) | 수정한 날짜 |
-
-
 ## <a name="week-of-may-06-2019"></a>5 월 6 일 주 2019
 
 
@@ -352,3 +333,34 @@
 | 5/29/2019 | [Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 계획](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 수정한 날짜 |
 | 5/29/2019 | [Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 수정한 날짜 |
 | 5/30/2019 | [Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
+
+
+## <a name="week-of-june-03-2019"></a>2019 년 6 월 03 일 주
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 6/4/2019 | [Office 365 클라이언트 앱 지원-최신 인증](/Office365/Enterprise/office-365-client-support-modern-authentication) | 수정한 날짜 |
+| 6/4/2019 | [Office 365 미국 정부 DoD 끝점](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 수정한 날짜 |
+| 6/4/2019 | [Office 365 미국 정부 GCC 높은 끝점](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 수정한 날짜 |
+| 6/4/2019 | [Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 계획](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 수정한 날짜 |
+| 6/4/2019 | [Project Server 2010 지원 종료 로드맵](/Office365/Enterprise/project-server-2010-end-of-support) | 수정한 날짜 |
+| 6/4/2019 | [Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 수정한 날짜 |
+| 6/4/2019 | [SharePoint 2010에서 업그레이드](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 수정한 날짜 |
+| 6/5/2019 | [Office 365용 Azure ExpressRoute](/Office365/Enterprise/azure-expressroute) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용](/Office365/Enterprise/bgp-communities-in-expressroute) | 수정한 날짜 |
+| 6/5/2019 | [클라이언트 연결](/Office365/Enterprise/client-connectivity) | 수정한 날짜 |
+| 6/5/2019 | [콘텐츠 배달 네트워크](/Office365/Enterprise/content-delivery-networks) | 수정한 날짜 |
+| 6/5/2019 | [Office 365용 ExpressRoute 구현](/Office365/Enterprise/implementing-expressroute) | 수정한 날짜 |
+| 6/5/2019 | [Office 365용 ExpressRoute를 사용한 네트워크 계획](/Office365/Enterprise/network-planning-with-expressroute) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 IP 주소 및 URL 웹 서비스](/Office365/Enterprise/office-365-ip-web-service) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 네트워크 연결 원칙](/Office365/Enterprise/office-365-network-connectivity-principles) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 네트워크 연결 개요](/Office365/Enterprise/office-365-networking-overview) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 서비스에 연결되는 네트워크 장치 계획](/Office365/Enterprise/plan-for-network-devices) | 수정한 날짜 |
+| 6/5/2019 | [Office 365용 ExpressRoute를 사용한 라우팅](/Office365/Enterprise/routing-with-expressroute) | 수정한 날짜 |
+| 6/5/2019 | [Office 365의 네트워크 설정](/Office365/Enterprise/set-up-network-for-office-365) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 수정한 날짜 |
+| 6/5/2019 | [Office 365 개발/테스트 환경용 고급 eDiscovery](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | 수정한 날짜 |
+| 6/7/2019 | [Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 수정한 날짜 |
+| 6/7/2019 | [Project Server 2010 지원 종료 로드맵](/Office365/Enterprise/project-server-2010-end-of-support) | 수정한 날짜 |
+| 6/7/2019 | [Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 수정한 날짜 |
