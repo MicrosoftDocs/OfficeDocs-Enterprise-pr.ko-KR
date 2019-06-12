@@ -3,7 +3,7 @@ title: Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2019
+ms.date: 06/11/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되어 있지 않습니다.'
 hideEdit: true
-ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: 01d0acfd832df47dd5cabd95b7b8137dd76ab049
+ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726244"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857361"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 
@@ -62,6 +62,8 @@ DNS 외에도 설명된 특정 시나리오가 필요하지 않는 경우 대부
 | 16  |  **SharePoint Online 및 비즈니스용 OneDrive FQDN** <br> FQDN의 '\< tenant>'가 있는 모든 '.sharepoint.com' FQDN은 클라이언트의 IE 또는 Microsoft Edge 신뢰할 수 있는 사이트 영역에 있어야 작동할 수 있습니다. 14번째 줄에 나열된 제품군 전체 FQDN, CDN 및 원격 측정 외에도 이러한 끝점을 추가해야 합니다. |  | 신뢰할 수 있는 사이트 |
 | 17  | **Yammer**  <br> Yammer는 브라우저에서만 사용할 수 있으며 인증된 사용자는 프록시를 통해 전달되어야 합니다. 모든 Yammer FQDN은 클라이언트의 IE 또는 Edge의 신뢰할 수 있는 사이트 영역에 있어야 작동할 수 있습니다. |  | 신뢰할 수 있는 사이트 |
 | 18  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/)를 사용하여 온프레미스 사용자 계정을 Azure AD에 동기화합니다. | [포트 및 프로토콜이 필요한 하이브리드 ID](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Azure AD 연결 문제 해결](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) 그리고 [Azure AD Connect Health 에이전트 설치](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)를 참조합니다. | 아웃바운드 서버 전용 트래픽 |
+| 19  | Microsoft Stream(Azure AD 사용자 토큰 필요) <BR> Office 365 월드와이드(GCC 포함) | *.cloudapp.net <BR> *. api.microsoftstream.com <BR> *. notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP 포트 443  | 인바운드 서버 트래픽 |
+|||||
 
 ## <a name="related-topics"></a>관련 주제
 
