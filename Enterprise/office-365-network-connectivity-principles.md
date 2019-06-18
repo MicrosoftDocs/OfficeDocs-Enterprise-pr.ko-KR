@@ -3,7 +3,7 @@ title: Office 365 네트워크 연결 원칙
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/14/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 네트워크 연결에 대 한 네트워크 계획을 시작 하기 전에 Office 365 트래픽을 안전 하 게 관리 하 고 가능한 최상의 성능을 얻기 위한 연결 원리를 이해 하는 것이 중요 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다.
-ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162501"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017298"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 네트워크 연결 원칙
 
 Office 365 네트워크 연결에 대 한 네트워크 계획을 시작 하기 전에 Office 365 트래픽을 안전 하 게 관리 하 고 가능한 최상의 성능을 얻기 위한 연결 원리를 이해 하는 것이 중요 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다.
   
-전통적인 엔터프라이즈 네트워크는 기본적으로 사용자에 게 강력한 경계 보안을 통해 운영 되는 회사 데이터 센터에서 호스트 되는 응용 프로그램 및 데이터로의 액세스를 제공 하도록 설계 되었습니다 전통적인 모델에서는 사용자가 회사 네트워크 경계 내부, 지사의 WAN 링크 또는 VPN 연결을 통해 원격으로 응용 프로그램 및 데이터에 액세스 하는 것으로 가정 합니다. 
+전통적인 엔터프라이즈 네트워크는 기본적으로 사용자에 게 강력한 경계 보안을 통해 운영 되는 회사 데이터 센터에서 호스트 되는 응용 프로그램 및 데이터로의 액세스를 제공 하도록 설계 되었습니다 전통적인 모델에서는 사용자가 회사 네트워크 경계 내부, 지사의 WAN 링크 또는 VPN 연결을 통해 원격으로 응용 프로그램 및 데이터에 액세스 하는 것으로 가정 합니다.
   
 Office 365와 같은 SaaS 응용 프로그램을 채택 하면 네트워크 경계 밖의 서비스 및 데이터 조합이 이동 합니다. 최적화를 사용 하지 않고 사용자와 SaaS 응용 프로그램 간의 트래픽은 패킷 검사, 네트워크 헤어핀 방지, 지리적으로 멀리 떨어진 끝점 및 기타 요인에 대 한 실수로의 연결에 의해 도입 된 대기 시간을 따릅니다. 주요 최적화 지침을 이해 하 고 구현 하 여 최상의 Office 365 성능 및 안정성을 확보할 수 있습니다.
   
@@ -37,6 +37,7 @@ Office 365와 같은 SaaS 응용 프로그램을 채택 하면 네트워크 경�
 - [새 Office 365 끝점 범주](office-365-network-connectivity-principles.md#BKMK_Categories) 및 최적화 지침
 - [네트워크 경계 보안과 끝점 보안 비교](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Office 365 트래픽에 대 한 [증분 최적화](office-365-network-connectivity-principles.md#BKMK_IncOpt) 옵션
+- Office [365 네트워크 온 보 딩 도구](https://aka.ms/netonboard), office 365에 대 한 기본 연결을 테스트 하기 위한 새로운 도구
 
 ## <a name="office-365-architecture"></a>Office 365 아키텍처
 <a name="BKMK_Architecture"> </a>
@@ -61,7 +62,7 @@ Microsoft는 최적의 Office 365 연결 및 성능을 달성 하기 위해 다�
   
 Office 365 네트워크 트래픽은 일반 인터넷 바인딩 네트워크 트래픽과의 트래픽을 구별할 수 있는 첫 번째 단계입니다. Office 365 연결을 최적화 하려면 네트워크 경로 최적화, 방화벽 규칙, 브라우저 프록시 설정 및 특정 끝점에 대 한 네트워크 검사 장치 바이패스와 같은 접근 방식을 구현 해야 합니다.
   
-이전 Office 365 최적화 지침은 Office 365 끝점을 **필수** 및 **선택적**두 범주로 나눕니다. 새 Office 365 서비스 및 기능을 지원 하기 위해 끝점이 추가 됨에 따라 Office 365 끝점이 **최적화**, **허용** 및 **기본값**의 세 가지 범주로 재구성 되었습니다. 각 범주에 대 한 지침은 범주의 모든 끝점에 적용 되므로 최적화를 보다 쉽게 이해 하 고 구현할 수 있습니다. 
+이전 Office 365 최적화 지침은 Office 365 끝점을 **필수** 및 **선택적**두 범주로 나눕니다. 새 Office 365 서비스 및 기능을 지원 하기 위해 끝점이 추가 됨에 따라 Office 365 끝점이 **최적화**, **허용** 및 **기본값**의 세 가지 범주로 재구성 되었습니다. 각 범주에 대 한 지침은 범주의 모든 끝점에 적용 되므로 최적화를 보다 쉽게 이해 하 고 구현할 수 있습니다.
   
 Office 365 끝점 범주 및 최적화 방법에 대 한 자세한 내용은 [새 Office 365 끝점 범주](office-365-network-connectivity-principles.md#BKMK_Categories) 섹션을 참조 하십시오.
   
@@ -149,7 +150,7 @@ Office 365 끝점은 다양 한 네트워크 주소 및 서브넷 집합을 나�
 > [!NOTE]
 > 네트워크 내의 Office 365 끝점 위치는 Office 365 테 넌 트 데이터의 위치와 직접 연결 되지 않습니다. 따라서 고객은 Office 365에서 분산 및 글로벌 서비스로 확인 해야 하며 지역 기준에 따라 Office 365 끝점에 대 한 네트워크 연결을 차단 해서는 안 됩니다.
   
-이전에 Office 365 트래픽을 관리 하기 위한 지침에서 끝점은 **필수** 및 **선택**항목 두 범주로 구성 되었습니다. 각 범주 내의 끝점은 서비스의 중요도에 따라 각각 다른 최적화를 필요로 하며, 대부분의 고객은 동일한 네트워크 최적화 응용 프로그램을 Office 365 Url 및 IP 주소의 전체 목록에 정당화 하기 위해 직면 하 게 됩니다. 
+이전에 Office 365 트래픽을 관리 하기 위한 지침에서 끝점은 **필수** 및 **선택**항목 두 범주로 구성 되었습니다. 각 범주 내의 끝점은 서비스의 중요도에 따라 각각 다른 최적화를 필요로 하며, 대부분의 고객은 동일한 네트워크 최적화 응용 프로그램을 Office 365 Url 및 IP 주소의 전체 목록에 정당화 하기 위해 직면 하 게 됩니다.
   
 새 모델에서는 끝점이 최적의 성능을 개선 하 고 반환 하기 위해 네트워크 최적화 노력을 집중 시킬 수 있도록 **최적화**, **허용** 및 **기본값으로**세 범주로 분리 됩니다. 투자 합니다. 끝점은 실제 사용자 환경의 네트워크 품질, 볼륨 및 성능 봉투, 구현 용이성에 따라 위의 범주에서 통합 됩니다. 권장 최적화는 지정 된 범주의 모든 끝점에 동일한 방식으로 적용할 수 있습니다.
   
@@ -240,3 +241,31 @@ Office 365 트래픽을 최적화 하는 데 사용할 방법은 네트워크 �
 |우회 프록시 및 검사 장치  <br/> |Office 365 요청을 egress 지점에 직접 전송 하는 PAC 파일을 사용 하 여 브라우저를 구성 합니다.  <br/> 검사 없이 Office 365 트래픽을 허용 하도록에 지 라우터와 방화벽을 구성 합니다.  <br/> | 대기 시간 최소화  <br/>  네트워크 장치에 대 한 부하 감소  <br/> |
 |VPN 사용자에 대해 직접 연결 사용  <br/> |VPN 사용자의 경우에는 분할 터널링을 구현 하 여 Office 365 연결이 VPN 터널을 통하지 않고 사용자 네트워크에서 직접 연결 하도록 설정 합니다.  <br/> | 대기 시간 최소화  <br/>  가장 가까운 Office 365 진입점에 대 한 신뢰할 수 있는 연결 개선  <br/> |
 |기존 WAN에서 SD-WAN으로 마이그레이션  <br/> |SD-Wan (소프트웨어 정의 광역 네트워크)에서는 Vm (가상 컴퓨터)을 사용 하 여 계산 리소스를 가상화 하는 것과 비슷한 방식으로 기존 WAN 라우터를 가상 기기로 교체 하 여 WAN 관리를 단순화 하 고 성능을 향상 시킵니다.  <br/> | WAN 트래픽의 성능 및 관리 효율성 개선  <br/>  네트워크 장치에 대 한 부하 감소  <br/> |
+
+## <a name="related-topics"></a>관련 주제
+
+[Office 365 네트워크 연결 개요](office-365-networking-overview.md)
+
+[Office 365 끝점 관리](managing-office-365-endpoints.md)
+
+[Office 365 URL 및 IP 주소 범위](urls-and-ip-address-ranges.md)
+
+[Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
+
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+
+[Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)
+
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+
+[초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
+
+[Office 365 성능 문제 해결 계획](performance-troubleshooting-plan.md)
+
+[콘텐츠 배달 네트워크](content-delivery-networks.md)
+
+[Office 365 네트워크 온 보 딩 도구](https://aka.ms/netonboard)
+
+[Microsoft가 빠르고 안정적인 글로벌 네트워크를 구축 하는 방법](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Office 365 네트워킹 블로그](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

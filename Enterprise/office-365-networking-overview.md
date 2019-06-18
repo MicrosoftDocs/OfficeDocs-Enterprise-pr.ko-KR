@@ -3,7 +3,7 @@ title: Office 365 네트워크 연결 개요
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/12/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: SaaS 서비스에 대 한 네트워크 최적화가 중요 한 이유, Office 365 네트워킹의 목표 및 각 SaaS가 다른 작업을 수행 하는 다른 네트워킹을 필요로 하는 이유에 대해 설명 합니다.
-ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069623"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017288"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 네트워크 연결 개요
 
@@ -94,18 +94,26 @@ Office 365 네트워크 성능 최적화는 실제로 불필요 한 장애를 �
 
 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 
-[Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
-
 [Office 365 끝점 관리](managing-office-365-endpoints.md)
 
+[Office 365 URL 및 IP 주소 범위](urls-and-ip-address-ranges.md)
+
 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 
-[Office 365에 대한 네트워크 연결](network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
 
 [Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)
+
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
 
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
 
 [Office 365 성능 문제 해결 계획](performance-troubleshooting-plan.md)
 
+[콘텐츠 배달 네트워크](content-delivery-networks.md)
+
+[Office 365 네트워크 온 보 딩 도구](https://aka.ms/netonboard)
+
 [Microsoft가 빠르고 안정적인 글로벌 네트워크를 구축 하는 방법](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Office 365 네트워킹 블로그](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
