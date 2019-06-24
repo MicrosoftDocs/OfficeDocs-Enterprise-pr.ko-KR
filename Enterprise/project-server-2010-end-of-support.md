@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010의 지원 종료는 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
+ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780877"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35128705"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010의 지원 종료 로드맵
 
@@ -186,10 +186,6 @@ Project Server 2016에서 Project Server 2019로 업그레이드 하기 위해 �
 
 - 업그레이드 후에는 Project Web App의 여러 변경 사항에 대해 숙지 해야 합니다.  이러한 항목에 대 한 자세한 내용은 [Project Server 2019의 새로운 기능](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)을 참조 하십시오.
 
-
-## <a name="migrate-from-portfolio-server-2010"></a>포트폴리오 서버 2010에서 마이그레이션
-
-Project 포트폴리오 서버 2010는 포트폴리오 전략, 우선 순위 지정 및 최적화를 위해 Project Server 2010에서 사용 되었습니다. 이 버전 이후에는 추가 프로젝트 포트폴리오 서버 버전을 만들지 않았습니다. 그러나 포트폴리오 관리 기능은 최신 Project Server 버전과 Project Online의 Premium 버전에서 사용할 수 있습니다. Project 포트폴리오 서버 2010의 데이터는로 마이그레이션할 수 없습니다. 비즈니스 드라이버와 같은 데이터를 다시 만들어야 합니다.
   
 기타 리소스:
   
