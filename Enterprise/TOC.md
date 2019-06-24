@@ -50,7 +50,7 @@
 ## 하이브리드 최신 인증
 ### [비즈니스용 Skype Server 및 Exchange Server의 필수 구성 요소](hybrid-modern-auth-overview.md)
 ### [Exchange 구성](configure-exchange-server-for-hybrid-modern-authentication.md)
-### [비즈니스용 Skype Online 구성](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
+### [비즈니스용 Skype Online 구성](configure-skype-for-business-for-hybrid-modern-authentication.md)
 ### [비즈니스용 및 Exchange Skype를 제거하거나 사용 중지](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
 
 ## Office 클라이언트 및 서버
