@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 이 솔루션을 디자인하고 구현하는 방법을 설명합니다.'
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070444"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203647"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure에서 SharePoint Server 2013 재해 복구
 
@@ -36,34 +36,6 @@ ms.locfileid: "34070444"
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-이 문서의 내용
-  
-- [재해 복구를 위해 Azure 인프라 서비스 사용](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [솔루션 설명](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [자세한 아키텍처](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [재해 복구 로드맵](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [1 단계: 재해 복구 환경 디자인](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [2 단계: Azure virtual network 및 VPN 연결 만들기](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [3 단계: Azure virtual network에 Active Directory 및 도메인 이름 서비스 배포](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [4 단계: Azure에서 SharePoint 복구 팜 배포](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [단계 5: 팜 간에 DFSR 설정](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [6 단계: 복구 팜으로의 로그 전달 설정](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [단계 7: 장애 조치 (failover) 및 복구 확인](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Microsoft 개념 증명 환경](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [문제 해결 팁](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>재해 복구를 위해 Azure 인프라 서비스 사용
 
 대부분의 조직에는 온-프레미스를 작성 하 고 유지 관리 하는 데 비용이 드는 SharePoint 용 재해 복구 환경이 없습니다. Azure 인프라 서비스는 온-프레미스 대체 보다 유연성이 크고 비용이 저렴 한 재해 복구 환경에 대 한 강력한 옵션을 제공 합니다.
@@ -297,7 +269,7 @@ Sharepoint [용 Microsoft Azure 아키텍처 2013](microsoft-azure-architectures
   
 **그림: 하이브리드 Active Directory 도메인 구성**
 
-![Azure virtual network와 SharePoint 팜 서브넷에 배포 된 가상 컴퓨터는 복제 도메인 컨트롤러 및 DNS 서버입니다.](media/AZarch-HyADdomainConfig.png)
+![Azure virtual network에 배포 된 두 개의 가상 컴퓨터와 SharePoint 팜 서브넷은 복제 도메인 컨트롤러 및 DNS 서버입니다.](media/AZarch-HyADdomainConfig.png)
   
 그림에서는 두 개의 가상 컴퓨터가 같은 서브넷에 배포 됩니다. 이러한 가상 컴퓨터는 각각 Active Directory와 DNS 라는 두 개의 역할을 호스팅합니다.
   
@@ -341,7 +313,7 @@ DFSR을 사용 하 여 파일 복제를 설정 하려면 DNS 관리 스냅인을
     
 - **파일 및 저장소 서비스** 노드를 엽니다.
     
-- **Dfs 네임 스페이스** 및 **Dfs 복제**를 선택 합니다.
+- **Dfs 네임 스페이스** 및 **dfs 복제**를 선택 합니다.
     
 - **다음** 을 클릭 하 여 마법사 단계를 완료 합니다.
     
@@ -522,7 +494,7 @@ SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라�
 |C  <br/> |80  <br/> |데이터 루트 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\  <br/> |
 |E-learning  <br/> |500  <br/> |사용자 데이터베이스 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
 |식량  <br/> |500  <br/> |사용자 데이터베이스 로그 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
-|1G  <br/> |500  <br/> |Temp DB 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
+|1g  <br/> |500  <br/> |Temp DB 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
 |도움말  <br/> |500  <br/> |Temp DB 로그 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>테스트 환경 설정
@@ -632,7 +604,7 @@ SharePoint 2013 서버를 만들기 전에 SQL Server가 설치 된 데이터베
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell 명령에서 "' Get-ADForest ' 용어가 cmdlet, 함수, 스크립트 파일 또는 작동 가능한 프로그램의 이름으로 인식 되지 않습니다." 라는 오류가 발생 합니다.
 
-사용자 프로필을 설정할 때 Active Directory 포리스트 이름이 필요 합니다. 역할 및 기능 추가 마법사에서 Windows PowerShell에 대 한 Active Directory 모듈 ( **원격 서버 관리 Tools>Role Administration TOOLS_GT_AD DS 및 AD LDS 도구** 섹션)을 사용 하도록 설정 했는지 확인 합니다. 또한 **ADForest** 를 사용 하기 전에 다음 명령을 실행 하 여 소프트웨어 종속성을 로드 하는 데 도움을 줄 수 있습니다.
+사용자 프로필을 설정할 때 Active Directory 포리스트 이름이 필요 합니다. 역할 및 기능 추가 마법사의 **원격 서버 관리 도구>역할 관리 도구>AD DS 및 AD LDS 도구** 섹션에서 Windows PowerShell 용 Active Directory 모듈을 사용 하도록 설정 했는지 확인 합니다. 또한 **ADForest** 를 사용 하기 전에 다음 명령을 실행 하 여 소프트웨어 종속성을 로드 하는 데 도움을 줄 수 있습니다.
   
 ```
 Import-module servermanager

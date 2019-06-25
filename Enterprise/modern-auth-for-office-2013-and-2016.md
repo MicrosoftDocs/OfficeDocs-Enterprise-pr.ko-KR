@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 80a5f557fc1f3d189e8852ac3039521cfc31fb2c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070064"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203627"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
@@ -61,6 +61,7 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
     
 - [비즈니스용 Skype Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
+<a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
 다음 표에서는 최신 인증을 사용 하지 않고 Exchange Online에 연결할 때 Office 2013 또는 Office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
@@ -73,8 +74,8 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
 |Office 2013  <br/> |아니요  <br/> |아니요  <br/> |기본 인증  <br/> |기본 인증  <br/> |
 |Office 2013  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
    
-### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
+### <a name="sharepoint-online"></a>SharePoint Online
 
 다음 표에서는 최신 인증을 사용 하지 않고 SharePoint Online에 연결할 때 Office 2013 또는 Office 2016 클라이언트 앱의 인증 동작에 대해 설명 합니다.
   

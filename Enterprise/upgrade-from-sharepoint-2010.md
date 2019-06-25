@@ -15,16 +15,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010에 대 한 지원 종료 및 SharePoint Server 2010은 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704159"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203617"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
-Microsoft SharePoint 2010 및 SharePoint Server 2010은 **2020 년 10 월 13 일**에 대 한 지원 종료에 도달 합니다. 이 문서에서는 사용자가 기존 SharePoint Server 2010 데이터를 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
+Microsoft SharePoint 2010 및 SharePoint Server 2010은 **2020 년 10 월 13 일**에 대 한 지원 종료에 도달 합니다. 이 문서에서는 기존 SharePoint Server 2010 데이터를 Office 365에서 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
   
 ## <a name="what-is-end-of-support"></a>지원이 종료 되는 이유는 무엇 인가요?
 
@@ -74,7 +74,7 @@ SharePoint Server 2013 및 SharePoint Foundation 2013은 자체 서버에 온-�
     
 - 위의 두 작업을 모두 수행 합니다.
     
-- [SharePoint 하이브리드](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 솔루션 구현 
+- [SharePoint 하이브리드](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 솔루션 구현 
     
 앞으로 또는 사용자 지정 내용을 유지 관리 하거나 마이그레이션하고 SharePoint Server가 의존 하는 하드웨어를 업그레이드 하는 경우 서버 팜 유지 관리와 관련 된 숨겨진 비용을 염두에 두어야 합니다. 이러한 모든 것을 알고 있고 이러한 모든 사항을 고려 하 고 있다면 온-프레미스 업그레이드를 계속 하는 것이 더 쉽습니다. 그렇지 않으면 이전 버전의 사용자 지정을 수행 하지 않고 팜을 레거시 SharePoint 서버에서 실행 하는 경우 계획 된 마이그레이션에서 SharePoint Online으로의 이점을 누릴 수 있습니다. 또한 온-프레미스 SharePoint Server 환경에서 일부 데이터를 SharePoint Online에 추가 하 여 모든 데이터를 온-프레미스로 유지 하는 하드웨어 관리의 양을 줄일 수 있습니다. 일부 데이터를 SharePoint Online으로 이동 하는 것이 보다 경제적입니다.
   
@@ -105,7 +105,7 @@ Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 
 |Microsoft는 기본 하드웨어 및 소프트웨어 (SharePoint Online이 실행 되는 SQL server 포함)에 패치, 수정 사항 및 업데이트를 적용 합니다.  <br/> |서비스의 기본 파일 시스템에 대 한 액세스 권한이 없기 때문에 일부 사용자 지정 내용이 제한 됩니다.  <br/> |
 |Microsoft는 서비스 수준 [계약](https://go.microsoft.com/fwlink/?linkid=843153) 을 게시 하 고 신속 하 게 이동 하 여 서비스 수준 인시던트를 해결 합니다.  <br/> |백업 및 복원 및 기타 복구 옵션은 SharePoint Online의 서비스에 의해 자동화 되며, 사용 되지 않는 경우에는 백업이 덮어쓰여집니다.  <br/> |
 |보안 테스트 및 서버 성능 조정은 Microsoft의 서비스에서 지속적으로 수행 됩니다.  <br/> |사용자 인터페이스 및 기타 SharePoint 기능의 변경 내용은 서비스에 의해 설치 되며 설정 또는 해제 해야 할 수 있습니다.  <br/> |
-|Office 365은 다양 한 업계 표준을 충족 합니다 365.  <br/> |마이그레이션에 대 한 [Fasttrack](https://go.microsoft.com/fwlink/?linkid=518597) 지원은 제한 됩니다.  <br/> 업그레이드의 대부분은 수동 또는 [SharePoint Online 및 OneDrive 마이그레이션 콘텐츠 로드맵](https://go.microsoft.com/fwlink/?linkid=843184)에 설명 된 SPO 마이그레이션 API를 통해 진행 됩니다.  <br/> |
+|Office 365은 다양 한 업계 표준을 충족 합니다 [365](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |마이그레이션에 대 한 [Fasttrack](https://go.microsoft.com/fwlink/?linkid=518597) 지원은 제한 됩니다.  <br/> 업그레이드의 대부분은 수동 또는 [SharePoint Online 및 OneDrive 마이그레이션 콘텐츠 로드맵](https://go.microsoft.com/fwlink/?linkid=843184)에 설명 된 SPO 마이그레이션 API를 통해 진행 됩니다.  <br/> |
 |Microsoft 지원 엔지니어 또는 데이터 센터의 직원은 구독에 대 한 무제한 관리자 액세스 권한을 갖지 않습니다.  <br/> |최신 버전의 SharePoint를 지원 하도록 하드웨어 인프라를 업그레이드 해야 하거나 업그레이드에 보조 팜이 필요한 경우에는 추가 비용이 있을 수 있습니다.  <br/> |
 |솔루션 공급자는 데이터를 SharePoint Online으로 마이그레이션하는 일회성 작업을 지원할 수 있습니다.  <br/> |일부 SharePoint Online 변경 내용은 사용자의 컨트롤 내에 포함 되지 않습니다. 마이그레이션 후 메뉴, 라이브러리 및 기타 기능의 디자인 차이점은 사용 편리성에 일시적으로 영향을 줄 수 있습니다.  <br/> |
 |온라인 제품은 기능에 의해 자동으로 업데이트 되는 반면, 기능은 사용 중지 수 있지만 실제 지원 수명 주기가 끝나지 않는다는 것을 의미 합니다.  <br/> |기본 SQL server 및 SharePoint Server (또는 SharePoint Foundation)에 대 한 지원 기간이 종료 되었습니다.  <br/> |

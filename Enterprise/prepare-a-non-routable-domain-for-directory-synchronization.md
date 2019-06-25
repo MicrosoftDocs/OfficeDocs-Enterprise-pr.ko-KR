@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Office 365와 동기화 하기 전에 온-프레미스 사용자와 연결 된 routale 도메인이 있는 경우 수행 해야 하는 작업에 대해 알아봅니다.
-ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071084"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203637"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>디렉터리 동기화를 위해 라우팅할 수 없는 도메인 준비
 온-프레미스 디렉터리를 Office 365와 동기화 하는 경우 Azure Active Directory에 확인 된 도메인이 있어야 합니다. 온-프레미스 도메인과 연결 된 UPN (사용자 계정 이름)만 동기화 됩니다. 하지만 예를 들어 billa와 같이 라우팅할 수 없는 도메인을 포함 하는 UPN은 billa@contoso.onmicrosoft.com와 같은 onmicrosoft.com 도메인에 동기화 됩니다. 
@@ -40,7 +40,7 @@ Azure AD Connect 사용자가 온-프레미스에서 사용 하는 것과 동일
   
 ### <a name="change-your-primary-domain"></a>**주 도메인 변경**
 
-기본 도메인을 Office 365에서 확인 한 도메인 (예: contoso.com)으로 변경 합니다. 그런 다음 contoso.com으로 업데이트 되는 contoso 라는 도메인이 있는 모든 사용자입니다. 자세한 내용은 [도메인 이름 바꾸기 작동 방법을](https://go.microsoft.com/fwlink/p/?LinkId=624174)참조 하세요. 그러나이는 다음 섹션에 나와 있는 것 처럼 매우 복잡 한 프로세스 이며, 더 쉬운 솔루션은 [UPN 접미사를 추가 하 고 사용자를 업데이트](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register)하는 것입니다.
+기본 도메인을 Office 365에서 확인 한 도메인 (예: contoso.com)으로 변경 합니다. 그런 다음 contoso.com으로 업데이트 되는 contoso 라는 도메인이 있는 모든 사용자입니다. 자세한 내용은 [도메인 이름 바꾸기 작동 방법을](https://go.microsoft.com/fwlink/p/?LinkId=624174)참조 하세요. 이는 매우 관련이 있는 프로세스 이며, 다음 섹션에서 보다 쉬운 솔루션을 설명 합니다.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN 접미사를 추가 하 고 사용자를 업데이트 합니다.**
 
@@ -84,8 +84,7 @@ Active Directory의 새 UPN 접미사 또는 접미사를 Office 365에서 확�
   
 4. 모든 사용자에 대해이 단계를 완료 합니다.
     
-    또한 UPN 접미사를 대량 업데이트할 수도 있습니다. [Windows PowerShell을 사용 하 여 모든 사용자에 대 한 upn 접미사를 변경할](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh)수도 있습니다.
-    
+   
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Windows PowerShell을 사용 하 여 모든 사용자에 대 한 UPN 접미사를 변경할 수도 있습니다.**
 
 업데이트 해야 하는 사용자가 많은 경우에는 Windows PowerShell을 사용 하는 것이 더 쉽습니다. 다음 예에서는 contoso.com cmdlet을 [](https://go.microsoft.com/fwlink/p/?LinkId=624312) 사용 하 여 모든 contoso [](https://go.microsoft.com/fwlink/p/?LinkId=624313) 접미사를 변경 합니다. 

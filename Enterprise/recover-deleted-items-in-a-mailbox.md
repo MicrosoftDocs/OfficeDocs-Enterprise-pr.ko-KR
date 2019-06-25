@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: '이 문서는 관리자를 위한 것입니다. 사용자가 Outlook 사서함에서 항목을 영구적으로 삭제 했습니까? 사용자가 다시 작업을 하려고 하지만 복구할 수는 없습니다. 제거 된 항목이 사용자 사서함에서 영구적으로 제거 되지 않은 경우 해당 항목을 복구할 수 있습니다. '
-ms.openlocfilehash: 5ec1ba41924d773859d742bc06bbfe76582072c1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071214"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203657"
 ---
+<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>사용자 사서함에서 지운 편지함 복구 - 관리자 도움말
 
 **이 문서는 관리자를 위한 것입니다. 사서함에서 삭제 된 항목을 복구 하려고 하나요?** 다음 중 하나를 선택합니다.
@@ -230,7 +231,8 @@ ms.locfileid: "34071214"
     
 다음 섹션의 단계는 사용자가 사서함에 대해 삭제 된 항목을 복원 하는 과정을 수행 합니다.
   
- **PST 파일을 사용 하 여 삭제 된 항목을 사서함으로 복원**
+ <a name="restoredeleteditems"></a>
+**PST 파일을 사용 하 여 삭제 된 항목을 사서함으로 복원**
   
 PST 파일을 사용 하 여 삭제 된 항목을 복원 하려면 Outlook 데스크톱 앱을 사용 해야 합니다. Outlook Web App 또는 웹용 Outlook을 사용 하 여 PST 파일을 열 수 없습니다.
   
