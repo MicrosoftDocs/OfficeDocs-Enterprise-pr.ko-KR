@@ -3,21 +3,6 @@
 
 
 
-## <a name="week-of-may-20-2019"></a>5 월 20 일 주 2019
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 5/20/2019 | [Office 365 id 모델 및 Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | 수정한 날짜 |
-| 5/20/2019 | [Office 365 배포 계획 검사 목록](/Office365/Enterprise/deployment-planning-checklist) | 수정한 날짜 |
-| 5/20/2019 | [Office 365 Enterprise 계획](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 수정한 날짜 |
-| 5/20/2019 | [조직을 위해 Office 365 Enterprise 배포](/Office365/Enterprise/setup-overview-for-enterprises) | 수정한 날짜 |
-| 5/21/2019 | [하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | 수정한 날짜 |
-| 5/21/2019 | SharePoint Online에서 콘텐츠 배달 네트워크 사용 | 제거 |
-| 5/22/2019 | [하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소](/Office365/Enterprise/hybrid-modern-auth-overview) | 수정한 날짜 |
-| 5/22/2019 | SharePoint Server 인증에 Azure AD를 사용 | 제거 |
-
-
 ## <a name="week-of-may-27-2019"></a>5 월 27 일 주 2019
 
 
@@ -92,3 +77,26 @@
 | 6/17/2019 | [sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기](/Office365/Enterprise/use-office-365-cdn-with-spo) | 수정한 날짜 |
 | 6/19/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 수정한 날짜 |
 | 6/21/2019 | [Project Server 2010 지원 종료 로드맵](/Office365/Enterprise/project-server-2010-end-of-support) | 수정한 날짜 |
+
+
+## <a name="week-of-june-24-2019"></a>6 월 24 일 주 2019
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 6/24/2019 | [Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 수정한 날짜 |
+| 6/24/2019 | [최신 인증이 Office 2013 및 Office 2016 클라이언트 앱에 작동하는 방식](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 수정한 날짜 |
+| 6/24/2019 | [디렉터리 동기화를 위해 라우팅할 수 없는 도메인 준비](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | 수정한 날짜 |
+| 6/24/2019 | [사용자 사서함에서 지운 편지함 복구 - 관리자 도움말](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | 수정한 날짜 |
+| 6/24/2019 | [Microsoft Azure에서 SharePoint Server 2013 재해 복구](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | 수정한 날짜 |
+| 6/24/2019 | [SharePoint 2010에서 업그레이드](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 수정한 날짜 |
+| 6/26/2019 | [Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | 수정한 날짜 |
+| 6/26/2019 | [Office 365에 대 한 디렉터리 동기화 준비](/Office365/Enterprise/prepare-for-directory-synchronization) | 수정한 날짜 |
+| 6/26/2019 | [SharePoint Online 성능 조정](/Office365/Enterprise/tune-sharepoint-online-performance) | 수정한 날짜 |
+| 6/28/2019 | [Office 365 Germany 엔드포인트](/Office365/Enterprise/office-365-germany-endpoints) | 수정한 날짜 |
+| 6/28/2019 | [Office 365 미국 정부 DoD 끝점](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 수정한 날짜 |
+| 6/28/2019 | [Office 365 미국 정부 GCC 높은 끝점](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 수정한 날짜 |
+| 6/28/2019 | [21Vianet에서 운영하는 Microsoft Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 수정한 날짜 |
+| 6/28/2019 | [Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges) | 수정한 날짜 |
+| 6/28/2019 | [핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 수정한 날짜 |
+| 6/28/2019 | [데이터 이동을 요청하는 방법](/Office365/Enterprise/request-your-data-move) | 수정한 날짜 |
