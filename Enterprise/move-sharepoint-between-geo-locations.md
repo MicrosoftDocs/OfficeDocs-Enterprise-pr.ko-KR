@@ -1,5 +1,5 @@
 ---
-title: SharePoint 사이트를 다른 지리적 위치로 이동(미리 보기)
+title: SharePoint 사이트를 다른 지리적 위치로 이동
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,16 +9,16 @@ ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: SharePoint 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 74a1ccf7dcfa60d74135211d7b74a2e7096d09b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
+ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070114"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35422377"
 ---
-# <a name="move-a-sharepoint-site-to-a-different-geo-location-preview"></a>SharePoint 사이트를 다른 지리적 위치로 이동(미리 보기)
+# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint 사이트를 다른 지리적 위치로 이동
 
-SharePoint 사이트 지리적 이동으로 SharePoint 사이트를 Multi-Geo환경 내에서 다른 지리적 위치로 이동할 수 있습니다. 이 기능은 현재 미리 보기로 제공됩니다.
+SharePoint 사이트 지리적 이동으로 SharePoint 사이트를 Multi-Geo 환경 내에서 다른 지리적 위치로 이동할 수 있습니다.
 
 다음과 같은 유형의 사이트를 지리적 위치 간에 이동할 수 있습니다.
 
@@ -95,11 +95,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 기본적으로 사이트의 초기 URL이 대상 지리적 위치의 URL로 변경됩니다. 예:
 
-https://Contoso.sharepoint.com/sites/projectx에서 https://Contoso.sharepointEUR.com/sites/projectx로
+https://Contoso.sharepoint.com/sites/projectx에서 https://ContosoEUR.sharepoint.com/sites/projectx로
 
 Office 365 그룹에 연결되지 않은 사이트의 경우에도 `-DestinationUrl` 매개 변수를 사용하여 이름을 변경할 수 있습니다. 예:
 
-https://Contoso.sharepoint.com/sites/projectx에서 https://Contoso.sharepointEUR.com/sites/projecty로
+https://Contoso.sharepoint.com/sites/projectx에서 https://ContosoEUR.sharepoint.com/sites/projecty로
 
 사이트 이동을 시작하려면 다음을 실행합니다.
 
