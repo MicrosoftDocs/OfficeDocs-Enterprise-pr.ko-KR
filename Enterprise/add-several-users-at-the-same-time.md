@@ -23,10 +23,10 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: '스프레드시트 또는 기타 CSV 형식의 파일에 있는 목록에서 비즈니스용 Office 365에 여러 사용자를 추가 하는 방법에 대해 알아봅니다. Office 365에 계정을 추가 하는 방법을 설명 하는 YouTube의 비디오를 시청 하세요. 이 프로세스가 끝나면 계정이 있는 각 사용자에 게 Office 365 사서함이 포함 됩니다. '
+description: '스프레드시트 또는 다른 CSV로 서식이 지정 된 파일의 목록에서 비즈니스용 Office 365에 여러 사용자를 추가하는 방법을 알아봅니다. YouTube에서 Office 365에 계정을 추가하는 방법을 설명하는 비디오를 보세요. 이 프로세스 종료 시, 계정이 있는 각 사용자에게는 Office 365 사서함이 있습니다. '
 ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
 ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/15/2019
 ms.locfileid: "34068694"
@@ -35,19 +35,21 @@ ms.locfileid: "34068694"
 
 팀의 각 구성원이 전자 메일 및 Office와 같은 Office 365 서비스에 로그인 및 액세스하려면 사용자 계정이 있어야 합니다. 사용자가 많은 경우 Excel 스프레드시트 또는 CSV 형식으로 저장된 다른 파일에서 모든 계정을 한 번에 추가할 수 있습니다. [CSV 형식이란?](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Office 365 관리 센터에서 Office 365에 여러 사용자 추가
+## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Office 365 관리 센터에서 여러 사용자를 Office 365에 추가
 
-1. 회사 또는 학교 계정으로 Office 365에 로그인합니다. 
+1. 회사 또는 학교 계정을 사용하여 Office 365에 로그인합니다. 
     
 2. Office 365 관리 센터에서 **사용자** \> **활성 사용자**를 선택합니다.
     
-    ![In the Admin center choose Users and then Active users](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![관리 센터에서 사용자와 활성 사용자를 차례로 선택](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. **자세히** 드롭다운에서 **여러 사용자 가져오기**를 선택합니다.
+3. 
+            **자세히** 드롭다운에서 **여러 사용자 가져오기**를 선택합니다.
     
-4. **여러 사용자 가져오기** 패널에서 예제 데이터가 입력되어 있는 예제 CSV 파일과 입력되어 있지 않은 예제 CSV 파일 중 선택하여 다운로드할 수 있습니다. 
+4. 
+            **여러 사용자 가져오기** 패널에서 예제 데이터가 입력되어 있는 예제 CSV 파일과 입력되어 있지 않은 예제 CSV 파일 중 선택하여 다운로드할 수 있습니다. 
     
-    ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
+    ![자세히 드롭다운에서 여러 사용자 가져오기 선택](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
   
     스프레드시트는 **정확히 동일한 열 머리글** 을 예제(사용자 이름, 성 등...)로 포함해야 합니다. 서식 파일을 사용하는 경우에는 메모장과 같은 텍스트 편집 도구에서 열어서 행 1에 있는 모든 데이터는 그대로 두고 행 2와 그 아래 행에만 데이터를 입력해 보세요. 
     
@@ -65,13 +67,15 @@ ms.locfileid: "34068694"
 
 5. 상자에 파일 경로를 입력하거나 **찾아보기**를 선택하여 CSV 파일의 위치를 찾은 다음 **확인**을 선택합니다.
     
-    ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
+    ![CSV 파일이 확인됨](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
     파일에 문제가 있는 경우에는 문제가 창에 표시됩니다. 로그 파일을 다운로드할 수도 있습니다.
     
-6. **Set user options**(사용자 옵션 설정) 대화 상자에서는 로그인 상태를 설정하고 모든 사용자에게 할당할 제품 라이선스를 선택할 수 있습니다. 
+6. 
+            **Set user options**(사용자 옵션 설정) 대화 상자에서는 로그인 상태를 설정하고 모든 사용자에게 할당할 제품 라이선스를 선택할 수 있습니다. 
     
-7. **View your result**(결과 보기) 대화 상자에서는 결과를 자신이나 다른 사용자(암호는 일반 텍스트가 됨)에 보내도록 선택할 수 있으며, 만들어진 사용자의 수와 새 사용자에게 할당하기 위해 추가 라이선스를 구입해야 하는지를 알 수도 있습니다. 
+7. 
+            **View your result**(결과 보기) 대화 상자에서는 결과를 자신이나 다른 사용자(암호는 일반 텍스트가 됨)에 보내도록 선택할 수 있으며, 만들어진 사용자의 수와 새 사용자에게 할당하기 위해 추가 라이선스를 구입해야 하는지를 알 수도 있습니다. 
     
 ## <a name="watch-the-video"></a>비디오 보기
 <a name="bk_preview"> </a>
@@ -83,11 +87,11 @@ ms.locfileid: "34068694"
 ## <a name="next-steps"></a>다음 단계
 <a name="bk_preview"> </a>
 
-- 이러한 사용자는 계정을 갖고 있으므로 [PC 또는 Mac에 office 365 또는 office 2016을 다운로드 하 여 설치 하거나 다시](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)설치 해야 합니다. 팀의 각 사용자는 최대 5대의 PC 또는 Mac에 Office 365를 설치할 수 있습니다. 
+- 이제 이 사용자에게 계정이 있으므로 [PC 또는 Mac에 Office 365 또는 Office 2016를 다운로드하여 설치하거나 다시 설치](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)해야 합니다. 팀의 각 사용자는 최대 5대의 PC 또는 Mac에 Office 365를 설치할 수 있습니다. 
     
-- 각 사용자는 최대 5 대의 태블릿 및 5 대의 휴대폰, Iphone, Ipad, Android 휴대폰 및 태블릿과 같은 [모바일 장치에서 Office 앱 및 전자 메일을 설정할](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) 수도 있습니다. 이렇게 하면 어디서나 Office 파일을 편집할 수 있습니다. 
+- 각 사용자는 iPhones, iPads 및 Android 휴대폰 및 태블릿과 같은 최대 5대의 태블릿과 5대의 휴대폰에서 [모바일 장치의 Office 앱 및 전자 메일을 설정](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)할 수도 있습니다. 이 방법으로 어디서나 Office 파일을 편집할 수 있습니다. 
     
-    설치 단계에 대 한 종단 간 목록을 보려면 [Set Up Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 을 참조 하십시오. 
+    포괄적인 설치 단계를 보려면 [Office 365 비즈니스 에디션 설정](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)을 참조하세요. 
     
 ## <a name="more-information-about-how-to-add-users-to-office-365"></a>Office 365에 사용자를 추가하는 방법에 대한 자세한 정보
 <a name="bk_preview"> </a>
@@ -146,7 +150,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
 - ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>이전 Office 365 관리 센터에서 Office 365에 여러 사용자 추가
+## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>기존 Office 365 관리 센터에서 Office 365에 여러 사용자 추가
 
 1. [이 예제 스프레드시트](https://www.microsoft.com/en-us/download/details.aspx?id=45485)를 다운로드하고 Excel에서 엽니다. 
     
@@ -160,7 +164,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
     **팁:** Office 365에 여러 사용자를 추가하기 전에 예제 스프레드시트로 연습할 수 있습니다. 예를 들어 사용자 5명 또는 10명의 데이터를 사용하여 예제 스프레드시트를 편집하고 파일을 새 이름으로 저장합니다. 이 절차에 설명된 단계를 실행하여 결과를 확인한 다음 새 계정을 삭제하고 처음부터 다시 시작합니다. 이 방법으로 자신의 상황에 맞게 모든 데이터를 가져오는 연습을 할 수 있습니다. [스프레드시트 서식 지정 팁](add-several-users-at-the-same-time.md#__toc314595848)도 참조하세요.
     
-2. 회사 또는 학교 계정으로 Office 365에 로그인합니다. 
+2. 회사 또는 학교 계정을 사용하여 Office 365에 로그인합니다. 
     
 3. Office 365 관리 센터로 이동합니다.
     
