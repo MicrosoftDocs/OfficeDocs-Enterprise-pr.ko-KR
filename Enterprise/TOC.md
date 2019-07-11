@@ -205,8 +205,10 @@
 ### [사용자 계정 관리 도구](manage-office-365-accounts.md)
 ### [동시에 여러 사용자 추가](add-several-users-at-the-same-time.md)
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
+### 게스트와 공동 작업하기
+#### [게스트 공유 참조](microsoft-365-guest-settings.md)
 
-## 장치
+## 디바이스
 ### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [장치 액세스 설정 관리](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
