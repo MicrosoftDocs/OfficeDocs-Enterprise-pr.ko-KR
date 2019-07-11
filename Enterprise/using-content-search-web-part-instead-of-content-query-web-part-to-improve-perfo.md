@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online에서 성능을 향상 시키기 위해 콘텐츠 쿼리 웹 파트 대신 콘텐츠 검색 웹 파트 사용
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/20/2015
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: 이 문서에서는 콘텐츠 쿼리 웹 파트를 SharePoint Server 2013 및 SharePoint Online의 콘텐츠 검색 웹 파트로 대체 하 여 성능을 개선 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 590cd5f60dedf870d58d053b01e4e1b45469bfa4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b50bc3b2e62d058384e48752d77407bc19354f4b
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070554"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616771"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>SharePoint Online에서 성능을 향상 시키기 위해 콘텐츠 쿼리 웹 파트 대신 콘텐츠 검색 웹 파트 사용
 

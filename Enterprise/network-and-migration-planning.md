@@ -1,7 +1,7 @@
 ---
 title: Office 365의 네트워크 및 마이그레이션 계획
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069924"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616783"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
 
@@ -111,5 +111,4 @@ Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려�
 - [Office 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
     
 - [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
-    
-
+ 

@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online 성능 조정
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/21/2018
 audience: Admin
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online의 페이지 다운로드 시간 성능을 개선 하는 방법을 설명 하는 기타 문서에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9049041be082aae0f574a8bd2f8ac3c5729f50d2
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070674"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616751"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online 성능 조정
 
@@ -35,6 +35,8 @@ ms.locfileid: "34070674"
 - [SharePoint Online 용 페이지 진단 도구 사용](page-diagnostics-for-spo.md)
     
 - [SharePoint Online에 대 한 탐색 옵션](navigation-options-for-sharepoint-online.md)
+
+- [SharePoint Online 포털에 대한 성능 지침](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
     
 - [SharePoint Online에 대한 이미지 최적화](image-optimization-for-sharepoint-online.md)
     

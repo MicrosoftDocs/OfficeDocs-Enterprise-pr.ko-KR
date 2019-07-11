@@ -1,7 +1,7 @@
 ---
 title: Office 365의 네트워크 계획 및 성능 조정
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Microsoft Office 365에 대 한 네트워크 대역폭 요구 사항을 계획 하는 데 도움이 됩니다. 배포한 후에는 여기로 돌아와서 Office 365 성능 문제를 미세 하 게 조정 합니다.
-ms.openlocfilehash: 3497ab5ec006011cefd6e09db323847c97999a34
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c7ea169fbb39a16612c957f0d0275de60c83de1e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069894"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616741"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365의 네트워크 계획 및 성능 조정
 처음으로 배포 하거나 Office 365로 마이그레이션하기 전에 다음 항목의 정보를 사용 하 여 필요한 대역폭을 예상 하 고 테스트 하 여 Office 365로 배포 하거나 마이그레이션할 대역폭이 충분 한지 확인할 수 있습니다. 개요는 [Office 365의 네트워크 및 마이그레이션 계획](network-and-migration-planning.md)을 참조 하십시오.

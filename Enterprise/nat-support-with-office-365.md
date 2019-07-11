@@ -1,7 +1,7 @@
 ---
 title: NAT 지원(Office 365)
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '요약: NAT (Network Address Translation)를 사용 하 여 조직 내에서 IP 주소당 사용할 수 있는 정확한 클라이언트 수를 대략적으로 결정 하는 방법에 대해 자세히 설명 합니다.'
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069884"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616871"
 ---
 # <a name="nat-support-with-office-365"></a>NAT 지원(Office 365)
 
@@ -50,12 +50,12 @@ Outlook에서는 추가 기능, 공유 일정, 사서함 등이 있는 경우 8 
   
  **예를 들어 다음과 같은 경우를 예로 들 있습니다.**
   
-- **제한 된 포트:** 운영 체제의 경우 4000 
-    
-- **최대 포트 소비:** 장치당 6 개 
-    
-- **최대 인수:** 4 
-    
+- **제한 된 포트:** 운영 체제의 경우 4000
+
+- **최대 포트 소비:** 장치당 6 개
+
+- **최대 인수:** 4
+
 그런 다음 단일 공용 IP 주소에서 지원 되는 최대 장치 수 = (64000-4000)/(6 + 4) = 6000
   
 Office 365 호스팅 팩을 사용 하는 경우 Microsoft Office Outlook 2007 용 2011 년 9 월에 제공 되는 업데이트 또는 Microsoft Outlook 2010의 11 월 2011 또는 이후 업데이트에 포함 된 Outlook의 연결 수 (Office Outlook 2007 with Service Exchange에 대 한 팩 2 및 Outlook 2010)는 2 개까지 사용할 수 있습니다. 네트워크 사용량이 최대 수준으로 요구 되는 최소 및 최대 포트 수를 결정 하려면 여러 운영 체제, 사용자 동작 등의 요소를 고려해 야 합니다.
@@ -79,4 +79,3 @@ Office 365 호스팅 팩을 사용 하는 경우 Microsoft Office Outlook 2007 �
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Office 365 끝점 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-

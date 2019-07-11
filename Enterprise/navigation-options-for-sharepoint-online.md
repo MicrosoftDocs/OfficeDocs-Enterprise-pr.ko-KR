@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online에 대 한 탐색 옵션
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다. 탐색을 선택 하 고 구성 하는 것은 SharePoint Online의 사이트 성능 및 확장성에 큰 영향을 줍니다.
-ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069944"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616861"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대 한 탐색 옵션
 
@@ -29,7 +29,7 @@ ms.locfileid: "34069944"
 
 첫 번째 옵션인 [**관리 (메타 데이터) 탐색**](#using-managed-navigation-and-metadata-in-sharepoint-online)은 권장 되며 SharePoint Online의 기본 옵션 중 하나입니다. 그러나 필요 하지 않은 경우에는 보안 조정을 사용 하지 않는 것이 좋습니다. 보안 트리밍이이 탐색 공급자의 기본 설정으로 사용 하도록 설정 됩니다. 그러나 대부분의 사이트에서는 사이트의 모든 사용자에 대해 탐색 요소가 대개 일치 하므로 보안 트리밍이 오버 헤드가 발생 하지 않습니다. 보안 조정을 사용 하지 않도록 설정 하기 위한 권장 구성을 사용 하는 경우에는이 탐색 공급자가 사이트 구조를 열거할 필요가 없으며 적절 한 성능 영향을 통해 확장성이 뛰어납니다.
 
-두 번째 옵션인 [**구조적 탐색**](#using-structural-navigation-in-sharepoint-online)은 **SharePoint Online에서 권장 되는 탐색 옵션이 아닙니다**. 이 탐색 공급자는 SharePoint Online에서 온-프레미스 토폴로지의 지원을 제한적으로 만든 것입니다. 이 기능에서는 다른 탐색 옵션과 비교 하 여 몇 가지 추가 기능을 제공 하지만, 보안 트리밍 및 사이트 구조 열거를 비롯 한 이러한 기능은 과도 한 서버 호출 비용을 갖고 사용 시 확장성과 성능에 영향을 줍니다. Structed 탐색을 사용 하 여 과도 한 리소스를 소비 하는 사이트는 제한 될 수 있습니다.
+두 번째 옵션인 [**구조적 탐색**](#using-structural-navigation-in-sharepoint-online)은 **SharePoint Online에서 권장 되는 탐색 옵션이 아닙니다**. 이 탐색 공급자는 SharePoint Online에서 온-프레미스 토폴로지의 지원을 제한적으로 만든 것입니다. 이 기능에서는 다른 탐색 옵션과 비교 하 여 몇 가지 추가 기능을 제공 하지만, 보안 트리밍 및 사이트 구조 열거를 비롯 한 이러한 기능은 과도 한 서버 호출 비용을 갖고 사용 시 확장성과 성능에 영향을 줍니다. 리소스를 많이 사용 하는 구조적 탐색을 사용 하는 사이트에는 제한이 적용 될 수 있습니다.
 
 기본 탐색 공급자 외에도 많은 고객이 대체 사용자 지정 탐색 구현을 성공적으로 구현 했습니다. 사용자 지정 탐색 구현의 한 가지 일반적인 클래스는 탐색 노드의 로컬 캐시를 저장 하는 클라이언트 렌더링 디자인 패턴을 사용 합니다. (이 문서의 **[검색 기반 클라이언트 쪽 스크립팅](#using-search-driven-client-side-scripting)** 참조)
 
@@ -52,7 +52,7 @@ ms.locfileid: "34069944"
 |들은<br/><br/>쉬운 유지 관리<br/>권장 옵션<br/>     |들은<br/><br/>쉬운 구성<br/>보안 트리밍<br/>콘텐츠가 추가 될 때 자동으로 업데이트<br/>|들은<br/><br/>보안 트리밍<br/>사이트가 추가 될 때 자동으로 업데이트 됩니다.<br/>빠른 로드 시간 및 로컬로 캐시 된 탐색 구조<br/>|들은<br/><br/>사용 가능한 옵션의 폭넓은 선택<br/>캐싱이 올바르게 사용 되는 경우의 빠른 로드<br/>대부분의 옵션은 응답성이 뛰어난 페이지 디자인에서 제대로 작동 합니다.<br/>|
 |장단점이<br/><br/>사이트 구조를 반영 하도록 자동으로 업데이트 되지 않음<br/>보안 트리밍이 설정 된 경우 성능에 영향을 줍니다.<br/>|장단점이<br/><br/>**권장하지 않음**<br/>**성능 및 확장성에 영향을 줍니다.**<br/>**제한 주체**<br/>|장단점이<br/><br/>사이트를 쉽게 정렬 하는 기능이 없음<br/>마스터 페이지의 사용자 지정 필요 (기술 필요)<br/>|장단점이<br/><br/>사용자 지정 개발 필요<br/>외부 데이터 원본/캐시가 저장 됨 (예: Azure)이 필요 합니다.<br/>|
 
-사이트에 가장 적합 한 옵션은 사이트 요구 사항과 기술 기능에 따라 달라 집니다. 확장 가능한 기본 탐색 공급자를 사용 하려는 경우에는 보안 트리밍이 해제 된 관리 탐색을 사용 하는 것이 좋습니다. 
+사이트에 가장 적합 한 옵션은 사이트 요구 사항과 기술 기능에 따라 달라 집니다. 확장 가능한 기본 탐색 공급자를 사용 하려는 경우에는 보안 트리밍이 해제 된 관리 탐색을 사용 하는 것이 좋습니다.
 
 관리 되는 탐색 옵션은 구성을 통해 유지 관리할 수 있으며, 코드 사용자 지정 파일을 포함 하지 않으며, 구조적 탐색 보다 훨씬 빠릅니다. 보안 조정이 필요 하 고 사용자 지정 마스터 페이지를 사용 하 고 조직에서 SharePoint Online의 기본 마스터 페이지에서 발생할 수 있는 변경 내용을 유지 관리할 수 있는 기능을 제공 하는 경우에는 검색 기반 옵션이 더 효율적으로 생성 될 수 있습니다. 사용자 환경 복잡 한 요구 사항이 있는 경우에는 사용자 지정 탐색 공급자를 적절 하 게 선택할 수 있습니다. 구조적 탐색은 권장 되지 않습니다.
 

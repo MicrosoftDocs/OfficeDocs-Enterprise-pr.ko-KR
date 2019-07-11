@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online에서 이미지 및 JavaScript 로드 지연
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/29/2016
 audience: Admin
@@ -13,24 +13,24 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067984"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616791"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online에서 이미지 및 JavaScript 로드 지연
 
-이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다. 
+이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
   
-이미지는 SharePoint Online의 페이지 로드 속도에 부정적인 영향을 줄 수 있습니다. 기본적으로 대부분의 최신 인터넷 브라우저는 HTML 페이지를 로드할 때 이미지를 미리 페치 합니다. 이로 인해 사용자가 아래로 스크롤할 때까지 이미지가 화면에 표시 되지 않는 경우 페이지가 불필요 하 게 더 느리게 로드 될 수 있습니다. 이미지는 브라우저가 페이지의 표시 되는 부분을 로드 하지 못하게 차단할 수 있습니다. 이 문제를 해결 하려면 JavaScript를 사용 하 여 이미지 로드를 먼저 건너뛸 수 있습니다. 또한 중요 하지 않은 JavaScript를 로드 하면 SharePoint 페이지의 로드 시간도 느려질 수 있습니다. 이 항목에서는 SharePoint Online에서 JavaScript의 페이지 로드 시간을 개선 하는 데 사용할 수 있는 몇 가지 방법에 대해 설명 합니다. 
+이미지는 SharePoint Online의 페이지 로드 속도에 부정적인 영향을 줄 수 있습니다. 기본적으로 대부분의 최신 인터넷 브라우저는 HTML 페이지를 로드할 때 이미지를 미리 페치 합니다. 이로 인해 사용자가 아래로 스크롤할 때까지 이미지가 화면에 표시 되지 않는 경우 페이지가 불필요 하 게 더 느리게 로드 될 수 있습니다. 이미지는 브라우저가 페이지의 표시 되는 부분을 로드 하지 못하게 차단할 수 있습니다. 이 문제를 해결 하려면 JavaScript를 사용 하 여 이미지 로드를 먼저 건너뛸 수 있습니다. 또한 중요 하지 않은 JavaScript를 로드 하면 SharePoint 페이지의 로드 시간도 느려질 수 있습니다. 이 항목에서는 SharePoint Online에서 JavaScript의 페이지 로드 시간을 개선 하는 데 사용할 수 있는 몇 가지 방법에 대해 설명 합니다.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript를 사용 하 여 SharePoint Online 페이지에서 이미지 로드를 지연 시켜 페이지 로드 시간 개선
 
 JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예를 들어:
   
-```
+```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,7 +40,7 @@ JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져�
   
 텍스트 파일에서 **Iselementinviewport ()** 함수를 정의 하 여 요소가 사용자에 게 표시 되는 브라우저의 일부 인지 여부를 확인 합니다. 
   
-```
+```txt
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -52,7 +52,6 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
   );
 }
-
 ```
 
 그런 다음 **Loaditemsinview ()** 함수에서 **Iselementinviewport ()** 를 사용 합니다. 사용자에 게 표시 되는 브라우저 부분에 있는 경우 **Loaditemsinview ()** 함수는 데이터 src 특성에 대 한 값이 있는 모든 이미지를 로드 합니다. 텍스트 파일에 다음 함수를 추가 합니다. 

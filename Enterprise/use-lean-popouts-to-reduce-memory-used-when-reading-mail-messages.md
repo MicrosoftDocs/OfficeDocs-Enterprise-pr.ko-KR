@@ -1,7 +1,7 @@
 ---
 title: 간결한 팝업을 사용 하 여 메일 메시지를 읽을 때 사용 되는 메모리 줄이기
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 3/8/2018
 audience: ITPro
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 description: 이 문서에서는 웹용 Outlook에서 메시지 다운로드 성능을 개선 하기 위한 정보를 포함 합니다.
-ms.openlocfilehash: 344047363bd58850fcd08a7f8f2fd46de757668c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a9070d9aefc8e4c223667848b4af5c06518de076
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070564"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616811"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>간결한 팝업을 사용 하 여 메일 메시지를 읽을 때 사용 되는 메모리 줄이기
 
@@ -38,7 +38,7 @@ Office 365 전역 관리자는 Microsoft Edge 또는 Internet Explorer에서 비
   
 1. [원격 PowerShell을 사용 하 여 Exchange Online에 연결](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx )합니다.
     
-2. 다음과 같이 LeanPopoutEnabled 매개 변수를 사용 하 여 [set-organizationconfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) Cmdlet을 실행 합니다. 
+2. 다음과 같이 LeanPopoutEnabled 매개 변수를 사용 하 여 [set-organizationconfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) cmdlet을 실행 합니다. 
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >

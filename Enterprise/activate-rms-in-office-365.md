@@ -1,5 +1,5 @@
 ---
-title: Office 365 관리 센터에서 권한 관리 활성화
+title: Office 365 관리 센터의 권한 관리에 대 한 정보에 대 한 포인터
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Office 365에서 권한 관리 서비스를 활성화 하 고 사용 하는 방법을 설명 하는 항목을 가리킵니다.
-ms.openlocfilehash: ffbb88de88b5f90d239698c0600e914266e84048
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068454"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616711"
 ---
-# <a name="activate-rights-management-in-the-office-365-admin-center"></a>Office 365 관리 센터에서 권한 관리 활성화
+# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>Office 365 관리 센터의 권한 관리에 대 한 정보에 대 한 포인터
 
 이 항목은 Office 365에서 RMS를 사용 하도록 설정 하 고 사용 하는 방법을 설명 하는 항목을 가리킵니다.
   
@@ -34,13 +34,11 @@ Office 365 응용 프로그램 및 서비스의 IRM (정보 권한 관리) 기�
 RMS에 대 한 자세한 내용은 다음 링크를 사용 하십시오.
   
 - RMS에 대해 자세히 알아보려면 [Azure 권한 관리 란?](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms)을 참조 하십시오.
-    
-- RMS를 처음 사용할 경우에 [는 Azure 권한 관리 개요](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management)를 참조 하세요.
-    
-- 배포 단계에 대 한 개요는 [Azure 권한 관리 배포 로드맵](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)를 참조 하세요.
-    
-- Office 365 용 RMS를 정품 인증 하는 방법에 대 한 지침은 [Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)를 참조 하세요.
-    
-- Office에서 Azure RMS와 IRM의 차이점은 혼동 하나요? 다른 권한 관리 용어에 대 한 도움이 필요 하십니까? [Rights Management에 대 한 용어를](https://technet.microsoft.com/library/dn595132.aspx)참조 하세요.
-    
 
+- RMS를 처음 사용할 경우에 [는 Azure 권한 관리 개요](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management)를 참조 하세요.
+
+- 배포 단계에 대 한 개요는 [Azure Rights Management 배포 로드맵](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)를 참조 하세요.
+
+- Office 365 용 RMS를 정품 인증 하는 방법에 대 한 지침은 [Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)를 참조 하세요.
+
+- Office에서 Azure RMS와 IRM의 차이점은 혼동 하나요? 다른 권한 관리 용어에 대 한 도움이 필요 하십니까? [Rights Management에 대 한 용어를](https://technet.microsoft.com/library/dn595132.aspx)참조 하세요.

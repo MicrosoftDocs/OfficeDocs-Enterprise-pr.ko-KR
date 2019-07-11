@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online에 대한 이미지 최적화
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/19/2018
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 변환 및 스프라이트를 사용 하 여 SharePoint Online 웹 사이트의 이미지 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e82cde7cd45ac1cf6f416b1b26ff97f2ab588f1a
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067374"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616721"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>SharePoint Online에 대한 이미지 최적화
 
