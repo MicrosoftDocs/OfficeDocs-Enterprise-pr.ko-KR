@@ -3,7 +3,7 @@ title: Project Server 2010 지원 종료 로드맵
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 06/03/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010의 지원 종료는 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
-ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
+ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
+ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35128705"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630403"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010의 지원 종료 로드맵
 
@@ -56,6 +56,11 @@ Project Server 2010을 사용 하는 경우 다음과 같은 마이그레이션 
 - Project Online으로 마이그레이션
     
 - 새 온-프레미스 버전의 Project Server로 마이그레이션 (특히 Project Server 2019)
+
+다음은 Project Server 2010에 대 한 지원 종료를 방지 하기 위해 수행할 수 있는 두 가지 경로입니다.
+
+![Project Server 2010 업그레이드 경로](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
+
     
 |**Project Online으로 마이그레이션하는 이유는 무엇 인가요?**|**Project Server 2019로 마이그레이션하는 이유는 무엇 인가요?**|
 |:-----|:-----|
