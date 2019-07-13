@@ -3,7 +3,7 @@ title: SharePoint 2010에서 업그레이드
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 06/04/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010에 대 한 지원 종료 및 SharePoint Server 2010은 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
+ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203617"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35643067"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
@@ -57,12 +57,14 @@ SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 
    
 확장의 낮은 끝에 있는 옵션을 선택 하는 경우 (좋은 옵션) SharePoint Server 2010에서 마이그레이션한 후에 다른 업그레이드 계획을 시작 해야 합니다. 
 
+다음은 SharePoint Server 2010에 대 한 지원 종료를 방지 하기 위해 수행할 수 있는 세 가지 경로입니다.
+
+![SharePoint Server 2010 업그레이드 경로](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+
 >[!Note]
 >SharePoint Server 2010 및 SharePoint Foundation 2010에 대 한 지원 종료는 2020 년 10 월 13 일에 ** 예정 되어 있지만 항상 [제품 수명 주기 사이트](https://support.microsoft.com/en-us/lifecycle) 에서 가장 최근 날짜를 확인 해야 합니다.
 >
 
-
- 
   
 ## <a name="where-should-i-go-next"></a>다음으로 이동 해야 하는 위치
 
