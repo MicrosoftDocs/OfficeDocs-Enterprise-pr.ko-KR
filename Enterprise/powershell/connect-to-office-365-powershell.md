@@ -36,8 +36,7 @@ Office 365 및 관리자 계정, 그룹 및 라이선스에 연결하는 데 사
 이 문서의 날짜를 기준으로, Azure Active Directory PowerShell for Graph 모듈이 사용자, 그룹 및 라이선스 관리를 위해 Windows PowerShell용 Microsoft Azure Active Directory 모듈을 완전히 대체하는 것은 아닙니다. 대부분의 경우, 두 버전을 사용해야 합니다. 동일한 컴퓨터에 두 버전을 안전하게 설치할 수 있습니다.
 
 > [!TIP]
-> 
-  **PowerShell을 처음 사용하시나요?** [PowerShell의 비디오 개요](https://support.office.com/ko-KR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)를 보고 LinkedIn Learning을 통해 가져올 수 있습니다. 
+> **PowerShell을 처음 사용하시나요?** [PowerShell의 비디오 개요](https://support.office.com/ko-KR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)를 보고 LinkedIn Learning을 통해 가져올 수 있습니다. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용
 
