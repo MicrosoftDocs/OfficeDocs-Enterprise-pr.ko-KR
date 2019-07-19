@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Office 365와 비즈니스 간의 연결 성능을 확인 하는 몇 가지 간단한 방법은 연결의 대략적인 기준선을 설정 하는 데 사용할 수 있습니다. 클라이언트 컴퓨터 연결의 성능 기록을 알면 초기에 문제를 검색 하 고 문제를 예측 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069524"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781908"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정
 
@@ -49,7 +49,7 @@ Office 365는 자동화 뿐 아니라 실제 사용자가 지속적으로 모니
 
 먼저 발생 하는 작업은 실제로 서비스 인시던트가 아니라 성능 문제 인지 확인 해야 합니다. 성능 문제는 Office 365의 서비스 문제와는 다릅니다. 서로 구별 하는 방법은 다음과 같습니다.
   
-Office 365 서비스에 문제가 있는 경우 해당 문제는 서비스 인시던트입니다. Office 365 관리 센터의 **현재 상태** 에 빨간색 또는 노란색 아이콘이 표시 되며, office 365에 연결 하는 클라이언트 컴퓨터의 성능도 저하 될 수도 있습니다. 예를 들어 현재 상태가 빨간색 아이콘과 Exchange 옆의 **조사** 를 볼 수 있는 경우 exchange Online을 사용 하는 클라이언트 사서함이 잘못 수행 되는 경우 조직의 여러 사용자가 전화를 받을 수도 있습니다. 이 경우 Exchange Online 성능이 서비스 내에서 문제가 발생 한 것으로 가정 하는 것이 합리적입니다. 
+Office 365 서비스에 문제가 있는 경우 해당 문제는 서비스 인시던트입니다. Microsoft 365 관리 센터의 **현재 상태** 에 빨간색 또는 노란색 아이콘이 표시 되며, Office 365에 연결 하는 클라이언트 컴퓨터의 성능도 저하 될 수도 있습니다. 예를 들어 현재 상태가 빨간색 아이콘과 Exchange 옆의 **조사** 를 볼 수 있는 경우 exchange Online을 사용 하는 클라이언트 사서함이 잘못 수행 되는 경우 조직의 여러 사용자가 전화를 받을 수도 있습니다. 이 경우 Exchange Online 성능이 서비스 내에서 문제가 발생 한 것으로 가정 하는 것이 합리적입니다. 
   
 ![서비스가 복원 되었음을 보여 주는 Exchange를 제외 하 고 모든 작업을 포함 하는 Office 365 상태 대시보드](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -59,7 +59,7 @@ Office 365 서비스에 문제가 있는 경우 해당 문제는 서비스 인�
   
 문제는 성능 저하의 원인이 될 수 있지만 성능 문제는 서비스 인시던트가 아닙니다. 성능 문제는 다음과 같습니다.
   
-- 서비스를 보고 하는 Office 365 관리 센터의 **현재 상태** 에 관계 없이 성능 문제가 발생 합니다. 
+- 관리 센터의 **현재 상태** 에서 서비스를 보고 하는 기능에 관계 없이 성능 문제가 발생 합니다. 
     
 -  비교적 원활한 작업을 수행 하는 데는 시간이 오래 걸리고 완료 되지 않습니다. 
     
@@ -198,7 +198,7 @@ Office 365 서비스의 파일럿에서 보다 초기 계획을 시작 하는 �
 ![클라이언트, 프록시 및 클라우드가 있는 기본 네트워크, 그리고 도구 제안 사항, TraceTCP 및 네트워크 추적](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP는 요청이 처리 되는 데 걸리는 시간, 밀리초, 네트워크 홉 수 또는 한 컴퓨터에서 다음 컴퓨터로의 연결, 즉 요청이 대상에 도달 하는 데 걸리는 시간을 표시 하는 데 유용한 도구 이기 때문에이 스크린샷에 포함 되어 있습니다. 또한 TraceTCP에서는 홉 중에 사용 되는 서버의 이름도 제공할 수 있으며, 지원에서 Microsoft Office 365 문제 해결사에 유용할 수 있습니다. > TraceTCP 명령은 다음과 같이 매우 간단할 수 있습니다. > `tracetcp.exe outlook.office365.com:443`> 명령에 포트 번호를 포함 합니다. > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) 은 무료로 다운로드할 수 있지만 wincap에 의존 합니다. Wincap는 Netmon 에서도 사용 되 고 설치 되는 도구입니다. 고급 방법 섹션 에서도 Netmon을 사용 합니다. 
+> TraceTCP는 요청이 처리 되는 데 걸리는 시간, 밀리초, 네트워크 홉 수 또는 한 컴퓨터에서 다음 컴퓨터로의 연결, 즉 요청이 대상에 도달 하는 데 걸리는 시간을 표시 하는 데 유용한 도구 이기 때문에이 스크린샷에 포함 되어 있습니다. 또한 TraceTCP에서는 홉 중에 사용 되는 서버의 이름도 제공할 수 있으며, 지원에서 Microsoft Office 365 문제 해결사에 유용할 수 있습니다. > TraceTCP 명령은 다음과 같이 매우 간단할 수 있는데, > `tracetcp.exe outlook.office365.com:443`> 명령에 포트 번호를 포함 해야 합니다. > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) 은 무료로 다운로드할 수 있지만 wincap에 의존 합니다. Wincap는 Netmon 에서도 사용 되 고 설치 되는 도구입니다. 고급 방법 섹션 에서도 Netmon을 사용 합니다. 
   
  여러 개의 사무실이 있는 경우에는 이러한 각 위치에 있는 클라이언트의 데이터 집합도 유지 해야 합니다. 이 테스트에서는 클라이언트에서 Office 365에 대 한 요청을 보내는 시간과 요청에 응답 하는 Office 365 사이의 시간을 설명 하는 숫자 값을 측정 하 여 대기 시간을 계산 합니다. 이 테스트는 클라이언트 컴퓨터의 도메인 내에서 시작 되며, 365 인터넷을 통해 네트워크 내부에서 들어오는 왕복을 측정 하는 방법을 확인 합니다. 
   

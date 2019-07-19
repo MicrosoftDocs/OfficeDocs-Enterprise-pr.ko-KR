@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 네트워크 연결에 대 한 네트워크 계획을 시작 하기 전에 Office 365 트래픽을 안전 하 게 관리 하 고 가능한 최상의 성능을 얻기 위한 연결 원리를 이해 하는 것이 중요 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다.
-ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017298"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782208"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 네트워크 연결 원칙
 
@@ -42,7 +42,7 @@ Office 365와 같은 SaaS 응용 프로그램을 채택 하면 네트워크 경�
 ## <a name="office-365-architecture"></a>Office 365 아키텍처
 <a name="BKMK_Architecture"> </a>
 
-Office 365은 Exchange Online, SharePoint Online, 비즈니스용 Skype Online 등 다양 한 마이크로 서비스 및 응용 프로그램 집합을 통해 생산성 및 공동 작업 시나리오를 제공 하는 분산 소프트웨어 서비스 (SaaS) 클라우드입니다. 팀, Exchange Online Protection, Office Online 및 기타 다양 한 기능 특정 Office 365 응용 프로그램은 고객 네트워크에 적용 되 고 클라우드에 연결 되는 고유한 기능을 가질 수 있으며, 모든 주요 주체, 목표 및 아키텍처 패턴을 공유 합니다. 연결에 대 한 이러한 보안 주체 및 아키텍처 패턴은 대부분의 다른 SaaS 클라우드에서 일반적인 것 이며, Microsoft와 같은 플랫폼 수준의 서비스 및 인프라와 동일한 일반 배포 모델과는 매우 차이가 있습니다. Microsoft.
+Office 365은 Exchange Online, SharePoint Online, 비즈니스용 Skype Online 등 다양 한 마이크로 서비스 및 응용 프로그램 집합을 통해 생산성 및 공동 작업 시나리오를 제공 하는 분산 소프트웨어 서비스 (SaaS) 클라우드입니다. 팀, Exchange Online Protection, Office (브라우저의 경우) 및 기타 다양 한 기능 특정 Office 365 응용 프로그램은 고객 네트워크에 적용 되 고 클라우드에 연결 되는 고유한 기능을 가질 수 있으며, 모든 주요 주체, 목표 및 아키텍처 패턴을 공유 합니다. 연결에 대 한 이러한 보안 주체 및 아키텍처 패턴은 대부분의 다른 SaaS 클라우드에서 일반적인 것 이며, Microsoft와 같은 플랫폼 수준의 서비스 및 인프라와 동일한 일반 배포 모델과는 매우 차이가 있습니다. Microsoft.
   
 Office 365에서 가장 중요 한 아키텍처 기능 중 하나 (네트워크 기획자가 자주 누락 하거나 잘못 해석 하는 것)는 it가 사용자 연결 방법에 대 한 맥락에서 실제 글로벌 분산 서비스입니다. 대상 Office 365 테 넌 트의 위치는 클라우드 내에서 고객 데이터가 저장 되는 위치를 이해 하는 데 중요 하지만, Office 365 사용자 환경에서는 데이터를 포함 하는 디스크에 직접 연결 하지 않습니다. 성능, 안정성 및 기타 중요 한 품질 특성을 비롯 한 Office 365의 사용자 환경에는 전 세계 수많은 Microsoft 위치에서 확장 된 고도로 분산 서비스 전면 도어를 통한 연결이 포함 됩니다. 대부분의 경우에는 고객 네트워크에서 중앙 위치나 지역의 egress 지점을 통해 Office 365에 연결 하는 대신 사용자 요청을 가장 가까운 Office 365 서비스 진입점으로 라우팅할 수 있도록 하 여 최상의 사용자 환경을 구현 합니다.
   

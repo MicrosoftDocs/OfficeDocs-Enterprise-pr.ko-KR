@@ -1,5 +1,5 @@
 ---
-title: Office 365 관리 센터의 권한 관리에 대 한 정보에 대 한 포인터
+title: 관리 센터의 권한 관리에 대 한 정보에 대 한 포인터
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Office 365에서 권한 관리 서비스를 활성화 하 고 사용 하는 방법을 설명 하는 항목을 가리킵니다.
-ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: dca4b547ceee9af32caaaead32dd5251157ca00e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616711"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782368"
 ---
-# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>Office 365 관리 센터의 권한 관리에 대 한 정보에 대 한 포인터
+# <a name="pointers-to-information-about-rights-management-in-the-admin-center"></a>관리 센터의 권한 관리에 대 한 정보에 대 한 포인터
 
 이 항목은 Office 365에서 RMS를 사용 하도록 설정 하 고 사용 하는 방법을 설명 하는 항목을 가리킵니다.
   

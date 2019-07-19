@@ -28,7 +28,7 @@ ID | 범주 | ER | Addresses | 포트
 8  | 기본<BR>필수 | 예 | `*.gov.teams.microsoft.us, *.infra.gov.skypeforbusiness.us, *.online.gov.skypeforbusiness.us, gov.teams.microsoft.us` | **TCP:** 5061, 50000-59999<BR>**UDP:** 50000-59999
 21 | 기본<BR>필수 | 예 | `statics.teams.microsoft.com` | **TCP:** 443
 
-## <a name="microsoft-365-common-and-office-online"></a>Microsoft 365 Common 및 Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 공통 및 Office 
 
 ID | 범주 | ER | Addresses | 포트
 -- | ------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------

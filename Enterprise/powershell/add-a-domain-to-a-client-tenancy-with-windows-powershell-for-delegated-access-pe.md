@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 요약:Office 365에 대한 Windows PowerShell을 사용하여 대체 도메인 이름을 기존 고객 테넌트에 추가합니다.
-ms.openlocfilehash: 9b65a5665ce8aa7205db733a2d0e0969e5cd401d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069274"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781848"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 클라이언트 테넌트에 도메인 추가
 
@@ -46,7 +46,7 @@ UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
  고객이 기본<domain>.onmicrosoft.com도메인을 회사 ID로 표시할 기본 도메인으로 원하지 않으므로 테넌트와 연결할 추가 도메인 만들기를 문의할 수 있습니다. 이 절차를 통해 고객의 테넌트와 연관된 새 도메인 만들기가 진행됩니다.
   
 > [!NOTE]
-> 이러한 일부 작업을 수행하려면 로그인한 파트너 관리자 계정이 Office 365 관리 센터에서 관리 계정의 세부 정보에서 찾을 수 있는 **지원 회사에 대한 할당 관리 액세스**의 **전체 관리**로 설정되어야 합니다. 파트너 관리자 역할 관리에 대한 자세한 내용은 [파트너: 위임된 관리 제안](https://go.microsoft.com/fwlink/p/?LinkId=532435)을 참조하세요. 
+> 이러한 작업 중 일부를 수행 하려면 로그인 하는 파트너 관리자 계정을 **사용자가 지원 하는 회사에 대 한 관리 액세스 권한 할당** 에서 관리자 계정의 세부 정보에 대 한 **전체 관리** 로 설정 해야 합니다. Microsoft 365 관리 센터 파트너 관리자 역할 관리에 대한 자세한 내용은 [파트너: 위임된 관리 제안](https://go.microsoft.com/fwlink/p/?LinkId=532435)을 참조하세요. 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Azure Active Directory에서 도메인 만들기
 

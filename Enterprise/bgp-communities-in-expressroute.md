@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
-ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722577"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782348"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용
 
@@ -54,7 +54,7 @@ Contoso Corporation은 현재 Exchange Online 및 SharePoint Online 용 Office 3
 
 |**사용 되는 BGP 커뮤니티 태그**|**Azure Express를 통해 라우팅할 수 있는 기능**|**인터넷 경로 필요**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; 비즈니스용 OneDrive  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office Online  <br/>  Exchange Online, Exchange Online Protection 및 비즈니스용 Skype Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; 비즈니스용 OneDrive  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/>  Exchange Online, Exchange Online Protection 및 비즈니스용 Skype Online  <br/> |
 
 > [!NOTE]
 > 각 서비스에 대 한 접두사 카운트를 낮추려면 서비스 간에 최소한의 겹치는 부분이 유지 됩니다. 이는 예상 되는 동작입니다.
@@ -67,7 +67,7 @@ Contoso Corporation은 현재 Exchange Online 및 SharePoint Online 용 Office 3
 
 |**사용 되는 BGP 커뮤니티 태그**|**Azure Express를 통해 라우팅할 수 있는 기능**|**인터넷 경로 필요**|
 |:-----|:-----|:-----|
-|비즈니스용 Skype  <br/> (12076:5030)  <br/> |Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office Online  <br/>  비즈니스용 skype 원격 분석, Skype 클라이언트 빠른 팁, 공용 IM 연결  <br/>  Exchange Online, Exchange Online Protection 및 SharePoint Online  <br/> |
+|비즈니스용 Skype  <br/> (12076:5030)  <br/> |Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/>  비즈니스용 skype 원격 분석, Skype 클라이언트 빠른 팁, 공용 IM 연결  <br/>  Exchange Online, Exchange Online Protection 및 SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>시나리오 3: Office 365 서비스 전용 Azure Express 범위 지정
 
@@ -77,7 +77,7 @@ Office 365 이외의 Microsoft 클라우드 서비스와 관련 된 네트워크
 
 |**사용 되는 BGP 커뮤니티 태그**|**Azure Express를 통해 라우팅할 수 있는 기능**|**인터넷 경로 필요**|
 |:-----|:-----|:-----|
-|Exchange, 비즈니스용 Skype, SharePoint, &amp; 기타 서비스  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp; 비즈니스용 OneDrive  <br/> Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> Office 365 포털, Office 365 인증, &amp; office Online  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/> |
+|Exchange, 비즈니스용 Skype, SharePoint, &amp; 기타 서비스  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp; 비즈니스용 OneDrive  <br/> Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP 커뮤니티 사용에 대 한 주요 계획 고려 사항
 

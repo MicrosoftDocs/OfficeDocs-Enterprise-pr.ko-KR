@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-ms.openlocfilehash: 82a448e4fc7f068fab3b04519b9689506208bee8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069054"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782148"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함
 
@@ -40,7 +40,7 @@ Get-MsolAccountSku
 
 `Get-MsolAccountSku` 명령 표시에서 다음을 수행 합니다.
   
-- **AccountSkuId** 은 OrganizationName>: \<\<Subscription> 형식으로 조직에 대 한 구독입니다. \<OrganizationName>는 Office 365에서 등록할 때 제공한 값으로, 조직에서 고유 합니다. \<Subscription> 값은 특정 구독에 대 한 것입니다. 예를 들어 litwareinc: ENTERPRISEPACK의 경우 조직 이름은 litwareinc이 고 구독 이름은 ENTERPRISEPACK (Office 365 Enterprise E3)입니다.
+- **AccountSkuId** 은 OrganizationName>에서 \<\<구독> 형식으로 조직에 대 한 구독입니다. \<OrganizationName>는 Office 365에서 등록할 때 입력 한 값으로, 조직에서 고유 합니다. \<구독> 값은 특정 구독의 경우에만 사용할 수 있습니다. 예를 들어 litwareinc: ENTERPRISEPACK의 경우 조직 이름은 litwareinc이 고 구독 이름은 ENTERPRISEPACK (Office 365 Enterprise E3)입니다.
     
 - **Activeunits** 는 구독을 위해 구매한 라이선스 수입니다.
     
@@ -70,7 +70,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |비즈니스용 Skype Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 계획 2  <br/> |
    
@@ -80,7 +80,7 @@ AccountSkuId 및 서비스 계획을 사용 하지 않도록 설정 했으므로
   
 ### <a name="for-a-single-user"></a>단일 사용자의 경우
 
-단일 사용자에 대해 사용자 계정 이름, AccountSkuId 및 서비스 계획 목록을 입력 하 여 설명 텍스트와 \< > 문자를 사용 하지 않도록 설정 하 고 제거 합니다. 그런 다음 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
+단일 사용자에 대해 사용자 계정 이름, AccountSkuId 및 서비스 계획 목록을 입력 하 여 설명 텍스트 및 \< 및 > 문자를 사용 하지 않도록 설정 하 고 제거 합니다. 그런 다음 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
   
 ```
 $userUPN="<the user's account name in email format>"

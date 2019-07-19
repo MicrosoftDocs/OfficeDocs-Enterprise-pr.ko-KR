@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 다음은 핵심 데이터를 새 데이터 센터 지역으로 이동 하는 방법에 대 한 일반적인 질문에 대 한 대답입니다.
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067903"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782328"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -61,7 +61,7 @@ Exchange Online과 SharePoint Online/비즈니스용 OneDrive 간의 공유 종�
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>내 핵심 고객 데이터는 어디에 있나요?
 
-테 넌 트 관리자는 언제 든 지 관리자 센터에서 데이터 위치 카드를 확인 하 여 각 서비스의 rest 위치에서 핵심 고객 데이터를 확인할 수 있습니다 (특히 테 넌 트의 경우).또한 [ office 365 대화형 데이터 센터](https://office.com/datamaps) 의 office 365 customer 데이터 센터의 위치를 새 테 넌 트의 rest 위치에 있는 현재 기본 핵심 고객 데이터에 대 한 참조로 게시 합니다.  Office 365 관리 센터에서 조직 프로필의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수 있습니다.  
+테 넌 트 관리자는 언제 든 지 관리자 센터에서 데이터 위치 카드를 확인 하 여 각 서비스의 rest 위치에서 핵심 고객 데이터를 확인할 수 있습니다 (특히 테 넌 트의 경우).또한 [ office 365 대화형 데이터 센터](https://office.com/datamaps) 의 office 365 customer 데이터 센터의 위치를 새 테 넌 트의 rest 위치에 있는 현재 기본 핵심 고객 데이터에 대 한 참조로 게시 합니다.  Microsoft 365 관리 센터에서 조직 프로필의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수 있습니다.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>이동을 요청할 수 있는 시기는 언제 입니까?
   
@@ -101,7 +101,7 @@ Office 365 데이터 센터에 가까워진다고 해서 더 나은 네트워킹
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>이동이 완료 되었는지 어떻게 알 수 있나요?
   
-각 서비스 데이터의 이동이 완료 되었는지 확인 하는 Office 365 메시지 센터를 시청 합니다. 각 서비스의 데이터를 이동 하면 완료 알림을 게시 하 여 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 세 가지 완료 알림을 받게 됩니다.  Office 365 관리 센터에서 조직 프로필 아래의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수도 있습니다.  
+각 서비스 데이터의 이동이 완료 되었는지 확인 하는 Office 365 메시지 센터를 시청 합니다. 각 서비스의 데이터를 이동 하면 완료 알림을 게시 하 여 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 세 가지 완료 알림을 받게 됩니다.  Microsoft 365 관리 센터에서 조직 프로필 아래의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수도 있습니다.  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Office 365 고객은 새 데이터 센터의 geos 중 하나에서, 등록을 마친 후 다른 국가를 선택 했습니다. 새 데이터 센터 지역으로 이동 하려면 어떻게 해야 합니까?
 

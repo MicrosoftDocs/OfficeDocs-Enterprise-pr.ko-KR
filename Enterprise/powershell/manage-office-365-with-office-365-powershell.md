@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: '요약: Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, Office 365 보안 및 준수 센터에 Office 365 PowerShell을 사용하는 방법을 알아봅니다.'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068905"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782108"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell로 Office 365 관리
 
  **요약:** Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, Office 365 보안 및 준수 센터에 Office 365 PowerShell을 사용하는 방법을 알아봅니다.
   
-Office 365 PowerShell은 Office 365 관리 센터를 보완하는 강력한 관리 도구입니다. 예를 들어, Office 365 PowerShell 자동화를 사용하여 더 빠르게 여러 사용자 계정 및 라이선스를 관리하고 보고서를 만들 수 있습니다. Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, Office 365 보안 및 준수 센터에 Office 365 PowerShell을 사용하는 방법을 알아보세요.
+Office 365 PowerShell은 Microsoft 365 관리 센터를 보완 하는 강력한 관리 도구입니다. 예를 들어 Office 365 PowerShell 자동화를 사용 하 여 여러 사용자 계정 및 라이선스를 보다 신속 하 게 관리 하 고 보고서를 만들 수 있습니다. Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, Office 365 Security & 준수 센터에 Office 365 PowerShell을 사용 하는 방법을 알아봅니다.
   
 필요에 따라 항목을 선택합니다.
   

@@ -3,7 +3,7 @@ title: Office 365용 Azure Express 경로
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068274"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782358"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365용 Azure Express 경로
 
-Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다. Azure에서 실행 되는 인프라 및 플랫폼 서비스는 네트워크 아키텍처 및 성능 고려 사항에 영향을 주는 경우가 많습니다. 이러한 경우 Azure에 대 한 모든 방법을 사용할 것을 권장 합니다. Office 365 및 Dynamics 365과 같은 서비스 제품을 제공 하는 소프트웨어는 인터넷을 통해 안전 하 고 안정적으로 액세스할 수 있도록 작성 되었습니다. 인터넷 성능 및 보안에 대해 자세히 설명 하 고 office [365에 대 한 네트워크 연결](network-connectivity.md)문서에서 office 365에 대 한 Azure express를 고려할 수 있습니다.
+Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다. Azure에서 실행 되는 인프라 및 플랫폼 서비스는 네트워크 아키텍처 및 성능 고려 사항에 영향을 주는 경우가 많습니다. 이러한 경우 Azure에 대 한 모든 방법을 사용할 것을 권장 합니다. Office 365 및 Dynamics 365과 같은 서비스 제품을 제공 하는 소프트웨어는 인터넷을 통해 안전 하 고 안정적으로 액세스할 수 있도록 작성 되었습니다. [Office 365 네트워크 연결을 평가](assessing-network-connectivity.md)하는 문서에서 인터넷 성능 및 보안에 대해 자세히 설명 하 고 office 365의 Azure express를 고려할 수 있는 경우를 확인할 수 있습니다.
 
 > [!NOTE]
-> Microsoft authorization는 Office 365 용 Express 경로를 사용 하는 데 필요 합니다. 고객의 규정 요구 사항에 직접 연결 하는 경우 모든 고객을 검토 하 고 Office 365 사용에 대 한 사용자를 요청 하 고 권한을 부여 합니다. 이러한 요구 사항을 충족 하는 경우 해석 하는 규정에 대 한 텍스트 발췌문 및 웹 링크를 제공 하 여 Microsoft 검토를 시작 하기 [위한 Office 365의 express 경로 요청 양식에](https://aka.ms/O365ERReview) 직접 연결이 필요 하다는 것을 의미 합니다. 인증 되지 않은 구독에서 Office 365에 대 한 경로 필터를 만들려고 하면 [오류 메시지가](https://support.microsoft.com/kb/3181709)표시 됩니다. 
+> Microsoft authorization는 Office 365 용 Express 경로를 사용 하는 데 필요 합니다. 고객의 규정 요구 사항에 직접 연결 하는 경우 모든 고객을 검토 하 고 Office 365 사용에 대 한 사용자를 요청 하 고 권한을 부여 합니다. 이러한 요구 사항을 충족 하는 경우 해석 하는 규정에 대 한 텍스트 발췌문 및 웹 링크를 제공 하 여 Microsoft 검토를 시작 하기 [위한 Office 365의 express 경로 요청 양식에](https://aka.ms/O365ERReview) 직접 연결이 필요 하다는 것을 의미 합니다. 인증 되지 않은 구독에서 Office 365에 대 한 경로 필터를 만들려고 하면 [오류 메시지가](https://support.microsoft.com/kb/3181709)표시 됩니다.
 
 이제 선택한 Office 365 네트워크 트래픽에 대해 Office 365에 직접 네트워크 연결을 추가할 수 있습니다. Azure Express에서는 Microsoft 네트워킹 구성 요소에 대 한 직접 연결과 예측 가능한 성능을 제공 하 고 가동 시간 SLA를 99.95%와 제공 합니다. Azure Express 경로를 통해 지원 되지 않는 서비스의 경우에도 인터넷 연결이 필요 합니다.
 
@@ -50,8 +50,6 @@ Office 365, Windows Update, TechNet 등의 모든 Microsoft 응용 프로그램�
 
 계속 해 서 정보를 원하십니까? [Office 365의 Azure express 경로를 사용 하 여 네트워크 트래픽을 관리](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) 하는 방법에 대해 알아보고 [office 365에 대 한 azure express](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)경로를 구성 하는 방법을 알아보세요. 또한 채널 9에 [대 한 Office 365 교육](https://channel9.msdn.com/series/aer) 시리즈를 위한 10 부 Azure express를 기록 하 여 개념을 보다 철저히 설명할 수 있습니다.
 
-([Office 365 용 Azure express](azure-expressroute.md#BKMK_HOME)경로)
-
 ## <a name="what-office-365-services-are-included"></a>어떤 Office 365 서비스가 포함 됩니까?
 <a name="BKMK_WhatDoIGet"> </a>
 
@@ -62,13 +60,11 @@ Office 365, Windows Update, TechNet 등의 모든 Microsoft 응용 프로그램�
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |비즈니스용 Skype Online<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> 비즈니스용 OneDrive<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|포털 및 공유<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office Online<sup>1</sup> <br/> |
+|포털 및 공유<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup> 이러한 각 응용 프로그램은 Express에서 지원 되지 않는 인터넷 연결 요구 사항이 있습니다. 자세한 내용은 [Office 365 endpoints 문서](https://aka.ms/o365endpoints) 를 참조 하십시오.
 
 Office 365에 대 한 Express에 포함 되지 않은 서비스는 중국의 Office 365 ProPlus 클라이언트 다운로드, 온-프레미스 Id 공급자 로그인 및 Office 365 (21 Vianet 되며) 서비스입니다.
-
-([Office 365 용 Azure express](azure-expressroute.md#BKMK_HOME)경로)
 
 ## <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
@@ -100,11 +96,9 @@ Office 365에 대 한 Express를 구입 하려면 하나 이상의 [승인 된 �
 
 [Office 365에 대 한 express](https://aka.ms/ert)를 등록할 준비가 되셨습니까?
 
-([Office 365 용 Azure express](azure-expressroute.md#BKMK_HOME)경로)
-
 ## <a name="related-topics"></a>관련 주제
 
-[Office 365에 대한 네트워크 연결](network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
 
 [Office 365 연결에 대한 ExpressRoute 관리](managing-expressroute-for-connectivity.md)
 

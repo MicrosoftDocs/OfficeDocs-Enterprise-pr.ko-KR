@@ -13,12 +13,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Mac 용 Office 응용 프로그램은 macOS 플랫폼에서 기본 앱 환경을 제공 합니다. 각 앱은 네트워크 액세스를 사용할 수 없는 경우의 상태를 비롯 하 여 다양 한 시나리오에서 작동 하도록 설계 되었습니다. 컴퓨터가 네트워크에 연결 되 면 응용 프로그램은 일련의 웹 기반 서비스에 자동으로 연결 하 여 향상 된 기능을 제공 합니다. 이 백서에서는 응용 프로그램에서 연결을 시도 하는 끝점과 Url 및 제공 되는 서비스에 대해 설명 합니다. 이 정보는 네트워크 구성 문제를 해결 하 고 네트워크 프록시 서버에 대 한 정책을 설정할 때 유용 합니다. 이 문서의 세부 정보는 Office 365 URL 및 주소 범위 문서를 보완 하기 위해 작성 되었습니다.
-ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069661"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781958"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Mac용 Office의 네트워크 요청
 
@@ -68,7 +68,7 @@ URL 형식은 다음과 같이 정의 됩니다.
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office Rules 원격 분석 다운로드-원격 분석 서비스에 업로드할 데이터와 이벤트에 대해 클라이언트에 게 알립니다.  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |Kn  <br/> |진단  <br/> |OneNote 원격 분석 서비스  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office 원격 분석 업로드 보고-"Heartbeart" 및 오류 이벤트가 클라이언트에서 발생 하는 경우 원격 분석 서비스에 업로드 됩니다.  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |진단  <br/> |Office Online Template Service-사용자에 게 온라인 문서 서식 파일을 제공 합니다.  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |진단  <br/> |Office Template Service-사용자에 게 온라인 문서 서식 파일을 제공 합니다.  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |진단  <br/> |Office Templates 다운로드-PNG 서식 파일 이미지의 저장소입니다.  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |진단  <br/> |Office 앱에 대 한 저장소 구성입니다.  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |진단  <br/> |Office Document Integration Services 카탈로그 (서비스 및 끝점 목록) 및 홈 영역 검색  <br/> |

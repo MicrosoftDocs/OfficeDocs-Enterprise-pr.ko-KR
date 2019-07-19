@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online Server에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068774"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782248"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>액세스 가능한 다이어그램-Microsoft Office Server 제품 간 기능 통합
 
-**요약:** 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
+**요약:** 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online Server에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
   
 이 다이어그램은이 문서의 섹션 제목으로 표시 되는 여러 탭으로 구성 됩니다.
   
@@ -86,7 +86,7 @@ Windows phone을 사용 하거나 QR 코드 판독기를 다운로드 하 여 �
     
 - Lync
     
-- Office Online (이전의 Office Web Apps) 
+- Office Online Server (이전의 Office Web Apps) 
     
 고해상도 사용자 사진 이 기능은 다음에 적용할 수 있습니다. 
   
@@ -249,7 +249,7 @@ Office Web Apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
 2. 사용자는 다음과 같은 다양 한 방법을 사용 하 여 사진을 업데이트할 수 있습니다. 
     
 3. 
-  - Exchange 클라이언트 액세스 서버에 대 한 HTTP 포트 443을 통해 Outlook 클라이언트나 OWA (Outlook Web App)를 사용 합니다. 
+  - Exchange 클라이언트 액세스 서버에 대 한 HTTP 포트 443을 통해 outlook 클라이언트나 OWA (Outlook Web App)를 사용 합니다. 
     
   - HTTP를 통한 내 사이트 또는 SharePoint 서버에 대 한 HTTPS SharePoint는 내 사이트 데이터베이스 (Https: 443)에서 사용자를 캐시 합니다. Exchange에 설정 된 외부 Url을 사용 하는 Exchange 클라이언트 액세스 서버와의 SharePoint server 인터페이스 
     
@@ -287,7 +287,7 @@ UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연
     
  **작동 방법**
   
-- 사용자가 Lync 2013을 사용 하 여 로그인 할 때 사용자나의 Lync 연락처가 Exchange 2013로 자동으로 마이그레이션됩니다. 
+- 사용자가 Lync 2013을 사용 하 여 로그인 할 때 사용자나의 lync 연락처가 Exchange 2013로 자동으로 마이그레이션됩니다. 
     
 - 사용자는 Lync 2013, Outlook 2013 또는 Outlook Web Access에서 Lync 연락처에 액세스 하 고 관리할 수 있습니다. 
     
