@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '요약: 이 테스트 랩 가이드를 사용하여 평가 또는 개발/테스트를 위한 Office 365 평가판 구독을 만듭니다.'
-ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162511"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781938"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 개발/테스트 환경
 
@@ -118,7 +118,7 @@ Office 365 E5 평가판 구독을 시작하려면 먼저 가상의 회사 이름
     
 11. 다음 페이지에서 Office 365 설정이 완료되고 모든 타일을 사용할 수 있게 될 때까지 기다립니다.
     
-Office Online 서비스 및 Microsoft 365 관리 센터에 액세스할 수 있는 기본 Office 365 포털 페이지가 표시됩니다.
+Office 서비스 및 Microsoft 365 관리 센터에 액세스할 수 있는 기본 Office 365 포털 페이지가 표시됩니다.
   
 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경의 경우 결과 구성은 다음과 같습니다.
   
