@@ -3,7 +3,7 @@ title: 데이터 이동을 요청하는 방법
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392358"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818034"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -37,20 +37,20 @@ ms.locfileid: "35392358"
 |영국  <br/> |2017년 3월 15일   <br/> |2017년 9월 15일  <br/> |
 |대한민국  <br/> |2017년 5월 1일  <br/> |2017년 10월 31일  <br/> |
 |프랑스  <br/> |2018년 3월 14일  <br/> |2018년 9월 15일  <br/> |
-|아랍에미리트  <br/> |하려고  <br/> |하려고  <br/> |
+|아랍에미리트  <br/> |7 월 15 일 2019  <br/> |2020 년 1 월 31 일  <br/> |
 |남아프리카 공화국  <br/> |하려고  <br/> |하려고  <br/> |
    
 ## <a name="how-to-request-a-move"></a>이동을 요청하는 방법
 
-적격 고객은 [Office 365 관리 센터](https://aka.ms/365admin)에서 페이지를 볼 수 있으며,이를 통해 핵심 고객 데이터가 새 데이터 센터 지역으로 이동 하 게 됩니다.  
+적절 한 고객은 [관리 센터](https://aka.ms/365admin)에 페이지를 보게 되며, 그러면 핵심 고객 데이터가 새 데이터 센터 지역으로 이동 되도록 요청할 수 있습니다.  
   
-Office 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 창에서 **설정을**확장 하 고 **조직 프로필**을 클릭 합니다.
+Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 창에서 **설정을**확장 하 고 **조직 프로필**을 클릭 합니다.
   
-![조직 프로필이 강조 표시된 설정 메뉴](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![조직 프로필이 강조 표시 된 설정 메뉴](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 **조직 프로필** 페이지에서 아래로 스크롤하여 **데이터 상주 옵션** 섹션으로 이동합니다. 
   
-![데이터 상주 카드](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![데이터 상주 카드](media/dataresidencyae.jpg)
   
 **다음 중 하나에 해당 하는 경우이 섹션이 표시 되지 않을 수**있습니다.
 - 테넌트가 이동 프로그램 대상이 아닙니다.  자격은 테 넌 트 등록 국가에 따라 결정 됩니다.
@@ -58,7 +58,7 @@ Office 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 �
   
 조직에 데이터 상주 요구 사항이 있고 초기 마이그레이션을 요청 해야 하는 경우 섹션의 오른쪽 위에서 **편집** 을 클릭 합니다. 이동 프로그램의 세부 정보를 설명 하는 새 섹션이 화면 오른쪽에 표시 됩니다. **예, 조직에 data 상주 요구 사항이**있습니다. 라는 텍스트 옆에 있는 설정/해제 단추를 선택 합니다. 그런 다음 **저장**을 클릭 합니다.
   
-![데이터 센터 옵트인 작업 화면](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![데이터 센터 옵트인 작업 화면](media/dataresidencyflyoutae.jpg)
   
 **데이터 상주 옵션** 섹션의 텍스트가 다음을 나타내도록 변경됩니다. **귀하의 조직에서 핵심 고객 데이터 이동을 요청했습니다.** 메시지 센터에 확인 메시지도 표시됩니다. 이 메시지가 있으면 이동이 성공적으로 요청된 것입니다. 
 
