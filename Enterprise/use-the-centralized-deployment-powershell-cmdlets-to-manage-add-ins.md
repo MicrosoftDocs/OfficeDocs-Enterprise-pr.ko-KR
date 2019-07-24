@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 Office 365 조 직 용 Office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: c63a48d212bba4eda25fb6b8843f6321892dc54b
-ms.sourcegitcommit: d53033c2d2d41d52047e3e2644d77373d4a5dd9a
+ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
+ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35791253"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834238"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
 
@@ -171,6 +171,8 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>조직에 대 한 Microsoft Store 추가 기능 사용자 지정
 
 조직에 배포 하기 전에 추가 기능을 사용자 지정 해야 합니다. 버전 1.1 보다 오래 된 추가 기능은이 기능에서 지원 되지 않습니다. 
+
+먼저 사용자 지정 된 추가 기능을 자신에 게 배포 하 여 전체 조직에 배포 하기 전에 예상 대로 작동 하는지 확인 하는 것이 좋습니다.
 
 또한 다음과 같은 제한이 있습니다.
 - 모든 Url은 절대적 (http 또는 https 포함) 이어야 하 고 유효 해야 합니다.
