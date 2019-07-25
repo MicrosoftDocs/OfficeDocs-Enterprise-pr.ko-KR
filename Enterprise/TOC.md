@@ -172,10 +172,10 @@
 ##### [위성 지리적 위치에서 SharePoint Multi-Geo 사용](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Exchange Multi-Geo 관리](administering-exchange-online-multi-geo.md)
 
-#### [새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
-##### [데이터 이동을 요청하는 방법](request-your-data-move.md)
-##### [데이터 이동 도중 및 이후](during-and-after-your-data-move.md)
-##### [데이터 이동 일반 FAQ](data-move-faq.md)
+### [새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
+#### [데이터 이동을 요청하는 방법](request-your-data-move.md)
+#### [데이터 이동 도중 및 이후](during-and-after-your-data-move.md)
+#### [데이터 이동 일반 FAQ](data-move-faq.md)
 
 ### 하이브리드 솔루션
 #### [Azure Active Directory를 사용하여 SharePoint Server 2016 인증](using-azure-ad-for-sharepoint-server-authentication.md)
