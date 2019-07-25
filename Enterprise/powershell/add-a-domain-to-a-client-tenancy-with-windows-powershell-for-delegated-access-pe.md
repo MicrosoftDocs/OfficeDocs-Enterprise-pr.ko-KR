@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 요약:Office 365에 대한 Windows PowerShell을 사용하여 대체 도메인 이름을 기존 고객 테넌트에 추가합니다.
-ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 60088a9eafa1f5380eef2cc0240b0f5b5b02fe0f
+ms.sourcegitcommit: 68181eca8e43ea7f5dfd89cbaf587bc0c260ca7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781848"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853231"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 클라이언트 테넌트에 도메인 추가
 
@@ -29,7 +29,9 @@ Office 365 관리 센터를 사용하는 것보다 빠른 Microsoft 365용 Windo
 DAP(위임된 액세스 권한) 파트너는 Syndication 및 CSP(클라우드 솔루션 공급자) 파트너입니다. 이러한 공급자는 다른 회사의 네트워크 또는 전자 통신 공급자인 경우가 많습니다. 이러한 공급자는 서비스와 Office 365 구독을 통합해서 고객에게 제공합니다. Office 365 구독을 판매하는 경우 고객 테넌트에 대한 AOBO(관리 위임자) 권한이 자동으로 부여되므로 고객 테넌트를 관리하고 보고할 수 있습니다.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용
 
-UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
+이 항목의 절차를 수행하려면 Windows PowerShell용 Office 365에 연결되어 있어야 합니다.지침을 보려면 [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)을 참조하세요.
+  
+파트너 테넌트 관리자 자격 증명도 필요합니다.
   
 다음 정보도 필요합니다.
   
@@ -61,7 +63,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
  Office 365는 DNS TXT 확인 레코드에 배치해야 하는 특정 데이터를 생성합니다. 데이터를 가져오려면 이 명령을 실행합니다.
   
 ```
-Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain>
+Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
 이는 다음과 같은 출력을 제공합니다.
