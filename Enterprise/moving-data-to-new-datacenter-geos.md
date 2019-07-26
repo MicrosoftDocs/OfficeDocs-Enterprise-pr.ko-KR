@@ -3,7 +3,7 @@ title: 핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 새 데이터 센터? 지속적인 고객 요구 및 사용 증가를 지원 하기 위해 용량을 추가 하 고 리소스를 계산 합니다. 또한 새 데이터 센터 지역는 핵심 고객 데이터에 대 한 상주 데이터를 제공 합니다. 핵심 고객 데이터는 Microsoft Online Services 약관 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일의 콘텐츠)과 SharePoint Online 사이트 콘텐츠 및 파일에 정의 된 고객 데이터의 하위 집합을 참조 하는 용어입니다. 해당 사이트 내에 저장 되 고 파일을 비즈니스용 OneDrive로 업로드 합니다.
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392348"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907641"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동
 
@@ -39,8 +39,8 @@ Office 365 for business 서비스용 새 데이터 센터 지역가 계속 해 �
 |영국 * * * *| 유럽 | 영국 | 2016년 9월 |
 |대한민국 * * * * * *| 아시아/태평양 | 대한민국 | 2017년 4월 |
 |프랑스 * * * *| 유럽 | 프랑스 | 2018년 3월 |
-|아랍에미리트 * * * *| 유럽 | 아랍에미리트 | 발표할 |
-|남아프리카 * * * *| 유럽 | 남아프리카 공화국 | 발표할 |
+|아랍에미리트 * * * *| 유럽 | 아랍에미리트 | 2019 년 6 월 |
+|남아프리카 * * * *| 유럽 | 남아프리카 공화국 | 7 월 2019 일 |
   
 새 데이터 센터 지역이 사용 가능해진 이후에 만들어진 신규 고객 또는 Office 365 테넌트의 경우 휴지 상태의 핵심 고객 데이터가 새 데이터 센터 지역에 자동으로 저장됩니다.
   
