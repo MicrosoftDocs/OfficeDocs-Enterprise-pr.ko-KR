@@ -24,24 +24,24 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '스프레드시트 또는 다른 CSV로 서식이 지정 된 파일의 목록에서 비즈니스용 Office 365에 여러 사용자를 추가하는 방법을 알아봅니다. YouTube에서 Office 365에 계정을 추가하는 방법을 설명하는 비디오를 보세요. 이 프로세스 종료 시, 계정이 있는 각 사용자에게는 Office 365 사서함이 있습니다. '
-ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 5256e67139b50c1804f83e11d00c115b5f419f47
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068694"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782428"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
 
 팀의 각 구성원이 전자 메일 및 Office와 같은 Office 365 서비스에 로그인 및 액세스하려면 사용자 계정이 있어야 합니다. 사용자가 많은 경우 Excel 스프레드시트 또는 CSV 형식으로 저장된 다른 파일에서 모든 계정을 한 번에 추가할 수 있습니다. [CSV 형식이란?](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Office 365 관리 센터에서 여러 사용자를 Office 365에 추가
+## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 여러 사용자를 Office 365에 추가
 
 1. 회사 또는 학교 계정을 사용하여 Office 365에 로그인합니다. 
     
-2. Office 365 관리 센터에서 **사용자** \> **활성 사용자**를 선택합니다.
+2. 관리 센터에서 **사용자** \> **활성 사용자**를 선택합니다.
     
-    ![관리 센터에서 사용자와 활성 사용자를 차례로 선택](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![관리 센터에서 사용자와 활성 사용자를 차례로 선택합니다.](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
 3. 
             **자세히** 드롭다운에서 **여러 사용자 가져오기**를 선택합니다.
@@ -150,7 +150,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
 - ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>기존 Office 365 관리 센터에서 Office 365에 여러 사용자 추가
+## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>기존 관리 센터에서 여러 사용자를 Office 365에 추가합니다.
 
 1. [이 예제 스프레드시트](https://www.microsoft.com/en-us/download/details.aspx?id=45485)를 다운로드하고 Excel에서 엽니다. 
     
@@ -166,13 +166,13 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
 2. 회사 또는 학교 계정을 사용하여 Office 365에 로그인합니다. 
     
-3. Office 365 관리 센터로 이동합니다.
+3. 관리 센터로 이동합니다.
     
 4. For people to use Office 365 services, they need to be assigned a license. Before continuing, you might want to check that you have enough licenses for everyone listed in your spreadsheet. Choose **Billing** \> **Subscriptions** to see if you have enough. If you need to buy more licenses, choose ** Change license quantity **. Or, you can run the wizard and assign the licenses you have, then buy more licenses later and rerun the wizard. 
     
 5. **사용자** \> **활성 사용자**를 선택하여 사용자 일괄 추가 마법사로 이동합니다. 다음 그림에서처럼 ![Office 365에 여러 사용자 추가 아이콘](media/3481ffea-d552-4a7f-9a3b-014504e69746.png)을 선택합니다. 
     
-    ![Office 365 관리 센터의 사용자 섹션 이미지](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
+    ![관리 센터의 사용자 섹션 이미지](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
   
     사용자 일괄 추가 마법사가 나타나고 사용자 그룹을 Office 365에 추가하는 단계를 안내합니다. 
     
@@ -192,7 +192,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
     ![사용자 일괄 추가 마법사 4단계 - 라이선스](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
   
-    **추가 라이선스 구입**을 선택할 수 있지만, 이 경우 사용자 일괄 추가 마법사가 종료되고 Office 365 관리 센터의 **청구**로 이동하게 됩니다. 추가 라이선스를 구입한 후에는 주문이 처리될 때까지 몇 분 정도 기다렸다가 사용자 일괄 추가 마법사를 처음부터 다시 시작해야 합니다. 
+    **추가 라이선스 구입**을 선택할 수 있지만 사용자 일괄 추가 마법사를 종료하고 Microsoft 365 관리 센터의 **청구**로 이동합니다. 추가 라이선스를 구입한 후에는 주문이 처리될 때까지 몇 분 정도 기다렸다가 사용자 일괄 추가 마법사를 처음부터 다시 시작해야 합니다. 
     
     추가 라이선스를 구입하지 않으면 스프레드시트에 나열된 모든 사용자에게 대해 계정이 만들어지지 않습니다. 
     
