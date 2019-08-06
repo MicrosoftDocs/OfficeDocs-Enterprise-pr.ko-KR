@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: O365 통합 앱이 Azure AD에서 등록 되 고 관리 되는 방법 알아보기
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067254"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782528"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 관리자를 위한 통합 앱 및 Azure AD
 
@@ -32,7 +32,7 @@ Azure AD에서 Office 365 앱을 관리 하려면 먼저 이러한 두 가지 �
   
 |**필수 구성 요소**|**Comments**|
 |:-----|:-----|
-|[무료 Azure Active Directory 구독에 등록](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Office 365에 대 한 모든 유료 구독에는 Azure Active Directory에 대 한 무료 구독이 제공 됩니다. Azure AD를 사용 하 여 앱을 관리 하 고 사용자 및 그룹 계정을 만들고 관리할 수 있습니다. 이 구독을 활성화하고 Azure 관리 포털에 액세스하려면 일회성 등록 프로세스를 완료해야 합니다. 나중에 Office 365 관리 센터에서 Azure AD로 이동할 수 있습니다.  <br/> |
+|[무료 Azure Active Directory 구독에 등록](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Office 365에 대 한 모든 유료 구독에는 Azure Active Directory에 대 한 무료 구독이 제공 됩니다. Azure AD를 사용 하 여 앱을 관리 하 고 사용자 및 그룹 계정을 만들고 관리할 수 있습니다. 이 구독을 활성화하고 Azure 관리 포털에 액세스하려면 일회성 등록 프로세스를 완료해야 합니다. 나중에 Microsoft 365 관리 센터에서 Azure AD로 이동할 수 있습니다.  <br/> |
 |[통합 앱 설정 또는 해제](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |타사 앱에서 Office 365 정보에 액세스 하 고 Azure AD에 앱을 등록 하도록 허용 하려면 통합 앱을 켜야 합니다. 예를 들어 다른 사용자가 타사 앱을 사용 하는 경우 해당 앱은 자신의 일정에 액세스 하 고 비즈니스용 OneDrive 폴더에 있는 파일을 편집 하는 권한을 요청할 수 있습니다.  <br/> |
    
 Office 365 앱을 관리 하려면 Azure AD의 앱에 대 한 지식이 있어야 합니다. 이러한 문서는 필요한 배경을 제공 하는 데 도움이 됩니다.

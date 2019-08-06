@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '요약: 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 Office 365 정보 권한 관리가 중요 한 파일을 보호 하는 방법을 구성 하 고 설명 합니다.'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070894"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782498"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 
@@ -98,7 +98,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
   - 시뮬레이트된 enterprise Office 365 개발/테스트 환경을 사용 하는 경우 Azure portal을 사용 하 여 CLIENT1 가상 컴퓨터에 연결한 다음, CLIENT1에서 로그인 합니다.
     
-2. **Microsoft Office 홈** 탭에서 **Admin _GT_ groups > groups**를 클릭 한 다음 **그룹 추가**를 클릭 합니다.
+2. **Microsoft Office 홈** 탭에서 **관리 > 그룹 > 그룹**을 클릭 한 다음 **그룹 추가**를 클릭 합니다.
     
 3. **그룹 추가**에서 그룹 유형에 대해 **Office 365 그룹** 을 선택 하 고 **이름** 및 **그룹 Id**에 **임원** 을 입력 한 다음 **** 개인 **정보 보호**를 선택 하 고 **소유자 선택을**클릭 합니다.
     
@@ -172,7 +172,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. **CEO** 계정 이름 및 암호를 입력 하 고 **로그인**을 클릭 합니다.
     
-5. 브라우저의 새 탭에서 임원 사이트 모음 ( **https://**\<조직 name>**. sharepoint.com/sites/executives**)에 대 한 URL을 입력 합니다.
+5. 브라우저의 새 탭에서 임원 사이트 모음에 대 한 URL ( **https://**\<조직 이름>**sharepoint.com/sites/executives**)을 입력 합니다.
     
 6. **문서**를 클릭 하 고 **새로 만들기를** 클릭 한 다음 **Word 문서**를 클릭 합니다.
     
@@ -190,7 +190,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. 1 단계에서 만든 폴더에 **SensitiveData-BeforeIRM** 문서를 저장 합니다.
     
-4. 브라우저의 새 탭에서 Sales site collection ( **https://**\<조직 name>**. sharepoint.com/sites/sales**)의 URL을 입력 합니다.
+4. 브라우저의 새 탭에서 판매 사이트 모음에 대 한 URL ( **https://**\<조직 이름>**sharepoint.com/sites/sales**)을 입력 합니다.
     
 5. **Sales 사이트 모음의** **문서** 폴더를 클릭 합니다.
     
@@ -228,7 +228,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
-4. **Microsoft Office 홈** 탭에서 **admin > 관리 센터 > SharePoint**를 클릭 합니다.
+4. **Microsoft Office 홈** 탭에서 **관리 > 관리 센터 > SharePoint**를 클릭 합니다.
     
 5. **SharePoint 관리 센터** 탭에서 **설정을**클릭 합니다.
     
@@ -316,7 +316,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 6. **문서** 페이지에서 **SensitiveData-AfterIRM** 문서를 엽니다.
     
-    "죄송 하지만이 문서는 IRM (정보 권한 관리)으로 보호 되어 있어 Word Online에서 열 수 없습니다." 라는 메시지가 표시 됩니다. 
+    "죄송 하지만이 문서는 IRM (정보 권한 관리)으로 보호 되어 있으므로 Word에서 열 수 없습니다." 라는 메시지가 표시 됩니다. 
     
 7. **Word에서 편집을**클릭 합니다. 파일을 열 것인지 묻는 메시지가 표시 됩니다. **예**를 클릭합니다.
     

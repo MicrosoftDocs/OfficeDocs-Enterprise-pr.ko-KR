@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 Office 365에서 CDNs (콘텐츠 배달 네트워크)를 사용 하 여 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068027"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722667"
 ---
 # <a name="content-delivery-networks-cdns"></a>CDNs (콘텐츠 배달 네트워크)
 
@@ -48,6 +48,11 @@ CDNs는 여러 가지 방법으로 클라우드 서비스 성능을 개선 하�
 ## <a name="the-office-365-cdn"></a>Office 365 CDN
 
 기본 제공 Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하면 Office 365 관리자가 정적 자산을 요청 하는 브라우저에 더 빠르게 캐싱하여 조직의 SharePoint Online 페이지 성능을 향상 시킬 수 있습니다. 다운로드 하 여 대기 시간을 줄입니다. Office 365 CDN은 압축 및 다운로드 속도 향상을 위해 [HTTP/2 프로토콜](https://en.wikipedia.org/wiki/HTTP/2) 을 사용 합니다.
+
+> [!NOTE]
+> Office 365 CDN 사용에 대 한 제한 사항:
+> + Office 365 CDN은 **프로덕션** (전 세계) 클라우드의 테 넌 트에만 사용할 수 있습니다. 미국 정부의 테 넌 트, 중국 및 독일 클라우드가 현재 Office 365 CDN을 지원 하지 않습니다.
+> + Office 365 CDN에서는 현재 사용자 지정 또는 "베 니 티" 도메인을 사용 하 여 구성 된 테 넌 트를 지원 하지 않습니다. [Add a domain To Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)항목의 지침을 사용 하 여 테 넌 트에 도메인을 추가한 경우 cdn에서 콘텐츠에 액세스 하려고 하면 OFFICE 365 CDN에서 오류가 반환 됩니다.
 
 Office 365 CDN은 여러 위치, 즉 _출발지_에 정적 자산을 호스트하고 글로벌 고속 네트워크에서 제공할 수 있는 여러 CDN으로 구성됩니다. Office 365 CDN에서 호스팅하려는 콘텐츠의 종류에 따라 **공개** 출처, **비공개** 출처 또는 둘 다를 추가할 수 있습니다.
 
@@ -182,7 +187,7 @@ CDNs를 사용 하는 것은 SharePoint Online 컨텍스트에서 적합 하며 
 
 [Office 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples)
 
-[Office 365에 대한 네트워크 연결](network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
 
 [Office 365 끝점 관리](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity 및 SharePoint Server 2007가 지원 종료에 도달 했습니다. 이 문서를 읽으면 BI 솔루션 업그레이드를 계획할 수 있습니다.
-ms.openlocfilehash: fb4efa9bb98ba7460b777d8974f8c8888a5d7046
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9fde75724bf82a37f98fd98ddda1017198b850dd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071064"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782538"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 
@@ -53,10 +53,10 @@ Microsoft 제품 (예: PerformancePoint Server 2007 SP3, ProClarity software 및
   
 |**이 방법을 사용 하는 경우 ...**|**다음 옵션을 탐색 합니다.**|**이를 염두에 두어야 합니다.**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007에서는 &amp; 다음을 비롯 한 모니터링 분석 기능을 제공 합니다.  <br/><br/>  PerformancePoint 모니터링 서버  <br/><br/>  PerformancePoint 대시보드 디자이너  <br/><br/>  SharePoint Services 용 대시보드 뷰어 (PerformancePoint 대시보드, 성과 기록표 및 보고서를 렌더링 하는 데 사용 됨)  <br/> |Excel **Online을 사용 하는 excel** (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/><br/> **SQL Server Reporting Services** (온-프레미스). 개요에 대 한 자세한 내용은 [SQL Server Reporting Services (SSRS): 모바일 및 페이지를 매긴 보고서 만들기, 배포 및 관리](https://go.microsoft.com/fwlink/?linkid=841342) 를 참조 하세요. <br/><br/> **PerformancePoint Services** (온-프레미스). 개요에 대 한 자세한 내용은 [What 's new For PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) 을 참조 하십시오. <br/> |Excel 및 Excel Online을 온라인 (클라우드 기반) 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Excel Online의 Excel 기능을 사용 하 여 많은 보고 및 대시보드 요구 사항을 충족할 수 있습니다.  <br/><br/> Power BI는 온라인 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Power BI는 Office 365에 포함 되어 있지 않지만 데이터 사용 및 비즈니스 요구 사항에 따라 Power BI Pro로 업그레이드할 수 있습니다. <br/> <br/> Reporting Services 및 PerformancePoint Services는 모두 온-프레미스 솔루션입니다.  <br/><br/> PerformancePoint Services는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. <br/> <br/> PerformancePoint Server 2007에서 사용할 수 있는 일부 기능 및 보고서 형식은 Excel, Power BI, Reporting Services 또는 PerformancePoint Services에서 사용할 수 없습니다. 사용 가능한 기능을 검토 하 여 비즈니스 요구에 가장 적합 한 솔루션을 결정 하는 것이 좋습니다.  <br/> |
-| 다음을 포함 한 ProClarity 소프트웨어 <br/> <br/>  ProClarity 데스크톱 전문가  <br/> <br/> ProClarity Analytics Server  <br/> <br/> ProClarity SharePoint Viewer  <br/> |**Microsoft 파트너와 협력** 하 여 사용자의 요구에 가장 적합 한 솔루션을 식별 합니다. [Microsoft 파트너 센터](https://go.microsoft.com/fwlink/?linkid=841249) 방문 <br/><br/> Excel Online, Power BI, SQL Server Reporting Services 또는 PerformancePoint Services에서 Excel을 사용 하는 것을 고려할 수도 있습니다.  <br/> |ProClarity 소프트웨어에서 사용할 수 있는 일부 기능 및 기능 외에도 Excel, Power BI, Reporting Services 및 PerformancePoint Services를 비롯 한 다른 Microsoft 제품 에서도 사용할 수 있습니다.  <br/> |
-|SharePoint Server 2007 Kpi (MOSS Kpi 라고도 함)  <br/> |Excel **Services를 사용 하는 Excel 서비스** Excel Services는 이제 Excel Online 이라고 합니다. 개요에 대 한 자세한 내용은 [excel 및 Excel Services의 비즈니스 인텔리전스 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) 를 참조 하십시오. <br/> |Sharepoint Server 2007를 사용 하 여 만든 MOSS Kpi는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. 그러나 새 MOSS Kpi는 만들 수 없습니다.  <br/> |
-|Excel 2007  <br/> |Excel **Online을 사용 하는 excel** (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/> |Excel Online 및 Power BI가 포함 된 Excel에서는 둘 다 다양 한 데이터 원본을 지원 하 여 조직 클라우드 기반 및 온-프레미스 솔루션을 제공 합니다.  <br/> |
+| PerformancePoint Server 2007에서는 &amp; 다음을 비롯 한 모니터링 분석 기능을 제공 합니다.  <br/><br/>  PerformancePoint 모니터링 서버  <br/><br/>  PerformancePoint 대시보드 디자이너  <br/><br/>  SharePoint Services 용 대시보드 뷰어 (PerformancePoint 대시보드, 성과 기록표 및 보고서를 렌더링 하는 데 사용 됨)  <br/> |**브라우저에서 excel을 사용 하는 excel** (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/><br/> **SQL Server Reporting Services** (온-프레미스). 개요에 대 한 자세한 내용은 [SQL Server Reporting Services (SSRS): 모바일 및 페이지를 매긴 보고서 만들기, 배포 및 관리](https://go.microsoft.com/fwlink/?linkid=841342) 를 참조 하세요. <br/><br/> **PerformancePoint Services** (온-프레미스). 개요에 대 한 자세한 내용은 [What 's new For PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) 을 참조 하십시오. <br/> |Excel은 온라인 (클라우드 기반) 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Excel의 기능을 사용 하 여 많은 보고 및 대시보드 요구 사항을 충족할 수 있습니다.  <br/><br/> Power BI는 온라인 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Power BI는 Office 365에 포함 되어 있지 않지만 데이터 사용 및 비즈니스 요구 사항에 따라 Power BI Pro로 업그레이드할 수 있습니다. <br/> <br/> Reporting Services 및 PerformancePoint Services는 모두 온-프레미스 솔루션입니다.  <br/><br/> PerformancePoint Services는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. <br/> <br/> PerformancePoint Server 2007에서 사용할 수 있는 일부 기능 및 보고서 형식은 Excel, Power BI, Reporting Services 또는 PerformancePoint Services에서 사용할 수 없습니다. 사용 가능한 기능을 검토 하 여 비즈니스 요구에 가장 적합 한 솔루션을 결정 하는 것이 좋습니다.  <br/> |
+| 다음을 포함 한 ProClarity 소프트웨어 <br/> <br/>  ProClarity 데스크톱 전문가  <br/> <br/> ProClarity Analytics Server  <br/> <br/> ProClarity SharePoint Viewer  <br/> |**Microsoft 파트너와 협력** 하 여 사용자의 요구에 가장 적합 한 솔루션을 식별 합니다. [Microsoft 파트너 센터](https://go.microsoft.com/fwlink/?linkid=841249) 방문 <br/><br/> 브라우저, Power BI, SQL Server Reporting Services 또는 PerformancePoint Services에서 excel과 excel을 함께 사용 하는 것을 고려할 수도 있습니다.  <br/> |ProClarity 소프트웨어에서 사용할 수 있는 일부 기능 및 기능 외에도 Excel, Power BI, Reporting Services 및 PerformancePoint Services를 비롯 한 다른 Microsoft 제품 에서도 사용할 수 있습니다.  <br/> |
+|SharePoint Server 2007 Kpi (MOSS Kpi 라고도 함)  <br/> |Excel **Services를 사용 하는 Excel 서비스** 개요에 대 한 자세한 내용은 [excel 및 Excel Services의 비즈니스 인텔리전스 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) 를 참조 하십시오. <br/> |Sharepoint Server 2007를 사용 하 여 만든 MOSS Kpi는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. 그러나 새 MOSS Kpi는 만들 수 없습니다.  <br/> |
+|Excel 2007  <br/> |**Excel** (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/> |Excel 및 Power BI는 다양 한 데이터 원본을 지원 하 여 조직 클라우드 기반 및 온-프레미스 솔루션을 제공 합니다.  <br/> |
    
 ### <a name="what-if-i-need-help-selecting-a-solution"></a>솔루션을 선택 하는 데 도움이 필요한 경우 어떻게 하나요?
 
@@ -72,38 +72,38 @@ Microsoft 제품 (예: PerformancePoint Server 2007 SP3, ProClarity software 및
   
 |**옵션**|**클라우드 또는 온-프레미스에서**|
 |:-----|:-----|
-|[Excel Online을 사용 하는 Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
+|[Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
 |[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
 |[보고 서비스](#use-reporting-services-on-premises) <br/> |온-프레미스 전용  <br/> |
 |[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |온-프레미스 전용  <br/> |
    
-### <a name="use-excel-with-excel-online-in-the-cloud-or-on-premises"></a>Excel Online (클라우드 또는 온-프레미스)에서 엑셀 사용
+### <a name="use-excel-in-the-cloud-or-on-premises"></a>Excel 사용 (클라우드 또는 온-프레미스)
 
-Excel Online (SharePoint Server에서 Excel Services 라고도 함)에서는 사용자가 컴퓨터에 Excel이 설치 되어 있지 않은 경우에도 브라우저 창에서 통합 문서를 보고 사용할 수 있습니다. Excel을 사용 하 여 보고서, 성과 기록표 및 대시보드를 만든 다음 Excel Online을 사용 하 여 SharePoint Online을 Office 365의 일부로 사용 하는지, 아니면 SharePoint Server 온-프레미스를 사용할 것인지에 상관 없이 통합 문서를 다른 사용자와 공유할 수 있습니다. 또한 온-프레미스 또는 클라우드에서 저장 된 데이터를 사용 하 여 다양 한 데이터 원본을 사용할 수 있습니다.
+Excel Services (SharePoint Server)도 라고도 하며 excel이 컴퓨터에 설치 되어 있지 않은 경우에도 사용자가 브라우저 창에서 통합 문서를 보고 사용할 수 있습니다. Excel을 사용 하 여 보고서, 성과 기록표 및 대시보드를 만든 다음 브라우저에서 Excel을 사용 하 여 Office 365의 일부로 또는 SharePoint Server 온-프레미스를 사용 하는지에 관계 없이 통합 문서를 다른 사용자와 공유할 수 있습니다. 또한 온-프레미스 또는 클라우드에서 저장 된 데이터를 사용 하 여 다양 한 데이터 원본을 사용할 수 있습니다.
   
 다음 표에서는 Office 365 excel을 사용 하 여 Excel을 사용 하는 경우의 주요 이점과 아래 추가 정보를 비교 합니다.
   
 |**[Office 365 (클라우드에서)가 있는 Excel](#excel-with-office-365-in-the-cloud)**|**[SharePoint Server가 포함 된 Excel (온-프레미스)](#excel-with-sharepoint-server-on-premises)**|
 |:-----|:-----|
-|**가장 큰 최신 버전의 Excel**이 제공 됩니다. Office 365에는 최신 버전의 Excel이 제공 되는데,이는 강력한 새 차트 종류, 차트 및 테이블을 빠르고 쉽게 만드는 기능, 더 많은 데이터 원본을 지원 합니다. <br/> <br/> **설치 과정은 훨씬 간단해 집니다**. Excel Online은 비즈니스용 Office 365에 포함 되어 있으므로, 사용자의 작업이 더 이상 진행 되지 않습니다. 등록 및 로그인 하 고 온-프레미스 서버를 업그레이드 하는 것 보다 더 빠르고 효율적으로 작업을 진행 합니다. <br/> <br/> **모든 사용자에 게 통합 문서에 대 한 모든 권한이 있습니다**. 사용자는 자신의 컴퓨터, 스마트폰, 태블릿을 사용 하 여 모든 위치에서 통합 문서를 안전 하 게 볼 수 있습니다. <br/> <br/> **더 많은 기능**을 제공 합니다. [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 참조 <br/> |**전역 설정을 관리**합니다. SharePoint 관리자는 보안, 부하 분산, 세션 관리, 통합 문서 캐싱, 외부 데이터 연결 등의 전역 설정을 지정할 수 있습니다. <br/> <br/> **PerformancePoint services에서 Excel Services를 사용할 수**있습니다. SharePoint Server 설치의 일부로 Excel Services 및 PerformancePoint Services를 구성 하 고 PerformancePoint 대시보드에 Excel Services 보고서를 포함할 수 있습니다. <br/> <br/> **더 많은 기능**을 제공 합니다. [Excel 및 Excel Services에서 비즈니스 인텔리전스 참조 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
+|**가장 큰 최신 버전의 Excel**이 제공 됩니다. Office 365에는 최신 버전의 Excel이 제공 되는데,이는 강력한 새 차트 종류, 차트 및 테이블을 빠르고 쉽게 만드는 기능, 더 많은 데이터 원본을 지원 합니다. <br/> <br/> **설치 과정은 훨씬 간단해 집니다**. Excel은 비즈니스용 Office 365에 포함 되어 있으므로 파트가 더 이상 제공 되지 않습니다. 등록 및 로그인 하 고 온-프레미스 서버를 업그레이드 하는 것 보다 더 빠르고 효율적으로 작업을 진행 합니다. <br/> <br/> **모든 사용자에 게 통합 문서에 대 한 모든 권한이 있습니다**. 사용자는 자신의 컴퓨터, 스마트폰, 태블릿을 사용 하 여 모든 위치에서 통합 문서를 안전 하 게 볼 수 있습니다. <br/> <br/> **더 많은 기능**을 제공 합니다. [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 참조 <br/> |**전역 설정을 관리**합니다. SharePoint 관리자는 보안, 부하 분산, 세션 관리, 통합 문서 캐싱, 외부 데이터 연결 등의 전역 설정을 지정할 수 있습니다. <br/> <br/> **PerformancePoint services에서 Excel Services를 사용할 수**있습니다. SharePoint Server 설치의 일부로 Excel Services 및 PerformancePoint Services를 구성 하 고 PerformancePoint 대시보드에 Excel Services 보고서를 포함할 수 있습니다. <br/> <br/> **더 많은 기능**을 제공 합니다. [Excel 및 Excel Services에서 비즈니스 인텔리전스 참조 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
    
 #### <a name="excel-with-office-365-in-the-cloud"></a>Office 365 (클라우드에서)가 있는 Excel
 
-Office 365로 이동 하면 Excel 2016과 Excel Online을 포함 하 여 최신 서비스와 응용 프로그램을 사용할 수 있습니다. PerformancePoint Services는 Office 365에서 사용할 수 없으므로 PerformancePoint 대시보드 콘텐츠를 Excel 통합 문서 또는 다른 보고서로 대체 합니다. 좋은 소식은 Excel 2016에 새로운 차트 종류가 많고 Excel에서 인상적인 대시보드를 만드는 것이 전보다 쉬워졌습니다. 또한 주기적으로 새로운 기능이 추가 됩니다. 자세한 내용은 [What 'S New In Excel 2016 In Windows](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)를 참조 하세요.
+Office 365로 이동 하면 Excel 2016를 포함 하 여 최신 서비스와 응용 프로그램을 사용할 수 있습니다. PerformancePoint Services는 Office 365에서 사용할 수 없으므로 PerformancePoint 대시보드 콘텐츠를 Excel 통합 문서 또는 다른 보고서로 대체 합니다. 좋은 소식은 Excel 2016에 새로운 차트 종류가 많고 Excel에서 인상적인 대시보드를 만드는 것이 전보다 쉬워졌습니다. 또한 주기적으로 새로운 기능이 추가 됩니다. 자세한 내용은 [What 'S New In Excel 2016 In Windows](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)를 참조 하세요.
   
-또한, Office 365 중 일부를 50 구입 하면 Microsoft fasttrack 팀이 설정 하는 데 도움을 받을 수 있습니다. 자세한 내용을 보려면 [Fasttrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)를 방문 하세요.
+또한, Office 365 중 일부를 50 구입 하면 Microsoft FastTrack 팀이 설정 하는 데 도움을 받을 수 있습니다. 자세한 내용을 보려면 [Fasttrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)를 방문 하세요.
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>SharePoint Server가 포함 된 Excel (온-프레미스)
 
-최신 버전의 SharePoint로 업그레이드 하는 경우 다음과 같이 excel Services 또는 Excel Online을 사용할 수 있습니다.
+최신 버전의 SharePoint로 업그레이드 하는 경우 다음과 같이 excel Services 또는 브라우저에서 Excel을 사용할 수 있습니다.
   
 - SharePoint Server 2010의 Excel Services
     
 - SharePoint Server 2013의 Excel Services
     
-- Office Online Server의 일부인 Excel Online은 SharePoint Server 2016와 별도로 설치 됩니다.
+- Office Online Server의 일부인 Excel이 SharePoint Server 2016와 별도로 설치 됨
     
-새 버전의 SharePoint Server 에서도 PerformancePoint Services를 구성 하 고 Excel 서비스 또는 Excel Online과 함께 사용할 수 있습니다.
+새 버전의 SharePoint Server 에서도 PerformancePoint Services를 구성 하 고 Excel과 함께 사용할 수 있습니다.
   
 SharePoint 업그레이드 옵션에 대 한 자세한 내용은 [Sharepoint Server 2007 end Support 로드맵](sharepoint-2007-end-of-support.md)를 참조 하십시오.
   

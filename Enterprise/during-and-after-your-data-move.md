@@ -3,7 +3,7 @@ title: 데이터 이동 도중 및 이후
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067734"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786233"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -38,7 +38,7 @@ ms.locfileid: "34067734"
 |대한민국  <br/> |2018년 10월 31일  <br/> |
 |영국  <br/> |2019년 9월 15일  <br/> |
 |프랑스  <br/> |2020년 9월 15일  <br/> |
-|아랍에미리트  <br/> |발표할  <br/> |
+|아랍에미리트  <br/> |2022 년 2 월 1 일  <br/> |
 |남아프리카 공화국  <br/> |발표할  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -74,7 +74,7 @@ SharePoint Online이 이동 될 때 다음 서비스에 대 한 데이터도 이
     
 - Office 365 비디오 서비스
     
-- Office Online
+- S 브라우저의 Office
     
 - Office 365 ProPlus
     

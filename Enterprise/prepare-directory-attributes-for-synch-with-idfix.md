@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Office 365와 동기화 하기 전에 IdFix를 사용 하 여 온-프레미스 디렉터리를 준비 하 고 정리 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162371"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490791"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix 도구를 사용하여 Office 365와의 동기화를 위한 디렉터리 특성 준비
 이 항목에는 IdFix 도구 실행에 대 한 자세한 지침, 발생할 수 있는 몇 가지 일반적인 오류, 제안 되는 수정 작업, 예제 및 많은 오류가 발생 했을 때 수행 해야 하는 상황에 대 한 모범 사례가 포함 되어 있습니다.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>IdFix GUI를 사용 하 여 디렉터리의 오류 수정
+
 [Office 365 IdFix 도구를 실행](install-and-run-idfix.md) 하 여 디렉터리에서 문제를 검색 한 다음이 항목에 설명 된 대로 GUI에서 오류를 수정 합니다. 도구에서 빈 테이블을 반환 하면 오류가 발견 되지 않습니다. 디렉터리에 문제가 많은 경우에는 도구에서 오류를 반환 하는 것이 어려울 수 있습니다. 이 문제를 해결 하는 한 가지 방법은 먼저 한 유형의 오류를 모두 수정한 후 다음 형식으로 이동 하는 것입니다. 
   
 1. 변경 작업을 시작 하기 전에 IdFix에서 제공 하는 권장 사항을 확인 하세요.

@@ -15,18 +15,18 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: '요약: Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.'
-ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069243"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782608"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 
  **요약:** Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.
   
-Office 365 관리 센터를 사용 하 여 Office 365 테 넌 트의 사용자 계정에 대 한 속성을 구성할 수도 있지만 office 365 PowerShell을 사용 하 여 Office 365 관리 센터에서 수행할 수 없는 작업도 수행 하면 됩니다.
+Microsoft 365 관리 센터를 사용 하 여 Office 365 테 넌 트의 사용자 계정에 대 한 속성을 구성할 수 있지만 Office 365 PowerShell을 사용 하 고 관리 센터에서 수행할 수 없는 몇 가지 작업을 실행할 수도 있습니다.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
@@ -38,35 +38,35 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사�
 
 **-ObjectID** 매개 변수를 사용 하 여 계정을 식별 하 고 추가 매개 변수를 사용 하 여 특정 속성을 설정 하거나 변경 합니다. 가장 일반적인 매개 변수 목록은 다음과 같습니다.
   
-- -부서 "\<부서 name>"
+- -부서 "\<부서 이름>"
     
-- -DisplayName "\<Full user name>"
+- -DisplayName "\<전체 사용자 이름>"
     
-- -FacsimilieTelephoneNumber "\<fax number>"
+- -FacsimilieTelephoneNumber "\<팩스 번호>"
     
-- -GivenName "\<User first name>"
+- -GivenName "\<사용자 이름>"
     
-- -성 "\<사용자 마지막 name>"
+- -성 "\<사용자 성>"
     
-- -모바일 "\<휴대폰 전화 number>"
+- -Mobile "\<휴대폰 번호>"
     
-- -JobTitle "\<job title>"
+- -JobTitle "\<직책>"
     
 - -PreferredLanguage "\<language>"
     
-- -StreetAddress "\<번 지 address>"
+- -StreetAddress "\<주소>"
     
-- -구/\<군/시 "구 name>"
+- -도시명 "\<구/군/시 이름>"
     
-- -State "\<state name>"
+- -State "\<상태 이름>"
     
-- -PostalCode "\<우편 번호 code>"
+- -PostalCode "\<우편 번호>"
     
-- -Country "\<country name>"
+- -Country "\<국가 이름>"
     
-- -TelephoneNumber "\<사무실 전화 number>"
+- -TelephoneNumber "\<사무실 전화 번호>"
     
-- -UsageLocation "\<2 자 국가 또는 지역 code>"
+- -UsageLocation "\<2 자리 국가 또는 지역 코드>"
     
     ISO 3166-1 alpha-2 (A2) 두 자리 국가 또는 지역 코드입니다.
     
@@ -87,7 +87,7 @@ Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalNam
 - 각 계정에 대 한 사용자 계정 이름 속성 ( **선택-개체 UserPrincipalName** )만 표시 합니다.
 - 한 화면을 한 번에 한 화면씩 **** 표시 합니다.
     
-이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 **$userName** 변수를 아래에 입력 합니다 ( \< 및 > 문자 제거).
+이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
   
 ```
 $userName="<Display name>"
@@ -151,37 +151,37 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
 
 **-UserPrincipalName** 매개 변수를 사용 하 여 계정을 식별 하 고 추가 매개 변수를 사용 하 여 특정 속성을 설정 하거나 변경 합니다. 가장 일반적인 매개 변수 목록은 다음과 같습니다.
   
-- -구/\<군/시 "구 name>"
+- -도시명 "\<구/군/시 이름>"
     
-- -Country "\<country name>"
+- -Country "\<국가 이름>"
     
-- -부서 "\<부서 name>"
+- -부서 "\<부서 이름>"
     
-- -DisplayName "\<Full user name>"
+- -DisplayName "\<전체 사용자 이름>"
     
-- -Fax "\<팩스 number>"
+- -Fax "\<팩스 번호>"
     
-- -FirstName "\<User first name>"
+- -FirstName "\<사용자 이름>"
     
-- -LastName "\<사용자의 마지막 name>"
+- -LastName "\<user last name>"
     
-- -MobilePhone "\<휴대폰 number>"
+- -MobilePhone "\<휴대폰 번호>"
     
-- -Office "\<office location>"
+- -Office "\<사무실 위치>"
     
-- -PhoneNumber "\<사무실 전화 number>"
+- -PhoneNumber "\<사무실 전화 번호>"
     
-- -PostalCode "\<우편 번호 code>"
+- -PostalCode "\<우편 번호>"
     
 - -PreferredLanguage "\<language>"
     
-- -State "\<state name>"
+- -State "\<상태 이름>"
     
-- -StreetAddress "\<번 지 address>"
+- -StreetAddress "\<주소>"
     
-- -Title "\<title name>"
+- -Title "\<제목 이름>"
     
-- -UsageLocation "\<2 자 국가 또는 지역 code>"
+- -UsageLocation "\<2 자리 국가 또는 지역 코드>"
     
     ISO 3166-1 alpha-2 (A2) 두 자리 국가 또는 지역 코드입니다.
     
@@ -203,7 +203,7 @@ Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName |
     
 - 한 화면을 한 번에 한 화면씩 **** 표시 합니다.
     
-이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 **$userName** 변수를 아래에 입력 합니다 ( \< 및 > 문자 제거).
+이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
   
 ```
 $userName="<Display name>"

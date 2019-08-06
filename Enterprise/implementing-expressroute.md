@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 용 Express를 통해 다양 한 인터넷 연결 Office 365 서비스에 대 한 대체 라우팅 경로를 제공 합니다. Office 365의 새 Express 아키텍처는 다음에 해당 IP 접두사를 재배포 하기 위한 프로 비전 된 Express 회로에 인터넷을 통해 이미 액세스할 수 있는 Office 365 서비스의 공개 IP 접두사를 기반으로 합니다. 네트워크. Express를 사용 하면 많은 Office 365 서비스에 대해 인터넷 및가을 통해 여러 다른 라우팅 경로를 효과적으로 사용 하도록 설정할 수 있습니다. 네트워크에서의 라우팅 상태는 내부 네트워크 토폴로지가 디자인 되는 방식이 크게 변경 된 것일 수 있습니다.
-ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067404"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722727"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
@@ -243,7 +243,7 @@ Office 365 지역을 표시 하는 글로벌 네트워크 아키텍처, Express 
   
 #### <a name="plan-bandwidth-requirements-including-skype-for-business-requirements-on-jitter-latency-congestion-and-headroom"></a>지터, 대기 시간, 혼잡 및 여유에 대 한 비즈니스용 Skype 요구 사항을 포함 하 여 대역폭 요구 사항 계획
   
-비즈니스용 Skype Online에는 [비즈니스용 Skype online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)문서에 설명 되어 있는 구체적인 추가 네트워크 요구 사항도 있습니다.
+비즈니스용 skype Online에는 [비즈니스용 Skype online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)문서에 설명 되어 있는 구체적인 추가 네트워크 요구 사항도 있습니다.
   
 [Office 365 용 express를 사용한 네트워크 계획](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)에서 **Azure express 경로를 위한 섹션 대역폭 계획** 을 읽어 보십시오.
   
@@ -568,7 +568,7 @@ Express 기반 연결을 사용 하 여 Office 365을 배포 하는 동안, Expr
   
 ## <a name="related-topics"></a>관련 주제
 
-[Office 365에 대한 네트워크 연결](network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
   
 [Office 365용 Azure ExpressRoute](azure-expressroute.md)
   

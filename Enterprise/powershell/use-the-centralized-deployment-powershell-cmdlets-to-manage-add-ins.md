@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 Office 365 조 직 용 Office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071144"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782588"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
 
-Office 365 관리자는 중앙 집중식 배포 기능을 통해 사용자에 게 Office 추가 기능을 배포할 수 있습니다 ( [office 365 관리 센터에서 office 365 추가 기능의 배포 관리](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)참조). Office 365 관리 센터를 통해 Office 추가 기능을 배포 하는 것 외에도 Microsoft PowerShell을 사용할 수 있습니다. Microsoft 다운로드 센터에서 중앙 집중식 배포 PowerShell cmdlet을 [다운로드](https://go.microsoft.com/fwlink/p/?linkid=850850) 합니다. 
+Office 365 관리자는 중앙 집중식 배포 기능을 통해 사용자에 게 Office 추가 기능을 배포할 수 있습니다 (관리 [센터에서 office 365 추가 기능의 배포 관리](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)참조). 관리 센터를 통해 Office 추가 기능을 배포 하는 것 외에도 Microsoft PowerShell을 사용할 수 있습니다. Microsoft 다운로드 센터에서 중앙 집중식 배포 PowerShell cmdlet을 [다운로드](https://go.microsoft.com/fwlink/p/?linkid=850850) 합니다. 
   
 ## <a name="what-do-you-want-to-do"></a>무슨 작업을 하고 싶으십니까?
 

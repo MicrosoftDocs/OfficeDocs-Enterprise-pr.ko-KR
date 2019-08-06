@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404220"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782458"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
 
@@ -88,7 +88,7 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
     
   - SIP 도메인이 Office 365에서 페더레이션 도메인으로 추가 됨
     
-  - 모든 SFB 프런트 엔드에서 office 365 url 및 IP의 ' Microsoft 125 일반 및 Office Online ' 섹션에 있는 office (internet 443)와 잘 알려진 인증서 루트 crl (tcp 80 56)에 대 한 연결이 인터넷으로 아웃 바운드 되어 있어야 합니다. 주소 범위
+  - 모든 SFB 프런트 엔드는 365 인터넷에 대 한 연결 아웃 바운드 (TCP 443) 및 office [125 url 및 IP 주소의 ' Microsoft 365 Common And Office ' 섹션에 있는의 알려진 인증서 루트 crl (tcp 80 56)에 대 한 연결이 있어야 합니다. 범위](urls-and-ip-address-ranges.md)입니다.
   
 - **하이브리드 Office 365 환경에서 비즈니스용 Skype 온-프레미스**
   - 비즈니스용 skype 서버 2019을 실행 중인 모든 서버와의 비즈니스용 Skype 서버 2019 배포

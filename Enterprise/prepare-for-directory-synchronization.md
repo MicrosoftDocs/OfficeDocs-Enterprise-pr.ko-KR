@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 디렉터리 동기화 및이 방법을 사용할 경우의 장기적인 이점을 사용 하 여 사용자를 Office 365에 프로 비전 하도록 준비 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162471"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249199"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365에 대 한 디렉터리 동기화 준비
 
@@ -113,7 +113,7 @@ AD DS 사용자 중 일부에 중복 된 특성이 하나 이상 있는 경우�
   - 값 당 최대 문자 수: 256
   - 특성 값에는 공백이 없어야 합니다.
   - 특성 값은 디렉터리 내에서 고유 해야 합니다.
-  - 유효 하지 않은 \< \> 문자: (); , [ ] "
+  - 유효 하지 않은 \< \> 문자: (); , [ ] " '
     
     잘못 된 문자는 형식 구분 기호 뒤에 있는 문자에 적용 되 고, SMTP:User@contso.com는 허용 되지만 SMTP:user:M@contoso.com는 그렇지 않습니다.
     
@@ -124,7 +124,7 @@ AD DS 사용자 중 일부에 중복 된 특성이 하나 이상 있는 경우�
     
   - 최대 문자 수: 20
   - 특성 값은 디렉터리 내에서 고유 해야 합니다.
-  - 유효 하지 않은 문자: [\ "|, \< \> /: + =;? \* ]
+  - 유효 하지 않은 문자: [\ "|, \< \> /: + =;? \* ']
   - 사용자의 **sAMAccountName** 특성이 유효 하지 않지만 **userPrincipalName** 특성이 유효한 경우 사용자 계정이 Office 365에서 만들어집니다. 
   - **SAMAccountName** 및 **userPrincipalName** 이 둘 다 유효 하지 않은 경우 AD DS **userPrincipalName** 특성을 업데이트 해야 합니다. 
     
@@ -148,7 +148,7 @@ AD DS 사용자 중 일부에 중복 된 특성이 하나 이상 있는 경우�
   - **UserPrincipalName** 특성의 최대 문자 수는 113입니다. 다음과 같이 @ 기호 앞 이나 뒤에 특정 문자를 사용할 수 있습니다. 
   - @ 기호 앞에 있는 사용자 이름의 최대 문자 수: 64
   - @ 기호 뒤에 있는 도메인 이름의 최대 문자 수: 48
-  - 유효 하지 않은 문자: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] "
+  - 유효 하지 않은 문자: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] " '
   - 움라우트도 잘못 된 문자입니다.
   - @ 문자는 각 **userPrincipalName** 값에 필요 합니다. 
   - @ 문자는 각 **userPrincipalName** 값의 첫 번째 문자일 수 없습니다. 
@@ -160,9 +160,9 @@ AD DS 사용자 중 일부에 중복 된 특성이 하나 이상 있는 경우�
 
 Idfix 도구를 사용 하 여 [디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md) 를 참조 하 여 AD DS의 특성에서 오류를 식별 합니다.
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. userPrincipalName 특성을 준비 합니다.
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. userPrincipalName 특성을 준비 합니다.
 
-Active Directory는 조직의 최종 사용자가 **sAMAccountName** 또는 **userPrincipalName**를 사용 하 여 디렉터리에 로그인 할 수 있도록 설계 되었습니다. 마찬가지로 최종 사용자는 회사 또는 학교 계정의 UPN (사용자 계정 이름)을 사용 하 여 Office 365에 로그인 할 수 있습니다. 디렉터리 동기화는 AD SD에 있는 것과 동일한 UPN을 사용 하 여 Azure Active Directory에 새 사용자를 만들려고 시도 합니다. UPN은 전자 메일 주소와 같은 형식으로 지정 됩니다. 
+Active Directory는 조직의 최종 사용자가 **sAMAccountName** 또는 **userPrincipalName**를 사용 하 여 디렉터리에 로그인 할 수 있도록 설계 되었습니다. 마찬가지로 최종 사용자는 회사 또는 학교 계정의 UPN (사용자 계정 이름)을 사용 하 여 Office 365에 로그인 할 수 있습니다. 디렉터리 동기화는 AD DS에 있는 것과 동일한 UPN을 사용 하 여 Azure Active Directory에 새 사용자를 만들려고 시도 합니다. UPN은 전자 메일 주소와 같은 형식으로 지정 됩니다. 
 
 Office 365에서 UPN은 전자 메일 주소를 생성 하는 데 사용 되는 기본 특성입니다. **UserPrincipalName** (AD DS 및 Azure ad) 및 **proxyAddresses** 의 기본 전자 메일 주소를 다른 값으로 설정 하는 것이 쉽습니다. 서로 다른 값으로 설정 하면 관리자와 최종 사용자에 게 혼동이 있을 수 있습니다. 
   

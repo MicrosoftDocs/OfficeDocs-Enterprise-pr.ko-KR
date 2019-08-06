@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 사용자를 관리 하는 데 사용할 도구와 사용자 id를 관리 하는 방법에 따라 사용할 수 있는 작업에 대해 알아봅니다. '
-ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102446"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490741"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 계정 관리 도구
 
@@ -53,7 +53,7 @@ ms.locfileid: "34102446"
   
 - Office 365와 온-프레미스 디렉터리 간에 id를 연결 하려면 온-프레미스 환경 내의 서버에 디렉터리 동기화 소프트웨어를 설치 해야 합니다.
     
-- SSO 옵션을 비롯 한 디렉터리 동기화 옵션을 사용 하려면 온-프레미스 디렉터리 특성이 표준을 충족 해야 합니다. 디렉터리에서 사용 되는 특성에 대 한 구체적인 내용과 필요한 정리 (있는 경우)는 [Office 365에 대 한 디렉터리 동기화를 통한 사용자 프로 비전 준비](prepare-for-directory-synchronization.md)에서 설명 합니다. IdFix를 사용 하 여 디렉터리 정리를 자동화 하는 방법에 대 한 지침은 [Office 365 idfix 도구 설치 및 실행](install-and-run-idfix.md) 을 참조 하세요. 
+- SSO 옵션을 비롯 한 디렉터리 동기화 옵션을 사용 하려면 온-프레미스 디렉터리 특성이 표준을 충족 해야 합니다. 디렉터리에서 사용 되는 특성에 대 한 구체적인 내용과 필요한 정리 (있는 경우)는 [Office 365에 대 한 디렉터리 동기화를 통한 사용자 프로 비전 준비](prepare-for-directory-synchronization.md)에서 설명 합니다. IdFix를 사용 하 여 디렉터리 정리를 자동화 하는 방법에 대 한 지침은 [Office 365 idfix 도구 다운로드 및 실행](install-and-run-idfix.md) 을 참조 하세요. 
     
 - Office 365 계정을 만드는 방법을 계획 합니다.
     

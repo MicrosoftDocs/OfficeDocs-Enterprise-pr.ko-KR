@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '요약: 클라이언트 컴퓨터 및 Office 365 테 넌 트 데이터 센터의 위치에 따라 클라이언트 컴퓨터가 Office 365 테 넌 트에 연결 되는 방식을 설명 합니다.'
-ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068204"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722697"
 ---
 # <a name="client-connectivity"></a>클라이언트 연결
 
@@ -108,7 +108,7 @@ Exchange Online에는 추가 단계가 더 진행 됩니다. 클라이언트 컴
   
 ## <a name="connecting-over-virtual-private-networks-vpns"></a>Vpn (가상 사설망)을 통해 연결
 
-이 연결 유형은 클라이언트 컴퓨터에서 VPN (가상 사설망)을 사용 하는 경우에만 적용 됩니다. 365 실제로는 vpn이 사용 되지만 vpn은 일반적으로 클라이언트 컴퓨터가 Office 365에 연결을 설정 하는 방법을 제어 하는 데 사용 되며, 일반적으로는 환경에 성능이 저하 되기 때문에, 이러한 동작은 중요 합니다.
+이 연결 유형은 클라이언트 컴퓨터에서 VPN (가상 사설망)을 사용 하는 경우에만 적용 됩니다. 365 실제로는 VPN이 사용 되지만 vpn은 일반적으로 클라이언트 컴퓨터가 Office 365에 연결을 설정 하는 방법을 제어 하는 데 사용 되며, 일반적으로는 환경에 성능이 저하 되기 때문에, 이러한 동작은 중요 합니다.
   
 ## <a name="how-does-this-work"></a>작동 방식
 
@@ -130,4 +130,4 @@ Exchange Online에는 추가 단계가 더 진행 됩니다. 클라이언트 컴
 
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365에 대한 네트워크 연결](network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)

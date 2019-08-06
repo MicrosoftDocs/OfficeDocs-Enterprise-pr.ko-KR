@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: FastTrack 배포를 선택하지 않았고 데이터를 Office 365로 마이그레이션할 준비가 되었다면 여기가 시작 지점입니다.
-ms.openlocfilehash: 9efaad6da9723d588cc0e42151bf297b271e4e5c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
+ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070124"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35597554"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>조직 데이터를 Office 365 Enterprise로 마이그레이션
 
@@ -35,9 +35,8 @@ Office 365를 설치하는 데 도움이 필요하면 [FastTrack](https://fasttr
 - [ 조직의 사용자가 자신의 전자 메일, 연락처 및 일정을 마이그레이션](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)할 수 있는 대체 방법을 찾습니다.
 
 ## <a name="migrate-files-and-folders"></a>파일 및 폴더 마이그레이션
-- [콘텐츠를 SharePoint Online으로 마이그레이션합니다](https://support.office.com/article/d8c6ce52-f8a2-4661-97f7-45e49351bdb9). (관리자)
-- [하이브리드 비즈니스용 OneDrive 구성 - 로드맵](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap). (관리자)
-- [SharePoint 온-프레미스 문서 라이브러리 또는 온-프레미스 파일 공유에서 목록이나 파일을 Office 365의 SharePoint 또는 OneDrive로 마이그레이션](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool). (최종 사용자)
+- [SharePoint Online 및 OneDrive로 마이그레이션합니다](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). 관리자
+- [SharePoint Server 하이브리드 구성 로드맵](https://docs.microsoft.com/SharePoint/hybrid/configuration-roadmaps) 관리자
 
 ## <a name="migrate-skype-for-business-users"></a>비즈니스용 Skype 사용자 마이그레이션
 - [비즈니스용 Skype Online으로 마이그레이션](https://technet.microsoft.com/library/jj204969.aspx)합니다. (관리자)
