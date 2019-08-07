@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 또는 Office 2010을 사용하는 경우 이제 업그레이드를 계획해야 합니다. 오래되고, 지원되지 않는 앱과 서버로 인해 불편해하지 마세요. 계획을 시작하려면 다음 리소스를 사용하세요.
-ms.openlocfilehash: 75a266e6b70b5f465770ee507a7b541fb3c1b757
-ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
+ms.openlocfilehash: 444befb11fdbb3578b30f63615b2f6f1e18a3cf9
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613444"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782178"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
@@ -72,7 +72,7 @@ ms.locfileid: "35613444"
 
 가정용 Office 2007 또는 Office 2010을 사용하는 경우 다음 업데이트 옵션을 고려하세요.
 
-- **웹용 Office(이전의 Office Online)를 무료로 사용합니다.** 브라우저에서 Office 파일을 만들고, 보고, 편집하며, 인터넷 액세스를 통해 거의 모든 장치에서 해당 파일에 액세스할 수 있습니다. [웹용 Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)에는 [웹용 Word](http://go.microsoft.com/fwlink/p/?linkid=746664), [웹용 Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [웹용 PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666), [웹용 OneNote](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [Email](http://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](http://go.microsoft.com/fwlink/p/?linkid=746678) 및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)이 있습니다. 시작하려면 [office.com](https://office.com)을 방문하고 [Microsoft 계정](https://account.microsoft.com/account)을 사용하여 로그인합니다. (Microsoft 계정이 없으면 [office.com](https://office.com)에서 만들 수 있습니다.)
+- **브라우저에서 무료로 Office 사용** 브라우저에서 Office 파일을 만들고, 보고, 편집하며, 인터넷 액세스를 통해 거의 모든 장치에서 해당 파일에 액세스할 수 있습니다. [웹용 Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)에는 [웹용 Word](http://go.microsoft.com/fwlink/p/?linkid=746664), [웹용 Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [웹용 PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666), [웹용 OneNote](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [Email](http://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](http://go.microsoft.com/fwlink/p/?linkid=746678) 및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)이 있습니다. 시작하려면 [office.com](https://office.com)을 방문하고 [Microsoft 계정](https://account.microsoft.com/account)을 사용하여 로그인합니다. (Microsoft 계정이 없으면 [office.com](https://office.com)에서 만들 수 있습니다.)
 
 - **가정용 Office 365를 사용해 보기**. [요구사항](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)을 검토하고 [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 또는 [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) 중에서 선택하세요. 평가판을 시작하고 Office 365의 작동 방식을 알아보세요. Office 365를 사용하면 OneDrive의 클라우드 저장 공간을 이용하고 매달 모바일 및 일반 전화로 60분의 Skype 통화가 가능하며 기타 여러 가지 유용한 기능을 이용할 수 있습니다. 자세한 내용은 [Office 365로 최대한 Office 활용](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)을 참조하세요.
 

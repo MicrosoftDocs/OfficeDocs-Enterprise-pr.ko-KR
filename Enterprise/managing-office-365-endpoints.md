@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크는 일반 인터넷 위치에 대한 액세스를 제한하거나 상당한 수의 백홀이나 네트워크 트래픽 처리를 포함합니다. 이러한 네트워크의 컴퓨터에서 Office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자는 Office 365 끝점 목록을 구성하는 FQDN, URL 및 IP 주소 목록을 관리해야 합니다. 네트워크 요청에서 Office 365에 연결할 수 있도록 하려면 이러한 목록을 직접 경로, 프록시 우회 및/또는 방화벽 규칙 및 PAC 파일에 추가해야 합니다.
-ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067174"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782478"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -194,7 +194,7 @@ Office 365 제품군은 주요 서비스 영역으로 나뉩니다. 연결에 �
 |**Exchange** <br/> |Exchange Online 및 Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online 및 비즈니스용 OneDrive <br/> |
 |**비즈니스용 Skype Online 및 Microsoft Teams** <br/> |비즈니스용 Skype Online 및 Microsoft Teams <br/> |
-|**공통** <br/> |Office 365 Pro Plus, Office Online, Azure AD 및 기타 공통 네트워크 끝점 <br/> |
+|**공통** <br/> |Office 365 Pro Plus, 브라우저의 Office, Azure AD 및 기타 공통 네트워크 끝점 <br/> |
 
 기본 인터넷 서비스 외에 기능을 통합하는 데만 사용되는 타사 서비스도 있습니다. 이러한 서비스는 통합에 필요하지만 Office 365 끝점 문서에서는 선택 사항으로 표시됩니다. 이는 끝점에 액세스할 수 없는 경우에도 서비스의 핵심 기능이 계속 작동함을 의미합니다. 필요한 모든 네트워크 끝점에는 필수 특성이 true로 설정됩니다. 선택 사항인 모든 네트워크 끝점에는 필수 특성이 false로 설정되고, 노트 특성은 연결이 차단되었을 때 기대할 수 있는 누락된 기능에 대한 세부 정보를 표시합니다.
   

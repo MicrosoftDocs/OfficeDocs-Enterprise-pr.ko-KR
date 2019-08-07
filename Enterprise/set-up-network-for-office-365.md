@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '요약: Office 365의 네트워킹을 이해하려면 다음 문서를 참조하세요.'
-ms.openlocfilehash: 6fb1d4d441719f61886b9263b30cdf27cbe7eaf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070824"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722687"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Office 365의 네트워크 설정
 
@@ -38,7 +38,7 @@ Office 365의 연결 개요는 다음 문서를 참조하세요.
 
 - [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
 - [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
-- [Office 365에 대한 네트워크 연결](network-connectivity.md)
+- [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 
 성능 향상에 대한 조언은 [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)을 참조하세요.
 

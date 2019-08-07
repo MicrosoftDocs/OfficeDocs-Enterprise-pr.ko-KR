@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '스프레드시트 또는 다른 CSV로 서식이 지정 된 파일의 목록에서 비즈니스용 Office 365에 여러 사용자를 추가하는 방법을 알아봅니다. YouTube에서 Office 365에 계정을 추가하는 방법을 설명하는 비디오를 보세요. 이 프로세스 종료 시, 계정이 있는 각 사용자에게는 Office 365 사서함이 있습니다. '
-ms.openlocfilehash: 5256e67139b50c1804f83e11d00c115b5f419f47
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782428"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198660"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
 
@@ -43,10 +43,8 @@ ms.locfileid: "35782428"
     
     ![관리 센터에서 사용자와 활성 사용자를 차례로 선택합니다.](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. 
-            **자세히** 드롭다운에서 **여러 사용자 가져오기**를 선택합니다.
     
-4. 
+3. 
             **여러 사용자 가져오기** 패널에서 예제 데이터가 입력되어 있는 예제 CSV 파일과 입력되어 있지 않은 예제 CSV 파일 중 선택하여 다운로드할 수 있습니다. 
     
     ![자세히 드롭다운에서 여러 사용자 가져오기 선택](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
@@ -65,16 +63,16 @@ ms.locfileid: "35782428"
   
   ```
 
-5. 상자에 파일 경로를 입력하거나 **찾아보기**를 선택하여 CSV 파일의 위치를 찾은 다음 **확인**을 선택합니다.
+4. 상자에 파일 경로를 입력하거나 **찾아보기**를 선택하여 CSV 파일의 위치를 찾은 다음 **확인**을 선택합니다.
     
     ![CSV 파일이 확인됨](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
     파일에 문제가 있는 경우에는 문제가 창에 표시됩니다. 로그 파일을 다운로드할 수도 있습니다.
     
-6. 
+5. 
             **Set user options**(사용자 옵션 설정) 대화 상자에서는 로그인 상태를 설정하고 모든 사용자에게 할당할 제품 라이선스를 선택할 수 있습니다. 
     
-7. 
+6. 
             **View your result**(결과 보기) 대화 상자에서는 결과를 자신이나 다른 사용자(암호는 일반 텍스트가 됨)에 보내도록 선택할 수 있으며, 만들어진 사용자의 수와 새 사용자에게 할당하기 위해 추가 라이선스를 구입해야 하는지를 알 수도 있습니다. 
     
 ## <a name="watch-the-video"></a>비디오 보기
