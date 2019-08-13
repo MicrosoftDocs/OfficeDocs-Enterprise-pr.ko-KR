@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '요약: Office 365 PowerShell을 사용 하 여 정책으로 비즈니스용 Skype Online 사용자 계정 속성을 관리 합니다.'
-ms.openlocfilehash: ed09b117d2de805e2ae28f05d734ced303db2405
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 4b0d45e89910c7fb1a215f78690cfc2fdb17c472
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782598"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302730"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
 
@@ -34,7 +34,7 @@ ms.locfileid: "35782598"
 2. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
     
 ```
-Import-Module LyncOnlineConnector
+Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession

@@ -3,6 +3,7 @@ title: Office 365 Enterprise 계획
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Office 365 엔터프라이즈 배포를 계획할 리소스에 대 한 액세스 권한을 확보 합니다.
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249476"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302690"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Office 365 Enterprise 계획
 
@@ -38,7 +39,7 @@ Office [365에 대 한 Fasttrack](https://docs.microsoft.com/fasttrack/O365-fast
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>Office 365에 대 한 직접 실행 계획
 
-Office 365을 직접 계획 하려면 다음 영역에 대 한 올바른 디자인 결정 사항을 결정 합니다.
+Office 365을 직접 계획 하려면 다음 영역에 대 한 계획 및 디자인 결정을 단계적으로 진행 합니다.
 
 - Office 365 테 넌 트
 
@@ -56,7 +57,12 @@ Office 365을 직접 계획 하려면 다음 영역에 대 한 올바른 디자�
 
   Office 2007 및 Office 2010 클라이언트 및 서버 제품에 대 한 마이그레이션 정보가 포함 되어 있습니다. [여기](plan-upgrade-previous-versions-office.md)에서 시작 합니다.
 
-구독에 로그인 하 고 [Office 365 서비스에 대 한 배포](deployment-advisors-for-office-365.md)관리자를 사용할 수도 있습니다.
+>[!Note]
+>[Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) 구독에도이 프로세스를 사용할 수 있습니다.
+>
+
+Office 365 구독에 로그인 하 고 [office 365 서비스에 대 한 배포](deployment-advisors-for-office-365.md)관리자를 사용할 수도 있습니다.
+
 
 
 <!--

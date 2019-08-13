@@ -3,14 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>01 년 7 월 1 일 주 2019
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 7/2/2019 | [SharePoint 사이트를 다른 지리적 위치로 이동](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 수정한 날짜 |
-
-
 ## <a name="week-of-july-08-2019"></a>7 월 8 일 주 2019
 
 
@@ -120,3 +112,14 @@
 | 7/29/2019 | [Office 365 미국 정부 GCC 높은 끝점](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 수정한 날짜 |
 | 7/29/2019 | [21Vianet에서 운영하는 Microsoft Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 수정한 날짜 |
 | 7/29/2019 | [Office 365 URL 및 IP 주소 범위](/Office365/Enterprise/urls-and-ip-address-ranges) | 수정한 날짜 |
+
+
+## <a name="week-of-august-05-2019"></a>8 월 05 일 주 2019
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 8/5/2019 | [Office 365에 여러 사용자를 동시에 추가 - 관리자 도움말](/Office365/Enterprise/add-several-users-at-the-same-time) | 수정한 날짜 |
+| 8/5/2019 | [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
+| 8/6/2019 | [Office 365 IP 주소 및 URL 웹 서비스](/Office365/Enterprise/office-365-ip-web-service) | 수정한 날짜 |
+| 8/7/2019 | [Office 365 네트워크 연결 평가](/Office365/Enterprise/assessing-network-connectivity) | 수정한 날짜 |

@@ -3,6 +3,7 @@ title: 조직을 위해 Office 365 Enterprise 배포
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 이러한 개요 단계는 네트워크를 설정 하 고, id를 만들고, Office 365 ProPlus를 배포 하 고, 데이터를 마이그레이션하고, 조직의 사용자가 Office 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249506"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302720"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>조직을 위해 Office 365 Enterprise 배포
 
@@ -77,3 +78,5 @@ Office 365 Enterprise를 직접 배포 하려면 다음 단계를 수행 하는 
 >[!Note]
 >이러한 단계는 Office 365 Enterprise의 [](https://go.microsoft.com/fwlink/?LinkId=627221) 사용자 지정 배포를 시작 하려는 비즈니스 및 비영리에도 적용 됩니다. 
 >
+
+Microsoft 365 Enterprise 구독이 있는 경우 [여기](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)에서 시작 합니다.

@@ -3,7 +3,7 @@ title: Exchange 2010 지원 로드맵 종료
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 Exchange Online으로의 업그레이드를 준비 하거나 Exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067574"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302757"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 지원 로드맵 종료
 
@@ -46,11 +46,15 @@ Exchange 2010이 지원 종료에 도달 하면이를 통해 옵션을 살펴보
 > [!IMPORTANT]
 > 조직에서 사서함을 Office 365로 마이그레이션하도록 결정 하지만, 온-프레미스 Active Directory에서 사용자 계정을 계속 관리 하기 위해 DirSync 또는 Azure AD Connect를 유지 하려는 경우에는 하나 이상의 Exchange 서버를 온-프레미스로 유지 해야 합니다. 마지막 Exchange 서버를 제거 하는 경우 exchange Online에서 Exchange 받는 사람을 변경할 수 없게 됩니다. 이는 기관 원본이 온-프레미스 Active Directory에 남아 있으며 변경 해야 하기 때문입니다. 이 시나리오에서는 다음과 같은 옵션을 사용할 수 있습니다.
 
-- (**권장**) 사서함을 office 365로 마이그레이션하고 2020 업그레이드할 수 있으면 Exchange 2010을 사용 하 여 office 365에 연결 하 고 사서함을 마이그레이션합니다. 다음으로, Exchange 2016를 Exchange 2010로 마이그레이션하고 나머지 Exchange 2010 서버를 해제 합니다.
+- (**권장**) 사서함을 Office 365로 마이그레이션하고 2020 업그레이드할 수 있으면 Exchange 2010을 사용 하 여 Office 365에 연결 하 고 사서함을 마이그레이션합니다. 다음으로, Exchange 2016를 Exchange 2010로 마이그레이션하고 나머지 Exchange 2010 서버를 해제 합니다.
 - 2020 년 1 월 14 일에 사서함 마이그레이션 및 온-프레미스 서버 업그레이드를 완료할 수 없는 경우 온-프레미스 Exchange 2010 서버를 먼저 Exchange 2016로 업그레이드 한 다음 Exchange 2016을 사용 하 여 Office 365에 연결 하 고 사서함을 마이그레이션합니다.
 
 > [!NOTE]
 > 다소 복잡 하 게 인해 온-프레미스 Exchange 2010 서버를 Exchange 2016로 마이그레이션하는 동안 사서함을 Office 365로 마이그레이션할 수도 있습니다.
+
+다음은 Exchange Server 2010에 대 한 지원 종료를 방지 하기 위해 수행할 수 있는 세 가지 경로입니다.
+
+![Exchange Server 2010 업그레이드 경로](./media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 다음 섹션에서는 각 옵션에 대해 자세히 알아봅니다.
 
