@@ -72,16 +72,13 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # Office 365 테스트
-## [클라우드 채택 테스트 랩 가이드](cloud-adoption-test-lab-guides-tlgs.md)
+## [Office 365 테스트](cloud-adoption-test-lab-guides-tlgs.md)
 ## [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
 ## [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
 ### [디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
 ### [다단계 인증](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [페더레이션 ID](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [고급 eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [중요한 파일 보호](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [데이터 분류 및 레이블](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [시뮬레이트된 Azure의 크로스-프레미스 가상 네트워크](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [Office 365 Enterprise 배포](setup-overview-for-enterprises.md)
