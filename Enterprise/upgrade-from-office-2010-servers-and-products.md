@@ -3,7 +3,7 @@ title: Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 �
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
-ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
+ms.openlocfilehash: b75aea4775f2471827f472e726ccae8657a22278
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613454"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491337"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
@@ -42,7 +42,13 @@ ms.locfileid: "35613454"
 
 - Office 365 E3 및 E5와 Microsoft 365 Enterprise에 포함 된 office 365 ProPlus는 로컬 장치에 설치한 Office 클라이언트 응용 프로그램 집합입니다. Microsoft 클라우드에서 지속적으로 새로운 생산성 및 보안 기능을 사용 하 여 업데이트 됩니다.
 
-이 문서를 참조 하 여 옵션을 검토 합니다.
+Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 요약을 보려면 [서비스 포스터의 종료](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)를 다운로드 하세요.
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7이 서비스 종료에 도달 하지 못하도록 하는 데 사용할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 지 원하는 것으로 강조 표시 됩니다.
+
+이 포스터는 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 클라이언트 및 서버 업그레이드 계획
   

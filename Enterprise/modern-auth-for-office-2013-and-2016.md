@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203627"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491297"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
@@ -44,6 +44,9 @@ Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같�
 - 기본적 **** 으로 SharePoint Online에 대해 설정 됩니다. 
     
 - 비즈니스용 **** Skype Online에 기본적으로 설정 됩니다. [최신 인증을 사용 ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)하지 않도록 설정 하려면 비즈니스용 Skype 온라인을 활성화 합니다 .를 참조 하세요.
+
+> [!NOTE]
+> 2017 년 8 월 1 일 **이전** 에 만든 테 넌 트의 경우 기본적으로 Exchange Online 및 비즈니스용 Skype online에 대 한 최신 인증이 **꺼집니다** .
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 클라이언트 앱의 로그인 동작
 

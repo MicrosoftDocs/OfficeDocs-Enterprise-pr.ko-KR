@@ -3,37 +3,6 @@
 
 
 
-## <a name="week-of-july-08-2019"></a>7 월 8 일 주 2019
-
-
-| 게시된 날짜 |항목 제목 | 변경 사항 |
-|------|------------|--------|
-| 7/9/2019 | [조직 데이터를 Office 365 Enterprise로 마이그레이션](/Office365/Enterprise/migrate-data-to-office-365) | 수정한 날짜 |
-| 7/9/2019 | [SharePoint Online의 성능 문제 진단](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | 수정한 날짜 |
-| 7/10/2019 | [Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 계획](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 수정한 날짜 |
-| 7/10/2019 | [Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 수정한 날짜 |
-| 7/10/2019 | [Microsoft 클라우드 IT 아키텍처 리소스](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 수정한 날짜 |
-| 7/10/2019 | [Office 365 관리 센터의 권한 관리에 대 한 정보에 대 한 포인터](/Office365/Enterprise/activate-rms-in-office-365) | 수정한 날짜 |
-| 7/10/2019 | [저속 네트워크에서의 Office 365 사용에 대 한 모범 사례](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online에서 이미지 및 JavaScript 로드 지연](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online에 대한 이미지 최적화](/Office365/Enterprise/image-optimization-for-sharepoint-online) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online의 성능 조정 소개](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online의 축소 및 묶음](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | 수정한 날짜 |
-| 7/10/2019 | [NAT 지원(Office 365)](/Office365/Enterprise/nat-support-with-office-365) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online에 대 한 탐색 옵션](/Office365/Enterprise/navigation-options-for-sharepoint-online) | 수정한 날짜 |
-| 7/10/2019 | [Office 365의 네트워크 및 마이그레이션 계획](/Office365/Enterprise/network-and-migration-planning) | 수정한 날짜 |
-| 7/10/2019 | [Office 365의 네트워크 계획 및 성능 조정](/Office365/Enterprise/network-planning-and-performance) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online 용 페이지 진단 도구 사용](/Office365/Enterprise/page-diagnostics-for-spo) | 수정한 날짜 |
-| 7/10/2019 | [Office 365 성능 조정](/Office365/Enterprise/tune-office-365-performance) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online 성능 조정](/Office365/Enterprise/tune-sharepoint-online-performance) | 수정한 날짜 |
-| 7/10/2019 | [비즈니스용 Skype Online 성능 조정](/Office365/Enterprise/tune-skype-for-business-online-performance) | 수정한 날짜 |
-| 7/10/2019 | [간결한 팝업을 사용 하 여 메일 메시지를 읽을 때 사용 되는 메모리 줄이기](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint Online에서 성능을 향상 시키기 위해 콘텐츠 쿼리 웹 파트 대신 콘텐츠 검색 웹 파트 사용](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | 수정한 날짜 |
-| 7/10/2019 | [SharePoint online에서 개체 캐시 사용](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | 수정한 날짜 |
-| 7/11/2019 | [Project Server 2010 지원 종료 로드맵](/Office365/Enterprise/project-server-2010-end-of-support) | 수정한 날짜 |
-| 7/12/2019 | [SharePoint 2010에서 업그레이드](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 수정한 날짜 |
-
-
 ## <a name="week-of-july-15-2019"></a>7 월 15 일 주 2019
 
 
@@ -123,3 +92,19 @@
 | 8/5/2019 | [Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 합니다.](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 수정한 날짜 |
 | 8/6/2019 | [Office 365 IP 주소 및 URL 웹 서비스](/Office365/Enterprise/office-365-ip-web-service) | 수정한 날짜 |
 | 8/7/2019 | [Office 365 네트워크 연결 평가](/Office365/Enterprise/assessing-network-connectivity) | 수정한 날짜 |
+
+
+## <a name="week-of-august-12-2019"></a>2019 년 8 월 12 일 주
+
+
+| 게시된 날짜 |항목 제목 | 변경 사항 |
+|------|------------|--------|
+| 8/12/2019 | [TLGs (테스트 랩 가이드)를 사용 하 여 Office 365 테스트](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | 수정한 날짜 |
+| 8/12/2019 | [Exchange 2010 지원 로드맵 종료](/Office365/Enterprise/exchange-2010-end-of-support) | 수정한 날짜 |
+| 8/12/2019 | [Office 365 Enterprise 계획](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 수정한 날짜 |
+| 8/12/2019 | [Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | 수정한 날짜 |
+| 8/12/2019 | [조직을 위해 Office 365 Enterprise 배포](/Office365/Enterprise/setup-overview-for-enterprises) | 수정한 날짜 |
+| 8/13/2019 | [Office 365용 Azure ExpressRoute](/Office365/Enterprise/azure-expressroute) | 수정한 날짜 |
+| 8/13/2019 | [Office 365에 대한 외부 Domain Name System 레코드](/Office365/Enterprise/external-domain-name-system-records) | 수정한 날짜 |
+| 8/13/2019 | [SharePoint Online에 대 한 탐색 옵션](/Office365/Enterprise/navigation-options-for-sharepoint-online) | 수정한 날짜 |
+| 8/13/2019 | [sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기](/Office365/Enterprise/use-office-365-cdn-with-spo) | 수정한 날짜 |
