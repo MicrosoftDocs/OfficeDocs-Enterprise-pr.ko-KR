@@ -1,7 +1,7 @@
 ---
 title: 비즈니스용 Skype 및 Exchange에서 하이브리드 최신 인증 제거 또는 사용 안 함
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/3/2017
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - M365-security-compliance
 description: 현재 환경에 적합 하지 않은 것을 찾기 위해 HMA (Hybrid 현대 Authentication)만 사용 하도록 설정한 경우에는 HMA를 사용 하지 않도록 설정할 수 있습니다. 이 문서에서는 이러한 방법을 설명 합니다.
-ms.openlocfilehash: 011e24c546fede11177e49ce8b36599d7d81d121
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 91373adf590ad9a69880de20897795ced23d98b8
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070984"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493325"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>비즈니스용 Skype 및 Exchange에서 하이브리드 최신 인증 제거 또는 사용 안 함
 
