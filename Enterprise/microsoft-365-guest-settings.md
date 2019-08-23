@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365에서 사용할 수 있는 게스트 공유 설정에 대해 알아봅니다.
-ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782278"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493345"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 게스트 공유 설정 참조
 
@@ -72,6 +72,8 @@ Microsoft 365 관리 센터에는 공유 및 Office 365 그룹에 대한 조직 
 |:-----|:-----|:-----|
 |조직 외부의 그룹 구성원이 그룹 콘텐츠에 액세스하도록 허용|켜짐|**켜짐**으로 설정되면 게스트가 그룹 콘텐츠에 액세스할 수 있습니다. **해제**로 설정하면 할 수 없습니다. 게스트 사용자가 Office 365 그룹 또는 Teams와 상호 작용하는 모든 시나리오의 경우 이 설정을 **켜짐**으로 지정해야 합니다.|
 |그룹 소유자가 조직 외부의 사람을 그룹에 추가하도록 허용|켜짐|**켜짐**으로 설정되면 Office 365 그룹 또는 Teams 소유자는 새 게스트를 그룹에 초대할 수 있습니다. 이 기능을 **해제**하면 소유자는 이미 디렉토리에 있는 게스트만 초대할 수 있습니다.|
+
+이러한 설정은 조직 수준에 있습니다. PowerShell을 사용하여 그룹 수준에서 이러한 설정을 변경하는 방법에 대한 자세한 내용은 [특정 그룹에 대한 설정 만들기](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)를 참조하세요.
 
 ## <a name="teams"></a>Teams
 
