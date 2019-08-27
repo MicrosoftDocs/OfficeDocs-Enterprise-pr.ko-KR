@@ -177,7 +177,7 @@
 ### 하이브리드 솔루션
 #### [Azure Active Directory를 사용하여 SharePoint Server 2016 인증](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [온-프레미스 네트워크를 Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
-#### [Azure IaaS에서 디렉터리 비동기화 서버 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+#### [Azure IaaS에서 디렉터리 동기화 서버 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Azure에서 Office 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 ##### [고가용성 페더레이션 인증 1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md)
 ##### [고가용성 페더레이션 인증 2단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
