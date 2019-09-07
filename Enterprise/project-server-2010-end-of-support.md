@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010의 지원 종료는 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491317"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782445"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010의 지원 종료 로드맵
 
@@ -73,7 +73,7 @@ Project Server 2010을 사용 하는 경우 다음과 같은 마이그레이션 
 
 Project Server 2010에서 마이그레이션을 계획할 때 고려해 야 할 사항은 다음과 같습니다.
   
-- **Microsoft 솔루션 공급자가 제공 하는 도움말 보기** -Project Server 2010에서 업그레이드 하는 것은 어려울 수 있으며, 준비 및 계획이 많이 필요 합니다. 이는 설정 하는 것이 아니라 원래 Project Server 2010을 구성 하는 것이 어려운 경우에 특히 유용 합니다. 다행 스럽게도, Project Server 2019로 마이그레이션을 계획 하거나 Project Online으로 마이그레이션할 지 여부에 관계 없이이 작업을 수행할 수 있는 Microsoft 솔루션 공급자가 있습니다. Microsoft solution provider를 검색 하 여 사용자의 마이그레이션에 도움을 받을 수 [](https://go.microsoft.com/fwlink/p/?linkid=841249)있습니다. 
+- **Microsoft 솔루션 공급자가 제공 하는 도움말 보기** -Project Server 2010에서 업그레이드 하는 것은 어려울 수 있으며, 준비 및 계획이 많이 필요 합니다. 이는 설정 하는 것이 아니라 원래 Project Server 2010을 구성 하는 것이 어려운 경우에 특히 유용 합니다. 다행 스럽게도, Project Server 2019로 마이그레이션을 계획 하거나 Project Online으로 마이그레이션할 지 여부에 관계 없이이 작업을 수행할 수 있는 Microsoft 솔루션 공급자가 있습니다. Microsoft solution provider를 검색 하 여 사용자의 마이그레이션에 도움을 받을 수 [있습니다.](https://go.microsoft.com/fwlink/p/?linkid=841249) 
     
 - **사용자 지정 계획** -project server 2019로 마이그레이션하거나 project Online으로 마이그레이션하는 경우 프로젝트 서버 2010 환경에서 작업 하는 많은 사용자 지정 내용이 작동 하지 않을 수 있다는 점을 염두에 두어야 합니다. 버전 간 Project Server 아키텍처에는 큰 차이점이 있으며, 새 버전에서 작동 하도록 지원 되는 필수 운영 체제, 데이터베이스 서버 및 클라이언트 웹 브라우저에는 차이가 있습니다. 새 환경에서 필요에 따라 사용자 지정 내용을 테스트 하거나 다시 작성 하는 방법에 대 한 계획을 수립 합니다. 업그레이드를 계획할 때는 앞으로 이동할 때 특정 사용자 지정이 실제로 필요한 지를 확인 하는 것도 좋은 기회입니다. [Upgrade for current 사용자 지정 계획 만들기 2013]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013) 에서는 업그레이드 시 현재 사용자 지정 내용에 대 한 평가 및 계획에 대 한 몇 가지 일반적인 정보를 제공 합니다. 
     
@@ -200,14 +200,14 @@ Project Server 2016에서 Project Server 2019로 업그레이드 하기 위해 �
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 클라이언트 및 서버 및 Windows 7의 옵션 요약
 
-Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [서비스 포스터 종료](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)를 다운로드 하세요.
+Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7이 서비스 종료에 도달 하지 못하도록 하는 데 사용할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 지 원하는 것으로 강조 표시 됩니다.
+이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7의 지원 종료를 방지 하기 위해 수행할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 통해 강조 표시 됩니다.
 
-이 포스터는 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
-    
+또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
+   
 ## <a name="related-topics"></a>관련 항목
 
 [SharePoint 2010에서 업그레이드](upgrade-from-sharepoint-2010.md)

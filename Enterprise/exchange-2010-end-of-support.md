@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 Exchange Online으로의 업그레이드를 준비 하거나 Exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 94efc456df67017a557b14edcc9348433c862c6a
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491248"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782395"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 지원 로드맵 종료
 
@@ -212,14 +212,14 @@ Exchange 2016에는 이전 버전의 Exchange에 포함 된 모든 기능 및 �
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 클라이언트 및 서버 및 Windows 7의 옵션 요약
 
-Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [서비스 포스터 종료](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)를 다운로드 하세요.
+Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7이 서비스 종료에 도달 하지 못하도록 하는 데 사용할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 지 원하는 것으로 강조 표시 됩니다.
+이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7의 지원 종료를 방지 하기 위해 수행할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 통해 강조 표시 됩니다.
 
-이 포스터는 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
-
+또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
+      
 ## <a name="what-if-i-need-help"></a>도움이 필요한 경우 어떻게 하나요?
 
 Office 365로 마이그레이션하는 경우 Microsoft FastTrack 서비스를 사용할 수 있는 자격이 있을 수 있습니다. FastTrack은 Office 365로의 마이그레이션을 최대한 원활 하 게 수행할 수 있는 모범 사례, 도구 및 리소스를 제공 합니다. 무엇 보다도, 마지막 사서함 마이그레이션에 대 한 모든 방법을 계획 및 디자인에서 안내 하는 실제 지원 엔지니어가 제공 됩니다. FastTrack에 대해 자세히 알아보려면 [Microsoft FastTrack](https://fasttrack.microsoft.com/)을 확인 하세요.
