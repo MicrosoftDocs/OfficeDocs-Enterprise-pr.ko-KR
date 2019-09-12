@@ -1,5 +1,5 @@
 ---
-title: 지리적 위치로 콘텐츠 제한
+title: SharePoint 사이트 콘텐츠를 지리적 위치로 제한
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,14 +10,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 지역 환경에서 SharePoint 사이트를 특정한 지리적 위치로 제한하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 42c382abd254afcf74dd6bdd15e4c69f65b64f85
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9319ed6229acc7cda48cc52b3a27681c53f1359c
+ms.sourcegitcommit: 7bb48195079ce14aabfa0384771b17db0e4908b9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070994"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36828482"
 ---
-# <a name="restrict-content-to-a-geo-location"></a>지리적 위치로 콘텐츠 제한
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>SharePoint 사이트 콘텐츠를 지리적 위치로 제한
 
 상황에 따라 사이트가 이동되지 않도록 하거나 다른 지리적 위치에 있는 사이트의 파일 콘텐츠를 캐싱하지 못하게 하여 사이트가 만들어진 위치에 남아 있도록 사이트와 파일 콘텐츠를 적용할 수 있습니다.
 
