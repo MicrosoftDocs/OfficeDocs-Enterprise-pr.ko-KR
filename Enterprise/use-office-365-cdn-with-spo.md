@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 80f13afb751775010a613be41b7f9fa6dec40c72
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385196"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017337"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -648,7 +648,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN의 비공개 원본에 있는 자산에 대 한 액세스는 SharePoint Online에서 생성 된 토큰에 의해 부여 됩니다. 원본에서 지정한 폴더나 라이브러리에 대 한 액세스 권한이 이미 있는 사용자에 게는 사용자가 자신의 사용 권한 수준에 따라 파일에 액세스할 수 있도록 허용 하는 토큰이 자동으로 부여 됩니다. 이러한 액세스 토큰은 토큰 재생 공격을 방지 하기 위해 생성 된 30 ~ 90 분에 유효 합니다.
 
-액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 개 (edge 인증 __ 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예를 들면 다음과 같습니다.
+액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예를 들면 다음과 같습니다.
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -685,6 +685,8 @@ SharePoint Online에서 제공 되는 참조이 있어야 하므로 CDN Url을 �
 
 Microsoft Edge 브라우저에서 개발자 도구를 사용 하는 방법에 대 한 자세한 내용은 [Microsoft Edge 개발자 도구](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)를 참조 하세요.
 
+CDN이 작동 하는 것을 보여 주는 [패턴 및 사례 YouTube 채널](https://aka.ms/sppnp-videos) 에서 호스팅되는 비디오의 경우 [Cdn 사용을 확인 하 고 최적의 네트워크 연결](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)을 확인 하세요.
+
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>새 원본의 자산을 사용할 수 없는 이유는 무엇 인가요?
 새 원본의 자산은 CDN을 통해 등록이 전파 되 고 자산이 원본에서 CDN 저장소로 업로드 되는 시간을 차지 하므로 즉시 사용할 수 없습니다. CDN에서 자산을 사용할 수 있어야 하는 시간은 자산의 수와 파일 크기에 따라 달라 집니다.
 
@@ -696,7 +698,7 @@ Microsoft Edge 브라우저에서 개발자 도구를 사용 하는 방법에 �
 - */VSTYLE 라이브러리
 - */CLIENTSIDEASSETS
 
-*/Clientsideassets 원본이 누락 되 면 SharePoint Framework 솔루션은 실패 하 고 경고 또는 오류 메시지는 생성 되지 않습니다. **$True**으로 설정 된 CDN 또는 원본이 수동으로 삭제 되었기 때문에이 __ 원본이 누락 될 수 있습니다.
+*/Clientsideassets 원본이 누락 되 면 SharePoint Framework 솔루션은 실패 하 고 경고 또는 오류 메시지는 생성 되지 않습니다. **$True**으로 _설정 된 CDN_ 또는 원본이 수동으로 삭제 되었기 때문에이 원본이 누락 될 수 있습니다.
 
 다음 PowerShell 명령을 사용 하 여 */CLIENTSIDEASSETS 원본이 있는지 확인할 수 있습니다.
 

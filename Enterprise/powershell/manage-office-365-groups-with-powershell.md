@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell에서 Office 365 그룹에 대 한 일반적인 관리 작업을 수행 하는 방법을 알아봅니다.
-ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069024"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017346"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell을 사용하여 Office 365 그룹 관리
 
@@ -122,7 +122,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 다음과 같이 Remove-unifiedgroup cmdlet을 실행 하 여이 설정을 업데이트할 수 있습니다.
 
 ```
-Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
+Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
 ## <a name="add-mailtips-to-the-office-365-groups"></a>Office 365 그룹에 메일 설명 추가

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 23f55e22d4c85dcd168c403f50b35f574be9ac07
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992387"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017316"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>사이트에서 게스트와 공동 작업
 
@@ -72,28 +72,6 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 2. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭 합니다.
 3. SharePoint 용 외부 공유가 **사용자** 또는 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다.
 4. 변경한 경우 **저장**을 클릭 합니다.
-
-
-## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 조직 수준 기본 링크 설정
-
-기본 파일 및 폴더 링크 설정에 따라 파일 또는 폴더를 공유할 때 기본적으로 사용자에 게 표시 되는 링크 옵션이 결정 됩니다. 원하는 경우 공유 하기 전에 다른 옵션 중 하나로 연결 유형을 변경할 수 있습니다.
-
-이 설정은 조직의 모든 팀 및 SharePoint 사이트에 영향을 줍니다.
-
-사용자가 파일 및 폴더를 공유할 때 기본적으로 선택 되는 링크 유형을 선택 합니다.
-
-- **링크를 포함 하는 모든 사용자** 익명 사용자와 많은 파일 및 폴더를 공유할 것으로 예상 되는 경우이 옵션을 선택 합니다. *모든* 링크를 허용 하지만 실수로 익명 공유가 염려 되는 경우에는 다른 옵션 중 하나를 기본값으로 사용 하는 것이 좋습니다. 이 링크 형식은 **모든 사용자** 가 공유 하도록 설정한 경우에만 사용할 수 있습니다.
-- **조직의 사용자만** 조직 내부 사용자와 파일 및 폴더 공유를 사용할 것으로 예상 되는 경우이 옵션을 선택 합니다.
-- **특정 사용자** -게스트와 파일 및 폴더 공유를 많이 수행 해야 하는 경우이 옵션을 고려 하세요. 이 유형의 링크는 게스트에서 작동 하며 인증을 요구 합니다.
- 
-![SharePoint 조직 수준 파일 및 폴더 공유 설정 스크린샷](media/sharepoint-organization-files-folders-sharing-settings.png)
-
-
-SharePoint 조직 수준 기본 링크 설정을 설정 하려면
-
-1. SharePoint 관리 센터에서 공유 페이지로 이동 합니다.
-2. **파일 및 폴더 링크**에서 사용 하려는 기본 공유 링크를 선택 합니다.
-3. 변경한 경우 **저장**을 클릭 합니다.
 
 ## <a name="create-a-site"></a>사이트 만들기
 
