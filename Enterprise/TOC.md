@@ -124,7 +124,7 @@
 #### [디렉터리 동기화 설정](set-up-directory-synchronization.md)
 ### [사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts.md)
 
-## [3. 보안 기능 구현](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. 보안 기능 구현](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 
 ## 4. 클라이언트 소프트웨어 배포
 ### [Office 365 ProPlus 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
@@ -204,8 +204,13 @@
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
 ### 게스트와 공동 작업하기
 #### [게스트 공유 참조](microsoft-365-guest-settings.md)
+#### 게스트 공유 솔루션
+##### [게스트 공동 작업 개요](collaborating-with-people-outside-your-organization.md)
+##### [문서에서 공동 작업](collaborate-on-documents.md)
+##### [사이트에서 공동 작업](collaborate-in-a-site.md)
+##### [팀으로 공동 작업](collaborate-as-a-team.md)
 
-## 디바이스
+## 장치
 ### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [장치 액세스 설정 관리](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
