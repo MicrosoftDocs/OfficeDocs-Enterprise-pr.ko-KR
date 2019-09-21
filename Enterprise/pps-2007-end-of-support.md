@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity 및 SharePoint Server 2007가 지원 종료에 도달 했습니다. 이 문서를 읽으면 BI 솔루션 업그레이드를 계획할 수 있습니다.
-ms.openlocfilehash: 9fde75724bf82a37f98fd98ddda1017198b850dd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 507e6c1707844fed3ecd7cf4d3a69174a10b3dc4
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782538"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067093"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 
@@ -72,8 +72,8 @@ Microsoft 제품 (예: PerformancePoint Server 2007 SP3, ProClarity software 및
   
 |**옵션**|**클라우드 또는 온-프레미스에서**|
 |:-----|:-----|
-|[Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
-|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |모두  <br/> |
+|[Excel](#excel-with-sharepoint-server-on-premises) <br/> |모두  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |모두  <br/> |
 |[보고 서비스](#use-reporting-services-on-premises) <br/> |온-프레미스 전용  <br/> |
 |[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |온-프레미스 전용  <br/> |
    
