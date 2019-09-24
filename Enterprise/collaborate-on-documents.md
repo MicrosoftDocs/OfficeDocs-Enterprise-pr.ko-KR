@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 및 OneDrive에서 문서에 대 한 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: c0c74f2457e9b25b37355c58ed18f120261e3364
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: ebb887e4fc337b4c0e94e85e0a08e87be0e74490
+ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992407"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37108228"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>문서에서 게스트와 공동 작업
 
-SharePoint 또는 OneDrive에서 문서에 대 한 게스트와 공동 작업을 수행 해야 하는 경우 문서에 대 한 공유 링크를 보낼 수 있습니다. 이 문서에서는 SharePoint 및 OneDrive에 대 한 공유 링크를 설정 하는 데 필요한 Microsoft 365 구성 단계를 안내 합니다.
+SharePoint 또는 OneDrive에서 문서에 대 한 게스트와 공동 작업을 수행 해야 하는 경우 문서에 대 한 공유 링크를 보낼 수 있습니다. 이 문서에서는 조직의 필요에 따라 SharePoint 및 OneDrive에 대 한 공유 링크를 설정 하는 데 필요한 Microsoft 365 구성 단계를 안내 합니다.
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 조직 관계 설정
 
@@ -44,7 +44,7 @@ Microsoft 365의 공유는 Azure Active Directory의 조직 관계 설정에 따
 
 SharePoint의 조직 수준 설정에 따라 개별 SharePoint 사이트에서 사용할 수 있는 설정이 결정 됩니다. 사이트 설정은 조직 수준 설정 보다는 더 이상 허용 되지 않습니다. OneDrive에 대 한 조직 수준 설정에 따라 사용자의 OneDrive 라이브러리에서 사용할 수 있는 공유 수준이 결정 됩니다.
 
-SharePiont 및 OneDrive의 경우 익명 사용자와 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 
+SharePoint 및 OneDrive의 경우 익명 사용자와 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 가장 쉽게 공유할 수 있는 방법으로는 게스트 *에서 링크를* 사용 하지 않고 다른 사용자에 게 전달 하는 것이 좋습니다.
 
 SharePoint의 경우 조직의 모든 사이트에서 필요한 가장 관대 한 설정을 선택 합니다.
 
