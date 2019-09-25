@@ -209,6 +209,10 @@
 ##### [문서에서 공동 작업](collaborate-on-documents.md)
 ##### [사이트에서 공동 작업](collaborate-in-a-site.md)
 ##### [팀으로 공동 작업](collaborate-as-a-team.md)
+#### 게스트 공유 보안
+##### [익명 공유](best-practices-anonymous-sharing.md)
+##### [우발적 노출 제한](sharing-limit-accidental-exposure.md)
+##### [보안 게스트 공유 환경](create-a-secure-guest-sharing-environment.md)
 
 ## 장치
 ### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
