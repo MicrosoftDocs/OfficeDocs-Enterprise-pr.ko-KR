@@ -3,7 +3,7 @@ title: 사용자 라이선스를 할당하는 동안 서비스에 대한 액세�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/27/2019
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: ac356e5cc70ef36ad2e45b84f0dcd9d2252c79a4
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782148"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282923"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함
 
@@ -27,6 +27,40 @@ ms.locfileid: "35782148"
   
 Office 365 구독에는 개별 서비스에 대 한 서비스 계획이 제공 됩니다. Office 365 관리자가 사용자에 게 라이선스를 할당할 때 특정 요금제를 사용 하지 않도록 설정 해야 하는 경우가 있습니다. 이 문서의 지침을 사용 하 여 개별 사용자 계정 또는 여러 사용자 계정에 대해 PowerShell을 사용 하 여 특정 서비스 계획을 사용 하지 않도록 설정 하는 동안 Office 365 라이선스를 할당할 수 있습니다.
 
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
+
+먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+  
+
+그런 다음이 명령을 사용 하 여 테 넌 트에 대 한 라이선스 계획을 나열 합니다.
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+다음으로, UPN (사용자 계정 이름)이 라고도 하는 라이선스를 추가할 계정의 로그인 이름을 가져옵니다.
+
+그런 다음 서비스 목록을 컴파일하여 사용 하도록 설정 합니다. 라이선스 계획의 전체 목록 (제품 이름), 포함 된 서비스 계획 및 해당 하는 이름에 대 한 자세한 내용은 [product name and service plan identifier for license](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)을 참조 하십시오.
+
+아래 명령 블록에 대해 사용자 계정 이름, SKU 부품 번호 및 서비스 계획 목록을 입력 하 여 설명 텍스트와 > \< 및 문자를 사용 하도록 설정 하 고 제거 합니다. 그런 다음 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
+  
+```
+$userUPN="<user account UPN>"
+$skuPart="<SKU part number>"
+$serviceList=<double-quoted enclosed, comma-separated list of enabled services>
+$user = Get-AzureADUser -ObjectID $userUPN
+$skuID= (Get-AzureADSubscribedSku  | Where {$_.SkuPartNumber -eq $skuPart}).SkuID
+$SkuFeaturesToEnable = @($serviceList)
+$StandardLicense = Get-AzureADSubscribedSku | Where {$_.SkuId -eq $skuID}
+$SkuFeaturesToDisable = $StandardLicense.ServicePlans | ForEach-Object { $_ | Where {$_.ServicePlanName -notin $SkuFeaturesToEnable }}
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = $StandardLicense.SkuId
+$License.DisabledPlans = $SkuFeaturesToDisable.ServicePlanId
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
