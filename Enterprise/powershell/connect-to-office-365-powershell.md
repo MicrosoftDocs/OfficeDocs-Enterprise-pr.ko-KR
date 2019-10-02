@@ -3,7 +3,7 @@ title: PowerShell Office 365에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 09/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 센터 작업을 수행합니다.'
-ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c5bf5204d8ca1c8db35635f080031838e9fbea03
+ms.sourcegitcommit: 86a740dccf273d679a8938e11e60d2a497c01689
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069094"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328156"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -47,6 +47,9 @@ Office 365 및 관리자 계정, 그룹 및 라이선스에 연결하는 데 사
   - Windows 10, Windows 8.1, Windows 8 또는 Windows 7 서비스팩 1(SP1) 
     
   - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2 SP1
+
+    > [!NOTE]
+    > PowerShell 버전 5.1 이상을 사용해야 합니다. Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2 SP1의 경우, [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616)을 다운로드하고 설치합니다.  
     
     > [!NOTE]
     >Windows 64비트 버전을 사용하세요. 32비트 버전의 Microsoft PowerShell용 Windows Azure Active Directory 모듈은 2014년 10월에 중단되었습니다.
