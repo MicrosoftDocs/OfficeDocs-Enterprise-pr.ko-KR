@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Microsoft가 Office 365에 대해 테 넌 트 격리를 적용 하는 방법을 요약해 서 설명 합니다.
-ms.openlocfilehash: 4859fd5feec50159e71ca2ca8968388c5ab82d64
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067683"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375526"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365의 테 넌 트 격리
 
@@ -34,7 +34,7 @@ ms.locfileid: "37067683"
 - Office 365 서비스에 대 한 각 테 넌 트 내에서 고객 콘텐츠를 논리적으로 격리 하는 기능은 Azure Active Directory 권한 부여 및 역할 기반 액세스 제어를 통해 달성 됩니다.
 - SharePoint Online은 저장소 수준에서 데이터 격리 메커니즘을 제공 합니다.
 - Microsoft는 엄격한 물리적 보안, 배경 조사 및 다중 계층화 된 암호화 전략을 사용 하 여 고객 콘텐츠의 기밀성과 무결성을 보호 합니다. 모든 Office 365 데이터 센터에는 생체 인식 액세스 제어가 있으며, 팜 인쇄에 필요한 대부분의 경우 실제 액세스 권한을 얻게 됩니다. 또한 미국 기반 Microsoft 직원은 고용 프로세스의 일부로 표준 배경 확인을 성공적으로 완료 하는 데 필요 합니다. Office 365의 관리 액세스에 사용 되는 컨트롤에 대 한 자세한 내용은 [office 365 관리 액세스 제어](office-365-administrative-access-controls-overview.md)를 참조 하세요.
-- Office 365에서는 BitLocker, 파일 단위 암호화, TLS (보안 계층 보안) 및 IPsec (인터넷 프로토콜 보안)을 포함 하 여 rest 및 전송 중에 고객 콘텐츠를 암호화 하는 서비스 쪽 기술을 사용 합니다. Office 365의 암호화에 대 한 자세한 내용은 [Data Encryption 기술을 office 365에서](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)참조 하십시오.
+- Office 365에서는 BitLocker, 파일 단위 암호화, TLS (보안 계층 보안) 및 IPsec (인터넷 프로토콜 보안)을 포함 하 여 rest 및 전송 중에 고객 콘텐츠를 암호화 하는 서비스 쪽 기술을 사용 합니다. Office 365의 암호화에 대 한 자세한 내용은 [Data Encryption 기술을 office 365에서](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)참조 하십시오.
 
 위에 나열 된 보호를 함께 사용 하면 물리적 격리 만으로 제공 되는 것과 동등한 위협 방지 및 완화를 제공 하는 강력한 논리적 격리 컨트롤이 제공 됩니다.
 
