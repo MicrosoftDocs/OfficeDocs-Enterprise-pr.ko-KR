@@ -3,7 +3,7 @@ title: Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 10/07/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: '요약: Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.'
-ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
+ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782608"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "37411517"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 
@@ -71,7 +71,11 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사�
     ISO 3166-1 alpha-2 (A2) 두 자리 국가 또는 지역 코드입니다.
     
 추가 매개 변수에 대해서는 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) 을 참조 하십시오.
-  
+
+>[!Note]
+> 메일 속성은 **Othermails** 매개 변수 **** 를 사용 하 여 설정 합니다.
+>
+ 
 사용자 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 합니다.
   
 ```
@@ -85,7 +89,7 @@ Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalNam
 - 사용자 계정 이름 목록을 사전순 ( **sort-Object UserPrincipalName** )으로 정렬 하 고 다음 명령 ( **|** )으로 보냅니다.
     
 - 각 계정에 대 한 사용자 계정 이름 속성 ( **선택-개체 UserPrincipalName** )만 표시 합니다.
-- 한 화면을 한 번에 한 화면씩 **** 표시 합니다.
+- 한 **화면을 한** 번에 한 화면씩 표시 합니다.
     
 이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
   
@@ -186,7 +190,11 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
     ISO 3166-1 alpha-2 (A2) 두 자리 국가 또는 지역 코드입니다.
     
 추가 매개 변수에 대해서는 [get-msoluser](https://msdn.microsoft.com/library/azure/dn194136.aspx) 을 참조 하십시오.
-  
+
+>[!Note]
+> **Mail** 속성은 **-AlternateEmailAddresses** 매개 변수를 사용 하 여 설정 합니다.
+>
+ 
 모든 사용자의 사용자 계정 이름을 보려면 다음 명령을 실행 합니다.
   
 ```
@@ -201,7 +209,7 @@ Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName |
     
 - 각 계정에 대 한 사용자 계정 이름 속성 ( **선택-개체 UserPrincipalName** )만 표시 합니다.
     
-- 한 화면을 한 번에 한 화면씩 **** 표시 합니다.
+- 한 **화면을 한** 번에 한 화면씩 표시 합니다.
     
 이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
   
@@ -260,6 +268,6 @@ Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -Usa
 
 [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
