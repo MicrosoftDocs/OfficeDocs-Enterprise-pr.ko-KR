@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
-ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
-ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
+ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233428"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428075"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Office 365 네트워크 연결 평가
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
   
@@ -116,3 +118,5 @@ Office 365 네트워크 온 보 딩 도구에 대해 자세히 살펴보고 [업
 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 
 [Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)
+
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

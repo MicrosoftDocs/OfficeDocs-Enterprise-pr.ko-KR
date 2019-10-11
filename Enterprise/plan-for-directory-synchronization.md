@@ -5,6 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
+ms.date: 05/20/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
@@ -16,17 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365, Active Directory 도메인 서비스 정리 및 Azure Active Directory Connect 도구를 사용한 디렉터리 동기화에 대해 설명 합니다.
-ms.openlocfilehash: 31fcd8baaccabf5d3f4f0cf47c7573c43f7cd40b
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102501"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428120"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 하이브리드 id 및 디렉터리 동기화
 
-비즈니스 요구 사항과 기술 요구 사항에 따라 하이브리드 id 모델 및 디렉터리 동기화가 Office 365를 채택 하는 엔터프라이즈 고객에 게 가장 일반적으로 선택 됩니다. 디렉터리 동기화를 사용 하면 AD DS (Active Directory 도메인 서비스)에서 id를 관리할 수 있으며, 사용자 계정, 그룹 및 연락처에 대 한 모든 업데이트는 Office 365 구독의 azure AD (azure Active Directory) 테 넌 트와 동기화 됩니다.
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
+비즈니스 요구 사항과 기술 요구 사항에 따라 하이브리드 id 모델 및 디렉터리 동기화가 Office 365를 채택 하는 엔터프라이즈 고객에 게 가장 일반적으로 선택 됩니다. 디렉터리 동기화를 사용 하면 AD DS (Active Directory 도메인 서비스)에서 id를 관리할 수 있으며, 사용자 계정, 그룹 및 연락처에 대 한 모든 업데이트는 Office 365 구독의 azure AD (azure Active Directory) 테 넌 트와 동기화 됩니다.
 
 >[!Note]
 >AD DS 사용자 계정이 처음으로 동기화 되 면 Office 365 라이선스가 자동으로 할당 되지 않으며 전자 메일과 같은 Office 365 서비스에 액세스할 수 없습니다. 이러한 사용자 계정에 개별적으로 또는 동적으로 그룹 구성원을 통해 라이선스를 할당 해야 합니다.
@@ -101,9 +103,9 @@ PTA 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레
   
 디렉터리 정리는 다음 작업에 중점을 두어야 합니다.
 
-- 중복 **Proxyaddress** 및 **UserPrincipalName** 특성을 제거 합니다.
-- 비어 있거나 잘못 된 **userPrincipalName** 특성을 올바른 **UserPrincipalName** 특성으로 업데이트 합니다.
-- **GivenName**, 성 ( **Sn** ), **sAMAccountName**, **displayName**, **mail**, **ProxyAddresses**, **mailNickname**및 **userPrincipalName** 에서 잘못 되었거나 불확실 한 문자 제거 특성만. 특성을 준비 하는 방법에 대 한 자세한 내용은 [Azure Active Directory 동기화 도구를 통해 동기화 되는 특성 목록을](https://go.microsoft.com/fwlink/p/?LinkId=396719)참조 하십시오.
+- 중복 **Proxyaddress** 및 **userPrincipalName** 특성을 제거 합니다.
+- 비어 있거나 잘못 된 **userPrincipalName** 특성을 올바른 **userPrincipalName** 특성으로 업데이트 합니다.
+- **GivenName**, 성 ( **Sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname**및 **userPrincipalName** 에서 잘못 되었거나 불확실 한 문자 제거 특성만. 특성을 준비 하는 방법에 대 한 자세한 내용은 [Azure Active Directory 동기화 도구를 통해 동기화 되는 특성 목록을](https://go.microsoft.com/fwlink/p/?LinkId=396719)참조 하십시오.
 
     > [!NOTE]
     > Azure AD Connect에서 동기화 하는 것과 동일한 특성이 여기에 해당 됩니다. 
@@ -143,4 +145,7 @@ PTA 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레
 
 하이브리드 id를 배포할 준비가 되 면 [사용자 프로 비전 준비를](prepare-for-directory-synchronization.md)참조 하세요.
   
+## <a name="see-also"></a>참고 항목
+
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

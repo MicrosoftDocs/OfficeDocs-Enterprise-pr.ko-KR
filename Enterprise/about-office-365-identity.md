@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
+ms.date: 05/20/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,14 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249466"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428085"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 id 모델 및 Azure Active Directory
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 Office 365에서는 office 365 구독에 포함 되어 있는 Azure Active Directory (Azure AD), 클라우드 기반 사용자 id 및 인증 서비스를 사용 하 여 office 365에 대 한 id 및 인증을 관리 합니다. 조직에 대 한 Office 365 사용자 액세스 및 사용 권한을 관리 하려면 id 인프라를 올바르게 구성 하는 것이 중요 합니다.
 
@@ -97,3 +100,7 @@ Microsoft 365 관리 센터 또는 Windows PowerShell을 사용 하 여 Azure AD
 ## <a name="video-training"></a>동영상 교육
 
 LinkedIn 학습을 통해 가져온 [Office 365: AZURE AD Connect를 사용 하 여 Id 관리](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)코스를 참조 하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

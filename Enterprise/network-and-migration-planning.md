@@ -17,14 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616783"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428145"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 이 문서에는 네트워크 계획 및 테스트에 대 한 정보와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
   
@@ -112,3 +114,6 @@ Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려�
     
 - [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
  
+## <a name="see-also"></a>참고 항목
+
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

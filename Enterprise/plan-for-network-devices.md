@@ -16,17 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '요약: Office 365에 연결 하는 데 사용 되는 네트워크 용량, WAN 가속기 및 부하 분산 장치에 대 한 고려 사항을 설명 합니다.'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722627"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428105"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 서비스에 연결되는 네트워크 장치 계획
 
- **요약**: Office 365에 연결 하는 데 사용 되는 네트워크 용량, WAN 가속기 및 부하 분산 장치에 대 한 고려 사항을 설명 합니다.
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
   
+**요약**: Office 365에 연결 하는 데 사용 되는 네트워크 용량, WAN 가속기 및 부하 분산 장치에 대 한 고려 사항을 설명 합니다.
+
 일부 네트워크 하드웨어에서는 지원 되는 동시 세션 수에 제한이 있을 수 있습니다. 사용자가 2000 명 이상인 조직의 경우 네트워크 장치를 모니터링 하 여 추가 Office 365 서비스 트래픽을 처리할 수 있는지 확인 하는 것이 좋습니다. SNMP (Simple Network Management Protocol) 모니터링 소프트웨어를 통해이 작업을 수행할 수 있습니다.
 
 ||
@@ -71,3 +73,5 @@ Office 365에 연결 하기 위한 방화벽 및 프록시 구성에 대 한 자
 ## <a name="see-also"></a>참고 항목
 
 [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
+
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

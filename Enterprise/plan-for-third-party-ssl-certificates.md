@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '요약: AD FS, Exchange Online 서비스 및 Exchange 웹 서비스를 사용 하는 Exchange 온-프레미스 및 하이브리드, SSO에 필요한 SSL 인증서에 대해 설명 합니다.'
-ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069354"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428096"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365용 타사 SSL 인증서 계획
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
  **요약:** AD FS, Exchange Online 서비스 및 Exchange 웹 서비스를 사용 하는 Exchange 온-프레미스 및 하이브리드, SSO에 필요한 SSL 인증서에 대해 설명 합니다. 
   
@@ -40,7 +43,7 @@ ms.locfileid: "34069354"
     
 - SSO (Active Directory Federation Services) 페더레이션 서버 및 AD FS 페더레이션 서버 프록시 모두에 사용 됩니다.
     
-- 자동 검색, 외부에서 Outlook 사용, Exchange 웹 서비스 등의 Exchange Online 서비스
+- 자동 검색, 외부에서 Outlook 사용, Exchange 웹 서비스 등의 exchange Online 서비스
     
 - Exchange 하이브리드 서버
     
@@ -77,4 +80,6 @@ ms.locfileid: "34069354"
 
 이 문서에서는 인프라에 설치 해야 할 수 있는 인증서에 대해 설명 합니다. Office 365 서버에 설치 된 인증서에 대 한 자세한 내용은 [office 365 인증서 체인](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb)을 참조 하십시오.
   
+## <a name="see-also"></a>참고 항목
 
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

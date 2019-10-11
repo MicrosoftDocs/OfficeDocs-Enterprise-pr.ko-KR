@@ -21,14 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491297"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435362"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 이 문서를 읽으면 Office 2013 및 Office 2016 클라이언트 앱이 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 Office 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
 
@@ -39,11 +41,11 @@ ms.locfileid: "36491297"
 
 Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같습니다.
   
-- 기본적 **** 으로 Exchange Online에 대해 설정 됩니다. 기능을 설정 하거나 해제 하려면 [최신 인증 사용 또는 사용 안 함을](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) 참조 하세요. 
+- 기본적으로 Exchange **Online에 대해 설정 됩니다** . 기능을 설정 하거나 해제 하려면 [최신 인증 사용 또는 사용 안 함을](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) 참조 하세요. 
     
-- 기본적 **** 으로 SharePoint Online에 대해 설정 됩니다. 
+- 기본적으로 SharePoint **Online에 대해 설정 됩니다** . 
     
-- 비즈니스용 **** Skype Online에 기본적으로 설정 됩니다. [최신 인증을 사용 ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)하지 않도록 설정 하려면 비즈니스용 Skype 온라인을 활성화 합니다 .를 참조 하세요.
+- 비즈니스용 Skype **Online에 기본적으로 설정 됩니다** . [최신 인증을 사용 ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)하지 않도록 설정 하려면 비즈니스용 Skype 온라인을 활성화 합니다 .를 참조 하세요.
 
 > [!NOTE]
 > 2017 년 8 월 1 일 **이전** 에 만든 테 넌 트의 경우 기본적으로 Exchange Online 및 비즈니스용 Skype online에 대 한 최신 인증이 **꺼집니다** .
@@ -110,3 +112,5 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
 [Office 365 배포에 대 한 다단계 인증 계획 (Office 365 관리자 용)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [2 단계 인증을 사용 하 여 Office 365에 로그인 (최종 사용자 용)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
