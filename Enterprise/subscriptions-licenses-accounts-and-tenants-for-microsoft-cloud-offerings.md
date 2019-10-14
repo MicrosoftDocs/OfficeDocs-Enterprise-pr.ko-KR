@@ -3,7 +3,7 @@ title: Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/12/2018
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782518"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428135"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 
@@ -31,21 +31,12 @@ ms.locfileid: "35782518"
 Microsoft는 해당 클라우드 제품 간에 일관된 ID 사용 및 요금 청구를 위해 조직, 구독, 라이선스 및 사용자 계정을 포함하는 계층 구조를 제공합니다.
   
 - Microsoft Office 365
-    
-    자세한 내용은 [비즈니스 요금제 및 가격 책정](https://products.office.com/business/compare-office-365-for-business-plans)을 참조하세요.
-    
 - Microsoft Azure
-    
-    자세한 내용은 [Azure 가격 책정](https://azure.microsoft.com/pricing/)을 참조하세요.
-    
 - Microsoft Intune 및 EMS(Enterprise Mobility + Security)
-    
-    자세한 내용은 [Intune 가격 책정](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)을 참조하세요.
-    
 - Microsoft Dynamics 365
-    
-    자세한 내용은 [Dynamics 365 가격 책정](https://dynamics.microsoft.com/)을 참조하세요.
-    
+
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/)는 Office 365, EMS 및 Windows 10 Enterprise를 단일 구독 및 통합된 서비스 세트로 결합합니다.
+
 ## <a name="elements-of-the-hierarchy"></a>계층 구조의 요소
 
 다음은 계층 구조의 요소입니다.
@@ -56,22 +47,23 @@ Microsoft는 해당 클라우드 제품 간에 일관된 ID 사용 및 요금 �
   
 ### <a name="subscriptions"></a>구독
 
-구독은 하나 이상의 Microsoft 클라우드 플랫폼 또는 서비스를 사용하기 위한 Microsoft와의 계약으로, 사용자 단위 라이선스 요금 또는 클라우드 기반 리소스 사용량을 기준으로 요금이 청구됩니다. Microsoft의 SaaS(Software as a Service) 기반 클라우드 제품(Office 365, Intune/EMS 및 Dynamics 365)에는 사용자 단위 라이선스 요금이 청구됩니다. Microsoft의 PaaS(Platform as a Service) 및 IaaS(Infrastructure as a Service) 클라우드 제품(Azure)은 클라우드 리소스 사용량을 기준으로 요금이 청구됩니다.
-  
+구독은 하나 혹은 이상의 Microsoft 클라우드 플랫폼 또는 서비스를 사용하기 위한 Microsoft와의 약정이며 사용자 단위 라이선스 요금이나 클라우드 기반 리소스 소비량을 기준으로 요금이 부과됩니다. 
+
+- Microsoft의 서비스로서의 소프트웨어 (SaaS) 기반 클라우드 서비스는 (Office 365, Intune/EMS, Dynamics 365) 사용자 단위 라이선스 요금을 부과합니다. 
+- Microsoft의 서비스로서의 플랫폼 (PaaS) 및 서비스로서의 인프라 (IaaS) 클라우드 서비스는 (Azure) 클라우드 리소스 소비량을 기반으로 요금을 부과합니다.
+ 
 평가판 구독을 사용할 수도 있지만, 일정 기간이 지나거나 이용 요금이 다 사용된 후에는 구독이 만료됩니다. 평가판 구독을 유료 구독으로 변환할 수 있습니다.
   
-조직에서는 Microsoft의 클라우드 서비스용 구독이 여러 개 있을 수 있습니다. 그림 1에 예가 나와 있습니다.
-  
+조직은 다수의 Microsoft의 클라우드 서비스를 구독할 수 있습니다. 그림 1에서는 여러 개의 Office 365 구독, 1개의 Intune 구독, Dynamics 365 구독 및 여러 개의 Azure 구독이 있는 단일 조직을 보여줍니다.
+
 **그림 1: 여러 개의 조직용 구독 예**
 
 ![Microsoft의 클라우드 서비스용 구독이 여러 개 있는 예제 조직입니다.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
-그림 1에서는 여러 개의 Office 365 구독, 1개의 Intune 구독, Dynamics 365 구독 및 여러 개의 Azure 구독이 있는 단일 조직을 보여줍니다.
-  
 ### <a name="licenses"></a>라이선스
 
-Microsoft의 SaaS 클라우드 서비스의 경우 라이선스가 있으면 특정 사용자 계정이 클라우드 서비스 제품을 사용할 수 있습니다. 구독의 일부로 고정 월별 요금이 청구됩니다. 관리자는 구독의 개별 사용자 계정에 라이선스를 할당합니다. 그림 2의 예에서 Contoso Corporation에는 100개 라이선스가 있는 Office 365 Enterprise E5 구독이 있으므로 최대 100개의 개별 사용자 계정이 Enterprise E5 기능 및 서비스를 사용할 수 있습니다.
+Microsoft의 SaaS 클라우드 제품의 경우 라이선스를 통해 특정 사용자 계정이 클라우드 서비스를 사용할 수 있도록 해줍니다. 구독의 일부로서 구독자에게 고정 월별 요금이 청구됩니다. 관리자는 구독의 개별 사용자 계정에 라이선스를 할당합니다. 예를 들어 그림 2에서 Contoso Corporation는 office 365 Enterprise E5를 구독하고 100개의 라이선스를 보유하고 있어 최대 100개의 개별 사용자 계정을 사용하여 Office 365 Enterprise E5의 기능 및 서비스를 사용할 수 있습니다.
   
 **그림 2: 조직을 위한 SaaS 기반 구독에 포함된 라이선스**
 
@@ -85,7 +77,7 @@ Azure IaaS 기반 가상 머신의 경우 가상 머신 이미지에 설치되�
   
 ### <a name="user-accounts"></a>사용자 계정
 
-모든 Microsoft의 클라우드 서비스에 대한 사용자 계정은 사용자 계정 및 그룹을 포함하는 Azure AD(Active Directory) 테넌트에 저장됩니다. Azure AD 테넌트는 Windows 서버 기반 서비스인 Azure AD Connect를 사용하여 기존 AD DS(Active Directory Domain Services) 계정과 동기화될 수 있습니다. 이것을 DirSync(디렉터리 동기화)라고 합니다.
+모든 Microsoft 클라우드 서비스의 사용자 계정은 사용자 계정 및 그룹이 포함되어 있는 Azure AD (Azure 액티브 디렉터리) 테넌트에 저장됩니다. Azure AD 테넌트는 Windows server 기반의 서비스인 Azure AD Connect를 사용하여 기존의 AD DS (액티브 디렉터리 도메인 서비스) 계정과 동기화될 수 있습니다. 이를 디렉터리 동기화 (DirSync) 라고 합니다.
   
 그림 3은 조직 계정이 포함된 일반적인 Azure 테넌트를 사용하는 조직의 여러 구독 예를 보여줍니다.
   
@@ -129,15 +121,13 @@ Azure AD 테넌트는 계정 및 그룹에 포함된 Azure AD의 특정 인스�
     
   - 일반적인 Azure AD 테넌트에 있는 조직의 사용자 계정
     
-여러 Microsoft 클라우드 서비스 구독이 공통 ID 공급자의 역할을 하는 동일한 Azure 테넌트를 사용할 수 있습니다. 온-프레미스 AD DS(Active Directory Domain Services)의 동기화된 계정을 포함하는 중앙 Azure AD 테넌트는 조직에 클라우드 기반 IDaaS(Identity as a Service)를 제공합니다. 이 내용은 그림 4에 나와 있습니다.
+다수의 Microsoft 클라우드 서비스의 구독은 공통 ID제공자 역할을 하는 동일한 Azure AD 테넌트를 사용할 수 있습니다. 온-프레미스 AD DS의 동기화된 계정을 포함하는 중앙 Azure AD 테넌트는 조직에 클라우드 기반의 서비스로서의 ID (IDaaS)를 제공합니다. 
   
 **그림 4: 조직에 대한 동기화된 온-프레미스 계정 및 IDaaS**
 
 ![조직에 대한 IDaaS(Identity as a Service)입니다.](media/Subscriptions/Subscriptions-Fig4.png)
   
 그림 4는 일반적인 Azure AD 테넌트가 Azure AD Domains Services를 사용하는 Microsoft의 SaaS 클라우드 서비스, Azure PaaS 앱 및 Azure IaaS의 가상 머신에서 사용되는 방법을 보여 줍니다. Azure AD Connect는 온-프레미스 AD DS(Active Directory Domain Services) 포리스트를 Azure AD 테넌트와 동기화합니다.
-  
-Microsoft 클라우드 제품 간의 ID 통합에 대한 자세한 내용은 [Microsoft Cloud Identity for Enterprise Architects](https://aka.ms/cloudarchidentity)를 참조하세요.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>여러 Microsoft 클라우드 서비스에 대한 구독 결합
 
@@ -168,15 +158,17 @@ Office 365 구독과 동일한 조직 및 Azure 테넌트를 갖는 Azure 구독
     
 3. **구독 추가** 페이지에서 서비스를 선택하고 결제 정보 및 계약을 완료합니다.
     
-Azure 및 Office 365 구독으로 따로 구입했으며 Azure 구독에서 Office 365 Azure AD 테넌트에 액세스하려는 경우 [Azure Active Directory 테넌트에 Azure 구독을 연결하거나 추가 Azure 구독에 연결](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)의 지침을 참조하세요.
+Azure 및 Office 365 구독으로 따로 구입했으며 Azure 구독에서 Office 365 Azure AD 테넌트에 액세스하려는 경우 [Azure Active Directory 테넌트에 기존의 Azure 구독을 추가](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)의 지침을 참조하세요.
  
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   
-[클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
-  
 [Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [하이브리드 솔루션](hybrid-solutions.md)
+
+## <a name="next-step"></a>다음 단계
+
+[Office 365 네트워크 연결성 평가하기](assessing-network-connectivity.md) 
   
