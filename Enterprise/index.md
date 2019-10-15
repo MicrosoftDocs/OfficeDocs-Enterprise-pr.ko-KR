@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490731"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067113"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365에서는 공동 작업, 보안 및 규정 준수, 이동성 및 인텔리전스와 분석을 사용하는 강력한 온라인 클라우드 서비스를 제공합니다. 이 페이지에서는 엔터프라이즈 조직에서 Office&nbsp;365 서비스를 배포, 구성 및 관리하는 관리자 및 IT 전문가를 위한 지침의 링크를 제공합니다.</p>
@@ -292,6 +292,8 @@ ms.locfileid: "34490731"
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
                         <p><a href="https://docs.microsoft.com/microsoft-365">Microsoft 365에 대해 자세히 알아보기.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/compliance/">Office 365 준수에 대해 자세히 알아보십시오.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/">Microsoft 365 보안에 대해 자세히 알아보십시오.</a></p>
                     </div>
                 </div>
             </div>
