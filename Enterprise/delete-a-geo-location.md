@@ -17,27 +17,27 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/15/2019
 ms.locfileid: "34067954"
 ---
-# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a><span data-ttu-id="4ec49-103">Office 365 Multi-Geo에서 위성 위치를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-103">Delete a satellite location in Office 365 Multi-Geo</span></span>
+# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a><span data-ttu-id="4309d-103">Office 365 Multi-Geo에서 위성 위치를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-103">Delete a satellite location in Office 365 Multi-Geo</span></span>
 
-<span data-ttu-id="4ec49-104">위성 위치가 더 이상 필요하지 않으면 SharePoint 관리 센터를 사용하여 테넌트에서 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-104">If you no longer need a satellite location, you can delete it from your tenant from the SharePoint admin center.</span></span>
+<span data-ttu-id="4309d-104">위성 위치가 더 이상 필요하지 않으면 SharePoint 관리 센터를 사용하여 테넌트에서 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-104">If you no longer need a satellite location, you can delete it from your tenant from the SharePoint admin center.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="4ec49-105">위성 위치의 모든 사용자 데이터가 영구적으로 삭제됩니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-105">All user data in the satellite location will be permanently deleted.</span></span> <span data-ttu-id="4ec49-106">여기에는 OneDrive for Business의 모든 콘텐츠, SharePoint 사이트 및 Office 365 그룹 사서함을 포함한 Exchange 사서함이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-106">This includes all OneDrive for Business content, SharePoint sites and Exchange mailboxes including Office 365 Group mailboxes.</span></span> <span data-ttu-id="4ec49-107">위성 위치를 삭제하기 전에 데이터를 다른 위성 위치 또는 중앙 위치로 마이그레이션 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-107">You must migrate any data to another satellite location or the central location before you delete the satellite location.</span></span> <span data-ttu-id="4ec49-108">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-108">This action cannot be undone.</span></span>
+> <span data-ttu-id="4309d-105">위성 위치의 모든 사용자 데이터가 영구적으로 삭제됩니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-105">All user data in the satellite location will be permanently deleted.</span></span> <span data-ttu-id="4309d-106">여기에는 OneDrive for Business의 모든 콘텐츠, SharePoint 사이트 및 Office 365 그룹 사서함을 포함한 Exchange 사서함이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-106">This includes all OneDrive for Business content, SharePoint sites and Exchange mailboxes including Office 365 Group mailboxes.</span></span> <span data-ttu-id="4309d-107">위성 위치를 삭제하기 전에 데이터를 다른 위성 위치 또는 중앙 위치로 마이그레이션 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-107">You must migrate any data to another satellite location or the central location before you delete the satellite location.</span></span> <span data-ttu-id="4309d-108">이 작업은 취소할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-108">This action cannot be undone.</span></span>
 
-<span data-ttu-id="4ec49-109">전역 관리자만 위성 위치를 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-109">Only global administrators can delete satellite locations.</span></span>
+<span data-ttu-id="4309d-109">전역 관리자만 위성 위치를 삭제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-109">Only global administrators can delete satellite locations.</span></span>
 
 ![지리적 위치 삭제 UI가 표시된 다중 지역 관리 센터의 스크린샷](media/multi-geo-delete-satellite-location.png)
 
-<span data-ttu-id="4ec49-111">위성 위치를 삭제하려면</span><span class="sxs-lookup"><span data-stu-id="4ec49-111">To delete a satellite location</span></span>
+<span data-ttu-id="4309d-111">위성 위치를 삭제하려면</span><span class="sxs-lookup"><span data-stu-id="4309d-111">To delete a satellite location</span></span>
 
-1. <span data-ttu-id="4ec49-112">SharePoint 관리 센터를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-112">Open the SharePoint admin center</span></span>
+1. <span data-ttu-id="4309d-112">SharePoint 관리 센터를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-112">Open the SharePoint admin center</span></span>
 
-2. <span data-ttu-id="4ec49-113">**지리적 위치** 탭으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-113">Navigate to the **Geo locations** tab.</span></span>
+2. <span data-ttu-id="4309d-113">**지리적 위치** 탭으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-113">Navigate to the **Geo locations** tab.</span></span>
 
-3. <span data-ttu-id="4ec49-114">지도에서 삭제하려는 지리적 위치를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-114">On the map, click the geo location that you want to delete.</span></span>
+3. <span data-ttu-id="4309d-114">지도에서 삭제하려는 지리적 위치를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-114">On the map, click the geo location that you want to delete.</span></span>
 
-4. <span data-ttu-id="4ec49-115">**위치 삭제**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-115">Click **Delete location**.</span></span>
+4. <span data-ttu-id="4309d-115">**위치 삭제**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-115">Click **Delete location**.</span></span>
 
-5. <span data-ttu-id="4ec49-116">확인 확인란을 선택하여 삭제를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-116">Confirm the deletion by selecting the confirmation check boxes.</span></span>
+5. <span data-ttu-id="4309d-116">확인 확인란을 선택하여 삭제를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-116">Confirm the deletion by selecting the confirmation check boxes.</span></span>
 
-6. <span data-ttu-id="4ec49-117">**삭제**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="4ec49-117">Click **Delete**.</span></span>
+6. <span data-ttu-id="4309d-117">**삭제**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="4309d-117">Click **Delete**.</span></span>
