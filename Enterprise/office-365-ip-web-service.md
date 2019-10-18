@@ -601,7 +601,7 @@ IP 주소 및 URL 변경 사항이 웹 서비스에 게시될 때 몇 가지 방
 
 - Microsoft Flow 솔루션을 사용하려면 [Microsoft Flow 사용하여 Office 365 IP 주소 및 URL 변경 내용에 대한 전자 메일 받기](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)를 참조하세요.
 - ARM 서식 파일을 사용하여 Azure Logic 앱을 배포하려면 [Office 365 업데이트 알림(v1.1)](https://aka.ms/ipurlws-updates-template)을 참조하세요.
-- PowerShell을 사용하여 알림 스크립트를 직접 작성하려면 [Send-MailMessage](https://docs.microsoft.com/ko-KR/powershell/module/microsoft.powershell.utility/send-mailmessage)를 참조하세요.
+- PowerShell을 사용하여 알림 스크립트를 직접 작성하려면 [Send-MailMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage)를 참조하세요.
 
 ## <a name="exporting-a-proxy-pac-file"></a>프록시 PAC 파일 내보내기
 

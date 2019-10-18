@@ -53,7 +53,7 @@ PAC 파일은 그림 1의 점 1에서 웹 브라우저에 배포됩니다. 중�
 
 별도로 최적화 카테고리 끝점에 대한 직접 라우팅만을 선택한 경우 추가 처리를 건너뛰려면 프록시 서버에 보내는 필수 범주 끝점을 프록시 서버에 나열해야 합니다. 예를 들어, SSL 차단 및 검사 및 프록시 인증은 최적화 및 허용 범주 끝점과 호환되지 않습니다. 프록시 서버는 그림 1의 점 2입니다.
 
-일반적인 구성은 프록시 서버에 접속하는 Office 365 네트워크 트래픽의 대상 IP 주소에 대해 프록시 서버의 모든 아웃 바운드 트래픽을 처리하지 않고 허용하는 것입니다. SSL 차단 및 검사 문제에 대한 자세한 내용은 [Office 365 트래픽에서 타사 네트워크 장치 또는 솔루션 사용](https://support.microsoft.com/ko-KR/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)을 참조하세요.
+일반적인 구성은 프록시 서버에 접속하는 Office 365 네트워크 트래픽의 대상 IP 주소에 대해 프록시 서버의 모든 아웃 바운드 트래픽을 처리하지 않고 허용하는 것입니다. SSL 차단 및 검사 문제에 대한 자세한 내용은 [Office 365 트래픽에서 타사 네트워크 장치 또는 솔루션 사용](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)을 참조하세요.
 
 Get-PacFile 스크립트가 생성할 수 있는 두 가지 유형의 PAC 파일이 있습니다.
 
@@ -157,7 +157,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 프록시 서버는 위 예제에서 serviceA.office.com인 초기 URL의 유효성을 검사하며 이 URL은 Office 365 게시에 포함되어 있습니다. 프록시 서버는 해당 URL의 DNS 확인을 IP 주소로 요청하고 IP_1을 다시 수신합니다. 중간 CNAME 리디렉션 레코드에 대한 유효성 검사를 수행하지 않습니다.
 
-간접 Office 365 FQDN을 기반으로하는 하드 코딩된 구성 또는 허용 목록 지정은 권장되지 않고 Microsoft에서 지원하지 않으며 고객 연결 문제를 일으키는 것으로 알려져 있습니다. CNAME 리디렉션을 차단하거나 Office 365 DNS 항목을 잘못 해석하는 DNS 솔루션은 DNS 재귀를 사용하도록 설정된 DNS 조건 전달(직접 사용되는 Office 365 FQDN으로 범위 지정)을 통해 해결할 수 있습니다. 많은 타사 네트워크 경계 제품은 [Office 365 IP 주소 및 URL 웹 서비스](https://docs.microsoft.com/ko-KR/office365/enterprise/office-365-ip-web-service)를 사용하여 구성에 허용 목록에 포함된 권장 Office 365 끝점을 기본적으로 통합합니다.
+간접 Office 365 FQDN을 기반으로하는 하드 코딩된 구성 또는 허용 목록 지정은 권장되지 않고 Microsoft에서 지원하지 않으며 고객 연결 문제를 일으키는 것으로 알려져 있습니다. CNAME 리디렉션을 차단하거나 Office 365 DNS 항목을 잘못 해석하는 DNS 솔루션은 DNS 재귀를 사용하도록 설정된 DNS 조건 전달(직접 사용되는 Office 365 FQDN으로 범위 지정)을 통해 해결할 수 있습니다. 많은 타사 네트워크 경계 제품은 [Office 365 IP 주소 및 URL 웹 서비스](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service)를 사용하여 구성에 허용 목록에 포함된 권장 Office 365 끝점을 기본적으로 통합합니다.
 
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft 도메인 이름에 nsatc.net 또는 akadns.net과 같은 이름이 표시되는 이유는 무엇인가요?
 <a name="bkmk_akamai"> </a>
