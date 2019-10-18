@@ -45,7 +45,7 @@ ms.locfileid: "34068474"
 
 지역 관리자 권한으로 그룹을 제거하려면 다음을 실행하세요. `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-모든 보안 그룹이 그룹 별칭이 있는 것은 아닙니다. 별칭이 없는 보안 그룹을 추가하려면 [Get-MsolGroup](https://docs.microsoft.com/ko-KR/powershell/module/msonline/get-msolgroup)을 실행하여 그룹 목록을 검색하고 보안 그룹의 ObjectID를 찾은 다음 다음을 실행합니다.
+모든 보안 그룹이 그룹 별칭이 있는 것은 아닙니다. 별칭이 없는 보안 그룹을 추가하려면 [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup)을 실행하여 그룹 목록을 검색하고 보안 그룹의 ObjectID를 찾은 다음 다음을 실행합니다.
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -59,4 +59,4 @@ ObjectID를 사용하여 그룹을 제거하려면 다음을 실행하세요. `R
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[보안 그룹에 대한 별칭(MailNickName) 설정](https://docs.microsoft.com/ko-KR/powershell/module/azuread/set-azureadgroup)
+[보안 그룹에 대한 별칭(MailNickName) 설정](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
