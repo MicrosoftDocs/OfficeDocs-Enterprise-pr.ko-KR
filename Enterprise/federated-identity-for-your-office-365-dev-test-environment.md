@@ -3,7 +3,7 @@ title: Office 365 개발/테스트 환경용 페더레이션 ID
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 09/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '요약: Office 365 개발/테스트 환경에 대한 페더레이션 인증을 구성합니다.'
-ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
-ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
+ms.openlocfilehash: c2cb4bcd9085cd8dd91df5de2ad936076d11432c
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37046993"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37207395"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 페더레이션 ID
 
@@ -189,13 +189,10 @@ Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPA
 다음으로, [Azure Portal](http://portal.azure.com)에서 CORP\\User1 자격 증명을 사용하여 DC1 가상 머신에 연결하고 관리자 수준 Windows PowerShell 명령 프롬프트에서 다음 명령을 실행합니다.
   
 ```
-$testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
-$testZoneFile= $testZone + ".dns"
-Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
-Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
+Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
+Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-
-이러한 명령은 Azure Virtual Network의 가상 머신이 ADFS1의 개인 IP 주소로 확인될 수 있는 페더레이션 서비스에 대한 DNS A 레코드를 만듭니다.
+이러한 명령은 Azure 가상 네트워크의 가상 머신이 ADFS1의 개인 IP 주소로 내부 페더레이션 FQDN을 귀착할 수 있도록 내부 DNS A 기록을 만듭니다.
   
 구성 결과는 다음과 같습니다.
   
@@ -414,7 +411,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. 로그인 자격 증명으로 **user1@**\<1단계에서 만든 도메인>을 입력합니다. 
     
-    예를 들어, 테스트 도메인이 **testlab.contoso.com**이면 **user1@testlab.contoso.com**을 입력합니다. Tab 키를 누르거나 Office 365에서 사용자를 자동으로 리디렉션하도록 합니다.
+    예를 들어, 테스트 도메인이 **testlab.contoso.com**이면 user1@testlab.contoso.com을 입력합니다. Tab 키를 누르거나 Office 365에서 사용자를 자동으로 리디렉션 하도록 합니다.
     
     이제 **연결이 비공개가 아닙니다.** 페이지가 표시됩니다. 데스크톱 컴퓨터에서 유효한지 확인할 수 없는 자체 서명된 인증서를 ADFS1에 설치했으므로 이 메시지가 표시되는 것입니다. 페더레이션 인증의 프로덕션 배포에서 신뢰할 수 있는 인증 기관에서 발급한 인증서를 사용하면 사용자에게 이 페이지가 표시되지 않습니다.
     
