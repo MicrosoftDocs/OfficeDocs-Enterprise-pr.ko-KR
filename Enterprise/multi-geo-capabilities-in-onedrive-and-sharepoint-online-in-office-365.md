@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online의 Multi-Geo 기능으로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: 9f430c18150eb60975e0866ca318d90b78f19280
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 99c265da9c3ace0c2c415289b8db52f97d51b985
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069974"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37046079"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 및 SharePoint Online의 Multi-Geo 기능
 
@@ -34,7 +34,7 @@ OneDrive 및 SharePoint Online의 Multi-Geo 기능을 사용하여 SharePoint �
 
 SharePoint Online 관리 센터에서 Multi-Geo 기능 관리를 이용할 수 있습니다. 자세한 내용은 [해당 블로그 게시물](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)을 참조하세요.
 
-사용자가 SharePoint 그룹 연결 사이트를 생성할 때 사용자의 PDL은 사이트 및 관련 그룹 사서함이 생성되는 지리적 위치를 결정하는 데 사용됩니다. (사용자의 PDL 값이 설정되지 않았거나 위성 위치로 구성되지 않은 지리적 위치로 설정된 경우 사이트 및 사서함은 중앙 위치에 생성됩니다.)
+사용자가 다중 지역 환경에서 SharePoint 그룹 연결 사이트를 생성할 때 사용자의 PDL은 사이트 및 관련 그룹 사서함이 생성되는 지리적 위치를 결정하는 데 사용됩니다. (사용자의 PDL 값이 설정되지 않았거나 위성 위치로 구성되지 않은 지리적 위치로 설정된 경우 사이트 및 사서함은 중앙 위치에 생성됩니다.)
 
 Exchange, OneDrive 및 SharePoint를 제외한 Office 365 서비스는 Multi-Geo가 아닙니다. 하지만 이러한 서비스에 의해 생성된 Office 365 그룹은 생성자의 PDL 스탬프가 지정되고, Exchange 그룹 사서함 및 SharePoint O365 그룹 사이트는 해당 지리적 위치에 프로비저닝됩니다. 
 
