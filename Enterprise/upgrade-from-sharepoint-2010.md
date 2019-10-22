@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010에 대 한 지원 종료 및 SharePoint Server 2010은 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782435"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616131"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
@@ -41,7 +41,7 @@ SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 
 즉, 보안 패치/수정 사항을 비롯 하 여 제품에 대 한 업데이트, 패치 또는 수정 사항이 더 이상 제공 되지 않으며, Microsoft Support에서 해당 지원 노력을 보다 최신 버전으로 완전히 변경할 수 있게 됩니다. SharePoint Server 2010에 대 한 지원이 종료 되 면 영업 기회를 활용 하 여 제품을 업그레이드 하기 전에 더 이상 필요 하지 않은 데이터를 트리밍 하거나 중요 한 데이터를 마이그레이션하는 것을 고려해 야 합니다.
   
 > [!NOTE]
-> 일반적으로 소프트웨어 수명 주기는 제품 초기 릴리스 날짜 로부터 10 년 동안 지속 됩니다. 다음 버전의 소프트웨어 또는 Office 365 마이그레이션 (또는 둘 다)으로 업그레이드 하는 데 도움을 받을 수 있는 [Microsoft 솔루션 공급자](https://go.microsoft.com/fwlink/?linkid=841249) 를 검색할 수 있습니다. 중요 기본 기술에 대 한 지원 종료에 대 한 자세한 내용은 물론, 특히 SharePoint에서 사용 중인 SQL Server 버전을 알고 있어야 합니다. 
+> 일반적으로 소프트웨어 수명 주기는 제품 초기 릴리스 날짜 로부터 10 년 동안 지속 됩니다. 다음 버전의 소프트웨어 또는 Office 365 마이그레이션 (또는 둘 다)으로 업그레이드 하는 데 도움이 되는 [Microsoft 솔루션 공급자](https://go.microsoft.com/fwlink/?linkid=841249) 를 검색할 수 있습니다. 중요 기본 기술에 대 한 지원 종료에 대 한 자세한 내용은 물론, 특히 SharePoint에서 사용 중인 SQL Server 버전을 알고 있어야 합니다. 제품 수명 주기를 자세히 알아보려면 [고정 수명 주기 정책을](https://support.microsoft.com/help/14085) 참조 하세요.
   
 ## <a name="what-are-my-options"></a>내 옵션 이란?
 
@@ -118,7 +118,7 @@ Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>SharePoint Server 온-프레미스 업그레이드
 
-최신 버전의 SharePoint 온-프레미스 제품 (SharePoint Server 2016) 중에서 SharePoint server 업그레이드는 *순차적*으로 수행 되어야 하며, 따라서 sharepoint server 2010에서 sharepoint server 2016으로 직접 업그레이드할 방법이 없습니다. 
+최신 버전의 SharePoint 온-프레미스 제품 (SharePoint Server 2019) 중에서 SharePoint server 업그레이드는 *순차적*으로 진행 되어야 하며,이는 sharepoint server 2010에서 sharepoint server 2016로 또는 sharepoint 2019로 업그레이드할 방법이 없음을 의미 합니다. 곧바로. 
   
 |||
 |:-----|:-----|
@@ -168,7 +168,7 @@ SharePoint 2010에서 SharePoint Server 2016로의 전체 경로를 따르도록
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Sharepoint Online과 SharePoint Server 온-프레미스 간에 SharePoint 하이브리드 솔루션을 만듭니다.
 
-다른 옵션 (일부 마이그레이션 요구에 대해 온-프레미스 및 온라인 환경 모두에서 가장 적합 함)이 하이브리드 인 경우 sharepoint Server 2013 또는 2016 팜을 sharepoint Online에 연결 하 여 sharepoint 하이브리드를 만들 수 있습니다. [sharepoint 하이브리드 솔루션에 대해 알아보기 ](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
+다른 옵션 (일부 마이그레이션 요구에 대해 온-프레미스 및 온라인 환경 모두에서 가장 적합 함)이 하이브리드 인 경우 sharepoint Server 2013 또는 2016 또는 2019 팜을 sharepoint Online에 연결 하 여 sharepoint 하이브리드를 만들 수 있습니다. [sharepoint 하이브리드에 대해 자세히 알아보기 솔루션](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
 하이브리드 SharePoint Server 팜이 마이그레이션 목표 인지를 결정 한 경우 온라인으로 이동 해야 하는 사이트와 사용자 및 온-프레미스를 유지 해야 하는 위치를 계획 해야 합니다. SharePoint Server 팜의 콘텐츠를 검토 하 고 순위를 결정 하는 것 (회사에 대 한 높은, 중간 또는 낮은 영향 확인)은이 결정을 내리는 데 도움이 될 수 있습니다. SharePoint Online과 공유 해야 하는 경우에는 (a) 로그인을 위한 사용자 계정, 그리고 (b) SharePoint Server 검색 인덱스--사이트가 사용 되는 방식을 확인할 때까지 명확 하지 않을 수 있습니다. 나중에 회사에서 모든 콘텐츠를 SharePoint Online으로 마이그레이션하는 경우 나머지 모든 계정 및 데이터를 온라인으로 이동 하 고 온-프레미스 팜을 해제할 수 있으며 SharePoint 팜의 관리/관리가 Office 365를 통해 수행 됩니다. 이 시점부터의 콘솔
   
