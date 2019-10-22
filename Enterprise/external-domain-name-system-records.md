@@ -3,7 +3,7 @@ title: Office 365에 대한 외부 Domain Name System 레코드
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '요약: Office 365 배포를 계획할 때 사용할 DNS 레코드 목록을 참조합니다.'
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387055"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616141"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365에 대한 외부 Domain Name System 레코드
 
@@ -45,7 +45,7 @@ SPF 및 MX 레코드를 파악하기 어려운 경우도 종종 있습니다. SP
 ||||
 |:-----|:-----|:-----|
 |**DNS 레코드** <br/> |**용도** <br/> |**사용할 값** <br/> |
-|**CNAME** <br/> **(제품군)** <br/> |Office 365에서 올바른 ID 플랫폼으로 인증을 연결하는 데 사용됩니다. [추가 정보](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **참고:** CNAME은 21Vianet에서 운영되는 Office 365에만 적용됩니다.   |**별칭:** msoid  <br/> **대상:** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(제품군)** <br/> |Office 365에서 올바른 ID 플랫폼으로 인증을 연결하는 데 사용됩니다. [추가 정보](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **참고:** CNAME은 21Vianet에서 운영되는 Office 365에만 적용됩니다.   |**별칭:** msoid  <br/> **대상:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(도메인 확인)** <br/> |Office 365에서 사용자의 도메인을 확인하는 용도로만 사용됩니다. 그 밖의 항목에는 영향을 주지 않습니다.  <br/> |**호스트:** @(또는 일부 DNS 호스팅 공급자의 경우 도메인 이름)  <br/> **TXT 값:** Office 365에서 제공되는 _텍스트 문자열 _  <br/> Office 365 **도메인 설정** 마법사는 이 레코드를 만드는 데 사용하는 값을 제공합니다.  <br/> |
 
 
