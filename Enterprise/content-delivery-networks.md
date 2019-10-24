@@ -3,7 +3,7 @@ title: 콘텐츠 배달 네트워크
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 10/22/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 Office 365에서 CDNs (콘텐츠 배달 네트워크)를 사용 하 여 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722667"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643291"
 ---
 # <a name="content-delivery-networks-cdns"></a>CDNs (콘텐츠 배달 네트워크)
 
@@ -37,7 +37,7 @@ CDNs는 대부분의 엔터프라이즈 클라우드 서비스에서 사용 됩�
 
 ## <a name="how-do-cdns-make-services-work-faster"></a>CDNs에서 서비스가 더 빠르게 작동 하도록 설정 하는 방법은 무엇 인가요?
 
-아이콘과 같은 일반 개체를 다시 다운로드 하면 전자 메일 또는 문서 같은 중요 한 개인 콘텐츠를 다운로드 하는 데 더 적합 한 네트워크 대역폭이 사용 될 수 있습니다. Office 365에서는 CDNs를 포함 하는 아키텍처를 사용 하기 때문에, 서버에서 클라이언트 컴퓨터에 더 가까이에 아이콘, 스크립트 및 기타 일반 콘텐츠를 다운로드 하 여 다운로드 속도를 높일 수 있습니다. 이는 Office 365 데이터 센터에 안전 하 게 저장 되는 개인 콘텐츠에 빠르게 액세스할 수 있음을 의미 합니다.
+나중에 사이트 이미지 및 아이콘과 같은 공통 개체를 다운로드 하면 전자 메일 또는 문서와 같은 중요 한 개인 콘텐츠를 다운로드 하는 데 더 적합 한 네트워크 대역폭이 사용 될 수 있습니다. Office 365에서는 CDNs를 포함 하는 아키텍처를 사용 하기 때문에, 서버에서 클라이언트 컴퓨터에 더 가까이에 아이콘, 스크립트 및 기타 일반 콘텐츠를 다운로드 하 여 다운로드 속도를 높일 수 있습니다. 이는 Office 365 데이터 센터에 안전 하 게 저장 되는 개인 콘텐츠에 빠르게 액세스할 수 있음을 의미 합니다.
 
 CDNs는 여러 가지 방법으로 클라우드 서비스 성능을 개선 하는 데 도움이 됩니다.
 
@@ -50,21 +50,21 @@ CDNs는 여러 가지 방법으로 클라우드 서비스 성능을 개선 하�
 기본 제공 Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하면 Office 365 관리자가 정적 자산을 요청 하는 브라우저에 더 빠르게 캐싱하여 조직의 SharePoint Online 페이지 성능을 향상 시킬 수 있습니다. 다운로드 하 여 대기 시간을 줄입니다. Office 365 CDN은 압축 및 다운로드 속도 향상을 위해 [HTTP/2 프로토콜](https://en.wikipedia.org/wiki/HTTP/2) 을 사용 합니다.
 
 > [!NOTE]
-> Office 365 CDN 사용에 대 한 제한 사항:
-> + Office 365 CDN은 **프로덕션** (전 세계) 클라우드의 테 넌 트에만 사용할 수 있습니다. 미국 정부의 테 넌 트, 중국 및 독일 클라우드가 현재 Office 365 CDN을 지원 하지 않습니다.
-> + Office 365 CDN에서는 현재 사용자 지정 또는 "베 니 티" 도메인을 사용 하 여 구성 된 테 넌 트를 지원 하지 않습니다. [Add a domain To Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)항목의 지침을 사용 하 여 테 넌 트에 도메인을 추가한 경우 cdn에서 콘텐츠에 액세스 하려고 하면 OFFICE 365 CDN에서 오류가 반환 됩니다.
+> Office 365 CDN은 **프로덕션** (전 세계) 클라우드의 테 넌 트에만 사용할 수 있습니다. 미국 정부의 테 넌 트, 중국 및 독일 클라우드가 현재 Office 365 CDN을 지원 하지 않습니다.
 
 Office 365 CDN은 여러 위치, 즉 _출발지_에 정적 자산을 호스트하고 글로벌 고속 네트워크에서 제공할 수 있는 여러 CDN으로 구성됩니다. Office 365 CDN에서 호스팅하려는 콘텐츠의 종류에 따라 **공개** 출처, **비공개** 출처 또는 둘 다를 추가할 수 있습니다.
 
-![Office 365 CDN 개념 다이어그램] (media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN 개념 다이어그램")
+![Office 365 CDN 개념 다이어그램](media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN 개념 다이어그램")
 
 Office 365 CDN 내의 **공개** 출처의 콘텐츠는 익명으로 액세스할 수 있으며 호스팅 된 자산에 대한 URL을 지닌 사람이면 누구나 액세스할 수 있습니다. 공개 출처의 콘텐츠에 대한 액세스는 익명이기 때문에 캐시 javascript 파일, 스크립트, 아이콘 및 이미지와 같은 중요하지 않은 일반 콘텐츠에만 사용할 수 있습니다. Office 365 CDN은 기본적으로 공개 출처의 Office 365 클라이언트 응용 프로그램 같은 일반 리소스를 다운로드하는 데 사용됩니다.
 
-Office 365 CDN의 **비공개** 출처는 SharePoint Online 문서 라이브러리, 사이트 및 비디오와 같은 미디어와 같은 사용자 콘텐츠에 대한 비공개 액세스를 제공합니다. 비공개 출처의 콘텐츠에 대한 액세스는 동적으로 생성 된 토큰으로 보호되므로 원본 문서 라이브러리 또는 저장 위치에 대한 사용 권한을 가진 사용자만 액세스할 수 있습니다. Office 365 CDN의 비공개 출처는 SharePoint Online 콘텐츠에만 사용할 수 있으며 SharePoint Online 테넌트의 리디렉션을 통해 자산에만 액세스할 수 있습니다.
+Office 365 CDN 내의 **비공개** 원본을 사용 하면 SharePoint Online 문서 라이브러리, 사이트 및 독점적인 이미지 등의 사용자 콘텐츠에 대 한 비공개 액세스를 제공 합니다. 비공개 출처의 콘텐츠에 대한 액세스는 동적으로 생성 된 토큰으로 보호되므로 원본 문서 라이브러리 또는 저장 위치에 대한 사용 권한을 가진 사용자만 액세스할 수 있습니다. Office 365 CDN의 비공개 출처는 SharePoint Online 콘텐츠에만 사용할 수 있으며 SharePoint Online 테넌트의 리디렉션을 통해 자산에만 액세스할 수 있습니다.
 
 Office 365 CDN 서비스는 SharePoint Online 구독의 일부로 포함되어 있습니다.
 
 Office 365 CDN을 사용 하는 방법에 대 한 자세한 내용은 [use The office 365 content delivery network With SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)을 참조 하세요.
+
+Office 365 CDN 사용에 대 한 개념 및 HOWTO 정보를 제공 하는 일련의 짧은 비디오를 시청 하려면 [SharePoint 개발자 패턴 및 모범 사례 YouTube 채널](https://aka.ms/sppnp-videos)을 방문 하세요.
 
 ## <a name="other-microsoft-cdns"></a>기타 Microsoft CDNs
 
@@ -100,7 +100,7 @@ Office 365 테 넌 트에 대해 구성 하는 CDN에 관계 없이 기본 데�
 
 2. Office 365에서 클라이언트에 직접 데이터를 반환 하거나, 데이터가 CDN에 의해 호스트 되는 콘텐츠 집합의 일부인 경우 클라이언트를 CDN URL로 리디렉션합니다.
 
-    위한. 데이터가 이미 _공용_ 원점에 캐시 된 경우 클라이언트는 가장 가까운 CDN 위치에서 클라이언트로 직접 데이터를 다운로드 합니다.
+    a. 데이터가 이미 _공용_ 원점에 캐시 된 경우 클라이언트는 가장 가까운 CDN 위치에서 클라이언트로 직접 데이터를 다운로드 합니다.
 
     b. 데이터가 이미 _개인_ 원점에 캐시 되어 있는 경우 CDN 서비스는 원본에 대 한 Office 365 사용자 계정의 사용 권한을 확인 합니다. 사용 권한이 있는 경우 SharePoint Online은 CDN의 자산 경로 및 두 액세스 토큰으로 구성 된 사용자 지정 URL을 동적으로 생성 하 고 사용자 지정 URL을 클라이언트에 게 반환 합니다. 그러면 클라이언트는 사용자 지정 URL을 사용 하 여 가장 가까운 CDN 위치에서 클라이언트에 직접 데이터를 다운로드 합니다.
 
@@ -187,7 +187,7 @@ CDNs를 사용 하는 것은 SharePoint Online 컨텍스트에서 적합 하며 
 
 [Office 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples)
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결성 평가하기](assessing-network-connectivity.md) 
 
 [Office 365 끝점 관리](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
@@ -196,3 +196,5 @@ CDNs를 사용 하는 것은 SharePoint Online 컨텍스트에서 적합 하며 
 [SharePoint Online에서 Office 365 콘텐츠 배달 네트워크 사용](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Microsoft 보안 센터](https://www.microsoft.com/trustcenter)
+
+[Office 365 성능 조정](tune-office-365-performance.md)
