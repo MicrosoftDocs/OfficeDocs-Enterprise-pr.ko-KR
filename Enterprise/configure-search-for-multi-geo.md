@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068074"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643281"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 검색 구성
 
@@ -172,11 +172,11 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 
 **요구 사항**
 
-각 지역 위치의 경우 조직의 모든 사용자가 루트 웹 사이트(예: contoso**APAC**.sharepoint.com/ 및 contoso**EU**.sharepoint.com/) **읽기** 권한 수준을 받아야 합니다. [권한에 대해 자세히 알아보세요](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+각 지역 위치의 경우 조직의 모든 사용자가 루트 웹 사이트(예: contoso**APAC**.sharepoint.com/ 및 contoso**EU**.sharepoint.com/) **읽기** 권한 수준을 받아야 합니다. [권한에 대해 자세히 알아보세요](https://support.office.com/ko-KR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>쿼리 매개 변수
 
-EnableMultiGeoSearch - 이 쿼리는 Multi-Geo 테넌트의 다른 지리적 위치의 인덱스로 쿼리를 팬아웃할지 여부를 지정하는 부울 값입니다. **true**로 설정하면 쿼리가 적용됩니다. **false**로 설정하면 쿼리가 팬 아웃되지 않습니다. 기본값은 **false**입니다. 이 매개 변수를 포함하지 않으면 쿼리가 다른 지리적 위치로 이동되지 않습니다. Multi-Geo가 아닌 환경에서 매개 변수를 사용하면 매개 변수가 무시됩니다.
+EnableMultiGeoSearch - 이 쿼리는 Multi-Geo 테넌트의 다른 지리적 위치의 인덱스로 쿼리를 팬아웃할지 여부를 지정하는 부울 값입니다. **true**로 설정하면 쿼리가 적용됩니다. **false**로 설정하면 쿼리가 팬 아웃되지 않습니다. 이 매개 변수를 포함하지 않는 경우 엔터프라이즈 검색 센터 서식 파일을 사용하는 사이트에 대한 REST API 호출을 수행할 때(이 경우 기본값은 **true**)를 제외하고 기본값은 **false**입니다. Multi-Geo가 아닌 환경에서 매개 변수를 사용하면 매개 변수가 무시됩니다.
 
 ClientType - 이것은 문자열입니다. 각 검색 응용 프로그램에 대해 고유한 클라이언트 이름을 입력하십시오. 이 매개 변수를 포함하지 않으면 쿼리가 다른 지리적 위치로 이동되지 않습니다.
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration -**EnableMultiGeoSearch **가 **true**일 때 쿼리
 </tbody>
 </table>
 
-DataLocation 또는 EndPoint를 생략하거나 DataLocation이 중복되면 요청이 실패합니다. [Microsoft Graph를 사용하여 테넌트의 지리적 위치 끝점에 대한 정보를 얻을 수 있습니다](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
+DataLocation 또는 EndPoint를 생략하거나 DataLocation이 중복되면 요청이 실패합니다. [Microsoft Graph를 사용하여 테넌트의 지리적 위치 끝점에 대한 정보를 얻을 수 있습니다](https://docs.microsoft.com/ko-KR/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>응답 데이터
 
