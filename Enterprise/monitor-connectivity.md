@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용하여 Office 365 연결을 유지할 수 있습니다. 느린 네트워크에서 Office 365를 사용하기 위한 최상의 방법뿐만 아니라 공식적인 서비스 상태 및 연속성 지침을 이해할 수 있습니다. 또한 Office 365 관리자 앱을 이용하고 비즈니스용 Office 365 - 관리자 도움말을 북마크할 수도 있습니다.
-ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
+ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070054"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931696"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 연결 모니터링
 
-Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용하여 Office 365 연결을 유지할 수 있습니다. [느린 네트워크에서 Office 365를 사용하기 위한 최상의 방법](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)뿐만 아니라 공식적인 [서비스 상태 및 연속성](https://technet.microsoft.com/library/office-365-service-health.aspx) 지침을 이해할 수 있습니다. 또한 [Office 365 관리자 앱](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)을 이용하고 비즈니스용 [Office 365 - 관리자 도움말](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)을 북마크할 수도 있습니다.
+Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용하여 Office 365 연결을 유지할 수 있습니다. [느린 네트워크에서 Office 365를 사용하기 위한 최상의 방법](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)뿐만 아니라 공식적인 [서비스 상태 및 연속성](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) 지침을 이해할 수 있습니다. 또한 [Office 365 관리자 앱](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)을 이용하고 비즈니스용 [Office 365 - 관리자 도움말](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)을 북마크할 수도 있습니다.
   
 ## <a name="monitoring-office-365-connectivity"></a>Office 365 연결 모니터링
 

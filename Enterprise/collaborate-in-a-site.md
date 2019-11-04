@@ -1,5 +1,5 @@
 ---
-title: 사이트에서 게스트와 공동 작업
+title: 게스트와 현장에서 공동 작업하기
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017316"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920171"
 ---
-# <a name="collaborate-with-guests-in-a-site"></a>사이트에서 게스트와 공동 작업
+# <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
 여러 문서, 데이터 및 목록에서 게스트와 공동 작업을 수행 해야 하는 경우에는 SharePoint 사이트를 사용할 수 있습니다. 최신 SharePoint 사이트는 사이트 구성원 자격을 관리 하 고 공유 사서함 및 일정과 같은 추가 공동 작업 도구를 제공할 수 있는 Office 365 그룹에 연결 됩니다.
 
 이 문서에서는 게스트가 포함 된 공동 작업을 위해 SharePoint 사이트를 설정 하는 데 필요한 Microsoft 365 구성 단계를 안내 합니다.
+
+## <a name="video-demonstration"></a>비디오 데모
+
+이 비디오에서는이 문서에서 설명 하는 구성 단계를 보여 줍니다.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 조직 관계 설정
 
@@ -63,13 +69,13 @@ Office 365 그룹 게스트 설정을 설정 하려면
 
 익명 사용자와 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
 
-![SharePoint 조직 수준 공유 설정 스크린샷](media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint 조직 수준 공유 설정의 스크린샷](media/sharepoint-organization-external-sharing-controls.png)
 
 
 SharePoint 조직 수준 공유 설정을 설정 하려면
 
 1. Microsoft 365 관리 센터의 왼쪽 탐색에 있는 **관리 센터**에서 **SharePoint**를 클릭 합니다.
-2. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭 합니다.
+2. 왼쪽 탐색 창의 SharePoint 관리 센터에서 **공유**를 클릭합니다.
 3. SharePoint 용 외부 공유가 **사용자** 또는 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다.
 4. 변경한 경우 **저장**을 클릭 합니다.
 
@@ -79,8 +85,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 사이트를 만들려면
 1. SharePoint 관리 센터의 **사이트**아래에서 **활성 사이트**를 클릭 합니다.
-2. 
-            **만들기**를 클릭합니다.
+2. **만들기**를 클릭합니다.
 3. **팀 사이트**를 클릭 합니다.
 4. 사이트 이름을 입력 하 고 그룹 소유자 (사이트 소유자)의 이름을 입력 합니다.
 5. **고급 설정**에서이 사이트를 공용 또는 개인 사이트로 설정할 것인지 여부를 선택 합니다.
@@ -123,3 +128,10 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 4. **닫기**를 클릭합니다.
 
 ## <a name="see-also"></a>참고 항목
+
+[익명 사용자와 파일 및 폴더를 공유하는 최상의 방법](best-practices-anonymous-sharing.md)
+
+[게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
+
+[보안 게스트 공유 환경 만들기](create-a-secure-guest-sharing-environment.md)
+
