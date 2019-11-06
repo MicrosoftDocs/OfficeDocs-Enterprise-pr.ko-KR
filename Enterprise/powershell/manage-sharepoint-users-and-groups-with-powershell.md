@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
+ms.date: 10/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 SharePoint Online 사용자, 그룹 및 사이트를 관리 합니다.'
-ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
+ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068824"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37975893"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리
 
@@ -70,7 +70,7 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
  ```
 
-이러한 명령을 사용 하려면 replace the < 및 > 문자를 포함 하 여 따옴표 안에 있는 모든 항목을 올바른 이름으로 바꿉니다.
+이러한 명령을 사용 하려면 replace the < 및 > 문자를 포함 하 여 따옴표 안에 있는 모든 내용을 올바른 이름으로 바꿉니다.
 
 예를 들어 다음 명령 집합은 contoso1 테 넌 시에 있는 ContosoTest 사이트 모음의 사이트 모음 관리자 목록에 오 팔 Castillo (사용자 이름 opalc)을 추가 합니다.
 
@@ -83,7 +83,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 이러한 명령을 복사 하 여 메모장에 붙여 넣고 $tenant, $site 및 $user의 변수 값을 환경의 실제 값으로 변경한 다음이를 SharePoint Online 관리 셸 창에 붙여 넣어 실행 합니다.
 
-## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>다른 사이트 모음 관리자 그룹에 사용자 추가
+## <a name="add-a-user-to-other-site-collection-groups"></a>다른 사이트 모음 그룹에 사용자 추가
 
 이 작업에서는 **Add-SPOUser** 명령을 사용하여 사이트 모음의 SharePoint 그룹에 사용자를 추가합니다.
 
@@ -108,7 +108,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>사이트 모음 그룹 만들기
 
-**Set-SPOSiteGroup** 명령을 사용하여 새 SharePoint 그룹을 만든 다음 ContosoTest 사이트 모음에 추가할 수 있습니다.
+새 SharePoint 그룹을 만든 후 ContosoTest 사이트 모음에 추가 하려면 **remove-spositegroup** 명령을 사용 합니다.
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -284,7 +284,7 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [Office 365 PowerShell을 사용하여 SharePoint Online 관리](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
