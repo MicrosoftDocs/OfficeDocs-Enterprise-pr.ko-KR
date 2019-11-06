@@ -124,7 +124,7 @@
 #### [디렉터리 동기화 설정](set-up-directory-synchronization.md)
 ### [사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts.md)
 
-## [3. 보안 기능 구현](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. 보안 기능 구현](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. 클라이언트 소프트웨어 배포
 ### [Office 365 ProPlus 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
