@@ -16,23 +16,23 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 모던 및 클래식 게시 사이트 페이지의 Iframe 성능을 최적화하는 방법에 대해 배워보세요.
-ms.openlocfilehash: 676407108db1669240df76438ff2b8739c4eaac1
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 4e6695b4afcf5e2f8dc7bd8ccee3d92bbea7e124
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028225"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031303"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 모던 및 클래식 게시 사이트 페이지에서 Iframe 최적화
 
 IFrames는 비디오나 기타 미디어와 같은 풍부한 콘텐츠를 미리 보는데 유용할 수 있습니다. 그러나 iFrame은 SharePoint 사이트 페이지 내에서 별도의 페이지를 로드하므로 iFrame에서 로드된 콘텐츠에는 전체 페이지 로드 시간을 유발하고 페이지에서 제어할 수 없는 대형 이미지, 비디오 또는 기타 요소가 포함될 수 있습니다. 이 문서는 페이지의 iFrame이 어떻게 사용자가 인식하는 대기 시간에 미치는 영향을 미치는지와 일반적인 문제를 해결하는 방법을 이해하는데 도움을 줄 것입니다.
 
 >[!NOTE]
->SharePoint Online 최신 사이트의 성능에 대한 자세한 내용은 [최신 SharePoint 환경의 성능](https://docs.microsoft.com/ko-KR/sharepoint/modern-experience-performance)을 참조하세요.
+>SharePoint Online 최신 사이트의 성능에 대한 자세한 내용은 [최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance)을 참조하세요.
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>SharePoint 용 페이지 진단 도구를 사용한 iFrames를 사용하는 웹 파트 분석
 
-**Sharepoint 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+**Sharepoint 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
 
 Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페이지를 분석 시 _진단 테스트_ 창에서 iFrames를 포함하는 웹 파트에 대한 정보를 확인할 수 있습니다. 기준 메트릭은 최신 페이지와 클래식 페이지 모두 동일합니다.
 
@@ -42,7 +42,7 @@ Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페�
 - **개선 기회** (노란색):이 페이지에는 **하나 또는 두 개**의 iFrame을 사용하는 웹 파트가 포함되어 있습니다.
 - **조치가 필요하지 않음** (녹색): 페이지에 iFrame을 사용하는 웹 파트가 포함되어 있지 않음
 
-검색된 iFrame을 사용하는 웹 파트** 결과가결과의 개선 기회 또는 주의 필요 섹션에 표시되는 경우 결과를 클릭하여 iFrame을 포함하는 웹 파트를 확인할 수 있습니다.
+**검색된 iFrame을 사용하는 웹 파트** 결과가결과의 **개선 기회** 또는 **주의 필요** 섹션에 표시되는 경우 결과를 클릭하여 iFrame을 포함하는 웹 파트를 확인할 수 있습니다.
 
 ![페이지 진단 도구 결과](media/modern-portal-optimization/pagediag-iframe-yellow.png)
 
@@ -74,4 +74,4 @@ iFrame의 최적화된 사용을 보장하기 위해 아래 지침을 따르세�
 
 [Office 365 성능 조정](tune-office-365-performance.md)
 
-[최신 SharePoint 환경의 성능](https://docs.microsoft.com/ko-KR/sharepoint/modern-experience-performance.md)
+[최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)

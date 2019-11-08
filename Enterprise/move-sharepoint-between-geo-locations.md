@@ -6,15 +6,17 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: SharePoint 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
-ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
+ms.openlocfilehash: 3ba95215860646691e511b17d509dbbc49a5a75a
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35422377"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033444"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint 사이트를 다른 지리적 위치로 이동
 

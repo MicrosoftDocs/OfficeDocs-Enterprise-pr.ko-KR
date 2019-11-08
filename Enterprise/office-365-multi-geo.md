@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo로 여러 지리적 지역으로 Office 365 범위를 확장합니다.
-ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
-ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
+ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078512"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031933"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -25,7 +25,7 @@ Office 365 Multi-Geo를 사용하여 데이터 상주 요구 사항을 충족하
 
 #### <a name="video-introducing-office-365-multi-geo"></a>비디오: Office 365 Multi-Geo 소개
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
 Multi-Geo 환경에서 Office 365 테넌트는 중앙 위치(Office 365 구독이 원래 제공되는 위치)와 하나 이상의 위성 위치로 구성됩니다. Multi-Geo 테넌트의 경우 지리적 위치, 그룹 및 사용자 정보에 대한 정보는 Azure Active Directory(AAD)에서 관리됩니다. 테넌트 정보가 중앙에서 관리되고 각 지리적 위치와 동기화되기 때문에 회사의 모든 사람과 관련된 공유 및 경험은 전역 세계적으로 인식됩니다.
 

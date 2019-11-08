@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 최신 사이트 페이지에서 페이지 부하를 최적화하는 방법을 학습하세요.
-ms.openlocfilehash: 5e2231468363f58faeac1d7b21e06cd4fa790cf8
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 3079298781116c2664217f87715303c99e4d26b6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028215"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032253"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online 최신 사이트 페이지에서 페이지부하 최적화
 
@@ -30,11 +30,11 @@ SharePoint Online 최신 사이트 페이지에는 이미지, 텍스트, 탐색/
 이 문서는 최신 사이트 페이지에서 페이지 부하를 줄이는 방법을 이해하는데 도움을 줍니다.
 
 >[!NOTE]
->SharePoint Online 최신 포털의 성능에 대한 자세한 내용은 [최신 SharePoint 환경의 성능](https://docs.microsoft.com/ko-KR/sharepoint/modern-experience-performance)을 참조하세요.
+>SharePoint Online 최신 포털의 성능에 대한 자세한 내용은 [최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance)을 참조하세요.
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>SharePoint 용 페이지 진단 도구를 사용한 페이지 부하 분석
 
-**Sharepoint 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+**Sharepoint 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
 
 Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페이지를 분석 시 _진단 테스트_ 창의 **500KB 미만의 페이지 부하** 결과에서 페이지에 대한 정보를 확인할 수 있습니다. 페이지 부하가 기준선 값 아래에 있으면 결과는 녹색이 되고, 페이지 부하가 기준선 값을 초과하는 경우 빨간색으로 표시됩니다.
 
@@ -43,7 +43,7 @@ Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페�
 - **주의 필요** (빨간색): 페이지 부하가 500KB를 초과
 - **조치가 필요하지 않음** (녹색): 페이지 부하가 500KB 미만
 
-페이지 부하가 500KB 미만** 결과가 주의 필요** 섹션에 표시되는 경우 클릭하여 세부 정보를 확인할 수 있습니다.
+**페이지 부하가 500KB 미만** 결과가 **주의 필요** 섹션에 표시되는 경우 클릭하여 세부 정보를 확인할 수 있습니다.
 
 ![SharePoint 결과에 대한 요청](media/modern-portal-optimization/pagediag-page-weight.png)
 
@@ -60,7 +60,7 @@ Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페�
 
 다음의 문서에서 페이지 부하를 제한하는 방법에 대한 추가 지침을 확인할 수 있습니다.
 
-- [SharePoint에서 페이지 성능 최적화](https://docs.microsoft.com/ko-KR/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [SharePoint에서 페이지 성능 최적화](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
 성능 문제를 개선하기 위해 페이지를 수정하기 전에 분석 결과에 페이지 로드 시간을 기록해 둡니다. 수정 후에 다시 도구를 실행하여 새 결과가 기준선 표준에 포함되는지 확인하고 새 페이지 로드 시간을 확인하여 개선이 되었는지 확인합니다.
 
@@ -75,8 +75,8 @@ Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페�
 
 [Office 365 성능 조정](tune-office-365-performance.md)
 
-[최신 SharePoint 환경의 성능](https://docs.microsoft.com/ko-KR/sharepoint/modern-experience-performance.md)
+[최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
-[콘텐츠 전달 네트워크](content-delivery-networks.md)
+[콘텐츠 배달 네트워크](content-delivery-networks.md)
 
 [sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기](use-office-365-cdn-with-spo.md)

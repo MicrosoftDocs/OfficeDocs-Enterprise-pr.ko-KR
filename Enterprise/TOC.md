@@ -42,7 +42,7 @@
 ## Office 365 클라이언트 지원
 ### [인증서 기반 인증](office-365-client-support-certificate-based-authentication.md)
 ### [조건부 액세스](office-365-client-support-conditional-access.md)
-### [MDM과 Intune 중에서 선택](https://docs.microsoft.com/ko-KR/office365/securitycompliance/choose-between-mdm-and-intune)
+### [MDM과 Intune 중에서 선택](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [모바일 응용 프로그램 관리](office-365-client-support-mobile-application-management.md)
 ### [최신 인증](office-365-client-support-modern-authentication.md)
 ### [Single Sign-On](office-365-client-support-single-sign-on.md)
@@ -198,7 +198,7 @@
 ### [디렉터리 동기화 끄기](turn-off-directory-synchronization.md)
 
 ## 사용자
-### [Office 365 관리자 도움말 센터](https://support.office.com/ko-KR/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 관리자 도움말 센터](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [사용자 계정 관리 도구](manage-office-365-accounts.md)
 ### [동시에 여러 사용자 추가](add-several-users-at-the-same-time.md)
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
@@ -227,7 +227,7 @@
 
 ## 서비스 상태
 ### [확인 방법](view-service-health.md)
-### [지원 옵션](https://support.office.com/ko-KR/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [지원 옵션](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## 성능
 ### [Office 365 성능 조정](tune-office-365-performance.md)

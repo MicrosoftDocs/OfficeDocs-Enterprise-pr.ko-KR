@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '요약: Office 365 배포를 계획할 때 사용할 DNS 레코드 목록을 참조합니다.'
-ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: ec05958eaf40fe988245eae808cc78bf60c06136
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616141"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028822"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365에 대한 외부 Domain Name System 레코드
 
@@ -31,7 +31,7 @@ ms.locfileid: "37616141"
   
 |||
 |:-----|:-----|
-|![도메인](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 조직의 DNS 레코드 사용자 지정 목록을 보고 싶습니까?** Office 365에서 도메인에 대한 [Office 365 DNS 레코드를 만드는 데 필요한 정보를 찾을 수 있습니다](https://support.office.microsoft.com/ko-KR/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67).<br/> **GoDaddy 또는 eNom과 같은 도메인의 DNS 호스트에서 이러한 레코드를 추가하는 데 필요한 단계별 도움말이 필요합니까?** [ 인기 있는 많은 DNS 호스트에 대한 단계별 지침 링크를 찾으세요 ](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **자체 사용자 지정 배포를 위한 참조 목록을 사용하려고 하십니까?** 아래 목록은 사용자 지정 Office 365 배포에 대한 참조로 사용해야 합니다. 조직에 적용할 레코드를 선택하고 해당 값을 입력해야 합니다. <br/> [Office 365의 네트워크 계획 및 성능 조정](https://aka.ms/tune)**으로 돌아가기**.  <br/> |
+|![도메인](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 조직의 DNS 레코드 사용자 지정 목록을 보고 싶습니까?** Office 365에서 도메인에 대한 [Office 365 DNS 레코드를 만드는 데 필요한 정보를 찾을 수 있습니다](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67).<br/> **GoDaddy 또는 eNom과 같은 도메인의 DNS 호스트에서 이러한 레코드를 추가하는 데 필요한 단계별 도움말이 필요합니까?** [ 인기 있는 많은 DNS 호스트에 대한 단계별 지침 링크를 찾으세요 ](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **자체 사용자 지정 배포를 위한 참조 목록을 사용하려고 하십니까?** 아래 목록은 사용자 지정 Office 365 배포에 대한 참조로 사용해야 합니다. 조직에 적용할 레코드를 선택하고 해당 값을 입력해야 합니다. <br/> [Office 365의 네트워크 계획 및 성능 조정](https://aka.ms/tune)**으로 돌아가기**.  <br/> |
 
 SPF 및 MX 레코드를 파악하기 어려운 경우도 종종 있습니다. SPF 레코드 지침을 업데이트해서 이 문서 끝부분에 추가했습니다. 기억해야 할 중요한 사항은 _도메인에 대해 SPF 레코드가 하나만 있을 수 있다는 것_입니다. 그렇지만 여러 개의 MX 레코드가 있을 수도 있습니다. 이러한 경우 메일 배달 문제를 야기할 수 있습니다. 전자 메일을 단일 메일 시스템으로 보내는 단일 MX 레코드가 있으면 발생할 수 있는 많은 문제가 해결됩니다.
   
@@ -103,7 +103,7 @@ SharePoint Online을 사용하여 외부 사람에게 전자 메일을 보내는
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF는 스푸핑을 방지하도록 설계되었지만 SPF가 방어할 수 없는 스푸핑 기술이 있습니다. 이를 방어하려면 SPF를 설정한 후에 Office 365에 대해 DKIM 및 DMARC도 구성해야 합니다. 이를 시작하려면 [DKIM을 사용하여 Office 365의 도메인에서 보낸 아웃바운드 전자 메일의 유효성을 검사하는 방법](https://technet.microsoft.com/ko-KR/library/mt695945%28v=exchg.150%29.aspx)을 참조하세요. 다음으로, [DMARC를 사용하여 Office 365에서 전자 메일 유효성 검사](https://technet.microsoft.com/ko-KR/library/mt734386%28v=exchg.150%29.aspx)를 참조하세요.
+> SPF는 스푸핑을 방지하도록 설계되었지만 SPF가 방어할 수 없는 스푸핑 기술이 있습니다. 이를 방어하려면 SPF를 설정한 후에 Office 365에 대해 DKIM 및 DMARC도 구성해야 합니다. 이를 시작하려면 [DKIM을 사용하여 Office 365의 도메인에서 보낸 아웃바운드 전자 메일의 유효성을 검사하는 방법](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)을 참조하세요. 다음으로, [DMARC를 사용하여 Office 365에서 전자 메일 유효성 검사](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)를 참조하세요.
   
 SPF 레코드는 다른 사용자가 사용자의 도메인을 사용하여 스팸 또는 기타 악성 전자 메일을 보내지 못하도록하는 TXT 레코드입니다. Sender Policy Framework(SPF) 레코드는 사용자의 도메인에서 전자 메일을 보낼 수 있는 서버를 식별하여 작동합니다.
   
