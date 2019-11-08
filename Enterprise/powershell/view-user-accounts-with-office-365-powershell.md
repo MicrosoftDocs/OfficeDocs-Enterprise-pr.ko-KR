@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '요약: Office 365 PowerShell을 사용 하 여 다양 한 방식으로 사용자 계정을 보거나, 나열 하거나, 표시 합니다.'
-ms.openlocfilehash: c23e9106873aa32e8daccb1e35a16862e6f9bb7d
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 63756e29bb4d5f3e749cf4d66ef31c98ffac6182
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782068"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031663"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정 보기
 
@@ -212,7 +212,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  이러한 예에 표시 되는 **Where 개체** cmdlet의 구문은 **-object {$\_** 를 사용 합니다. [사용자 계정 속성 이름] [비교 연산자] 가치 **}**.  [비교 연산자]는 equals의 경우- **eq** , **-ne** : 같지 않음,-a = 부등호, **-** a = 보다 작음,- **gt** for = 및 기타입니다.  [값]은 일반적으로 문자열 (문자, 숫자 및 기타 문자의 시퀀스), 숫자 값 또는 **$Null** 지정 되지 않음에 해당 합니다. 자세한 내용은 [-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) 를 참조 하세요.
+>  이러한 예에 표시 되는 **Where 개체** cmdlet의 구문은 **-object {$\_** 를 사용 합니다. [사용자 계정 속성 이름] [비교 연산자] 가치 **}**.  [비교 연산자]는 equals의 경우- **eq** , **-ne** : 같지 않음,-a = 부등호, **-** a = 보다 작음,- **gt** for = 및 기타입니다.  [값]은 일반적으로 문자열 (문자, 숫자 및 기타 문자의 시퀀스), 숫자 값 또는 **$Null** 지정 되지 않음에 해당 합니다. 자세한 내용은 [-Object](https://technet.microsoft.com/library/hh849715.aspx) 를 참조 하세요.
   
 다음 명령을 사용 하 여 사용자 계정의 차단 상태를 확인할 수 있습니다.
   
@@ -230,7 +230,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayNam
     
 - isLicensed
     
-사용자가 근무 하는 부서 및 Office 365 서비스를 사용 하는 국가/지역 같은 추가 속성이 필요한 경우 Get-msoluser cmdlet과 함께 **get-help** 를 실행 하 여 사용자 계정 목록을 지정할 수 있습니다 **** . 물성. 예를 들면 다음과 같습니다.
+사용자가 근무 하는 부서 및 Office 365 서비스를 사용 하는 국가/지역 같은 추가 속성이 필요한 경우 Get-msoluser **cmdlet과** 함께 **get-help** 를 실행 하 여 사용자 계정 속성의 목록을 지정할 수 있습니다. 예를 들면 다음과 같습니다.
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
@@ -284,7 +284,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-디렉터리 동기화를 사용 하 여 Office 365 사용자를 만들고 관리 하는 경우 Office 365 사용자가 프로젝션 한 로컬 계정을 표시할 수 있습니다. 다음은 Azure AD Connect가 ObjectGUID의 기본 원본 앵커를 사용 하도록 구성 된 것으로 가정 합니다 (원본 앵커 구성에 대 한 자세한 내용은 [AZURE Ad connect: Design 개념](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)참조) 및 Powershell 용 Active Directory 모듈에 대 한 것으로 가정 설치 된 경우 ( [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)참조):
+디렉터리 동기화를 사용 하 여 Office 365 사용자를 만들고 관리 하는 경우 Office 365 사용자가 프로젝션 한 로컬 계정을 표시할 수 있습니다. 다음은 Azure AD Connect가 ObjectGUID의 기본 소스 앵커를 사용 하도록 구성 된 것으로 가정 합니다 (원본 앵커 구성에 대 한 자세한 내용은 [AZURE Ad connect: Design 개념](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)참조) 및 Powershell 용 Active Directory 모듈이 설치 되어 있다고 가정 합니다 ( [RSAT 도구](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)참조).
 
 ```
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
@@ -295,7 +295,7 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 
 [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

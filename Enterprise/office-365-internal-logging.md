@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 엔지니어링 팀에 대 한 내부 로깅이 작동 하는 방식에 대 한 설명입니다.
-ms.openlocfilehash: 5fff245435d6b21a06bfe8544f991b919dbf15d9
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067676"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035528"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 엔지니어링에 대한 내부 로깅
+
 고객에 게 제공 되는 이벤트 및 로그 데이터 외에 Office 365 엔지니어가 사용할 수 있는 내부 로그 데이터 수집 시스템도 있습니다. 다양 한 유형의 로그 데이터가 Office 365 서버에서 Cosmos 라는 내부, 대규모 데이터 컴퓨팅 서비스로 업로드 됩니다. 각 서비스 팀은 집계 및 분석을 위해 각 서버의 감사 로그를 Cosmos 데이터베이스에 업로드 합니다. 이 데이터 전송은 ODL (Office Data Loader) 라는 전용 자동화 도구를 사용 하 여 특별히 승인 된 포트 및 프로토콜에 대해 FIPS 140-2 유효성 검사 TLS 연결을 통해 수행 됩니다. Office 365에서 감사 레코드를 수집 하 고 처리 하는 데 사용 되는 도구는 원래 감사 레코드 콘텐츠 또는 시간 순서에 대 한 영구 또는 되돌릴 수 없는 변경 작업을 허용 하지 않습니다.
 
 서비스 팀에서는 Cosmos을 중앙 리포지토리로 사용 하 여 응용 프로그램 사용 현황 분석을 수행 하 고, 시스템 및 운영 성과를 측정 하며, 문제 또는 보안 문제를 나타내는 abnormalities 및 패턴을 찾습니다. 각 서비스 팀은 분석 하려는 대상에 따라 다음을 포함 하는 Cosmos에 로그 초기 계획을 업로드 합니다.
+
 - 이벤트 로그
 - AppLocker 로그
 - 성능 데이터

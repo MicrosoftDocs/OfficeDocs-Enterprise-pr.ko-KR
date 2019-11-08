@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/05/2019
+ms.date: 11/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 SharePoint Online 사용자, 그룹 및 사이트를 관리 합니다.'
-ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: 8133af978e2a63bf18b825ca6b6bdb430e676b72
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975893"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038227"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리
 
@@ -29,7 +29,7 @@ ms.locfileid: "37975893"
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
+이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>사이트, 그룹, 사용자 목록 가져오기
 

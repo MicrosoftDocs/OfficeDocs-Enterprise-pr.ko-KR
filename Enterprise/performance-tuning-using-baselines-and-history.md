@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Office 365와 비즈니스 간의 연결 성능을 확인 하는 몇 가지 간단한 방법은 연결의 대략적인 기준선을 설정 하는 데 사용할 수 있습니다. 클라이언트 컴퓨터 연결의 성능 기록을 알면 초기에 문제를 검색 하 고 문제를 예측 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: f7ce3b70e698bd0125ba2a1623f40ddf808ee4d3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781908"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031793"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정
 
@@ -39,7 +39,7 @@ Office 365와 비즈니스 간의 연결 성능을 확인 하는 몇 가지 간�
 Office 365는 자동화 뿐 아니라 실제 사용자가 지속적으로 모니터링 하는 고용량 전용 Microsoft 네트워크 내에 살고 있습니다. Office 365 클라우드를 유지 관리 하는 역할의 일부분에는 성능 조정 및 가능한 위치에서의 개발이 가능 합니다. Office 365 클라우드의 클라이언트는 인터넷을 통해 연결 해야 하므로 Office 365 서비스 간의 성능도 미세 조정 하는 데에도 지속적인 노력이 제공 됩니다. 성능 향상은 클라우드에서 실제로 중지 되지 않으며, 클라우드를 정상 및 빠르게 유지 하는 데 많은 경험이 있습니다. 위치에서 Office 365로 연결 되는 성능 문제가 발생 하는 경우, 지원 사례를 처음부터 시작 하 여 대기 하는 것이 가장 좋습니다. 대신 ' 내부 끄기 '에서 문제 조사를 시작 해야 합니다. 즉, 네트워크 내부를 시작 하 고 Office 365에서 작업을 수행 하는 방법을 알아봅니다. Office 365을 지 원하는 사례를 열기 전에 데이터를 수집 하 고 문제를 해결 하는 데 도움이 되는 작업을 수행할 수 있습니다.
   
 > [!IMPORTANT]
-> Office 365의 용량 계획 및 제한 사항에 대해 숙지 해야 합니다. 이 정보는 성능 문제를 해결 하려고 할 때 곡선의 앞에 놓이게 됩니다. 다음은 [Office 365 플랫폼 서비스 설명](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)에 대 한 링크입니다. 이는 중앙 허브이 고, Office 365에서 제공 하는 모든 서비스에 대 한 링크는 여기에서 자체 서비스 설명으로 전달 됩니다. 즉, sharepoint online [서비스 설명을](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx) 클릭 하 고 Sharepoint online [제한 섹션](https://go.microsoft.com/fwlink/p/?LinkID=856113)을 검색 하는 것과 같은 사용자에 대 한 표준 제한 사항을 확인 해야 합니다. 
+> Office 365의 용량 계획 및 제한 사항에 대해 숙지 해야 합니다. 이 정보는 성능 문제를 해결 하려고 할 때 곡선의 앞에 놓이게 됩니다. 다음은 [Office 365 플랫폼 서비스 설명](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)에 대 한 링크입니다. 이는 중앙 허브이 고, Office 365에서 제공 하는 모든 서비스에 대 한 링크는 여기에서 자체 서비스 설명으로 전달 됩니다. 즉, sharepoint online [서비스 설명을](https://technet.microsoft.com/library/sharepoint-online-service-description.aspx) 클릭 하 고 Sharepoint online [제한 섹션](https://go.microsoft.com/fwlink/p/?LinkID=856113)을 검색 하는 것과 같은 사용자에 대 한 표준 제한 사항을 확인 해야 합니다. 
   
 해당 성능이 슬라이딩 확장 이라는 점을 이해 하면서 트러블 슈팅을 수행 하는 것은 idealized 값을 달성 하 고 영구적으로 유지 관리 하는 것이 아니라 (이 경우에도 해당 되는 경우) 다시 탑재 하는 것과 같은 높은 대역폭 작업 사용자 수가 많거나 대규모 데이터 마이그레이션을 수행 하는 작업은 매우 stressful, 따라서 성능에 미치는 영향을 계획 해야 합니다. 성능 목표를 대략적으로 파악 해야 하지만 많은 변수가 성능에 맞게 작동 하기 때문에 성능이 달라 집니다. 이는 성능에 대 한 특성입니다. 
   
@@ -198,7 +198,7 @@ Office 365 서비스의 파일럿에서 보다 초기 계획을 시작 하는 �
 ![클라이언트, 프록시 및 클라우드가 있는 기본 네트워크, 그리고 도구 제안 사항, TraceTCP 및 네트워크 추적](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP는 요청이 처리 되는 데 걸리는 시간, 밀리초, 네트워크 홉 수 또는 한 컴퓨터에서 다음 컴퓨터로의 연결, 즉 요청이 대상에 도달 하는 데 걸리는 시간을 표시 하는 데 유용한 도구 이기 때문에이 스크린샷에 포함 되어 있습니다. 또한 TraceTCP에서는 홉 중에 사용 되는 서버의 이름도 제공할 수 있으며, 지원에서 Microsoft Office 365 문제 해결사에 유용할 수 있습니다. > TraceTCP 명령은 다음과 같이 매우 간단할 수 있는데, > `tracetcp.exe outlook.office365.com:443`> 명령에 포트 번호를 포함 해야 합니다. > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) 은 무료로 다운로드할 수 있지만 wincap에 의존 합니다. Wincap는 Netmon 에서도 사용 되 고 설치 되는 도구입니다. 고급 방법 섹션 에서도 Netmon을 사용 합니다. 
+> TraceTCP는 요청이 처리 되는 데 걸리는 시간, 밀리초, 네트워크 홉 수 또는 한 컴퓨터에서 다음 컴퓨터로의 연결, 즉 요청이 대상에 도달 하는 데 걸리는 시간을 표시 하는 데 유용한 도구 이기 때문에이 스크린샷에 포함 되어 있습니다. 또한 TraceTCP에서는 홉 중에 사용 되는 서버의 이름도 제공할 수 있으며, 지원에서 Microsoft Office 365 문제 해결사에 유용할 수 있습니다. > TraceTCP 명령은 다음과 같이 매우 간단할 수 있는데, > `tracetcp.exe outlook.office365.com:443`> 명령에 포트 번호를 포함 해야 합니다. > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) 은 무료로 다운로드할 수 있지만 wincap에 의존 합니다. Wincap는 Netmon 에서도 사용 되 고 설치 되는 도구입니다. 고급 방법 섹션 에서도 Netmon을 사용 합니다. 
   
  여러 개의 사무실이 있는 경우에는 이러한 각 위치에 있는 클라이언트의 데이터 집합도 유지 해야 합니다. 이 테스트에서는 클라이언트에서 Office 365에 대 한 요청을 보내는 시간과 요청에 응답 하는 Office 365 사이의 시간을 설명 하는 숫자 값을 측정 하 여 대기 시간을 계산 합니다. 이 테스트는 클라이언트 컴퓨터의 도메인 내에서 시작 되며, 365 인터넷을 통해 네트워크 내부에서 들어오는 왕복을 측정 하는 방법을 확인 합니다. 
   
@@ -214,7 +214,7 @@ Egress 지점 (이 경우에는 프록시 서버)을 처리 하는 몇 가지 �
     
 - \*. microsoftonline-p.com
     
-- \*. sharepoint.com
+- \*.sharepoint.com
     
 - \*. outlook.com
     
@@ -232,13 +232,13 @@ Internet Explorer에서 프록시 바이패스 목록에이를 추가 하려면 
   
 왕복 시간 (RTT)은 HTTP 요청을 outlook.office365.com와 같은 서버로 보내는 데 걸리는 시간을 측정 하 고 서버에서 사용자가 수행한 작업을 확인 하는 응답을 반환 하는 숫자 값입니다. 때로는이 약어를 RTT로 볼 수 있습니다. 이 값은 비교적 짧은 시간 이어야 합니다.
   
-이 테스트를 수행 하려면 [Psping](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) 또는 Office 365에서 차단 되는 ICMP 패킷을 사용 하지 않는 다른 도구를 사용 해야 합니다. 
+이 테스트를 수행 하려면 [Psping](https://technet.microsoft.com/sysinternals/jj729731.aspx) 또는 Office 365에서 차단 되는 ICMP 패킷을 사용 하지 않는 다른 도구를 사용 해야 합니다. 
   
  **PsPing을 사용 하 여 Office 365 URL에서 직접 전체 왕복 시간 (밀리초) 가져오기**
   
 1. 다음 단계를 완료 하 여 관리자 권한 명령 프롬프트를 실행 합니다.
     
-1. **시작**을 클릭 합니다.
+1. **시작**을 클릭합니다.
     
 2. **검색 시작** 상자에 cmd를 입력 하 고 CTRL + SHIFT + enter를 누릅니다.
     
@@ -266,7 +266,7 @@ Internet Explorer에서 프록시 바이패스 목록에이를 추가 하려면 
   
 1. 다음 단계를 완료 하 여 관리자 권한 명령 프롬프트를 실행 합니다.
     
-1. **시작**을 클릭 합니다.
+1. **시작**을 클릭합니다.
     
 2. **검색 시작** 상자에 cmd를 입력 하 고 CTRL + SHIFT + enter를 누릅니다.
     
@@ -304,7 +304,7 @@ Internet Explorer에서 프록시 바이패스 목록에이를 추가 하려면 
   
 ### <a name="advanced-methods"></a>고급 방법
 
-Office 365에 대 한 인터넷 요청에 따라 수행 되는 작업을 실제로 확인 하려는 경우에는 네트워크 추적에 익숙해지는 데 익숙해져야 합니다. 이러한 추적, HTTPWatch, Netmon, Message Analyzer, Wireshark, Fiddler, 개발자 대시보드 도구 중 어떤 도구를 선호 하든지 관계 없이 도구에서 네트워크 트래픽을 캡처 및 필터링 할 수 있는 경우에는이 작업을 수행 하는 것이 좋습니다. 이 섹션에서는 이러한 도구 중 둘 이상을 실행 하 여 문제에 대 한 자세한 그림을 보는 것이 좋습니다. 테스트 중인 경우 이러한 도구 중 일부는 자체 권한으로 프록시 역할을 합니다. 보조 문서에서 사용 되는 도구인 [Office 365의 성능 문제 해결 계획](performance-troubleshooting-plan.md)에는 [Netmon 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865), [HTTPWatch](https://www.httpwatch.com/download/)또는 [WireShark](https://www.wireshark.org/)가 포함 되어 있습니다.
+Office 365에 대 한 인터넷 요청에 따라 수행 되는 작업을 실제로 확인 하려는 경우에는 네트워크 추적에 익숙해지는 데 익숙해져야 합니다. 이러한 추적, HTTPWatch, Netmon, Message Analyzer, Wireshark, Fiddler, 개발자 대시보드 도구 중 어떤 도구를 선호 하든지 관계 없이 도구에서 네트워크 트래픽을 캡처 및 필터링 할 수 있는 경우에는이 작업을 수행 하는 것이 좋습니다. 이 섹션에서는 이러한 도구 중 둘 이상을 실행 하 여 문제에 대 한 자세한 그림을 보는 것이 좋습니다. 테스트 중인 경우 이러한 도구 중 일부는 자체 권한으로 프록시 역할을 합니다. 보조 문서에서 사용 되는 도구인 [Office 365의 성능 문제 해결 계획](performance-troubleshooting-plan.md)에는 [Netmon 3.4](https://www.microsoft.com/download/details.aspx?id=4865), [HTTPWatch](https://www.httpwatch.com/download/)또는 [WireShark](https://www.wireshark.org/)가 포함 되어 있습니다.
   
 이 방법의 간단한 부분은 성능 기준을 수행 하는 것 이며, 대부분의 단계는 성능 문제를 해결할 때와 동일 합니다. 더 높은 성능을 위해 기준을 만드는 방법은 네트워크 추적을 수행 하 고 저장 해야 합니다. 이 문서에 나오는 대부분의 예에서는 SharePoint Online을 사용 하지만 테스트 및 기록을 구독 하는 Office 365 서비스에서 일반적인 작업 목록을 개발 해야 합니다. 다음은 기본 예제입니다.
   

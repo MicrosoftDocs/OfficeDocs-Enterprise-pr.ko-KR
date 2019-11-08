@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 요약:Office 365 PowerShell을 사용하여 사서함 구성 및 고급 보고서 표시 등 Microsoft Exchange Online을 관리할 수 있습니다.
-ms.openlocfilehash: f60c28be58796d16d4b04e42e421ed97475cc8e0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 06524431ee98a0f5119544da9278d8c672155fd9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068964"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031013"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 Exchange Online 관리
 
@@ -27,11 +27,11 @@ ms.locfileid: "34068964"
   
 모든 Microsoft Exchange Online 관리자의 기본 작업 중 하나는 사서함을 관리하고 보고서를 가져오는 것입니다. Office 365 관리 센터에서 이러한 작업 중 일부를 수행할 수 있지만 Office 365 PowerShell에서 훨씬 더 빠르고 쉽게 수행할 수 있는 작업도 있습니다. 자세한 내용은 다음 항목을 참조하세요.
   
-- [Office 365 PowerShell을 사용하여 Exchange Online 사서함 정보 표시](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
+- [Office 365 PowerShell을 사용하여 Exchange Online 사서함 정보 표시](https://technet.microsoft.com/library/mt771881%28v=exchg.160%29.aspx)
     
-- [Office 365 PowerShell을 사용하여 Exchange Online 보고서 표시](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
+- [Office 365 PowerShell을 사용하여 Exchange Online 보고서 표시](https://technet.microsoft.com/library/mt771882%28v=exchg.160%29.aspx)
     
-- [Office 365 PowerShell을 사용하여 Exchange Online 관리자가 사용할 수 있는 cmdlet 결정](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
+- [Office 365 PowerShell을 사용하여 Exchange Online 관리자가 사용할 수 있는 cmdlet 결정](https://technet.microsoft.com/library/mt771883%28v=exchg.160%29.aspx)
     
 ## <a name="see-also"></a>참고 항목
 

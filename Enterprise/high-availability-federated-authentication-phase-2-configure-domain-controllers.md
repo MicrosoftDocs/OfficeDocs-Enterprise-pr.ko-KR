@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증용 도메인 컨트롤러 및 DirSync 서버를 구성 합니다.'
-ms.openlocfilehash: 299723c8f49cddd4a30ba2defc73dd156792f337
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 5cb7c75f5d66dc37aa9e4b7fdc682c9508eac40e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102526"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028802"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>고가용성 페더레이션 인증 2단계: 도메인 컨트롤러 구성
 
@@ -26,7 +26,7 @@ ms.locfileid: "34102526"
 Azure 인프라 서비스의 Office 365 페더레이션 인증을 위해 고가용성을 배포 하는이 단계에서는 Azure virtual network에서 두 개의 도메인 컨트롤러와 DirSync 서버를 구성 합니다. 인증에 대 한 클라이언트 웹 요청은 온-프레미스 네트워크에 대 한 사이트 간 VPN 연결을 통해 인증 트래픽을 전송 하는 것이 아니라 Azure virtual network에서 인증 될 수 있습니다.
   
 > [!NOTE]
-> AD FS (Active Directory Federation Services)는 Active Directory 도메인 서비스의 대체 도메인으로 Azure Active Directory 도메인 서비스를 사용할 수 없습니다. 
+> AD FS (active Directory Federation Services)는 Active Directory 도메인 서비스의 대체 도메인으로 Azure Active Directory 도메인 서비스를 사용할 수 없습니다. 
   
 [고가용성 페더레이션 인증 3 단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)으로 이동 하기 전에이 단계를 완료 해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
@@ -65,7 +65,7 @@ Azure 인프라 서비스의 Office 365 페더레이션 인증을 위해 고가�
 [고가용성 페더레이션 인증 1 단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md)에서 테이블 R, V, S, I 및 A를 정의한 것을 기억 합니다.
   
 > [!NOTE]
-> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 올바른 값을 모두 제공하면 Azure PowerShell 프롬프트나 로컬 컴퓨터의 PowerShell ISE(통합 스크립트 환경)에서 결과 블록을 실행합니다.
   

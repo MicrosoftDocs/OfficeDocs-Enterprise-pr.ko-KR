@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782238"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032123"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 통한 네트워크 계획
 
@@ -76,7 +76,7 @@ Azure Express 기반 구독은 고객 중심 이며 구독은 고객과 연결 �
 
 Azure Express 연결의 보안은 인터넷 연결 보안과 같은 원칙으로 시작 됩니다. 대부분의 고객은 온-프레미스 네트워크를 Office 365 및 기타 Microsoft 클라우드에 연결 하는 Express 경로를 따라 네트워크 및 경계 컨트롤을 배포 하도록 선택 합니다. 이러한 컨트롤에는 방화벽, 응용 프로그램 프록시, 데이터 누출 방지, 침입 감지, 침입 방지 시스템 등이 포함 될 수 있습니다. 대부분의 경우 고객이 온-프레미스에서 시작 되는 트래픽에 서로 다른 수준의 제어를 적용 하 고, Microsoft에서 온-프레미스 네트워크로 시작 되는 트래픽과 온-프레미스에서 시작 된 트래픽이 일반으로 이동 되는 트래픽을 비교 합니다. 인터넷 대상입니다.
   
-다음은 배포 하도록 선택한 [express 연결 모델](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) 에 보안을 통합 하는 몇 가지 예입니다.
+다음은 배포 하도록 선택한 [express 연결 모델](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) 에 보안을 통합 하는 몇 가지 예입니다.
 
 |**Express 경로 통합 옵션**|**네트워크 보안 경계 모델**|
 |:-----|:-----|
@@ -102,7 +102,7 @@ Office 365 연결에 대 한 Express에서 사용 되는 네트워크/보안 경
   
 ### <a name="example-1-securing-azure-expressroute"></a>예 1: Azure Express 경로 보호
   
-Woodgrove 은행은 Azure Express를 구현 하는 것을 고려 하 고, [Office 365에 대 한 express](routing-with-expressroute.md) 를 사용 하 여 라우팅에 최적의 아키텍처를 계획 하 고, 위의 지침에 따라 대역폭 요구 사항을 파악 한 후에는 주변을 보호 하는 최상의 방법입니다.
+Woodgrove 은행은 Azure Express를 구현 하는 것을 고려 하 고 있으며, [Office 365에 대 한 express](routing-with-expressroute.md) 를 사용 하 여 라우팅에 최적의 아키텍처를 계획 하 고, 위의 지침에 따라 대역폭 요구 사항을 파악 한 후에는 주변을 보호 하는 가장 좋은 방법을 결정
   
 Woodgrove의 경우 여러 지역에 위치 하는 다국적 조직의 경우 보안은 모든 perimeters에 걸쳐 있어야 합니다. Woodgrove에 대 한 최적의 연결 옵션은 각 대륙에서 직원의 요구 사항을 처리 하기 위해 전 세계의 여러 피어 링 위치를 포함 하는 다중 지점 연결입니다. 각 대륙에는 대륙 내에 중복 된 Azure Express 회로가 포함 되어 있으며 보안은 이러한 모든 것을 확장 해야 합니다.
   
@@ -190,7 +190,7 @@ Woodgrove에 지역별 Azure Express 경로를 여러 개 사용할 수 없는 �
 ## <a name="related-topics"></a>관련 항목
 <a name="BKMK_high-availability"> </a>
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   
 [Office 365용 Azure ExpressRoute](azure-expressroute.md)
   

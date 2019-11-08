@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '요약: Office 365 개발/테스트 환경의 Office 365 Advanced Threat Protection을 구성하고 보여 줍니다.'
-ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e3efe339550992fba85509cd07a791d916d5d6e7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162421"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030562"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Advanced Threat Protection
 
@@ -74,7 +74,7 @@ Office 365 ATP(Advanced Threat Protection)는 EOP(Exchange Online Protection)의
     
 13. 본문에 **이 사이트** 텍스트를 선택하고 도구 모음에 하이퍼링크 아이콘을 클릭합니다.
     
-14. **URL**에 입력 **http://www.spamlink.contoso.com/** 하 고 **확인**을 클릭 한 다음 **보내기를**클릭 합니다.
+14. **URL**에 입력 **https://www.spamlink.contoso.com/** 하 고 **확인**을 클릭 한 다음 **보내기를**클릭 합니다.
     
 15. 전용 탐색 모드에서 별도의 Internet Explorer 인스턴스를 열고 Microsoft 365 관리 센터 ([https://admin.microsoft.com](https://admin.microsoft.com))로 이동한 후 전역 관리자 계정으로 Office 365 평가판 구독에 로그인 합니다.
     
@@ -156,7 +156,7 @@ Office 365 ATP(Advanced Threat Protection)는 EOP(Exchange Online Protection)의
 이제 이 환경을 사용하여 새 정책을 만들고 ATP를 실험할 수 있습니다.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](https://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="see-also"></a>참고 항목
 

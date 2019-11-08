@@ -21,12 +21,12 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007는 지원 종료에 도달 했으며 업그레이드 하는 데 걸리는 시간입니다. 이 문서를 사용 하 여 계획을 만드는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: 98151ecd32f0066f583da1142d6010d46e120a43
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070704"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031553"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>고려할 SharePoint 2007 마이그레이션 옵션
 
@@ -59,9 +59,9 @@ SharePoint Server 환경을 업그레이드 하는 방법에는 여러 가지가
 > [!TIP]
 > Microsoft Office SharePoint Server 2007에는 여기에서 다루지 않는 점진적 업그레이드도 포함 되어 있습니다. 단계별 업그레이드 문서 목록을 보려면 [SharePoint Server 2007의 지원 종료 로드맵](sharepoint-2007-end-of-support.md)를 참조 하세요. 
   
-업그레이드 하려는 SharePoint 버전에 대 한 [제품 수명 주기](https://support.microsoft.com/en-us/lifecycle/search) 및 시스템 요구 사항을 확인 해야 합니다. 이는 다음 업그레이드가 필요한 경우 (예: SharePoint Server 2010와 같은 레거시 제품을 일시 중지 하 여 더 많은 업그레이드를 계획 하는 경우 지원 날짜 종료 확인), 요금제를 지 원하는 하드웨어를 확보 해야 하는 경우를 고려해 야 합니다. 
+업그레이드 하려는 SharePoint 버전에 대 한 [제품 수명 주기](https://support.microsoft.com/lifecycle/search) 및 시스템 요구 사항을 확인 해야 합니다. 이는 다음 업그레이드가 필요한 경우 (예: SharePoint Server 2010와 같은 레거시 제품을 일시 중지 하 여 더 많은 업그레이드를 계획 하는 경우 지원 날짜 종료 확인), 요금제를 지 원하는 하드웨어를 확보 해야 하는 경우를 고려해 야 합니다. 
   
-SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로 전환할 계획 이라면 [office 365에 대 한 서비스 설명](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)링크를 책갈피로 설정할 수 있습니다. SharePoint Online 기능 및이 기능이 온-프레미스 SharePoint Server와 다를 수 있는 방식에 대해 자세히 알아보려면 서비스 설명이 필요 합니다. 업그레이드 기능 Microsoft Office SharePoint Server 2007 팜 설치에 손상 된 사이트가 있으면 업그레이드 전에 해당 사이트를 수정 합니다.
+SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로 전환할 계획 이라면 [office 365에 대 한 서비스 설명](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)링크를 책갈피로 설정할 수 있습니다. SharePoint Online 기능 및이 기능이 온-프레미스 SharePoint Server와 다를 수 있는 방식에 대해 자세히 알아보려면 서비스 설명이 필요 합니다. 업그레이드 기능 Microsoft Office SharePoint Server 2007 팜 설치에 손상 된 사이트가 있으면 업그레이드 전에 해당 사이트를 수정 합니다.
   
 ## <a name="a-note-about-managing-risk"></a>위험 관리에 대 한 참고 사항
 
@@ -76,7 +76,7 @@ SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로
 현재 위치 업그레이드와 같은 방법은 Microsoft Office SharePoint Server 2007 팜에서 직접 작업 하므로 경로를 중단 하 고 초기 환경으로 다시 시작할 수 있는 쉬운 옵션을 제공 하지 않을 수 있습니다. 가능한 한 많은 보안 조치 (원본 환경에 대 한 백업 가져오기 및 테스트)를 구축 합니다. 예를 들어 Microsoft Office SharePoint Server 2007 팜이 가상이 고 백업 및 복원을 위해 복제 된 경우에는 업그레이드를 위해 서비스 창 앞에 있는 최신 데이터베이스를 백업 하 고 복원 합니다. 데이터베이스 백업을 복원 하는 옵션이 있다는 것은 안전 하 게 복구를 제공 하는 것이 아니라 안심 하 고 사용할 수 있다는 것입니다.
   
 > [!TIP]
-> 모범 사례 업그레이드에 대 한 문서는 [Microsoft Office Sharepoint server 2007](https://technet.microsoft.com/en-us/library/cc261992%28v=office.12%29.aspx), [sharepoint server 2010](https://technet.microsoft.com/en-us/library/cc261992%28v=office.14%29.aspx), [Sharepoint server 2013](https://technet.microsoft.com/en-us/library/cc261992%28v=office.15%29.aspx)및 [sharepoint server 2016](https://technet.microsoft.com/en-us/library/cc261992%28v=office.16%29.aspx)에 대 한 정보입니다. 업그레이드 또는 Office 365 마이그레이션 경험이 있는 [Microsoft 파트너](https://partnercenter.microsoft.com/en-us/pcv/search) 를 검색할 수도 있습니다. 
+> 모범 사례 업그레이드에 대 한 문서는 [Microsoft Office Sharepoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [Sharepoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)및 [sharepoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)에 대 한 정보입니다. 업그레이드 또는 Office 365 마이그레이션 경험이 있는 [Microsoft 파트너](https://partnercenter.microsoft.com/pcv/search) 를 검색할 수도 있습니다. 
   
 ## <a name="make-your-plan"></a>계획 만들기
 
@@ -87,7 +87,7 @@ SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로
   
 ### <a name="first-know-your-farm"></a>먼저, 팜을 파악 합니다.
 
-업그레이드 시에는 사용자의 조직이 조직에 대해 수행 하는 작업을 기반으로 결정을 내려야 합니다. 충족 해야 하는 작업 역할 이란? 회사의 각 팜에 서로 다른 역할이 있을 수 있습니다. 일부 SharePoint 팜은 파일 보관이 ** 될 수 있으며,이 경우 안전한 보관이 가능 합니다. 또는 팜이 여러 역할을 한 번에 채우는 경우에는 사이트 모음, 웹 또는 문서 라이브러리에 포함 된 모든 사용자 지정 내용 및 중요도를 알아야 할 수 있습니다. 이 수준에서 데이터를 분석 하는 것은 많은 작업을 수행 하는 것 처럼 보이지만 업그레이드 하거나 마이그레이션하기 전에 도메인을 마스터 하기 위한 시간과 노력을 절감할 수 있습니다. 모든 이동 부분 및 가장 중요 한 비트를 알게 되 면 outgrown를 파악 하 고 뒤에 남길 수 있습니다. 이 정보는 향후에만 도움이 됩니다. 
+업그레이드 시에는 사용자의 조직이 조직에 대해 수행 하는 작업을 기반으로 결정을 내려야 합니다. 충족 해야 하는 작업 역할 이란? 회사의 각 팜에 서로 다른 역할이 있을 수 있습니다. 일부 SharePoint *팜은 파일 보관이 될* 수 있으며,이 경우 안전한 보관이 가능 합니다. 또는 팜이 여러 역할을 한 번에 채우는 경우에는 사이트 모음, 웹 또는 문서 라이브러리에 포함 된 모든 사용자 지정 내용 및 중요도를 알아야 할 수 있습니다. 이 수준에서 데이터를 분석 하는 것은 많은 작업을 수행 하는 것 처럼 보이지만 업그레이드 하거나 마이그레이션하기 전에 도메인을 마스터 하기 위한 시간과 노력을 절감할 수 있습니다. 모든 이동 부분 및 가장 중요 한 비트를 알게 되 면 outgrown를 파악 하 고 뒤에 남길 수 있습니다. 이 정보는 향후에만 도움이 됩니다. 
   
 따라서 사용자 들이 SharePoint Server 팜에 대해 가장 중요 한 점은 무엇 인가요?
   
@@ -176,8 +176,8 @@ SharePoint 업그레이드에 소요 되는 경로에 대 한 리더십 및 기�
 
 [Office 2007 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](upgrade-from-office-2007-servers-and-products.md)
   
-[Microsoft 수명 주기 정책 및 수명 주기 검색](https://support.microsoft.com/en-us/lifecycle)
+[Microsoft 수명 주기 정책 및 수명 주기 검색](https://support.microsoft.com/lifecycle)
   
-[업그레이드 또는 마이그레이션에 대 한 도움을 받을 수 있는 Microsoft 파트너 검색](https://partnercenter.microsoft.com/en-us/pcv/search)
+[업그레이드 또는 마이그레이션에 대 한 도움을 받을 수 있는 Microsoft 파트너 검색](https://partnercenter.microsoft.com/pcv/search)
   
 

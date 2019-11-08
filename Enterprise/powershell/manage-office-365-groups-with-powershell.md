@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell에서 Office 365 그룹에 대 한 일반적인 관리 작업을 수행 하는 방법을 알아봅니다.
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017346"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031003"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell을 사용하여 Office 365 그룹 관리
 
@@ -46,7 +46,7 @@ Azure Active Directory PowerShell을 사용 하 여 사용자가 조직의 Offic
   
 Office 365 그룹을 "다른 사람 이름으로 보내기"로 설정 하려는 경우 [add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) 및 [add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) cmdlet을 사용 하 여이를 구성 합니다. 이 설정을 사용 하도록 설정 하면 Office 365 그룹 사용자가 Outlook 또는 웹용 Outlook을 사용 하 여 Office 365 그룹으로 전자 메일을 보내고 회신할 수 있습니다. 사용자는 그룹으로 이동 하 여 새 전자 메일을 만들고 "다른 사람 이름으로 보내기" 필드를 그룹의 전자 메일 주소로 변경할 수 있습니다. 
 
-([Exchange 관리 센터 에서도이 작업을 수행할 수](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)있습니다.)
+([Exchange 관리 센터 에서도이 작업을 수행할 수](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)있습니다.)
   
 다음 스크립트를 사용 하 여 * \<groupalias\> * 를 업데이트할 그룹의 별칭으로 바꾸고, permssions을 부여 하려는 사용자의 별칭으로 * \<useralias\> * 를 사용할 수 있습니다. [Exchange Online PowerShell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 하 여이 스크립트를 실행 합니다.
 
@@ -186,9 +186,9 @@ Office 365 그룹에서는 다음과 같은 cmdlet을 사용할 수 있습니다
 
 ## <a name="related-topics"></a>관련 항목
 
-[Office 365 그룹으로 메일 그룹 업그레이드](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
+[Office 365 그룹으로 메일 그룹 업그레이드](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Office 365 그룹을 만들 수 있는 사용자 관리](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
+[Office 365 그룹을 만들 수 있는 사용자 관리](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Office 365 그룹에 대한 게스트 액세스 관리](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

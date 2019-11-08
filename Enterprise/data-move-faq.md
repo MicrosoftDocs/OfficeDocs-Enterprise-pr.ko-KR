@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 다음은 핵심 데이터를 새 데이터 센터 지역으로 이동 하는 방법에 대 한 일반적인 질문에 대 한 대답입니다.
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782328"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028892"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -43,7 +43,7 @@ Exchange Online과 SharePoint Online/비즈니스용 OneDrive 간의 공유 종�
 테 넌 트 관리자는 두 가지 작업을 수행할 수 있습니다.
 
 - 옵트인Office 365 Move 프로그램에 등록 하 고 서비스에서 주요 고객 데이터를 새 데이터 센터 지역으로 마이그레이션하기 위한 커밋된 마감 기한을 받습니다.프로그램 옵트인 방법에 대 한 지침은 [데이터 이동을 요청 하는 방법](request-your-data-move.md) 페이지를 참조 하세요.
-- 아무 작업도 수행하지 않습니다.작업을 수행 하지 않으면 Microsoft에서 서비스 관리 및 최적화의 일환으로 시간에 따라 핵심 고객 데이터를 새로운 데이터 센터 지역으로 이동할 수 있습니다.데이터는 다른 geo가 아닌 새 데이터 센터 지역으로만 이동할 수 있습니다.이러한 서비스 관리 이동이 완료 되 면 메시지 센터를 통해 알려 드리겠습니다.
+- 아무 작업도 하지 않음.작업을 수행 하지 않으면 Microsoft에서 서비스 관리 및 최적화의 일환으로 시간에 따라 핵심 고객 데이터를 새로운 데이터 센터 지역으로 이동할 수 있습니다.데이터는 다른 geo가 아닌 새 데이터 센터 지역으로만 이동할 수 있습니다.이러한 서비스 관리 이동이 완료 되 면 메시지 센터를 통해 알려 드리겠습니다.
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>이동 중에 내 고객 데이터를 안전 하 게 보호 하 고 가동 중지 시간이 발생 하지 않도록 하려면 어떻게 해야 합니까?
   
@@ -155,4 +155,4 @@ A. 예. Microsoft는 2700 전 세계의 35 국가에서 130 개 보다 많은 �
 
 [Microsoft Dynamics CRM Online에 대 한 새로운 데이터 센터 지역](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[지역별 Azure services](https://azure.microsoft.com/en-us/regions/)
+[지역별 Azure services](https://azure.microsoft.com/regions/)

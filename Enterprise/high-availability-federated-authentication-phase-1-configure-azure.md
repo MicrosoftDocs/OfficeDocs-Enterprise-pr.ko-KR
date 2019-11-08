@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '요약: Microsoft Azure 인프라를 구성하여 Office 365 페더레이션 인증의 고가용성을 호스트합니다.'
-ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067504"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030752"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>고가용성 페더레이션 인증 1단계: Azure 구성
 
@@ -45,7 +45,7 @@ Azure 구성 요소를 구성하기 전에 다음 테이블을 채워야 합니�
 |2.  <br/> |VNet 위치  <br/> |가상 네트워크를 포함 하는 지역별 Azure 데이터 센터입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN 장치 IP 주소  <br/> |인터넷에서 VPN 장치 인터페이스의 공용 IPv4 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet 주소 공간  <br/> |가상 네트워크의 주소 공간입니다. IT 부서에서 이 주소 공간을 확인합니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 공유 키  <br/> |사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 공유 키  <br/> |사이트 간 VPN 연결의 양측을 인증하는 데 사용되는 32자의 무작위 영숫자 문자열입니다. IT 또는 보안 부서에서 이 키 값을 확인합니다. 또한, [IPsec 미리 공유한 키의 무작위 문자열 만들기](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)를 참조하세요.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **테이블 V: 프레미스 간 가상 네트워크 구성**
   
@@ -109,7 +109,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 이제 Office 365에 대 한 페더레이션 인증을 호스트 하기 위한 Azure 인프라를 구축 해 보겠습니다.
   
 > [!NOTE]
-> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 먼저 Azure PowerShell 프롬프트를 시작하고 계정에 로그인합니다.
   
@@ -134,7 +134,7 @@ Get-AzSubscription | Sort Name | Select Name
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Azure 구독을 설정합니다. \< 문자와 > 문자를 포함 하 여 따옴표 안에 있는 모든 것을 올바른 이름으로 바꿉니다.
+Azure 구독을 설정합니다. \< 및 > 문자를 포함 하 여 따옴표 안에 있는 모든 내용을 올바른 이름으로 바꿉니다.
   
 ```
 $subscrName="<subscription name>"

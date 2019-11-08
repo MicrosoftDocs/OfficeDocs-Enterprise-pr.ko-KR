@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
-ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069104"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031033"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
 
@@ -28,7 +28,7 @@ Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
-이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
+이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>1 단계: Office 365 PowerShell을 사용 하 여 새 사이트 모음 만들기
 
@@ -154,7 +154,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [SharePoint Online 사이트 그룹 관리 Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

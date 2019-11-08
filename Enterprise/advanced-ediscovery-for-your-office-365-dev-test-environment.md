@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '요약: Office 365 개발/테스트 환경의 샘플 데이터로 Office 365 고급 eDiscovery를 구성하고 보여 줍니다.'
-ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: dbd03c1a75b63f4fdaff49db47c8d415f267aaf3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726234"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030672"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 고급 eDiscovery
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
 이 기사의 지침에 따라 가상 계약 분쟁에 대한 작은 데이터 집합을 만들고 고급 eDiscovery로 이를 분석합니다.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](https://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>1단계: Office 365 개발/테스트 환경 만들기
 
@@ -53,7 +53,7 @@ Office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
     
 2. **Outlook 메일** 탭에서 **새 전자 메일**을 클릭합니다.
     
-3. **대상**에 평가판 구독의 User6 계정 전자 메일 주소 ( **User6 @** 를 입력 합니다.<organization name> **. onmicrosoft.com**)
+3. **To To**에 평가판 구독의 User6 계정 전자 메일 주소 (user6@를 입력 **합니다.**<organization name> **. onmicrosoft.com**)
     
 4. 제목에 **테스트 전자 메일 1**을 입력합니다.
     
@@ -151,7 +151,7 @@ Office 365 Advanced eDiscovery를 사용 하면 전자 메일 및 문서를 비�
     
 17. 검색 목록에서 **Tailspin 계약 검색** 이름을 클릭합니다.
     
-18. **Tailspin 계약 검색** 창의 **결과**에서 **검색 결과 미리 보기**를 클릭합니다. 프로덕션 SharePoint 사이트에서 두 문서 ( **문서** 및 문서 1)를 나열 하는 창 ****, **테스트 전자 메일** 및 테스트 전자 메일 **3** 전자 메일을 User6에 게 표시 해야 합니다. 창을 닫습니다.
+18. **Tailspin 계약 검색** 창의 **결과**에서 **검색 결과 미리 보기**를 클릭합니다. 프로덕션 SharePoint 사이트에서 두 문서 ( **문서** **및 문서**1)를 나열 하는 창, **테스트 전자 메일** 및 테스트 전자 메일 **3** 전자 메일을 User6에 게 표시 해야 합니다. 창을 닫습니다.
     
 19. **콘텐츠 검색** 창의 **고급 eDiscovery를 사용한 결과 분석**에서 **분석 결과 미리 보기**를 클릭합니다.
     

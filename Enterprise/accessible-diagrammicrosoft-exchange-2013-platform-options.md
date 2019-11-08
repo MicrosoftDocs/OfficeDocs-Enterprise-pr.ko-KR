@@ -10,20 +10,20 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068594"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027572"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft Exchange 2013 플랫폼 옵션
 
-**요약:** 이 문서는 [기술 다이어그램](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
+**요약:** 이 문서는 [기술 다이어그램](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
   
 이 포스터는 Exchange Online 및 Exchange Server 배포와 관련 하 여 다음과 같은 비즈니스 의사 결정권자 (BDMs) 및 설계자가 파악 해야 하는 사항에 대해 설명 합니다. 
   
-- Exchange Online (Office 365), Exchange 하이브리드, Exchange Server 온-프레미스 및 공급자 호스트 exchange 2013에 대해 사용 가능한 4 가지 플랫폼 옵션을 비교 합니다. 
+- Exchange Online (Office 365), Exchange 하이브리드, Exchange Server 온-프레미스 및 공급자 호스트 Exchange 2013에 대해 사용 가능한 4 가지 플랫폼 옵션을 비교 합니다. 
     
 - Exchange 2013에 새로 추가 되었거나 업데이트 된 기능에 대해 설명 합니다. 
     
@@ -264,7 +264,7 @@ Exchange Online (Office 365)에 대 한 자세한 내용은 다음을 참조 하
     
 Exchange 하이브리드에 대 한 자세한 내용은 다음 항목을 참조 하십시오.
   
-- [Exchange 2013 하이브리드 배포](https://aka.ms/ExchangeHybrid) Exchange 2013 하이브리드 서버 및 exchange 2007 조직이 exchange 2013 또는 exchange 2010 하이브리드 서버를 사용 하는 2010 경우에는 다음과 같은 시나리오에 하이브리드 서버 라이선스가 필요 하다는 것을 유의 해야 합니다.
+- [Exchange 2013 하이브리드 배포](https://aka.ms/ExchangeHybrid) Exchange 2013 하이브리드 서버 및 exchange 2007 조직이 Exchange 2013 또는 Exchange 2010 하이브리드 서버를 사용 하는 2010 경우에는 다음과 같은 시나리오에 하이브리드 서버 라이선스가 필요 하다는 것을 유의 해야 합니다.
     
 - [Office 365 로그인](https://aka.ms/HybridKey)
     

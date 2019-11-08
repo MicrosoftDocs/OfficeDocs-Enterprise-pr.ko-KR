@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: SharePoint Online의 최신 사이트에 대 한 성능 권장 사항에 대해 알아봅니다.
-ms.openlocfilehash: 0f54520faaefcdfc66d10430c8d2a646696fc52b
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441075"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031273"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online 최신 포털 사이트 제한
 
@@ -52,7 +52,7 @@ ms.locfileid: "37441075"
 |최대 이미지 크기  <br/> |이미지 당 300  <br/> |이미지, 스타일 시트 및 스크립트를 호스트 하는 데 CDN을 사용 하는 것이 좋습니다. <br/>자세한 내용은 [Sharepoint online 최신 사이트 페이지에서 이미지 최적화](modern-image-optimization.md) 및 [Office 365 CDN (Content Delivery Network)을 sharepoint Online과 함께 사용](use-office-365-cdn-with-spo.md)을 참조 하세요.  <br/> |
 |편집 권한이 있는 사용자  <br/> |사이트 당 사용자 200 명  <br/> |SharePoint 포털 사이트는 콘텐츠 보기 및 소비를 위해 최적화 됩니다. 편집 권한은 추가 컨트롤을 다운로드 하므로 해당 사용자에 대해 더 느리게 수행 되므로 포털에 대 한 편집 권한은 제한 된 사용자 그룹으로 제한 됩니다. 따라서 편집 권한이 있는 사용자 수가 지나치게 많으면 전체 환경에 영향을 줍니다. <br/> |
 |타사 Iframe  <br/> |페이지당 2 개  <br/> |Iframe은 javascript, CSS 및 framework 요소와 같은 연결 된 모든 콘텐츠를 포함 하 여 별도의 외부 페이지를 로드 하므로 예기치 않게 속도가 느립니다. Iframe을 사용 해야 하는 경우 페이지당 개수를 2 개 이하로 제한 합니다.<br/> 자세한 내용은 [SharePoint Online 최신 및 클래식 게시 사이트 페이지에서 Iframe 최적화](modern-iframe-optimization.md)를 참조 하세요. <br/> |
-|UPA 서비스에 대 한 호출  <br/> |시간당 사용자 당 1 회  <br/> |UPA (사용자 프로필 응용 프로그램) 서비스에 대 한 _요청당 요청만_ 하지 않도록 설정 하는 것이 좋습니다. [Microsoft GRAPH API](https://docs.microsoft.com/en-us/graph/call-api) 및 [pagecontext](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) 를 사용 하 여 사용자 정보를 쿼리할 수 있습니다.  <br/> UPA 서비스 호출이 필요한 경우 필요한 경우 단일 통화를 수행한 다음 동일한 세션에서 다시 사용할 수 있도록 정보를 캐시 합니다. |
+|UPA 서비스에 대 한 호출  <br/> |시간당 사용자 당 1 회  <br/> |UPA (사용자 프로필 응용 프로그램) 서비스에 대 한 _요청당 요청만_ 하지 않도록 설정 하는 것이 좋습니다. [Microsoft GRAPH API](https://docs.microsoft.com/graph/call-api) 및 [pagecontext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) 를 사용 하 여 사용자 정보를 쿼리할 수 있습니다.  <br/> UPA 서비스 호출이 필요한 경우 필요한 경우 단일 통화를 수행한 다음 동일한 세션에서 다시 사용할 수 있도록 정보를 캐시 합니다. |
 |분류 서비스에 대 한 호출  <br/> |시간당 사용자 당 5 명  <br/> |분류 서비스에 대해 _요청당 요청_ 수를 만드는 것이 좋습니다. 분류 서비스 호출이 필요한 경우에는 동일한 세션에서 다시 사용할 수 있도록 정보를 캐시 합니다. <br/> 자세한 내용은 [SharePoint Online 최신 및 클래식 게시 사이트 페이지에서 페이지 통화 최적화](modern-page-call-optimization.md)를 참조 하세요. <br/> |
 
 ## <a name="related-topics"></a>관련 항목
@@ -63,8 +63,8 @@ ms.locfileid: "37441075"
 
 [Office 365 성능 조정](tune-office-365-performance.md)
 
-[SharePoint Online 제한](https://docs.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online 제한](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[최신 SharePoint 환경의 성능](https://docs.microsoft.com/en-us/sharepoint/modern-experience-performance)
+[최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[SharePoint Online 포털에 대한 성능 지침](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+[SharePoint Online 포털에 대한 성능 지침](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)

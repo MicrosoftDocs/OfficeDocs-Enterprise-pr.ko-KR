@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online의 페이지 다운로드 시간 성능을 개선 하는 방법을 설명 하는 기타 문서에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033434"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online 성능 조정
 
@@ -36,7 +38,7 @@ ms.locfileid: "37375496"
 
 - [SharePoint Online에 대 한 탐색 옵션](navigation-options-for-sharepoint-online.md)
 
-- [SharePoint Online 포털에 대한 성능 지침](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+- [SharePoint Online 포털에 대한 성능 지침](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [SharePoint Online에 대한 이미지 최적화](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ ms.locfileid: "37375496"
 
 - [SharePoint online에서 개체 캐시 사용](using-the-object-cache-with-sharepoint-online.md)
 
-- [방법: SharePoint Online에서 제한 또는 차단 방지](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [방법: SharePoint Online에서 제한 또는 차단 방지](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [SharePoint Online 최신 포털 페이지에서 Iframe 최적화](modern-iframe-optimization.md)
 

@@ -13,14 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 사서함 마이그레이션에 사용 되는 cmdlet에 대 한 간략 한 요약입니다.
-ms.openlocfilehash: bdd4d6eb68a8727dc26a693f2716ed602e7a5a60
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067657"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035548"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 사서함 마이그레이션
+
 Exchange 기반 하이브리드 배포를 사용 하는 경우 고객은 온-프레미스 Exchange 사서함을 [Exchange online](https://docs.microsoft.com/Exchange/exchange-online) 조직으로 이동 하거나 exchange online 사서함을 [exchange 온-프레미스](https://docs.microsoft.com/Exchange/exchange-server) 조직으로 이동할 수 있습니다. 마이그레이션 일괄 처리는 온-프레미스 조직과 Exchange Online 조직 간에 사서함을 이동할 때 사용 됩니다.
 
 고객은 다음 cmdlet을 사용 하 여 사서함 마이그레이션에 대 한 통계 및 기타 정보를 검토할 수 있습니다.

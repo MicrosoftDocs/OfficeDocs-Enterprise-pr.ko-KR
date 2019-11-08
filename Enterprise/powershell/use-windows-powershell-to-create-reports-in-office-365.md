@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '요약: Office 365 PowerShell을 사용하여 Microsoft 365 관리 센터에서 생성할 수 없는 보고서를 만듭니다.'
-ms.openlocfilehash: 6ad41169c11150706381c45bf13e24a2ac1baf5c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
-ms.translationtype: HT
+ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782578"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031683"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Office 365에서 Windows PowerShell을 사용하여 보고서 만들기
 
@@ -47,15 +47,15 @@ Microsoft 365 관리 센터에서는 다양한 보고서가 제공됩니다. 그
     
 - SharePoint Online용 보고서:
     
-  - [Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리](https://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Manage SharePoint Online site groups with Office 365 PowerShell](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
 - Exchange Online용 보고서:
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Display Exchange Online mailbox information with Office 365 PowerShell](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
     
-  - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>참고 항목
 

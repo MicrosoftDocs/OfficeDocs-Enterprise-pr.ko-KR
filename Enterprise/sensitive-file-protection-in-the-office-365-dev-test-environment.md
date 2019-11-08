@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '요약: 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 Office 365 정보 권한 관리가 중요 한 파일을 보호 하는 방법을 구성 하 고 설명 합니다.'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782498"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031573"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 
@@ -32,7 +32,7 @@ Office 365의 IRM (정보 권한 관리)은 SharePoint Online 라이브러리 �
 이 문서의 지침을 사용 하 여 Office 365 평가판 구독에서 가능한 중요 한 정보가 포함 된 파일에 대 한 IRM을 설정 하 고 Office 365에서 테스트 합니다.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](https://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경 구축
 
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 다음으로, 비공개 임원 그룹을 만들고 새 executive 계정을 추가 합니다.
   
-1. 브라우저에서 Office 포털로 이동 [http://admin.microsoft.com](http://admin.microsoft.com) 하 여 전역 관리자 계정을 사용 하 여 office 365 평가판 구독에 로그인 합니다.
+1. 브라우저에서 Office 포털로 이동 [https://admin.microsoft.com](https://admin.microsoft.com) 하 여 전역 관리자 계정을 사용 하 여 office 365 평가판 구독에 로그인 합니다.
     
   - 경량 Office 365 개발/테스트 환경을 사용 하는 경우 Internet Explorer 또는 브라우저의 개인 세션을 열고 로컬 컴퓨터에서 로그인 합니다.
     
@@ -100,7 +100,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 2. **Microsoft Office 홈** 탭에서 **관리 > 그룹 > 그룹**을 클릭 한 다음 **그룹 추가**를 클릭 합니다.
     
-3. **그룹 추가**에서 그룹 유형에 대해 **Office 365 그룹** 을 선택 하 고 **이름** 및 **그룹 Id**에 **임원** 을 입력 한 다음 **** 개인 **정보 보호**를 선택 하 고 **소유자 선택을**클릭 합니다.
+3. **그룹 추가**에서 그룹 유형에 대해 **Office 365 그룹** 을 선택 하 고 **이름** 및 **그룹 Id**에 **임원** 을 입력 한 다음 개인 **정보 보호** **를 선택 하** 고 **소유자 선택을**클릭 합니다.
     
 4. 목록에서 전역 관리자 계정 이름을 클릭 합니다.
     
@@ -118,7 +118,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
   - 운영 책임자 최고
     
-9. **저장**을 클릭 하 고 **닫기를**클릭 합니다.
+9. **저장**을 클릭한 다음 **닫기**를 클릭합니다.
     
 10. **Office 관리 센터** 탭을 닫습니다.
     
@@ -166,7 +166,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **Microsoft Office 홈** 탭의 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
+2. [https://admin.microsoft.com](https://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 **다른 계정 사용**을 클릭 합니다.
     
@@ -204,7 +204,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **Microsoft Office 홈** 탭의 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
+2. [https://admin.microsoft.com](https://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 **다른 계정 사용**을 클릭 합니다.
     
@@ -224,7 +224,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **Microsoft Office 홈** 탭의 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
+2. [https://admin.microsoft.com](https://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 전역 관리자 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
@@ -280,7 +280,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 5. 브라우저의 **Microsoft Office 홈** 탭에서 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-6. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
+6. [https://admin.microsoft.com](https://admin.microsoft.com)으로 이동합니다.
     
 7. **Office 365 로그인** 페이지에서 CEO 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     
@@ -306,7 +306,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 브라우저의 **Microsoft Office 홈** 탭에서 오른쪽 위에 있는 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
+2. [https://admin.microsoft.com](https://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 암호를 입력 한 다음 **로그인**을 클릭 합니다.
     

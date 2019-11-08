@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: '요약: Office 365을 사용 하려면 인터넷에 연결 해야 합니다. 아래 끝점은 Office 365 U.S. 정부 DoD 요금제만 사용 하는 고객에 게 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: b58f85298e8bcac6f35ee0029948e6c7fa2a95e4
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: a883348d641ecc2ee22500c8fffc0f891986e7e9
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975859"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038297"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 미국 정부 DoD 끝점
 
@@ -53,11 +53,11 @@ ms.locfileid: "37975859"
 
 - **범주**: 끝점 집합이 "최적화", "허용" 또는 "기본"으로 분류되는지 여부를 보여줍니다. [https://aka.ms/pnc](https://aka.ms/pnc)에서 이러한 범주 및 관리에 대한 지침을 읽을 수 있습니다. 이 열에서도 네트워크에 연결하는 데 필요한 끝점 집합을 나열합니다. 네트워크에 연결하는 데 필요하지 않은 끝점 집합의 경우, 이 필드에서 메모를 제공해 끝점 집합이 차단되면 어떤 기능을 사용할 수 없는지 표시해줍니다. 전체 서비스 영역을 제외하는 경우, 필요한 것으로 나열된 끝점 집합은 연결이 필요하지 않습니다.
 
-- **ER**: Office 365 경로 접두사를 사용한 Azure express에서 끝점 집합이 지원 되는 경우에는이를 **예로** 들 수 있습니다. 표시 되는 경로 접두사를 포함 하는 BGP 커뮤니티는 나열 된 서비스 영역에 맞게 정렬 됩니다. ER가 **No**이면이 끝점 집합에 대해 express가 지원 되지 않습니다. 그러나 ER가 **no**인 끝점 집합에 대해 경로가 보급 되지 않는다고 가정 해서는 안 됩니다. Azure AD Connect를 사용 하려는 경우 [특별 고려 사항 섹션](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) 을 읽어 적절 한 Azure ad connect 구성이 있는지 확인 합니다.
+- **ER**: Office 365 경로 접두사를 사용한 Azure express에서 끝점 집합이 지원 되는 경우에는이를 **예로** 들 수 있습니다. 표시 되는 경로 접두사를 포함 하는 BGP 커뮤니티는 나열 된 서비스 영역에 맞게 정렬 됩니다. ER가 **No**이면이 끝점 집합에 대해 express가 지원 되지 않습니다. 그러나 ER가 **no**인 끝점 집합에 대해 경로가 보급 되지 않는다고 가정 해서는 안 됩니다. Azure AD Connect를 사용 하려는 경우 [특별 고려 사항 섹션](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) 을 읽어 적절 한 Azure ad connect 구성이 있는지 확인 합니다.
 
 - **주소**: 끝점 집합의 FQDN 또는 와일드카드 도메인 이름 및 IP 주소 범위를 보여줍니다. IP 주소 범위가 CIDR 형식이며 특정 네트워크에서 여러 개의 개별 IP 주소를 포함할 수 있다는 점에 유의하시기 바랍니다.
  
-- **포트**: 네트워크 끝점을 형성하기 위해 주소와 결합된 TCP 또는 UDP 포트를 나열합니다. 다른 포트가 나열된 IP 주소 범위에서 일부 중복을 볼 수 있습니다.
+- **포트**: 주소와 결합하여 네트워크 끝점을 이루는 TCP 또는 UDP 포트를 나열합니다. 다른 포트도 나열되어 있으면, IP 주소 범위에서 몇 가지 중복되는 경우도 있습니다.
  
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](./includes/office-365-u.s.-government-dod-endpoints.md)]
   

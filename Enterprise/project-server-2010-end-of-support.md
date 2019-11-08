@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010의 지원 종료는 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782445"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031623"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010의 지원 종료 로드맵
 
@@ -157,7 +157,7 @@ Project Server 2010에서 Project Server 2013로 업그레이드 하기 위해 �
 
 Project Server 2013로 마이그레이션한 후 데이터가 제대로 마이그레이션 되었는지 확인 한 후에는 데이터를 Project Server 2016로 마이그레이션합니다.
   
-Project Server 2013에서 Project Server 2016로 업그레이드 하기 위해 수행 해야 하는 작업에 대 한 포괄적인 이해를 위해서는 [upgrade To Project server 2016로 업그레이드](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)를 참조 하세요.
+Project Server 2013에서 Project Server 2016로 업그레이드 하기 위해 수행 해야 하는 작업에 대 한 포괄적인 이해를 위해서는 [upgrade To Project server 2016로 업그레이드](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)를 참조 하세요.
   
 주요 리소스:
   
@@ -176,7 +176,7 @@ Project Server 2013에서 Project Server 2016로 업그레이드 하기 위해 �
 
 Project Server 2016로 마이그레이션한 후 데이터가 제대로 마이그레이션 되었는지 확인 한 후에는 데이터를 Project Server 2019로 마이그레이션합니다.
   
-Project Server 2016에서 Project Server 2019로 업그레이드 하기 위해 수행 해야 하는 작업에 대 한 포괄적인 이해를 위해서는 [upgrade To Project server 2019로 업그레이드](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)를 참조 하세요.
+Project Server 2016에서 Project Server 2019로 업그레이드 하기 위해 수행 해야 하는 작업에 대 한 포괄적인 이해를 위해서는 [upgrade To Project server 2019로 업그레이드](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)를 참조 하세요.
   
 주요 리소스:
   
@@ -189,7 +189,7 @@ Project Server 2016에서 Project Server 2019로 업그레이드 하기 위해 �
   
 - 업그레이드 프로세스에서는 Project Server 2016 데이터베이스의 데이터를 SharePoint Server 2019 콘텐츠 데이터베이스로 마이그레이션합니다.  Project Server 2019에서는 더 이상 SharePoint Server 팜에서 자체 Project Server 데이터베이스를 만들지 않습니다.
 
-- 업그레이드 후에는 Project Web App의 여러 변경 사항에 대해 숙지 해야 합니다.  이러한 항목에 대 한 자세한 내용은 [Project Server 2019의 새로운 기능](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)을 참조 하십시오.
+- 업그레이드 후에는 Project Web App의 여러 변경 사항에 대해 숙지 해야 합니다.  이러한 항목에 대 한 자세한 내용은 [Project Server 2019의 새로운 기능](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)을 참조 하십시오.
 
   
 기타 리소스:

@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: 이 문서에서는 Internet Explorer 개발자 도구를 사용 하 여 SharePoint Online 사이트의 일반적인 문제를 진단할 수 있는 방법을 보여 줍니다.
-ms.openlocfilehash: a4d66fd019a3b477a97dbf039144734dc7ee1288
-ms.sourcegitcommit: cb338a74194ec9ba0913070e2b74c9f50caffb3b
+ms.openlocfilehash: 2b97098c68eb519ed5a1edc26146c521f39a11d1
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605505"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033414"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online의 성능 문제 진단
 
@@ -32,7 +34,7 @@ SharePoint Online 사이트의 페이지에서 사용자 지정 내용에 대 �
 
 - SharePoint Online 응답 헤더 메트릭
 
-이 항목에서는 이러한 각 방법을 사용 하 여 성능 문제를 진단 하는 방법에 대해 설명 합니다. 문제의 원인을 파악 한 후에 http://aka.ms/tune는 찾을 수 있는 SharePoint 성능 향상에 대 한 문서를 사용 하 여 솔루션으로 작업할 수 있습니다.
+이 항목에서는 이러한 각 방법을 사용 하 여 성능 문제를 진단 하는 방법에 대해 설명 합니다. 문제의 원인을 파악 한 후에 https://aka.ms/tune는 찾을 수 있는 SharePoint 성능 향상에 대 한 문서를 사용 하 여 솔루션으로 작업할 수 있습니다.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>F12 도구 모음을 사용 하 여 SharePoint Online의 성능 진단
 <a name="F12ToolInfo"> </a>

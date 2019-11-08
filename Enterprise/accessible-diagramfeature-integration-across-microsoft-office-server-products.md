@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: 이 문서는 Microsoft Office Server 제품-SharePoint Server, Exchange Server, Lync Server 및 Office Online Server에서 기능 통합 이라는 이름이 지정 된 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782248"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027692"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>액세스 가능한 다이어그램-Microsoft Office Server 제품 간 기능 통합
 
@@ -132,7 +132,7 @@ Outlook Web App의 Lync 현재 상태 이 기능은 다음에 적용할 수 있�
 
 Office Web Apps 서버는 office 파일용 브라우저 기반 파일 보기 및 편집 서비스를 제공 하는 Office 서버 제품입니다. Office Web Apps 서버는 웹 응용 프로그램 오픈 플랫폼 인터페이스 프로토콜 (WOPI)을 지 원하는 제품 및 서비스에서 작동 합니다. 호스트 라고 하는 이러한 제품에는 SharePoint 2013, Lync Server 2013 및 Exchange Server 2013가 포함 됩니다. 
   
-Office Web Apps 서버에 대 한 자세한 내용을 보려면에서 http://aka.ms/OfficeWebAppsPosterOffice web apps 배포 간소화 포스터를 다운로드 하세요. 
+Office Web Apps 서버에 대 한 자세한 내용을 보려면에서 https://aka.ms/OfficeWebAppsPosterOffice web apps 배포 간소화 포스터를 다운로드 하세요. 
   
 ## <a name="server-to-server-authentication-tab"></a>서버 간 인증 탭
 
@@ -166,7 +166,7 @@ Office Web Apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
     
 - Https://<server name>/METADATA/JSON/1의 JSON 메타 데이터 끝점이 있는 Lync server 
     
-- Https://<web app name>/_LAYOUTS/15/METADATA/JSON/1의 JSON 메타 데이터 끝점이 있는 SharePoint server 
+- Https://<web app name>/_layouts/15/METADATA/JSON/1의 JSON 메타 데이터 끝점이 있는 SharePoint server 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>예제: SharePoint 및 Exchange 간의 eDiscovery에 대 한 서버 간 인증 작동 방식
 
@@ -236,9 +236,9 @@ Office Web Apps 서버에 대 한 자세한 내용을 보려면에서 http://aka
     
 구성 스크립트 예를 보려면 Jens Trier Rasmussen의 블로그 문서를 참조 하십시오. 
   
-- SharePoint Server 2013에서 Exchange 2013 고해상도 사진 사용 (http://aka.ms/Bhr4d2) 
+- SharePoint Server 2013에서 Exchange 2013 고해상도 사진 사용 (https://aka.ms/Bhr4d2) 
     
-- Exchange 2013 및 Lync Server 2013 통합 (http://aka.ms/Pn08dw) 
+- Exchange 2013 및 Lync Server 2013 통합 (https://aka.ms/Pn08dw) 
     
 또한 포스터에는 이러한 두 개의 블로그 문서에 대 한 QR 코드가 포함 되어 있습니다. 
   
@@ -283,7 +283,7 @@ UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연
     
 구성 스크립트 예를 보려면 Jens Trier Rasmussen의 블로그 문서를 참조 하십시오. 
   
-- Exchange 2013 및 Lync Server 2013 통합 (http://aka.ms/Oyg7fh) 
+- Exchange 2013 및 Lync Server 2013 통합 (https://aka.ms/Oyg7fh) 
     
  **작동 방법**
   
@@ -293,7 +293,7 @@ UCS (통합 연락처 저장소)는 Microsoft Office 제품에서 일관 된 연
     
 사용자의 연락처가 다음과 같은 경우 Exchange 2013 서버로 자동으로 마이그레이션됩니다. 
   
-1. 에 게 할당 된 사용자 서비스 정책이 있습니다. **** 
+1. 에 게 할당 된 사용자 서비스 정책이 **있습니다.** 
     
 2. Exchange 2013 사서함으로 프로 비전 되었으며 사서함에 적어도 한 번 로그인 되어 있습니다. 
     
@@ -615,7 +615,7 @@ Outlook Web App 사용자의 경우 Exchange CAS는 사용자를 대신 하 여 
     
 - SharePoint 2013 
     
-준비 
+필수 구성 요소: 
   
 - Lync 2013-모임 녹음은 Lync 2013의 클라이언트 쪽 기능입니다. 
     
@@ -667,7 +667,7 @@ IIS 서버에는 IIS 설정이 포함 됩니다.
     
  **디지털 자산 라이브러리**
   
-디지털 자산 라이브러리는 특정 용량 및 성능에 영향을 주는 비디오를 포함 하는 자산 라이브러리입니다. 자세한 내용은에 http://aka.ms/O1vq5w있는 SharePoint Server 2013에서 디지털 자산 라이브러리 계획을 참조 하세요. 또한 포스터에는이 정보에 액세스할 수 있는 QR 코드가 포함 되어 있습니다. 
+디지털 자산 라이브러리는 특정 용량 및 성능에 영향을 주는 비디오를 포함 하는 자산 라이브러리입니다. 자세한 내용은에 https://aka.ms/O1vq5w있는 SharePoint Server 2013에서 디지털 자산 라이브러리 계획을 참조 하세요. 또한 포스터에는이 정보에 액세스할 수 있는 QR 코드가 포함 되어 있습니다. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Lync 클라이언트를 사용 하 여 모임 기록 및 게시
 
@@ -683,10 +683,10 @@ IIS 서버에는 IIS 설정이 포함 됩니다.
     
 4. 모임 녹음을 SharePoint 자산 라이브러리로 끌어서 놓습니다. 
     
-5. 선택 사항: 녹음/녹화를 자산 라이브러리에 추가한 후에는 SharePoint 페이지에 삽입할 수 있습니다. 이 단계에 대 한 자세한 내용은에 http://aka.ms/R61q35있는 Office 365 블로그 항목, SharePoint 및 Lync Online을 사용 하 여 교육 비디오 만들기 및 게시를 참조 하세요. 
+5. 선택 사항: 녹음/녹화를 자산 라이브러리에 추가한 후에는 SharePoint 페이지에 삽입할 수 있습니다. 이 단계에 대 한 자세한 내용은에 https://aka.ms/R61q35있는 Office 365 블로그 항목, SharePoint 및 Lync Online을 사용 하 여 교육 비디오 만들기 및 게시를 참조 하세요. 
     
  **비디오 축소판 그림**
   
-비디오 축소판 그림을 통해 자산 라이브러리의 모양과 느낌이 향상 됩니다. 모임 녹음/녹화를 위한 축소판 그림을 만드는 방법에 대 한 자세한 내용은 위치 http://aka.ms/Kupj85에 있는 비디오 축소판 그림 캡처 또는 변경을 참조 하십시오. 또한 포스터에는이 정보에 액세스할 수 있는 QR 코드가 포함 되어 있습니다. 
+비디오 축소판 그림을 통해 자산 라이브러리의 모양과 느낌이 향상 됩니다. 모임 녹음/녹화를 위한 축소판 그림을 만드는 방법에 대 한 자세한 내용은 위치 https://aka.ms/Kupj85에 있는 비디오 축소판 그림 캡처 또는 변경을 참조 하십시오. 또한 포스터에는이 정보에 액세스할 수 있는 QR 코드가 포함 되어 있습니다. 
   
 

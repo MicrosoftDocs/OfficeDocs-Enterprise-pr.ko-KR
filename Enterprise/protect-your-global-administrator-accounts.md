@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: 353787ccda7ab96583fe75bc423f70d339d3435b
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162401"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031613"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 전역 관리자 계정 보호
 
@@ -125,7 +125,7 @@ MFA 및 PowerShell을 사용 하 여 Office 365 서비스에 연결 하려면 [�
 
 높은 권한 작업의 실행을 최대한 안전한 상태로 유지 하려면 권한이 부여 된 액세스 워크스테이션 (발 없는)을 사용 합니다. 발 없는는 전역 관리자 계정이 필요한 Office 365 구성 같은 중요 한 구성 작업에만 사용 되는 전용 컴퓨터입니다. 이 컴퓨터는 인터넷 브라우징이 나 전자 메일에 대해 매일 사용 되지 않으므로 인터넷 공격 및 위협 으로부터 보호 되는 것이 좋습니다.
   
-발 없는를 설정 하는 방법에 대 한 자세한 내용은 [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw)를 참조 하세요.
+발 없는를 설정 하는 방법에 대 한 자세한 내용은 [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw)를 참조 하세요.
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

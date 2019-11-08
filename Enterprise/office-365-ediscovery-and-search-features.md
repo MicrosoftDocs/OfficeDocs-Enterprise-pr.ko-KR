@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 감사 사용 및 투명성을 위한 eDiscovery 기능의 개요 및 Office 365 내의 기타 검색 기능
-ms.openlocfilehash: e9a120f717c04d5e5570e341aa5d3d93f85f80cb
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067706"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032033"
 ---
 # <a name="ediscovery-and-search-features"></a>eDiscovery 및 검색 기능 
 
@@ -28,7 +28,7 @@ EDiscovery 기능은 관리자, 준수 책임자 및 기타 권한 있는 사용
 
 ## <a name="content-search"></a>콘텐츠 검색
 
-[콘텐츠 검색](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 은 이전 ediscovery 검색 도구에 비해 향상 된 확장 및 성능 기능을 제공 하는 eDiscovery 검색 도구입니다. 콘텐츠 검색을 사용 하 여 사서함, 공용 폴더, SharePoint Online 사이트 및 비즈니스용 OneDrive 위치를 검색 합니다. 콘텐츠 검색에서는 큰 검색이 지원 됩니다. 검색할 수 있는 사서함 및 사이트의 수에는 제한이 없습니다. 또한 동시에 실행 되는 검색 수에는 제한이 없습니다. 검색을 실행 한 후에는 검색 페이지의 세부 정보 창에 콘텐츠 원본 수와 예상 검색 결과 수가 표시 됩니다. 결과를 미리 보거나 로컬 컴퓨터로 내보낼 수 있습니다. 조직에 Office 365 Enterprise E5 구독이 있는 경우 [office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116)의 강력한 분석 기능을 사용 하 여 분석 [결과를 준비할](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) 수 있습니다.
+[콘텐츠 검색](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 은 이전 ediscovery 검색 도구에 비해 향상 된 확장 및 성능 기능을 제공 하는 eDiscovery 검색 도구입니다. 콘텐츠 검색을 사용 하 여 사서함, 공용 폴더, SharePoint Online 사이트 및 비즈니스용 OneDrive 위치를 검색 합니다. 콘텐츠 검색에서는 큰 검색이 지원 됩니다. 검색할 수 있는 사서함 및 사이트의 수에는 제한이 없습니다. 또한 동시에 실행 되는 검색 수에는 제한이 없습니다. 검색을 실행 한 후에는 검색 페이지의 세부 정보 창에 콘텐츠 원본 수와 예상 검색 결과 수가 표시 됩니다. 결과를 미리 보거나 로컬 컴퓨터로 내보낼 수 있습니다. 조직에 Office 365 Enterprise E5 구독이 있는 경우 [office 365 Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?LinkID=620116)의 강력한 분석 기능을 사용 하 여 분석 [결과를 준비할](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) 수 있습니다.
 
 ## <a name="audit-log-search"></a>감사 로그 검색
 

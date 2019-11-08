@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: SaaS 서비스에 대 한 네트워크 최적화가 중요 한 이유, Office 365 네트워킹의 목표 및 각 SaaS가 다른 작업을 수행 하는 다른 네트워킹을 필요로 하는 이유에 대해 설명 합니다.
-ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017288"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031893"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 네트워크 연결 개요
 
@@ -31,7 +31,7 @@ Office 365은 다양 한 마이크로 서비스 및 응용 프로그램 집합�
 
 Office 365 네트워킹의 궁극적인 목표는 클라이언트와 가장 가까운 Office 365 끝점 간에 최소의 제한적인 액세스를 사용 하 여 최종 사용자 환경을 최적화 하는 것입니다. 최종 사용자 환경의 품질은 사용자가 사용 하는 응용 프로그램의 성능 및 응답성과 직접적으로 관련 됩니다. 예를 들어 Microsoft 팀은 사용자 전화 통화, 회의 및 공유 화면 공동 작업을 쉽게 할 수 있도록 하는 짧은 대기 시간을 사용 하므로, Outlook에서는 서버 쪽 인덱싱 및 인공 지능을 활용 하는 빠른 검색 기능에 대 한 강력한 네트워킹 연결을 이용 합니다. 성능.
 
-네트워크 설계의 기본 목표는 클라이언트 컴퓨터에서 Microsoft 글로벌 네트워크로의 RTT (왕복 시간)를 줄이고 모든 Microsoft의 데이터 센터를 낮은 대기 시간으로 상호 연관 시키는 Microsoft의 공용 네트워크 백본로 인해 대기 시간이 최소화 되도록 하는 것입니다. , 전 세계에서 확산 되는 고가용성 클라우드 응용 프로그램 진입점을 살펴봅니다. Microsoft 글로벌 네트워크에 대 한 자세한 내용은 마이크로소프트에서 [빠르고 안정적인 글로벌 네트워크를 구축 하는 방법을](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)확인할 수 있습니다.
+네트워크 설계의 기본 목표는 클라이언트 컴퓨터에서 Microsoft 글로벌 네트워크로의 RTT (왕복 시간)를 줄이고 모든 Microsoft의 데이터 센터를 낮은 대기 시간으로 상호 연관 시키는 Microsoft의 공용 네트워크 백본로 인해 대기 시간이 최소화 되도록 하는 것입니다. , 전 세계에서 확산 되는 고가용성 클라우드 응용 프로그램 진입점을 살펴봅니다. Microsoft 글로벌 네트워크에 대 한 자세한 내용은 마이크로소프트에서 [빠르고 안정적인 글로벌 네트워크를 구축 하는 방법을](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)확인할 수 있습니다.
 
 Office 최적화 365 네트워크 성능이 복잡할 필요는 없습니다. 다음과 같은 몇 가지 주요 원칙에 따라 가능한 최상의 성능을 얻을 수 있습니다.
 
@@ -53,13 +53,13 @@ Microsoft에서는 Office 365 네트워크 트래픽을 보다 쉽게 식별 하
 
 - 인터넷 대기 시간으로 영향을 받지 않는 네트워크 트래픽과의 중요 한 네트워크 트래픽을 구분 하기 위한 새로운 네트워크 끝점 범주 가장 중요 한 "최적화" 범주에는 Url이 몇 개 뿐 이며 IP 주소도 지원 합니다.
 - Office 365 네트워크 식별의 스크립트 사용 또는 직접 장치 구성 및 변경 관리에 대 한 웹 서비스입니다. 변경 내용은 웹 서비스 또는 RSS 형식에서 또는 Microsoft Flow 서식 파일을 사용 하 여 전자 메일에서 사용할 수 있습니다.
-- Office [365 네트워크 파트너 프로그램](http://aka.ms/Office365NPP) 은 office 365 네트워크 연결 원칙을 준수 하 고 간단한 구성을 사용 하는 장치 또는 서비스를 제공 하는 Microsoft 파트너를 대상으로 합니다.
+- Office [365 네트워크 파트너 프로그램](https://aka.ms/Office365NPP) 은 office 365 네트워크 연결 원칙을 준수 하 고 간단한 구성을 사용 하는 장치 또는 서비스를 제공 하는 Microsoft 파트너를 대상으로 합니다.
 
 ## <a name="securing-office-365-connections"></a>Office 365 연결 보안
 
 전통적인 네트워크 보안의 목표는 침입 및 악의적인 악용을 방지 하기 위해 회사 네트워크 경계를 강화 하는 것입니다. 대부분의 엔터프라이즈 네트워크에서는 프록시 서버, 방화벽, SSL 중단 및 검사, 딥 패킷 검사 및 데이터 손실 방지 시스템과 같은 기술을 사용 하 여 인터넷 트래픽에 대 한 네트워크 보안을 적용 합니다. 이러한 기술은 일반 인터넷 요청에 대 한 중요 한 위험 완화를 제공 하지만 Office 365 끝점에 적용 될 때의 성능, 확장성 및 최종 사용자 환경의 품질을 대폭 줄일 수 있습니다.
 
-Office 365에서는 Office 365 기능 및 작업을 위해 특별히 설계 된 기본 제공 보안 및 관리 기능을 사용 하 여 조직의 콘텐츠 보안 및 데이터 사용 준수에 대 한 요구를 충족 시킬 수 있습니다. Office 365 보안 및 규정 준수에 대 한 자세한 내용은 [office 365 보안 로드맵](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap)를 참조 하세요. Office 365 트래픽에 고급 수준 처리를 수행 하는 고급 네트워크 솔루션에서 Microsoft의 권장 사항 및 지원 위치에 대 한 자세한 내용은 [office 365 트래픽에 타사 네트워크 장치 또는 솔루션 사용](https://support.microsoft.com/en-us/help/2690045)을 참조 하십시오.
+Office 365에서는 Office 365 기능 및 작업을 위해 특별히 설계 된 기본 제공 보안 및 관리 기능을 사용 하 여 조직의 콘텐츠 보안 및 데이터 사용 준수에 대 한 요구를 충족 시킬 수 있습니다. Office 365 보안 및 규정 준수에 대 한 자세한 내용은 [office 365 보안 로드맵](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)를 참조 하세요. Office 365 트래픽에 고급 수준 처리를 수행 하는 고급 네트워크 솔루션에서 Microsoft의 권장 사항 및 지원 위치에 대 한 자세한 내용은 [office 365 트래픽에 타사 네트워크 장치 또는 솔루션 사용](https://support.microsoft.com/help/2690045)을 참조 하십시오.
 
 ## <a name="why-is-office-365-networking-different"></a>Office 365 네트워킹이 서로 다른 이유는 무엇 인가요?
 
@@ -77,12 +77,12 @@ Office 365 트래픽이 패킷 검사 및 중앙 송신에 따라 발생 하는 
 
 로컬 egress 아키텍처는 전통적인 모델을 통한 Office 365 네트워크 트래픽에 다음과 같은 이점을 제공 합니다.
   
-- 경로 길이를 최적화 하 여 최적의 Office 365 성능을 제공 합니다. 최종 사용자 연결은 Microsoft 전역 네트워크의 _분산 서비스 전면 도어_ 인프라를 통해 가장 가까운 Office 365 진입점으로 동적으로 라우팅되고, 트래픽은 microsoft의 데이터 및 서비스 끝점에 내부적으로 라우팅됩니다. ultra 낮은 대기 시간 고가용성 어두운 파이버
+- 경로 길이를 최적화 하 여 최적의 Office 365 성능을 제공 합니다. 최종 사용자 연결은 Microsoft 전역 네트워크의 _분산 서비스 전면 도어_ 인프라를 통해 가장 가까운 Office 365 진입점으로 동적으로 라우팅되고, 트래픽은 microsoft의 울트라 낮은 대기 시간 고가용성 고속 파이버를 통해 데이터 및 서비스 끝점에 내부적으로 라우팅됩니다.
 - 프록시 및 트래픽 검사 장치를 우회 하 여 Office 365 트래픽에 대해 로컬 송신을 허용 함으로써 회사 네트워크 인프라에 대 한 부하를 줄입니다.
 - 중복 네트워크 보안 기술에 대 한 응용 프로그램을 방지 하 여 클라이언트 끝점 보안 및 클라우드 보안 기능을 활용 하 여 양쪽 끝 간의 연결을 보호 합니다.
 
 > [!NOTE]
-> _분산 서비스 전면 도어_ 인프라는 지리적으로 분산 된 위치에 대 한 Microsoft 글로벌 네트워크의 가용성이 높고 확장 가능한 네트워크에 지입니다. 최종 사용자 연결을 종료 하 고 Microsoft 글로벌 네트워크 내에서이를 효율적으로 라우팅합니다. Microsoft 글로벌 네트워크에 대 한 자세한 내용은 마이크로소프트에서 [빠르고 안정적인 글로벌 네트워크를 구축 하는 방법을](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)확인할 수 있습니다.
+> _분산 서비스 전면 도어_ 인프라는 지리적으로 분산 된 위치에 대 한 Microsoft 글로벌 네트워크의 가용성이 높고 확장 가능한 네트워크에 지입니다. 최종 사용자 연결을 종료 하 고 Microsoft 글로벌 네트워크 내에서이를 효율적으로 라우팅합니다. Microsoft 글로벌 네트워크에 대 한 자세한 내용은 마이크로소프트에서 [빠르고 안정적인 글로벌 네트워크를 구축 하는 방법을](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)확인할 수 있습니다.
 
 Office 365 네트워크 연결 원리를 이해 하 고 적용 하는 방법에 대 한 자세한 내용은 [office 365 네트워크 연결 원리](office-365-network-connectivity-principles.md)를 참조 하세요.
 
@@ -90,7 +90,7 @@ Office 365 네트워크 연결 원리를 이해 하 고 적용 하는 방법에 
 
 Office 365 네트워크 성능 최적화는 실제로 불필요 한 장애를 제거 하는 것입니다. Office 365 연결을 신뢰할 수 있는 트래픽으로 처리 하면 패킷 검사 및 프록시 대역폭 경쟁에 따라 대기 시간이 지연 되는 것을 방지할 수 있습니다. 클라이언트 컴퓨터와 Office 365 끝점 간에 로컬 연결을 허용 하면 트래픽을 Microsoft 글로벌 네트워크를 통해 동적으로 라우팅할 수 있습니다.
 
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 
@@ -100,11 +100,11 @@ Office 365 네트워크 성능 최적화는 실제로 불필요 한 장애를 �
 
 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 
 [Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
 
@@ -114,6 +114,6 @@ Office 365 네트워크 성능 최적화는 실제로 불필요 한 장애를 �
 
 [Office 365 네트워크 온 보 딩 도구](https://aka.ms/netonboard)
 
-[Microsoft가 빠르고 안정적인 글로벌 네트워크를 구축 하는 방법](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Microsoft가 빠르고 안정적인 글로벌 네트워크를 구축 하는 방법](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Office 365 네트워킹 블로그](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

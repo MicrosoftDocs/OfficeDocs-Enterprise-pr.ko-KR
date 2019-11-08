@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: SharePoint Online, 비즈니스용 OneDrive, Exchange Online, 비즈니스용 Skype Online, 클라이언트 컴퓨터 간의 지연, 중단 및 성능 저하를 식별 하 고 해결 하기 위해 수행 해야 하는 단계를 알아야 합니까? 지원을 요청 하기 전에이 문서를 통해 Office 365 성능 문제를 해결 하 고 일반적인 몇 가지 문제를 해결 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069584"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031133"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 성능 문제 해결 계획
 
@@ -42,7 +42,7 @@ SharePoint Online, 비즈니스용 OneDrive, Exchange Online, 비즈니스용 Sk
 - 성능 문제를 재현할 수 있는 클라이언트 컴퓨터를 찾습니다. 이 컴퓨터는 문제 해결 과정 중에 사용 됩니다.
 - 성능 문제가 발생 하는 단계를 기록 하 여 테스트 시간이 걸릴 때 준비가 완료 되었는지 확인 합니다.
 - 정보 수집 및 녹음 도구를 설치 합니다.
-  - [Netmon 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865) 을 설치 하거나 해당 하는 네트워크 추적 도구를 사용 합니다.
+  - [Netmon 3.4](https://www.microsoft.com/download/details.aspx?id=4865) 을 설치 하거나 해당 하는 네트워크 추적 도구를 사용 합니다.
   - 무료 기본 버전의 [HTTPWatch](https://www.httpwatch.com/download/) 를 설치 하거나 해당 하는 네트워크 추적 도구를 사용 합니다.
   - 테스트 중에 수행 하는 단계에 대 한 기록을 유지 하려면 화면 레코더를 사용 하거나 Windows Vista 이상에서 제공 하는 단계 레코더 (PSR)를 실행 합니다.
 
@@ -111,9 +111,9 @@ Netmon 3.4을 설치한 후 도구를 열고 다음 단계를 수행 합니다.
   
 ### <a name="run-httpwatch-and-reproduce-the-issue"></a>HTTPWatch를 실행 하 여 문제 재현
   
-HTTPWatch는 브라우저 플러그 인 이므로 브라우저에서 도구를 표시 하는 기능은 Internet Explorer 버전 마다 약간씩 다릅니다. 일반적으로 Internet Explorer 브라우저의 명령 표시줄 아래에서 HTTPWatch를 찾을 수 있습니다. 브라우저 창에 HTTPWatch 플러그 인이 표시 되지 않으면 **도움말** \> **** 을 클릭 하거나 나중 버전의 internet explorer에서 기어 기호 및 **정보 internet explorer**를 클릭 하 여 브라우저 버전을 확인 합니다. **명령** 모음을 실행 하려면 Internet Explorer에서 메뉴 모음을 마우스 오른쪽 단추로 클릭 하 고 **명령 표시줄**을 클릭 합니다.
+HTTPWatch는 브라우저 플러그 인 이므로 브라우저에서 도구를 표시 하는 기능은 Internet Explorer 버전 마다 약간씩 다릅니다. 일반적으로 Internet Explorer 브라우저의 명령 표시줄 아래에서 HTTPWatch를 찾을 수 있습니다. 브라우저 창에 HTTPWatch 플러그 인이 표시 되지 않으면 **도움말** \> **을 클릭**하거나 나중 버전의 internet explorer에서 기어 기호 및 **정보 internet explorer**를 클릭 하 여 브라우저 버전을 확인 합니다. **명령** 모음을 실행 하려면 Internet Explorer에서 메뉴 모음을 마우스 오른쪽 단추로 클릭 하 고 **명령 표시줄**을 클릭 합니다.
 
-지난에 HTTPWatch는 명령과 탐색기 모음에 모두 연결 되어 있으므로, 다시 부팅 후에도 아이콘을 즉시 표시 하지 않고 아이콘에 대 한 도구 모음을 바로 볼 수 있습니다 ****. 도구 모음을 사용자 지정할 수 있으며 옵션을 추가할 수 있습니다.
+지난에 HTTPWatch는 명령과 탐색기 모음에 모두 연결 되어 있으므로, 다시 부팅 후에도 아이콘을 즉시 표시 하지 않고 아이콘에 대 한 도구 **모음을 바로**볼 수 있습니다. 도구 모음을 사용자 지정할 수 있으며 옵션을 추가할 수 있습니다.
 
 ![HTTPWatch 아이콘이 표시 된 Internet Explorer의 명령 도구 모음입니다.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
@@ -133,7 +133,7 @@ HTTPWatch는 브라우저 플러그 인 이므로 브라우저에서 도구를 �
   
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>작업을 기록 하기 위해 문제 단계 레코더 (PSR .exe)를 실행 합니다.
   
-1. **시작** \> **실행** \> **** \> \> **** **** **** 유형 psr를 사용 하거나, Windows 키 유형 psr .exe를 클릭 한 다음 enter 키를 누릅니다. \>
+1. \> **시작** \> **실행** 유형 **psr** \> **를 사용**하거나, **Windows 키** \> 유형 **psr .exe** \> 를 클릭 한 다음 enter 키를 누릅니다.
 
 2. Small PSR .exe 창이 나타나면 **녹음 시작** 을 클릭 하 고 성능 문제를 재현 하는 단계를 재현 합니다. 필요에 따라 의견 **추가**를 클릭 하 여 설명을 추가할 수 있습니다.
 
@@ -192,7 +192,7 @@ Office 365 Outlook Online을 예로 들면 다음과 같이 트래픽이 시작 
 
 트래픽의 모든 부분이 중요 하 고 연결 되지만, 추적의 작은 부분에는 성능 문제 해결 측면에서 특히 중요 한 정보가 포함 되어 있으므로 이러한 영역에 중점을 두는 것이 좋습니다. 또한 Microsoft에서 Office 365 성능 문제 해결에 대 한 충분 한 문제가 발생 하 여 일반적인 10 가지 문제를 컴파일 했기 때문에 이러한 문제에 중점을 둔 것 이며, 다음에이를 수행 하는 데 필요한 도구를 사용 하는 방법을 중점적으로 설명 합니다.
   
-모든 준비가 완료 되지 않은 경우 아래 매트릭스를 통해 몇 가지 도구를 사용할 수 있습니다. 가능한 경우 설치 지점에 링크가 제공 됩니다. 이 목록에는 [Netmon](https://www.microsoft.com/en-us/download/details.aspx?id=4865) 및 [Wireshark](https://www.wireshark.org/)과 같은 일반적인 네트워크 추적 도구가 포함 되어 있지만, 익숙한 모든 추적 도구를 사용 하며, 네트워크 트래픽을 필터링 하는 데 익숙한 사용자에 게 제공 됩니다. 테스트할 때는 다음을 염두에 두어야 합니다.
+모든 준비가 완료 되지 않은 경우 아래 매트릭스를 통해 몇 가지 도구를 사용할 수 있습니다. 가능한 경우 설치 지점에 링크가 제공 됩니다. 이 목록에는 [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) 및 [Wireshark](https://www.wireshark.org/)과 같은 일반적인 네트워크 추적 도구가 포함 되어 있지만, 익숙한 모든 추적 도구를 사용 하며, 네트워크 트래픽을 필터링 하는 데 익숙한 사용자에 게 제공 됩니다. 테스트할 때는 다음을 염두에 두어야 합니다.
   
 - 브라우저 *를 닫고 실행 하는 브라우저 하나만 사용 하 여 테스트* -이 경우 캡처한 전체 트래픽을 줄일 수 있습니다. 이를 통해 사용량이 적은 추적을 사용할 수 있습니다.
 - *클라이언트 컴퓨터에서 DNS 확인자 캐시 플러시* -이 작업은 깨끗 한 추적을 위해 캡처를 시작할 때 깨끗 한 슬레이트를 제공 합니다.
@@ -240,7 +240,7 @@ Netmon에서 라운드트립에 대 한 시간 오프셋 필드를 확인 합니
 예를 들어 Netmon의 필터는 또는 Wireshark에서와 `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`같이 표시 될 수 있습니다 `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12`.  
 
 > [!TIP]
-> 추적의 IP 주소가 DNS 서버에 속하는지 여부를 알 수 없습니까? 명령줄에서 조회 해 봅니다. 실행 **** \> **** **** **** \> **** 시작을 클릭 하 고 cmd를 입력 하거나 Windows 키를 누르고 cmd를 입력 합니다. \> 프롬프트에을 입력 `nslookup <the IP address from the network trace>`합니다. 테스트 하려면 사용자 컴퓨터의 IP 주소에 대해 nslookup을 사용 합니다. > Microsoft IP 범위 목록을 보려면 [Office 365 url 및 IP 주소 범위](https://technet.microsoft.com/en-us/library/hh373144.aspx)를 참조 하세요.
+> 추적의 IP 주소가 DNS 서버에 속하는지 여부를 알 수 없습니까? 명령줄에서 조회 해 봅니다. 실행 **** \> **** **** **** \> **** 시작을 클릭 하 고 cmd를 입력 하거나 Windows 키를 누르고 cmd를 입력 합니다. \> 프롬프트에을 입력 `nslookup <the IP address from the network trace>`합니다. 테스트 하려면 사용자 컴퓨터의 IP 주소에 대해 nslookup을 사용 합니다. Microsoft IP 범위 목록을 보려면 > [Office 365 url 및 IP 주소 범위](https://technet.microsoft.com/library/hh373144.aspx)를 참조 하세요.
 
 문제가 있는 경우, 특히 TLS에서는 응용 프로그램 데이터의 위치를 표시 하는 TLS 패킷 (예: Netmon에서 제공 하는 응용 프로그램 데이터 패킷을 찾을 수 있음 `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`)에 표시 되는 긴 시간 오프셋 (이 경우 Outlook Online)이 나타날 것으로 예상 합니다. 세션 전체에서 시간이 순조롭게 진행 되 고 있는 것을 볼 수 있습니다. Outlook Online을 새로 고칠 때 시간이 오래 걸리는 경우 전송 되는 재설정으로 인해 발생할 수 있습니다.
 
@@ -250,7 +250,7 @@ Netmon에서 라운드트립에 대 한 시간 오프셋 필드를 확인 합니
 
 이 네트워크 계획에서 사용할 수 있는 Office 365에 대 한 대역폭 계산기 [와 office 365의 성능 조정](network-planning-and-performance.md) 페이지를 제공 합니다.  
 
-연결 속도 또는 ISP 연결의 대역폭을 측정 해야 하나요? 이 사이트 (또는 이와 같은 사이트): [Speedtest.nethttp 공식 사이트](https://www.speedtest.net/)및를 [테스트](http://www.pingtest.net/)합니다.
+연결 속도 또는 ISP 연결의 대역폭을 측정 해야 하나요? 이 사이트 (또는 이와 같은 사이트): [Speedtest.nethttp 공식 사이트](https://www.speedtest.net/)및를 [테스트](https://www.pingtest.net/)합니다.
 
 #### <a name="tools"></a>도구
 
@@ -263,7 +263,7 @@ Netmon에서 라운드트립에 대 한 시간 오프셋 필드를 확인 합니
 
 추적에서 대기 시간을 추적 하려면 클라이언트 컴퓨터 IP 주소와 Office 365에서 DNS 서버의 IP 주소를 기록 하면 도움이 됩니다. 이는 추적 필터링을 용이 하 게 하기 위한 것입니다. 프록시를 통해 연결 하는 경우에는 클라이언트 컴퓨터의 IP 주소, 프록시/송신 IP 주소 및 Office 365 DNS IP 주소를 사용 하 여 작업을 보다 쉽게 수행 해야 합니다.  
 
-Ping 요청은 outlook.office365.com에 게 전송 되어 ping에서 상표 연속 ICMP 패킷을 전송 하기 위해 연결할 수 없는 경우 ** 에도 요청을 수신 하는 데이터 센터의 이름을 확인할 수 있습니다. PsPing (다운로드에 무료 도구)를 사용 하 고 특정 포트 (443) 및 IPv4를 사용 하는 경우 (-4)는 전송 되는 패킷의 평균 왕복 시간을 얻게 됩니다. 이렇게 하면와 같은 `psping -4 yourSite.sharepoint.com:443`Office 365 서비스의 다른 url에서이 작업을 수행할 수 있습니다. 실제로 여러 ping을 지정 하 여 평균에 대 한 더 큰 샘플을 가져올 수 있습니다 `psping -4 -n 20 yourSite-my.sharepoint.com:443`.  
+Ping 요청은 outlook.office365.com에 게 전송 되어 ping에서 상표 연속 ICMP 패킷을 전송 하기 위해 연결할 수 없는 경우에도 요청을 수신 하는 데이터 센터의 이름을 *확인할 수 있습니다* . PsPing (다운로드에 무료 도구)를 사용 하 고 특정 포트 (443) 및 IPv4를 사용 하는 경우 (-4)는 전송 되는 패킷의 평균 왕복 시간을 얻게 됩니다. 이렇게 하면와 같은 `psping -4 yourSite.sharepoint.com:443`Office 365 서비스의 다른 url에서이 작업을 수행할 수 있습니다. 실제로 여러 ping을 지정 하 여 평균에 대 한 더 큰 샘플을 가져올 수 있습니다 `psping -4 -n 20 yourSite-my.sharepoint.com:443`.  
 
 > [!NOTE]
 > PsPing에서는 ICMP 패킷을 보내지 않습니다. 특정 포트를 통해 TCP 패킷으로 ping을 수행 하 여 열려 있는 것으로 확인 된 것을 사용할 수 있습니다. SSL/TLS를 사용 하는 Office 365에서 포트: 443을 PsPing에 연결 해 봅니다.
@@ -277,7 +277,7 @@ IP 주소를 가져오기 위해 Netmon을 필터링 하 고 DNS 대기 시간�
 1. URL `ping outlook.office365.com` 에 대해 ping을 수행 하 고 결과에 ping 요청이 전송 된 DNS 서버의 이름과 IP 주소를 기록 합니다.
 2. 네트워크 추적 페이지를 열거나, 성능 문제를 제공 하는 작업을 수행 하거나, ping에 높은 대기 시간이 표시 되 면 네트워크를 추적 합니다.
 3. Netmon에서 추적을 열고 DNS에 대해 필터를 적용 합니다 (이 필터는 Wireshark 에서도 작동 하지만 대/ `-- dns`소문자를 구분 함). Ping에서 DNS 서버의 이름을 알고 있으므로 다음과 `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`같이 Netmon에서 더 많은 speedily를 필터링 할 수 있으며,이는 Wireshark DNS 및 프레임에 "namnorthwest"가 포함 된 것 처럼 보입니다.<br/>응답 패킷을 열고 Netmon **프레임 세부 정보** 창에서 **DNS** 를 클릭 하 여 추가 정보를 확장 합니다. DNS 정보에서 요청이 Office 365에 있는 DNS 서버의 IP 주소를 찾습니다. 다음 단계인 PsPing 도구에 대해이 IP 주소가 필요 합니다. 필터를 제거 하 고 Netmon (**Frame Summary** \> **Find 대화** \> **DNS**)의 DNS 응답을 마우스 오른쪽 단추로 클릭 하 여 dns 쿼리 및 응답을 나란히 확인 합니다.
-4. 또한 Netmon에서는 DNS 요청과 응답 사이의 시간 오프셋 열을 기록 합니다. 다음 단계에서는 ICMP가 방화벽에서 종종 차단 되는 경우 및 PsPing가 대기 시간 (밀리초)을 추적 하기 때문에 간편 하 게 설치할 수 있으며 [psping](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) 도구를 사용 하는 것이 매우 편리 합니다. PsPing 주소 및 포트에 대 한 TCP 연결을 완료 합니다 (이 경우 오픈 포트 443).
+4. 또한 Netmon에서는 DNS 요청과 응답 사이의 시간 오프셋 열을 기록 합니다. 다음 단계에서는 ICMP가 방화벽에서 종종 차단 되는 경우 및 PsPing가 대기 시간 (밀리초)을 추적 하기 때문에 간편 하 게 설치할 수 있으며 [psping](https://technet.microsoft.com/sysinternals/jj729731.aspx) 도구를 사용 하는 것이 매우 편리 합니다. PsPing 주소 및 포트에 대 한 TCP 연결을 완료 합니다 (이 경우 오픈 포트 443).
 5. PsPing를 설치 합니다.
 6. 명령 프롬프트 (cmd Run \> \> , Windows 키 \> 유형 cmd 시작)를 열고 디렉터리를 psping 명령을 실행 하도록 설치한 디렉터리로 변경 합니다. 이 예에서는 C의 루트에 ' Perf ' 폴더를 만든 것을 확인할 수 있습니다. 이 작업은 빠른 액세스에 대해 동일 하 게 수행할 수 있습니다.
 7. 이전 Netmon 추적에서 (예 `psping -n 20 132.245.24.82:445`를 들어) 포트 번호를 포함 하 여 OFFICE 365 DNS 서버의 IP 주소에 대해 PsPing를 수행 하도록 명령을 입력 합니다. 이를 통해 20 개의 ping에 대 한 표본을 제공 하 고 PsPing가 중지 될 때의 대기 시간을 평균 합니다.
@@ -295,7 +295,7 @@ Netmon 추적에 표시 되는 대기 시간 (추가 밀리초)은 주어진 세
 ![프레임 요약에 Netmon 기본 시간 변화량 열이 추가된 Netmon의 일반 대기 시간입니다.](media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
 > [!NOTE]
-> IP 주소가 여기에 표시 된 ip와 다를 수 있습니다 예를 들어 ping은 157.56.0.0/16 또는 이와 비슷한 범위를 반환할 수 있습니다. Office 365에서 사용 되는 범위 목록은 [office 365 url 및 IP 주소 범위](https://technet.microsoft.com/en-us/library/hh373144.aspx)를 확인 하세요.
+> IP 주소가 여기에 표시 된 ip와 다를 수 있습니다 예를 들어 ping은 157.56.0.0/16 또는 이와 비슷한 범위를 반환할 수 있습니다. Office 365에서 사용 되는 범위 목록은 [office 365 url 및 IP 주소 범위](https://technet.microsoft.com/library/hh373144.aspx)를 확인 하세요.
 
 예를 들어, 132.245 등을 검색 하려면 모든 노드 (맨 위에 단추가 있습니다)를 확장 해야 합니다.
 
@@ -341,7 +341,7 @@ Wireshark에 표시 된 대로 프록시 인증의 4 초 지연 프레임 세부
 DNS 이름 확인이 overseas를 수행 하는 경우 페이지 로드에 초를 추가할 수 있습니다. 이상적으로는 적고 100 밀리초에서 이름 확인이 수행 됩니다. 그렇지 않은 경우에는 추가 조사를 수행 해야 합니다.
 
 > [!TIP]
-> Office 365에서 클라이언트 연결이 작동 하는지 확실히 확인 해야 하나요? [여기](https://technet.microsoft.com/en-us/library/dn741250.aspx)에서 클라이언트 연결 참조 문서를 확인 하세요.
+> Office 365에서 클라이언트 연결이 작동 하는지 확실히 확인 해야 하나요? [여기](https://technet.microsoft.com/library/dn741250.aspx)에서 클라이언트 연결 참조 문서를 확인 하세요.
 
 #### <a name="tools"></a>도구
 
@@ -463,7 +463,7 @@ SharePoint Online에 액세스 하는 경우 abroad을 이동 하는 사용자�
 Lync online에는 한 번에 두 개 이상의 dC에 능동 노드가 있습니다. Lync online 인스턴스에 대 한 요청을 보낼 경우 Microsoft의 DNS는 요청을 보낸 위치를 확인 하 고 Lync online이 활성 상태인 가장 가까운 지역 dC의 IP 주소를 반환 합니다.
 
 > [!TIP]
-> 클라이언트가 Office 365에 연결 하는 방법에 대 한 자세한 정보를 확인 해야 하나요? [클라이언트 연결](https://technet.microsoft.com/en-us/library/dn741250.aspx) 참조 문서와 유용한 그래픽을 살펴봅니다.
+> 클라이언트가 Office 365에 연결 하는 방법에 대 한 자세한 정보를 확인 해야 하나요? [클라이언트 연결](https://technet.microsoft.com/library/dn741250.aspx) 참조 문서와 유용한 그래픽을 살펴봅니다.
 
 #### <a name="tools"></a>도구
 
@@ -492,9 +492,9 @@ Outlook.office365.com에 대해 Ping 도구를 실행 하 여 DNS 요청이 라�
 - HTTPWatch
 - 브라우저의 F12 콘솔
 
-이 네트워크 관련 문서에서 응용 프로그램별 문제 해결에 사용 되는 도구는 다루지 않습니다. 하지만 [이 페이지에서는](https://support.office.com/en-us/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)리소스를 사용할 *수* 있습니다.
+이 네트워크 관련 문서에서 응용 프로그램별 문제 해결에 사용 되는 도구는 다루지 않습니다. 하지만 [이 페이지에서는](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)리소스를 사용할 *수* 있습니다.
 
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

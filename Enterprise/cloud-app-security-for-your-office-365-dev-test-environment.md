@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '요약: Office 365 개발/테스트 환경에서 Office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
-ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782258"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030832"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
@@ -32,7 +32,7 @@ Office 365 Cloud App Security (이전에는 Office 365 Advanced Security Managem
 이 문서의 지침을 사용 하 여 Office 365 평가판 구독에서 Cloud App Security를 사용 하도록 설정 하 고 테스트 합니다.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](https://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>1단계: 경량 또는 시뮬레이트된 엔터프라이즈 Office 365 개발/테스트 환경을 구축합니다.
 
@@ -153,7 +153,7 @@ Office 365 Cloud App Security (이전에는 Office 365 Advanced Security Managem
     
 22. **Microsoft Office 홈** 탭에서 **메일**을 클릭 합니다. 최대 30분을 기다립니다. 
     
-    받은 편지함에 제목 **Microsoft AZURE AD 알림 서비스**와 함께 새 전자 메일 메시지가 두 개 표시 됩니다. 한 메시지는 사용자 5 계정이 **암호 관리자** 역할에 추가 되었으며, 다른 메시지가 사용자의 5 계정이 **사용자 관리자** 역할에 추가 되었음을 나타냅니다 (사용자 관리 관리자 역할 ( Microsoft 365 관리 센터
+    받은 편지함에 제목 **Microsoft AZURE AD 알림 서비스**와 함께 새 전자 메일 메시지가 두 개 표시 됩니다. 한 메시지는 사용자 5 계정을 **암호 관리자** 역할에 추가 했으며 사용자 5 계정이 **사용자 관리자** 역할에 추가 되었다는 것을 의미 합니다 (Microsoft 365 관리 센터의 사용자 관리 관리자 역할과 같음).
     
 이제이 환경을 사용 하 여 새 정책을 만들고 Office 365 Cloud App Security를 추가로 경험해 볼 수 있습니다. 추가 구성 문서에 대 한 링크는 [Office 365 Cloud App Security 준비](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) 를 참조 하세요.
   

@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
-ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
+ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786233"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030782"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -92,7 +92,7 @@ SharePoint Online 데이터 이동을 완료 한 후에는 다음과 같은 몇 
     
 ### <a name="search"></a>검색
 
-SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 검색 설정을 새 위치로 마이그레이션합니다. SharePoint Online 데이터 **** 를 이동할 때까지 계속 해 서 사용자에 게 원래 위치에 있는 인덱스를 처리 합니다. SharePoint Online 데이터 이동이 완료 된 후 새 위치에서 검색을 통해 콘텐츠 크롤링이 자동으로 시작 됩니다. 이 시점부터는 마이그레이션된 인덱스에서 고객의 사용자에게 서비스를 제공합니다. 마이그레이션 후 발생하는 콘텐츠 변경 내용은 크롤링하기 전까지 마이그레이션된 인덱스에 포함되지 않습니다. 대부분의 고객은 SharePoint Online 데이터 이동을 완료 한 후 결과가 최신이 아닌 것을 알 수 없지만, 일부 고객의 경우 처음 24-48 시간 동안 최신 상태를 유지 하는 경우가 있습니다. 
+SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 검색 설정을 새 위치로 마이그레이션합니다. SharePoint Online 데이터를 이동할 때까지 계속 해 서 사용자에 게 원래 위치에 있는 인덱스를 **처리 합니다.** SharePoint Online 데이터 이동이 완료 된 후 새 위치에서 검색을 통해 콘텐츠 크롤링이 자동으로 시작 됩니다. 이 시점부터는 마이그레이션된 인덱스에서 고객의 사용자에게 서비스를 제공합니다. 마이그레이션 후 발생하는 콘텐츠 변경 내용은 크롤링하기 전까지 마이그레이션된 인덱스에 포함되지 않습니다. 대부분의 고객은 SharePoint Online 데이터 이동을 완료 한 후 결과가 최신이 아닌 것을 알 수 없지만, 일부 고객의 경우 처음 24-48 시간 동안 최신 상태를 유지 하는 경우가 있습니다. 
   
 영향을 받는 기능은 다음과 같습니다.
   
@@ -118,7 +118,7 @@ SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 �
    
 |**이동 후**|
 |:-----|
-| 모임 데이터(업로드된 프레젠테이션 등)는 이동되지 않으므로 다시 업로드해야 합니다.  <br/>  Lync 2010 클라이언트 및 Mac 2011용 Lync 클라이언트와 같은 이전 버전의 Lync 클라이언트는 DNS 정보를 서비스로 캐시하여 로그인 문제를 일으키는 것으로 알려져 있습니다. 사용자가 최신 비즈니스용 Skype Windows 클라이언트를 사용하지 않는 경우 DNS 캐시를 지워야 할 수 있습니다. 사용자에 게 [문제 해결 마법사](https://support.microsoft.com/en-us/kb/2541980) 를 실행 하도록 요청 하 고 클라이언트 캐시를 지우는 방법에 대 한 지침을 따릅니다. Mac 용 Lync 클라이언트 사용자는 [다음 지침](https://support.microsoft.com/en-us/kb/2629861)을 따라야 합니다.  <br/> |
+| 모임 데이터(업로드된 프레젠테이션 등)는 이동되지 않으므로 다시 업로드해야 합니다.  <br/>  Lync 2010 클라이언트 및 Mac 2011용 Lync 클라이언트와 같은 이전 버전의 Lync 클라이언트는 DNS 정보를 서비스로 캐시하여 로그인 문제를 일으키는 것으로 알려져 있습니다. 사용자가 최신 비즈니스용 Skype Windows 클라이언트를 사용하지 않는 경우 DNS 캐시를 지워야 할 수 있습니다. 사용자에 게 [문제 해결 마법사](https://support.microsoft.com/kb/2541980) 를 실행 하도록 요청 하 고 클라이언트 캐시를 지우는 방법에 대 한 지침을 따릅니다. Mac 용 Lync 클라이언트 사용자는 [다음 지침](https://support.microsoft.com/kb/2629861)을 따라야 합니다.  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>타사 오디오 회의 공급자를 포함 하는 비즈니스용 Skype 이동
 새로운 지역별 데이터 센터에 소속된 사용자는 비즈니스용 Skype에 대한 타사 오디오 회의 공급자 추가 기능 서비스를 사용할 수 없습니다.   타사 오디오 회의 공급자 서비스를 사용하는 기존 고객은 새로운 지역별 데이터 센터로의 이동을 요청하지 않는 것이 좋습니다.   새로운 지역별 데이터 센터에 배포된 신규 고객은 타사 오디오 회의 공급자를 사용하기 위해 지역별 데이터 센터로의 이동을 요청해야 합니다. 
@@ -135,5 +135,5 @@ Exchange Online, SharePoint Online 및 비즈니스용 Skype에 대 한 고객 �
   
 [Microsoft Dynamics CRM Online에 대 한 새로운 데이터 센터 지역](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[지역별 Azure services](https://azure.microsoft.com/en-us/regions/)
+[지역별 Azure services](https://azure.microsoft.com/regions/)
 

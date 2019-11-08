@@ -1,5 +1,5 @@
 ---
-title: SharePoint Server 2007 지원 종료 로드맵
+title: SharePoint Server 2007 지원 로드맵 최종본
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -32,14 +32,14 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 2017 년 10 월 10 일에 SharePoint Server 2007에 대 한 지원이 종료 되었습니다. 이 문서를 읽으면 업그레이드 옵션, 문제 해결, 모범 사례, 시스템 요구 사항, 업그레이드 단계 및 Microsoft 파트너 로부터 도움을 받는 방법에 대해 알아볼 수 있습니다.
-ms.openlocfilehash: 5e5f697f64c520ec1be2b055be0fd42e1742a9ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 4054ca5c0b502c2008556021a80d3a939a979bb3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070724"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030913"
 ---
-# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 지원 종료 로드맵
+# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 지원 로드맵 최종본
 
 **2017 년 10 월 10 일**, Microsoft Office SharePoint Server 2007 지원 종료에 도달 했습니다. SharePoint Server 2007에서 Office 365 또는 최신 버전의 SharePoint Server 온-프레미스로 마이그레이션을 시작한 적이 없다면 이제 계획을 시작 하는 데 걸리는 시간입니다. 이 문서에서는 사용자가 데이터를 SharePoint Online으로 마이그레이션하거나 SharePoint Server를 온-프레미스로 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다. 
   
@@ -55,7 +55,7 @@ SharePoint Server에는 거의 모든 Microsoft 제품과 마찬가지로 Micros
     
 - 표준 시간대 업데이트
     
-SharePoint Server 2007 팜은 10 월 11 2017 일 후에도 계속 작동 하지만, 제품 (보안 패치/수정 사항 포함)에 대 한 추가 업데이트, 패치 또는 수정 사항은 제공 되지 않으며, Microsoft support가 다음을 위해 지원 노력을 완전히 운영 하 고 있습니다. 제품의 최신 버전 설치가 더 이상 지원 되거나 패치 되지 않으므로 지원 되는 방법의 끝으로 제품을 업그레이드 하거나 중요 한 데이터를 마이그레이션해야 합니다.
+사용자는 SharePoint Server 2007 팜이 여전히 작업을 수행 하 고 2017이 지난 후에도 더 이상 업데이트, 패치 또는 픽스를 제공 하지 않으며, Microsoft Support는 해당 제품에 대 한 지원 노력을 보다 최신 버전의 제품으로 완전히 이동할 수 있습니다. 설치가 더 이상 지원 되거나 패치 되지 않으므로 지원 되는 방법의 끝으로 제품을 업그레이드 하거나 중요 한 데이터를 마이그레이션해야 합니다.
   
 > [!TIP]
 > 업그레이드 또는 마이그레이션을 아직 계획 하지 않은 경우에는 [SharePoint 2007 마이그레이션 옵션을 고려 하](sharepoint-2007-migration-options.md)여 시작 위치에 대 한 몇 가지 예를 참조 하세요. 또한 업그레이드 또는 Office 365 마이그레이션 (또는 둘 다)을 통해 도움을 받을 수 있는 [Microsoft 파트너](https://go.microsoft.com/fwlink/?linkid=841249) 를 검색할 수도 있습니다. 
@@ -72,9 +72,9 @@ SharePoint Server 2007 팜은 10 월 11 2017 일 후에도 계속 작동 하지�
 ||SharePoint 하이브리드  <br/> |SharePoint Server 2016  <br/> |
 |||SharePoint 하이브리드  <br/> |
    
-확장의 낮은 끝에서 옵션을 선택 하는 경우에는 SharePoint Server 2007에서 마이그레이션이 완료 된 후에 업그레이드 계획을 시작 해야 합니다. (SharePoint Server 2007에 대 한 지원 종료는 2017입니다. 이러한 날짜는 변경 될 수 있으며 [제품 수명 주기 사이트](https://support.microsoft.com/en-us/lifecycle)를 확인 합니다.
+확장의 낮은 끝에서 옵션을 선택 하는 경우에는 SharePoint Server 2007에서 마이그레이션이 완료 된 후에 업그레이드 계획을 시작 해야 합니다. (SharePoint Server 2007에 대 한 지원 종료는 2017입니다. 이러한 날짜는 변경 될 수 있으며 [제품 수명 주기 사이트](https://support.microsoft.com/lifecycle)를 확인 합니다.
   
-## <a name="where-can-i-go-next"></a>다음으로 수행할 수 있는 작업
+## <a name="where-can-i-go-next"></a>다음으로 이동할 위치
 
 SharePoint Server는 자체 서버에 온-프레미스로 설치할 수 있거나 Microsoft Office 365의 일부인 온라인 서비스인 SharePoint Online을 사용할 수 있습니다. 다음을 선택할 수 있습니다.
   
@@ -115,7 +115,7 @@ SharePoint 2007에서 SharePoint Online으로 마이그레이션하는 직접적
 |Microsoft는 기본 하드웨어 및 소프트웨어에 패치, 수정 사항 및 업데이트를 적용 합니다.  <br/> |서비스의 기본 파일 시스템에 대 한 액세스 권한이 없기 때문에 일부 사용자 지정 내용이 제한 됩니다.  <br/> |
 |Microsoft는 서비스 수준 [계약](https://go.microsoft.com/fwlink/?linkid=843153) 을 게시 하 고 신속 하 게 이동 하 여 서비스 수준 인시던트를 해결 합니다.  <br/> |백업 및 복원 및 기타 복구 옵션은 SharePoint Online의 서비스에 의해 자동화 되며, 사용 되지 않는 경우에는 백업이 덮어쓰여집니다.  <br/> |
 |보안 테스트 및 서버 성능 조정은 Microsoft의 서비스에서 지속적으로 수행 됩니다.  <br/> |사용자 인터페이스 및 기타 SharePoint 기능의 변경 내용은 서비스에 의해 설치 되며 설정 또는 해제 해야 할 수 있습니다.  <br/> |
-|Office 365은 다양 한 업계 표준을 충족 합니다 365.  <br/> |마이그레이션에 대 한 [Fasttrack](https://go.microsoft.com/fwlink/?linkid=518597) 지원은 제한 됩니다.  <br/> 업그레이드의 대부분은 수동 또는 [SharePoint Online 및 OneDrive 마이그레이션 콘텐츠 로드맵](https://go.microsoft.com/fwlink/?linkid=843184)에 설명 된 SPO 마이그레이션 API를 통해 진행 됩니다.  <br/> |
+|Office 365은 다양 한 업계 표준을 충족 합니다 [365](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |마이그레이션에 대 한 [Fasttrack](https://go.microsoft.com/fwlink/?linkid=518597) 지원은 제한 됩니다.  <br/> 업그레이드의 대부분은 수동 또는 [SharePoint Online 및 OneDrive 마이그레이션 콘텐츠 로드맵](https://go.microsoft.com/fwlink/?linkid=843184)에 설명 된 SPO 마이그레이션 API를 통해 진행 됩니다.  <br/> |
 |Microsoft 지원 엔지니어 또는 데이터 센터의 직원은 구독에 대 한 무제한 관리자 액세스 권한을 갖지 않습니다.  <br/> |최신 버전의 SharePoint를 지원 하도록 하드웨어 인프라를 업그레이드 해야 하거나 업그레이드에 보조 팜이 필요한 경우에는 추가 비용이 있을 수 있습니다.  <br/> |
 |파트너는 데이터를 SharePoint Online으로 마이그레이션하는 일회성 작업을 지원할 수 있습니다.  <br/> ||
 |온라인 제품은 기능에 의해 자동으로 업데이트 되며, 기능은 사용 중지 수 있지만 실제 지원은 제공 되지 않습니다.  <br/> ||
@@ -141,8 +141,7 @@ SharePoint 2007에서 SharePoint Server 2016로 전체 경로를 사용 하기 �
   
 **지원 및 지원 되지 않는 업그레이드 경로**를 검토 해야 합니다. 
   
-- 
-  [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
     

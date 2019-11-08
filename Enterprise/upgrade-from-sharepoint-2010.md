@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010에 대 한 지원 종료 및 SharePoint Server 2010은 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: a8ab4a79053badf4e07918e5e97c7d4821edd5f8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616131"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030903"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
@@ -45,7 +45,7 @@ SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 
   
 ## <a name="what-are-my-options"></a>내 옵션 이란?
 
-먼저 [제품 수명 주기 사이트](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010)에서 지원이 종료 되는 날짜를 확인 합니다. 다음으로,이 날짜에 대 한 지식이 있는 업그레이드 또는 마이그레이션 시간을 계획 해야 합니다. 제품은 나열 된 날짜에는 *중지 되지* 않으며, 해당 날짜 이후에는 설치에 더 이상 패치가 적용 되지 않으므로 다음 버전으로 보다 원활 하 게 전환할 수 있도록 하는 전략이 필요 합니다. 합니다. 
+먼저 [제품 수명 주기 사이트](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)에서 지원이 종료 되는 날짜를 확인 합니다. 다음으로,이 날짜에 대 한 지식이 있는 업그레이드 또는 마이그레이션 시간을 계획 해야 합니다. 제품은 나열 된 날짜에는 *중지 되지* 않으며, 해당 날짜 이후에는 설치에 더 이상 패치가 적용 되지 않으므로 제품의 다음 버전으로 보다 원활 하 게 전환할 수 있도록 전략을 세우는 것이 좋습니다. 
   
 이 매트릭스는 제품 기능 및 사용자 데이터를 마이그레이션할 때 코스를 그리는 데 도움이 됩니다.
   
@@ -62,7 +62,7 @@ SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 
 ![SharePoint Server 2010 업그레이드 경로](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->SharePoint Server 2010 및 SharePoint Foundation 2010에 대 한 지원 종료는 2020 년 10 월 13 일에 예정 되어 있지만 항상 [제품 수명 주기 사이트](https://support.microsoft.com/en-us/lifecycle) 에서 가장 최근 날짜를 *확인 해야 합니다* .
+>SharePoint Server 2010 및 SharePoint Foundation 2010에 대 한 지원 종료는 2020 년 10 월 13 일에 예정 되어 있지만 항상 [제품 수명 주기 사이트](https://support.microsoft.com/lifecycle) 에서 가장 최근 날짜를 *확인 해야 합니다* .
 >
 
   
@@ -98,7 +98,7 @@ Office 365로 마이그레이션할 때 일회성 이동은 계획, 업, 즉 데
   
 현재로 서는 SharePoint Server 2010 (또는 SharePoint Foundation 2010)에서 SharePoint Online으로 직접 마이그레이션하는 방법을 사용할 수 있으므로 대부분의 작업은 수동입니다. 이렇게 하면 이동 하기 전에 더 이상 필요 하지 않은 데이터 및 사이트를 보관 하 고 잘라낼 수 있습니다. 다른 데이터를 저장소에 보관할 수 있습니다. 또한 SharePoint Server 2010 또는 SharePoint Foundation 2010은 지원 종료 시에 중지 되지 않으며, 관리자가 일부 데이터를 이동 하는 것을 잊은 경우에는 SharePoint가 계속 실행 되는 기간을 확인할 수 있습니다.
   
-Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 데이터를 SharePoint Online에 추가 하기로 결정 하는 경우에는 이동 과정에서 [Sharepoint 마이그레이션 API](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (비즈니스용 OneDrive로 정보 마이그레이션)를 사용 해야 할 수도 있습니다. 
+Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 데이터를 SharePoint Online에 추가 하기로 결정 하는 경우에는 이동 과정에서 [Sharepoint 마이그레이션 API](https://support.office.com/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (비즈니스용 OneDrive로 정보 마이그레이션)를 사용 해야 할 수도 있습니다. 
   
 |**SharePoint Online 혜택**|**SharePoint Online 단점**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>SharePoint Server 온-프레미스 업그레이드
 
-최신 버전의 SharePoint 온-프레미스 제품 (SharePoint Server 2019) 중에서 SharePoint server 업그레이드는 *순차적*으로 진행 되어야 하며,이는 sharepoint server 2010에서 sharepoint server 2016로 또는 sharepoint 2019로 업그레이드할 방법이 없음을 의미 합니다. 곧바로. 
+최신 버전의 SharePoint 온-프레미스 제품 (SharePoint Server 2019) 중에서 SharePoint server 업그레이드는 *순차적*으로 수행 되어야 하며,이는 sharepoint server 2010에서 sharepoint server 2016로 또는 sharepoint 2019로 직접 업그레이드 하는 방법이 없다는 것을 의미 합니다. 
   
 |||
 |:-----|:-----|
@@ -168,9 +168,9 @@ SharePoint 2010에서 SharePoint Server 2016로의 전체 경로를 따르도록
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Sharepoint Online과 SharePoint Server 온-프레미스 간에 SharePoint 하이브리드 솔루션을 만듭니다.
 
-다른 옵션 (일부 마이그레이션 요구에 대해 온-프레미스 및 온라인 환경 모두에서 가장 적합 함)이 하이브리드 인 경우 sharepoint Server 2013 또는 2016 또는 2019 팜을 sharepoint Online에 연결 하 여 sharepoint 하이브리드를 만들 수 있습니다. [sharepoint 하이브리드에 대해 자세히 알아보기 솔루션](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+다른 옵션 (일부 마이그레이션 요구에 대 한 온-프레미스 및 온라인 환경 모두에서 가장 적합 함)이 하이브리드 인 경우 sharepoint Server 2013 또는 2016 또는 2019 팜을 SharePoint Online에 연결 하 여 sharepoint 하이브리드 [솔루션에 대해 자세히 알아볼](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)수 있습니다.
   
-하이브리드 SharePoint Server 팜이 마이그레이션 목표 인지를 결정 한 경우 온라인으로 이동 해야 하는 사이트와 사용자 및 온-프레미스를 유지 해야 하는 위치를 계획 해야 합니다. SharePoint Server 팜의 콘텐츠를 검토 하 고 순위를 결정 하는 것 (회사에 대 한 높은, 중간 또는 낮은 영향 확인)은이 결정을 내리는 데 도움이 될 수 있습니다. SharePoint Online과 공유 해야 하는 경우에는 (a) 로그인을 위한 사용자 계정, 그리고 (b) SharePoint Server 검색 인덱스--사이트가 사용 되는 방식을 확인할 때까지 명확 하지 않을 수 있습니다. 나중에 회사에서 모든 콘텐츠를 SharePoint Online으로 마이그레이션하는 경우 나머지 모든 계정 및 데이터를 온라인으로 이동 하 고 온-프레미스 팜을 해제할 수 있으며 SharePoint 팜의 관리/관리가 Office 365를 통해 수행 됩니다. 이 시점부터의 콘솔
+하이브리드 SharePoint Server 팜이 마이그레이션 목표 인지를 결정 한 경우 온라인으로 이동 해야 하는 사이트와 사용자 및 온-프레미스를 유지 해야 하는 위치를 계획 해야 합니다. SharePoint Server 팜의 콘텐츠를 검토 하 고 순위를 결정 하는 것 (회사에 대 한 높은, 중간 또는 낮은 영향 확인)은이 결정을 내리는 데 도움이 될 수 있습니다. SharePoint Online과 공유 해야 하는 경우에는 (a) 로그인을 위한 사용자 계정, 그리고 (b) SharePoint Server 검색 인덱스--사이트가 사용 되는 방식을 확인할 때까지 명확 하지 않을 수 있습니다. 나중에 회사에서 모든 콘텐츠를 SharePoint Online으로 마이그레이션하는 경우 나머지 모든 계정 및 데이터를 온라인으로 이동 하 고 온-프레미스 팜을 해제할 수 있으며 SharePoint 팜의 관리/관리는 해당 시점부터 Office 365 콘솔을 통해 수행 됩니다.
   
 기존 유형의 하이브리드를 숙지 하 고 온-프레미스 SharePoint 팜과 Office 365 구독 간의 연결을 구성 하는 방법에 대해 잘 알고 있어야 합니다.
   
@@ -193,16 +193,16 @@ Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이�
 
 [Office 2007 또는 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](upgrade-from-office-2010-servers-and-products.md)
   
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493301%28v=office.16%29.aspx)
+[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493301%28v=office.16%29.aspx)
   
-[SharePoint 2010에서 SharePoint 2013으로의 업그레이드 모범 사례](https://technet.microsoft.com/en-us/library/mt493305%28v=office.16%29.aspx)
+[SharePoint 2010에서 SharePoint 2013으로의 업그레이드 모범 사례](https://technet.microsoft.com/library/mt493305%28v=office.16%29.aspx)
   
 [SharePoint 2013에서 데이터베이스 업그레이드 문제 해결](https://go.microsoft.com/fwlink/?linkid=843195)
   
 [업그레이드에 도움이 되는 Microsoft 솔루션 공급자 검색](https://go.microsoft.com/fwlink/?linkid=841249)
   
-[SharePoint Server 2013에 대해 업데이트된 제품 서비스 정책](https://technet.microsoft.com/en-us/library/mt493253%28v=office.16%29.aspx)
+[SharePoint Server 2013에 대해 업데이트된 제품 서비스 정책](https://technet.microsoft.com/library/mt493253%28v=office.16%29.aspx)
   
-[SharePoint Server 2016에 대해 업데이트된 제품 서비스 정책](https://technet.microsoft.com/en-us/library/mt782882%28v=office.16%29.aspx)
+[SharePoint Server 2016에 대해 업데이트된 제품 서비스 정책](https://technet.microsoft.com/library/mt782882%28v=office.16%29.aspx)
   
 

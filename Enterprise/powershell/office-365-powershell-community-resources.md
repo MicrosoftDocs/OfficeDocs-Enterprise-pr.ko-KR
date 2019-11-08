@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: '요약: 이러한 커뮤니티 공간에서 Office 365 PowerShell에 대 한 도움말을 볼 수 있습니다.'
-ms.openlocfilehash: c2b02ab5d764ef954b9615ed2320eab821e0cb3d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 98147f9bc698184a4146580c10966a8f102bde21
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068784"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031703"
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell 커뮤니티 리소스
 
@@ -28,11 +28,11 @@ ms.locfileid: "34068784"
     
 - [Office 365 기술 커뮤니티](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [Exchange TechCenter 커뮤니티 포럼](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
+- [Exchange TechCenter 커뮤니티 포럼](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 - [Office 블로그](https://blogs.office.com/)
     
-- [Office 365 Wiki 관리](https://community.office365.com/en-us/w/manage/default.aspx)
+- [Office 365 Wiki 관리](https://community.office365.com/w/manage/default.aspx)
     
 ## <a name="see-also"></a>참고 항목
 

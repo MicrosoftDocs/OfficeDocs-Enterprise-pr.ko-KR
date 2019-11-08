@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: '요약: Office 365 개발/테스트 환경에서 Azure Information Protection (AIP) 클라이언트를 사용 하 여 데이터 분류 및 레이블을 구성 하 고 보여 줍니다.'
-ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f16fd41aaa454a3f038fd23c890bbf48be2c3e66
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067936"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028902"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경에서 데이터 분류 및 레이블 지정
 
@@ -30,7 +30,7 @@ ms.locfileid: "34067936"
 Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 365의 SharePoint Online 폴더에 업로드 하기 전에 분류할 수 있습니다. 이 문서의 지침을 사용 하 여 Azure Information Protection 클라이언트를 설치 하 고 데이터 분류를 보여 줍니다. 자세한 내용은 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)을 참조 하세요.
   
 > [!TIP]
-> [여기](http://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
+> [여기](https://aka.ms/catlgstack)를 클릭하여 Office 365 테스트 랩 가이드 스택의 모든 문서에 대한 가상 맵을 확인할 수 있습니다.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>1 단계: Office 365 개발/테스트 환경 구축
 
@@ -38,17 +38,17 @@ Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 
   
 ## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>2 단계: Azure Information Protection 평가판 구독 추가
 
-이 단계에서는 Azure Information Protection을 Office 365 개발/테스트 환경에 추가 하 고 사용자 계정에 대해 사용 하도록 설정 합니다. [Office 365 및 EMS 개발/테스트 환경을](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)구성한 경우에는이 단계를 건너뛰십시오. Enterprise Mobility Suite 평가판 구독에는 Azure Information Protection 라이선스가 포함 됩니다.
+이 단계에서는 Azure Information Protection을 Office 365 개발/테스트 환경에 추가 하 고 사용자 계정에 대해 사용 하도록 설정 합니다. [Office 365 및 EMS 개발/테스트 환경을](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)구성한 경우에는이 단계를 건너뛰십시오. Enterprise Mobility Suite 평가판 구독에는 Azure Information Protection 라이선스가 포함 됩니다.
   
 먼저 Azure Information Protection 평가판 구독에 등록 합니다.
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Azure Information Protection 평가판 구독 등록
 
-1. Internet Explorer 또는 브라우저에서 Office 365 전역 관리자 [http://admin.microsoft.com](http://admin.microsoft.com) 계정으로 이동 하 여 로그인 합니다.
+1. Internet Explorer 또는 브라우저에서 Office 365 전역 관리자 [https://admin.microsoft.com](https://admin.microsoft.com) 계정으로 이동 하 여 로그인 합니다.
     
 2. **Microsoft Office 홈** 탭에서 **관리** 타일을 클릭 합니다.
     
-3. Office 365 관리 탭의 왼쪽 탐색 창에서 **결제 _GT_ Purchase services**를 클릭 합니다.
+3. Office 365 관리 탭의 왼쪽 탐색 창에서 **결제 > 서비스 구입**을 클릭 합니다.
     
 4. **서비스 구매** 페이지에서 **Azure Information Protection Premium P2** 항목을 찾습니다. 마우스를 해당 사용자에 게 가리키고 **무료 평가판 시작**을 클릭 합니다.
     
@@ -62,7 +62,7 @@ Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 
     
 2.  사용자 계정 목록에서 전역 관리자 계정을 선택 하 고 **제품 라이선스**에 대해 **편집** 을 클릭 합니다.
     
-3. **Azure Information Protection Premium P2** 에 대 한 제품 라이선스를 **** 사용 하도록 설정 하 고 **저장을** 클릭 한 후 **닫기를** 두 번 클릭 합니다.
+3. **Azure Information Protection Premium P2** 에 대 한 제품 라이선스를 **사용 하도록 설정 하 고** **저장을** 클릭 한 후 **닫기를** 두 번 클릭 합니다.
     
 4. 다른 사용자 계정에 대해 2-3 단계를 반복 합니다 (사용자 1-사용자 5).
     
@@ -78,11 +78,11 @@ Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 
   
 시뮬레이트된 enterprise Office 365 개발/테스트 환경을 사용 하는 경우 먼저 CLIENT1에 Office 2016을 설치 해야 합니다.
   
-1. 브라우저를 사용 하 여 [Azure 포털로](http://portal.azure.com)이동 합니다.
+1. 브라우저를 사용 하 여 [Azure 포털로](https://portal.azure.com)이동 합니다.
     
-2. **리소스 그룹 >** [리소스 그룹 이름] **_GT_ CLIENT1 _GT_ Connect**를 클릭 합니다.
+2. **리소스 그룹 >** [리소스 그룹 이름]> 클릭 하 여 **CLIENT1 > 연결**합니다.
     
-3. CLIENT1에서 Internet Explorer를 실행 하 고에서 Office 포털로 [http://admin.microsoft.com](http://admin.microsoft.com)이동한 다음 User5 계정 이름 및 암호를 사용 하 여 로그인 합니다.
+3. CLIENT1에서 Internet Explorer를 실행 하 고에서 Office 포털로 [https://admin.microsoft.com](https://admin.microsoft.com)이동한 다음 User5 계정 이름 및 암호를 사용 하 여 로그인 합니다.
     
 4. **Microsoft Office 홈** 탭에서 **Office 2016 설치**를 클릭합니다.
     
@@ -118,11 +118,11 @@ Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 
     
 5. 새 문서에서 텍스트를 입력 합니다.
     
-6. **파일 _GT_ 저장**을 클릭 하 고 이름 **BeforeAIP**를 입력 한 다음 **확인**을 클릭 합니다. 
+6. **파일 > 저장**을 클릭 하 고 **BeforeAIP**이름을 입력 한 다음 **확인**을 클릭 합니다. 
     
 7. 문서 클래스의 행에서 **Secret**의 아래쪽 화살표를 클릭 하 고 **모든 회사**를 클릭 합니다.
     
-8. **파일 _GT_ 다른 이름으로 저장**을 클릭 하 고 **afteraip**를 입력 한 다음 **확인**을 클릭 합니다.
+8. **파일 > 다른 이름으로 저장**을 클릭 하 고 **afteraip**를 입력 한 다음 **확인**을 클릭 합니다.
     
 9. 작업 표시줄에서 **파일 탐색기** 를 클릭 한 다음 **문서** 폴더를 엽니다.
     
@@ -150,7 +150,7 @@ Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 
   
 1. **Microsoft Office 홈** 탭의 오른쪽 위에서 사용자 아이콘을 클릭 한 다음 **로그 아웃**을 클릭 합니다.
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com)으로 이동합니다.
+2. [https://admin.microsoft.com](https://admin.microsoft.com)으로 이동합니다.
     
 3. **Office 365 로그인** 페이지에서 User5 계정 이름을 클릭 하 고 로그인 합니다.
     
@@ -164,7 +164,7 @@ Azure Information Protection 클라이언트를 사용 하 여 문서를 Office 
 
 [클라우드 도입 TLG(테스트 랩 가이드)](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Office 365 및 EMS 개발/테스트 환경](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
+[Office 365 및 EMS 개발/테스트 환경](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 

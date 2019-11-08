@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 배포 관리자를 통해 Office 365 또는 Microsoft 365의 계획 및 구성을 가속화 합니다.
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782308"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030802"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 또는 Microsoft 365 서비스에 대 한 배포 관리자
 
@@ -34,13 +34,13 @@ Office 365 또는 Microsoft 365에 대 한 배포 관리자는 조직에 대 한
 
 테 넌 트 관리자로 로그인 하지 않으면 나중에 테 넌 트 관리자 권한이 필요한 메시지가 표시 됩니다.
 
-각 관리자는 배포할 기능 및 옵션을 선택 하는 과정을 안내 하는 마법사입니다. 일부 경우에는 마법사를 사용 하 여 항목을 구성 하거나 설정을 활성화할 수 있습니다. 예제는 다음과 같습니다.
+각 관리자는 배포할 기능 및 옵션을 선택 하는 과정을 안내 하는 마법사입니다. 일부 경우에는 마법사를 사용 하 여 항목을 구성 하거나 설정을 활성화할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 관리자는 필요에 따라 사용자 지정할 수 있는 사항을 결정 하는 단계를 안내 합니다. 이렇게 하면 구성을 변경 하는 데 필요한 지침, 스크립트 및 기타 리소스를 얻을 수 있습니다.
 
-마지막으로 비디오 및 참조 문서에 대 한 링크를 볼 수 있습니다. 예제는 다음과 같습니다.
+마지막으로 비디오 및 참조 문서에 대 한 링크를 볼 수 있습니다. 예를 들면 다음과 같습니다.
 
 ![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
@@ -320,7 +320,7 @@ Microsoft StaffHub는 모든 장치에서 작동 하는 클라우드 기반 플�
 
 ### <a name="microsoft-365-admin-center"></a>Microsoft 365 관리 센터
 
-- [관리 센터 방향](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [관리 센터 방향](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [관리 센터에서 사용자 만들기](https://aka.ms/ac-createusers)
 

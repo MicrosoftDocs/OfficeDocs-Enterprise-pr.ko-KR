@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 Office 365 조 직 용 Office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834238"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030863"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
 
@@ -111,7 +111,7 @@ Get-OrganizationAddIn |Format-List
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>추가 기능 설정 또는 해제
 
-추가 기능을 해제 하 여 자신에 게 할당 된 사용자 및 그룹이 더 이상 액세스할 수 없도록 하려면 다음 예제와 같이 _ProductId_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 하 고 _Enabled_ 매개 변수를로 `$false`설정 합니다. .
+추가 기능을 해제 하 여 자신에 게 할당 된 사용자 및 그룹에 더 이상 액세스할 수 없도록 하려면 다음 예제와 같이 _ProductId_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 하 고 `$false` _Enabled_ 매개 변수를로 설정 합니다.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -137,7 +137,7 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-테 넌 트의 모든 사용자에 게 추가 기능을 할당 하려면 값이로 __ `$true`설정 된 다음 사용자 지정 매개 변수를 사용 하 여 동일한 cmdlet을 실행 합니다.
+테 넌 트의 모든 사용자에 게 추가 기능을 할당 하려면 값이로 `$true`설정 된 다음 _사용자 지정 매개 변수_ 를 사용 하 여 동일한 cmdlet을 실행 합니다.
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
@@ -186,15 +186,15 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 배포한 추가 기능을 사용자 지정 하려는 경우에는 관리 센터에서 제거 하 고, 배포 된 각 컴퓨터에서 제거 하는 단계에 대 한 [추가 기능을 로컬 캐시에서 제거](#remove-an-add-in-from-local-cache) 를 참조 하세요.
 
-추가 기능을 사용자 지정 하려면 *ProductId* 를 매개 변수로 사용 하 여 **OrganizationAddInOverrides** cmdlet을 실행 하 고 덮어쓸 태그와 새 값을 입력 합니다. *ProductId* 를 가져오는 방법을 알아보려면이 문서에서 [추가 기능의 세부 정보 가져오기를](#get-details-of-an-add-in) 참조 하세요. 예를 들면 다음과 같습니다.
+추가 기능을 사용자 지정 하려면 *ProductId* 를 매개 변수로 사용 하 여 **OrganizationAddInOverrides** cmdlet을 실행 하 고 덮어쓸 태그와 새 값을 입력 합니다. *ProductId* 를 가져오는 방법을 알아보려면이 문서에서 [추가 기능의 세부 정보 가져오기를](#get-details-of-an-add-in) 참조 하세요. 예:
 
 ```powershell
- Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "http://site.com/img.jpg" 
+ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
 추가 기능의 여러 태그를 사용자 지정 하려면 명령줄에 해당 태그를 추가 합니다.
 
 ```powershell
-Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "http://site.com/img.jpg" 
+Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
@@ -202,7 +202,7 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
 
 ### <a name="tags-you-can-customize"></a>사용자 지정할 수 있는 태그
 
-| Tag                  | 설명          |
+| Tag                  | Description          |
 | :------------------- | :------------------- |
 | \<IconURL>   </br>| 관리 센터의 추가 기능 아이콘으로 사용 되는 이미지의 URL입니다. </br> |
 | \<DisplayName>| 추가 기능의 제목 (관리 센터)입니다.|
@@ -219,7 +219,7 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
 ```
 <Resources>  
     <bt:Images> 
-          <bt:Image id=”img16icon” DefaultValue=”http://site.com/img.jpg” 
+          <bt:Image id=”img16icon” DefaultValue=”https://site.com/img.jpg” 
     </bt:Images> 
 </Resources> 
 ``` 

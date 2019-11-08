@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '요약: Azure Active Directory 내에서 격리 및 액세스 제어 작업을 수행 하는 방법을 설명 합니다.'
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067672"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035785"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory에서 격리 및 액세스 제어
 
 Azure Active Directory는 논리적 데이터 격리를 통해 고도로 안전한 방식으로 여러 테 넌 트를 호스트 하도록 디자인 되었습니다. Azure Active Directory에 대 한 액세스는 인증 계층에 의해 제어 됩니다. Azure Active Directory는 사용자의 콘텐츠를 보호 하기 위해 테 넌 트 컨테이너를 보안 경계로 사용 하는 고객을 격리 하 여 동료의 콘텐츠 액세스 또는 손상을 차단 합니다. Azure Active Directory의 인증 계층에서 다음 세 가지 검사를 수행 합니다.
+
 - 사용자가 Azure Active Directory 테 넌 트에 액세스할 수 있는지 여부
 - 이 테 넌 트에서 데이터 액세스에 대 한 보안 주체를 사용할 수 있나요?
 - 이 테 넌 트의 사용자 역할이 요청 된 데이터 액세스 유형에 대해 승인 되었습니까?

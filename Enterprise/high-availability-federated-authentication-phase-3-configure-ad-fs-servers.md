@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: '요약: Microsoft Azure의 Office 365 고가용성 페더레이션 인증용 AD FS(Active Directory Federation Service) 서버를 만들고 구성합니다.'
-ms.openlocfilehash: 83e6d024676ae608b9f6f856e2ce91c4b0b9a31f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 68410111be6c4d12e27e32e9663592306d733970
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067494"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030742"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>고가용성 페더레이션 인증 3단계: AD FS 서버 구성
 
@@ -46,7 +46,7 @@ PowerShell 명령의 다음 블록을 사용하여 두 AD FS 서버의 가상 �
 고가용성 [페더레이션 인증 2 단계: 도메인 컨트롤러](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 와 테이블 R, V, S, I 및 A를 고가용성 [페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)에서 정의한 테이블 M을 정의 합니다.
   
 > [!NOTE]
-> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)을 참조하세요. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요. 
   
 먼저, 두 개의 AD FS 서버용 Azure 내부 부하 분산 장치를 만듭니다. 변수 값을 지정 하 \< 고 및 > 문자를 제거 합니다. 모든 적절한 값이 제공되면 Azure PowerShell 명령 프롬프트나 PowerShell ISE에서 결과 블록을 실행합니다.
   

@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: FastTrack 배포를 선택하지 않았고 데이터를 Office 365로 마이그레이션할 준비가 되었다면 여기가 시작 지점입니다.
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597554"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031333"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>조직 데이터를 Office 365 Enterprise로 마이그레이션
 
@@ -40,7 +40,7 @@ Office 365를 설치하는 데 도움이 필요하면 [FastTrack](https://fasttr
 
 ## <a name="migrate-skype-for-business-users"></a>비즈니스용 Skype 사용자 마이그레이션
 - [비즈니스용 Skype Online으로 마이그레이션](https://technet.microsoft.com/library/jj204969.aspx)합니다. (관리자)
-- [비즈니스용 Skype 모임 업데이트 도구](https://www.microsoft.com/en-us/download/details.aspx?id=51659)를 다운로드하고 [각 워크 스테이션에서 실행](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4)합니다. (관리자 및/또는 최종 사용자)
+- [비즈니스용 Skype 모임 업데이트 도구](https://www.microsoft.com/download/details.aspx?id=51659)를 다운로드하고 [각 워크 스테이션에서 실행](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4)합니다. (관리자 및/또는 최종 사용자)
   
 ## <a name="need-to-talk-to-support"></a>지원이 필요하십니까?
 비즈니스 제품에 대해서는 [고객 지원에 문의](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)하세요.

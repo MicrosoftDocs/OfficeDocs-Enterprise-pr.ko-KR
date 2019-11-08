@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759686"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029132"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
 
@@ -67,7 +67,7 @@ ms.locfileid: "36759686"
   
 여기에서 볼 수 있듯이 MA를 켜는 네 가지 위치는 다음과 같습니다. 최상의 사용자 환경에서는 이러한 네 가지 위치 모두에 MA를 설정 하는 것이 좋습니다. 이러한 모든 위치에서 MA를 설정할 수 없는 경우 환경에 필요한 위치 에서만 MA를 설정 하도록 단계를 조정 합니다.
   
-지원 되는 토폴로지의 [MA가 있는 비즈니스용 Skype에 대 한 지원 가능성 항목](https://technet.microsoft.com/en-us/library/mt803262.aspx) 을 참조 하세요. 
+지원 되는 토폴로지의 [MA가 있는 비즈니스용 Skype에 대 한 지원 가능성 항목](https://technet.microsoft.com/library/mt803262.aspx) 을 참조 하세요. 
   
  **중요** 시작 하기 전에 모든 필수 구성 요소가 충족 되었는지 다시 한 번 확인 합니다. 이 정보는 [여기](hybrid-modern-auth-overview.md)에서 찾을 수 있습니다.
   
@@ -117,7 +117,7 @@ Standard Edition 서버를 사용 하는 경우 내부 URL은 비어 있습니�
   
  **참고 사항** Spn (서비스 사용자 이름)은 웹 서비스를 식별 하 고이를 보안 주체 (예: 계정 이름 또는 그룹)와 연결 하 여 인증 된 사용자를 대신 하 여 서비스를 수행할 수 있도록 합니다. 서버에 인증 하는 클라이언트는 Spn에 포함 된 정보를 사용 합니다. 
   
-1. 먼저 [다음 지침](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)을 사용 하 여 AAD에 연결 합니다.
+1. 먼저 [다음 지침](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)을 사용 하 여 AAD에 연결 합니다.
     
 2. 온-프레미스에서이 명령을 실행 하 여 SFB 웹 서비스 Url의 목록을 가져옵니다.
 
@@ -174,7 +174,7 @@ HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새
 
 [최신 인증 개요에 다시 연결](hybrid-modern-auth-overview.md) 합니다. 
   
-비즈니스용 Skype 클라이언트에 대해 ADAL (최신 인증)을 사용 하는 방법을 알고 있어야 하나요? [여기](https://technet.microsoft.com/en-us/library/mt710548.aspx)에는 단계가 있습니다.
+비즈니스용 Skype 클라이언트에 대해 ADAL (최신 인증)을 사용 하는 방법을 알고 있어야 하나요? [여기](https://technet.microsoft.com/library/mt710548.aspx)에는 단계가 있습니다.
   
 SFB 없이 실행 되는 Exchange Server 온-프레미스에 대해 이러한 단계를 읽어 보 시겠습니까? 이러한 단계는 여기에서 사용할 수 있습니다.
   

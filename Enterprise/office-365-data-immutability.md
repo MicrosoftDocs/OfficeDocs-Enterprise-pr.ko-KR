@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365의 데이터 불변성을 정의 하 고 설명 합니다.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067697"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035578"
 ---
 # <a name="immutability-in-office-365"></a>Office 365의 불변성
 
@@ -38,12 +38,12 @@ Office 365 및 해당 서비스의 보관에 대 한 보존 정책 기능과 유
 
 또한 Microsoft는 타사 데이터 캡처 및 관리 솔루션과의 통합을 통해 다른 원본의 [데이터 보관](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) 을 허용 하는 추가 기능을 개발 했습니다. 타사 데이터를 가져온 후에는 다음을 포함 하 여 데이터에 Office 365 준수 기능을 적용할 수 있습니다.
 
-- [소송 대기](/microsoft365/compliance/create-a-litigation-hold.md)
-- [원본 위치 eDiscovery 및 유지](/microsoft365/compliance/manage-legal-investigations.md)
-- [규격 검색](/microsoft365/compliance/search-for-content.md)
-- [원본 위치 보관](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [사서함 감사](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [보존 정책](/microsoft365/compliance/retention-policies.md)
+- [소송 대기](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [원본 위치 eDiscovery 및 유지](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [규격 검색](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [원본 위치 보관](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [사서함 감사](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [보존 정책](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 예를 들어 사서함이 소송 보존 상태에 있는 경우 타사 데이터는 보존 됩니다. 원본 위치 eDiscovery 또는 준수 검색을 사용 하 여 타사 데이터를 검색할 수 있습니다. 또는 Microsoft 데이터에 대해 사용할 수 있는 것과 마찬가지로 보관 및 보존 정책을 타사 데이터에 적용할 수도 있습니다. Office 365에서 타사 데이터를 보관 하면 조직이 정부 및 규정 정책을 준수 하는 데 도움이 됩니다.
 

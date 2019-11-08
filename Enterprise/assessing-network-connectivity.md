@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428075"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030502"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Office 365 네트워크 연결 평가
 
@@ -41,7 +41,7 @@ Office 365에 대 한 네트워크 연결을 나타내는 몇 가지 평가는 �
 
 - Office 365 네트워킹에 대 한 개념 정보는 [office 365 네트워크 연결 개요](office-365-networking-overview.md) 를 참조 하세요.
 - Office [365 네트워크 연결 원리](https://aka.ms/o365networkingprinciples) 를 참조 하 여 365 안전 하 고 효과적으로 해결 되는 방법 및 최적의 성능을 얻는 데 필요한 연결 원칙을 이해 합니다.
-- Office 365 계획, 디자인 및 배포에 대 한 안내가 제공 되는 [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) 에 등록 합니다. 
+- Office 365 계획, 디자인 및 배포에 대 한 안내가 제공 되는 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 에 등록 합니다. 
 - 지정한 사용자 위치와 Office 365 사이에 설치할 수 있는 네트워킹 연결 개선 사항에 대 한 구체적인 지침을 제공 하는 기본 연결 테스트를 실행 하려면 아래의 [Office 365 네트워크 온 보 딩 도구](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) 섹션을 참조 하십시오.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Office 365에 대 한 네트워크 평가를 계획할 때 고려해 야 할 주
 
 - Microsoft는 가용성, 글로벌, 인터넷 기반 연결에 대 한 성능과 같은 Office 365의 핵심 측면을 지속적으로 최적화 하 고 있습니다. 예를 들어 많은 Office 365 서비스는 확장 된 인터넷 연결에 지 노드 집합을 활용 합니다. 이에 지 네트워크는 인터넷을 통해 들어오는 연결에 대해 가장 적합 한 근접성 및 성능을 제공 합니다.
 
-- 비즈니스용 Skype Online 음성, 비디오 또는 모임 기능과 같은 포함 된 서비스에 대해 Office 365을 사용 하는 경우, 고객은 종단 간 네트워크 평가를 완료 하 고 Microsoft의 연결 요구 사항을 충족 해야 합니다. [ FastTrack](https://www.microsoft.com/en-us/fasttrack)
+- 비즈니스용 Skype Online 음성, 비디오 또는 모임 기능과 같은 포함 된 서비스에 대해 Office 365을 사용 하는 경우, 고객은 종단 간 네트워크 평가를 완료 하 고 [Microsoft FastTrack](https://www.microsoft.com/fasttrack)을 사용 하 여 연결 요구 사항을 충족 해야 합니다.
 
 Office 365을 평가 중 이며 네트워크 평가로 시작할 위치를 잘 모르거나 문제를 해결 하는 데 도움이 필요한 네트워크 디자인 문제가 있는지 확실 하지 않은 경우 Microsoft 계정 팀에 문의 하세요.
 

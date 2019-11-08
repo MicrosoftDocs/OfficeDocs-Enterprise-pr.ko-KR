@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Office 365 엔터프라이즈 배포를 계획할 리소스에 대 한 액세스 권한을 확보 합니다.
-ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 66b1944b9e98ef60b753c5122655f99870a86ffe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302690"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028812"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Office 365 Enterprise 계획
 
@@ -41,7 +41,7 @@ Office [365에 대 한 Fasttrack](https://docs.microsoft.com/fasttrack/O365-fast
 
 Office 365을 직접 계획 하려면 다음 영역에 대 한 계획 및 디자인 결정을 단계적으로 진행 합니다.
 
-- Office 365 테 넌 트
+- Office 365 테넌트
 
   인터넷에 대 한 네트워크 연결, Office 365 id, 앱, 온-프레미스, Azure 및 기타 요소와의 통합에 대 한 계획을 포함 합니다. [여기](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)에서 시작 합니다.
 
@@ -84,7 +84,7 @@ If you want help getting Office 365 set up, [FastTrack](https://fasttrack.micros
 |**Use** the [templates and resources in the Office 365 success center](https://www.microsoft.com/fasttrack/resources) to share your deployment and onboarding plans with the people in your organization.  <br> | - Communication with everyone before, during, and after the transition to Office 365 is critical.  <br> - Use our templates, guides, and handouts to improve your communications. |
 |**Read** the article [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.  <br> | - This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. |
    
-Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources).
+Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources).
   
 ## Want to talk with support?
 

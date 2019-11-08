@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Office 365 내의 보고 기능에 대 한 설명입니다.
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067646"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031863"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 보고 기능 
 
@@ -57,7 +57,7 @@ Exchange Online 감사 보고서에는 사서함 액세스에 대 한 세부 정
 > [!NOTE]
 > 감사 된 이벤트가 해당 사서함에 대 한 감사 로그에 저장 되도록 각 사서함에 대해 사서함 감사 로깅을 사용 하도록 설정 해야 합니다. 사서함에 대해 사서함 감사 로깅을 사용 하도록 설정 되지 않은 경우 해당 사서함에 대 한 이벤트는 감사 로그에 저장 되지 않으며 사서함 감사 보고서에 나타나지 않습니다. 자세한 내용은 [사서함 감사 사용](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)을 참조 하십시오.
 
-| 작업 | 설명 |
+| 작업 | Description |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [비 소유자 사서함 액세스 보고서 실행](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | 사서함의 소유자가 아닌 다른 사용자가 액세스 한 사서함 목록을 표시 합니다. 이 보고서에는 사서함에 액세스 한 사람, 사서함에서 수행한 작업 및 작업이 성공 했는지 여부에 대 한 정보가 포함 됩니다. |
 | [사서함 감사 로그 내보내기](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | 사서함 감사 로그에는 사서함 소유자가 아닌 다른 사용자가 수행한 사서함의 액세스 및 작업에 대 한 정보가 포함 됩니다. 관리자는 날짜 범위와 함께 사서함을 지정 하 여 보고서를 생성할 수 있습니다. 로그는 XML로 내보내고, 메시지에 첨부 되며, 관리자가 결정 하는 특정 사용자에 게 전송 됩니다. |
@@ -78,7 +78,7 @@ MDM 준수 보고서는 Office 365 데이터에 액세스 하는 모바일 장�
 
 DLP 정책은 조직의 정보 보안 및 흐름을 관리 하는 데 도움이 됩니다. 응용 프로그램 DLP 정책 팁을 사용 하 여 콘텐츠에 대 한 액세스를 차단 하거나, 데이터를 암호화 하거나, 정책 및 정책 위반을 사용자에 게 알리기 위해 정책을 설정할 수 있습니다. DLP 보고서는 정책 및 규칙 일치, 재정의 및 가양성의 수에 대 한 통찰력을 제공 합니다.
 
-Microsoft 365 관리 센터를 사용 하 여 DLP 정책에서 검색 된 메시지 수에 대 한 정보를 볼 수 있습니다. DLP 보고서는 보내고 받은 메일에 대 한 정책 및 규칙 일치 항목에 대 한 정보를 제공 합니다. 또한 Exchange 관리 센터를 사용 하 여 지난 24 시간 내 각 정책에 대 한 일치, 재정의 및 가양성의 수를 확인할 수 있습니다. Excel 보고서를 다운로드 하는 경우 메시지를 보낸 사람, 요일 및 트리거된 정책 일치 항목 등 보다 자세한 정보를 볼 수 있습니다. 자세한 내용은 [DLP 정책 검색에 대 한 보고서 보기](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx)를 참조 하세요.
+Microsoft 365 관리 센터를 사용 하 여 DLP 정책에서 검색 된 메시지 수에 대 한 정보를 볼 수 있습니다. DLP 보고서는 보내고 받은 메일에 대 한 정책 및 규칙 일치 항목에 대 한 정보를 제공 합니다. 또한 Exchange 관리 센터를 사용 하 여 지난 24 시간 내 각 정책에 대 한 일치, 재정의 및 가양성의 수를 확인할 수 있습니다. Excel 보고서를 다운로드 하는 경우 메시지를 보낸 사람, 요일 및 트리거된 정책 일치 항목 등 보다 자세한 정보를 볼 수 있습니다. 자세한 내용은 [DLP 정책 검색에 대 한 보고서 보기](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx)를 참조 하세요.
 
 ## <a name="auditing-in-yammer-enterprise"></a>Yammer Enterprise에서의 감사
 
@@ -86,7 +86,7 @@ Yammer Enterprise는 관리자에 게 yammer [데이터 내보내기 API](https:
 
 다음 데이터를 내보낼 수 있습니다.
 
-| 파일 이름 | 설명 |
+| 파일 이름 | Description |
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | 네트워크의 모든 신규, 보류 중 및 일시 중단 된 사용자 |
 | Messages.csv | 네트워크의 모든 메시지 |

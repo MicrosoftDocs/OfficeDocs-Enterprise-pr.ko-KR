@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 이 솔루션을 디자인하고 구현하는 방법을 설명합니다.'
-ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203647"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031523"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure에서 SharePoint Server 2013 재해 복구
 
@@ -403,7 +403,7 @@ SQL Server Management Studio에서 **WSS_Content** 데이터베이스를 마우�
   
 ### <a name="crawl-the-content-source"></a>콘텐츠 원본 크롤링
 
-검색 서비스를 복원 하려면 각 콘텐츠 원본에 대해 전체 크롤링을 시작 해야 합니다. 검색 권장 사항과 같은 온-프레미스 팜의 일부 분석 정보가 손실 됩니다. 전체 크롤링을 시작 하기 전에 Windows PowerShell cmdlet **복원-get-spenterprisesearchserviceapplication** 을 사용 하 여 로그 전달 및 복제 된 검색 관리 데이터베이스 **<GUID>Search_Service__DB_** 을 지정 합니다. 이 cmdlet은 검색 구성, 스키마, 관리 속성, 규칙 및 원본을 제공 하 고 다른 구성 요소의 기본 집합을 만듭니다.
+검색 서비스를 복원 하려면 각 콘텐츠 원본에 대해 전체 크롤링을 시작 해야 합니다. 검색 권장 사항과 같은 온-프레미스 팜의 일부 분석 정보가 손실 됩니다. 전체 크롤링을 시작 하기 전에 Windows PowerShell cmdlet **get-spenterprisesearchserviceapplication** 를 사용 하 여 로그 전달 및 복제 된 검색 관리 데이터베이스 **Search_Service__DB_<GUID>** 지정 합니다. 이 cmdlet은 검색 구성, 스키마, 관리 속성, 규칙 및 원본을 제공 하 고 다른 구성 요소의 기본 집합을 만듭니다.
   
 전체 크롤링을 시작 하려면 다음 단계를 완료 합니다.
   
@@ -446,9 +446,9 @@ SharePoint 팜을 가리키도록 DNS 레코드를 수동으로 만들어야 합
   
 프런트 엔드 웹 서버가 여러 개인 경우에는 Windows Server 2012 또는 하드웨어 부하 분산 기능을 활용 하 여 팜의 웹 프런트 엔드 서버 간에 요청을 분산 하는 것이 적절 합니다. 또한 네트워크 부하 분산은 웹 프런트 엔드 서버 중 하나에 오류가 발생 하는 경우 다른 서버로 요청을 분산 하 여 위험을 줄이는 데 도움을 줄 수 있습니다. 
   
-일반적으로 네트워크 부하 분산을 설정 하면 클러스터에 단일 IP 주소가 할당 됩니다. 그런 다음 DNS 공급자에서 클러스터를 가리키는 네트워크에 대 한 DNS 호스트 레코드를 만듭니다. (이 프로젝트에서는 온-프레미스 데이터 센터 오류가 발생 하는 경우 복구를 위해 Azure에 DNS 서버를 배치 합니다.) 예를 들어 Active Directory `http://sharepoint.contoso.com`의 dns 관리자에서 부하 분산 된 클러스터의 IP 주소를 가리키는 dns 레코드를 만들 수 있습니다.
+일반적으로 네트워크 부하 분산을 설정 하면 클러스터에 단일 IP 주소가 할당 됩니다. 그런 다음 DNS 공급자에서 클러스터를 가리키는 네트워크에 대 한 DNS 호스트 레코드를 만듭니다. (이 프로젝트에서는 온-프레미스 데이터 센터 오류가 발생 하는 경우 복구를 위해 Azure에 DNS 서버를 배치 합니다.) 예를 들어 Active Directory `https://sharepoint.contoso.com`의 dns 관리자에서 부하 분산 된 클러스터의 IP 주소를 가리키는 dns 레코드를 만들 수 있습니다.
   
-SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라이언트에서 사용 하는 URL (예: `http://sharepoint.contoso.com`)이 방화벽의 외부 IP 주소를 가리키는 외부 DNS 서버에 호스트 레코드를 만들 수 있습니다. (이 예에서는 내부 DNS 서버가 외부 DNS 서버에 DNS 요청을 라우팅하는 것이 아니라 분할 DNS를 사용 하도록 `contoso.com` 설정 하 고, 요청을 SharePoint 팜 클러스터에 직접 라우트 하 여) 그런 다음 클라이언트가 찾고 있는 리소스를 찾을 수 있도록 외부 IP 주소를 온-프레미스 클러스터의 내부 IP 주소에 매핑합니다.
+SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라이언트에서 사용 하는 URL (예: `https://sharepoint.contoso.com`)이 방화벽의 외부 IP 주소를 가리키는 외부 DNS 서버에 호스트 레코드를 만들 수 있습니다. (이 예에서는 내부 DNS 서버가 외부 DNS 서버에 DNS 요청을 라우팅하는 것이 아니라 분할 DNS를 사용 하도록 `contoso.com` 설정 하 고, 요청을 SharePoint 팜 클러스터에 직접 라우트 하 여) 그런 다음 클라이언트가 찾고 있는 리소스를 찾을 수 있도록 외부 IP 주소를 온-프레미스 클러스터의 내부 IP 주소에 매핑합니다.
   
 여기서는 다음과 같은 몇 가지 재해 복구 시나리오를 실행할 수 있습니다.
   
@@ -456,7 +456,7 @@ SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라�
   
  **예제 시나리오: 온-프레미스 데이터 센터가 완전히 손실 됩니다.** 이 시나리오는 화재 또는 홍수와 같은 자연 재해로 인해 발생할 수 있습니다. 이 경우 엔터프라이즈의 경우 다른 지역에 호스트 되는 보조 데이터 센터가 있고 자체 디렉터리 서비스와 DNS가 있는 Azure 서브넷도 있을 수 있습니다. 이전 재해 시나리오에서와 마찬가지로 내부 및 외부 DNS 레코드가 Azure SharePoint 팜을 가리키도록 리디렉션할 수 있습니다. 다시 말하지만 DNS 레코드가 전파 되는 데 약간의 시간이 걸릴 수 있습니다.
   
-호스트 이름으로 된 사이트 모음을 사용 하는 경우 [host 이름이 지정 된 사이트 모음 아키텍처 및 배포 (sharepoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)에서 권장 하는 것 처럼 sharepoint 팜의 동일한 웹 응용 프로그램에서 호스트 되는 여러 사이트 모음을 사용할 수 있습니다. DNS 이름 (예: `http://sales.contoso.com` and) `http://marketing.contoso.com` 이 경우 클러스터 IP 주소를 가리키는 각 사이트 모음에 대 한 DNS 레코드를 만들 수 있습니다. 요청이 SharePoint 웹 프런트 엔드 서버에 도달 하면 해당 사이트 모음에 대 한 각 요청의 라우팅을 처리 합니다.
+호스트 이름으로 된 사이트 모음을 사용 하는 경우 (예: `https://sales.contoso.com` `https://marketing.contoso.com` [host name site Collection architecture and deployment (sharepoint 2013))](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)sharepoint 팜의 동일한 웹 응용 프로그램에서 호스트 되는 여러 사이트 모음을 사용할 수 있는 경우, 즉 고유한 DNS 이름을 사용 하는 것이 좋습니다. 이 경우 클러스터 IP 주소를 가리키는 각 사이트 모음에 대 한 DNS 레코드를 만들 수 있습니다. 요청이 SharePoint 웹 프런트 엔드 서버에 도달 하면 해당 사이트 모음에 대 한 각 요청의 라우팅을 처리 합니다.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 개념 증명 환경
 
@@ -482,7 +482,7 @@ SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라�
 |**드라이브 문자**|**크기**|**디렉터리 이름**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |시스템 드라이브  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\  <br/> |
-|E-learning  <br/> |80  <br/> |로그 드라이브 (40 GB)  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
+|E-learning  <br/> |80  <br/> |로그 드라이브 (40 GB)  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50. MSSQLSERVER\\MSSQL\\데이터  <br/> |
 |식량  <br/> |80  <br/> |페이지 (36 GB)  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL\\데이터  <br/> |
    
 다음 표에서는 온-프레미스 데이터베이스 서버로 사용 되도록 작성 및 구성 된 Hyper-v 가상 컴퓨터의 드라이브 구성에 대해 설명 합니다. **데이터베이스 엔진 구성** 페이지에서 **데이터 디렉터리** 탭에 액세스 하 여 다음 표에 나와 있는 설정을 설정 하 고 확인 합니다.
@@ -492,10 +492,10 @@ SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라�
 |**드라이브 문자**|**크기**|**디렉터리 이름**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |데이터 루트 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\  <br/> |
-|E-learning  <br/> |500  <br/> |사용자 데이터베이스 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
-|식량  <br/> |500  <br/> |사용자 데이터베이스 로그 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
-|1g  <br/> |500  <br/> |Temp DB 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
-|도움말  <br/> |500  <br/> |Temp DB 로그 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\MICROSOFT SQL Server\\MSSQL10_50 MSSQLSERVER\\MSSQL\\데이터  <br/> |
+|E-learning  <br/> |500  <br/> |사용자 데이터베이스 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50. MSSQLSERVER\\MSSQL\\데이터  <br/> |
+|식량  <br/> |500  <br/> |사용자 데이터베이스 로그 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50. MSSQLSERVER\\MSSQL\\데이터  <br/> |
+|1g  <br/> |500  <br/> |Temp DB 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50. MSSQLSERVER\\MSSQL\\데이터  <br/> |
+|도움말  <br/> |500  <br/> |Temp DB 로그 디렉터리  <br/> |<DriveLetter>:\\프로그램 파일\\Microsoft SQL Server\\MSSQL10_50. MSSQLSERVER\\MSSQL\\데이터  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>테스트 환경 설정
 
@@ -612,7 +612,7 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwaysonhealth-xevent-session-on-server-name"></a>' AlwaysOn_health ' XEvent 세션을 시작 하면 가용성 그룹 만들기가 '<server name>'에 실패 합니다.
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>' AlwaysOn_health ' XEvent 세션을 시작 하면 가용성 그룹 만들기가 '<server name>'에 실패 합니다.
 
 장애 조치 (failover) 클러스터의 두 노드가 모두 "일시 중지" 또는 "중지 됨" 상태 인지 확인 합니다. 
   

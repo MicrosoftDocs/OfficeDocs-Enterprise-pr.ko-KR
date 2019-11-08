@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Lync 2013 Platform Options 라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068614"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030602"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft Lync 2013 플랫폼 옵션
 
-**요약:** 이 문서는 [기술 다이어그램](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)에서 사용할 수 있는 Microsoft Lync 2013 Platform Options 라는 액세스 가능한 텍스트 버전입니다.
+**요약:** 이 문서는 [기술 다이어그램](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)에서 사용할 수 있는 Microsoft Lync 2013 Platform Options 라는 액세스 가능한 텍스트 버전입니다.
   
 이 포스터는 BDMs (비즈니스 의사 결정권자) 및 설계자가 Lync Online (Office 365) 및 Lync Server 배포에 대해 알아야 할 사항에 대해 설명 합니다.
   

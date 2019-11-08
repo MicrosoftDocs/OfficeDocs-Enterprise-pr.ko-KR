@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 Office 365에서 CDNs (콘텐츠 배달 네트워크)를 사용 하 여 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 7b9ef7a3742dbbccbc052eca28469c4fb10cdae1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643291"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029122"
 ---
 # <a name="content-delivery-networks-cdns"></a>CDNs (콘텐츠 배달 네트워크)
 
@@ -62,7 +62,7 @@ Office 365 CDN 내의 **비공개** 원본을 사용 하면 SharePoint Online �
 
 Office 365 CDN 서비스는 SharePoint Online 구독의 일부로 포함되어 있습니다.
 
-Office 365 CDN을 사용 하는 방법에 대 한 자세한 내용은 [use The office 365 content delivery network With SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)을 참조 하세요.
+Office 365 CDN을 사용 하는 방법에 대 한 자세한 내용은 [use The office 365 content delivery network With SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)을 참조 하세요.
 
 Office 365 CDN 사용에 대 한 개념 및 HOWTO 정보를 제공 하는 일련의 짧은 비디오를 시청 하려면 [SharePoint 개발자 패턴 및 모범 사례 YouTube 채널](https://aka.ms/sppnp-videos)을 방문 하세요.
 
@@ -74,11 +74,11 @@ Office 365 CDN에 포함 된 것은 아니지만 office 365 테 넌 트에서 �
 
 **AZURE cdn** 을 사용 하 여 사용자 지정 웹 파트, 라이브러리 및 기타 리소스 자산을 호스팅하기 위한 자체 CDN 인스턴스를 배포할 수 있으며,이를 통해 cdn 저장소에 액세스 키를 적용 하 고 cdn 구성을 보다 강력 하 게 제어할 수도 있습니다. Azure CDN 사용은 무료이 아니며 Azure 구독이 필요 합니다.
 
-Azure CDN 인스턴스를 구성 하는 방법에 대 한 자세한 내용은 [퀵 스타트: AZURE cdn과 azure storage 계정 통합](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn)을 참조 하세요.
+Azure CDN 인스턴스를 구성 하는 방법에 대 한 자세한 내용은 [퀵 스타트: AZURE cdn과 azure storage 계정 통합](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)을 참조 하세요.
 
-Azure CDN을 사용 하 여 SharePoint 웹 파트를 호스팅하는 방법에 대 한 예제를 보려면 [sharepoint 클라이언트 쪽 웹 파트를 AZURE CDN에 배포](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)를 참조 하세요.
+Azure CDN을 사용 하 여 SharePoint 웹 파트를 호스팅하는 방법에 대 한 예제를 보려면 [sharepoint 클라이언트 쪽 웹 파트를 AZURE CDN에 배포](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)를 참조 하세요.
 
-Azure CDN PowerShell 모듈에 대 한 자세한 내용은 [PowerShell을 사용 하 여 AZURE Cdn 관리](https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-powershell)를 참조 하세요.
+Azure CDN PowerShell 모듈에 대 한 자세한 내용은 [PowerShell을 사용 하 여 AZURE Cdn 관리](https://docs.microsoft.com/azure/cdn/cdn-manage-powershell)를 참조 하세요.
 
 ### <a name="microsoft-ajax-cdn"></a>Microsoft Ajax CDN
 
@@ -87,10 +87,10 @@ Microsoft의 **AJAX CDN** 은 jQuery (및 다른 모든 라이브러리), ASP.NE
 이러한 스크립트를 프로젝트에 포함 하려면 해당 라이브러리에 대 한 참조를 프로젝트 자체에 포함 하지 말고 CDN 주소에 대 한 참조로 대체 하기만 하면 됩니다. 예를 들어 다음 코드를 사용 하 여 jQuery에 연결 합니다.
 
 ``` html
-<script src=http://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
+<script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-Microsoft Ajax CDN을 사용 하는 방법에 대 한 자세한 내용은 [Microsoft AJAX cdn](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)를 참조 하세요.
+Microsoft Ajax CDN을 사용 하는 방법에 대 한 자세한 내용은 [Microsoft AJAX cdn](https://docs.microsoft.com/aspnet/ajax/cdn/overview)를 참조 하세요.
 
 ## <a name="how-does-office-365-use-content-from-a-cdn"></a>Office 365에서 CDN의 콘텐츠를 사용 하는 방법
 
@@ -110,7 +110,7 @@ CDN은 가장 가까운 데이터 센터를 사용자의 브라우저에 출력 
 
 ## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>CDNs가 Office 365에서 가장 잘 작동 하도록 네트워크를 설정 하려면 어떻게 해야 하나요?
 
-네트워크에서 클라이언트 간의 대기 시간을 최소화 하는 것은 최적의 성능을 보장 하기 위한 주요 고려 사항입니다. [Office 365 끝점 관리](managing-office-365-endpoints.md) 에 설명 된 모범 사례를 사용 하 여 네트워크 구성에서 클라이언트 브라우저에서 중앙 프록시를 통한 cdn 트래픽을 라우팅 하지 않고 cdn을 직접 액세스 하도록 허용 하는지 확인 합니다. 불필요 한 대기 시간입니다.
+네트워크에서 클라이언트 간의 대기 시간을 최소화 하는 것은 최적의 성능을 보장 하기 위한 주요 고려 사항입니다. [Office 365 끝점 관리](managing-office-365-endpoints.md) 에서 설명 하는 최상의 방법을 사용 하 여 불필요 한 대기 시간이 발생 하지 않도록 네트워크 구성을 통해 클라이언트 브라우저가 중앙 프록시를 통해 cdn 트래픽을 라우팅하는 대신 cdn에 직접 액세스할 수 있도록 허용 합니다.
 
 Office [365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 을 읽어 office 365 네트워크 성능 최적화의 개념을 파악할 수도 있습니다.
 
@@ -120,15 +120,15 @@ Office 365에서 사용 하는 CDNs는 항상 변경 될 수 있으며, 대부�
 
 |CDN  |Company  |Usage  |링크  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Akamai         |공개 원본의 일반 자산, 개인 원본에 있는 SharePoint 사용자 콘텐츠         |[SharePoint Online에서 Office 365 콘텐츠 배달 네트워크 사용](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)         |
+|Office 365 CDN     |Akamai         |공개 원본의 일반 자산, 개인 원본에 있는 SharePoint 사용자 콘텐츠         |[SharePoint Online에서 Office 365 콘텐츠 배달 네트워크 사용](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |Azure CDN     |Microsoft         |사용자 지정 코드, SharePoint Framework 솔루션         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Microsoft Ajax CDN (읽기 전용)     |Microsoft         |Ajax, jQuery, ASP.NET, 부트스트랩, 녹아웃 .js 등의 공용 라이브러리         |[Microsoft Ajax CDN](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)         |
+|Microsoft Ajax CDN (읽기 전용)     |Microsoft         |Ajax, jQuery, ASP.NET, 부트스트랩, 녹아웃 .js 등의 공용 라이브러리         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>CDN에서 제공 하는 성능 향상은 무엇 인가요?
 
 Office 365에서 직접 다운로드 한 데이터와 특정 CDN에서 다운로드 한 데이터 (예: 테 넌 트에 대 한 위치, 가장 가까운 CDN 끝점, 수) 간의 특정 성능 차이를 측정 하는 데 관련 된 몇 가지 요인이 있습니다. CDN에서 처리 되는 페이지의 자산과 네트워크 대기 시간 및 대역폭에 대 한 일시적인 변경 그러나 간단한 A/B 테스트를 통해 특정 파일의 다운로드 시간 차이를 표시할 수 있습니다.
 
-다음 스크린샷은 Office 365의 원시 파일 위치와 [Microsoft Ajax 콘텐츠 배달 네트워크](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)에서 호스트 되는 파일 간의 다운로드 속도 차이를 보여 줍니다. 이러한 스크린샷은 Internet Explorer 11 개발자 도구의 **네트워크** 탭에서 가져온 것입니다. 이러한 스크린샷은 인기 라이브러리 jQuery의 대기 시간을 보여 줍니다. 이 화면을 가져오려면 Internet Explorer에서 **F12** 키를 누르고 wi-fi 아이콘과 함께 인식 되는 기호에 해당 하는 **네트워크** 탭을 선택 합니다.
+다음 스크린샷은 Office 365의 원시 파일 위치와 [Microsoft Ajax 콘텐츠 배달 네트워크](https://docs.microsoft.com/aspnet/ajax/cdn/overview)에서 호스트 되는 파일 간의 다운로드 속도 차이를 보여 줍니다. 이러한 스크린샷은 Internet Explorer 11 개발자 도구의 **네트워크** 탭에서 가져온 것입니다. 이러한 스크린샷은 인기 라이브러리 jQuery의 대기 시간을 보여 줍니다. 이 화면을 가져오려면 Internet Explorer에서 **F12** 키를 누르고 wi-fi 아이콘과 함께 인식 되는 기호에 해당 하는 **네트워크** 탭을 선택 합니다.
   
 ![F12 네트워크의 스크린샷](media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -153,7 +153,7 @@ Office 365 CDN 공급자에 대 한 개인 정보 및 데이터 보호에 대 �
 
 - [Microsoft 보안 센터](https://www.microsoft.com/trustcenter) 의 Office 365 개인 정보 및 데이터 보호에 대 한 자세한 정보
 - [Akamai 개인](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp) 정보 보호 센터에서 akamai의 개인 정보 취급 방침 및 데이터 보호법 자세히 알아보기
-- Azure [보안 센터](https://azure.microsoft.com/en-us/overview/trusted-cloud/) 의 azure 개인정보 취급 방침 및 데이터 보호에 대해 자세히 알아보기
+- Azure [보안 센터](https://azure.microsoft.com/overview/trusted-cloud/) 의 azure 개인정보 취급 방침 및 데이터 보호에 대해 자세히 알아보기
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>이러한 모든 타사 서비스를 사용 하 여 네트워크를 보호 하려면 어떻게 해야 하나요?
 
@@ -165,13 +165,13 @@ Microsoft 또는 Office 365 데이터 센터에 대해 전송 되는 요청을 �
 
 Fqdn 목록과 시간에 따른 CDNs 변경을 활용 하는 방법을 설명 합니다. , 게시 된 [Office 365 url 및 IP 주소 범위](https://go.microsoft.com/fwlink/p/?LinkID=293744) 페이지를 참조 하 여 cdns를 활용 하는 최신 fqdn을 최신으로 확인 하세요.
 
-또한 [office 365 IP 주소 및 URL 웹 서비스](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service) 를 사용 하 여 현재 Office 365 URL 및 CSV 또는 JSON 형식의 IP 주소 범위를 요청할 수 있습니다.
+또한 [office 365 IP 주소 및 URL 웹 서비스](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) 를 사용 하 여 현재 Office 365 URL 및 CSV 또는 JSON 형식의 IP 주소 범위를 요청할 수 있습니다.
 
 ## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>자체 CDN을 사용 하 고 로컬 네트워크에서 콘텐츠를 캐싱할 수 있나요?
 
 Microsoft는 고객의 요구를 지원 하기 위한 새로운 방법을 지속적으로 찾고 있으며 현재 캐싱 프록시 솔루션 및 기타 온-프레미스 CDN 솔루션 사용을 조사 하 고 있습니다.
 
-Office 365 CDN에 포함 된 것은 아니지만 **AZURE cdn** 을 사용 하 여 사용자 지정 웹 파트, 라이브러리 및 기타 리소스 자산을 호스팅할 수 있으며,이를 통해 cdn 저장소에 액세스 키를 적용 하 고 cdn 구성 보다 더 강력 하 게 제어할 수도 있습니다. Azure CDN 사용은 무료이 아니며 Azure 구독이 필요 합니다. Azure CDN 인스턴스를 구성 하는 방법에 대 한 자세한 내용은 [퀵 스타트: AZURE cdn과 azure storage 계정 통합](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn)을 참조 하세요.
+Office 365 CDN에 포함 된 것은 아니지만 **AZURE cdn** 을 사용 하 여 사용자 지정 웹 파트, 라이브러리 및 기타 리소스 자산을 호스팅할 수 있으며,이를 통해 cdn 저장소에 액세스 키를 적용 하 고 cdn 구성 보다 더 강력 하 게 제어할 수도 있습니다. Azure CDN 사용은 무료이 아니며 Azure 구독이 필요 합니다. Azure CDN 인스턴스를 구성 하는 방법에 대 한 자세한 내용은 [퀵 스타트: AZURE cdn과 azure storage 계정 통합](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)을 참조 하세요.
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Office 365에 대 한 Azure Express 경로를 사용 하 고 있습니까?
 
@@ -187,13 +187,13 @@ CDNs를 사용 하는 것은 SharePoint Online 컨텍스트에서 적합 하며 
 
 [Office 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples)
 
-[Office 365 네트워크 연결성 평가하기](assessing-network-connectivity.md) 
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 
-[Office 365 끝점 관리](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
+[Office 365 끝점 관리](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
 [Office 365 URL 및 IP 주소 범위](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
-[SharePoint Online에서 Office 365 콘텐츠 배달 네트워크 사용](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
+[SharePoint Online에서 Office 365 콘텐츠 배달 네트워크 사용](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Microsoft 보안 센터](https://www.microsoft.com/trustcenter)
 

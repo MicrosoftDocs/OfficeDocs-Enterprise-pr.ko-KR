@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다. 탐색을 선택 하 고 구성 하는 것은 SharePoint Online의 사이트 성능 및 확장성에 큰 영향을 줍니다. 이 문서는 클래식 팀 사이트에는 적용 되지 않습니다.
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385206"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031263"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대 한 탐색 옵션
 
@@ -69,7 +69,7 @@ ms.locfileid: "36385206"
 
 관리 되는 탐색 세부 정보에 대 한 Docs.Microsoft.com에 대 한 몇 가지 문서는 [SharePoint Server의 관리 탐색 개요](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)를 참조 하십시오.
 
-관리 되는 탐색을 구현 하려면 사이트의 탐색 구조에 해당 하는 Url을 사용 하 여 용어를 설정 합니다. 관리 탐색은 대부분의 경우 구조적 탐색을 대체 하기 위해 수동으로 맞게 조정 된 수도 있습니다. 예를 들면 다음과 같습니다.
+관리 되는 탐색을 구현 하려면 사이트의 탐색 구조에 해당 하는 Url을 사용 하 여 용어를 설정 합니다. 관리 탐색은 대부분의 경우 구조적 탐색을 대체 하기 위해 수동으로 맞게 조정 된 수도 있습니다. 예:
 
 ![SharePoint Online 사이트 구조](media/SPONavOptionsListOfSites.png)
 
@@ -456,9 +456,9 @@ function addEventsToElements() {
 
 [위의 코드](#about-the-javascript-file) 에는 다음과 같은 종속성이 있습니다.
 
-- jQueryhttp://jquery.com/
-- KnockoutJS -http://knockoutjs.com/
-- Linq .js- http://linqjs.codeplex.com/또는 github.com/neuecc/linq.js
+- jQueryhttps://jquery.com/
+- KnockoutJS -https://knockoutjs.com/
+- Linq .js- https://linqjs.codeplex.com/또는 github.com/neuecc/linq.js
 
 현재 버전의 LinqJS에는 위의 코드에서 사용 된 ByHierarchy 메서드가 포함 되지 않으며 탐색 코드가 손상 됩니다. 이 문제를 해결 하려면 명령줄 `Flatten: function ()`앞에 있는 Linq .js 파일에 다음 메서드를 추가 합니다.
 

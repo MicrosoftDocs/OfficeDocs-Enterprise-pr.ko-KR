@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: dc08ae1cc54e17e5d7f1c3c717bfd254b6cf962d
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 60016fff28ca7c71555e141ef479d32fdd6d7856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643301"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031433"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -218,7 +218,7 @@ Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-이 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)를 참조 하십시오.
+이 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx)를 참조 하십시오.
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Office 365 CDN에 포함할 파일 형식 목록 변경 (선택 사항)
@@ -246,7 +246,7 @@ CDN에서 현재 허용 되는 파일 형식을 확인 하려면 **SPOTenantCdnP
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-이러한 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 및 [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)를 참조 하십시오.
+이러한 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) 및 [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx)를 참조 하십시오.
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Office 365 CDN에서 제외 하려는 사이트 분류 목록 변경 (선택 사항)
@@ -279,7 +279,7 @@ _ExcludeRestrictedSiteClassifications_ 속성은 CDN에서 제외 하려는 사�
 
 _Excludeifnoscriptdisabled_ 속성은 사이트 수준 _noscript_ 특성 설정에 따라 CDN에서 콘텐츠를 제외 합니다. 기본적으로 _최신_ 사이트에는 _Noscript_ 특성이 **사용** 으로 설정 되 고 _클래식_ 사이트에는 사용 **되지** 않습니다. 이것은 테 넌 트 설정에 따라 다릅니다.
 
-이러한 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 및 [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)를 참조 하십시오.
+이러한 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) 및 [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx)를 참조 하십시오.
 
 <a name="Office365CDNforSPOOrigin"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>자산에 대 한 근원 추가
@@ -326,7 +326,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.
+이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)를 참조 하십시오.
 
 > [!NOTE]
 > 비공개 원본의 경우 원본에서 공유 되는 자산은 CDN에서 액세스 하려면 먼저 주 버전을 게시 해야 합니다.
@@ -350,7 +350,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.
+이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)를 참조 하십시오.
 
 명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. 최대 15 분까지 소요 될 수 있습니다.
 
@@ -375,7 +375,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.
+이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)를 참조 하십시오.
 
 명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. 최대 15 분까지 소요 될 수 있습니다.
 
@@ -388,7 +388,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)를 참조 하십시오.
+이 명령 및 구문에 대 한 자세한 내용은 [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)를 참조 하십시오.
   
 명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. SharePoint Online 테 넌 트가 CDN 서비스에 연결할 때 예상 되는 _구성 보류 중인_ 메시지가 표시 될 수 있습니다. 최대 15 분까지 소요 될 수 있습니다.
 
@@ -402,7 +402,7 @@ CDN을 설정한 후에는이 섹션에 설명 된 대로 콘텐츠를 업데이
 
 설정 단계를 완료 한 후에는 새 자산을 추가 하 고 원할 때마다 기존 자산을 업데이트 하거나 제거할 수 있습니다. 폴더 또는 SharePoint 라이브러리에서 원본으로 식별 한 자산을 변경 하기만 하면 됩니다. 새 자산을 추가 하는 경우에는 CDN을 통해 즉시 사용할 수 있습니다. 그러나 자산을 업데이트 하는 경우 새 복사본을 전파 하 고 CDN에서 사용할 수 있게 되는 데 최대 15 분이 걸립니다.
   
-원본 위치를 검색 해야 하는 경우 **SPOTenantCdnOrigins** cmdlet을 사용할 수 있습니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)를 참조 하십시오.
+원본 위치를 검색 해야 하는 경우 **SPOTenantCdnOrigins** cmdlet을 사용할 수 있습니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [SPOTenantCdnOrigins](https://technet.microsoft.com/library/mt790770.aspx)를 참조 하십시오.
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Office 365 CDN에서 원본 제거
@@ -413,7 +413,7 @@ CDN을 설정한 후에는이 섹션에 설명 된 대로 콘텐츠를 업데이
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)를 참조 하십시오.
+이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx)를 참조 하십시오.
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN에서 원본 수정
@@ -437,7 +437,7 @@ CDN에서 비공개 원본을 사용 하지 않도록 설정 하려면 다음 �
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-이 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)를 참조 하십시오.
+이 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx)를 참조 하십시오.
 
 </details>
 
@@ -578,7 +578,7 @@ CDN 및 구성 된 원본 및 정책을 사용 하도록 설정 했으므로 이
 + [공개 원본에서 에셋 사용](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
 + [비공개 원본에서 에셋 사용](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-클라이언트 쪽 웹 파트 호스팅을 위해 CDN을 사용 하는 방법에 대 한 자세한 내용은 [Office 365 CDN (Hello World part 4)에서 클라이언트 쪽 웹 파트 호스트](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)항목을 참조 하십시오.
+클라이언트 쪽 웹 파트 호스팅을 위해 CDN을 사용 하는 방법에 대 한 자세한 내용은 [Office 365 CDN (Hello World part 4)에서 클라이언트 쪽 웹 파트 호스트](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)항목을 참조 하십시오.
 
 ### <a name="updating-links-to-cdn-assets"></a>CDN 자산에 대 한 링크 업데이트
 
@@ -588,7 +588,7 @@ CDN 및 구성 된 원본 및 정책을 사용 하도록 설정 했으므로 이
 + 원본의 자산에 대 한 각 링크에 대해 경로를 CDN 원본에 있는 파일의 경로로 바꿉니다. 상대 경로를 사용할 수 있습니다.
 + 페이지 또는 콘텐츠를 저장 합니다.
 
-예를 들어 문서 라이브러리 폴더 _/site/CDN_origins/public/_ 로 복사한 이미지 _/site/SiteAssets/images/image.png_을 고려해 보십시오. CDN 자산을 사용 하려면 이미지 파일 위치의 원래 경로를 원본 경로와 함께 바꿔 새 URL _/site/CDN_origins/public/image.png_합니다.
+예를 들어 문서 라이브러리 폴더 _/site/CDN_origins/site/_ 로 복사한 이미지 _/site/SiteAssets/images/image.png_을 고려해 보십시오. CDN 자산을 사용 하려면 원래 경로를 원본 경로와 함께 이미지 파일 위치로 바꿔 새 URL _/site/CDN_origins/public/.png_를 만듭니다.
 
 상대 경로 대신 자산에 대 한 전체 URL을 사용 하려면 다음과 같이 링크를 구성 합니다.
 
@@ -690,7 +690,7 @@ SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권
 
 SharePoint Online에서 제공 되는 참조이 있어야 하므로 CDN Url을 웹 브라우저에서 직접 테스트할 수 없습니다. 그러나 SharePoint 페이지에 CDN 자산 URL을 추가한 다음 브라우저에서 페이지를 열면 CDN 자산이 페이지에 렌더링 된 것을 볼 수 있습니다.
 
-Microsoft Edge 브라우저에서 개발자 도구를 사용 하는 방법에 대 한 자세한 내용은 [Microsoft Edge 개발자 도구](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)를 참조 하세요.
+Microsoft Edge 브라우저에서 개발자 도구를 사용 하는 방법에 대 한 자세한 내용은 [Microsoft Edge 개발자 도구](https://docs.microsoft.com/microsoft-edge/devtools-guide)를 참조 하세요.
 
 [SharePoint 개발자 패턴 및 관례](https://aka.ms/sppnp-videos) 에서 호스트 되는 간단한 비디오를 시청 하려면 cdn 채널을 사용 하는 방법에 대 한 자세한 내용은 [cdn 사용법 확인 및 최적의 네트워크 연결](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)확인을 참조 하십시오.
 

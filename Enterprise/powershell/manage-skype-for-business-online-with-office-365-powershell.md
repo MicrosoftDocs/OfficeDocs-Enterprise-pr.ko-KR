@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 요약:Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
-ms.openlocfilehash: 80d8308a1c9b32fcafd47d1df2f699141e41accd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782138"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030943"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
 
@@ -27,7 +27,7 @@ ms.locfileid: "35782138"
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-[비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/en-us/download/details.aspx?id=39366)을 다운로드 하 여 설치한 다음 메시지가 표시 되 면 컴퓨터를 다시 시작 합니다.
+[비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/download/details.aspx?id=39366)을 다운로드 하 여 설치한 다음 메시지가 표시 되 면 컴퓨터를 다시 시작 합니다.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>비즈니스용 Skype 온라인 관리자 계정 이름 및 암호를 사용 하 여 연결

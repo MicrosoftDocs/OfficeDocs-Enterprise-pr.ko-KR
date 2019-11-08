@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure Express 경로를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 올바르게 이해 하려면 핵심 Express 경로 및 라우팅 도메인에 대 한 회사의 요구 사항을 파악 해야 합니다. 이를 통해 Office 365 고객이 의존할 수 있는 Express를 사용 하기 위한 기본이 설정 됩니다.
-ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722717"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031583"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 사용한 라우팅
 
@@ -63,7 +63,7 @@ Office 365에서 온-프레미스 네트워크로의 통신이 시작 되는 시
 
 - [SharePoint 하이브리드 BCS](https://technet.microsoft.com/library/dn197239.aspx )
 
-- 비즈니스용 skype [하이브리드](https://technet.microsoft.com/en-us/library/jj205403.aspx) 및/또는 [비즈니스용 skype 페더레이션](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)
+- 비즈니스용 skype [하이브리드](https://technet.microsoft.com/library/jj205403.aspx) 및/또는 [비즈니스용 skype 페더레이션](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)
 
 - [비즈니스용 Skype 클라우드 커넥터](https://technet.microsoft.com/library/mt605227.aspx )입니다.
 
@@ -157,7 +157,7 @@ Exchange Online, SharePoint Online 및 비즈니스용 Skype Online의 최대 �
 
 - \*. TCP가 아닌 트래픽에 대 한 IP 범위와 함께 Lync.com
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*visio.officeapps.live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, office.live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*visio.officeapps.live.com, \*word-edit.officeapps.live.com, \*word-view.officeapps.live.com, office.live.com
 
 [Windows 8에서 프록시 설정 배포 및 관리](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) 에 대해 자세히 알아보고 [Office 365이 프록시로 제한 되지 않도록](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx)합니다.
   
@@ -212,7 +212,7 @@ Humongous 보험이 다중 지리 전략을 계획 하는 경우 회로 규모, 
   
 Humongous에 여러 대륙의 주요 사무실이 있는 경우 비즈니스용 Skype 온라인 등의 중요 한 응용 프로그램에 대 한 대기 시간을 줄이기 위해 지역별 활성/활성 회로를 최소한 두 개 이상 권장 됩니다. 모든 사무실이 한 대륙에 있거나 실시간 공동 작업을 사용 하 고 있지 않은 경우 통합 또는 배포 된 egress 지점이 고객 관련 의사 결정이 됩니다. 여러 회로를 사용할 수 있는 경우 BGP 라우팅을 통해 장애 조치 (failover)가 단일 회로를 사용할 수 없게 됩니다.
   
-예제 [라우팅 구성](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) 및 [https://azure.microsoft.com/en-us/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)를 확인 하세요.
+예제 [라우팅 구성](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) 및 [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)를 확인 하세요.
   
 ## <a name="selective-routing-with-expressroute"></a>Express 경로를 사용한 선택적 라우팅
 
@@ -224,13 +224,13 @@ Humongous에 여러 대륙의 주요 사무실이 있는 경우 비즈니스용 
 
 3. **경로 필터링** - [경로 필터](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) 는 Microsoft 피어 링을 통해 지원 되는 서비스의 하위 집합을 사용 하는 방법입니다.
 
-4. **** Bgp 커뮤니티 [태그](https://aka.ms/bgpexpressroute365) 를 기반으로 하는 필터링을 통해 고객은 어떤 Office 365 응용 프로그램에서 어떤 방법으로 이동 하 고 인터넷을 통과할 지를 결정할 수 있습니다.
+4. **Bgp 커뮤니티** [태그](https://aka.ms/bgpexpressroute365) 를 기반으로 하는 필터링을 통해 고객은 어떤 Office 365 응용 프로그램에서 어떤 방법으로 이동 하 고 인터넷을 통과할 지를 결정할 수 있습니다.
 
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   
 [Office 365용 Azure ExpressRoute](azure-expressroute.md)
   

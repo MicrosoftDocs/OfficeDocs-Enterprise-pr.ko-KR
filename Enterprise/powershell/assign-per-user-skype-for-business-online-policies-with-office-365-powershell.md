@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: '요약: Office 365 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책에 대 한 사용자 단위 통신 설정을 할당 합니다.'
-ms.openlocfilehash: 3c6c869874329d7efb6d8c417c797c9f81df6bf8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069294"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031043"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당
 
@@ -29,7 +29,7 @@ Office 365 PowerShell을 사용 하는 것은 비즈니스용 Skype 온라인 �
 
 다음 절차에 따라 명령을 실행 하도록 설정 합니다 (이미 완료 한 단계 건너뛰기).
   
-1. [비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/en-us/download/details.aspx?id=39366)을 다운로드 하 고 설치 합니다.
+1. [비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/download/details.aspx?id=39366)을 다운로드 하 고 설치 합니다.
     
 2. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
     
@@ -113,7 +113,7 @@ Windows PowerShell을 사용 하 여 사용자 계정을 사용 하지 않도록
 
 [Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: 이 문서는 Microsoft Azure에 대 한 SharePoint 재해 복구 라는 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068524"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038237"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>액세스 가능한 다이어그램-Microsoft Azure로의 SharePoint 재해 복구
 
@@ -194,10 +194,9 @@ Azure virtual network에는 다음과 같은 세 가지 클라우드 서비스�
 
 이 솔루션에 대 한 AD DS의 구성은 AD DS가 부분적으로 온-프레미스에 배포 되 고 Azure 가상 컴퓨터에 부분적으로 배포 되는 하이브리드 배포 시나리오를 구성 합니다. 
   
-중요 — Azure에서 AD DS를 배포 하기 전에 Microsoft Azure 가상 컴퓨터 (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)에 Windows Server Active Directory를 배포 하기 위한 지침을 읽어 보십시오. 
+중요 — Azure에서 AD DS를 배포 하기 전에 Microsoft Azure 가상 컴퓨터 (https://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)에 Windows Server Active Directory를 배포 하기 위한 지침을 읽어 보십시오. 
   
-Active Directory 환경의 디자인 및 배포에 대 한 자세한 지침은를 http://TechNet.microsoft.com참조 하세요. 
-  
+ 
 이 참조 아키텍처에는 도메인 컨트롤러로 구성 된 두 개의 가상 컴퓨터가 포함 되어 있습니다. 각 형식은 다음과 같이 구성 됩니다. 
   
 - 크기-작음 

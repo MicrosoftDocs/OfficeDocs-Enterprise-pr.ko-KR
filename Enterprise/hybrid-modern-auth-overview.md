@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: 6a724ae48166f8946e71cf3f2235e07ee399712a
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: b535104fb3acc6e7802257a246ec113ad05dbf61
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493305"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027582"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
 
@@ -48,7 +48,7 @@ ms.locfileid: "36493305"
     
 - **조건부 액세스 정책**: MAM (모바일 응용 프로그램 관리) 및 Azure Active Directory 조건부 액세스 
     
-최신 인증을 사용 하 여 사용자 id 관리 관리자는 리소스를 보호 하 고 온-프레미스 (Exchange 및 비즈니스용 Skype) 둘 다에 보다 안전한 id 관리 방법을 제공할 때 다양 한 도구를 사용할 수 있습니다. 및 비즈니스용 Skype 하이브리드/분할 도메인 시나리오
+최신 인증을 사용 하 여 사용자 id를 관리 하면 관리자가 온-프레미스 (Exchange 및 비즈니스용 Skype), Exchange 하이브리드 및 비즈니스용 Skype 하이브리드/분할 도메인 시나리오에 보다 안전 하 게 다양 한 id 관리 방법을 제공할 수 있습니다.
   
 비즈니스용 Skype가 Exchange와 긴밀 하 게 작동 하기 때문에 비즈니스용 Skype 클라이언트 사용자에 게는 Exchange의 최신 인증 상태에 대 한 영향을 받게 된다는 것을 알 수 있습니다. 비즈니스용 Skype 분할이 있는 경우에도 적용 됩니다. 또한 최신 인증을 사용 하는 비즈니스용 Skype 하이브리드 유형을 ' 분할-도메인 ' (분할 도메인) 이라고 하는 경우에 따라 비즈니스용 Skype Online 및 비즈니스용 Skype를 모두 사용 하 고 사용자가 두 위치에 모두 프레미스 합니다.
   
@@ -69,7 +69,7 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
 변경 되지 않는 내용 온-프레미스를 분할 도메인에 포함시킬지 아니면 비즈니스용 Skype 및 Exchange server를 사용 하 고 있는지 여부에 관계 없이 모든 사용자는 먼저 *온-프레미스* 인증을 받아야 합니다. 최신 인증의 하이브리드 구현에서 Lyncdiscovery 및 자동 검색은 온-프레미스 서버를 가리킵니다. 
   
 > [!IMPORTANT]
-> MA에서 지원 되는 특정 비즈니스용 Skype 토폴로지를 파악 해야 하는 경우 여기에 [설명](https://technet.microsoft.com/en-us/library/mt803262.aspx)된 대로 진행 됩니다.
+> MA에서 지원 되는 특정 비즈니스용 Skype 토폴로지를 파악 해야 하는 경우 여기에 [설명](https://technet.microsoft.com/library/mt803262.aspx)된 대로 진행 됩니다.
   
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>온-프레미스 환경의 최신 인증 상태 확인
 <a name="BKMK_CheckStatus"> </a>
@@ -82,13 +82,13 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
   
 - **비즈니스용 Skype 관련**
     
-  - 모든 서버에 SFB 서버 2015 CU5 이상이 있어야 합니다.
+  - 모든 서버가 비즈니스용 Skype 서버 2015 이상에 CU5 (누적 업데이트)를 2017 수 있어야 합니다.
     
   - **예외** -Sba (Branch 지 속성)가 현재 버전에 있을 수 있습니다 (Lync 2013 기반). 
     
   - SIP 도메인이 Office 365에서 페더레이션 도메인으로 추가 됨
     
-  - 모든 SFB 프런트 엔드는 365 인터넷에 대 한 연결 아웃 바운드 (TCP 443) 및 office [125 url 및 IP 주소의 ' Microsoft 365 Common And Office ' 섹션에 있는의 알려진 인증서 루트 crl (tcp 80 56)에 대 한 연결이 있어야 합니다. 범위](urls-and-ip-address-ranges.md)입니다.
+  - 모든 SFB 프런트 엔드는 365 인터넷에 대 한 연결 아웃 바운드 (TCP 443) 및 [office 125 url 및 IP 주소 범위의](urls-and-ip-address-ranges.md)' Microsoft 365 일반 및 Office ' 섹션에 있는에 알려진 인증서 루트 CRL (tcp 80 56)에 대 한 연결이 있어야 합니다.
   
 - **하이브리드 Office 365 환경에서 비즈니스용 Skype 온-프레미스**
   - 비즈니스용 skype 서버 2019을 실행 중인 모든 서버와의 비즈니스용 Skype 서버 2019 배포
@@ -113,7 +113,7 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
   <system.net>
     <defaultProxy>
       <proxy
-        proxyaddress="http://192.168.100.60:8080"
+        proxyaddress="https://192.168.100.60:8080"
         bypassonlocal="true" />
     </defaultProxy>
   </system.net>
@@ -141,7 +141,7 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
   
   - 하이브리드 환경에는 Exchange 서버 2007 또는 2010이 없습니다.
   
-  - 모든 Exchange 서버에는 최신 cummulative 업데이트가 설치 되어 있어야 하며, [최신 누적 업데이트로 Exchange 업그레이드](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) 를 참조 하 여 사용 가능한 모든 업데이트를 찾고 관리 합니다.
+  - 모든 Exchange 서버에는 최신 cummulative 업데이트가 설치 되어 있어야 하며, [최신 누적 업데이트로 Exchange 업그레이드](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) 를 참조 하 여 사용 가능한 모든 업데이트를 찾고 관리 합니다.
     
 - **Exchange 클라이언트 및 프로토콜 요구 사항**
   
@@ -149,9 +149,9 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
 
   |**클라이언트**|**기본 프로토콜**|**참고**|
   |:-----|:-----|:-----|
-  |Outlook 2013 및 Outlook 2016  <br/> |HTTP를 통한 MAPI  <br/> |HTTP를 통한 MAPI는 이러한 클라이언트와의 최신 인증을 활용 하기 위해 Exchange에서 사용 하도록 설정 해야 합니다 (일반적으로 Exchange 2013 서비스 팩 1 이상에 새로 설치 하는 경우에는 사용 또는 True). 자세한 내용은 [office 2013 및 office 2016 클라이언트 앱에 대 한 최신 인증이 작동 하는 방법을](https://docs.microsoft.com/en-us/office365/enterprise/modern-auth-for-office-2013-and-2016)참조 하세요.  <br/> Outlook의 최소 필수 빌드를 실행 중인지 확인 합니다. [Windows Installer (MSI)를 사용 하는 Outlook 버전에 대 한 최신 업데이트를](https://docs.microsoft.com/en-us/officeupdates/outlook-updates-msi)참조 하세요.  <br/> |
+  |Outlook 2013 및 Outlook 2016  <br/> |HTTP를 통한 MAPI  <br/> |HTTP를 통한 MAPI는 이러한 클라이언트와의 최신 인증을 활용 하기 위해 Exchange에서 사용 하도록 설정 해야 합니다 (일반적으로 Exchange 2013 서비스 팩 1 이상에 새로 설치 하는 경우에는 사용 또는 True). 자세한 내용은 [office 2013 및 office 2016 클라이언트 앱에 대 한 최신 인증이 작동 하는 방법을](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)참조 하세요.  <br/> Outlook의 최소 필수 빌드를 실행 중인지 확인 합니다. [Windows Installer (MSI)를 사용 하는 Outlook 버전에 대 한 최신 업데이트를](https://docs.microsoft.com/officeupdates/outlook-updates-msi)참조 하세요.  <br/> |
   |Mac용 Outlook 2016  <br/> |Exchange Web Services  <br/> |  <br/> |
-  |iOS 및 Android용 Outlook  <br/> |  <br/> |자세한 내용은 [iOS 및 Android 용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 을 참조 하세요.  <br/> |
+  |iOS 및 Android용 Outlook  <br/> |  <br/> |자세한 내용은 [iOS 및 Android 용 Outlook에서 하이브리드 최신 인증 사용](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 을 참조 하세요.  <br/> |
   |Exchange ActiveSync 클라이언트 (예: iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |최신 인증을 지 원하는 Exchange ActiveSync 클라이언트의 경우 기본 인증에서 최신 인증으로 전환 하기 위해 프로필을 다시 만들어야 합니다.  <br/> |
 
 - **일반 필수 구성 요소**
@@ -181,7 +181,7 @@ EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활�
 
 - [최신 인증을 사용 하도록 Exchange Server 온-프레미스를 구성 하는 방법](configure-exchange-server-for-hybrid-modern-authentication.md)
     
-- [최신 인증과 함께 지원 되는 비즈니스용 Skype 토폴로지](https://technet.microsoft.com/en-us/library/mt803262.aspx)
+- [최신 인증과 함께 지원 되는 비즈니스용 Skype 토폴로지](https://technet.microsoft.com/library/mt803262.aspx)
     
 - [최신 인증을 사용 하도록 비즈니스용 Skype 온-프레미스를 구성 하는 방법](configure-skype-for-business-for-hybrid-modern-authentication.md)
     

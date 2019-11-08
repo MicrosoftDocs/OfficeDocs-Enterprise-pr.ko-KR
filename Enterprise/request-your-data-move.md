@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907651"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031593"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -37,7 +37,7 @@ ms.locfileid: "35907651"
 |영국  <br/> |2017년 3월 15일   <br/> |2017년 9월 15일  <br/> |
 |대한민국  <br/> |2017년 5월 1일  <br/> |2017년 10월 31일  <br/> |
 |프랑스  <br/> |2018년 3월 14일  <br/> |2018년 9월 15일  <br/> |
-|아랍에미리트  <br/> |7 월 15 일 2019  <br/> |2020 년 1 월 31 일  <br/> |
+|아랍에미리트  <br/> |2019년 7월 15일  <br/> |2020 년 1 월 31 일  <br/> |
 |남아프리카 공화국  <br/> |7 월 25 일, 2019  <br/> |2020 년 1 월 31 일  <br/> |
    
 ## <a name="how-to-request-a-move"></a>이동을 요청하는 방법
@@ -100,7 +100,7 @@ IP 주소를 추가한 후 새 데이터 센터 지역에 대한 연결을 테�
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>모바일 장치에서 오래된 Exchange 설정을 업데이트하도록 사용자에게 알림
 
-사용자가 Exchange Server가 **m.outlook.com** 또는 **podxxxxx.outlook.com**로 설정 된 모바일 장치를 사용 하는 경우에는 **** [동기화 하도록 모바일 장치 설정의 지침에 따라 outlook.office365.com로 전환 하는 것이 좋습니다. ](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)합니다.
+사용자가 Exchange Server를 **m.outlook.com** 또는 **podxxxxx.outlook.com**로 설정한 모바일 장치를 사용 하는 경우, [계정에 동기화 하도록 모바일 장치 설정](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)의 지침에 따라 **outlook.office365.com**로 전환 하는 것이 좋습니다.
 
 ## <a name="related-topics"></a>관련 항목
 
@@ -110,6 +110,6 @@ IP 주소를 추가한 후 새 데이터 센터 지역에 대한 연결을 테�
 
 [Microsoft Dynamics CRM Online에 대 한 새로운 데이터 센터 지역](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[지역별 Azure services](https://azure.microsoft.com/en-us/regions/)
+[지역별 Azure services](https://azure.microsoft.com/regions/)
   
 

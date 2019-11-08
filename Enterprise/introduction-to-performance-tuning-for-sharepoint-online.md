@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 이 문서에서는 SharePoint Online에서 최상의 성능을 위해 페이지를 디자인할 때 고려해 야 할 특정 측면에 대해 설명 합니다.
-ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3c2c6ccc58659aceaaf831b97eb8c4c05141afce
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616681"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033404"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online의 성능 조정 소개
 
@@ -44,7 +46,7 @@ SharePoint Online에 대 한 다음의 광범위 한 메트릭은 성능에 대 
     
 - 사용자 지정 되지 않은 페이지가 매우 빠르게 로드 됩니다.
     
-- 비즈니스용 OneDrive, 팀 사이트 및 시스템 페이지 (예: _layouts 등)가 모두 빠르게 로드 됩니다.
+- 비즈니스용 OneDrive, 팀 사이트 및 시스템 페이지 (예: _layouts 등)는 모두 빠르게 로드 됩니다.
     
 - SharePoint Online 페이지 중 가장 느린 1%가 부하를 로드 하는 데 5000 밀리초 보다 오래 걸립니다.
     
@@ -124,7 +126,7 @@ SharePoint Online에서는 몇 가지 요인을 더 고려해 야 합니다. 예
     
 - 서버에 대 한 큰 실제 거리
     
-SharePoint Online에서 활용할 수 있는 한 가지 기능은 Microsoft CDN (콘텐츠 배달 네트워크)입니다. CDN은 기본적으로 여러 데이터 센터에 배포 된 서버의 분산 모음입니다. CDN을 사용 하는 경우 클라이언트가 원래 SharePoint 서버와 멀리 떨어진 경우에도 클라이언트에 가까운 서버에서 페이지의 콘텐츠를 호스팅할 수 있습니다. Microsoft는 앞으로 사용자 지정할 수 없는 페이지의 로컬 인스턴스 (예: SharePoint Online 관리 홈 페이지)를 저장 하는 데이 더 많은 방법을 사용할 예정입니다. CDNs에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)를 참조 하세요.
+SharePoint Online에서 활용할 수 있는 한 가지 기능은 Microsoft CDN (콘텐츠 배달 네트워크)입니다. CDN은 기본적으로 여러 데이터 센터에 배포 된 서버의 분산 모음입니다. CDN을 사용 하는 경우 클라이언트가 원래 SharePoint 서버와 멀리 떨어진 경우에도 클라이언트에 가까운 서버에서 페이지의 콘텐츠를 호스팅할 수 있습니다. Microsoft는 앞으로 사용자 지정할 수 없는 페이지의 로컬 인스턴스 (예: SharePoint Online 관리 홈 페이지)를 저장 하는 데이 더 많은 방법을 사용할 예정입니다. CDNs에 대 한 자세한 내용은 [콘텐츠 배달 네트워크](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)를 참조 하세요.
   
 알고 있어야 하지만, ISP의 연결 속도가 더 많은 작업을 수행 하지 못할 수 있습니다. 간단한 속도 테스트 도구를 통해 연결 속도를 파악할 수 있습니다.
   
@@ -158,6 +160,6 @@ SharePoint Online에서 활용할 수 있는 한 가지 기능은 Microsoft CDN 
     
 - [SharePoint online에서 개체 캐시 사용](using-the-object-cache-with-sharepoint-online.md)
     
-- [방법: SharePoint Online에서 제한 또는 차단 방지](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [방법: SharePoint Online에서 제한 또는 차단 방지](https://msdn.microsoft.com/library/office/dn889829.aspx)
     
 

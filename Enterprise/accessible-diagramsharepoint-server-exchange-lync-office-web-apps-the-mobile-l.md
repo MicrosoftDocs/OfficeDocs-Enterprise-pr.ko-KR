@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068444"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030582"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>액세스 가능한 다이어그램-SharePoint Server, Exchange, Lync, Office Web Apps-모바일 가로
 
-**요약:** 이 문서는 [기술 다이어그램](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
+**요약:** 이 문서는 [기술 다이어그램](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
   
 이 포스터는 SharePoint Server, Lync, Exchange Server 및 Office Web Apps에 대 한 응용 프로그램 및 모바일 브라우저 기반 가로의 세부 레이아웃을 보여 줍니다. 여기에는 다음 정보가 포함 됩니다. 
   
@@ -132,7 +132,7 @@ ms.locfileid: "34068444"
     
 - Office Mobile은 Windows Phone (기본 제공), iPhone 및 Android에서 사용할 수 있습니다. IPhone 및 Android 사용자의 경우이 앱을 사용 하려면 Office 365에 대 한 구독이 있어야 합니다.
     
-### <a name="office"></a>Office
+### <a name="office"></a>사무실
 
 Office Mobile을 사용 하지 않는 경우 사용자는 Windows 8 태블릿, Ipad 및 전화와 같은 모바일 장치 브라우저에서 Office 문서를 볼 수 있습니다. Office Web Apps는 Word, Excel, PowerPoint 및 OneNote 응용 프로그램의 온라인 도우미입니다. Office Web Apps는 여러 장치 브라우저 및 제조업체에 게 제공 되지만 장치 마다 보기 환경이 다를 수 있습니다. 예를 들어 Windows 8 타블렛 및 iPad에서는 편집 기능을 제공 하지만 휴대폰은 이러한 앱만 볼 수 있습니다. 함께 제공 되는 그림에서는 Microsoft PowerPoint 및 Microsoft Excel 용 iPad의 Office Web Apps 환경을 보여 줍니다. 이 기능은 온-프레미스 및 온라인 배포에서 모두 사용할 수 있습니다.
   

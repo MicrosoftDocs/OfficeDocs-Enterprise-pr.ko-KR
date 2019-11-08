@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '요약: Office 365에 대 한 Microsoft의 기술 제어 관행에 대 한 개요입니다.'
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067681"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031143"
 ---
 # <a name="office-365-technology-controls"></a>Office 365 기술 컨트롤 
 
@@ -39,7 +39,7 @@ Office 365에 대 한 고객 Lockbox는 명시적 데이터 액세스 권한 부
 
 드물지만 Microsoft 서비스 엔지니어가 사용자의 데이터에 액세스 해야 하는 경우에는 문제를 해결 하는 데 필요한 데이터에만 액세스 권한을 부여 하 고 제한 된 시간을 사용 합니다. 액세스 요청을 거부 하는 경우 Microsoft 엔지니어가 콘텐츠에 액세스할 수 없으며 서비스 작업을 완료 하지 못할 수도 있습니다. 요청을 승인 하는 경우 Microsoft 엔지니어가 모니터링 및 제한 된 관리 인터페이스를 통해 콘텐츠에 대 한 제한 된 액세스를 제한할 수 있습니다.
 
-지원 엔지니어가 수행 하는 작업은 감사 목적으로 기록 되며, [Office 365 관리 활동 API](https://msdn.microsoft.com/library/office/dn707383.aspx) 와 [보안 및 준수 센터](http://protection.office.com/)를 통해 액세스할 수 있습니다.
+지원 엔지니어가 수행 하는 작업은 감사 목적으로 기록 되며, [Office 365 관리 활동 API](https://msdn.microsoft.com/library/office/dn707383.aspx) 와 [보안 및 준수 센터](https://protection.office.com/)를 통해 액세스할 수 있습니다.
 
 >[!NOTE]
 > 고객 Lockbox는 [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) 에서 추가 기능 구매로 사용할 수 있습니다. 자세한 내용은 [Office 365 Customer Lockbox 요청](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)을 참조하세요.
@@ -60,7 +60,7 @@ Office 365 서버가 동시 세션을 서버당 하나의 세션 (서버당) 별
 
 Active Directory 그룹 정책에 의해 Office 365 담당자에 대 한 사용 제한 및 연결 및 구성 요구 사항이 설정 됩니다. 이러한 정책에는 다음과 같은 특징이 있습니다.
 
-- TSGs [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2 유효성 검사 암호화만 사용 합니다.
+- TSGs [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2 유효성 검사 암호화만 사용 합니다.
 - TSG 세션의 비활성 시간이 30 분이 지난 후 연결이 끊어집니다.
 - TSG 세션은 24 시간 후에 자동으로 로그 오프 됩니다.
 

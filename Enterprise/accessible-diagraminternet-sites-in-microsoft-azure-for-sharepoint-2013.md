@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: 이 문서는 SharePoint 2013 용 Microsoft Azure의 인터넷 사이트 라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068644"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028062"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>액세스 가능한 다이어그램-SharePoint 용 Microsoft Azure 2013의 인터넷 사이트
 
@@ -198,23 +198,23 @@ Azure Active Directory와 함께 SharePoint 2013을 통합 하는 경우에는 A
     
 함께 제공 되는 다이어그램은 웹 응용 프로그램을 사용 하 여 사이트 모음과 상호 작용 하는 검색 같은 응용 프로그램 풀 서비스를 보여줍니다 다음과 같은 사이트 모음이 표시 됩니다. 
   
-- (루트 사이트)에 http://internal:8000 있는 경로 기반 사이트 모음입니다. 
+- (루트 사이트)에 https://internal:8000 있는 경로 기반 사이트 모음입니다. 
     
 - 크롤링:와 같은 주소에 있는 호스트 이름으로 https://authoring.contoso.com:8000된 사이트 모음입니다. 
     
 - 쿼리: 2 주소에 있는 별도의 호스트 이름이 지정 된 사이트 모음: 
     
-  - http://www.contoso.com 
+  - https://www.contoso.com 
     
   - https://secure.contoso.com 
     
-  - http://www.contoso.com:8000 
+  - https://www.contoso.com:8000 
     
-  - http://assets.contoso.com 
+  - https://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://assets.contoso.com:8000 
+  - https://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Azure 환경 디자인
 

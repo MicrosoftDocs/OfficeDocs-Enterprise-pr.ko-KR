@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '요약: Office 365 내의 격리 컨트롤에 대 한 설명입니다.'
-ms.openlocfilehash: 87317d753198b50ce360640c94f042adf27ed06e
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a53826f7f11324986f3df59d9df806ea522cb7d6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067667"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031203"
 ---
 # <a name="office-365-isolation-controls"></a>Office 365 격리 컨트롤 
 
@@ -29,7 +29,7 @@ Office 365은 중요 한 비즈니스 기능을 제공 하 고 전체 Office 365
 Office 365는 다음과 같은 원칙을 사용 하 여 디자인 되었습니다.
 
  - ** [서비스 지향 아키텍처](https://msdn.microsoft.com/library/aa480021.aspx):** 잘 정의 된 비즈니스 기능을 제공 하는 상호 운용 가능한 서비스 형태의 소프트웨어를 디자인 하 고 개발 합니다.
- - **[운영 보안 보증](http://www.microsoft.com/download/details.aspx?id=40872):** Microsoft 보안 [개발 수명 주기](https://www.microsoft.com/sdl/default.aspx)를 포함 하 여 microsoft에 고유 하 게 제공 되는 다양 한 기능을 통해 얻은 정보를 통합 하는 프레임 워크입니다. [ ](https://technet.microsoft.com/library/dn440717.aspx)Cybersecurity 위협 가로에 대 한 응답 센터 및 심층 인식
+ - **[운영 보안 보증](https://www.microsoft.com/download/details.aspx?id=40872):** Microsoft [보안 개발 수명 주기](https://www.microsoft.com/sdl/default.aspx), [microsoft 보안 대응 센터](https://technet.microsoft.com/library/dn440717.aspx)및 cybersecurity 위협 가로의 심층 인식을 비롯 하 여 microsoft에서 고유 하 게 제공 되는 다양 한 기능을 통해 얻은 지식을 통합 하는 프레임 워크입니다.
 
 Office 365 서비스는 서로 간에 작동 하며, 서로 독립적으로 배포 되 고 운영 될 수 있도록 설계 및 구현 됩니다. Microsoft segregates 의무 및 책임 영역으로, 무단으로 수정 되거나 조직의 자산의 오용에 대 한 영업 기회를 줄이기 위한 Office 365 Office 365 팀은 포괄적인 역할 기반 액세스 제어 메커니즘의 일부로 역할을 정의 합니다.
 

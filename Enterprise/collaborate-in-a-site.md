@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
-ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
+ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37920171"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029162"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
@@ -25,7 +25,7 @@ ms.locfileid: "37920171"
 
 이 비디오에서는이 문서에서 설명 하는 구성 단계를 보여 줍니다.</br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 조직 관계 설정
 

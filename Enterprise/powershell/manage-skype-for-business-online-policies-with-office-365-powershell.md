@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '요약: Office 365 PowerShell을 사용 하 여 정책으로 비즈니스용 Skype Online 사용자 계정 속성을 관리 합니다.'
-ms.openlocfilehash: 4b0d45e89910c7fb1a215f78690cfc2fdb17c472
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302730"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031733"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
 
@@ -103,7 +103,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> 그러면 사용할 수 있는 모든 음성 정책의 목록이 반환 됩니다. 그러나 모든 정책을 모든 사용자에 게 할당할 수 있는 것은 아닙니다. 이는 라이선스 및 지리적 위치를 포함 하는 다양 한 제한으로 인해 발생 합니다. ("[사용 위치](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx)" 라고 부르는 ") 특정 사용자에 게 할당할 수 있는 외부 액세스 정책 및 회의 정책을 확인 하려면 다음과 같은 명령을 사용 합니다. 
+> 그러면 사용할 수 있는 모든 음성 정책의 목록이 반환 됩니다. 그러나 모든 정책을 모든 사용자에 게 할당할 수 있는 것은 아닙니다. 이는 라이선스 및 지리적 위치를 포함 하는 다양 한 제한으로 인해 발생 합니다. ("[사용 위치](https://msdn.microsoft.com/library/azure/dn194136.aspx)" 라고 부르는 ") 특정 사용자에 게 할당할 수 있는 외부 액세스 정책 및 회의 정책을 확인 하려면 다음과 같은 명령을 사용 합니다. 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -126,7 +126,7 @@ Get-CsClientPolicy -Identity "Global"
 
 [Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

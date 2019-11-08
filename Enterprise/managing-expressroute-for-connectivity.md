@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Office 365의 경우에는 인터넷으로 송신 하는 모든 트래픽을 필요로 하지 않고 다양 한 Office 365 서비스에 연결 하는 대체 라우팅 경로를 제공 합니다. Office 365에 대 한 인터넷 연결이 여전히 필요 하지만 Microsoft가 BGP를 통해 네트워크에 알리는 특정 경로는 네트워크에 다른 구성이 없는 경우에는 직접 대상 지정 회로가 기본 설정 되어 있어야 합니다. 이 라우팅을 관리 하기 위해 구성할 수 있는 세 가지 일반적인 영역에는 접두사 필터링, 보안 및 준수 등이 포함 됩니다.
-ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067134"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027552"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 연결을 위한 ExpressRoute 관리
 
@@ -90,7 +90,7 @@ Microsoft에서 네트워크 연결을 시작 해야 하는 몇 가지 선택적
 
 - [SharePoint 하이브리드 BCS](https://technet.microsoft.com/library/dn197239.aspx )
 
-- 비즈니스용 skype [하이브리드](https://technet.microsoft.com/en-us/library/jj205403.aspx) 및/또는 [비즈니스용 skype 페더레이션](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)
+- 비즈니스용 skype [하이브리드](https://technet.microsoft.com/library/jj205403.aspx) 및/또는 [비즈니스용 skype 페더레이션](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)
 
 - [비즈니스용 Skype 클라우드 커넥터](https://technet.microsoft.com/library/mt605227.aspx )입니다.
 
@@ -102,7 +102,7 @@ Microsoft에서 네트워크 연결을 시작 해야 하는 몇 가지 선택적
   
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [콘텐츠 배달 네트워크](content-delivery-networks.md)
   
