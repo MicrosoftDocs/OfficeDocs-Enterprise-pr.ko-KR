@@ -17,13 +17,14 @@ ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 ms.collection:
 - M365-security-compliance
 - Ent_O365
+- SPO_Content
 description: Office 365와 비즈니스 간의 연결 성능을 확인 하는 몇 가지 간단한 방법은 연결의 대략적인 기준선을 설정 하는 데 사용할 수 있습니다. 클라이언트 컴퓨터 연결의 성능 기록을 알면 초기에 문제를 검색 하 고 문제를 예측 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: f7ce3b70e698bd0125ba2a1623f40ddf808ee4d3
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 03aa4f9092154e00201ca0a58f335b70d26f3b11
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031793"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078137"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정
 

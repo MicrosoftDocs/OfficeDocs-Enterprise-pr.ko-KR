@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: 다중 위치 환경의 SharePoint 및 OneDrive 서비스 관리에 대해 알아봅니다.
-ms.openlocfilehash: 4f219b81882ce22faa5bec1b885d1a38629c18db
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9d4d35505dc5b0d24dd5b2ada8ff1028b1d0d61b
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068437"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076142"
 ---
 # <a name="administering-a-multi-geo-environment"></a>다중 위치 환경 관리
 

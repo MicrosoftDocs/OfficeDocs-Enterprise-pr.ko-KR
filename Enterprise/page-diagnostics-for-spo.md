@@ -8,19 +8,21 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - SPO160
 - MOE150
 - BSA160
 description: SharePoint 도구에 페이지 진단을 사용 하 여 미리 정의 된 성능 기준 집합에 대해 SharePoint Online 최신 포털 및 클래식 게시 페이지를 분석할 수 있습니다.
-ms.openlocfilehash: 50a2a98f7af74ef76f080468e940ece6c0f806ab
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0f22c84599f227bd6efcf315a546b39aad77b1c1
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031123"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078147"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 용 페이지 진단 도구 사용
 
@@ -82,7 +84,7 @@ SharePoint 용 페이지 진단 도구는 Chrome 및 [Microsoft Edge 버전 77 �
 
 1. [**진단 테스트**](#how-to-use-the-diagnostic-tests-tab) 탭에는 세 가지 범주의 분석 결과가 표시 됩니다. **필요한 작업**, **개선 기회** 및 **주의가 필요**하지 않습니다. 각 테스트 결과는 다음 표에 설명 된 대로 이러한 범주 중 하나의 항목으로 표시 됩니다.
 
-    |범주  |색  |Description  |
+    |범주  |색  |설명  |
     |---------|---------|---------|
     |**주의 필요** |빨강 |테스트 결과가 초기 계획 값을 벗어나므로 페이지 성능에 영향을 줍니다. 수정 지침을 따릅니다.|
     |**개선 기회** |노랑 |테스트 결과가 초기 계획 값을 벗어나므로 성능 문제에 영향을 받을 수 있습니다. 테스트 관련 조건이 적용 될 수 있습니다.|

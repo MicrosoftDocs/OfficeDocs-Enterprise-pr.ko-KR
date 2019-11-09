@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - SPS150
@@ -21,12 +23,12 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007는 지원 종료에 도달 했으며 업그레이드 하는 데 걸리는 시간입니다. 이 문서를 사용 하 여 계획을 만드는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2ed36816eeb466cd35b999b48521495406d28641
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031553"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078107"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>고려할 SharePoint 2007 마이그레이션 옵션
 

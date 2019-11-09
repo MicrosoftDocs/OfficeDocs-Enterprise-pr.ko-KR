@@ -7,17 +7,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다. 탐색을 선택 하 고 구성 하는 것은 SharePoint Online의 사이트 성능 및 확장성에 큰 영향을 줍니다. 이 문서는 클래식 팀 사이트에는 적용 되지 않습니다.
-ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031263"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078313"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대 한 탐색 옵션
 

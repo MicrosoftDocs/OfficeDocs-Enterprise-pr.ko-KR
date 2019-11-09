@@ -7,16 +7,18 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: 이 문서에서는 SharePoint Online에서 포털 시작을 계획 하는 방법과 성공적인 시작을 위해 수행 해야 하는 단계에 대해 설명 합니다.
-ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027662"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077571"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online에서 포털 시작 롤아웃 계획 계획
 포털은 회사의 기본 SharePoint 사이트입니다. 대규모 조직에서는 이러한 몇 가지 사항이 있을 수 있습니다. 조직에서 페이지에 액세스하는 사용자의 수가 20% 이상으로 예상되는 경우에는 이를 포털 페이지로 간주합니다. 이를 부서가 팀 내에서 문서를 공동 작업하고 공유하는 데 사용하는 팀 사이트와 혼동하지 않도록합니다.

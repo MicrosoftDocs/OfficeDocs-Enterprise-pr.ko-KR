@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 변환 및 스프라이트를 사용 하 여 SharePoint Online 클래식 게시 사이트의 이미지 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 54b0131da2f926dd26c003f139138389190aa0eb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a3dbfeaa238f8c12f8ecc3afaa3a45942d665599
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027592"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077621"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint Online 클래식 게시 사이트에 대 한 이미지 최적화
 

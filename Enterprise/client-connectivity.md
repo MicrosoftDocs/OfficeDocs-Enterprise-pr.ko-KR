@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '요약: 클라이언트 컴퓨터 및 Office 365 테 넌 트 데이터 센터의 위치에 따라 클라이언트 컴퓨터가 Office 365 테 넌 트에 연결 되는 방식을 설명 합니다.'
-ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722697"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077681"
 ---
 # <a name="client-connectivity"></a>클라이언트 연결
 
@@ -130,4 +131,4 @@ Exchange Online에는 추가 단계가 더 진행 됩니다. 클라이언트 컴
 
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결성 평가하기](assessing-network-connectivity.md) 

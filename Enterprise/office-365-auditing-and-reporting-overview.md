@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - M365-analytics
+- SPO_Content
 description: Office 365, Microsoft 365 및 서비스 보증 내의 감사 및 보고 기능에 대 한 개요입니다.
-ms.openlocfilehash: 545c1224a5c7fc181028be555b14deeff6048ca9
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 991eb807ee297ea9dc912be53d99c80247220c1b
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035638"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076232"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft 클라우드 서비스의 감사 및 보고
 

@@ -11,17 +11,18 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 모던 및 클래식 게시 사이트 페이지의 Iframe 성능을 최적화하는 방법에 대해 배워보세요.
-ms.openlocfilehash: 4e6695b4afcf5e2f8dc7bd8ccee3d92bbea7e124
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 97848d28277f19e8984f1f08e90f07236fd5c85b
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031303"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078437"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 모던 및 클래식 게시 사이트 페이지에서 Iframe 최적화
 

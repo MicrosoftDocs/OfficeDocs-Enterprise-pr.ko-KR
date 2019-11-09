@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
-ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782348"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077937"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용
 
 Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
   
-- **승인 된 ip 접두사를 관리 합니다. 허용** -제한 된 개수의 ip 접두사 및 고객에 게는 접두사를 허용 하는 네트워크 캐리어가 있는 고객만을 지 원하는 내부 네트워크 인프라 또는 네트워크 캐리어가 있는 고객 제한 된 번호 위에는 네트워크에 이미 보급 된 접두사의 총 수를 평가 하 고 더 이상 사용할 수 있는 Office 365 응용 프로그램을 선택 하는 것이 좋습니다.
+- 수신 되 **는 ip 접두사를 관리 합니다. 허용** 된 수의 ip 접두사를 지원 하는 내부 네트워크 인프라 또는 네트워크 캐리어가 있고 제한 된 번호 위의 접두사를 허용 하는 데 드는 비용이 청구 되는 고객은 네트워크에 이미 보급 되어 있는 총 접두사 수를 평가 하 고, 더 많은 Office 365 응용 프로그램을 사용 하는 것이 가장 적합 합니다.
 
 - **Azure express** 경로를 사용 하 여 필요한 대역폭을 관리할 수 있습니다. 고객은 Emailpath와 인터넷 경로를 통해 Office 365 서비스의 대역폭 봉투를 제어 하는 것이 좋습니다. 이를 통해 고객은 비즈니스용 Skype와 같은 특정 응용 프로그램에 대해가 위 대역폭을 예약 하 고 나머지 Office 365 응용 프로그램을 인터넷 경로를 통해 라우팅할 수 있습니다.
 
@@ -103,7 +105,7 @@ BGP 커뮤니티를 활용 하 여 고객 네트워크를 통해 거가 보급 �
   
 ## <a name="related-topics"></a>관련 주제
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   
 [Office 365용 Azure ExpressRoute](azure-expressroute.md)
   

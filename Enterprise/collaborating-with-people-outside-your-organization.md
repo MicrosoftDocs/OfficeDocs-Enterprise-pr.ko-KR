@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 description: 게스트 사용자와 공동 작업용 Office 365를 구성 하는 방법을 알아봅니다.
-ms.openlocfilehash: e9cae26881e1efcf1f958a436d095296fcf3c2be
-ms.sourcegitcommit: 1123ef65778a17b7d2cfc308435e96d4b9509df0
+ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37026218"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076182"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>조직 외부의 사용자와 공동 작업
 
@@ -23,4 +24,10 @@ ms.locfileid: "37026218"
 - [사이트에서 공동 작업](collaborate-in-a-site.md) -Microsoft 365을 구성 하 여 SharePoint 사이트와 게스트 공유를 사용 하도록 설정 하는 방법을 알아봅니다.
 - [팀으로 공동 작업](collaborate-as-a-team.md) -팀에서 게스트 공동 작업을 사용 하도록 Microsoft 365을 구성 하는 방법을 알아봅니다.
 
+## <a name="see-also"></a>참고 항목
 
+[익명 사용자와 파일 및 폴더를 공유하는 최상의 방법](best-practices-anonymous-sharing.md)
+
+[게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
+
+[보안 게스트 공유 환경 만들기](create-a-secure-guest-sharing-environment.md)

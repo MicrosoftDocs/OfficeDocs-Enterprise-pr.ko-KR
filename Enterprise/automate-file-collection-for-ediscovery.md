@@ -7,18 +7,20 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: '요약: eDiscovery를 위해 사용자 컴퓨터에서 파일 컬렉션을 자동화 하는 방법을 알아봅니다.'
-ms.openlocfilehash: 0133da6eecb229ad999043c9dfcb15d98a732829
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030492"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077721"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>EDiscovery에 대 한 파일 컬렉션 자동화
 

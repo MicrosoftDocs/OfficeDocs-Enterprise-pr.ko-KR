@@ -10,18 +10,20 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '요약: 잘못 된 SharePoint Online 사이트 모음에 게시 된 경우에도 Office 365 정보 권한 관리가 중요 한 파일을 보호 하는 방법을 구성 하 고 설명 합니다.'
-ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b8cb56a69a04133b2863c31da9e359c2272d4fc5
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031573"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078127"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 중요 파일 보호
 

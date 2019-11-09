@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 description: SharePoint 및 OneDrive에서 문서에 대 한 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 9ddbae276252c89ecae31a7f2bf5f1a3bf59af0f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029152"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076172"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>게스트와 문서 상 공동 작업하기
 
