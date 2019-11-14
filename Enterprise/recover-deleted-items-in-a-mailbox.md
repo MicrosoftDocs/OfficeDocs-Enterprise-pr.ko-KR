@@ -16,14 +16,13 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: '이 문서는 관리자를 위한 것입니다. 사용자가 Outlook 사서함에서 항목을 영구적으로 삭제 했습니까? 사용자가 다시 작업을 하려고 하지만 복구할 수는 없습니다. 제거 된 항목이 사용자 사서함에서 영구적으로 제거 되지 않은 경우 해당 항목을 복구할 수 있습니다. '
-ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782618"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308603"
 ---
-<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>사용자 사서함에서 지운 편지함 복구 - 관리자 도움말
 
 **이 문서는 관리자를 위한 것입니다. 사서함에서 삭제 된 항목을 복구 하려고 하나요?** 다음 중 하나를 선택합니다.
@@ -58,7 +57,7 @@ ms.locfileid: "35782618"
     
     ![EAC의 검색 관리 역할 그룹에 자신 추가](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. **역할 그룹**의 **구성원**아래에서 ****![추가 아이콘](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)추가를 클릭 합니다.
+6. **역할 그룹**의 **구성원**아래에서![추가](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)아이콘 **추가를 클릭 합니다**.
     
 7. **구성원 선택**의 이름 목록에서 자신을 선택 하 고 **추가**를 클릭 한 다음 **확인**을 클릭 합니다.
     
@@ -74,7 +73,7 @@ ms.locfileid: "35782618"
 > [!CAUTION]
 > 검색 관리 역할 그룹의 구성원은 중요 한 메시지 콘텐츠에 액세스할 수 있습니다. 여기에는 조직의 모든 사서함 검색, 검색 결과 및 기타 사서함 항목 미리 보기, 검색 사서함에 결과 복사, PST 파일로 검색 결과 내보내기 등이 포함 됩니다. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-2-search-the-users-mailbox-for-deleted-items"></a>2 단계: 사용자 사서함에서 삭제 된 항목 검색
 <a name="step2"> </a>
@@ -119,16 +118,16 @@ ms.locfileid: "35782618"
 |![분홍색 원의 숫자 4](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |받은 메시지를 검색 하 여 특정 사용자에 게 보내거나 전송 합니다.  <br/> |
 |![분홍색 원 안의 5 자리 숫자입니다.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |모든 메시지 유형을 검색 하거나 특정 항목을 선택 합니다.  <br/> |
    
-    > [!TIP]
-    >  Here's a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. >  If you not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. >  If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. >  If you know who sent the missing email, use the **From** box to specify this sender. >  If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
+   > [!TIP]
+   >  누락 된 항목을 찾기 위해 검색 쿼리를 작성 하는 방법에 대 한 몇 가지 팁은 다음과 같습니다. 원하는 내용을 찾을 수 있도록 검색 쿼리를 만드는 데 도움이 되는 정보를 사용자에 게 제공 해 봅니다. 누락 된 메시지를 찾는 방법을 확인 하려면 **모든 콘텐츠 포함** 옵션을 사용 하는 것이 좋습니다. 검색 결과에는 사용자가 제거한 항목을 포함 하는 숨겨진 폴더 (제거 폴더 라고 함)를 포함 하 여 사용자의 복구 가능한 항목 폴더에 있는 모든 항목이 포함 됩니다. 그런 다음 3 단계를 진행 하 고 결과를 검색 사서함으로 복사한 다음 숨겨진 폴더의 메시지를 볼 수 있습니다. 사용자가 누락 된 메시지를 처음으로 보내거나 받았는지 알 경우 **시작 날짜 지정** 및 **종료 날짜 지정** 옵션을 사용 하 여 날짜 범위를 제공 합니다. 이렇게 하면 사용자가 해당 날짜 범위 내에서 보내거나 받은 모든 메시지가 반환 됩니다. 날짜 범위를 지정 하는 것이 실제로 검색 결과의 범위를 좁힐 수 있는 좋은 방법입니다. 누락 된 전자 메일을 보낸 사람을 알고 있으면 보낸 **사람 상자를 사용 하 여이** 발신자를 지정 합니다. 검색 결과를 다양 한 유형의 사서함 항목으로 좁히려면 **메시지 유형 선택을**클릭 하 고 **검색할 메시지 유형 선택을**클릭 한 다음 검색할 특정 메시지 유형을 선택 합니다. 예를 들어 일정 항목 또는 연락처만 검색할 수 있습니다. 다음은 검색할 수 있는 다양 한 메시지 유형의 스크린샷입니다. 기본값은 모든 메시지 유형을 검색 하는 것입니다. 
   
-    Click **Next** when you've completed the **Search query** page. 
+   **검색 쿼리** 페이지를 완료 하면 **다음** 을 클릭 합니다. 
     
 10. 원본 **위치 유지 설정** 페이지에서 **마침을** 클릭 하 여 검색을 시작 합니다. 삭제 된 전자 메일을 복구 하기 위해 사용자의 사서함을 보류 상태로 둘 필요는 없습니다. 
     
     검색을 시작한 후에는 Exchange에서 지정한 조건에 따라 검색에서 반환 되는 항목의 총 크기와 개수가 표시 됩니다.
     
-11. 방금 만든 검색을 선택 하 고 새로 ****![고침 새로](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) 고침을 클릭 하 여 세부 정보 창에 표시 된 정보를 업데이트 합니다. **예상 완료** 상태는 검색을 완료 했음을 나타냅니다. 또한 9 단계에서 지정한 검색 조건에 따라 검색에서 찾은 총 항목 (및 해당 크기)에 대 한 예상 개수를 표시 합니다. 
+11. 방금 만든 검색을 선택 하 고 새로 **고침 새로 고침**![](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) 을 클릭 하 여 세부 정보 창에 표시 된 정보를 업데이트 합니다. **예상 완료** 상태는 검색을 완료 했음을 나타냅니다. 또한 9 단계에서 지정한 검색 조건에 따라 검색에서 찾은 총 항목 (및 해당 크기)에 대 한 예상 개수를 표시 합니다. 
     
 12. 세부 정보 창에서 **검색 결과 미리 보기** 를 클릭 하 여 찾은 항목을 봅니다. 이렇게 하면 찾고 있는 항목을 식별 하는 데 도움이 될 수 있습니다. 복구 하려는 항목을 찾은 경우 4 단계로 이동 하 여 검색 결과를 PST 파일로 내보냅니다. 
     
@@ -136,7 +135,7 @@ ms.locfileid: "35782618"
   
 13. 원하는 내용을 찾지 못한 경우 검색을 선택 하 고 편집 아이콘](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **편집**![을 클릭 한 다음 **검색 쿼리**를 클릭 하 여 검색 조건을 수정할 수 있습니다. 검색 조건을 변경한 다음 검색을 다시 실행 합니다.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>반드시 3 단계: 검색 결과를 검색 사서함에 복사
 <a name="step3"> </a>
@@ -147,7 +146,7 @@ ms.locfileid: "35782618"
     
 2. 검색 목록에서 2 단계에서 만든 검색을 선택 합니다.
     
-3. 검색 검색](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)을 클릭 하 고 드롭다운 목록에서 **검색 결과 복사** 를 클릭 합니다. ****![ 
+3. ![](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)검색 **검색을 클릭 하**고 드롭다운 목록에서 **검색 결과 복사** 를 클릭 합니다. 
     
     ![검색을 클릭 하 고 검색 결과 복사를 클릭 합니다.](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -181,7 +180,7 @@ ms.locfileid: "35782618"
     > [!TIP]
     > 사용자가 복구 가능한 항목 도구를 사용 하 여 삭제 된 항목을 찾을 수 없지만 해당 항목을 계속 복구 가능한 경우 (즉 사서함에서 영구적으로 제거 되지 않은 경우) 제거 폴더에 있을 수 있습니다. 따라서 사용자에 대해 복구 하려는 삭제 된 항목에 대 한 제거 폴더를 확인 해야 합니다. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-4-export-the-search-results-to-a-pst-file"></a>4 단계: 검색 결과를 PST 파일로 내보내기
 <a name="step4"> </a>
@@ -208,7 +207,7 @@ ms.locfileid: "35782618"
     
     **EDISCOVERY PST 내보내기 도구** 는 내보내기 프로세스에 대 한 상태 정보를 표시 합니다. 내보내기가 완료 되 면 다운로드 한 위치에서 파일에 액세스할 수 있습니다. 
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-5-restore-the-recovered-items-to-the-users-mailbox"></a>5 단계: 복구 된 항목을 사용자의 사서함으로 복원
 <a name="step5"> </a>
@@ -271,11 +270,12 @@ PST 파일을 사용 하 여 삭제 된 항목을 복원 하려면 Outlook 데�
     
 ![다른 유형의 항목을 이동할 폴더 선택](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
-    Note that calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 
+   > [!NOTE]
+   > 일정 항목, 연락처 및 작업은 일정, 연락처 또는 작업 하위 폴더가 아닌 제거 폴더에 직접 저장 됩니다. 그러나 **형식을** 기준으로 정렬 하 여 비슷한 유형의 항목을 그룹화 할 수 있습니다. 
     
 8. 삭제 된 항목의 복구가 완료 되 면 왼쪽 탐색 모음에서 PST 파일을 마우스 오른쪽 단추로 클릭 하 고 **"PST 파일 이름" 닫기를**선택 합니다.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="more-information"></a>추가 정보
 <a name="moreinfo"> </a>
@@ -296,6 +296,6 @@ PST 파일을 사용 하 여 삭제 된 항목을 복원 하려면 Outlook 데�
     
   - [Outlook.com에서 삭제 된 전자 메일 메시지 복원](https://go.microsoft.com/fwlink/p/?LinkID=623435)
     
-[맨 위로 돌아가기](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 

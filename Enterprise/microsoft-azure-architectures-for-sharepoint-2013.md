@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: '요약: SharePoint 2013 솔루션을 Microsoft Azure 가상 컴퓨터에서 호스트할 수 있습니다. 적합 한 솔루션 유형과 Microsoft Azure를 설정 하 여이를 호스트 하는 방법에 대해 알아봅니다.'
-ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2059ee68a523641bbfe7389d273c931e44d23bd5
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032293"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308593"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013용 Microsoft Azure 아키텍처
 
@@ -54,7 +54,7 @@ Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰�
 
 이 문서에서는 예제 SharePoint 토폴로지를 사용 하지만 이러한 디자인 개념을 모든 SharePoint 팜 토폴로지와 함께 사용할 수 있습니다. Azure 환경을 디자인 하기 전에 다음 토폴로지, 아키텍처, 용량 및 성능 지침을 사용 하 여 SharePoint 팜을 디자인 합니다.
   
-- [SharePoint 2013 IT 전문가를 위한 아키텍처 디자인](http://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [SharePoint 2013 IT 전문가를 위한 아키텍처 디자인](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
 - [SharePoint Server 2013에서 성능 및 용량 관리 계획](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
