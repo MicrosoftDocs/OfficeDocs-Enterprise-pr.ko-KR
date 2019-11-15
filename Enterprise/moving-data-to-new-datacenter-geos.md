@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 새 데이터 센터? 지속적인 고객 요구 및 사용 증가를 지원 하기 위해 용량을 추가 하 고 리소스를 계산 합니다. 또한 새 데이터 센터 지역는 핵심 고객 데이터에 대 한 상주 데이터를 제공 합니다. 핵심 고객 데이터는 Microsoft Online Services 약관 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일의 콘텐츠)과 SharePoint Online 사이트 콘텐츠 및 파일에 정의 된 고객 데이터의 하위 집합을 참조 하는 용어입니다. 해당 사이트 내에 저장 되 고 파일을 비즈니스용 OneDrive로 업로드 합니다.
-ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032193"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626158"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동
 
 Office 365 for business 서비스용 새 데이터 센터 지역가 계속 해 서 열립니다. 이러한 새 데이터 센터 지역는 지속적인 고객 요구 및 사용 증가를 지원 하기 위해 용량을 추가 하 고 리소스를 계산 합니다. 또한 새 데이터 센터 지역는 핵심 고객 데이터에 대 한 상주 데이터를 제공 합니다. 
 
-핵심 고객 데이터는 [Microsoft Online Services 조항](https://go.microsoft.com/fwlink/p/?LinkID=249048)에 정의 된 고객 데이터의 하위 집합을 지칭 하는 용어입니다. 
+핵심 고객 데이터는 다음을 포함 하는 고객 데이터의 하위 집합을 지칭 하는 용어입니다. 
 - Exchange Online 사서함 콘텐츠 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일 콘텐츠)
 - SharePoint Online 사이트 콘텐츠 및 해당 사이트 내에 저장 된 파일
 - 비즈니스용 OneDrive에 업로드 된 파일 
