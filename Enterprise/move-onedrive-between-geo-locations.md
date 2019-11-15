@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033454"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626168"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
@@ -55,11 +55,11 @@ OneDrive 지리적 이동을 수행하려면 테넌트 관리자는 먼저 사�
 
 지리적 이동 cmdlet을 사용할 경우 다음 구문을 사용하여 사용자의 현재 OneDrive 지리적 위치에 있는 SPO 서비스에 연결합니다.
 
-`connect-sposervice -url https://<tenantName>-admin.sharepoint.com`
+`Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
 예를 들어, 'Matt@contosoenergy.onmicrosoft.com' 사용자의 OneDrive를 이동하려면 이 사용자의 OneDrive는 EUR 지리적 위치에 있으므로 EUR SharePoint 관리 센터에 연결합니다.
 
-`connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![connect-sposervice cmdlet이 표시된 PowerShell 창의 스크린샷](media/move-onedrive-between-geo-locations-image1.png)
 
