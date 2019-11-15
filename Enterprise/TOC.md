@@ -71,15 +71,7 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# Office 365 테스트
-## [Office 365 테스트](cloud-adoption-test-lab-guides-tlgs.md)
-## [기본 구성 개발/테스트 환경](base-configuration-dev-test-environment.md)
-## [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
-### [디렉터리 동기화](dirsync-for-your-office-365-dev-test-environment.md)
-### [다단계 인증](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [페더레이션 ID](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-## [시뮬레이트된 Azure의 크로스-프레미스 가상 네트워크](simulated-cross-premises-virtual-network-in-azure.md)
+# [Office 365 테스트](cloud-adoption-test-lab-guides-tlgs.md)
 
 # [Office 365 Enterprise 배포](setup-overview-for-enterprises.md)
 
@@ -198,7 +190,7 @@
 ### [디렉터리 동기화 끄기](turn-off-directory-synchronization.md)
 
 ## 사용자
-### [Office 365 관리자 도움말 센터](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 관리자 도움말 센터](https://docs.microsoft.com/office365/admin/admin-home)
 ### [사용자 계정 관리 도구](manage-office-365-accounts.md)
 ### [동시에 여러 사용자 추가](add-several-users-at-the-same-time.md)
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
