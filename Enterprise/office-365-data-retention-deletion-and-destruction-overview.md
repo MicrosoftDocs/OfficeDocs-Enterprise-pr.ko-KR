@@ -13,28 +13,28 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 데이터 보존, 삭제 및 소멸에 대 한 Microsoft 정책에 대 한 개요는 Office 365에 설명 되어 있습니다.
-ms.openlocfilehash: 08b04e4fec762249208acb626fa20562ffecb82f
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067696"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37975833"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365에서 데이터 보존, 삭제 및 폐기
 
 Microsoft에는 삭제 후 고객 데이터가 보존 되는 기간을 지정 하는 Office 365에 대 한 데이터 처리 표준 정책이 있습니다. 일반적으로 다음과 같은 두 가지 시나리오에서 고객 데이터를 삭제할 수 있습니다.
 
-- **활성 삭제:** 테 넌 트에 활성 구독이 있고 사용자가 데이터를 삭제 하거나 관리자가 사용자가 제공한 데이터를 삭제 하는 경우
-- **수동 삭제:** 테 넌 트 구독이 종료 됩니다.
+- **활성 삭제**: 테 넌 트에 활성 구독이 있고, 사용자 또는 관리자가 데이터를 삭제 하거나, 관리자가 사용자를 삭제 합니다.
+- **수동 삭제**: 테 넌 트 구독이 종료 됩니다.
 
 ## <a name="data-retention"></a>데이터 보존
 
 다음 표에서는 이러한 각 삭제 시나리오에 대해 데이터 범주 및 분류별의 최대 데이터 보존 기간을 보여 줍니다.
 
-| 데이터 범주 | 데이터 분류 | 설명 | 예제 | 보존 기간 |
+| 데이터 범주 | 데이터 분류 | 설명 | 예 | 보존 기간 |
 |-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
 | 고객 데이터 | 고객 콘텐츠| 관리자 및 사용자가 직접 제공 하거나 만든 콘텐츠 <br><br> Office 365의 서비스를 사용할 때 Microsoft 데이터 센터에 만들어지고 저장 된 모든 텍스트, 사운드, 비디오, 이미지 파일 및 소프트웨어를 포함 합니다. | 사용자가 데이터를 작성할 수 있도록 하는 가장 일반적으로 사용 되는 Office 365 응용 프로그램의 예에는 Word, Excel, PowerPoint, Outlook, OneNote 등이 있습니다. <br><br> 고객 콘텐츠에는 고객 소유/제공 비밀 (암호, 인증서, 암호화 키, 저장소 키)도 포함 됩니다. | **활성 삭제 시나리오:** 최대 30 일 <br><br> **수동 삭제 시나리오:** 최대 180 일 |
-| 고객 데이터 | 최종 사용자 식별이 가능한 정보 (EUII) | Microsoft 서비스의 사용자를 식별 하는 데 사용할 수 있는 데이터입니다. EUII에는 고객 콘텐츠가 포함 되지 않음 | 사용자 이름 또는 표시 이름 (DOMAIN\UserName) <br><br> 사용자 계정 이름 (name @ domain) <br><br>  사용자 관련 IP 주소 | **활성 삭제 시나리오:** 최대 180 일 (테 넌 트 관리자 작업에만 해당) <br><br> **수동 삭제 시나리오:** 최대 180 일 |
+| 고객 데이터 | 최종 사용자 식별이 가능한 정보 (EUII) | Microsoft 서비스의 사용자를 식별 하는 데 사용할 수 있는 데이터입니다. EUII에는 고객 콘텐츠가 포함 되지 않음 | 사용자 이름 또는 표시 이름 (DOMAIN\UserName) <br><br> Name@domain (사용자 계정 이름) <br><br>  사용자 관련 IP 주소 | **활성 삭제 시나리오:** 최대 180 일 (테 넌 트 관리자 작업에만 해당) <br><br> **수동 삭제 시나리오:** 최대 180 일 |
 | 개인 데이터 <br> (데이터는 고객 데이터에 포함 되지 않음) | 최종 사용자 익명 Id (EUPI) | Microsoft 서비스 사용자에 게 연결 되는 식별자입니다. 기타 정보 (예: 매핑 테이블)와 함께 사용 하는 경우, EUPI에서 최종 사용자를 식별 합니다. <br><br> 사용자가 업로드 하거나 만든 정보를 EUPI에 포함 하지 않음 | 사용자 Guid, PUIDs 또는 Sid <br><br> 세션 Id | **활성 삭제 시나리오:** 최대 30 일 <br><br> **수동 삭제 시나리오:** 최대 180 일 |
 
 ## <a name="subscription-retention"></a>구독 보존
@@ -50,6 +50,7 @@ Microsoft에는 삭제 후 고객 데이터가 보존 되는 기간을 지정 �
 촉진 프로 비전 해제에 대 한 자세한 내용은 [Cancel Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)을 참조 하십시오.
 
 ## <a name="related-links"></a>관련 링크
+
 - [데이터 폐기](office-365-data-destruction.md)
 - [Office 365의 불변성](office-365-data-immutability.md)
 - [Exchange Online 데이터 삭제](office-365-exchange-online-data-deletion.md)

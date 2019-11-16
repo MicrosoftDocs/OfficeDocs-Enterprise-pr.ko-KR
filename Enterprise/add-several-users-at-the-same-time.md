@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '스프레드시트 또는 다른 CSV로 서식이 지정 된 파일의 목록에서 비즈니스용 Office 365에 여러 사용자를 추가하는 방법을 알아봅니다. YouTube에서 Office 365에 계정을 추가하는 방법을 설명하는 비디오를 보세요. 이 프로세스 종료 시, 계정이 있는 각 사용자에게는 Office 365 사서함이 있습니다. '
-ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198660"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38030732"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
 
@@ -99,7 +99,7 @@ ms.locfileid: "36198660"
 
 CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍스트 편집기나 Excel과 같은 스프레드시트 프로그램에서 이와 같은 파일을 만들거나 편집할 수 있습니다.
   
-시작점으로 [이 예제 스프레드시트](https://www.microsoft.com/en-us/download/details.aspx?id=45485)를 다운로드할 수 있습니다. Office 365에는 첫 행에 열 머리글이 필요하므로 이를 다른 것으로 바꾸지 마세요. 
+시작점으로 [이 예제 스프레드시트](https://www.microsoft.com/download/details.aspx?id=45485)를 다운로드할 수 있습니다. Office 365에는 첫 행에 열 머리글이 필요하므로 이를 다른 것으로 바꾸지 마세요. 
   
 파일을 새 이름으로 저장하고 CSV 형식을 지정합니다.
   
@@ -150,7 +150,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
 ## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>기존 관리 센터에서 여러 사용자를 Office 365에 추가합니다.
 
-1. [이 예제 스프레드시트](https://www.microsoft.com/en-us/download/details.aspx?id=45485)를 다운로드하고 Excel에서 엽니다. 
+1. [이 예제 스프레드시트](https://www.microsoft.com/download/details.aspx?id=45485)를 다운로드하고 Excel에서 엽니다. 
     
     스프레드시트는 **정확히 동일한 열 머리글** 을 예제(사용자 이름, 성 등...)로 포함해야 합니다. 서식 파일을 사용하는 경우에는 행 1에 있는 모든 데이터는 그대로 두고 행 2와 그 아래 행에만 데이터를 입력해 보세요. 
     

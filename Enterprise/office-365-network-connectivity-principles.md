@@ -15,10 +15,10 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 네트워크 연결에 대 한 네트워크 계획을 시작 하기 전에 Office 365 트래픽을 안전 하 게 관리 하 고 가능한 최상의 성능을 얻기 위한 연결 원리를 이해 하는 것이 중요 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다.
 ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38031923"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 네트워크 연결 원칙
@@ -242,7 +242,7 @@ Office 365 트래픽을 최적화 하는 데 사용할 방법은 네트워크 �
 |VPN 사용자에 대해 직접 연결 사용  <br/> |VPN 사용자의 경우에는 분할 터널링을 구현 하 여 Office 365 연결이 VPN 터널을 통하지 않고 사용자 네트워크에서 직접 연결 하도록 설정 합니다.  <br/> | 대기 시간 최소화  <br/>  가장 가까운 Office 365 진입점에 대 한 신뢰할 수 있는 연결 개선  <br/> |
 |기존 WAN에서 SD-WAN으로 마이그레이션  <br/> |SD-Wan (소프트웨어 정의 광역 네트워크)에서는 Vm (가상 컴퓨터)을 사용 하 여 계산 리소스를 가상화 하는 것과 비슷한 방식으로 기존 WAN 라우터를 가상 기기로 교체 하 여 WAN 관리를 단순화 하 고 성능을 향상 시킵니다.  <br/> | WAN 트래픽의 성능 및 관리 효율성 개선  <br/>  네트워크 장치에 대 한 부하 감소  <br/> |
 
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [Office 365 네트워크 연결 개요](office-365-networking-overview.md)
 

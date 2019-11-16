@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 또는 Office 2010을 사용하는 경우 이제 업그레이드를 계획해야 합니다. 오래되고, 지원되지 않는 앱과 서버로 인해 불편해하지 마세요. 계획을 시작하려면 다음 리소스를 사용하세요.
-ms.openlocfilehash: 56efdc56824b3f280548a106450c565af4fb2694
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36991899"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38031063"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
@@ -64,13 +64,13 @@ ms.locfileid: "36991899"
 
 가정용 Office 2007 또는 Office 2010을 사용하는 경우 다음 업데이트 옵션을 고려하세요.
 
-- **브라우저에서 무료로 Office 사용** 브라우저에서 Office 파일을 만들고, 보고, 편집하며, 인터넷 액세스를 통해 거의 모든 장치에서 해당 파일에 액세스할 수 있습니다. [웹용 Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)에는 [웹용 Word](http://go.microsoft.com/fwlink/p/?linkid=746664), [웹용 Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [웹용 PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666), [웹용 OneNote](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [Email](http://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](http://go.microsoft.com/fwlink/p/?linkid=746678) 및 [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)이 있습니다. 시작하려면 [office.com](https://office.com)을 방문하고 [Microsoft 계정](https://account.microsoft.com/account)을 사용하여 로그인합니다. (Microsoft 계정이 없으면 [office.com](https://office.com)에서 만들 수 있습니다.)
+- **브라우저에서 무료로 Office 사용** 브라우저에서 Office 파일을 만들고, 보고, 편집하며, 인터넷 액세스를 통해 거의 모든 장치에서 해당 파일에 액세스할 수 있습니다. [웹용 Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)에는 [웹용 Word](https://go.microsoft.com/fwlink/p/?linkid=746664), [웹용 Excel](https://go.microsoft.com/fwlink/p/?linkid=746665), [웹용 PowerPoint](https://go.microsoft.com/fwlink/p/?linkid=746666), [웹용 OneNote](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [Email](https://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](https://go.microsoft.com/fwlink/p/?linkid=746678) 및 [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679)이 있습니다. 시작하려면 [office.com](https://office.com)을 방문하고 [Microsoft 계정](https://account.microsoft.com/account)을 사용하여 로그인합니다. (Microsoft 계정이 없으면 [office.com](https://office.com)에서 만들 수 있습니다.)
 
 - **가정용 Office 365를 사용해 보기**. [요구사항](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)을 검토하고 [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) 또는 [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) 중에서 선택하세요. 평가판을 시작하고 Office 365의 작동 방식을 알아보세요. Office 365를 사용하면 OneDrive의 클라우드 저장 공간을 이용하고 매달 모바일 및 일반 전화로 60분의 Skype 통화가 가능하며 기타 여러 가지 유용한 기능을 이용할 수 있습니다. 자세한 내용은 [Office 365로 최대한 Office 활용](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)을 참조하세요.
 
    [2020년 1월 14일에 Windows 7에 대한 지원이 종료](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)되면 Windows 7 장치에서 실행되는 Office 365 Home 또는 Office 365 Personal과 함께 제공되는 Word, Excel, PowerPoint, Outlook, Publisher 및 Access 버전에는 보안 업데이트는 제공되지만, 기능은 업데이트되지 않습니다. 이러한 응용 프로그램에 대한 기능 업데이트를 계속 받으려면 [Windows 7 장치를 Windows 10으로 업그레이드](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)합니다.
     
-- **Office Home &amp; Student 구매.** 이 옵션을 선택하면 한 번 구입한 다음 Windows PC나 Mac에 Office를 설치할 수 있습니다. 이 옵션은 구독이 아니라, 한 컴퓨터에 한 번 영구적으로 라이센스를 사용할 수 있습니다. [요구사항](http://office.com/systemrequirements)을 검토한 다음 사용하려는 버전을 선택합니다.
+- **Office Home &amp; Student 구매.** 이 옵션을 선택하면 한 번 구입한 다음 Windows PC나 Mac에 Office를 설치할 수 있습니다. 이 옵션은 구독이 아니라, 한 컴퓨터에 한 번 영구적으로 라이센스를 사용할 수 있습니다. [요구사항](https://office.com/systemrequirements)을 검토한 다음 사용하려는 버전을 선택합니다.
 
     - Windows PC에서 Windows 10이 실행 중이면 [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)를 구하세요.
 

@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 사서함 마이그레이션에 사용 되는 cmdlet에 대 한 간략 한 요약입니다.
 ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38035548"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 사서함 마이그레이션
