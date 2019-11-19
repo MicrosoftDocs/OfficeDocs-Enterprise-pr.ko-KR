@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365와 온-프레미스 Active Directory 간에 디렉터리 동기화를 설정 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162481"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702249"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365에서 디렉터리 동기화 설정
 
@@ -83,11 +83,9 @@ Azure AD Connect에 대 한 하드웨어, 소프트웨어, 계정 및 사용 권
 다음 단계를 따릅니다.
 
 1. [Microsoft 365 관리 센터](https://admin.microsoft.com) 에 로그인https://admin.microsoft.com) 하 고 왼쪽 탐색 창에서 **사용자** \> **활성 사용자** 를 선택 합니다.
-2. 관리 센터의 **활성 사용자** 페이지에서 **더 많은** \> **디렉터리 동기화**를 선택 합니다.
-
-    ![기타 메뉴에서 디렉터리 동기화를 선택 합니다.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+2. **활성 사용자** 페이지에서 **더** (3 개의 점) \> **디렉터리 동기화**를 선택 합니다.
   
-3. **Active directory 준비** 페이지에서 시작 하기 위한 **Microsoft Azure Active Directory 연결 도구 다운로드** 링크를 선택 합니다. 
+3. **Azure Active Directory 준비** 페이지에서 **다운로드 센터로 이동을 선택 하 여 Azure AD Connect 도구** 링크를 시작 하도록 설정 합니다. 
 4. [AZURE Ad connect 및 AZURE Ad Connect Health 설치 로드맵](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)의 단계를 수행 합니다.
 
 ## <a name="3-finish-setting-up-domains"></a>3. 도메인 설정 마침
