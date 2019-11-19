@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: '요약: Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.'
-ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 94596326c9d52b4010f6e9baf67fe3c7a12399be
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435352"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38706995"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
 
@@ -75,7 +75,7 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사�
 
 사용자 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 합니다.
   
-```
+```powershell
 Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
 ```
 
@@ -90,21 +90,21 @@ Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalNam
     
 이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
   
-```
+```powershell
 $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 이 예에서는 Caleb 창턱의 표시 이름을 사용 하 여 사용자 계정에 대 한 사용자 보안 주체 이름을 표시 합니다.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 **$Upn** 변수를 사용 하 여 개별 계정을 표시 이름에 따라 변경할 수 있습니다. 다음은 Belinda Newman의 사용 위치를 프랑스로 설정 하 고 사용자 계정 이름이 아닌 표시 이름을 지정 하는 예제입니다.
   
-```
+```powershell
 $userName="Belinda Newman"
 $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
@@ -114,7 +114,7 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 
 모든 사용자의 속성을 변경 하려면 **AzureADUser** 및 **AzureADUser** cmdlet을 조합 하 여 사용할 수 있습니다. 다음 예에서는 모든 사용자의 사용 위치를 프랑스로 변경합니다.
   
-```
+```powershell
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 ```
 
@@ -128,7 +128,7 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 
 특정 사용자 계정 집합의 속성을 변경 하려면 **AzureADUser**, **Where**및 **AzureADUser** cmdlet을 조합 하 여 사용할 수 있습니다. 다음 예에서는 프랑스 회계 부서의 모든 사용자의 사용 위치를 변경합니다.
   
-```
+```powershell
 Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
@@ -190,7 +190,7 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
 
 모든 사용자의 사용자 계정 이름을 보려면 다음 명령을 실행 합니다.
   
-```
+```powershell
 Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
 ```
 
@@ -206,21 +206,21 @@ Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName |
     
 이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
   
-```
+```powershell
 $userName="<Display name>"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 이 예제에서는 Caleb 창턱 라는 사용자에 대 한 사용자 계정 이름을 표시 합니다.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 **$Upn** 변수를 사용 하 여 개별 계정을 표시 이름에 따라 변경할 수 있습니다. 다음은 Belinda Newman의 사용 위치를 프랑스로 설정 하 고 사용자 계정 이름이 아닌 표시 이름을 지정 하는 예제입니다.
   
-```
+```powershell
 $userName="<display name>"
 $upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
@@ -230,7 +230,7 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 
 모든 사용자에 대한 속성을 변경하려면 **Get-msoluser** 및 **Set-msoluser** cmdlet의 조합을 사용합니다. 다음 예에서는 모든 사용자의 사용 위치를 프랑스로 변경합니다.
   
-```
+```powershell
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
@@ -244,7 +244,7 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 
 특정 사용자 계정 집합의 속성을 변경 하려면 **get-msoluser**, **Where 개체**및 **get-msoluser** cmdlet을 함께 사용 하면 됩니다. 다음 예에서는 프랑스 회계 부서의 모든 사용자의 사용 위치를 변경합니다.
   
-```
+```powershell
 Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 

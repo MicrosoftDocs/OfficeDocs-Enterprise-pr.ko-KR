@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell을 연결 합니다.'
-ms.openlocfilehash: ae9487f48439c6f8d98f927c610e5f2af4c1b361
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f64a29bb0594694c5a6b6e2dff8d0f7611fdf11e
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069184"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707065"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
  **요약:** 별도의 PowerShell 콘솔 창에서 서로 다른 Office 365 서비스를 관리 하는 대신, 모든 Office 365 서비스에 연결 하 여 단일 콘솔 창의 관리를 관리할 수 있습니다.
   
-PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 관리 센터, SharePoint Online, Exchange Online, 비즈니스용 Skype Online 및 보안에 해당 하는 Windows PowerShell 세션이 최대 5 개까지 있을 수 있습니다. &amp; 준수 센터 별도의 Windows PowerShell 세션에서 5 가지 서로 다른 연결 방법을 사용 하는 경우 데스크톱은 다음과 같이 표시 될 수 있습니다.
+PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 관리 센터, SharePoint Online, Exchange Online, 비즈니스용 Skype Online, 보안 &amp; 및 준수 센터에 해당 하는 동시에 최대 5 개의 서로 다른 Windows PowerShell 세션이 열리도록 할 수 있습니다. 별도의 Windows PowerShell 세션에서 5 가지 서로 다른 연결 방법을 사용 하는 경우 데스크톱은 다음과 같이 표시 될 수 있습니다.
   
 ![동시에 실행되는 5개의 Windows PowerShell 콘솔](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
@@ -71,7 +71,7 @@ PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 �
     
 -  비즈니스용 Skype Online, Exchange Online 및 보안 &amp; 및 준수 센터에 대해 서명 된 스크립트를 실행 하도록 Windows PowerShell을 구성 해야 합니다. 이 작업을 수행 하려면 **관리자 권한으로 실행**을 선택 하 여 연 windows powershell 창에서 다음 명령을 실행 합니다.
     
-  ```
+  ```powershell
   Set-ExecutionPolicy RemoteSigned
   ```
 
@@ -83,32 +83,32 @@ PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 �
     
 2. 이 명령을 실행 하 고 Office 365 회사 또는 학교 계정 자격 증명을 입력 합니다.
     
-  ```
+  ```powershell
   $credential = Get-Credential
   ```
 
 3. 이 명령을 실행 하 여 Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 Azure AD (Active Directory)에 연결 합니다.
     
-  ```
+  ```powershell
   Connect-AzureAD -Credential $credential
   ```
   
   또는 Windows PowerShell 모듈에 대 한 Microsoft Azure Active Directory 모듈을 사용 하는 경우에는이 명령을 실행 합니다.
       
-  ```
+  ```powershell
   Connect-MsolService -Credential $credential
  ```
 
-4. 다음 명령을 실행 하 여 SharePoint Online에 연결 합니다. _ \<Domainhost>_ 를 도메인의 실제 값으로 바꿉니다. 예를 들어 "litwareinc.onmicrosoft.com"의 경우 _ \<domainhost>_ 값은 "litwareinc"입니다.
+4. 다음 명령을 실행 하 여 SharePoint Online에 연결 합니다. 도메인에 대 한 실제 값으로 _ \<domainhost>_ 를 교체 합니다. 예를 들어 "litwareinc.onmicrosoft.com"의 경우 _ \<domainhost>_ 값은 "litwareinc"입니다.
     
-  ```
+  ```powershell
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
   Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
   ```
 
 5. 다음 명령을 실행 하 여 비즈니스용 Skype Online에 연결 합니다. 처음 연결할 때 `WSMan NetworkDelayms` 값을 늘리는 경고는 예상 되며 무시 해야 합니다.
     
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $sfboSession = New-CsOnlineSession -Credential $credential
   Import-PSSession $sfboSession
@@ -116,7 +116,7 @@ PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 �
 
 6. 다음 명령을 실행 하 여 Exchange Online에 연결 합니다.
     
-  ```
+  ```powershell
   $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $exchangeSession -DisableNameChecking
   ```
@@ -127,18 +127,18 @@ PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 �
 
 7. 보안 &amp; 및 준수 센터에 연결 하려면 다음 명령을 실행 합니다.
     
-  ```
+  ```powershell
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
 
 >[!Note]
->전 세계 이외의 Office 365 &amp; 클라우드의 보안 및 준수 센터에 연결 하려면 [연결에 Office 365 Security _AMP_ 준수 센터 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)을 참조 하세요.
+>전 세계적인 Office 365 클라우드의 &amp; 보안 준수 센터에 연결 하려면 [connect To office 365 Security & 준수 센터 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)를 참조 하세요.
 >
 
 다음은 Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용할 때 단일 블록에 있는 모든 명령입니다. 도메인 호스트의 이름을 지정 하 고 한 번에 모두 실행 합니다.
   
-```
+```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-AzureAD -Credential $credential
@@ -155,7 +155,7 @@ Import-PSSession $SccSession -Prefix cc
 
 다음에는 Windows PowerShell 용 Microsoft Azure Active Directory 모듈 모듈을 사용할 때 단일 블록에 있는 모든 명령이 나와 있습니다. 도메인 호스트의 이름을 지정 하 고 한 번에 모두 실행 합니다.
   
-```
+```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-MsolService -Credential $credential
@@ -172,7 +172,7 @@ Import-PSSession $SccSession -Prefix cc
 
 Windows PowerShell 창을 종료할 준비가 되 면 다음 명령을 실행 하 여 비즈니스용 Skype Online, Exchange Online, SharePoint Online 및 보안 &amp; 및 준수 센터에 대 한 활성 세션을 제거 합니다.
   
-```
+```powershell
 Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $SccSession ; Disconnect-SPOService
 ```
 
@@ -180,7 +180,7 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 
 다음은 Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 단일 창에서 Azure AD, SharePoint Online 및 Buiness 비즈니스용 Skype에 연결 하는 모든 명령입니다. 사용자 계정의 UPN (사용자 계정 이름) 이름과 도메인 호스트 이름을 지정한 다음 한 번에 모두 실행 합니다.
 
-````
+```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
@@ -190,11 +190,11 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
-````
+```
 
 다음에는 Windows PowerShell 용 Microsoft Azure Active Directory 모듈 모듈을 사용할 때의 모든 명령이 나와 있습니다.
 
-````
+```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
@@ -204,7 +204,7 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
-````
+```
 
 Exchange Online 및 보안 &amp; 및 준수 센터에 대해 multi-factor authentication을 사용 하 여 연결 하려면 다음 항목을 참조 하세요.
 

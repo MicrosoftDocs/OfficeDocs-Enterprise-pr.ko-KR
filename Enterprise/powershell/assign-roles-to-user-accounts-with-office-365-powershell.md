@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '요약: Office 365 PowerShell을 사용 하 여 사용자 계정에 역할을 할당 합니다.'
-ms.openlocfilehash: d06b305c348d014ce526448d7f8401c26f4d1c47
-ms.sourcegitcommit: 3100813cd7dff8b27b1a30a6d6ed5a7c4765c60f
+ms.openlocfilehash: 29c23e88d9b7bc2fc0030d467336e38ed413a4ab
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34586984"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707035"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.
 
@@ -40,7 +40,7 @@ Office 365 PowerShell을 사용 하 여 사용자 계정에 쉽고 빠르게 역
 
 다음으로, 로그인 및 역할 이름을 입력 하 고 다음 명령을 실행 합니다.
   
-```
+```powershell
 $userName="<sign-in name of the account>"
 $roleName="<role name>"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
@@ -54,7 +54,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureA
 
 다음은 완성 된 명령 집합의 예입니다.
   
-```
+```powershell
 $userName="belindan@contoso.com"
 $roleName="SharePoint Service Administrator"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
@@ -68,7 +68,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureA
 
 특정 역할에 대 한 사용자 이름 목록을 표시 하려면 다음 명령을 사용 합니다.
 
-```
+```powershell
 $roleName="<role name>"
 Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
 ```
@@ -89,13 +89,13 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     
     사용자 계정을 지정 하려면 해당 표시 이름을 결정 해야 합니다. 전체 목록 계정을 가져오려면 다음 명령을 사용 합니다.
     
-  ```
+  ```powershell
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
     이 명령은 표시 이름별로 정렬 된 사용자 계정의 표시 이름을 한 번에 하나씩 나열 합니다. **Where** cmdlet을 사용 하 여 목록을 더 작은 집합으로 필터링 할 수 있습니다. 예를 들면 다음과 같습니다.
     
-  ```
+  ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
@@ -105,13 +105,13 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     
     사용자 계정에 할당할 수 있는 사용 가능한 역할 목록을 표시 하려면 다음 명령을 사용 합니다.
     
-  ```
+  ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
 계정의 표시 이름과 역할 이름을 확인 한 후에는 다음 명령을 사용 하 여 계정에 역할을 할당 합니다.
   
-```
+```powershell
 $dispName="<The Display Name of the account>"
 $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
@@ -121,7 +121,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
   
 다음은 완성 된 명령 집합의 예입니다.
   
-```
+```powershell
 $dispName="Scott Wallace"
 $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
@@ -135,13 +135,13 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
     
     아직 UPN을 모르는 경우에는 다음 명령을 사용 합니다.
     
-  ```
+  ```powershell
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
     이 명령은 UPN을 기준으로 한 번에 한 화면씩 정렬 하 여 사용자 계정의 UPN을 나열 합니다. **Where** cmdlet을 사용 하 여 목록을 더 작은 집합으로 필터링 할 수 있습니다. 예를 들면 다음과 같습니다.
     
-  ```
+  ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
@@ -151,13 +151,13 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
     
     사용자 계정에 할당할 수 있는 사용 가능한 역할 목록을 표시 하려면 다음 명령을 사용 합니다.
     
-  ```
+  ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
 계정의 UPN과 역할 이름을 한 후에는 다음 명령을 사용 하 여 계정에 역할을 할당 합니다.
   
-```
+```powershell
 $upnName="<The UPN of the account>"
 $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
@@ -167,7 +167,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
   
 다음은 완성 된 명령 집합의 예입니다.
   
-```
+```powershell
 $upnName="scottw@contoso.com"
 $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
@@ -183,7 +183,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
     
     사용자 계정에 할당할 수 있는 사용 가능한 역할 목록을 표시 하려면 다음 명령을 사용 합니다.
     
-  ```
+  ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
@@ -191,7 +191,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 
 다음은 표시 이름에 대 한 예입니다.
   
-```
+```powershell
 DisplayName,RoleName
 "Belinda Newman","Billing Administrator"
 "Scott Wallace","SharePoint Service Administrator"
@@ -199,7 +199,7 @@ DisplayName,RoleName
 
 다음으로, CSV 파일의 위치를 입력 하 고 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
   
-```
+```powershell
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
@@ -207,7 +207,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 Upn의 예는 다음과 같습니다.
   
-```
+```powershell
 UserPrincipalName,RoleName
 "belindan@contoso.com","Billing Administrator"
 "scottw@contoso.com","SharePoint Service Administrator"
@@ -215,7 +215,7 @@ UserPrincipalName,RoleName
 
 다음으로, CSV 파일의 위치를 입력 하 고 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
   
-```
+```powershell
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmailAddress $_.UserPrincipalName -RoleName $_.RoleName }
 
@@ -225,5 +225,5 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 ## <a name="see-also"></a>참고 항목
 
 - [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 센터 작업을 수행합니다.'
-ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e80af8b4174a4d3ac423e887b7f3c2fd9ee73375
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031753"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707045"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -75,7 +75,7 @@ Azure Active Directory PowerShell for Graph 모듈에서 새 cmdlet을 필요로
     
 2. ** 관리자에서 Windows PowerShell** 명령 창에서 다음 명령을 실행합니다.
     
-  ```
+  ```powershell
   Install-Module -Name AzureAD
   ```
 
@@ -155,7 +155,7 @@ MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 �
   
 - **사용자의 Microsoft PowerShell용 Windows Azure Active Directory 모듈 버전이 오래되었을 수 있습니다.** 확인하려면 Microsoft PowerShell용 Windows Azure Active Directory 모듈 또는 Office 365 PowerShell에서 다음 명령을 실행하세요.
     
-  ```
+  ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 

@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Office 365 PowerShell을 사용 하 여 Office 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: a2edecf7bc47d39aa9aeb965c7b2834e37820a36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3cc063fac2fa7795ba924b7b937efc9afe6594a1
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069214"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38706985"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>블록 사용자 계정 Office 365 PowerShell을 사용 하 여
 
@@ -35,7 +35,7 @@ Office 365 계정에 대 한 액세스를 차단 하면 사용자가 계정을 �
 
 개별 사용자 계정을 차단 하려면 다음 구문을 사용 합니다.
   
-```
+```powershell
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
@@ -44,19 +44,19 @@ Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $fa
   
 이 예제에서는 사용할 수 없게 해당 사용자 계정이 fabricec@litwareinc.com.
   
-```
+```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
 ```
 
 사용자 계정을 차단 해제하려면 다음 명령을 실행합니다.
   
-```
+```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
 사용자의 표시 이름을 기준으로 사용자 계정 UPN을 표시 하려면 다음 명령을 사용 합니다.
   
-```
+```powershell
 $userName="<display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 
@@ -64,14 +64,14 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 이 예에서는 Caleb 창턱 라는 사용자에 대 한 사용자 계정 UPN을 표시 합니다.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 사용자의 표시 이름을 기준으로 계정을 차단 하려면 다음 명령을 사용 합니다.
   
-```
+```powershell
 $userName="<display name>"
 Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName -AccountEnabled $false
 
@@ -79,7 +79,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 언제 든 지 다음 명령을 사용 하 여 사용자 계정의 차단 된 상태를 확인할 수 있습니다.
   
-```
+```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
@@ -87,7 +87,7 @@ Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,Ac
 
 여러 사용자 계정에 대 한 액세스를 차단 하려면 다음과 같은 각 줄에 계정 로그인 이름이 하나씩 포함 된 텍스트 파일을 만듭니다.
     
-  ```
+  ```powershell
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
@@ -97,13 +97,13 @@ kakers@contoso.com
   
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
 텍스트 파일에 나열 된 계정 차단 해제 하려면 다음 명령을 실행 합니다.
     
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
@@ -116,25 +116,25 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 개별 사용자 계정에 대 한 액세스를 차단 하려면 다음 구문을 사용 합니다.
   
-```
+```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 이 예제에서는 사용할 수 없게 해당 사용자 계정이 fabricec@litwareinc.com.
   
-```
+```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
 ```
 
 사용자 계정 차단 해제 하려면 다음 명령을 실행 합니다.
   
-```
+```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
 언제 든 지 다음 명령을 사용 하 여 사용자 계정의 차단 된 상태를 확인할 수 있습니다.
   
-```
+```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
@@ -142,7 +142,7 @@ Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayN
 
 먼저 다음과 같이 각 줄에 하나의 계정을 포함 하는 텍스트 파일을 만듭니다.
     
-  ```
+  ```powershell
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
@@ -151,12 +151,12 @@ kakers@contoso.com
     
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
   ```
 텍스트 파일에 나열 된 계정 차단 해제 하려면 다음 명령을 실행 합니다.
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
   ```
 
@@ -164,6 +164,6 @@ kakers@contoso.com
 
 [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

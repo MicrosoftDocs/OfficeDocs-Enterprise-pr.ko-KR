@@ -14,12 +14,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
-ms.openlocfilehash: 17f3a6a6444ced647723f417145c6466dd8d284b
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: abe8f76de07c230c0d1484ccfb57b3b9a7bf8d34
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077997"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707025"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
 
@@ -41,7 +41,7 @@ Office 365 PowerShell cmdlet은 .csv 파일을 가져온 후 파일의 첫 번�
 
 1. 메모장을 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
 
-```
+```powershell
 Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
 owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/TeamSite01,25,EHS#1,10,Contoso Team Site
 owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,BLOG#0,10,Contoso Blog
@@ -58,7 +58,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ### <a name="run-the-windows-powershell-command"></a>Windows PowerShell 명령 실행
 
 1. Windows PowerShell 프롬프트에서 다음 cmdlet을 입력 하거나 복사 하 여 붙여 넣은 다음 enter 키를 누릅니다.<br/>
-```
+```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
 <br/>여기서 *Myalias* 는 사용자 별칭과 같습니다.<br/>
@@ -67,7 +67,7 @@ Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SP
 
 3. Windows PowerShell 프롬프트에서 다음 cmdlet을 입력 하거나 복사 하 여 붙여 넣은 다음 enter 키를 누릅니다.<br/>
 
-```
+```powershell
 Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
@@ -85,7 +85,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ### <a name="create-csv-and-ps1-files"></a>.csv 및 .ps1 파일 만들기
 
 1. 메모장을 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
-```
+```powershell
 Site,Group,PermissionLevels
 https://tenant.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
 https://tenant.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
@@ -102,7 +102,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 
 3. 새 메모장 인스턴스를 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
 
-```
+```powershell
 Group,LoginName,Site
 Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
 Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
@@ -119,7 +119,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 
 5. 새 메모장 인스턴스를 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
 
-```
+```powershell
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
@@ -133,7 +133,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 
 1. SharePoint Online 관리 셸로 돌아갑니다.<br/>
 2. Windows PowerShell 프롬프트에서 다음 줄을 입력 하거나 복사 하 여 붙여 넣은 다음 enter 키를 누릅니다.<br/>
-```
+```powershell
 Set-ExecutionPolicy Bypass
 ```
 <br/>
@@ -142,7 +142,7 @@ Set-ExecutionPolicy Bypass
 
 4. Windows PowerShell 프롬프트에서 다음을 입력 하거나 복사 하 여 붙여 넣은 다음 enter 키를 누릅니다.<br/>
 
-```
+```powershell
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>여기서 *Myalias* 는 사용자 이름과 같습니다.<br/>
