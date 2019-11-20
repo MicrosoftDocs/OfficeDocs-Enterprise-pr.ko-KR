@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 요약:Windows PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: 8bb877cba8bb06762ee56fa8c022be78d1c011c3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071174"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747534"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션 수행
 
- **요약:** Windows PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션을 수행하는 방법을 알아봅니다.
-  
 미리 구성된 마이그레이션을 사용하여 시간에 따라 원본 전자 메일 시스템의 사용자 사서함 콘텐츠를 Office 365로 마이그레이션할 수 있습니다.
   
 이 문서에서는 Exchange Online PowerShell을 사용하여 미리 구성된 전자 메일 마이그레이션과 관련된 작업을 안내합니다. [Office 365로의 미리 구성된 전자 메일 마이그레이션에 대해 알아야 할 사항](https://go.microsoft.com/fwlink/p/?LinkId=536487) 항목에서는 마이그레이션 프로세스를 대략적으로 소개합니다. 이 문서 내용을 충분히 이해할 수 있으면 다음을 사용하여 다른 전자 메일 시스템으로 사서함을 마이그레이션해 보세요.
@@ -63,11 +61,11 @@ Exchange Online PowerShell cmdlet을 사용하려면 로그인한 후 cmdlet을 
     
 - Exchange Online PowerShell에서 다음 명령을 실행합니다.
     
-  ```
+  ```powershell
   $Credentials = Get-Credential
   ```
 
-  ```
+  ```powershell
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
@@ -77,7 +75,7 @@ Exchange Online PowerShell cmdlet을 사용하려면 로그인한 후 cmdlet을 
   
 - 온-프레미스 조직의 Active Directory에 있는 **Domain Admins** 그룹의 구성원이어야 합니다.
     
-     선택하거나 
+    또는
     
 - 각 온-프레미스 사서함에 대해 **FullAccess** 권한이 할당되고 온-프레미스 사용자 계정에 대해 **TargetAddress** 속성을 수정할 수 있는 **WriteProperty** 권한이 할당되어야 합니다.
     
@@ -118,7 +116,7 @@ Office 365로 온-프레미스 사서함을 마이그레이션할 사용자를 �
   
 CSV 파일의 첫 번째 행(머리글 행)에는 그 다음 행들에 지정된 특성 또는 필드의 이름이 나열됩니다. 각 특성 이름은 쉼표로 구분됩니다.
   
-```
+```powershell
 EmailAddress,Password,ForceChangePassword 
 pilarp@contoso.com,Pa$$w0rd,False 
 tobyn@contoso.com,Pa$$w0rd,False 
@@ -141,11 +139,11 @@ briant@contoso.com,Pa$$w0rd,False
   
 Exchange Online PowerShell에서 "StagedEndpoint"라는 Outlook Anywhere 마이그레이션 끝점을 만들려면 다음 명령을 실행합니다.
   
-```
+```powershell
 $Credentials = Get-Credential
 ```
 
-```
+```powershell
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
@@ -158,7 +156,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
 
 Exchange Online PowerShell에서 다음 명령을 실행하여 "StagedEndpoint" 마이그레이션 끝점에 대한 정보를 표시합니다.
   
-```
+```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
 ```
 
@@ -167,13 +165,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 Exchange Online PowerShell에서 **New-MigrationBatch** cmdlet을 사용하여 단독형 마이그레이션을 위한 마이그레이션 일괄 처리를 만들 수 있습니다. _AutoStart_ 매개 변수를 포함하면 마이그레이션 일괄 처리를 만들고 자동으로 시작할 수 있습니다. 또는 마이그레이션 일괄 처리를 만들고 **Start-MigrationBatch** cmdlet을 사용하여 나중에 마이그레이션을 수동으로 시작할 수 있습니다. 이 예에서는 "StagedBatch1"이라는 마이그레이션 일괄 처리를 만든 다음 이전 예에서 만든 마이그레이션 끝점을 사용합니다.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
 또한 이 예에서는 "StagedBatch1"이라는 마이그레이션 일괄 처리를 만든 다음 이전 예에서 만든 마이그레이션 끝점을 사용합니다.  _AutoStart_ 매개 변수가 포함되지 않으므로 마이그레이션 일괄 처리가 마이그레이션 대시보드나 **Start-MigrationBatch** cmdlet을 사용하여 수동으로 시작되어야 합니다. 앞서 설명했듯이 단독형 마이그레이션 일괄 처리는 한 번에 하나만 실행됩니다.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 ```
 
@@ -181,13 +179,13 @@ New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 
 Exchange Online PowerShell에서 다음 명령을 실행하여 "StagedBatch1"에 대한 정보를 표시합니다.
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
 ```
 
 다음 명령을 실행하여 일괄 처리가 시작되었는지 확인할 수도 있습니다.
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
@@ -215,7 +213,7 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
   
 Exchange Online PowerShell에서 "StagedBatch1" 마이그레이션 일괄 처리를 삭제하려면 다음 명령을 실행합니다.
   
-```
+```powershell
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
@@ -225,7 +223,7 @@ Remove-MigrationBatch -Identity StagedBatch1
 
 Exchange Online PowerShell에서 다음 명령을 실행하여 "IMAPBatch1"에 대한 정보를 표시합니다.
   
-```
+```powershell
 Get-MigrationBatch StagedBatch1
 ```
 

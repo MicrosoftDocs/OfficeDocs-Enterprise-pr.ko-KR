@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: be117dd2e4eaa7f3e2e95cd0d2444bd5b813bccb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 66782a9165c76c7e1d506e40fa1cacd6db0c6724
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071154"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747447"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
- **요약:** 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.
-  
 Microsoft 365 관리 센터를 사용 하 여 Office 365 사용자 계정 및 라이선스를 관리할 수 있을 뿐만 아니라 Exchange, 비즈니스용 Skype Online, SharePoint Online 등의 Office 365 server 제품을 관리할 수도 있습니다. 그러나 Office 365 PowerShell 명령을 사용하여 이러한 요소를 관리할 수도 있습니다, 이 경우 속도, 자동화 및 추가 기능을 위한 명령줄 및 스크립팅 언어 환경을 활용할 수 있습니다.
   
 이 문서에서는 Office 365 PowerShell을 사용하여 Office 365를 관리하는 다음과 같은 방법을 설명합니다.
@@ -41,7 +39,7 @@ Microsoft 365 관리 센터를 사용 하 여 Office 365 사용자 계정 및 �
     
 시작하기 전에 Office 365 PowerShell이 Windows 기반 서비스 및 플랫폼에 대한 명령줄 환경인 Windows PowerShell용 모듈 집합이라는 점을 이해하면 도움이 됩니다. 이 환경은 추가 모듈로 확장할 수 있는 명령 셸 언어를 만들고 간단하거나 복잡한 명령을 실행하는 방법을 제공합니다. 예를 들어 Office 365 PowerShell 모듈을 설치하고 Office 365 구독에 연결한 후에는 이 명령을 사용하여 Microsoft Exchange Online에 대한 모든 사용자 사서함 목록을 표시할 수 있습니다.
   
-```
+```powershell
 Get-Mailbox
 ```
 
@@ -81,7 +79,7 @@ Microsoft 365 관리 센터는 유용한 정보를 많이 표시 하지만이는
     
 각 사용자에 대해 이 절차를 반복해야 합니다. 많은 사용자에게 이 작업은 번거로울 수 있습니다. Office 365 PowerShell을 사용하면 다음 명령을 사용하여 모든 사용자에 대해 이 정보를 표시할 수 있습니다.
   
-```
+```powershell
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
@@ -90,7 +88,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
   
 다음과 같은 화면이 표시됩니다.
   
-```
+```powershell
 DisplayName                               UsageLocation
 -----------                               -------------
 Bonnie Kearney                            GB
@@ -106,13 +104,13 @@ David Longmuir                            BR
   
 Office 365 PowerShell은 명령 셸 언어를 지원하므로 **Get-MSolUser** 명령에서 획득한 정보를 추가로 조작할 수 있습니다. 예를 들어 이러한 사용자를 위치별로 정렬하여 모든 브라질 사용자, 모든 미국 사용자 등으로 그룹화할 수 있습니다. 해당 명령은 다음과 같습니다.
   
-```
+```powershell
 Get-MsolUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
 ```
 
 다음과 같은 화면이 표시됩니다.
   
-```
+```powershell
 DisplayName                                 UsageLocation
 -----------                                 -------------
 David Longmuir                              BR
@@ -128,13 +126,13 @@ Brian Johnson (TAILSPIN)                    US
   
 추가 필터링을 사용할 수도 있습니다. 예를 들어 브라질 사용자에 대한 정보만 표시하려면 다음 명령을 사용합니다.
   
-```
+```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
 ```
 
 다음과 같은 화면이 표시됩니다.
   
-```
+```powershell
 DisplayName                                           UsageLocation
 -----------                                           -------------
 David Longmuir                                        BR
@@ -148,13 +146,13 @@ Fabrice Canel                                         BR
   
 사용자가 수만 명인 매우 큰 도메인의 경우 이 문서에서 제시하는 몇 가지 예를 사용하면 "제한" 현상이 발생할 수 있습니다. 즉, 컴퓨팅 기능, 사용 가능한 네트워크 대역폭 등을 기준으로 보았을 때 사용자가 한 번에 너무 많은 작업을 수행할 수 있습니다. 이러한 이유 때문에 대규모 조직은 이러한 Office 365 PowerShell 명령을 두 개의 명령으로 분할하고 싶을 수도 있습니다. 예를 들어 이 명령 하나를 실행하면 모든 사용자 계정이 반환되고 각 사용자의 이름과 위치가 표시됩니다.
   
-```
+```powershell
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 소규모 도메인에서는 이 명령을 사용해도 아무런 문제가 없습니다. 그러나 대규모 조직에서는 위의 명령을 두 개의 명령, 즉 변수에 사용자 계정 정보를 저장하기 위한 명령과 필요한 정보를 표시하기 위한 명령으로 분할해야 할 수 있습니다. 예제는 다음과 같습니다.
   
-```
+```powershell
 $x = Get-MsolUser
 $x | Select DisplayName, UsageLocation
 ```
@@ -182,7 +180,7 @@ Microsoft 365 관리 센터는 대부분의 사용자에 게 적용 되는 가�
     
 이러한 설정을 비즈니스용 Skype 온라인 관리 센터에서는 사용할 수 없습니다. 그러나 Office 365 PowerShell에서는 제어할 수 있습니다. 이러한 세 가지 설정을 사용하지 않도록 하는 명령은 다음과 같습니다.
   
-```
+```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConferenceRecording $False -DesignateAsPresenter "None"
 ```
 
@@ -194,7 +192,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
   
 생각이 바뀌어 이러한 기본 설정을 복원하려면(모두 사용하도록 설정) 다음 명령을 실행합니다.
   
-```
+```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
@@ -226,7 +224,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
   
 또 다른 방법은 Office 365 PowerShell과 다음 명령을 사용하여 모든 사이트에서 Ken Myer를 제거하는 것입니다.
   
-```
+```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
 ```
 
@@ -240,7 +238,7 @@ Office 365에 Key Meyer가 액세스할 수 없는 사이트를 비롯한 모든
   
 다른 대량 작업의 예제는 다음과 같습니다. 이 명령을 사용하여 새 SharePoint 관리자인 Bonnie Kearney를 조직의 모든 사이트에 추가합니다.
   
-```
+```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
@@ -259,13 +257,13 @@ Exchange 관리 센터에서도 필터 기준을 조합할 수 있습니다. 예
   
 Office 365 PowerShell에서 다음 명령을 사용하여 Bloomington 또는 San Diego에 거주하는 모든 사람에 대한 사서함 목록을 가져올 수 있습니다.
   
-```
+```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
 다음과 같은 화면이 표시됩니다.
   
-```
+```powershell
 DisplayName                              City
 -----------                              ----
 Alex Darrow                              San Diego
@@ -279,13 +277,13 @@ Rob Young                                Bloomington
   
 Bloomington을 제외한 모든 위치에 거주하는 사용자의 모든 사서함을 나열하려면 다음 명령을 사용합니다.
   
-```
+```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and $_.City -ne "Bloomington"} | Select DisplayName, City
 ```
 
 다음과 같은 화면이 표시됩니다.
   
-```
+```powershell
 DisplayName                               City
 -----------                               ----
 MOD Administrator                         Redmond
@@ -317,7 +315,7 @@ Office 365 PowerShell 필터에 와일드카드 문자를 사용하여 이름 �
     
 이렇나 모든 이름은 "son"으로 끝나므로 Office 365 PowerShell에 이름이 "son"으로 끝나는 모든 사용자를 표시하도록 지정할 수 있습니다. 해당 명령은 다음과 같습니다.
   
-```
+```powershell
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
@@ -334,7 +332,7 @@ Microsoft 365 관리 센터를 사용 하 여 데이터 목록을 볼 수 있습
   
 다행히 Office 365 PowerShell을 사용하여 목록을 표시할 수 있을뿐 아니라 Excel로 쉽게 가져올 수 있는 파일에 저장할 수도 있습니다. 다음은 비즈니스용 Skype 온라인 사용자 데이터를 Excel 워크시트의 표로 쉽게 가져올 수 있는 CSV(쉼표로 구분된 값) 파일에 저장하는 예제 명령입니다.
   
-```
+```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
 ```
 
@@ -349,7 +347,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
   
 Windows에서 기본 프린터에 직접 목록을 표시하는 Office 365 PowerShell 명령의 출력을 보낼 수도 있습니다. 예제 명령은 다음과 같습니다.
   
-```
+```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
 ```
 
@@ -384,7 +382,7 @@ Office 365를 구성하는 여러 다양한 구성 요소는 함께 작동되도
   
 다음 예제 스크립트는 지금까지 이 문서에서 살펴본 명령보다 좀 더 복잡합니다. 그렇지만 Office 365 PowerShell을 사용하여 훨씬 더 어려울 수 있는 정보 보기를 만들 수 있다는 사실을 보여 줍니다. 다음은 필요한 목록을 정리해서 표시할 수 있는 스크립트입니다.
   
-```
+```powershell
 $x = Get-MsolUser
 
 foreach ($i in $x)
@@ -401,7 +399,7 @@ $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 
 다음과 같은 화면이 표시됩니다.
   
-```
+```powershell
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
 Bonnie Kearney          True         True               True

@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 Exchange Online으로의 업그레이드를 준비 하거나 Exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 28dcead19c1af1b5a641cae8f9d649b22fb36c95
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 464406cd9603a41d10f98374442167160609c060
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38028832"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745801"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 지원 로드맵 종료
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 **2020 년 10 월 13 일**에 Exchange Server 2010은 지원 종료에 도달 합니다. 아직 Exchange 2010에서 Office 365 또는 Exchange 2016로의 마이그레이션을 시작한 적이 없는 경우에는 계획을 시작 하는 데 걸리는 시간입니다.
 

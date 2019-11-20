@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
-ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030502"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745721"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Office 365 네트워크 연결 평가
 

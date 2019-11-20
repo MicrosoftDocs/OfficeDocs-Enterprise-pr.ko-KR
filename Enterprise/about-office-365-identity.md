@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428085"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745671"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 id 모델 및 Azure Active Directory
 
@@ -46,7 +46,7 @@ Office 365에서는 office 365 구독에 포함 되어 있는 Azure Active Direc
 
 |||
 |:-------|:-----|:-----|
-|  | **클라우드 전용 id** | **하이브리드 id** |
+|  | **클라우드 전용 id** | **하이브리드 ID** |
 | **정의** | 사용자 계정이 Microsoft 365 구독의 azure AD (Active Directory) 테 넌 트에만 있습니다. | 사용자 계정이 AD DS에 있고 복사본은 Microsoft 365 구독의 Azure AD 테 넌 트에도 있습니다. 또한 Azure AD의 사용자 계정에는 사용자 계정 암호의 해시 된 버전을 포함할 수 있습니다. |
 | **Microsoft 365에서 사용자 자격 증명을 인증 하는 방법** | Microsoft 365 구독의 Azure AD 테 넌 트는 클라우드 id 계정을 사용 하 여 인증을 수행 합니다. | Microsoft 365 구독에 대 한 Azure AD 테 넌 트가 인증 프로세스를 처리 하거나 사용자를 다른 id 공급자로 리디렉션합니다. |
 | **최적 시나리오** | 온-프레미스 AD DS가 없거나 필요 하지 않은 조직 | AD DS 또는 다른 id 공급자를 사용 하는 조직 |
@@ -66,7 +66,7 @@ Office 365에서는 office 365 구독에 포함 되어 있는 Azure Active Direc
 ### <a name="administration"></a>관리
 사용자 계정은 Azure AD에만 저장 되므로 Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 [Microsoft 365 관리 센터](https://admin.microsoft.com) 및 Windows PowerShell과 같은 도구를 사용 하 여 클라우드 id를 관리 합니다. 
 
-## <a name="hybrid-identity"></a>하이브리드 id
+## <a name="hybrid-identity"></a>하이브리드 ID
 
 하이브리드 id는 온-프레미스 AD DS에서 시작 되 고 Microsoft 365 구독의 Azure AD 테 넌 트에 복사본을 포함 하는 계정을 사용 합니다. 그러나 대부분의 변경 내용은 단방향 으로만 흐릅니다. AD DS 사용자 계정에 대해 수행한 변경 내용이 Azure AD에서 해당 복사본에 동기화 됩니다. 그러나 새 사용자 계정과 같은 Azure AD의 클라우드 기반 계정에 대 한 변경 내용은 AD DS와 동기화 되지 않습니다.
 

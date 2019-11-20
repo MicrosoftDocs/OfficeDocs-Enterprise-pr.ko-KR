@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '요약: Office 365에 연결 하는 데 사용 되는 네트워크 용량, WAN 가속기 및 부하 분산 장치에 대 한 고려 사항을 설명 합니다.'
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428105"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747071"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 서비스에 연결되는 네트워크 장치 계획
 
@@ -68,7 +68,7 @@ Windows Server에 기본 제공 되는 소프트웨어 기반 NLB 솔루션을 �
   
 ## <a name="firewalls-and-proxies"></a>방화벽과 프록시
 
-Office 365에 연결 하기 위한 방화벽 및 프록시 구성에 대 한 자세한 내용, office [365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [office 365 네트워크 연결 평가](assessing-network-connectivity.md)및 [office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 에 대 한 자세한 내용은 장치 및 회로에 대 한 자세한 내용을 참조 하세요. 영역의.
+Office 365에 연결 하도록 방화벽과 프록시를 구성 하는 방법에 대 한 자세한 내용은 [office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [office 365 네트워크 연결 평가](assessing-network-connectivity.md)및 [office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 에 대 한 자세한 내용을 참조 하세요.
   
 ## <a name="see-also"></a>참고 항목
 

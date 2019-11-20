@@ -12,14 +12,16 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: b535104fb3acc6e7802257a246ec113ad05dbf61
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: d3dc209a4e1cfe3e313b0a1adf2bb6b5bd3b5b37
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027582"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745691"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. Office 365 하이브리드 배포는 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에 제공 되 고, 분할 된 비즈니스용 Skype 하이브리드에도 사용할 수 있습니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보 
   

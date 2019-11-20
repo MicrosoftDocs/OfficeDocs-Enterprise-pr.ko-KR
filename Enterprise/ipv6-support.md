@@ -16,23 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '요약: Microsoft Office 365 구성 요소 및 Office 365 정부 제품의 IPv6 지원에 대해 설명 합니다.'
-ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067234"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745731"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 서비스의 IPv6 지원
 
- **요약**: Microsoft office 365 구성 요소 및 Office 365 정부 제품의 IPv6 지원에 대해 설명 합니다.
-  
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+
 Office 365은 IPv6 및 IPv4를 모두 지원 합니다. 그러나 IPv6에서 모든 Office 365 기능이 완전히 사용 하도록 설정 되는 것은 아닙니다. 즉, Office 365에 연결 하려면 IPv4 및 IPv6을 모두 사용 해야 합니다. Office 365에 대 한 아웃 바운드 트래픽을 필터링 하는 경우 Office 365에서 지 원하는 전체 IPv6 주소 목록은 [office 365 url 및 IP 주소 범위](urls-and-ip-address-ranges.md)문서에서 찾을 수 있습니다. 네트워크가 구성 되 고 적절 한 IPv6 주소가 허용 되 면 Microsoft 다운로드 센터에서 [Office 365 IPv6 테스트 계획](https://go.microsoft.com/fwlink/?LinkId=293447) 을 다운로드할 수 있습니다.
   
-||
-|:-----|
-| 이 문서는 [Office 365의 네트워크 계획 및 성능 조정](https://aka.ms/tune)의 일부입니다.|
-
 ## <a name="ipv6-support-in-office-365-subscription-service"></a>Office 365 구독 서비스의 IPv6 지원
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online 및 IPv6
@@ -63,7 +59,7 @@ Office 365 정부에 대 한 IPv6 지원은 경영 부서나 기관에 대 한 �
 
 Microsoft Office 365 정부 제품은 2013 이상에만 적용 됩니다. Office 365 정부 제품에 대 한 자세한 내용은 [Microsoft 정부용 office 365 정부: US 정부 커뮤니티 클라우드](https://go.microsoft.com/fwlink/p/?LinkId=325414)를 참조 하세요. ITAR (무장 규정)의 국제 트래픽은 [미국 군수 목록 (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)에 대 한 방어 관련 문서 및 서비스의 내보내기와 가져오기를 제어 하는 미국 정부 규정 집합입니다. 
 
-기업에 대 한 Microsoft Office 365에서는 연방 정보 보안이 필요한 미국 연방 기관에 대 한 보안, 개인 정보 보호 및 규정 준수 요구 사항을 지 원하는 Microsoft 생산성 솔루션에 대 한 전용 호스팅 서비스를 제공 합니다. FISMA (관리) 인증 및 상업용 엔터티가 ITAR에 적용 됩니다.
+기업에 대 한 microsoft Office 365에서는 연방 정보 보안이 필요한 미국 연방 기관에 대 한 보안, 개인 정보 보호 및 규정 준수 요구 사항을 지 원하는 Microsoft 생산성 솔루션에 대 한 전용 호스팅 서비스를 제공 합니다. FISMA (관리) 인증 및 상업용 엔터티가 ITAR에 적용 됩니다.
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>IPv6 및 Office 365을 사용할 때 고려해 야 할 사항
 

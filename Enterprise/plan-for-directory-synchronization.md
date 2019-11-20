@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365, Active Directory 도메인 서비스 정리 및 Azure Active Directory Connect 도구를 사용한 디렉터리 동기화에 대해 설명 합니다.
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428120"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747088"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 하이브리드 id 및 디렉터리 동기화
 
@@ -105,7 +105,7 @@ PTA 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레
 
 - 중복 **Proxyaddress** 및 **userPrincipalName** 특성을 제거 합니다.
 - 비어 있거나 잘못 된 **userPrincipalName** 특성을 올바른 **userPrincipalName** 특성으로 업데이트 합니다.
-- **GivenName**, 성 ( **Sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname**및 **userPrincipalName** 에서 잘못 되었거나 불확실 한 문자 제거 특성만. 특성을 준비 하는 방법에 대 한 자세한 내용은 [Azure Active Directory 동기화 도구를 통해 동기화 되는 특성 목록을](https://go.microsoft.com/fwlink/p/?LinkId=396719)참조 하십시오.
+- **GivenName**, 성 ( **Sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname**및 **userPrincipalName** 특성에서 잘못 되었거나 불확실 한 문자를 제거 합니다. 특성을 준비 하는 방법에 대 한 자세한 내용은 [Azure Active Directory 동기화 도구를 통해 동기화 되는 특성 목록을](https://go.microsoft.com/fwlink/p/?LinkId=396719)참조 하십시오.
 
     > [!NOTE]
     > Azure AD Connect에서 동기화 하는 것과 동일한 특성이 여기에 해당 됩니다. 

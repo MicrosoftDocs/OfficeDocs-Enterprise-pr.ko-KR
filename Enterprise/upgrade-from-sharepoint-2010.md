@@ -17,14 +17,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010에 대 한 지원 종료 및 SharePoint Server 2010은 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 639782e877b9a6b0d8a7979d8984da11f2403f50
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 95feda3f05f3ecfabb473b6331962de811690770
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078117"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747300"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 Microsoft SharePoint 2010 및 SharePoint Server 2010은 **2020 년 10 월 13 일**에 대 한 지원 종료에 도달 합니다. 이 문서에서는 기존 SharePoint Server 2010 데이터를 Office 365에서 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
   

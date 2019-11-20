@@ -15,17 +15,15 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트 그룹을 관리 합니다.'
-ms.openlocfilehash: eedbfbecea0f488b96cfe7a87a2b4851352f4fac
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077987"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748538"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
- **요약:** Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트 그룹을 관리 합니다.
-  
 Microsoft 365 관리 센터를 사용할 수도 있지만 Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트 그룹을 관리할 수도 있습니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
@@ -46,7 +44,7 @@ SharePoint Online 관리 센터에는 사이트 그룹을 관리 하기 위한 �
 
 Office 365 PowerShell을 사용 하 여 그룹 목록을 가져오려면 다음 명령 집합을 사용 합니다.
 
-```
+```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
 $x = Get-SPOSiteGroup -Site $siteURL
 foreach ($y in $x)
@@ -62,7 +60,7 @@ SharePoint Online 관리 셸 명령 프롬프트에서이 명령 집합을 실�
 - 메모장 (또는 다른 텍스트 편집기)에 명령을 복사 하 고 **$siteURL** 변수의 값을 수정한 다음 명령을 선택 하 여 SharePoint Online 관리 셸 명령 프롬프트에 붙여 넣습니다. 이렇게 하면 PowerShell이 **>>** 프롬프트에서 중지 됩니다. Enter 키를 눌러 **foreach** 명령을 실행 합니다.<br/>
 - 메모장 (또는 다른 텍스트 편집기)에 명령을 복사 하 고 **$siteURL** 변수의 값을 수정한 다음이 텍스트 파일을 적절 한 폴더에 이름을 지정 하 고 ps1 확장명을 사용 하 여 저장 합니다. 다음으로, 경로와 파일 이름을 지정 하 여 SharePoint Online 관리 셸 명령 프롬프트에서 스크립트를 실행 합니다. 예제 명령은 다음과 같습니다.
 
-```
+```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
 ```
 
@@ -74,7 +72,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 또 다른 예로, 모든 SharePoint Online 사이트에 대 한 그룹 및 모든 그룹 구성원 자격이 나열 된 명령 집합입니다.
 
-```
+```powershell
 $x = Get-SPOSite
 foreach ($y in $x)
     {

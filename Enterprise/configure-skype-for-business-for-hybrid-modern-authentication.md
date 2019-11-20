@@ -14,14 +14,16 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
-ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ff5a4e4238fd659a00abc0f87c4a5c40da6aa61e
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029132"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746211"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
   

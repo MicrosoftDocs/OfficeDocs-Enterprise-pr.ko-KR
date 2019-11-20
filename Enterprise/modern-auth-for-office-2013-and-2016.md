@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435362"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747991"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 

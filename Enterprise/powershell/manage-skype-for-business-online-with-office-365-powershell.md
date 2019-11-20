@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 요약:Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
-ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ac3933b3a208f41db5c569de3455ce1244133927
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030943"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747568"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
 
- **요약:** Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
-  
 비즈니스용 Skype 온라인 관리자의 기본 작업 중 하나는 정책을 관리하는 것입니다. Office 365 관리 센터에서 이러한 작업 중 일부를 수행할 수 있지만 Office 365 PowerShell에서 훨씬 더 빠르고 쉽게 수행할 수 있는 작업도 있습니다. 
 
 ## <a name="before-you-start"></a>시작하기 전에
@@ -34,7 +32,7 @@ ms.locfileid: "38030943"
 
 1. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
     
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $userCredential = Get-Credential
   $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -48,7 +46,7 @@ ms.locfileid: "38030943"
 
 1. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다.
 
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $sfbSession = New-CsOnlineSession
   Import-PSSession $sfbSession

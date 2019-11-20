@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity 및 SharePoint Server 2007가 지원 종료에 도달 했습니다. 이 문서를 읽으면 BI 솔루션 업그레이드를 계획할 수 있습니다.
-ms.openlocfilehash: 507e6c1707844fed3ecd7cf4d3a69174a10b3dc4
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 517d420eff35cde2862d7879e3b5557cbe6087ca
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067093"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746251"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 Office 2007 서버와 응용 프로그램은 BI (비즈니스 인텔리전스) 솔루션의 일부로 사용할 수 있는 서버 및 응용 프로그램을 포함 하 여 지원 종료에 도달 했습니다. 다음 표에는 영향을 받는 BI 응용 프로그램이 나와 있습니다.
   
@@ -53,7 +55,7 @@ Microsoft 제품 (예: PerformancePoint Server 2007 SP3, ProClarity software 및
   
 |**이 방법을 사용 하는 경우 ...**|**다음 옵션을 탐색 합니다.**|**이를 염두에 두어야 합니다.**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007에서는 &amp; 다음을 비롯 한 모니터링 분석 기능을 제공 합니다.  <br/><br/>  PerformancePoint 모니터링 서버  <br/><br/>  PerformancePoint 대시보드 디자이너  <br/><br/>  SharePoint Services 용 대시보드 뷰어 (PerformancePoint 대시보드, 성과 기록표 및 보고서를 렌더링 하는 데 사용 됨)  <br/> |**브라우저에서 excel을 사용 하는 excel** (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/><br/> **SQL Server Reporting Services** (온-프레미스). 개요에 대 한 자세한 내용은 [SQL Server Reporting Services (SSRS): 모바일 및 페이지를 매긴 보고서 만들기, 배포 및 관리](https://go.microsoft.com/fwlink/?linkid=841342) 를 참조 하세요. <br/><br/> **PerformancePoint Services** (온-프레미스). 개요에 대 한 자세한 내용은 [What 's new For PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) 을 참조 하십시오. <br/> |Excel은 온라인 (클라우드 기반) 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Excel의 기능을 사용 하 여 많은 보고 및 대시보드 요구 사항을 충족할 수 있습니다.  <br/><br/> Power BI는 온라인 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Power BI는 Office 365에 포함 되어 있지 않지만 데이터 사용 및 비즈니스 요구 사항에 따라 Power BI Pro로 업그레이드할 수 있습니다. <br/> <br/> Reporting Services 및 PerformancePoint Services는 모두 온-프레미스 솔루션입니다.  <br/><br/> PerformancePoint Services는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. <br/> <br/> PerformancePoint Server 2007에서 사용할 수 있는 일부 기능 및 보고서 형식은 Excel, Power BI, Reporting Services 또는 PerformancePoint Services에서 사용할 수 없습니다. 사용 가능한 기능을 검토 하 여 비즈니스 요구에 가장 적합 한 솔루션을 결정 하는 것이 좋습니다.  <br/> |
+| PerformancePoint Server 2007에서는 &amp; 다음을 비롯 한 모니터링 분석 기능을 제공 합니다.  <br/><br/>  PerformancePoint 모니터링 서버  <br/><br/>  PerformancePoint 대시보드 디자이너  <br/><br/>  SharePoint Services 용 대시보드 뷰어 (PerformancePoint 대시보드, 성과 기록표 및 보고서를 렌더링 하는 데 사용 됨)  <br/> |Excel **에서 excel을 사용 하** 는 경우 (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/><br/> **SQL Server Reporting Services** (온-프레미스) 개요에 대 한 자세한 내용은 [SQL Server Reporting Services (SSRS): 모바일 및 페이지를 매긴 보고서 만들기, 배포 및 관리](https://go.microsoft.com/fwlink/?linkid=841342) 를 참조 하세요. <br/><br/> **PerformancePoint Services** (온-프레미스) 개요에 대 한 자세한 내용은 [What 's new For PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) 을 참조 하십시오. <br/> |Excel은 온라인 (클라우드 기반) 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Excel의 기능을 사용 하 여 많은 보고 및 대시보드 요구 사항을 충족할 수 있습니다.  <br/><br/> Power BI는 온라인 또는 온-프레미스 솔루션으로 사용할 수 있습니다. Power BI는 Office 365에 포함 되어 있지 않지만 데이터 사용 및 비즈니스 요구 사항에 따라 Power BI Pro로 업그레이드할 수 있습니다. <br/> <br/> Reporting Services 및 PerformancePoint Services는 모두 온-프레미스 솔루션입니다.  <br/><br/> PerformancePoint Services는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. <br/> <br/> PerformancePoint Server 2007에서 사용할 수 있는 일부 기능 및 보고서 형식은 Excel, Power BI, Reporting Services 또는 PerformancePoint Services에서 사용할 수 없습니다. 사용 가능한 기능을 검토 하 여 비즈니스 요구에 가장 적합 한 솔루션을 결정 하는 것이 좋습니다.  <br/> |
 | 다음을 포함 한 ProClarity 소프트웨어 <br/> <br/>  ProClarity 데스크톱 전문가  <br/> <br/> ProClarity Analytics Server  <br/> <br/> ProClarity SharePoint Viewer  <br/> |**Microsoft 파트너와 협력** 하 여 사용자의 요구에 가장 적합 한 솔루션을 식별 합니다. [Microsoft 파트너 센터](https://go.microsoft.com/fwlink/?linkid=841249) 방문 <br/><br/> 브라우저, Power BI, SQL Server Reporting Services 또는 PerformancePoint Services에서 excel과 excel을 함께 사용 하는 것을 고려할 수도 있습니다.  <br/> |ProClarity 소프트웨어에서 사용할 수 있는 일부 기능 및 기능 외에도 Excel, Power BI, Reporting Services 및 PerformancePoint Services를 비롯 한 다른 Microsoft 제품 에서도 사용할 수 있습니다.  <br/> |
 |SharePoint Server 2007 Kpi (MOSS Kpi 라고도 함)  <br/> |Excel **Services를 사용 하는 Excel 서비스** 개요에 대 한 자세한 내용은 [excel 및 Excel Services의 비즈니스 인텔리전스 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) 를 참조 하십시오. <br/> |Sharepoint Server 2007를 사용 하 여 만든 MOSS Kpi는 SharePoint Server 2010, SharePoint Server 2013 및 SharePoint Server 2016에서 사용할 수 있습니다. 그러나 새 MOSS Kpi는 만들 수 없습니다.  <br/> |
 |Excel 2007  <br/> |**Excel** (클라우드 또는 온-프레미스) 개요를 보려면 [Excel 및 Office 365의 BI 기능](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) 을 참조 하세요. <br/><br/> **POWER BI** (클라우드 또는 온-프레미스) 개요는 [POWER BI 란?](https://go.microsoft.com/fwlink/?linkid=841341) 를 참조 하세요. <br/> |Excel 및 Power BI는 다양 한 데이터 원본을 지원 하 여 조직 클라우드 기반 및 온-프레미스 솔루션을 제공 합니다.  <br/> |
@@ -151,7 +153,7 @@ PerformancePoint Services로 업그레이드할 때 몇 가지 새로운 기능�
 
 [Office 2007 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](upgrade-from-office-2007-servers-and-products.md)
   
-[Office 퇴직 그룹 (Microsoft 기술 커뮤니티)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Office 사용 중지 그룹(Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
 
 
   

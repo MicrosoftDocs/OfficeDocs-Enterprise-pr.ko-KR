@@ -15,17 +15,15 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071124"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747477"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기
 
-**요약:** Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
-  
 Office 365에서는 라이선스 요금제 (Sku 또는 Office 365 요금제 라고도 함)의 라이선스를 사용자에 게 해당 요금제에 대해 정의 된 Office 365 서비스에 대 한 액세스 권한을 부여 합니다. 그러나 사용자는 현재 할당된 라이선스에서 사용할 수 있는 모든 서비스에 액세스하지 못할 수도 있습니다. Office 365 PowerShell을 사용 하 여 사용자 계정에 대 한 서비스 상태를 볼 수 있습니다. 
 
 라이선스 계획, 라이선스 및 서비스에 대 한 자세한 내용은 [Office 365 PowerShell을 사용 하 여 라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)를 참조 하세요.
@@ -36,13 +34,13 @@ Office 365에서는 라이선스 요금제 (Sku 또는 Office 365 요금제 라�
   
 그런 다음이 명령을 사용 하 여 테 넌 트에 대 한 라이선스 계획을 나열 합니다.
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 이러한 명령을 사용 하 여 각 라이선스 계획에서 사용할 수 있는 서비스를 나열 합니다.
 
-```
+```powershell
 $allSKUs=Get-AzureADSubscribedSku
 $licArray = @()
 for($i = 0; $i -lt $allSKUs.Count; $i++)
@@ -52,16 +50,16 @@ $licArray +=  Get-AzureADSubscribedSku -ObjectID $allSKUs[$i].ObjectID | Select 
 $licArray +=  ""
 }
 $licArray
-````
+```
 
 이러한 명령을 사용 하 여 사용자 계정에 할당 된 라이선스를 나열 합니다.
 
-````
+```powershell
 $userUPN="<user account UPN, such as belindan@contoso.com>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
-````
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
@@ -69,21 +67,21 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 다음으로이 명령을 실행 하 여 조직에서 사용할 수 있는 라이선스 계획을 나열 합니다. 
 
-```
+```powershell
 Get-MsolAccountSku
 ```
 
 다음으로, 각 라이선스 계획에서 사용할 수 있는 서비스와 이러한 서비스가 나열 되는 순서 (인덱스 번호)를 나열 하려면이 명령을 실행 합니다.
 
-````
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
-````
+```
   
 이 명령을 사용 하 여 사용자에 게 할당 된 라이선스와 해당 라이선스가 나열 되는 순서 (인덱스 번호)를 나열 합니다.
 
-````
+```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
-````
+```
 
 >[!Note]
 >사용 하는 경우는 **Get-MsolUser** cmdlet을 사용 하지 않고는 _All_ 매개 변수를 처음 500 개의 계정만 반환 됩니다.
@@ -94,25 +92,25 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 
 사용자가 액세스할 수 있는 모든 Office 365 서비스를 보려면 다음 구문을 사용 합니다.
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
 이 예에서는 사용자 BelindaN@litwareinc.com에 게 액세스 권한이 있는 서비스를 표시 합니다. 사용자의 계정에 할당된 모든 라이선스와 관련된 서비스를 표시합니다.
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
 이 예제에서는 사용자 BelindaN@litwareinc.com이 계정에 할당된 첫 번째 라이선스(인덱스 번호: 0)에서 액세스할 수 있는 서비스를 표시합니다.
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
 *여러 라이선스가*할당 된 사용자의 모든 서비스를 보려면 다음 구문을 사용 합니다.
 
-```
+```powershell
 $userAccountUPN="<user account UPN>"
 $AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
 $licArray = @()
@@ -134,6 +132,6 @@ $licArray
 
 [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

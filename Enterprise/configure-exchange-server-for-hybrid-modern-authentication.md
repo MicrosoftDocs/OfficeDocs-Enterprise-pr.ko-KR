@@ -14,14 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: 69a806fc1026832492f7bab96982509a83a82329
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493315"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746221"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
+
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
   
@@ -84,9 +86,9 @@ Get-OABVirtualDirectory | FL server,*url*
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-메모 작성 (및 이후 비교)이 명령의 출력에는 https:// *autodiscover.yourdomain.com* 및 Https:// *mail.yourdomain.com* URL이 포함 되어 있지만 대부분의 경우에 시작 하는 spn으로 구성 됩니다. 00000002-0000-0ff1-ce00-000000000000/. 누락 된 https://Url이 있는 경우이 목록에 특정 레코드를 추가 해야 합니다. 
+메모 작성 (및 이후 비교)이 명령의 출력은 https:// *autodiscover.yourdomain.com* 및 Https:// *mail.yourdomain.com* URL을 포함 해야 하지만 대부분 00000002-0000-0ff1-ce00-000000000000/로 시작 하는 spn으로 구성 됩니다. 누락 된 https://Url이 있는 경우이 목록에 특정 레코드를 추가 해야 합니다. 
   
-3. 이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드가 표시 되지 않으면 아래 명령을 사용 하 여 추가 해야 합니다 (예: Url은 '`mail.corp.contoso.com`' 및 '`owa.contoso.com`' 임). **** : <br/>
+3. 이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드가 표시 되지 않으면 아래 명령을 사용 하 여 추가 해야 합니다 (예: Url은 '`mail.corp.contoso.com`' 및 '`owa.contoso.com`' 임). **** <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

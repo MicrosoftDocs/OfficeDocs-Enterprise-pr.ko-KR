@@ -16,17 +16,15 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell을 사용 하 여 Office 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 18444f76f312c75bc95645d17c48c996f1a3bfc7
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 8ee2c834063ea80388662c1f36f4524715f98a58
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782038"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747457"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
 
-**요약:** Office 365 PowerShell을 사용 하 여 Office 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 확인 하는 방법에 대해 설명 합니다.
-  
 모든 Office 365 구독은 다음과 같은 요소로 구성 되어 있습니다.
 
 - **라이선스 계획** 이러한 계획은 라이선스 요금제 또는 Office 365 요금제 라고도 합니다. 라이선스 계획은 사용자에 게 제공 되는 Office 365 서비스를 정의 합니다. Office 365 구독에는 여러 라이선싱 계획이 포함 될 수 있습니다. 라이선스 계획의 예로는 Office 365 Enterprise E3을 들 수 있습니다.
@@ -44,7 +42,7 @@ Office 365 PowerShell을 사용 하 여 Office 365 조직의 사용 가능한 �
   
 현재 라이선스 계획 및 각 계획에 사용 가능한 라이선스에 대 한 요약 정보를 보려면 다음 명령을 실행 합니다.
   
-```
+```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
@@ -58,40 +56,40 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
     
 모든 라이선스 계획에서 사용할 수 있는 Office 365 서비스에 대 한 세부 정보를 보려면 먼저 라이선스 계획 목록을 표시 합니다.
 
-````
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
-````
+```
 
 다음으로, 라이선스 계획 정보를 변수에 저장 합니다.
 
-````
+```powershell
 $licenses = Get-AzureADSubscribedSku
-````
+```
 
 다음으로, 특정 라이선스 계획에서 서비스를 표시 합니다.
 
-````
+```powershell
 $licenses[<index>].ServicePlans
-````
+```
 
 \<index>는 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령 표시에서 1을 뺀 값으로 라이선스 계획의 행 번호를 지정 하는 정수입니다.
 
 예를 들어 다음과 같이 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령을 표시 하는 경우를 예로 들 수 있습니다.
 
-````
+```powershell
 SkuPartNumber
 -------------
 WIN10_VDA_E5
 EMSPREMIUM
 ENTERPRISEPREMIUM
 FLOW_FREE
-````
+```
 
 그런 다음 ENTERPRISEPREMIUM 라이선스 계획에 대 한 서비스를 표시 하는 명령은 다음과 같습니다.
 
-````
+```powershell
 $licenses[2].ServicePlans
-````
+```
 
 ENTERPRISEPREMIUM은 세 번째 행입니다. 따라서 인덱스 값은 (3-1) 또는 2입니다.
 
@@ -107,7 +105,7 @@ ENTERPRISEPREMIUM은 세 번째 행입니다. 따라서 인덱스 값은 (3-1) �
     
 현재 라이선스 계획 및 각 계획에 사용 가능한 라이선스에 대 한 요약 정보를 보려면 다음 명령을 실행 합니다.
   
-```
+```powershell
 Get-MsolAccountSku
 ```
 
@@ -123,7 +121,7 @@ Get-MsolAccountSku
     
 모든 라이선스 계획에서 사용할 수 있는 Office 365 서비스에 대 한 세부 정보를 보려면 다음 명령을 실행 합니다.
   
-```
+```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
@@ -137,7 +135,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |비즈니스용 Skype Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |사무실  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 계획 2  <br/> |
    
@@ -145,13 +143,13 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 특정 라이선스 계획에서 사용할 수 있는 Office 365 서비스에 대 한 세부 정보를 보려면 다음 구문을 사용 합니다.
   
-```
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
 이 예에서는 litwareinc: ENTERPRISEPACK (Office 365 Enterprise E3) 라이선스 계획에서 사용할 수 있는 Office 365 서비스를 표시 합니다.
   
-```
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
@@ -162,9 +160,8 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
    
 ## <a name="see-also"></a>참고 항목
 
-
 [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

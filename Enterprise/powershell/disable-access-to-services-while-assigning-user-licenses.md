@@ -14,19 +14,16 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-ms.openlocfilehash: ac356e5cc70ef36ad2e45b84f0dcd9d2252c79a4
-ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
+ms.openlocfilehash: 16e24a61aea1298b2c24a251d61c414c355dead7
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37282923"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747660"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함
 
-**요약:**  Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-  
 Office 365 구독에는 개별 서비스에 대 한 서비스 계획이 제공 됩니다. Office 365 관리자가 사용자에 게 라이선스를 할당할 때 특정 요금제를 사용 하지 않도록 설정 해야 하는 경우가 있습니다. 이 문서의 지침을 사용 하 여 개별 사용자 계정 또는 여러 사용자 계정에 대해 PowerShell을 사용 하 여 특정 서비스 계획을 사용 하지 않도록 설정 하는 동안 Office 365 라이선스를 할당할 수 있습니다.
-
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
@@ -35,7 +32,7 @@ Office 365 구독에는 개별 서비스에 대 한 서비스 계획이 제공 �
 
 그런 다음이 명령을 사용 하 여 테 넌 트에 대 한 라이선스 계획을 나열 합니다.
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
@@ -45,7 +42,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 아래 명령 블록에 대해 사용자 계정 이름, SKU 부품 번호 및 서비스 계획 목록을 입력 하 여 설명 텍스트와 > \< 및 문자를 사용 하도록 설정 하 고 제거 합니다. 그런 다음 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
   
-```
+```powershell
 $userUPN="<user account UPN>"
 $skuPart="<SKU part number>"
 $serviceList=<double-quoted enclosed, comma-separated list of enabled services>
@@ -68,7 +65,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 다음으로, 다음 명령을 실행 하 여 현재 구독을 확인 합니다.
   
-```
+```powershell
 Get-MsolAccountSku
 ```
 
@@ -86,7 +83,7 @@ Get-MsolAccountSku
   
 다음으로, 다음 명령을 실행 하 여 모든 구독에서 사용할 수 있는 Office 365 서비스 계획에 대 한 세부 정보를 확인 합니다.
   
-```
+```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
@@ -104,7 +101,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |비즈니스용 Skype Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office   <br/> |
+| `SHAREPOINTWAC` <br/> |사무실   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 계획 2  <br/> |
    
@@ -116,7 +113,7 @@ AccountSkuId 및 서비스 계획을 사용 하지 않도록 설정 했으므로
 
 단일 사용자에 대해 사용자 계정 이름, AccountSkuId 및 서비스 계획 목록을 입력 하 여 설명 텍스트 및 \< 및 > 문자를 사용 하지 않도록 설정 하 고 제거 합니다. 그런 다음 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
   
-```
+```powershell
 $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
 $planList=@( <comma-separated, double-quote enclosed list of the service plans to disable> )
@@ -129,9 +126,9 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 ```
 
-다음은 contoso: ENTERPRISEPACK 라이선스에 대해 belindan@contoso.com 이라는 계정에 대 한 명령 블록이 며, 사용 하지 않도록 설정 하는 서비스 계획은 RMS_S_ENTERPRISE, SWAY, INTUNE_O365 및 YAMMER_ENTERPRISE입니다.
+다음은 contoso: ENTERPRISEPACK 라이선스에 대해 belindan@contoso.com 이라는 계정에 대 한 명령 블록이 며 사용 하지 않도록 설정할 서비스 계획은 RMS_S_ENTERPRISE, SWAY, INTUNE_O365 및 YAMMER_ENTERPRISE입니다.
   
-```
+```powershell
 $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
 $planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","YAMMER_ENTERPRISE" )
@@ -148,7 +145,7 @@ Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 
 여러 사용자에 대해이 관리 작업을 수행 하려면 UserPrincipalName 및 UsageLocation 필드를 포함 하는 쉼표로 구분 된 값 (CSV) 텍스트 파일을 만듭니다. 예를 들면 다음과 같습니다.
   
-```
+```powershell
 UserPrincipalName,UsageLocation
 ClaudeL@contoso.onmicrosoft.com,FR
 LynneB@contoso.onmicrosoft.com,US
@@ -157,7 +154,7 @@ ShawnM@contoso.onmicrosoft.com,US
 
 그런 다음 입력 및 출력 CSV 파일의 위치, 계정 SKU ID 및 서비스 계획 목록을 사용 하지 않도록 설정 하 고 PowerShell 명령 프롬프트에서 결과 명령을 실행 합니다.
   
-```
+```powershell
 $inFileName="<path and file name of the input CSV file that contains the users, example: C:\admin\Users2License.CSV>"
 $outFileName="<path and file name of the output CSV file that records the results, example: C:\admin\Users2License-Done.CSV>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"

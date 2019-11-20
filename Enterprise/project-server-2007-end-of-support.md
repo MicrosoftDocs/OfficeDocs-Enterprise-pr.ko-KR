@@ -17,16 +17,18 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 2017 년 10 월 10 일에 Project Server 2007, Project 포트폴리오 서버 및 프로젝트 2007에 대 한 지원이 종료 되었습니다. 이 문서를 사용 하 여 지금 업그레이드를 계획 합니다.
-ms.openlocfilehash: 620b5ae3e23c3b4bdba9c429def81eebedbd32a3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071054"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746241"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 지원 종료 로드맵
 
-2017의 Office 2007 서버 및 응용 프로그램에 대 한 지원이 종료 되 고 있으므로 마이그레이션 계획을 고려해 야 합니다. 현재 Project Server 2007을 사용 하 고 있는 경우 it 및 기타 관련 제품에는 다음과 같은 지원 종료 날짜가 포함 됩니다.
+*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+
+2017의 Office 2007 서버 및 응용 프로그램에 대 한 지원이 종료 되었으며 마이그레이션 계획을 고려해 야 합니다. 현재 Project Server 2007을 사용 하는 경우에는 it 및 기타 관련 제품에 다음과 같은 지원 종료 날짜가 포함 되어 있습니다.
   
 |**제품**|**지원 종료 날짜**|
 |:-----|:-----|
@@ -39,7 +41,7 @@ ms.locfileid: "34071054"
   
 ## <a name="what-does-end-of-support-mean"></a>지원이 끝나는 것은 무엇을 의미 하나요?
 
-Project Server에는 거의 모든 Microsoft 제품과 마찬가지로 새로운 기능, 버그 수정, 보안 픽스 등을 제공 하는 지원 주기가 있습니다. 일반적으로이 수명 주기는 제품 초기 릴리스 날짜 로부터 10 년 동안 지속 되며이 주기의 끝은 제품의 지원 종료 라고 합니다. Project Server 2007에서 지 원하는 지원 종료 시간이 10 월 10 2017 일에 도달 했기 때문에 Microsoft는 더 이상 다음을 제공 하지 않습니다.
+Project Server에는 거의 모든 Microsoft 제품과 마찬가지로 새로운 기능, 버그 수정, 보안 픽스 등을 제공 하는 지원 주기가 있습니다. 일반적으로이 수명 주기는 제품 초기 릴리스 날짜 로부터 10 년 동안 지속 되며이 주기의 끝은 제품의 지원 종료 라고 합니다. Project Server 2007에서는 Microsoft가 2017 년 10 월 10 일에 대 한 지원 종료에 도달 했으므로 더 이상 다음이 제공 되지 않습니다.
   
 - 발생할 수 있는 문제에 대 한 기술 지원
     

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435412"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745741"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365용 Azure Express 경로
 
@@ -70,7 +70,7 @@ Office 365에 대 한 Express에 포함 되지 않은 서비스는 중국의 Off
 
 ## <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
-이 방법을 구현 하려면 네트워크 및 응용 프로그램 소유자의 참여가 필요 하며, 새 [네트워크 라우팅 아키텍처](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), 대역폭 요구 사항, 보안을 구현할 위치, 고가용성 등을 결정 하기 위한 신중한 계획이 필요 합니다. 합니다. Express를 구현 하려면 다음을 수행 해야 합니다.
+방법 보를 구현 하려면 네트워크 및 응용 프로그램 소유자의 참여가 필요 하며, 새 [네트워크 라우팅 아키텍처](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), 대역폭 요구 사항, 즉 보안이 구현 되는 고가용성 등을 결정 하기 위한 신중한 계획이 필요 합니다. Express를 구현 하려면 다음을 수행 해야 합니다.
 
 1. Office 365 연결 계획에서 요구 하는 Express가 충족 하는지 완전히 이해 합니다. 인터넷 또는 Express를 사용 하는 응용 프로그램을 이해 하 고, Office 365 트래픽에 대 한 인터넷 및 용 수를 모두 사용 하는 컨텍스트에서 네트워크 용량, 보안 및 고가용성 요구 사항을 완전히 계획 합니다.
 
@@ -100,7 +100,7 @@ Office 365에 대 한 Express를 구입 하려면 하나 이상의 [승인 된 �
 
 ## <a name="related-topics"></a>관련 주제
 
-[Office 365 네트워크 연결 평가](assessing-network-connectivity.md)
+[Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 
 [Office 365 연결에 대한 ExpressRoute 관리](managing-expressroute-for-connectivity.md)
 

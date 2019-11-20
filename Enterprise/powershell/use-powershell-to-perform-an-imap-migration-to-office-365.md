@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 요약:Windows PowerShell을 사용하여 Office 365로 IMAP 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: c7b80ea444fd9e8f0324cb0bc29edf46cd1219d0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: b6c68dc611d22579f81db838b2b5d08e99f7519a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071164"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746271"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 IMAP 마이그레이션 수행
 
- **요약:** Windows PowerShell을 사용하여 Office 365로 IMAP 마이그레이션을 수행하는 방법을 알아봅니다.
-  
 Office 365를 배포하는 과정의 일부로서, 사용자 사서함의 콘텐츠를 IMAP(Internet Mail Access Protocol) 전자 메일 시스템에서 Office 365로 마이그레이션하도록 선택할 수 있습니다. 이 문서에서는 Exchange Online PowerShell을 사용하는 전자 메일 IMAP 마이그레이션 작업을 살펴봅니다. 
   
 > [!NOTE]
@@ -67,7 +65,7 @@ IMAP 마이그레이션에 적용되는 제한 사항은 다음과 같습니다.
     
 - **IMAP 서버에 연결할 수 있는지 확인**합니다. Exchange Online PowerShell에서 다음 명령을 실행하여 IMAP 서버에 대한 연결 설정을 테스트합니다.
     
-  ```
+  ```powershell
   Test-MigrationServerAvailability -IMAP -RemoteServer <FQDN of IMAP server> -Port <143 or 993> -Security <None, Ssl, or Tls>
   ```
 
@@ -88,7 +86,7 @@ IMAP 마이그레이션 일괄 처리에서 해당 사서함을 마이그레이�
     
 다음은 CSV 파일 형식의 예입니다. 이 예에서는 다음 세 개의 사서함을 마이그레이션합니다.
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams,1091990
 annb@contoso.edu,ann.beebe,2111991
@@ -101,7 +99,7 @@ paulc@contoso.edu,paul.cannon,3281986
   
 Microsoft Exchange의 IMAP 구현에서 전자 메일을 마이그레이션하는 경우에는 CSV 파일에서 **UserName** 특성에 **Domain/Admin_UserName/User_UserName** 형식을 사용합니다. Terry Adams, Ann Beebe 및 Paul Cannon에 대해 Exchange의 전자 메일을 마이그레이션한다고 가정해 봅니다. 사용자 이름이 **mailadmin** 이고 암호는 **P@ssw0rd** 인 메일 관리자 계정이 있습니다. CSV 파일은 다음과 같이 나타납니다.
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso-students/mailadmin/terry.adams,P@ssw0rd
 annb@contoso.edu,contoso-students/mailadmin/ann.beebe,P@ssw0rd
@@ -112,7 +110,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
   
 Dovecot IMAP 서버와 같이 SASL(Simple Authentication and Security Layer)을 지원하는 IMAP 서버의 경우 **User_UserName*Admin_UserName** 형식을 사용합니다. 여기서 별표( * )는 구성 가능한 구분 기호 문자입니다. 이번에는 관리자 자격 증명(**mailadmin** 및 **P@ssw0rd**)을 사용하여 동일한 사용자의 전자 메일을 Dovecot IMAP 서버에서 마이그레이션한다고 가정하겠습니다. CSV 파일은 다음과 같이 나타납니다.
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams*mailadmin,P@ssw0rd
 annb@contoso.edu,ann.beebe*mailadmin,P@ssw0rd
@@ -123,7 +121,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
   
 예를 들어 Mirapoint 메시지 서버에서 전자 메일을 마이그레이션하는 경우 관리자 자격 증명에 **#user@domain#Admin_UserName#** 형식을 사용합니다. 관리자 계정 **mailadmin** 및 **P@ssw0rd** 를 사용하여 Mirapoint에서 전자 메일을 마이그레이션하는 경우 CSV 파일은 다음과 같습니다.
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,#terry.adams@contoso-students.edu#mailadmin#,P@ssw0rd
 annb@contoso.edu,#ann.beebe@contoso-students.edu#mailadmin#,P@ssw0rd
@@ -138,7 +136,7 @@ Courier IMAP와 같은 일부 원본 전자 메일 시스템은 사서함 관리
   
 다음은 **UserRoot** 특성을 포함하는 CSV 파일의 예입니다.
   
-```
+```powershell
 EmailAddress,UserName,Password,UserRoot
 terrya@contoso.edu,mailadmin,P@ssw0rd,/users/terry.adams
 annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
@@ -154,14 +152,14 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
   
 Exchange Online PowerShell에서 "IMAPEndpoint"라는 IMAP 마이그레이션 끝점을 만들려면 다음 명령을 실행합니다.
   
-```
+```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
 
 ```
 
 동시 마이그레이션, 동시 증분 마이그레이션 및 사용할 포트를 지정하기 위한 매개 변수를 추가할 수도 있습니다. 다음 Exchange Online PowerShell 명령은 50개의 동시 마이그레이션과 최대 25개의 동시 증분 동기화를 지원하는 "IMAPEndpoint"라는 IMAP 마이그레이션 끝점을 만듭니다. 또한 TLS 암호화를 위해 포트 143을 사용하도록 끝점을 구성합니다.
   
-```
+```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 143 -Security Tls -MaxConcurrentMigrations
 50 -MaxConcurrentIncrementalSyncs 25
 ```
@@ -172,7 +170,7 @@ New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -P
 
 Exchange Online PowerShell에서 다음 명령을 실행하여 "IMAPEndpoint"에 대한 정보를 표시합니다.
   
-```
+```powershell
 Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
 ```
 
@@ -183,7 +181,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
   
 다음 Exchange Online PowerShell 명령은 "IMAPEndpoint"라는 IMAP 끝점을 사용하여 "IMAPBatch1"이라는 마이그레이션 일괄 처리를 자동으로 시작합니다.
   
-```
+```powershell
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
 ```
 
@@ -191,13 +189,13 @@ New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([Syst
 
 [Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441) cmdlet을 실행하여 "IMAPBatch1"에 대한 정보를 표시합니다.
   
-```
+```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List
 ```
 
 다음 명령을 실행하여 일괄 처리가 시작되었는지 확인할 수도 있습니다.
   
-```
+```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
@@ -221,7 +219,7 @@ MX 레코드를 변경하고 모든 전자 메일에 Office 365 사서함으로 
     
 Exchange Online PowerShell에서 "IMAPBatch1" 마이그레이션 일괄 처리를 삭제하려면 다음 명령을 실행합니다.
   
-```
+```powershell
 Remove-MigrationBatch -Identity IMAPBatch1
 ```
 
@@ -231,7 +229,7 @@ Remove-MigrationBatch -Identity IMAPBatch1
 
 Exchange Online PowerShell에서 다음 명령을 실행하여 "IMAPBatch1"에 대한 정보를 표시합니다.
   
-```
+```powershell
 Get-MigrationBatch IMAPBatch1"
 ```
 
@@ -240,8 +238,6 @@ Get-MigrationBatch IMAPBatch1"
 **Get-MigrationBatch** cmdlet에 대한 자세한 내용은[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)를 참조하세요.
   
 ## <a name="see-also"></a>참고 항목
-
-#### 
 
 [IMAP 마이그레이션 문제 해결사](https://go.microsoft.com/fwlink/p/?LinkId=536482)
 

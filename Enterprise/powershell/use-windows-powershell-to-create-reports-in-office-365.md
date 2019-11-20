@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '요약: Office 365 PowerShell을 사용하여 Microsoft 365 관리 센터에서 생성할 수 없는 보고서를 만듭니다.'
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031683"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746261"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Office 365에서 Windows PowerShell을 사용하여 보고서 만들기
 
- **요약:** Office 365 PowerShell을 사용하여 Microsoft 365 관리 센터에서 생성할 수 없는 보고서를 만듭니다.
-  
 Microsoft 365 관리 센터에서는 다양한 보고서가 제공됩니다. 그러나 이러한 보고서에는 제공되는 정보가 너무 많거나 부족할 수도 있습니다. 그럴 때는 Office 365 PowerShell이 필요한 경우입니다.
   
 다음 문서에서는 Office 365 PowerShell을 사용하여 Office 365 테넌트에서 정보를 얻는 방법을 설명합니다.
@@ -58,8 +56,6 @@ Microsoft 365 관리 센터에서는 다양한 보고서가 제공됩니다. 그
   - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>참고 항목
-
-#### 
 
 [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   

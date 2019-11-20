@@ -15,17 +15,15 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Office 365 PowerShell을 사용 하 여 사용자의 Office 365 서비스에 대 한 액세스를 사용 하지 않도록 설정 합니다.
-ms.openlocfilehash: 32c43a47e1547e85488cb5158bd7392d79c8a4fb
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c012d7451d022ea8cf3e3fa1a8d0a89d804e9c66
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781838"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746281"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.
 
-**요약:** Office 365 PowerShell을 사용 하 여 조직의 사용자가 Office 365 서비스에 액세스 하지 못하도록 설정 하는 방법에 대해 설명 합니다.
-  
 Office 365 계정에 라이선스 계획의 라이선스가 할당 되 면 해당 라이선스의 사용자가 Office 365 서비스를 사용할 수 있게 됩니다. 그러나 사용자가 액세스할 수 있는 Office 365 서비스는 제어할 수 있습니다. 예를 들어 라이선스를 사용 하 여 SharePoint Online 서비스에 액세스할 수 있는 경우에도 액세스를 사용 하지 않도록 설정할 수 있습니다. PowerShell을 사용 하 여 특정 라이선스 계획에 대 한 모든 서비스에 대 한 액세스를 사용 하지 않도록 설정할 수 있습니다.
 
 - 개별 계정
@@ -40,7 +38,7 @@ Office 365 계정에 라이선스 계획의 라이선스가 할당 되 면 해�
 
 다음으로, 다음 명령을 사용 하 여 Account과 Uid 라고도 하는 사용 가능한 라이선스 계획을 봅니다.
 
-```
+```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
@@ -57,13 +55,13 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   
 1. 다음 구문을 사용 하 여 라이선스 계획에서 원하지 않는 서비스를 확인 합니다.
     
-  ```
+  ```powershell
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
   다음 예제에서는 라는 `litwareinc:ENTERPRISEPACK` 라이선스 계획에서 Office 및 SharePoint Online 서비스를 사용 하지 않도록 설정 하는 **LicenseOptions** 개체 (office 365 Enterprise E3)를 만듭니다.
     
-  ```
+  ```powershell
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
@@ -71,13 +69,13 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
   - 서비스를 사용 하지 않도록 설정 된 새 계정을 만들려면 다음 구문을 사용 합니다.
     
-  ```
+  ```powershell
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
   다음 예에서는 라이선스를 할당 하 고 1 단계에서 설명 하는 서비스를 사용 하지 않도록 설정 하는 Allie에 대 한 새 계정을 만듭니다.
     
-  ```
+  ```powershell
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
@@ -85,19 +83,19 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
   - 사용이 허가 된 기존 사용자에 대 한 서비스를 사용 하지 않도록 설정 하려면 다음 구문을 사용 합니다.
     
-  ```
+  ```powershell
   Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
   ```
 
   이 예에서는 사용자 BelindaN@litwareinc.com에 대 한 서비스를 사용 하지 않도록 설정 합니다.
     
-  ```
+  ```powershell
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
   - 사용이 허가 된 모든 사용자에 대해 1 단계에서 설명 하는 서비스를 사용 하지 않도록 설정 하려면 **get-msolaccountsku** cmdlet (예: **litwareinc**)의 표시에서 Office 365 계획의 이름을 지정 하 고 다음 명령을 실행 합니다.
     
-  ```
+  ```powershell
   $acctSKU="<AccountSkuId>"
   $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
@@ -110,14 +108,14 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
   - **기존 계정 특성을 기반으로 계정 필터링** 이 작업을 수행 하려면 다음 구문을 사용 합니다.
     
-  ```
+  ```powershell
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
   다음 예에서는 미국 영업부에 있는 사용자에 대 한 서비스를 사용 하지 않도록 설정 합니다.
     
-  ```
+  ```powershell
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
   $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
@@ -126,7 +124,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
 1. 다음과 같이 각 줄에 한 계정에 포함 된 텍스트 파일을 만듭니다.
     
-  ```
+  ```powershell
   akol@contoso.com
   tjohnston@contoso.com
   kakers@contoso.com
@@ -136,7 +134,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
 2. 다음 명령을 실행합니다.
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 

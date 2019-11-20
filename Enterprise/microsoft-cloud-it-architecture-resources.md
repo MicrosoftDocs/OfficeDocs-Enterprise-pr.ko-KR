@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다. Windows 10 및 Office ProPlus가 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.'
-ms.openlocfilehash: f22c61ee1ed8dc205b5818d46e03300c21c5f22d
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38308613"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702259"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -109,8 +109,7 @@ Microsoft 클라우드 서비스 및 플랫폼의 네트워킹과 관련하여 I
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [문서](https://technet.microsoft.com/library/mt733214.aspx) <br/>[추가 언어](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 이 모델에는 다음과 같은 페이지가 포함되어 있습니다. <ul><li> **클라우드 연결을 위해 네트워크 개선** 클라우드 마이그레이션으로 인해 회사 네트워크 내부 및 외부의 트래픽 흐름 양과 특성이 달라지고 있습니다. 또한 보안 위험을 완화시키는 방법도 영향을 받고 있습니다.</li><li> **Microsoft 클라우드 연결의 일반 요소** 네트워킹을 Microsoft 클라우드와 통합하면 보다 폭넓은 서비스에 최적 상태로 액세스할 수 있습니다. </li><li> **Microsoft 클라우드 연결의 ExpressRoute** ExpressRoute는 Microsoft 클라우드에 대해 개인, 전용, 고처리량의 네트워크 연결을 제공합니다. </li><li> **Microsoft SaaS에 대한 네트워킹 설계(Office 365, Microsoft Intune 및 Dynamics CRM Online)** Microsoft SaaS 서비스에 대한 네트워크를 최적화하려면 인터넷 에지, 클라이언트 장치 및 일반적인 IT 운영을 신중하게 분석해야 합니다. </li><li> **Azure PaaS에 대한 네트워킹 설계** Azure PaaS 앱용 네트워킹을 최적화하려면 적절한 인터넷 대역폭이 필요하고 여러 사이트 또는 앱 간에 네트워크 트래픽을 분산해야 합니다. </li><li> **Azure IaaS에 대한 네트워킹 설계** 서브넷, 주소 공간, 라우팅, DNS, 부하 분산을 비롯한 서버 기반 IT 워크로드를 호스트하기 위한 최적의 Azure Virtual Network(VNet)와 온-프레미스 네트워크, 기타 VNet 및 인터넷에 대한 연결을 만들기 위한 디자인 프로세스를 안내합니다. </li></ul><br/>  <br/>|
-   
+|[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li> 클라우드 연결을 위해 네트워크 확장 </li><li> Microsoft 클라우드 연결의 공통 요소 </li><li> Microsoft 클라우드 연결을 위한 ExpressRoute </li><li> Microsoft SaaS, Azure PaaS, Azure IaaS를 위한 네트워킹 디자인 </li></ul><br/>  <br/>|
    
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud for Enterprise Architects
@@ -119,7 +118,7 @@ Microsoft 서비스 및 플랫폼용 하이브리드 클라우드와 관련하�
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft 하이브리드 클라우드 모델의 축소판 이미지](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [문서](https://technet.microsoft.com/library/mt750500.aspx) <br/>[추가 언어](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | 이 모델에는 다음과 같은 페이지가 포함되어 있습니다. <ul><li> **하이브리드 클라우드 개요** Microsoft의 클라우드 서비스(SaaS, Azure PaaS 및 IaaS Azure) 및 공통 요소 </li><li> **Microsoft 하이브리드 클라우드 시나리오의 아키텍처** 온-프레미스 인프라, 네트워킹 및 ID의 일반 계층을 보여 주는 Microsoft의 클라우드 서비스용 하이브리드 클라우드의 아키텍처 다이어그램 </li><li> **Microsoft SaaS에 대한 하이브리드 클라우드 시나리오(Office 365)** 비즈니스용 Skype, SharePoint Server 및 Exchange Server에 대한 SaaS 하이브리드 시나리오 아키텍처와 설명 </li><li> **Azure PaaS에 대한 하이브리드 클라우드 시나리오** Azure PaaS 하이브리드 시나리오 아키텍처, Azure PaaS 하이브리드 응용 프로그램에 대한 설명과 예제, SQL Server 2016 Stretch Database에 대한 설명 </li><li> **Azure IaaS에 대한 하이브리드 클라우드 시나리오** Azure IaaS 하이브리드 시나리오 아키텍처와 Azure IaaS에서 호스트되는 LOB(기간 업무) 응용 프로그램에 대한 설명 </li></ul><br/>|
+|[![Microsoft 하이브리드 클라우드 모델의 축소판 이미지](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li> Microsoft 클라우드 서비스(SaaS, Azure PaaS, Azure IaaS) 및 공통 요소 </li><li> Microsoft 클라우드 서비스를 위한 하이브리드 클라우드 아키텍처 </li><li> Microsoft SaaS(Office 365), Azure PaaS, Azure IaaS를 위한 하이브리드 클라우드 시나리오 </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>일반적인 공격 및 조직을 보호하는 Microsoft 기능
@@ -145,18 +144,8 @@ Microsoft 서비스 및 플랫폼용 하이브리드 클라우드와 관련하�
 |:-----|:-----|
 |[![Teams 논리 아키텍처 포스터의 축소판 그림 이미지](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |이 모델에는 다음이 포함됩니다. <ul><li>아키텍처 접근 방식에 대한 비즈니스 시나리오 매핑</li><li>디자인 고려 사항</li><li>단일 이벤트 마이그레이션 흐름</li><li>단계적 마이그레이션 흐름</li><li>테넌트 이동 또는 분할 흐름</li></ul>|
 
-<!--<a name="santa"></a>
-### The Santa cloud
-
-How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
-   
-<a name="BKMK_o365solutions">
-</a>
-## Microsoft 365 Enterprise 솔루션 시리즈
+<a name="BKMK_o365solutions"></a>
+## <a name="microsoft-365-enterprise-solution-series"></a>Microsoft 365 Enterprise 솔루션 시리즈
 
 Microsoft 365 Enterprise 솔루션 시리즈는 Microsoft 365의 기능을 구현하기 위한 지침을 기술 중심으로 설명합니다.
 
