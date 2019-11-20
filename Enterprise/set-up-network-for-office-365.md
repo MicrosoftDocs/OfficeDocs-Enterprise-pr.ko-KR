@@ -3,7 +3,7 @@ title: Office 365의 네트워크 설정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '요약: Office 365의 네트워킹을 이해하려면 다음 문서를 참조하세요.'
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722687"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747417"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Office 365의 네트워크 설정
 
-**요약:** Office 365의 네트워킹을 이해하려면 다음 문서를 참조하세요.
-  
-Office 365 온보딩에서 중요한 부분은 먼저 네트워크와 인터넷 연결의 액세스가 최적화 설정되어 있는지 확인하는 것입니다. 전역으로 배포된 SaaS(Software-as-a-Service) 클라우드에 액세스하도록 온-프레미스 네트워크를 구성하는 것은 온-프레미스 데이터 센터로의 트래픽에 최적화된 기존 네트워크의 경우와는 다릅니다. 
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
-다음 문서를 사용하여 주요 차이점을 이해하고 에지 장치, 클라이언트 컴퓨터, 온-프레미스 네트워크를 수정하여 최상의 사용자 성능을 얻으세요.
+Office 365 온보딩에서 중요한 부분은 네트워크와 인터넷 연결의 액세스가 최적으로 설정되어 있는지를 확인하는 것입니다. 전역으로 배포된 SaaS(Software-as-a-Service) 클라우드에 액세스하도록 온-프레미스 네트워크를 구성하는 것은 온-프레미스 데이터 센터와 중앙 인터넷 커넥션으로의 트래픽에 최적화된 기존 네트워크의 경우와는 다릅니다. 
+
+이 문서를 사용하여 주요 차이점을 이해하고 에지 장치, 클라이언트 컴퓨터, 온-프레미스 네트워크를 수정하여 온-프레미스 사용자를 위한 최적의 성능을 구현하세요.
 
 ## <a name="how-office-365-networking-works"></a>Office 365 네트워킹 작동 방식
 
@@ -50,7 +50,7 @@ Office 365의 연결 개요는 다음 문서를 참조하세요.
 
 엔드포인트는 인터넷에서 Office 365 트래픽을 위한 대상 IP 주소, DNS 도메인 이름, URL의 집합입니다. 
 
-Office 365 클라우드 기반 서비스에 대한 성능을 최적화하려면 클라이언트 브라우저와 에지 네트워크의 장치가 이러한 엔드포인트를 특별하게 처리해야 합니다. 이러한 장치로는 방화벽, SSL Break and Inspect 및 패킷 검사 장치, 데이터 손실 방지 시스템 등이 있습니다.
+Office 365 클라우드 기반 서비스에 대한 성능을 최적화하려면 클라이언트 브라우저와 에지 네트워크의 장치가 일부 엔드포인트를 특별하게 처리해야 합니다. 이러한 장치로는 방화벽, SSL Break and Inspect 및 패킷 검사 장치, 데이터 손실 방지 시스템 등이 있습니다.
 
 자세한 내용은 [Office 365 엔드포인트 관리](managing-office-365-endpoints.md)를 참조하세요.
 
