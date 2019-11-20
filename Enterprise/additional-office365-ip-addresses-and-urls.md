@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되어 있지 않습니다.'
 hideEdit: true
-ms.openlocfilehash: 2dae3a5f37be071f38991c599ea1b0ba81fa6281
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: dd9e91fbdf5e2cc252d0675e81132ccc506a41a5
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702199"
+ms.locfileid: "38707015"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 
@@ -45,7 +45,7 @@ DNS 외에도 설명된 특정 시나리오가 필요하지 않는 경우 대부
 |:-----|:-----|:-----|:-----|
 | **행** | **용도** | **대상** | **유형** |
 | 1  | PST 및 파일 수집를 위한 [서비스 가져오기](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) | 추가 요구 사항은 [서비스 가져오기](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)를 참조하세요. | 일반적이지 않은 아웃바운드 시나리오 |
-| 2  | [Office 365용 Microsoft 지원 및 복구 도우미](https://diagnostics.office.com/#/) - Single Sign-On 사용자 자격 증명 유효성 검사  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 아웃바운드 서버 트래픽 |
+| 2  | [Office 365용 Microsoft 고객 지원 및 복구 도우미](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 아웃바운드 서버 트래픽 |
 | 3  | Azure AD Connect(w/SSO 옵션)-WinRM 및 원격 PowerShell | 고객 STS 환경(AD FS 서버 및 AD FS 프록시) \| TCP 포트 80 및 443 | 인바운드 서버 트래픽 |
 | 4  | AD FS 프록시 서버와 같은 STS(페더레이션 고객만 해당) | 고객 STS(예: AD FS 프록시) \| 포트 TCP 443 또는 TCP 49443 w/ClientTLS | 인바운드 서버 트래픽 |
 | 5  | [Exchange Online의 통합 메시징/SBC 통합](https://technet.microsoft.com/library/jj673565.aspx) | Session Border Controller 및 *. um.outlook.com간에 양방향 온-프레미스 | 아웃바운드 서버 전용 트래픽 |
