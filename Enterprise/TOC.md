@@ -64,7 +64,7 @@
 
 ## 1. 네트워크 설정
 ### [엔터프라이즈 네트워크 설정](set-up-network-for-office-365.md)
-### [도메인](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+### [도메인 추가](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
 ### [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
 ### [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 ### [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
@@ -103,7 +103,7 @@
 #### [디렉터리 동기화 설정](set-up-directory-synchronization.md)
 ### [사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts.md)
 
-## [3. 보안 기능 구현](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+## [3. 보안 구현](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. 클라이언트 소프트웨어 배포
 ### [Office 365 ProPlus 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
