@@ -1,9 +1,9 @@
 ---
 title: 데이터 이동을 요청하는 방법
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031593"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756597"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -72,7 +72,7 @@ Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 팀에서는 Microsoft 팀에 대 한 데이터 상주를 사용할 수 있는 지역에서 국내 데이터 센터에 이르기까지 나머지 지역의 고객 콘텐츠 마이그레이션을 아직 지원 하지 않습니다.  따라서 Microsoft 팀이 데이터 상주를 지 원하는 새로운 지역에서는 새 고객만 모든 데이터를 국가 내에 저장 합니다.  회사 위치에 대 한 Office 365 데이터 상주에 대 한 자세한 내용은 [어디에서 찾을 수 있나요?](https://products.office.com/where-is-your-data-located)   
+Microsoft 팀 채팅 및 채널 메시지 데이터에 대 한 마이그레이션 지원은 Office 365 로컬 마이그레이션 프로그램에 추가 됩니다.  이전에 Exchange Online 및 SharePoint Online/비즈니스용 OneDrive 마이그레이션을 위해 옵트인 한 고객을 비롯 하 여 모든 적합 한 고객을 위해 1 월 2020의 프로그램 등록을 열 계획입니다.  Microsoft 365 관리 센터에 옵트인 컨트롤을 제공 하 고 모든 적합 한 고객에 게 메시지 센터에 대 한 알림을 보내도록 합니다.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>이동 요청 전 선택적 작업
 

@@ -1,9 +1,9 @@
 ---
 title: 데이터 이동 도중 및 이후
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626138"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756577"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -123,10 +123,6 @@ SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 �
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>타사 오디오 회의 공급자를 포함 하는 비즈니스용 Skype 이동
 새로운 지역별 데이터 센터에 소속된 사용자는 비즈니스용 Skype에 대한 타사 오디오 회의 공급자 추가 기능 서비스를 사용할 수 없습니다.   타사 오디오 회의 공급자 서비스를 사용하는 기존 고객은 새로운 지역별 데이터 센터로의 이동을 요청하지 않는 것이 좋습니다.   새로운 지역별 데이터 센터에 배포된 신규 고객은 타사 오디오 회의 공급자를 사용하기 위해 지역별 데이터 센터로의 이동을 요청해야 합니다. 
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>팀, Yammer 및 Power BI를 비롯 한 다른 서비스에 대 한 데이터
-
-Exchange Online, SharePoint Online 및 비즈니스용 Skype에 대 한 고객 데이터만 이동 합니다. 다른 서비스에 대 한 데이터는 이동 하지 않습니다. 이러한 서비스에 대 한 고객 또는 사용자는 변경 하거나 영향을 받지 않습니다. 이동 프로세스는 이러한 작업에 영향을 주지 않으며, 고객 데이터의 위치는 변경 되지 않은 상태로 유지 됩니다.
   
 ## <a name="related-topics"></a>관련 항목 
  

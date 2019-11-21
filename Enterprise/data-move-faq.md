@@ -1,9 +1,9 @@
 ---
 title: 데이터 이동 일반 FAQ
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 다음은 핵심 데이터를 새 데이터 센터 지역으로 이동 하는 방법에 대 한 일반적인 질문에 대 한 대답입니다.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028892"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756587"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -29,7 +29,7 @@ ms.locfileid: "38028892"
 
 ## <a name="how-do-we-define-core-customer-data"></a>핵심 고객 데이터를 정의 하려면 어떻게 해야 합니까?
  
-핵심 고객 데이터는 [Microsoft Online Services 조항](https://go.microsoft.com/fwlink/p/?LinkID=249048)에 정의 된 고객 데이터의 하위 집합을 지칭 하는 용어입니다. 
+핵심 고객 데이터는 [Microsoft Online Services 조항](https://aka.ms/ost)에 정의 된 고객 데이터의 하위 집합을 지칭 하는 용어입니다. 
 - Exchange Online 사서함 콘텐츠 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일 콘텐츠)
 - SharePoint Online 사이트 콘텐츠 및 해당 사이트 내에 저장 된 파일
 - 비즈니스용 OneDrive에 업로드 된 파일 
