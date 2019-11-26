@@ -3,7 +3,7 @@ title: 고가용성 페더레이션 인증 단계 5 Office 365에 대 한 페더
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.'
-ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dcd66ee6a650081e4ad27f9023fe98082a7ccd43
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067324"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254557"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>고가용성 페더레이션 인증 5단계: Office 365에 대해 페더레이션 인증 구성
 
- **요약:** Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.
- 
 Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이션 인증을 배포 하는 마지막 단계에서는 공개 인증 기관에서 발급 한 인증서를 가져오고 설치 하 고, 구성을 확인 한 다음 Azure AD를 설치 및 실행 합니다. 디렉터리 동기화 서버에서 연결 합니다. Azure AD Connect는 페더레이션 인증을 위해 Office 365 구독 및 AD FS (Active Directory Federation Services) 및 웹 응용 프로그램 프록시 서버를 구성 합니다.
   
 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.

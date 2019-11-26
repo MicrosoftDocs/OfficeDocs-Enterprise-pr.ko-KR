@@ -3,7 +3,7 @@ title: 고가용성 페더레이션 인증 1 단계 Azure 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '요약: Microsoft Azure 인프라를 구성하여 Office 365 페더레이션 인증의 고가용성을 호스트합니다.'
-ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793306"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257583"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>고가용성 페더레이션 인증 1단계: Azure 구성
 
- **요약:** Microsoft Azure 인프라를 구성하여 Office 365 페더레이션 인증의 고가용성을 호스트합니다.
-  
-이 단계에서는 2, 3, 4 단계에서 가상 컴퓨터를 호스팅할 Azure의 리소스 그룹, VNet (가상 네트워크) 및 가용성 집합을 만듭니다. [고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)으로 이동 하기 전에이 단계를 완료 해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
+이 단계에서는 2, 3, 4 단계에서 가상 컴퓨터를 호스팅할 Azure의 리소스 그룹, VNet (가상 네트워크) 및 가용성 집합을 만듭니다. [2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)으로 넘어가기 전에이 단계를 완료 해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
 Azure는 다음과 같은 기본 구성 요소로 구축 해야 합니다.
   
@@ -63,7 +61,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
   
 |**항목**|**서브넷 이름**|**서브넷 주소 공간**|**용도**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD DS (Active Directory 도메인 서비스) 도메인 컨트롤러 및 DirSync 서버 가상 컴퓨터 (Vm)에서 사용 하는 서브넷입니다.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD DS (Active Directory 도메인 서비스) 도메인 컨트롤러 및 디렉터리 동기화 서버 Vm (가상 컴퓨터)에서 사용 하는 서브넷입니다.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm에서 사용 하는 서브넷입니다.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |웹 응용 프로그램 프록시 Vm에서 사용 하는 서브넷입니다.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 게이트웨이 Vm에서 사용 하는 서브넷입니다.  <br/> |
@@ -76,7 +74,7 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |첫 번째 도메인 컨트롤러의 고정 IP 주소  <br/> |테이블 S의 항목 1에 정의된 서브넷의 주소 공간에 사용할 수 있는 네 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |두 번째 도메인 컨트롤러의 고정 IP 주소  <br/> |테이블 S의 항목 1에 정의된 서브넷의 주소 공간에 사용할 수 있는 다섯 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |DirSync 서버의 고정 IP 주소  <br/> |테이블 S의 항목 1에 정의 된 서브넷의 주소 공간에 사용할 수 있는 여섯 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |디렉터리 동기화 서버의 고정 IP 주소  <br/> |테이블 S의 항목 1에 정의 된 서브넷의 주소 공간에 사용할 수 있는 여섯 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |AD FS 서버에 대 한 내부 부하 분산 장치의 고정 IP 주소  <br/> |테이블 S의 항목 2에 정의된 서브넷의 주소 공간에 사용할 수 있는 네 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |5.  <br/> |첫 번째 AD FS 서버의 고정 IP 주소  <br/> |테이블 S의 항목 2에 정의된 서브넷의 주소 공간에 사용할 수 있는 다섯 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |6.  <br/> |두 번째 AD FS 서버의 고정 IP 주소  <br/> |테이블 S의 항목 2에 정의된 서브넷의 주소 공간에 사용할 수 있는 여섯 번째 IP 주소입니다.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -109,14 +107,17 @@ IT 부서에서 가상 네트워크 주소 공간의 이러한 주소 공간을 
 이제 Office 365에 대 한 페더레이션 인증을 호스트 하기 위한 Azure 인프라를 구축 해 보겠습니다.
   
 > [!NOTE]
-> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell을 시작 하기를](https://docs.microsoft.com/powershell/azure/get-started-azureps)참조 하세요. 
   
 먼저 Azure PowerShell 프롬프트를 시작하고 계정에 로그인합니다.
   
 ```powershell
 Connect-AzAccount
 ```
-  
+
+> [!TIP]
+> 사용자 지정 설정에 따라 실행 가능한 PowerShell 명령 블록을 생성 하려면이 [Microsoft Excel 구성 통합 문서](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)를 사용 합니다. 
+
 다음 명령을 사용하여 구독 이름을 가져옵니다.
   
 ```powershell
@@ -303,7 +304,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 ## <a name="next-step"></a>다음 단계
 
-[고가용성 페더레이션 인증 2 단계: 도메인 컨트롤러를 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 하 여이 작업의 구성을 계속 진행 합니다.
+[2 단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 을 사용 하 여이 작업의 구성을 계속 진행할 수 있습니다.
   
 ## <a name="see-also"></a>참고 항목
 

@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Office 365 PowerShell을 사용하여 Office 365 사용자 계정을 삭제하는 방법에 대해 알아보세요.
-ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e62c06981a861580804dde852ad3da7bd729fdbe
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746431"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257649"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell로 사용자 계정 삭제하기
 
@@ -35,6 +35,10 @@ ms.locfileid: "38746431"
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
+
+>[!Note]
+>PowerShell Core에서는 이름에 **Msol** 이 포함 된 Windows powershell 모듈 및 cmdlet에 대 한 Microsoft Azure Active Directory 모듈을 지원 하지 않습니다. 이러한 cmdlet을 계속 사용 하려면 Windows PowerShell에서 실행 해야 합니다.
+>
 
 이 예제에서는 사용자 계정 fabricec@litwareinc.com을 제거합니다.
   

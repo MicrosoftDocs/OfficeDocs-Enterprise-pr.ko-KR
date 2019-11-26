@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell을 연결 합니다.'
-ms.openlocfilehash: f64a29bb0594694c5a6b6e2dff8d0f7611fdf11e
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707065"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257427"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
@@ -98,6 +98,10 @@ PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 �
   ```powershell
   Connect-MsolService -Credential $credential
  ```
+
+>[!Note]
+>PowerShell Core에서는 이름에 **Msol** 이 포함 된 Windows powershell 모듈 및 cmdlet에 대 한 Microsoft Azure Active Directory 모듈을 지원 하지 않습니다. 이러한 cmdlet을 계속 사용 하려면 Windows PowerShell에서 실행 해야 합니다.
+>
 
 4. 다음 명령을 실행 하 여 SharePoint Online에 연결 합니다. 도메인에 대 한 실제 값으로 _ \<domainhost>_ 를 교체 합니다. 예를 들어 "litwareinc.onmicrosoft.com"의 경우 _ \<domainhost>_ 값은 "litwareinc"입니다.
     

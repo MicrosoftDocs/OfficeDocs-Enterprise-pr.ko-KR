@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365에서 발생 하는 디렉터리 동기화 문제의 일반적인 원인에 대해 설명 하 고 이러한 문제를 해결 하는 데 도움이 되는 몇 가지 방법을 제공 합니다.
-ms.openlocfilehash: f7a117df41e9a972f4ea166eb7b75e5fb1a85295
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: cc0fe15d0d49542489ac1e586efbe99d0846b3ab
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702229"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254527"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365의 디렉터리 동기화 문제 해결
 
@@ -89,6 +89,6 @@ Azure Active Directory 동기화에서 Azure AD Connect로의 연결을 업데�
     
 ## <a name="diagnostic-tools"></a>진단 도구
 
-[Idfix 도구](prepare-directory-attributes-for-synch-with-idfix.md) 는 Office 365로의 마이그레이션을 준비 하기 위해 온-프레미스 Active Directory 환경에서 id 개체 및 해당 특성의 검색 및 관리를 수행 하는 데 사용 됩니다. IDFix는 Office 365 서비스와의 DirSync를 담당 하는 Active Directory 관리자를 위한 것입니다. 
+[Idfix 도구](prepare-directory-attributes-for-synch-with-idfix.md) 는 Office 365로의 마이그레이션을 준비 하기 위해 온-프레미스 Active Directory 환경에서 id 개체 및 해당 특성의 검색 및 관리를 수행 하는 데 사용 됩니다. IDFix는 Office 365 서비스와의 디렉터리 동기화를 담당 하는 Active Directory 관리자를 위한 것입니다. 
 
 Microsoft 다운로드 센터에서 [IDFix 도구를 다운로드](https://go.microsoft.com/fwlink/p/?LinkId=396718) 합니다.

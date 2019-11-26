@@ -3,7 +3,7 @@ title: 고가용성 페더레이션 인증 4 단계 웹 응용 프로그램 프�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,30 +12,31 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증을 위한 웹 응용 프로그램 프록시 서버를 구성 합니다.'
-ms.openlocfilehash: 276d28835cbedf7d2eb87b80304fbb0e4e9de2c3
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0ab2526209bc9c59fdce839e0f50451b23d78b04
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793320"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257497"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>고가용성 페더레이션 인증 4단계: 웹 응용 프로그램 프록시 구성
 
- **요약:** Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증을 사용 하도록 웹 응용 프로그램 프록시 서버를 구성 합니다.
-  
 이 단계에서는 Azure 인프라 서비스의 Office 365 페더레이션 인증의 고가용성을 배포하며 내부 부하 분산 장치 및 두 개의 AD FS 서버를 만듭니다.
   
-[High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)으로 넘어가기 전에 이 단계를 완료해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
+[단계 5: Office 365에 대 한 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)으로 넘어가기 전에이 단계를 완료 해야 합니다. 모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Azure에서 인터넷 부하 분산 장치를 만듭니다.
 
 Azure가 인터넷에서 수신되는 클라이언트 인증 트래픽을 두 웹 응용 프로그램 프록시 서버에 균등하게 분배할 수 있도록 인터넷 부하 분산 장치를 만들어야 합니다.
   
 > [!NOTE]
-> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell cmdlet으로 시작](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)을 참조하세요. 
+> 다음 명령 집합은 최신 버전의 Azure PowerShell을 사용합니다. [Azure PowerShell을 시작 하기를](https://docs.microsoft.com/powershell/azure/get-started-azureps)참조 하세요. 
   
 위치나 리소스 그룹 값이 제공되면 Azure PowerShell 명령 프롬프트나 PowerShell ISE에서 결과 블록을 실행합니다.
   
+> [!TIP]
+> 사용자 지정 설정에 따라 실행 가능한 PowerShell 명령 블록을 생성 하려면이 [Microsoft Excel 구성 통합 문서](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)를 사용 합니다. 
+
 ```powershell
 # Set up key variables
 $locName="<your Azure location>"
@@ -91,7 +92,7 @@ DNS 이름을 확인하면 인터넷에서 페더레이션 서비스 이름을 �
     
 - 테이블 A, 가용성 집합
     
-고가용성 [페더레이션 인증 2 단계: 도메인 컨트롤러](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 와 테이블 R, V, S, I 및 A를 고가용성 [페더레이션 인증 1 단계: 구성 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)에서 정의한 테이블 M을 정의 합니다.
+[2 단계: 도메인 컨트롤러](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 와 테이블 R, V, S, I, A를 [1 단계: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)에서 정의한 표 M을 정의 했습니다.
   
 모든 적절한 값이 제공되면 Azure PowerShell 명령 프롬프트나 PowerShell ISE에서 결과 블록을 실행합니다.
   
@@ -157,7 +158,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ## <a name="next-step"></a>다음 단계
 
-[High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)을 사용하여 이 작업을 계속 구성합니다.
+[5 단계: Office 365에 대 한 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) 을 사용 하 여이 작업을 계속 구성 합니다.
   
 ## <a name="see-also"></a>참고 항목
 
