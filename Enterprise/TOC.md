@@ -158,11 +158,11 @@
 #### [온-프레미스 네트워크를 Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Azure IaaS에서 디렉터리 동기화 서버 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Azure에서 Office 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [고가용성 페더레이션 인증 1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [고가용성 페더레이션 인증 2단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [고가용성 페더레이션 인증 3단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [고가용성 페더레이션 인증 4단계: 웹 응용 프로그램 프록시 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [고가용성 페더레이션 인증 5단계: Office 365에 대해 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [2단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [3단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [4단계: 웹 응용 프로그램 프록시 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [5단계: 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Office 365 관리
 
