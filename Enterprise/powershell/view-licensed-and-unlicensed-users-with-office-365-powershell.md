@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다.
-ms.openlocfilehash: 3869be5a0f7527f516248e7e1ef0333707f49305
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f56a3fe7ece50c5f7fb345ccc0b843cacf185d28
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748416"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655860"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 
@@ -54,6 +54,10 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 ```powershell
 Get-MsolUser -All
 ```
+
+>[!Note]
+>PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
+>
 
 조직의 모든 허가 되지 않은 사용자 계정 목록을 보려면 다음 명령을 실행 합니다.
   

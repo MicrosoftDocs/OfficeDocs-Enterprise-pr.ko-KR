@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell을 사용 하 여 Office 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 8ee2c834063ea80388662c1f36f4524715f98a58
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747457"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655850"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
 
@@ -108,6 +108,10 @@ ENTERPRISEPREMIUM은 세 번째 행입니다. 따라서 인덱스 값은 (3-1) �
 ```powershell
 Get-MsolAccountSku
 ```
+
+>[!Note]
+>PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
+>
 
 결과에는 다음 정보가 포함됩니다.
   

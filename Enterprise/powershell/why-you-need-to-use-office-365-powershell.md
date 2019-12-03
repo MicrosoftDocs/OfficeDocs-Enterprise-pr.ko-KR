@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: 66782a9165c76c7e1d506e40fa1cacd6db0c6724
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3e2f0d4ee1c86e26ccf728412d419ae6ba3018e7
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747447"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655784"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
@@ -83,9 +83,11 @@ Microsoft 365 관리 센터는 유용한 정보를 많이 표시 하지만이는
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
-> [!NOTE]
-> 이 명령을 사용하려면 [Windows Azure Active Directory 모듈](https://docs.microsoft.com/powershell/module/Azuread/?view=azureadps-2.0)을 설치해야 합니다. 
-  
+
+>[!Note]
+>PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
+>
+
 다음과 같은 화면이 표시됩니다.
   
 ```powershell

@@ -3,7 +3,7 @@ title: Office 365 미국 정부 DoD 끝점
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/28/2019
+ms.date: 11/27/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: '요약: Office 365을 사용 하려면 인터넷에 연결 해야 합니다. 아래 끝점은 Office 365 U.S. 정부 DoD 요금제만 사용 하는 고객에 게 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: a883348d641ecc2ee22500c8fffc0f891986e7e9
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: 988c42153b97d55de4546c1bfc5ec4fedcd8e071
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038297"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655808"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 미국 정부 DoD 끝점
 
@@ -39,7 +39,7 @@ ms.locfileid: "38038297"
   
 |||
 |:-----|:-----|
-|**마지막 업데이트 날짜:** 2019년 10월 28일 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [로그 구독 변경](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** [JSON 형식의](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 전체 목록 <br/> |
+|**마지막 업데이트:** 11/27/2019- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** [JSON 형식의](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 전체 목록 <br/> |
    
  [Office 365 끝점 관리](managing-office-365-endpoints.md) 를 시작 하 여이 데이터를 사용 하 여 네트워크 연결을 관리 하기 위한 권장 사항을 이해 합니다. 끝점 데이터는 각 월의 시작 부분에서 새 IP 주소와 30 일이 지난 후에 게시 된 Url을 사용 하 여 업데이트 됩니다. 이렇게 하면 새 연결이 필요 하기 전에 아직 자동화 된 업데이트를 통해 프로세스를 완료할 수 있습니다. 지원 되는 에스컬레이션, 보안 문제 또는 기타 즉각적인 운영 요구 사항을 해결 해야 하는 경우에는 한 달 동안에도 끝점이 업데이트 될 수 있습니다. 아래이 페이지에 표시 된 데이터는 모두 REST 기반 웹 서비스에서 생성 됩니다. 스크립트나 네트워크 장치를 사용 하 여이 데이터에 액세스 하는 경우에는 [웹 서비스로](office-365-ip-web-service.md) 직접 이동 해야 합니다.
 
@@ -57,7 +57,7 @@ ms.locfileid: "38038297"
 
 - **주소**: 끝점 집합의 FQDN 또는 와일드카드 도메인 이름 및 IP 주소 범위를 보여줍니다. IP 주소 범위가 CIDR 형식이며 특정 네트워크에서 여러 개의 개별 IP 주소를 포함할 수 있다는 점에 유의하시기 바랍니다.
  
-- **포트**: 주소와 결합하여 네트워크 끝점을 이루는 TCP 또는 UDP 포트를 나열합니다. 다른 포트도 나열되어 있으면, IP 주소 범위에서 몇 가지 중복되는 경우도 있습니다.
+- **포트**: 네트워크 끝점을 형성하기 위해 주소와 결합된 TCP 또는 UDP 포트를 나열합니다. 다른 포트가 나열된 IP 주소 범위에서 일부 중복을 볼 수 있습니다.
  
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](./includes/office-365-u.s.-government-dod-endpoints.md)]
   

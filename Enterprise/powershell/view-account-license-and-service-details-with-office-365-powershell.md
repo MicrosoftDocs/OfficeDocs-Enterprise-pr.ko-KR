@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 PowerShell을 사용 하 여 사용자에 게 할당 된 Office 365 서비스를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f73acb5a107aa6ef970046a371b7a722a6abc8d9
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747477"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655870"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 계정 라이센스와 서비스 정보 보기
 
@@ -70,6 +70,9 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 ```powershell
 Get-MsolAccountSku
 ```
+>[!Note]
+>PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
+>
 
 다음으로, 각 라이선스 계획에서 사용할 수 있는 서비스와 이러한 서비스가 나열 되는 순서 (인덱스 번호)를 나열 하려면이 명령을 실행 합니다.
 
