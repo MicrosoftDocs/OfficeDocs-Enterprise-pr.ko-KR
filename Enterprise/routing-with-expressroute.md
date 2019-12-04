@@ -3,7 +3,7 @@ title: Office 365용 ExpressRoute를 사용한 라우팅
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure Express 경로를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 올바르게 이해 하려면 핵심 Express 경로 및 라우팅 도메인에 대 한 회사의 요구 사항을 파악 해야 합니다. 이를 통해 Office 365 고객이 의존할 수 있는 Express를 사용 하기 위한 기본이 설정 됩니다.
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031583"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813898"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 사용한 라우팅
+
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Azure Express 경로를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 올바르게 이해 하려면 핵심 Express 경로 및 [라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)에 대 한 회사의 [요구 사항을](https://azure.microsoft.com/documentation/articles/expressroute-routing/) 파악 해야 합니다. 이를 통해 Office 365 고객이 의존할 수 있는 Express를 사용 하기 위한 기본이 설정 됩니다.
   
@@ -73,19 +75,18 @@ Microsoft가 이러한 양방향 트래픽 흐름을 위해 네트워크로 다�
 
 2) 사용자 단위 회로 당 별도의 NAT IP 풀을 사용 하 고 인터넷 회로와는 별개입니다.
 
-3) Microsoft로 보급을 알린 경로는 사용자가 네트워크에 들어오는 경로를 나타내는 것이 아니라 Microsoft 네트워크의 모든 서버에서 네트워크 트래픽을 모집 합니다. 라우팅 시나리오가 정의 되 고 팀에서 잘 이해 하는 서버에 대 한 경로만 보급 합니다. 네트워크의 여러 Express 회선에서 별도의 IP 주소 경로 접두사를 보급 합니다. 
+3) Microsoft로 보급을 알린 경로는 사용자가 네트워크에 들어오는 경로를 나타내는 것이 아니라 Microsoft 네트워크의 모든 서버에서 네트워크 트래픽을 모집 합니다. 라우팅 시나리오가 정의 되 고 팀에서 잘 이해 하는 서버에 대 한 경로만 보급 합니다. 네트워크의 여러 Express 회선에서 별도의 IP 주소 경로 접두사를 보급 합니다.
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Express를 통해 라우팅할 응용 프로그램 및 기능 결정
 
 Microsoft 피어 링 라우팅 도메인을 사용 하 여 피어 링 관계를 구성 하 고 적절 한 액세스를 승인 하는 경우, Express를 통해 사용할 수 있는 모든 PaaS 및 SaaS 서비스를 볼 수 있습니다. Express로 디자인 된 Office 365 서비스는 [BGP 커뮤니티](https://aka.ms/bgpexpressroute365) 또는 [경로 필터로](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)관리할 수 있습니다.
   
 Office 365 비디오와 같은 다른 응용 프로그램은 Office 365 응용 프로그램입니다. 그러나 Office 365 비디오는 세 가지 다른 구성 요소, 포털, 스트리밍 서비스 및 콘텐츠 배달 네트워크로 구성 됩니다. 포털은 SharePoint Online 내에서, 스트리밍 서비스는 Azure Media Services 내에 있고, 콘텐츠 배달 네트워크는 Azure CDN 내에 있습니다. 다음 표에서는 이러한 구성 요소를 간략하게 보여 줍니다.
-  
-| |
+
 |**구성 요소**|**기본 응용 프로그램**|**SharePoint Online BGP 커뮤니티에 포함 되어 있나요?**|**사용**|
 |:-----|:-----|:-----|:-----|
 |Office 365 비디오 포털  <br/> |SharePoint Online  <br/> |예  <br/> |구성, 업로드  <br/> |
-|Office 365 비디오 스트리밍 서비스  <br/> |Azure 미디어 서비스  <br/> |아니요  <br/> |CDN에서 비디오를 사용할 수 없는 경우에 사용 되는 스트리밍 서비스  <br/> |
+|Office 365 비디오 스트리밍 서비스  <br/> |Azure Media Services  <br/> |아니요  <br/> |CDN에서 비디오를 사용할 수 없는 경우에 사용 되는 스트리밍 서비스  <br/> |
 |Office 365 비디오 콘텐츠 배달 네트워크  <br/> |Azure CDN  <br/> |아니요  <br/> |비디오 다운로드/스트리밍의 기본 원본입니다. [자세한 내용은 Office 365 비디오 네트워킹](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e)를 확인 하세요.  <br/> |
 
 Microsoft 피어 링을 사용 하 여 사용할 수 있는 각 Office 365 기능은 [office 365 끝점 문서](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) 에 응용 프로그램 유형별 및 FQDN으로 나열 되어 있습니다. 표에서 FQDN을 사용 하는 이유는 고객이 PAC 파일 또는 기타 프록시 구성을 사용 하 여 트래픽을 관리할 수 있도록 하는 것 이며, 예제 PAC 파일에 대 한 [Office 365 끝점을 관리](https://aka.ms/manageo365endpoints) 하는 가이드를 참조 하세요.
@@ -111,7 +112,7 @@ Microsoft 피어 링을 사용 하 여 사용할 수 있는 각 Office 365 기�
 
 |**인터넷 회로에만 보급 되는 와일드 카드 도메인**|**비트를 만들고 인터넷 회로에 게 보급 된 하위 FQDN**|
 |:-----|:-----|
-|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> 자동 검색\<-\>outlook.com  <br/> |

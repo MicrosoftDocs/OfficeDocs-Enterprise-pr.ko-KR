@@ -18,21 +18,22 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Office 365 IdFix 도구를 다운로드 하 고 실행 하 여 AD DS (Active Directory 도메인 서비스)를 Office 365에 동기화 하기 전에이를 정리 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 4a402cf245ebd20fbc5846908d521469ebfb90c1
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490758"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813536"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix 도구 다운로드 및 실행
 
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 IdFix는 Office 365와 동기화 하기 전에 AD DS (Active Directory 도메인 서비스) 도메인의 중복 및 서식 문제와 같은 오류를 식별 합니다. 
   
 이 작업을 성공적으로 완료 하려면 AD DS에서 사용자, 그룹 및 연락처 개체를 사용 하는 것이 좋습니다.
   
-이 작업을 완료할 수 없는 경우에는 몇 가지 다른 작업을 수행할 수 있습니다. 이러한 방법을 사용 하는 것이 쉬울 수도 있지만 더 오래 걸리거나 다른 단점이 있을 수 있습니다. 출력은 다음과 같습니다.
+이 작업을 완료할 수 없는 경우에는 몇 가지 다른 작업을 수행할 수 있습니다. 이러한 방법을 사용 하는 것이 쉬울 수도 있지만 더 오래 걸리거나 다른 단점이 있을 수 있습니다. 해당 지식 영역은 다음과 같습니다.
   
 - **IdFix를 실행 하지 않고 디렉터리 동기화 실행** 
 
@@ -77,7 +78,7 @@ IdFix를 실행 하는 데 사용 하는 사용자 계정에는 AD DS 도메인�
     
 3. **Idfix** 창에서 **추출을**선택한 다음 **모두 압축을 풉니다**. 기본적으로 IdFix는로 `C:\Users\<your user name>\Documents\IdFix`추출 됩니다. 
     
-6. **압축 해제**를 선택 합니다.
+6. **추출**을 선택합니다.
 
 이러한 지침은 Windows Server 2016를 실행 하는 서버에서 Internet Explorer를 사용 하 여 수행 했습니다. 다른 버전의 Windows 나 다른 브라우저를 사용 하는 경우에는 단계가 다를 수 있습니다.
     
@@ -109,7 +110,7 @@ IdFix를 다운로드 하 고 추출한 후에는이를 실행 하 여 AD DS 도
     
 8. **업데이트** 열에 제안 된 변경 내용에 동의 하는 경우 **작업** 열에서 idfix에서 변경을 구현 하기 위해 수행할 작업을 선택 하 고 **적용**을 클릭 합니다. **적용**을 클릭 하면 도구에서 디렉터리를 변경 합니다.
     
-    각 업데이트 후에는 **적용** 을 클릭할 필요가 없습니다. 대신, IdFix를 클릭 하기 전에 몇 가지 **** 오류를 수정 하 여이를 모두 동시에 변경할 수 있습니다. 오류 유형을 나열 하는 열 맨 위에 있는 **오류** 를 클릭 하 여 오류 유형별로 오류를 정렬할 수 있습니다. 
+    각 업데이트 후에는 **적용** 을 클릭할 필요가 없습니다. 대신, IdFix를 클릭 하기 전에 몇 가지 오류를 **수정 하 여** 이를 모두 동시에 변경할 수 있습니다. 오류 유형을 나열 하는 열 맨 위에 있는 **오류** 를 클릭 하 여 오류 유형별로 오류를 정렬할 수 있습니다. 
     
     한 가지 전략은 동일한 유형의 모든 오류를 수정 하는 것입니다. 예를 들어 먼저 모든 중복 항목을 수정 하 고 적용 합니다. 그런 다음 문자 서식 오류 등을 수정 합니다. IdFix 도구는 변경 내용을 적용할 때마다 사용자가 실수 한 경우 변경 내용을 취소 하는 데 사용할 수 있는 별도의 로그 파일을 만듭니다. [트랜잭션 로그](idfix-transaction-log.md) 는 idfix를 _\<추출한 폴더 (기본적으로 사용자 이름> \documents\idfix_ )에 저장 됩니다. 
     

@@ -3,7 +3,7 @@ title: Office 365 전역 관리자 계정 보호
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/16/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031613"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814606"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 전역 관리자 계정 보호
 
- **요약:** 전역 관리자 계정의 손상에 따라 공격 으로부터 Office 365 구독을 보호 합니다. 
-  
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+
 정보 수집 및 피싱 공격을 비롯 한 Office 365 구독의 보안 침해는 일반적으로 Office 365 전역 관리자 계정의 자격 증명을 손상 시켜 수행 합니다. 클라우드의 보안은 사용자와 Microsoft 간의 파트너 관계입니다.
   
 - Microsoft 클라우드 서비스는 신뢰 및 보안을 기반으로 구축 됩니다. Microsoft는 데이터와 응용 프로그램을 보호 하는 데 도움이 되는 보안 제어 및 기능을 제공 합니다.
@@ -67,7 +67,7 @@ Microsoft는 조직을 보호 하기 위한 기능을 제공 하지만, 이러�
     
   - 전역 관리자 역할을 제거 합니다.
     
-  - 해당 사용자의 작업 기능 및 책임에 해당 하는 관리자 역할을 계정에 할당 합니다. Office 365의 다양 한 관리자 역할에 대 한 자세한 내용은 [office 365 관리자 역할 정보](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)를 참조 하세요.
+  - 해당 사용자의 작업 기능 및 책임에 해당 하는 관리자 역할을 계정에 할당 합니다. Office 365의 다양 한 관리자 역할에 대 한 자세한 내용은 [관리 역할 정보](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)를 참조 하십시오.
     
 8. Office 365에서 로그 아웃 합니다.
     
@@ -100,13 +100,13 @@ MFA (multi-factor authentication)에는 계정 이름 및 암호 외에 추가 �
     
 클라우드에만 저장 된 사용자 계정을 사용 하는 소규모 회사 인 경우 (클라우드 전용 id 모델) 이러한 단계를 사용 하 여 전화 통화 또는 스마트 전화로 전송 되는 텍스트 메시지 확인 코드를 사용 하 여 MFA를 구성 합니다.
   
-1. [MFA를 사용 하도록 설정](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)합니다.
+1. [MFA를 설정](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)합니다.
     
 2. [Office 365에 대 한 2 단계 인증을 설정](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) 하 여 전화 통화 또는 문자 메시지에 대 한 각 전용 전역 관리자 계정을 확인 방법으로 구성 합니다. 
     
 Office 365 하이브리드 id 모델을 사용 하는 조직 규모가 큰 경우에는 더 많은 확인 옵션을 사용할 수 있습니다. 더 강력한 보조 인증 방법으로 보안 인프라가 이미 마련 되어 있는 경우 다음 단계를 사용 합니다.
   
-1. [MFA를 사용 하도록 설정](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)합니다.
+1. [MFA를 설정](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)합니다.
     
 2. [Office 365에 대 한 2 단계 인증을 설정](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) 하 여 적절 한 확인 방법에 대해 각 전용 전역 관리자 계정을 구성 합니다. 
     
@@ -114,8 +114,12 @@ Office 365 하이브리드 id 모델을 사용 하는 조직 규모가 큰 경�
   
 자세한 내용은 [Office 365 배포에 대한 다단계 인증 계획](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)을 참조하세요.
   
-MFA 및 PowerShell을 사용 하 여 Office 365 서비스에 연결 하려면 [이 문서](https://blogs.technet.microsoft.com/solutions_advisory_board/2017/04/27/connect-to-office-365-services-with-multifactor-authentication-mfa-and-powershell/)를 참조 하세요.
+MFA 및 PowerShell을 사용 하 여 Office 365 서비스에 연결 하려면 다음 문서를 참조 하세요.
 
+- [사용자 계정, 그룹 및 라이선스에 대 한 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
+- [비즈니스용 Skype Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>엔터프라이즈 조직에 대 한 추가 보호
 
@@ -135,14 +139,14 @@ MFA 및 PowerShell을 사용 하 여 Office 365 서비스에 연결 하려면 [�
   
 PIM 및이 프로세스를 사용 하면 악의적인 사용자가 공격 하 고 사용할 수 있는 전역 관리자 계정의 시간이 크게 줄어듭니다.
   
-자세한 내용은 [Configure AZURE AD 권한이 있는 Id 관리](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)를 참조 하세요.
+자세한 내용은 [AZURE AD 권한 Id 관리](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)를 참조 하세요.
   
 > [!NOTE]
-> PIM은 EMS (Enterprise Mobility + Security) E5에 포함 된 Azure AD Premium P2와 함께 제공 되거나, 전역 관리자 계정에 대 한 개별 라이선스를 구입할 수 있습니다. 
+> PIM은 Microsoft 365 Enterprise E5 또는 EMS (Enterprise Mobility + Security) e 5에 포함 된 Azure AD Premium P2에 제공 되거나, 전역 관리자 계정에 대 한 개별 라이선스를 구입할 수 있습니다. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Office 365 용 SIEM (보안 정보 및 이벤트 관리) 소프트웨어
 
-SIEM 소프트웨어 서버에서 실행 되는 응용 프로그램 및 네트워크 하드웨어에 의해 생성 되는 이벤트에 대 한 실시간 분석을 수행 합니다. SIEM 서버에서 분석 및 보고 기능에 Office 365 보안 경고 및 이벤트를 포함 하도록 허용 하려면 Azure AD를 사용자에 게 통합 합니다. [Azure 리소스에서 SIEM 시스템으로의 로그 통합](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)을 참조 하세요.
+SIEM 소프트웨어 서버에서 실행 되는 응용 프로그램 및 네트워크 하드웨어에 의해 생성 되는 이벤트에 대 한 실시간 분석을 수행 합니다. SIEM 서버에서 분석 및 보고 기능에 Office 365 보안 경고 및 이벤트를 포함 하도록 허용 하려면 Azure AD를 사용자에 게 통합 합니다. [Azure 로그 통합 소개를](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)참조 하세요.
 
 ## <a name="next-step"></a>다음 단계
 

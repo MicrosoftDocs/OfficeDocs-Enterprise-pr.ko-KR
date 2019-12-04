@@ -3,6 +3,7 @@ title: Office 365에서 디렉터리 동기화 설정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,14 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365와 온-프레미스 Active Directory 간에 디렉터리 동기화를 설정 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702249"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814596"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365에서 디렉터리 동기화 설정
+
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365에서는 azure Active Directory (Azure AD) 테 넌 트를 사용 하 여 인증 및 클라우드 기반 리소스에 액세스 하기 위한 사용 권한을 위한 id를 저장 하 고 관리 합니다. 
 
@@ -90,8 +93,8 @@ Azure AD Connect에 대 한 하드웨어, 소프트웨어, 계정 및 사용 권
 
 ## <a name="3-finish-setting-up-domains"></a>3. 도메인 설정 마침
 
-DNS 레코드를 관리 하 여 도메인 설정을 완료 하려면 [Office 365에 대 한 dns 레코드 만들기](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23) 의 단계를 수행 합니다.
+DNS 레코드를 관리 하 여 도메인 설정을 완료 하려면 [Office 365에 대 한 dns 레코드 만들기](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 의 단계를 수행 합니다.
 
 ## <a name="next-step"></a>다음 단계
 
-[사용자 계정에 라이선스를 할당](assign-licenses-to-user-accounts.md)합니다.
+[사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts.md)

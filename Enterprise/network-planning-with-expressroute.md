@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
-ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032123"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814636"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 통한 네트워크 계획
+
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
   

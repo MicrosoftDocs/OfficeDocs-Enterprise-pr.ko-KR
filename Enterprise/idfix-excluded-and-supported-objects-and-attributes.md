@@ -16,14 +16,17 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: IdFix 도구에서 제외 및 지원 되는 특성을 나열 합니다.
-ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e57507688fe1efd21bb629b4fad297129eff55d6
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067274"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813928"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>IdFix 제외 및 지원 개체/특성
+
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+
 IdFix에서 유지 관리 되는 두 가지 규칙 집합은 다음과 같습니다. 다중 테 넌 트 및 전용/ITAR 이때 두 규칙 집합은 동일한 개체, 특성 및 특성 값을 해당 검색에서 제외 합니다. 이는 이후 릴리스에서 변경 될 수 있습니다.
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>IdFix에서 사용 되는 다중 테 넌 트 및 전용 오류 제외
@@ -31,19 +34,19 @@ IdFix에서 유지 관리 되는 두 가지 규칙 집합은 다음과 같습니
   
 ### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>IdFix 검색 중에 제외 되는 개체, 특성 및 값
 
-|**배타적**|**예제**|
+|**배타적**|**예**|
 |:-----|:-----|
 |Admini\* |관리자 |
-|CAS_{\*  |CAS_{fe35fc98e69e4d08} |
+|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |체제\* ||
 |HTTPConnector\*  |HTTPConnector |
 |krbtgt\* |ms-DS-KrbTgt-링크 |
-|iusr\* |iusr_ *machinename* |
+|iusr_\* |iusr_ *machinename* |
 |iwam\*  |IWAM_ *machinename* |
 |msol\* |MSOL_AD_SYNC |
-|지원\* ||
+|support_\* ||
 |SystemMailbox\* |Systemmailbox { *GUID* }|
 |WWIOadmini\*  ||
 |\*$ ||

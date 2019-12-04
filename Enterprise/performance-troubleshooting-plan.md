@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: SharePoint Online, 비즈니스용 OneDrive, Exchange Online, 비즈니스용 Skype Online, 클라이언트 컴퓨터 간의 지연, 중단 및 성능 저하를 식별 하 고 해결 하기 위해 수행 해야 하는 단계를 알아야 합니까? 지원을 요청 하기 전에이 문서를 통해 Office 365 성능 문제를 해결 하 고 일반적인 몇 가지 문제를 해결 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031133"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814626"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 성능 문제 해결 계획
 
@@ -250,7 +250,7 @@ Netmon에서 라운드트립에 대 한 시간 오프셋 필드를 확인 합니
 
 이 네트워크 계획에서 사용할 수 있는 Office 365에 대 한 대역폭 계산기 [와 office 365의 성능 조정](network-planning-and-performance.md) 페이지를 제공 합니다.  
 
-연결 속도 또는 ISP 연결의 대역폭을 측정 해야 하나요? 이 사이트 (또는 이와 같은 사이트): [Speedtest.nethttp 공식 사이트](https://www.speedtest.net/)및를 [테스트](https://www.pingtest.net/)합니다.
+연결 속도 또는 ISP 연결의 대역폭을 측정 해야 하나요? 이 사이트 (또는 이와 같은 사이트): [Speedtest.nethttp 공식 사이트](https://www.speedtest.net/)를 선택 하거나, 구 **속도 테스트**를 위해 즐겨찾기 검색 엔진을 쿼리 합니다.
 
 #### <a name="tools"></a>도구
 

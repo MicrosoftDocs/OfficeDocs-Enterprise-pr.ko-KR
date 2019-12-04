@@ -16,14 +16,17 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Office 365와 동기화 하기 전에 IdFix를 사용 하 여 온-프레미스 디렉터리를 준비 하 고 정리 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490791"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814616"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix 도구를 사용하여 Office 365와의 동기화를 위한 디렉터리 특성 준비
+
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+
 이 항목에는 IdFix 도구 실행에 대 한 자세한 지침, 발생할 수 있는 몇 가지 일반적인 오류, 제안 되는 수정 작업, 예제 및 많은 오류가 발생 했을 때 수행 해야 하는 상황에 대 한 모범 사례가 포함 되어 있습니다.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>IdFix GUI를 사용 하 여 디렉터리의 오류 수정
@@ -47,7 +50,7 @@ ms.locfileid: "34490791"
 ## <a name="common-errors-and-fixes-detected-by-idfix"></a>IdFix에서 검색 하는 일반적인 오류 및 수정 사항
 다음 표에서는 IdFix에서 검색 되는 오류에 대해 설명 하 고 도구에서 가장 일반적으로 제안 되는 수정 방법을 제공 하며, 경우에 따라 수정 방법의 예를 제공 합니다.
 
-|**오류**|**오류 유형 설명**|**제안 되는 수정 방법**|**예제**|
+|**오류**|**오류 유형 설명**|**제안 되는 수정 방법**|**예**|
 |:-----|:-----|:-----|:-----|
 |**문자와** | 잘못 된 문자가 있습니다. 값이 잘못 된 문자를 포함 하는 경우 | **업데이트** 열에 표시 되는 오류에 대 한 제안 수정 사항에는 잘못 된 문자가 제거 된 값이 표시 됩니다.  <br/> | 유효한 메일 주소의 끝에 있는 후행 공백은 다음과 같이 잘못 된 문자입니다.  <br/> " `user@contoso.com` "  <br/> 유효한 메일 주소 앞에 오는 공백이 잘못 된 문자입니다.  <br/> " ` user@contoso.com `"  <br/>  `ú` 문자가 잘못 된 문자입니다. |
 |**복제** | 항목을 중복 합니다. 값이 쿼리 범위 내에 중복 됩니다. 중복 된 값은 모두 오류로 표시 됩니다. | 값을 편집 하거나 제거 하 여 중복을 제거 합니다. 이 도구는 중복에 대 한 제안 된 수정 프로그램을 제공 하지 않습니다. 대신 두 개 이상의 중복 항목 중 하나를 선택 하 고 중복 항목이 나 항목을 삭제 해야 합니다. ||
@@ -62,7 +65,7 @@ ms.locfileid: "34490791"
 ## <a name="operations-you-can-perform-by-using-idfix"></a>IdFix를 사용 하 여 수행할 수 있는 작업
 오류를 수정 하려면 **작업** 드롭다운 목록에서 옵션을 선택 합니다. 다음 표에는 IdFix 도구를 사용 하 여 특성에 대해 수행할 수 있는 **작업** 에 대 한 설명이 나와 있습니다. **ACTION** 열을 비워 두면 idfix 도구는 디렉터리에서 해당 특정 오류에 대 한 어떠한 작업도 수행 하지 않습니다. 
 
-|**동작은**|**작업 설명**|**예제**|
+|**동작은**|**작업 설명**|**예**|
 |:-----|:-----|:-----|
 |**작업이** | 원래 값을 사용할 수 있으며 오류로 식별 되더라도 변경 하지 않아야 합니다. | 두 사용자에 게는 proxyAddress가 중복으로 식별 됩니다. 한 명만 메일 배달에 대 한 값을 사용할 수 있습니다. 사용자에 게 올바른 값이 **완료**된 것으로 표시 합니다. |
 |**제거** | 특성 값이 원본 개체에서 삭제 됩니다. 예 `proxyAddresses`를 들어 다중값 특성의 경우에는 표시 된 개별 값만 삭제 됩니다. | 두 사용자에 게는 proxyAddress가 중복으로 식별 됩니다. 한 명만 메일 배달에 대 한 값을 사용할 수 있습니다. 사용자에 게 중복 값을 **제거**합니다 .를 표시 합니다. |
