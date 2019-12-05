@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 디렉터리 동기화 및이 방법을 사용할 경우의 장기적인 이점을 사용 하 여 사용자를 Office 365에 프로 비전 하도록 준비 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814186"
+ms.locfileid: "39825190"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365에 대 한 디렉터리 동기화 준비
 
@@ -57,10 +57,7 @@ Azure AD 테 넌 트에 AD DS를 동기화 하기 전에 AD DS를 정리 해야 
 AD DS에서 Office 365 라이선스가 할당 될 각 사용자 계정에 대해 다음과 같은 정리 작업을 완료 합니다.
   
 1. **ProxyAddresses** 특성에 유효한 전자 메일 주소와 고유한 주소가 있는지 확인 합니다. 
-
-  >[!Note]
-  >전자 메일 주소에 물결표 (~)가 있는 문자는 무시 됩니다. 이로 인해 중복 된 proxyAddresses에 대 한 가양성 디렉터리 동기화 오류가 발생할 수 있습니다.
-    
+  
 2. **ProxyAddresses** 특성에서 중복 된 값을 모두 제거 합니다. 
     
 3.  가능한 경우 사용자의 **user** 개체에 있는 **userPrincipalName** 특성에 대 한 유효한 값 및 고유함을 확인 합니다. 최상의 동기화 환경을 위해 AD DS UPN이 Azure AD UPN과 일치 하는지 확인 합니다. 사용자에 게 **userPrincipalName** 특성에 대 한 값이 없는 경우에는 **사용자** 개체에 **sAMAccountName** 특성에 대 한 유효한 값과 고유 정보가 있어야 합니다. **UserPrincipalName** 특성에서 중복 된 값을 모두 제거 합니다. 

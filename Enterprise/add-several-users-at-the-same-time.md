@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '스프레드시트 또는 다른 CSV로 서식이 지정 된 파일의 목록에서 비즈니스용 Office 365에 여러 사용자를 추가하는 방법을 알아봅니다. YouTube에서 Office 365에 계정을 추가하는 방법을 설명하는 비디오를 보세요. 이 프로세스 종료 시, 계정이 있는 각 사용자에게는 Office 365 사서함이 있습니다. '
-ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 283a45750c6b5d51f96dae2cac12acf3f47b98fe
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813496"
+ms.locfileid: "39825200"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
 
@@ -71,14 +71,7 @@ ms.locfileid: "39813496"
     
 6. 
             **View your result**(결과 보기) 대화 상자에서는 결과를 자신이나 다른 사용자(암호는 일반 텍스트가 됨)에 보내도록 선택할 수 있으며, 만들어진 사용자의 수와 새 사용자에게 할당하기 위해 추가 라이선스를 구입해야 하는지를 알 수도 있습니다. 
-    
-## <a name="watch-the-video"></a>비디오 보기
-<a name="bk_preview"> </a>
 
- 많은 사용자를 추가하는 방법을 보여 주는 짧은 비디오를 보세요. 
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/f4e7f161-8ae6-4264-a429-9297b539a8de?autoplay=false]
-  
 ## <a name="next-steps"></a>다음 단계
 <a name="bk_preview"> </a>
 
