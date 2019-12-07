@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029162"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886487"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
@@ -67,7 +67,7 @@ Office 365 그룹 게스트 설정을 설정 하려면
 
 조직 수준 설정에 따라 개별 사이트에 사용할 수 있는 설정이 결정 됩니다. 사이트 설정은 조직 수준 설정 보다는 더 이상 허용 되지 않습니다.
 
-익명 사용자와 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
+인증 되지 않은 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
 
 ![SharePoint 조직 수준 공유 설정의 스크린샷](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 사이트 수준 공유 설정을 확인 하 여 해당 사이트에 대해 원하는 액세스 유형을 허용 하는지 확인 합니다. 예를 들어 조직 수준 설정을 모든 **사용자**로 설정 했지만 모든 게스트가이 사이트에 대해 인증을 받으려는 경우에는 사이트 수준 공유 설정이 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다.
 
-사이트는 익명 사용자 (**모든 사용자** 설정)와 공유할 수 없지만 개별 파일 및 폴더는 사용할 수 있습니다.
+사이트를 인증 되지 않은 사용자 (**사용자** 설정)와 공유할 수는 없지만 개별 파일 및 폴더를 사용할 수 있습니다.
 
 ![SharePoint 사이트 외부 공유 설정 스크린샷](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,7 +129,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 ## <a name="see-also"></a>참고 항목
 
-[익명 사용자와 파일 및 폴더를 공유하는 최상의 방법](best-practices-anonymous-sharing.md)
+[인증 되지 않은 사용자와 파일 및 폴더를 공유 하기 위한 최상의 방법](best-practices-anonymous-sharing.md)
 
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 

@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: 게스트 사용자와 공동 작업용 Office 365를 구성 하는 방법을 알아봅니다.
-ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 1af8a1c810047e4f91b0bda31934742884f6645e
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076182"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886447"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>조직 외부의 사용자와 공동 작업
 
@@ -26,7 +26,7 @@ ms.locfileid: "38076182"
 
 ## <a name="see-also"></a>참고 항목
 
-[익명 사용자와 파일 및 폴더를 공유하는 최상의 방법](best-practices-anonymous-sharing.md)
+[인증 되지 않은 사용자와 파일 및 폴더를 공유 하기 위한 최상의 방법](best-practices-anonymous-sharing.md)
 
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 

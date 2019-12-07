@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 팀에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029172"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886527"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>게스트와 팀으로 공동 작업하기
 
@@ -87,7 +87,7 @@ Office 365 그룹 게스트 설정을 설정 하려면
 
 조직 수준 설정에 따라 팀에 연결 된 사이트를 포함 하 여 개별 사이트에서 사용할 수 있는 설정이 결정 됩니다. 사이트 설정은 조직 수준 설정 보다는 더 이상 허용 되지 않습니다.
 
-익명 사용자와 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
+인증 되지 않은 사용자와 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
 
 ![SharePoint 조직 수준 공유 설정의 스크린샷](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -108,7 +108,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 사용자가 파일 및 폴더를 공유할 때 기본적으로 선택 되는 링크 유형을 선택 합니다.
 
-- **링크를 포함 하는 모든 사용자** 익명 사용자와 많은 파일 및 폴더를 공유할 것으로 예상 되는 경우이 옵션을 선택 합니다. *모든* 링크를 허용 하지만 실수로 익명 공유가 염려 되는 경우에는 다른 옵션 중 하나를 기본값으로 사용 하는 것이 좋습니다. 이 링크 형식은 **모든 사용자** 가 공유 하도록 설정한 경우에만 사용할 수 있습니다.
+- **링크를 포함 하는 모든 사용자** 인증 되지 않은 사용자와 많은 파일 및 폴더를 공유할 것으로 예상 되는 경우이 옵션을 선택 합니다. *모든* 링크를 허용 하지만 실수로 인증 되지 않은 공유가 발생 하는 것이 염려 되는 경우에는 다른 옵션 중 하나를 기본값으로 사용 하는 것이 좋습니다. 이 링크 형식은 **모든 사용자** 가 공유 하도록 설정한 경우에만 사용할 수 있습니다.
 - **조직의 사용자만** 조직 내부 사용자와 파일 및 폴더 공유를 사용할 것으로 예상 되는 경우이 옵션을 선택 합니다.
 - **특정 사용자** -게스트와 파일 및 폴더 공유를 많이 수행 해야 하는 경우이 옵션을 고려 하세요. 이 유형의 링크는 게스트에서 작동 하며 인증을 요구 합니다.
  
@@ -167,7 +167,7 @@ SharePoint 조직 수준 기본 링크 설정을 설정 하려면
 
 ## <a name="see-also"></a>참고 항목
 
-[익명 사용자와 파일 및 폴더를 공유하는 최상의 방법](best-practices-anonymous-sharing.md)
+[인증 되지 않은 사용자와 파일 및 폴더를 공유 하기 위한 최상의 방법](best-practices-anonymous-sharing.md)
 
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 
