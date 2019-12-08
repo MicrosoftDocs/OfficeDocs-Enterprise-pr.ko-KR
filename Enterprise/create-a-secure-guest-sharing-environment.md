@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: Microsoft 365에서 보안 게스트 공유 환경 만드는 방법에 대해 알아보세요.
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077711"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886517"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>보안 게스트 공유 환경 만들기
 
@@ -308,7 +308,7 @@ Azure AD의 액세스 검토로 다양한 팀과 그룹에 대한 주기적 사�
 12. 사용자 지정 알림 메시지에는 *이 파일은 극비 항목입니다. 회사 정책상 게스트와 공유하는 것이 금지됩니다.* 를 입력합니다.
 13. **만들기**를 클릭합니다.
 
-이 정책은 *특정 사용자* 링크를 사용하여 공유된 파일에 대한 액세스를 제거한다는 것에 주의하는 것이 중요합니다. 익명(*모든 사용자*) 링크에서 액세스를 제거하지는 않습니다. 게스트가 전체 사이트나 팀의 구성원일 경우에도 액세스가 제거되지 않습니다. 게스트 구성원이 포함된 사이트 또는 팀의 극비 문서를 마련할 계획이면 [팀 내 비공개 채널](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)을 사용하고 비공개 채널의 조직 구성원에게만 허용하는 방법을 고려하세요.
+이 정책은 *특정 사용자* 링크를 사용하여 공유된 파일에 대한 액세스를 제거한다는 것에 주의하는 것이 중요합니다. 인증되지 않은 (*모든 사용자*) 링크에서 액세스를 제거하지는 않습니다. 게스트가 전체 사이트나 팀의 구성원일 경우에도 액세스가 제거되지 않습니다. 게스트 구성원이 포함된 사이트 또는 팀의 극비 문서를 마련할 계획이면 [팀 내 비공개 채널](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)을 사용하고 비공개 채널의 조직 구성원에게만 허용하는 방법을 고려하세요.
 
 ## <a name="test-the-solution"></a>솔루션 테스트
 
@@ -322,4 +322,4 @@ Azure AD의 액세스 검토로 다양한 팀과 그룹에 대한 주기적 사�
 
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 
-[익명 사용자와 파일 및 폴더를 공유하는 최상의 방법](best-practices-anonymous-sharing.md)
+[인증되지 않은 사용자와 파일 및 폴더를 공유하는 모범 사례](best-practices-anonymous-sharing.md)

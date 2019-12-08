@@ -8,30 +8,30 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: 파일을 게스트와 공유할 때 실수로 발생하는 정보 노출을 제한하는 방법을 알아보세요.
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108374"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886477"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한
 
 파일 및 폴더를 게스트와 공유할 때 기밀 정보를 우발적으로 공유하게 되는 가능성을 줄일 수 있는 다양한 옵션이 있습니다. 이 문서에서 설명하는 옵션 중에서 조직의 필요 사항에 가장 적합한 방법을 선택할 수 있습니다.
 
-## <a name="use-best-practices-for-anyone-links"></a>Anyone 링크 모범 사례 활용
+## <a name="use-best-practices-for-anyone-links"></a>모든 사용자 링크 모범 사례 활용
 
-조직의 사용자가 익명 공유를 수행해야 하지만 인증되지 않은 게스트가 콘텐츠를 수정하는 것이 우려되는 경우 [익명 공유 모범 사례](best-practices-anonymous-sharing.md)를 읽고 조직에서의 익명 공유 작업 방법에 대한 지침을 학습하세요.
+조직의 사용자가 인증되지 않은 공유를 수행해야 하지만 인증되지 않은 게스트가 콘텐츠를 수정하는 것이 우려되는 경우 [인증되지 않은 공유 모범 사례](best-practices-anonymous-sharing.md)를 읽고 조직에서의 인증되지 않은 공유 작업 방법에 대한 지침을 학습하세요.
 
-## <a name="turn-off-anyone-links"></a>Anyone 링크 해제
+## <a name="turn-off-anyone-links"></a>모든 사용자 링크 해제
 
-Anyone 링크는 가장 쉽게 공유하는 방법이며 사용자가 IT 부서의 통제 밖에 있는 다른 솔루션을 찾는 데 위험을 줄여주기에 *Anyone* 링크를 활성화 상태로 둘 것을 권장합니다. Anyone*링크는 다른 사용자에게 전달될 수 있지만 파일 액세스는 링크가 있는 사용자만할 수 있습니다.
+Anyone 링크는 가장 쉽게 공유하는 방법이며 사용자가 IT 부서의 통제 밖에 있는 다른 솔루션을 찾는 데 위험을 줄여주기에 *Anyone* 링크를 활성화 상태로 둘 것을 권장합니다. *Anyone*링크는 다른 사용자에게 전달될 수 있지만 파일 액세스는 링크가 있는 사용자만할 수 있습니다.
 
-게스트가 SharePoint, 그룹 또는 팀의 콘텐츠에 액세스할 때 항상 인증을 하게 하려면 *Anyone* 공유를 해제합니다. 이는 사용자의 콘텐츠 익명 공유를 방지합니다.
+게스트가 SharePoint, 그룹 또는 팀의 콘텐츠에 액세스할 때 항상 인증을 하게 하려면 *모든 사용자* 공유를 해제합니다. 이렇게 하면 사용자가 인증되지 않은 콘텐츠를 공유할 수 없게 됩니다.
 
-*Anyone* 링크를 비활성화하는 경우 사용자는 여전히 *특정 사용자* 링크를 사용하여 쉽게 게스트와 공유할 수 있습니다. 이 경우 모든 게스트가 공유 콘텐츠에 액세스를 하려면 먼저 인증을 해야합니다.
+*모든 사용자* 링크를 비활성화하는 경우 사용자는 여전히 *특정 사용자* 링크를 사용하여 쉽게 게스트와 공유할 수 있습니다. 이 경우 모든 게스트가 공유 콘텐츠에 액세스를 하려면 먼저 인증을 해야합니다.
 
-필요에 따라 특정 사이트나 조직 전체에 대해 Anyone* 링크를 비활성화시킬 수 있습니다.
+필요에 따라 특정 사이트나 조직 전체에 대해 *Anyone* 링크를 비활성화시킬 수 있습니다.
 
 조직에 대해 *Anyone* 링크를 해제 하려면
 1. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭합니다.
@@ -61,7 +61,7 @@ Anyone 링크는 가장 쉽게 공유하는 방법이며 사용자가 IT 부서�
 1. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭합니다.
 2. **외부 공유에 대한 고급 설정**에서 **도메인 별 외부 공유 제한** 확인란을 선택합니다.
 3. **도메인 추가**를 클릭합니다.
-4. 도메인을 차단할지를 선택하고 도메인을 입력한 후 확인**을 클릭합니다.</br>
+4. 도메인을 차단할지를 선택하고 도메인을 입력한 후 **확인**을 클릭합니다.</br>
    ![도메인 별 SharePoint 외부 공유 제한 스크린샷](media/sharepoint-sharing-block-domain.png)
 5. **저장**을 클릭합니다.
 
