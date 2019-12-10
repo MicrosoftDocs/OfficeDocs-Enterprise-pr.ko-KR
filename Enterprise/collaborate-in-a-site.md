@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886487"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919261"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
@@ -42,7 +42,7 @@ Microsoft 365의 공유는 Azure Active Directory의 조직 관계 설정에 따
 3. **개요** 창에서 **조직 관계**를 클릭 합니다.
 4. **조직 관계** 창에서 **설정을**클릭 합니다.
 5. **Guest inviter 역할의 관리자 및 사용자가 초대** 를 하 고 **구성원은 초대** 를 할 수 있는지 확인 하 고 둘 다 **예**로 설정 합니다.
-6. 변경한 경우 **저장**을 클릭 합니다.
+6. 변경한 내용이 있으면 **저장**을 클릭합니다.
 
 **공동 작업 제한** 섹션의 설정을 확인 합니다. 공동 작업 하려는 게스트의 도메인이 차단 되지 않았는지 확인 합니다.
 
@@ -67,7 +67,7 @@ Office 365 그룹 게스트 설정을 설정 하려면
 
 조직 수준 설정에 따라 개별 사이트에 사용할 수 있는 설정이 결정 됩니다. 사이트 설정은 조직 수준 설정 보다는 더 이상 허용 되지 않습니다.
 
-인증 되지 않은 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 모든 게스트가 인증을 받도록 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
+인증 되지 않은 파일 및 폴더 공유를 허용 하려면 **모든 사용자**를 선택 합니다. 조직 외부의 모든 사용자가 인증을 받아야 하는 것을 확인 하려면 **신규 및 기존 게스트**를 선택 합니다. 조직의 모든 사이트에 필요한 가장 관대 한 설정을 선택 합니다.
 
 ![SharePoint 조직 수준 공유 설정의 스크린샷](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -75,9 +75,9 @@ Office 365 그룹 게스트 설정을 설정 하려면
 SharePoint 조직 수준 공유 설정을 설정 하려면
 
 1. Microsoft 365 관리 센터의 왼쪽 탐색에 있는 **관리 센터**에서 **SharePoint**를 클릭 합니다.
-2. 왼쪽 탐색 창의 SharePoint 관리 센터에서 **공유**를 클릭합니다.
+2. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭합니다.
 3. SharePoint 용 외부 공유가 **사용자** 또는 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다.
-4. 변경한 경우 **저장**을 클릭 합니다.
+4. 변경한 내용이 있으면 **저장**을 클릭합니다.
 
 ## <a name="create-a-site"></a>사이트 만들기
 
@@ -103,11 +103,11 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 ![SharePoint 사이트 외부 공유 설정 스크린샷](media/sharepoint-site-external-sharing-settings.png)
 
 사이트 수준 공유 설정을 설정 하려면
-1. SharePoint 관리 센터의 왼쪽 탐색 창에서 **사이트** 를 확장 하 고 **활성 사이트**를 클릭 합니다.
+1. SharePoint 관리 센터의 왼쪽 탐색 창에서 **사이트**를 확장시키고 **Active 사이트**를 클릭합니다.
 2. 방금 만든 사이트를 선택 합니다.
-3. 리본 메뉴에서 **공유**를 클릭 합니다.
+3. 리본 메뉴에서 **공유**를 클릭합니다.
 4. 공유가 **사용자** 또는 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다.
-5. 변경한 경우 **저장**을 클릭 합니다.
+5. 변경한 내용이 있으면 **저장**을 클릭합니다.
 
 ## <a name="invite-users"></a>사용자 초대
 
@@ -129,7 +129,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 ## <a name="see-also"></a>참고 항목
 
-[인증 되지 않은 사용자와 파일 및 폴더를 공유 하기 위한 최상의 방법](best-practices-anonymous-sharing.md)
+[인증되지 않은 사용자와 파일 및 폴더를 공유하는 모범 사례](best-practices-anonymous-sharing.md)
 
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 
