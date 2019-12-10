@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: 인증되지 않은 사용자와 파일 및 폴더를 공유하는 모범 사례를 알아봅니다.
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886507"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919140"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>인증되지 않은 사용자와 파일 및 폴더를 공유하는 모범 사례
 
-인증되지 않은 공유(*모든 사용자* 링크)는 다양한 상황에서 편리하며 유용합니다. *모든사용자* 링크는 가장 간편하게 공유하는 방법입니다. 게스트가 인증 없이 링크를 열 수 있으며 다른 사용자에게 무료로 전달할 수 있습니다.
+인증되지 않은 공유(*모든 사용자* 링크)는 다양한 상황에서 편리하며 유용합니다. *모든 사용자* 링크는 가장 간편하게 공유하는 방법입니다. 사용자가 인증 없이 링크를 열 수 있으며 다른 사용자에게 무료로 전달할 수 있습니다.
 
 일반적으로 조직의 모든 콘텐츠가 인증되지 않은 공유에 적합하지는 않습니다. 이 문서에서는 사용자가 파일 및 폴더의 인증되지 않은 공유를 할 수 있지만, 조직의 콘텐츠를 보호하는 데 도움이 되는 보호 기능도 포함된 환경을 만들 수 있는 옵션을 다룹니다.
 
@@ -51,7 +51,7 @@ ms.locfileid: "39886507"
 3. **"모든 사용자" 링크의 고급 설정**에서 사용할 파일 및 폴더 사용 권한을 선택합니다.</br>
    ![SharePoint 조직 수준 모든 사용자 링크 사용 권한 설정 스크린샷](media/sharepoint-organization-anyone-link-permissions.png)
 
-*모든 사용자* 링크가 **보기**로 설정된 경우, 게스트와 파일 및 폴더를 계속 공유하고 *특정 사용자* 링크를 사용하여 편집 권한을 부여할 수 있습니다. 이러한 링크를 사용하여 게스트가 인증해야 하며, 이 링크와 공유되는 파일 및 폴더에서 게스트 활동을 추적하고 감사할 수 있습니다.
+*모든 사용자* 링크가 **보기**로 설정된 경우, 게스트와 파일 및 폴더를 계속 공유하고 *특정 사용자* 링크를 사용하여 편집 권한을 부여할 수 있습니다. 이러한 링크를 사용하려면 조직 외부의 사용자가 게스트로 인증해야 하며, 이 링크와 공유되는 파일 및 폴더에서 게스트 활동을 추적하고 감사할 수 있습니다.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>기본 링크 유형이 조직에 있는 사용자에 대해서만 작동하도록 설정합니다.
 

@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365에서 사용할 수 있는 게스트 공유 설정에 대해 알아봅니다.
-ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076402"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919382"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 게스트 공유 설정 참조
 
-이 문서에서는 Teams, Office 365 그룹, SharePoint 및 OneDrive와 같이 Microsoft 365 작업에 대한 게스트 공유에 영향을 줄 수 있는 다양한 설정에 대한 참조를 제공합니다. 이러한 설정은 Azure Active Directory, Microsoft 365, Teams 및 SharePoint 관리 센터에 있습니다.
+이 문서에서는 Teams, Office 365 그룹, SharePoint 및 OneDrive와 같이 Microsoft 365 작업에서 조직 외부 사용자와 공유하는 데 영향을 줄 수 있는 다양한 설정에 대한 참조를 제공합니다. 이러한 설정은 Azure Active Directory, Microsoft 365, Teams 및 SharePoint 관리 센터에 있습니다.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
