@@ -3,7 +3,7 @@ title: 데이터 이동 도중 및 이후
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250504"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959283"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -30,7 +30,7 @@ ms.locfileid: "39250504"
 각 Exchange Online, SharePoint Online 및 비즈니스용 Skype에 대한 이동이 완료되면 Office 365 메시지 센터에서 확인 알림을 찾아보세요. 아래 표에 표시된 것처럼, 등록 기간이 끝나고 특정 지역의 모든 고객에 대해 요청된 모든 데이터 이동을 완료하는 데 24개월까지 걸릴 수 있습니다. 이동 후 테 넌 트에 문제가 표시 되는 경우 [Office 365 지원](https://go.microsoft.com/fwlink/p/?LinkID=522459) 서비스에 문의 하 여 도움을 받으십시오. 
   
 
-|**고객의 대금 청구 주소**|**모든 이동 완료 시기**|
+|**등록 국가가 있는 고객**|**모든 이동 완료 시기**|
 |:-----|:-----|
 |오스트레일리아, 뉴질랜드, 피지  <br/> |2017년 10월 31일  <br/> |
 |일본  <br/> |2018년 10월 31일  <br/> |
@@ -41,6 +41,8 @@ ms.locfileid: "39250504"
 |프랑스  <br/> |2020년 9월 15일  <br/> |
 |아랍에미리트  <br/> |2022 년 2 월 1 일  <br/> |
 |남아프리카 공화국  <br/> |2022 년 2 월 1 일  <br/> |
+|스위스, 리히텐슈타인  <br/> |2022 년 7 월 1 일  <br/> |
+|독일  <br/> |하려고  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 

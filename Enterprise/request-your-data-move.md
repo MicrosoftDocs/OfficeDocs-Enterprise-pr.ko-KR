@@ -3,7 +3,7 @@ title: 데이터 이동을 요청하는 방법
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756597"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962465"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -28,7 +28,7 @@ ms.locfileid: "38756597"
   
 ## <a name="when-can-i-request-a-move"></a>이동을 요청할 수 있는 시기
 
-|**고객의 대금 청구 주소**|**요청 기간 시작**|**요청 기한**|
+|**등록 국가가 있는 고객**|**요청 기간 시작**|**요청 기한**|
 |:-----|:-----|:-----|
 |일본  <br/> |2016년 8월 1일  <br/> |2016년 10월 31일  <br/> |
 |오스트레일리아, 뉴질랜드, 피지  <br/> |2016년 8월 1일  <br/> |2016년 10월 31일  <br/> |
@@ -38,11 +38,13 @@ ms.locfileid: "38756597"
 |대한민국  <br/> |2017년 5월 1일  <br/> |2017년 10월 31일  <br/> |
 |프랑스  <br/> |2018년 3월 14일  <br/> |2018년 9월 15일  <br/> |
 |아랍에미리트  <br/> |2019년 7월 15일  <br/> |2020 년 1 월 31 일  <br/> |
-|남아프리카 공화국  <br/> |7 월 25 일, 2019  <br/> |2020 년 1 월 31 일  <br/> |
+|남아프리카 공화국  <br/> |2019년 7월 25일  <br/> |2020 년 1 월 31 일  <br/> |
+|스위스, 리히텐슈타인  <br/> |2019 년 12 월 10 일  <br/> |2020 년 6 월 30 일  <br/> |
+|독일  <br/> |하려고  <br/> |하려고  <br/> |
    
 ## <a name="how-to-request-a-move"></a>이동을 요청하는 방법
 
-적절 한 고객은 [관리 센터](https://aka.ms/365admin)에 페이지를 보게 되며, 그러면 핵심 고객 데이터가 새 데이터 센터 지역으로 이동 되도록 요청할 수 있습니다.  
+적격 고객은 [Microsoft 365 관리 센터](https://aka.ms/365admin)의 페이지를 볼 수 있으며,이를 통해 핵심 고객 데이터가 새 데이터 센터 지역으로 이동 하 게 됩니다.  
   
 Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 창에서 **설정을**확장 하 고 **조직 프로필**을 클릭 합니다.
   

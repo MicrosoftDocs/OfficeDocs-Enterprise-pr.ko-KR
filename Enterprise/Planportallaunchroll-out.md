@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: 이 문서에서는 SharePoint Online에서 포털 시작을 계획 하는 방법과 성공적인 시작을 위해 수행 해야 하는 단계에 대해 설명 합니다.
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919130"
+ms.locfileid: "39959122"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online에서 포털 시작 롤아웃 계획 계획
+
 포털은 인트라넷에서 사이트의 콘텐츠를 사용 하는 많은 수의 사이트 방문자를 포함 하는 SharePoint 사이트입니다. 대규모 조직에서는 이러한 몇 가지 사항이 있을 수 있습니다. 예를 들면 회사 포털과 HR 포털이 있습니다. 일반적으로 포털에는 사이트 및 해당 콘텐츠를 만들고 제작 하는 사용자가 비교적 적습니다. 포털 방문자 대부분은 콘텐츠를 읽고 사용 합니다.
 
 이 문서에서는 SharePoint Online으로의 배포 및 롤아웃 계획을 계획 하는 방법에 대해 설명 합니다. 또한 SharePoint Online에서는 일반적인 부하 테스트가 허용 되지 않으므로 수행 하는 방법도 제공 합니다. SharePoint Online은 클라우드 서비스 이며 부하 기능, 서비스의 전체 부하 균형은 Microsoft에 의해 관리 됩니다.
