@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션 이해 '
-ms.openlocfilehash: 5b339ab36ad613078bbfcd705f42ceb3703585e9
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 95edbeeb79549957ff49afa8b8a96160945b0f20
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920278"
+ms.locfileid: "39962445"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션
 
@@ -43,7 +43,7 @@ ms.locfileid: "39920278"
 
 Microsoft 주도 방식에 동의하면 2020년에 마이그레이션 됩니다.  마이그레이션이 되면 핵심 고객 데이터 및 구독정보는 신규 독일 지역으로 이전됩니다.  
 
-구독정보 마이그레이션이 완료 되면 가격은 공개 클라우드 가격으로 내려갑니다.  구독기간은 12개월로 연장되고 갱신 날짜는 마이그레이션 완료일입니다.  Microsoft 주도 방식에 동의하면 다음 서비스도 함께 마이그레이션됩니다.
+Microsoft 주도 방식에 동의하면 다음 서비스도 함께 마이그레이션됩니다.
 
 - Azure Active Directory
 - Exchange Online
@@ -52,12 +52,12 @@ Microsoft 주도 방식에 동의하면 2020년에 마이그레이션 됩니다.
 - 비즈니스용 OneDrive
 - 비즈니스용 Skype Online
 
-  독일 Microsoft 클라우드에서 신규 독일 지역으로 마이그레이션되면 기존 비즈니스용 Skype Online 고객은 Microsoft 팀으로 이관 됩니다. 자세한 내용은 [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home)을 참조하세요. 
+독일 Microsoft 클라우드에서 독일 데이터 센터 지역으로 마이그레이션하는 동안 기존의 비즈니스용 Skype Online 고객은 Microsoft Teams로 이동합니다. 자세한 내용은 [Microsoft Teams 업그레이드 시작하기](https://aka.ms/SkypeToTeams-Home)를 참조하세요.
 
 - Office 365 그룹
 - Dynamics 365 / Power Platform
 
-  해당 서비스 마이그레이션 사전 요건과 영향에 관한 자세한 사항은 [Dynamics 365 고객참여](https://aka.ms/D365ceOptIn) 문서를 참조 하세요.
+이들 서비스의 마이그레이션의 필요 조건과 영향에 관한 내용은 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 문서를 참조하세요.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Office 365 서비스 신규 독일 데이터 센터 지역으로의 마이그레이션을 준비하는 방법 
 
@@ -65,13 +65,13 @@ Microsoft 주도 방식에 동의하면 2020년에 마이그레이션 됩니다.
 
 - 모든 고객은 신규 독일 데이터 센터 지역을 포함한 전 세계 [Office 365 URL 및 IP 주소](urls-and-ip-address-ranges.md)를 확인해야 합니다. 
 - Office 365 플랫폼 서비스 설명서를 검토하고 독일 지역으로의 이전 후 어떤 기능과 서비스가 제공되는지 확인하세요.   
-- 유료 구독을 마이그레이션 합니다. 
+- 유료 구독을 마이그레이션 합니다.   평가판 구독은 마이그레이션할 수 없습니다.
 
 고객 불편을 최소화 하기 위해 테넌트 마이그레이션은 백 엔드 서비스 작업으로 실행됩니다.    전반적인 마이그레이션 상태와 고객의 추가 작업 필요 여부는 메시지 센터를 통해 전달됩니다.   고객 관리 DNS 업데이트나 Exchange Hybrid 고객에 대한 하이브리드 설정 재구성 등을 위해 고객의 추가 작업이 필요할 수 있습니다. 
 
 ## <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Office 365 서비스 신규 독일 데이터 센터 지역으로 마이그레이션 하는 동안 고객 경험
 
-고객 불편이나 관리 범위를 최소화 하기 위해 테넌트 마이그레이션은 백 엔드 서비스 작업으로 실시됩니다.   하지만, 각 작업과 관련하여 다음 사항에 유의 하세요.   
+테넌트 마이그레이션은 최종 고객 및 관리자에 게 최소의 영향을 미치도록 설계되었습니다.  하지만, 각 작업과 관련하여 다음 사항에 유의 하세요.   
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -130,11 +130,9 @@ Office 365 서비스 신규 독일 데이터 센터 지역의 추가 혜택:
 - 고객의 준법 및 규정 요구 사항을 충족 할 수 있도록 모든 기능, 엔터프라이즈급 보안 및 종합 기능을 제공 합니다. 
 - 기존 온라인 서비스 계약을 통해 사용 가능합니다. 
 
-#### <a name="what-is-the-service-availability"></a>제공되는 서비스가 무엇입니까?
+#### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>여러 Office 365 클라우드 서비스 간에 사용할 수 있는 서비스는 무엇인가요?
 
-하나의 Office 365 테넌트만으로 Microsoft 365 서비스 구독이 가능합니다. 
-
-독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서는 다음과 같은 서비스를 제공합니다.  클라우드 서비스에는 신규 서비스가 추가되지 않습니다. 
+Microsoft Cloud Germany(Microsoft Cloud Deutschland) 클라우드 서비스를 통해 다음의 15가지 서비스를 사용할 수 있습니다.  Microsoft Cloud Germany에는 신규 서비스를 추가하지 않고 있습니다. 
 
 1. Exchange Online
 2. 고객 Lockbox (Exchange Online)
@@ -152,7 +150,7 @@ Office 365 서비스 신규 독일 데이터 센터 지역의 추가 혜택:
 14. Office 365 Pro Plus
 15. Outlook Mobile
 
-Office 365 서비스의 신규 독일 데이터 센터 지역에서는 다음과 같은 서비스를 제공합니다.   클라우드 서비스에 계속 새 서비스를 추가 하고 있습니다.
+현재 새로운 독일 데이터 센터 영역에서 Office 365 서비스의 일부로 29개의 서비스를 사용할 수 있습니다.  계속해서 글로벌 Office 365 서비스와 일관된 새로운 기능과 서비스가 제공될 것입니다. 
 
 1. Exchange Online
 2. 고객 Lockbox (Exchange Online)
@@ -170,14 +168,14 @@ Office 365 서비스의 신규 독일 데이터 센터 지역에서는 다음과
 14. 고객 Lockbox (SharePoint Online)
 15. 비즈니스용 OneDrive
 16. Microsoft Stream
-17. 비즈니스용 Skype (Microsoft 팀으로 이관) 
+17. 비즈니스용 Skype(마이그레이션 진행 중에 Microsoft Teams로 전환) 
 18. 클라우드 PBX
 19. PSTN 회의
 20. PSTN 통화
 21. Microsoft Teams
 22. 관리 보고서/사용 현황 보고서
-23. Word Online, Excel Online, PowerPoint, OneNote, Visio Online
-24. 24. Planner
+23. Word Online, Excel Online, PowerPoint, OneNote 및 Visio Online
+24. Planner
 25. Sway
 26. Office 365 Pro Plus
 27. Outlook Mobile
@@ -186,17 +184,17 @@ Office 365 서비스의 신규 독일 데이터 센터 지역에서는 다음과
 
 ### <a name="when-will-migration-happen"></a>언제 마이그레이션 되나요? 
 
-- Azure 
+#### <a name="azure"></a>Azure 
 
- 지금 Azure 리소스를 다른 지역으로 [마이그레이션](https://docs.microsoft.com/azure/germany/germany-migration-main) 할 수 있습니다.  Office 365, Dynamics 365 및/또는 Power BI와 함께 Azure를 사용 하는 경우 다음 단계를 따르세요.
+지금 Azure 리소스를 다른 지역으로 [마이그레이션](https://docs.microsoft.com/azure/germany/germany-migration-main) 할 수 있습니다.  Office 365, Dynamics 365 및/또는 Power BI와 함께 Azure를 사용 하는 경우 다음 단계를 따르세요.
 
-- Office 365
+#### <a name="office-365"></a>Office 365
 
-  지금 Microsoft 주도 마이그레이션에 [동의 합니다](https://aka.ms/office365germanymoveoptin).  마이그레이션을 시작할 준비가 되면 Microsoft 365 관리 센터에서 [메시지 센터를](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 통해 알려 드립니다. 
+지금 Microsoft 주도 마이그레이션에 [동의 합니다](https://aka.ms/office365germanymoveoptin).  마이그레이션을 시작할 준비가 되면 Microsoft 365 관리 센터에서 [메시지 센터를](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 통해 알려 드립니다. 
 
-- Dynamics 365 및 Power BI
+#### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 및 Power BI
 
-  지금 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 및 [Power BI](https://aka.ms/pbioptin)의 Microsoft 기반 마이그레이션에 동의 하세요.  마이그레이션을 시작할 준비가 되면 Microsoft 365 관리 센터에서 [메시지 센터를](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 통해 알려 드립니다. 
+지금 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 및 [Power BI](https://aka.ms/pbioptin)의 Microsoft 기반 마이그레이션에 동의 하세요.  마이그레이션을 시작할 준비가 되면 Microsoft 365 관리 센터에서 [메시지 센터를](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 통해 알려 드립니다. 
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>사용하고 있는 Office 서비스 가격이 변동되나요? 
 
@@ -212,9 +210,10 @@ Office 365 서비스의 신규 독일 데이터 센터 지역에서는 다음과
 
 ## <a name="more-information"></a>추가 정보
 
-- 도이칠란드 Microsoft 클라우드 마이그레이션 지원 [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist) 
-- 마이그레이션 동의 방법 [https://aka.ms/office365germanymoveoptin](https://aka.ms/office365germanymoveoptin)
-- Dynamics 365 마이그레이션 [https://aka.ms/D365ceOptIn](https://aka.ms/D365ceOptIn)
-- Power BI 마이그레이션 [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
-- Office 365 URL 및 IP 주소 범위 [https://aka.ms/o365endpoints](https://aka.ms/o365endpoints)
-- Office 365 하이브리드 구성 마법사 [https://aka.ms/HybridWizard](https://aka.ms/HybridWizard)
+- [Microsoft Cloud Deutschland 마이그레이션 지원](https://aka.ms/germanymigrateassist)
+- [마이그레이션에 대해 옵트인하는 방법](https://aka.ms/office365germanymoveoptin)
+- [Dynamics 365 마이그레이션 프로그램 정보](https://aka.ms/D365ceOptIn)
+- [Power BI 마이그레이션 프로그램 정보](https://aka.ms/pbioptin)
+- [Office 365 URL 및 IP 주소 범위](https://aka.ms/o365endpoints)
+- [Office 365 하이브리드 구성 마법사](https://aka.ms/HybridWizard)
+- [Microsoft Teams 업그레이드 시작하기](https://aka.ms/SkypeToTeams-Home)
