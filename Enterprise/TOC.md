@@ -152,6 +152,8 @@
 #### [데이터 이동을 요청하는 방법](request-your-data-move.md)
 #### [데이터 이동 도중 및 이후](during-and-after-your-data-move.md)
 #### [데이터 이동 일반 FAQ](data-move-faq.md)
+#### [Microsoft 클라우드 독일: Office 365 마이그레이션 프로그램](ms-cloud-germany-transition.md)
+#### [Microsoft 클라우드 독일: 마이그레이션을 위한 옵트인](ms-cloud-germany-migration-opt-in.md)
 
 ### 하이브리드 솔루션
 #### [Azure Active Directory를 사용하여 SharePoint Server 2016 인증](using-azure-ad-for-sharepoint-server-authentication.md)
@@ -189,7 +191,7 @@
 ##### [사이트에서 공동 작업](collaborate-in-a-site.md)
 ##### [팀으로 공동 작업](collaborate-as-a-team.md)
 #### 게스트 공유 보안
-##### [익명 공유](best-practices-anonymous-sharing.md)
+##### [인증되지 않은 공유](best-practices-anonymous-sharing.md)
 ##### [우발적 노출 제한](sharing-limit-accidental-exposure.md)
 ##### [보안 게스트 공유 환경](create-a-secure-guest-sharing-environment.md)
 
