@@ -17,17 +17,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: '
-ms.openlocfilehash: 6105b9a386a64c2f855433fcc60ebb41149afdab
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 97075a861a86f8285837b8528f8c387d45dbafab
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920276"
+ms.locfileid: "39962435"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로 마이그레이션하도록 옵트인하는 방법
 
 >[!Note]
->이 문서는 적격 독일/도이칠란드 Microsoft 클라우드 고객에게만 적용 됩니다.
+>이 문서는 적격 독일/도이칠란드 Microsoft 클라우드 고객에게만 적용됩니다.
 >
 
 ## <a name="how-to-request-migration"></a>마이그레이션을 요청하는 방법
@@ -56,8 +56,8 @@ Microsoft 주도 방식을 선택한 조직의 경우 2020년에 마이그레이
 
 ## <a name="more-information"></a>추가 정보
 
-- 도이칠란드 Microsoft 클라우드 마이그레이션 지원 [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist) 
-- Office 365 마이그레이션 [https://aka.ms/office365germanymove](https://aka.ms/office365germanymove)
-- Dynamics 365 마이그레이션 [https://aka.ms/d365ceoptin](https://aka.ms/d365ceoptin)
-- Power BI 마이그레이션 [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
+- [도이칠란드 Microsoft 클라우드 마이그레이션 지원](https://aka.ms/germanymigrateassist)
+- [독일 Microsoft 클라우드 고객을 위한 Office 365 마이그레이션 프로그램](https://aka.ms/office365germanymove)
+- [독일 Microsoft 클라우드 고객을 위한 Dynamics 365 마이그레이션 프로그램](https://aka.ms/d365ceoptin)
+- [독일 Microsoft 클라우드 고객을 위한 Power BI 마이그레이션 프로그램](https://aka.ms/pbioptin)
 - "도움이 필요하신가요?"를 사용하여 문의하세요. [Microsoft 365 관리 센터](https://portal.office.de/) 링크
