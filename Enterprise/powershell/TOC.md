@@ -7,22 +7,31 @@
 ### [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Office 365 서비스에 대한 cmdlet 참조](cmdlet-references-for-office-365-services.md)
 ### [Office 365 PowerShell 커뮤니티 리소스](office-365-powershell-community-resources.md)
-## [사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-### [라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)
-### [라이선스 사용자 및 허가되지 않은 사용자 보기](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-### [사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-### [계정 라이선스 및 서비스 세부 정보 보기](view-account-license-and-service-details-with-office-365-powershell.md)
-### [사용자 계정에 역할 할당](assign-roles-to-user-accounts-with-office-365-powershell.md)
-### [서비스에 액세스 사용 안 함](disable-access-to-services-with-office-365-powershell.md)
-#### [Sway에 액세스 사용 안 함](disable-access-to-sway-with-office-365-powershell.md)
-#### [사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함](disable-access-to-services-while-assigning-user-licenses.md)
-### [사용자 계정에서 라이선스 제거](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-### [사용자 계정 차단](block-user-accounts-with-office-365-powershell.md)
-### [사용자 계정 삭제 및 복원](delete-and-restore-user-accounts-with-office-365-powershell.md)
-### [사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
-### [사용자 계정 보기](view-user-accounts-with-office-365-powershell.md)
-### [사용자 계정 속성 구성](configure-user-account-properties-with-office-365-powershell.md)
-## [그룹 관리](manage-office-365-groups-with-powershell.md)
+
+## [사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+
+### 사용자 계정
+#### [사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
+#### [사용자 계정 보기](view-user-accounts-with-office-365-powershell.md)
+#### [사용자 계정 속성 구성](configure-user-account-properties-with-office-365-powershell.md)
+#### [사용자 계정에 역할 할당](assign-roles-to-user-accounts-with-office-365-powershell.md)
+#### [사용자 계정 삭제 및 복원](delete-and-restore-user-accounts-with-office-365-powershell.md)
+#### [사용자 계정 차단](block-user-accounts-with-office-365-powershell.md)
+
+### 라이선스 및 서비스
+#### [라이선스 및 서비스 보기](view-licenses-and-services-with-office-365-powershell.md)
+#### [라이선스 사용자 및 허가되지 않은 사용자 보기](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+#### [사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+#### [계정 라이선스 및 서비스 세부 정보 보기](view-account-license-and-service-details-with-office-365-powershell.md)
+#### [서비스에 액세스 사용 안 함](disable-access-to-services-with-office-365-powershell.md)
+##### [Sway에 액세스 사용 안 함](disable-access-to-sway-with-office-365-powershell.md)
+##### [사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함](disable-access-to-services-while-assigning-user-licenses.md)
+#### [사용자 계정에서 라이선스 제거](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+
+### 그룹
+#### [그룹 멤버 자격 유지 관리](maintain-group-membership-with-office-365-powershell.md)
+#### [Office 365 그룹 관리](manage-office-365-groups-with-powershell.md)
+
 ## [SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
 ### [SharePoint Online 사이트 만들기 및 사용자 추가](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [SharePoint Online 사용자 및 그룹 관리](manage-sharepoint-users-and-groups-with-powershell.md)
