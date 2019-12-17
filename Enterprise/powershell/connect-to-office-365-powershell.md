@@ -3,7 +3,7 @@ title: PowerShell Office 365에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '요약: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 센터 작업을 수행합니다.'
-ms.openlocfilehash: 3e31bfb68614ceb7c10f4b45e141928169121006
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 42f092acb3074a449986e366fc6dfc0088ef9eef
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257407"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072270"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -28,19 +28,14 @@ Office 365 PowerShell을 사용하여 명령줄에서 Office 365 설정을 관�
 
 Office 365 및 관리자 계정, 그룹 및 라이선스에 연결하는 데 사용하는 두 가지 버전의 PowerShell 모듈이 있습니다.
 
-- Azure Active Directory PowerShell for Graph(cmdlet의 이름에 **AzureAD** 포함) 
+- Azure Active Directory PowerShell for Graph(cmdlet의 이름에 **AzureAD** 포함)
 - Windows PowerShell용 Microsoft Azure Active Directory 모듈(cmdlet의 이름에 **MSol** 포함) 
 
 이 문서의 날짜를 기준으로, Azure Active Directory PowerShell for Graph 모듈이 사용자, 그룹 및 라이선스 관리를 위해 Windows PowerShell용 Microsoft Azure Active Directory 모듈을 완전히 대체하는 것은 아닙니다. 대부분의 경우, 두 버전을 사용해야 합니다. 동일한 컴퓨터에 두 버전을 안전하게 설치할 수 있습니다.
 
-> [!TIP]
-> **PowerShell을 처음 사용하시나요?** [PowerShell의 비디오 개요](https://support.office.com/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)를 보고 LinkedIn Learning을 통해 가져올 수 있습니다. 
-  
-## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용
+## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 사항은 무엇인가요?
 
-- 예상 완료 시간: 5분
-    
-- 다음 Windows 버전을 사용할 수 있습니다.
+다음 Windows 버전을 사용할 수 있습니다.
     
   - Windows 10, Windows 8.1, Windows 8 또는 Windows 7 서비스팩 1(SP1) 
     
@@ -52,7 +47,7 @@ Office 365 및 관리자 계정, 그룹 및 라이선스에 연결하는 데 사
     > [!NOTE]
     >Windows 64비트 버전을 사용하세요. 32비트 버전의 Microsoft PowerShell용 Windows Azure Active Directory 모듈은 2014년 10월에 중단되었습니다.
     
--  이러한 절차는 Office 365 관리자 역할의 구성원인 사용자를 대상으로 합니다. 자세한 내용은 [Office 365 관리자 역할 정보](https://go.microsoft.com/fwlink/p/?LinkId=532367)를 참조하세요.
+이러한 절차는 Office 365 관리자 역할의 구성원인 사용자를 대상으로 합니다. 자세한 내용은 [Office 365 관리자 역할 정보](https://go.microsoft.com/fwlink/p/?LinkId=532367)를 참조하세요.
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>그런 다음, Azure Active Directory PowerShell for Graph 모듈에 연결합니다.
@@ -81,7 +76,7 @@ Azure Active Directory PowerShell for Graph 모듈에서 새 cmdlet을 필요로
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2단계: Office 365 구독을 위해 Azure AD에 연결
 
-계정 이름 및 암호를 사용하여 또는 *MFA(다중 요소 인증)* 을 사용하여 Office 365 구독을 위해 Azure AD에 연결하려면, Windows PowerShell 명령 프롬프트(관리자 권한이 아니어도 됨)에서 이 명령 중 하나를 실행하세요.
+계정 이름 및 암호를 사용하여 또는 MFA(다중 요소 인증)을 사용하여 Office 365 구독을 위해 Azure AD에 연결하려면, Windows PowerShell 명령 프롬프트(관리자 권한이 아니어도 됨)에서 이 명령 중 하나를 실행하세요.
 
 |||
 |:-------|:-----|
@@ -96,8 +91,7 @@ Azure Active Directory PowerShell for Graph 모듈에서 새 cmdlet을 필요로
 
 MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 추가 인증 정보(예: 확인 코드)를 제공하세요.
 
-
-연결이 되면 [zure Active Directory PowerShell for Graph 모듈](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)의 새 cmdlet을 사용할 수 있습니다.
+연결 후 [그래프 모듈용 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)의 cmdlet을 사용할 수 있습니다.
   
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈에 연결
@@ -123,7 +117,7 @@ Windows PowerShell용 Microsoft Azure Active Directory 모듈의 명령에는 cm
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>2단계: Office 365 구독을 위해 Azure AD에 연결
 
-계정 이름 및 암호를 사용하여 또는 *MFA(다중 요소 인증)* 을 사용하여 Office 365 구독을 위해 Azure AD에 연결하려면, Windows PowerShell 명령 프롬프트(관리자 권한이 아니어도 됨)에서 이 명령 중 하나를 실행하세요.
+계정 이름 및 암호를 사용하여 또는 MFA(다중 요소 인증)을 사용하여 Office 365 구독을 위해 Azure AD에 연결하려면, Windows PowerShell 명령 프롬프트(관리자 권한이 아니어도 됨)에서 이 명령 중 하나를 실행하세요.
 
 |||
 |:-------|:-----|
@@ -170,7 +164,4 @@ MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 �
 
 - [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
-- [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
-
+- [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)

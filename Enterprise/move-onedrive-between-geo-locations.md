@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626168"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072560"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
@@ -47,7 +47,7 @@ OneDrive 사이트 이동을 사전에 예약할 수 있습니다(이 문서의 
 
 - 한 번에 이동을 최대 4,000개 예약할 수 있습니다.
 - 이동이 시작되면 큐와 주어진 시간에 보류 중인 이동 최대 4,000개를 추가로 예약할 수 있습니다.
-- 한 달에 이동 4,000개 이상을 예약하지 않는 것이 좋습니다.
+- 이동할 수 있는 OneDrive의 최대 크기는 1 테라바이트(1 TB)입니다.
 
 ## <a name="moving-a-onedrive-site"></a>OneDrive 사이트 이동
 

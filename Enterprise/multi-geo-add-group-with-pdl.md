@@ -10,22 +10,35 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Multi-Geo 환경에서 지정된 기본 설정 데이터 위치를 사용하여 Office 365 그룹을 만드는 방법에 대해 알아봅니다.
-ms.openlocfilehash: fb512478d69502eafd633b552d1db2acbec43ef4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 96870923c00cebc247609b67378fd39011077d45
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070004"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072380"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>특정 PDL로 Office 365 그룹 만들기
 
-Multi-Gep 환경의 사용자가 Office 365 그룹을 만들 때 그룹 기본 설정 데이터 위치가 자동으로 사용자의 위치로 설정됩니다. 특정 PDL로 그룹을 만들어야 할 경우 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet을 사용하여 그룹을 만들 수 있습니다. 이렇게하면 그룹 사서함 및 그룹과 연결된 SharePoint 사이트가 지정된 PDL로 프로비저닝됩니다.
+Multi-Gep 환경의 사용자가 Office 365 그룹을 만들 때 그룹 기본 설정 데이터 위치가 자동으로 사용자의 위치로 설정됩니다. 전역, SharePoint, Exchange 관리자는 선택하는 모든 영역에서 그룹을 만들 수 있습니다. 
 
-이 작업을 수행하려면 전역 관리자 또는 SharePoint Online 또는 Exchange Online 관리자여야 합니다.
+특정 PDL로 그룹을 만들어야 할 경우 SharePoint 관리자 센터에서 만들거나 혹은 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet을 사용하여 그룹을 만들 수 있습니다. 이 작업을 진행 시 그룹 사서함 및 그룹과 연결된 SharePoint 사이트가 지정된 PDL에서 프로비저닝됩니다.
 
-지정한 PDL로 Office 365 그룹을 만들려면 Exchange Online PowerShell에 연결하고 *-MailBoxRegion* 매개 변수를 지리적 위치 코드와 함께 전달합니다.
+PDL을 사용하여 지정하는 Office 365 그룹을 만들려면 그룹 사이트를 만들 지리적 위치에서 SharePoint 관리 센터로 이동합니다.
 
-예를 들면 다음과 같습니다. 
+예:
+
+호주의 위치에서 그룹 사이트를 만드려는 경우 https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement로 이동할 수 있습니다.
+
+1. **+ 만들기**를 선택합니다.
+2. 프로세스를 따라 그룹 사이트를 만듭니다.
+
+사이트 만들기 요청을 시작한 SharePoint 관리 센터에 해당하는 지리적 위치에서 그룹 사이트가 프로비저닝됩니다. 
+
+Exchange PowerShell 사용하기 
+
+Exchange Online PowerShell에 연결하고 *MailBoxRegion* 매개 변수를 지리적 위치 코드와 함께 전달합니다.
+
+예: 
 
 ```PowerShell
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
