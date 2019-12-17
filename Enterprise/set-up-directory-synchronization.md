@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365와 온-프레미스 Active Directory 간에 디렉터리 동기화를 설정 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814596"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072150"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365에서 디렉터리 동기화 설정
 
@@ -35,7 +35,7 @@ Office 365에서는 azure Active Directory (Azure AD) 테 넌 트를 사용 하 
 
 온-프레미스 AD DS (Active Directory 도메인 서비스)를 사용 하는 경우 AD DS 사용자 계정, 그룹 및 연락처를 Office 365 구독의 Azure AD 테 넌 트와 동기화 할 수 있습니다. Office 365의 하이브리드 id입니다. 구성 요소는 다음과 같습니다.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Office 365의 디렉터리 동기화 구성 요소](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect는 온-프레미스 서버에서 실행 되며 AD DS를 Azure AD 테 넌 트와 동기화 합니다. 또한 디렉터리 동기화와 함께 다음과 같은 인증 옵션을 지정할 수 있습니다.
 
@@ -83,7 +83,7 @@ Azure AD Connect에 대 한 하드웨어, 소프트웨어, 계정 및 사용 권
 - 어떤 인증 방법 (PHS, PTA, 페더레이션된)
 - [AZURE AD 원활한 sso (Single sign-on)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) 를 사용 하 고 있는지 여부
 
-다음 단계를 따릅니다.
+다음 단계를 따릅니다:
 
 1. [Microsoft 365 관리 센터](https://admin.microsoft.com) 에 로그인https://admin.microsoft.com) 하 고 왼쪽 탐색 창에서 **사용자** \> **활성 사용자** 를 선택 합니다.
 2. **활성 사용자** 페이지에서 **더** (3 개의 점) \> **디렉터리 동기화**를 선택 합니다.

@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용해야 하는 이유
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/11/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,30 +12,30 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '요약: 경우에 따라 효율성을 높이기 위해 또는 필요에 의해 Office 365 PowerShell을 사용하여 Office 365를 관리해야 하는 이유를 파악합니다.'
-ms.openlocfilehash: 3e2f0d4ee1c86e26ccf728412d419ae6ba3018e7
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: ecf386e39c9610f0444789cdc11441be545ea814
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655784"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072430"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell을 사용해야 하는 이유
 
-Microsoft 365 관리 센터를 사용 하 여 Office 365 사용자 계정 및 라이선스를 관리할 수 있을 뿐만 아니라 Exchange, 비즈니스용 Skype Online, SharePoint Online 등의 Office 365 server 제품을 관리할 수도 있습니다. 그러나 Office 365 PowerShell 명령을 사용하여 이러한 요소를 관리할 수도 있습니다, 이 경우 속도, 자동화 및 추가 기능을 위한 명령줄 및 스크립팅 언어 환경을 활용할 수 있습니다.
+Microsoft 365 관리 센터를 사용 하 여 Office 365 사용자 계정 및 라이선스를 관리할 수 있을 뿐만 아니라 Exchange Online, 팀, SharePoint Online 등의 Office 365 서비스도 관리할 수 있습니다. 그러나 Office 365 PowerShell 명령을 사용하여 이러한 요소를 관리할 수도 있습니다, 이 경우 속도, 자동화 및 추가 기능을 위한 명령줄 및 스크립팅 언어 환경을 활용할 수 있습니다.
   
-이 문서에서는 Office 365 PowerShell을 사용하여 Office 365를 관리하는 다음과 같은 방법을 설명합니다.
+이 문서에서는 Office 365 PowerShell을 사용 하 여 Office 365를 관리할 수 있는 다음과 같은 방법을 보여 줍니다.
   
-- Office 365 PowerShell은 Microsoft 365 관리 센터에서 볼 수 없는 추가 정보를 제공할 수 있음
+- Microsoft 365 관리 센터에서 볼 수 없는 추가 정보 표시
     
-- Office 365에는 Office 365 PowerShell로만 구성할 수 있는 기능이 있습니다.
+- Office 365 PowerShell을 사용 하 여 기능 및 설정만 구성
     
-- Office 365 PowerShell은 대량 작업을 수행하는 데 유용함
+- 대량 작업 수행
     
-- Office 365 PowerShell은 데이터를 필터링하는 데 유용함
+- 데이터 필터링
     
-- Office 365 PowerShell을 사용하면 데이터 쉽게 인쇄 또는 저장할 수 있음
+- 데이터 인쇄 또는 저장
     
-- Office 365 PowerShell을 사용하여 여러 서버 제품을 관리할 수 있음
+- 서비스 간 관리
     
 시작하기 전에 Office 365 PowerShell이 Windows 기반 서비스 및 플랫폼에 대한 명령줄 환경인 Windows PowerShell용 모듈 집합이라는 점을 이해하면 도움이 됩니다. 이 환경은 추가 모듈로 확장할 수 있는 명령 셸 언어를 만들고 간단하거나 복잡한 명령을 실행하는 방법을 제공합니다. 예를 들어 Office 365 PowerShell 모듈을 설치하고 Office 365 구독에 연결한 후에는 이 명령을 사용하여 Microsoft Exchange Online에 대한 모든 사용자 사서함 목록을 표시할 수 있습니다.
   
@@ -159,7 +159,6 @@ $x = Get-MsolUser
 $x | Select DisplayName, UsageLocation
 ```
 
-
 이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다.
 - 현재 Office 365 구독의 모든 사용자를 가져오고 $x 변수에 정보를 저장합니다(**$x = Get-MsolUser**).
 - $x 변수의 내용을 표시하지만 각 사용자의 이름과 위치만 포함합니다(**$x | Select DisplayName, UsageLocation**).
@@ -231,7 +230,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 이 명령을 사용하려면 [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)을 설치해야 합니다. 
+> 이 명령을 사용 하려면 [SharePoint Online PowerShell 모듈](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)을 설치 해야 합니다. 
   
 > [!TIP]
 >  이 Office 365 PowerShell 명령을 해석하면 다음과 같습니다. 현재 Office 365 구독에서 모든 SharePoint 사이트를 가져오고(**Get-SPOSite**) 각 사이트에 액세스할 수 있는 사용자 목록에서 Ken Meyer를 제거합니다(**ForEach {Remove-SPOUser -Site $\__.Url -LoginName "kenmyer@litwareinc.com"}**).
@@ -427,7 +426,7 @@ Molly Dempsey           False        True               False
 
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
   
-[사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
 

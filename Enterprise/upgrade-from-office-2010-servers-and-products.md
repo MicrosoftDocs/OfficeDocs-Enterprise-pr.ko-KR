@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: af31db341aab1c52873613682c03dd54b3b76225
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748008"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072410"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 2010, Exchange Server 2010, SharePoint 2010 및 Project Server 2010은 **2020 년 10 월 13 일**에 지원 종료에 도달 합니다. 
 
@@ -42,7 +42,7 @@ Office 2010, Exchange Server 2010, SharePoint 2010 및 Project Server 2010은 **
 
 Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+![Office 2010 클라이언트 및 서버 및 Windows 7 지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
 이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7의 지원 종료를 방지 하기 위해 수행할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 통해 강조 표시 됩니다.
 

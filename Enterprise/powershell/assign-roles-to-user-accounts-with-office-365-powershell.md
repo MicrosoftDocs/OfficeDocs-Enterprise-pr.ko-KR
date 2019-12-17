@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 �
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/30/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '요약: Office 365 PowerShell을 사용 하 여 사용자 계정에 역할을 할당 합니다.'
-ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 999b44f56e2652c0d6d2d746a3ed204be9d1f69c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257447"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072530"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.
 
@@ -52,7 +52,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-다음은 완성 된 명령 집합의 예입니다.
+다음은 belindan@contoso.com 계정에 SharePoint 서비스 관리자 역할을 할당 하는 완성 된 명령 집합의 예입니다.
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -79,7 +79,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
   
 ### <a name="for-a-single-role-change"></a>단일 역할 변경의 경우
 
-특정 사용자 계정에 대 한 가장 일반적인 방법은 표시 이름 또는 전자 메일 이름 (로그인 이름 UPN (사용자 계정 이름))을 사용 하는 것입니다.
+특정 사용자 계정에 대 한 가장 일반적인 방법은 해당 표시 이름 또는 전자 메일 이름 (로그인 이름 또는 UPN (사용자 계정 이름))을 사용 하는 것입니다.
 
 #### <a name="display-names-of-user-accounts"></a>사용자 계정의 표시 이름
 
@@ -96,7 +96,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     이 명령은 표시 이름별로 정렬 된 사용자 계정의 표시 이름을 한 번에 하나씩 나열 합니다. **Where** cmdlet을 사용 하 여 목록을 더 작은 집합으로 필터링 할 수 있습니다. 예를 들면 다음과 같습니다.
 
    >[!Note]
-   >PowerShell Core에서는 이름에 **Msol** 이 포함 된 Windows powershell 모듈 및 cmdlet에 대 한 Microsoft Azure Active Directory 모듈을 지원 하지 않습니다. 이러한 cmdlet을 계속 사용 하려면 Windows PowerShell에서 실행 해야 합니다.
+   >PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
    >
     
   ```powershell
@@ -177,9 +177,9 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-### <a name="for-multiple-role-changes"></a>여러 역할 변경의 경우
+### <a name="multiple-role-changes"></a>여러 역할 변경
 
-다음을 확인합니다.
+여러 역할 변경의 경우 다음 사항을 확인 합니다.
   
 - 구성 하려는 사용자 계정 이전 섹션의 방법을 사용 하 여 표시 이름 또는 Upn 집합을 수집할 수 있습니다.
     
@@ -225,9 +225,8 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-
 ## <a name="see-also"></a>참고 항목
 
-- [Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

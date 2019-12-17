@@ -3,7 +3,7 @@ title: 라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell을 사용 하 여 Office 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: d212a79be127dabae52993cb8cfd21fb848b3aad
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655850"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072160"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
 
@@ -46,7 +46,7 @@ Office 365 PowerShell을 사용 하 여 Office 365 조직의 사용 가능한 �
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-결과에는 다음 정보가 포함됩니다.
+결과에 다음이 포함 됩니다.
   
 - **SkuPartNumber:** 조직에 사용할 수 있는 라이선스 계획을 표시 합니다. 예를 `ENTERPRISEPACK` 들어 Office 365 Enterprise e 3의 라이선스 계획 이름을 사용할 수 있습니다.
     
@@ -115,7 +115,7 @@ Get-MsolAccountSku
 
 결과에는 다음 정보가 포함됩니다.
   
-- **AccountSkuId:** 구문을 `<CompanyName>:<LicensingPlan>`사용 하 여 조직에 사용할 수 있는 라이선스 계획을 표시 합니다.  _<CompanyName>_ 은 Office 365에서 등록할 때 입력 한 값 이며 조직에서 고유 합니다. _<LicensingPlan>_ 값은 모든 사용자에 대해 동일 합니다. 예를 들어이 값 `litwareinc:ENTERPRISEPACK`에서 회사 이름은 `litwareinc`및 라이선스 계획 이름 `ENTERPRISEPACK`(Office 365 Enterprise e 3의 시스템 이름)입니다.
+- **AccountSkuId:** 구문을 `<CompanyName>:<LicensingPlan>`사용 하 여 조직에 사용할 수 있는 라이선스 계획을 표시 합니다.  CompanyName>는 Office 365에 등록할 때 제공한 값으로, 조직에서 고유 합니다. _ \<_ LicensingPlan>값은 모든 사용자에 대해 동일 합니다. _ \<_ 예를 들어이 값 `litwareinc:ENTERPRISEPACK`에서 회사 이름은 `litwareinc`및 라이선스 계획 이름 `ENTERPRISEPACK`(Office 365 Enterprise e 3의 시스템 이름)입니다.
     
 - **Activeunits:** 특정 라이선스 계획을 위해 구매한 라이선스 수입니다.
     
@@ -157,15 +157,10 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-
-## <a name="new-to-office-365"></a>Office 365의 새로운 기능
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

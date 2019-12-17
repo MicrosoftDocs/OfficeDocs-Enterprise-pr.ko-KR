@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745671"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071880"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 id 모델 및 Azure Active Directory
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365에서는 office 365 구독에 포함 되어 있는 Azure Active Directory (Azure AD), 클라우드 기반 사용자 id 및 인증 서비스를 사용 하 여 office 365에 대 한 id 및 인증을 관리 합니다. 조직에 대 한 Office 365 사용자 액세스 및 사용 권한을 관리 하려면 id 인프라를 올바르게 구성 하는 것이 중요 합니다.
 
@@ -59,7 +59,7 @@ Office 365에서는 office 365 구독에 포함 되어 있는 Azure Active Direc
 
 다음은 클라우드 전용 id의 기본 구성 요소입니다.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![클라우드 전용 id의 기본 구성 요소](./media/about-office-365-identity/cloud-only-identity.png)
 
 온-프레미스 및 원격 (온라인)은 모두 Azure AD 사용자 계정 및 암호를 사용 하 여 Office 365 클라우드 서비스에 액세스 합니다. Azure AD는 저장 된 사용자 계정 및 암호를 기반으로 사용자 자격 증명을 인증 합니다.
 
@@ -76,7 +76,7 @@ Azure AD Connect는 진행 중인 계정 동기화를 제공 합니다. 이 도�
 
 하이브리드 id의 구성 요소는 다음과 같습니다.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![하이브리드 id의 구성 요소](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD 테 넌 트에는 AD DS 계정의 복사본이 있습니다. 이 구성에서 Microsoft 365 클라우드 서비스에 액세스 하는 온-프레미스 및 원격 사용자 둘 다 Azure AD에 대해 인증을 수행 합니다.
 

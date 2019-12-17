@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크는 일반 인터넷 위치에 대한 액세스를 제한하거나 상당한 수의 백홀이나 네트워크 트래픽 처리를 포함합니다. 이러한 네트워크의 컴퓨터에서 Office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자는 Office 365 끝점 목록을 구성하는 FQDN, URL 및 IP 주소 목록을 관리해야 합니다. 네트워크 요청에서 Office 365에 연결할 수 있도록 하려면 이러한 목록을 직접 경로, 프록시 우회 및/또는 방화벽 규칙 및 PAC 파일에 추가해야 합니다.
-ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
-ms.translationtype: HT
+ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030612"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072490"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -140,7 +140,7 @@ Microsoft는 사용자가 직접 라우팅해야 하는 Office 365 서버의 IP 
   
 자세한 정보가 필요한, Office 365와 연결된 IP가 표시되나요?
   
-1. [CIDR 계산기](https://jodies.de/ipcalc)를 사용하여 IP 주소가 더 큰 게시된 범위에 포함되는지 확인합니다.
+1. [CIDR 계산기](https://www.ipaddressguide.com/cidr)를 사용하여 IP 주소가 더 큰 게시된 범위에 포함되는지 확인합니다.
 2. [whois 쿼리](https://dnsquery.org/)를 사용하여 파트너가 IP를 소유하는지 확인합니다. Microsoft가 해당 IP를 소유한 경우 내부 파트너일 수 있습니다.
 3. 인증서를 확인합니다. 브라우저에서 *HTTPS://\<IP_주소\>* 를 사용하여 IP 주소에 연결한 후 인증서에 나열된 도메인을 확인하여 IP 주소와 연결된 도메인을 파악합니다. Microsoft 소유의 IP 주소이고 Office 365 IP 주소 목록에 없는 경우 *MSOCDN.NET*과 같은 Microsoft CDN과 연결된 IP 주소이거나 게시된 IP 정보가 없는 다른 Microsoft 도메인일 수 있습니다. 인증서의 도메인이 Microsoft가 IP 주소를 나열하려고 요구하는 도메인인 경우 알려주세요.
 

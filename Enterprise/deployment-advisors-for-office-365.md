@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 배포 관리자를 통해 Office 365 또는 Microsoft 365의 계획 및 구성을 가속화 합니다.
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076152"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072370"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 또는 Microsoft 365 서비스에 대 한 배포 관리자
 
@@ -37,13 +37,13 @@ Office 365 또는 Microsoft 365에 대 한 배포 관리자는 조직에 대 한
 
 각 관리자는 배포할 기능 및 옵션을 선택 하는 과정을 안내 하는 마법사입니다. 일부 경우에는 마법사를 사용 하 여 항목을 구성 하거나 설정을 활성화할 수 있습니다. 예를 들면 다음과 같습니다.
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![배포 관리자의 예](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 관리자는 필요에 따라 사용자 지정할 수 있는 사항을 결정 하는 단계를 안내 합니다. 이렇게 하면 구성을 변경 하는 데 필요한 지침, 스크립트 및 기타 리소스를 얻을 수 있습니다.
 
 마지막으로 비디오 및 참조 문서에 대 한 링크를 볼 수 있습니다. 예를 들면 다음과 같습니다.
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![비디오 및 참조 문서에 대 한 링크의 예](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 이러한 관리자를 언제 든 지 사용 하 여 Office 365 기능 및 옵션에 대해 자세히 알아볼 수 있습니다. 여기에는 계획 중 또는 서비스를 이미 설정한 후에 포함 됩니다.
   

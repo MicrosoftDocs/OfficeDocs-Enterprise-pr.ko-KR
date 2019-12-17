@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Office 365와 동기화 하기 전에 온-프레미스 사용자와 연결 된 routale 도메인이 있는 경우 수행 해야 하는 작업에 대해 알아봅니다.
-ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203637"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072420"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>디렉터리 동기화를 위해 라우팅할 수 없는 도메인 준비
-온-프레미스 디렉터리를 Office 365와 동기화 하는 경우 Azure Active Directory에 확인 된 도메인이 있어야 합니다. 온-프레미스 도메인과 연결 된 UPN (사용자 계정 이름)만 동기화 됩니다. 하지만 예를 들어 billa와 같이 라우팅할 수 없는 도메인을 포함 하는 UPN은 billa@contoso.onmicrosoft.com와 같은 onmicrosoft.com 도메인에 동기화 됩니다. 
+온-프레미스 디렉터리를 Office 365와 동기화 하는 경우 Azure Active Directory에 확인 된 도메인이 있어야 합니다. 온-프레미스 도메인과 연결 된 UPN (사용자 계정 이름)만 동기화 됩니다. 하지만 예를 들어 라우팅할 수 없는 도메인을 포함 하는 UPN은 billa@contoso와 마찬가지로 billa@contoso.onmicrosoft.com와 같은 onmicrosoft.com 도메인에 동기화 됩니다. 
 
 현재 Active Directory의 사용자 계정에 대해 로컬 도메인을 사용 하는 경우 Office 365 도메인과 올바르게 동기화 하기 위해 확인 된 도메인 (예 billa@contoso.com)을 사용 하도록 변경 하는 것이 좋습니다.
   
@@ -87,16 +87,14 @@ Active Directory의 새 UPN 접미사 또는 접미사를 Office 365에서 확�
    
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Windows PowerShell을 사용 하 여 모든 사용자에 대 한 UPN 접미사를 변경할 수도 있습니다.**
 
-업데이트 해야 하는 사용자가 많은 경우에는 Windows PowerShell을 사용 하는 것이 더 쉽습니다. 다음 예에서는 contoso.com cmdlet을 [](https://go.microsoft.com/fwlink/p/?LinkId=624312) 사용 하 여 모든 contoso [](https://go.microsoft.com/fwlink/p/?LinkId=624313) 접미사를 변경 합니다. 
+업데이트 해야 하는 사용자가 많은 경우에는 Windows PowerShell을 사용 하는 것이 더 쉽습니다. 다음 예에서는 [contoso.com cmdlet을](https://go.microsoft.com/fwlink/p/?LinkId=624312) [사용 하 여](https://go.microsoft.com/fwlink/p/?LinkId=624313) 모든 contoso 접미사를 변경 합니다. 
 
 다음 Windows PowerShell 명령을 실행 하 여 모든 contoso 접미사를 contoso.com로 업데이트 합니다.
     
-  ```
+  ```powershell
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
-  ```
-
-  ```
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
+
 Active directory에서 Windows PowerShell을 사용 하는 방법에 대해 자세히 알아보려면 [Active Directory Windows powershell 모듈](https://go.microsoft.com/fwlink/p/?LinkId=624314) 을 참조 하세요. 
 

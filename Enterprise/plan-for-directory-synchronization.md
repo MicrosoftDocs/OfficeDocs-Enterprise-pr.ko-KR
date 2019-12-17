@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365, Active Directory 도메인 서비스 정리 및 Azure Active Directory Connect 도구를 사용한 디렉터리 동기화에 대해 설명 합니다.
-ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747088"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072540"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 하이브리드 id 및 디렉터리 동기화
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 비즈니스 요구 사항과 기술 요구 사항에 따라 하이브리드 id 모델 및 디렉터리 동기화가 Office 365를 채택 하는 엔터프라이즈 고객에 게 가장 일반적으로 선택 됩니다. 디렉터리 동기화를 사용 하면 AD DS (Active Directory 도메인 서비스)에서 id를 관리할 수 있으며, 사용자 계정, 그룹 및 연락처에 대 한 모든 업데이트는 Office 365 구독의 azure AD (azure Active Directory) 테 넌 트와 동기화 됩니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "38747088"
 
 PHS (암호 해시 동기화)를 사용 하 여 AD DS 사용자 계정을 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 사용자 암호는 온-프레미스와 클라우드에서 동일한 암호를 사용 하도록 AD DS에서 Azure AD로 동기화 됩니다. Azure AD에서 AD DS id에 대 한 인증을 사용 하는 가장 간단한 방법입니다. 
 
-![](./media/plan-for-directory-synchronization/phs-authentication.png)
+![암호 해시 동기화 (PHS)](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 암호가 변경 되거나 온-프레미스에서 다시 설정 되 면 새 암호 해시가 Azure AD와 동기화 되어 사용자가 항상 클라우드 리소스 및 온-프레미스 리소스에 대해 동일한 암호를 사용할 수 있습니다. 사용자 암호가 Azure ad로 전송 되지 않거나 Azure AD의 일반 텍스트로 저장 됩니다. Id 보호와 같은 Azure AD의 일부 프리미엄 기능은 선택한 인증 방법에 관계 없이 PHS를 요구 합니다.
   
@@ -73,7 +73,7 @@ PHS (암호 해시 동기화)를 사용 하 여 AD DS 사용자 계정을 Office
 
 PTA (통과 인증)는 AD DS와 직접 유효성을 검사 하기 위해 하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하는 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 합니다. PTA (통과 인증)를 사용 하는 경우 AD DS 사용자 계정을 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 
 
-![](./media/plan-for-directory-synchronization/pta-authentication.png)
+![통과 인증(PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
 PTA 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레미스 및 Office 365 리소스와 응용 프로그램 모두에 로그인 할 수 있습니다. 이 구성은 Azure AD에 암호 해시를 저장 하지 않고 온-프레미스 AD DS에 대해 직접 사용자 암호의 유효성을 검사 합니다. 
 

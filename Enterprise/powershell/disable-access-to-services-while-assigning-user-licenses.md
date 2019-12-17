@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: cbf19005ac78599a280ff1dd1b007242731e39db
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257397"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072190"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함
 
@@ -70,7 +70,7 @@ Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core에서는 이름에 **Msol** 이 포함 된 Windows powershell 모듈 및 cmdlet에 대 한 Microsoft Azure Active Directory 모듈을 지원 하지 않습니다. 이러한 cmdlet을 계속 사용 하려면 Windows PowerShell에서 실행 해야 합니다.
+>PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
 >
 
 `Get-MsolAccountSku` 명령 표시에서 다음을 수행 합니다.
@@ -192,7 +192,7 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
   
 [Office 365 PowerShell을 사용하여 Sway에 대한 액세스 비활성화](disable-access-to-sway-with-office-365-powershell.md)
   
-[Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell로 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 

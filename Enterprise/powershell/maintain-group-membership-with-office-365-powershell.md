@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Office 365 PowerShell을 사용 하 여 Office 365의 그룹 멤버 자격을 유지 하는 방법을 알아봅니다.
-ms.openlocfilehash: dfd3cad3f2e691930b5f4c754ee07205d3950e54
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: e7cd4cb76f28bfbe2e1bc538df6727ac403c29df
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886662"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072500"
 ---
 # <a name="maintain-group-membership-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 그룹 구성원 자격 유지 관리
 
@@ -147,9 +147,9 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayN
 
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell로 사용자 계정 및 라이선스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

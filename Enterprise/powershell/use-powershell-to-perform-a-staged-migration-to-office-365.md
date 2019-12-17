@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 요약:Windows PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747534"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072310"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션 수행
 
@@ -57,7 +57,7 @@ Exchange Online PowerShell cmdlet을 사용하려면 로그인한 후 cmdlet을 
   
 - 회사 네트워크 외부에서 Outlook을 사용하여 온-프레미스 Exchange 사서함에 연결합니다.
     
-- [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/)를 사용하여 연결 설정을 테스트합니다. Outlook Anywhere(RPC over HTTP) 또는 Outlook 자동 검색 테스트를 사용합니다.
+- [Microsoft 원격 연결 분석기](https://https://testconnectivity.microsoft.com/) 를 사용 하 여 연결 설정을 테스트 합니다. Outlook Anywhere(RPC over HTTP) 또는 Outlook 자동 검색 테스트를 사용합니다.
     
 - Exchange Online PowerShell에서 다음 명령을 실행합니다.
     
@@ -199,12 +199,6 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 마이그레이션을 완료하지 않았으므로 아직 모든 사용자가 본인의 전자 메일을 받기 위해 Office 365으로 이동되도록 하면 안 됩니다. 그렇다면 두 위치에 사서함을 모두 보유하는 사용자의 경우는 어떻게 해야 할까요? 메일 사용 가능 사용자로 이미 마이그레이션한 온-프레미스 사서함을 변경할 수 있습니다. 사서함에서 메일 사용 가능 사용자로 변경할 경우 사용자가 본인의 전자 메일을 받기 위해 해당 온-프레미스 사서함이 아닌 Office 365로 이동되도록 할 수 있습니다. 
   
 온-프레미스 사서함을 메일 사용 가능 사용자로 변환하는 다른 중요한 이유는 프록시 주소를 메일 사용 가능 사용자로 복사하여 Office 365 사서함의 프록시 주소를 보존하는 것입니다. 이렇게 하면 Active Directory를 사용하여 온-프레미스 조직의 클라우드(Cloud) 기반 사용자를 관리할 수 있습니다. 또한 모든 사서함이 Office 365으로 마이그레이션된 후 온-프레미스 Exchange Server 조직을 제거하면 메일 사용 가능한 사용자로 복사한 프록시 주소가 온-프레미스 Active Directory에 남아 있습니다.
-  
-자세한 내용을 보고 사서함을 메일 사용이 가능한 사용자로 변환하기 위해 실행할 수 있는 스크립트를 다운로드하려면 다음을 참조하세요.
-  
-- [Exchange 2007 사서함을 메일 사용이 가능한 사용자로 변환](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [Exchange 2003 사서함을 메일 사용이 가능한 사용자로 변환](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>6단계: 미리 구성된 마이그레이션 일괄 처리 삭제
 <a name="BK_Endpoint"> </a>

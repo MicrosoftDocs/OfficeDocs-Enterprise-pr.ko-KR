@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814606"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072210"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 전역 관리자 계정 보호
 
@@ -49,7 +49,7 @@ Microsoft는 조직을 보호 하기 위한 기능을 제공 하지만, 이러�
   
 1. 전역 관리자 역할이 할당 된 사용자 계정 집합을 확인 합니다. 이 작업은 Graph 용 Azure 활성 (Azure AD) 디렉터리 PowerShell 명령에 대해 수행할 수 있습니다.
   
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
@@ -75,7 +75,7 @@ Microsoft는 조직을 보호 하기 위한 기능을 제공 하지만, 이러�
   
 - 구독에서 전역 관리자 역할이 할당된 사용자 계정은 새로운 전용 전역 관리자 계정 집합뿐입니다. 다음 PowerShell 명령을 사용 하 여이를 확인 합니다.
     
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 

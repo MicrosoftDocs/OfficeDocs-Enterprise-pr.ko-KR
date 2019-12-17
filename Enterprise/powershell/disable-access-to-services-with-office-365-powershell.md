@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Office 365 PowerShell을 사용 하 여 사용자의 Office 365 서비스에 대 한 액세스를 사용 하지 않도록 설정 합니다.
-ms.openlocfilehash: 9668175010b2581bcdd40988f605f68eea30520d
-ms.sourcegitcommit: 572375d69c438bd1eae012e6e98039be0a126a6d
+ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39872246"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072200"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.
 
@@ -155,11 +155,6 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 사용자가 라이선스를 계획에 할당 하는 동안 Office 365 서비스를 사용 하지 않도록 설정 하려면 [사용자 라이선스를 할당 하는 동안 서비스에 대 한 액세스 사용 안 함을](disable-access-to-services-while-assigning-user-licenses.md)참조 하세요.
 
 
-## <a name="new-to-office-365"></a>Office 365의 새로운 기능
-<a name="LinkedIn"> </a>
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>참고 항목
 <a name="SeeAlso"> </a>
 

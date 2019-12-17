@@ -3,7 +3,7 @@ title: Office 365 PowerShell 시작
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 요약:Office 365 PowerShell의 중요성을 살펴보고 Office 365 테넌트에 연결하여 도움말을 확인하세요.
-ms.openlocfilehash: aeabc0b4ab799f542a05e5279b8ff5cb7123abd8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068954"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072180"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell 시작
 
- **요약:** Office 365 PowerShell의 중요성을 살펴보고 Office 365 테넌트에 연결하여 도움말을 확인하세요.
-  
 Office 365 PowerShell을 사용하면 명령 및 스크립트로 Office 365를 관리하여 일상 업무를 효율적으로 처리할 수 있습니다. Office 365 PowerShell 기술이 Office 365 관리에 중요한 이유, Office 365 구독에 연결하고, 보고서를 만들과 추가 정보를 얻고, Office 365 커뮤니티의 도움을 얻는 방법을 알아봅니다.
   
 필요에 따라 문서를 선택하세요.
@@ -54,8 +52,6 @@ Office 365 PowerShell을 사용하면 명령 및 스크립트로 Office 365를 �
     PowerShell 커뮤니티 장소로 연결하고 Office 365 PowerShell 사용에 대한 도움말 또는 진행 중인 정보를 얻으려면 여기에서 시작합니다.
     
 ## <a name="see-also"></a>참고 항목
-
-#### 
 
 [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 

@@ -3,7 +3,7 @@ title: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/28/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,15 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '요약: 단일 Windows PowerShell 창에서 모든 Office 365 서비스에 Windows PowerShell을 연결 합니다.'
-ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: ec24914367450e4ff464b3399be9cb2e626dd254
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257427"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072510"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결 합니다.
 
- **요약:** 별도의 PowerShell 콘솔 창에서 서로 다른 Office 365 서비스를 관리 하는 대신, 모든 Office 365 서비스에 연결 하 여 단일 콘솔 창의 관리를 관리할 수 있습니다.
-  
 PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 관리 센터, SharePoint Online, Exchange Online, 비즈니스용 Skype Online, 보안 &amp; 및 준수 센터에 해당 하는 동시에 최대 5 개의 서로 다른 Windows PowerShell 세션이 열리도록 할 수 있습니다. 별도의 Windows PowerShell 세션에서 5 가지 서로 다른 연결 방법을 사용 하는 경우 데스크톱은 다음과 같이 표시 될 수 있습니다.
   
 ![동시에 실행되는 5개의 Windows PowerShell 콘솔](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
@@ -100,7 +98,7 @@ PowerShell을 사용 하 여 Office 365을 관리 하는 경우 Microsoft 365 �
  ```
 
 >[!Note]
->PowerShell Core에서는 이름에 **Msol** 이 포함 된 Windows powershell 모듈 및 cmdlet에 대 한 Microsoft Azure Active Directory 모듈을 지원 하지 않습니다. 이러한 cmdlet을 계속 사용 하려면 Windows PowerShell에서 실행 해야 합니다.
+>PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
 >
 
 4. 다음 명령을 실행 하 여 SharePoint Online에 연결 합니다. 도메인에 대 한 실제 값으로 _ \<domainhost>_ 를 교체 합니다. 예를 들어 "litwareinc.onmicrosoft.com"의 경우 _ \<domainhost>_ 값은 "litwareinc"입니다.
@@ -222,5 +220,5 @@ Exchange Online 및 보안 &amp; 및 준수 센터에 대해 multi-factor authen
 
 - [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)
 - [Office 365 PowerShell을 사용하여 SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
-- [사용자 계정 및 Office 365 PowerShell을 사용 하 여 라이센스 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)

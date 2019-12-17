@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: '요약: Office 365 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책에 대 한 사용자 단위 통신 설정을 할당 합니다.'
-ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e425c3f0bc6253550b1be2081df89e535da811f4
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031043"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072260"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당
 
- **요약:** Office 365 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책에 대 한 사용자별 통신 설정을 할당 합니다.
-  
 Office 365 PowerShell을 사용 하는 것은 비즈니스용 Skype 온라인 정책에 따라 사용자별 통신 설정을 효율적으로 할당 하는 효율적인 방법입니다.
   
 ## <a name="before-you-begin"></a>시작하기 전에
@@ -33,12 +31,13 @@ Office 365 PowerShell을 사용 하는 것은 비즈니스용 Skype 온라인 �
     
 2. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
     
-  ```
-  Import-Module LyncOnlineConnector
+```powershell
+Import-Module LyncOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
-  ```
+```
+
 메시지가 나타나면 비즈니스용 Skype Online 관리자 계정 이름 및 암호를 입력 합니다.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>사용자 계정에 대 한 외부 통신 설정 업데이트
@@ -54,13 +53,13 @@ Import-PSSession $sfbSession
   
 그렇다면 Alex을 할당할 외부 액세스 정책을 어떻게 결정 합니까? 다음 명령은 EnableFederationAccess가 True로 설정되고 EnablePublicCloudAccess가 False로 설정된 모든 외부 액세스 정책을 반환합니다.
   
-```
+```powershell
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
 명령이 수행 하는 작업은 EnableFederationAccess 속성을 True로 설정 하 고 EnablePublicCloudAccess 정책이 False로 설정 되어 있는 두 가지 조건을 충족 하는 모든 정책을 반환 합니다. 그런 다음이 명령은 조건을 충족 하는 하나의 정책을 반환 합니다 (FederationOnly). 예를 들면 다음과 같습니다.
   
-```
+```powershell
 Identity                          : Tag:FederationOnly
 Description                       :
 EnableFederationAccess            : True
@@ -75,7 +74,7 @@ EnableOutsideAccess               : True
   
 이제 Alex에 할당할 정책을 알고 있으므로 [get-csexternalaccesspolicy](https://go.microsoft.com/fwlink/?LinkId=523974) cmdlet을 사용 하 여 해당 정책을 할당할 수 있습니다. 예를 들면 다음과 같습니다.
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
@@ -83,7 +82,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly
   
 정책 및 정책 할당에 대 한 작업을 수행 하는 경우에는 한 번에 한 사용자 계정을 사용 하는 것으로 제한 되지 않습니다. 페더레이션 파트너 및 Windows Live 사용자와 통신할 수 있는 모든 사용자의 목록이 필요한 경우를 예로 들어 보겠습니다. 여기서 해당 사용자에게는 외부 사용자 액세스 정책 FederationAndPICDefault가 이미 할당되어 있습니다. 이를 알고 있으므로 간단한 명령을 하나씩 실행 하 여 모든 사용자의 목록을 표시할 수 있습니다. 해당 명령은 다음과 같습니다.
   
-```
+```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
@@ -91,7 +90,7 @@ Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | 
   
 모든 사용자 계정이 같은 정책을 사용 하도록 구성 하려면 다음 명령을 사용 합니다.
   
-```
+```powershell
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
@@ -99,7 +98,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
   
 또 다른 예로, 이전에 FederationAndPICDefault 정책을 할당 했 고, 이제 생각이 변경 되었으며 전역 외부 액세스 정책에 의해 관리 되는 것을 Alex 가정해 보겠습니다. 전역 정책은 모든 사용자에 게 명시적으로 할당할 수 없습니다. 다른 사용자별 정책이 할당 되지 않은 경우에만 사용 됩니다. 따라서 전역 정책에 따라 Alex를 관리 하려면 이전에 자신에 게 할당 된 사용자별 정책을 *할당* 해제 해야 합니다. 예제 명령은 다음과 같습니다.
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
@@ -109,11 +108,9 @@ Windows PowerShell을 사용 하 여 사용자 계정을 사용 하지 않도록
   
 ## <a name="see-also"></a>참고 항목
 
-#### 
-
 [Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
