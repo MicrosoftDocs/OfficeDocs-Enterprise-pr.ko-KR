@@ -14,16 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746221"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085173"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
   
@@ -154,10 +154,13 @@ HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새
 또한 CTRL 키를 누른 상태로 Outlook 클라이언트 아이콘 (Windows 알림 트레이)을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자\*' 유형 (' 인증 ' 형식)에 대해 클라이언트의 SMTP 주소를 찾습니다.
   
  **참고 사항** HMA를 사용 하 여 비즈니스용 Skype를 구성 해야 하나요? [지원 되는 토폴로지](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)를 나열 하는 문서와 [구성을 수행](configure-skype-for-business-for-hybrid-modern-authentication.md)하는 방법을 보여 주는 두 개의 문서가 필요 합니다.
+ 
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Android 및 iOS용 Outlook에서 하이브리드 최신 인증 사용
+
+TCP 443에서 Exchange server를 사용 하는 온-프레미스 고객의 경우 다음 IP 범위를 허용 목록. <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
 ## <a name="related-topics"></a>관련 항목
 
 [하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소](hybrid-modern-auth-overview.md) 
   
-

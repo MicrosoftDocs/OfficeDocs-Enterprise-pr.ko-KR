@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919261"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261361"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
@@ -75,7 +75,7 @@ Office 365 그룹 게스트 설정을 설정 하려면
 SharePoint 조직 수준 공유 설정을 설정 하려면
 
 1. Microsoft 365 관리 센터의 왼쪽 탐색에 있는 **관리 센터**에서 **SharePoint**를 클릭 합니다.
-2. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭합니다.
+2. 왼쪽 탐색 창의 SharePoint 관리 센터에서 **공유**를 클릭합니다.
 3. SharePoint 용 외부 공유가 **사용자** 또는 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다.
 4. 변경한 내용이 있으면 **저장**을 클릭합니다.
 
@@ -121,7 +121,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 게스트 사용자는 사이트에서 추가할 수 없습니다. 웹에서 Outlook을 사용 하 여 추가 해야 합니다.
 
-사이트에 게스트를 초대 하려면
+그룹에 게스트를 초대 하려면
 1. 웹용 Outlook의 **그룹**에서 구성원을 추가 하려는 그룹을 클릭 합니다.
 2. 그룹 대화 상대 카드를 열고 **기타 옵션** (...)에서 **구성원 추가**를 클릭 합니다.
 3. 초대 하려는 게스트의 전자 메일 주소를 입력 한 다음 **추가**를 클릭 합니다.
@@ -134,4 +134,6 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 
 [보안 게스트 공유 환경 만들기](create-a-secure-guest-sharing-environment.md)
+
+[관리 되는 게스트를 사용 하 여 B2B 엑스트라넷 만들기](b2b-extranet.md)
 

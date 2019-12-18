@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/05/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,26 +15,22 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 SharePoint Online 사용자, 그룹 및 사이트를 관리 합니다.'
-ms.openlocfilehash: e011946fa46455d1c1eba2bdff565bd55ec875bf
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 37aec217c39d9e1b9641004e38c049dcc407fd0c
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747623"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261381"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리
 
 많은 사용자 계정 또는 그룹 목록을 사용 하 고이를 보다 쉽게 관리 하기 원하는 SharePoint Online 관리자는 Office 365 PowerShell을 사용할 수 있습니다. 
 
-## <a name="before-you-begin"></a>시작하기 전에
-
-이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
+시작 하기 전에이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>사이트, 그룹, 사용자 목록 가져오기
 
 사용자 및 그룹 관리를 시작하려면 먼저 사이트, 그룹 및 사용자 목록을 가져와야 합니다. 그리고 나면 해당 정보를 이 문서의 예제 전반에 걸쳐 사용할 수 있습니다.
-
-### <a name="get-a-list-of-sites"></a>사이트 목록 가져오기
 
 이 명령을 사용하여 테넌트의 사이트 목록을 가져옵니다.
 
@@ -42,15 +38,11 @@ ms.locfileid: "38747623"
 Get-SPOSite
 ```
 
-### <a name="get-a-list-of-groups"></a>그룹 목록 가져오기
-
 이 명령을 사용하여 테넌트의 그룹 목록을 가져옵니다.
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 ```
-
-### <a name="get-a-list-of-users"></a>사용자 목록 가져오기
 
 이 명령을 사용하여 테넌트의 사용자 목록을 가져옵니다.
 
@@ -60,69 +52,69 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>사이트 모음 관리자 그룹에 사용자 추가
 
-**Set-SPOUser** 명령을 사용하여 사이트 모음의 사이트 모음 관리자 목록에 사용자를 추가할 수 있습니다. 이 작업을 위한 구문은 다음과 같습니다.
+`Set-SPOUser` Cmdlet을 사용 하 여 사이트 모음의 사이트 모음 관리자 목록에 사용자를 추가 합니다.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
-Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
+Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
 이러한 명령을 사용 하려면 replace the < 및 > 문자를 포함 하 여 따옴표 안에 있는 모든 내용을 올바른 이름으로 바꿉니다.
 
-예를 들어 다음 명령 집합은 contoso1 테 넌 시에 있는 ContosoTest 사이트 모음의 사이트 모음 관리자 목록에 오 팔 Castillo (사용자 이름 opalc)을 추가 합니다.
+예를 들어이 명령 집합은 contoso 테 넌 시의 ContosoTest 사이트 모음에 있는 사이트 모음 관리자의 목록에 오 팔 Castillo (사용자 이름 opalc)을 추가 합니다.
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 $user = "opalc"
-Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
+Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
 이러한 명령을 복사 하 여 메모장에 붙여 넣고 $tenant, $site 및 $user의 변수 값을 환경의 실제 값으로 변경한 다음이를 SharePoint Online 관리 셸 창에 붙여 넣어 실행 합니다.
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>다른 사이트 모음 그룹에 사용자 추가
 
-이 작업에서는 **Add-SPOUser** 명령을 사용하여 사이트 모음의 SharePoint 그룹에 사용자를 추가합니다.
+이 작업에서는 `Add-SPOUser` cmdlet을 사용 하 여 사이트 모음의 SharePoint 그룹에 사용자를 추가 합니다.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
-Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
+Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site
 
 ```
 
-예를 들어 Glen Rife(사용자 이름 glenr)를 contoso1 테넌시에 있는 ContosoTest 사이트 모음의 감사자 그룹에 추가해 보겠습니다.
+예를 들어 contoso 테 넌 시에 있는 ContosoTest 사이트 모음의 감사자 그룹에 고 이름 \ Rienr을 추가 해 보겠습니다.
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 $user = "glenr"
 $group = "Auditors"
-Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
+Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
 ## <a name="create-a-site-collection-group"></a>사이트 모음 그룹 만들기
 
-새 SharePoint 그룹을 만든 후 ContosoTest 사이트 모음에 추가 하려면 **remove-spositegroup** 명령을 사용 합니다.
+`New-SPOSiteGroup` Cmdlet을 사용 하 여 새 SharePoint 그룹을 만들고 사이트 모음에 추가 합니다.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-사용 권한 수준과 같은 그룹 속성은 나중에 **Set-SPOSiteGroup** cmdlet을 사용하여 업데이트할 수 있습니다.
+권한 수준과 같은 그룹 속성은 나중에 `Set-SPOSiteGroup` cmdlet을 사용 하 여 업데이트할 수 있습니다.
 
-예를 들어 보기 전용 권한이 있는 감사자 그룹을 contoso1 테 넌 시에 있는 Contoso 테스트 사이트 모음에 추가 해 보겠습니다.
+예를 들어 보기 전용 권한이 있는 감사자 그룹을 contoso 테 넌 시의 contosotest 사이트 모음에 추가 해 보겠습니다.
 
 ```powershell
-$tenant = "contoso1"
-$site = "Contoso Test"
+$tenant = "contoso"
+$site = "contosotest"
 $group = "Auditors"
 $level = "View Only"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
@@ -134,31 +126,31 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 그러나 SharePoint Online 관리 셸 및 CSV 파일을 사용 하는 것이 빠르고 쉬운 방법입니다. 이 작업에서는 Windows PowerShell을 사용하여 사이트 모음 보안 그룹에서 사용자를 제거합니다. 그런 다음 CSV 파일을 사용해 여러 사이트에서 다수의 사용자를 제거합니다. 
 
-명령 구문이 표시 되도록 하기 위해 Office 365 사용자 하나만 사이트 모음 그룹에서 제거 하는 **SPOUser** 명령을 사용 합니다. 이 작업을 위한 구문은 다음과 같습니다.
+명령 구문을 볼 수 있도록 ' Remove-SPOUser ' cmdlet을 사용 하 여 사이트 모음 그룹에서 단일 Office 365 사용자를 제거 하는 것이 좋습니다. 이 작업을 위한 구문은 다음과 같습니다.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
-Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
+Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-예를 들어 contoso1 테 넌 시에 있는 Contoso 테스트 사이트 모음의 사이트 모음 감사자 그룹에서 강현수를 제거 하는 경우를 가정해 보겠습니다.
+예를 들어 contoso 테 넌 시에 있는 contosotest 사이트 모음의 사이트 모음 감사자 그룹에서 강현수를 제거한 경우를 가정해 보겠습니다.
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 $user = "bobbyo"
 $group = "Auditors"
-Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
+Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
 현재는 모든 그룹에서 강현수를 제거 하려고 한다고 가정 합니다. 이 작업을 수행 하는 방법은 다음과 같습니다.
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $user = "bobbyo"
-Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
+Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.com -Site &_.Url}
 ```
 
 > [!WARNING]
@@ -174,13 +166,13 @@ SharePoint 사이트에 다 수의 계정을 추가 하 고 사용 권한을 부
 
 다음과 같은 구조의 첫 번째 CSV 파일은 하나 이상의 그룹을 하나 이상의 사이트 모음에 추가합니다.
 
-### <a name="header"></a>머리글이
+머리글이
 
 ```powershell
 Site,Group,PermissionLevels
 ```
 
-### <a name="item"></a>품목이
+품목이
 
 ```powershell
 https://tenant.sharepoint.com/sites/site,group,level
@@ -190,25 +182,25 @@ https://tenant.sharepoint.com/sites/site,group,level
 
 ```powershell
 Site,Group,PermissionLevels
-https://contoso1.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
-https://contoso1.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
-https://contoso1.sharepoint.com/sites/contosotest,Contoso Designers,Design
-https://contoso1.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
-https://contoso1.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
-https://contoso1.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
-https://contoso1.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
-https://contoso1.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
+https://contoso.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
+https://contoso.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
+https://contoso.sharepoint.com/sites/contosotest,Contoso Designers,Design
+https://contoso.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
+https://contoso.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
+https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
+https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
+https://contoso.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
 
 다음과 같은 구조의 두 번째 CSV 파일은 한 명 이상의 사용자를 하나 이상의 그룹에 추가합니다.
 
-### <a name="header"></a>머리글이
+머리글이
 
 ```powershell
 Group,LoginName,Site
 ```
 
-### <a name="item"></a>품목이
+품목이
 
 ```powershell
 group,login,https://tenant.sharepoint.com/sites/site
@@ -218,14 +210,14 @@ group,login,https://tenant.sharepoint.com/sites/site
 
 ```powershell
 Group,LoginName,Site
-Contoso Project Leads,bobbyo@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
-Contoso Auditors,allieb@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
-Contoso Designers,bonniek@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
-XT1000 Team Leads,dorenap@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/TeamSite01
-XT1000 Advisors,garthf@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/TeamSite01
-Contoso Blog Designers,janets@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Blog01
-Contoso Blog Editors,opalc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Blog01
-Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Project01
+Contoso Project Leads,bobbyo@contoso.com,https://contoso.sharepoint.com/sites/contosotest
+Contoso Auditors,allieb@contoso.com,https://contoso.sharepoint.com/sites/contosotest
+Contoso Designers,bonniek@contoso.com,https://contoso.sharepoint.com/sites/contosotest
+XT1000 Team Leads,dorenap@contoso.com,https://contoso.sharepoint.com/sites/TeamSite01
+XT1000 Advisors,garthf@contoso.com,https://contoso.sharepoint.com/sites/TeamSite01
+Contoso Blog Designers,janets@contoso.com,https://contoso.sharepoint.com/sites/Blog01
+Contoso Blog Editors,opalc@contoso.com,https://contoso.sharepoint.com/sites/Blog01
+Project Alpha Approvers,robinc@contoso.com,https://contoso.sharepoint.com/sites/Project01
 ```
 
 그런 다음 해당 드라이브에 CSV 파일 두 개가 저장되어 있어야 합니다. 다음은 두 CSV 파일을 모두 사용 하 고 사용 권한 및 그룹 구성원을 추가 하는 명령 예제입니다.
@@ -248,7 +240,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginN
 사이트 몇 개에 대해 간단한 보고서를 가져와 해당 사이트의 사용자, 사용자의 사용 권한 수준 및 기타 속성을 표시할 수 있습니다. 이 작업을 위한 구문은 다음과 같습니다.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
@@ -258,7 +250,7 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format
 예를 들어 Contoso1 테넌트의 ContosoTest, TeamSite01 및 Project01 사이트에 대한 보고서를 실행해 보겠습니다.
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 $site = "TeamSite01"

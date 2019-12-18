@@ -14,18 +14,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
-ms.openlocfilehash: abe8f76de07c230c0d1484ccfb57b3b9a7bf8d34
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: f15add5652af44d24e2fec678c5224b5efd7aa4f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707025"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261351"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
 
- **요약:** Office 365 PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.
-
-Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고 사용자를 추가할 때 Office 356 관리 센터에서 보다 훨씬 빠르게 작업을 빠르게 수행할 수 있습니다. Office 356 관리 센터에서 수행할 수 없는 작업을 수행할 수도 있습니다. 
+Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고 사용자를 추가 하는 경우 Microsoft 356 관리 센터에서 보다 훨씬 빠르게 작업을 빠르게 수행할 수 있습니다. Office 356 관리 센터에서 수행할 수 없는 작업을 수행할 수도 있습니다. 
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -57,7 +55,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 
 ### <a name="run-the-windows-powershell-command"></a>Windows PowerShell 명령 실행
 
-1. Windows PowerShell 프롬프트에서 다음 cmdlet을 입력 하거나 복사 하 여 붙여 넣은 다음 enter 키를 누릅니다.<br/>
+1. Windows PowerShell 프롬프트에서 다음 명령을 입력 하거나 복사 하 여 붙여 넣은 다음 enter 키를 누릅니다.<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
@@ -72,24 +70,25 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. 목록의 새 사이트 모음을 확인합니다. **Contosotest**, **TeamSite01**, **Blog01**및 **Project01** 의 사이트 모음이 표시 되어야 합니다.
+4. 목록의 새 사이트 모음을 확인합니다. 예제 CSV 파일을 사용 하 여 **TeamSite01**, **Blog01**, **Project01**및 **Community01** 사이트 모음을 확인할 수 있습니다.
 
-그거에요. 만든 .csv 파일 및 단일 Windows PowerShell cmdlet을 사용 하 여 여러 사이트 모음을 만들었습니다. 이제이 사이트에 사용자를 만들고 할당할 준비가 되었습니다.
+그거에요. 만든 .csv 파일 및 단일 Windows PowerShell 명령을 사용 하 여 여러 사이트 모음을 만들었습니다. 이제이 사이트에 사용자를 만들고 할당할 준비가 되었습니다.
 
 ## <a name="step-2-add-users-and-groups"></a>2단계: 사용자 및 그룹 추가
 
 이제 사용자를 만들어 사이트 모음 그룹에 추가할 수 있습니다. 그런 다음 .csv 파일을 사용하여 새 그룹 및 사용자를 대량 업로드합니다.
 
-다음 절차에서는 contosotest, TeamSite01, Blog01, Project01 사이트 모음을 정상적으로 만들었다고 가정합니다.
+다음 절차에서는 TeamSite01, Blog01, Project01 및 Community01의 예제 사이트를 계속 사용 합니다.
 
 ### <a name="create-csv-and-ps1-files"></a>.csv 및 .ps1 파일 만들기
 
 1. 메모장을 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
+
 ```powershell
 Site,Group,PermissionLevels
-https://tenant.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
-https://tenant.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
-https://tenant.sharepoint.com/sites/contosotest,Contoso Designers,Design
+https://tenant.sharepoint.com/sites/Community01,Contoso Project Leads,Full Control
+https://tenant.sharepoint.com/sites/Community01,Contoso Auditors,View Only
+https://tenant.sharepoint.com/sites/Community01,Contoso Designers,Design
 https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
 https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
@@ -104,9 +103,9 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 
 ```powershell
 Group,LoginName,Site
-Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
-Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
-Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
+Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
 XT1000 Team Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
 XT1000 Advisors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
 Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01

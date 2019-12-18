@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
-ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077937"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085183"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용
 
@@ -40,9 +40,9 @@ Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Off
 
 |**서비스**|**BGP 커뮤니티 값**|**참고**|
 |:-----|:-----|:-----|
-|환율\*  <br/> |12076:5010  <br/> |Exchange 및 EOP 서비스 포함\*  <br/> |
-|sharepoint\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|비즈니스용 skype\*  <br/> |12076:5030  <br/> |비즈니스용 Skype Online  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Exchange 및 EOP 서비스 포함\*  <br/> |
+|SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
+|비즈니스용 Skype\*  <br/> |12076:5030  <br/> |비즈니스용 Skype Online & Microsoft 팀 서비스  <br/> |
 |기타 Office 365 서비스\*  <br/> |12076:5100  <br/> |Office 365 포털 서비스와 함께 Azure Active Directory (인증 및 디렉터리 동기화 시나리오)가 포함 됩니다.  <br/> |
 |\*Express에 포함 된 서비스 시나리오의 범위는 [Office 365 endpoints](https://aka.ms/o365endpoints) 문서에 설명 되어 있습니다.  <br/> \*\*추가 서비스 및 BGP 커뮤니티 값이 나중에 추가 될 수 있습니다. [현재 BGP 커뮤니티 목록을 참조](https://azure.microsoft.com/documentation/articles/expressroute-routing/)하세요.  <br/> |
 
@@ -79,7 +79,7 @@ Office 365 이외의 Microsoft 클라우드 서비스와 관련 된 네트워크
 
 |**사용 되는 BGP 커뮤니티 태그**|**Azure Express를 통해 라우팅할 수 있는 기능**|**인터넷 경로 필요**|
 |:-----|:-----|:-----|
-|Exchange, 비즈니스용 Skype, SharePoint, &amp; 기타 서비스  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp; 비즈니스용 OneDrive  <br/> Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/> |
+|Exchange, 비즈니스용 Skype & Microsoft 팀, SharePoint, &amp; 기타 서비스  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp; 비즈니스용 OneDrive  <br/> Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP 커뮤니티 사용에 대 한 주요 계획 고려 사항
 
