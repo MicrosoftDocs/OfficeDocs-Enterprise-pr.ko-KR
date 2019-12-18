@@ -194,6 +194,7 @@
 ##### [인증되지 않은 공유](best-practices-anonymous-sharing.md)
 ##### [우발적 노출 제한](sharing-limit-accidental-exposure.md)
 ##### [보안 게스트 공유 환경](create-a-secure-guest-sharing-environment.md)
+#### [B2B 엑스트라넷 만들기](b2b-extranet.md)
 
 ## 장치
 ### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
