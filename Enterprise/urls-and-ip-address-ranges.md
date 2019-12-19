@@ -1,7 +1,7 @@
 ---
 title: 'Office 365 URL 및 IP 주소 범위 '
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: laurawi
+author: LauraWi
 manager: laurawi
 ms.date: 11/27/2019
 audience: Admin
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '요약: Office 365를 사용하려면 인터넷에 연결되어 있어야 합니다. 아래의 끝점은 Government 커뮤니티 클라우드(GCC)를 포함하여 Office 365 요금제를 사용하는 고객에 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: fe88ef5a7613c385363136dbdb5ac51855ab4c5e
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: eecd07a471c1ca07387e89d7c3b4dbca4277e14d
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655827"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744492"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 및 IP 주소 범위 
 

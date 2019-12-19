@@ -1,7 +1,7 @@
 ---
 title: 21Vianet에서 운영하는 Microsoft Office 365 URL 및 IP 주소 범위
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: laurawi
+author: LauraWi
 manager: laurawi
 ms.date: 09/30/2019
 audience: ITPro
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: 이 문서는 중국의 21Vianet에서 운영하는 Microsoft Office 365에 적용됩니다. 이 문서는 21Vianet에서 운영하는 Microsoft Office 365에서 사용하는 URL 및 IP 주소 범위를 나열합니다.
 hideEdit: true
-ms.openlocfilehash: 54ebb54211c14d7279d9942372570c1985820d58
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: 2ba413bda255b95c9fb3e2848ad44591e3981d26
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975843"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744482"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet에서 운영하는 Microsoft Office 365 URL 및 IP 주소 범위
 
