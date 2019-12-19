@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크는 일반 인터넷 위치에 대한 액세스를 제한하거나 상당한 수의 백홀이나 네트워크 트래픽 처리를 포함합니다. 이러한 네트워크의 컴퓨터에서 Office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자는 Office 365 끝점 목록을 구성하는 FQDN, URL 및 IP 주소 목록을 관리해야 합니다. 네트워크 요청에서 Office 365에 연결할 수 있도록 하려면 이러한 목록을 직접 경로, 프록시 우회 및/또는 방화벽 규칙 및 PAC 파일에 추가해야 합니다.
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072490"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744512"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -133,14 +133,14 @@ Office 365 연결에 대해 관리자가 자주 묻는 질문과 대답은 다�
   
 전 세계적으로 2,500개가 넘는 ISP 피어링 관계와 70개의 클라이언트에서 로그인을 통해 사용자의 네트워크에서 Microsoft 네트워크로 원활하게 연결할 수 있습니다. ISP의 피어링 관계가 최적인지 확인하는 데 시간을 들일 필요가 없습니다. Microsoft 네트워크에 대한 좋은 피어링 분배와 좋지 않은 피어링 분배의 [몇 가지는 예가 여기에 나와 있습니다](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/).
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>게시된 목록에 없는 IP 주소에 대한 네트워크 요청이 표시됩니다. 해당 주소에 대한 액세스를 제공해야 하나요?
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>게시된 목록에 없는 IP 주소에 대한 네트워크 요청이 표시됩니다. 해당 주소에 대한 액세스를 제공해야 하나요?
 
 Microsoft는 사용자가 직접 라우팅해야 하는 Office 365 서버의 IP 주소만 제공합니다. 이 목록은 네트워크 요청이 표시되는 모든 IP 주소의 전체 목록이 아닙니다. Microsoft 및 타사가 소유한 게시되지 않은 IP 주소에 대한 네트워크 요청이 표시됩니다. 이러한 IP 주소는 동적으로 생성되거나 변경될 때 시기 적절한 통지를 방지하는 방법으로 관리됩니다. 방화벽에서 이러한 네트워크 요청에 대한 FQDN을 기준으로 액세스를 허용할 수 없는 경우 PAC 또는 WPAD 파일을 사용하여 요청을 관리합니다.
   
 자세한 정보가 필요한, Office 365와 연결된 IP가 표시되나요?
   
-1. [CIDR 계산기](https://www.ipaddressguide.com/cidr)를 사용하여 IP 주소가 더 큰 게시된 범위에 포함되는지 확인합니다.
+1. [IPv4](https://www.ipaddressguide.com/cidr) 또는 [IPv6]https://www.ipaddressguide.com/ipv6-cidr)에 대해 이와 같이 CIDR 계산기를 사용 하 여 IP 주소가 보다 큰 게시 범위에 포함 되는지 확인 합니다.
 2. [whois 쿼리](https://dnsquery.org/)를 사용하여 파트너가 IP를 소유하는지 확인합니다. Microsoft가 해당 IP를 소유한 경우 내부 파트너일 수 있습니다.
 3. 인증서를 확인합니다. 브라우저에서 *HTTPS://\<IP_주소\>* 를 사용하여 IP 주소에 연결한 후 인증서에 나열된 도메인을 확인하여 IP 주소와 연결된 도메인을 파악합니다. Microsoft 소유의 IP 주소이고 Office 365 IP 주소 목록에 없는 경우 *MSOCDN.NET*과 같은 Microsoft CDN과 연결된 IP 주소이거나 게시된 IP 정보가 없는 다른 Microsoft 도메인일 수 있습니다. 인증서의 도메인이 Microsoft가 IP 주소를 나열하려고 요구하는 도메인인 경우 알려주세요.
 
@@ -159,8 +159,8 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 간접 Office 365 FQDN을 기반으로하는 하드 코딩된 구성 또는 허용 목록 지정은 권장되지 않고 Microsoft에서 지원하지 않으며 고객 연결 문제를 일으키는 것으로 알려져 있습니다. CNAME 리디렉션을 차단하거나 Office 365 DNS 항목을 잘못 해석하는 DNS 솔루션은 DNS 재귀를 사용하도록 설정된 DNS 조건 전달(직접 사용되는 Office 365 FQDN으로 범위 지정)을 통해 해결할 수 있습니다. 많은 타사 네트워크 경계 제품은 [Office 365 IP 주소 및 URL 웹 서비스](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)를 사용하여 구성에 허용 목록에 포함된 권장 Office 365 끝점을 기본적으로 통합합니다.
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft 도메인 이름에 nsatc.net 또는 akadns.net과 같은 이름이 표시되는 이유는 무엇인가요?
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft 도메인 이름에 nsatc.net 또는 akadns.net과 같은 이름이 표시되는 이유는 무엇인가요?
 
 Office 365 및 기타 Microsoft 서비스에서는 Office 365 환경을 개선하기 위해 Akamai 및 MarkMonitor와 같은 몇 가지 타사 서비스를 사용합니다. 가능한 최상의 환경을 계속 제공하기 위해 Microsoft는 향후 이러한 서비스를 변경할 수 있습니다. 타사 도메인은 CDN과 같은 콘텐츠를 호스트하거나 지리적 트래픽 관리 서비스와 같은 서비스를 호스트할 수 있습니다. 현재 사용 중인 몇 가지 서비스는 다음과 같습니다.
   
@@ -182,8 +182,8 @@ Office 365 및 기타 Microsoft 서비스에서는 Office 365 환경을 개선�
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Office 365에 대한 최소 연결을 사용할 수 있어야 합니다.
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Office 365에 대한 최소 연결을 사용할 수 있어야 합니다.
 
 Office 365는 인터넷을 통해 작동하도록 구축된 서비스 모음이므로 안정성 및 가용성 약속은 사용할 수 있는 많은 표준 인터넷 서비스를 기반으로 합니다. 예를 들어 DNS, CRL 및 CDN과 같은 표준 인터넷 서비스는 최신 인터넷 서비스를 사용하기 위해 연결할 수 있어야 하는 것처럼 Office 365를 사용하기 위해 연결할 수 있어야 합니다.
 
@@ -200,8 +200,8 @@ Office 365 제품군은 주요 서비스 영역으로 나뉩니다. 연결에 �
   
 Office 365를 사용하려고 할 때 타사 서비스에 액세스할 수 없음을 알게 되면 [이 문서에서 필수 또는 선택 사항으로 표시된 모든 FQDN이 프록시 및 방화벽을 통해 허용되도록](urls-and-ip-address-ranges.md) 하고 싶을 것입니다.
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Microsoft 소비자 서비스에 대한 액세스를 차단하려면 어떻게 하나요?
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Microsoft 소비자 서비스에 대한 액세스를 차단하려면 어떻게 하나요?
 
 소비자 서비스에 대한 액세스를 제한하는 작업은 사용자의 책임으로 수행해야 합니다. 소비자 서비스를 차단하는 신뢰할 수 있는 유일한 방법은 *login.live.com* FQDN에 대한 액세스를 제한하는 것입니다. 이 FQDN은 MSDN, TechNet과 같은 비소비자 서비스를 비롯한 다양한 서비스에서 사용됩니다. 이 FQDN은 Microsoft 지원의 보안 파일 교환 프로그램에서도 사용됩니다. Microsoft 제품에 대한 문제 해결을 용이하게 하기 위해 파일을 전송하는 데 필요합니다.  이 FQDN에 대한 액세스를 차단하면 이러한 서비스와 연결된 네트워크 연결에 대한 규칙의 예외를 포함해야 할 수 있습니다.
   
