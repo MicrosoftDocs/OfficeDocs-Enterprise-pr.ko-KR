@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 새 데이터 센터? 지속적인 고객 요구 및 사용 증가를 지원 하기 위해 용량을 추가 하 고 리소스를 계산 합니다. 또한 새 데이터 센터 지역는 핵심 고객 데이터에 대 한 상주 데이터를 제공 합니다. 핵심 고객 데이터는 Microsoft Online Services 약관 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일의 콘텐츠)과 SharePoint Online 사이트 콘텐츠 및 파일에 정의 된 고객 데이터의 하위 집합을 참조 하는 용어입니다. 해당 사이트 내에 저장 되 고 파일을 비즈니스용 OneDrive로 업로드 합니다.
-ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962455"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923870"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>핵심 데이터를 새 Office 365 데이터 센터 지역으로 이동
 
@@ -26,7 +26,8 @@ Office 365 for business 서비스용 새 데이터 센터 지역가 계속 해 �
 핵심 고객 데이터는 다음을 포함 하는 고객 데이터의 하위 집합을 지칭 하는 용어입니다. 
 - Exchange Online 사서함 콘텐츠 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일 콘텐츠)
 - SharePoint Online 사이트 콘텐츠 및 해당 사이트 내에 저장 된 파일
-- 비즈니스용 OneDrive에 업로드 된 파일 
+- 비즈니스용 OneDrive에 업로드 된 파일
+- 채팅에 사용 되는 개인 메시지, 채널 메시지 및 이미지를 비롯 한 팀 채팅 메시지
   
 핵심 고객 데이터가 기존 데이터 센터 지역에 이미 저장되어 있는 기존 고객은 새 데이터 센터 지역의 시작에 영향을 받지 않습니다. Microsoft는 새 데이터 센터 지역에 고유한 기능 또는 규정 준수 인증을 도입하지 않습니다. 두 지역 중 어떤 지역의 고객이든 이전과 동일한 서비스 품질, 성능 및 보안 제어를 경험할 수 있습니다. 아래 표에 나열 된 기존 고객은 rest에서 조직의 핵심 고객 데이터를 새 데이터 센터 지역으로 초기 마이그레이션을 요청 하는 옵션을 제공 합니다.
   

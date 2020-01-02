@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 다음은 핵심 데이터를 새 데이터 센터 지역으로 이동 하는 방법에 대 한 일반적인 질문에 대 한 대답입니다.
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756587"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923850"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -50,6 +50,14 @@ Exchange Online과 SharePoint Online/비즈니스용 OneDrive 간의 공유 종�
 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 서비스 작업입니다. 영향을 받을 수 있는 기능은 [데이터 이동 중 및 후](during-and-after-your-data-move.md)에 나열 됩니다. 가용성을 위해 [Microsoft Online SERVICES SLA (서비스 수준 계약)](https://go.microsoft.com/fwlink/p/?LinkId=523897) 를 준수 하 고, 고객이 이동 중에 대비 하거나 모니터링 해야 하는 작업이 없습니다. 
   
 모든 Office 365 서비스는 데이터 센터에서 동일한 버전이 실행되므로 일관된 기능이 보장될 수 있습니다. 서비스는 프로세스 전반에 걸쳐 완벽하게 지원됩니다.
+
+## <a name="what-is-in-scope-for-teams-migration"></a>팀 마이그레이션의 범위에는 어떤 것이 있나요?
+
+Exchange Online, SharePoint Online 및 비즈니스용 OneDrive와 함께 사용할 수 있습니다. Microsoft는 팀 데이터를 로컬 데이터 센터로 마이그레이션합니다.  
+- 개인 메시지 및 채널 메시지를 포함 한 팀 대화방 메시지 
+- 채팅에 사용 되는 팀 이미지 
+
+팀 파일은 SharePoint Online 및 팀 채팅 파일에 저장 되며 비즈니스용 OneDrive에 저장 됩니다.  음성 메일, 일정, 채팅 기록 및 연락처는 Exchange Online에 저장 됩니다.  대부분의 경우 Exchange Online, SharePoint Online 및 비즈니스용 OneDrive는 이미 로컬 데이터 센터 지역에 있는 고객에 의해 사용 되 고 있으며 적격 고객 국가에 대 한 Office 365 마이그레이션 프로그램의 일부일 뿐입니다.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>서로 다른 온-os에 다른 서비스가 있는 경우의 영향은 무엇입니까?
 
