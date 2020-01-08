@@ -3,7 +3,7 @@ title: 'Office 365 URL 및 IP 주소 범위 '
 ms.author: laurawi
 author: LauraWi
 manager: laurawi
-ms.date: 11/27/2019
+ms.date: 01/02/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '요약: Office 365를 사용하려면 인터넷에 연결되어 있어야 합니다. 아래의 끝점은 Government 커뮤니티 클라우드(GCC)를 포함하여 Office 365 요금제를 사용하는 고객에 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: eecd07a471c1ca07387e89d7c3b4dbca4277e14d
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: aa07bb55b87d1fa15c76239390622fcdc4f5e88c
+ms.sourcegitcommit: f9888d1c27e38d3c489a0cbed7684a2e67c3afbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744492"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951518"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 및 IP 주소 범위 
 
@@ -40,7 +40,7 @@ ms.locfileid: "40744492"
   
 ||||
 |:-----|:-----|:-----|
-|**마지막 업데이트 날짜:** 2019년 11월 27일 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [로그 구독 변경](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> | **사용:** 프록시 [PAC 파일](managing-office-365-endpoints.md#pacfiles) <br/> |
+|**마지막 업데이트 날짜:** 2020년 1월 2일 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [로그 구독 변경](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> | **사용:** 프록시 [PAC 파일](managing-office-365-endpoints.md#pacfiles) <br/> |
    
  [Office 365 끝점 관리](managing-office-365-endpoints.md)에서 시작해 이 데이터를 사용해 네트워크 연결을 관리하는 데 추천하는 사항을 파악합니다. 끝점 데이터는 새 IP 주소 및 URL이 활성화되기 30일 전인 월초에 업데이트됩니다. 이렇게 하면 자동 업데이트를 설정하지 않은 고객에게 새로운 연결이 필요하기 해당 프로세스를 완료할 수 있습니다. 끝점 주소는 지원 에스컬레이션, 보안 문제 또는 그 외의 즉각적인 운영 요구 사항을 처리하는 데 필요한 경우 월중에 업데이트될 수 있습니다. 이 페이지 아래에 표시되는 데이터는 모두 REST 기반 웹 서비스에서 생성됩니다. 스크립트 또는 네트워크 장치를 사용하여 이 데이터에 액세스 하는 경우, 직접 [웹 서비스](office-365-ip-web-service.md)로 이동해야 합니다.
 
@@ -80,4 +80,3 @@ ms.locfileid: "40744492"
 [Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653)
   
 [Microsoft 공용 IP 공간](https://www.microsoft.com/download/details.aspx?id=53602)
-
