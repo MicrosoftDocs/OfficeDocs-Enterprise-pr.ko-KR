@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 지원 서비스를 호출 하기 전에 Office 365 서비스의 상태를 확인 하 여 활성 서비스가 중단 되었는지 확인 합니다.
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931752"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122587"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Office 365 서비스 상태를 확인하는 방법
 
@@ -55,7 +55,7 @@ ms.locfileid: "37931752"
 
 **모든 서비스** 탭 (기본 보기)에는 모든 서비스와 해당 현재 상태가 표시 됩니다. 아이콘 및 **상태** 열은 각 서비스의 상태를 나타냅니다. 현재 인시던트가 발생 하는 서비스에 대 한 보기를 필터링 하려면 페이지 맨 위에 있는 **인시던트** 탭을 선택 합니다. **권고** 탭을 선택 하면 현재 권고가 게시 된 서비스만 표시 됩니다. **기록** 탭에는 해결 된 사건 및 권고의 기록이 표시 됩니다.
 
-목록에 표시 되지 않는 문제가 발생 한 경우에 **는 문제 보고**를 선택 하 고 간단한 양식을 작성 하 여 문제를 알리고 **제출을**선택 합니다.
+Office 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이지에 표시 되지 않으면 **문제점 보고**를 선택 하 고 간단한 양식을 작성 하 여이에 대해 알려주십시오. Microsoft는 다른 조직에서 제공 하는 데이터 및 보고서를 살펴보고 문제가 광범위 하 게 진행 된 경우와 서비스에서 시작 되었는지 확인 합니다. 문제가 해결 된 경우 **서비스 상태** 페이지에 새 인시던트 또는 권고로 추가 하 여 확인을 추적할 수 있습니다. 30 분 이내에 목록에 표시 되지 않는 경우에는 지원 서비스에 문의 하 여 문제를 해결 해 보세요.
 
 > [!TIP]
 > 모바일 장치에서 [Office 365 관리 앱](https://go.microsoft.com/fwlink/p/?linkid=627216)을 사용하여 서비스 상태를 볼 수도 있습니다. 이 방법은 푸시 알림을 통해 최신 상태를 유지하는 좋은 방법입니다. 

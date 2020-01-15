@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 팀에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085203"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122597"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>게스트와 팀으로 공동 작업하기
 

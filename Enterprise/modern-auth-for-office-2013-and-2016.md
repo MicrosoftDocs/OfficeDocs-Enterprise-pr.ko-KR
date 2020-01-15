@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747991"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122577"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 이 문서를 읽으면 Office 2013 및 Office 2016 클라이언트 앱이 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 Office 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
 
@@ -73,6 +73,7 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 (기본값) * * * *|테 넌 트에 대 한 최신 인증을 끈 인증 동작 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2016  <br/> |아니요 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |예  <br/> |Outlook 2010, 2013 또는 2016에서 최신 인증을 적용 합니다. <br/> [추가 정보](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook 클라이언트 내에서 최신 인증을 적용 합니다.<br/> |
 |Office 2016  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 0  <br/> |아니요  <br/> |기본 인증  <br/> |기본 인증  <br/> |
@@ -107,7 +108,7 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
    
 ## <a name="see-also"></a>참고 항목
 
-[Windows 장치에서 Office 2013에 대 한 최신 인증을 사용 하도록 설정](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Windows 장치에서 Office 2013를 사용하기 위한 최신 인증의 사용](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Office 365 배포에 대 한 다단계 인증 계획 (Office 365 관리자 용)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
