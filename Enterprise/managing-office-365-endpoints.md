@@ -3,7 +3,7 @@ title: Office 365 끝점 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크는 일반 인터넷 위치에 대한 액세스를 제한하거나 상당한 수의 백홀이나 네트워크 트래픽 처리를 포함합니다. 이러한 네트워크의 컴퓨터에서 Office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자는 Office 365 끝점 목록을 구성하는 FQDN, URL 및 IP 주소 목록을 관리해야 합니다. 네트워크 요청에서 Office 365에 연결할 수 있도록 하려면 이러한 목록을 직접 경로, 프록시 우회 및/또는 방화벽 규칙 및 PAC 파일에 추가해야 합니다.
-ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744512"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570885"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
@@ -140,9 +140,10 @@ Microsoft는 사용자가 직접 라우팅해야 하는 Office 365 서버의 IP 
   
 자세한 정보가 필요한, Office 365와 연결된 IP가 표시되나요?
   
-1. [IPv4](https://www.ipaddressguide.com/cidr) 또는 [IPv6]https://www.ipaddressguide.com/ipv6-cidr)에 대해 이와 같이 CIDR 계산기를 사용 하 여 IP 주소가 보다 큰 게시 범위에 포함 되는지 확인 합니다.
-2. [whois 쿼리](https://dnsquery.org/)를 사용하여 파트너가 IP를 소유하는지 확인합니다. Microsoft가 해당 IP를 소유한 경우 내부 파트너일 수 있습니다.
-3. 인증서를 확인합니다. 브라우저에서 *HTTPS://\<IP_주소\>* 를 사용하여 IP 주소에 연결한 후 인증서에 나열된 도메인을 확인하여 IP 주소와 연결된 도메인을 파악합니다. Microsoft 소유의 IP 주소이고 Office 365 IP 주소 목록에 없는 경우 *MSOCDN.NET*과 같은 Microsoft CDN과 연결된 IP 주소이거나 게시된 IP 정보가 없는 다른 Microsoft 도메인일 수 있습니다. 인증서의 도메인이 Microsoft가 IP 주소를 나열하려고 요구하는 도메인인 경우 알려주세요.
+1. [IPv4](https://www.ipaddressguide.com/cidr) 또는 i p v 6의 경우와 같이 CIDR 계산기를 사용 하 여 IP 주소가 보다 큰 게시 범위에 포함 되어 있는지 [확인 합니다.](https://www.ipaddressguide.com/ipv6-cidr) 예를 들어 40.96.0.0/13은 40.103와 일치 하지 않는 40.96에도 IP 주소 40.103.0.1을 포함 합니다.
+2. [whois 쿼리](https://dnsquery.org/)를 사용하여 파트너가 IP를 소유하는지 확인합니다. Microsoft가 해당 IP를 소유한 경우 내부 파트너일 수 있습니다. 대부분의 파트너 네트워크 끝점은 _기본_ 범주에 속하는 것으로 나열 되며 IP 주소가 게시 되지 않습니다.
+3. IP 주소는 Office 365 또는 종속성에 속하지 않을 수 있습니다. Office 365 네트워크 끝점 게시에는 Microsoft 네트워크 끝점이 모두 포함 되지 않습니다.
+4. 인증서를 확인합니다. 브라우저에서 *HTTPS://\<IP_주소\>* 를 사용하여 IP 주소에 연결한 후 인증서에 나열된 도메인을 확인하여 IP 주소와 연결된 도메인을 파악합니다. Microsoft 소유의 IP 주소이고 Office 365 IP 주소 목록에 없는 경우 *MSOCDN.NET*과 같은 Microsoft CDN과 연결된 IP 주소이거나 게시된 IP 정보가 없는 다른 Microsoft 도메인일 수 있습니다. 인증서의 도메인이 Microsoft가 IP 주소를 나열하려고 요구하는 도메인인 경우 알려주세요.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>일부 Office 365 URL은 DNS의 A 레코드 대신 CNAME 레코드를 가리킵니다. CNAME 레코드로 무엇을 해야 하나요?
@@ -206,7 +207,12 @@ Office 365를 사용하려고 할 때 타사 서비스에 액세스할 수 없�
 소비자 서비스에 대한 액세스를 제한하는 작업은 사용자의 책임으로 수행해야 합니다. 소비자 서비스를 차단하는 신뢰할 수 있는 유일한 방법은 *login.live.com* FQDN에 대한 액세스를 제한하는 것입니다. 이 FQDN은 MSDN, TechNet과 같은 비소비자 서비스를 비롯한 다양한 서비스에서 사용됩니다. 이 FQDN은 Microsoft 지원의 보안 파일 교환 프로그램에서도 사용됩니다. Microsoft 제품에 대한 문제 해결을 용이하게 하기 위해 파일을 전송하는 데 필요합니다.  이 FQDN에 대한 액세스를 차단하면 이러한 서비스와 연결된 네트워크 연결에 대한 규칙의 예외를 포함해야 할 수 있습니다.
   
 Microsoft 소비자 서비스에 대한 액세스만 차단해서는 네트워크상의 누군가가 Office 365 테넌트 또는 기타 서비스를 사용하여 정보를 빼내는 것을 막지 못한다는 점에 유의하세요.
-  
+
+<a name="bkmk_IPOnlyFirewall"> </a>
+### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>내 방화벽에는 IP 주소가 필요 하며 Url을 처리할 수 없습니다. Office 365 용으로이를 구성 하려면 어떻게 해야 하나요?
+
+Office 365에서는 필요한 모든 네트워크 끝점의 IP 주소를 제공 하지 않습니다. 일부는 Url로만 제공 되며 기본값으로 분류 됩니다. 필요한 기본 범주에 있는 Url은 프록시 서버를 통해 허용 해야 합니다. 프록시 서버가 없으면 사용자가 웹 브라우저의 주소 표시줄에 입력 하는 Url에 대 한 웹 요청을 구성한 방법을 확인 합니다. 사용자가 IP 주소를 제공 하지 않습니다. IP 주소를 제공 하지 않는 Office 365 기본 범주 Url은 동일한 방식으로 구성 해야 합니다.
+
 ## <a name="related-topics"></a>관련 주제
 
 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)

@@ -10,12 +10,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1440558a3c462ae71189fb42d492e0292c256c19
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030582"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627854"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>액세스 가능한 다이어그램-SharePoint Server, Exchange, Lync, Office Web Apps-모바일 가로
 
@@ -154,7 +154,7 @@ Office Mobile을 사용 하지 않는 경우 사용자는 Windows 8 태블릿, I
     
 ### <a name="device-management-and-software-distribution"></a>장치 관리 및 소프트웨어 배포
 
-Microsoft는 여러 장치 브랜드에서 장치를 관리 하기 위한 새로운 제품을 제공 하 고 있습니다. Windows Intune은 모바일 장치용 클라우드 기반 관리 플랫폼입니다. 장치를 관리 하거나 System Center 2012 R2 구성 관리자와 함께 사용 하거나 해당 콘솔 내에서 관리 하는 방법으로 사용할 수 있습니다. 이 조인트 작업의 몇 가지 이점은 다음과 같습니다.
+Microsoft는 여러 장치 브랜드에서 장치를 관리 하기 위한 새로운 제품을 제공 하 고 있습니다. Windows Intune은 모바일 장치용 클라우드 기반 관리 플랫폼입니다. 장치를 관리 하거나 Microsoft 끝점 구성 관리자와 함께 사용 하거나 해당 콘솔 내에서 관리할 수 있습니다. 이 조인트 작업의 몇 가지 이점은 다음과 같습니다.
   
 - Windows RT, Windows 8.1, Windows Phone 8, iOS 및 Android를 비롯 한 여러 장치에서 정책 적용 및 관리
     
@@ -168,15 +168,15 @@ Microsoft는 여러 장치 브랜드에서 장치를 관리 하기 위한 새로
     
 - 익숙한 Configuration Manager 콘솔에서 관리
     
-함께 제공 되는 다이어그램에서는 장치 관리용 System Center 2012 R2 Configuration Manager 및 Windows Intune을 사용 하는 방법을 보여 줍니다.
+함께 제공 되는 다이어그램은 장치 관리용 Windows Intune 및 구성 관리자를 사용 하는 방법을 보여 줍니다.
   
- **System Center 2012 R2 Configuration Manager 및 Windows Intune을 사용할 때의 고려 사항:**
+ **구성 관리자 및 Windows Intune을 사용할 때의 고려 사항:**
   
-- System Center 2012 R2 구성 관리자 및 Windows Intune을 둘 다 사용 하는 경우에는 한 콘솔에서 조직의 모든 장치를 관리 하 고 관리할 수 있습니다.
+- 구성 관리자 및 Windows Intune을 모두 사용 하는 경우 조직의 모든 장치를 한 콘솔에 관리 하 고 관리할 수 있습니다.
     
 - 구성 관리자를 Windows Intune에 연결 하려면 windows Intune 구독이 필요 하며, Windows Intune Connector 사이트 서버 역할을 Configuration Manager 환경의 서버에 배포 해야 합니다.
     
-- System Center 2012 R2 Configuration Manager는 온-프레미스 Pc에 대 한 관리 및 소프트웨어 배포를 제공 합니다.
+- Microsoft Endpoint Configuration Manager는 온-프레미스 Pc에 대 한 관리 및 소프트웨어 배포를 제공 합니다.
     
 - 관리 되는 최신 장치는 Windows Intune에서 정책 적용 및 소프트웨어 배포를 수신 합니다. 지원 되는 장치 유형은 Windows RT, Windows 8.1, Windows Phone 8, iOS, Android입니다.
     

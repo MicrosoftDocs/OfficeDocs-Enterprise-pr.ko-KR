@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 배포 관리자를 통해 Office 365 또는 Microsoft 365의 계획 및 구성을 가속화 합니다.
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072370"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627864"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 또는 Microsoft 365 서비스에 대 한 배포 관리자
 
@@ -168,7 +168,7 @@ Office를 시작 하는 방법에 대 한 팁을 포함 하 여 PC 또는 회사
 | **실행** |  [Office 365 ProPlus 빠른 시작 가이드](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus 배포 관리자는 사용자가 office 365 portal에서 직접 office 365 ProPlus를 설치 하거나 온-프레미스 위치에서 사용자에 게 Office 365 ProPlus를 배포 하는 데 도움이 되는 단계를 안내 합니다. System Center Configuration Manager, 그룹 정책 시작 스크립트, 운영 체제 디스크 이미지 또는 RDS (원격 데스크톱 서비스) 공유 활성화를 사용 하는 방법에 대 한 지침이 포함 되어 있습니다.
+Office 365 ProPlus 배포 관리자는 사용자가 office 365 portal에서 직접 office 365 ProPlus를 설치 하거나 온-프레미스 위치에서 사용자에 게 Office 365 ProPlus를 배포 하는 데 도움이 되는 단계를 안내 합니다. Microsoft 끝점 구성 관리자, 그룹 정책 시작 스크립트, 운영 체제 디스크 이미지 또는 RDS (원격 데스크톱 서비스) 공유 활성화를 사용 하는 방법에 대 한 지침이 포함 되어 있습니다.
 
 |||
 |:-------|:-----|

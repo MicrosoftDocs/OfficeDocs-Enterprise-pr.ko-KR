@@ -1,9 +1,9 @@
 ---
 title: 중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 Office 365 조 직 용 Office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030863"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570875"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
 
@@ -106,7 +106,7 @@ Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 할당 된 사용자 및 그룹의 모든 추가 기능에 대 한 세부 정보를 보려면 다음 예제와 같이 **OrganizationAddIn** cmdlet의 출력을 형식 목록 cmdlet에 파이프 합니다.
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>추가 기능 설정 또는 해제
@@ -168,53 +168,54 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>조직에 대 한 Microsoft Store 추가 기능 사용자 지정
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-조직에 배포 하기 전에 추가 기능을 사용자 지정 해야 합니다. 버전 1.1 보다 오래 된 추가 기능은이 기능에서 지원 되지 않습니다. 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-먼저 사용자 지정 된 추가 기능을 자신에 게 배포 하 여 전체 조직에 배포 하기 전에 예상 대로 작동 하는지 확인 하는 것이 좋습니다.
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-또한 다음과 같은 제한이 있습니다.
-- 모든 Url은 절대적 (http 또는 https 포함) 이어야 하 고 유효 해야 합니다.
-- *DisplayName* 은 125 자를 초과할 수 없습니다. 
-- *DisplayName*, *리소스* 및 *appdomain* 에는 다음 문자가 포함 되지 않아야 합니다. 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
     -  ;
     -  =   
 
-배포한 추가 기능을 사용자 지정 하려는 경우에는 관리 센터에서 제거 하 고, 배포 된 각 컴퓨터에서 제거 하는 단계에 대 한 [추가 기능을 로컬 캐시에서 제거](#remove-an-add-in-from-local-cache) 를 참조 하세요.
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-추가 기능을 사용자 지정 하려면 *ProductId* 를 매개 변수로 사용 하 여 **OrganizationAddInOverrides** cmdlet을 실행 하 고 덮어쓸 태그와 새 값을 입력 합니다. *ProductId* 를 가져오는 방법을 알아보려면이 문서에서 [추가 기능의 세부 정보 가져오기를](#get-details-of-an-add-in) 참조 하세요. 예:
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-추가 기능의 여러 태그를 사용자 지정 하려면 명령줄에 해당 태그를 추가 합니다.
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> 한 추가 기능에 여러 사용자 지정 태그를 하나의 명령으로 적용 해야 합니다. 태그를 하나씩 사용자 지정 하는 경우 마지막 사용자 지정만 적용 됩니다. 또한 실수로 태그를 사용자 지정 하는 경우에는 모든 사용자 지정 내용을 제거 하 고 처음부터 다시 시작 해야 합니다.
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a>사용자 지정할 수 있는 태그
+### Tags you can customize
 
 | Tag                  | Description          |
 | :------------------- | :------------------- |
-| \<IconURL>   </br>| 관리 센터의 추가 기능 아이콘으로 사용 되는 이미지의 URL입니다. </br> |
-| \<DisplayName>| 추가 기능의 제목 (관리 센터)입니다.|
-| \<호스트>| 추가 기능을 지 원하는 앱 목록입니다.|
-| \<> | 추가 기능이 연결 되는 원본 URL입니다.| 
-| \<Appdomain> | 추가 기능이 연결할 수 있는 도메인의 목록입니다. | 
-| \<SupportURL>| 사용자가 도움말 및 지원에 액세스 하는 데 사용할 수 있는 URL입니다. | 
-| \<리소스>  | 이 태그에는 다양 한 크기의 제목, 도구 설명 및 아이콘을 비롯 한 다양 한 요소가 포함 됩니다.| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a>Resources 태그 사용자 지정
+### Customize Resources tag
 
-매니페스트의 <Resources> 태그에 있는 모든 요소를 동적으로 사용자 지정할 수 있습니다. 먼저 매니페스트를 확인 하 여 새 값을 할당 하려는 요소 id를 찾아야 합니다. 태그 <Resources> 는 다음과 같습니다.
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,45 +224,47 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
     </bt:Images> 
 </Resources> 
 ``` 
-이 경우 이미지의 요소 id는 "img16icon" 이며 이와 연결 된 값은 "http:<i></i>/site입니다. <i> </i>com/img. "
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-사용자 지정할 요소를 확인 한 후 Powershell에서 다음 명령을 사용 하 여 요소에 새 값을 할당 합니다.
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-필요한 경우 명령을 사용 하 여 여러 요소를 사용자 지정할 수 있습니다.
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a>추가 기능에서 사용자 지정 제거
+### Remove customization from an add-in
 
-현재 사용자 지정 항목을 삭제 하는 데 사용할 수 있는 유일한 옵션은 한 번에 모두 삭제 하는 것입니다.
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a>추가 기능 사용자 지정 보기
+### View add-in customizations
 
-적용 된 사용자 지정 목록을 보려면 **OrganizationAddInOverrides** cmdlet을 실행 합니다. **OrganizationAddInOverrides** 를 *ProductId* 없이 실행 한 경우에는 재정의를 적용 한 모든 추가 기능의 목록이 반환 됩니다.  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-ProductId를 지정 하면 해당 추가 기능에 적용 된 재정의 목록이 반환 됩니다. 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a>로컬 캐시에서 추가 기능 제거
+### Remove an add-in from local cache
 
-추가 기능을 배포한 경우에는 각 컴퓨터의 캐시에서 제거 해야 사용자 지정할 수 있습니다. 추가 기능의 캐시를 다시 사용 하려면 다음을 수행 합니다.
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. C:\ "사용자" 폴더로 이동 합니다. 
-1. 사용자 폴더로 이동 합니다.
-1. AppData\Local\Microsoft\Office로 이동 하 여 해당 버전의 Office와 연결 된 폴더를 선택 합니다.
-1. *Wef* 폴더에서 *매니페스트* 폴더를 삭제 합니다.
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
+
+-->
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>각 cmdlet에 대 한 자세한 도움말 보기
 
