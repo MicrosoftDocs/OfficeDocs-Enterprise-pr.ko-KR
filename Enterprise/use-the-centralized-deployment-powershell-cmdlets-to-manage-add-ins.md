@@ -1,9 +1,9 @@
 ---
 title: 중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,38 +16,38 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 중앙 집중식 배포 PowerShell cmdlet을 사용 하 여 Office 365 조 직 용 Office 추가 기능을 배포 하 고 관리 하는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030863"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570875"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="faa7f-103">중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리</span><span class="sxs-lookup"><span data-stu-id="faa7f-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="a98e8-103">중앙 집중식 배포 PowerShell cmdlet을 사용하여 추가 기능 관리</span><span class="sxs-lookup"><span data-stu-id="a98e8-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
 
-<span data-ttu-id="faa7f-104">Microsoft 365 글로벌 또는 Exchange 관리자로 서, 중앙 집중식 배포 기능을 통해 사용자에 게 Office 추가 기능을 배포할 수 있습니다 ( [관리 센터에서 Office 추가 기능 배포](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)참조).</span><span class="sxs-lookup"><span data-stu-id="faa7f-104">As a Microsoft 365 global, or Exchange admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span></span> <span data-ttu-id="faa7f-105">365 Microsoft PowerShell을 사용 하 여 Office 추가 기능을 배포 하는 것 외에도</span><span class="sxs-lookup"><span data-stu-id="faa7f-105">In addition to deploying Office add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="faa7f-106">[Windows PowerShell 용 O365 중앙화 된 추가 기능 배포 모듈](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)을 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
+<span data-ttu-id="a98e8-104">Microsoft 365 글로벌 또는 Exchange 관리자로 서, 중앙 집중식 배포 기능을 통해 사용자에 게 Office 추가 기능을 배포할 수 있습니다 ( [관리 센터에서 Office 추가 기능 배포](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)참조).</span><span class="sxs-lookup"><span data-stu-id="a98e8-104">As a Microsoft 365 global, or Exchange admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span></span> <span data-ttu-id="a98e8-105">365 Microsoft PowerShell을 사용 하 여 Office 추가 기능을 배포 하는 것 외에도</span><span class="sxs-lookup"><span data-stu-id="a98e8-105">In addition to deploying Office add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="a98e8-106">[Windows PowerShell 용 O365 중앙화 된 추가 기능 배포 모듈](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)을 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
 
-<span data-ttu-id="faa7f-107">모듈을 다운로드 한 후에는 일반 Windows PowerShell 창을 열고 다음 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-107">After you download the module, open a regular Windows PowerShell window and run the following cmdlet:</span></span>
+<span data-ttu-id="a98e8-107">모듈을 다운로드 한 후에는 일반 Windows PowerShell 창을 열고 다음 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-107">After you download the module, open a regular Windows PowerShell window and run the following cmdlet:</span></span>
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="faa7f-108">관리자 자격 증명을 사용 하 여 연결</span><span class="sxs-lookup"><span data-stu-id="faa7f-108">Connect using your admin credentials</span></span>
+## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="a98e8-108">관리자 자격 증명을 사용 하 여 연결</span><span class="sxs-lookup"><span data-stu-id="a98e8-108">Connect using your admin credentials</span></span>
 
-<span data-ttu-id="faa7f-109">중앙 집중식 배포 cmdlet을 사용 하려면 먼저 로그인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-109">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
+<span data-ttu-id="a98e8-109">중앙 집중식 배포 cmdlet을 사용 하려면 먼저 로그인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-109">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
   
-1. <span data-ttu-id="faa7f-110">PowerShell을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-110">Start PowerShell.</span></span>
+1. <span data-ttu-id="a98e8-110">PowerShell을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-110">Start PowerShell.</span></span>
     
-2. <span data-ttu-id="faa7f-111">회사 관리자 자격 증명을 사용 하 여 PowerShell에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-111">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="faa7f-112">다음 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-112">Run the following cmdlet.</span></span>
+2. <span data-ttu-id="a98e8-111">회사 관리자 자격 증명을 사용 하 여 PowerShell에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-111">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="a98e8-112">다음 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-112">Run the following cmdlet.</span></span>
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. <span data-ttu-id="faa7f-113">**자격 증명 입력** 페이지에서 Office 365 전역 관리자 자격 증명을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-113">In the **Enter Credentials** page, enter your Office 365 global admin credentials.</span></span> <span data-ttu-id="faa7f-114">또는 cmdlet에 직접 자격 증명을 입력할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-114">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
+3. <span data-ttu-id="a98e8-113">**자격 증명 입력** 페이지에서 Office 365 전역 관리자 자격 증명을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-113">In the **Enter Credentials** page, enter your Office 365 global admin credentials.</span></span> <span data-ttu-id="a98e8-114">또는 cmdlet에 직접 자격 증명을 입력할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-114">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
     
-    <span data-ttu-id="faa7f-115">회사 관리자 자격 증명을 PSCredential 개체로 지정 하 여 다음 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-115">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
+    <span data-ttu-id="a98e8-115">회사 관리자 자격 증명을 PSCredential 개체로 지정 하 여 다음 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-115">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
     
   ```powershell
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -56,165 +56,166 @@ ms.locfileid: "38030863"
   ```
 
 > [!NOTE]
-> <span data-ttu-id="faa7f-116">PowerShell을 사용 하는 방법에 대 한 자세한 내용은 [Connect To Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585)를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="faa7f-116">For more information about using PowerShell, see [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span></span> 
+> <span data-ttu-id="a98e8-116">PowerShell을 사용 하는 방법에 대 한 자세한 내용은 [Connect To Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585)를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="a98e8-116">For more information about using PowerShell, see [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span></span> 
   
-## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="faa7f-117">추가 기능 매니페스트 업로드</span><span class="sxs-lookup"><span data-stu-id="faa7f-117">Upload an add-in manifest</span></span>
+## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="a98e8-117">추가 기능 매니페스트 업로드</span><span class="sxs-lookup"><span data-stu-id="a98e8-117">Upload an add-in manifest</span></span>
 
-<span data-ttu-id="faa7f-118">**OrganizationAdd** cmdlet을 실행 하 여 파일 위치나 URL이 될 수 있는 경로에서 추가 기능 매니페스트를 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-118">Run the **New-OrganizationAdd-In** cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="faa7f-119">다음 예제에서는 _ManifestPath_ 매개 변수 값에 대 한 파일 위치를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-119">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
+<span data-ttu-id="a98e8-118">**OrganizationAdd** cmdlet을 실행 하 여 파일 위치나 URL이 될 수 있는 경로에서 추가 기능 매니페스트를 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-118">Run the **New-OrganizationAdd-In** cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="a98e8-119">다음 예제에서는 _ManifestPath_ 매개 변수 값에 대 한 파일 위치를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-119">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-<span data-ttu-id="faa7f-120">다음 예제와 같이 _Members_ 매개 변수를 사용 하 여 추가 기능을 업로드 하 고 사용자 또는 그룹에 직접 할당 하려면 **OrganizationAdd** cmdlet을 실행할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-120">You can also run the **New-OrganizationAdd-In** cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="faa7f-121">구성원의 전자 메일 주소를 쉼표로 구분 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-121">Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="a98e8-120">다음 예제와 같이 _Members_ 매개 변수를 사용 하 여 추가 기능을 업로드 하 고 사용자 또는 그룹에 직접 할당 하려면 **OrganizationAdd** cmdlet을 실행할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-120">You can also run the **New-OrganizationAdd-In** cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="a98e8-121">구성원의 전자 메일 주소를 쉼표로 구분 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-121">Separate the email addresses of members with a comma.</span></span> 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="faa7f-122">Office 스토어에서 추가 기능 업로드</span><span class="sxs-lookup"><span data-stu-id="faa7f-122">Upload an add-in from the Office Store</span></span>
+## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="a98e8-122">Office 스토어에서 추가 기능 업로드</span><span class="sxs-lookup"><span data-stu-id="a98e8-122">Upload an add-in from the Office Store</span></span>
 
-<span data-ttu-id="faa7f-123">**OrganizationAddIn** cmdlet을 실행 하 여 Office 스토어에서 매니페스트를 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-123">Run the **New-OrganizationAddIn** cmdlet to upload a manifest from the Office Store.</span></span>
+<span data-ttu-id="a98e8-123">**OrganizationAddIn** cmdlet을 실행 하 여 Office 스토어에서 매니페스트를 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-123">Run the **New-OrganizationAddIn** cmdlet to upload a manifest from the Office Store.</span></span>
   
-<span data-ttu-id="faa7f-124">다음 예제에서는 **OrganizationAddIn** Cmdlet은 미국 및 콘텐츠 시장의 추가 기능에 대 한 AssetId를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-124">In the following example, the **New-OrganizationAddIn** cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
+<span data-ttu-id="a98e8-124">다음 예제에서는 **OrganizationAddIn** Cmdlet은 미국 및 콘텐츠 시장의 추가 기능에 대 한 AssetId를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-124">In the following example, the **New-OrganizationAddIn** cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-<span data-ttu-id="faa7f-125">_AssetId_ 매개 변수의 값을 확인 하기 위해 추가 기능에 대 한 Office 스토어 웹 페이지의 URL에서이를 복사할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-125">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="faa7f-126">AssetIds는 항상 "WA" 다음에 숫자를 사용 하 여 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-126">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="faa7f-127">예를 들어 이전 예제에서 WA104099688의 AssetId 값에 대 한 원본은 추가 기능의 Office 스토어 웹 페이지 URL입니다 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span><span class="sxs-lookup"><span data-stu-id="faa7f-127">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
+<span data-ttu-id="a98e8-125">_AssetId_ 매개 변수의 값을 확인 하기 위해 추가 기능에 대 한 Office 스토어 웹 페이지의 URL에서이를 복사할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-125">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="a98e8-126">AssetIds는 항상 "WA" 다음에 숫자를 사용 하 여 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-126">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="a98e8-127">예를 들어 이전 예제에서 WA104099688의 AssetId 값에 대 한 원본은 추가 기능의 Office 스토어 웹 페이지 URL입니다 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span><span class="sxs-lookup"><span data-stu-id="a98e8-127">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
   
-<span data-ttu-id="faa7f-128">_Locale_ 매개 변수와 _contentmarket_ 매개 변수의 값은 동일 하며 추가 기능을 설치 하려고 하는 국가/지역을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-128">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="faa7f-129">형식은 en-us, fr-FR입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-129">The format is en-US, fr-FR.</span></span> <span data-ttu-id="faa7f-130">등이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-130">and so forth.</span></span> 
+<span data-ttu-id="a98e8-128">_Locale_ 매개 변수와 _contentmarket_ 매개 변수의 값은 동일 하며 추가 기능을 설치 하려고 하는 국가/지역을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-128">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="a98e8-129">형식은 en-us, fr-FR입니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-129">The format is en-US, fr-FR.</span></span> <span data-ttu-id="a98e8-130">등이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-130">and so forth.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="faa7f-131">Office 스토어에서 업로드 된 추가 기능은 Office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-131">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="a98e8-131">Office 스토어에서 업로드 된 추가 기능은 Office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-131">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="get-details-of-an-add-in"></a><span data-ttu-id="faa7f-132">추가 기능의 세부 정보 가져오기</span><span class="sxs-lookup"><span data-stu-id="faa7f-132">Get details of an add-in</span></span>
+## <a name="get-details-of-an-add-in"></a><span data-ttu-id="a98e8-132">추가 기능의 세부 정보 가져오기</span><span class="sxs-lookup"><span data-stu-id="a98e8-132">Get details of an add-in</span></span>
 
-<span data-ttu-id="faa7f-133">아래와 같이 **OrganizationAddIn** cmdlet을 실행 하 여 테 넌 트에 업로드 된 모든 추가 기능에 대 한 세부 정보를 가져오고 추가 기능의 제품 ID를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-133">Run the **Get-OrganizationAddIn** cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
+<span data-ttu-id="a98e8-133">아래와 같이 **OrganizationAddIn** cmdlet을 실행 하 여 테 넌 트에 업로드 된 모든 추가 기능에 대 한 세부 정보를 가져오고 추가 기능의 제품 ID를 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-133">Run the **Get-OrganizationAddIn** cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
   
 ```powershell
 Get-OrganizationAddIn
 ```
 
-<span data-ttu-id="faa7f-134">**OrganizationAddIn** Cmdlet을 _ProductId_ 매개 변수의 값과 함께 실행 하 여 세부 정보를 검색할 추가 기능을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-134">Run the **Get-OrganizationAddIn** cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
+<span data-ttu-id="a98e8-134">**OrganizationAddIn** Cmdlet을 _ProductId_ 매개 변수의 값과 함께 실행 하 여 세부 정보를 검색할 추가 기능을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-134">Run the **Get-OrganizationAddIn** cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-<span data-ttu-id="faa7f-135">할당 된 사용자 및 그룹의 모든 추가 기능에 대 한 세부 정보를 보려면 다음 예제와 같이 **OrganizationAddIn** cmdlet의 출력을 형식 목록 cmdlet에 파이프 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-135">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the **Get-OrganizationAddIn** cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
+<span data-ttu-id="a98e8-135">할당 된 사용자 및 그룹의 모든 추가 기능에 대 한 세부 정보를 보려면 다음 예제와 같이 **OrganizationAddIn** cmdlet의 출력을 형식 목록 cmdlet에 파이프 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-135">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the **Get-OrganizationAddIn** cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="faa7f-136">추가 기능 설정 또는 해제</span><span class="sxs-lookup"><span data-stu-id="faa7f-136">Turn on or turn off an add-in</span></span>
+## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="a98e8-136">추가 기능 설정 또는 해제</span><span class="sxs-lookup"><span data-stu-id="a98e8-136">Turn on or turn off an add-in</span></span>
 
-<span data-ttu-id="faa7f-137">추가 기능을 해제 하 여 자신에 게 할당 된 사용자 및 그룹에 더 이상 액세스할 수 없도록 하려면 다음 예제와 같이 _ProductId_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 하 고 `$false` _Enabled_ 매개 변수를로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-137">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
+<span data-ttu-id="a98e8-137">추가 기능을 해제 하 여 자신에 게 할당 된 사용자 및 그룹에 더 이상 액세스할 수 없도록 하려면 다음 예제와 같이 _ProductId_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 하 고 `$false` _Enabled_ 매개 변수를로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-137">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-<span data-ttu-id="faa7f-138">추가 기능을 다시 설정 하려면 _Enabled_ 매개 변수를 `$true`로 설정 하 여 동일한 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-138">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
+<span data-ttu-id="a98e8-138">추가 기능을 다시 설정 하려면 _Enabled_ 매개 변수를 `$true`로 설정 하 여 동일한 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-138">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="faa7f-139">추가 기능에서 사용자 추가 또는 제거</span><span class="sxs-lookup"><span data-stu-id="faa7f-139">Add or remove users from an add-in</span></span>
+## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="a98e8-139">추가 기능에서 사용자 추가 또는 제거</span><span class="sxs-lookup"><span data-stu-id="a98e8-139">Add or remove users from an add-in</span></span>
 
-<span data-ttu-id="faa7f-140">특정 추가 기능에 사용자 및 그룹을 추가 하려면 _ProductId_, _add_및 _Members_ 매개 변수를 사용 하 여 **OrganizationAddInAssignments** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-140">To add users and groups to a specific add-in, run the **Set-OrganizationAddInAssignments** cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="faa7f-141">구성원의 전자 메일 주소를 쉼표로 구분 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-141">Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="a98e8-140">특정 추가 기능에 사용자 및 그룹을 추가 하려면 _ProductId_, _add_및 _Members_ 매개 변수를 사용 하 여 **OrganizationAddInAssignments** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-140">To add users and groups to a specific add-in, run the **Set-OrganizationAddInAssignments** cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="a98e8-141">구성원의 전자 메일 주소를 쉼표로 구분 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-141">Separate the email addresses of members with a comma.</span></span> 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="faa7f-142">사용자 및 그룹을 제거 하려면 _remove_ 매개 변수를 사용 하 여 동일한 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-142">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
+<span data-ttu-id="a98e8-142">사용자 및 그룹을 제거 하려면 _remove_ 매개 변수를 사용 하 여 동일한 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-142">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="faa7f-143">테 넌 트의 모든 사용자에 게 추가 기능을 할당 하려면 값이로 `$true`설정 된 다음 _사용자 지정 매개 변수_ 를 사용 하 여 동일한 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-143">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
+<span data-ttu-id="a98e8-143">테 넌 트의 모든 사용자에 게 추가 기능을 할당 하려면 값이로 `$true`설정 된 다음 _사용자 지정 매개 변수_ 를 사용 하 여 동일한 cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-143">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-<span data-ttu-id="faa7f-144">모든 사용자에 게 추가 기능을 할당 하 고 이전에 할당 된 사용자 및 그룹으로 되돌리려면 같은 cmdlet을 실행 하 고 해당 값을로 `$false`설정 하 여 _모든 사람_ 지정 매개 변수를 해제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-144">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
+<span data-ttu-id="a98e8-144">모든 사용자에 게 추가 기능을 할당 하 고 이전에 할당 된 사용자 및 그룹으로 되돌리려면 같은 cmdlet을 실행 하 고 해당 값을로 `$false`설정 하 여 _모든 사람_ 지정 매개 변수를 해제할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-144">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a><span data-ttu-id="faa7f-145">추가 기능 업데이트</span><span class="sxs-lookup"><span data-stu-id="faa7f-145">Update an add-in</span></span>
+## <a name="update-an-add-in"></a><span data-ttu-id="a98e8-145">추가 기능 업데이트</span><span class="sxs-lookup"><span data-stu-id="a98e8-145">Update an add-in</span></span>
 
-<span data-ttu-id="faa7f-146">매니페스트에서 추가 기능을 업데이트 하려면 다음 예제와 같이 _ProductId_, _ManifestPath_및 _Locale_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-146">To update an add-in from a manifest, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
+<span data-ttu-id="a98e8-146">매니페스트에서 추가 기능을 업데이트 하려면 다음 예제와 같이 _ProductId_, _ManifestPath_및 _Locale_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-146">To update an add-in from a manifest, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> <span data-ttu-id="faa7f-147">Office 스토어에서 업로드 된 추가 기능은 Office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-147">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="a98e8-147">Office 스토어에서 업로드 된 추가 기능은 Office 스토어에서 사용할 수 있는 최신 업데이트 중 며칠 이내에 자동으로 업데이트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-147">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="delete-an-add-in"></a><span data-ttu-id="faa7f-148">추가 기능 삭제</span><span class="sxs-lookup"><span data-stu-id="faa7f-148">Delete an add-in</span></span>
+## <a name="delete-an-add-in"></a><span data-ttu-id="a98e8-148">추가 기능 삭제</span><span class="sxs-lookup"><span data-stu-id="a98e8-148">Delete an add-in</span></span>
 
-<span data-ttu-id="faa7f-149">추가 기능을 삭제 하려면 다음 예제와 같이 _ProductId_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-149">To delete an add-in, run the **Remove-OrganizationAddIn** cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
+<span data-ttu-id="a98e8-149">추가 기능을 삭제 하려면 다음 예제와 같이 _ProductId_ 매개 변수를 사용 하 여 **OrganizationAddIn** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-149">To delete an add-in, run the **Remove-OrganizationAddIn** cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a><span data-ttu-id="faa7f-150">조직에 대 한 Microsoft Store 추가 기능 사용자 지정</span><span class="sxs-lookup"><span data-stu-id="faa7f-150">Customize Microsoft Store add-ins for your organization</span></span>
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-<span data-ttu-id="faa7f-151">조직에 배포 하기 전에 추가 기능을 사용자 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-151">You must customize the add-in before you deploy it to your organization.</span></span> <span data-ttu-id="faa7f-152">버전 1.1 보다 오래 된 추가 기능은이 기능에서 지원 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-152">Add-ins older than version 1.1 are not supported by this feature.</span></span> 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-<span data-ttu-id="faa7f-153">먼저 사용자 지정 된 추가 기능을 자신에 게 배포 하 여 전체 조직에 배포 하기 전에 예상 대로 작동 하는지 확인 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-153">We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.</span></span>
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-<span data-ttu-id="faa7f-154">또한 다음과 같은 제한이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-154">Note also the following restrictions:</span></span>
-- <span data-ttu-id="faa7f-155">모든 Url은 절대적 (http 또는 https 포함) 이어야 하 고 유효 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-155">All URLs must be absolute (include http or https) and valid.</span></span>
-- <span data-ttu-id="faa7f-156">*DisplayName* 은 125 자를 초과할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-156">*DisplayName* must not exceed 125 characters</span></span> 
-- <span data-ttu-id="faa7f-157">*DisplayName*, *리소스* 및 *appdomain* 에는 다음 문자가 포함 되지 않아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-157">*DisplayName*, *Resources* and *AppDomains* must not include the following characters:</span></span> 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
-    -  <span data-ttu-id="faa7f-158">;</span><span class="sxs-lookup"><span data-stu-id="faa7f-158"></span></span>
+    -  ;
     -  =   
 
-<span data-ttu-id="faa7f-159">배포한 추가 기능을 사용자 지정 하려는 경우에는 관리 센터에서 제거 하 고, 배포 된 각 컴퓨터에서 제거 하는 단계에 대 한 [추가 기능을 로컬 캐시에서 제거](#remove-an-add-in-from-local-cache) 를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="faa7f-159">If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.</span></span>
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-<span data-ttu-id="faa7f-160">추가 기능을 사용자 지정 하려면 *ProductId* 를 매개 변수로 사용 하 여 **OrganizationAddInOverrides** cmdlet을 실행 하 고 덮어쓸 태그와 새 값을 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-160">To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value.</span></span> <span data-ttu-id="faa7f-161">*ProductId* 를 가져오는 방법을 알아보려면이 문서에서 [추가 기능의 세부 정보 가져오기를](#get-details-of-an-add-in) 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="faa7f-161">To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article.</span></span> <span data-ttu-id="faa7f-162">예:</span><span class="sxs-lookup"><span data-stu-id="faa7f-162">For example:</span></span>
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-<span data-ttu-id="faa7f-163">추가 기능의 여러 태그를 사용자 지정 하려면 명령줄에 해당 태그를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-163">To customize multiple tags for an add-in, add those tags to the commandline:</span></span>
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> <span data-ttu-id="faa7f-164">한 추가 기능에 여러 사용자 지정 태그를 하나의 명령으로 적용 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-164">You must apply multiple customized tags to one add-in as one command.</span></span> <span data-ttu-id="faa7f-165">태그를 하나씩 사용자 지정 하는 경우 마지막 사용자 지정만 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-165">If you customize tags one by one, only the last customization will be applied.</span></span> <span data-ttu-id="faa7f-166">또한 실수로 태그를 사용자 지정 하는 경우에는 모든 사용자 지정 내용을 제거 하 고 처음부터 다시 시작 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-166">Additionally, if you customize a tag by mistake, you must remove all customizations and start over.</span></span>
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a><span data-ttu-id="faa7f-167">사용자 지정할 수 있는 태그</span><span class="sxs-lookup"><span data-stu-id="faa7f-167">Tags you can customize</span></span>
+### Tags you can customize
 
-| <span data-ttu-id="faa7f-168">Tag</span><span class="sxs-lookup"><span data-stu-id="faa7f-168">Tag</span></span>                  | <span data-ttu-id="faa7f-169">Description</span><span class="sxs-lookup"><span data-stu-id="faa7f-169">Description</span></span>          |
+| Tag                  | Description          |
 | :------------------- | :------------------- |
-| <span data-ttu-id="faa7f-170">\<IconURL></span><span class="sxs-lookup"><span data-stu-id="faa7f-170">\<IconURL></span></span>   </br>| <span data-ttu-id="faa7f-171">관리 센터의 추가 기능 아이콘으로 사용 되는 이미지의 URL입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-171">The URL of the image used as the add-in’s icon (in admin center).</span></span> </br> |
-| <span data-ttu-id="faa7f-172">\<DisplayName></span><span class="sxs-lookup"><span data-stu-id="faa7f-172">\<DisplayName></span></span>| <span data-ttu-id="faa7f-173">추가 기능의 제목 (관리 센터)입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-173">The title of the add-in  (in admin center).</span></span>|
-| <span data-ttu-id="faa7f-174">\<호스트></span><span class="sxs-lookup"><span data-stu-id="faa7f-174">\<Hosts></span></span>| <span data-ttu-id="faa7f-175">추가 기능을 지 원하는 앱 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-175">List of apps that will support the add-in.</span></span>|
-| <span data-ttu-id="faa7f-176">\<></span><span class="sxs-lookup"><span data-stu-id="faa7f-176">\<SourceLocation></span></span> | <span data-ttu-id="faa7f-177">추가 기능이 연결 되는 원본 URL입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-177">The source URL that the add-in will connect to.</span></span>| 
-| <span data-ttu-id="faa7f-178">\<Appdomain></span><span class="sxs-lookup"><span data-stu-id="faa7f-178">\<AppDomains></span></span> | <span data-ttu-id="faa7f-179">추가 기능이 연결할 수 있는 도메인의 목록입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-179">A list of domains that the add-in can connect with.</span></span> | 
-| <span data-ttu-id="faa7f-180">\<SupportURL></span><span class="sxs-lookup"><span data-stu-id="faa7f-180">\<SupportURL></span></span>| <span data-ttu-id="faa7f-181">사용자가 도움말 및 지원에 액세스 하는 데 사용할 수 있는 URL입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-181">The URL users can use to access help and support.</span></span> | 
-| <span data-ttu-id="faa7f-182">\<리소스></span><span class="sxs-lookup"><span data-stu-id="faa7f-182">\<Resources></span></span>  | <span data-ttu-id="faa7f-183">이 태그에는 다양 한 크기의 제목, 도구 설명 및 아이콘을 비롯 한 다양 한 요소가 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-183">This tag contains a number of elements including titles, tooltips, and icons of different sizes.</span></span>| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a><span data-ttu-id="faa7f-184">Resources 태그 사용자 지정</span><span class="sxs-lookup"><span data-stu-id="faa7f-184">Customize Resources tag</span></span>
+### Customize Resources tag
 
-<span data-ttu-id="faa7f-185">매니페스트의 <Resources> 태그에 있는 모든 요소를 동적으로 사용자 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-185">Any element in the <Resources> tag of the manifest can be customized dynamically.</span></span> <span data-ttu-id="faa7f-186">먼저 매니페스트를 확인 하 여 새 값을 할당 하려는 요소 id를 찾아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-186">You first need to check the manifest to find the element id to which you want to assign a new value.</span></span> <span data-ttu-id="faa7f-187">태그 <Resources> 는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-187">The <Resources> tag looks like this:</span></span>
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,49 +224,51 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
     </bt:Images> 
 </Resources> 
 ``` 
-<span data-ttu-id="faa7f-188">이 경우 이미지의 요소 id는 "img16icon" 이며 이와 연결 된 값은 "http:<i></i>/site입니다. <i> </i>com/img. "</span><span class="sxs-lookup"><span data-stu-id="faa7f-188">In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”</span></span>
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-<span data-ttu-id="faa7f-189">사용자 지정할 요소를 확인 한 후 Powershell에서 다음 명령을 사용 하 여 요소에 새 값을 할당 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-189">Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:</span></span>
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-<span data-ttu-id="faa7f-190">필요한 경우 명령을 사용 하 여 여러 요소를 사용자 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-190">You can customize as many elements with the command as you need to.</span></span>
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a><span data-ttu-id="faa7f-191">추가 기능에서 사용자 지정 제거</span><span class="sxs-lookup"><span data-stu-id="faa7f-191">Remove customization from an add-in</span></span>
+### Remove customization from an add-in
 
-<span data-ttu-id="faa7f-192">현재 사용자 지정 항목을 삭제 하는 데 사용할 수 있는 유일한 옵션은 한 번에 모두 삭제 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-192">The only option currently available for deleting customizations is to delete all of them at once:</span></span>
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a><span data-ttu-id="faa7f-193">추가 기능 사용자 지정 보기</span><span class="sxs-lookup"><span data-stu-id="faa7f-193">View add-in customizations</span></span>
+### View add-in customizations
 
-<span data-ttu-id="faa7f-194">적용 된 사용자 지정 목록을 보려면 **OrganizationAddInOverrides** cmdlet을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-194">To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet.</span></span> <span data-ttu-id="faa7f-195">**OrganizationAddInOverrides** 를 *ProductId* 없이 실행 한 경우에는 재정의를 적용 한 모든 추가 기능의 목록이 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-195">If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.</span></span>  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-<span data-ttu-id="faa7f-196">ProductId를 지정 하면 해당 추가 기능에 적용 된 재정의 목록이 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-196">If ProductId is specified, then a list of overrides applied to that add-in is returned.</span></span> 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a><span data-ttu-id="faa7f-197">로컬 캐시에서 추가 기능 제거</span><span class="sxs-lookup"><span data-stu-id="faa7f-197">Remove an add-in from local cache</span></span>
+### Remove an add-in from local cache
 
-<span data-ttu-id="faa7f-198">추가 기능을 배포한 경우에는 각 컴퓨터의 캐시에서 제거 해야 사용자 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-198">If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized.</span></span> <span data-ttu-id="faa7f-199">추가 기능의 캐시를 다시 사용 하려면 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-199">To remive an add-in from cache:</span></span>
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. <span data-ttu-id="faa7f-200">C:\ "사용자" 폴더로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-200">Navigate to the “Users” folder in C:\</span></span> 
-1. <span data-ttu-id="faa7f-201">사용자 폴더로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-201">Go to your user folder</span></span>
-1. <span data-ttu-id="faa7f-202">AppData\Local\Microsoft\Office로 이동 하 여 해당 버전의 Office와 연결 된 폴더를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-202">Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office</span></span>
-1. <span data-ttu-id="faa7f-203">*Wef* 폴더에서 *매니페스트* 폴더를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-203">In the *Wef* folder delete the *Manifests* folder.</span></span>
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
 
-## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="faa7f-204">각 cmdlet에 대 한 자세한 도움말 보기</span><span class="sxs-lookup"><span data-stu-id="faa7f-204">Get detailed help for each cmdlet</span></span>
+-->
 
-<span data-ttu-id="faa7f-205">Get-help cmdlet을 사용 하 여 각 cmdlet에 대 한 자세한 도움말을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-205">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="faa7f-206">예를 들어 다음 cmdlet은 OrganizationAddIn cmdlet에 대 한 자세한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="faa7f-206">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
+## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="a98e8-150">각 cmdlet에 대 한 자세한 도움말 보기</span><span class="sxs-lookup"><span data-stu-id="a98e8-150">Get detailed help for each cmdlet</span></span>
+
+<span data-ttu-id="a98e8-151">Get-help cmdlet을 사용 하 여 각 cmdlet에 대 한 자세한 도움말을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-151">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="a98e8-152">예를 들어 다음 cmdlet은 OrganizationAddIn cmdlet에 대 한 자세한 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a98e8-152">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
