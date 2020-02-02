@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: SharePoint Online의 데이터 삭제에 대 한 설명
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078157"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658325"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365에서 SharePoint Online 데이터 삭제
 
@@ -36,6 +36,8 @@ SharePoint Online에서 항목은 원래 위치에서 삭제 한 시간부터 93
 - 사이트나 해당 사이트와 관련 된 역할 및 보안 정보
 - 최상위 웹 사이트, 해당 콘텐츠 및 사용자 정보 하위 사이트
 
-실수로 사이트 모음을 삭제 한 경우에는 SharePoint 관리 센터를 사용 하 여 전역 관리자 또는 SharePoint 관리에 의해 복원 될 수 있습니다. 
+실수로 사이트 모음을 삭제 한 경우에는 SharePoint 관리 센터를 사용 하 여 전역 관리자 또는 SharePoint 관리에 의해 복원 될 수 있습니다.
+
+삭제 된 사이트 모음은 93 일 동안 보존 됩니다. 93 일이 지나면 사이트와 모든 해당 콘텐츠 및 설정이 목록, 라이브러리, 페이지 및 모든 하위 사이트를 포함 하 여 영구적으로 삭제 됩니다.
 
 하드 삭제는 사용자가 사이트 모음 휴지통에서 삭제 된 항목을 제거 하거나, 보존 및 백업 기간이 만료 되거나, 관리자가 [remove-spodeletedsite cmdlet](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)을 사용 하 여 사이트 모음을 영구적으로 삭제할 때 발생 합니다. 사용자가 SharePoint Online에서 콘텐츠를 영구적으로 삭제 하거나 제거 하면 삭제 된 청크의 모든 암호화 키도 삭제 됩니다. 이전에 삭제 한 청크를 저장 한 디스크의 블록은 사용 되지 않는 것으로 표시 되며 다시 사용할 수 있습니다.
