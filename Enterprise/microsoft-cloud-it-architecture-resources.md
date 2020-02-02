@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다. Windows 10 및 Office ProPlus가 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.'
-ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 30f3cb17f59c3a2352b4f0be9fec92d53126e63b
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756607"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627904"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -220,7 +220,7 @@ IT 개발자는 Windows 10에 Office 365 ProPlus 업데이트를 배포하고 �
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft 모델을 사용한 최신 보안 데스크톱 배포에 대한 미리 보기](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>  Microsoft 클라우드에서 Windows 10 및 Office ProPlus 배포 </li><li>  System Center Configuration Manager를 사용하여 Windows 10 및 Office ProPlus 배포 </li><li>  Microsoft 클라우드에서 Windows 10 및 Office ProPlus 업데이트 관리 </li><li>  System Center Configuration Manager를 사용하여 Windows 10 및 Office ProPlus 업데이트 관리 </li><li>  Windows 10의 기본 및 추가 보호 기능 </li></ul><br/> |
+|[![Microsoft 모델을 사용한 최신 보안 데스크톱 배포에 대한 미리 보기](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>  Microsoft 클라우드에서 Windows 10 및 Office ProPlus 배포 </li><li>  Microsoft Endpoint Configuration Manager를 사용하여 Windows 10 및 Office ProPlus 배포 </li><li>  Microsoft 클라우드에서 Windows 10 및 Office ProPlus 업데이트 관리 </li><li>  Microsoft Endpoint Configuration Manager를 사용하여 Windows 10 및 Office ProPlus에 대한 업데이트 관리 </li><li>  Windows 10의 기본 및 추가 보호 기능 </li></ul><br/> |
    
 ## <a name="see-also"></a>참고 항목
 
