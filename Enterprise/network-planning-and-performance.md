@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Microsoft Office 365에 대 한 네트워크 대역폭 요구 사항을 계획 하는 데 도움이 됩니다. 배포한 후에는 여기로 돌아와서 Office 365 성능 문제를 미세 하 게 조정 합니다.
-ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38032143"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721949"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365의 네트워크 계획 및 성능 조정
 처음으로 배포 하거나 Office 365로 마이그레이션하기 전에 다음 항목의 정보를 사용 하 여 필요한 대역폭을 예상 하 고 테스트 하 여 Office 365로 배포 하거나 마이그레이션할 대역폭이 충분 한지 확인할 수 있습니다. 개요는 [Office 365의 네트워크 및 마이그레이션 계획](network-and-migration-planning.md)을 참조 하십시오.
@@ -35,7 +35,7 @@ ms.locfileid: "38032143"
 
 Office 365을 배포한 후에는이 섹션의 항목을 사용 하 여 성능을 최적화할 수 있습니다. 성능 저하가 발생 하는 경우 이러한 항목을 사용 하 여 문제를 해결할 수도 있습니다.
   
- **[Office 365 성능 조정](tune-office-365-performance.md)**: office 365에서 네트워크 주소 변환을 사용 하는 방법에 대 한 자세한 내용은 [NAT support with office 365](nat-support-with-office-365.md)을 참조 하십시오. 또한 Paul Collinge에서 [Office 365 네트워크 연결을 최적화 하 고 문제를 해결 하기 위한 주요 10 가지 팁](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) 을 살펴봅니다. 
+ **[Office 365 성능 조정](tune-office-365-performance.md)**: office 365에서 네트워크 주소 변환을 사용 하는 방법에 대 한 자세한 내용은 [NAT support with office 365](nat-support-with-office-365.md)을 참조 하십시오. 또한 [Office 365 네트워크 연결을 최적화 하 고 문제를 해결 하기 위한 10 가지 팁](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity)을 살펴보겠습니다. 
   
  **[Exchange online 성능 조정](tune-exchange-online-performance.md)**: 이러한 문서를 사용 하 여 exchange online 성능을 세부적으로 조정 합니다. 
   

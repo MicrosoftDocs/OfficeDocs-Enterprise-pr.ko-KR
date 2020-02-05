@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962485"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721939"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -55,6 +55,7 @@ CDNs가 작동 하는 방식에 이미 익숙한 경우 테 넌 트에 Office 36
 + PowerShell 또는 SharePoint Online CLI를 사용 하 여 CDN을 설정 하 고 구성 합니다.
 
   + [SharePoint Online 관리 셸을 사용 하 여 CDN을 설정 하 고 구성 합니다.](use-office-365-cdn-with-spo.md#CDNSetupinPShell)
+  + [PnP PowerShell을 사용 하 여 CDN을 설정 하 고 구성 합니다.](use-office-365-cdn-with-spo.md#CDNSetupinPnPPosh)
   + [Office 365 CLI를 사용 하 여 CDN을 설정 하 고 구성 합니다.](use-office-365-cdn-with-spo.md#CDNSetupinCLI)
 
   이 단계를 완료 하면 다음이 수행 됩니다.
@@ -443,6 +444,289 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 
 </details>
 
+<a name="CDNSetupinPnPPosh"> </a>
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-pnp-powershell"></a>PnP PowerShell을 사용 하 여 Office 365 CDN을 설정 하 고 구성 합니다.
+
+이 섹션의 절차에서는 PnP PowerShell을 사용 하 여 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [PnP PowerShell 시작](https://github.com/SharePoint/PnP-PowerShell#getting-started)을 참조 하십시오.
+
+다음 단계에 따라 PnP PowerShell을 사용 하 여 SharePoint Online에서 자산을 호스트 하도록 CDN을 설정 하 고 구성 합니다.
+
+<details>
+  <summary>클릭 하 여 확장</summary>
+
+### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>조직이 Office 365 CDN을 사용 하도록 설정
+
+테 넌 트 CDN 설정을 변경 하기 전에 Office 365 테 넌 트에서 개인 CDN 구성의 현재 상태를 검색 해야 합니다. PnP PowerShell을 사용 하 여 테 넌 트에 연결:
+
+``` powershell
+Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
+```
+
+이제 **-Pnpten앤틸리스 Cdnenabled** cmdlet을 사용 하 여 테 넌 트에서 CDN 상태 설정을 검색 합니다.
+
+``` powershell
+Get-PnPTenantCdnEnabled -CdnType <Public | Private>
+```
+
+지정한 CdnType에 대 한 CDN의 상태가 화면에 출력 됩니다.
+
+조직이 Office 365 CDN을 사용 하도록 설정 하려면 **Pnpten앤틸리스 Cdnenabled** cmdlet을 사용 합니다. 조직의 공용 원본, 전용 원본 또는 두 가지 모두를 동시에 사용 하도록 설정할 수 있습니다. 또한이 기능을 사용 하도록 설정 하면 기본 원본 설정을 건너뛰도록 CDN을 구성할 수 있습니다. 이 항목의 설명에 따라 나중에 이러한 원본을 언제 든 지 추가할 수 있습니다.
+  
+PnP PowerShell:
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
+```
+
+예를 들어 조직에서 공용 및 개인 원본을 둘 다 사용할 수 있도록 설정 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Both -Enable $true
+```
+
+조직이 공용 및 개인 원본을 모두 사용할 수 있도록 설정 하 고 기본 원본을 설정 하지 않으려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
+```
+
+Office 365 CDN을 사용 하도록 설정 하는 경우 기본적으로 프로 비전 되는 원본에 대 한 정보 및 기본 원본 설정을 건너뛰는 경우 발생할 수 있는 영향에 대 한 자세한 내용은 [DEFAULT CDN 원본임](use-office-365-cdn-with-spo.md#default-cdn-origins) 을 참조 하십시오.
+
+조직에서 공용 원본을 사용 하도록 설정 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
+```
+
+조직에서 전용 원본을 사용 하도록 설정 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
+```
+
+이 cmdlet에 대 한 자세한 내용은 [Set-Pnpten앤틸리스 Cdnenabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled)를 참조 하십시오.
+
+<a name="Office365CDNforPnPPoshFileType"> </a>
+### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Office 365 CDN에 포함할 파일 형식 목록 변경 (선택 사항)
+
+> [!TIP]
+> **Pnpten앤틸리스 Cdnpolicy** cmdlet을 사용 하 여 파일 형식을 정의 하는 경우 현재 정의 된 목록을 덮어씁니다. 목록에 다른 파일 형식을 추가 하려면 먼저 cmdlet을 사용 하 여 이미 허용 된 파일 형식을 확인 하 여 새 파일과 함께 목록에 포함 시킵니다.
+  
+**설정-Pnpten앤틸리스 Cdnpolicy** cmdlet을 사용 하 여 CDN에서 공용 및 전용 원본으로 호스트할 수 있는 정적 파일 형식을 정의 합니다. 기본적으로 일반 에셋 유형 (예: .css, .gif, .jpg, .js)을 사용할 수 있습니다.
+
+PnP PowerShell:
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
+```
+
+예를 들어 CDN에서 .css 및 .png 파일을 호스팅할 수 있도록 설정 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
+```
+
+CDN에서 현재 허용 되는 파일 형식을 확인 하려면 **Get-Pnpten앤틸리스 Cdn정책만** cmdlet을 사용 합니다.
+
+``` powershell
+Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+```
+
+이러한 cmdlet에 대 한 자세한 내용은 [Set-Pnpten앤틸리스 Cdnpolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) 및 [Get-Pnpten앤틸리스 cdn정책도](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)를 참조 하십시오.
+
+<a name="Office365CDNforPnPPoshSiteClassification"> </a>
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Office 365 CDN에서 제외 하려는 사이트 분류 목록 변경 (선택 사항)
+
+> [!TIP]
+> **-Pnpten앤틸리스 Cdnpolicy** cmdlet을 사용 하 여 사이트 분류를 제외 하는 경우 현재 정의 된 목록을 덮어씁니다. 추가 사이트 분류를 제외 하려면 먼저 cmdlet을 사용 하 여 이미 제외 된 분류를 확인 한 다음 새 항목과 함께 추가 합니다.
+
+사용자가 CDN을 통해 사용 하지 않도록 하려는 사이트 분류를 제외 하려면 **Pnpten앤틸리스 Cdnpolicy** cmdlet을 사용 합니다. 기본적으로 사이트 분류는 제외 되지 않습니다.
+
+PnP PowerShell:
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications>"
+```
+
+현재 제한 되는 사이트 분류를 확인 하려면 **Get-Pnpten앤틸리스 Cdn정책만** cmdlet을 사용 합니다.
+
+``` powershell
+Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+```
+
+반환 되는 속성은 _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ 및 _excludeifnoscriptdisabled_입니다.
+
+_IncludeFileExtensions_ 속성에는 CDN에서 처리할 파일 확장명 목록이 포함 됩니다.
+
+> [!NOTE]
+> 기본 파일 확장명은 public 및 private과 다릅니다.
+
+_ExcludeRestrictedSiteClassifications_ 속성은 CDN에서 제외 하려는 사이트 분류를 포함 합니다. 예를 들어 해당 분류가 적용 된 사이트의 콘텐츠가 CDN에서 처리 되지 않도록 **비밀 우편** 으로 표시 된 사이트를 제외할 수 있습니다.
+
+_Excludeifnoscriptdisabled_ 속성은 사이트 수준 _noscript_ 특성 설정에 따라 CDN에서 콘텐츠를 제외 합니다. 기본적으로 _최신_ 사이트에는 _Noscript_ 특성이 **사용** 으로 설정 되 고 _클래식_ 사이트에는 사용 **되지** 않습니다. 이것은 테 넌 트 설정에 따라 다릅니다.
+
+이러한 cmdlet에 대 한 자세한 내용은 [Set-Pnpten앤틸리스 Cdnpolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) 및 [Get-Pnpten앤틸리스 cdn정책도](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)를 참조 하십시오.
+
+<a name="Office365CDNforPnPPoshOrigin"> </a>
+### <a name="add-an-origin-for-your-assets"></a>자산에 대 한 근원 추가
+
+**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 원본을 정의 합니다. 여러 원본을 정의할 수 있습니다. 원점은 CDN에서 호스팅할 자산이 포함 된 SharePoint 라이브러리 또는 폴더를 가리키는 URL입니다.
+  
+> [!IMPORTANT]
+> 사용자 정보가 포함 된 리소스를 배치 하거나 조직에서 공용 원본으로 중요 한 것으로 간주 해서는 안 됩니다.
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
+```
+
+_Path_ 값은 자산이 포함 된 라이브러리 또는 폴더에 대 한 상대 경로입니다. 상대 경로 외에도 와일드 카드를 사용할 수 있습니다. 원본 URL 앞에는 와일드 카드를 지원 합니다. 이를 통해 여러 사이트에 걸쳐 있는 원본을 만들 수 있습니다. 예를 들어 모든 사이트에 대 한 masterpages 폴더의 모든 자산을 CDN 내의 공용 근원으로 포함 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+```
+
++ 와일드 카드 수정자 ***/** 는 경로의 시작 부분 에서만 사용할 수 있으며 지정 된 url의 모든 URL 세그먼트와 일치 합니다.
++ 경로는 문서 라이브러리, 폴더 또는 사이트를 가리킬 수 있습니다. 예를 들어 경로 _*/site1_ 은 사이트 아래의 모든 문서 라이브러리와 일치 합니다.
+
+특정 상대 경로를 사용 하 여 원본을 추가할 수 있습니다. 전체 경로를 사용 하 여 원점을 추가할 수는 없습니다.
+
+다음은 사이트 자산 라이브러리의 개인 출처를 특정 사이트에 추가 하는 예제입니다.
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+이 예제에서는 사이트 모음의 사이트 자산 라이브러리에 _folder1_ 폴더의 개인 출처를 추가 합니다.
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+경로에 공백이 있으면 경로를 큰따옴표로 묶고 URL 인코딩 %20로 공간을 바꿀 수 있습니다. 다음은 사이트 모음의 사이트 자산 라이브러리에서 _폴더 1_ 폴더의 개인 출처를 추가 하는 예제입니다.
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
+```
+
+이 명령 및 구문에 대 한 자세한 내용은 [추가-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)를 참조 하십시오.
+
+> [!NOTE]
+> 비공개 원본의 경우 원본에서 공유 되는 자산은 CDN에서 액세스 하려면 먼저 주 버전을 게시 해야 합니다.
+  
+명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. 최대 15 분까지 소요 될 수 있습니다.
+
+<a name="ExamplePublicOriginPnPPosh"> </a>
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>예: 마스터 페이지에 대 한 공용 원점과 SharePoint Online에 대 한 스타일 라이브러리에 대해 구성
+
+일반적으로 이러한 출처는 Office 365 CDN을 사용 하도록 설정 하면 기본적으로 설정 됩니다. 그러나 수동으로 사용 하도록 설정 하려는 경우 다음 단계를 수행 합니다.
+  
++ **추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 스타일 라이브러리를 공용 원점으로 정의 합니다.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
+  ```
+
++ **추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 마스터 페이지를 공공 원점으로 정의 합니다.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+  ```
+
+이 명령 및 구문에 대 한 자세한 내용은 [추가-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)를 참조 하십시오.
+
+명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. 최대 15 분까지 소요 될 수 있습니다.
+
+<a name="ExamplePrivateOriginPnPPosh"> </a>
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 자산, 사이트 페이지 및 게시 이미지에 대 한 개인 출처 구성
+
++ **추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 자산 폴더를 전용 원본으로 정의 합니다.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
+  ```
+
++ **추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 페이지 폴더를 전용 원본으로 정의 합니다.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
+  ```
+
++ **추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 게시 이미지 폴더를 전용 원본으로 정의 합니다.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
+  ```
+
+이 명령 및 구문에 대 한 자세한 내용은 [추가-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)를 참조 하십시오.
+
+명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. 최대 15 분까지 소요 될 수 있습니다.
+
+<a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
+
+**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예:
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+이 명령 및 구문에 대 한 자세한 내용은 [추가-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)를 참조 하십시오.
+  
+명령을 실행 하면 시스템에서 데이터 센터 전체에서 구성을 동기화 합니다. SharePoint Online 테 넌 트가 CDN 서비스에 연결할 때 예상 되는 _구성 보류 중인_ 메시지가 표시 될 수 있습니다. 최대 15 분까지 소요 될 수 있습니다.
+
+<a name="CDNManagePnPPosh"> </a>
+### <a name="manage-the-office-365-cdn"></a>Office 365 CDN 관리
+
+CDN을 설정한 후에는이 섹션에 설명 된 대로 콘텐츠를 업데이트 하거나 필요에 따라 변경 하 여 구성을 변경할 수 있습니다.
+  
+<a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
+#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Office 365 CDN에서 자산 추가, 업데이트 또는 제거
+
+설정 단계를 완료 한 후에는 새 자산을 추가 하 고 원할 때마다 기존 자산을 업데이트 하거나 제거할 수 있습니다. 폴더 또는 SharePoint 라이브러리에서 원본으로 식별 한 자산을 변경 하기만 하면 됩니다. 새 자산을 추가 하는 경우에는 CDN을 통해 즉시 사용할 수 있습니다. 그러나 자산을 업데이트 하는 경우 새 복사본을 전파 하 고 CDN에서 사용할 수 있게 되는 데 최대 15 분이 걸립니다.
+  
+근원 위치를 검색 해야 하는 경우에는 **Get-Pnpten앤틸리스 Cdn근원** cmdlet을 사용할 수 있습니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [Get-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin)를 참조 하십시오.
+
+<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+#### <a name="remove-an-origin-from-the-office-365-cdn"></a>Office 365 CDN에서 원본 제거
+
+원본으로 식별 한 폴더 또는 SharePoint 라이브러리에 대 한 액세스 권한을 제거할 수 있습니다. 이 작업을 수행 하려면 **Remove-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 합니다.
+
+``` powershell
+Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
+```
+
+이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [Remove-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin)를 참조 하십시오.
+
+<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+#### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN에서 원본 수정
+
+만든 출처는 수정할 수 없습니다. 대신 원점을 제거한 다음 새 원본을 추가 합니다. 자세한 내용은 [Office 365 CDN에서 출처를 제거](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) 하 고 [자산의 출처를 추가](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)하는 방법을 참조 하세요.
+
+<a name="Office365CDNforSPODisable"> </a>
+#### <a name="disable-the-office-365-cdn"></a>Office 365 CDN 사용 안 함
+
+**-Pnpten앤틸리스 Cdnenabled** cmdlet을 사용 하 여 조직에 CDN을 사용 하지 않도록 설정 합니다. CDN에 대 한 공용 및 전용 원본을 모두 사용 하는 경우에는 다음 예제와 같이 cmdlet을 두 번 실행 해야 합니다.
+  
+CDN에서 public 원본임을 사용 하지 않도록 설정 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $false
+```
+
+CDN에서 비공개 원본을 사용 하지 않도록 설정 하려면 다음 명령을 입력 합니다.
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
+```
+
+이 cmdlet에 대 한 자세한 내용은 [Set-Pnpten앤틸리스 Cdnenabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled)를 참조 하십시오.
+
+</details>
+
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Office 365 CLI를 사용 하 여 Office 365 CDN을 설정 하 고 구성 합니다.
 
@@ -670,7 +954,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권한을 지원 하지 않는다는 점에 유의 해야 합니다. 예를 들어에 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`있는 파일의 경우 사용자는 다음 조건에 해당 하는 파일에 대 한 유효한 액세스 권한을 갖습니다.
 
-|사용자  |권한  |유효한 액세스  |
+|사용자  |사용 권한  |유효한 액세스  |
 |---------|---------|---------|
 |사용자 1     |Folder1에 대 한 액세스 권한         |CDN에서 image1에 액세스할 수 있음         |
 |사용자 2     |Folder1에 대 한 액세스 권한이 없음         |CDN에서 image1에 액세스할 수 없음         |

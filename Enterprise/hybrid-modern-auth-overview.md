@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: 87a2cc49594b0b71d1288e27ab1323f1850fd7eb
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261401"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721919"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
 
@@ -115,7 +115,7 @@ Get-help 인증 구성 cmdlet에 대 한 자세한 내용은 [get-CsOAuthConfigu
 - C:\Program Files\Skype for Business Server 2015 \ Web Components\Web ticket\ext\web.config
 
 ```xml
-<system.identityModel.services>
+<configuration>
   <system.net>
     <defaultProxy>
       <proxy
@@ -123,7 +123,7 @@ Get-help 인증 구성 cmdlet에 대 한 자세한 내용은 [get-CsOAuthConfigu
         bypassonlocal="true" />
     </defaultProxy>
   </system.net>
-</system.identityModel.services>
+</configuration>
 ```
 
 > [!IMPORTANT]

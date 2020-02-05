@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747788"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721959"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 이 문서에는 네트워크 계획 및 테스트에 대 한 정보와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
   
@@ -59,8 +59,6 @@ Office 365을 사용 하면 조직의 인터넷 회로 사용률이 향상 될 �
 <a name="calculators"> </a>
 
  **네트워크 도구** 인터넷 대역폭을 테스트 하 고 유효성을 검사 하 여 다운로드, 업로드 및 대기 시간 제한을 확인 합니다. 이러한 도구는 마이그레이션에 대 한 네트워크 기능 뿐 아니라 완벽 하 게 배포 된 후에도 결정 하는 데 도움이 됩니다. 
-  
-- [Microsoft Message analyzer](https://technet.microsoft.com/library/jj649776.aspx): 메시지 분석기는 네트워크 문제 해결을 위한 효과적인 도구입니다. 메시지 분석기는 프로토콜 기반 메시징 트래픽 및 시스템 메시지를 캡처, 표시 및 분석 합니다. 또한 메시지 분석기를 사용 하 여 로그 및 추적 파일에서 데이터를 가져오고, 집계 하 고, 분석할 수 있습니다.
     
 - [Microsoft 원격 연결 분석기](https://go.microsoft.com/fwlink/p/?LinkId=517243): Exchange Online 환경에서 연결을 테스트 합니다.
     
