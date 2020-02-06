@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용하여 Office 365 연결을 유지할 수 있습니다. 느린 네트워크에서 Office 365를 사용하기 위한 최상의 방법뿐만 아니라 공식적인 서비스 상태 및 연속성 지침을 이해할 수 있습니다. 또한 Office 365 관리자 앱을 이용하고 비즈니스용 Office 365 - 관리자 도움말을 북마크할 수도 있습니다.
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931696"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721969"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 연결 모니터링
 
@@ -37,7 +37,7 @@ Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용�
 |**AD FS와 Azure Active Directory Connect Health 사용** <br/> |Office 365에서 Single Sign-On AD FS를 사용하는 경우 Azure AD Connect Health를 사용하여 [AD FS 인프라 모니터링](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)을 시작할 수 있습니다.  <br/> |
 |**프로그래밍 방식으로 Office 365 모니터링** <br/> |[Office 365 관리 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)에 대한 지침을 참조하세요.  <br/> |
 
-다음의 간단한 링크를 사용할 수 있습니다. [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>참고 항목
 
