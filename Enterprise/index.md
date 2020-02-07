@@ -13,13 +13,15 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
+f1.keywords:
+- NOCSH
 ms.author: robmazz
-ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
-ms.translationtype: HT
+ms.openlocfilehash: f4dd985efa512de8300acc7a02c9c505acb47c38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030662"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845059"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365에서는 공동 작업, 보안 및 규정 준수, 이동성 및 인텔리전스와 분석을 사용하는 강력한 온라인 클라우드 서비스를 제공합니다. 이 페이지에서는 엔터프라이즈 조직에서 Office&nbsp;365 서비스를 배포, 구성 및 관리하는 관리자 및 IT 전문가를 위한 지침의 링크를 제공합니다.</p>
