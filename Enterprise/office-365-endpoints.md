@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '요약: 다른 Office 365 클라우드의 인터넷 끝점에 대한 다음 문서를 참조하세요.'
-ms.openlocfilehash: 372986a8ed6b8d7ced8912712d0546082b957b79
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 29fb2dab9873aad5f54c678de482941d25d6161f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069662"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843579"
 ---
 # <a name="office-365-endpoints"></a>Office 365 엔드포인트
 

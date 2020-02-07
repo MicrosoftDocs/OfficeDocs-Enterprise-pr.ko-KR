@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '요약: Office 365의 네트워킹을 이해하려면 다음 문서를 참조하세요.'
-ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: c1976a6b1ae5bff0b5f6f909ee9ab8495f371653
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747417"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844029"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Office 365의 네트워크 설정
 

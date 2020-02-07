@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365를 배포한 후에는 아래의 도구 및 기술 일부를 사용하여 Office 365 연결을 유지할 수 있습니다. 느린 네트워크에서 Office 365를 사용하기 위한 최상의 방법뿐만 아니라 공식적인 서비스 상태 및 연속성 지침을 이해할 수 있습니다. 또한 Office 365 관리자 앱을 이용하고 비즈니스용 Office 365 - 관리자 도움말을 북마크할 수도 있습니다.
-ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5a0a6e217d0f74f6266bffa1bd6037427f14e7bd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721969"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843709"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 연결 모니터링
 
