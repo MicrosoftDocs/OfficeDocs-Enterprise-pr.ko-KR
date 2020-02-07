@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
+f1.keywords:
+- NOCSH
 description: '요약: Exchange Server 2013, Lync Server 2013를 실행 하는 서버 및 SharePoint Server 2013를 실행 하는 서버를 실행 하는 서버가 포함 된 통합 테스트 랩을 만드는 방법을 알아봅니다.'
-ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070404"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841105"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>테스트 랩 가이드: 통합 된 Exchange, Lync 및 SharePoint 테스트 랩 구성
 
@@ -54,7 +56,7 @@ Hyper-v에서이 테스트 랩을 구성 하는 방법에 대 한 자세한 내�
   
 ## <a name="download-the-test-lab-guide"></a>테스트 랩 가이드 다운로드
 
-[테스트 랩 가이드: 통합 된 Exchange, Lync 및 SharePoint 테스트 랩 구성](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[테스트 랩 가이드: 통합 Exchange, Lync 및 SharePoint 테스트 랩 구성](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>참고 항목
 

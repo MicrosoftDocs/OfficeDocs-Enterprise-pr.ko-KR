@@ -12,19 +12,21 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: DoS (서비스 거부) 공격의 개요
-ms.openlocfilehash: 55fffccfc59f13d32cdd19930320c1df1cf58461
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067688"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843591"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Office 365에서 서비스 거부 공격 으로부터 보호
 
 ## <a name="introduction"></a>소개
 
-Microsoft는 100 데이터 센터 보다 많은 글로벌 클라우드 인프라에 호스트 되는 200 개 이상의 클라우드 서비스에 대해 신뢰할 수 있는 인프라를 제공 합니다. 다음과 같은 다양한 알고리즘과 방법이 있습니다.
+Microsoft는 100 데이터 센터 보다 많은 글로벌 클라우드 인프라에 호스트 되는 200 개 이상의 클라우드 서비스에 대해 신뢰할 수 있는 인프라를 제공 합니다. 여기에는 다음이 포함됩니다.
 
 - Microsoft Azure
 - Microsoft Bing

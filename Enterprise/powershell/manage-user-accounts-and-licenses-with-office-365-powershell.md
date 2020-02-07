@@ -9,17 +9,19 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: '요약: Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹을 관리 하는 방법에 대해 알아봅니다.'
-ms.openlocfilehash: ebc3038cf244c651ebbf98c10bb7992268d8f5dd
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: e43272196556bcfb09fb7a41a5b2cd40e2056928
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886457"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841315"
 ---
 # <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리
 

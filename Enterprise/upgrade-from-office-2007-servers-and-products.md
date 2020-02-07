@@ -20,17 +20,19 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Office 2007 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748025"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841005"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 2007 제품 및 서비스를 사용 중인 경우 이러한 응용 프로그램에 대 한 지원이 종료 되었습니다. 업그레이드를 계획 하는 동안 Office 365부터 시작 하 여 Microsoft 클라우드로 전환 하는 것이 좋은 시간입니다. 이 문서를 사용 하 여 옵션을 검토 하 고 업그레이드를 계획 합니다.
       

@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: SharePoint Online의 최신 사이트에 대 한 성능 권장 사항에 대해 알아봅니다.
-ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078403"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844789"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online 최신 포털 사이트 제한
 
@@ -65,7 +67,7 @@ ms.locfileid: "38078403"
 
 [Office 365 성능 조정](tune-office-365-performance.md)
 
-[SharePoint Online 제한](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online 제한 사항](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
 [최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 

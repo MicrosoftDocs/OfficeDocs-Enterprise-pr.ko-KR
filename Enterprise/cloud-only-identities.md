@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365p_AddUsersWithDirSync
 - O365M_AddUsersWithDirSync
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -24,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Office 365 구독에서 클라우드 전용 id를 사용 하는 경우 사용자 및 그룹을 만드는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 5991ec838321187b58f913e1707efb2ede9912fb
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 0c066ca22f372c10b04c60f9bd44cf24300b6492
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072280"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844669"
 ---
 # <a name="office-365-cloud-only-identities"></a>Office 365 클라우드 전용 id
 
@@ -39,7 +41,7 @@ ms.locfileid: "40072280"
  
 ![클라우드 전용 id의 기본 구성 요소](./media/about-office-365-identity/cloud-only-identity.png)
 
-조직의 사용자 및 사용자 계정을 다양 한 방법으로 분류할 수 있습니다. 예를 들어 직원은 직원과 영구 상태를 유지 합니다. 일부는 임시 상태인 공급 업체, 계약자 또는 파트너입니다. 일부는 사용자 계정이 없지만, 상호 작용 및 공동 작업을 지원 하기 위해 특정 서비스 및 리소스에 대 한 액세스 권한을 부여 해야 하는 외부 사용자입니다. 예:
+조직의 사용자 및 사용자 계정을 다양 한 방법으로 분류할 수 있습니다. 예를 들어 직원은 직원과 영구 상태를 유지 합니다. 일부는 임시 상태인 공급 업체, 계약자 또는 파트너입니다. 일부는 사용자 계정이 없지만, 상호 작용 및 공동 작업을 지원 하기 위해 특정 서비스 및 리소스에 대 한 액세스 권한을 부여 해야 하는 외부 사용자입니다. 예시는 다음과 같습니다:
 
 - 테넌트 계정은 클라우드 서비스에 대한 라이선스를 부여한 조직 내부의 사용자를 나타냅니다.
 

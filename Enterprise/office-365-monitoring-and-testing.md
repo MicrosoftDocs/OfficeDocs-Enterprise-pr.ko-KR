@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: '요약: Microsoft가 Office 365의 테 넌 트 경계를 모니터링 하 고 테스트 하는 방법에 대 한 설명입니다.'
-ms.openlocfilehash: 4a986795537f8871d3f3e60c9ff4112e6fe3f668
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 757e80296e63e5379474448c0d89763371472aa2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035518"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842635"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>테넌트 경계 모니터링 및 테스트
 

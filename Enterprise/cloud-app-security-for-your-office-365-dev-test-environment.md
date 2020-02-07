@@ -11,17 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '요약: Office 365 개발/테스트 환경에서 Office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
-ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030832"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840805"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 

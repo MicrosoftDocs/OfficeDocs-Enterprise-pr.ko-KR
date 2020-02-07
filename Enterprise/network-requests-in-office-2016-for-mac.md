@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Mac 용 Office 응용 프로그램은 macOS 플랫폼에서 기본 앱 환경을 제공 합니다. 각 앱은 네트워크 액세스를 사용할 수 없는 경우의 상태를 비롯 하 여 다양 한 시나리오에서 작동 하도록 설계 되었습니다. 컴퓨터가 네트워크에 연결 되 면 응용 프로그램은 일련의 웹 기반 서비스에 자동으로 연결 하 여 향상 된 기능을 제공 합니다. 이 백서에서는 응용 프로그램에서 연결을 시도 하는 끝점과 Url 및 제공 되는 서비스에 대해 설명 합니다. 이 정보는 네트워크 구성 문제를 해결 하 고 네트워크 프록시 서버에 대 한 정책을 설정할 때 유용 합니다. 이 문서의 세부 정보는 Office 365 URL 및 주소 범위 문서를 보완 하기 위해 작성 되었습니다.
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781958"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844549"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Mac용 Office의 네트워크 요청
 
@@ -48,7 +50,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Microsoft CDN (콘텐츠 배달 네트워크)에서 Mac 용 Office 설치 프로그램을 다운로드 하는 데 사용 됩니다.
   
-|**URL**|**종류**|**설명**|
+|**URL**|**유형**|**설명**|
 |:-----|:-----|:-----|
 |```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Office 365 설치 포털은 최신 설치 패키지에 연결 서비스를 전달 합니다.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |대비  <br/> |콘텐츠 배달 네트워크의 설치 패키지 위치입니다.  <br/> |
@@ -59,7 +61,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 앱을 처음 시작할 때 연결 됩니다. 이러한 끝점은 사용자에 게 향상 된 Office 기능을 제공 하며, 라이선스 유형 (볼륨 라이선스 설치 포함)에 관계 없이 Url에 연결 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |ST  <br/> |' Flighting ' 구성-기능을 간편 하 고 실험해 볼 수 있습니다.  <br/> |
 |```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |' Flighting ' 네트워크 구성 테스트  <br/> |
@@ -92,13 +94,13 @@ URL 형식은 다음과 같이 정의 됩니다.
   
  **로그인**
   
-클라우드 기반 저장소에 로그인 할 때 다음 네트워크 끝점에 연결 됩니다. 계정 유형에 따라 각 서비스에 연결할 수 있습니다. 예를 들면 다음과 같습니다.
+클라우드 기반 저장소에 로그인 할 때 다음 네트워크 끝점에 연결 됩니다. 계정 유형에 따라 각 서비스에 연결할 수 있습니다. 예시는 다음과 같습니다:
   
 - **MSA: Microsoft 계정** -일반적으로 소비자 및 정품 시나리오에 사용 됩니다. 
     
 - **OrgID: 조직 계정** -일반적으로 상업용 시나리오에 사용 됩니다. 
     
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Windows 권한 부여 서비스  <br/> |
 |```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office 365 Login Service (OrgID)  <br/> |
@@ -115,7 +117,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독 및 정품 라이선스 정품 인증에 적용 됩니다. 특히 볼륨 라이선스 설치에는 적용 되지 않습니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://ols.officeapps.live.com/```  <br/> |WXPON  <br/> |진단  <br/> |Office Licensing Service  <br/> |
    
@@ -123,7 +125,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |대비  <br/> |새로운 JSON 페이지 콘텐츠  <br/> |
    
@@ -131,7 +133,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://entity.osi.office.net/```  <br/> |하드웨어  <br/> |진단  <br/> |리서치 도구 웹 서비스  <br/> |
 |```https://cdn.entity.osi.office.net/```  <br/> |하드웨어  <br/> |진단  <br/> |리서치 도구 정적 콘텐츠  <br/> |
@@ -141,7 +143,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |진단  <br/> |Insights 웹 서비스  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |진단  <br/> |JQuery 라이브러리  <br/> |
@@ -153,7 +155,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |<  <br/> |진단  <br/> |PowerPoint Designer 웹 서비스  <br/> |
    
@@ -161,7 +163,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://pptcts.officeapps.live.com/```  <br/> |<  <br/> |진단  <br/> |PowerPoint 빠른 시작 web service  <br/> |
    
@@ -169,7 +171,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |진단  <br/> |웃는 얼굴 서비스 보내기  <br/> |
    
@@ -177,7 +179,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |진단  <br/> |지원 서비스에 문의  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |진단  <br/> |앱 내 지원 서비스  <br/> |
@@ -186,7 +188,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://wordcs.officeapps.live.com/```  <br/> |하드웨어  <br/> |진단  <br/> |Word 문서 변환 서비스 (PDF)  <br/> |
    
@@ -194,7 +196,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝점이 Office 365 구독 및 정품/볼륨 라이선스 정품 인증에 모두 적용 됩니다.
   
-|**URL**|**앱**|**종류**|**설명**|
+|**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://store.office.com/```  <br/> |WXPO  <br/> |진단  <br/> |Office 앱 스토어 구성  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |하드웨어  <br/> |대비  <br/> |위키백과 앱 리소스  <br/> |
@@ -224,7 +226,7 @@ Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝�
   
 다음 네트워크 끝점은 Office 365 구독 전용의 모든 Office 응용 프로그램에 적용 됩니다.
   
-|**URL**|**종류**|**설명**|
+|**URL**|**유형**|**설명**|
 |:-----|:-----|:-----|
 |```https://*.oscs.protection.outlook.com/```  <br/> |진단  <br/> |Microsoft 안전한 링크 서비스  <br/> |
    
@@ -232,7 +234,7 @@ Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝�
   
 다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 모두에 대해 모든 Office 응용 프로그램에 적용 됩니다. 프로세스가 예기치 않게 중단 되 면 보고서가 생성 되어 Watson 서비스로 전송 됩니다.
   
-|**URL**|**종류**|**설명**|
+|**URL**|**유형**|**설명**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |ST  <br/> |Microsoft 오류 보고 서비스  <br/> |
 |```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office 공동 작업 Insights 서비스  <br/> |
@@ -307,7 +309,7 @@ Microsoft는 개인 정보를 매우 진지 하 게 사용 합니다. Microsoft�
 > [!NOTE]
 > **SendAllTelemetryEnabled** 가 **FALSE**로 설정 된 경우 해당 프로세스에 대 한 모든 충돌 보고가 사용 하지 않도록 설정 됩니다. 사용 현황 원격 분석을 보내지 않고 충돌 보고를 사용 하도록 설정 하려면 다음 기본 설정을 지정 하면 됩니다.```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
-### <a name="updates"></a>업데이트
+### <a name="updates"></a>업데이트 
   
 Microsoft는 정기적으로 Office for Mac 업데이트를 릴리스 합니다 (보통 한 달에 한 번). 사용자와 IT 관리자가 최신 보안 픽스를 설치할 수 있도록 컴퓨터를 최신 상태로 유지 하는 것이 적극 권장 합니다. IT 관리자가 컴퓨터 업데이트를 면밀 하 게 제어 하 고 관리 하려는 경우 다음 기본 설정을 지정 하 여 자동 업데이트 프로세스에서 제품 업데이트를 자동적으로 감지 하 고 제공 하지 못하도록 할 수 있습니다.
   

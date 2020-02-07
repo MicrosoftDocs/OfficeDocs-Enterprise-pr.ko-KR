@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: SharePoint Online의 데이터 삭제에 대 한 설명
-ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
-ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
+ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41658325"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842045"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365에서 SharePoint Online 데이터 삭제
 

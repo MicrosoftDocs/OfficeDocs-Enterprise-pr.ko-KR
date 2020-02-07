@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
+f1.keywords:
+- NOCSH
 description: Office 365 내의 보고 기능에 대 한 설명입니다.
-ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031863"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842035"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 보고 기능 
 
@@ -57,7 +59,7 @@ Exchange Online 감사 보고서에는 사서함 액세스에 대 한 세부 정
 > [!NOTE]
 > 감사 된 이벤트가 해당 사서함에 대 한 감사 로그에 저장 되도록 각 사서함에 대해 사서함 감사 로깅을 사용 하도록 설정 해야 합니다. 사서함에 대해 사서함 감사 로깅을 사용 하도록 설정 되지 않은 경우 해당 사서함에 대 한 이벤트는 감사 로그에 저장 되지 않으며 사서함 감사 보고서에 나타나지 않습니다. 자세한 내용은 [사서함 감사 사용](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)을 참조 하십시오.
 
-| 작업 | Description |
+| 작업 | 설명 |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [비 소유자 사서함 액세스 보고서 실행](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | 사서함의 소유자가 아닌 다른 사용자가 액세스 한 사서함 목록을 표시 합니다. 이 보고서에는 사서함에 액세스 한 사람, 사서함에서 수행한 작업 및 작업이 성공 했는지 여부에 대 한 정보가 포함 됩니다. |
 | [사서함 감사 로그 내보내기](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | 사서함 감사 로그에는 사서함 소유자가 아닌 다른 사용자가 수행한 사서함의 액세스 및 작업에 대 한 정보가 포함 됩니다. 관리자는 날짜 범위와 함께 사서함을 지정 하 여 보고서를 생성할 수 있습니다. 로그는 XML로 내보내고, 메시지에 첨부 되며, 관리자가 결정 하는 특정 사용자에 게 전송 됩니다. |
@@ -86,7 +88,7 @@ Yammer Enterprise는 관리자에 게 yammer [데이터 내보내기 API](https:
 
 다음 데이터를 내보낼 수 있습니다.
 
-| 파일 이름 | Description |
+| 파일 이름 | 설명 |
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | 네트워크의 모든 신규, 보류 중 및 일시 중단 된 사용자 |
 | Messages.csv | 네트워크의 모든 메시지 |

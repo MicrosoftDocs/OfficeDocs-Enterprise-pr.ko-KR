@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '요약: Office 365의 관리 액세스 제어 및 데이터 분류에 대 한 개요입니다.'
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067709"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844539"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 관리 액세스 권한 컨트롤 
 
@@ -29,7 +31,7 @@ Microsoft는 Microsoft의 고객 콘텐츠에 대 한 액세스를 의도적으�
 Microsoft는 다양 한 형태의 클라우드 전달을 사용 하 여 온라인 서비스를 제공 합니다.
 
 - **공용 클라우드:** 여러 테 넌 트 버전의 Office 365, Azure 및 북미, 남미, 유럽, 아시아, 오스트레일리아 등에 호스트 되는 기타 서비스를 포함 합니다.
-- **국가 클라우드:** 이전에 언급 한 것을 제외 하 고 미국 외부에서 운영 하는 모든 sovereign 클라우드에 및 타사에서 작동 하는 모든 클라우드 (중국에서 운영 하는 Office 365) 및 독일의 Office 365 (예: Microsoft에서 운영 하지만 독일어 데이터를 트러스티로 제공 되는 모델에서)을 포함 합니다. Deutsche Telekom, Microsoft의 고객 데이터 및 고객 데이터를 포함 하는 시스템에 대 한 액세스를 제어 하 고 모니터링 합니다.
+- **국가 클라우드:** 이전에 설명한 것 처럼 미국 외부에 있는 sovereign 클라우드에 및 타사에서 운영 하는 모든 클라우드 (예: Microsoft에서 운영 하는 Office 365) 365 및 독일 (독일어 데이터 트러스티가 있는 모델에 따라 microsoft는 고객 데이터를 포함 하는 고객 데이터와 시스템에 대 한 액세스를 제어 하 고 모니터링 합니다.)
 - **정부 클라우드:** 미국 정부 고객에 게 제공 되는 Office 365 및 Azure 서비스를 포함 합니다.
 
 이 문서에서 제공 하는 Office 365 서비스에는 다음이 포함 됩니다.

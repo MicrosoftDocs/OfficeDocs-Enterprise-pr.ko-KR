@@ -9,13 +9,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
+f1.keywords:
+- NOCSH
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Exchange 2013 플랫폼 옵션 이라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 56f77f7689270b60296848d41992652bf2068695
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027572"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844629"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft Exchange 2013 플랫폼 옵션
 

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Exchange Online 내에서 소프트 및 하드 데이터 삭제를 처리 하는 방법
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067713"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843639"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365에서 Exchange Online 데이터 삭제
 Exchange Online 내에는 두 가지 유형의 삭제 (소프트 삭제 및 하드 삭제)가 있습니다. 이는 사서함에 있는 모든 사서함과 항목에 적용 됩니다.
@@ -31,7 +33,7 @@ Exchange Online 내에는 두 가지 유형의 삭제 (소프트 삭제 및 하�
 
 영구적으로 삭제 된 사용자 사서함은 다음 방법 중 하나를 사용 하 여 삭제 된 사서함입니다.
 - 사용자 사서함이 30 일 넘게 일시 삭제 되었으며, 연결 된 Azure Active Directory 사용자가 영구적으로 삭제 되었습니다. 전자 메일, 연락처, 파일 등의 모든 사서함 콘텐츠가 영구적으로 삭제 됩니다.
-- 사용자 사서함에 연결 된 사용자 계정이 Azure Active Directory에서 영구적으로 삭제 되었습니다. 이제 사용자 사서함은 Exchange Online에서 일시 삭제 되며 30 일 동안 일시 삭제 된 상태로 유지 됩니다. 30 일 동안 새 Azure Active Directory 사용자가 같은 **ExchangeGuid** 또는 **ArchiveGuid**을 사용 하는 원래 받는 사람 계정과 동기화 되 고 새 계정에 Exchange Online에 대 한 사용이 허가 된 경우이는 다음과 같은 하드 삭제를 발생 합니다. 원래 사용자 사서함입니다. 전자 메일, 연락처, 파일 등의 모든 사서함 콘텐츠가 영구적으로 삭제 됩니다.
+- 사용자 사서함에 연결 된 사용자 계정이 Azure Active Directory에서 영구적으로 삭제 되었습니다. 이제 사용자 사서함은 Exchange Online에서 일시 삭제 되며 30 일 동안 일시 삭제 된 상태로 유지 됩니다. 30 일 동안 새 Azure Active Directory 사용자가 같은 **ExchangeGuid** 또는 **ArchiveGuid**을 사용 하는 원래 받는 사람 계정과 동기화 되 고 새 계정에 Exchange Online에 대 한 사용이 허가 된 경우 원래 사용자 사서함이 영구적으로 삭제 됩니다. 전자 메일, 연락처, 파일 등의 모든 사서함 콘텐츠가 영구적으로 삭제 됩니다.
 - 일시 삭제 된 사서함은 **PermanentlyDelete 제거**를 사용 하 여 삭제 됩니다.
 
 위의 삭제 시나리오에서는 사용자 사서함이 소송 보존 또는 eDiscovery 보류와 같은 보존 상태에 있지 않은 것으로 가정 합니다. 사서함에 보류 중인 형식이 있으면 사서함을 삭제할 수 없습니다. 모든 메일 사용자 받는 사람 유형에 대해 모든 [보류](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) 설정은 무시 되며, 하드 삭제 또는 소프트 삭제에는 영향을 주지 않습니다.

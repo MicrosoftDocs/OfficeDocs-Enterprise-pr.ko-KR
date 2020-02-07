@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Office 365 데이터 센터 디스크 드라이브 및 서버의 재활용, 폐기 또는 폐기에 대 한 Microsoft 정책 개요
-ms.openlocfilehash: 1fca278dd23e84db2c6591eefc45d0b75265cf17
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032093"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843689"
 ---
 # <a name="office-365-data-destruction"></a>Office 365 데이터 소멸
 

@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
+f1.keywords:
+- NOCSH
 description: '이 문서는 Design sample: SharePoint 용 Microsoft Azure 2013의 Internet sites 라는 액세스 가능한 텍스트 버전입니다.'
-ms.openlocfilehash: 52ae615cbdc6a355155e54e36bc6a3d733d84869
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b3669304fee6b7a89bc5d1bde96c39c496122d48
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027632"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843799"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>액세스 가능한 다이어그램-디자인 샘플: SharePoint 용 Microsoft Azure 2013의 인터넷 사이트
 

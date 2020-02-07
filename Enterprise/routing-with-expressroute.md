@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure Express 경로를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 올바르게 이해 하려면 핵심 Express 경로 및 라우팅 도메인에 대 한 회사의 요구 사항을 파악 해야 합니다. 이를 통해 Office 365 고객이 의존할 수 있는 Express를 사용 하기 위한 기본이 설정 됩니다.
-ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813898"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844059"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 사용한 라우팅
 
@@ -229,7 +231,7 @@ Humongous에 여러 대륙의 주요 사무실이 있는 경우 비즈니스용 
 
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   

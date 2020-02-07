@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: 엔터프라이즈 조직의 Office 365를 계획 하 고 관리 하기 위한 리소스입니다.
-ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067694"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840405"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>엔터프라이즈 조직 및 Office 365
 
@@ -98,9 +100,9 @@ Office 365 IT 전문가를 위한 자가 진도 온라인 학습 환경
   
 [지금 등록](https://go.microsoft.com/fwlink/?linkid=852994)
   
-## <a name="featured-articles"></a>주요 기사
+## <a name="featured-articles"></a>추천 문서
 
-[비즈니스 제품에 대해 고객 지원 센터 문의 - 관리자 도움말](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+[비즈니스용 제품에 대한 고객 지원 센터 - 관리자 도움말](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
 [Windows 용 새 OneDrive 동기화 클라이언트 배포](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
   

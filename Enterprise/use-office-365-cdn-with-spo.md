@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721939"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841075"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -385,7 +387,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
 
-**SPOTenantCdnOrigin** cmdlet을 사용 하면 사이트 모음을 전용 원본으로 정의할 수 있습니다. 예:
+**SPOTenantCdnOrigin** cmdlet을 사용 하면 사이트 모음을 전용 원본으로 정의할 수 있습니다. 예시는 다음과 같습니다:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -668,7 +670,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
 
-**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예:
+**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예시는 다음과 같습니다:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -941,7 +943,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN의 비공개 원본에 있는 자산에 대 한 액세스는 SharePoint Online에서 생성 된 토큰에 의해 부여 됩니다. 원본에서 지정한 폴더나 라이브러리에 대 한 액세스 권한이 이미 있는 사용자에 게는 사용자가 자신의 사용 권한 수준에 따라 파일에 액세스할 수 있도록 허용 하는 토큰이 자동으로 부여 됩니다. 이러한 액세스 토큰은 토큰 재생 공격을 방지 하기 위해 생성 된 30 ~ 90 분에 유효 합니다.
 
-액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예:
+액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예시는 다음과 같습니다:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -954,7 +956,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권한을 지원 하지 않는다는 점에 유의 해야 합니다. 예를 들어에 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`있는 파일의 경우 사용자는 다음 조건에 해당 하는 파일에 대 한 유효한 액세스 권한을 갖습니다.
 
-|사용자  |사용 권한  |유효한 액세스  |
+|사용자  |권한  |유효한 액세스  |
 |---------|---------|---------|
 |사용자 1     |Folder1에 대 한 액세스 권한         |CDN에서 image1에 액세스할 수 있음         |
 |사용자 2     |Folder1에 대 한 액세스 권한이 없음         |CDN에서 image1에 액세스할 수 없음         |
@@ -993,10 +995,10 @@ Microsoft Edge 브라우저에서 개발자 도구를 사용 하는 방법에 �
 
 */Clientsideassets 원본이 누락 되 면 SharePoint Framework 솔루션은 실패 하 고 경고 또는 오류 메시지는 생성 되지 않습니다. **$True**으로 _설정 된 CDN_ 또는 원본이 수동으로 삭제 되었기 때문에이 원본이 누락 될 수 있습니다.
 
-다음 PowerShell 명령을 사용 하 여 */CLIENTSIDEASSETS 원본이 있는지 확인할 수 있습니다.
+다음 PowerShell 명령을 사용 하 여 존재 하는 원본에 대해 확인할 수 있습니다.
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 또는 Office 365 CLI를 통해 확인할 수 있습니다.

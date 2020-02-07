@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
+f1.keywords:
+- NOCSH
 description: 테 넌 트 및 조직에서 Office 365 공동 작업을 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: b232cd2202f1b4e13102fd33ba545cfdcbb2edfe
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: e7823927b6e1987c27924bdae34cf439a50db296
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078177"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843629"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 테넌트 간 공동 작업
 
@@ -44,8 +46,7 @@ Office 365 테 넌 트 공동 작업 옵션에는 파일 및 대화에 대 한 �
 
 |**목표 공유**|**관리 작업**|**방법 정보**|
 |:-----|:-----|:-----|
-|외부 사용자와 사이트 및 문서 공유  <br/> |관리자가 테 넌 트 또는 Microsoft 계정 인증, 회사 또는 학교 계정 인증 또는 게스트 계정에 대 한 사이트 모음 수준에서 공유를 구성 합니다.  <br/> |
-  [SharePoint Online 환경에 대해 외부 공유 관리](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online 및 비즈니스용 OneDrive의 제한 된 도메인 공유](https://support.office.com/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online을 B2B (business to business) 엑스트라넷 솔루션으로 사용](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+|외부 사용자와 사이트 및 문서 공유  <br/> |관리자가 테 넌 트 또는 Microsoft 계정 인증, 회사 또는 학교 계정 인증 또는 게스트 계정에 대 한 사이트 모음 수준에서 공유를 구성 합니다.  <br/> |[SharePoint Online 환경에 대해 외부 공유 관리](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online 및 비즈니스용 OneDrive의 제한 된 도메인 공유](https://support.office.com/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online을 B2B (business to business) 엑스트라넷 솔루션으로 사용](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |최종 사용자에 대 한 외부 공유 추적 및 제어  <br/> |비즈니스용 OneDrive 파일 소유자 및 SharePoint Online 최종 사용자 사이트 및 문서 공유를 구성 하 고 공유를 추적 하도록 알림을 설정 합니다.  <br/> |[비즈니스용 OneDrive에 대 한 외부 공유에 대 한 알림 구성](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Office 365에서 SharePoint 파일 또는 폴더 공유](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>비즈니스용 Skype 공동 작업 옵션

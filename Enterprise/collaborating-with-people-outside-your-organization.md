@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: 조직 외부의 사용자와 공동 작업용 Office 365을 구성 하는 방법을 알아봅니다.
-ms.openlocfilehash: d343594319f40a3fa3ab2bb619c91f9a3a03ca62
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919322"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840775"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>조직 외부의 사용자와 공동 작업
 
@@ -26,8 +28,8 @@ ms.locfileid: "39919322"
 
 ## <a name="see-also"></a>참고 항목
 
-[인증되지 않은 사용자와 파일 및 폴더를 공유하는 모범 사례](best-practices-anonymous-sharing.md)
+[인증되지 않은 사용자와 파일 및 폴더를 공유하는 최우수 사례](best-practices-anonymous-sharing.md)
 
-[조직 외부의 사용자와 공유할 때 파일에 대 한 실수로 인 한 노출을 제한 합니다.](sharing-limit-accidental-exposure.md)
+[파일을 조직 외부의 사람들과 공유할 때 실수로 발생하는 정보 노출을 제한](sharing-limit-accidental-exposure.md)
 
 [보안 게스트 공유 환경 만들기](create-a-secure-guest-sharing-environment.md)

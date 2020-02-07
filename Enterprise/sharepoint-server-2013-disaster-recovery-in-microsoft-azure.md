@@ -11,15 +11,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 이 솔루션을 디자인하고 구현하는 방법을 설명합니다.'
-ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031523"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841185"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure에서 SharePoint Server 2013 재해 복구
 
@@ -562,7 +564,7 @@ SharePoint 2013 서버를 만들기 전에 SQL Server가 설치 된 데이터베
 |AZ-APP1, AZ-APP2, AZ-APP3  <br/> |응용 프로그램 서버  <br/> | A5 구성: <br/>  2 개의 프로세서 <br/>  14GB RAM <br/>  1 x 127-GB 하드 디스크 <br/> |sp-applicationservers  <br/> |APP_SET  <br/> |
 |AZ-H, AZ-SQL-HA1  <br/> |AlwaysOn 가용성 그룹에 대 한 데이터베이스 서버 및 기본 및 보조 복제본  <br/> | A5 구성: <br/>  2 개의 프로세서 <br/>  14GB RAM <br/> |sp-databaseservers  <br/> |DATA_SET  <br/> |
    
-### <a name="operations"></a>Operations
+### <a name="operations"></a>작업
 
 테스트 팀에서 팜 환경을 안정화 하 고 기능 테스트를 완료 한 후에는 온-프레미스 복구 환경을 구성 하는 데 필요한 다음과 같은 작업을 시작 했습니다.
   

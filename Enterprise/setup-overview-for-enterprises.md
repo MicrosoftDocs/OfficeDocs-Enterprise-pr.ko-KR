@@ -14,15 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 이러한 개요 단계는 네트워크를 설정 하 고, id를 만들고, Office 365 ProPlus를 배포 하 고, 데이터를 마이그레이션하고, 조직의 사용자가 Office 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
-ms.openlocfilehash: e9af8d1ad617d617450946966967ab797eeffa07
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748069"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844019"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>조직을 위해 Office 365 Enterprise 배포
 

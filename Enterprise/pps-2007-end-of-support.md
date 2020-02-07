@@ -13,17 +13,19 @@ search.appverid:
 - PDD140
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
+f1.keywords:
+- NOCSH
 description: PerformancePoint Server 2007, ProClarity 및 SharePoint Server 2007가 지원 종료에 도달 했습니다. 이 문서를 읽으면 BI 솔루션 업그레이드를 계획할 수 있습니다.
-ms.openlocfilehash: 517d420eff35cde2862d7879e3b5557cbe6087ca
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 89f13a9fba91195c8e3ecfcdaaebb52a27307eef
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746251"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844099"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 2007 서버와 응용 프로그램은 BI (비즈니스 인텔리전스) 솔루션의 일부로 사용할 수 있는 서버 및 응용 프로그램을 포함 하 여 지원 종료에 도달 했습니다. 다음 표에는 영향을 받는 BI 응용 프로그램이 나와 있습니다.
   

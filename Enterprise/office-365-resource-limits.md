@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: '요약: Office 365 내의 다양 한 응용 프로그램에 대 한 리소스 제한에 대해 설명 합니다.'
-ms.openlocfilehash: 7ccbf2bdfe359dd44a0b03dcf6e2aed8d5daedbe
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 112d910ae724ad01629aaef5a8e2e1756ceb8ecf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035488"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844319"
 ---
 # <a name="resource-limits"></a>리소스 제한 사항
 

@@ -6,7 +6,9 @@ manager: laurawi
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - vsemail
 - MS_WSS_DirectoryManagement
 - MS_WSS_ConfigEmail
@@ -34,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 2017 년 10 월 10 일에 SharePoint Server 2007에 대 한 지원이 종료 되었습니다. 이 문서를 읽으면 업그레이드 옵션, 문제 해결, 모범 사례, 시스템 요구 사항, 업그레이드 단계 및 Microsoft 파트너 로부터 도움을 받는 방법에 대해 알아볼 수 있습니다.
-ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747317"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844009"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 지원 로드맵 최종본
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 **2017 년 10 월 10 일**, Microsoft Office SharePoint Server 2007 지원 종료에 도달 했습니다. SharePoint Server 2007에서 Office 365 또는 최신 버전의 SharePoint Server 온-프레미스로 마이그레이션을 시작한 적이 없다면 이제 계획을 시작 하는 데 걸리는 시간입니다. 이 문서에서는 사용자가 데이터를 SharePoint Online으로 마이그레이션하거나 SharePoint Server를 온-프레미스로 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다. 
   

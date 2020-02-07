@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 사용자를 관리 하는 데 사용할 도구와 사용자 id를 관리 하는 방법에 따라 사용할 수 있는 작업에 대해 알아봅니다. '
-ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490771"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843949"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 계정 관리 도구
 
@@ -39,7 +41,7 @@ Office 365을 구입 하는 즉시 관리 센터 및 Windows PowerShell을 사�
 
 - [Office 365 Identity](about-office-365-identity.md) -관리 센터에서 사용자를 만들고 관리 하 고, Windows PowerShell 또는 Azure Active Directory를 사용 하 여 사용자를 관리할 수도 있습니다.
 - [원활한 single sign-on을 사용한 암호 해시 동기화](about-office-365-identity.md) -Azure AD의 온-프레미스 디렉터리 개체에 대 한 인증을 사용 하도록 설정 하는 가장 간단한 방법입니다. 암호 해시 동기화 (PHS)를 사용 하 여 온-프레미스 Active Directory 사용자 계정 개체를 Office 365와 동기화 하 고 온-프레미스 사용자를 관리 합니다. 
-- [원활한 single sign-on을 통한 통과 인증](about-office-365-identity.md) -하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하 여 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 하 여 사용자의 유효성을 직접 검사 합니다. 온-프레미스 Active Directory 
+- [원활한 single sign-on을 통한 통과 인증](about-office-365-identity.md) -하나 이상의 온-프레미스 서버에서 실행 되는 소프트웨어 에이전트를 사용 하 여 Azure AD 인증 서비스에 대 한 간단한 암호 유효성 검사를 제공 하 여 온-프레미스 Active Directory와 직접 사용자 유효성을 검사 합니다. 
 
 ### <a name="federated-authentication"></a>페더레이션 인증
 

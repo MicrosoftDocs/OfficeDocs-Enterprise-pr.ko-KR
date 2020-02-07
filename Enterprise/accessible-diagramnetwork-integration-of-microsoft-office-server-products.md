@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
+f1.keywords:
+- NOCSH
 description: 이 문서는 Microsoft Office Server 제품의 Network Integration 이라는 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: d63b3b581a03840676393657d6ed641e11046ef9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: def94a4523ad78676d6a9532a60dcba78032f23b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068564"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843869"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>액세스 가능한 다이어그램-Microsoft Office Server 제품의 네트워크 통합
 
@@ -60,7 +62,7 @@ SharePoint, Lync 및 Exchange에서 여기에 사용 되는 아키텍처는 이�
     
 - Exchange-Exchange 2013에서 CAS 역할은 계층 4 부하 분산을 사용 하 여 전송 계층에 요청을 분산 하는 방식으로 설계 되었습니다. 따라서 부하 분산 장치 사용률 및 작업 부하가 크게 감소할 수 있습니다. 
     
-- Lync 풀에 대 한 SIP (Session 착수 프로토콜) 트래픽에는 DNS (Lync Domain Name System) 부하 분산을 사용 하는 것이 좋습니다. HLB (하드웨어 부하 분산)는 Lync Web (HTTPS) 트래픽에 필요 합니다. 
+- Lync 풀에 대 한 SIP (Session 착수 프로토콜) 트래픽에는 DNS (lync Domain Name System) 부하 분산을 사용 하는 것이 좋습니다. HLB (하드웨어 부하 분산)는 Lync Web (HTTPS) 트래픽에 필요 합니다. 
     
 ### <a name="remote-access-options"></a>원격 액세스 옵션
 

@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 Office 365에서 CDNs (콘텐츠 배달 네트워크)를 사용 하 여 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745841"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840635"
 ---
 # <a name="content-delivery-networks-cdns"></a>CDNs (콘텐츠 배달 네트워크)
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 CDNs 도움말은 최종 사용자가 Office 365을 빠르고 안정적으로 유지 합니다. Office 365와 같은 클라우드 서비스를 사용 하 여 정적 자산을 다운로드 속도를 빠르게 처리 하 고 인식 된 최종 사용자 대기 시간을 단축 하기 위해 브라우저에 좀 더 가깝게 고정 에셋을 캐시 합니다. 이 항목의 정보는 CDNs (콘텐츠 배달 네트워크) 및 Office 365에서 사용 하는 방법을 파악 하는 데 도움이 됩니다.
 

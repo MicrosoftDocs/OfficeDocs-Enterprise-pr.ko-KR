@@ -9,13 +9,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
+f1.keywords:
+- NOCSH
 description: 이 문서는 기술 다이어그램에서 사용할 수 있는 Microsoft Lync 2013 Platform Options 라는 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ff03899a57ff7fbd902cd3cacfc2005d27595c55
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030602"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844639"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>액세스 가능한 다이어그램-Microsoft Lync 2013 플랫폼 옵션
 

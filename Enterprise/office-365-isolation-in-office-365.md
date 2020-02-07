@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: '요약: Office 365의 다양 한 응용 프로그램 내에서 격리 및 액세스 제어에 대 한 설명입니다.'
-ms.openlocfilehash: 5855828faafaf12e609e93a1a4f0ec7419e0a9d6
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078167"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844409"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Office 365에서 격리 및 액세스 제어
 
@@ -40,8 +42,8 @@ Exchange Online은 고객 데이터를 사서함에 저장 합니다. 사서함�
 - 메일 및 전자 메일 첨부 파일
 - 일정 및 약속 있음/없음 정보
 - Contacts
-- Tasks
-- 참고
+- 작업
+- Notes
 - 그룹
 - 유추 데이터
 

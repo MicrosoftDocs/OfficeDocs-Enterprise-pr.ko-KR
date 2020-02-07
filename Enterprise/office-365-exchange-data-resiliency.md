@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Exchange Online 및 Office 365 내의 다양 한 데이터 복구 측면에 대 한 설명입니다.
-ms.openlocfilehash: ad10e70ab6d03e2bbc37f6cc7885406c33df2239
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067712"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844479"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365의 Exchange Online 데이터 복구
 

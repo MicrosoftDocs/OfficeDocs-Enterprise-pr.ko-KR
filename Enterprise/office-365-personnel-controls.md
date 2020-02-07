@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: '요약: Office 365에 대 한 Microsoft 직원의 지침을 개략적으로 설명 합니다.'
-ms.openlocfilehash: c4ff3bae5c3f571a1f6e20426ed44e1663513eaf
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 747d9bcc59841453e3a8233a8f1359e08f80da81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702269"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844349"
 ---
 # <a name="office-365-personnel-controls"></a>Office 365 담당자 컨트롤
 

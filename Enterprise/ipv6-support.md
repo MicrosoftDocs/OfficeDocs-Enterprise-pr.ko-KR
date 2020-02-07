@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '요약: Microsoft Office 365 구성 요소 및 Office 365 정부 제품의 IPv6 지원에 대해 설명 합니다.'
-ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745731"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845119"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 서비스의 IPv6 지원
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365은 IPv6 및 IPv4를 모두 지원 합니다. 그러나 IPv6에서 모든 Office 365 기능이 완전히 사용 하도록 설정 되는 것은 아닙니다. 즉, Office 365에 연결 하려면 IPv4 및 IPv6을 모두 사용 해야 합니다. Office 365에 대 한 아웃 바운드 트래픽을 필터링 하는 경우 Office 365에서 지 원하는 전체 IPv6 주소 목록은 [office 365 url 및 IP 주소 범위](urls-and-ip-address-ranges.md)문서에서 찾을 수 있습니다. 네트워크가 구성 되 고 적절 한 IPv6 주소가 허용 되 면 Microsoft 다운로드 센터에서 [Office 365 IPv6 테스트 계획](https://go.microsoft.com/fwlink/?LinkId=293447) 을 다운로드할 수 있습니다.
   

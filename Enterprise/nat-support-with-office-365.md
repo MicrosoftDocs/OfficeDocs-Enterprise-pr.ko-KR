@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '요약: NAT (Network Address Translation)를 사용 하 여 조직 내에서 IP 주소당 사용할 수 있는 정확한 클라이언트 수를 대략적으로 결정 하는 방법에 대해 자세히 설명 합니다.'
-ms.openlocfilehash: 5d252b059661fdd3bad1f86bf552f44b8a747d24
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747902"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844569"
 ---
 # <a name="nat-support-with-office-365"></a>NAT 지원(Office 365)
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 이전에는 네트워크 포트당 약 2000 클라이언트에서 IP 주소당 365에 사용 해야 하는 최대 Exchange 클라이언트 수를 제안 했습니다.
   

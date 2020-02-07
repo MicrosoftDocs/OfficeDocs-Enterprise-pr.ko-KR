@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: SharePoint 및 OneDrive에서 문서에 대 한 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: f2cecb086116e5ea3322a0fd87e5f07f5c30443c
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: d4c7a62fbf4ca94e0f6dd61018f723801a3966a7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919352"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845089"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>게스트와 문서 상 공동 작업하기
 
@@ -61,7 +63,7 @@ SharePoint의 경우 조직의 모든 사이트에서 필요한 가장 관대 �
 SharePoint 조직 수준 공유 설정을 설정 하려면
 
 1. Microsoft 365 관리 센터의 왼쪽 탐색에 있는 **관리 센터**에서 **SharePoint**를 클릭 합니다.
-2. SharePoint 관리 센터의 왼쪽 탐색 창에서 **공유**를 클릭합니다.
+2. 왼쪽 탐색 창의 SharePoint 관리 센터에서 **공유**를 클릭합니다.
 3. SharePoint 또는 OneDrive에 대 한 외부 공유가 **모든 사용자** 또는 **신규 및 기존 게스트로**설정 되어 있는지 확인 합니다. OneDrive 설정은 SharePoint 설정 보다 더 허용 되지 않습니다.
 4. 변경한 내용이 있으면 **저장**을 클릭합니다.
 

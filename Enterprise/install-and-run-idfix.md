@@ -5,11 +5,13 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: get-started-article
-f1_keywords:
-- O365E_HRCSetupAADConnectIDFixLM617036
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- O365E_HRCSetupAADConnectIDFixLM617036
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Office 365 IdFix 도구를 다운로드 하 고 실행 하 여 AD DS (Active Directory 도메인 서비스)를 Office 365에 동기화 하기 전에이를 정리 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813536"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844619"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix 도구 다운로드 및 실행
 

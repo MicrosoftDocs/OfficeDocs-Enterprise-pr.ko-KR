@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Office 365와 동기화 하기 전에 IdFix를 사용 하 여 온-프레미스 디렉터리를 준비 하 고 정리 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 97c13a2fd49cea0af63439d6fe6106e8d8996d97
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814616"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844089"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix 도구를 사용하여 Office 365와의 동기화를 위한 디렉터리 특성 준비
 

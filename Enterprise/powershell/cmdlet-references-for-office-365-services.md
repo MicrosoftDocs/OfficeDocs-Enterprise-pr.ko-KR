@@ -9,15 +9,17 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: '요약: Azure Active Directory, Exchange Online, SharePoint Online, 비즈니스용 Skype Online 및 보안 & 준수에 대 한 Office 365 PowerShell cmdlet 참조 항목을 찾습니다.'
-ms.openlocfilehash: 5b8833b426e08417e23bea6e94b7c5a201bf40ff
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0fe0f87bdb2110630706e276092012af86ff5044
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069204"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841645"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Office 365 서비스에 대한 cmdlet 참조
 

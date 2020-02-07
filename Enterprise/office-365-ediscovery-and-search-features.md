@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: 감사 사용 및 투명성을 위한 eDiscovery 기능의 개요 및 Office 365 내의 기타 검색 기능
-ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 16cb8ac4703142b73d4f56bce9390743495d3fc2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076212"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843650"
 ---
 # <a name="ediscovery-and-search-features"></a>eDiscovery 및 검색 기능 
 

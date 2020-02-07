@@ -10,15 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 요약:Syndication 및 CSP(클라우드 솔루션 공급자) 파트너에서는 Windows PowerShell을 사용하여 Office 365 고객 테넌트를 관리할 수 있습니다.
-ms.openlocfilehash: abbd5a0e2f288a6d6d0250cca57ec4c48a0bd88e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 5e3fb67cad453593119347e2de07222f35d03f56
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781778"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844209"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 Windows PowerShell을 사용하여 Office 365 관리
 

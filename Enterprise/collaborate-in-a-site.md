@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261361"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845069"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
@@ -84,7 +86,7 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 다음 단계는 게스트와 공동 작업 하는 데 사용할 사이트를 만드는 것입니다.
 
 사이트를 만들려면
-1. SharePoint 관리 센터의 **사이트**아래에서 **활성 사이트**를 클릭 합니다.
+1. SharePoint 관리 센터의 **사이트**에서 **활성 사이트**를 클릭하십시오.
 2. **만들기**를 클릭합니다.
 3. **팀 사이트**를 클릭 합니다.
 4. 사이트 이름을 입력 하 고 그룹 소유자 (사이트 소유자)의 이름을 입력 합니다.

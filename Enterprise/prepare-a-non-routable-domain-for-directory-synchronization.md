@@ -5,11 +5,13 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
-f1_keywords:
-- O365E_SetupDirSyncLocalDir
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- O365E_SetupDirSyncLocalDir
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Office 365와 동기화 하기 전에 온-프레미스 사용자와 연결 된 routale 도메인이 있는 경우 수행 해야 하는 작업에 대해 알아봅니다.
-ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 10ec92ff19bd5e74363bced9a2f29c356c7fa4e8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072420"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841225"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>디렉터리 동기화를 위해 라우팅할 수 없는 도메인 준비
 온-프레미스 디렉터리를 Office 365와 동기화 하는 경우 Azure Active Directory에 확인 된 도메인이 있어야 합니다. 온-프레미스 도메인과 연결 된 UPN (사용자 계정 이름)만 동기화 됩니다. 하지만 예를 들어 라우팅할 수 없는 도메인을 포함 하는 UPN은 billa@contoso와 마찬가지로 billa@contoso.onmicrosoft.com와 같은 onmicrosoft.com 도메인에 동기화 됩니다. 

@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '요약: AD FS, Exchange Online 서비스 및 Exchange 웹 서비스를 사용 하는 Exchange 온-프레미스 및 하이브리드, SSO에 필요한 SSL 인증서에 대해 설명 합니다.'
-ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: a28acae142f97a52f7c6db8e5a7d93049b2876cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756617"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841735"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365용 타사 SSL 인증서 계획
 

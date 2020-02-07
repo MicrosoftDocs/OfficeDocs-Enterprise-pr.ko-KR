@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
+f1.keywords:
+- NOCSH
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923860"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840375"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 

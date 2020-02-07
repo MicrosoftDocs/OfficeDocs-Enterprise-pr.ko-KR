@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
-description: '이 문서는 관리자를 위한 것입니다. 사용자가 Outlook 사서함에서 항목을 영구적으로 삭제 했습니까? 사용자가 다시 작업을 하려고 하지만 복구할 수는 없습니다. 제거 된 항목이 사용자 사서함에서 영구적으로 제거 되지 않은 경우 해당 항목을 복구할 수 있습니다. '
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+f1.keywords:
+- NOCSH
+description: '이 문서는 관리자를 위해 작성되었습니다. 사용자가 Outlook 사서함에서 항목을 영구적으로 삭제 했습니까? 사용자가 다시 작업을 하려고 하지만 복구할 수는 없습니다. 제거 된 항목이 사용자 사서함에서 영구적으로 제거 되지 않은 경우 해당 항목을 복구할 수 있습니다. '
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308603"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845129"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>사용자 사서함에서 지운 편지함 복구 - 관리자 도움말
 
@@ -41,7 +43,7 @@ ms.locfileid: "38308603"
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>1 단계: 자신 eDiscovery 권한 할당
 <a name="step1"> </a>
 
-첫 번째 단계는 원본 위치 eDiscovery 도구를 사용 하 여 사용자의 사서함을 검색할 수 있도록 Exchange Online에서 필요한 권한을 자신에 게 할당 하는 것입니다. 이 작업은 한 번만 수행 하면 됩니다. 나중에 다른 사서함을 검색 해야 하는 경우에는이 단계를 건너뛰어도 됩니다.
+첫 번째 단계는 원본 위치 eDiscovery 도구를 사용 하 여 사용자의 사서함을 검색할 수 있도록 Exchange Online에서 필요한 권한을 자신에 게 할당 하는 것입니다. 이 작업은 한 번만 수행하면 됩니다. 나중에 다른 사서함을 검색 해야 하는 경우에는이 단계를 건너뛰어도 됩니다.
   
 1. 회사 또는 학교 계정으로 [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)합니다. 
     

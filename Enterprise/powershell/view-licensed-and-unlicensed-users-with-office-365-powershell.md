@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 사용 하는 방법에 설명 Office 365 PowerShell 허가 된 / 허가 되지 않은 사용자 계정을 볼 수 있습니다.
-ms.openlocfilehash: 832e073ad5443181f1c72af591cc99e3702d6b84
-ms.sourcegitcommit: de4240ae8026e3e9a433c7ae23c938dc5b514ace
+ms.openlocfilehash: 4b2f2b5b3898b9f800cc3fb9416c5b666472d907
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40738270"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844149"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 허가 된 / 허가 되지 않은 사용자 보기
 

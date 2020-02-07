@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Office 365 구독에는 Azure AD에 대 한 구독이 포함 되어 있습니다. 온-프레미스 환경에 대 한 암호 동기화 또는 single sign-on을 사용 하려면 Office 365와 Azure AD를 통합 합니다.
-ms.openlocfilehash: 44231420ee92c37f14874d6fb0f9e926d8d4369d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b8b828033b6abc3481170a821fd32e7cf1f02e16
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745791"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843779"
 ---
 # <a name="azure-integration-with-office-365"></a>Office 365와 Azure 통합
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365에서는 Azure Active Directory (Azure AD)를 사용 하 여 백그라운드에서 사용자 id를 관리 합니다. Office 365 구독에는 Azure AD에 대 한 무료 구독이 포함 되어 있어 암호를 동기화 하거나 single sign-on을 온-프레미스 환경에 설정 하려는 경우 Azure AD와 Office 365를 통합할 수 있습니다. 계정을 보다 효율적으로 관리 하기 위해 고급 기능을 구입할 수도 있습니다.
   

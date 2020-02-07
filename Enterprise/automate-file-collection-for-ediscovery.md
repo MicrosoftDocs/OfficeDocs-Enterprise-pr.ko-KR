@@ -10,17 +10,19 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: '요약: eDiscovery를 위해 사용자 컴퓨터에서 파일 컬렉션을 자동화 하는 방법을 알아봅니다.'
-ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077721"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844739"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>EDiscovery에 대 한 파일 컬렉션 자동화
 
@@ -272,8 +274,8 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 |**줄 번호**|**변경 해야 하는 내용**|**Required/optional**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** 변수입니다. 스크립트에서 인벤토리 및 수집할 모든 파일 형식 확장명을 배열 변수에 포함 합니다. <br/> |옵션  <br/> |
-|76 및 77  <br/> |사용자의 요구에 맞게 **$CaseNo** 변수가 작성 되는 방식을 변경 합니다. 이 스크립트는 현재 날짜와 시간을 캡처하여 사용자 이름을 추가 합니다. <br/> |옵션  <br/> |
+|71  <br/> |**$FileTypes** 변수입니다. 스크립트에서 인벤토리 및 수집할 모든 파일 형식 확장명을 배열 변수에 포함 합니다. <br/> |선택  <br/> |
+|76 및 77  <br/> |사용자의 요구에 맞게 **$CaseNo** 변수가 작성 되는 방식을 변경 합니다. 이 스크립트는 현재 날짜와 시간을 캡처하여 사용자 이름을 추가 합니다. <br/> |선택  <br/> |
 |80  <br/> |** \\ \\준비\\사례 $** 와 같은 **$CaseRootLocation** 변수를 준비 서버 모음 파일 공유로 설정 해야 합니다. <br/> |필수  <br/> |
    
 4. 도메인 컨트롤러의 Netlogon 파일 공유에 CollectionScript. ps1 파일을 배치 합니다. 
@@ -330,7 +332,7 @@ $AllFiles | ForEach-Object {
     
 |**줄 번호**|**변경 해야 하는 내용**|**Required/optional**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** pst를 가져올 사서함 폴더에 태그를 붙여 넣습니다. 필요한 경우이를 변경 합니다. <br/> |옵션  <br/> |
+|12  <br/> |**$FolderIdentifier** pst를 가져올 사서함 폴더에 태그를 붙여 넣습니다. 필요한 경우이를 변경 합니다. <br/> |선택  <br/> |
 |17   <br/> |**$ConnectionUri** 를 자체 서버로 설정 해야 합니다. <br/> > [!IMPORTANT]**$ConnectionUri**> https가 아닌 http 위치를 가리키는지 확인 합니다. Https:로 작동 하지 않습니다.          |필수  <br/> |
    
 4. Exchange 신뢰할 수 있는 하위 시스템 계정에 \\ \\준비\\사례 $ 공유에 대 한 읽기, 쓰기 및 실행 권한이 있는지 확인 합니다.

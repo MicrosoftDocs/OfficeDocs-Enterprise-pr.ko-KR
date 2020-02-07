@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: 이 문서는 온-프레미스 eDiscovery 흐름 이라는 다이어그램의 액세스 가능한 텍스트 버전입니다.
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068534"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843859"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>액세스 가능한 다이어그램-온-프레미스 eDiscovery 흐름
 
@@ -46,7 +48,7 @@ EDiscovery 흐름 목록은 먼저 자세히 설명한 다음 다이어그램에
     
 5. 정기적으로 콘텐츠 팜 eDiscovery 원본 위치 유지 타이머 작업이 작동을 중단 하 고 보류 중인 작업에 대 한 요청을 생성 하 고 SSA 프록시를 통해 상태 업데이트를 SSA로 보냅니다. 
     
-6. 보류 중인 작업에 대 한 쿼리는 콘텐츠 팜에 대 한 보류 중인 작업에 대 한 Action_Table를 검색 하는 중앙 SSA로 릴레이 됩니다. 또한 콘텐츠 팜 원본 위치 유지 타이머 작업은 개체 및 받은 작업에 대 한 상태 업데이트를 전송 하 여 ActionsTable에 기록 합니다. 
+6. 보류 중인 작업에 대 한 쿼리는 콘텐츠 팜에 대해 보류 중인 작업에 대 한 Action_Table를 검색 하는 중앙 SSA로 릴레이 됩니다. 또한 콘텐츠 팜 원본 위치 유지 타이머 작업은 개체 및 받은 작업에 대 한 상태 업데이트를 전송 하 여 ActionsTable에 기록 합니다. 
     
 7. SharePoint 2013 콘텐츠 팜의 이름에 "CONTOSO"가 포함 된 콘텐츠에 대 한 보류 요청은 콘텐츠 팜의 eDiscovery 원본 위치 유지 타이머 작업으로 전송 됩니다. 
     
@@ -108,7 +110,7 @@ SharePoint 엔터프라이즈 앱 팜의 SSA 프록시가 SharePoint Services �
   
 - 요청이 쿼리 인 경우 SSA는 검색 인덱스를 찾습니다. 검색 응답은 SSA로 반환 되 고 EDC를 통해 사용자에 게 전달 됩니다. 
     
-- 요청이 쓰기 작업 인 경우 SSA 서비스는 admin_db에 게 write 작업을 보냅니다. 
+- 요청이 쓰기 작업 인 경우 SSA 서비스는 SSA admin_db에 대 한 쓰기 작업을 보냅니다. 
     
 - 크롤링 및 응답 결과 요청이 SSA에서 SharePoint 2013 콘텐츠 팜으로 전송 되 고 응답이 SSA로 반환 됩니다. 
     
@@ -118,9 +120,9 @@ SharePoint 엔터프라이즈 앱 팜의 SSA 프록시가 SharePoint Services �
     
 - Exchange 작업/상태 요청은 SSA에서 EWS 프록시로 전송 되며 exchange 2013 서버의 exchange 웹 서비스로 Exchange 쿼리 동작/상태 요청을 보냅니다. 
     
-- 상태 쿼리/응답은 SSA에서 SSA로 전송 되 고 SSA로 반환 됩니다. 
+- 상태 쿼리/응답은 SSA에서 admin_db SSA로 전송 되 고 SSA로 반환 됩니다. 
     
-- 보류 중인 실행 쿼리/응답은 SSA에서 SSA로 전송 되 고 SSA로 반환 됩니다. 
+- 보류 중인 실행 쿼리/응답은 SSA에서 admin_db SSA로 전송 되 고 SSA로 반환 됩니다. 
     
 #### <a name="sharepoint-2013-content-farm"></a>SharePoint 2013 콘텐츠 팜
 

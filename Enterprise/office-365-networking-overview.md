@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: SaaS 서비스에 대 한 네트워크 최적화가 중요 한 이유, Office 365 네트워킹의 목표 및 각 SaaS가 다른 작업을 수행 하는 다른 네트워킹을 필요로 하는 이유에 대해 설명 합니다.
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747710"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844359"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 네트워크 연결 개요
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365은 다양 한 마이크로 서비스 및 응용 프로그램 집합을 통해 생산성 및 공동 작업 시나리오를 제공 하는 분산 소프트웨어/서비스 (SaaS) 클라우드입니다. Outlook, Word, PowerPoint 등의 Office 365의 클라이언트 구성 요소는 사용자 컴퓨터에서 실행 되 고 Microsoft 데이터 센터에서 실행 되는 Office 365의 다른 구성 요소에 연결 합니다. Office 365 최종 사용자 환경의 품질을 결정 하는 가장 중요 한 요인은 Office 365 클라이언트와 Office 365 서비스의 전면 도어 간 네트워크 안정성 및 낮은 대기 시간입니다.
 

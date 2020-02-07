@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: IT_ProjectAdmin
 search.appverid:
 - MET150
@@ -17,16 +19,16 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 2017 년 10 월 10 일에 Project Server 2007, Project 포트폴리오 서버 및 프로젝트 2007에 대 한 지원이 종료 되었습니다. 이 문서를 사용 하 여 지금 업그레이드를 계획 합니다.
-ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 4eb8d734f74e2c146da419a55d78d0c8fcce5aab
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746241"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844079"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 지원 종료 로드맵
 
-*이 문서는 Office 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 2017의 Office 2007 서버 및 응용 프로그램에 대 한 지원이 종료 되었으며 마이그레이션 계획을 고려해 야 합니다. 현재 Project Server 2007을 사용 하는 경우에는 it 및 기타 관련 제품에 다음과 같은 지원 종료 날짜가 포함 되어 있습니다.
   

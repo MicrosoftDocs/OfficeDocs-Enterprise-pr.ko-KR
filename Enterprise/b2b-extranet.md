@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: 파트너 조직에서 관리 되는 게스트 사용자가 포함 된 B2B 엑스트라넷 사이트 또는 팀을 만드는 방법에 대해 알아봅니다.
-ms.openlocfilehash: b314949e97789141bc510554da40409e8bf3b6df
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 930c11489921fa5c32d1ba1ab16161f201006c91
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085421"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844999"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>관리 되는 게스트를 사용 하 여 B2B 엑스트라넷 만들기
 

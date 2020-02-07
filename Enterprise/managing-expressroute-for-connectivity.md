@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Office 365의 경우에는 인터넷으로 송신 하는 모든 트래픽을 필요로 하지 않고 다양 한 Office 365 서비스에 연결 하는 대체 라우팅 경로를 제공 합니다. Office 365에 대 한 인터넷 연결이 여전히 필요 하지만 Microsoft가 BGP를 통해 네트워크에 알리는 특정 경로는 네트워크에 다른 구성이 없는 경우에는 직접 대상 지정 회로가 기본 설정 되어 있어야 합니다. 이 라우팅을 관리 하기 위해 구성할 수 있는 세 가지 일반적인 영역에는 접두사 필터링, 보안 및 준수 등이 포함 됩니다.
-ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814246"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844989"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 연결을 위한 ExpressRoute 관리
 
@@ -101,7 +103,7 @@ Microsoft에서 네트워크 연결을 시작 해야 하는 몇 가지 선택적
   
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [콘텐츠 배달 네트워크](content-delivery-networks.md)
   

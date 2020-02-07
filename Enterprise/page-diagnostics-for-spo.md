@@ -16,13 +16,15 @@ search.appverid:
 - SPO160
 - MOE150
 - BSA160
+f1.keywords:
+- NOCSH
 description: SharePoint 도구에 페이지 진단을 사용 하 여 미리 정의 된 성능 기준 집합에 대해 SharePoint Online 최신 포털 및 클래식 게시 페이지를 분석할 수 있습니다.
-ms.openlocfilehash: 0f22c84599f227bd6efcf315a546b39aad77b1c1
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078147"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841785"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 용 페이지 진단 도구 사용
 

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: SharePoint Online, 비즈니스용 OneDrive, Exchange Online, 비즈니스용 Skype Online, 클라이언트 컴퓨터 간의 지연, 중단 및 성능 저하를 식별 하 고 해결 하기 위해 수행 해야 하는 단계를 알아야 합니까? 지원을 요청 하기 전에이 문서를 통해 Office 365 성능 문제를 해결 하 고 일반적인 몇 가지 문제를 해결 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814626"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841815"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 성능 문제 해결 계획
 
@@ -494,7 +496,7 @@ Outlook.office365.com에 대해 Ping 도구를 실행 하 여 DNS 요청이 라�
 
 이 네트워크 관련 문서에서 응용 프로그램별 문제 해결에 사용 되는 도구는 다루지 않습니다. 하지만 [이 페이지에서는](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)리소스를 사용할 *수* 있습니다.
 
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

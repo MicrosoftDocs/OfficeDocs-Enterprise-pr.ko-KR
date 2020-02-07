@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Microsoft가 Office 365에 대해 테 넌 트 격리를 적용 하는 방법을 요약해 서 설명 합니다.
-ms.openlocfilehash: 37d695635a5b7145b8384f1bf69fc357875ac38f
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 5b9db878fce46e02815a06b16271289d199105a0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035628"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844299"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365의 테 넌 트 격리
 

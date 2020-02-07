@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -21,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122577"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844859"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
@@ -48,7 +50,7 @@ Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같�
 - 비즈니스용 Skype **Online에 기본적으로 설정 됩니다** . [최신 인증을 사용 ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)하지 않도록 설정 하려면 비즈니스용 Skype 온라인을 활성화 합니다 .를 참조 하세요.
 
 > [!NOTE]
-> 2017 년 8 월 1 일 **이전** 에 만든 테 넌 트의 경우 기본적으로 Exchange Online 및 비즈니스용 Skype online에 대 한 최신 인증이 **꺼집니다** .
+> 2017년 8월 1일 **이전**에 만든 테넌트의 경우 최신 인증은 Exchange Online 및 비즈니스용 Skype Online에 대해 기본적으로 설정이 **해제**되어 있습니다.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 클라이언트 앱의 로그인 동작
 
