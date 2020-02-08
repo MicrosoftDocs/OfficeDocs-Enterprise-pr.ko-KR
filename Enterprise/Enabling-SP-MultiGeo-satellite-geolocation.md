@@ -6,16 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: 위성 지리적 위치에서 SharePoint Multi-Geo 사용
-ms.openlocfilehash: d1f18c22410ec98e6c27cf3d10cdaf05a5095036
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f5f7137f64f26ce324894ee80b5dfb2f46888889
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070764"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41848769"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>위성 지리적 위치에서 SharePoint Multi-Geo 사용
 
@@ -46,6 +50,6 @@ ms.locfileid: "34070764"
 >[!Note]
 >서비스의 특정 캐시를 24시간 마다 업데이트하면 최대 24시간의 기간 동안 위성 지리적 위치가 계속 ODB 모드에 있는 것처럼 간헐적으로 작동할 수 있습니다. 이 작업으로 인해 기술 문제가 발생하지 않습니다. 
  
-SharePoint Multi-Geo에 관해 더 많은 정보를 확인하려면 [aka.ms/sharepointmultigeo](https://docs.microsoft.com/ko-KR/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)를 참조하세요.
+SharePoint Multi-Geo에 관해 더 많은 정보를 확인하려면 [aka.ms/sharepointmultigeo](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)를 참조하세요.
 
 

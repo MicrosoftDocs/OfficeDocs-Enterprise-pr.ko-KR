@@ -7,15 +7,20 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
+search.appverid:
+- SPO160
+- MET150
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
-description: Microsoft 365에서 공유를 제한하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: dd2705aefd4f91c4ce8773019f94acf53afea6c8
-ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
+description: Microsoft 365에서 공유를 제한하거나 해제할 수 있는 옵션에 대해 알아봅니다.
+ms.openlocfilehash: 8e0488aae1d30d33b9046d4372707eb8d8635860
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41658802"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844919"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365에서의 공유 제한
 

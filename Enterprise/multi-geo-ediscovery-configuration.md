@@ -6,19 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Office 365 다중 지역 eDiscovery를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: f9d8fe8b65f5772005bf7d6a7ea3735277077d3b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01796000353bcc20d9e0ed63be088beeb9b3680e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069964"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844599"
 ---
 # <a name="office-365-multi-geo-ediscovery-configuration"></a>Office 365 다중 지역 eDiscovery 구성
-
 
 기본적으로 eDiscovery 관리자 또는 다중 위치 테넌트의 관리자는 해당 테넌트의 중앙 위치에서만 eDiscovery를 수행할 수 있습니다. 위성 위치에 대한 eDiscovery를 수행할 수 있는 기능을 지원하기 위해 "Region"이라는 새로운 준수 보안 필터 매개 변수를 PowerShell을 통해 사용할 수 있습니다.
 
@@ -33,15 +34,18 @@ Office 365 전역 관리자는 다른 사용자들이 eDiscovery를 수행할 �
 
 지역에 대한 준수 보안 필터를 설정하려면
 
-1.  Windows PowerShell을 엽니다.
+1. [Office 365 보안 및 준수 센터 PowerShell에 연결](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
-2.  다음을 입력합니다.  
-    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
+2. 다음 구문을 사용합니다.
 
-    $a = Import-PSSession $s -AllowClobber  
+   ```powershell
+   New-ComplianceSecurityFilter -Action All -FilterName <TheNameYouWantToAssign> -Region <RegionValue> -Users <UserPrincipalName>
+   ```
 
-3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
+   예시는 다음과 같습니다:
 
-    예: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
+   ```powershell
+   New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
+   ```
 
-추가 매개 변수 및 구문에 대해서는 [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) 문서를 참조하세요.
+추가 매개 변수 및 구문에 대해서는 [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) 문서를 참조하세요.
