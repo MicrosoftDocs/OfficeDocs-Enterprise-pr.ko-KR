@@ -1,5 +1,6 @@
 ---
 title: 특정 PDL로 Office 365 그룹 만들기
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Multi-Geo 환경에서 지정된 기본 설정 데이터 위치를 사용하여 Office 365 그룹을 만드는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 5a6417f1758cd6c5e4eb9d4df9e7796d4309e62c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96c2e5513879dff291c0119ddad38a78ab91ec1a
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843739"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974090"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>특정 PDL로 Office 365 그룹 만들기
 

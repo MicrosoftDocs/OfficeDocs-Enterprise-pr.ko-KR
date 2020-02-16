@@ -1,5 +1,6 @@
 ---
 title: Multi-Geo 환경에서 Exchange Online 사서함 관리
+ms.reviewer: adwood
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft PowerShell을 사용하여 Exchange Online Multi-Geo 설정을 관리하는 방법을 알아보세요.
-ms.openlocfilehash: 135d3af76e03dfb7e6fcc9f55ba3be8ab21a6906
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4074748a9fdd567e37159198524acb3979291ef5
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844659"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974000"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Multi-Geo 환경에서 Exchange Online 사서함 관리
 

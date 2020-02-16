@@ -1,5 +1,6 @@
 ---
 title: Office 365 다중 지역 eDiscovery 구성하기
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Office 365 다중 지역 eDiscovery를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 01796000353bcc20d9e0ed63be088beeb9b3680e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a7591a1920d2fb2c61d3829f52097692b67fafa1
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844599"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974247"
 ---
 # <a name="office-365-multi-geo-ediscovery-configuration"></a>Office 365 다중 지역 eDiscovery 구성
 
