@@ -1,5 +1,6 @@
 ---
 title: SharePoint 사이트 콘텐츠를 지리적 위치로 제한
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,29 +13,29 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 지역 환경에서 SharePoint 사이트를 특정한 지리적 위치로 제한하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: b8716eb0ad2d9292a0d52638f827dcc7665d027a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ca63f46ba45d1b3ddfdf4f676b678d62387b801f
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845019"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973960"
 ---
-# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a><span data-ttu-id="a3a65-103">SharePoint 사이트 콘텐츠를 지리적 위치로 제한</span><span class="sxs-lookup"><span data-stu-id="a3a65-103">Restrict SharePoint site content to a geo location</span></span>
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a><span data-ttu-id="2cb8c-103">SharePoint 사이트 콘텐츠를 지리적 위치로 제한</span><span class="sxs-lookup"><span data-stu-id="2cb8c-103">Restrict SharePoint site content to a geo location</span></span>
 
-<span data-ttu-id="a3a65-104">상황에 따라 사이트가 이동되지 않도록 하거나 다른 지리적 위치에 있는 사이트의 파일 콘텐츠를 캐싱하지 못하게 하여 사이트가 만들어진 위치에 남아 있도록 사이트와 파일 콘텐츠를 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-104">Under some circumstances you may choose to enforce a site and its file content to remain in the geo location where the site was created, either by preventing the site from being moved or by preventing the caching of the site's file content in another geo location.</span></span>
+<span data-ttu-id="2cb8c-104">상황에 따라 사이트가 이동되지 않도록 하거나 다른 지리적 위치에 있는 사이트의 파일 콘텐츠를 캐싱하지 못하게 하여 사이트가 만들어진 위치에 남아 있도록 사이트와 파일 콘텐츠를 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-104">Under some circumstances you may choose to enforce a site and its file content to remain in the geo location where the site was created, either by preventing the site from being moved or by preventing the caching of the site's file content in another geo location.</span></span>
 
-<span data-ttu-id="a3a65-105">[Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) cmdlet을 **RestrictedToGeo** 매개 변수와 함께 사용하여 이 작업을 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-105">You can do this by using the [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) cmdlet with the **RestrictedToGeo** parameter.</span></span> <span data-ttu-id="a3a65-106">이 매개 변수의 기본값은 NULL이지만 다음 중 하나로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-106">This parameter has a default value of NULL, but you can change it to one of the following:</span></span>
+<span data-ttu-id="2cb8c-105">[Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) cmdlet을 **RestrictedToGeo** 매개 변수와 함께 사용하여 이 작업을 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-105">You can do this by using the [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) cmdlet with the **RestrictedToGeo** parameter.</span></span> <span data-ttu-id="2cb8c-106">이 매개 변수의 기본값은 NULL이지만 다음 중 하나로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-106">This parameter has a default value of NULL, but you can change it to one of the following:</span></span>
 
-|<span data-ttu-id="a3a65-107">제한</span><span class="sxs-lookup"><span data-stu-id="a3a65-107">Restriction</span></span>|<span data-ttu-id="a3a65-108">설명</span><span class="sxs-lookup"><span data-stu-id="a3a65-108">Description</span></span>|
+|<span data-ttu-id="2cb8c-107">제한</span><span class="sxs-lookup"><span data-stu-id="2cb8c-107">Restriction</span></span>|<span data-ttu-id="2cb8c-108">설명</span><span class="sxs-lookup"><span data-stu-id="2cb8c-108">Description</span></span>|
 |:----------|:----------|
-|<span data-ttu-id="a3a65-109">NoRestriction</span><span class="sxs-lookup"><span data-stu-id="a3a65-109">NoRestriction</span></span>|<span data-ttu-id="a3a65-110">사이트를 다른 지리적 위치로 이동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-110">The site can be moved to another geo location.</span></span>|
-|<span data-ttu-id="a3a65-111">BlockMoveOnly</span><span class="sxs-lookup"><span data-stu-id="a3a65-111">BlockMoveOnly</span></span>|<span data-ttu-id="a3a65-112">사이트를 다른 지리적 위치로 이동할 수는 없지만 사이트 콘텐츠는 다른 지리적 위치에 캐시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-112">Site cannot be moved to another geo location, but site content can be cached in other geo locations.</span></span>|
-|<span data-ttu-id="a3a65-113">BlockFull</span><span class="sxs-lookup"><span data-stu-id="a3a65-113">BlockFull</span></span>|<span data-ttu-id="a3a65-114">사이트를 다른 지리적 위치로 이동할 수 없으며 전체 파일 콘텐츠는 다른 지리적 위치에 캐시될 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-114">Site cannot be moved to another geo location, and full file content is not cached in other geo locations.</span></span> <span data-ttu-id="a3a65-115">파일의 제목(콘텐츠에서 수집), 파일 이름 및 파일의 기타 속성은 다른 지리적 위치에 계속 캐시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-115">Files' title (harvested from the content), file name, and other properties of the file can still be cached in other geo-locations.</span></span><br><span data-ttu-id="a3a65-116">BlockFull로 구성되기 전에 사이트에 저장된 콘텐츠는 다른 지역의 위치에 계속 캐시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-116">Content stored in the site before it was configured to BlockFull, may continue to be cached in other geo locations.</span></span>|
+|<span data-ttu-id="2cb8c-109">NoRestriction</span><span class="sxs-lookup"><span data-stu-id="2cb8c-109">NoRestriction</span></span>|<span data-ttu-id="2cb8c-110">사이트를 다른 지리적 위치로 이동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-110">The site can be moved to another geo location.</span></span>|
+|<span data-ttu-id="2cb8c-111">BlockMoveOnly</span><span class="sxs-lookup"><span data-stu-id="2cb8c-111">BlockMoveOnly</span></span>|<span data-ttu-id="2cb8c-112">사이트를 다른 지리적 위치로 이동할 수는 없지만 사이트 콘텐츠는 다른 지리적 위치에 캐시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-112">Site cannot be moved to another geo location, but site content can be cached in other geo locations.</span></span>|
+|<span data-ttu-id="2cb8c-113">BlockFull</span><span class="sxs-lookup"><span data-stu-id="2cb8c-113">BlockFull</span></span>|<span data-ttu-id="2cb8c-114">사이트를 다른 지리적 위치로 이동할 수 없으며 전체 파일 콘텐츠는 다른 지리적 위치에 캐시될 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-114">Site cannot be moved to another geo location, and full file content is not cached in other geo locations.</span></span> <span data-ttu-id="2cb8c-115">파일의 제목(콘텐츠에서 수집), 파일 이름 및 파일의 기타 속성은 다른 지리적 위치에 계속 캐시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-115">Files' title (harvested from the content), file name, and other properties of the file can still be cached in other geo-locations.</span></span><br><span data-ttu-id="2cb8c-116">BlockFull로 구성되기 전에 사이트에 저장된 콘텐츠는 다른 지역의 위치에 계속 캐시될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-116">Content stored in the site before it was configured to BlockFull, may continue to be cached in other geo locations.</span></span>|
 
-<span data-ttu-id="a3a65-117">다음 구문을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-117">Use the following syntax:</span></span>
+<span data-ttu-id="2cb8c-117">다음 구문을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-117">Use the following syntax:</span></span>
 
 `Set-SPOSite -Identity <siteURL> -RestrictedToGeo <restriction>`
 
-<span data-ttu-id="a3a65-118">예를 들면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a3a65-118">For example:</span></span>
+<span data-ttu-id="2cb8c-118">예를 들면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-118">For example:</span></span>
 
 `Set-SPOSite -Identity https://contoso.sharepoint.com/sites/RegionRestrictedTeamSite -RestrictedToGeo BlockFull`
