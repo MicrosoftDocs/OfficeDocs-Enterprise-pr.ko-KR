@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844109"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106229"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -48,13 +48,8 @@ ms.locfileid: "41844109"
 
 적격 고객은 [Microsoft 365 관리 센터](https://aka.ms/365admin)의 페이지를 볼 수 있으며,이를 통해 핵심 고객 데이터가 새 데이터 센터 지역으로 이동 하 게 됩니다.  
   
-Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 창에서 **설정을**확장 하 고 **조직 프로필**을 클릭 합니다.
-  
-![조직 프로필이 강조 표시 된 설정 메뉴](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-**조직 프로필** 페이지에서 아래로 스크롤하여 **데이터 상주 옵션** 섹션으로 이동합니다. 
-  
-![데이터 상주 카드](media/dataresidencyae.jpg)
+Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색 창에서 **설정을**확장 하 고 **설정을**클릭 합니다.
+탭 **조직 프로필**을 선택 하 고 옵션 **데이터 상주**를 선택 합니다.
   
 **다음 중 하나에 해당 하는 경우이 섹션이 표시 되지 않을 수**있습니다.
 - 테 넌 트가 Office 365 이동 프로그램에 적합 하지 않습니다.  자격은 테 넌 트 등록 국가에 따라 결정 됩니다.
