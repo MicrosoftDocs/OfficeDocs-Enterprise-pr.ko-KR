@@ -3,7 +3,7 @@ title: SharePoint Online 용 페이지 진단 도구 사용
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/19/2019
+ms.date: 2/18/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,21 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: SharePoint 도구에 페이지 진단을 사용 하 여 미리 정의 된 성능 기준 집합에 대해 SharePoint Online 최신 포털 및 클래식 게시 페이지를 분석할 수 있습니다.
-ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841785"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155602"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 용 페이지 진단 도구 사용
 
 이 문서에서는 **sharepoint 용 페이지 진단 도구** 를 사용 하 여 미리 정의 된 성능 기준 집합에 대해 sharepoint Online 현대 및 클래식 사이트 페이지를 분석 하는 방법에 대해 설명 합니다.  
 
 >[!TIP]
->**도구의 버전 2.0.1이 릴리스 되었습니다**. 버전 **2.0.0** 이상에는 클래식 사이트 페이지 외에도 최신 페이지에 대 한 지원이 포함 됩니다. 사용 중인 도구의 버전을 잘 모를 경우 **정보** 링크 또는 줄임표 (...)를 선택 하 여 버전을 확인할 수 있습니다.
+>**도구의 버전 2.0.2이 릴리스 되었습니다**. 버전 **2.0.0** 이상에는 클래식 사이트 페이지 외에도 최신 페이지에 대 한 지원이 포함 됩니다. 사용 중인 도구의 버전을 잘 모를 경우 **정보** 링크 또는 줄임표 (...)를 선택 하 여 버전을 확인할 수 있습니다. 도구를 사용할 때 항상 최신 버전으로 업데이트 합니다.
 
-SharePoint 용 페이지 진단 도구는 Chrome 및 [Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) 에서 sharepoint Online 최신 포털 및 클래식 게시 사이트 페이지를 모두 분석 하는 데 사용할 수 있는 브라우저 확장입니다. 이 도구는 SharePoint Online 에서만 작동 하며 SharePoint Server 사이트 페이지에서 사용 하면 오류가 발생 합니다.
+SharePoint 용 페이지 진단 도구는 새 Microsoft Edge (및 SharePoint Online 최신 포털 및https://www.microsoft.com/edge) 클래식 게시 사이트 페이지 모두를 분석 하는 크롬 브라우저)에 대 한 브라우저 확장입니다. 이 도구는 SharePoint Online 에서만 작동 하며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
 
 이 도구는 분석 된 각 페이지에 대 한 보고서를 생성 하 고, 테스트 결과가 기준 값 외부에 있을 때 해당 페이지에 대 한 자세한 정보를 표시 합니다. SharePoint Online 관리자 및 디자이너는이 도구를 사용 하 여 성능 문제를 해결 하 고, 게시 하기 전에 새 페이지가 최적화 되도록 할 수 있습니다.
 
@@ -52,9 +52,9 @@ SharePoint 용 페이지 진단 도구는 Chrome 및 [Microsoft Edge 버전 77 �
 이 섹션의 설치 절차는 Chrome 및 Microsoft Edge 브라우저에서 모두 작동 합니다.
 
 > [!IMPORTANT]
-> Microsoft는 SharePoint 용 페이지 진단 도구를 통해 분석 되는 데이터 나 페이지 콘텐츠를 읽지 않으며, 개인 정보, 웹 사이트 또는 다운로드 정보를 캡처하지 않습니다. 도구를 통해 기록 되는 유일한 정보는 테 넌 트 이름, 규칙 수 및 도구를 실행할 때 지원 로깅 옵션을 사용 하도록 설정 했는지 여부입니다. 이 정보는 Microsoft에서 최신 포털 및 게시 사이트 사용 추세 및 일반적인 성능 문제를 이해 하 여 제품 개선을 알리는 데 사용 됩니다.
+> Microsoft는 SharePoint 용 페이지 진단 도구를 통해 분석 되는 데이터 나 페이지 콘텐츠를 읽지 않으며, 개인 정보, 웹 사이트 또는 다운로드 정보를 캡처하지 않습니다. 도구를 통해 Microsoft에 기록 되는 유일한 식별 가능한 정보는 테 넌 트 이름, 실패 한 규칙의 수 및 도구를 실행 한 날짜와 시간입니다. 이 정보는 Microsoft에서 최신 포털 및 게시 사이트 사용 추세와 일반적인 성능 문제를 보다 잘 이해 하기 위해 사용 합니다.
 
-1. _Chrome_ 또는 _Microsoft Edge 버전 77 이상_ 브라우저를 사용 하 여 도구에 [대 한 링크](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) 를 직접 열거나 [Chrome browser WebStore](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) 에서 검색을 열고 브라우저 확장을 설치 합니다. 스토어의 설명 페이지에서 제공 되는 사용자 개인 정보 보호 정책을 확인 하세요. 브라우저에 도구를 추가할 때 다음과 같은 사용 권한 표시가 나타납니다.
+1. **Microsoft edge** 용 페이지 진단 도구 [(edge 확장)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) 또는 **chrome** [(chrome 확장)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)을 설치 합니다. 스토어의 설명 페이지에서 제공 되는 사용자 개인 정보 보호 정책을 확인 하세요. 브라우저에 도구를 추가할 때 다음과 같은 사용 권한 표시가 나타납니다.
 
     ![확장 사용 권한](media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
@@ -73,7 +73,10 @@ SharePoint 용 페이지 진단 도구는 Chrome 및 [Microsoft Edge 버전 77 �
 
 ## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 용 페이지 진단 도구에 표시 되는 항목
 
-1. 오른쪽 위 모서리에 있는 줄임표 (...)와 같은 **정보** 링크는이 문서에 대 한 링크를 포함 하 여 도구에 대 한 일반적인 지침과 세부 정보를 제공 합니다. 또한 SharePoint 성능 권장 사항에 대 한 직접 링크, 타사 공지 및 도구에 대 한 의견을 제공 하는 옵션이 포함 되어 있습니다.  
+1. 도구 오른쪽 위 모서리에 있는 줄임표 (...)를 클릭 하 여 다음 링크를 찾습니다.
+   1. **추가 리소스** 링크에서는이 문서에 대 한 링크를 포함 하 여 도구에 대 한 일반적인 지침 및 세부 정보를 제공 합니다.
+   1. **의견 제공** 링크를 통해 _SharePoint 사이트 및 공동 작업 사용자 음성_ 사이트에 대 한 링크가 제공 됩니다.
+   1. **정보** 링크에는 현재 설치 되어 있는 도구 버전과 공구의 타사 공지에 대 한 직접 링크가 포함 되어 있습니다.  
 1. **상관 관계 ID, SPRequestDuration, SPIISLatency**, **페이지 로드 시간**및 **URL** 세부 정보는 정보 제공 용으로, 몇 가지 용도로 사용할 수 있습니다.
 
     ![페이지 진단 세부 정보](media/page-diagnostics-for-spo/pagediag-details.PNG)
@@ -116,12 +119,12 @@ Sharepoint 용 페이지 진단 도구를 사용 하 여 SharePoint 최신 포�
 
 **Network Trace (네트워크 추적** ) 탭에는 페이지를 작성 하기 위한 요청과 SharePoint에서 받은 응답에 대 한 자세한 정보가 제공 됩니다.
 
-1. **빨간색으로 플래그가 지정 된 항목 로드 시간을 찾습니다**. 각 요청 및 응답의 성능은 다음과 같이 전체 페이지 성능에 미치는 영향을 기반으로 하 여 색으로 구분 됩니다.
+1. **빨간색으로 플래그가 지정 된 항목 로드 시간을 찾습니다**. 각 요청 및 응답은 다음과 같은 대기 시간 메트릭을 사용 하 여 전체 페이지 성능에 미치는 영향을 나타내기 위해 색으로 구분 됩니다.
     - 녹색: \< 500ms
     - 노랑: 500-1000ms
     - 빨강: \> 1000ms
 
-    ![네트워크 추적](media/page-diagnostics-for-spo/pagediag-networktrace.png)
+    ![네트워크 추적](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     위에 표시 된 이미지에서 빨간색 항목은 기본 페이지와 관련이 있습니다. 페이지가 1000ms (1 초 미만)로 로드 \< 되지 않으면 항상 빨간색으로 표시 됩니다.
 
