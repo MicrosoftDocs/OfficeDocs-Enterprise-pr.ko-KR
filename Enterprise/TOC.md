@@ -81,6 +81,7 @@
 #### [Mac용 Office의 네트워크 요청](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 #### [웹 서비스에 포함되지 않는 추가 끝점](additional-office365-ip-addresses-and-urls.md)
+### [중국 사용자를 위한 Office 365 성능 최적화](office-365-networking-china.md)
 ### [콘텐츠 배달 네트워크](content-delivery-networks.md)
 ### [Office 365 서비스의 IPv6 지원](ipv6-support.md)
 ### [NAT 지원(Office 365)](nat-support-with-office-365.md)
@@ -154,6 +155,7 @@
 #### [데이터 이동 일반 FAQ](data-move-faq.md)
 #### [Microsoft 클라우드 독일: Office 365 마이그레이션 프로그램](ms-cloud-germany-transition.md)
 #### [Microsoft 클라우드 독일: 마이그레이션을 위한 옵트인](ms-cloud-germany-migration-opt-in.md)
+#### [Office 365 데이터 센터의 고객 데이터](o365-data-locations.md)
 
 ### 하이브리드 솔루션
 #### [Azure Active Directory를 사용하여 SharePoint Server 2016 인증](using-azure-ad-for-sharepoint-server-authentication.md)
