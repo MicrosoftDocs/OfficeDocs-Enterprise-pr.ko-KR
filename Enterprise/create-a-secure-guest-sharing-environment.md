@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Microsoft 365에서 보안 게스트 공유 환경 만드는 방법에 대해 알아보세요.
-ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840625"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155577"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>보안 게스트 공유 환경 만들기
 
@@ -319,6 +318,14 @@ Azure AD의 액세스 검토로 다양한 팀과 그룹에 대한 주기적 사�
 게스트가 문서에 대한 액세스 권한을 갖게 되면 문서에 *프로젝트 Saturn*을 입력하고 저장합니다. Cloud App Security가 문서를 스캔하면 *극비* 레이블이 적용되고 게스트 사용자가 더 이상 해당 문서에 대해 액세스 권한을 갖지 못하게 됩니다.
 
 이 문서에 설명된 도구를 다양하게 조합하여 사용함으로써 조직에 생산적이면서도 안전한 게스트 공유 환경을 구축할 수 있습니다.
+
+## <a name="additional-options"></a>추가 옵션
+
+Microsoft 365 및 Azure Active Directory에는 게스트 공유 환경을 보호하는 데 도움이 되는 몇 가지 추가 옵션이 있습니다.
+
+- 사용자가 공유할 수 있는 사람을 제한하기 위해 허용 또는 거부된 공유 도메인 목록을 만들 수 있습니다. 자세한 내용은 [도메인별 SharePoint 및 OneDrive 콘텐츠 공유 제한](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) 및 [특정 조직의 B2B 사용자에게 초대 허용 또는 차단](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)을 참조하십시오.
+- 사용자가 연결할 수 있는 다른 Azure Active Directory 테넌트를 제한할 수 있습니다. 자세한 내용은 [테넌트 제한을 사용하여 SaaS 클라우드 응용 프로그램에 대한 액세스 관리](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)를 참조하세요.
+- 파트너가 게스트 계정을 관리할 수 있는 관리형 환경을 만들 수 있습니다. 자세한 내용은 [관리 대상 게스트와 B2B 엑스트라넷 작성](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet)을 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
