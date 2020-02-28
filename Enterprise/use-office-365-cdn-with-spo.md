@@ -3,7 +3,7 @@ title: sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(C
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 2/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841075"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316027"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -131,7 +131,7 @@ Office 365 CDN 내의 **비공개** 원본을 사용 하면 SharePoint Online �
 + 공개 원점에서 자산을 제거 하는 경우에는 해당 자산을 캐시에서 최대 30 일 동안 계속 사용할 수 있습니다. 그러나 15 분 내에 CDN의 자산에 대 한 링크가 무효화 됩니다.
 + 공용 원점에 스타일 시트 (CSS 파일)를 호스트 하는 경우 코드 내에 상대 경로와 Uri를 사용할 수 있습니다. 즉, 배경 이미지 및 다른 개체를 호출 하는 자산의 위치를 기준으로 해당 위치를 참조할 수 있습니다.
 + 공용 원본의 URL을 하드 코딩 하는 것은 좋지만, 이렇게 하지 않는 것이 좋습니다. 이는 CDN에 대 한 액세스를 사용할 수 없는 경우 URL이 SharePoint Online에서 조직에 자동으로 확인 되지 않으며 링크 및 기타 오류가 발생할 수 있기 때문입니다.
-+ 공용 원본에 대해 포함 되는 기본 파일 형식은 .css, eot, .gif, .ico, .jpeg, .jpg,. ttf 및. w o v,. p s v,. 추가 파일 형식을 지정할 수 있습니다.
++ 공용 원본에 대해 포함 되는 기본 파일 형식은 .css, eot, .gif, .ico, .jpeg, .jpg,. ttf,. w o v,. p s t/woff2입니다. 추가 파일 형식을 지정할 수 있습니다.
 + 지정한 사이트 분류에 의해 식별 된 자산을 제외 하도록 정책을 구성할 수 있습니다. 예를 들어, 허용 되는 파일 형식이 고 공용 원본에 있는 경우에도 "기밀" 또는 "제한"으로 표시 된 모든 자산을 제외 하도록 선택할 수 있습니다.
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>전용 원본에서의 자산 호스팅의 특성 및 장점
@@ -171,7 +171,7 @@ Office 365 CDN, 일반 CDN 개념 및 Office 365 테 넌 트에서 사용할 수
 Sharepoint online 관리 셸을 사용 하 여 SharePoint Online에서 자산을 호스트 하도록 CDN을 설정 및 구성 하려면 다음 단계를 완료 합니다.
 
 <details>
-  <summary>클릭 하 여 확장</summary>
+  <summary>클릭하여 확장</summary>
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>조직이 Office 365 CDN을 사용 하도록 설정
 
@@ -286,7 +286,7 @@ _Excludeifnoscriptdisabled_ 속성은 사이트 수준 _noscript_ 특성 설정�
 
 이러한 cmdlet에 대 한 자세한 내용은 [SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) 및 [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx)를 참조 하십시오.
 
-<a name="Office365CDNforSPOOrigin"> </a>
+<a name="Office365CDNforSPOOriginPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>자산에 대 한 근원 추가
 
 **SPOTenantCdnOrigin** cmdlet을 사용 하면 원점을 정의할 수 있습니다. 여러 원본을 정의할 수 있습니다. 원점은 CDN에서 호스팅할 자산이 포함 된 SharePoint 라이브러리 또는 폴더를 가리키는 URL입니다.
@@ -387,7 +387,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
 
-**SPOTenantCdnOrigin** cmdlet을 사용 하면 사이트 모음을 전용 원본으로 정의할 수 있습니다. 예시는 다음과 같습니다:
+**SPOTenantCdnOrigin** cmdlet을 사용 하면 사이트 모음을 전용 원본으로 정의할 수 있습니다. 예:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -409,7 +409,7 @@ CDN을 설정한 후에는이 섹션에 설명 된 대로 콘텐츠를 업데이
   
 원본 위치를 검색 해야 하는 경우 **SPOTenantCdnOrigins** cmdlet을 사용할 수 있습니다. 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [SPOTenantCdnOrigins](https://technet.microsoft.com/library/mt790770.aspx)를 참조 하십시오.
 
-<a name="Office365CDNforSPORemoveOrigin"> </a>
+<a name="Office365CDNforSPORemoveOriginPosh"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Office 365 CDN에서 원본 제거
 
 원본으로 식별 한 폴더 또는 SharePoint 라이브러리에 대 한 액세스 권한을 제거할 수 있습니다. 이 작업을 수행 하려면 **SPOTenantCdnOrigin** cmdlet을 사용 합니다.
@@ -420,10 +420,10 @@ Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 
 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx)를 참조 하십시오.
 
-<a name="Office365CDNforSPORemoveOrigin"> </a>
+<a name="Office365CDNforSPOModifyOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN에서 원본 수정
 
-만든 출처는 수정할 수 없습니다. 대신 원점을 제거한 다음 새 원본을 추가 합니다. 자세한 내용은 [Office 365 CDN에서 출처를 제거](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) 하 고 [자산의 출처를 추가](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)하는 방법을 참조 하세요.
+만든 출처는 수정할 수 없습니다. 대신 원점을 제거한 다음 새 원본을 추가 합니다. 자세한 내용은 [Office 365 CDN에서 출처를 제거](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh) 하 고 [자산의 출처를 추가](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh)하는 방법을 참조 하세요.
 
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>Office 365 CDN 사용 안 함
@@ -454,7 +454,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 다음 단계에 따라 PnP PowerShell을 사용 하 여 SharePoint Online에서 자산을 호스트 하도록 CDN을 설정 하 고 구성 합니다.
 
 <details>
-  <summary>클릭 하 여 확장</summary>
+  <summary>클릭하여 확장</summary>
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>조직이 Office 365 CDN을 사용 하도록 설정
 
@@ -569,7 +569,7 @@ _Excludeifnoscriptdisabled_ 속성은 사이트 수준 _noscript_ 특성 설정�
 
 이러한 cmdlet에 대 한 자세한 내용은 [Set-Pnpten앤틸리스 Cdnpolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) 및 [Get-Pnpten앤틸리스 cdn정책도](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)를 참조 하십시오.
 
-<a name="Office365CDNforPnPPoshOrigin"> </a>
+<a name="Office365CDNforSPOOriginPnPPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>자산에 대 한 근원 추가
 
 **추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 원본을 정의 합니다. 여러 원본을 정의할 수 있습니다. 원점은 CDN에서 호스팅할 자산이 포함 된 SharePoint 라이브러리 또는 폴더를 가리키는 URL입니다.
@@ -670,7 +670,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
 
-**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예시는 다음과 같습니다:
+**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -703,7 +703,7 @@ Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 
 이 cmdlet을 사용 하는 방법에 대 한 자세한 내용은 [Remove-Pnpten앤틸리스 Cdn근원](https://docs.microsoft.com/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin)를 참조 하십시오.
 
-<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+<a name="Office365CDNforSPOModifyOriginPnPPosh"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN에서 원본 수정
 
 만든 출처는 수정할 수 없습니다. 대신 원점을 제거한 다음 새 원본을 추가 합니다. 자세한 내용은 [Office 365 CDN에서 출처를 제거](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) 하 고 [자산의 출처를 추가](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)하는 방법을 참조 하세요.
@@ -737,7 +737,7 @@ Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
 Office 365 CLI를 사용 하 여 SharePoint Online에서 자산을 호스트 하도록 CDN을 설정 및 구성 하려면 다음 단계를 완료 합니다.
 
 <details>
-  <summary>클릭 하 여 확장</summary>
+  <summary>클릭하여 확장</summary>
 
 ### <a name="enable-the-office-365-cdn"></a>Office 365 CDN 사용
 
@@ -822,7 +822,7 @@ spo cdn origin remove --type Public --origin */masterpage
 
 ### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a>Office 365 CDN에 포함할 파일 형식 변경
 
-기본적으로 CDN에는 다음 파일 형식이 포함 됩니다. _.css, eot, .gif, .ico, .jpeg, .jpg_,. p s t,. w o v,. ttf,. CDN에 추가 파일 형식을 포함 해야 하는 경우에는 [spo cdn 정책 set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) 명령을 사용 하 여 cdn 구성을 변경할 수 있습니다.
+기본적으로 CDN에는 다음 파일 형식이 포함 됩니다. _.css, eot, .gif, .ico, .jpeg, .jpg,. ttf,. p_s t,. w o v,. CDN에 추가 파일 형식을 포함 해야 하는 경우에는 [spo cdn 정책 set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) 명령을 사용 하 여 cdn 구성을 변경할 수 있습니다.
 
 > [!NOTE]
 > 파일 형식 목록을 변경할 때 현재 정의 된 목록을 덮어씁니다. 추가 파일 형식을 포함 하려면 먼저 [spo cdn 정책 목록](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) 명령을 사용 하 여 현재 구성 되어 있는 파일 형식을 확인 합니다.
@@ -867,6 +867,9 @@ CDN 및 구성 된 원본 및 정책을 사용 하도록 설정 했으므로 이
 + [비공개 원본에서 에셋 사용](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
 클라이언트 쪽 웹 파트 호스팅을 위해 CDN을 사용 하는 방법에 대 한 자세한 내용은 [Office 365 CDN (Hello World part 4)에서 클라이언트 쪽 웹 파트 호스트](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)항목을 참조 하십시오.
+
+> [!NOTE]
+> _Client 자산_ 폴더를 **private** CDN 원본 목록에 추가 하는 경우 CDN 호스트 된 사용자 지정 웹 파트가 렌더링 되지 않습니다. SPFX 웹 파트에 사용 되는 파일은 공용 CDN만 사용할 수 있고 ClientSideAssets 폴더는 공용 CDN의 기본 근원입니다. 
 
 ### <a name="updating-links-to-cdn-assets"></a>CDN 자산에 대 한 링크 업데이트
 
@@ -943,7 +946,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN의 비공개 원본에 있는 자산에 대 한 액세스는 SharePoint Online에서 생성 된 토큰에 의해 부여 됩니다. 원본에서 지정한 폴더나 라이브러리에 대 한 액세스 권한이 이미 있는 사용자에 게는 사용자가 자신의 사용 권한 수준에 따라 파일에 액세스할 수 있도록 허용 하는 토큰이 자동으로 부여 됩니다. 이러한 액세스 토큰은 토큰 재생 공격을 방지 하기 위해 생성 된 30 ~ 90 분에 유효 합니다.
 
-액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예시는 다음과 같습니다:
+액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -956,7 +959,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권한을 지원 하지 않는다는 점에 유의 해야 합니다. 예를 들어에 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`있는 파일의 경우 사용자는 다음 조건에 해당 하는 파일에 대 한 유효한 액세스 권한을 갖습니다.
 
-|사용자  |권한  |유효한 액세스  |
+|사용자  |사용 권한  |유효한 액세스  |
 |---------|---------|---------|
 |사용자 1     |Folder1에 대 한 액세스 권한         |CDN에서 image1에 액세스할 수 있음         |
 |사용자 2     |Folder1에 대 한 액세스 권한이 없음         |CDN에서 image1에 액세스할 수 없음         |

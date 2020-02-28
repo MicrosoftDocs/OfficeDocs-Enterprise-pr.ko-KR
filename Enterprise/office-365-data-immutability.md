@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365의 데이터 불변성을 정의 하 고 설명 합니다.
-ms.openlocfilehash: 8e52d1be87bff163b2d1cfc9233de08861104681
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844519"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315997"
 ---
 # <a name="immutability-in-office-365"></a>Office 365의 불변성
 
@@ -28,7 +28,7 @@ ms.locfileid: "41844519"
 
 일반적으로 불변성에 대 한 일반적인 방법은 전자 메일 메시지를 별도의 읽기 전용 저장소 위치로 이동 하는 방식으로 작동 합니다. 이러한 시스템은 검색에 대 한 사서함 항목을 보존 하기 위한 목적을 제공 하지만 일반적인 일별 워크플로에서 보존 된 항목을 제거 하 여 사용자 환경에 영향을 줍니다. IT 전문가를 위해이 불변성 접근법을 사용 하려면 별도의 서버 및 저장소 인프라를 배포 하 고 지속적으로 유지 관리 해야 합니다. 검색은 메일 시스템 외부의 도구를 통해 수행 되며 관련 배포 및 유지 관리 비용을 포함 합니다.
 
-Office 365 및 해당 서비스의 보관에 대 한 보존 정책 기능과 유지 관리 기능을 통해 들어오는, 내부 및 나가는 데이터의 여러 클래스를 보존 하 고 보존할 수 있습니다. 여기에는 다음이 포함 됩니다.
+Office 365 및 해당 서비스의 보관에 대 한 보존 정책 기능과 유지 관리 기능을 통해 들어오는, 내부 및 나가는 데이터의 여러 클래스를 보존 하 고 보존할 수 있습니다. 여기에는 다음이 포함됩니다.
 
 - 인바운드 및 아웃 바운드 전자 메일 통신
 - 전자 메일 양식 또는 공유 온라인 문서에 포함 된 서적 및 레코드
