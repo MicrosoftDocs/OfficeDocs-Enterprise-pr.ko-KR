@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Microsoft 365에서 보안 게스트 공유 환경 만드는 방법에 대해 알아보세요.
-ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 978e7f0e2f81f8e7f97ee73b8e490922afcf1c0a
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155577"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316037"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>보안 게스트 공유 환경 만들기
 
@@ -332,3 +332,5 @@ Microsoft 365 및 Azure Active Directory에는 게스트 공유 환경을 보호
 [게스트와 공유할 때 파일에 실수로 발생하는 노출을 제한](sharing-limit-accidental-exposure.md)
 
 [인증되지 않은 사용자와 파일 및 폴더를 공유하는 모범 사례](best-practices-anonymous-sharing.md)
+
+[관리 대상 게스트와 B2B 엑스트라넷 작성](b2b-extranet.md)

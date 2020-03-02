@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Office 365 Multi-Geo, 다중 위치 작동 방식 및 데이터 저장소에 사용할 수 있는 지리적 위치에 대해 알아봅니다.
-ms.openlocfilehash: f3bc2b43181bb4479c0f3b9c65ed4bcd5b1f9b38
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 2875f820b0ce1437a09289e3c5e660287b64dc40
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974230"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316007"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Office 365 Multi-Geo 계획
 
@@ -75,6 +75,8 @@ Office 365에서 해당 OneDrive를 프로비전할 지리적 위치를 결정�
 SharePoint 및 OneDrive 설정과 서비스가 다중 위치를 인식하므로 다중 위치 테넌트의 관리는 다중 위치가 아닌 테넌트의 관리와 다를 수 있습니다. 구성을 계속하기 전에 [다중 위치 환경 관리](administering-a-multi-geo-environment.md)를 검토하는 것이 좋습니다.
 
 다중 위치 환경의 최종 사용자 경험에 대한 자세한 내용은 [다중 위치 환경의 사용자 경험](multi-geo-user-experience.md)을 읽어보세요.
+
+Office 365 다중 지역 테넌시의 Teams 경험에 대한 자세한 내용은 [Office 365 OneDrive 및 SharePoint Online 다중 지역 지원 테넌시 Teams 경험](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)을 참조하십시오.
 
 Office 365 Multi-Geo를 구성하려면 [Office 365 Multi-Geo 구성](multi-geo-tenant-configuration.md)을 참조하십시오.
 
