@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365에서 사용할 수 있는 게스트 공유 설정에 대해 알아봅니다.
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844969"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316047"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 게스트 공유 설정 참조
 
@@ -238,6 +237,9 @@ SharePoint의 각 사이트에 대한 게스트 공유 권한을 설정할 수 �
 |그룹 연결 사이트(Teams 포함)|**신규 및 기존 게스트** Office 365 그룹 설정 **그룹 소유자가 조직 외부 사람을 그룹에 추가하도록 허용**이 **켜져** 있는 경우에 해당합니다. 그렇지 않으면 **기존 게스트만** 해당됩니다.|
 |통신|**조직 내부 사용자만**|
 |그룹이 없는 최신 사이트 (#STS3 TeamSite)|**조직 내부 사용자만**|
+
+> [!NOTE]
+> 루트 통신 사이트(Tenant-name.sharepoint.com)에는 **사용자**의 기본 공유 설정이 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
