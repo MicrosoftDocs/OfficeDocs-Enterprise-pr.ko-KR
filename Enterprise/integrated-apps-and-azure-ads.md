@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: O365 통합 앱이 Azure AD에서 등록 되 고 관리 되는 방법 알아보기
-ms.openlocfilehash: fdeb3e3f35a795851b253f9b68d755404851ba07
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6846b57256bd81ae8d2054d69bd8f980d91d6ce9
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845079"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417063"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 관리자를 위한 통합 앱 및 Azure AD
 
@@ -44,7 +44,7 @@ Office 365 앱을 관리 하려면 Azure AD의 앱에 대 한 지식이 있어�
 |[Office 365 앱 시작 관리자를 충족 합니다.](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |앱 시작 관리자를 처음 사용 하는 경우에는이 문서가 무엇 인지 궁금할 것 이며 사용할 수 있습니다. 앱 시작 관리자는 Office 365의 어디에서 든 앱을 가져올 수 있도록 디자인 되었습니다.  <br/> |
 |[Office 365 관리 Api 개요](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) <br/> |Office 365 Api를 사용 하면 사용자가 관심 있는 항목 (대부분의 메일, 일정, 연락처, 사용자 및 그룹, 파일, 폴더)을 포함 하 여 고객의 Office 365 데이터에 액세스할 수 있습니다. 이 문서에서는 Office 365 앱, Azure AD 및 앱이 액세스 하는 데이터 간의 관계를 보여 주는 적절 한 다이어그램을 제공 합니다.  <br/> |
 |[Azure Active Directory에서 응용 프로그램 통합](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Azure Active Directory와 통합 된 응용 프로그램 및 응용 프로그램을 등록 하 고, 등록 된 응용 프로그램의 개념을 이해 하 고, 다중 테 넌 트 응용 프로그램에 대 한 브랜딩 지침에 대해 알아봅니다.  <br/> |
-|[사용자 지정 타일을 앱 시작 관리자에 추가](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)합니다.  <br/> |Office 365의 앱 시작 관리자를 사용 하면 사용자가 앱을 보다 쉽게 찾고 액세스할 수 있습니다. 이 문서에서는 개발자가 앱을 사용자의 앱 평가판에 표시 하 고 Office 365 자격 증명을 사용 하 여 SSO (single sign-on) 환경에 제공 하는 방법에 대해 설명 합니다.  <br/> |
+|[앱 시작 관리자에 사용자 지정 타일 추가](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)  <br/> |Office 365의 앱 시작 관리자를 사용 하면 사용자가 앱을 보다 쉽게 찾고 액세스할 수 있습니다. 이 문서에서는 개발자가 앱을 사용자의 앱 평가판에 표시 하 고 Office 365 자격 증명을 사용 하 여 SSO (single sign-on) 환경에 제공 하는 방법에 대해 설명 합니다.  <br/> |
 |[Azure Active Directory 통합 자습서](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |이 자습서의 목표는 타사 SaaS 응용 프로그램에 대해 Azure AD SSO를 구성 하는 방법을 보여 주기 위한 것입니다.  <br/> |
 |[Azure AD에 대한 인증 시나리오](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD는 OAuth 2.0 및 OpenID Connect와 같은 업계 표준 프로토콜을 지원 하 고 코딩을 빠르게 시작 하는 데 도움이 되는 다양 한 플랫폼용으로 공개 된 원본 라이브러리를 제공 하 여 개발자를 위한 인증을 간소화 합니다. 이 문서는 Azure AD에서 지 원하는 다양 한 시나리오를 이해 하 고 시작 하는 방법을 보여 줍니다.  <br/> |
 |[응용 프로그램 액세스](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD를 사용 하면 오늘날 인기 있는 소프트웨어 (SaaS) 응용 프로그램으로 간편 하 게 통합할 수 있습니다. id 및 액세스 관리를 제공 하 고, 사용자가 액세스 하는 응용 프로그램에 액세스할 수 있는 위치를 검색 하 고 SSO를 사용 하 여 응용 프로그램에 액세스 하는 데 사용할 수 있는 액세스 패널을 전달 합니다. 이 문서에서는 Azure AD에 대 한 응용 프로그램 액세스 향상 기능에 대해 자세히 알아보고 해당 리소스에 기여할 수 있는 방법을 설명 하는 관련 리소스로 연결 되는 링크를 제공 합니다.  <br/> |
