@@ -14,12 +14,12 @@ localization_priority: Priority
 f1.keywords:
 - NOCSH
 description: SharePoint 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 903daff5af44789774b09000ebe52a6046ffc5d3
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 8bcd76959cdddd5bb6fadf390e5b71df8decf0a0
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417043"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint 사이트를 다른 지리적 위치로 이동
 
@@ -85,6 +85,7 @@ SharePoint 사이트 지리적 이동을 수행하려면 사이트가 있는 지
 다음을 사용한 사이트 이동은 지원하지 않습니다.
 -   Business Connectivity Services
 -   InfoPath 양식 
+- IRM(정보 권한 관리) 서식 파일 적용됨
 
 모든 지리적 위치가 호환되는지 확인하려면 `Get-SPOGeoMoveCrossCompatibilityStatus`를 실행합니다. 그러면 모든 지리적 위치가 표시되고 환경이 대상 지리적 위치와 호환되는지 표시됩니다.
 
