@@ -187,7 +187,7 @@
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
 ### 게스트와 공동 작업하기
 #### [게스트 공유 참조](microsoft-365-guest-settings.md)
-#### 게스트 공유 솔루션
+#### 게스트 공유 시나리오
 ##### [게스트 공동 작업 개요](collaborating-with-people-outside-your-organization.md)
 ##### [문서에서 공동 작업](collaborate-on-documents.md)
 ##### [사이트에서 공동 작업](collaborate-in-a-site.md)
