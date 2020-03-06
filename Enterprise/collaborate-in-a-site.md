@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: SharePoint 사이트에서 게스트와 공동 작업 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c1c34fded910701275a80aa0740a746a2458156
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845069"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549117"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>게스트와 현장에서 공동 작업하기
 
@@ -137,5 +136,5 @@ SharePoint 조직 수준 공유 설정을 설정 하려면
 
 [보안 게스트 공유 환경 만들기](create-a-secure-guest-sharing-environment.md)
 
-[관리 되는 게스트를 사용 하 여 B2B 엑스트라넷 만들기](b2b-extranet.md)
+[관리 대상 게스트와 B2B 엑스트라넷 작성](b2b-extranet.md)
 
