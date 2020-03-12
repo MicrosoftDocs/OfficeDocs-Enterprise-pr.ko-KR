@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2007 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 101db7891dd2d336c9b15b2e7070587fb61eb53a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841005"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605643"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
@@ -44,7 +44,7 @@ Office 2007 제품 및 서비스에 대 한 지원이 종료 되었습니다. �
 |:-----|:-----|
 |[Office 2007 지원 로드맵 종료](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |2017년 10월 10일  <br/> |
 |[Exchange 2007 지원 종료 로드맵](exchange-2007-end-of-support.md) <br/> |2017년 4월 11일  <br/> |
-|[SharePoint Server 2007 지원 로드맵 최종본](sharepoint-2007-end-of-support.md) <br/> |2017년 10월 10일  <br/> |
+|[SharePoint Server 2007 지원 종료 로드맵](sharepoint-2007-end-of-support.md) <br/> |2017년 10월 10일  <br/> |
 |[Project Server 2007 지원 종료 로드맵](project-server-2007-end-of-support.md) <br/> |2017년 10월 10일  <br/> |
 |[Office Communications Server에서 업그레이드](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |2018 년 1 월 8 일  <br/> |
 |[PerformancePoint Server 2007 지원 종료 로드맵](pps-2007-end-of-support.md) <br/> |2018년 1월 9일  <br/> |
@@ -57,8 +57,6 @@ Microsoft 제품에 대 한 지원이 종료 되 면 새로운 보안 업데이�
      
 ## <a name="related-topics"></a>관련 항목
 
-[Office 사용 중지 그룹(Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [비디오: Office 365 이란?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/?linkid=865200)

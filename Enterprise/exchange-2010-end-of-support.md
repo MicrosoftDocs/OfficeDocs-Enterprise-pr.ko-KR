@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 Exchange Online으로의 업그레이드를 준비 하거나 Exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: b8e9e1b94c08ec58294f88a7b5607b18c9f44a99
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840385"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605573"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 지원 로드맵 종료
 
@@ -236,5 +236,3 @@ Office 365로 마이그레이션하는 동안 문제가 발생 하 여 FastTrack
 ## <a name="related-topics"></a>관련 항목
 
 [Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)
-
-[Office 사용 중지 그룹(Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)

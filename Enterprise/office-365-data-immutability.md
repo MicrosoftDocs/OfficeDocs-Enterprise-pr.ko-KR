@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365의 데이터 불변성을 정의 하 고 설명 합니다.
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315997"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605633"
 ---
 # <a name="immutability-in-office-365"></a>Office 365의 불변성
 
@@ -58,4 +58,4 @@ Office 365의 보관은 증권 및 Exchange 위원회 (초) 규칙 17a-4 호환 
 - Office 365에서 보관을 사용 하면 사용자가 다른 보존 정책을 결합 하 여 세분화 된 보존 정책을 만들 수 있습니다. 이러한 정책은 보존 되는 항목의 유형 또는 위치와 보존 기간을 정의 합니다.
 - 보존 잠금 기능을 사용 하면 사용자가 정책을 제한 된 정책으로 만들지 여부를 선택할 수 있습니다. 제한적인 정책은 보존 정책을 제거, 사용 하지 않도록 설정 또는 변경 하는 기능을 가진 사용자를 금지 합니다. 즉, 보존 잠금을 사용 하도록 설정 하 고, 사용 하지 않도록 설정할 수 없으며, 보존 정책을 통해 수집 된 기존 custodians의 데이터를 적절 하 게 가져올 수 있는 메커니즘이 없습니다. 보존 기간 또한 보존 잠금에 설정 된 보존 기간은 단축 되거나 감소할 수 없습니다. 그러나 위의 설명에 따라 저장 된 데이터의 보존을 계속 하기 위해 법적 요구 사항을 충족 하는 경우에는이 방법을 사용할 수 있습니다. 보존 잠금은 관리자가 아니더라도 특정 제어 액세스 권한이 있는 경우에만 설정을 변경 하거나 저장 된 데이터를 덮어쓰거나 지울 수 있으며, Office 365의 보관이 2003 Release in SEC에 설정 된 지침을 사용 하 여 온라인 상태로 유지 됩니다. Rule 17a-4
 
-Office 365이 규칙 17a-4 요구 사항과 관련 하 여 규정 의무를 충족 하는 방법을 이해 하려면 Exchange Online 보관, SharePoint Online, 비즈니스용 OneDrive 및 비즈니스용 Skype에 대해 설명 하는이 [백서](https://go.microsoft.com/fwlink/?linkid=830440) 를 참조 하세요. 또한이 백서에서는 Office 365 보관 기능에 대 한 심도 깊은 분석을 제공 하 고 SEC 규칙 17a-4의 각 요구 사항에 대해 자세히 설명 하 고, Office 365 보관을 통해 이러한 사항을 충족 하도록 설정 하는 방법을 고객에 게 규정 하 고 있습니다. 요구 사항.
+Office 365에서 규정 의무를 충족 하는 방법을 이해 하려면, 특히 규칙 17a-4 요구 사항과 관련 하 여 Exchange Online 보관, SharePoint Online, 비즈니스용 OneDrive 및 비즈니스용 Skype에 대해 설명 하는 [백서](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) 를 참조 하세요. 또한이 백서에서는 Office 365 보관 기능에 대 한 심도 깊은 분석을 제공 하 고 SEC 규칙 17a-4의 각 요구 사항에 대해 자세히 설명 하 고, Office 365 보관을 통해 이러한 사항을 충족 하도록 설정 하는 방법을 고객에 게 규정 하 고 있습니다. 요구 사항.

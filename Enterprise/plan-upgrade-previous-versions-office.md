@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2007 또는 Office 2010을 사용하는 경우 이제 업그레이드를 계획해야 합니다. 오래되고, 지원되지 않는 앱과 서버로 인해 불편해하지 마세요. 계획을 시작하려면 다음 리소스를 사용하세요.
-ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841715"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605622"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
@@ -110,9 +110,3 @@ Microsoft 365를 사용하면 Microsoft 클라우드에서 활성화되어 보�
 ## <a name="related-topics"></a>관련 항목
   
 [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/?linkid=865200)
-
-[Office 사용 중지 그룹(Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-
-

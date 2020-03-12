@@ -3,7 +3,7 @@ title: SharePoint Online 용 페이지 진단 도구 사용
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: SharePoint 도구에 페이지 진단을 사용 하 여 미리 정의 된 성능 기준 집합에 대해 SharePoint Online 최신 포털 및 클래식 게시 페이지를 분석할 수 있습니다.
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155602"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603737"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 용 페이지 진단 도구 사용
 
 이 문서에서는 **sharepoint 용 페이지 진단 도구** 를 사용 하 여 미리 정의 된 성능 기준 집합에 대해 sharepoint Online 현대 및 클래식 사이트 페이지를 분석 하는 방법에 대해 설명 합니다.  
 
 >[!TIP]
->**도구의 버전 2.0.2이 릴리스 되었습니다**. 버전 **2.0.0** 이상에는 클래식 사이트 페이지 외에도 최신 페이지에 대 한 지원이 포함 됩니다. 사용 중인 도구의 버전을 잘 모를 경우 **정보** 링크 또는 줄임표 (...)를 선택 하 여 버전을 확인할 수 있습니다. 도구를 사용할 때 항상 최신 버전으로 업데이트 합니다.
+>버전 **2.0.0** 이상에는 클래식 사이트 페이지 외에도 최신 페이지에 대 한 지원이 포함 됩니다. 사용 중인 도구의 버전을 잘 모를 경우 **정보** 링크 또는 줄임표 (...)를 선택 하 여 버전을 확인할 수 있습니다. 도구를 사용할 때 **항상 최신 버전으로 업데이트** 합니다.
 
 SharePoint 용 페이지 진단 도구는 새 Microsoft Edge (및 SharePoint Online 최신 포털 및https://www.microsoft.com/edge) 클래식 게시 사이트 페이지 모두를 분석 하는 크롬 브라우저)에 대 한 브라우저 확장입니다. 이 도구는 SharePoint Online 에서만 작동 하며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
 
@@ -161,4 +161,8 @@ Sharepoint 용 페이지 진단 도구를 사용 하 여 SharePoint 최신 포�
 
 [Office 365 성능 조정](tune-office-365-performance.md)
 
+[최신 SharePoint 환경의 성능](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [콘텐츠 배달 네트워크](content-delivery-networks.md)
+
+[sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기](use-office-365-cdn-with-spo.md)
