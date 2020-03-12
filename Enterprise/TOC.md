@@ -185,19 +185,20 @@
 ### [사용자 계정 관리 도구](manage-office-365-accounts.md)
 ### [동시에 여러 사용자 추가](add-several-users-at-the-same-time.md)
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
+
 ### 게스트와 공동 작업하기
-#### [게스트 공유 참조](microsoft-365-guest-settings.md)
+#### [게스트 공유 참조](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### 게스트 공유 시나리오
-##### [게스트 공동 작업 개요](collaborating-with-people-outside-your-organization.md)
-##### [문서에서 공동 작업](collaborate-on-documents.md)
-##### [사이트에서 공동 작업](collaborate-in-a-site.md)
-##### [팀으로 공동 작업](collaborate-as-a-team.md)
+##### [게스트 공동 작업 개요](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [문서에서 공동 작업](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [사이트에서 공동 작업](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [팀으로 공동 작업](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### 게스트 공유 보안
-##### [인증되지 않은 공유](best-practices-anonymous-sharing.md)
-##### [우발적 노출 제한](sharing-limit-accidental-exposure.md)
-##### [보안 게스트 공유 환경](create-a-secure-guest-sharing-environment.md)
-#### [B2B 엑스트라넷 만들기](b2b-extranet.md)
-### [제한 공유](microsoft-365-limit-sharing.md)
+##### [인증되지 않은 공유](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [우발적 노출 제한](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [보안 게스트 공유 환경](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+#### [B2B 엑스트라넷 만들기](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+### [제한 공유](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## 장치
 ### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
