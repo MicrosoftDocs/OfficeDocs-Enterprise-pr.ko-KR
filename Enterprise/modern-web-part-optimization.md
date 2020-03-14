@@ -3,7 +3,7 @@ title: SharePoint Online 최신 사이트 페이지에서 웹 파트 성능 최�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 최신 사이트 페이지의 웹 파트 성능을 최적화하는 방법에 대해 배워보세요.
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844836"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603747"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online 최신 사이트 페이지에서 웹 파트 성능 최적화
 
@@ -35,14 +35,17 @@ SharePoint Online 최신 사이트 페이지에는 전체 페이지 로드 시�
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>SharePoint 용 페이지 진단 도구를 사용한 웹 파트
 
-**Sharepoint 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+SharePoint용 페이지 진단 도구는 새 Microsoft Edge에 대한 브라우저 확장입니다. (SharePoint Online 최신 포털 및 클래식 게시 사이트 페이지를 분석하는 https://www.microsoft.com/edge) 및 Chrome 브라우저) 이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+
+>[!NOTE]
+>페이지 진단 도구는 SharePoint Online에서만 사용할 수 있으며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
 
 Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페이지를 분석 시 _진단 테스트_ 창의 페이지 **로드 시간 에 영향을 미치는 웹 파트** 결과에서 기준치를 초과하는 웹 파트에 대한 정보를 확인할 수 있습니다.
 
 잠정 결과는 다음과 같습니다:
 
-- **주의가 필요** (빨간색): 로드하는데**2**초 이상 걸리는 모든 _사용자 지정_ 웹 파트 테스트 결과에 표시되는 총 로드 시간은 모듈 로드, 지연 로드, 초기화 및 렌더링으로 나누어집니다.
-- **개선 기회** (노란색): 페이지 로드 시간에 영향을 미칠 수 있는 항목은 이 섹션에 표시되며 검토하고 모니터링해야 합니다. 여기에는 "특별” (OOTB) Microsoft 웹 파트가 포함 될 수 있습니다. 이 섹션에 표시된 Microsoft 웹 파트의 결과는 자동으로 Microsoft에 보고되므로 **어떠한 조치도 필요하지 않습니다**. 페이지에서 성능이 매우 느리거나 페이지에 있는 **모든 Microsoft 웹 파트**가 **개선 기회** 섹션의 결과에 표시되는 경우에만 검사에 대한 지원 티켓을 기록해야 합니다. 차후 페이지 진단 도구를 업데이트 하면 Microsoft 웹 파트의 특정 구성에 따라 결과를 더 세분화하 게 됩니다.
+- **주의 필요** (빨간색): 로드하는데 **2**초 보다 긴 시간이 걸리는 뷰포트(처음 로드되는 페이지의 화면에 표시되는 부분)에서 볼 수 있는 _사용자 지정_ 웹 파트입니다. 로드하는데 **4**초 보다 긴 시간이 걸리는 뷰포트 외부의 _사용자 지정_ 웹 파트입니다. 테스트 결과에 표시되는 총 로드 시간은 모듈 로드, 지연 로드, 초기화 및 렌더링으로 나누어집니다.
+- **개선 기회** (노란색): 페이지 로드 시간에 영향을 미칠 수 있는 항목은 이 섹션에 표시되며 검토하고 모니터링해야 합니다. 여기에는 "특별” (OOTB) Microsoft 웹 파트가 포함 될 수 있습니다. 이 섹션에 표시된 Microsoft 웹 파트의 결과는 자동으로 Microsoft에 보고되므로 **어떠한 조치도 필요하지 않습니다**. 페이지에서 성능이 매우 느리거나 페이지에 있는 **모든 Microsoft 웹 파트**가 **개선 기회** 섹션의 결과에 표시되는 경우에만 검사에 대한 지원 티켓을 기록해야 합니다. 차후 SharePoint용 페이지 진단 도구를 업데이트하면 Microsoft 웹 파트의 특정 구성에 따라 결과를 더 세분화합니다.
 - **조치가 필요하지 않음** (녹색): 데이터를 반환하는데 어떠한 웹 파트도 **2**초를 초과하지 않습니다.
 
 **페이지 로드 시간 결과에 영향을 미치는 웹 파트**가 **주의가 필요** 또는 **개선 기회** 섹션에 표시되는 경우 결과를 클릭하여 느리게 로드되는 웹 파트에 대한 세부정보를 확인합니다. 차후 SharePoint 용 페이지 진단 도구를 업데이트는 분석 규칙에 대한 업데이트를 포함할 수 있으므로 항상 최신 버전의 도구를 보유하고 있는지 확인하세요.

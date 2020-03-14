@@ -3,7 +3,7 @@ title: SharePoint Online 최신 및 클래식 게시 사이트 페이지에서 �
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint online 서비스 끝점 호출 횟수를 제한 하여 SharePoint Online에서 최신 및 클래식 게시 사이트 페이지를 최적화하는 방법에 대해 알아보세요.
-ms.openlocfilehash: 13c403e03c0d2aa2cb73d626c92596d12a8b1ee4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: b339e6888e9434b6df26b0a29450bfcbbce84e66
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844837"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603727"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 최신 및 클래식 게시 사이트 페이지에서 페이지 호출 최적화
 
@@ -37,7 +37,10 @@ SharePoint Online의 최신 게시 사이트와 클래식 게시 사이트에는
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>SharePoint 용 페이지 진단 도구를 사용한 페이지 호출 분석
 
-**Sharepoint 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+SharePoint용 페이지 진단 도구는 새 Microsoft Edge에 대한 브라우저 확장입니다. (SharePoint Online 최신 포털 및 클래식 게시 사이트 페이지를 분석하는 https://www.microsoft.com/edge) 및 Chrome 브라우저) 이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+
+>[!NOTE]
+>페이지 진단 도구는 SharePoint Online에서만 사용할 수 있으며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
 
 Sharepoint용 페이지 진단 도구를 사용하여 Sharepoint 사이트 페이지를 분석 시 **Sharepoint로의 요청** 결과에서 외부 호출에 대한 정보를  _진단 테스트_ 창에서 확인할 수 있습니다. 사이트 페이지가 기준선 호출 수보다 적은 수를 포함하는 경우 선이 녹색으로 표시되고 페이지가 기준선 숫자를 초과하는 경우 빨간색으로 표시 됩니다. 클래식 페이지는 HTTP 1.1 그리고 최신 페이지는 HTTP 2.0을 사용하므로 최신 페이지와 클래식 페이지의 기준선 숫자는 다릅니다:
 

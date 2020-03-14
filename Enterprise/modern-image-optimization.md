@@ -3,7 +3,7 @@ title: SharePoint Online 최신 사이트 페이지에서 이미지 최적화
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 최신 사이트 페이지에서 이미지를 최적화하는 방법을 알아봅니다.
-ms.openlocfilehash: b1bb8bab7ee9d5f0972a476e37c35e8c14748bfb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 592839c68f790ffa35887cd1ff95e5354218d9e8
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843749"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603757"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online 최신 사이트 페이지에서 이미지 최적화
 
@@ -37,7 +37,10 @@ ms.locfileid: "41843749"
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>SharePoint용 페이지 진단 도구를 사용한 이미지 최적화 분석
 
-**Sharepoint용 페이지 진단 도구**는 Chrome 및 [ Microsoft Edge 버전 77 이상](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)의 브라우저 확장으로서 Sharepoint 최신 및 클래식 게시 사이트 페이지를 분석하는 데 사용할 수 있습니다.  이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. SharePoint용 페이지 진단 도구를 설치하고 알아보려면[Sharepoint Online용 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+SharePoint용 페이지 진단 도구는 새 Microsoft Edge에 대한 브라우저 확장입니다. (SharePoint Online 최신 포털 및 클래식 게시 사이트 페이지를 분석하는 https://www.microsoft.com/edge) 및 Chrome 브라우저) 이 도구는 정의된 성능 기준의 집합 대비 페이지 수행 방식을 보여주는 분석된 각 페이지에 대한 보고서를 제공합니다. Sharepoint용 페이지 진단 도구에 대해 배우고 설치하려면[Sharepoint Online에 페이지 진단 도구 사용](page-diagnostics-for-spo.md)을 참조하세요.
+
+>[!NOTE]
+>페이지 진단 도구는 SharePoint Online에서만 사용할 수 있으며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
 
 SharePoint용 페이지 진단 도구를 사용하여 SharePoint 최신 사이트를 분석할 때 _진단 테스트_ 창에서 대용량 이미지에 대한 정보를 확인할 수 있습니다.
 
