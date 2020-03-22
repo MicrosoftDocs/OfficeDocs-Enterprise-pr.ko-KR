@@ -3,7 +3,7 @@ title: M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106398"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890401"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)
 
@@ -30,7 +30,7 @@ Microsoft 365 관리 센터의 네트워크 insights는 Office 365 테 넌 트�
 Microsoft 365 관리 센터의 각 사무실 위치에 대해 네트워킹 품질 상태를 평가할 수 있으며 Office 365 네트워크 온 보 딩 도구를 기반으로 하는 테스트를 배포한 후 더 자세한 내용을 확인할 수 있는 방법을 함께 사용 하는 것이 좋습니다.
 
 >[!IMPORTANT]
->네트워크 성능 권장 사항, Microsoft 365 관리 센터의 통찰력 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 되어 있는 Office 365 테 넌 트에만 사용할 수 있습니다.
+>네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 된 Office 365 테 넌 트에만 사용할 수 있습니다.
 
 ## <a name="the-advanced-tests-client-application"></a>고급 테스트 클라이언트 응용 프로그램
 

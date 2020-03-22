@@ -1,0 +1,68 @@
+### YamlMime:Landing
+title: Office 365 엔터프라이즈 설명서
+summary: 이 페이지에서는 엔터프라이즈 조직에서 Office 365 서비스를 배포, 구성 및 관리하는 관리자 및 IT 전문가를 위한 지침을 제공 합니다.
+metadata:
+  title: Office 365 엔터프라이즈 설명서
+  description: 이 페이지에서는 엔터프라이즈 조직에서 Office 365 서비스를 배포, 구성 및 관리하는 관리자 및 IT 전문가를 위한 지침을 제공 합니다.
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/12/2020
+  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
+  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.translationtype: MT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "42891498"
+landingContent:
+- title: Office 365 Enterprise 정보
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: FastTrack을 사용 하 여 Office 365 채택
+      url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
+    - text: 조직 데이터를 Office 365 Enterprise로 마이그레이션
+      url: migrate-data-to-office-365.md
+    - text: Office 365 ProPlus 배포 가이드
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: 조직을 위해 Office 365 Enterprise 배포
+      url: setup-overview-for-enterprises.md
+    - text: 하이브리드 배포
+      url: microsoft-cloud-it-architecture-resources.md
+  - linkListType: learn
+    links:
+    - text: Microsoft 365 시작
+      url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
+- title: Office 365 작업 배포
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Exchange Online
+      url: https://docs.microsoft.com/Exchange/exchange-online
+    - text: SharePoint Online
+      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: 비즈니스용 Skype Online
+      url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+    - text: Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Power BI
+      url: https://docs.microsoft.com/power-bi
+    - text: Yammer
+      url: https://support.office.com/yammer
+- title: 추가 리소스
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Office 365 기술 커뮤니티
+      url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
+    - text: 지원받기
+      url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+  - linkListType: learn
+    links:
+    - text: Microsoft 365에 대 한 자세한 정보
+      url: https://docs.microsoft.com/microsoft-365
+    - text: Microsoft 365 준수에 대 한 자세한 정보
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+    - text: Microsoft 365 보안에 대 한 자세한 정보
+      url: https://docs.microsoft.com/microsoft-365/security/
