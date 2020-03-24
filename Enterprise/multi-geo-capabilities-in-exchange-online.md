@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Exchange Onlinedl 다중 위치 기능에 대해 알아봅니다.
-ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974840"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890550"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online의 다중 위치 기능
 
@@ -53,8 +53,10 @@ Exchange Online에서 Azure AD의 **PreferredDataLocation** 속성을 Exchange O
 
 - Mac용 Outlook 사용자는 사서함을 새 지리적 위치로 이동하는 동안 온라인 보관함 폴더에 대한 액세스가 일시적으로 중단될 수 있습니다. 교차 지역 사서함 이동이 다른 시간에 완료될 수 있으므로, 이 조건은 사용자의 기본 및 보관 사서함이 다른 지리적 위치에 있을 때 발생합니다.
 
-- 웹용 Outlook(이전의 Outlook Web App 또는 OWA)에서 지리적 위치를 넘어서 *사서함 폴더*를 공유할 수 없습니다. 예를 들어, 유럽 연합에 있는 사용자는 웹용 Outlook을 사용하여 미국에 있는 사서함에서 공유 폴더를 열 수 없습니다. 그러나 웹용 Outlook 사용자는 [Outlook Web App의 개별 브라우저 창에서 다른 사용자의 사서함 열기](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)에 설명된 대로 개별 브라우저 창을 사용하여 다른 지리적 위치에서 *다른 사서함*을 열 수 있습니다.
+- 웹용 Outlook(이전의 Outlook Web App 또는 OWA)에서 지리적 위치를 넘어서 *사서함 폴더*를 공유할 수 없습니다. 예를 들어, 유럽 연합에 있는 사용자는 웹용 Outlook을 사용하여 미국에 있는 사서함에서 공유 폴더를 열 수 없습니다. 그러나 웹용 Outlook 사용자는 [Outlook Web App의 개별 브라우저 창에서 다른 사용자의 사서함 열기](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)에 설명된 대로 별도의 브라우저 창을 사용하여 다른 지리적 위치에서 *다른 사서함*을 열 수 있습니다.
 
   **참고**: 교차 지역 사서함 폴더 공유가 Windows의 Outlook에서 지원됩니다.
 
 - 공용 폴더는 다중 지역 조직에서 지원됩니다. 그러나 공용 폴더가 중앙 지리적 위치에 있어야 합니다. 공용 폴더를 위성의 지리적 위치로 이동할 수 없습니다.
+
+- 다중 지리적 환경에서는 지역 횡단 사서함 감사가 지원되지 않습니다. 예를 들어 사용자가 다른 지리적 위치에서 공유 사서함에 액세스할 수 있는 권한을 할당받더라도 그 사용자가 수행한 사서함 작업이 공유 사서함의 사서함 감사 로그에 기록되지 않습니다. 자세한 내용은 [사서함 감사 관리](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)를 참조하세요.
