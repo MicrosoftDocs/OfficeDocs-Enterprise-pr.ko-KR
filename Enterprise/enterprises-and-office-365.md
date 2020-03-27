@@ -1,7 +1,7 @@
 ---
 title: 엔터프라이즈 조직 및 Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/8/2017
 audience: ITPro
@@ -18,108 +18,108 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: 엔터프라이즈 조직의 Office 365를 계획 하 고 관리 하기 위한 리소스입니다.
-ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840405"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979550"
 ---
-# <a name="enterprise-organizations-and-office-365"></a><span data-ttu-id="aac3b-103">엔터프라이즈 조직 및 Office 365</span><span class="sxs-lookup"><span data-stu-id="aac3b-103">Enterprise organizations and Office 365</span></span>
+# <a name="enterprise-organizations-and-office-365"></a><span data-ttu-id="fe85f-103">엔터프라이즈 조직 및 Office 365</span><span class="sxs-lookup"><span data-stu-id="fe85f-103">Enterprise organizations and Office 365</span></span>
 
-<span data-ttu-id="aac3b-104">IT 전문가가 직원을 보유 하 고 있는 대규모 조직에서는 사용자 환경을 유지 관리 하기 위한 특정 요구 사항 및 표준을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-104">As a larger organization with IT professionals on staff, you have specific requirements and standards for maintaining your environment.</span></span> <span data-ttu-id="aac3b-105">다음은 기업에 맞게 Office 365를 계획 하 고 관리 하는 데 필요한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-105">Here's the information you need to plan for and manage Office 365 for your enterprise.</span></span>
+<span data-ttu-id="fe85f-104">IT 전문가가 직원을 보유 하 고 있는 대규모 조직에서는 사용자 환경을 유지 관리 하기 위한 특정 요구 사항 및 표준을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-104">As a larger organization with IT professionals on staff, you have specific requirements and standards for maintaining your environment.</span></span> <span data-ttu-id="fe85f-105">다음은 기업에 맞게 Office 365를 계획 하 고 관리 하는 데 필요한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-105">Here's the information you need to plan for and manage Office 365 for your enterprise.</span></span>
   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d08b637c-66dc-4f0e-afc2-56da92e99589?autoplay=false]
   
-## <a name="key-resources"></a><span data-ttu-id="aac3b-106">주요 리소스</span><span class="sxs-lookup"><span data-stu-id="aac3b-106">Key resources</span></span>
+## <a name="key-resources"></a><span data-ttu-id="fe85f-106">주요 리소스</span><span class="sxs-lookup"><span data-stu-id="fe85f-106">Key resources</span></span>
 
 ![FastTrack-사전 비전을 위한 눈 기호](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
   
- <span data-ttu-id="aac3b-108">**FastTrack에서 지원 받기**</span><span class="sxs-lookup"><span data-stu-id="aac3b-108">**Get assistance from FastTrack**</span></span>
+ <span data-ttu-id="fe85f-108">**FastTrack에서 지원 받기**</span><span class="sxs-lookup"><span data-stu-id="fe85f-108">**Get assistance from FastTrack**</span></span>
   
-<span data-ttu-id="aac3b-109">FastTrack의 도움말을 사용 하 여 데이터를 계획, 설정 및 Office 365로 마이그레이션합니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-109">Plan, setup, and migrate data to Office 365 with help from FastTrack.</span></span>
+<span data-ttu-id="fe85f-109">FastTrack의 도움말을 사용 하 여 데이터를 계획, 설정 및 Office 365로 마이그레이션합니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-109">Plan, setup, and migrate data to Office 365 with help from FastTrack.</span></span>
   
-[<span data-ttu-id="aac3b-110">FastTrack 받기</span><span class="sxs-lookup"><span data-stu-id="aac3b-110">Get on the FastTrack</span></span>](https://go.microsoft.com/fwlink/?linkid=238431)
+[<span data-ttu-id="fe85f-110">FastTrack 받기</span><span class="sxs-lookup"><span data-stu-id="fe85f-110">Get on the FastTrack</span></span>](https://go.microsoft.com/fwlink/?linkid=238431)
   
 ![보안 및 규정 준수 기호](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   
- <span data-ttu-id="aac3b-112">**보안 &amp; 규정 준수**</span><span class="sxs-lookup"><span data-stu-id="aac3b-112">**Security &amp; Compliance**</span></span>
+ <span data-ttu-id="fe85f-112">**보안 &amp; 규정 준수**</span><span class="sxs-lookup"><span data-stu-id="fe85f-112">**Security &amp; Compliance**</span></span>
   
-<span data-ttu-id="aac3b-113">데이터를 보호 하 고 법률 또는 규제 표준을 준수 합니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-113">Protect your data and comply with legal or regulatory standards.</span></span>
+<span data-ttu-id="fe85f-113">데이터를 보호 하 고 법률 또는 규제 표준을 준수 합니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-113">Protect your data and comply with legal or regulatory standards.</span></span>
   
-[<span data-ttu-id="aac3b-114">Office 365의 &amp; 보안 준수 개요</span><span class="sxs-lookup"><span data-stu-id="aac3b-114">Overview of security &amp; compliance in Office 365</span></span>](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[<span data-ttu-id="fe85f-114">Office 365의 &amp; 보안 준수 개요</span><span class="sxs-lookup"><span data-stu-id="fe85f-114">Overview of security &amp; compliance in Office 365</span></span>](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
 ![클라우드 및 아키텍처 기호](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
- <span data-ttu-id="aac3b-116">**클라우드 아키텍처 이해**</span><span class="sxs-lookup"><span data-stu-id="aac3b-116">**Understand cloud architecture**</span></span>
+ <span data-ttu-id="fe85f-116">**클라우드 아키텍처 이해**</span><span class="sxs-lookup"><span data-stu-id="fe85f-116">**Understand cloud architecture**</span></span>
   
-<span data-ttu-id="aac3b-117">엔터프라이즈 클라우드의 아키텍처 포스터를 탐색 합니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-117">Explore architecture posters about the Enterprise Cloud.</span></span>
+<span data-ttu-id="fe85f-117">엔터프라이즈 클라우드의 아키텍처 포스터를 탐색 합니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-117">Explore architecture posters about the Enterprise Cloud.</span></span>
   
-[<span data-ttu-id="aac3b-118">포스터 가져오기</span><span class="sxs-lookup"><span data-stu-id="aac3b-118">Get posters</span></span>](https://aka.ms/cloudarch)
+[<span data-ttu-id="fe85f-118">포스터 가져오기</span><span class="sxs-lookup"><span data-stu-id="fe85f-118">Get posters</span></span>](https://aka.ms/cloudarch)
   
-<span data-ttu-id="aac3b-119">[![화면 상의 문서를 snagging 물고기 후크 (피싱 공격)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span><span class="sxs-lookup"><span data-stu-id="aac3b-119">[![A fish hook snagging a document on a screen (phishing attack)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span></span>
+<span data-ttu-id="fe85f-119">[![화면 상의 문서를 snagging 물고기 후크 (피싱 공격)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span><span class="sxs-lookup"><span data-stu-id="fe85f-119">[![A fish hook snagging a document on a screen (phishing attack)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span></span>
   
- <span data-ttu-id="aac3b-120">**일반적인 공격에 대 한 자세한 정보**</span><span class="sxs-lookup"><span data-stu-id="aac3b-120">**Learn about common attacks**</span></span>
+ <span data-ttu-id="fe85f-120">**일반적인 공격에 대 한 자세한 정보**</span><span class="sxs-lookup"><span data-stu-id="fe85f-120">**Learn about common attacks**</span></span>
   
-<span data-ttu-id="aac3b-121">Microsoft에서 조직을 보호 하는 방법에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-121">Learn how Microsoft can help protect your organization.</span></span>
+<span data-ttu-id="fe85f-121">Microsoft에서 조직을 보호 하는 방법에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-121">Learn how Microsoft can help protect your organization.</span></span>
   
-[<span data-ttu-id="aac3b-122">포스터 다운로드</span><span class="sxs-lookup"><span data-stu-id="aac3b-122">Download the poster</span></span>](https://aka.ms/commonattacks)
+[<span data-ttu-id="fe85f-122">포스터 다운로드</span><span class="sxs-lookup"><span data-stu-id="fe85f-122">Download the poster</span></span>](https://aka.ms/commonattacks)
   
-## <a name="training-for-it-pros"></a><span data-ttu-id="aac3b-123">IT 전문가를 위한 교육</span><span class="sxs-lookup"><span data-stu-id="aac3b-123">Training for IT Pros</span></span>
+## <a name="training-for-it-pros"></a><span data-ttu-id="fe85f-123">IT 전문가를 위한 교육</span><span class="sxs-lookup"><span data-stu-id="fe85f-123">Training for IT Pros</span></span>
 
 ![LinkedIn 학습의 IT 전문가 교육](media/b951eac7-9d99-42b5-86a3-3058a6445077.png)
   
- <span data-ttu-id="aac3b-125">**IT 전문가 교육**</span><span class="sxs-lookup"><span data-stu-id="aac3b-125">**IT Pro training**</span></span>
+ <span data-ttu-id="fe85f-125">**IT 전문가 교육**</span><span class="sxs-lookup"><span data-stu-id="fe85f-125">**IT Pro training**</span></span>
   
-<span data-ttu-id="aac3b-126">LinkedIn 학습에서 제공 하는 무료 비디오 코스를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-126">Discover free video courses brought to you by LinkedIn Learning.</span></span>
+<span data-ttu-id="fe85f-126">LinkedIn 학습에서 제공 하는 무료 비디오 코스를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-126">Discover free video courses brought to you by LinkedIn Learning.</span></span>
   
-[<span data-ttu-id="aac3b-127">고급 교육</span><span class="sxs-lookup"><span data-stu-id="aac3b-127">Advanced training</span></span>](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
+[<span data-ttu-id="fe85f-127">고급 교육</span><span class="sxs-lookup"><span data-stu-id="fe85f-127">Advanced training</span></span>](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
   
 ![Microsoft 학습 인증: MTA, MCSE, MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
   
- <span data-ttu-id="aac3b-129">**Microsoft 학습**</span><span class="sxs-lookup"><span data-stu-id="aac3b-129">**Microsoft Learning**</span></span>
+ <span data-ttu-id="fe85f-129">**Microsoft 학습**</span><span class="sxs-lookup"><span data-stu-id="fe85f-129">**Microsoft Learning**</span></span>
   
-<span data-ttu-id="aac3b-130">IT 전문가를 위한 Office 365 교육 및 인증</span><span class="sxs-lookup"><span data-stu-id="aac3b-130">Office 365 training and certification for IT Professionals.</span></span>
+<span data-ttu-id="fe85f-130">IT 전문가를 위한 Office 365 교육 및 인증</span><span class="sxs-lookup"><span data-stu-id="fe85f-130">Office 365 training and certification for IT Professionals.</span></span>
   
-[<span data-ttu-id="aac3b-131">인기 있는 교육</span><span class="sxs-lookup"><span data-stu-id="aac3b-131">Popular training</span></span>](https://go.microsoft.com/fwlink/?linkid=826247)
+[<span data-ttu-id="fe85f-131">인기 있는 교육</span><span class="sxs-lookup"><span data-stu-id="fe85f-131">Popular training</span></span>](https://go.microsoft.com/fwlink/?linkid=826247)
   
 ![Microsoft 가상 아카데미](media/1bced083-acd6-4705-9f22-22009166a5d7.png)
   
- <span data-ttu-id="aac3b-133">**가상 아카데미**</span><span class="sxs-lookup"><span data-stu-id="aac3b-133">**Virtual Academy**</span></span>
+ <span data-ttu-id="fe85f-133">**가상 아카데미**</span><span class="sxs-lookup"><span data-stu-id="fe85f-133">**Virtual Academy**</span></span>
   
-<span data-ttu-id="aac3b-134">Microsoft 가상 아카데미 전문가에 게 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="aac3b-134">Learn from the experts at Microsoft Virtual Academy.</span></span>
+<span data-ttu-id="fe85f-134">Microsoft 가상 아카데미 전문가에 게 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="fe85f-134">Learn from the experts at Microsoft Virtual Academy.</span></span>
   
-[<span data-ttu-id="aac3b-135">탐색 코스</span><span class="sxs-lookup"><span data-stu-id="aac3b-135">Browse courses</span></span>](https://go.microsoft.com/fwlink/?linkid=826248)
+[<span data-ttu-id="fe85f-135">탐색 코스</span><span class="sxs-lookup"><span data-stu-id="fe85f-135">Browse courses</span></span>](https://go.microsoft.com/fwlink/?linkid=826248)
   
 ![edX 대학교 인증서](media/c52ff863-94fa-4d6e-b91f-f9057956a7b0.png)
   
- <span data-ttu-id="aac3b-137">**edX 대학교**</span><span class="sxs-lookup"><span data-stu-id="aac3b-137">**edX University**</span></span>
+ <span data-ttu-id="fe85f-137">**edX 대학교**</span><span class="sxs-lookup"><span data-stu-id="fe85f-137">**edX University**</span></span>
   
-<span data-ttu-id="aac3b-138">Office 365 IT 전문가를 위한 자가 진도 온라인 학습 환경</span><span class="sxs-lookup"><span data-stu-id="aac3b-138">Self-paced online learning experiences for Office 365 IT Pros.</span></span>
+<span data-ttu-id="fe85f-138">Office 365 IT 전문가를 위한 자가 진도 온라인 학습 환경</span><span class="sxs-lookup"><span data-stu-id="fe85f-138">Self-paced online learning experiences for Office 365 IT Pros.</span></span>
   
-[<span data-ttu-id="aac3b-139">지금 등록</span><span class="sxs-lookup"><span data-stu-id="aac3b-139">Enroll now</span></span>](https://go.microsoft.com/fwlink/?linkid=852994)
+[<span data-ttu-id="fe85f-139">지금 등록</span><span class="sxs-lookup"><span data-stu-id="fe85f-139">Enroll now</span></span>](https://go.microsoft.com/fwlink/?linkid=852994)
   
-## <a name="featured-articles"></a><span data-ttu-id="aac3b-140">추천 문서</span><span class="sxs-lookup"><span data-stu-id="aac3b-140">Featured articles</span></span>
+## <a name="featured-articles"></a><span data-ttu-id="fe85f-140">추천 문서</span><span class="sxs-lookup"><span data-stu-id="fe85f-140">Featured articles</span></span>
 
-[<span data-ttu-id="aac3b-141">비즈니스용 제품에 대한 고객 지원 센터 - 관리자 도움말</span><span class="sxs-lookup"><span data-stu-id="aac3b-141">Contact support for business products - Admin Help</span></span>](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+[<span data-ttu-id="fe85f-141">비즈니스용 제품에 대한 고객 지원 센터 - 관리자 도움말</span><span class="sxs-lookup"><span data-stu-id="fe85f-141">Contact support for business products - Admin Help</span></span>](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
-[<span data-ttu-id="aac3b-142">Windows 용 새 OneDrive 동기화 클라이언트 배포</span><span class="sxs-lookup"><span data-stu-id="aac3b-142">Deploy the new OneDrive sync client for Windows</span></span>](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
+[<span data-ttu-id="fe85f-142">Windows 용 새 OneDrive 동기화 클라이언트 배포</span><span class="sxs-lookup"><span data-stu-id="fe85f-142">Deploy the new OneDrive sync client for Windows</span></span>](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
   
-[<span data-ttu-id="aac3b-143">Office 365로 여러 전자 메일 계정을 마이그레이션하는 방법</span><span class="sxs-lookup"><span data-stu-id="aac3b-143">Ways to migrate multiple email accounts to Office 365</span></span>](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
+[<span data-ttu-id="fe85f-143">Office 365로 여러 전자 메일 계정을 마이그레이션하는 방법</span><span class="sxs-lookup"><span data-stu-id="fe85f-143">Ways to migrate multiple email accounts to Office 365</span></span>](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
   
-[<span data-ttu-id="aac3b-144">Office 2010 서버 및 클라이언트에서 업그레이드</span><span class="sxs-lookup"><span data-stu-id="aac3b-144">Upgrade from Office 2010 servers and clients</span></span>](upgrade-from-office-2010-servers-and-products.md)
+[<span data-ttu-id="fe85f-144">Office 2010 서버 및 클라이언트에서 업그레이드</span><span class="sxs-lookup"><span data-stu-id="fe85f-144">Upgrade from Office 2010 servers and clients</span></span>](upgrade-from-office-2010-servers-and-products.md)
   
-[<span data-ttu-id="aac3b-145">Office 365 서비스 배포 관리자</span><span class="sxs-lookup"><span data-stu-id="aac3b-145">Deployment advisors for Office 365 services</span></span>](deployment-advisors-for-office-365.md)
+[<span data-ttu-id="fe85f-145">Office 365 서비스 배포 관리자</span><span class="sxs-lookup"><span data-stu-id="fe85f-145">Deployment advisors for Office 365 services</span></span>](deployment-advisors-for-office-365.md)
   
- <span data-ttu-id="aac3b-146">**최종 사용자를 위한 교육**</span><span class="sxs-lookup"><span data-stu-id="aac3b-146">**Training for end users**</span></span>
+ <span data-ttu-id="fe85f-146">**최종 사용자를 위한 교육**</span><span class="sxs-lookup"><span data-stu-id="fe85f-146">**Training for end users**</span></span>
   
-[<span data-ttu-id="aac3b-147">Office 365 생산성 교육</span><span class="sxs-lookup"><span data-stu-id="aac3b-147">Office 365 productivity training</span></span>](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
+[<span data-ttu-id="fe85f-147">Office 365 생산성 교육</span><span class="sxs-lookup"><span data-stu-id="fe85f-147">Office 365 productivity training</span></span>](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
   
-[<span data-ttu-id="aac3b-148">비디오: Office 365 이란?</span><span class="sxs-lookup"><span data-stu-id="aac3b-148">Video: What is Office 365?</span></span>](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
+[<span data-ttu-id="fe85f-148">비디오: Office 365 이란?</span><span class="sxs-lookup"><span data-stu-id="fe85f-148">Video: What is Office 365?</span></span>](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
   
- <span data-ttu-id="aac3b-149">**개발 리소스**</span><span class="sxs-lookup"><span data-stu-id="aac3b-149">**Development resources**</span></span>
+ <span data-ttu-id="fe85f-149">**개발 리소스**</span><span class="sxs-lookup"><span data-stu-id="fe85f-149">**Development resources**</span></span>
   
-[<span data-ttu-id="aac3b-150">Office 개발자 센터</span><span class="sxs-lookup"><span data-stu-id="aac3b-150">Office Dev Center</span></span>](https://go.microsoft.com/fwlink/?linkid=615418)
+[<span data-ttu-id="fe85f-150">Office 개발자 센터</span><span class="sxs-lookup"><span data-stu-id="fe85f-150">Office Dev Center</span></span>](https://go.microsoft.com/fwlink/?linkid=615418)
   
 
