@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605563"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979450"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
@@ -44,11 +44,11 @@ Office 2010, Exchange Server 2010, SharePoint 2010 및 Project Server 2010은 **
 
 Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 
-![Office 2010 클라이언트 및 서버 및 Windows 7 지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Office 2010 클라이언트 및 서버와 Windows 7에 대한 지원 종료 포스터 이미지](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7의 지원 종료를 방지 하기 위해 수행할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 통해 강조 표시 됩니다.
 
-또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
+또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 클라이언트 및 서버 업그레이드 계획
   

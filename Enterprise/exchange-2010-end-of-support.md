@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010는 지원 종료에 거의 도달 했습니다. 이 계획 로드맵을 사용 하 여 Exchange Online으로의 업그레이드를 준비 하거나 Exchange Server 온-프레미스의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605573"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979348"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 지원 로드맵 종료
 
@@ -218,11 +218,11 @@ Exchange 2016에는 이전 버전의 Exchange에 포함 된 모든 기능 및 �
 
 Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Office 2010 클라이언트 및 서버와 Windows 7에 대한 지원 종료 포스터 이미지](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7의 지원 종료를 방지 하기 위해 수행할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 통해 강조 표시 됩니다.
 
-또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
+또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
       
 ## <a name="what-if-i-need-help"></a>도움이 필요한 경우 어떻게 하나요?
 

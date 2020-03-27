@@ -1,7 +1,7 @@
 ---
 title: PerformancePoint Server 2007 지원 종료 로드맵
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity 및 SharePoint Server 2007가 지원 종료에 도달 했습니다. 이 문서를 읽으면 BI 솔루션 업그레이드를 계획할 수 있습니다.
-ms.openlocfilehash: 37ac5425e282efd4a9e8e0fc2a8f6b5c897ec105
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 6be2a5fa650b1eb8cb5b81d1af7a973fd6914c23
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605619"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979510"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 지원 종료 로드맵
 

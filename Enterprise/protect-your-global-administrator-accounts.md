@@ -19,14 +19,17 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841195"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979370"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 전역 관리자 계정 보호
+
+> [!NOTE]
+> 라이선스를 추가 하지 않고 전역 관리자 계정을 만들 수 있습니다.
 
 *이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 

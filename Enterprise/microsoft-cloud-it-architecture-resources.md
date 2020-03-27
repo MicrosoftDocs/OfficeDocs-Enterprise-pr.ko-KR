@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다. Windows 10 및 Office ProPlus가 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.'
-ms.openlocfilehash: f2f466ff0f5f13e2b7e3bfb85f77a7e7961fcde2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844939"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979480"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -137,7 +137,7 @@ Microsoft 서비스 및 플랫폼용 하이브리드 클라우드와 관련하�
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft 365 Enterprise 기본 인프라 포스터의 축소판 이미지](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [온라인으로](https://aka.ms/m365efoundinfraposter) \| [PDF 보기](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | 이 포스터는 목표, 기능 및 도구, 디자인 결정, 구성 결과, 온 보딩, 지속적인 모니터링 및 업데이트 측면에서 기초 인프라의 각 단계를 요약합니다. <br/>| 
+|[![Microsoft 365 Enterprise 기본 인프라 포스터의 축소판 이미지](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [온라인으로](https://aka.ms/m365efoundinfraposter) \| [PDF 보기](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | 이 포스터는 목표, 기능 및 도구, 디자인 결정, 구성 결과, 온 보딩, 지속적인 모니터링 및 업데이트 측면에서 기초 인프라의 각 단계를 요약합니다. <br/>| 
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft 클라우드 테넌트간 마이그레이션에 대한 아키텍처 접근 방식 
 이 시리즈에서는 합병, 인수, 매각 및 기타 시나리오를 통해 새로운 클라우드 테넌트로 마이그레이션 할 수 있는 몇 가지 아키텍처 접근 방식에 대해 설명합니다. 이 항목에는 계획을 위한 시작점 지침을 제공합니다.
