@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다. Windows 10 및 Office ProPlus가 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.'
-ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
+ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979480"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43037805"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
@@ -46,6 +46,7 @@ ms.locfileid: "42979480"
 - **[Microsoft 365 Enterprise 솔루션 시리즈](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [IT 설계자용 Microsoft 365의 Microsoft Teams 및 관련 생산성 서비스](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
     - [IT 설계자용 Microsoft 365의 그룹](#groups-in-microsoft-365-for-it-architects)
+    - [다중 영역 조직에 대한 보안 및 정보 보호](#security-and-information-protection-for-multi-region-organizations)
     - [Office 365용 ID 및 디바이스 보호](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Office 365의 파일 보호 솔루션](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     - [GDPR에 대한 Office 365 정보 보호](#office-365-information-protection-for-gdpr)
@@ -165,6 +166,14 @@ IT 설계자가 Microsoft 365의 그룹에 대해 알아야 하는 점
 |**항목**|**설명**|
 |:-----|:-----|
 |[![그룹 인포그래픽용 축소판 이미지](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |이러한 일러스트레이션은 다양한 그룹의 종류, 그룹을 만들고 관리하는 방법, 몇 가지 관리 권장 사항에 대해 자세한 설명을 제공합니다.|
+
+### <a name="security-and-information-protection-for-multi-region-organizations"></a>다중 영역 조직에 대한 보안 및 정보 보호
+단일 Microsoft 365 테넌트가 있는 다중 영역 조직에 대한 보안 및 정보 보호
+
+|**항목**|**설명**|
+|:-----|:-----|
+|[![다중 영역 인포그래픽의 축소판 이미지](media/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx) |글로벌 조직에 단일 Microsoft 365 테넌트의 사용은 많은 이유로 최선의 선택과 경험이 될 것입니다. 하지만 많은 설계자들이 다양한 영역에 걸쳐 보안 및 정보 보호 목적을 충족하기 위한 방법을 고심하고 있습니다. 이 항목의 집합은 권장 사항을 제공합니다. |
+
 
    
 <a name="BKMK_O365IDP"></a>
