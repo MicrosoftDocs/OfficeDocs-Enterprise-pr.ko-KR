@@ -81,7 +81,10 @@
 #### [Mac용 Office의 네트워크 요청](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 #### [웹 서비스에 포함되지 않는 추가 끝점](additional-office365-ip-addresses-and-urls.md)
-### [중국 사용자를 위한 Office 365 성능 최적화](office-365-networking-china.md)
+### 원격 사용자에 대한 Office 365 연결 최적화
+#### [개요: VPN 분할 터널링](office-365-vpn-split-tunnel.md)
+#### [VPN 분할 터널링 구현](office-365-vpn-implement-split-tunnel.md)
+#### [중국 사용자를 위한 Office 365 최적화](office-365-networking-china.md)
 ### [콘텐츠 배달 네트워크](content-delivery-networks.md)
 ### [Office 365 서비스의 IPv6 지원](ipv6-support.md)
 ### [NAT 지원(Office 365)](nat-support-with-office-365.md)
