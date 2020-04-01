@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Office 365 IdFix 도구를 다운로드 하 고 실행 하 여 AD DS (Active Directory 도메인 서비스)를 Office 365에 동기화 하기 전에이를 정리 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844619"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068780"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix 도구 다운로드 및 실행
 
@@ -74,15 +74,15 @@ IdFix를 실행 하는 데 사용 하는 사용자 계정에는 AD DS 도메인�
   
 1. IdFix 도구를 실행 하려는 컴퓨터에 로그인 합니다.
     
-2. [Idfix DirSync 오류 수정 도구](https://go.microsoft.com/fwlink/?linkid=867219)에 대 한 Microsoft 다운로드 사이트로 이동 합니다.
+2. [Idfix DirSync 오류 수정 도구](https://github.com/microsoft/idfix) 사이트로 이동 합니다.
     
-3. Zip 파일을 다운로드 하 여 엽니다.
+3. **ClickOnce 실행** 섹션에서 **시작** 을 클릭 하 여 zip 파일을 다운로드 합니다. Zip 파일을 엽니다.
     
-3. **Idfix** 창에서 **추출을**선택한 다음 **모두 압축을 풉니다**. 기본적으로 IdFix는로 `C:\Users\<your user name>\Documents\IdFix`추출 됩니다. 
+4. **Idfix** 창에서 **추출을**선택한 다음 **모두 압축을 풉니다**. 기본적으로 IdFix는로 `C:\Users\<your user name>\Documents\IdFix`추출 됩니다. 
     
-6. **추출**을 선택합니다.
+5. **추출**을 선택합니다.
 
-이러한 지침은 Windows Server 2016를 실행 하는 서버에서 Internet Explorer를 사용 하 여 수행 했습니다. 다른 버전의 Windows 나 다른 브라우저를 사용 하는 경우에는 단계가 다를 수 있습니다.
+현재 버전의 Windows와 인터넷 브라우저에 따라 단계가 다를 수 있습니다.
     
 ## <a name="run-the-idfix-tool"></a>IdFix 도구 실행
 

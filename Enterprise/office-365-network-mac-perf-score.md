@@ -3,7 +3,7 @@ title: Office 365 네트워크 평가 (미리 보기)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 네트워크 평가 (미리 보기)
-ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 280046487b116172430df1d15d4bc671fa708e68
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890371"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081690"
 ---
 # <a name="office-365-network-assessment-preview"></a>Office 365 네트워크 평가 (미리 보기)
 
-Microsoft 365 관리 센터의 Microsoft 365 페이지 연결에서 **네트워크 평가** 는 많은 네트워크 성능 메트릭 집계를 1-100의 포인트 값으로 표시 되는 엔터프라이즈 네트워크 상태의 스냅숏으로 정제 합니다. 네트워크 평가는 전체 테 넌 트와 사용자가 테 넌 트에 연결 하는 각 지리적 위치에 대해 범위가 지정 되어 Office 365 관리자에 게 기업 네트워크 상태를 즉시 파악 하 고 신속 하 게 gestalt 수 있는 방법을 제공 합니다. 모든 전역 사무실 위치에 대 한 자세한 보고서로 이동 합니다.
+Microsoft 365 관리 센터의 Microsoft 365 페이지 연결에서 **네트워크 평가** 는 많은 네트워크 성능 메트릭 집계를 1-100의 포인트 값으로 표시 되는 엔터프라이즈 네트워크 상태의 스냅숏으로 정제 합니다. 네트워크 평가는 전체 테 넌 트와 사용자가 테 넌 트에 연결 하는 각 지리적 위치에 대해 범위가 지정 되므로 Office 365 관리자는 회사의 네트워크 상태를 즉시 파악 하 고 전체 사무실 위치에 대 한 자세한 보고서를 신속 하 게 드릴 다운할 수 있는 방법을 제공 합니다.
 
 Network 평가 점수 값은 표시 되는 시간에 실시간으로 컴파일된 대기 시간, 대역폭, 다운로드 속도 및 연결 품질 메트릭에 대 한 평균 측정 단위입니다. Microsoft 소유의 네트워크에 대 한 성능 메트릭은 평가 결과가 모호 하 고 회사 네트워크에 한정 되도록 하기 위해 이러한 측정값에서 제외 됩니다.
 
 ![네트워크 평가 값](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-아주 낮은 네트워크 평가 값은 Office 365 클라이언트에서 테 넌 트에 연결 하거나 응답성이 뛰어난 사용자 환경을 유지 관리 하는 데 상당한 문제가 있음을 의미 하 고, 값이 높으면 진행 중인 성능이 거의 없는 네트워크를 올바르게 구성 했음을 나타냅니다. 발행. 값이 80%는 네트워크 성능으로 인 한 Office 365 연결 또는 응답성에 대 한 일반 사용자 불만을 수신 하지 않을 것으로 예상 되는 정상적인 기준을 나타냅니다. 반복적으로 네트워크 연결이 개선 됨에 따라이 값은 사용자 환경에 따라 증가 합니다.
+아주 낮은 네트워크 평가 값은 Office 365 클라이언트에 테 넌 트에 연결 하는 데 중요 한 문제가 있거나 응답성이 뛰어난 사용자 환경을 유지 관리 하는 것을 의미 하 고, 값이 높으면 성능 문제가 거의 없이 네트워크가 올바르게 구성 된 것을 나타냅니다. 값이 80%는 네트워크 성능으로 인 한 Office 365 연결 또는 응답성에 대 한 일반 사용자 불만을 수신 하지 않을 것으로 예상 되는 정상적인 기준을 나타냅니다. 반복적으로 네트워크 연결이 개선 됨에 따라이 값은 사용자 환경에 따라 증가 합니다.
 
 >[!IMPORTANT]
 >네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 된 Office 365 테 넌 트에만 사용할 수 있습니다.
@@ -70,4 +70,4 @@ Microsoft 팀의 경우 네트워크 품질은 UDP 대기 시간, UDP 지터 및
 
 [M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 네트워크 Insights 개인 정보 및 사용 약관 (미리 보기)](office-365-network-mac-perf-privacy.md)
+[Office 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)

@@ -3,7 +3,7 @@ title: Office 365 네트워크 Insights (미리 보기)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 네트워크 Insights (미리 보기)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890634"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081710"
 ---
 # <a name="office-365-network-insights-preview"></a>Office 365 네트워크 Insights (미리 보기)
 
@@ -40,7 +40,7 @@ Insights는 사무실 사무소에 대 한 네트워크 perimeters 디자인에 
 
 ## <a name="backhauled-network-egress"></a>Backhauled 네트워크 송신
 
-이 통찰력은 네트워크 insights 서비스가 지정 된 사용자 위치에서 네트워크 송신으로의 거리가 500 마일 (800 킬로미터) 보다 크면 Office 365 트래픽이 일반 인터넷에 지에 backhauled 됨을 나타내는 경우에 표시 됩니다. 장치 또는 프록시
+이 통찰력은 네트워크 insights 서비스가 지정 된 사용자 위치에서 네트워크 송신으로의 거리가 500 마일 (800 킬로미터) 보다 크면 Office 365 트래픽이 일반 인터넷에 지 장치 또는 프록시로 backhauled는 것을 의미 합니다.
 
 이 통찰력은 일부 요약 보기에서 "Egress"로 간략 한 것입니다.
 
@@ -50,7 +50,7 @@ Insights는 사무실 사무소에 대 한 네트워크 perimeters 디자인에 
 
 이는 사무실 위치와 네트워크 송신 사이의 거리가 500 마일 (800 킬로미터) 보다 큼을 식별 합니다. Office 위치는 난독 처리 된 클라이언트 컴퓨터 위치로 식별 되며 네트워크 송신 위치는 역방향 IP 주소를 위치 데이터베이스에 사용 하 여 식별 됩니다. 컴퓨터에서 Windows 위치 서비스를 사용 하지 않도록 설정 하면 office 위치가 정확 하지 않을 수 있습니다. 역방향 IP 주소 데이터베이스 정보가 부정확 한 경우 네트워크 송신 위치가 부정확 하 게 될 수 있습니다.
 
-이러한 통찰력에 대 한 자세한 내용은 사무실 위치, 현재 네트워크 송신 위치, egress 위치의 관련성, 위치와 현재 송신 지점 간의 거리, 그리고 해당 날짜 조건이 처음 검색 되었으며 조건이 해결 된 날짜입니다.
+이러한 통찰력에 대 한 자세한 내용은 사무실 위치, 현재 네트워크 송신 위치, egress 위치의 관련성, 위치 및 현재 송신 지점 간의 거리, 조건이 처음 검색 된 날짜, 조건이 해결 된 날짜 등을 포함 합니다.
 
 ### <a name="what-should-i-do"></a>제가 뭘 해야 하나요?
 
@@ -148,3 +148,5 @@ Exchange Online 서비스 프런트 도어를 사용 하는 경우에는 회사 
 [Office 365 네트워크 평가 (미리 보기)](office-365-network-mac-perf-score.md)
 
 [M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Office 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
