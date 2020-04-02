@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 디렉터리 동기화 및이 방법을 사용할 경우의 장기적인 이점을 사용 하 여 사용자를 Office 365에 프로 비전 하도록 준비 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841175"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093442"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365에 대 한 디렉터리 동기화 준비
 
@@ -113,7 +113,7 @@ AD DS 사용자 중 일부에 중복 된 특성이 하나 이상 있는 경우�
   - 특성 값은 디렉터리 내에서 고유 해야 합니다.
   
     > [!NOTE]
-    > 동기화 된 이름에서 밑줄 ("_")은이 특성의 원래 값에 잘못 된 문자가 있음을 나타냅니다. 원래 값에는 문자, #, $,%, &, ', \*' +,-,,, =,?, ^, _, ', {, |,} 및 ~ 등의 문자를 포함할 수 있습니다. 이 특성에 대 한 자세한 내용은 [Exchange alias 특성](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)을 참조 하십시오.
+    > 동기화 된 이름에서 밑줄 ("_")은이 특성의 원래 값에 잘못 된 문자가 있음을 나타냅니다. 이 특성에 대 한 자세한 내용은 [Exchange alias 특성](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)을 참조 하십시오.
     >
       
 - **proxyAddresses**
