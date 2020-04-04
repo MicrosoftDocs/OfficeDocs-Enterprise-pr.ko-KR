@@ -3,7 +3,7 @@ title: Office 365 VPN 분할 터널링 구현
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/1/2020
+ms.date: 4/2/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 VPN 분할 터널링을 구현하는 방법
-ms.openlocfilehash: 028b2f35d1398f432c950c86330c2ee531cea02a
-ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
+ms.openlocfilehash: a0abc94d32887867ae11a0e3c768538bc223b583
+ms.sourcegitcommit: 7eb8b3b55a348eac8f03c97533b5d89388ed0ada
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43093452"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117924"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Office 365 VPN 분할 터널링 구현
 
@@ -226,7 +226,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 특정 시나리오에서 Teams 클라이언트 구성과 관련이 없는 경우가 많지만, 미디어 트래픽은 올바른 경로를 사용하는 경우에도 계속 VPN 터널을 통과합니다. 이 시나리오가 발생하는 경우 방화벽 규칙을 사용하여 Teams IP 서브넷 또는 포트에서 VPN을 사용하지 못하도록 차단하면 됩니다.
 
-현재 이 작업이 100%의 모든 시나리오에서 작동하도록 하려면 IP 범위 **13.107.60.1/32**를 추가해야 합니다. **2020년 3월 30일** 릴리스의 최신 Teams 클라이언트 업데이트로 인해 이 작업은 더 이상 필요하지 않을 것입니다.
+현재 이 작업이 100%의 모든 시나리오에서 작동하도록 하려면 IP 범위 **13.107.60.1/32**를 추가해야 합니다. **2020년 4월** 초 릴리스의 최신 Teams 클라이언트 업데이트로 인해 이 작업은 더 이상 필요하지 않을 것입니다. 향후 더 상세한 내용이 추가되면 이 문서에 빌드 세부 정보를 업데이트하겠습니다.
 
 신호 트래픽은 HTTPS를 통해 수행되고 미디어 트래픽만큼 대기 시간에 민감하지 않으며 URL/IP 데이터에서 **허용**으로 표시되므로 원하는 경우 VPN 클라이언트를 통해 안전하게 라우팅할 수 있습니다.
 
@@ -270,6 +270,7 @@ Teams가 음성 또는 _STUN(NAT의 세션 탐색 유틸리티)_ 증폭 공격�
 
 - **Cisco Anyconnect**: [Office365의 Anyconnect 분할 터널 최적화](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [VPN 분할 터널을 통한 Office 365 트래픽 최적화 액세스 경로 제외](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM**: [BIG-IP APM을 사용하는 경우 VPN을 통한 원격 액세스의 Office 365 트래픽 최적화](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 
 ## <a name="faq"></a>FAQ
 
