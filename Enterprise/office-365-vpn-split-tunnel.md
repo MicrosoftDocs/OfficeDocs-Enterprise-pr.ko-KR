@@ -3,7 +3,7 @@ title: '개요: Office 365의 VPN 분할 터널링'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365에서 VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결을 최적화하는 지침입니다.
-ms.openlocfilehash: 3ba52ecdb6e22c234cc0f208ae3ca40b3cb06b6d
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034886"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131437"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결 최적화
 <!---
@@ -106,6 +106,8 @@ _그림 3: Office 365 예외가 정의된 VPN 분할 터널 솔루션이 서비�
 [중국 사용자를 위한 Office 365 성능 최적화](office-365-networking-china.md)
 
 [보안 전문가와 IT가 오늘날의 고유한 원격 작업 시나리오에서 최신 보안 제어를 달성할 수 있는 다른 방법(Microsoft 보안팀 블로그)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Microsoft에서 VPN 성능 향상: Windows 10 VPN 프로필을 사용하여 자동 연결 허용](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [VPN에서 실행: Microsoft가 원격 인력을 연결 상태로 유지하는 방법](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
