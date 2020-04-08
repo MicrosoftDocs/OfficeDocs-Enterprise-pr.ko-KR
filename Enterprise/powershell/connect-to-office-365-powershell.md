@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 센터 작업을 수행합니다.
-ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
-ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
+ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
+ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068760"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170616"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -163,9 +163,8 @@ MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 �
     
 - **"Get-Item: path를 찾을 수 없습니다" 라는 오류가 표시 되는 경우 다음 명령을 사용 합니다.** 
 
-  ```powershell
+```powershell
   (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
- 
 ```
 
 ## <a name="see-also"></a>참고 항목
