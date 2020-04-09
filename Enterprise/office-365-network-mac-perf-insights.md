@@ -1,5 +1,5 @@
 ---
-title: Office 365 네트워크 Insights (미리 보기)
+title: Microsoft 365 Network Insights (미리 보기)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 네트워크 Insights (미리 보기)
-ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 Network Insights (미리 보기)
+ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081710"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185759"
 ---
-# <a name="office-365-network-insights-preview"></a>Office 365 네트워크 Insights (미리 보기)
+# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (미리 보기)
 
-**Network insights** 는 Office 365 테 넌 트에서 수집 된 live 성능 메트릭 이며, 테 넌 트의 관리 사용자만 볼 수 있습니다. Insights는 Microsoft 365 관리 센터에 표시 됩니다 <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+**Network insights** 는 Microsoft 365 테 넌 트에서 수집 된 live 성능 메트릭 이며, 테 넌 트의 관리 사용자만 볼 수 있습니다. Insights는 Microsoft 365 관리 센터에 표시 됩니다 <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
 Insights는 사무실 사무소에 대 한 네트워크 perimeters 디자인에 도움을 주기 위한 것입니다. 각 통찰력은 사용자가 테 넌 트에 액세스 하는 각 지리적 위치에 대 한 특정 일반적인 문제의 성능 특성에 대 한 실시간 세부 정보를 제공 합니다.
 
@@ -36,11 +36,11 @@ Insights는 사무실 사무소에 대 한 네트워크 perimeters 디자인에 
 - [SharePoint 전면 도어에서 다운로드 속도 낮음](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 된 Office 365 테 넌 트에만 사용할 수 있습니다.
+>네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 되어 있는 Microsoft 365 테 넌 트에만 사용할 수 있습니다.
 
 ## <a name="backhauled-network-egress"></a>Backhauled 네트워크 송신
 
-이 통찰력은 네트워크 insights 서비스가 지정 된 사용자 위치에서 네트워크 송신으로의 거리가 500 마일 (800 킬로미터) 보다 크면 Office 365 트래픽이 일반 인터넷에 지 장치 또는 프록시로 backhauled는 것을 의미 합니다.
+이 통찰력은 네트워크 insights 서비스가 지정 된 사용자 위치에서 네트워크 송신으로의 거리가 500 마일 (800 킬로미터) 보다 크면 Microsoft 365 트래픽이 일반 인터넷에 지 장치 또는 프록시로 backhauled는 것을 의미 합니다.
 
 이 통찰력은 일부 요약 보기에서 "Egress"로 간략 한 것입니다.
 
@@ -54,7 +54,7 @@ Insights는 사무실 사무소에 대 한 네트워크 perimeters 디자인에 
 
 ### <a name="what-should-i-do"></a>제가 뭘 해야 하나요?
 
-이에 대 한 자세한 내용은 연결을 통해 최적의 Microsoft 글로벌 네트워크 및 가장 가까운 Office 365 서비스 전면 도어의 경로를 지정할 수 있도록 네트워크를 office 위치에 더 가깝게 egress 것을 권장 합니다. 또한 사용자에 게 네트워크를 닫도록 함 office 위치도 사용 하면 향후에도 Microsoft는 네트워크의 현재 상태와 Office 365 서비스 전면 도어를 모두 확장 하는 동시에 성능을 향상 시킬 수 있습니다.
+이에 대 한 자세한 내용은 연결을 통해 최적의 microsoft 글로벌 네트워크 및 가장 가까운 Microsoft 365 서비스 전면 도어로 경로를 지정할 수 있도록 네트워크를 office 위치에 더 가깝게 egress 것을 권장 합니다. 또한 사용자에 게 네트워크를 닫도록 네트워크가 송신 되도록 설정 하면 향후에도 Microsoft는 네트워크의 현재 상태와 Microsoft 365 서비스 전면 도어를 모두 확장 하는 동시에 성능을 향상 시킬 수 있습니다.
 
 이 문제를 해결 하는 방법에 대 한 자세한 내용은 [Office 365 네트워크 연결 원리](office-365-network-connectivity-principles.md)에서 [로컬로 Egress 네트워크 연결](office-365-network-connectivity-principles.md#egress-network-connections-locally) 을 참조 하십시오.
 
@@ -68,11 +68,11 @@ Insights는 사무실 사무소에 대 한 네트워크 perimeters 디자인에 
 
 ### <a name="what-does-this-mean"></a>시나리오
 
-이러한 통찰력은이 사무실 위치와 같은 구/군/시에 Office 365 고객의 집계 성능을 검사 합니다. 이러한 통찰력은 사용자의 평균 대기 시간이 인접 한 테 넌 트의 평균 대기 시간 보다 10% 보다 많은 경우에 표시 됩니다.
+이러한 통찰력은이 사무실 위치와 같은 도시의 Microsoft 365 고객의 집계 성과를 검사 합니다. 이러한 통찰력은 사용자의 평균 대기 시간이 인접 한 테 넌 트의 평균 대기 시간 보다 10% 보다 많은 경우에 표시 됩니다.
 
 ### <a name="what-should-i-do"></a>제가 뭘 해야 하나요?
 
-회사 네트워크 또는 ISP의 대기 시간, 병목 현상 또는 아키텍처 디자인 문제를 포함 하 여 이러한 상황이 발생 하는 여러 가지 이유가 있을 수 있습니다. 사무실 네트워크와 현재 Office 365 전면 도어 간의 경로에 있는 각 홉 사이의 대기 시간을 검사 합니다. 자세한 내용은 [Office 365 네트워크 연결 원리](office-365-network-connectivity-principles.md)를 참조 하세요.
+회사 네트워크 또는 ISP의 대기 시간, 병목 현상 또는 아키텍처 디자인 문제를 포함 하 여 이러한 상황이 발생 하는 여러 가지 이유가 있을 수 있습니다. Office 네트워크와 현재 Microsoft 365 전면 도어 간의 경로에 있는 각 홉 사이의 대기 시간을 검사 합니다. 자세한 내용은 [Office 365 네트워크 연결 원리](office-365-network-connectivity-principles.md)를 참조 하세요.
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>최적이 아닌 Exchange Online 서비스 전면 도어 사용
 
@@ -122,7 +122,7 @@ Exchange Online 서비스 프런트 도어를 사용 하는 경우에는 회사 
 
 ## <a name="china-user-optimal-network-egress"></a>중국 사용자 최적 네트워크 송신
 
-이 정보는 조직에서 다른 지리적 위치에 있는 Office 365 테 넌 트에 연결 하는 사용자가 있는 경우에 표시 됩니다. 
+이 정보는 조직에서 다른 지리적 위치에 있는 Microsoft 365 테 넌 트에 연결 하는 사용자가 있는 경우에 표시 됩니다. 
 
 ### <a name="what-does-this-mean"></a>시나리오
 
@@ -145,8 +145,8 @@ Exchange Online 서비스 프런트 도어를 사용 하는 경우에는 회사 
 
 [Microsoft 365 관리 센터의 네트워크 성능 권장 사항 (미리 보기)](office-365-network-mac-perf-overview.md)
 
-[Office 365 네트워크 평가 (미리 보기)](office-365-network-mac-perf-score.md)
+[Microsoft 365 네트워크 평가 (미리 보기)](office-365-network-mac-perf-score.md)
 
-[M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
+[M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
+[Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
