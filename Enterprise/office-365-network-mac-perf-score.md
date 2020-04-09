@@ -1,5 +1,5 @@
 ---
-title: Office 365 네트워크 평가 (미리 보기)
+title: Microsoft 365 네트워크 평가 (미리 보기)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,30 +13,30 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 네트워크 평가 (미리 보기)
-ms.openlocfilehash: 280046487b116172430df1d15d4bc671fa708e68
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 네트워크 평가 (미리 보기)
+ms.openlocfilehash: 2ee18f50e841982e8f677964d2e7e57d95a209d8
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081690"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185749"
 ---
-# <a name="office-365-network-assessment-preview"></a>Office 365 네트워크 평가 (미리 보기)
+# <a name="microsoft-365-network-assessment-preview"></a>Microsoft 365 네트워크 평가 (미리 보기)
 
-Microsoft 365 관리 센터의 Microsoft 365 페이지 연결에서 **네트워크 평가** 는 많은 네트워크 성능 메트릭 집계를 1-100의 포인트 값으로 표시 되는 엔터프라이즈 네트워크 상태의 스냅숏으로 정제 합니다. 네트워크 평가는 전체 테 넌 트와 사용자가 테 넌 트에 연결 하는 각 지리적 위치에 대해 범위가 지정 되므로 Office 365 관리자는 회사의 네트워크 상태를 즉시 파악 하 고 전체 사무실 위치에 대 한 자세한 보고서를 신속 하 게 드릴 다운할 수 있는 방법을 제공 합니다.
+Microsoft 365 관리 센터의 Microsoft 365 페이지 연결에서 **네트워크 평가** 는 많은 네트워크 성능 메트릭 집계를 1-100의 포인트 값으로 표시 되는 엔터프라이즈 네트워크 상태의 스냅숏으로 정제 합니다. 네트워크 평가는 전체 테 넌 트와 사용자가 테 넌 트에 연결 하는 각 지리적 위치에 대해 범위가 지정 되므로 Microsoft 365 관리자는 회사의 네트워크 상태를 신속 하 게 파악 하 고 전체 사무실 위치에 대 한 자세한 보고서로 드릴 다운할 수 있는 쉬운 방법을 제공 합니다.
 
 Network 평가 점수 값은 표시 되는 시간에 실시간으로 컴파일된 대기 시간, 대역폭, 다운로드 속도 및 연결 품질 메트릭에 대 한 평균 측정 단위입니다. Microsoft 소유의 네트워크에 대 한 성능 메트릭은 평가 결과가 모호 하 고 회사 네트워크에 한정 되도록 하기 위해 이러한 측정값에서 제외 됩니다.
 
 ![네트워크 평가 값](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-아주 낮은 네트워크 평가 값은 Office 365 클라이언트에 테 넌 트에 연결 하는 데 중요 한 문제가 있거나 응답성이 뛰어난 사용자 환경을 유지 관리 하는 것을 의미 하 고, 값이 높으면 성능 문제가 거의 없이 네트워크가 올바르게 구성 된 것을 나타냅니다. 값이 80%는 네트워크 성능으로 인 한 Office 365 연결 또는 응답성에 대 한 일반 사용자 불만을 수신 하지 않을 것으로 예상 되는 정상적인 기준을 나타냅니다. 반복적으로 네트워크 연결이 개선 됨에 따라이 값은 사용자 환경에 따라 증가 합니다.
+아주 낮은 네트워크 평가 값은 Microsoft 365 클라이언트에 테 넌 트에 연결 하는 중요 한 문제가 있거나 응답성이 뛰어난 사용자 환경을 유지 관리 하는 반면, 값이 높으면 성능 문제가 거의 없는 네트워크를 올바르게 구성한 것을 의미 합니다. 값이 80%는 네트워크 성능으로 인 한 Microsoft 365 연결 또는 응답성에 대 한 일반 사용자 불만을 수신 하지 않을 것으로 예상 되는 정상적인 기준을 나타냅니다. 반복적으로 네트워크 연결이 개선 됨에 따라이 값은 사용자 환경에 따라 증가 합니다.
 
 >[!IMPORTANT]
->네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 된 Office 365 테 넌 트에만 사용할 수 있습니다.
+>네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 되어 있는 Microsoft 365 테 넌 트에만 사용할 수 있습니다.
 
 ## <a name="network-assessment-panel"></a>네트워크 평가 패널
 
-테 넌 트 또는 특정 사무실 위치로 범위가 지정 되었는지 여부에 관계 없이 각 네트워크 평가에는 평가에 대 한 세부 정보가 포함 된 패널이 표시 됩니다. 이 패널에는 평가에 대 한 가로 막대형 차트와 측정 데이터를 받은 작업을 포함 하는 각 구성 요소 작업의 총 지점에 대 한 완료율이 표시 됩니다. Office 위치 네트워크 평가의 경우 office 위치와 같은 도시의 데이터를 보고 한 모든 Office 365 클라이언트의 중앙값을 나타내는 벤치 마크가 표시 됩니다.
+테 넌 트 또는 특정 사무실 위치로 범위가 지정 되었는지 여부에 관계 없이 각 네트워크 평가에는 평가에 대 한 세부 정보가 포함 된 패널이 표시 됩니다. 이 패널에는 평가에 대 한 가로 막대형 차트와 측정 데이터를 받은 작업을 포함 하는 각 구성 요소 작업의 총 지점에 대 한 완료율이 표시 됩니다. Office 위치 네트워크 평가의 경우 office 위치와 같은 도시의 데이터를 보고 한 모든 Microsoft 365 클라이언트의 중앙값을 나타내는 벤치 마크가 표시 됩니다.
 
 ![네트워크 평가 값 예](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
@@ -48,7 +48,7 @@ Network 평가 점수 값은 표시 되는 시간에 실시간으로 컴파일�
 
 네트워크 평가는 사무실의 네트워크 경계를 Microsoft 네트워크로의 디자인을 측정 합니다. 네트워크 경계에 대 한 향상은 각 사무실 위치에서 또는 네트워크 연결이 집계 되는 위치에 있어 여러 위치에 영향을 주는 향상 된 기능을 제공 하는 것이 좋습니다.
 
-네트워크 성능 개요 페이지에는 전체 Office 365 테 넌 트에 대 한 네트워크 평가 값과 해당 위치의 요약 페이지에 있는 검색 된 각 사무실 위치에 대 한 특정 값이 표시 됩니다.
+네트워크 성능 개요 페이지에는 전체 Microsoft 365 테 넌 트에 대 한 네트워크 평가 값과 해당 위치의 요약 페이지에 있는 검색 된 각 사무실 위치에 대 한 특정 값이 표시 됩니다.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -66,8 +66,8 @@ Microsoft 팀의 경우 네트워크 품질은 UDP 대기 시간, UDP 지터 및
 
 [Microsoft 365 관리 센터의 네트워크 성능 권장 사항 (미리 보기)](office-365-network-mac-perf-overview.md)
 
-[Office 365 network performance insights (미리 보기)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
 
-[M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
+[M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
+[Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
