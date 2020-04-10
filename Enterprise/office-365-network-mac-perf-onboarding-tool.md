@@ -1,9 +1,9 @@
 ---
-title: M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)
+title: M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/08/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)
-ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
+ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081700"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185739"
 ---
-# <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Office 365 네트워크 온 보 딩 도구 (미리 보기)
+# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
 
-Office 365 네트워크 온 보 딩 도구는에 <https://connectivity.office.com>있습니다. 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
+Microsoft 365 네트워크 온 보 딩 도구는에 <https://connectivity.office.com>있습니다. 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
 
-Microsoft 365 관리 센터의 네트워크 insights는 Office 365 테 넌 트에 대 한 제품 측정을 기반으로 합니다. 비교에서는 Office 365 네트워크 온 보 딩 도구의 네트워크 insights 도구에서 로컬로 실행 됩니다. 제품에서 수행할 수 있는 테스트는 제한 되며 사용자에 대 한 로컬 테스트를 실행 하 여 더 많은 데이터를 수집할 수 있습니다. Microsoft 365 관리 센터의 네트워크 insights에서 특정 사무실 위치에 Office 365 사용에 대 한 네트워킹 문제가 있음을 보여 줍니다. Office 365 네트워크 온 보 딩 도구를 통해 권장 되는 네트워크 성능 향상 작업으로 인해 해당 문제의 근본적인 원인을 확인할 수 있습니다.
+Microsoft 365 관리 센터의 네트워크 insights는 Microsoft 365 테 넌 트에 대 한 제품 측정을 기반으로 합니다. 비교 시 Microsoft 365 네트워크 온 보 딩 도구의 네트워크 insights 도구에서 로컬로 실행 됩니다. 제품에서 수행할 수 있는 테스트는 제한 되며 사용자에 대 한 로컬 테스트를 실행 하 여 더 많은 데이터를 수집할 수 있습니다. Microsoft 365 관리 센터의 네트워크 insights에서 특정 사무실 위치에 Microsoft 365 사용에 대 한 네트워킹 문제가 있음을 보여 줍니다. Microsoft 365 네트워크 온 보 딩 도구를 통해 권장 되는 네트워크 성능 개선 작업으로 인해 해당 문제의 근본적인 원인을 확인할 수 있습니다.
 
-Microsoft 365 관리 센터의 각 사무실 위치에 대해 네트워킹 품질 상태를 평가할 수 있으며 Office 365 네트워크 온 보 딩 도구를 기반으로 하는 테스트를 배포한 후 더 자세한 내용을 확인할 수 있는 방법을 함께 사용 하는 것이 좋습니다.
+Microsoft 365 관리 센터의 각 사무실 위치에 대해 네트워킹 품질 상태를 평가할 수 있으며, Microsoft 365 네트워크 온 보 딩 도구를 기반으로 하는 테스트를 배포한 후 더 자세한 내용을 확인할 수 있는 방법을 함께 사용 하는 것이 좋습니다.
 
 >[!IMPORTANT]
->네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 된 Office 365 테 넌 트에만 사용할 수 있습니다.
+>네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 되어 있는 Microsoft 365 테 넌 트에만 사용할 수 있습니다.
 
 ## <a name="the-advanced-tests-client-application"></a>고급 테스트 클라이언트 응용 프로그램
 
-Office 365 네트워크 온 보 딩 도구는 두 부분으로 구성 됩니다. 웹 사이트가 <https://connectivity.office.com> 있고 다운로드 가능한 Windows 클라이언트 응용 프로그램이 있습니다. 다운로드 가능한 클라이언트는 고급 네트워크 연결 테스트를 실행 하 고 대부분의 테스트를 실행 해야 합니다.
+Microsoft 365 네트워크 온 보 딩 도구는 두 부분으로 구성 됩니다. 웹 사이트가 <https://connectivity.office.com> 있고 다운로드 가능한 Windows 클라이언트 응용 프로그램이 있습니다. 다운로드 가능한 클라이언트는 고급 네트워크 연결 테스트를 실행 하 고 대부분의 테스트를 실행 해야 합니다.
 
 웹 사이트에서 고급 클라이언트 테스트를 실행할 수 있으며, 결과를 실행 하는 동안 웹 페이지로 다시 채웁니다.
 
@@ -54,7 +54,7 @@ Office 365 네트워크 온 보 딩 도구는 두 부분으로 구성 됩니다.
 
 네트워크 송신 IP 주소에서 조회 되는 위치는 정확 하지 않을 수 있으며이 테스트에서 잘못 된 결과가 이어집니다. 특정 IP 주소에 대해이 오류가 발생 하는지 확인 하려면 공개적으로 액세스 가능한 네트워크 IP 주소 위치 웹 사이트를 사용할 수 있습니다.
 
-Office 365 네트워크 연결에 대해 사용자 office 위치에서 인터넷으로 로컬 및 직접 네트워크 송신을 구현 하는 것이 좋습니다. 이러한 네트워크 통찰력을 해결 하는 가장 좋은 방법은 로컬 및 직접 egress에 대 한 개선 사항입니다.
+Microsoft 365 네트워크 연결에는 사용자 사무실 위치에서 인터넷으로 로컬 및 직접 네트워크 송신을 구현 하는 것이 좋습니다. 이러한 네트워크 통찰력을 해결 하는 가장 좋은 방법은 로컬 및 직접 egress에 대 한 개선 사항입니다.
 
 ## <a name="exchange-online-service-front-door"></a>Exchange Online 서비스 전면 도어
 
@@ -66,7 +66,7 @@ Exchange Online 서비스 전면 도어의 TCP 대기 시간에 대 한 잠재�
 
 ## <a name="comparison-of-performance-of-customers-in-the-area"></a>영역의 고객 성능 비교
 
-Exchange Online 서비스에 대 한 사용자 사무실 위치의 네트워크 TCP 대기 시간은 같은 메트로 영역의 다른 Office 365 고객과 비교 됩니다. 네트워크에 대 한 자세한 내용은 같은 지하철 영역에 있는 고객 중 10% 이상이 더 나은 성능을 가진 경우에 표시 됩니다.
+Exchange Online 서비스에 대 한 사용자 사무실 위치의 네트워크 TCP 대기 시간은 같은 메트로 영역의 다른 Microsoft 365 고객과 비교 됩니다. 네트워크에 대 한 자세한 내용은 같은 지하철 영역에 있는 고객 중 10% 이상이 더 나은 성능을 가진 경우에 표시 됩니다.
 
 이 네트워크 통찰력은 도시의 모든 사용자가 동일한 통신 인프라에 대 한 액세스 권한을 가지 며 인터넷 회로 및 Microsoft 네트워크와 같은 근접성을 갖게 된다는 것을 기반으로 생성 됩니다.
 
@@ -92,11 +92,11 @@ Exchange Online 서비스에 대 한 사용자 사무실 위치의 네트워크 
 
 ## <a name="dns-lookup-of-exchange-online-front-end-server-and-sharepoint-online-front-end-server"></a>Exchange Online 프런트 엔드 서버 및 SharePoint Online 프런트 엔드 서버의 DNS 조회
 
-이러한 두 가지 Office 365 작업에 대 한 서비스 전면 도어의 DNS 레코드가 표시 됩니다. 이러한 사용자는 정보를 제공 하기 위한 것 이며 연결 된 네트워크 통찰력은 없습니다.
+이러한 두 가지 Microsoft 365 작업에 대 한 서비스 전면 도어의 DNS 레코드가 표시 됩니다. 이러한 사용자는 정보를 제공 하기 위한 것 이며 연결 된 네트워크 통찰력은 없습니다.
 
 ## <a name="proxy-server-identification"></a>프록시 서버 id
 
-로컬 컴퓨터에 구성 된 프록시 서버를 확인 합니다. Office 365 네트워크 트래픽을 최적화 하기 위해 네트워크 경로에 구성 되어 있는 항목을 확인 합니다. 사용자 사무실 위치에서 프록시 서버 까지의 거리를 확인 합니다. 이러한 간격은 먼저 ICMP ping을 통해 테스트 하며,이로 인해 TCP ping을 실행 하는 데 실패 한 경우에는 IP 주소 위치 데이터베이스에서 프록시 서버 IP 주소를 조회 합니다. 사용자 사무실 위치에서 프록시 서버가 500 마일 (800 킬로미터) 보다 멀리 떨어진 경우 네트워크 통찰력을 볼 수 있습니다.
+로컬 컴퓨터에 구성 된 프록시 서버를 확인 합니다. 최적화 범주에 대 한 네트워크 경로에 구성 되어 있는 항목 (Microsoft 365 네트워크 트래픽)이 있는지 확인 합니다. 사용자 사무실 위치에서 프록시 서버 까지의 거리를 확인 합니다. 이러한 간격은 먼저 ICMP ping을 통해 테스트 하며,이로 인해 TCP ping을 실행 하는 데 실패 한 경우에는 IP 주소 위치 데이터베이스에서 프록시 서버 IP 주소를 조회 합니다. 사용자 사무실 위치에서 프록시 서버가 500 마일 (800 킬로미터) 보다 멀리 떨어진 경우 네트워크 통찰력을 볼 수 있습니다.
 
 ## <a name="media-quality-checks"></a>미디어 품질 검사
 
@@ -106,13 +106,13 @@ Exchange Online 서비스에 대 한 사용자 사무실 위치의 네트워크 
 
 ## <a name="tcp-connectivity-tests"></a>TCP 연결 테스트
 
-사용자 사무실 위치에서 필요한 모든 Office 365 네트워크 끝점에 대 한 HTTP 연결을 테스트 합니다. 이러한 기능은에 [https://aka.ms/o365ip](https://aka.ms/o365ip)게시 됩니다. 연결할 수 없는 모든 필수 네트워크 끝점에 대 한 네트워크 통찰력이 표시 됩니다.
+사용자 사무실 위치에서 필요한 모든 Microsoft 365 네트워크 끝점에 대 한 HTTP 연결을 테스트 합니다. 이러한 기능은에 [https://aka.ms/o365ip](https://aka.ms/o365ip)게시 됩니다. 연결할 수 없는 모든 필수 네트워크 끝점에 대 한 네트워크 통찰력이 표시 됩니다.
 
 연결 ay는 회사 네트워크 경계에 있거나 클라우드 프록시로 사용 중인 프록시 서버, 방화벽 또는 다른 네트워크 보안 장치에 의해 차단 됩니다.
 
 ## <a name="ssl-interception-tests"></a>SSL 가로채기 테스트
 
-에 [https://aka.ms/o365ip](https://aka.ms/o365ip)정의 된 최적화 또는 허용 범주에 있는 각 필수 Office 365 네트워크 끝점에서 SSL 인증서를 테스트 합니다. Microsoft SSL 인증서를 찾지 못하는 테스트는 중간 네트워크 장치에 의해 연결 된 암호화 된 네트워크를 차단 해야 합니다. 네트워크에 대 한 통찰력은 모든 암호화 된 네트워크 끝점에 표시 됩니다.
+에서 [https://aka.ms/o365ip](https://aka.ms/o365ip)정의 된 최적화 또는 허용 범주에 있는 각각의 필수 Microsoft 365 네트워크 끝점에서 SSL 인증서를 테스트 합니다. Microsoft SSL 인증서를 찾지 못하는 테스트는 중간 네트워크 장치에 의해 연결 된 암호화 된 네트워크를 차단 해야 합니다. 네트워크에 대 한 통찰력은 모든 암호화 된 네트워크 끝점에 표시 됩니다.
 
 Microsoft에서 제공 하지 않는 SSL 인증서가 발견 되 면 테스트에 대 한 FQDN과 사용 중인 SSL 인증서 소유자가 표시 됩니다. SSL 인증서 소유자는 프록시 서버 공급 업체가 될 수도 있고, 엔터프라이즈 자체 서명 된 인증서 일 수도 있습니다.
 
@@ -120,12 +120,34 @@ Microsoft에서 제공 하지 않는 SSL 인증서가 발견 되 면 테스트�
 
 이 섹션에서는 Exchange Online 서비스 전면 도어, SharePoint Online 서비스 전면 도어 및 Microsoft 팀 서비스 전면 도어에 대 한 ICMP traceroute 결과를 보여 줍니다. 정보를 제공 하기 위한 것 이며 연결 된 네트워크 통찰력은 없습니다.
 
+## <a name="faq"></a>FAQ
+
+다음은 자주 묻는 몇 가지 질문에 대 한 대답입니다.
+
+### <a name="is-this-tool-released-and-supported-by-microsoft"></a>이 도구는 Microsoft에서 출시 및 지원 하나요?
+
+이는 현재 개념 증명 이며 Microsoft의 지원을 통해 일반 가용성 릴리스 상태에 도달할 때까지 정기적으로 업데이트를 제공 하는 계획입니다. 개선에 도움이 되는 의견을 제공 하세요. 테스트 결과를 기준으로 조직에 대해 사용자 지정 된이 도구의 일부로 보다 자세한 Office 365 네트워크 온 보 딩 가이드를 게시할 계획입니다.
+
+### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 서비스 전면 도어 란?
+
+Microsoft 365 서비스 전면 도어는 Microsoft의 글로벌 네트워크에서 Office 클라이언트 및 서비스가 네트워크 연결을 종료 하는 진입점입니다. Microsoft 365에 대 한 최적의 네트워크 연결을 위해 네트워크 연결이 도시나 메트로 가장 가까운 Microsoft 365 전면 도어로 종료 되는 것이 좋습니다.
+
+참고: Microsoft 365 서비스 전면 도어는 Azure marketplace에서 제공 되는 "Azure 전면 도어 서비스" 제품과 직접 관계가 없습니다.
+
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>최적의 Microsoft 365 서비스 전면 도어 란 무엇입니까?
+
+최적의 Microsoft 365 서비스 전면 도어는 일반적으로 구/군/시 또는 메트로 지역에 있는 네트워크 egress에 가장 가까운 곳입니다. Microsoft 365 네트워크 성능 도구를 사용 하 여 사용 중인 Microsoft 365 서비스 전면 도어 및 최적의 서비스 전면 도어 위치를 확인 합니다. 사용 중인 전면 문이 최적 상태 이면 도구에서 Microsoft의 글로벌 네트워크에 최적 상태로 연결 하는 것입니다.
+
+### <a name="what-is-an-internet-egress-location"></a>인터넷 송신 위치 란?
+
+인터넷 송신 위치는 네트워크 트래픽이 기업 네트워크를 종료 하 고 인터넷에 연결 하는 위치입니다. 또한 NAT (Network Address Translation) 장치가 있는 위치로도 식별 되며, 대개 ISP (인터넷 서비스 공급자)와 연결 됩니다. 위치와 인터넷 송신 위치 사이에 긴 거리가 표시 되 면이로 인해 상당한 WAN 백을 확인할 수 있습니다.
+
 ## <a name="related-topics"></a>관련 항목
 
 [Microsoft 365 관리 센터의 네트워크 성능 권장 사항 (미리 보기)](office-365-network-mac-perf-overview.md)
 
-[Office 365 network performance insights (미리 보기)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
 
-[Office 365 네트워크 평가 (미리 보기)](office-365-network-mac-perf-score.md)
+[Microsoft 365 네트워크 평가 (미리 보기)](office-365-network-mac-perf-score.md)
 
-[Office 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
+[Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)

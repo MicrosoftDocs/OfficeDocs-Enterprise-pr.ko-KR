@@ -1,5 +1,5 @@
 ---
-title: Office 365 네트워크 연결 위치 서비스 (미리 보기)
+title: Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 네트워크 연결 위치 서비스 (미리 보기)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081817"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185729"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Office 365 네트워크 연결 위치 서비스 (미리 보기)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)
 
-Microsoft 365 관리 센터에는 이제 Office 365 테 넌 트에서 수집 되며 테 넌 트의 관리 사용자만 볼 수 있는 live performance 메트릭에 해당 하는 **네트워크 Insights 및 성능 권장 사항이**나와 있습니다. 조직 네트워크 연결은 네트워크 송신 위치를 통해 인터넷으로 연결 됩니다. Office 365 클라이언트 연결은이 경로를 사용 하 여 인터넷을 통해 Microsoft 서비스 전면 도어 서버로 연결 합니다. Office 위치를 확인 하는 것은 이러한 네트워크 통찰력을 표시할 수 있는 열쇠입니다.
+Microsoft 365 관리 센터에는 이제 Microsoft 365 테 넌 트에서 수집 되며 테 넌 트의 관리 사용자만 볼 수 있는 live performance 메트릭이 있는 **네트워크 Insights 및 성능 권장 사항이**나와 있습니다. 조직 네트워크 연결은 네트워크 송신 위치를 통해 인터넷으로 연결 됩니다. Microsoft 365 클라이언트 연결은이 경로를 사용 하 여 인터넷을 통해 Microsoft 서비스 전면 도어 서버로 연결 합니다. Office 위치를 확인 하는 것은 이러한 네트워크 통찰력을 표시할 수 있는 열쇠입니다.
 
 ## <a name="location-in-network-measurements"></a>네트워크 측정의 위치
 
