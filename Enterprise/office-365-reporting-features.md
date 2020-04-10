@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 내의 보고 기능에 대 한 설명입니다.
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842035"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206555"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 보고 기능 
 
@@ -30,7 +30,7 @@ Office 365의 Reports 기능은 Azure AD (Active Directory), Exchange Online, �
 
 ## <a name="office-365-reports-dashboard"></a>Office 365 보고서 대시보드
 
-Microsoft 365 관리 센터 미리 보기의 보고서 대시보드에는 Office 365에서 사용 작업이 표시 됩니다. Office 365 전역 관리자 또는 Exchange Online, SharePoint Online 또는 비즈니스용 Skype 관리자는 해당 서비스의 사용에 대 한 세부적인 통찰력을 얻을 수 있습니다. 예를 들어 특정 Office 365 서비스의 사용자 수, Office Professional Plus를 정품 인증을 받은 사용자 수 및 조직을 통과 하는 메일의 양 등이 있습니다. 보고서는 최근 7, 30, 90 및 180 일 동안 사용할 수 있습니다.
+Microsoft 365 관리 센터 미리 보기의 보고서 대시보드에는 Office 365에서 사용 작업이 표시 됩니다. Office 365 전역 관리자 또는 Exchange Online, SharePoint Online 또는 비즈니스용 Skype 관리자는 해당 서비스의 사용에 대 한 세부적인 통찰력을 얻을 수 있습니다. 예를 들어 특정 Office 365 서비스의 사용자 수, Office 365 ProPlus를 정품 인증 한 사용자 수, 그리고 조직을 통과 하는 메일의 양과 같습니다. 보고서는 최근 7, 30, 90 및 180 일 동안 사용할 수 있습니다.
 
 다음과 같은 보고서를 사용할 수 있습니다.
 
