@@ -3,7 +3,7 @@ title: Office 365 VPN 분할 터널링 구현
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 4/9/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 VPN 분할 터널링을 구현하는 방법
-ms.openlocfilehash: 72cdef3da872f7886963be80cf2b092a19e017eb
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 3ac4d1243e28e8081439c98baf181ba9fb5fb2b3
+ms.sourcegitcommit: f12f95866df3a7bbf866e1d21a839be7fbdf9470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185769"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43203852"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Office 365 VPN 분할 터널링 구현
 
@@ -272,6 +272,7 @@ Teams가 음성 또는 _STUN(NAT의 세션 탐색 유틸리티)_ 증폭 공격�
 - **Cisco Anyconnect**: [Office365의 Anyconnect 분할 터널 최적화](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [VPN 분할 터널을 통한 Office 365 트래픽 최적화 액세스 경로 제외](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [BIG-IP APM을 사용하는 경우 VPN을 통한 원격 액세스의 Office 365 트래픽 최적화](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Citrix 게이트웨이**: [Office 365용 Citrix 게이트웨이 VPN 분할 터널 최적화](https://docs.citrix.com/ko-KR/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 
 ## <a name="faq"></a>FAQ
 
