@@ -3,7 +3,7 @@ title: M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185739"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225701"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
 
 Microsoft 365 네트워크 온 보 딩 도구는에 <https://connectivity.office.com>있습니다. 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
+
+>[!NOTE]
+>온 보 딩 도구는 WW 상업용 및 GCC 중간에 있는 테 넌 트를 지원 하지만 GCC High, DoD, 독일 또는 중국이 아닙니다.
 
 Microsoft 365 관리 센터의 네트워크 insights는 Microsoft 365 테 넌 트에 대 한 제품 측정을 기반으로 합니다. 비교 시 Microsoft 365 네트워크 온 보 딩 도구의 네트워크 insights 도구에서 로컬로 실행 됩니다. 제품에서 수행할 수 있는 테스트는 제한 되며 사용자에 대 한 로컬 테스트를 실행 하 여 더 많은 데이터를 수집할 수 있습니다. Microsoft 365 관리 센터의 네트워크 insights에서 특정 사무실 위치에 Microsoft 365 사용에 대 한 네트워킹 문제가 있음을 보여 줍니다. Microsoft 365 네트워크 온 보 딩 도구를 통해 권장 되는 네트워크 성능 개선 작업으로 인해 해당 문제의 근본적인 원인을 확인할 수 있습니다.
 
