@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Office 365 데이터 위치'
-ms.openlocfilehash: 5e463b4c9fa20f5f5201c29063cbd1a22018ee37
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131467"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206605"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -102,7 +102,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 
 | 전세계 지리적 위치 | 고객 데이터가 저장되는 위치 |
 | --- | --- |
-| 전세계 지리적 위치 1 - EMEA (유럽, 중동, 아프리카) | 오스트리아, 핀란드, 프랑스, 독일, 아일랜드, 네덜란드, 영국 |
+| 전세계 지리적 위치 1 - EMEA (유럽, 중동, 아프리카) | 오스트리아, 핀란드, 프랑스, 아일랜드, 네덜란드 |
 | 전세계 지리적 위치 2 - 아시아 태평양 | 홍콩, 일본, 말레이시아, 싱가포르, 대한민국 |
 | 전세계 지리적 위치 3 - 아메리카 | 브라질, 칠레, 미국 |
 
@@ -114,7 +114,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | --- | --- |
 | 오스트레일리아 | 뉴사우스웨일스, 빅토리아 |
 | 캐나다 | 퀘벡 시티, 토론토 |
-| 유럽 연합 | 오스트리아, 핀란드, 프랑스, 독일, 아일랜드, 네덜란드, 영국 |
+| 유럽 연합 | 오스트리아, 핀란드, 프랑스, 아일랜드, 네덜란드 |
 | 프랑스 | 파리, 마르세유 |
 | 독일 | 프랑크푸르트, 베를린 |
 | 인도 | 첸나이, 뭄바이, 푸네 |
@@ -1066,7 +1066,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | Yammer | 미국 |
 | OneNote 서비스 | 캐나다 |
 | Stream | 캐나다 |
-| Whiteboard | 캐나다 |
+| Whiteboard | 미국 |
 | Forms | 미국 |
 | Workplace Analytics | 미국 |
 </p></details>
