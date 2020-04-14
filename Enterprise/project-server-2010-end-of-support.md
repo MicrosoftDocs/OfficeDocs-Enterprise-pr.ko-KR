@@ -3,7 +3,7 @@ title: Project Server 2010 지원 종료 로드맵
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 08/21/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,19 +17,19 @@ search.appverid:
 - ZPJ120
 - PJU120
 - PJW120
-description: Project Server 2010의 지원 종료는 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 158cf7476a8d80d0024cf4093d0d20fc884811e0
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Project Server 2010의 지원 종료는 4 월 13 2021 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
+ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
+ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979520"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240528"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010의 지원 종료 로드맵
 
 *이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
-Project Server 2010는 **2020 년 10 월 13 일**에 지원 종료에 도달 합니다. 현재 Project Server 2010을 사용 하 고 있는 경우 이러한 기타 관련 제품에는 다음과 같은 지원 종료 날짜가 나와 있습니다.
+Project Server 2010는 **2021 년 4 월 13 일**에 지원 종료에 도달 합니다. 이 날짜는 이전의 지원 종료 날짜에서 2020 년 10 월 13 일까지 연장 되었습니다. 현재 Project Server 2010을 사용 하 고 있는 경우 이러한 기타 관련 제품에는 다음과 같은 지원 종료 날짜가 나와 있습니다.
   
 |**제품**|**지원 종료 날짜**|
 |:-----|:-----|
@@ -66,12 +66,37 @@ Project Server 2010을 사용 하는 경우 다음과 같은 마이그레이션 
 ![Project Server 2010 업그레이드 경로](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
 
     
-|**Project Online으로 마이그레이션하는 이유는 무엇 인가요?**|**Project Server 2019로 마이그레이션하는 이유는 무엇 인가요?**|
+
+
+|**Project Server 2019로 마이그레이션하는 이유는 무엇 인가요?**|**Project Online으로 마이그레이션하는 이유는 무엇 인가요?**|
 |:-----|:-----|
-| 모바일 또는 원격 사용자가 있는 경우  <br/>  온-프레미스 서버 마이그레이션 비용은 중요 한 관심사 (하드웨어, 소프트웨어, 시간 및 구현 노력 등)입니다.  <br/>  마이그레이션 후 내 환경을 유지 관리 하는 비용은 대규모 관심사 (예: 자동 업데이트, 보장 된 가동 시간 등)입니다.  <br/> | 비즈니스 규칙 클라우드에서 내 비즈니스를 운영 하는 것을 제한 합니다.  <br/>  내 환경에 대 한 업데이트를 제어 해야 합니다.  <br/> |
+|비즈니스 규칙 클라우드에서 내 비즈니스를 운영 하는 것을 제한 합니다.  <br/>  내 환경에 대 한 업데이트를 제어 해야 합니다.  <br/> | 모바일 또는 원격 사용자가 있는 경우  <br/>  온-프레미스 서버 마이그레이션 비용은 중요 한 관심사 (하드웨어, 소프트웨어, 시간 및 구현 노력 등)입니다.  <br/>  마이그레이션 후 내 환경을 유지 관리 하는 비용은 대규모 관심사 (예: 자동 업데이트, 보장 된 가동 시간 등)입니다.  <br/>  |
+
    
 > [!NOTE]
 > Office 2010 서버에서 이동 하는 방법에 대 한 자세한 내용은 [office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)되는 리소스를 참조 하십시오. Project Server 및 Project Online에서는 동일한 자원 그룹을 공유할 수 없으므로 Project Server에서는 하이브리드 구성을 지원 하지 않습니다. 
+
+### <a name="what-are-my-options-for-project-client"></a>Project 클라이언트에 대 한 내 옵션은 무엇입니까?
+Project Professional 2010 또는 Project Standard 2010을 사용 하는 경우 마이그레이션 옵션을 탐색 하려면 다음 항목을 선택 해야 합니다.
+- 최신 버전의 Project Professional 또는 Project Standard로 이동 하는 경우
+- Project Online 또는 웹 프로젝트와 같은 온라인 솔루션으로 전환
+ 
+#### <a name="moving-to-a-newer-version-of-project-client"></a>최신 버전의 Project 클라이언트로 이동
+
+Project Standard 2010에서 마이그레이션하는 경우 최신 버전의 Project Standard (Project Standard 2016 또는 Project Standard 2019)로 마이그레이션할 수 있습니다.  최신 기능을 활용 하도록 최신 버전으로 이동 하는 것이 좋습니다. 또한 최신 버전 (Project Standard 2016)으로 마이그레이션하는 경우 지원 날짜가 완료 되 면이 버전에서 마이그레이션 해야 합니다.
+
+마찬가지로 Project Professional 2010에서 마이그레이션하는 경우에는 최신 버전 (Project Professional 2019 또는 Project Professional 2016)으로 마이그레이션할 수 있습니다. 가능한 경우 최신 버전으로 이동 하는 것이 좋습니다.  Project Professional을 사용 하 여 Project Server에 연결 하는 경우에는 사용 중인 Project Server의 버전과 연결 하기 위해 지원 되는 Project Professional 버전으로 마이그레이션해야 합니다.
+
+Project Professional 2010 사용자는 Project Online 데스크톱 클라이언트로의 마이그레이션도 선택할 수 있습니다. 이는 구독 기반 버전의 Project Professional 2019 이며, 프로젝트 계획 3 및 Project 계획 5 구독에 포함 되어 있습니다. 
+
+#### <a name="moving-to-an-online-solution"></a>온라인 솔루션으로 이동
+
+Project Professional 2010 또는 Project Standard 2010에서 Project의 구독 기반 온라인 솔루션으로 마이그레이션할 수도 있습니다. Project 요금제 3 및 계획 5에는 Project Online과 [웹에 대 한](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)최신 클라우드 제공이 포함 되어 있습니다. 둘 다 다양 한 새로운 기능과 이점을 제공 합니다.
+
+에 포함 된 기능 및 프로젝트 계획 라이선스에 대 한 자세한 내용은 [Microsoft Project service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description)을 참고 하세요.
+
+
+
   
 ## <a name="important-considerations-you-need-to-make-when-planning-to-migrate-from-project-server-2010"></a>Project Server 2010에서 마이그레이션을 계획할 때 수행 해야 하는 중요 고려 사항
 
@@ -81,7 +106,7 @@ Project Server 2010에서 마이그레이션을 계획할 때 고려해 야 할 
     
 - **사용자 지정 계획** -project server 2019로 마이그레이션하거나 project Online으로 마이그레이션하는 경우 프로젝트 서버 2010 환경에서 작업 하는 많은 사용자 지정 내용이 작동 하지 않을 수 있다는 점을 염두에 두어야 합니다. 버전 간 Project Server 아키텍처에는 큰 차이점이 있으며, 새 버전에서 작동 하도록 지원 되는 필수 운영 체제, 데이터베이스 서버 및 클라이언트 웹 브라우저에는 차이가 있습니다. 새 환경에서 필요에 따라 사용자 지정 내용을 테스트 하거나 다시 작성 하는 방법에 대 한 계획을 수립 합니다. 업그레이드를 계획할 때는 앞으로 이동할 때 특정 사용자 지정이 실제로 필요한 지를 확인 하는 것도 좋은 기회입니다. [Upgrade for current 사용자 지정 계획 만들기 2013]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013) 에서는 업그레이드 시 현재 사용자 지정 내용에 대 한 평가 및 계획에 대 한 몇 가지 일반적인 정보를 제공 합니다. 
     
-- 특히 Project Server 2019로 업그레이드 하는 경우 **시간 및 고 지** 업그레이드 계획, 실행 및 테스트에 많은 시간과 노력이 소요 될 수 있습니다. 예를 들어 Project Server 2010에서 Project Server 2019로 마이그레이션하는 경우 먼저 Project Server 2010에서 Project Server 2013로 마이그레이션한 다음 데이터를 확인 한 다음 각 후속 버전으로 마이그레이션할 때와 동일한 작업을 수행 해야 합니다 (프로젝트에서 서버 2016을 선택한 다음 Project Server 2019로 다시 이동할 수 있습니다. Microsoft 솔루션 공급자에 게 문의 하 여 예상 비용을 해당 작업을 수행 하는 데 소요 되는 시간과 비용을 비교할 수 있습니다. 
+- 특히 Project Server 2019로 업그레이드 하는 경우 **시간 및 고 지** 업그레이드 계획, 실행 및 테스트에 많은 시간과 노력이 소요 될 수 있습니다. 예를 들어 Project Server 2010에서 Project Server 2019로 마이그레이션하는 경우 먼저 Project Server 2010에서 Project Server 2013로 마이그레이션한 다음 데이터를 확인 한 다음, 연속 된 각 버전으로 마이그레이션할 때와 동일한 작업을 수행 해야 합니다 (Project Server 2016, Project Server 2019로 마이그레이션). Microsoft 솔루션 공급자에 게 문의 하 여 예상 비용을 해당 작업을 수행 하는 데 소요 되는 시간과 비용을 비교할 수 있습니다. 
     
 ## <a name="migrate-to-project-online"></a>Project Online으로 마이그레이션
 
