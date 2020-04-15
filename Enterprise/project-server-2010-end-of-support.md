@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010의 지원 종료는 4 월 13 2021 일에 종료 됩니다. 이 문서를 사용 하 여 Project Online으로 업그레이드 하는 방법 또는 온-프레미스 Project Server의 새 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
-ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
+ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240528"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503836"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010의 지원 종료 로드맵
 
@@ -33,9 +33,9 @@ Project Server 2010는 **2021 년 4 월 13 일**에 지원 종료에 도달 합�
   
 |**제품**|**지원 종료 날짜**|
 |:-----|:-----|
-|Project Portfolio Server 2010  <br/> |2020 년 10 월 13 일  <br/> |
-|Project 2010 Standard  <br/> |2020 년 10 월 13 일  <br/> |
+|Project 2010 Standard <br/> |2020 년 10 월 13 일  <br/> |
 |Project 2010 Professional  <br/> |2020 년 10 월 13 일  <br/> |
+
    
 지원 종료에 도달 하는 Office 2010 서버에 대 한 자세한 내용은 [Upgrade From office 2010 server and client products](https://docs.microsoft.com/office365/enterprise/plan-upgrade-previous-versions-office)을 참조 하십시오.
   

@@ -3,7 +3,7 @@ title: SharePoint 2010에서 업그레이드
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -18,23 +18,23 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: SharePoint 2010에 대 한 지원 종료 및 SharePoint Server 2010은 2020 년 10 월 13 일에 종료 됩니다. 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: SharePoint 2010 및 SharePoint Server 2010에 대 한 지원이 종료 되었습니다 (2021 년 4 월 13 일). 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
+ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979490"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503846"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
 *이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
-Microsoft SharePoint 2010 및 SharePoint Server 2010은 **2020 년 10 월 13 일**에 대 한 지원 종료에 도달 합니다. 이 문서에서는 기존 SharePoint Server 2010 데이터를 Office 365에서 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
+Microsoft SharePoint 2010 및 SharePoint Server 2010는 기술 지원 종료 **(2021 년 4 월 13 일**)에 도달 합니다. 이 문서에서는 기존 SharePoint Server 2010 데이터를 Office 365에서 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
   
 ## <a name="what-is-end-of-support"></a>지원이 종료 되는 이유는 무엇 인가요?
 
-SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 수명 주기의 끝 (Microsoft에서 새로운 기능, 버그 수정, 보안 픽스 등을 제공 하는 시간)에 도달 하면이를 소프트웨어의 ' 지원 종료 ' 라고 합니다. 경우에 따라 ' 퇴직 ' 됩니다. 제품 지원 (또는 EOS)의 끝에 따라 실제로 아무 것도 종료 되거나 작동 중지 됩니다. 그러나 소프트웨어 지원이 종료 될 때 Microsoft는 더 이상 다음을 제공 하지 않습니다.
+SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 수명 주기의 끝 (Microsoft에서 새로운 기능, 버그 수정, 보안 픽스 등을 제공 하는 시간)에 도달 하면이를 소프트웨어의 ' 지원 종료 ' 또는 ' 폐기 ' 라고 합니다. 제품 지원 (또는 EOS)의 끝에 따라 실제로 아무 것도 종료 되거나 작동 중지 됩니다. 그러나 소프트웨어 지원이 종료 될 때 Microsoft는 더 이상 다음을 제공 하지 않습니다.
   
 - 발생할 수 있는 문제에 대 한 기술 지원
     
@@ -109,7 +109,7 @@ Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 
 |**SharePoint Online 혜택**|**SharePoint Online 단점**|
 |:-----|:-----|
 |Microsoft는 SPO 하드웨어 및 모든 하드웨어 관리를 제공 합니다.  <br/> |사용 가능한 기능은 SharePoint Server 온-프레미스와 SPO 간에 다를 수 있습니다.  <br/> |
-|구독에 대 한 전역 관리자 이며 관리자에 게 SPO 사이트를 할당할 수 있습니다.  <br/> |Office 365의 SharePoint 관리자 역할에서 sharepoint Server 온-프레미스의 팜 관리자가 사용할 수 있는 일부 작업은 존재 하지 않거나 필요 하지 않지만 SharePoint 관리, 사이트 모음 관리 및 사이트 소유권은 다음과 같습니다. 조직.  <br/> |
+|구독에 대 한 전역 관리자 이며 관리자에 게 SPO 사이트를 할당할 수 있습니다.  <br/> |Sharepoint Server 온-프레미스의 팜 관리자가 사용할 수 있는 일부 작업은 Office 365의 SharePoint 관리자 역할에서 존재 하지 않거나 필요 하지 않지만 SharePoint 관리, 사이트 모음 관리 및 사이트 소유권은 조직에 로컬로 적용 됩니다.  <br/> |
 |Microsoft는 기본 하드웨어 및 소프트웨어 (SharePoint Online이 실행 되는 SQL server 포함)에 패치, 수정 사항 및 업데이트를 적용 합니다.  <br/> |서비스의 기본 파일 시스템에 대 한 액세스 권한이 없기 때문에 일부 사용자 지정 내용이 제한 됩니다.  <br/> |
 |Microsoft는 서비스 수준 [계약](https://go.microsoft.com/fwlink/?linkid=843153) 을 게시 하 고 신속 하 게 이동 하 여 서비스 수준 인시던트를 해결 합니다.  <br/> |백업 및 복원 및 기타 복구 옵션은 SharePoint Online의 서비스에 의해 자동화 되며, 사용 되지 않는 경우에는 백업이 덮어쓰여집니다.  <br/> |
 |보안 테스트 및 서버 성능 조정은 Microsoft의 서비스에서 지속적으로 수행 됩니다.  <br/> |사용자 인터페이스 및 기타 SharePoint 기능의 변경 내용은 서비스에 의해 설치 되며 설정 또는 해제 해야 할 수 있습니다.  <br/> |
@@ -133,7 +133,7 @@ Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 
 SharePoint 2010에서 SharePoint Server 2016로의 전체 경로를 따르도록 선택한 경우 시간 및 계획이 계획 됩니다. 업그레이드에는 업그레이드 된 하드웨어 측면에서 비용이 소요 됩니다 (SQL server도 업그레이드 해야 한다는 점을 염두에 두어야 함), 소프트웨어 및 관리를 포함 합니다. 또한 사용자 지정 내용을 업그레이드 하거나 중단 해야 할 수도 있습니다. SharePoint Server 팜을 업그레이드 하기 전에 모든 중요 한 사용자 지정 내용에 대 한 메모를 수집 해야 합니다.
   
 > [!NOTE]
-> SharePoint 2010 팜 지원 종료를 유지 하 고, 새 하드웨어에 SharePoint Server 2016 팜을 설치한 다음 (별도의 팜을 나란히 실행), 콘텐츠를 다운로드 하 고 다시 업로드 하기 위해 콘텐츠의 수동 마이그레이션을 계획 및 실행 하는 것이 가능 합니다. 예제) 이러한 수동 이동에 대 한 잠재적인 주의 사항 (예: 2010부터 수동 이동을 수행 하는 계정의 별칭을 사용 하 여 마지막으로 수정한 계정이 있음)이 있으며, 몇 가지 작업을 미리 수행 해야 합니다 (사이트, 하위 사이트, 사용 권한 및 목록 구조). 저장소로 이동할 수 있거나 더 이상 필요 하지 않은 데이터를 고려 하는 것이 좋습니다. 이렇게 하면 마이그레이션의 영향을 줄일 수 있습니다. 두 방법 중 하나를 수행 하 여 업그레이드 전에 환경을 정리 합니다. 업그레이드를 수행 하기 전에 기존 팜이 제대로 작동 하 고 있어야 합니다. 
+> SharePoint 2010 팜 지원 종료를 유지 하 고, 새 하드웨어에 SharePoint Server 2016 팜을 설치한 다음, 별도의 팜을 함께 실행 하 고 콘텐츠를 수동으로 마이그레이션 (예: 콘텐츠 다운로드 및 다시 업로드) 할 수 있습니다. 이러한 수동 이동에 대 한 잠재적인 주의 사항 (예: 2010부터 수동 이동을 수행 하는 계정의 별칭을 사용 하 여 마지막으로 수정한 계정이 있음)이 있으며, 몇 가지 작업을 미리 수행 해야 합니다 (사이트, 하위 사이트, 사용 권한 및 목록 구조 다시 만들기). 저장소로 이동할 수 있거나 더 이상 필요 하지 않은 데이터를 고려 하는 것이 좋습니다. 이렇게 하면 마이그레이션의 영향을 줄일 수 있습니다. 두 방법 중 하나를 수행 하 여 업그레이드 전에 환경을 정리 합니다. 업그레이드를 수행 하기 전에 기존 팜이 제대로 작동 하 고 있어야 합니다. 
   
 **지원 및 지원 되지 않는 업그레이드 경로**를 검토 해야 합니다. 
   
@@ -180,7 +180,7 @@ SharePoint 2010에서 SharePoint Server 2016로의 전체 경로를 따르도록
   
 기존 유형의 하이브리드를 숙지 하 고 온-프레미스 SharePoint 팜과 Office 365 구독 간의 연결을 구성 하는 방법에 대해 잘 알고 있어야 합니다.
   
-하이브리드 SharePoint 팜이 작동 하는 방식을 확인 하는 좋은 방법 중 하나는 [Office 365 개발/테스트 환경을](https://go.microsoft.com/fwlink/?linkid=843152)만드는 것입니다. 평가판이 있거나 Office 365 구독을 구매한 후에는 직접 데이터를 마이그레이션할 수 있는 SharePoint Online의 사이트 모음, 웹 및 문서 라이브러리를 만드는 방법, 즉 마이그레이션 API를 사용 하 여 수동으로 또는-My를 마이그레이션하려고 합니다. 하이브리드 마법사를 통해 비즈니스용 OneDrive에 사이트 콘텐츠를 추가할 수 있습니다.
+하이브리드 SharePoint 팜이 작동 하는 방식을 확인 하는 좋은 방법 중 하나는 [Office 365 개발/테스트 환경을](https://go.microsoft.com/fwlink/?linkid=843152)만드는 것입니다. 평가판이 있거나 Office 365 구독을 구매한 경우 SharePoint Online에서 사이트 모음, 웹 및 문서 라이브러리를 만들 수 있으며, 마이그레이션 API를 사용 하 여 수동으로 데이터를 마이그레이션하고, 아니면 하이브리드 마법사를 통해 내 사이트 콘텐츠를 비즈니스용 OneDrive로 마이그레이션하려는 경우
   
 > [!NOTE]
 > SharePoint Server 2010 팜은 먼저 하이브리드 옵션을 사용 하도록 sharepoint server 2013 또는 SharePoint Server 2016에 대해 온-프레미스로 업그레이드 해야 합니다. Sharepoint Foundation 2010 및 SharePoint Foundation 2013에서는 SharePoint Online과의 하이브리드 연결을 만들 수 없습니다. 
