@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840375"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516449"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -29,7 +29,7 @@ ms.locfileid: "41840375"
 > [!NOTE]
 > 서비스마다 다른 시간에 이동이 발생합니다. 결과적으로 다른 시간에 각 서비스의 기능이 제한된다는 설명이 표시될 수 있습니다. 
   
-각 Exchange Online, SharePoint Online 및 비즈니스용 Skype에 대한 이동이 완료되면 Office 365 메시지 센터에서 확인 알림을 찾아보세요. 아래 표에 표시된 것처럼, 등록 기간이 끝나고 특정 지역의 모든 고객에 대해 요청된 모든 데이터 이동을 완료하는 데 24개월까지 걸릴 수 있습니다. 이동 후 테 넌 트에 문제가 표시 되는 경우 [Office 365 지원](https://go.microsoft.com/fwlink/p/?LinkID=522459) 서비스에 문의 하 여 도움을 받으십시오. 
+각 Exchange Online, SharePoint Online, 팀 및 비즈니스용 Skype에 대 한 이동이 완료 되 면 Microsoft 365 메시지 센터에서 확인을 볼 수 있습니다. 아래 표에 표시된 것처럼, 등록 기간이 끝나고 특정 지역의 모든 고객에 대해 요청된 모든 데이터 이동을 완료하는 데 24개월까지 걸릴 수 있습니다. 이동 후 테 넌 트에 문제가 표시 되는 경우 [Office 365 지원](https://go.microsoft.com/fwlink/p/?LinkID=522459) 서비스에 문의 하 여 도움을 받으십시오. 
   
 
 |**등록 국가가 있는 고객**|**모든 이동 완료 시기**|
@@ -45,9 +45,7 @@ ms.locfileid: "41840375"
 |남아프리카 공화국  <br/> |2022 년 7 월 1 일  <br/> |
 |스위스, 리히텐슈타인  <br/> |2022 년 7 월 1 일  <br/> |
 |독일  <br/> |하려고  <br/> |
-
-> [!NOTE]
-> 적격 Office 365 국가에 거주 하는 고객은 다른 적합 한 작업에 대 한 마이그레이션에 신호를 보내는 데 사용 되는 2020, 2020 ~ 6 월 1 일부 터 Microsoft 팀 채팅 서비스 데이터 마이그레이션을 옵트인 할 수 있습니다.  2020 이전에 마이그레이션을 위해 옵트인 하면 Exchange Online 및 SharePoint Online/비즈니스용 OneDrive 이동이 원래 기한에 의해 완료 될 것 이며, 팀은 모든 고객에 대해 2022 년 7 월 1 일까지 완료 될 수 있습니다. 
+|노르웨이  <br/> |2022 년 11 월 1 일  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -110,9 +108,16 @@ SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 �
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-적합 한 Office 365 국가의 고객은 2020에서 Microsoft 팀 채팅 서비스 데이터 마이그레이션을 옵트인 받을 수 있습니다.  
+Microsoft는 Exchange Online, SharePoint Online 및 비즈니스용 OneDrive 외에도 팀 데이터를 로컬 데이터 센터로 마이그레이션합니다.
+
+- 개인 메시지 및 채널 메시지를 포함 한 팀 대화방 메시지
+- 채팅에 사용 되는 팀 이미지
+
+팀 파일은 SharePoint Online 및 팀 채팅 파일에 저장 되며 비즈니스용 OneDrive에 저장 됩니다. 음성 메일, 일정, 채팅 기록 및 연락처는 Exchange Online에 저장 됩니다. 대부분의 경우 Exchange Online, SharePoint Online 및 비즈니스용 OneDrive는 고객이 로컬 데이터 센터 지역에 있는 고객에 게 이미 사용 되 고 있으며 적합 한 고객 국가에 대 한 Microsoft 365 마이그레이션 프로그램의 일부 이기도 합니다.
 
 ## <a name="skype-for-business"></a>비즈니스용 Skype
+
+비즈니스용 Skype 이동은 오스트레일리아, 일본, 인도, 캐나다, 영국 및 대한민국에서 사용할 수 있습니다.
 
 단독형 마이그레이션 동안 비즈니스용 Skype 클라이언트 소프트웨어에서 모든 사용자가 로그아웃됩니다. 자동 로그인이 수행되면서 2분 내에 사용자가 다시 연결됩니다.
   
@@ -136,4 +141,3 @@ SharePoint Online 데이터를 이동 하는 과정에서 검색 인덱스 및 �
 [Microsoft Dynamics CRM Online에 대 한 새로운 데이터 센터 지역](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [지역별 Azure services](https://azure.microsoft.com/regions/)
-

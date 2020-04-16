@@ -13,20 +13,20 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: 기존 Office 365 고객은 가맹 Office 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: 기존 Office 365 고객은 가맹 Microsoft 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
+ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106229"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516569"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
 > [!NOTE]
-> 이 페이지의 정보는 해당 지역의 새 데이터 센터가 시작 되기 전에 기존 Office 365 테 넌 트가 있었던 고객 에게만 적용 됩니다. 
+> 이 페이지의 정보는 해당 지역의 새 데이터 센터가 시작 되기 전에 기존 Microsoft 365 테 넌 트가 있었던 고객 에게만 적용 됩니다. 
   
-기존 Office 365 고객은 나머지 전체 조직의 핵심 고객 데이터에 대 한 초기 마이그레이션을 요청할 자격이 있습니다.  
+기존 Microsoft 365 고객은 나머지 전체 조직의 핵심 고객 데이터에 대 한 마이그레이션을 요청할 수 있습니다.  
   
 ## <a name="when-can-i-request-a-move"></a>이동을 요청할 수 있는 시기
 
@@ -43,6 +43,7 @@ ms.locfileid: "42106229"
 |남아프리카 공화국  <br/> |2019년 7월 25일  <br/> |2020 년 6 월 30 일  <br/> |
 |스위스, 리히텐슈타인  <br/> |2019년 12월 10일  <br/> |2020 년 6 월 30 일  <br/> |
 |독일  <br/> |하려고  <br/> |하려고  <br/> |
+|노르웨이  <br/> |2020 년 4 월 15 일  <br/> |2020 년 10 월 31 일  <br/> |
    
 ## <a name="how-to-request-a-move"></a>이동을 요청하는 방법
 
@@ -55,7 +56,7 @@ Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색
 - 테 넌 트가 Office 365 이동 프로그램에 적합 하지 않습니다.  자격은 테 넌 트 등록 국가에 따라 결정 됩니다.
 - Rest의 모든 핵심 고객 데이터가 이미 새 지역에 있습니다 (페이지의 데이터 위치 섹션 참조). 
   
-조직에 데이터 상주 요구 사항이 있고 초기 마이그레이션을 요청 해야 하는 경우 섹션의 오른쪽 위에 있는 **옵트인** 을 클릭 합니다. Office 365 이동 프로그램에 대 한 세부 정보를 설명 하는 새 섹션이 화면 오른쪽에 표시 됩니다. **나머지 조직의 핵심 고객 데이터를 마이그레이션해야**하는 텍스트 옆의 설정/해제 단추를 선택 합니다. 그런 다음 **저장**을 클릭 합니다.
+조직에 데이터 상주 요구 사항이 있고 마이그레이션을 요청 해야 하는 경우 섹션의 오른쪽 위에 있는 **옵트인** 을 클릭 합니다. 화면 오른쪽에 Microsoft 365 이동 프로그램에 대 한 세부 정보를 설명 하는 새 섹션이 표시 됩니다. **나머지 조직의 핵심 고객 데이터를 마이그레이션해야**하는 텍스트 옆의 설정/해제 단추를 선택 합니다. 그런 다음 **저장**을 클릭 합니다.
   
 ![데이터 센터 옵트인 작업 화면](media/dataresidencyflyoutae.jpg)
   
@@ -71,35 +72,7 @@ Microsoft 365 관리 센터의 페이지에 액세스 하려면 왼쪽의 탐색
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-1 월 2020 일, 적격 Office 365 국가의 고객은 Microsoft 팀원 채팅 서비스 데이터 마이그레이션을 옵트인 할 수 있습니다.  고객에 게 범위 내에서 Microsoft 팀의 초기 마이그레이션 프로그램을 고려할 수 있는 기회를 제공 하기 위해 모든 적합 한 국가의 옵트인 일정을 다시 열거나 확장 했습니다.   
-
-## <a name="optional-actions-before-you-request-a-move"></a>이동 요청 전 선택적 작업
-
-다음 단계를 적절히 수행합니다.
-  
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>IP 기반 방화벽을 사용하는 경우 새 IP 주소에 대한 허용 규칙 추가
-
-IP 주소 대신 방화벽에 대해 DNS 필터링을 사용하는 것이 좋습니다. 필요한 새 DNS 항목은 없습니다.
-  
-인터넷 연결을 위해 IP 기반 방화벽을 사용하는 경우 대상 데이터 센터 지역의 새 IP 주소에 대해 허용 규칙을 추가해야 합니다. 새 데이터 센터에 대 한 IP 주소도 새 서버와 함께 [Office 365 url 및 IP 주소 범위](https://go.microsoft.com/fwlink/p/?LinkId=229631)에 지속적으로 추가 됩니다.
-  
-허용 규칙(허용 목록이라고도 함)을 추가하는 방법에 대한 자세한 내용은 방화벽 설명서를 참조하세요.
-  
-IP 주소를 추가한 후 새 데이터 센터 지역에 대한 연결을 테스트할 수 있습니다. 이 작업을 수행 하려면 새 데이터 센터 geo를 사용할 수 있는 즉시 [새로운 무료 30 일 평가판](https://go.microsoft.com/fwlink/?LinkId=522463) 테 넌 트를 만드는 것이 좋습니다. 
-  
-### <a name="test-using-a-new-tenant"></a>새 테넌트를 사용하여 테스트
-
-이동 전에 연결을 테스트 하려는 경우 새 데이터 센터 geo를 사용할 수 있는 후 [새로운 무료 30 일 평가판 테 넌 트](https://go.microsoft.com/fwlink/?LinkId=522463) 를 설정 하 고이를 사용 하 여 Office 365를 새 데이터 센터 지역에서 호스팅하는 환경을 경험할 수 있습니다. 
-  
-평가판 테 넌 트를 기존 테 넌 트와 함께 사용할 수 없습니다.
-  
-- 사용자는 테스트를 위해 별도 평가판 계정을 사용해야 합니다.
-    
-- 테넌트 간에 데이터를 이동할 방법은 없습니다.
-    
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>모바일 장치에서 오래된 Exchange 설정을 업데이트하도록 사용자에게 알림
-
-사용자가 Exchange Server를 **m.outlook.com** 또는 **podxxxxx.outlook.com**로 설정한 모바일 장치를 사용 하는 경우, [계정에 동기화 하도록 모바일 장치 설정](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)의 지침에 따라 **outlook.office365.com**로 전환 하는 것이 좋습니다.
+1 월 2020 일, 적격 Office 365 국가의 고객은 Microsoft 팀원 채팅 서비스 데이터 마이그레이션을 옵트인 할 수 있습니다.  고객에 게 범위 내에서 마이그레이션 프로그램을 고려할 기회를 제공 하기 위해 모든 적격 국가에서 옵트인 일정을 다시 열거나 확장 했습니다. 데이터 상주 이동을 위해 이전에 옵트인 했던 고객도 팀에서 로컬 데이터 센터 지역으로 이동 합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
