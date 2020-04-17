@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Office 365 데이터 위치'
-ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206605"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516539"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -120,6 +120,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 인도 | 첸나이, 뭄바이, 푸네 |
 | 일본 | 오사카, 도쿄, 사이타마 |
 | 한국 | 부산, 서울 |
+| 노르웨이 | 오슬로, 스타방게르 |
 | 남아프리카 공화국 | 케이프타운, 요하네스버그 |
 | 스위스 | 제네바, 취리히 |
 | 아랍에미리트 | 두바이, 아부다비 |
@@ -3928,18 +3929,18 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 
 | 서비스 | 위치 |
 | --- | --- |
-| Exchange Online | 전세계 지리적 위치 1 - EMEA |
-| 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
-| SharePoint Online | 전세계 지리적 위치 1 - EMEA |
+| Exchange Online | 노르웨이 |
+| 비즈니스용 OneDrive | 노르웨이 |
+| SharePoint Online | 노르웨이 |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
-| EOP | 전세계 지리적 위치 1 - EMEA |
-| MyAnalytics | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 노르웨이 |
+| Office Online &amp; Mobile | 노르웨이 |
+| EOP | 노르웨이 |
+| MyAnalytics | 노르웨이 |
 | Planner | 전세계 지리적 위치 1 - EMEA |
 | Sway | 미국 |
 | Yammer | 전세계 지리적 위치 1 - EMEA |
-| OneNote 서비스 | 전세계 지리적 위치 1 - EMEA |
+| OneNote 서비스 | 노르웨이 |
 | Stream | 전세계 지리적 위치 1 - EMEA |
 | Whiteboard | 미국 |
 | Forms | 전세계 지리적 위치 1 - EMEA |
