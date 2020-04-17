@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: SharePoint 2010 및 SharePoint Server 2010에 대 한 지원이 종료 되었습니다 (2021 년 4 월 13 일). 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503846"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532297"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
@@ -68,7 +68,7 @@ SharePoint Server 2010 및 SharePoint Foundation 2010 소프트웨어가 지원 
 ![SharePoint Server 2010 업그레이드 경로](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->SharePoint Server 2010 및 SharePoint Foundation 2010에 대 한 지원 종료는 2020 년 10 월 13 일에 예정 되어 있지만 항상 [제품 수명 주기 사이트](https://support.microsoft.com/lifecycle) 에서 가장 최근 날짜를 *확인 해야 합니다* .
+>SharePoint Server 2010 및 SharePoint Foundation 2010에 대 한 지원 종료는 2021 년 4 월 13 일에 예정 되어 있지만 항상 [제품 수명 주기 사이트](https://support.microsoft.com/lifecycle) 에서 가장 최근 날짜를 *확인 해야 합니다* .
 >
 
   
