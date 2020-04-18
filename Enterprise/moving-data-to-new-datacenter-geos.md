@@ -1,7 +1,7 @@
 ---
 title: 핵심 데이터를 새로운 Microsoft 365 datacenter (지역)로 이동
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 새 데이터 센터? 지속적인 고객 요구 및 사용 증가를 지원 하기 위해 용량을 추가 하 고 리소스를 계산 합니다. 또한 새 데이터 센터 지역는 핵심 고객 데이터에 대 한 상주 데이터를 제공 합니다. 핵심 고객 데이터는 Microsoft Online Services 용어로, Exchange Online 사서함 콘텐츠 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일 콘텐츠)와 SharePoint Online 사이트 콘텐츠 및 해당 사이트 내에 저장 된 파일 및 비즈니스용 OneDrive에 업로드 된 파일에 정의 된 고객 데이터의 하위 집합을 지칭 하는 용어입니다.
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516549"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547726"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>핵심 데이터를 새로운 Microsoft 365 datacenter (지역)로 이동
 
@@ -46,7 +46,7 @@ Microsoft 365 서비스에 대 한 새 데이터 센터 지역가 계속 해 서
 |**남아프리카 공화국**| 유럽 | 남아프리카 공화국 | 2019년 7월 |
 |**스위스, 리히텐슈타인**| 유럽 | 스위스 | 2019년 12월 |
 |**독일**| 유럽 | 독일 | 2019년 12월 |
-|**노르웨이**| 유럽 | 노르웨이 | 4 월 2020 |
+|**노르웨이**| 유럽 | 노르웨이 | 2020년 4월 |
   
 새 데이터 센터 지역이 사용 가능해진 이후에 만들어진 신규 고객 또는 Office 365 테넌트의 경우 휴지 상태의 핵심 고객 데이터가 새 데이터 센터 지역에 자동으로 저장됩니다.
 

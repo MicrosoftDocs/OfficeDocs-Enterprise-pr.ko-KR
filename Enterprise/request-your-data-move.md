@@ -1,7 +1,7 @@
 ---
 title: 데이터 이동을 요청하는 방법
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: 기존 Office 365 고객은 가맹 Microsoft 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516569"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547746"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 
@@ -43,7 +43,7 @@ ms.locfileid: "43516569"
 |남아프리카 공화국  <br/> |2019년 7월 25일  <br/> |2020 년 6 월 30 일  <br/> |
 |스위스, 리히텐슈타인  <br/> |2019년 12월 10일  <br/> |2020 년 6 월 30 일  <br/> |
 |독일  <br/> |하려고  <br/> |하려고  <br/> |
-|노르웨이  <br/> |2020 년 4 월 15 일  <br/> |2020 년 10 월 31 일  <br/> |
+|노르웨이  <br/> |2020년 4월 15일  <br/> |2020 년 10 월 31 일  <br/> |
    
 ## <a name="how-to-request-a-move"></a>이동을 요청하는 방법
 
