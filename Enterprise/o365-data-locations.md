@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Office 365 데이터 위치'
-ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 71c286b3dc7fbbaa842183dcaa23c863e46f809a
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516539"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547736"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Azure Active Directory 데이터 위치는 [AAD 데이터 맵](https://go.microsoft.com/fwlink/p/?linkid=2092972)을 방문하세요.
 
 
-COVID-19와 관련하여 전례 없는 상황과 유럽의 온라인 서비스 수요 관리 필요성으로 인해 조직이 교육 기관인 경우 유럽 연합(EU), 유럽 자유 무역 협회(EFTA)에서 Office 365 테넌트를 프로비저닝할 수 있습니다, 영국(UK), 미국(US) 또는 캐나다(CA)로 데이터를 전송하거나 EU, EFTA, UK, US 또는 CA의 데이터 센터로 데이터를 전송하세요.즉, 귀하의 데이터는 EU, EFTA, UK, US 또는 CA 내에 저장되어 있을 수 있습니다. 규정 준수, 개인 정보 보호 및 보안에 대한 Microsoft의 약속은 변하지 않고 서비스 가용성을 유지하기 위해 필요한 신중한 조치를 구현합니다.  데이터 전송과 관련하여 모든 해당 법률을 준수합니다.
+COVID-19와 관련하여 전례 없는 상황과 유럽의 온라인 서비스 수요 관리 필요성으로 인해 조직이 교육 기관인 경우 유럽 연합(EU), 유럽 자유 무역 협회(EFTA), 영국(UK), 미국(US) 또는 캐나다(CA)에서 Office 365 테넌트를 프로비저닝하거나 EU, EFTA, UK, US 또는 CA의 모든 데이터 센터로 데이터를 전송할 수 있습니다.즉, 귀하의 데이터는 EU, EFTA, UK, US 또는 CA 내에 저장되어 있을 수 있습니다. 규정 준수, 개인 정보 보호 및 보안에 대한 Microsoft의 약속은 변하지 않고 서비스 가용성을 유지하기 위해 필요한 신중한 조치를 구현합니다.  데이터 전송과 관련하여 모든 해당 법률을 준수합니다.
 
 
 

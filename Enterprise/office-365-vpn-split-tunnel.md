@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365에서 VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결을 최적화하는 지침입니다.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131437"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547656"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결 최적화
 <!---
@@ -32,7 +32,7 @@ ms.locfileid: "43131437"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-원격 작업자 디바이스를 VPN을 통해 회사 네트워크 또는 클라우드 인프라에 연결하는 고객의 경우 주요 Office 365 시나리오 **Microsoft Teams**, **SharePoint Online** 및 **Exchange Online**이 _VPN 분할 터널_ 구성을 통해 라우팅되도록 하는 것이 좋습니다. 이것은 COVID-19 팬데믹과 같은 대규모 회사-집 이벤트 동안 지속적인 직원 생산성을 지원하기 위한 최전방 전략으로 특히 중요합니다.
+원격 작업자 디바이스를 VPN을 통해 회사 네트워크 또는 클라우드 인프라에 연결하는 고객의 경우 주요 Office 365 시나리오 **Microsoft Teams**, **SharePoint Online** 및 **Exchange Online**이 _VPN 분할 터널_ 구성을 통해 라우팅되도록 하는 것이 좋습니다. 이것은 COVID-19 위기와 같은 대규모 회사-집 이벤트 동안 지속적인 직원 생산성을 지원하기 위한 최전방 전략으로 특히 중요합니다.
 
 ![분할 터널 VPN 구성](media/vpn-split-tunnelling/vpn-model-2.png)
 
