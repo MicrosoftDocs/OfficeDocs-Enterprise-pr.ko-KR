@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: SaaS 서비스에 대 한 네트워크 최적화가 중요 한 이유, Office 365 네트워킹의 목표 및 각 SaaS가 다른 작업을 수행 하는 다른 네트워킹을 필요로 하는 이유에 대해 설명 합니다.
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844359"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612888"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 네트워크 연결 개요
 
@@ -33,9 +33,9 @@ Office 365은 다양 한 마이크로 서비스 및 응용 프로그램 집합�
 
 ## <a name="office-365-networking-goals"></a>Office 365 네트워킹 목표
 
-Office 365 네트워킹의 궁극적인 목표는 클라이언트와 가장 가까운 Office 365 끝점 간에 최소의 제한적인 액세스를 사용 하 여 최종 사용자 환경을 최적화 하는 것입니다. 최종 사용자 환경의 품질은 사용자가 사용 하는 응용 프로그램의 성능 및 응답성과 직접적으로 관련 됩니다. 예를 들어 Microsoft 팀은 사용자 전화 통화, 회의 및 공유 화면 공동 작업을 쉽게 할 수 있도록 하는 짧은 대기 시간을 사용 하므로, Outlook에서는 서버 쪽 인덱싱 및 인공 지능을 활용 하는 빠른 검색 기능에 대 한 강력한 네트워킹 연결을 이용 합니다. 성능.
+Office 365 네트워킹의 궁극적인 목표는 클라이언트와 가장 가까운 Office 365 끝점 간에 최소의 제한적인 액세스를 사용 하 여 최종 사용자 환경을 최적화 하는 것입니다. 최종 사용자 환경의 품질은 사용자가 사용 하는 응용 프로그램의 성능 및 응답성과 직접적으로 관련 됩니다. 예를 들어 Microsoft 팀은 사용자 전화 통화, 회의 및 공유 화면 공동 작업을 통해 결함 없는 기능을 사용할 수 있도록 낮은 대기 시간을 사용 하며, Outlook에서는 서버 쪽 인덱싱 및 인공 지능 기능을 활용 하는 빠른 검색 기능이 제공 됩니다.
 
-네트워크 설계의 기본 목표는 클라이언트 컴퓨터에서 Microsoft 글로벌 네트워크로의 RTT (왕복 시간)를 줄이고 모든 Microsoft의 데이터 센터를 낮은 대기 시간으로 상호 연관 시키는 Microsoft의 공용 네트워크 백본로 인해 대기 시간이 최소화 되도록 하는 것입니다. , 전 세계에서 확산 되는 고가용성 클라우드 응용 프로그램 진입점을 살펴봅니다. Microsoft 글로벌 네트워크에 대 한 자세한 내용은 마이크로소프트에서 [빠르고 안정적인 글로벌 네트워크를 구축 하는 방법을](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)확인할 수 있습니다.
+네트워크 설계의 기본 목표는 클라이언트 컴퓨터에서 Microsoft 글로벌 네트워크로의 RTT (왕복 시간)를 줄이고 전 세계의 모든 Microsoft 데이터 센터를 낮은 대기 시간, 고가용성 클라우드 응용 프로그램 진입점과 상호 연결 하는 Microsoft의 공용 네트워크 백본으로 시간을 최소화 하는 것입니다. Microsoft 글로벌 네트워크에 대 한 자세한 내용은 마이크로소프트에서 [빠르고 안정적인 글로벌 네트워크를 구축 하는 방법을](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)확인할 수 있습니다.
 
 Office 최적화 365 네트워크 성능이 복잡할 필요는 없습니다. 다음과 같은 몇 가지 주요 원칙에 따라 가능한 최상의 성능을 얻을 수 있습니다.
 
@@ -49,7 +49,7 @@ Office 365 네트워크 연결 원칙에 대 한 자세한 내용은 [office 365
 
 클라이언트/서버 워크 로드에 대 한 전통적인 네트워크 아키텍처 원칙은 클라이언트와 끝점 간의 트래픽이 회사 네트워크 경계를 벗어나 확장 되지 않는 가정을 중심으로 설계 되었습니다. 또한 대부분의 엔터프라이즈 네트워크에서 모든 아웃 바운드 인터넷 연결은 회사 네트워크를 통과 하 고 중앙 위치에서 송신 합니다.
 
-전통적인 네트워크 아키텍처에서는 일반적인 인터넷 트래픽에 대 한 대기 시간이 높을수록 네트워크 경계 보안을 유지 관리 하기 위해 필요한 장단점이 되며, 인터넷 트래픽에 대 한 성능 최적화를 위해 일반적으로 업그레이드 또는 수평 확장 네트워크 송신 지점의 장비 그러나이 방법은 Office 365와 같은 SaaS 서비스의 최적의 네트워크 성능에 대 한 요구 사항을 해결 하지 않습니다.
+전통적인 네트워크 아키텍처에서는 일반적인 인터넷 트래픽에 대 한 대기 시간이 높을수록 네트워크 경계 보안을 유지 관리 하기 위해 필요한 장단점이 되며, 인터넷 트래픽에 대 한 성능 최적화는 일반적으로 네트워크 송신 지점에서 장비를 업그레이드 하거나 수평 확장 하는 작업을 수행 하는 데 필요 합니다. 그러나이 방법은 Office 365와 같은 SaaS 서비스의 최적의 네트워크 성능에 대 한 요구 사항을 해결 하지 않습니다.
 
 ## <a name="identifying-office-365-network-traffic"></a>Office 365 네트워크 트래픽 식별
 
@@ -94,7 +94,7 @@ Office 365 네트워크 연결 원리를 이해 하 고 적용 하는 방법에 
 
 Office 365 네트워크 성능 최적화는 실제로 불필요 한 장애를 제거 하는 것입니다. Office 365 연결을 신뢰할 수 있는 트래픽으로 처리 하면 패킷 검사 및 프록시 대역폭 경쟁에 따라 대기 시간이 지연 되는 것을 방지할 수 있습니다. 클라이언트 컴퓨터와 Office 365 끝점 간에 로컬 연결을 허용 하면 트래픽을 Microsoft 글로벌 네트워크를 통해 동적으로 라우팅할 수 있습니다.
 
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 
@@ -116,7 +116,7 @@ Office 365 네트워크 성능 최적화는 실제로 불필요 한 장애를 �
 
 [콘텐츠 배달 네트워크](content-delivery-networks.md)
 
-[Office 365 네트워크 온 보 딩 도구](https://aka.ms/netonboard)
+[Microsoft 365 연결 테스트](https://aka.ms/netonboard)
 
 [Microsoft가 빠르고 안정적인 글로벌 네트워크를 구축 하는 방법](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

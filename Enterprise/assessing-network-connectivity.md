@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365은 전세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 하기 위한 것입니다. 서비스가 발전 함에 따라 Office 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 개선 됩니다.
-ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c818cc959910e57f25f20ef6d1c4d3992a2330a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844699"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612868"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Office 365 네트워크 연결 평가
 
@@ -44,7 +44,7 @@ Office 365에 대 한 네트워크 연결을 나타내는 몇 가지 평가는 �
 - Office 365 네트워킹에 대 한 개념 정보는 [office 365 네트워크 연결 개요](office-365-networking-overview.md) 를 참조 하세요.
 - Office [365 네트워크 연결 원리](https://aka.ms/o365networkingprinciples) 를 참조 하 여 365 안전 하 고 효과적으로 해결 되는 방법 및 최적의 성능을 얻는 데 필요한 연결 원칙을 이해 합니다.
 - Office 365 계획, 디자인 및 배포에 대 한 안내가 제공 되는 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 에 등록 합니다. 
-- 지정한 사용자 위치와 Office 365 사이에 설치할 수 있는 네트워킹 연결 개선 사항에 대 한 구체적인 지침을 제공 하는 기본 연결 테스트를 실행 하려면 아래의 [Office 365 네트워크 온 보 딩 도구](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) 섹션을 참조 하십시오.
+- 지정한 사용자 위치와 Office 365 사이에 적용할 수 있는 네트워킹 연결 개선 사항에 대 한 구체적인 지침을 제공 하는 기본 연결 테스트를 실행 하려면 [Microsoft 365 connectivity test](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) 섹션을 참조 하십시오.
 
 > [!NOTE]
 > Microsoft authorization는 Office 365 용 Express 경로를 사용 하는 데 필요 합니다. 고객의 규정 요구 사항에 직접 연결 하는 경우 Microsoft는 모든 고객 요청을 검토 하 고 Office 365 사용에 대 한 사용자만 권한 부여를 승인 합니다. 이러한 요구 사항을 충족 하는 경우 해석 하는 규정에 대 한 텍스트 발췌문 및 웹 링크를 제공 하 여 Microsoft 검토를 시작 하기 [위한 Office 365의 express 경로 요청 양식에](https://aka.ms/O365ERReview) 직접 연결이 필요 하다는 것을 의미 합니다. 인증 되지 않은 구독에서 Office 365에 대 한 경로 필터를 만들려고 하면 [오류 메시지가](https://support.microsoft.com/kb/3181709)표시 됩니다.
@@ -59,9 +59,9 @@ Office 365에 대 한 네트워크 평가를 계획할 때 고려해 야 할 주
 
 Office 365을 평가 중 이며 네트워크 평가로 시작할 위치를 잘 모르거나 문제를 해결 하는 데 도움이 필요한 네트워크 디자인 문제가 있는지 확실 하지 않은 경우 Microsoft 계정 팀에 문의 하세요.
 
-## <a name="the-office-365-network-onboarding-tool"></a>Office 365 네트워크 온 보 딩 도구
+## <a name="the-microsoft-365-connectivity-test"></a>Microsoft 365 연결 테스트
 
-[Office 365 네트워크 온 보 딩 도구](https://aka.ms/netonboard) 는 office 365 테 넌 트에 대해 기본 연결성 테스트를 실행 하 고 최적의 Office 365 성능을 위해 특정 네트워크 디자인을 권장 하는 개념 증명 (POC) 네트워크 평가 도구입니다. 이 도구는 인터넷 웹 브라우징에 유용 하지만 Office 365와 같은 대규모 SaaS 응용 프로그램의 성능에 영향을 주는 일반적인 대규모 엔터프라이즈 네트워크 경계 디자인 옵션을 강조 표시 합니다.
+[Microsoft 365 연결 테스트](https://aka.ms/netonboard) 는 office 365 테 넌 트에 대해 기본 연결성 테스트를 실행 하는 개념 증명 (POC) 네트워크 평가 도구 이며 최적의 Office 365 성능을 위해 특정 네트워크 디자인을 권장 합니다. 이 도구는 인터넷 웹 브라우징에 유용 하지만 Office 365와 같은 대규모 SaaS 응용 프로그램의 성능에 영향을 주는 일반적인 대규모 엔터프라이즈 네트워크 경계 디자인 옵션을 강조 표시 합니다.
 
 네트워크 온 보 딩 도구는 다음을 수행 합니다.
 
@@ -103,7 +103,7 @@ Office 365을 평가 중 이며 네트워크 평가로 시작할 위치를 잘 �
 - 여러 기능별 끝점에 대 한 연결 테스트
 - Exchange Online, SharePoint Online 및 팀 서비스에 대 한 tracert 및 대기 시간 데이터를 포함 하는 네트워크 경로 진단
 
-Office 365 네트워크 온 보 딩 도구에 대해 자세히 살펴보고 [업데이트 된 office 365 네트워크 온 보 딩 도구 POC에서 새 네트워크 디자인 권장 사항](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) 블로그 게시물에 대 한 의견을 제공 합니다. 이 도구 및 기타 Office 365 네트워킹 업데이트에 대 한 이후 업데이트에 대 한 정보가 [Office 365 네트워킹](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) 블로그에 게시 됩니다.
+Microsoft 365 연결 테스트에 대해 자세히 살펴보고 [새로운 네트워크 디자인 권장 사항 블로그 게시물을 사용 하 여 업데이트 된 microsoft 365 connectivity 테스트 POC](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) 에 의견을 제공할 수 있습니다. 이 도구 및 기타 Office 365 네트워킹 업데이트에 대 한 이후 업데이트에 대 한 정보가 [Office 365 네트워킹](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) 블로그에 게시 됩니다.
   
 여기서는 다음을 수행 [ https://aka.ms/o365networkconnectivity하는 데 사용할 수 있는 간단한 링크를 제공 합니다.](https://aka.ms/o365networkconnectivity)
   

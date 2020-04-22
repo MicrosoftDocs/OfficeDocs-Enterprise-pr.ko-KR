@@ -1,9 +1,9 @@
 ---
-title: M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
+title: M365 관리 센터의 Microsoft 365 connectivity test (preview)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: M365 관리 센터의 Microsoft 365 connectivity test (preview)
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612878"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Microsoft 365 connectivity test (preview)
 
-Microsoft 365 네트워크 온 보 딩 도구는에 <https://connectivity.office.com>있습니다. 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
+Microsoft 365 connectivity test는에 <https://connectivity.office.com>있습니다. 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
 
 >[!NOTE]
 >온 보 딩 도구는 WW 상업용 및 GCC 중간에 있는 테 넌 트를 지원 하지만 GCC High, DoD, 독일 또는 중국이 아닙니다.
 
-Microsoft 365 관리 센터의 네트워크 insights는 Microsoft 365 테 넌 트에 대 한 제품 측정을 기반으로 합니다. 비교 시 Microsoft 365 네트워크 온 보 딩 도구의 네트워크 insights 도구에서 로컬로 실행 됩니다. 제품에서 수행할 수 있는 테스트는 제한 되며 사용자에 대 한 로컬 테스트를 실행 하 여 더 많은 데이터를 수집할 수 있습니다. Microsoft 365 관리 센터의 네트워크 insights에서 특정 사무실 위치에 Microsoft 365 사용에 대 한 네트워킹 문제가 있음을 보여 줍니다. Microsoft 365 네트워크 온 보 딩 도구를 통해 권장 되는 네트워크 성능 개선 작업으로 인해 해당 문제의 근본적인 원인을 확인할 수 있습니다.
+Microsoft 365 관리 센터의 네트워크 insights는 Microsoft 365 테 넌 트에 대 한 제품 측정을 기반으로 합니다. 비교 시 Microsoft 365 연결 테스트의 네트워크 insights 도구에서 로컬로 실행 됩니다. 제품에서 수행할 수 있는 테스트는 제한 되며 사용자에 대 한 로컬 테스트를 실행 하 여 더 많은 데이터를 수집할 수 있습니다. Microsoft 365 관리 센터의 네트워크 insights에서 특정 사무실 위치에 Microsoft 365 사용에 대 한 네트워킹 문제가 있음을 보여 줍니다. Microsoft 365 연결 테스트를 통해 권장 되는 네트워크 성능 개선 작업으로 인해 발생 하는 문제의 근본적인 원인을 확인할 수 있습니다.
 
-Microsoft 365 관리 센터의 각 사무실 위치에 대해 네트워킹 품질 상태를 평가할 수 있으며, Microsoft 365 네트워크 온 보 딩 도구를 기반으로 하는 테스트를 배포한 후 더 자세한 내용을 확인할 수 있는 방법을 함께 사용 하는 것이 좋습니다.
+Microsoft 365 관리 센터의 각 사무실 위치에 대해 네트워킹 품질 상태를 평가할 수 있으며 Microsoft 365 연결 테스트를 기반으로 테스트를 배포한 후 더 자세한 내용을 확인할 수 있는 방법을 함께 사용 하는 것이 좋습니다.
 
 >[!IMPORTANT]
 >네트워크 insights, Microsoft 365 관리 센터의 성능 권장 사항 및 평가는 현재 미리 보기 상태 이며, 기능 미리 보기 프로그램에 등록 되어 있는 Microsoft 365 테 넌 트에만 사용할 수 있습니다.
 
 ## <a name="the-advanced-tests-client-application"></a>고급 테스트 클라이언트 응용 프로그램
 
-Microsoft 365 네트워크 온 보 딩 도구는 두 부분으로 구성 됩니다. 웹 사이트가 <https://connectivity.office.com> 있고 다운로드 가능한 Windows 클라이언트 응용 프로그램이 있습니다. 다운로드 가능한 클라이언트는 고급 네트워크 연결 테스트를 실행 하 고 대부분의 테스트를 실행 해야 합니다.
+Microsoft 365 연결 테스트는 두 부분으로 구성 됩니다. 웹 사이트가 <https://connectivity.office.com> 있고 다운로드 가능한 Windows 클라이언트 응용 프로그램이 있습니다. 다운로드 가능한 클라이언트는 고급 네트워크 연결 테스트를 실행 하 고 대부분의 테스트를 실행 해야 합니다.
 
 웹 사이트에서 고급 클라이언트 테스트를 실행할 수 있으며, 결과를 실행 하는 동안 웹 페이지로 다시 채웁니다.
 

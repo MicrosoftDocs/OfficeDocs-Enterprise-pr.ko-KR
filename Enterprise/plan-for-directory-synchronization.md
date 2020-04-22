@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365, Active Directory 도메인 서비스 정리 및 Azure Active Directory Connect 도구를 사용한 디렉터리 동기화에 대해 설명 합니다.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841765"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580935"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 하이브리드 id 및 디렉터리 동기화
 
@@ -69,7 +69,7 @@ PHS (암호 해시 동기화)를 사용 하 여 AD DS 사용자 계정을 Office
 
 암호가 변경 되거나 온-프레미스에서 다시 설정 되 면 새 암호 해시가 Azure AD와 동기화 되어 사용자가 항상 클라우드 리소스 및 온-프레미스 리소스에 대해 동일한 암호를 사용할 수 있습니다. 사용자 암호가 Azure ad로 전송 되지 않거나 Azure AD의 일반 텍스트로 저장 됩니다. Id 보호와 같은 Azure AD의 일부 프리미엄 기능은 선택한 인증 방법에 관계 없이 PHS를 요구 합니다.
   
-자세한 내용을 보려면 [PHS 선택을](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) 참조 하십시오.
+자세한 내용을 보려면 [PHS 선택을](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 참조 하십시오.
   
 #### <a name="pass-through-authentication"></a>통과 인증
 
@@ -81,15 +81,15 @@ PTA 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레
 
 또한 PTA는 온-프레미스 사용자 계정 상태, 암호 정책 및 로그온 시간을 즉시 적용 하기 위한 보안 요구 사항이 있는 조직에도 적합 합니다. 
   
-자세한 내용을 보려면 [PTA 선택을](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) 참조 하세요.
+자세한 내용을 보려면 [PTA 선택을](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 참조 하세요.
   
 ### <a name="federated-authentication"></a>페더레이션 인증
 
 페더레이션 인증은 인증 요구 사항이 더 복잡 한 대규모 엔터프라이즈 조직에 주로 사용 됩니다. AD DS id는 Office 365와 동기화 되며 사용자 계정은 온-프레미스에서 관리 됩니다. 페더레이션 인증을 사용 하는 경우 사용자는 온-프레미스와 클라우드에서 동일한 암호를 사용 하며, Office 365를 사용할 수 있도록 다시 로그인 할 필요가 없습니다. 
 
-페더레이션 인증은 스마트 카드 기반 인증 또는 타사 다단계 인증과 같은 추가 인증 요구 사항을 지원할 수 있으며, 일반적으로 조직에 인증 요구 사항이 없는 경우에 필요 합니다. 기본적으로 Azure AD에서 지원 됩니다.
+페더레이션 인증은 스마트 카드 기반 인증 또는 타사 다단계 인증과 같은 추가 인증 요구 사항을 지원할 수 있으며, 일반적으로 조직이 Azure AD에서 기본적으로 지원 하지 않는 인증 요구 사항을 충족 하는 경우에 필요 합니다.
  
-자세히 알아보려면 [페더레이션 인증 선택을](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) 참조 하세요.
+자세히 알아보려면 [페더레이션 인증 선택을](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 참조 하세요.
   
 #### <a name="third-party-authentication-and-identity-providers"></a>타사 인증 및 id 공급자
 

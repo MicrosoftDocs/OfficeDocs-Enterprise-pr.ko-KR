@@ -3,7 +3,7 @@ title: Microsoft 365 관리 센터의 네트워크 성능 권장 사항 (미리 
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 관리 센터의 네트워크 성능 권장 사항 개요 (미리 보기)
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185779"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612938"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 관리 센터의 네트워크 성능 권장 사항 (미리 보기)
 
@@ -131,7 +131,7 @@ Microsoft 365 서비스 전면 도어는 Microsoft의 글로벌 네트워크에�
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>최적의 Microsoft 365 서비스 전면 도어 란 무엇입니까?
 
-최적의 Microsoft 365 서비스 전면 도어는 일반적으로 구/군/시 또는 메트로 지역에 있는 네트워크 egress에 가장 가까운 곳입니다. [Microsoft 365 네트워크 온 보 딩 도구](office-365-network-mac-perf-onboarding-tool.md) 를 사용 하 여 사용 중인 microsoft 365 서비스 전면 도어 및 최적의 서비스 전면 도어 위치를 확인 합니다. 사용 중인 전면 문이 최적 상태 이면 도구에서 Microsoft의 글로벌 네트워크에 최적 상태로 연결 하는 것입니다.
+최적의 Microsoft 365 서비스 전면 도어는 일반적으로 구/군/시 또는 메트로 지역에 있는 네트워크 egress에 가장 가까운 곳입니다. [Microsoft 365 연결 테스트](office-365-network-mac-perf-onboarding-tool.md) 를 사용 하 여 사용 중인 microsoft 365 서비스 전면 도어 및 최적의 서비스 전면 도어 위치를 확인 합니다. 사용 중인 전면 문이 최적 상태 이면 도구에서 Microsoft의 글로벌 네트워크에 최적 상태로 연결 하는 것입니다.
 
 ### <a name="what-is-an-internet-egress-location"></a>인터넷 송신 위치 란?
 
@@ -143,6 +143,6 @@ Microsoft 365 서비스 전면 도어는 Microsoft의 글로벌 네트워크에�
 
 [Microsoft 365 네트워크 평가 (미리 보기)](office-365-network-mac-perf-score.md)
 
-[M365 관리 센터의 Microsoft 365 네트워크 온 보 딩 도구 (미리 보기)](office-365-network-mac-perf-onboarding-tool.md)
+[M365 관리 센터의 Microsoft 365 connectivity test (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 네트워크 연결 위치 서비스 (미리 보기)](office-365-network-mac-location-services.md)
