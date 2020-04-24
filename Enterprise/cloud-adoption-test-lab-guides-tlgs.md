@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 이 TLG(테스트 랩 가이드)를 사용하여 Office 365의 데모, 개념 증명 또는 개발/테스트 환경을 설정합니다.'
-ms.openlocfilehash: 133f31dd46555ac7d80c2fcc5f3756da967cb331
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845029"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793691"
 ---
 # <a name="test-office-365-with-test-lab-guides-tlgs"></a>TLG (테스트 랩 가이드)를 사용하여 Office 365 테스트
 
@@ -52,6 +52,6 @@ Office 365와 Microsoft 365 모두에 적용되는 추가 TLG를 보려면 [여�
     
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [하이브리드 솔루션](hybrid-solutions.md)

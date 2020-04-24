@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: '요약: SharePoint, Exchange, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델, 배포 및 플랫폼 옵션을 설명하는 IT 포스트를 확인하세요.'
-ms.openlocfilehash: eb5aefb46fa46eda1be71db76b533743a4b73669
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3b0eb977754b86d626153d38d0d79e718dedfcdc
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844729"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793701"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 
@@ -196,7 +196,7 @@ SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 
 <a name="Lync2013_Options"> </a>
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   

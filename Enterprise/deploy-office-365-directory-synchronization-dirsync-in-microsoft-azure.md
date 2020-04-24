@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: '요약: Azure의 가상 머신에 Azure AD Connect를 배포하여 온-프레미스 디렉터리 및 Office 365 구독의 Azure 테넌트 간에 계정을 동기화합니다.'
-ms.openlocfilehash: 0c92771788d932127c0afaf5724e89ce11298a32
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 05e0071ce9ffb172fc1399f4038c603ef0d335c5
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840545"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793661"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure에서 Office 365 디렉터리 동기화 배포
 
@@ -192,7 +192,7 @@ Azure AD Connect는 온-프레미스 AD DS에서 Office 365 구독에 계정을 
     
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
