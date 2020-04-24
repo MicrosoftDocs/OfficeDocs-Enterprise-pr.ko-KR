@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: '요약: 다음의 문서를 활용해 Microsoft의 클라우드 제품으로 보안 솔루션을 배포합니다.'
-ms.openlocfilehash: 18025e12a050180f9ff5e6ad5413c4c457c3154d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d006fe0ebb1b4bb4c963ffec8dbdece590c81032
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845009"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793681"
 ---
 # <a name="security-solutions"></a>보안 솔루션
 
@@ -40,7 +40,7 @@ ms.locfileid: "41845009"
     
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   

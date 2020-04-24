@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '요약: Office 365 개발/테스트 환경에서 Office 365 Cloud App Security를 구성 하 고 시연 하는 방법을 설명 합니다.'
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840805"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793721"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 개발/테스트 환경용 Cloud App Security
 
  **요약:** Office 365 개발/테스트 환경에서 Office 365 Cloud App Security를 구성 하 고 시연 합니다.
   
-Office 365 Cloud App Security (이전에는 Office 365 Advanced Security Management)를 사용 하 여 Office 365 구독에서 의심 스러운 활동을 모니터링 하 고이를 조사 하 고 문제를 해결 하는 데 도움이 되는 정책을 만들 수 있습니다. 동작은. 자세한 내용은 [Office 365의 Cloud App Security 개요](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)를 참조 하세요.
+Office 365 Cloud App Security (이전에는 Office 365 Advanced Security Management)를 통해 Office 365 구독에서 의심 스러운 활동을 모니터링 하 고 사용자에 게 알리기 위한 정책을 만들고 가능한 업데이트 작업을 수행할 수 있습니다. 자세한 내용은 [Office 365의 Cloud App Security 개요](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)를 참조 하세요.
   
 이 문서의 지침을 사용 하 여 Office 365 평가판 구독에서 Cloud App Security를 사용 하도록 설정 하 고 테스트 합니다.
   
@@ -165,7 +165,7 @@ Office 365 Cloud App Security (이전에는 Office 365 Advanced Security Managem
   
 [Office 365 개발/테스트 환경](office-365-dev-test-environment.md)
   
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
 
 [Office 365의 Cloud App Security 개요](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

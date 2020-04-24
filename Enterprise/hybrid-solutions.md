@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '요약: 다음 문서를 참조하여 Microsoft Azure에서 Office Server 작업을 배포합니다.'
-ms.openlocfilehash: 9ce7236a8b9c776aacd259fd944d85326a41e32e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5106a509cd5be05b9988f6d4b27c1947deede588
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840135"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793791"
 ---
 # <a name="hybrid-solutions"></a>하이브리드 솔루션
 
@@ -50,7 +50,7 @@ Azure의 SharePoint Server 2013 작업을 위해 다음 사항을 준비해주�
   
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   

@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Office 365의 경우에는 인터넷으로 송신 하는 모든 트래픽을 필요로 하지 않고 다양 한 Office 365 서비스에 연결 하는 대체 라우팅 경로를 제공 합니다. Office 365에 대 한 인터넷 연결이 여전히 필요 하지만 Microsoft가 BGP를 통해 네트워크에 알리는 특정 경로는 네트워크에 다른 구성이 없는 경우에는 직접 대상 지정 회로가 기본 설정 되어 있어야 합니다. 이 라우팅을 관리 하기 위해 구성할 수 있는 세 가지 일반적인 영역에는 접두사 필터링, 보안 및 준수 등이 포함 됩니다.
-ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844989"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798799"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 연결을 위한 ExpressRoute 관리
 
@@ -35,7 +35,7 @@ Office 365의 경우에는 인터넷으로 송신 하는 모든 트래픽을 필
 
 고객은 Microsoft에서 보급 한 모든 BGP 경로를 승인 하 고, 제공 된 경로는 엄격한 검토 및 유효성 검사 프로세스를 통해 확인이 추가 되었습니다. 비트 단위는 고객 측에서 인바운드 경로 필터링을 사용 하지 않고 IP 접두사 소유권, 무결성 및 규모와 같은 권장 되는 컨트롤을 기본적으로 제공 합니다.
   
-Express 공용 피어 링에서 경로 소유권을 추가로 확인 해야 하는 경우에는 [Microsoft의 공용 IP 범위](https://www.microsoft.com/download/details.aspx?id=53602)를 나타내는 모든 IPv4 및 IPv6 IP 접두사 목록에 대해 알린 경로를 확인할 수 있습니다. 이러한 범위는 전체 Microsoft 주소 공간을 포함 하 고 자주 변경 되며, 이러한 범위에 대해 Microsoft가 소유 하지 않은 경로 누수가 발생 하는 고객에 게 추가 보호 기능을 제공 합니다. 환경. 이벤트가 변경 되 면 해당 월의 1 일에 변경이 수행 되 고 페이지 **세부 정보** 섹션의 버전 번호가 파일을 업데이트할 때마다 변경 됩니다.
+Express 공용 피어 링에서 경로 소유권을 추가로 확인 해야 하는 경우에는 [Microsoft의 공용 IP 범위](https://www.microsoft.com/download/details.aspx?id=53602)를 나타내는 모든 IPv4 및 IPv6 IP 접두사 목록에 대해 알린 경로를 확인할 수 있습니다. 이러한 범위는 전체 Microsoft 주소 공간을 포함 하 고 자주 변경 되며, 신뢰할 수 있는 범위 집합을 사용 하 여 해당 환경으로 인 한 비 Microsoft 소유 경로를 담당 하는 고객에 게 추가 보호 기능을 제공할 수도 있습니다. 이벤트가 변경 되 면 해당 월의 1 일에 변경이 수행 되 고 페이지 **세부 정보** 섹션의 버전 번호가 파일을 업데이트할 때마다 변경 됩니다.
   
 접두사 필터 목록을 생성 하기 위한 [Office 365 url 및 IP 주소 범위](https://aka.ms/o365endpoints) 를 사용 하지 않아야 하는 이유에는 여러 가지가 있습니다. 다음 포함:
   
@@ -49,8 +49,7 @@ Express 공용 피어 링에서 경로 소유권을 추가로 확인 해야 하�
 |:-----|:-----|:-----|
 |모든 Microsoft 경로 허용  <br/> |**낮음:** 고객은 Microsoft 컨트롤을 사용 하 여 모든 경로가 올바르게 소유 되 고 있는지 확인 합니다.  <br/> |없음  <br/> |
 |Microsoft 소유 supernets 필터링  <br/> |**중간 크기:** 고객은 요약 된 접두사 필터 목록을 구현 하 여 Microsoft 소유의 경로만 허용 하도록 합니다.  <br/> |고객은 자주 업데이트 하지 않는 업데이트가 경로 필터에 반영 되도록 해야 합니다.  <br/> |
-|Office 365 IP 범위 필터링  <br/> [!CAUTION] 권장 하지 않음
-|**High:** 고객은 정의 된 Office 365 IP 접두사를 기반으로 경로를 필터링 합니다.  <br/> |고객은 월별 업데이트에 대 한 강력한 변경 관리 프로세스를 구현 해야 합니다.  <br/> [!CAUTION] 이 솔루션을 사용 하려면 상당한 지속적인 변화가 필요 합니다. 시간에 구현 되지 않은 변경 내용으로 인해 서비스가 중단 될 수 있습니다.   |
+|Office 365 IP 범위 필터링  <br/> [!CAUTION] 권장 하지 않음 |**High:** 고객은 정의 된 Office 365 IP 접두사를 기반으로 경로를 필터링 합니다.  <br/> |고객은 월별 업데이트에 대 한 강력한 변경 관리 프로세스를 구현 해야 합니다.  <br/> [!CAUTION] 이 솔루션을 사용 하려면 상당한 지속적인 변화가 필요 합니다. 시간에 구현 되지 않은 변경 내용으로 인해 서비스가 중단 될 수 있습니다.   |
 
 Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. 환경에 알려진 접두사 수에 관심이 있는 경우 [BGP 커뮤니티](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) 기능을 사용 하 여 특정 Office 365 서비스 집합에 대 한 광고를 필터링 할 수 있습니다. 이 기능은 현재 미리 보기에 있습니다.
   
@@ -103,7 +102,7 @@ Microsoft에서 네트워크 연결을 시작 해야 하는 몇 가지 선택적
   
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [콘텐츠 배달 네트워크](content-delivery-networks.md)
   

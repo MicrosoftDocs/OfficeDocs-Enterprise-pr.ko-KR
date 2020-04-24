@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: '요약: SharePoint 2013 솔루션을 Microsoft Azure 가상 컴퓨터에서 호스트할 수 있습니다. 적합 한 솔루션 유형과 Microsoft Azure를 설정 하 여이를 호스트 하는 방법에 대해 알아봅니다.'
-ms.openlocfilehash: ff5837030384a7f10dc36bb9c436394a19521254
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844909"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793741"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013용 Microsoft Azure 아키텍처
 
@@ -75,7 +75,7 @@ Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰�
 
 먼저 Azure에 가상 컴퓨터를 배치할 서브넷이 포함 된 가상 네트워크가 필요 합니다. 가상 네트워크에는 서브넷에 할당 하는 개인 IP 주소 공간이 필요 합니다.
   
-크로스-프레미스 연결을 통해 온-프레미스 네트워크를 Azure로 확장 하는 경우 (재해 복구 환경에 필요한 경우) 조직 네트워크에서 아직 사용 되지 않은 개인 주소 공간을 선택 해야 합니다. 온-프레미스 환경 및 기타 Azure 가상 네트워크 
+크로스-프레미스 연결 (재해 복구 환경에 필요)을 통해 온-프레미스 네트워크를 Azure로 확장 하는 경우에는 온-프레미스 환경 및 기타 Azure 가상 네트워크를 포함할 수 있는 조직 네트워크의 다른 위치에서 아직 사용 되지 않은 개인 주소 공간을 선택 해야 합니다. 
   
 **그림 1: Azure의 가상 네트워크를 사용 하는 온-프레미스 환경**
 
@@ -219,7 +219,7 @@ SharePoint 팜의 계층에 가용성 집합을 추가 하면 구현이 완료 �
   
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.md)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
