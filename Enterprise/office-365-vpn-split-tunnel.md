@@ -17,24 +17,24 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365에서 VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결을 최적화하는 지침입니다.
-ms.openlocfilehash: ac3964146b23ac03bc5bd104c7cd359e94a1a06b
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612858"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803990"
 ---
-# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결 최적화
+# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN 분할 터널링을 사용하여 원격 사용자에게 맞도록 Office 365 연결 최적화
 <!---
 >[!NOTE]
 >This topic is part of a set of topics that address Office 365 optimization for remote users.
->- For VPN split tunnel implementation guidance, see [Implementing VPN split tunnelling for Office 365](office-365-vpn-implement-split-tunnel.md).
+>- For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
 원격 작업자 디바이스를 VPN을 통해 회사 네트워크 또는 클라우드 인프라에 연결하는 고객의 경우 주요 Office 365 시나리오 **Microsoft Teams**, **SharePoint Online** 및 **Exchange Online**이 _VPN 분할 터널_ 구성을 통해 라우팅되도록 하는 것이 좋습니다. 이것은 COVID-19 위기와 같은 대규모 회사-집 이벤트 동안 지속적인 직원 생산성을 지원하기 위한 최전방 전략으로 특히 중요합니다.
 
-![분할 터널 VPN 구성](media/vpn-split-tunnelling/vpn-model-2.png)
+![분할 터널 VPN 구성](media/vpn-split-tunneling/vpn-model-2.png)
 
 _그림 1: Office 365 예외가 정의된 VPN 분할 터널 솔루션이 서비스에 직접 전송됩니다. 다른 모든 트래픽은 대상에 관계없이 VPN 터널을 트래버스합니다._
 
@@ -46,7 +46,7 @@ _그림 1: Office 365 예외가 정의된 VPN 분할 터널 솔루션이 서비�
 
 - 추가 인프라 또는 응용 프로그램 요구 사항 없이 고객이 빠르게 구성, 테스트 및 구현 가능
 
-  VPN 플랫폼 및 네트워크 아키텍처에 따라 구현에 몇 시간 정도 걸릴 수 있습니다. 자세한 내용은 [VPN 분할 터널링 구현](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunnelling)을 참조하세요.
+  VPN 플랫폼 및 네트워크 아키텍처에 따라 구현에 몇 시간 정도 걸릴 수 있습니다. 자세한 내용은 [VPN 분할 터널링 구현](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)을 참조하세요.
 
 - 인터넷 트래픽을 포함하여 다른 연결이 라우팅되는 방식을 변경하지 않도록 하여 고객 VPN 구현의 보안 상태를 유지합니다.
 
@@ -65,7 +65,7 @@ _그림 1: Office 365 예외가 정의된 VPN 분할 터널 솔루션이 서비�
 
 기존의 회사 네트워크는 대부분의 중요한 데이터, 서비스, 응용 프로그램이 온-프레미스에서 호스트되고, 대부분의 사용자가 그런 것처럼 내부 회사 네트워크에 직접 연결되는 클라우드 이전 환경에서 안전하게 작동하도록 디자인되어 있습니다. 따라서 네트워크 인프라는 이러한 요소를 기준으로 작성되어 있습니다. _MPLS(Multiprotocol Label Switching)_ 네트워크를 통해 본사에 연결되어 있으며 원격 사용자는 온-프레미스 끝점과 인터넷에 액세스하기 위해 VPN을 통해 회사 네트워크에 연결해야 합니다. 이 모델에서 원격 사용자가 보낸 모든 트래픽은 회사 네트워크를 트래버스하며, 일반적인 송신 지점을 통해 클라우드 서비스로 라우팅됩니다.
 
-![강제 VPN 구성](media/vpn-split-tunnelling/vpn-model-1.png)
+![강제 VPN 구성](media/vpn-split-tunneling/vpn-model-1.png)
 
 _그림 2: 대상에 관계없이 모든 트래픽이 강제로 회사 네트워크로 다시 이동되는 경우 원격 사용자에 대한 일반적인 VPN 솔루션_
 
@@ -88,7 +88,7 @@ Office 365에서는 Office 365의 필수 끝점을 **최적화**, **허용** 및
 
 DLP, AV 보호, 인증 및 액세스 제어와 같은 보안 요소는 서비스 내의 여러 계층에서 이러한 끝점에 대해 훨씬 더 효율적으로 전달될 수 있습니다. 또한 대량의 트래픽을 VPN 솔루션에서 멀리 분산시키므로 이러한 솔루션에 아직 의존하는 중요 업무용 트래픽을 위한 VPN 용량이 확보됩니다. 또한 이러한 운영 방식을 위해 오랫 동안 많은 비용을 들여서 업그레이드를 진행할 필요도 없어집니다.
 
-![분할 터널 VPN 구성](media/vpn-split-tunnelling/vpn-model-2.png)
+![분할 터널 VPN 구성](media/vpn-split-tunneling/vpn-model-2.png)
 
 _그림 3: Office 365 예외가 정의된 VPN 분할 터널 솔루션이 서비스에 직접 전송됩니다. 다른 모든 트래픽은 대상에 관계없이 회사 네트워크로 강제로 전송됩니다._
 
