@@ -3,7 +3,7 @@ title: Office 365 VPN 분할 터널링 구현
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/14/2020
+ms.date: 4/24/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,28 +16,28 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Office 365 VPN 분할 터널링을 구현하는 방법
-ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+description: Office 365 VPN 분할 터널링 구현 방법
+ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612928"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804057"
 ---
-# <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Office 365 VPN 분할 터널링 구현
+# <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 VPN 분할 터널링 구현
 
 >[!NOTE]
 >이 항목은 원격 사용자의 Office 365 최적화를 다루는 항목 모음의 일부입니다.
->- 원격 사용자의 Office 365 연결을 최적화하는 VPN 분할 터널링을 사용하는 방법에 대한 개요는 [개요: VOffice 365 VPN 분할 터널링](office-365-vpn-split-tunnel.md)을 참조하세요.
+>- 원격 사용자의 Office 365 연결성을 최적화하는 VPN 분할 터널링을 사용하는 방법에 대한 개요는 [개요: Office 365 VPN 분할 터널링](office-365-vpn-split-tunnel.md)을 참조하세요.
 >- 중국 사용자를 위한 Office 365 월드와이드 테넌트 성능을 최적화하는 방법에 대한 자세한 내용은 [중국 사용자를 위한 Office 365 성능 최적화](office-365-networking-china.md)를 참조하세요.
 
 몇 년 동안 기업은 VPN을 사용하여 사용자의 원격 환경을 지원하고 있습니다. 핵심 작업은 온-프레미스로 유지되었지만, 회사 네트워크의 데이터 센터를 통해 라우팅된 원격 클라이언트의 VPN은 원격 사용자가 회사 리소스에 액세스하는 기본 방법이었습니다. 이러한 연결을 보호하기 위해 기업은 VPN 경로를 따라 네트워크 보안 솔루션 계층을 구축합니다. 이는 내부 인프라를 보호하는 것은 물론, 트래픽을 VPN으로 다시 라우팅한 다음 온-프레미스 인터넷 경계로 라우팅하여 외부 웹 사이트의 모바일 브라우징을 보호하기 위해 수행되었습니다. VPN, 네트워크 경계 및 관련 보안 인프라는 정의된 트래픽 용량에 맞춘 용도로 개발되고 크기가 조정되는 경우가 많으며, 회사 네트워크 내에서 대부분의 연결이 시작되고 대부분의 내부 네트워크 경계 내에 유지됩니다.
 
-원격 사용자의 동시 규모가 적당하고 VPN을 통과하는 트래픽 양이 적은 경우에만 꽤 오랫동안 원격 사용자 장치의 모든 연결이 온-프레미스 네트워크로 라우팅되는 VPN 모델(**강제 터널링**으로 알려짐)을 지속할 수 있습니다.  일부 고객은 응용 프로그램이 회사 경계 내부에서 Office 365와 같은 공용 SaaS 클라우드로 이동한 후에도 VPN 강제 터널링을 계속 유지하였습니다.
+상당 기간, 동시적 원격 사용자의 규모가 적당하고 VPN을 통과하는 트래픽 양이 적은 경우에는원격 사용자 장치의 모든 연결이 온-프레미스 네트워크로 라우팅되는 VPN 모델(**강제 터널링**으로 알려짐)을 지속할 수 있었습니다.  일부 고객은 응용 프로그램이 회사 경계 내부에서 Office 365와 같은 공용 SaaS 클라우드로 이동한 후에도 VPN 강제 터널링을 계속 사용하였습니다.
 
 분산되고 성능에 민감한 클라우드 응용 프로그램에 연결하기 위해 강제 터널된 VPN을 사용하는 것은 최적의 선택은 아니지만, 일부 기업에서 보안 측면에서 현상을 유지하기 위해 이 방식의 부정적인 영향을 수용할 수 있었습니다. 이 시나리오의 예제 다이어그램은 다음과 같습니다.
 
-![분할 터널 VPN 구성](media/vpn-split-tunnelling/vpn-ent-challenge.png)
+![분할 터널 VPN 구성](media/vpn-split-tunneling/vpn-ent-challenge.png)
 
 이 문제는 수년간 계속 커졌으며 많은 고객들이 네트워크 트래픽 패턴의 큰 변화를 보고했습니다. 온-프레미스에 유지되었던 트래픽은 이제 외부 클라우드 끝점에 연결됩니다. 많은 Microsoft 고객이 이전에 네트워크 트래픽의 약 80%가 내부 원본(위의 다이어그램에서 점선으로 표시됨)에 대한 것이라고 보고했습니다. 2020년에 주요 작업을 클라우드로 이동시킴에 따라 이 수치가 현재 약20 % 이하로 떨어졌으며, 이러한 추세는 다른 기업에서는 드문 일이 아닙니다. 시간이 지나며 클라우드 마이그레이션이 진행됨에 따라 위의 모델은 점점 번거롭고 지속하기 어려워졌으며, 조직이 클라우드 우선 환경으로 진입하는 상황에서 조직의 민첩성에 방해가 되었습니다.
 
@@ -63,39 +63,39 @@ Microsoft에서 원격 작업자의 연결을 최적화에 권장하는 전략�
 
 대부분의 엔터프라이즈 고객에게 가장 일반적인 시작 시나리오입니다. 강제 VPN이 사용됩니다. 즉, 끝점이 회사 네트워크 내에 존재하는지와 상관없이 트래픽의 100%가 회사 네트워크로 전송됩니다. 그런 다음 Office 365 또는 인터넷 브라우징과 같은 외부 (인터넷) 바운드 트래픽은 프록시와 같은 온-프레미스 보안 장비에서 헤어핀됩니다. 이 모델은 사용자의 약 100%가 원격으로 작업하고 있는 현재 환경에서 VPN 인프라에 상당한 부하를 가하고 모든 기업 트래픽의 성능을 크게 저해하여 기업이 위기 상황에서 효율적으로 운영되기 어렵게 합니다.
 
-![VPN 강제 터널 모델 1](media/vpn-split-tunnelling/vpn-model-1.png)
+![VPN 강제 터널 모델 1](media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. 소수의 신뢰할 수 있는 예외가 있는 VPN 강제 터널
 
 이 모델은 부하가 많고 대기 시간에 민감하며 제어되고 정의된 소수의 끝점이 VPN 터널을 우회하고 이 예제의 Office 365 서비스로 직접 전달할 수 있도록 허용하므로 기업에서 운영하기에 훨씬 더 효율적입니다. 이렇게 하면 오프로드된 서비스의 성능이 크게 향상되고 VPN 인프라에 가해지는 부하가 줄기 때문에, 작동에 리소스 경합성이 적은 요소를 허용할 수 있습니다. 이 모델은 이 문서에서 매우 신속하게 간단하고 정의된 작업을 수행할 수 있도록 하며 여러 긍정적인 결과를 제공하는 전환을 지원하기 위해 집중적으로 설명하는 모델입니다.
 
-![분할 터널 VPN 모델 2](media/vpn-split-tunnelling/vpn-model-2.png)
+![분할 터널 VPN 모델 2](media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. VPN 강제 터널(광범위한 예외 포함)
 
 세 번째 모델은 정의된 끝점의 작은 그룹을 직접 보내는 것이 아니라 모델 2의 범위를 넓히며, 대신 Office 365, SalesForce 등의 신뢰할 수있는 서비스에 모든 트래픽을 직접 보냅니다. 따라서 회사 VPN 인프라의 부하가 줄어들며 정의된 서비스의 성능이 향상됩니다. 이 모델은 실행 가능성을 평가하고 구현하는 데 시간이 오래 걸릴 수 있으므로 모델 2가 성공적으로 적용된 이후에 반복적으로 수행할 수 있는 단계가 될 가능성이 높습니다.
 
-![분할 터널 VPN 모델 3](media/vpn-split-tunnelling/vpn-model-3.png)
+![분할 터널 VPN 모델 3](media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. VPN 선택적 터널
 
 이 모델은 회사 IP 주소를 포함하는 것으로 식별된 트래픽만 VPN 터널로 전송되므로 인터넷 경로가 그 밖의 모든 항목의 기본 경로라는 점에서 세 번째 모델과 반대입니다. 이 모델을 안전하게 구현하려면 조직에서 [제로 트러스트](https://www.microsoft.com/security/zero-trust?rtc=1) 경로를 제대로 따라야 하빈다. 점점 더 많은 서비스가 회사 네트워크에서 클라우드로 이동함에 따라 이 모델이나 이 모델의 일부 변형은 시간이 지남에 따라 필수적인 기본값이 될 수 있다는 점에 유의해야 합니다. Microsoft는 내부적으로 이 모델을 사용합니다. Microsoft의 VPN 분할 터널링 구현에 대한 자세한 내용은 [VPN에서 실행: Microsoft가 원격 인력을 연결 상태로 유지하는 방법](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)을 참조하세요.
 
-![분할 터널 VPN 모델 4](media/vpn-split-tunnelling/vpn-model-4.png)
+![분할 터널 VPN 모델 4](media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. VPN 없음
 
 모델 2을 더 개선한 버전이며, 모든 내부 서비스를 Azure AD 프록시, MCAS, Zscaler ZPA 등과 같은 SDWAN 솔루션 또는 최신 보안 방식을 통해 게시하는 모델
 
-![분할 터널 VPN 모델 5](media/vpn-split-tunnelling/vpn-model-5.png)
+![분할 터널 VPN 모델 5](media/vpn-split-tunneling/vpn-model-5.png)
 
-## <a name="implement-vpn-split-tunnelling"></a>VPN 분할 터널링 구현
+## <a name="implement-vpn-split-tunneling"></a>VPN 분할 터널링 구현
 
 이 섹션에서는 VPN 클라이언트 아키텍처를 [일반적인 VPN 시나리오](#common-vpn-scenarios) 섹션의 _VPN 강제 터널_에서 _소수의 신뢰할 수 있는 예외가 있는 VPN 강제 터널_, [분할 터널 VPN 모델 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions)까지 마이그레이션하는 데 필요한 몇 가지 간단한 단계가 나와 있습니다.
 
 다음 다이어그램은 권장 VPN 분할 터널 솔루션이 어떻게 진행되는지 보여줍니다.
 
-![분할 터널 VPN 솔루션 세부 정보](media/vpn-split-tunnelling/vpn-split-detail.png)
+![분할 터널 VPN 솔루션 세부 정보](media/vpn-split-tunneling/vpn-split-detail.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 최적화할 끝점 식별
 
@@ -176,7 +176,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 경로를 추가 한 후 명령 프롬프트 또는 PowerShell에서 **route print**를 실행하여 경로 테이블이 올바른지 확인할 수 있습니다. 출력에는 인터페이스 색인(이 예제의 경우 _22_)과 해당 인터페이스의 게이트웨이(이 예제의 경우 _192.168.1.1_)를 표시하는 추가된 경로가 포함되어야 합니다.
 
-![Route print 출력](media/vpn-split-tunnelling/vpn-route-print.png)
+![Route print 출력](media/vpn-split-tunneling/vpn-route-print.png)
 
 최적화 범주에서 **모든** 현재 IP 주소 범위에 대한 경로를 추가하려면 다음 스크립트 변형을 사용하여 현재 최적화 IP 서브넷 집합에 대해 [Office 365 IP 및 URL 웹 서비스](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)를 쿼리하고 이를 라우팅 테이블에 추가할 수 있습니다.
 
@@ -226,7 +226,8 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 특정 시나리오에서 Teams 클라이언트 구성과 관련이 없는 경우가 많지만, 미디어 트래픽은 올바른 경로를 사용하는 경우에도 계속 VPN 터널을 통과합니다. 이 시나리오가 발생하는 경우 방화벽 규칙을 사용하여 Teams IP 서브넷 또는 포트에서 VPN을 사용하지 못하도록 차단하면 됩니다.
 
-현재 이 작업이 100%의 모든 시나리오에서 작동하도록 하려면 IP 범위 **13.107.60.1/32**를 추가해야 합니다. **2020년 4월** 초 릴리스의 최신 Teams 클라이언트 업데이트로 인해 이 작업은 더 이상 필요하지 않을 것입니다. 향후 더 상세한 내용이 추가되면 이 문서에 빌드 세부 정보를 업데이트하겠습니다.
+>[!IMPORTANT]
+>Teams 미디어 트래픽이 모든 VPN 시나리오에서 원하는 방법을 통해 라우팅되게 하려면 적어도 클라이언트가 사용 가능한 네트워크 경로를 감지하는 방법이 개선된 다음의 클라이언트 버전 이상을 실행하고 있는지 확인하세요.<br>Windows 버전 번호: **1.3.00.9267**<br>Mac 버전 번호: **1.3.00.9221**
 
 신호 트래픽은 HTTPS를 통해 수행되고 미디어 트래픽만큼 대기 시간에 민감하지 않으며 URL/IP 데이터에서 **허용**으로 표시되므로 원하는 경우 VPN 클라이언트를 통해 안전하게 라우팅할 수 있습니다.
 
@@ -256,7 +257,7 @@ Teams가 음성 또는 _STUN(NAT의 세션 탐색 유틸리티)_ 증폭 공격�
   tracert worldaz.tr.teams.microsoft.com
   ```
 
-  그런 다음 이 끝점에 대한 로컬 ISP를 통해 경로를 확인해야합니다. 이 경로는 분할 터널링에 대해 구성한 Teams 범위의 IP로 확인되어야 합니다.
+  그런 다음 로컬 ISP를 통해 당사가 분할 터널링을 위해 구성한 Teams 범위에 있는 IP로 향하는 이 끝점으로의 경로를 확인합니다.
 
 - Wireshark와 같은 도구를 사용하여 네트워크 캡처를 수행합니다. 호출 동안 UDP를 필터링하면 Teams **최적화** 범위에서 트래픽이 IP로 흐르는 것을 볼 수 있습니다. 이 트래픽에 VPN 터널을 사용하는 경우 미디어 트래픽이 추적에 표시되지 않습니다.
 
