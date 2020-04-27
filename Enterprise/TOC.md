@@ -1,4 +1,5 @@
 # [클라우드 아키텍처 모델](microsoft-cloud-it-architecture-resources.md)
+# [엔터프라이즈 클라우드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
 ## [Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 # [Office 365 계획](get-your-organization-ready-for-office-365.md)
