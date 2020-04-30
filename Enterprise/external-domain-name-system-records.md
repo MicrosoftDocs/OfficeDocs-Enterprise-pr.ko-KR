@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '요약: Office 365 배포를 계획할 때 사용할 DNS 레코드 목록을 참조합니다.'
-ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f7a4363f0b93a0b8735d3eae21e6e70e6b0ac3ba
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890347"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901231"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365에 대한 외부 Domain Name System 레코드
 
@@ -68,11 +68,11 @@ Exchange 페더레이션을 사용하는 전자 메일 고객의 경우 표 아�
 ||||
 |:-----|:-----|:-----|
 |**DNS 레코드** <br/> |**용도** <br/> |**사용할 값** <br/> |
-|**CNAME** <br/> **(Exchange Online)** <br/> |Outlook 클라이언트가 자동 검색 서비스를 사용하여 Exchange Online 서비스에 쉽게 연결하는 데 도움이 됩니다. 자동 검색은 올바른 Exchange Server 호스트를 자동으로 검색하고 사용자를 대신하여 Outlook을 구성합니다.  <br/> |**별칭:** autodiscover  <br/> **대상:** autodiscover.outlook.  <br/> |
+|**CNAME** <br/> **(Exchange Online)** <br/> |Outlook 클라이언트가 자동 검색 서비스를 사용하여 Exchange Online 서비스에 쉽게 연결하는 데 도움이 됩니다. 자동 검색은 올바른 Exchange Server 호스트를 자동으로 검색하고 사용자를 대신하여 Outlook을 구성합니다.  <br/> |**별칭:** autodiscover  <br/> **대상:** autodiscover.outlook.com  <br/> |
 |**MX** <br/> **(Exchange Online)** <br/> |Office 365에서 도메인에 대한 받는 메일을 Exchange Online 서비스로 보냅니다.  <br/> [!NOTE] 전자 메일이 Exchange Online으로 이동되면 이전 시스템을 가리키는 MX 레코드를 제거해야 합니다.   |**도메인:** (예)contoso.com  <br/> **대상 전자 메일 서버:**\<MX 토큰\>.mail.protection.outlook.com  <br/> **기본 설정/우선 순위:** 다른 MX 레코드보다 더 낮음(예: 1 또는 '낮음')(이를 통해 메일이 Exchange Online으로 전달됨)  <br/>  다음 단계에 따라 \<MX 토큰\>을 찾습니다.  <br/>  Office 365에 로그인하고 Office 365 관리자 \> 도메인으로 이동합니다.  <br/>  도메인에 대한 작업 열에서 문제 해결을 선택합니다.  <br/>  MX 레코드 섹션에서 해결 방법을 선택합니다.  <br/>  이 페이지의 지시에 따라 MX 레코드를 업데이트합니다.  <br/> [MX 우선 순위란?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |(MO_ExchangeOnline_2nd)  <br/> |[SPF에 필요한 외부 DNS 레코드](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Exchange 페더레이션)** <br/> |하이브리드 배포용 Exchange 페더레이션에 사용됩니다.  <br/> |**TXT 레코드 1:** 예를 들면 contoso.com 및 사용자 지정 생성된 관련 도메인 증명 해시 텍스트(예: Y96nu89138789315669824)와 같습니다.  <br/> **TXT 레코드 2:** 예를 들면 exchangedelegation.contoso.com 및 연관된 사용자 지정 생성 도메인 증명 해시(예: Y3259071352452626169)  <br/> |
-|**CNAME** <br/> **(Exchange 페더레이션)** <br/> |회사에서 Exchange 페더레이션을 사용할 때 자동 검색 서비스를 사용하여 Outlook Online 클라이언트가 Exchange Online 서비스에 쉽게 연결할 수 있도록 지원합니다. 자동 검색은 자동으로 올바른 Exchange Server 호스트를 찾고 사용자를 위해 Outlook을 구성합니다.  <br/> |**별칭:**(예) Autodiscover.service.contoso.com  <br/> **대상:** autodiscover.outlook.  <br/> |
+|**CNAME** <br/> **(Exchange 페더레이션)** <br/> |회사에서 Exchange 페더레이션을 사용할 때 자동 검색 서비스를 사용하여 Outlook Online 클라이언트가 Exchange Online 서비스에 쉽게 연결할 수 있도록 지원합니다. 자동 검색은 자동으로 올바른 Exchange Server 호스트를 찾고 사용자를 위해 Outlook을 구성합니다.  <br/> |**별칭:**(예) Autodiscover.service.contoso.com  <br/> **대상:** autodiscover.outlook.com  <br/> |
 
 
 ## <a name="external-dns-records-required-for-skype-for-business-online"></a>비즈니스용 Skype Online에 필요한 외부 DNS 레코드
@@ -137,10 +137,9 @@ Office 365용 Exchange Online 전자 메일을 사용하지 않는 시나리오�
 ||다음를 사용하는 경우...  <br/> |용도  <br/> |추가할 포함 내용  <br/> |
 |1  <br/> |모든 전자 메일 시스템(필수)  <br/> |이 값으로 시작하는 모든 SPF 레코드  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online(일반적)  <br/> |Exchange Online만 사용  <br/> |포함:spf.protection.outlook.com  <br/> |
-|3  <br/> |SharePoint Online 및 Exchange Online(일반적)  <br/> |Exchange Online 및 SharePoint Online 사용  <br/> |포함:sharepointonline.com  <br/> |
-|4  <br/> |제3자 전자 메일 시스템(덜 일반적임)  <br/> ||포함:\<email system like mail.contoso.com\>  <br/> |
-|5  <br/> |온-프레미스 메일 시스템(덜 일반적임)  <br/> |Exchange Online Protection 또는 Exchange Online 및 다른 메일 시스템을 사용하는 경우 사용  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> 포함:\<mail.contoso.com\>  <br/> 괄호 안의 값(\<\>)은 도메인의 전자 메일을 전송하는 다른 메일 시스템이어야 합니다.  <br/> |
-|6  <br/> |모든 전자 메일 시스템(필수)  <br/> ||-모두  <br/> |
+|3  <br/> |제3자 전자 메일 시스템(덜 일반적임)  <br/> ||포함:\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |온-프레미스 메일 시스템(덜 일반적임)  <br/> |Exchange Online Protection 또는 Exchange Online 및 다른 메일 시스템을 사용하는 경우 사용  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> 포함:\<mail.contoso.com\>  <br/> 괄호 안의 값(\<\>)은 도메인의 전자 메일을 전송하는 다른 메일 시스템이어야 합니다.  <br/> |
+|5  <br/> |모든 전자 메일 시스템(필수)  <br/> ||-모두  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>예: 기존 SPF 레코드에 추가
 <a name="bkmk_addtospf"> </a>

@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365에서 VPN 분할 터널링을 사용하여 원격 사용자를 위해 Office 365 연결을 최적화하는 지침입니다.
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803990"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901221"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN 분할 터널링을 사용하여 원격 사용자에게 맞도록 Office 365 연결 최적화
 <!---
@@ -78,6 +78,7 @@ Office 365 서비스를 위해 Microsoft는 이 문제를 직시하면서 서비
 Office 365에서는 Office 365의 필수 끝점을 **최적화**, **허용** 및 **기본값**의 세 범주로 구분합니다. 여기서는 **최적화** 끝점을 주로 다루며 이 끝점은 다음과 같은 특성을 갖습니다.
 
 - Microsoft 인프라에서 호스트되며 Microsoft에서 소유 및 관리하는 끝점
+- Exchange Online, SharePoint Online, Skype for Business Online 및 Microsoft Teams와 같은 핵심 Office 365 워크로드 전용입니다.
 - IP 제공
 - 낮은 변경률 및 적은 수로 유지될 것으로 예상됨(현재 IP 서브넷 20개)
 - 대용량 및/또는 대기 시간에 민감

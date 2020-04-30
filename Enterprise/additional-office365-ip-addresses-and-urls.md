@@ -3,7 +3,7 @@ title: Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 2/27/2020
+ms.date: 04/28/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: '요약: 새로운 엔드포인트 웹 서비스에는 특정 시나리오에 맞는 적은 수의 엔드포인트가 포함되어 있지 않습니다.'
 hideEdit: true
-ms.openlocfilehash: 5e763b00f8b43b652809df994e933228dd7e1dfb
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: 303b3bb57ab3b29a9ad825a525793af6f476e784
+ms.sourcegitcommit: eca49563fd99f08b7ee0bba01d122b0b96de07cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315967"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930219"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스에 포함되지 않은 추가 엔드포인트
 
@@ -64,9 +64,10 @@ DNS 외에도 설명된 특정 시나리오가 필요하지 않는 경우 대부
 | 16  |  **SharePoint Online 및 비즈니스용 OneDrive FQDN** <br> FQDN의 '\< tenant>'가 있는 모든 '.sharepoint.com' FQDN은 클라이언트의 IE 또는 Microsoft Edge 신뢰할 수 있는 사이트 영역에 있어야 작동할 수 있습니다. 14번째 줄에 나열된 제품군 전체 FQDN, CDN 및 원격 측정 외에도 이러한 끝점을 추가해야 합니다. |  | 신뢰할 수 있는 사이트 |
 | 17  | **Yammer**  <br> Yammer는 브라우저에서만 사용할 수 있으며 인증된 사용자는 프록시를 통해 전달되어야 합니다. 모든 Yammer FQDN은 클라이언트의 IE 또는 Edge의 신뢰할 수 있는 사이트 영역에 있어야 작동할 수 있습니다. |  | 신뢰할 수 있는 사이트 |
 | 18  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/)를 사용하여 온프레미스 사용자 계정을 Azure AD에 동기화합니다. | [포트 및 프로토콜이 필요한 하이브리드 ID](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Azure AD 연결 문제 해결](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) 그리고 [Azure AD Connect Health 에이전트 설치](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)를 참조합니다. | 아웃바운드 서버 전용 트래픽 |
-| 19  | Microsoft Stream(Azure AD 사용자 토큰 필요) <BR> Office 365 월드와이드(GCC 포함) | *.cloudapp.net <BR> *. api.microsoftstream.com <BR> *. notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP 포트 443  | 인바운드 서버 트래픽 |
-| 20  | 다중 요소 인증 요청(서버 새로 설치 및 AD DS(Active Directory Domain Services)로 설정)에 MFA 서버를 사용하세요. | [Azure Multi-Factor Authentication Server 시작](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)을 참조하세요.  | 아웃바운드 서버 전용 트래픽 |
-| 21  | Microsoft Graph 변경 알림 | 개발자는[변경 알림](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)을 활용하여 Microsoft Graph의 이벤트를 구독할 수 있습니다. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, 퍼블릭 클라우드: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> 미국 정부용 Microsoft Cloud: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> 21Vianet로 운영되는 Microsoft Cloud China: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> TCP 포트 443 <BR> 참고: 개발자는 구독을 만들 때 여러 포트를 지정할 수 있습니다.  | 인바운드 서버 트래픽 |
+| 19  | 온-프레미스 사용자 계정을 Azure AD에 동기화하기 위한 중국의 21 ViaNet과 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) | \*.digicert.com:80 <BR> \*.verisign.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>[Azure AD 연결 수신 문제 해결](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)을 참조하세요. | 아웃바운드 서버 전용 트래픽 |
+| 20  | Microsoft Stream(Azure AD 사용자 토큰 필요) <BR> Office 365 월드와이드(GCC 포함) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP 포트 443  | 인바운드 서버 트래픽 |
+| 21  | 다중 요소 인증 요청(서버 새로 설치 및 AD DS(Active Directory Domain Services)로 설정)에 MFA 서버를 사용하세요. | [Azure Multi-Factor Authentication Server 시작](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)을 참조하세요.  | 아웃바운드 서버 전용 트래픽 |
+| 22  | Microsoft Graph 변경 알림 | 개발자는[변경 알림](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)을 활용하여 Microsoft Graph의 이벤트를 구독할 수 있습니다. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, 퍼블릭 클라우드: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> 미국 정부용 Microsoft Cloud: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> 21Vianet로 운영되는 Microsoft Cloud China: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> TCP 포트 443 <BR> 참고: 개발자는 구독을 만들 때 여러 포트를 지정할 수 있습니다.  | 인바운드 서버 트래픽 |
 |||||
 
 ## <a name="related-topics"></a>관련 주제
