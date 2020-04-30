@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Office 365 데이터 위치'
-ms.openlocfilehash: 7f7804c74eaf6122b59385abd79934157ae47062
-ms.sourcegitcommit: b2d1dbc42ceafad1b583df59c1b4be55e35beb44
+ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772479"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798819"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 아래 표는 고객 데이터가 모든 Microsoft 전역 클라우드 위치에서 Office 365 서비스에 대해 rest로 저장되는 위치를 보여줍니다. 청구지 주소 국가의 위치를 확장하여 각 서비스에 대한 고객 데이터가 저장되는 위치를 확인합니다.
 
-고객은 **설정 | 조직 프로필 | 데이터 위치 카드**의 Office 365 관리 센터에서 테넌트별 데이터 위치 정보를 볼 수 있습니다.
+고객은 **설정 | 조직 프로필 | 데이터 위치 카드**의 Office 365 관리 센터에서 테넌트별 데이터 위치 정보를 봐야 합니다.
 
 새 Office 365 테넌트는 해당 테넌트의 첫 번째 구독과 연결된 거래 국가를 기준으로 기본 지역이 설정됩니다.
 
@@ -230,7 +230,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 2 - 아시아 태평양 |
 | SharePoint Online | 전세계 지리적 위치 2 - 아시아 태평양 |
 | 비즈니스용 Skype | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
+| Microsoft Teams | 미국 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 2 - 아시아 태평양 |
 | EOP | 전세계 지리적 위치 2 - 아시아 태평양 |
 | MyAnalytics | 전세계 지리적 위치 2 - 아시아 태평양 |
@@ -391,7 +391,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -874,7 +874,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 2 - 아시아 태평양 |
 | SharePoint Online | 전세계 지리적 위치 2 - 아시아 태평양 |
 | 비즈니스용 Skype | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 전세계 지리적 위치 2 - 아시아 태평양 |
 | EOP | 전세계 지리적 위치 2 - 아시아 태평양 |
 | MyAnalytics | 전세계 지리적 위치 2 - 아시아 태평양 |
@@ -1771,7 +1771,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 3 - 아메리카 |
 | SharePoint Online | 전세계 지리적 위치 3 - 아메리카 |
 | 비즈니스용 Skype | 미국 |
-| Microsoft Teams | 미국 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 전세계 지리적 위치 3 - 아메리카 |
 | EOP | 전세계 지리적 위치 3 - 아메리카 |
 | MyAnalytics | 전세계 지리적 위치 3 - 아메리카 |
@@ -1828,29 +1828,6 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | Stream | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Whiteboard | 미국 |
 | Forms | 미국 |
-| Workplace Analytics | 미국 |
-</p></details>
-
-## <a name="federated-states-of-micronesia"></a>미크로네시아
-<details><summary>클릭하여 확장</summary><p>
-
-| 서비스 | 위치 |
-| --- | --- |
-| Exchange Online | 전세계 지리적 위치 1 - EMEA |
-| 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
-| SharePoint Online | 전세계 지리적 위치 1 - EMEA |
-| 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
-| EOP | 전세계 지리적 위치 1 - EMEA |
-| MyAnalytics | 전세계 지리적 위치 1 - EMEA |
-| Planner | 전세계 지리적 위치 1 - EMEA |
-| Sway | 미국 |
-| Yammer | 전세계 지리적 위치 1 - EMEA |
-| OneNote 서비스 | 전세계 지리적 위치 1 - EMEA |
-| Stream | 전세계 지리적 위치 1 - EMEA |
-| Whiteboard | 미국 |
-| Forms | 전세계 지리적 위치 1 - EMEA |
 | Workplace Analytics | 미국 |
 </p></details>
 
@@ -2047,7 +2024,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2162,7 +2139,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 미국 |
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
-| Microsoft Teams | 미국 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | MyAnalytics | 미국 |
@@ -2806,7 +2783,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2944,7 +2921,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3979,7 +3956,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4025,7 +4002,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 2 - 아시아 태평양 |
 | SharePoint Online | 전세계 지리적 위치 2 - 아시아 태평양 |
 | 비즈니스용 Skype | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 전세계 지리적 위치 2 - 아시아 태평양 |
 | EOP | 전세계 지리적 위치 2 - 아시아 태평양 |
 | MyAnalytics | 전세계 지리적 위치 2 - 아시아 태평양 |
@@ -4278,7 +4255,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4462,7 +4439,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 미국 |
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
-| Microsoft Teams | 미국 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | MyAnalytics | 미국 |
@@ -4485,7 +4462,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 미국 |
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
-| Microsoft Teams | 미국 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | MyAnalytics | 미국 |
@@ -4761,7 +4738,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 미국 |
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
-| Microsoft Teams | 미국 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | MyAnalytics | 미국 |
@@ -4899,7 +4876,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 미국 |
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
-| Microsoft Teams | 미국 |
+| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
 | Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | MyAnalytics | 미국 |
@@ -5106,7 +5083,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5336,7 +5313,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5589,7 +5566,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | 비즈니스용 OneDrive | 전세계 지리적 위치 1 - EMEA |
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
-| Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
+| Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
