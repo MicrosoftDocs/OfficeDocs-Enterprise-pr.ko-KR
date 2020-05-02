@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 요약:Windows PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: 21642f146bac29ca10ef234bafee170339ce6cce
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 846704ff32a8f6e4012e93b67ec2a921d4c9ac51
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841295"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004521"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션 수행
 

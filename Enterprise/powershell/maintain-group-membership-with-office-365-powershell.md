@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Office 365 PowerShell을 사용 하 여 Office 365의 그룹 멤버 자격을 유지 하는 방법을 알아봅니다.
-ms.openlocfilehash: 397f8d93df5e9abef0779e4eb56df7bab9ef2344
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0e6c5f2e27f9d146bb2a053bd3bdb6694fb07276
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841485"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004631"
 ---
 # <a name="maintain-group-membership-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 그룹 구성원 자격 유지 관리
 

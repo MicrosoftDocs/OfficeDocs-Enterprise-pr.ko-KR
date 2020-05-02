@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 요약:Office 365 PowerShell을 사용하여 사서함 구성 및 고급 보고서 표시 등 Microsoft Exchange Online을 관리할 수 있습니다.
-ms.openlocfilehash: 535a53e10d1eb11e5db4e31edd6c4c3f856b3914
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 25cd466ae1c7fca7bb8bd4e44036588df28403ef
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841475"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004621"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 Exchange Online 관리
 

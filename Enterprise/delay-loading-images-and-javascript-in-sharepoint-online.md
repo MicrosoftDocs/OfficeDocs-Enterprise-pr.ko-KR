@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 86efb767e80927f7d3f5d8055676e6d99da4d667
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840565"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004601"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online에서 이미지 및 JavaScript 로드 지연
 
@@ -32,7 +34,7 @@ ms.locfileid: "41840565"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript를 사용 하 여 SharePoint Online 페이지에서 이미지 로드를 지연 시켜 페이지 로드 시간 개선
 
-JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예시는 다음과 같습니다:
+JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예를 들면 다음과 같습니다.
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: '요약: Office 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, Office 365 보안 및 준수 센터에 Office 365 PowerShell을 사용하는 방법을 알아봅니다.'
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841435"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004571"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell로 Office 365 관리
 
@@ -52,7 +54,7 @@ Office 365 PowerShell은 Microsoft 365 관리 센터를 보완 하는 강력한 
 
     Office 365 PowerShell 모듈을 설치했으며 기존 시스템에서 전자 메일을 마이그레이션하려면 여기에서 시작합니다.
 
-- [보안 & 준수 센터](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [보안 및 준수 센터](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     자동화 명령을 사용하여 보안 및 준수 센터를 관리하려면 여기에서 시작합니다.
 

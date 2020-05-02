@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 요약:Windows PowerShell을 사용하여 Office 365로 IMAP 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: 271e8b235279d1661ba95ae75f070d8ce6d2496d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 051b290a93fbdf7636595d31e6087fccaaf73761
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841285"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004511"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 IMAP 마이그레이션 수행
 

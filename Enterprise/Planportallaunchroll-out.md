@@ -13,14 +13,16 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 description: 이 문서에서는 SharePoint Online에서 포털 시작을 계획 하는 방법과 성공적인 시작을 위해 수행 해야 하는 단계에 대해 설명 합니다.
-ms.openlocfilehash: fca8b4f116510589b83748435f64ccbb3790d7c2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843769"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004111"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online에서 포털 시작 롤아웃 계획 계획
 

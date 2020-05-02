@@ -1,5 +1,5 @@
 ---
-title: 용량 계획 및 부하 테스트 SharePoint Online
+title: Capacity planning and load testing SharePoint Online(용량 계획과 부하 테스트가 가능한 SharePoint Online)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,17 +14,19 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 이 문서에서는 허용 되지 않으므로 기존 부하 테스트를 수행 하지 않고 SharePoint Online에 배포 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844709"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004611"
 ---
-# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>용량 계획 및 부하 테스트 SharePoint Online
+# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Capacity planning and load testing SharePoint Online(용량 계획과 부하 테스트가 가능한 SharePoint Online)
 이 문서에서는 SharePoint Online에서 부하 테스트가 허용 되지 않으므로 기존 부하 테스트 없이 SharePoint Online에 배포 하는 방법에 대해 설명 합니다. SharePoint Online은 클라우드 서비스 이며 부하 기능, 서비스의 전체 부하 균형은 Microsoft에 의해 관리 됩니다.
   
 사이트 실행을 성공적으로 수행할 수 있도록 하기 위한 가장 좋은 방법은 [포털 시작 롤아웃 계획](https://docs.microsoft.com/office365/enterprise/planportallaunchroll-out)에서 강조 표시 되는 기본 원칙, 사례 및 권장 사항을 따르는 것입니다.
@@ -41,6 +43,6 @@ ms.locfileid: "41844709"
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>테스트 SharePoint Online을 로드할 수 없는 이유
 온-프레미스 환경에서는 부하 테스트를 사용 하 여 확장 가정의 유효성을 검사 하 고 팜의 중단 지점을 찾습니다. 부하에 따라 포화 
 
-SharePoint Online을 사용 하는 경우에는 배율이 비교적 유체 이며 특정 추론을 기반으로 하 여 부하를 조정 하 고 제한 및 제어 하는 경우에는 다른 작업이 수행 되어야 합니다. 대규모의 다중 테 넌 트 환경에서는 동일한 팜의 모든 테 넌 트를 보호 해야 하므로 부하 테스트를 자동으로 제한 합니다. 그러나 현재 테스트를 수행 하는 경우 테스트를 실행 하는 동안 테스트 중에 확장을 변경 하거나 테스트 후에는 시간이 초과 될 수 있기 때문에 disappointing 및 잠재적으로 잘못 된 결과를 받게 됩니다. 확장 및 팜 균형 작업은 지속적으로 수행 됩니다.
+SharePoint Online을 사용 하는 경우에는 배율이 비교적 유체 이며 특정 추론을 기반으로 하 여 부하를 조정 하 고 제한 및 제어 하는 경우에는 다른 작업이 수행 되어야 합니다. 대규모의 다중 테 넌 트 환경에서는 동일한 팜의 모든 테 넌 트를 보호 해야 하므로 부하 테스트를 자동으로 제한 합니다. 그러나 시간을 들 여 테스트를 수행 하는 것 외에도, 오늘 테스트 한 팜이 테스트를 수행 하는 동안 규모를 변경 하거나 테스트 후에 확장 및 팜 균형 작업이 진행 됨에 따라 시간이 초과 되어 결과를 disappointing 수 있습니다.
 
 여기서는 테스트 SharePoint를 서비스로 로드 하는 대신 권장 되는 방법에 중점을 둔 [채 정상적인 포털 지침을 만들고, 시작 하 고, 유지 관리](https://go.microsoft.com/fwlink/?linkid=2105838) 하는 방법을 따릅니다.

@@ -7,18 +7,20 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 요약:Windows PowerShell을 사용하여 Office 365로 단독형 마이그레이션을 수행하는 방법을 알아봅니다.
-ms.openlocfilehash: 6f82dc8501d5dfbca7c980b025e6da7a4deb00d5
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 159ebe7d279713168993c51529b9935c6e5d681a
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844719"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004531"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행
 
