@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 배포 관리자를 통해 Office 365 또는 Microsoft 365의 계획 및 구성을 가속화 합니다.
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840535"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009394"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 또는 Microsoft 365 서비스에 대 한 배포 관리자
 
@@ -159,23 +159,23 @@ Gmail이 있는 경우 Gmail 연락처 및 Google 일정 항목을 Office 365로
 
 ## <a name="file-creation-storage-and-sharing"></a>파일 만들기, 저장 및 공유
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise"></a>엔터프라이즈용 Microsoft 365 앱
 
-Office 365 ProPlus에서는 사용자를 최신 버전의 Office에서 실행 하 고 업데이트 상태로 유지 합니다.
+Microsoft 365 Apps for enterprise (이전 명칭: Office 365 ProPlus)에서는 사용자를 최신 버전의 Office에서 실행 하 고 업데이트 상태로 유지 합니다.
 
 Office를 시작 하는 방법에 대 한 팁을 포함 하 여 PC 또는 회사의 Mac에 Office를 설치 하는 단계는이 가이드를 참조 하세요.
 
 |||
 |:-------|:-----|
-| **실행** |  [Office 365 ProPlus 빠른 시작 가이드](https://aka.ms/OPPquickstartguide) <BR> |
+| **실행** |  [엔터프라이즈 빠른 시작 가이드에 대 한 Microsoft 365 앱](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus 배포 관리자는 사용자가 office 365 portal에서 직접 office 365 ProPlus를 설치 하거나 온-프레미스 위치에서 사용자에 게 Office 365 ProPlus를 배포 하는 데 도움이 되는 단계를 안내 합니다. Microsoft 끝점 구성 관리자, 그룹 정책 시작 스크립트, 운영 체제 디스크 이미지 또는 RDS (원격 데스크톱 서비스) 공유 활성화를 사용 하는 방법에 대 한 지침이 포함 되어 있습니다.
+Office 배포 관리자는 사용자가 Office 365 portal에서 직접 Microsoft 365 앱을 설치 하거나 온-프레미스 위치에서 사용자에 게 Microsoft 365 앱 for enterprise를 배포 하는 데 도움이 되는 단계를 안내 합니다. Microsoft 끝점 구성 관리자, 그룹 정책 시작 스크립트, 운영 체제 디스크 이미지 또는 RDS (원격 데스크톱 서비스) 공유 활성화를 사용 하는 방법에 대 한 지침이 포함 되어 있습니다.
 
 |||
 |:-------|:-----|
-| **실행** | [Office 365 ProPlus 배포 관리자](https://aka.ms/o365proplusdeploy) | 
-| **조사식** | [Office experience (구독 서비스)](https://aka.ms/qo45jf) <BR> [Office 365 ProPlus 개요](https://aka.ms/r359zr) | 
+| **실행** | [Office 배포 관리자](https://aka.ms/o365proplusdeploy) | 
+| **조사식** | [Office experience (구독 서비스)](https://aka.ms/qo45jf) <BR> [Microsoft 365 for enterprise 용 앱 개요](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ Office 365 ProPlus 배포 관리자는 사용자가 office 365 portal에서 직�
 
 |||
 |:-------|:-----|
-| **실행** | [Office 365 ProPlus 배포 관리자](https://aka.ms/o365proplusdeploy) | 
+| **실행** | [Office 배포 관리자](https://aka.ms/o365proplusdeploy) | 
 | **조사식** | [비즈니스용 OneDrive 통합 장점](https://aka.ms/f66hqa) <BR> [OneDrive 시작: 다른 클라우드 저장소 공급자 로부터 온](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -236,7 +236,7 @@ AD FS (Active Directory Federation Services)와 함께 페더레이션 로그인
 | **실행** |  [Azure AD 기본 설정 가이드](https://aka.ms/azureadbasic) |
 |||
 
-다단계 인증, SSO (single sign-on), 장치 등록, 셀프 서비스 암호 및 그룹 관리, 보안 모니터링과 같은 id 관리 기능을 제공 하는 Azure AD Premium의 다양 한 기능을 사용 하도록 설정 하려면이 가이드를 사용 합니다. .
+다단계 인증, SSO (single sign-on), 장치 등록, 셀프 서비스 암호 및 그룹 관리, 보안 모니터링과 같은 id 관리 기능을 제공 하는 Azure AD Premium의 다양 한 기능을 사용 하도록 설정 하려면이 가이드를 사용 합니다.
   
 |||
 |:-------|:-----|

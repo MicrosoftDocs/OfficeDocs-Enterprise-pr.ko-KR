@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 사용자 계정에 개별적으로 또는 그룹 구성원을 기반으로 Office 365 라이선스를 할당 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 3ffd51b6b3ab4add900746f14f013a307ca352ad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 77e6f6c20e9eeff11487a31cb2d616abbed42601
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843789"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009383"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>사용자 계정에 Office 365 라이선스 할당
 
@@ -57,6 +57,6 @@ ms.locfileid: "41843789"
 라이선스가 할당 된 전체 사용자 계정 집합을 사용 하 여 다음 작업을 수행할 준비가 되었습니다.
 
 - [보안 구현](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [Office 365 ProPlus와 같은 클라이언트 소프트웨어 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+- [Microsoft 365 앱과 같은 클라이언트 소프트웨어 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Office 365에서 모바일 장치 관리 설정](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [서비스 및 응용 프로그램 구성](configure-services-and-applications.md)

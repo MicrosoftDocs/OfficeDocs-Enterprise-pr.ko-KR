@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 데이터 이동은 최종 사용자에게 최소의 영향만 미치는 백 엔드 작업입니다. Microsoft에서 사용자의 테넌트의 각 서비스 및 연결된 데이터를 새 데이터 센터 지역으로 이동하는 동안 필요한 작업은 없습니다. 사용자에게 최소한의 영향만 미치면서, 백그라운드에서 사전에 데이터 전송 및 유효성 검사가 진행됩니다.
-ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772109"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009303"
 ---
 # <a name="during-and-after-your-data-move"></a>데이터 이동 도중 및 이후
 
@@ -74,7 +74,7 @@ SharePoint Online이 이동 될 때 다음 서비스에 대 한 데이터도 이
     
 - S 브라우저의 Office
     
-- Office 365 ProPlus
+- 엔터프라이즈용 Microsoft 365 앱
     
 - Visio Pro for Office 365
     

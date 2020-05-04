@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell을 사용 하 여 Office 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: a130faef640e875bde864ff26e46863e82f6df7a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004141"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009533"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "44004141"
 
 - **라이선스 계획** 이러한 계획은 라이선스 요금제 또는 Office 365 요금제 라고도 합니다. 라이선스 계획은 사용자에 게 제공 되는 Office 365 서비스를 정의 합니다. Office 365 구독에는 여러 라이선싱 계획이 포함 될 수 있습니다. 라이선스 계획의 예로는 Office 365 Enterprise E3을 들 수 있습니다.
     
-- **서비스** 이러한 계획은 서비스 계획이 라고도 합니다. 서비스는 각 라이선스 계획에서 사용할 수 있는 Office 365 제품, 기능 및 기능 (예: Exchange Online 및 Office 365 ProPlus)입니다. 사용자는 다양 한 서비스에 대 한 액세스 권한을 부여 하는 다른 라이센스 계획에서 할당 된 여러 개의 라이센스를 가질 수 있습니다.
+- **서비스** 이러한 계획은 서비스 계획이 라고도 합니다. 서비스는 각 라이선싱 계획에서 사용할 수 있는 Office 365 제품, 기능, 기능으로, Exchange Online 및 Microsoft 365 Apps for enterprise (이전 명칭: Office 365 ProPlus)입니다. 사용자는 다양 한 서비스에 대 한 액세스 권한을 부여 하는 다른 라이센스 계획에서 할당 된 여러 개의 라이센스를 가질 수 있습니다.
     
 - **라이선스** 각 라이선스 계획에는 구매한 라이선스 수가 포함 됩니다. 라이선스 계획에 정의 된 Office 365 서비스를 사용할 수 있도록 사용자에 게 라이선스를 할당 합니다. 모든 사용자 계정에는 라이선스 요금제가 하나 이상 있어야 Office 365에 로그온 하 고 서비스를 사용할 수 있습니다.
     
@@ -141,7 +141,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(이전 이름 Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |비즈니스용 Skype Online  <br/> |
 | `SHAREPOINTWAC` <br/> |사무실  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -161,7 +161,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

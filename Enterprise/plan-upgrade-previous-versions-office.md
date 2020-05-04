@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2007 또는 Office 2010을 사용하는 경우 이제 업그레이드를 계획해야 합니다. 오래되고, 지원되지 않는 앱과 서버로 인해 불편해하지 마세요. 계획을 시작하려면 다음 리소스를 사용하세요.
-ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 407f3d9570916ab4373dbb4e34f4cb6e57ebc7f7
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503806"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009483"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 또는 Office 2010 서버 및 클라이언트에서 업그레이드 계획
 
@@ -88,7 +88,7 @@ ms.locfileid: "43503806"
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)는 모든 사용자가 독창적이고 안전하게 함께 작업할 수 있도록 완전한 인텔리전트 솔루션을 제공하는 Office 365, Windows 10 및 EMS(Enterprise Mobility + Security)의 조합입니다. 
   
-Office 2007 또는 Office 2010 서버와 클라이언트를 Office 365로 마이그레이션할 수 있지만, Microsoft 365에는 조직이 최신 Windows 운영 체제에서 작업하고 있으며 Windows, iOS 및 Android를 포함하는 장치가 등록되어 인증 및 데이터 보호가 필요한 정책을 통해 계속 보호되도록 하는 라이선스와 기능이 포함되어 있습니다. 또한 Windows 10과 Office 365 ProPlus 클라이언트 소프트웨어는 최신 기능과 보안 업데이트를 포함하도록 계속 업데이트됩니다.
+Office 2007 또는 Office 2010 서버와 클라이언트를 Office 365로 마이그레이션할 수 있지만, Microsoft 365에는 조직이 최신 Windows 운영 체제에서 작업하고 있으며 Windows, iOS 및 Android를 포함하는 장치가 등록되어 인증 및 데이터 보호가 필요한 정책을 통해 계속 보호되도록 하는 라이선스와 기능이 포함되어 있습니다. 또한 최신 기능과 보안 업데이트를 포함 하기 위해 Windows 10 및 Microsoft 365 Apps for enterprise (이전 이름 Office 365 ProPlus) 클라이언트 소프트웨어는 계속 해 서 업데이트 됩니다.
   
 Microsoft 365를 사용하면 Microsoft 클라우드에서 활성화되어 보호되며 지속적으로 개선되는 장치와 생산성 환경을 사용하여 비즈니스를 디지털 방식으로 변환할 수 있습니다.
   

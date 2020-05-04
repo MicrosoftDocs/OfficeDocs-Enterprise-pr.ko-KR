@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell을 사용 하 여 사용자 계정에 라이선스를 할당 하 고 한 번에 특정 서비스 계획을 사용 하지 않도록 설정 하는 방법을 알아봅니다.
-ms.openlocfilehash: a00a1af02aeb69f7d69f9f9fc998202ac7c53291
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: b1fcd8afd9f9fee5b249752821385cd888519a37
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004671"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009473"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>사용자 라이선스를 할당하는 동안 서비스에 대한 액세스 사용 안 함
 
@@ -107,7 +107,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |RMS(Azure 권한 관리)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(이전 이름 Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |비즈니스용 Skype Online  <br/> |
 | `SHAREPOINTWAC` <br/> |사무실   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -182,7 +182,7 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 - 처리 된 모든 사용자와 함께 CSV 파일을 만들고 해당 라이선스 상태를 표시 합니다.
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스를 비활성화 합니다.](disable-access-to-services-with-office-365-powershell.md)
   

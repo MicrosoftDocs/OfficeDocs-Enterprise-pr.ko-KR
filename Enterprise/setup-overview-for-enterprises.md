@@ -18,13 +18,13 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 이러한 개요 단계는 네트워크를 설정 하 고, id를 만들고, Office 365 ProPlus를 배포 하 고, 데이터를 마이그레이션하고, 조직의 사용자가 Office 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
-ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 이러한 개요 단계는 네트워크 설정, id 만들기, 엔터프라이즈 용 Microsoft 365 앱 배포, 데이터 마이그레이션 및 조직의 사용자가 Office 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
+ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844019"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009283"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>조직을 위해 Office 365 Enterprise 배포
 
@@ -34,7 +34,7 @@ Office 365 Enterprise를 배포 하 고, 온-프레미스 인프라와 통합 �
 
 ## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>FastTrack을 사용한 Guided Office 365 Enterprise 설치 프로세스
 
-Office 365 배포를 위한 **[Fasttrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 이 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내 하며, 방식에 따라 질문에 답할 수 있습니다. 
+Office 365 배포를 위한 **[Fasttrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 이 가장 좋은 방법입니다. FastTrack은 가장 일반적인 배포 구성을 안내하고 단계별로 질문에 답변할 수 있습니다. 
 
 일련의 설치 가이드에 액세스 하려면 Office 365 구독에 로그인 한 다음 [office 365 설정](https://aka.ms/o365fasttrack)으로 이동 합니다.
 
@@ -60,9 +60,9 @@ Office 365 Enterprise를 직접 배포 하려면 자세한 조사를 수행 하 
 
    최초 30 일, 90 일 및 그 이상에서 테 넌 트 및 id에 대 한 기본 및 향상 된 보안, 위협 및 정보 보호를 구성 하 고 배포 하는 방법을 설명 합니다.
  
-4. [클라이언트 소프트웨어 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+4. [클라이언트 소프트웨어 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   장치에 Office 제품군 (Word, Excel, PowerPoint 및 기타)의 클라우드 업데이트 및 현재 버전의 office 365 ProPlus를 배포 하는 작업이 포함 됩니다. 모든 Office 365 클라이언트 라이선스에는 Office 365 ProPlus에 대 한 라이선스가 포함 되어 있습니다.
+   장치에 Office 제품군 (Word, Excel, PowerPoint 및 기타)의 클라우드 업데이트 및 현재 버전인 office 365 ProPlus 라는 Microsoft 365 앱을 배포 하는 작업이 포함 되어 있습니다. 모든 Office 365 클라이언트 라이선스에는 Microsoft 365 앱 for enterprise 라이선스가 포함 되어 있습니다.
  
 5. [모바일 장치 관리 설정](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

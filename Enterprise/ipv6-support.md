@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '요약: Microsoft Office 365 구성 요소 및 Office 365 정부 제품의 IPv6 지원에 대해 설명 합니다.'
-ms.openlocfilehash: 13fd1cfef26f5e69c87f650c46f71071b72f2d15
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 939b5653981cb78dfa316e0baf1c498a3db97904
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206545"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009313"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 서비스의 IPv6 지원
 
@@ -57,7 +57,7 @@ SharePoint Online에 연결 하는 데 사용 하는 프로그램이 i p v 6을 
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Office 365 정부 제품에 대 한 IPv6 지원
 
-Office 365 정부에 대 한 IPv6 지원은 경영 부서나 기관에 대 한 정보 관리자 및 IPv6 (인터넷 프로토콜 버전 6) Memorandum의 정부 뿐 아니라 OMB (관리 및 예산) Memorandum를 준수 합니다. [정부용 Microsoft Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414) 는 분리 된 커뮤니티 클라우드에 미국 정부 데이터를 저장 하는 다중 테 넌 트 서비스입니다. 다른 Office 365 제품과 마찬가지로, Exchange Online, 비즈니스용 Skype, SharePoint Online 및 Office 365 ProPlus를 포함 하 여 생산성 및 공동 작업 서비스를 제공 합니다. 
+Office 365 정부에 대 한 IPv6 지원은 경영 부서나 기관에 대 한 정보 관리자 및 IPv6 (인터넷 프로토콜 버전 6) Memorandum의 정부 뿐 아니라 OMB (관리 및 예산) Memorandum를 준수 합니다. [정부용 Microsoft Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414) 는 분리 된 커뮤니티 클라우드에 미국 정부 데이터를 저장 하는 다중 테 넌 트 서비스입니다. 다른 Office 365 제품과 마찬가지로 Exchange Online, 비즈니스용 Skype, SharePoint Online 및 Microsoft 365 앱 for enterprise의 생산성 및 공동 작업 서비스가 제공 됩니다. 
 
 Microsoft Office 365 정부 제품은 2013 이상에만 적용 됩니다. Office 365 정부 제품에 대 한 자세한 내용은 [Microsoft 정부용 office 365 정부: US 정부 커뮤니티 클라우드](https://go.microsoft.com/fwlink/p/?LinkId=325414)를 참조 하세요. ITAR (무장 규정)의 국제 트래픽은 [미국 군수 목록 (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)에 대 한 방어 관련 문서 및 서비스의 내보내기와 가져오기를 제어 하는 미국 정부 규정 집합입니다. 
 

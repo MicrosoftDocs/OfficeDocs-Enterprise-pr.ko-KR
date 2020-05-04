@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 76f61942a4b3f832b75f4a098452748898d2e8c5
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503828"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009523"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
@@ -42,7 +42,7 @@ SharePoint 2010 및 Project Server 2010는 **2021 년 4 월 13 일**에 지원 �
 
 - Office 365에는 Exchange Server 및 SharePoint Server 같은 Office 2010 서버 제품에 대 한 클라우드 기반 서비스와 팀 및 비즈니스용 OneDrive 등의 서비스를 포함 합니다. 
 
-- Office 365 E3 및 E5와 Microsoft 365 Enterprise에 포함 된 office 365 ProPlus는 로컬 장치에 설치한 Office 클라이언트 응용 프로그램 집합입니다. Microsoft 클라우드에서 지속적으로 새로운 생산성 및 보안 기능을 사용 하 여 업데이트 됩니다.
+- Office 365 E3 및 E5 및 Microsoft 365 Enterprise에 포함 된 Microsoft 365 Apps for enterprise (이전 명칭: Office 365 ProPlus)는 로컬 장치에 설치한 Office 클라이언트 응용 프로그램 집합입니다. Microsoft 클라우드에서 지속적으로 새로운 생산성 및 보안 기능을 사용 하 여 업데이트 됩니다.
 
 Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 

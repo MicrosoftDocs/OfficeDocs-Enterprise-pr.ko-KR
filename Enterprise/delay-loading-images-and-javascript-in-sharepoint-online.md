@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004601"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009353"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online에서 이미지 및 JavaScript 로드 지연
 
 이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
   
-이미지는 SharePoint Online의 페이지 로드 속도에 부정적인 영향을 줄 수 있습니다. 기본적으로 대부분의 최신 인터넷 브라우저는 HTML 페이지를 로드할 때 이미지를 미리 페치 합니다. 이로 인해 사용자가 아래로 스크롤할 때까지 이미지가 화면에 표시 되지 않는 경우 페이지가 불필요 하 게 더 느리게 로드 될 수 있습니다. 이미지는 브라우저가 페이지의 표시 되는 부분을 로드 하지 못하게 차단할 수 있습니다. 이 문제를 해결 하려면 JavaScript를 사용 하 여 이미지 로드를 먼저 건너뛸 수 있습니다. 또한 중요 하지 않은 JavaScript를 로드 하면 SharePoint 페이지의 로드 시간도 느려질 수 있습니다. 이 항목에서는 SharePoint Online에서 JavaScript의 페이지 로드 시간을 개선 하는 데 사용할 수 있는 몇 가지 방법에 대해 설명 합니다.
+이미지는 SharePoint Online의 페이지 로드 속도에 부정적인 영향을 줄 수 있습니다. 기본적으로 대부분의 최신 인터넷 브라우저는 HTML 페이지를 로드할 때 이미지를 미리 페치 합니다. 이로 인해 사용자가 아래로 스크롤할 때까지 이미지가 화면에 표시 되지 않는 경우 페이지가 불필요 하 게 더 느리게 로드 될 수 있습니다. 이미지는 브라우저가 페이지의 표시 되는 부분을 로드 하지 못하게 차단할 수 있습니다. 이 문제를 해결 하려면 JavaScript를 사용 하 여 이미지 로드를 먼저 건너뛸 수 있습니다. 또한 중요 하지 않은 JavaScript를 로드 하면 SharePoint 페이지에서 다운로드 시간이 느려질 수 있습니다. 이 항목에서는 SharePoint Online에서 JavaScript의 페이지 로드 시간을 개선 하는 데 사용할 수 있는 몇 가지 방법에 대해 설명 합니다.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript를 사용 하 여 SharePoint Online 페이지에서 이미지 로드를 지연 시켜 페이지 로드 시간 개선
 
-JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예를 들면 다음과 같습니다.
+JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예시:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -119,9 +119,9 @@ JavaScript를 사용 하 여 이미지 로드를 지연 시키는 것은 성능 
 
 GitHub에서 제공 되는 [JavaScript 주입](https://go.microsoft.com/fwlink/p/?LinkId=524759) 에 대 한 문서 및 코드 예제를 놓치지 마세요.
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
-[Office 2013 및 Office 365 ProPlus의 지원 되는 브라우저](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 및 엔터프라이즈 용 Microsoft 365 앱에서 지원 되는 브라우저](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [방법: SharePoint 2013에서 사이트에 마스터 페이지 적용](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

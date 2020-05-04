@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844929"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009363"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365용 Azure Express 경로
 
@@ -68,7 +68,7 @@ Office 365, Windows Update, TechNet 등의 모든 Microsoft 응용 프로그램�
 
 <sup>1</sup> 이러한 각 응용 프로그램은 Express에서 지원 되지 않는 인터넷 연결 요구 사항이 있습니다. 자세한 내용은 [Office 365 endpoints 문서](https://aka.ms/o365endpoints) 를 참조 하십시오.
 
-Office 365에 대 한 Express에 포함 되지 않은 서비스는 중국의 Office 365 ProPlus 클라이언트 다운로드, 온-프레미스 Id 공급자 로그인 및 Office 365 (21 Vianet 되며) 서비스입니다.
+Office 365 용 Express에 포함 되지 않은 서비스는 중국에서 엔터프라이즈 클라이언트 다운로드, 온-프레미스 Id 공급자 로그인 및 Office 365 (운영 하는 21 Vianet 되며) 서비스에 대 한 Microsoft 365 앱입니다.
 
 ## <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
@@ -124,6 +124,6 @@ Office 365에 대 한 Express를 구입 하려면 하나 이상의 [승인 된 �
 
 [Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

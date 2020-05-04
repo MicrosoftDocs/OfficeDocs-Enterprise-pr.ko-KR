@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: '요약: Office 365을 사용 하려면 인터넷에 연결 해야 합니다. 아래 끝점은 Office 365 U.S. 정부 DoD 요금제만 사용 하는 고객에 게 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: 05fb40f717f5fc5706c2dc051eb6d8546cd32847
-ms.sourcegitcommit: 5fb126747182108e31594b22e4677f05b1fb9313
+ms.openlocfilehash: 879b9054ecc02e50362e6ac7503eafb87349690c
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43928172"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009503"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 미국 정부 DoD 끝점
 
@@ -67,4 +67,4 @@ ms.locfileid: "43928172"
 
 - SCC (보안 및 준수 센터)는 Office 365 용 Azure Express를 지원 합니다. 이는 보고, 감사, Advanced eDiscovery, 통합 DLP 및 데이터 거 버 넌 스와 같은 SCC를 통해 제공 되는 많은 기능에도 적용 됩니다. 두 가지 특정 기능인 PST 가져오기 및 eDiscovery 내보내기에서는 현재 Azure Blob Storage에 대 한 종속성으로 인해 Office 365 경로 필터만 사용 하는 Azure Express를 지원 하지 않습니다. 이러한 기능을 사용 하려면 azure 공용 경로 필터를 사용한 Azure Express 주소나 인터넷 연결을 포함 하는 지원 되지 않는 Azure 연결 옵션을 통해 Azure Blob Storage에 대 한 별도의 연결이 필요 합니다. 이러한 두 기능에 대 한 이러한 연결을 평가 해야 합니다. Office 365 Information Protection 팀은 이러한 기능에 대 한 Office 365 경로 필터로 제한 되는, Office 365에 대 한 Azure Express를 지원 하기 위해 현재 이러한 제한을 확인 하 고 있습니다.
 
-- 사용자가 Office 365 ProPlus 응용 프로그램을 시작 하 고 문서를 편집 하는 데 필요 하지 않으며 나열 되지 않고 Office 365 ProPlus에 대 한 추가 선택적 끝점이 있습니다. 선택적 끝점은 Microsoft 데이터 센터에서 호스트 되며, 고객 데이터가 처리, 전송 또는 저장 되지 않습니다. 이러한 끝점에 대 한 사용자 연결을 기본 인터넷 송신 주변으로 보내는 것이 좋습니다.
+- 사용자가 엔터프라이즈 응용 프로그램에 대해 Microsoft 365 앱을 시작 하 고 문서를 편집 하는 데 필요한 Microsoft 365 앱 for enterprise 용 추가 끝점이 나열 되어 있지 않습니다. 선택적 끝점은 Microsoft 데이터 센터에서 호스트 되며, 고객 데이터가 처리, 전송 또는 저장 되지 않습니다. 이러한 끝점에 대 한 사용자 연결을 기본 인터넷 송신 주변으로 보내는 것이 좋습니다.
