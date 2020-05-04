@@ -9,12 +9,12 @@ metadata:
   author: wingtofree
   ms.author: v-qingao
   ms.date: 03/12/2020
-  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
-  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.openlocfilehash: 8397c93d6632710a036b2de7ef604451c5c42e70
+  ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
   ms.translationtype: MT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "42891498"
+  ms.lasthandoff: 05/03/2020
+  ms.locfileid: "44009293"
 landingContent:
 - title: Office 365 Enterprise 정보
   linkLists:
@@ -24,15 +24,15 @@ landingContent:
       url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
     - text: 조직 데이터를 Office 365 Enterprise로 마이그레이션
       url: migrate-data-to-office-365.md
-    - text: Office 365 ProPlus 배포 가이드
-      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: 엔터프라이즈용 Microsoft 365 앱 배포 가이드
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps
     - text: 조직을 위해 Office 365 Enterprise 배포
       url: setup-overview-for-enterprises.md
     - text: 하이브리드 배포
       url: microsoft-cloud-it-architecture-resources.md
   - linkListType: learn
     links:
-    - text: Microsoft 365 시작
+    - text: Microsoft 365 시작하기
       url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
 - title: Office 365 작업 배포
   linkLists:
