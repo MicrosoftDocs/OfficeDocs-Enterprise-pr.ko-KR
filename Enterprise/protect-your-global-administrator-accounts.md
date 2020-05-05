@@ -3,7 +3,7 @@ title: Office 365 전역 관리자 계정 보호
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 05/04/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,17 +19,14 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979370"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013411"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 전역 관리자 계정 보호
-
-> [!NOTE]
-> 라이선스를 추가 하지 않고 전역 관리자 계정을 만들 수 있습니다.
 
 *이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
@@ -45,8 +42,7 @@ Microsoft는 조직을 보호 하기 위한 기능을 제공 하지만, 이러�
     
 2. 전용 Office 365 전역 관리자 계정에 대해 multi-factor authentication을 구성 하 고 가장 강력한 형태의 보조 인증을 사용 합니다.
     
-> [!NOTE]
-> 이 문서에서는 전역 관리자 계정에 초점을 맞추었습니다 하지만 구독에 포함 된 데이터에 액세스 하기 위한 광범위 한 사용 권한이 있는 추가 계정 (예: eDiscovery 관리자 또는 보안 또는 준수 관리자)이 있는지 고려해 야 합니다. 동일한 방식으로 계정을 보호 해야 합니다. 
+> [! 참고]이 문서에서는 전역 관리자 계정에 초점을 맞추었습니다 하지만 구독에 포함 된 데이터에 액세스 하는 데 필요한 추가 계정 (예: eDiscovery 관리자 또는 보안 또는 준수 관리자 계정)이 동일한 방식으로 보호 되어야 하는지 여부를 고려해 야 합니다. <br > 라이선스를 추가 하지 않고 전역 관리자 계정을 만들 수 있습니다.
   
 ## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>1단계. 전용 Office 365 전역 관리자 계정을 만들고 필요한 경우에만이를 사용 합니다.
 
@@ -60,7 +56,7 @@ Microsoft는 조직을 보호 하기 위한 기능을 제공 하지만, 이러�
 
 2. 전역 관리자 역할이 할당 된 사용자 계정으로 Office 365 구독에 로그인 합니다.
     
-3. 최대 5 개의 전용 전역 관리자 사용자 계정을 하나 이상 만듭니다. **최소 12 자 이상의 강력한 암호를 사용 합니다.** 자세한 내용은 [강력한 암호 만들기를](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) 참조 하세요. 새 계정에 대 한 암호를 안전한 위치에 저장 합니다. 
+3. 최대 4 개의 전용 전역 관리자 사용자 계정을 만듭니다. **최소 12 자 이상의 강력한 암호를 사용 합니다.** 자세한 내용은 [강력한 암호 만들기를](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) 참조 하세요. 새 계정에 대 한 암호를 안전한 위치에 저장 합니다. 
     
 4. 전역 관리자 역할을 각각의 새 전용 전역 관리자 사용자 계정에 할당 합니다.
     
@@ -91,13 +87,15 @@ Microsoft는 조직을 보호 하기 위한 기능을 제공 하지만, 이러�
 > [!NOTE]
 > 이렇게 하려면 일상적인 사용자 계정으로 로그 아웃 하 고 전용 전역 관리자 계정으로 로그인 하기 위한 추가 단계가 필요 합니다. 하지만이 작업을 가끔씩만 수행 하면 됩니다. 전역 관리자 계정 위반 후에 Office 365 구독을 복구 하려면 많은 단계가 필요 합니다.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>2단계. 전용 Office 365 전역 관리자 계정에 대해 multi-factor authentication을 구성 하 고 가장 강력한 형태의 보조 인증 사용
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>2단계. 전용 Office 365 전역 관리자 계정에 대해 multi-factor authentication을 구성 하 고 가장 강력한 형태의 추가 확인을 사용 합니다.
 
-MFA (multi-factor authentication)에는 계정 이름 및 암호 외에 추가 정보가 필요 합니다. Office 365에서는 다음과 같은 확인 방법을 지원 합니다.
+MFA (multi-factor authentication)에는 계정 이름 및 암호 외에 추가 정보가 필요 합니다. Office 365에서는 다음과 같은 추가 확인 방법을 지원 합니다.
   
+- Microsoft Authenticator 앱
+
 - 전화 통화
     
-- 임의로 생성된 암호
+- 문자 메시지를 통해 보낸 임의로 생성 되는 확인 코드
     
 - 스마트 카드(가상 또는 실제)
     
@@ -107,15 +105,15 @@ MFA (multi-factor authentication)에는 계정 이름 및 암호 외에 추가 �
   
 1. [MFA를 설정](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)합니다.
     
-2. [Office 365에 대 한 2 단계 인증을 설정](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) 하 여 전화 통화 또는 문자 메시지에 대 한 각 전용 전역 관리자 계정을 확인 방법으로 구성 합니다. 
+2. [Office 365에 대 한 MFA를 설정](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) 하 여 전화 통화 또는 문자 메시지에 대 한 각 전용 전역 관리자 계정을 확인 방법으로 구성 합니다. 
     
 Office 365 하이브리드 id 모델을 사용 하는 조직 규모가 큰 경우에는 더 많은 확인 옵션을 사용할 수 있습니다. 더 강력한 보조 인증 방법으로 보안 인프라가 이미 마련 되어 있는 경우 다음 단계를 사용 합니다.
   
 1. [MFA를 설정](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)합니다.
     
-2. [Office 365에 대 한 2 단계 인증을 설정](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) 하 여 적절 한 확인 방법에 대해 각 전용 전역 관리자 계정을 구성 합니다. 
+2. [Office 365에 대 한 MFA를 설정](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) 하 여 적절 한 확인 방법에 대해 각 전용 전역 관리자 계정을 구성 합니다. 
     
-원하는 보다 강력한 확인 방법의 보안 인프라가 제대로 작동 하지 않고 Office 365 MFA에 적합 하지 않은 경우 전화 통화 또는 문자 메시지를 사용 하 여 MFA로 전용 전역 관리자 계정을 구성 하는 것이 좋습니다. 중간 보안 조치로 전역 관리자 계정의 스마트 전화로 전송 되는 확인 코드입니다. MFA에서 제공 하는 추가 보호를 사용 하지 않고 전용 전역 관리자 계정을 그대로 사용 하지 마십시오.
+원하는 보다 강력한 확인 방법의 보안 인프라가 제대로 작동 하지 않고 Office 365 MFA에 적합 하지 않은 경우에는 전화 통화 또는 전역 관리자 계정의 스마트 전화로 전송 되는 텍스트 메시지 확인 코드를 사용 하 여 MFA로 전용 전역 관리자 계정을 구성 하는 것이 좋습니다 (중간 보안 조치로). MFA에서 제공 하는 추가 보호를 사용 하지 않고 전용 전역 관리자 계정을 그대로 사용 하지 마십시오.
   
 자세한 내용은 [Office 365 배포에 대한 다단계 인증 계획](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)을 참조하세요.
   
@@ -138,16 +136,15 @@ MFA 및 PowerShell을 사용 하 여 Office 365 서비스에 연결 하려면 �
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-전역 관리자 계정을 전역 관리자 역할에 영구적으로 할당 하는 대신, Azure AD PIM (권한 부여 Id 관리)을 사용 하 여 필요에 따라 글로벌 관리자 역할에 대 한 주문형 (온-just-in-time) 할당을 사용 하도록 설정할 수 있습니다. 불필요.
+전역 관리자 계정을 전역 관리자 역할에 영구적으로 할당 하는 것 보다 Azure AD PIM (권한 부여 Id 관리)을 사용 하 여 필요에 따라 전역 관리자 역할을 주문형으로 할당 하도록 설정할 수 있습니다.
   
 전역 관리자 계정 대신 영구 관리자가 됩니다. 전역 관리자 역할은 사용자가 필요한 경우에만 비활성화 됩니다. 그런 다음 정품 인증 프로세스를 완료 하 여 전역 관리자 계정에 미리 정의 된 시간에 대 한 역할을 추가 합니다. 시간이 만료 되 면 PIM은 전역 관리자 계정에서 전역 관리자 역할을 제거 합니다.
   
 PIM 및이 프로세스를 사용 하면 악의적인 사용자가 공격 하 고 사용할 수 있는 전역 관리자 계정의 시간이 크게 줄어듭니다.
+
+PIM은 Microsoft 365 Enterprise E5 또는 EMS (Enterprise Mobility + Security) e 5에 포함 된 Azure AD Premium P2에 제공 되거나, 전역 관리자 계정에 대 한 개별 라이선스를 구입할 수 있습니다.
   
 자세한 내용은 [AZURE AD 권한 Id 관리](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)를 참조 하세요.
-  
-> [!NOTE]
-> PIM은 Microsoft 365 Enterprise E5 또는 EMS (Enterprise Mobility + Security) e 5에 포함 된 Azure AD Premium P2에 제공 되거나, 전역 관리자 계정에 대 한 개별 라이선스를 구입할 수 있습니다. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Office 365 용 SIEM (보안 정보 및 이벤트 관리) 소프트웨어
 
