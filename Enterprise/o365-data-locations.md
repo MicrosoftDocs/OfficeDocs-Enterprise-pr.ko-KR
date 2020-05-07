@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Office 365 데이터 위치'
-ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798819"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058018"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -84,7 +84,7 @@ Office 365는 유휴 및 전송중인 고객 데이터를 암호화하는 서비
 
 Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사용 가능한 제품](https://go.microsoft.com/fwlink/p/?linkid=2093451) 페이지를 검토하세요.
 
-### <a name="what-are-multi-geo-capabilities-in-office-365"></a>Office 365의 Multi-Geo 기능이란 무엇인가요?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365의 Multi-Geo 기능이란 무엇인가요?
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033)는 단일 Office 365 테넌트가 여러 Office 365 데이터 센터 지역에 걸쳐있을 수 있으며 고객은 사용자별로 Office 365 핵심 고객 데이터를 특정 지역에 저장할 수 있는 기능을 제공합니다.
 
@@ -727,7 +727,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | Workplace Analytics | 미국 |
 </p></details>
 
-## <a name="boliva"></a>볼리비아
+## <a name="bolivia"></a>볼리비아
 <details><summary>클릭하여 확장</summary><p>
 
 | 서비스 | 위치 |
@@ -4039,7 +4039,7 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 | Workplace Analytics | 미국 |
 </p></details>
 
-## <a name="papaua-new-guinea"></a>파푸아뉴기니
+## <a name="papua-new-guinea"></a>파푸아뉴기니
 <details><summary>클릭하여 확장</summary><p>
 
 | 서비스 | 위치 |
