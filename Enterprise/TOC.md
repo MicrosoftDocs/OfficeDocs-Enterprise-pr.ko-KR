@@ -111,7 +111,7 @@
 ## [3. 보안 구현](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. 클라이언트 소프트웨어 배포
-### [Office 365 ProPlus 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [엔터프라이즈용 Microsoft 365 앱 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [비즈니스용 Skype 클라이언트 배포](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [모바일 앱 배포 및 관리](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 

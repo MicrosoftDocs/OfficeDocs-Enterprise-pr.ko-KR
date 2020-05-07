@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범적 권장 사항을 검토합니다. Windows 10 및 엔터프라이즈용 Microsoft 365 앱이 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.'
-ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: '요약: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범 권장 사항을 검토합니다.'
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009373"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013431"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
- **요약**: Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft 클라우드를 사용할 때 파일, ID 및 디바이스를 보호하기 위한 규범적 권장 사항을 검토합니다. Windows 10 및 엔터프라이즈용 Microsoft 365 앱이 포함된 안전한 최신 데스크톱을 배포하는 방법을 알아봅니다.
+ **요약:** Microsoft ID, 보안, 네트워킹 및 하이브리드에 대한 핵심 클라우드 아키텍처 개념을 알아봅니다. Microsoft의 클라우드를 사용할 때 파일, ID 및 장치를 보호하는 방법에 대한 규범 권장 사항을 검토합니다.
   
 이러한 아키텍처 도구 및 포스터는 Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, 하이브리드 온-프레미스 및 클라우드 솔루션을 포함하여 Microsoft 클라우드 서비스 및 플랫폼에 대한 정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다. 
   
@@ -52,7 +52,6 @@ ms.locfileid: "44009373"
     - [GDPR에 대한 Office 365 정보 보호](#office-365-information-protection-for-gdpr)
     - [정치적 캠페인, 비영리 조직 및 기타 기밀 조직에 대한 Microsoft 보안 지침](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Microsoft 전화 통신 솔루션](#microsoft-telephony-solutions) 
-    - [Microsoft와 함께 안전한 최신 데스크톱 배포](microsoft-cloud-it-architecture-resources.md#msd)
     
 여러분의 의견을 알려주세요! [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)에 전자 메일을 보내주세요. 
 
@@ -224,15 +223,6 @@ Microsoft는 Microsoft 클라우드에서 팀을 처음 경험할 때 몇 가지
 
 자세한 내용은이 포스터에 대한 문서인 [Microsoft 전화 통신 솔루션](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)을 참조하세요.
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Microsoft와 함께 안전한 최신 데스크톱 배포
-
-IT 설계자가 Windows 10에 엔터프라이즈용 Microsoft 365 앱(기존의 Office 365 ProPlus)의 업데이트를 배포하고 관리하는 데 알아야 할 사항입니다.
-  
-|**항목**|**설명**|
-|:-----|:-----|
-|[![Microsoft 모델을 사용한 최신 보안 데스크톱 배포에 대한 미리 보기](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li>  Microsoft 클라우드에서 Windows 10 및 엔터프라이즈용 Microsoft 365 앱 배포 </li><li>  Microsoft Endpoint Configuration Manager를 사용하여 Windows 10 및 터프라이즈용 Microsoft 365 앱 배포 </li><li>  Microsoft 클라우드에서 Windows 10 및 엔터프라이즈용 Microsoft 365 앱 관리 </li><li>  Microsoft Endpoint Configuration Manager를 사용하여 Windows 10 및 터프라이즈용 Microsoft 365 앱 관리 </li><li>  Windows 10의 기본 및 추가 보호 기능 </li></ul><br/> |
-   
 ## <a name="see-also"></a>참고 항목
 
 [Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
