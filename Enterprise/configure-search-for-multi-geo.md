@@ -1,5 +1,5 @@
 ---
-title: Office 365 Multi-Geo 검색 구성
+title: Microsoft 365 Multi-Geo 검색 구성
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974010"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057674"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 검색 구성
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo 검색 구성
 
 다중 지역 환경에서 각 지리적 위치에는 자체 검색 인덱스와 검색 센터가 있습니다. 사용자가 검색을 하면 쿼리가 모드 인덱스로 팬아웃되고 반환된 결과는 병합됩니다.
 
@@ -102,7 +102,7 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 </tr>
 <tr class="even">
 <td align="left">Hybrid search</td>
-<td align="left"><a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">클라우드 하이브리드 검색</a>이 있는 하이브리드 SharePoint 환경에서는 온-프레미스 콘텐츠가 중앙 위치의 Office 365 인덱스에 추가됩니다.</td>
+<td align="left"><a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">클라우드 하이브리드 검색</a>이 있는 하이브리드 SharePoint 환경에서는 온-프레미스 콘텐츠가 중앙 위치의 Microsoft 365 인덱스에 추가됩니다.</td>
 <td align="left"></td>
 </tr>
 </tbody>

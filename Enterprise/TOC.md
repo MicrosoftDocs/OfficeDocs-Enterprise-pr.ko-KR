@@ -132,7 +132,7 @@
 
 ## 고급 배포
 
-### [Office 365 Multi-Geo](office-365-multi-geo.md)
+### [Microsoft 365 Multi-Geo](office-365-multi-geo.md)
 #### [OneDrive 및 SharePoint Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
 #### [Exchange Multi-Geo](multi-geo-capabilities-in-exchange-online.md)
 #### [Multi-Geo 플랜](plan-for-multi-geo.md)
@@ -147,7 +147,7 @@
 ##### [SharePoint 사이트 이동](move-sharepoint-between-geo-locations.md).
 ##### [지역 관리자 추가 또는 제거](add-a-sharepoint-geo-admin.md)
 ##### [지리적 위치로 콘텐츠 제한](restrict-content-to-geo-location.md)
-##### [Office 365 Multi-Geo eDiscovery 구성](multi-geo-ediscovery-configuration.md)
+##### [Microsoft 365 Multi-Geo eDiscovery 구성](multi-geo-ediscovery-configuration.md)
 ##### [특정 PDL로 그룹 만들기](multi-geo-add-group-with-pdl.md)
 ##### [지리적 위치 삭제](delete-a-geo-location.md)
 ##### [위성 지리적 위치에서 SharePoint Multi-Geo 사용](enabling-SP-multigeo-satellite-geolocation.md)
@@ -189,20 +189,6 @@
 ### [사용자 계정 관리 도구](manage-office-365-accounts.md)
 ### [동시에 여러 사용자 추가](add-several-users-at-the-same-time.md)
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
-
-### 게스트와 공동 작업하기
-#### [게스트 공유 참조](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### 게스트 공유 시나리오
-##### [게스트 공동 작업 개요](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [문서에서 공동 작업](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [사이트에서 공동 작업](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [팀으로 공동 작업](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### 게스트 공유 보안
-##### [인증되지 않은 공유](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [우발적 노출 제한](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [보안 게스트 공유 환경](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [B2B 엑스트라넷 만들기](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-### [제한 공유](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## 장치
 ### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)

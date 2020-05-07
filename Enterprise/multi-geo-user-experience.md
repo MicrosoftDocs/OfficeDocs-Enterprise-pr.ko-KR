@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: 다중 위치 환경의 SharePoint, OneDrive 및 Exchange 사용자 작업 환경에 대해 알아봅니다.
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974220"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057754"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>다중 위치 환경의 사용자 작업 환경
 
@@ -33,7 +33,7 @@ OneDrive Multi-Geo 구성에 표시되는 내용은 다음과 같습니다.
 
 SharePoint 허브 사이트는 직원의 콘텐츠 검색 및 참여를 향상시키는 한편 프로젝트, 부서 또는 지역을 완전하고 일관성있게 표현합니다. 다중 지역 환경에서 인공위성 위치의 사이트는 허브 사이트의 위치 정보와 상관없이 허브 사이트와 쉽게 연관될 수 있습니다. 사용자는 사이트의 지리적 위치에 관계없이 단일 검색 환경을 통해 허브에서 검색하고 결과를 얻을 수 있습니다.
 
-## <a name="office-365-app-launcher"></a>Office 365 앱 시작 관리자
+## <a name="microsoft-365-app-launcher"></a>Microsoft 365 앱 시작 관리자
 
 앱 시작 관리자는 다중 지역을 인식하고 각 타일을 작업 부하의 적절한 지리적 위치로 지정합니다. SharePoint 및 OneDrive 타일은 사용자가 제공한 지리적 위치에 해당하는 위치를 가리킵니다. 즉, 사용자가 중앙 위치에 OneDrive를 가지고 있고, SharePoint 타일이 중앙 위치의 SP Home을 가리키지만 해당 그룹 사이트는 PDL에 해당하는 위치에 프로비저닝됩니다. 
 
