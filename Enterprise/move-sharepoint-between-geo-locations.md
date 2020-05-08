@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: SharePoint 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185719"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057998"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint 사이트를 다른 지리적 위치로 이동
 
@@ -26,8 +26,8 @@ SharePoint 사이트 지리적 이동으로 SharePoint 사이트를 Multi-Geo �
 
 다음과 같은 유형의 사이트를 지리적 위치 간에 이동할 수 있습니다.
 
-- Office 365 그룹에 연결된 사이트
-- Office 365 그룹과 연결되지 않은 최신 사이트
+- Microsoft 365 그룹에 연결된 사이트
+- Microsoft 365 그룹과 연결되지 않은 최신 사이트
 - 클래식 SharePoint 사이트
 - 커뮤니케이션 사이트
 
@@ -96,13 +96,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 이 경우 사이트가 이동 가능한 상태면 *성공*을 반환하고, 차단된 조건이 하나라도 있으면 *실패*를 반환합니다.
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-office-365-group"></a>Office 365 그룹에 연결되지 않은 사이트의 SharePoint 사이트 지리적 이동 시작
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Microsoft 365 그룹에 연결되지 않은 사이트의 SharePoint 사이트 지리적 이동 시작
 
 기본적으로 사이트의 초기 URL이 대상 지리적 위치의 URL로 변경됩니다. 예:
 
 https://Contoso.sharepoint.com/sites/projectx에서 https://ContosoEUR.sharepoint.com/sites/projectx로
 
-Office 365 그룹에 연결되지 않은 사이트의 경우에도 `-DestinationUrl` 매개 변수를 사용하여 이름을 변경할 수 있습니다. 예:
+Microsoft 365 그룹에 연결되지 않은 사이트의 경우에도 `-DestinationUrl` 매개 변수를 사용하여 이름을 변경할 수 있습니다. 예시:
 
 https://Contoso.sharepoint.com/sites/projectx에서 https://ContosoEUR.sharepoint.com/sites/projecty로
 
@@ -112,11 +112,11 @@ https://Contoso.sharepoint.com/sites/projectx에서 https://ContosoEUR.sharepoin
 
 ![Start-SPOSiteContentMove cmdlet을 보여주는 PowerShell 창 스크린샷](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-office-365-group-connected-site"></a>Office 365 그룹에 연결된 사이트의 SharePoint 사이트 지리적 이동 시작
+### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Microsoft 365 그룹에 연결된 사이트의 SharePoint 사이트 지리적 이동 시작
 
-Office 365 그룹에 연결된 사이트를 이동하려면 먼저 전역 관리자가 Office 365 그룹의 PDL(기본 데이터 위치) 특성을 변경해야 합니다.
+Microsoft 365 그룹에 연결된 사이트를 이동하려면 먼저 전역 관리자가 Microsoft 365 그룹의 PDL(기본 데이터 위치) 특성을 변경해야 합니다.
 
-Office 365 그룹의 PDL을 설정하려면:
+Microsoft 365 그룹의 PDL을 설정하려면:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -187,9 +187,9 @@ SharePoint 사이트 지리적 이동이 완료되면, 이동한 파일의 기�
 - OneNote UWP - 버전 16.0.8431.1006 이상
 - OneNote 모바일 앱 - 버전 16.0.8431.1011 이상
 
-### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams(Office 365 그룹에 연결된 사이트에 적용 가능)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams(Microsoft 365 그룹에 연결된 사이트에 적용 가능)
 
-SharePoint 사이트 지리적 이동이 완료되면 사용자가 Teams 앱의 Office 365 그룹 사이트 파일에 액세스할 수 있습니다. 또한 지리적 이동 이전에 사이트의 Teams 채팅을 통해 공유한 파일은 이동이 완료되 후 계속해서 사용 가능합니다.
+SharePoint 사이트 지리적 이동이 완료되면 사용자가 Teams 앱의 Microsoft 365 그룹 사이트 파일에 액세스할 수 있습니다. 또한 지리적 이동 이전에 사이트의 Teams 채팅을 통해 공유한 파일은 이동이 완료되 후 계속해서 사용 가능합니다.
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>SharePoint 모바일 앱(iOS/Android)
 

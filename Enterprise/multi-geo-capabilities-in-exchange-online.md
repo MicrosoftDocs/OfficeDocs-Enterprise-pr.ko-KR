@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Exchange Onlinedl 다중 위치 기능에 대해 알아봅니다.
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890550"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057978"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online의 다중 위치 기능
 
@@ -45,11 +45,11 @@ Exchange Online에서 Azure AD의 **PreferredDataLocation** 속성을 Exchange O
 
 - **PreferredDataLocation** 코드가 틀린 경우(예: NAM 대신 NAN 입력), 사서함이 중앙 지리적 위치에서 프로비저닝됩니다.
 
-**참고**: 다중 위치 기능 및 비즈니스용 Skype에서 지리적으로 호스팅된 모임은 사용자 개체에서 **PreferredDataLocation** 속성을 사용하여 서비스를 찾습니다. 지리적으로 호스팅된 모임에 대해 사용자 개체에서 **PreferredDataLocation** 값을 구성하는 경우, Office 365 테넌트에서 다중 지역이 활성화된 후 해당 사용자의 사서함이 지정된 지리적 위치로 자동으로 이동합니다. 
+**참고**: 다중 위치 기능 및 비즈니스용 Skype에서 지리적으로 호스팅된 모임은 사용자 개체에서 **PreferredDataLocation** 속성을 사용하여 서비스를 찾습니다. 지리적으로 호스팅된 모임에 대해 사용자 개체에서 **PreferredDataLocation** 값을 구성하는 경우, Microsoft 365 테넌트에서 Multi-Geo가 활성화된 후 해당 사용자의 사서함이 지정된 지리적 위치로 자동으로 이동합니다. 
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online의 다중 지역에 대한 기능 제한 사항
 
-- EAC(Exchange 관리 센터)에서 사용할 수 있는 보안 및 준수 기능(예: 감사 및 eDiscovery)을 다중 지역 조직에서는 사용할 수 없습니다. 대신, [Office 365 보안 및 준수 센터](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)를 사용하여 보안 및 준수 기능을 구성할 수 있습니다.
+- EAC(Exchange 관리 센터)에서 사용할 수 있는 보안 및 준수 기능(예: 감사 및 eDiscovery)을 다중 지역 조직에서는 사용할 수 없습니다. 대신, [Microsoft 365 보안 및 준수 센터](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)를 사용하여 보안 및 준수 기능을 구성해야 합니다.
 
 - Mac용 Outlook 사용자는 사서함을 새 지리적 위치로 이동하는 동안 온라인 보관함 폴더에 대한 액세스가 일시적으로 중단될 수 있습니다. 교차 지역 사서함 이동이 다른 시간에 완료될 수 있으므로, 이 조건은 사용자의 기본 및 보관 사서함이 다른 지리적 위치에 있을 때 발생합니다.
 
