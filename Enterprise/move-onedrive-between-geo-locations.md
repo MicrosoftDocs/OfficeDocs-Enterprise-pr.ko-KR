@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974020"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058008"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
-OneDrive 지리적 이동을 사용하면 사용자의 OneDrive를 다른 지리적 위치로 이동할 수 있습니다. OneDrive 지리적 이동은 SharePoint Online 관리자 또는 Office 365 전역 관리자가 수행합니다. OneDrive 지리적 이동을 시작하기 전에 OneDrive을 이동할 사용자에게 알리고 이동하는 동안 모든 파일을 닫도록 권유합니다. (이동하는 동안 Office 클라이언트를 사용하여 문서를 열어 둔 경우 이동이 완료된 후에 문서를 새 위치에 저장해야 합니다.) 원할 경우 나중에 이동하도록 예약할 수 있습니다.
+OneDrive 지리적 이동을 사용하면 사용자의 OneDrive를 다른 지리적 위치로 이동할 수 있습니다. OneDrive 지리적 이동은 SharePoint Online 관리자 또는 Microsoft 365 전역 관리자가 수행합니다. OneDrive 지리적 이동을 시작하기 전에 OneDrive을 이동할 사용자에게 알리고 이동하는 동안 모든 파일을 닫도록 권유합니다. (이동하는 동안 Office 클라이언트를 사용하여 문서를 열어 둔 경우 이동이 완료된 후에 문서를 새 위치에 저장해야 합니다.) 원할 경우 나중에 이동하도록 예약할 수 있습니다.
 
 OneDrive 서비스는 Azure Blob 저장소를 사용하여 콘텐츠를 저장합니다. 사용자의 OneDrive와 연결된 Storage Blob는 대상 OneDrive를 사용할 수 있게 되고 40일 이내에 원본에서 대상 지리적 위치로 이동됩니다. 사용자의 OneDrive에 대한 액세스 권한은 대상 OneDrive가 사용할 수 있게 되는 즉시 복원됩니다.
 
-OneDrive 지리적 이동 기간(약 2 ~ 6시간) 동안 사용자의 OneDrive는 읽기 전용으로 설정됩니다. 사용자는 OneDrive 동기화 클라이언트 또는 SharePoint Online의 OneDrive 사이트를 통해 해당 파일에 계속 액세스할 수 있습니다. OneDrive 지리적 이동이 완료되면 사용자는 Office 365 앱 시작 관리자에서 OneDrive로 이동할 때 대상 지리적 위치에 자동으로 연결됩니다. 동기화 클라이언트는 자동으로 새 위치에서 동기화를 시작합니다.
+OneDrive 지리적 이동 기간(약 2 ~ 6시간) 동안 사용자의 OneDrive는 읽기 전용으로 설정됩니다. 사용자는 OneDrive 동기화 클라이언트 또는 SharePoint Online의 OneDrive 사이트를 통해 해당 파일에 계속 액세스할 수 있습니다. OneDrive 지리적 이동이 완료되면 사용자는 Microsoft 365 앱 시작 관리자에서 OneDrive로 이동할 때 대상 지리적 위치에 자동으로 연결됩니다. 동기화 클라이언트는 자동으로 새 위치에서 동기화를 시작합니다.
 
 이 문서에 나오는 절차를 수행하려면 [Microsoft SharePoint Online PowerShell 모듈](https://www.microsoft.com/download/details.aspx?id=35588)이 필요합니다.
 
@@ -163,7 +163,7 @@ OneDrive 사용자는 OneDrive가 다른 지리적 위치로 이동될 경우 �
 
 ### <a name="onedrive-for-business"></a>비즈니스용 OneDrive
 
-이동이 진행되는 동안 사용자의 OneDrive는 읽기 전용으로 설정됩니다. 이동이 완료된 후 Office 365 앱 시작 관리자 또는 웹 브라우저에서 OneDrive로 가면 새 지리적 위치의 OneDrive로 이동됩니다.
+이동이 진행되는 동안 사용자의 OneDrive는 읽기 전용으로 설정됩니다. 이동이 완료된 후 Microsoft 365 앱 시작 관리자 또는 웹 브라우저에서 OneDrive로 가면 새 지리적 위치의 OneDrive로 이동됩니다.
 
 ### <a name="permissions-on-onedrive-content"></a>OneDrive 콘텐츠에 대한 사용 권한
 

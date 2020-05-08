@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 다중 위치 환경의 SharePoint 및 OneDrive 서비스 관리에 대해 알아봅니다.
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974030"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057664"
 ---
-# <a name="administering-a-multi-geo-environment"></a>다중 위치 환경 관리
+# <a name="administering-a-multi-geo-environment"></a>Multi-Geo 환경 관리
 
-Office 365 서비스가 다중 위치 환경에서 작동하는 방식을 살펴봅니다.
+Microsoft 365 서비스가 다중 위치 환경에서 작동하는 방식을 살펴봅니다.
 
 ## <a name="audit-log-search"></a>감사 로그 검색
 
-모든 위성 위치에 대한 통합 [감사 로그](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)는 Office 365 감사 로그 검색 페이지에서 사용할 수 있습니다. 여러 지역의 모든 감사 로그 항목을 볼 수 있습니다. 예를 들어, NAM 및 EUR 지역 사용자의 활동은 하나의 조직 보기에 표시되며, 기존 필터를 적용하여 특정 사용자 활동을 볼 수 있습니다.
+모든 위성 위치에 대한 통합 [감사 로그](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)는 Microsoft 365 감사 로그 검색 페이지에서 사용할 수 있습니다. 여러 지역의 모든 감사 로그 항목을 볼 수 있습니다. 예를 들어, NAM 및 EUR 지역 사용자의 활동은 하나의 조직 보기에 표시되며, 기존 필터를 적용하여 특정 사용자 활동을 볼 수 있습니다.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, 보안 저장소, 앱
 
@@ -36,7 +36,7 @@ BCS, 보안 저장소 및 앱은 모두 각 위성 위치에서 별도의 인스
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-기본적으로 eDiscovery Manager 또는 다중 지역 테넌트의 관리자는 해당 거주자의 중앙 위치에서만 eDiscovery를 수행할 수 있습니다. Office 365 전역 관리자는 다른 사용자들이 eDiscovery를 수행할 수 있도록 하기 위해 eDiscovery 관리자 권한을 할당해야 하며, 해당 준수 보안 필터에서 “Region” 매개 변수를 할당하여 eDiscovery 수행 지역을 위성 위치로 지정해야 합니다. 그렇지 않으면 해당 위성 위치에 대해 eDiscovery가 수행되지 않습니다. 지역에 대한 준수 보안 필터를 구성하려면 [Office 365 다중 지역 eDiscovery의 구성](multi-geo-ediscovery-configuration.md) 참조하세요.
+기본적으로 eDiscovery Manager 또는 다중 지역 테넌트의 관리자는 해당 거주자의 중앙 위치에서만 eDiscovery를 수행할 수 있습니다. Microsoft 365 전역 관리자는 다른 사용자들이 eDiscovery를 수행할 수 있도록 하기 위해 eDiscovery 관리자 권한을 할당해야 하며, 해당 준수 보안 필터에서 “Region” 매개 변수를 할당하여 eDiscovery 수행 지역을 위성 위치로 지정해야 합니다. 그렇지 않으면 해당 위성 위치에 대해 eDiscovery가 수행되지 않습니다. 지역에 대한 준수 보안 필터를 구성하려면 [Microsoft 365 Multi-Geo eDiscovery의 구성](multi-geo-ediscovery-configuration.md)을 참조하세요.
 
 ## <a name="exchange-mailboxes"></a>Exchange 사서함
 
@@ -64,7 +64,7 @@ DLP 정책은 각 지리적 위치에 적용할 수 있는지에 따라 자동�
 
 ## <a name="security-and-compliance-admin-center"></a>보안 및 준수 관리 센터
 
-Multi-Geo 테넌트에 대해 하나의 중앙 준수 센터인 [Office 365 보안 및 준수 센터](https://protection.office.com/?rfr=AdminCenter\#/homepage)가 있습니다.
+Multi-Geo 테넌트에 대해 하나의 중앙 준수 센터인 [Microsoft 365 보안 및 준수 센터](https://protection.office.com/?rfr=AdminCenter\#/homepage)가 있습니다.
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint 저장소 할당량
 
@@ -98,7 +98,7 @@ Multi-Geo 테넌트에 대해 하나의 중앙 준수 센터인 [Office 365 보�
 - 유럽
 - 아시아 태평양
 
-그러나 현재 Office 365 비디오가 지원되는 다음 지역에서는 스트림을 아직 사용할 수 없으므로 이러한 로컬 인스턴스의 경우 지원되는 가장 가까운 지역에 있는 RMS를 사용합니다.
+그러나 현재 Microsoft 365 비디오가 지원되는 다음 지역에서는 스트림을 아직 사용할 수 없으므로 이러한 로컬 인스턴스의 경우 지원되는 가장 가까운 지역에 있는 RMS를 사용합니다.
 
 - 오스트레일리아
 - 캐나다
