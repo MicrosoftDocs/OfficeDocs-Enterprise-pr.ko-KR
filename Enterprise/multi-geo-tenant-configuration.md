@@ -1,5 +1,5 @@
 ---
-title: Office 365 다중 지역 테넌트 구성
+title: Microsoft 365 Multi-Geo 테넌트 구성
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 localization_priority: Priority
-description: Office 365 Multi-Geo 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: bba1260283b4e610b88c00c7d531e44c79acd58d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Microsoft 365 Multi-Geo 구성 방법 알아보기
+ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973980"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057724"
 ---
-# <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 다중 지역 테넌트 구성
+# <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo 테넌트 구성
 
-Office 365 Multi-Geo에 대한 테넌트를 구성하기 전에 [Office 365 다중 지역 계획](plan-for-multi-geo.md)을 읽었는지 확인합니다. 이 문서에 나온 단계를 수행하려면 위성 위치로 사용할 지리적 위치 목록과 해당 위치를 제공하려는 테스트 사용자가 필요합니다.
+Microsoft 365 Multi-Geo에 대한 테넌트를 구성하기 전에 [Microsoft 365 Multi-Geo 계획](plan-for-multi-geo.md)을 꼭 읽으세요. 이 문서에 나온 단계를 수행하려면 위성 위치로 사용할 지리적 위치 목록과 해당 위치를 제공하려는 테스트 사용자가 필요합니다.
 
-## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>테넌트에 Office 365 요금제의 Multi-Geo 기능 추가
+## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>테넌트에 Microsoft 365 요금제의 Multi-Geo 기능 추가
 
-Office 365 Multi-Geo를 사용하려면 _Office 365 요금제에서 다중 지역 기능_이 필요합니다. 계정 팀과 협력하여 테넌트에 이 요금제를 추가하십시오. 귀하의 계정 팀이 귀하를 적절한 라이센스 전문가와 연결시켜 테넌트를 구성할 것입니다.
+Microsoft 365 Multi-Geo를 사용하려면 _Microsoft 365 요금제에서 Multi-Geo 기능_ 요금제가 필요합니다. 계정 팀과 협력하여 테넌트에 이 요금제를 추가하십시오. 귀하의 계정 팀이 귀하를 적절한 라이센스 전문가와 연결시켜 테넌트를 구성할 것입니다.
 
-_Office 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금제입니다. 따라서 위성 위치에 호스트하려는 각 사용자를 위해 라이선스가 필요합니다. 시간에 따라 위성 위치에 사용자를 추가하면서 라이선스를 더 추가할 수 있습니다.
+_Microsoft 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금제입니다. 따라서 위성 위치에 호스트하려는 각 사용자를 위해 라이선스가 필요합니다. 시간에 따라 위성 위치에 사용자를 추가하면서 라이선스를 더 추가할 수 있습니다.
 
-테넌트가 _Office 365의 Multi-Geo 기능_ 요금제로 프로비저닝되면 OneDrive 및 SharePoint 관리 센터에서 **지리적 위치** 탭을 사용할 수 있게 됩니다.
+테넌트가 _Microsoft 365의 Multi-Geo 기능_ 요금제로 프로비저닝되면 OneDrive 및 SharePoint 관리 센터에서 **지리적 위치** 탭을 사용할 수 있게 됩니다.
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>테넌트에 위성 위치 추가
 
 데이터를 저장할 지리적 위치마다 위성 위치를 추가해야 합니다. 다음 표에는 사용 가능한 지역 위치가 나와 있습니다.
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ![SharePoint 관리 센터의 지리적 위치 페이지 스크린샷](media/sharepoint-multi-geo-admin-center.png)
 
@@ -74,7 +74,7 @@ Azure Active Directory에는 두 가지 유형의 사용자 개체(클라우드 
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Azure Active Directory Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
 
-회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure Active Directory Connect 동기화: Office 365 리소스의 기본 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)의 프로세스에 따라 온-프레미스 Active Directory에서 Azure Active Directory로의 기본 설정 데이터 위치 동기화를 구성합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure Active Directory Connect 동기화: Microsoft 365 리소스의 기본 설정 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)의 프로세스에 따라 온-프레미스 Active Directory에서 Azure Active Directory로의 기본 설정 데이터 위치 동기화를 구성합니다.
 
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 
@@ -83,7 +83,7 @@ Azure Active Directory에는 두 가지 유형의 사용자 개체(클라우드 
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>클라우드 전용 사용자를 위한 기본 설정 데이터 위치 지정 
 
-회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되지 않을 경우, 즉 Office 365 또는 AAD에서 생성될 경우 AAD PowerShell을 사용하여 PDL을 설정해야 합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되지 않을 경우, 즉 Microsoft 365 또는 AAD에서 생성될 경우 AAD(Azure Active Directory) PowerShell을 사용하여 PDL을 설정해야 합니다.
 
 이 섹션의 절차를 수행하려면 [Windows PowerShell용 Microsoft Azure Active Directory 모듈](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)이 필요합니다. Azure Active Directory PowerShell이 이미 설치된 경우 최신 버전으로 업데이트해야 합니다.
 
@@ -130,13 +130,13 @@ Multi-Geo 테넌트에는 검색 쿼리가 테넌트 내의 어디에서든지 �
 
 제한 사항 및 차이점을 비롯한 지침을 보려면 [비즈니스용 OneDrive Multi-Geo 검색 구성](configure-search-for-multi-geo.md)을 검토하세요.
 
-## <a name="validating-the-office-365-multi-geo-configuration"></a>Office 365 다중 지역 구성의 유효성 검사
+## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>Microsoft 365 Multi-Geo 구성의 유효성 검사
 
-Office 365 Multi-Geo를 회사에 널리 도입하기 전에 유효성 검사 계획에 포함시킬 수 있는 몇 가지 기본적인 사용 사례는 다음과 같습니다. 이 테스트와 회사와 관련된 추가 사용 사례를 완료하면 초기 파일럿 그룹의 사용자를 추가할 수 있습니다.
+Microsoft 365 Multi-Geo를 회사에 널리 도입하기 전에 유효성 검사 계획에 포함시킬 수 있는 몇 가지 기본적인 사용 사례는 다음과 같습니다. 이 테스트와 회사와 관련된 추가 사용 사례를 완료하면 초기 파일럿 그룹의 사용자를 추가할 수 있습니다.
 
 **비즈니스용 OneDrive**
 
-Office 365 앱 시작 관리자에서 OneDrive를 선택하고 사용자의 PDL에 따라 사용자의 적절한 지리적 위치로 자동 연결되는지 확인합니다. 이제 비즈니스용 OneDrive는 해당 위치에서 프로비저닝을 시작해야합니다. 프로비저닝이 완료되면 일부 문서를 업로드하고 다운로드하십시오.
+Microsoft 365 앱 시작 관리자에서 OneDrive를 선택하고 사용자의 PDL에 따라 사용자의 적절한 지리적 위치로 자동 연결되는지 확인합니다. 이제 비즈니스용 OneDrive는 해당 위치에서 프로비저닝을 시작해야합니다. 프로비저닝이 완료되면 일부 문서를 업로드하고 다운로드하십시오.
 
 **OneDrive 모바일 앱**
 
