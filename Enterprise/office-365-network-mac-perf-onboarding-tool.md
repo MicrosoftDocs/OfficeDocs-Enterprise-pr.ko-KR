@@ -1,5 +1,5 @@
 ---
-title: M365 관리 센터의 Microsoft 365 connectivity test (preview)
+title: Microsoft 365 관리 센터에서 microsoft 365 connectivity test (preview)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 관리 센터의 Microsoft 365 connectivity test (preview)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612878"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208799"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>M365 관리 센터의 Microsoft 365 connectivity test (preview)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 관리 센터의 microsoft 365 connectivity test (preview)
 
-Microsoft 365 connectivity test는에 <https://connectivity.office.com>있습니다. 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
+Microsoft 365 connectivity test는에 있습니다 <https://connectivity.office.com> . 이 도구는 Microsoft 365 관리 센터에서 제공 하는 네트워크 통찰력 및 네트워크 점수 정보에 대 한 adjunct입니다. **| 네트워크 성능** 메뉴
 
 >[!NOTE]
 >온 보 딩 도구는 WW 상업용 및 GCC 중간에 있는 테 넌 트를 지원 하지만 GCC High, DoD, 독일 또는 중국이 아닙니다.
@@ -103,19 +103,19 @@ Exchange Online 서비스에 대 한 사용자 사무실 위치의 네트워크 
 
 ## <a name="media-quality-checks"></a>미디어 품질 검사
 
-이 테스트에서는 비즈니스용 Skype 네트워크 평가 도구를 설치 및 실행 하 고 결과를 해석 합니다. 이 도구는에서 [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885)찾을 수 있습니다.
+이 테스트에서는 비즈니스용 Skype 네트워크 평가 도구를 설치 및 실행 하 고 결과를 해석 합니다. 이 도구는에서 찾을 수 있습니다 [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) .
 
 이러한 테스트는 Microsoft 팀 오디오 및 비디오 통화 및 회의 기능에서 사용 하는 것과 같은 UDP 프로토콜 검사입니다. UDP 패킷 손실, UDP 네트워크 대기 시간, UDP 지터 및 UDP 패킷 다시 정렬에 대해 테스트 합니다. 네트워크 통찰력은 허용 범위를 초과 하는 경우에 표시 됩니다.
 
 ## <a name="tcp-connectivity-tests"></a>TCP 연결 테스트
 
-사용자 사무실 위치에서 필요한 모든 Microsoft 365 네트워크 끝점에 대 한 HTTP 연결을 테스트 합니다. 이러한 기능은에 [https://aka.ms/o365ip](https://aka.ms/o365ip)게시 됩니다. 연결할 수 없는 모든 필수 네트워크 끝점에 대 한 네트워크 통찰력이 표시 됩니다.
+사용자 사무실 위치에서 필요한 모든 Microsoft 365 네트워크 끝점에 대 한 HTTP 연결을 테스트 합니다. 이러한 기능은에 게시 됩니다 [https://aka.ms/o365ip](https://aka.ms/o365ip) . 연결할 수 없는 모든 필수 네트워크 끝점에 대 한 네트워크 통찰력이 표시 됩니다.
 
 연결 ay는 회사 네트워크 경계에 있거나 클라우드 프록시로 사용 중인 프록시 서버, 방화벽 또는 다른 네트워크 보안 장치에 의해 차단 됩니다.
 
 ## <a name="ssl-interception-tests"></a>SSL 가로채기 테스트
 
-에서 [https://aka.ms/o365ip](https://aka.ms/o365ip)정의 된 최적화 또는 허용 범주에 있는 각각의 필수 Microsoft 365 네트워크 끝점에서 SSL 인증서를 테스트 합니다. Microsoft SSL 인증서를 찾지 못하는 테스트는 중간 네트워크 장치에 의해 연결 된 암호화 된 네트워크를 차단 해야 합니다. 네트워크에 대 한 통찰력은 모든 암호화 된 네트워크 끝점에 표시 됩니다.
+에서 정의 된 최적화 또는 허용 범주에 있는 각각의 필수 Microsoft 365 네트워크 끝점에서 SSL 인증서를 테스트 합니다 [https://aka.ms/o365ip](https://aka.ms/o365ip) . Microsoft SSL 인증서를 찾지 못하는 테스트는 중간 네트워크 장치에 의해 연결 된 암호화 된 네트워크를 차단 해야 합니다. 네트워크에 대 한 통찰력은 모든 암호화 된 네트워크 끝점에 표시 됩니다.
 
 Microsoft에서 제공 하지 않는 SSL 인증서가 발견 되 면 테스트에 대 한 FQDN과 사용 중인 SSL 인증서 소유자가 표시 됩니다. SSL 인증서 소유자는 프록시 서버 공급 업체가 될 수도 있고, 엔터프라이즈 자체 서명 된 인증서 일 수도 있습니다.
 
