@@ -3,7 +3,7 @@ title: Office 365 VPN 분할 터널링 구현
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/24/2020
+ms.date: 5/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 VPN 분할 터널링 구현 방법
-ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: 87d7e86f59a97bf11c053a57aa9acc6d33c03e63
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804057"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208779"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 VPN 분할 터널링 구현
 
@@ -226,8 +226,13 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 특정 시나리오에서 Teams 클라이언트 구성과 관련이 없는 경우가 많지만, 미디어 트래픽은 올바른 경로를 사용하는 경우에도 계속 VPN 터널을 통과합니다. 이 시나리오가 발생하는 경우 방화벽 규칙을 사용하여 Teams IP 서브넷 또는 포트에서 VPN을 사용하지 못하도록 차단하면 됩니다.
 
+>[!NOTE]
+>현재 이 작업이 100%의 모든 시나리오에서 작동하도록 하려면 IP 범위 **13.107.60.1/32**를 추가해야 합니다. **2020년 6월**까지 릴리스 예정인 Teams 클라이언트 업데이트로 인해 이 작업은 더 이상 필요하지 않을 것입니다. 향후 더 상세한 내용이 추가되면 이 문서에 빌드 세부 정보를 업데이트하겠습니다.
+
+<!--
 >[!IMPORTANT]
->Teams 미디어 트래픽이 모든 VPN 시나리오에서 원하는 방법을 통해 라우팅되게 하려면 적어도 클라이언트가 사용 가능한 네트워크 경로를 감지하는 방법이 개선된 다음의 클라이언트 버전 이상을 실행하고 있는지 확인하세요.<br>Windows 버전 번호: **1.3.00.9267**<br>Mac 버전 번호: **1.3.00.9221**
+>To ensure Teams media traffic is routed via the desired method in all VPN scenarios please ensure you are running at least the following client version number or greater, as these versions have improvements in how the client detects available network paths.<br>Windows version number:  **1.3.00.9267**<br>Mac version number: **1.3.00.9221**
+-->
 
 신호 트래픽은 HTTPS를 통해 수행되고 미디어 트래픽만큼 대기 시간에 민감하지 않으며 URL/IP 데이터에서 **허용**으로 표시되므로 원하는 경우 VPN 클라이언트를 통해 안전하게 라우팅할 수 있습니다.
 
