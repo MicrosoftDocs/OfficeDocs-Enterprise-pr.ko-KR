@@ -1,5 +1,5 @@
 ---
-title: Office 365 서비스 상태를 확인하는 방법
+title: Microsoft 365 서비스 상태를 확인 하는 방법
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,43 +24,53 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: 지원 서비스를 호출 하기 전에 Office 365 서비스의 상태를 확인 하 여 활성 서비스가 중단 되었는지 확인 합니다.
-ms.openlocfilehash: 2d5b12e4443395d5a9a16fd6934ca68a99601416
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 지원 서비스를 호출 하기 전에 Microsoft 365 서비스의 상태를 확인 하 여 활성 서비스가 중단 되었는지 확인 합니다.
+ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
+ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843969"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44266696"
 ---
-# <a name="how-to-check-office-365-service-health"></a>Office 365 서비스 상태를 확인하는 방법
+# <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 서비스 상태를 확인 하는 방법
 
 [![관리 센터가 변경되고 있음을 알리는 레이블이며 aka.ms/aboutM365preview에서 자세한 내용을 확인할 수 있습니다.](media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
 
-[관리 센터](https://go.microsoft.com/fwlink/p/?linkid=2024339)의 Office 365 **서비스 상태** 페이지에서 웹, YAMMER, Microsoft Dynamics CRM 및 microsoft Intune 클라우드 서비스를 포함 하는 microsoft 서비스의 상태를 볼 수 있습니다. 클라우드 서비스와 관련된 문제가 발생한 경우 지원 서비스에 문의하거나 문제 해결에 시간을 소비하기 전에 먼저 서비스 상태를 확인하여 이 문제가 현재 해결이 진행 중인 상태인 알려진 문제인지 확인할 수 있습니다.
+[Microsoft 365 관리 센터](https://go.microsoft.com/fwlink/p/?linkid=2024339)의 **서비스 상태** 페이지에서 웹, YAMMER, Microsoft Dynamics CRM 및 모바일 장치 관리 클라우드 서비스를 포함 하는 microsoft 서비스의 상태를 볼 수 있습니다. 클라우드 서비스와 관련된 문제가 발생한 경우 지원 서비스에 문의하거나 문제 해결에 시간을 소비하기 전에 먼저 서비스 상태를 확인하여 이 문제가 현재 해결이 진행 중인 상태인 알려진 문제인지 확인할 수 있습니다.
 
 서비스 포털에 로그인 할 수 없는 경우 [서비스 상태 페이지](https://status.office365.com) 를 사용 하 여 테 넌 트에 로그인 하지 못하도록 하는 알려진 문제를 확인할 수 있습니다.
   
 ### <a name="how-to-check-service-health"></a>서비스 상태 확인 방법
 
-1. 관리 센터 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339)에서으로 이동 하 고 관리자 계정으로 로그인 합니다.
+1. Microsoft 365 관리 센터로 이동 하 여 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) 관리자 계정으로 로그인 합니다.
 
     > [!NOTE]
-    > 전역 관리자 또는 서비스 관리자 역할이 할당된 사용자는 서비스 상태를 볼 수 있습니다. Exchange, SharePoint 및 비즈니스용 Skype 관리자가 서비스 상태를 볼 수 있도록 하려면 이러한 관리자에게도 서비스 관리자 역할을 할당해야 합니다. 서비스 상태를 볼 수 있는 역할에 대 한 자세한 내용은 [정보 관리 역할](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)을 참조 하십시오.
+    > 전역 관리자 또는 서비스 관리자 역할이 할당된 사용자는 서비스 상태를 볼 수 있습니다. Exchange, SharePoint 및 비즈니스용 Skype 관리자가 서비스 상태를 볼 수 있도록 하려면 이러한 관리자에게도 서비스 관리자 역할을 할당해야 합니다. 서비스 상태를 볼 수 있는 역할에 대 한 자세한 내용은 [정보 관리 역할](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)을 참조 하십시오.
   
-2. 새 관리 센터를 사용 하지 않는 경우 홈 페이지에서 오른쪽 위 모서리에 있는 **새 관리 센터 사용해 보기** 를 선택 합니다.
+2. 새 관리 센터를 사용 하지 않는 경우 **홈** 페이지에서 오른쪽 위 모서리에 있는 **새 관리 센터 사용해 보기** 를 선택 합니다.
 
-3. 서비스 상태를 보려면 관리 센터에서 **상태** > **서비스 상태**를 이동 하거나 **홈 대시보드에서** **서비스 상태** 카드를 선택 합니다. 대시보드 카드에는 활성 서비스 문제가 있는지와 자세한 **서비스 상태** 페이지에 대 한 링크가 표시 됩니다.
+3. 서비스 상태를 보려면 관리 센터에서 **상태**  >  **서비스 상태**를 이동 하거나 **홈 대시보드에서** **서비스 상태** 카드를 선택 합니다. 대시보드 카드에는 활성 서비스 문제가 있는지와 자세한 **서비스 상태** 페이지에 대 한 링크가 표시 됩니다.
   
 4. **서비스 상태** 페이지에서 각 클라우드 서비스의 상태는 표 형식으로 표시 됩니다.
 
    ![View of current issues in service health](media/service-health-all-services.png)
 
-**모든 서비스** 탭 (기본 보기)에는 모든 서비스와 해당 현재 상태가 표시 됩니다. 아이콘 및 **상태** 열은 각 서비스의 상태를 나타냅니다. 현재 인시던트가 발생 하는 서비스에 대 한 보기를 필터링 하려면 페이지 맨 위에 있는 **인시던트** 탭을 선택 합니다. **권고** 탭을 선택 하면 현재 권고가 게시 된 서비스만 표시 됩니다. **기록** 탭에는 해결 된 사건 및 권고의 기록이 표시 됩니다.
+**모든 서비스** 탭 (기본 보기)에는 모든 서비스와 해당 현재 상태가 표시 됩니다. 아이콘 및 **상태** 열은 각 서비스의 상태를 나타냅니다. 
 
-Office 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이지에 표시 되지 않으면 **문제점 보고**를 선택 하 고 간단한 양식을 작성 하 여이에 대해 알려주십시오. Microsoft는 다른 조직에서 제공 하는 데이터 및 보고서를 살펴보고 문제가 광범위 하 게 진행 된 경우와 서비스에서 시작 되었는지 확인 합니다. 문제가 해결 된 경우 **서비스 상태** 페이지에 새 인시던트 또는 권고로 추가 하 여 확인을 추적할 수 있습니다. 30 분 이내에 목록에 표시 되지 않는 경우에는 지원 서비스에 문의 하 여 문제를 해결 해 보세요.
+현재 인시던트가 발생 하는 서비스에 대 한 보기를 필터링 하려면 페이지 맨 위에 있는 **인시던트** 탭을 선택 합니다. **권고** 탭을 선택 하면 현재 권고가 게시 된 서비스만 표시 됩니다. 
+
+**기록** 탭에는 해결 된 사건 및 권고의 기록이 표시 됩니다.
+
+Microsoft 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이지에 표시 되지 않으면 **문제점 보고**를 선택 하 고 간단한 양식을 작성 하 여이에 대해 알려주십시오. Microsoft는 다른 조직에서 제공 하는 데이터 및 보고서를 살펴보고 문제가 광범위 하 게 진행 된 경우와 서비스에서 시작 되었는지 확인 합니다. 문제가 해결 된 경우 **서비스 상태** 페이지에 새 인시던트 또는 권고로 추가 하 여 확인을 추적할 수 있습니다. 30 분 이내에 목록에 표시 되지 않는 경우에는 지원 서비스에 문의 하 여 문제를 해결 해 보세요.
+
+활성 인시던트의 테 넌 트 및 상태 변경에 영향을 주는 새 인시던트의 전자 메일 알림을 등록 하려면 **기본 설정을**선택 하 고 **전자 메일에서 me Service heath 알림 보내기를**클릭 한 후 다음을 지정 합니다.
+
+- 최대 2 개의 전자 메일 주소
+- 인시던트 또는 권고에 대해 알림을 사용할지 여부
+- 알림을 받으려는 서비스
 
 > [!TIP]
-> 모바일 장치에서 [Office 365 관리 앱](https://go.microsoft.com/fwlink/p/?linkid=627216)을 사용하여 서비스 상태를 볼 수도 있습니다. 이 방법은 푸시 알림을 통해 최신 상태를 유지하는 좋은 방법입니다. 
+> 또한 모바일 장치에서 [Microsoft 365 Admin 앱](https://go.microsoft.com/fwlink/p/?linkid=627216) 을 사용 하 여 서비스 상태를 볼 수 있으며,이는 푸시 알림을 최신 상태로 유지 하는 데 유용한 방법입니다. 
   
 ### <a name="view-details-of-posted-service-health"></a>게시된 서비스 상태의 세부 정보 보기
 
@@ -96,7 +106,7 @@ Office 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이지�
 대부분의 경우 서비스는 추가 정보 없이 정상 상태로 표시 됩니다. 서비스에 문제가 있으면 문제가 권고 또는 인시던트로 식별되고 현재 상태를 표시합니다.
   
 > [!TIP]
-> 계획된 유지 관리 이벤트는 서비스 상태에 표시되지 않습니다. **메시지 센터**를 통해 최신 상태를 유지함으로써 계획된 유지 관리 이벤트를 추적할 수 있습니다. 변경 계획으로 분류된 메시지로 필터링하여 변경이 발생하는 시기, 해당 효과 및 이러한 변경에 대해 준비하는 방법을 확인하세요. 자세한 내용은 [Office 365의 메시지 센터](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)를 참조하세요.
+> 계획된 유지 관리 이벤트는 서비스 상태에 표시되지 않습니다. **메시지 센터**를 통해 최신 상태를 유지함으로써 계획된 유지 관리 이벤트를 추적할 수 있습니다. 변경 계획으로 분류된 메시지로 필터링하여 변경이 발생하는 시기, 해당 효과 및 이러한 변경에 대해 준비하는 방법을 확인하세요. 자세한 내용은 [Microsoft 365의 메시지 센터를](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) 참조 하세요.
   
 ### <a name="incidents-and-advisories"></a>인시던트 및 권고
 
@@ -131,12 +141,8 @@ Office 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이지�
   
 모든 행을 확장 하 여 문제에 대 한 세부 정보를 표시 합니다.
   
-가동 시간에 대 한 자세한 내용은 [Office 365의 투명 작업](https://go.microsoft.com/fwlink/?linkid=848695)을 참조 하세요.
-  
-## <a name="leave-feedback"></a>사용자 의견 남기기
+가동 시간에 대 한 자세한 내용은 [Microsoft 365의 투명 작업](https://go.microsoft.com/fwlink/?linkid=848695)을 참조 하세요.
 
-Microsoft의 목표는 진행 중인 문제에 대해 고객에게 제공하는 정보가 시기적절하고 정확하며 유용하도록 하는 것입니다. Microsoft에 대해 평가하려면 별 등급을 선택하세요. 별 1~5개 등급으로 점수를 입력하면 특정 세부 정보에 대한 사용자 의견을 남길 수 있습니다. Microsoft에서는 사용자 의견을 사용하여 서비스 상태 시스템을 세밀하게 조정합니다.
-  
 ## <a name="see-also"></a>참고 항목
 
 [Microsoft 365 관리 센터의 활동 보고서](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
