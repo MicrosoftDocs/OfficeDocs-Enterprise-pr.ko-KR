@@ -23,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844859"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280217"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
@@ -55,6 +55,13 @@ Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같�
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 클라이언트 앱의 로그인 동작
 
 Office 2013 클라이언트 앱은 기본적으로 레거시 인증을 지원 합니다. 레거시는 Microsoft 온라인 로그인 도우미 또는 기본 인증 중 하나를 지원 한다는 것을 의미 합니다. 이러한 클라이언트가 최신 인증 기능을 사용 하도록 하려면 Windows 클라이언트에 레지스트리 키가 설정 되어 있어야 합니다. 자세한 내용은 [Windows 장치에서 Office 2013에 대 한 최신 인증 사용](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)을 참조 하세요.
+
+Microsoft Office 2013이 설치되었고 Windows를 실행 중인 장치(예: 노트북 및 태블릿)에 대해 최신 인증을 사용하려면 다음 레지스트리 키를 설정해야 합니다. 최신 인증을 사용할 각 장치에서 키를 설정해야 합니다.
+  
+|**레지스트리 키**|**유형**|**값** |
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 비즈니스용 [skype와 함께 ADAL (최신 인증)을 사용](https://go.microsoft.com/fwlink/p/?LinkId=785431) 하 여 비즈니스용 skype에서 작동 하는 방식에 대해 알아봅니다. 
   

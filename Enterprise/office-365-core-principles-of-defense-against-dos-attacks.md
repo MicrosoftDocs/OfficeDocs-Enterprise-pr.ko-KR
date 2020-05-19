@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft가 DoS (서비스 거부) 공격에 대 한 방어에서 absorption, 검색 및 완화의 핵심 원칙을 활용 하는 방법
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844529"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278081"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>서비스 거부 공격에 대한 보안 핵심 원칙
 
@@ -36,7 +36,7 @@ DoS 공격을 성공적으로 방어 하려면 초기 검색이 필수적입니�
 
 다음 수식을 사용 하면 DoS 공격의 영향을 보다 근접 하 게 할 수 있습니다.
 
-   **최대 용량 (바이트/초)/증가율 (바이트/초) = 영향에 대 한 시간 (바이트/초)**
+   **최대 용량 (바이트/초)/증가율 (바이트/초) = 영향 (초)**
 
 시간에 영향을 미치는 후에도 검색이 시간에 발생 하는 경우 DoS 공격이 성공할 가능성이 높습니다. 시간에 영향을 미치는 시간을 검색 하는 경우 공격에 대 한 서비스는 온라인 상태를 유지 하 고 완화 전략이 사용 되는 경우에도 액세스할 수 있어야 합니다. 따라서 DoS 공격 으로부터 보호 하기 위해 두 가지 작업을 수행할 수 있습니다.
 
