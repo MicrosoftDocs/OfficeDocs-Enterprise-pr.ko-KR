@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: 6c4b57454b415b3af799d82e1c3655daa1fd5ef8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c52eecbe57567276de94aac913b7b82db8c5e404
+ms.sourcegitcommit: 72a4938f1372e7f3693b53bcabac0c5d18305a1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840745"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326445"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
@@ -90,7 +90,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | 
 
 메모 작성 (및 이후 비교)이 명령의 출력은 https:// *autodiscover.yourdomain.com* 및 Https:// *mail.yourdomain.com* URL을 포함 해야 하지만 대부분 00000002-0000-0ff1-ce00-000000000000/로 시작 하는 spn으로 구성 됩니다. 누락 된 https://Url이 있는 경우이 목록에 특정 레코드를 추가 해야 합니다. 
   
-3. 이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드가 표시 되지 않으면 아래 명령을 사용 하 여 추가 해야 합니다 (예: Url은 '`mail.corp.contoso.com`' 및 '`owa.contoso.com`' 임). **** <br/>
+3. 이 목록에 내부 및 외부 MAPI/HTTP, EWS, ActiveSync, OAB 및 자동 검색 레코드가 표시 되지 않으면 아래 명령을 사용 하 여 추가 해야 합니다 (예: Url은 ' `mail.corp.contoso.com` ' 및 ' ' 임 `owa.contoso.com` ). **replace the example URLs with your own** <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -98,7 +98,7 @@ $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
-4. 2 단계에서 (New-msolserviceprincipal 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 Spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 Url이 표시 됩니다. 예를 들어, Spn 목록에는 이제 특정 Url `https://mail.corp.contoso.com` 과 `https://owa.contoso.com`가 포함 됩니다. 
+4. 2 단계에서 (New-msolserviceprincipal 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 Spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 Url이 표시 됩니다. 예를 들어, Spn 목록에는 이제 특정 Url과가 포함 됩니다 `https://mail.corp.contoso.com` `https://owa.contoso.com` . 
   
 ## <a name="verify-virtual-directories-are-properly-configured"></a>가상 디렉터리가 올바르게 구성 되었는지 확인
 
@@ -126,7 +126,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
   
-서버 및 4 개의 가상 디렉터리에서 OAuth가 누락 된 경우 계속 하기 전에 관련 명령을 사용 하 여이를 추가 해야 합니다.
+모든 서버 및 4 개의 가상 디렉터리에서 OAuth가 누락 된 경우 계속 하기 전에 관련 명령을 사용 하 여이를 추가 해야 합니다 ([set-mapivirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-mapivirtualdirectory?view=exchange-ps), [get-webservicesvirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-webservicesvirtualdirectory?view=exchange-ps), [new-oabvirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-oabvirtualdirectory?view=exchange-ps)및 [new-autodiscovervirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-autodiscovervirtualdirectory?view=exchange-ps)).
   
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>EvoSTS 인증 서버 개체가 있는지 확인
 
@@ -153,7 +153,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새 인증 흐름을 사용 합니다. HMA를 설정 하는 것 만으로도 클라이언트에 대 한 재인증이 트리거되지 않습니다. 클라이언트는 인증 토큰 및/또는 인증서의 수명에 따라 다시 인증 합니다.
   
-또한 CTRL 키를 누른 상태로 Outlook 클라이언트 아이콘 (Windows 알림 트레이)을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자\*' 유형 (' 인증 ' 형식)에 대해 클라이언트의 SMTP 주소를 찾습니다.
+또한 CTRL 키를 누른 상태로 Outlook 클라이언트 아이콘 (Windows 알림 트레이)을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. \*OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자 ' 유형 (' 인증 ' 형식)에 대해 클라이언트의 SMTP 주소를 찾습니다.
   
  **참고 사항** HMA를 사용 하 여 비즈니스용 Skype를 구성 해야 하나요? [지원 되는 토폴로지](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)를 나열 하는 문서와 [구성을 수행](configure-skype-for-business-for-hybrid-modern-authentication.md)하는 방법을 보여 주는 두 개의 문서가 필요 합니다.
  

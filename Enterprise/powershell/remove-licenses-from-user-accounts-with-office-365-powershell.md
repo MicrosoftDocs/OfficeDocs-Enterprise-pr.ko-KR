@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 05/20/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Office 365 PowerShell을 사용 하 여 이전에 사용자에 게 할당 된 Office 365 라이선스를 제거 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 4a99fb115b7c3241beb2cb3b0dd83666622747d5
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+ms.openlocfilehash: a8ec35f4f82f9c01a784301099383a6b9a049547
+ms.sourcegitcommit: d1863fada327df5c8a4c04f07d68ac7e3dbcfaa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208759"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330532"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 사용자 계정에서 라이센스를 제거 합니다.
 
@@ -125,13 +125,20 @@ kakers@contoso.com
 2. 다음 구문을 사용합니다.
     
   ```powershell
-  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId>" }
+  $x=Get-Content "<FileNameAndPath>"
+  for ($i=0; $i -lt $x.Count; $i++)
+  {
+  Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
+  }
   ```
-
 이 예에서는 텍스트 파일 C:\My Documents\accounts.txt입니다 .에 정의 된 사용자 계정에서 **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) 라이선스를 제거 합니다.
     
   ```powershell
-  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
+  $x=Get-Content "C:\My Documents\Accounts.txt"
+  for ($i=0; $i -lt $x.Count; $i++)
+  {
+  Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "litwareinc:ENTERPRISEPACK"
+  }
   ```
 
 모든 기존 사용자 계정에서 모든 라이선스를 제거 하려면 다음 구문을 사용 합니다.
