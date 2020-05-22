@@ -46,7 +46,7 @@
 ### [위임된 액세스 파트너용 Windows PowerShell을 사용하여 클라이언트 테넌트에 도메인 추가](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [위임된 액세스 파트너용 원격 Windows PowerShell을 통해 Exchange Online에 연결](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [위임된 액세스 파트너용 Windows PowerShell을 통해 고객 보고 데이터 검색](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
+## [Microsoft Teams 관리](manage-microsoft-teams-with-office-365-powershell.md)
 ## [비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [비즈니스용 Skype Online 정책 관리](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [비즈니스용 Skype Online 정책에 대한 사용자 단위 할당](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
-
