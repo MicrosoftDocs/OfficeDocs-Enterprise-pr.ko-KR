@@ -86,6 +86,13 @@
 #### [개요: VPN 분할 터널링](office-365-vpn-split-tunnel.md)
 #### [VPN 분할 터널링 구현](office-365-vpn-implement-split-tunnel.md)
 #### [중국 사용자를 위한 Office 365 최적화](office-365-networking-china.md)
+### GCC High 및 DOD 테넌트에 대한 네트워킹
+#### [GCC High 및 DoD에 대한 추가 네트워크 보안 요구 사항](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
+#### [Office 365 DoD용 DNS 레코드](dns-records-for-office-365-dod.md)
+#### [Office 365 GCC High용 DNS 레코드](dns-records-for-office-365-gcc-high.md)
+#### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)
+#### [미국 정부 GCC High 끝점](office-365-u-s-government-gcc-high-endpoints.md)
+#### [Office 365 암호화 체인 - DOD 및 GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
 ### [콘텐츠 배달 네트워크](content-delivery-networks.md)
 ### [Office 365 서비스의 IPv6 지원](ipv6-support.md)
 ### [NAT 지원(Office 365)](nat-support-with-office-365.md)
