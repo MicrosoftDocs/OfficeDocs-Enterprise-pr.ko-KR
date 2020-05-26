@@ -1,7 +1,7 @@
 ---
 title: Office 365 데이터 위치
-ms.author: andyber
-author: andybergen
+ms.author: deanw
+author: dmwmsft
 manager: laurawi
 ms.date: 03/09/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Office 365 데이터 위치'
-ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: dbf38ef682ba9a7fcbb98139a9923406d1249264
+ms.sourcegitcommit: ecfa4e6538f9a30cd8c53e3bc446e057aa5097f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058018"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256383"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -54,7 +54,7 @@ Microsoft 보안 센터에서 [다양한 유형의 데이터에 대한 정의](h
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>데이터 센터에 대한 정확한 주소는 어디에 있나요?
 
-Microsoft는 데이터 센터의 정확한 주소를 공개하지 않습니다. 데이터 센터 시설을 보호하기 위해 이러한 정책을 수립했습니다.
+Microsoft는 데이터 센터의 정확한 주소를 공개하지 않습니다. 데이터 센터 시설을 보호하기 위해 이러한 정책을 수립했습니다.  그러나 도시 위치는 표시됩니다. 자세한 내용은 [데이터 센터 위치](https://docs.microsoft.com/office365/enterprise/o365-data-locations#data-center-locations)를 참조하세요.
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>고객 데이터의 위치가 최종 사용자 경험에 직접적인 영향을 주나요?
 
