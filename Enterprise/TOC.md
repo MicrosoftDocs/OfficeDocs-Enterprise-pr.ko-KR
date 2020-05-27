@@ -30,7 +30,6 @@
 ## Office 365 클라이언트 지원
 ### [인증서 기반 인증](office-365-client-support-certificate-based-authentication.md)
 ### [조건부 액세스](office-365-client-support-conditional-access.md)
-### [MDM과 Intune 중에서 선택](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [모바일 응용 프로그램 관리](office-365-client-support-mobile-application-management.md)
 ### [최신 인증](office-365-client-support-modern-authentication.md)
 ### [Single Sign-On](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
 
 ## 장치
-### [MDM과 Intune 중에서 선택](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [장치 액세스 설정 관리](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## 워크로드
