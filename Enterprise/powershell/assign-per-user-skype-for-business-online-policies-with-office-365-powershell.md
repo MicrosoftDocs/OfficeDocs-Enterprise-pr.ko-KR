@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: '요약: Office 365 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책에 대 한 사용자 단위 통신 설정을 할당 합니다.'
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146813"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374447"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당
 
@@ -110,7 +110,7 @@ Windows PowerShell을 사용 하 여 사용자 계정을 사용 하지 않도록
 
 ## <a name="managing-large-numbers-of-users"></a>다 수의 사용자 관리
 
-많은 수의 사용자 (1000 이상)를 관리 하려면 [Invoke](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet을 사용 하 여 스크립트 블록을 통해 명령을 일괄 처리 해야 합니다.  이전 예제에서는 cmdlet을 실행할 때마다 통화를 설정 하 고 결과를 기다린 후에 다시 전송 해야 합니다.  스크립트 블록을 사용 하는 경우이를 통해 cmdlet이 원격으로 실행 되 고 완료 된 후에는 데이터를 다시 보낼 수 있습니다. 
+많은 수의 사용자 (1000 이상)를 관리 하려면 [Invoke](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet을 사용 하 여 스크립트 블록을 통해 명령을 일괄 처리 해야 합니다.  이전 예제에서는 cmdlet을 실행할 때마다 통화를 설정 하 고 결과를 기다린 후에 다시 전송 해야 합니다.  스크립트 블록을 사용 하는 경우이를 통해 cmdlet이 원격으로 실행 되 고 완료 된 후에는 데이터를 다시 보낼 수 있습니다. 
 
 ```powershell
 Import-Module LyncOnlineConnector
@@ -143,8 +143,8 @@ $count = 0
   
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
+[Office 365 PowerShell을 통해 비즈니스용 Skype Oline 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
