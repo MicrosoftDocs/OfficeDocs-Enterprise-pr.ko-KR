@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 05/28/2018
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 요약:Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
-ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
+ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106209"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44415940"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
 
@@ -27,7 +27,7 @@ ms.locfileid: "42106209"
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-[비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/download/details.aspx?id=39366)을 다운로드 하 여 설치한 다음 메시지가 표시 되 면 컴퓨터를 다시 시작 합니다.
+[비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/download/details.aspx?id=39366)을 다운로드 하 여 설치한 다음 컴퓨터를 다시 시작 합니다.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>비즈니스용 Skype 온라인 관리자 계정 이름 및 암호를 사용 하 여 연결

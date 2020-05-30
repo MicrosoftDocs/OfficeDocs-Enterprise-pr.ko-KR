@@ -16,12 +16,12 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 description: FastTrack 배포를 선택하지 않았고 데이터를 Office 365로 마이그레이션할 준비가 되었다면 여기가 시작 지점입니다.
-ms.openlocfilehash: 4389d5531b21b892408ba7941900ee7aceb55474
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844889"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419346"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>조직 데이터를 Office 365 Enterprise로 마이그레이션
 
@@ -29,7 +29,7 @@ ms.locfileid: "41844889"
 
 [기본 설치 지침](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)을 사용하면 가능한 한 짧은 시간에 모든 사용자가 Office 365 서비스 및 응용 프로그램을 사용하도록 할 수 있습니다. 하이브리드 시나리오 및 Office 365로 마이그레이션하는 고급 방법은 나와 있지 않습니다. 
   
-Office 365를 설치하는 데 도움이 필요하면 [FastTrack](https://fasttrack.microsoft.com/office)이 Office 365를 배포하는 가장 쉬운 방법이며 로그인하여 [Office 365 서비스 배보 관리자](deployment-advisors-for-office-365.md)를 사용할 수도 있습니다.
+Office 365을 설정 하는 데 도움이 필요 하면 [Fasttrack](https://fasttrack.microsoft.com/office) 을 사용 하 여 office 365를 배포 하는 것이 가장 쉬운 방법 이며, [Office 365 용 설치 가이드 서비스에](setup-guides-for-office-365.md)로그인 하 여 사용할 수도 있습니다.
 
 ## <a name="migrate-email-to-office-365"></a>Office 365로 전자 메일 마이그레이션
 - - [Exchange 배포 도우미를 사용하여 Exchange Hybrid](https://technet.microsoft.com/exdeploy2013)로 마이그레이션합니다.(관리자)

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Office 365 엔터프라이즈 배포를 계획할 리소스에 대 한 액세스 권한을 확보 합니다.
-ms.openlocfilehash: 845c0ad4990261da0cf71fb420f7715a7892e6d3
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: d35bba7940f549d7b39e3cf75c3e659daa4e1d33
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206535"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419356"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Office 365 Enterprise 계획
 
@@ -63,7 +63,7 @@ Office 365을 직접 계획 하려면 다음 영역에 대 한 계획 및 디자
 >[Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) 구독에도이 프로세스를 사용할 수 있습니다.
 >
 
-Office 365 구독에 로그인 하 고 [office 365 서비스에 대 한 배포](deployment-advisors-for-office-365.md)관리자를 사용할 수도 있습니다.
+Office 365 구독에 로그인 하 고 [office 365 서비스의 설치 가이드](setup-guides-for-office-365.md)를 사용할 수도 있습니다.
 
 
 
@@ -73,7 +73,7 @@ This checklist will help your organization as you plan and prepare for a migrati
 
 Most organizations don't need to do anything to prepare for Office 365. It's an application on the web and people are able to use it as soon as they have an account. Other organizations have more locations, security practices, or other requirements that create the need for more planning. For enterprise-level organizations, follow the checklist items below to get started with Office 365.
   
-If you want help getting Office 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Office 365, you can also sign in and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).
+If you want help getting Office 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Office 365, you can also sign in and use the [Setup guides for Office 365 services](setup-guides-for-office-365.md).
   
 |**Choose one or more to get started:**||
 |:-----|:-----|

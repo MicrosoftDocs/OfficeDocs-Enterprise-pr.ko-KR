@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: 엔터프라이즈 조직의 Office 365를 계획 하 고 관리 하기 위한 리소스입니다.
-ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 51687e07abfafa7959166cfcd1a59b3a1af7bc20
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979550"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419396"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>엔터프라이즈 조직 및 Office 365
 
@@ -48,7 +48,7 @@ FastTrack의 도움말을 사용 하 여 데이터를 계획, 설정 및 Office 
   
 데이터를 보호 하 고 법률 또는 규제 표준을 준수 합니다.
   
-[Office 365의 &amp; 보안 준수 개요](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[&amp;Office 365의 보안 준수 개요](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
 ![클라우드 및 아키텍처 기호](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
@@ -110,7 +110,7 @@ Office 365 IT 전문가를 위한 자가 진도 온라인 학습 환경
   
 [Office 2010 서버 및 클라이언트에서 업그레이드](upgrade-from-office-2010-servers-and-products.md)
   
-[Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
+[Office 365 서비스에 대 한 설정 가이드](setup-guides-for-office-365.md)
   
  **최종 사용자를 위한 교육**
   

@@ -18,12 +18,12 @@ ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
 description: Office 365 Enterprise 서비스 및 응용 프로그램 구성
-ms.openlocfilehash: 45fb283894e68e40d38bc42667f5ac9e5d45b579
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: e0b0be9b4b99f5a652145e9f2991181769a9df19
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009323"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419326"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Office 365 Enterprise 서비스 및 응용 프로그램 구성
 
@@ -31,7 +31,7 @@ ms.locfileid: "44009323"
 
 우리의 [기본 설치 지침](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)을 사용하면 모든 사용자가 가능한 한 짧은 시간에 Office 365 서비스 및 응용 프로그램을 사용하도록 할 수 있습니다. 경우에 따라 모든 사용자가 사용하기 전에 구성하는 것이 좋습니다. 예: 메일 라우팅, 파일 저장 또는 공유 정책을 구성하려는 경우. 
   
-Office 365를 설정하려는 경우 **[FastTrack](https://fasttrack.microsoft.com/office)** 또는 [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)를 사용합니다.
+Office 365을 설정 하는 데 도움이 필요 하면 **[Fasttrack](https://fasttrack.microsoft.com/office)** 또는 [office 365 서비스의 설치 가이드](setup-guides-for-office-365.md)를 사용 합니다.
   
 |**서비스 및 응용 프로그램**|**리소스**|
 |:-----|:-----|

@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 이 검사 목록은 조직에 Office 365로의 마이그레이션을 계획 하 고 준비 하는 데 도움이 됩니다.
-ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840515"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419367"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 배포 계획 검사 목록
 
 엔터프라이즈 조직을 Office 365로 이동 하는 경우에는 수행 해야 하는 단계, 수행할 작업 및 작업을 수행 하는 사람을 정확히 계획 하는 것이 중요 합니다. 이 검사 목록은 조직에 Office 365로의 마이그레이션을 계획 하 고 준비 하는 데 도움이 됩니다. 검사 목록의 단계와 단계는 [온 보 딩 센터](https://go.microsoft.com/fwlink/?LinkId=517115)에서 제공 하는 지침에 따라 정렬 됩니다. 조직의 요구에 맞게이 검사 목록을 조정 합니다.
 
 ## <a name="need-help-with-your-deployment"></a>배포에 도움이 필요 하세요?
-Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비스에 대 한](deployment-advisors-for-office-365.md) [Fasttrack](https://fasttrack.microsoft.com/office) 또는 배포 관리자 사용을 고려 합니다.
+Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비스에 대 한](setup-guides-for-office-365.md) [fasttrack](https://fasttrack.microsoft.com/office) 설치 가이드를 사용 하는 것이 좋습니다.
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 엔터프라이즈 배포에 대 한 샘플 검사 목록
 
@@ -40,7 +40,7 @@ Office 365을 설정 하는 데 도움이 필요 하세요? [Office 365 서비�
 |:-----|:-----|:-----|:-----|:-----|
 |**배포 작업/이벤트** <br/> |**시작 날짜** <br/> |**완료 날짜** <br/> |**리소스** <br/> |**의존** <br/> |
 |**배포 목표 결정** <br/> |||||
-| 내부 및 외부 관련자와 함께:<br>  -범위 및 일정에 동의 <br>  -프로젝트 추적 메커니즘에 동의 합니다.  <br>  -[Office 365을 사용 하 여](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) 성공 기준 및 [통신](https://fasttrack.microsoft.com/office) / 시작|||||
+| 내부 및 외부 관련자와 함께:<br>  -범위 및 일정에 동의 <br>  -프로젝트 추적 메커니즘에 동의 합니다.  <br>  - [communication](https://fasttrack.microsoft.com/office)  /  [Office 365을 사용 하 여](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) 성공 기준 및 통신 시작|||||
 |**현재 환경 인벤토리 및 주요 배포 결정 사항 만들기** |||||
 |현재 환경 인벤토리 |||||
 | 사용자 계정 수 (로그인 이름, 전자 메일 주소)를 수집 합니다. |||||
