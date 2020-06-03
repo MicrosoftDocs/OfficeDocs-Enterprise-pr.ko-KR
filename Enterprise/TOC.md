@@ -17,7 +17,7 @@
 #### [하이브리드 ID](plan-for-directory-synchronization.md)
 
 ### [Office 365용 타사 SSL 인증서 계획](plan-for-third-party-ssl-certificates.md)
-### [Office 365 서비스 배포 관리자](deployment-advisors-for-office-365.md)
+### [Office 365 및 Microsoft 365 서비스용 설정 가이드](setup-guides-for-office-365.md)
 ### [통합 앱 및 Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Office 365 통합
@@ -181,7 +181,6 @@
 # Office 365 관리
 
 ## 네트워크
-### [클라이언트 연결](client-connectivity.md)
 ### [연결 모니터링](monitor-connectivity.md)
 
 ## 디렉터리 동기화
