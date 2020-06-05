@@ -3,7 +3,7 @@ title: SharePoint Online 용 페이지 진단 도구 사용
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: SharePoint 도구에 페이지 진단을 사용 하 여 미리 정의 된 성능 기준 집합에 대해 SharePoint Online 최신 포털 및 클래식 게시 페이지를 분석할 수 있습니다.
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603737"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561812"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 용 페이지 진단 도구 사용
 
-이 문서에서는 **sharepoint 용 페이지 진단 도구** 를 사용 하 여 미리 정의 된 성능 기준 집합에 대해 sharepoint Online 현대 및 클래식 사이트 페이지를 분석 하는 방법에 대해 설명 합니다.  
+이 문서에서는 **sharepoint 용 페이지 진단 도구** 를 사용 하 여 미리 정의 된 성능 기준 집합에 대해 sharepoint Online 현대 및 클래식 사이트 페이지를 분석 하는 방법에 대해 설명 합니다.
+
+SharePoint 용 페이지 진단 도구는 다음에 대해 설치할 수 있습니다.
+
+- **Microsoft edge** [(에 지 내선 번호)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(chrome 확장)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >버전 **2.0.0** 이상에는 클래식 사이트 페이지 외에도 최신 페이지에 대 한 지원이 포함 됩니다. 사용 중인 도구의 버전을 잘 모를 경우 **정보** 링크 또는 줄임표 (...)를 선택 하 여 버전을 확인할 수 있습니다. 도구를 사용할 때 **항상 최신 버전으로 업데이트** 합니다.
 
-SharePoint 용 페이지 진단 도구는 새 Microsoft Edge (및 SharePoint Online 최신 포털 및https://www.microsoft.com/edge) 클래식 게시 사이트 페이지 모두를 분석 하는 크롬 브라우저)에 대 한 브라우저 확장입니다. 이 도구는 SharePoint Online 에서만 작동 하며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
+SharePoint용 페이지 진단 도구는 새 Microsoft Edge에 대한 브라우저 확장입니다. (SharePoint Online 최신 포털 및 클래식 게시 사이트 페이지를 분석하는 https://www.microsoft.com/edge) 및 Chrome 브라우저) 이 도구는 SharePoint Online 에서만 작동 하며 SharePoint 시스템 페이지에서는 사용할 수 없습니다.
 
 이 도구는 분석 된 각 페이지에 대 한 보고서를 생성 하 고, 테스트 결과가 기준 값 외부에 있을 때 해당 페이지에 대 한 자세한 정보를 표시 합니다. SharePoint Online 관리자 및 디자이너는이 도구를 사용 하 여 성능 문제를 해결 하 고, 게시 하기 전에 새 페이지가 최적화 되도록 할 수 있습니다.
 
@@ -89,7 +94,7 @@ SharePoint 용 페이지 진단 도구는 새 Microsoft Edge (및 SharePoint Onl
 
 1. [**진단 테스트**](#how-to-use-the-diagnostic-tests-tab) 탭에는 세 가지 범주의 분석 결과가 표시 됩니다. **필요한 작업**, **개선 기회** 및 **주의가 필요**하지 않습니다. 각 테스트 결과는 다음 표에 설명 된 대로 이러한 범주 중 하나의 항목으로 표시 됩니다.
 
-    |범주  |색  |설명  |
+    |Category  |색  |설명  |
     |---------|---------|---------|
     |**주의 필요** |빨강 |테스트 결과가 초기 계획 값을 벗어나므로 페이지 성능에 영향을 줍니다. 수정 지침을 따릅니다.|
     |**개선 기회** |노랑 |테스트 결과가 초기 계획 값을 벗어나므로 성능 문제에 영향을 받을 수 있습니다. 테스트 관련 조건이 적용 될 수 있습니다.|
@@ -126,7 +131,7 @@ Sharepoint 용 페이지 진단 도구를 사용 하 여 SharePoint 최신 포�
 
     ![네트워크 추적](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    위에 표시 된 이미지에서 빨간색 항목은 기본 페이지와 관련이 있습니다. 페이지가 1000ms (1 초 미만)로 로드 \< 되지 않으면 항상 빨간색으로 표시 됩니다.
+    위에 표시 된 이미지에서 빨간색 항목은 기본 페이지와 관련이 있습니다. 페이지가 \< 1000ms (1 초 미만)로 로드 되지 않으면 항상 빨간색으로 표시 됩니다.
 
 2. **항목 로드 시간을 테스트**합니다. 일부 경우에는 항목이 이미 브라우저에 의해 캐시 되었기 때문에 시간 또는 색 지표가 나타나지 않을 수 있습니다. 이를 올바르게 테스트 하려면 페이지를 열고 브라우저 캐시를 지운 다음 **시작** 을 클릭 하 여 "콜드" 페이지를 로드 하 고 초기 페이지 로드를 true로 반사 해야 합니다. 이 경우 페이지에 캐시 되는 항목을 확인 하는 데 도움이 되는 것 처럼 "웜" 페이지 로드와 비교 해야 합니다.
 
