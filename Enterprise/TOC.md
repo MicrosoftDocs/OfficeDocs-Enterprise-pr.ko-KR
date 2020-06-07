@@ -81,6 +81,11 @@
 #### [Mac용 Office의 네트워크 요청](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)
 #### [웹 서비스에 포함되지 않는 추가 끝점](additional-office365-ip-addresses-and-urls.md)
+### [중국 사용자를 위한 Office 365 성능 최적화](office-365-networking-china.md)
+### 콘텐츠 배달 네트워크(CDN)
+#### [Office 365 CDN 빠른 시작](office-365-cdn-quickstart.md)
+#### [SharePoint Online이 포함된 Office 365 CDN 사용](use-office-365-cdn-with-spo.md)
+#### [콘텐츠 배달 네트워크](content-delivery-networks.md)
 ### 원격 사용자에 대한 Office 365 연결 최적화
 #### [개요: VPN 분할 터널링](office-365-vpn-split-tunnel.md)
 #### [VPN 분할 터널링 구현](office-365-vpn-implement-split-tunnel.md)
@@ -92,7 +97,6 @@
 #### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)
 #### [미국 정부 GCC High 끝점](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 암호화 체인 - DOD 및 GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [콘텐츠 배달 네트워크](content-delivery-networks.md)
 ### [Office 365 서비스의 IPv6 지원](ipv6-support.md)
 ### [NAT 지원(Office 365)](nat-support-with-office-365.md)
 ### Office 365용 ExpressRoute를 사용한 작업
