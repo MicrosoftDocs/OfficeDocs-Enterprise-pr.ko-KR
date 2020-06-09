@@ -30,7 +30,6 @@
 ## Office 365 클라이언트 지원
 ### [인증서 기반 인증](office-365-client-support-certificate-based-authentication.md)
 ### [조건부 액세스](office-365-client-support-conditional-access.md)
-### [모바일 응용 프로그램 관리](office-365-client-support-mobile-application-management.md)
 ### [최신 인증](office-365-client-support-modern-authentication.md)
 ### [Single Sign-On](office-365-client-support-single-sign-on.md)
 
