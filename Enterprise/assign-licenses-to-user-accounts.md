@@ -1,5 +1,5 @@
 ---
-title: 사용자 계정에 Office 365 라이선스 할당
+title: 사용자 계정에 Microsoft 365 라이선스 할당
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,27 +25,27 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: 사용자 계정에 개별적으로 또는 그룹 구성원을 기반으로 Office 365 라이선스를 할당 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 77e6f6c20e9eeff11487a31cb2d616abbed42601
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: 사용자 계정에 개별적으로 또는 그룹 구성원 자격을 기반으로 Microsoft 365 라이선스를 할당 하는 방법에 대해 설명 합니다.
+ms.openlocfilehash: bd9587f81d2267e1d6fd28f60e8ac2e85171457b
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009383"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699225"
 ---
-# <a name="assign-office-365-licenses-to-user-accounts"></a>사용자 계정에 Office 365 라이선스 할당
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>사용자 계정에 Microsoft 365 라이선스 할당
 
 *이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
-클라우드 전용 id 모델의 경우 만든 방법에 따라 사용자 계정에 Office 365 라이선스를 할당할 수 있습니다.
+클라우드 전용 id 모델의 경우 작성 방법에 따라 사용자 계정에 Microsoft 365 라이선스를 할당할 수 있습니다.
 
-하이브리드 id 모델의 경우 AD DS (Active Directory 도메인 서비스) 사용자 계정이 처음으로 동기화 되 면 Office 365 라이선스가 자동으로 할당 되지 않습니다.
+하이브리드 id 모델의 경우 AD DS (Active Directory 도메인 서비스) 사용자 계정이 처음으로 동기화 되 면 Microsoft 365 라이선스가 자동으로 할당 되지 않습니다. 먼저 사용자 위치를 사용 하 여 각 사용자 계정을 구성 해야 합니다.
 
-어느 경우 든 사용자가 전자 메일 및 Microsoft 팀과 같은 Office 365 서비스에 액세스할 수 있도록 사용자 계정에 라이선스를 할당 해야 합니다.
+어느 경우 든 사용자가 전자 메일 및 Microsoft 팀과 같은 Microsoft 365 서비스에 액세스할 수 있도록 사용자 계정에 라이선스를 할당 해야 합니다.
 
 사용자 계정에 개별적으로 또는 자동으로 그룹 구성원 자격을 통해 라이선스를 할당할 수 있습니다.
 
-개별 사용자 계정에 Office 365 라이선스를 할당 하려면 다음을 사용할 수 있습니다.
+개별 사용자 계정에 Microsoft 365 라이선스를 할당 하려면 다음을 사용할 수 있습니다.
 
 - [Microsoft 365 관리 센터](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
@@ -58,5 +58,5 @@ ms.locfileid: "44009383"
 
 - [보안 구현](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Microsoft 365 앱과 같은 클라이언트 소프트웨어 배포](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [Office 365에서 모바일 장치 관리 설정](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Microsoft 365에서 모바일 장치 관리 설정](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [서비스 및 응용 프로그램 구성](configure-services-and-applications.md)

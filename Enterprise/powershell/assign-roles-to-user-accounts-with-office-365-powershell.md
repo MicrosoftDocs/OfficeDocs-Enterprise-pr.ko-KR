@@ -3,7 +3,7 @@ title: Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 �
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 06/09/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,20 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '요약: Office 365 PowerShell을 사용 하 여 사용자 계정에 역할을 할당 합니다.'
-ms.openlocfilehash: 8cd3bd27f95c9d4191c24c7febc85c8fb2fb0118
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004741"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698915"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정에 역할을 할당 합니다.
 
 Office 365 PowerShell을 사용 하 여 사용자 계정에 쉽고 빠르게 역할을 할당할 수 있습니다.
+
+>[!Note]
+>Microsoft 365 관리 센터를 사용 하 여 사용자 계정에 역할을 할당 하려면 [다음 지침](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)을 참조 하세요.
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
@@ -125,7 +129,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-명령을 복사 하 여 메모장에 붙여 넣습니다. **$DispName** 및 **$roleName** 변수의 경우 설명 텍스트를 해당 값으로 바꾸고, \< 및 > 문자를 제거 하 고, 따옴표를 남겨 두어야 합니다. 수정 된 줄을 복사 하 여 Windows PowerShell 용 Windows Azure Active Directory 모듈 창에 붙여 넣어 실행 합니다. 또는 Windows PowerShell ISE (통합 스크립트 환경)를 사용할 수 있습니다.
+명령을 복사 하 여 메모장에 붙여 넣습니다. **$DispName** 및 **$roleName** 변수의 경우 설명 텍스트를 해당 값으로 바꾸고, 문자를 제거 \< and > 하 고, 따옴표를 남겨 두어야 합니다. 수정 된 줄을 복사 하 여 Windows PowerShell 용 Windows Azure Active Directory 모듈 창에 붙여 넣어 실행 합니다. 또는 Windows PowerShell ISE (통합 스크립트 환경)를 사용할 수 있습니다.
   
 다음은 완성 된 명령 집합의 예입니다.
   
@@ -171,7 +175,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-명령을 복사 하 여 메모장에 붙여 넣습니다. **$UpnName** 및 **$roleName** 변수의 경우 설명 텍스트를 해당 값으로 바꾸고, \< 및 > 문자를 제거 하 고, 따옴표를 남겨 두어야 합니다. 수정 된 줄을 복사 하 여 Windows PowerShell 용 Windows Azure Active Directory 모듈 창에 붙여 넣어 실행 합니다. 또는 Windows PowerShell ISE를 사용할 수 있습니다.
+명령을 복사 하 여 메모장에 붙여 넣습니다. **$UpnName** 및 **$roleName** 변수의 경우 설명 텍스트를 해당 값으로 바꾸고, 문자를 제거 \< and > 하 고, 따옴표를 남겨 두어야 합니다. 수정 된 줄을 복사 하 여 Windows PowerShell 용 Windows Azure Active Directory 모듈 창에 붙여 넣어 실행 합니다. 또는 Windows PowerShell ISE를 사용할 수 있습니다.
   
 다음은 완성 된 명령 집합의 예입니다.
   
@@ -232,5 +236,5 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 ## <a name="see-also"></a>참고 항목
 
 - [Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)

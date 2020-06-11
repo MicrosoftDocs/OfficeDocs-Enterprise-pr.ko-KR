@@ -1,5 +1,5 @@
 ---
-title: 동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
+title: Microsoft 365에 여러 사용자를 동시에 추가-관리자 도움말
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,24 +24,24 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: '스프레드시트 또는 다른 CSV로 서식이 지정 된 파일의 목록에서 비즈니스용 Office 365에 여러 사용자를 추가하는 방법을 알아봅니다. YouTube에서 Office 365에 계정을 추가하는 방법을 설명하는 비디오를 보세요. 이 프로세스 종료 시, 계정이 있는 각 사용자에게는 Office 365 사서함이 있습니다. '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: '스프레드시트나 기타 CSV 파일의 목록에서 비즈니스용 Microsoft 365에 여러 사용자를 추가 하는 방법에 대해 알아봅니다. Microsoft 365에 계정을 추가 하는 방법을 설명 하는 YouTube의 비디오를 시청 하세요. 이 프로세스가 끝나면 계정이 있는 각 사용자에 게 Microsoft 365 사서함이 포함 됩니다. '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901211"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699245"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>동시에 여러 사용자를 Office 365에 추가 - 관리자 도움말
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Microsoft 365에 여러 사용자를 동시에 추가-관리자 도움말
 
-팀의 각 구성원이 전자 메일 및 Office와 같은 Office 365 서비스에 로그인 및 액세스하려면 사용자 계정이 있어야 합니다. 사용자가 많은 경우 Excel 스프레드시트 또는 CSV 형식으로 저장된 다른 파일에서 모든 계정을 한 번에 추가할 수 있습니다. [CSV 형식이란?](add-several-users-at-the-same-time.md#__toc316652088)
+팀의 각 사용자는 전자 메일 및 Office와 같은 Microsoft 365 서비스에 로그인 하 고 액세스할 수 있으려면 먼저 사용자 계정을 사용 해야 합니다. 사용자가 많은 경우 Excel 스프레드시트 또는 CSV 형식으로 저장 된 다른 파일에서 모든 계정을 한 번에 추가할 수 있습니다. [CSV 형식이 무엇 인지 알 수 없습니까?](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
 > 새로운 Microsoft 365 관리 센터를 사용하지 않는 경우 홈페이지 상단에 있는 **새 관리 센터 시도** 토글을 선택하여 켤 수 있습니다.
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 여러 사용자를 Office 365에 추가
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Microsoft 365 관리 센터에서 여러 사용자 추가
 
-1. 회사 또는 학교 계정을 사용하여 Office 365에 로그인합니다. 
+1. 회사 또는 학교 계정으로 Microsoft 365에 로그인합니다. 
     
 2. 관리 센터에서 **사용자** \> **활성 사용자**를 선택합니다.
 
@@ -77,13 +77,13 @@ ms.locfileid: "43901211"
 ## <a name="next-steps"></a>다음 단계
 <a name="bk_preview"> </a>
 
-- 이제 이 사용자에게 계정이 있으므로 [PC 또는 Mac에 Office 365 또는 Office 2016를 다운로드하여 설치하거나 다시 설치](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)해야 합니다. 팀의 각 사용자는 최대 5대의 PC 또는 Mac에 Office 365를 설치할 수 있습니다. 
+- 이러한 사용자는 이제 [PC 또는 Mac에서 Microsoft 365 또는 Office 2016을 다운로드 하 고 설치 하거나 다시](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)설치 해야 합니다. 팀의 각 사용자는 최대 5 대의 Pc 또는 Mac에 Microsoft 365을 설치할 수 있습니다. 
     
 - 각 사용자는 iPhones, iPads 및 Android 휴대폰 및 태블릿과 같은 최대 5대의 태블릿과 5대의 휴대폰에서 [모바일 장치의 Office 앱 및 전자 메일을 설정](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)할 수도 있습니다. 이 방법으로 어디서나 Office 파일을 편집할 수 있습니다. 
     
-    포괄적인 설치 단계를 보려면 [Office 365 비즈니스 에디션 설정](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)을 참조하세요. 
+    설치 단계에 대 한 종단 간 목록을 보려면 [Microsoft 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 를 참조 하세요. 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Office 365에 사용자를 추가하는 방법에 대한 자세한 정보
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Microsoft 365에 사용자를 추가 하는 방법에 대 한 자세한 정보
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>CSV 형식이란?
@@ -91,7 +91,7 @@ ms.locfileid: "43901211"
 
 CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍스트 편집기나 Excel과 같은 스프레드시트 프로그램에서 이와 같은 파일을 만들거나 편집할 수 있습니다.
   
-시작점으로 [이 예제 스프레드시트](https://www.microsoft.com/download/details.aspx?id=45485)를 다운로드할 수 있습니다. Office 365에는 첫 행에 열 머리글이 필요하므로 이를 다른 것으로 바꾸지 마세요. 
+시작점으로 [이 예제 스프레드시트](https://www.microsoft.com/download/details.aspx?id=45485)를 다운로드할 수 있습니다. Microsoft 365에서는 첫 번째 행에 열 머리글이 필요 하므로 다른 항목으로 바꿀 수 없습니다. 
   
 파일을 새 이름으로 저장하고 CSV 형식을 지정합니다.
   
@@ -104,7 +104,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
 ### <a name="tips-for-formatting-your-spreadsheet"></a>스프레드시트 서식 지정 팁
 <a name="__toc314595848"> </a>
 
-- **예제 스프레드시트와 같은 열 머리글이 필요한가요?** 예. 예제 스프레드시트에는 첫 행에 열 머리글이 포함되어 있습니다. 해당 머리글은 필수 항목입니다. Office 365에 추가할 각 사용자에 대해 머리글 아래에 행을 만듭니다. 열 머리글을 추가, 변경 또는 삭제할 경우 Office 365에서 파일의 정보를 토대로 사용자를 만들지 못할 수도 있습니다. 
+- **예제 스프레드시트와 같은 열 머리글이 필요한가요?** 예. 예제 스프레드시트에는 첫 행에 열 머리글이 포함되어 있습니다. 해당 머리글은 필수 항목입니다. Microsoft 365에 추가 하려는 각 사용자에 대해 머리글 아래에 행을 만듭니다. 열 머리글을 추가, 변경 또는 삭제 하면 Microsoft 365에서 해당 파일의 정보를 사용자에 게 만들지 못할 수도 있습니다. 
     
 - **각 사용자에 대해 필요한 정보가 일부만 있는 경우** 사용자 이름 및 표시 이름은 필수 항목입니다. 이 정보 없이는 새 사용자를 추가할 수 없습니다. 팩스 등 기타 정보가 없는 경우 공백과 쉼표를 사용해 필드를 빈 상태로 둘 수 있습니다. 
     
@@ -118,7 +118,7 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
     
 |**사용자 데이터 열 레이블**|**최대 문자 길이**|
 |:-----|:-----|
-|사용자 이름 (필수)  <br/> |기호(@)를 포함하여 이름@도메인.\<확장자\> 형식으로 된 79자. 사용자의 별칭은 50 자를 초과할 수 없으며 도메인 이름은 48 자를 초과할 수 없습니다.  <br/> |
+|사용자 이름 (필수)  <br/> |@ 기호를 포함 하는 79는 name@domain 형식으로 되어 \<extension\> 있습니다. 사용자의 별칭은 50 자를 초과할 수 없으며 도메인 이름은 48 자를 초과할 수 없습니다.  <br/> |
 |이름  <br/> |64  <br/> |
 |성  <br/> |64  <br/> |
 |표시 이름 (필수)  <br/> |256  <br/> |
@@ -134,15 +134,15 @@ CSV 파일은 쉼표로 구분된 값을 사용한 파일입니다. 모든 텍�
 |우편 번호  <br/> |40  <br/> |
 |국가 또는 지역  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>Office 365에 사용자를 추가할 때 여전히 문제가 발생하나요?
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>Microsoft 365에 사용자를 추가할 때 여전히 문제가 발생 하나요?
 
 - **스프레드시트 형식이 올바른지 다시 한 번 확인합니다.** 열 머리글이 예제 파일의 머리글과 일치하는지 확인합니다. 문자 길이 규칙을 준수했고 각 필드를 쉼표로 구분했는지 확인합니다. 
     
-- **Office 365의 새 사용자가 바로 표시 되지 않으면 몇 분 정도 기다립니다.** Office 365의 모든 서비스에서 변경 내용을 적용 하는 데 약간의 시간이 걸릴 수 있습니다. 
+- **Microsoft 365의 새 사용자가 바로 표시 되지 않으면 몇 분 정도 기다립니다.** Microsoft 365의 모든 서비스에서 변경 내용을 적용 하는 데 약간의 시간이 걸릴 수 있습니다. 
     
 ## <a name="related-articles"></a>관련 문서
 
-[사용자를 개별적으로 또는 대량으로 Office 365에 추가](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[사용자를 개별적으로 또는 대량으로 Microsoft 365에 추가](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 
