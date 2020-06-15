@@ -1,5 +1,5 @@
 ---
-title: Office 365에서 디렉터리 동기화 오류 보기
+title: Microsoft 365에서 디렉터리 동기화 오류 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,24 +21,24 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Microsoft 365 관리 센터에서 디렉터리 동기화 오류를 확인 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840175"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711648"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>Office 365에서 디렉터리 동기화 오류 보기
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Microsoft 365에서 디렉터리 동기화 오류 보기
 
 [Microsoft 365 관리 센터](https://admin.microsoft.com)에서 디렉터리 동기화 오류를 볼 수 있습니다. 사용자 개체 오류만 표시 됩니다. PowerShell을 사용 하 여 오류를 확인 하려면 [DirSyncProvisioningErrors를 사용 하 여 개체 확인](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)을 참조 하십시오.
 
-확인 후 [365에는 디렉터리 동기화 문제 해결](fix-problems-with-directory-synchronization.md) 을 참조 하 여 식별 된 모든 문제를 해결 합니다.
+확인 후에는 [Microsoft 365에 대 한 디렉터리 동기화 문제 해결](fix-problems-with-directory-synchronization.md) 을 참조 하 여 식별 된 모든 문제를 해결 합니다.
   
 ## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>관리 센터에서 디렉터리 동기화 오류 보기
 
 관리 센터에서 오류를 확인 하려면 다음을 수행 합니다.
   
-1. 회사 또는 학교 계정을 사용하여 Office 365에 로그인합니다. 
+1. 회사 또는 학교 계정으로 Microsoft 365에 로그인합니다. 
     
 2. [관리 센터에 대 한](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)로 이동 합니다.
     

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: '요약: Office 365 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책에 대 한 사용자 단위 통신 설정을 할당 합니다.'
-ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
-ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
+ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
+ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374447"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44719969"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당
 
@@ -50,16 +50,13 @@ Import-PSSession $sfbSession
     
 2. 해당 외부 액세스 정책을 Alex에게 할당합니다.
     
-> [!NOTE]
->  사용자 지정 정책을 직접 만들 수는 없습니다. 비즈니스용 Skype Online에서는 사용자 지정 정책을 만들 수 없기 때문입니다. 대신 특별히 Office 365에 대해 만들어진 정책 중 하나를 할당 해야 합니다. 미리 만든 정책에는 4 가지 다른 클라이언트 정책, 224 다른 회의 정책, 5 가지 다이얼 플랜, 5 다른 외부 액세스 정책, 호스트 된 음성 메일 정책 1 개 및 4 가지 음성 정책이 포함 됩니다.
-  
-그렇다면 Alex을 할당할 외부 액세스 정책을 어떻게 결정 합니까? 다음 명령은 EnableFederationAccess가 True로 설정되고 EnablePublicCloudAccess가 False로 설정된 모든 외부 액세스 정책을 반환합니다.
+Alex을 할당할 외부 액세스 정책을 결정 하는 방법은 무엇 인가요? 다음 명령은 EnableFederationAccess가 True로 설정되고 EnablePublicCloudAccess가 False로 설정된 모든 외부 액세스 정책을 반환합니다.
   
 ```powershell
-Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
+Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-명령이 수행 하는 작업은 EnableFederationAccess 속성을 True로 설정 하 고 EnablePublicCloudAccess 정책이 False로 설정 되어 있는 두 가지 조건을 충족 하는 모든 정책을 반환 합니다. 그런 다음이 명령은 조건을 충족 하는 하나의 정책을 반환 합니다 (FederationOnly). 예를 들면 다음과 같습니다.
+ExternalAccessPolicy의 사용자 지정 인스턴스를 만든 경우가 아니면 해당 명령은 조건을 충족 하는 정책 하나 (FederationOnly)를 반환 합니다. 예를 들면 다음과 같습니다.
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,9 +68,6 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-> [!NOTE]
-> 정책 Id는 Tag: FederationOnly로 표시 됩니다. 아시다시피 Tag: 접두사는 Microsoft Lync 2013에서 진행된 초기 사전 릴리스 작업에서 이어진 것입니다. 사용자에게 정책을 할당하려는 경우에는 Tag: 접두사를 제거하고 정책 이름인 FederationOnly를 사용해야 합니다. 
-  
 이제 Alex에 할당할 정책을 알고 있으므로 [get-csexternalaccesspolicy](https://go.microsoft.com/fwlink/?LinkId=523974) cmdlet을 사용 하 여 해당 정책을 할당할 수 있습니다. 예를 들면 다음과 같습니다.
   
 ```powershell
@@ -98,7 +92,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 이 명령은 Get-csonlineuser를 사용 하 여 Lync에 대해 사용 하도록 설정 된 모든 사용자의 컬렉션을 반환한 다음, 모든 해당 정보를 부여-Get-csexternalaccesspolicy로 보내 컬렉션에 있는 각 사용자에 게 FederationAndPICDefault 정책을 할당 합니다.
   
-또 다른 예로, 이전에 FederationAndPICDefault 정책을 할당 했 고, 이제 생각이 변경 되었으며 전역 외부 액세스 정책에 의해 관리 되는 것을 Alex 가정해 보겠습니다. 전역 정책은 모든 사용자에 게 명시적으로 할당할 수 없습니다. 다른 사용자별 정책이 할당 되지 않은 경우에만 사용 됩니다. 따라서 전역 정책에 따라 Alex를 관리 하려면 이전에 자신에 게 할당 된 사용자별 정책을 *할당* 해제 해야 합니다. 예제 명령은 다음과 같습니다.
+또 다른 예로, 이전에 FederationAndPICDefault 정책을 할당 했 고, 이제 생각이 변경 되었으며 전역 외부 액세스 정책에 의해 관리 되는 것을 Alex 가정해 보겠습니다. 전역 정책은 모든 사용자에 게 명시적으로 할당할 수 없습니다. 대신 해당 사용자에 게 할당 된 사용자별 정책이 없는 경우 지정 된 사용자에 게 글로벌 정책이 사용 됩니다. 따라서 전역 정책에 따라 Alex를 관리 하려면 이전에 자신에 게 할당 된 사용자별 정책을 *할당* 해제 해야 합니다. 예제 명령은 다음과 같습니다.
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -106,7 +100,6 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 이 명령은 Alex에 할당 된 외부 액세스 정책의 이름을 null 값 ($Null)으로 설정 합니다. Null은 "nothing"을 의미 합니다. 즉, Alex에 외부 액세스 정책이 할당 되지 않습니다. 사용자에 게 할당 된 외부 액세스 정책이 없으면 해당 사용자는 전역 정책에 의해 관리 됩니다.
   
-Windows PowerShell을 사용 하 여 사용자 계정을 사용 하지 않도록 설정 하려면 Azure Active Directory cmdlet을 사용 하 여 Alex의 비즈니스용 Skype Online 라이선스를 제거 합니다. 자세한 내용은 [Office 365 PowerShell을 사용 하 여 서비스에 대 한 액세스 비활성화](assign-licenses-to-user-accounts-with-office-365-powershell.md)를 참조 하세요.
 
 ## <a name="managing-large-numbers-of-users"></a>다 수의 사용자 관리
 

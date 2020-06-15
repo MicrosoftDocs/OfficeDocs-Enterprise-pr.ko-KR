@@ -1,5 +1,5 @@
 ---
-title: 고가용성 페더레이션 인증 단계 5 Office 365에 대 한 페더레이션 인증 구성
+title: 고가용성 페더레이션 인증 단계 5 Microsoft 365에 대 한 페더레이션 인증 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: '요약: Microsoft Azure에서 Office 365에 대 한 고가용성 페더레이션 인증에 대해 Azure AD Connect를 구성 합니다.'
-ms.openlocfilehash: ac5536ac66412825b245851a7f225acad5e9895a
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: '요약: Microsoft Azure에서 Microsoft 365에 대 한 고가용성 페더레이션 인증을 위한 Azure AD Connect를 구성 합니다.'
+ms.openlocfilehash: 6cf88c3a933eba7cdbec2964cbf0ef24ee9a9b57
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793801"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711588"
 ---
-# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>고가용성 페더레이션 인증 5단계: Office 365에 대해 페더레이션 인증 구성
+# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>고가용성 페더레이션 인증 5 단계: Microsoft 365에 대 한 페더레이션 인증 구성
 
-Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이션 인증을 배포 하는 마지막 단계에서는 공용 인증 기관에서 발급 한 인증서를 가져오고 설치 하 고, 구성을 확인 한 다음 디렉터리 동기화 서버에서 Azure AD Connect를 설치 및 실행 합니다. Azure AD Connect는 페더레이션 인증을 위해 Office 365 구독 및 AD FS (Active Directory Federation Services) 및 웹 응용 프로그램 프록시 서버를 구성 합니다.
+Azure 인프라 서비스에서 Microsoft 365에 대 한 고가용성 페더레이션 인증을 배포 하는 마지막 단계에서는 공용 인증 기관에서 발급 한 인증서를 가져오고 설치 하 고, 구성을 확인 한 다음 디렉터리 동기화 서버에서 Azure AD Connect를 설치 및 실행 합니다. Azure AD Connect는 페더레이션 인증을 위해 Microsoft 365 구독 및 AD FS (Active Directory Federation Services) 및 웹 응용 프로그램 프록시 서버를 구성 합니다.
   
-모든 단계에 대해 [Azure에서 Office 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
+모든 단계에 대 한 자세한 내용은 [Azure에서 Microsoft 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) 를 참조 하세요.
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>공용 인증서를 가져와 디렉터리 동기화 서버에 복사
 
@@ -41,15 +41,15 @@ Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이�
   
 페더레이션 인증의 인증서 요구 사항에 대 한 자세한 내용은 [페더레이션 설치 및 구성에 대 한 필수 구성 요소](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)를 참조 하십시오.
   
-인증서를 받으면 디렉터리 동기화 서버의 C: 드라이브에 있는 폴더로 복사 합니다. 예를 들어, 파일 이름을 p C\\e. e l e.
+인증서를 받으면 디렉터리 동기화 서버의 C: 드라이브에 있는 폴더로 복사 합니다. 예를 들어, 파일 이름을 p C e. e l \\ e.
   
 ## <a name="verify-your-configuration"></a>구성 확인
 
-이제 Office 365에 대해 Azure AD Connect 및 페더레이션 인증을 구성할 준비가 되었습니다. 다음은 검사 목록을 확인 하는 예제입니다.
+이제 Microsoft 365에 대해 Azure AD Connect 및 페더레이션 인증을 구성할 준비가 되었습니다. 다음은 검사 목록을 확인 하는 예제입니다.
   
-- 조직의 공용 도메인이 Office 365 구독에 추가 됩니다.
+- 조직의 공용 도메인이 Microsoft 365 구독에 추가 됩니다.
     
-- 조직의 Office 365 사용자 계정이 조직의 공용 도메인 이름으로 구성 되 고 성공적으로 로그인 할 수 있습니다.
+- 조직의 Microsoft 365 사용자 계정이 조직의 공용 도메인 이름으로 구성 되 고 성공적으로 로그인 할 수 있습니다.
     
 - 공용 도메인 이름을 기반으로 하는 페더레이션 서비스 FQDN을 결정 했습니다.
     
@@ -65,15 +65,15 @@ Azure 인프라 서비스에서 Office 365에 대 한 고가용성 페더레이�
   
 **Azure의 고가용성 페더레이션 인증 인프라에 대 한 예제 구성**
 
-![Azure에서 고가용성 Office 365 페더레이션 인증 인프라의 예제 구성](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Azure에서 고가용성 Microsoft 365 페더레이션 인증 인프라의 예제 구성](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Azure AD Connect를 실행 하 여 페더레이션 인증 구성
 
-Azure AD Connect 도구는 다음 단계를 사용 하 여 페더레이션 인증을 위해 AD FS 서버, 웹 응용 프로그램 프록시 서버 및 Office 365을 구성 합니다.
+Azure AD Connect 도구는 다음 단계를 사용 하 여 페더레이션 인증을 위해 AD FS 서버, 웹 응용 프로그램 프록시 서버 및 Microsoft 365을 구성 합니다.
   
 1. 로컬 관리자 권한이 있는 도메인 계정을 사용 하 여 디렉터리 동기화 서버에 대 한 원격 데스크톱 연결을 만듭니다.
     
-2. 디렉터리 동기화 서버의 데스크톱에서 Internet Explorer를 열고로 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)이동 합니다.
+2. 디렉터리 동기화 서버의 데스크톱에서 Internet Explorer를 열고로 이동 [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 합니다.
     
 3. **Microsoft Azure Active Directory 연결** 페이지에서 **다운로드**를 클릭 한 다음 **실행**을 클릭 합니다.
     
@@ -85,7 +85,7 @@ Azure AD Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
     
 7. **사용자 로그인** 페이지에서 **AD FS로 페더레이션**을 클릭하고 **다음**을 클릭합니다.
     
-8. **AZURE AD에 연결** 페이지에서 Office 365 구독에 대 한 전역 관리자 계정의 이름과 암호를 입력 하 고 **다음**을 클릭 합니다.
+8. **AZURE AD에 연결** 페이지에서 Microsoft 365 구독에 대 한 전역 관리자 계정의 이름과 암호를 입력 하 고 **다음**을 클릭 합니다.
     
 9. **디렉터리 연결** 페이지에서 온-프레미스 AD DS (Active Directory 도메인 서비스) 포리스트가 **포리스트에서**선택 되어 있는지 확인 하 고 도메인 관리자 계정의 이름과 암호를 입력 한 다음 **디렉터리 추가**를 클릭 하 고 **다음**을 클릭 합니다.
     
@@ -135,18 +135,18 @@ Azure AD Connect 도구는 다음 단계를 사용 하 여 페더레이션 인�
   
 **5 단계: Azure의 고가용성 페더레이션 인증 인프라에 대 한 최종 구성**
 
-![Azure에서 고가용성 Office 365 페더레이션 인증 인프라의 최종 구성.](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure의 고가용성 Microsoft 365 페더레이션 인증 인프라에 대 한 최종 구성](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Azure의 Office 365에 대 한 고가용성 페더레이션 인증 인프라가 완료 되었습니다.
+Azure의 Microsoft 365에 대 한 고가용성 페더레이션 인증 인프라가 완료 되었습니다.
   
 ## <a name="see-also"></a>참고 항목
 
-[Azure에서 Office 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Azure에서 Microsoft 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Office 365 개발/테스트 환경에 대 한 페더레이션된 id](federated-identity-for-your-office-365-dev-test-environment.md)
+[Microsoft 365 개발/테스트 환경용 페더레이션 id](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
-[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
+[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
 
-[Office 365용 페더레이션 ID](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Microsoft 365의 페더레이션 id](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 
 

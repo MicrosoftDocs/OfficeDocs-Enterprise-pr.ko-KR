@@ -1,5 +1,5 @@
 ---
-title: 조직 데이터를 Office 365 Enterprise로 마이그레이션
+title: 조직 데이터를 Microsoft 365 Enterprise로 마이그레이션
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,25 +15,25 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: FastTrack 배포를 선택하지 않았고 데이터를 Office 365로 마이그레이션할 준비가 되었다면 여기가 시작 지점입니다.
-ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: FastTrack 배포를 옵트아웃 했 고 데이터를 Microsoft 365로 마이그레이션할 준비가 되 면이 위치를 시작 합니다.
+ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419346"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711851"
 ---
-# <a name="migrate-your-organization-data-to-office-365-enterprise"></a>조직 데이터를 Office 365 Enterprise로 마이그레이션
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>조직 데이터를 Microsoft 365 Enterprise로 마이그레이션
 
-## <a name="ready-to-migrate-your-data-to-office-365"></a>데이터를 Office 365로 마이그레이션할 준비가 되셨나요?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>데이터를 Microsoft 365로 마이그레이션할 준비가 되셨습니까?
 
-[기본 설치 지침](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)을 사용하면 가능한 한 짧은 시간에 모든 사용자가 Office 365 서비스 및 응용 프로그램을 사용하도록 할 수 있습니다. 하이브리드 시나리오 및 Office 365로 마이그레이션하는 고급 방법은 나와 있지 않습니다. 
+[기본적인 설치 지침은](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) Microsoft 365 서비스 및 응용 프로그램을 사용 하는 가장 짧은 시간에 모든 사용자에 게 제공 됩니다. 이를 통해 하이브리드 시나리오와 Microsoft 365로 마이그레이션하는 고급 방법을 건너뛸 수 있습니다. 
   
-Office 365을 설정 하는 데 도움이 필요 하면 [Fasttrack](https://fasttrack.microsoft.com/office) 을 사용 하 여 office 365를 배포 하는 것이 가장 쉬운 방법 이며, [Office 365 용 설치 가이드 서비스에](setup-guides-for-office-365.md)로그인 하 여 사용할 수도 있습니다.
+Microsoft 365을 설정 하는 데 도움이 필요한 경우 [Fasttrack](https://fasttrack.microsoft.com/office) 은 microsoft 365를 배포 하는 가장 쉬운 방법 이며, [Microsoft 365 서비스용 설치 가이드](setup-guides-for-office-365.md)를 사용 하 여 로그인 하 고 사용할 수도 있습니다.
 
-## <a name="migrate-email-to-office-365"></a>Office 365로 전자 메일 마이그레이션
+## <a name="migrate-email-to-microsoft-365"></a>Microsoft 365로 전자 메일 마이그레이션
 - - [Exchange 배포 도우미를 사용하여 Exchange Hybrid](https://technet.microsoft.com/exdeploy2013)로 마이그레이션합니다.(관리자)
-- 여러 가지 [전자 메일을 Office 365로 마이그레이션하는 방법](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)을 알아봅니다.
+- [전자 메일을 Microsoft 365로 마이그레이션하](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)는 다양 한 방법에 대해 자세히 알아보세요.
 - [ 조직의 사용자가 자신의 전자 메일, 연락처 및 일정을 마이그레이션](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)할 수 있는 대체 방법을 찾습니다.
 
 ## <a name="migrate-files-and-folders"></a>파일 및 폴더 마이그레이션

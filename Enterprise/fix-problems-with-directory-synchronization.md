@@ -1,5 +1,5 @@
 ---
-title: Office 365의 디렉터리 동기화 문제 해결
+title: Microsoft 365의 디렉터리 동기화 문제 해결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365에서 발생 하는 디렉터리 동기화 문제의 일반적인 원인에 대해 설명 하 고 이러한 문제를 해결 하는 데 도움이 되는 몇 가지 방법을 제공 합니다.
-ms.openlocfilehash: 658f1649d0a4b9bf109bbb35593d4c64092e1cf8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840335"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711911"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365의 디렉터리 동기화 문제 해결
+# <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365의 디렉터리 동기화 문제 해결
 
 디렉터리 동기화를 사용 하면 온-프레미스에서 사용자 및 그룹을 계속 관리 하 고 추가, 삭제 및 변경 내용을 클라우드로 동기화 할 수 있습니다. 그러나 설치 프로그램은 다소 복잡 하며 때때로 문제의 원인을 파악 하기 어려울 수 있습니다. Microsoft는 잠재적인 문제를 파악 하 고 해결 하는 데 도움이 되는 리소스를 제공 합니다.
   
@@ -34,7 +34,7 @@ ms.locfileid: "41840335"
 
 무언가가 잘못 되었음을 나타내는 첫 번째 방법은 Microsoft 365 관리 센터의 DirSync 상태 타일이 문제가 있음을 나타낼 때입니다.
   
-또한 테 넌 트에서 디렉터리 동기화 오류가 발생 했음을 나타내는 Office 365에서 전자 메일 및 관리자 전자 메일에 대 한 메일을 받게 됩니다. 자세한 내용은 [Office 365에서 디렉터리 동기화 오류 파악를](identify-directory-synchronization-errors.md)참조 하세요.
+또한 테 넌 트에서 디렉터리 동기화 오류가 발생 했음을 나타내는 Microsoft 365에서 전자 메일 및 관리자 전자 메일에 대 한 메일을 받게 됩니다. 자세한 내용은 [Microsoft 365에서 디렉터리 동기화 오류 파악를](identify-directory-synchronization-errors.md)참조 하세요.
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Connect 도구를 가져오려면 어떻게 해야 합니까?
 
@@ -42,27 +42,27 @@ ms.locfileid: "41840335"
   
 [마법사의 지침](set-up-directory-synchronization.md) 에 따라 Azure AD Connect를 다운로드 합니다. 
   
-여전히 Azure DirSync (Active Directory 동기화)를 사용 하는 경우 dirsync 설치를 위한 시스템 요구 사항, 필요한 권한 및 일반적인 오류를 해결 하는 방법에 대 한 자세한 내용은 [Office 365에서 Azure Active Directory 동기화 도구 설치 및 구성 마법사 오류 메시지 문제를 해결 하는 방법을](https://go.microsoft.com/fwlink/p/?LinkId=396717) 확인 하세요. 
+여전히 Azure DirSync (Active Directory 동기화)를 사용 하는 경우 dirsync 설치를 위한 시스템 요구 사항, 필요한 권한 및 일반적인 오류를 해결 하는 방법에 대 한 자세한 내용은 [Microsoft 365의 Azure Active Directory 동기화 도구 설치 및 구성 마법사 오류 메시지 문제 해결 방법을](https://go.microsoft.com/fwlink/p/?LinkId=396717) 확인 하세요. 
   
 Azure Active Directory 동기화에서 Azure AD Connect로의 연결을 업데이트 하려면 [업그레이드 지침](https://go.microsoft.com/fwlink/p/?LinkId=733240)을 참조 하세요.
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Office 365에서 디렉터리 동기화 문제의 일반적인 원인을 해결 하는 방법 확인
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Microsoft 365에서 디렉터리 동기화 문제의 일반적인 원인 해결
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**동기화 된 개체가 표시 되지 않거나 온라인으로 업데이트 되지 않거나, 서비스에서 동기화 오류 보고서를 가져옵니다.**
 
-- [Id 동기화 및 중복 특성 복구](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [ID 동기화 및 중복 특성 복원력](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**관리 센터에 경고가 있거나 최근 동기화 이벤트가 없는 자동 전자 메일을 받는 경우**
-- [Azure AD Connect와의 연결 문제 해결](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
+- [Azure AD Connect 연결 문제 해결](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD Connect 계정 및 사용 권한](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD Connect 동기화: Azure AD 서비스 계정을 관리 하는 방법](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
-- [Azure Active Directory에 대 한 디렉터리 동기화가 중지 되거나 동기화가 하루 이상 등록 되지 않았다는 경고가 표시 됨](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
+- [Azure AD Connect 동기화: Azure AD 서비스 계정을 관리하는 방법](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Azure Active Directory에 대한 디렉터리 동기화가 중지되거나 동기화가 하루 이상 등록되지 않았다는 경고가 표시됩니다.](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**암호 해시가 동기화 되지 않거나 최근 암호 해시 동기화가 아직 없는 경우 관리 센터에서 경고가 표시 됨**
-- [Azure AD Connect 동기화를 사용 하 여 암호 해시 동기화 구현](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+- [Azure AD Connect 동기화로 암호 동기화 구현](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**개체 할당량이 초과 되었음을 알리는 경고가 표시 됨**
-- 서비스를 보호 하는 데 도움이 되는 기본 제공 개체 할당량이 있습니다. 디렉터리에 Office 365와 동기화 해야 하는 개체가 너무 많은 경우에는 [비즈니스 제품 지원에 문의](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) 하 여 할당량을 늘려야 합니다.
+- 서비스를 보호 하는 데 도움이 되는 기본 제공 개체 할당량이 있습니다. 디렉터리에 Microsoft 365와 동기화 해야 하는 개체가 너무 많은 경우에는 [비즈니스 제품 지원에 문의](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) 하 여 할당량을 늘려야 합니다.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**동기화 되는 특성을 확인 해야 합니다.**
 - 온-프레미스와 클라우드 간에 동기화 되는 모든 특성의 목록을 [여기](https://go.microsoft.com/fwlink/p/?LinkId=396719)에서 확인할 수 있습니다.
@@ -91,6 +91,6 @@ Azure Active Directory 동기화에서 Azure AD Connect로의 연결을 업데�
     
 ## <a name="diagnostic-tools"></a>진단 도구
 
-[Idfix 도구](prepare-directory-attributes-for-synch-with-idfix.md) 는 Office 365로의 마이그레이션을 준비 하기 위해 온-프레미스 Active Directory 환경에서 id 개체 및 해당 특성의 검색 및 관리를 수행 하는 데 사용 됩니다. IDFix는 Office 365 서비스와의 디렉터리 동기화를 담당 하는 Active Directory 관리자를 위한 것입니다. 
+[Idfix 도구](prepare-directory-attributes-for-synch-with-idfix.md) 는 Microsoft 365로의 마이그레이션을 준비 하기 위해 온-프레미스 Active Directory 환경에서 id 개체 및 해당 특성의 검색 및 관리를 수행 하는 데 사용 됩니다. IDFix는 Microsoft 365 서비스와의 디렉터리 동기화를 담당 하는 Active Directory 관리자를 위한 것입니다. 
 
 Microsoft 다운로드 센터에서 [IDFix 도구를 다운로드](https://go.microsoft.com/fwlink/p/?LinkId=396718) 합니다.

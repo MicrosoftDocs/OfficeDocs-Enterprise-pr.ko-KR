@@ -1,5 +1,5 @@
 ---
-title: Office 365 IdFix 트랜잭션 로그
+title: Microsoft 365 IdFix 트랜잭션 로그
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: 예제를 제공 하 고 Office 365 IdFix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
-ms.openlocfilehash: fb294095dc5b163965660546f5033a845d6cb0b4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 예제를 제공 하 고 Microsoft 365 IdFix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
+ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840115"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711558"
 ---
-# <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix 트랜잭션 로그
+# <a name="microsoft-365-idfix-transaction-log"></a>Microsoft 365 IdFix 트랜잭션 로그
 
 *이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
-예제를 제공 하 고 Office 365 IdFix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
+예제를 제공 하 고 Microsoft 365 IdFix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
   
 ## <a name="idfix-transaction-log-location"></a>IdFix 트랜잭션 로그 위치
 
-Office 365 IdFix 도구는 IdFix에서 **Apply** 를 클릭 하 고 변경 내용을 Active Directory 포리스트에 적용할 때마다 새 트랜잭션 로그를 만듭니다. 트랜잭션 로그는 IdFix를 설치한 동일한 폴더에 저장 됩니다. 기본적으로이 폴더는 C:\Deployment Tools\IDFix.입니다. 트랜잭션 로그 파일 이름에 날짜 및 시간 스탬프 형식을 사용 하는 경우 (예: Verbose 6-1-2018 6-17-22 PM)에는 6:17:22 2018 년 6 월 1 일에 생성 된 파일을 나타냅니다. Verbose 로깅 수준을 나타냅니다. 
+Microsoft 365 IdFix 도구는 IdFix에서 **Apply** 를 클릭 하 고 변경 내용을 Active Directory 포리스트에 적용할 때마다 새 트랜잭션 로그를 만듭니다. 트랜잭션 로그는 IdFix를 설치한 동일한 폴더에 저장 됩니다. 기본적으로이 폴더는 C:\Deployment Tools\IDFix.입니다. 트랜잭션 로그 파일 이름에 날짜 및 시간 스탬프 형식을 사용 하는 경우 (예: Verbose 6-1-2018 6-17-22 PM)에는 6:17:22 2018 년 6 월 1 일에 생성 된 파일을 나타냅니다. Verbose 로깅 수준을 나타냅니다. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>IdFix 트랜잭션 로그 로깅 수준
 
