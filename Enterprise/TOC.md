@@ -2,32 +2,32 @@
 # [엔터프라이즈 클라우드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
 ## [Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# [Office 365 계획](get-your-organization-ready-for-office-365.md)
+# [Microsoft 365를 위한 계획](get-your-organization-ready-for-office-365.md)
 
-## Office 365 테넌트
+## Microsoft 365 테넌트
 ### [구독, 라이선스 및 테넌트](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### 네트워크 계획
-#### [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
-#### [Office 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
-#### [Office 365의 네트워크 및 마이그레이션 계획](network-and-migration-planning.md)
+#### [Microsoft 365 네트워크 연결 평가](assessing-network-connectivity.md)
+#### [Microsoft 365 서비스에 연결되는 네트워크 장치 계획](plan-for-network-devices.md)
+#### [Microsoft 365의 네트워크 및 마이그레이션 계획](network-and-migration-planning.md)
 
 ### ID 계획D
 #### [Id 모델](about-office-365-identity.md)
 #### [하이브리드 ID](plan-for-directory-synchronization.md)
 
-### [Office 365용 타사 SSL 인증서 계획](plan-for-third-party-ssl-certificates.md)
-### [Office 365 및 Microsoft 365 서비스용 설정 가이드](setup-guides-for-office-365.md)
+### [Microsoft 365용 타사 SSL 인증서 계획](plan-for-third-party-ssl-certificates.md)
+### [Microsoft 365 및 Office 365 서비스용 설정 가이드](setup-guides-for-office-365.md)
 ### [통합 앱 및 Azure AD](integrated-apps-and-azure-ads.md)
 
-### Office 365 통합
+### Microsoft 365 통합
 #### [온-프레미스와 통합](office-365-integration.md)
 #### [Azure 통합](azure-integration.md)
 #### [Azure ExpressRoute](azure-expressroute.md)
 #### [최신 인증이 Office 2013 및 Office 2016 클라이언트 앱에 작동하는 방식](modern-auth-for-office-2013-and-2016.md)
 #### [테넌트 간 공동 작업](office-365-inter-tenant-collaboration.md)
 
-## Office 365 클라이언트 지원
+## Microsoft 365 클라이언트 지원
 ### [인증서 기반 인증](office-365-client-support-certificate-based-authentication.md)
 ### [조건부 액세스](office-365-client-support-conditional-access.md)
 ### [모바일 응용 프로그램 관리](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
@@ -58,17 +58,17 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# [Office 365 테스트](cloud-adoption-test-lab-guides-tlgs.md)
+# [Microsoft 365 테스트](cloud-adoption-test-lab-guides-tlgs.md)
 
-# [Office 365 Enterprise 배포](setup-overview-for-enterprises.md)
+# [Microsoft 365 Enterprise 배포](setup-overview-for-enterprises.md)
 
 ## 1. 네트워크 설정
 ### [엔터프라이즈 네트워크 설정](set-up-network-for-office-365.md)
 ### [도메인 추가](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
-### [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
-### [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
-### [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
-### [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
+### [Microsoft 365 네트워킹 연결 개요](office-365-networking-overview.md)
+### [Microsoft 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
+### [Microsoft 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
+### [Microsoft 365 네트워크 연결 평가](assessing-network-connectivity.md)
 ### [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)
 ### Office 365 IP 주소 및 URL
 #### [Office 365 엔드포인트](office-365-endpoints.md)
@@ -86,10 +86,10 @@
 #### [Office 365 CDN 빠른 시작](office-365-cdn-quickstart.md)
 #### [SharePoint Online이 포함된 Office 365 CDN 사용](use-office-365-cdn-with-spo.md)
 #### [콘텐츠 배달 네트워크](content-delivery-networks.md)
-### 원격 사용자에 대한 Office 365 연결 최적화
+### 원격 사용자에 대한 Microsoft 365 연결 최적화
 #### [개요: VPN 분할 터널링](office-365-vpn-split-tunnel.md)
 #### [VPN 분할 터널링 구현](office-365-vpn-implement-split-tunnel.md)
-#### [중국 사용자를 위한 Office 365 최적화](office-365-networking-china.md)
+#### [중국 사용자를 위한 Microsoft 365 최적화](office-365-networking-china.md)
 ### GCC High 및 DOD 테넌트에 대한 네트워킹
 #### [GCC High 및 DoD에 대한 추가 네트워크 보안 요구 사항](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
 #### [Office 365 DoD용 DNS 레코드](dns-records-for-office-365-dod.md)
@@ -97,13 +97,13 @@
 #### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)
 #### [미국 정부 GCC High 끝점](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 암호화 체인 - DOD 및 GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Office 365 서비스의 IPv6 지원](ipv6-support.md)
-### [NAT 지원(Office 365)](nat-support-with-office-365.md)
-### Office 365용 ExpressRoute를 사용한 작업
-#### [Office 365용 ExpressRoute](azure-expressroute.md)
-#### [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
-#### [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
-#### [Office 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
+### [Microsoft 365 서비스의 IPv6 지원](ipv6-support.md)
+### [Microsoft 365로 NAT 지원](nat-support-with-office-365.md)
+### Microsoft 365용 ExpressRoute를 사용한 작업
+#### [Microsoft 365용 ExpressRoute](azure-expressroute.md)
+#### [Microsoft 365용 ExpressRoute 구현](implementing-expressroute.md)
+#### [Microsoft 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
+#### [Microsoft 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
 
 ## 2. ID 설정
 ### [전역 관리자 계정 보호](protect-your-global-administrator-accounts.md)
@@ -129,7 +129,7 @@
 
 ## 6. 서비스 및 응용 프로그램 구성
 ### [준비하기](configure-services-and-applications.md)
-### [Office 365로 데이터 마이그레이션](migrate-data-to-office-365.md)
+### [Microsoft 365로 데이터 마이그레이션](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 ### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [비즈니스용 Skype](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -163,7 +163,7 @@
 ##### [위성 지리적 위치에서 SharePoint Multi-Geo 사용](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Exchange Multi-Geo 관리](administering-exchange-online-multi-geo.md)
 
-### [새 Office 365 데이터 센터 지역으로 이동](moving-data-to-new-datacenter-geos.md)
+### [새 Microsoft 365 데이터 센터 geo로 이동](moving-data-to-new-datacenter-geos.md)
 #### [데이터 이동을 요청하는 방법](request-your-data-move.md)
 #### [데이터 이동 도중 및 이후](during-and-after-your-data-move.md)
 #### [데이터 이동 일반 FAQ](data-move-faq.md)
@@ -175,14 +175,14 @@
 #### [Azure Active Directory를 사용하여 SharePoint Server 2016 인증](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [온-프레미스 네트워크를 Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Azure IaaS에서 디렉터리 동기화 서버 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-#### [Azure에서 Office 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+#### [Azure에서 Microsoft 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 ##### [1단계: Azure 구성](high-availability-federated-authentication-phase-1-configure-azure.md)
 ##### [2단계: 도메인 컨트롤러 구성](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
 ##### [3단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [4단계: 웹 응용 프로그램 프록시 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [5단계: 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
-# Office 365 관리
+# Microsoft 365 관리
 
 ## 네트워크
 ### [연결 모니터링](monitor-connectivity.md)
@@ -194,7 +194,7 @@
 ### [디렉터리 동기화 끄기](turn-off-directory-synchronization.md)
 
 ## 사용자
-### [Office 365 관리자 도움말 센터](https://docs.microsoft.com/office365/admin/admin-home)
+### [Microsoft 365 관리 센터 도움말](https://docs.microsoft.com/office365/admin/admin-home)
 ### [사용자 계정 관리 도구](manage-office-365-accounts.md)
 ### [동시에 여러 사용자 추가](add-several-users-at-the-same-time.md)
 ### [사용자의 사서함에서 삭제된 항목 복구 ](recover-deleted-items-in-a-mailbox.md)
@@ -214,7 +214,7 @@
 ### [지원 옵션](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## 성능
-### [Office 365 성능 조정](tune-office-365-performance.md)
+### [Microsoft 365 성능 조정](tune-office-365-performance.md)
 ### [초기 계획 및 성능 기록을 사용하여 성능 조정](performance-tuning-using-baselines-and-history.md)
 ### [Exchange Online 성능 조정](tune-exchange-online-performance.md)
 ### [SharePoint Online 성능 조정](tune-sharepoint-online-performance.md)
@@ -226,8 +226,8 @@
 ### [ExpressRoute 관리](managing-expressroute-for-connectivity.md)
 
 # 서비스 보증
-## [Office 365 보안 및 준수 센터의 서비스 보증](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
-## [Office 365 관리 액세스 권한 컨트롤](office-365-administrative-access-controls-overview.md)
+## [Microsoft 365 보안 및 준수 센터의 서비스 보증](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
+## [Microsoft 365 관리 액세스 권한 컨트롤](office-365-administrative-access-controls-overview.md)
 ### [액세스 제어 모니터링 및 감사](office-365-monitoring-and-auditing-access-controls.md)
 ### [Office 365 격리 컨트롤](office-365-isolation-controls.md)
 ### [Office 365 담당자 컨트롤](office-365-personnel-controls.md)
@@ -254,7 +254,7 @@
 ### [Microsoft의 서비스 거부 방어 전략](office-365-microsoft-dos-defense-strategy.md)
 ### [서비스 거부 공격에 대한 보안 핵심 원칙](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Microsoft 클라우드에서 암호화](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
-### [Office 365 서비스 암호화](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
+### [Microsoft 365 서비스 암호화](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
 ### [전송 중인 데이터 암호화](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit)
 ### [고객 관리 암호화 기능](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
 ### [암호화 위험 및 보호](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
@@ -273,5 +273,5 @@
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Microsoft 365 규정 준수](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 보안](https://docs.microsoft.com/microsoft-365/security/)
-# [Office 365 비즈니스 에디션](https://docs.microsoft.com/office365/admin/admin-home)
+# [비즈니스용 Microsoft 365](https://www.microsoft.com/microsoft-365/business)
 # [Microsoft 365](https://docs.microsoft.com/microsoft-365)
