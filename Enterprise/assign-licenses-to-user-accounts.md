@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 사용자 계정에 개별적으로 또는 그룹 구성원 자격을 기반으로 Microsoft 365 라이선스를 할당 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 105bc2772867e244b5012789593498a672abf807
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: f28b9a6367cec2f67b664db2d43ba55b9cf19638
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711801"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735936"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>사용자 계정에 Microsoft 365 라이선스 할당
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 클라우드 전용 id 모델의 경우 작성 방법에 따라 사용자 계정에 Microsoft 365 라이선스를 할당할 수 있습니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "44711801"
 
 개별 사용자 계정에 Microsoft 365 라이선스를 할당 하려면 다음을 사용할 수 있습니다.
 
-- [Microsoft 365 관리 센터](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
+- [Microsoft 365 관리 센터](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
 
 라이선스를 자동으로 할당 하려면 [AZURE AD에서 그룹 기반 라이선싱](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)을 참조 하십시오.

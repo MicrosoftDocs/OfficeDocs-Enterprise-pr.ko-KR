@@ -18,16 +18,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Office 365 PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
-ms.openlocfilehash: 1fc9192ed27bfd097ac770b53837fb8ba2eb062d
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004701"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735706"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
 
-Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고 사용자를 추가 하는 경우 Microsoft 356 관리 센터에서 보다 훨씬 빠르게 작업을 빠르게 수행할 수 있습니다. Office 356 관리 센터에서 수행할 수 없는 작업을 수행할 수도 있습니다. 
+Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고 사용자를 추가 하는 경우 Microsoft 365 관리 센터에서 보다 훨씬 빠르게 작업을 빠르게 수행할 수 있습니다. Office 365 관리 센터에서 수행할 수 없는 작업을 수행할 수도 있습니다. 
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -52,7 +52,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 <br/>여기서 *테* 넌 트에서은 테 넌 트의 이름이 고 *소유자* 는 기본 사이트 모음 관리자 역할을 부여 하려는 테 넌 트에 있는 사용자의 사용자 이름입니다.<br/>(메모장을 사용 하 여 빠르게 대량으로 바꿀 때 Ctrl + H를 누를 수 있습니다.)<br/>
 
-2. 파일을 바탕 화면에 **sitecollections.csv**로 저장 합니다.<br/>
+2. **SiteCollections.csv**으로 데스크톱에 파일을 저장 합니다.<br/>
 
 > [!TIP]
 > 이 또는 다른 .csv 또는 Windows PowerShell 스크립트 파일을 사용 하기 전에 불필요 하거나 인쇄 되지 않는 문자가 없는지 확인 하는 것이 좋습니다. 이렇게 하려면 Word에서 파일을 열고 리본 메뉴에서 단락 아이콘을 클릭하여 인쇄할 수 없는 문자를 표시합니다. 불필요한 인쇄할 수 없는 문자가 없어야 합니다. 예를 들어 파일 끝의 마지막 단락 표시 뒤에는 단락 표시가 없어야 합니다.
@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>2단계: 사용자 및 그룹 추가
 
-이제 사용자를 만들어 사이트 모음 그룹에 추가할 수 있습니다. 그런 다음 .csv 파일을 사용하여 새 그룹 및 사용자를 대량 업로드합니다.
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 다음 절차에서는 TeamSite01, Blog01, Project01 및 Community01의 예제 사이트를 계속 사용 합니다.
 
@@ -101,7 +101,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 ```
 <br/>여기서 *테 넌* 트에서 테 넌 트 이름과 같습니다.<br/>
 
-2. 파일을 바탕 화면에 **groupsandpermissions.csv**로 저장 합니다.<br/>
+2. **GroupsAndPermissions.csv**으로 데스크톱에 파일을 저장 합니다.<br/>
 
 3. 새 메모장 인스턴스를 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
 
@@ -118,7 +118,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 ```
 <br/>여기서 *테 넌 트는* 테 넌 트 이름과 같고 *username* 은 기존 사용자의 사용자 이름과 같습니다.<br/>
 
-4. 파일을 데스크톱에 **사용자 .csv**로 저장 합니다.<br/>
+4. **Users.csv**으로 데스크톱에 파일을 저장 합니다.<br/>
 
 5. 새 메모장 인스턴스를 열고 다음 텍스트 블록을 붙여 넣습니다.<br/>
 
@@ -128,7 +128,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>여기서 MyAlias는 현재 로그온 되어 있는 사용자의 사용자 이름과 같습니다.<br/>
 
-6. 파일을 바탕 화면에 Usersandgroups.ps1로 저장 **합니다.** 간단한 Windows PowerShell 스크립트입니다.
+6. **UsersAndGroups.ps1**으로 데스크톱에 파일을 저장 합니다. 간단한 Windows PowerShell 스크립트입니다.
 
 이제 UsersAndGroup.ps1 스크립트를 실행하여 사용자와 그룹을 여러 사이트 모음에 추가할 수 있습니다.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>여기서 *Myalias* 는 사용자 이름과 같습니다.<br/>
 
-5. 프롬프트가 반환될 때까지 기다렸다가 계속 진행합니다. 먼저 작성된 그룹이 표시되고, 사용자를 추가하면 그룹 목록이 반복적으로 표시됩니다.
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -158,7 +158,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [SharePoint Online 사이트 그룹 관리 Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: 다음은 핵심 데이터를 새 데이터 센터 지역으로 이동 하는 방법에 대 한 일반적인 질문에 대 한 대답입니다.
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516559"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735846"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -64,7 +64,7 @@ Exchange Online, SharePoint Online 및 비즈니스용 OneDrive와 함께 사용
   
  ## <a name="where-is-my-core-customer-data-located"></a>내 코어 고객 데이터는 어디에 있나요?
 
-테 넌 트 관리자는 언제 든 지 관리자 센터에서 데이터 위치 카드를 확인 하 여 각 서비스의 rest 위치에서 핵심 고객 데이터를 확인할 수 있습니다 (특히 테 넌 트의 경우).또한 [ office 365 대화형 데이터 센터](https://office.com/datamaps) 의 office 365 customer 데이터 센터의 위치를 새 테 넌 트의 rest 위치에 있는 현재 기본 핵심 고객 데이터에 대 한 참조로 게시 합니다.  Microsoft 365 관리 센터에서 조직 프로필의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수 있습니다.  
+테 넌 트 관리자는 언제 든 지 관리자 센터에서 데이터 위치 카드를 확인 하 여 각 서비스의 rest 위치에서 핵심 고객 데이터를 확인할 수 있습니다 (특히 테 넌 트의 경우).또한 [office 365 대화형 데이터 센터](https://office.com/datamaps) 의 office 365 customer 데이터 센터의 위치를 새 테 넌 트의 rest 위치에 있는 현재 기본 핵심 고객 데이터에 대 한 참조로 게시 합니다.  Microsoft 365 관리 센터에서 조직 프로필의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수 있습니다.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>이동을 요청할 수 있는 시기는 언제 입니까?
   
@@ -72,7 +72,7 @@ Exchange Online, SharePoint Online 및 비즈니스용 OneDrive와 함께 사용
   
 ## <a name="how-can-i-request-to-be-moved"></a>이동 요청을 확인 하려면 어떻게 해야 합니까?
   
-적격 고객은 [Office 365 관리자 포털](https://portal.office.com/)에 페이지를 볼 수 있습니다. 이동을 요청 하는 방법에 대 한 지침은 [데이터 이동을 요청 하는 방법을](request-your-data-move.md) 참조 하세요. 
+적합 한 고객은 [Microsoft 365 관리 센터](https://admin.microsoft.com/)에 페이지를 볼 수 있습니다. 이동을 요청 하는 방법에 대 한 지침은 [데이터 이동을 요청 하는 방법을](request-your-data-move.md) 참조 하세요. 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>이동을 요청 하 고 나 서 선택을 변경할 수 있습니까?
   

@@ -21,34 +21,34 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Office 365와 동기화 하기 전에 온-프레미스 사용자와 연결 된 routale 도메인이 있는 경우 수행 해야 하는 작업에 대해 알아봅니다.
-ms.openlocfilehash: 056ff528e0ba03795fecb76543db021f9a89b87e
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: Microsoft 365와 동기화 하기 전에 온-프레미스 사용자와 연결 된 routale 도메인이 있는 경우 수행 해야 하는 작업에 대해 알아봅니다.
+ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208769"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736016"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>디렉터리 동기화를 위해 라우팅할 수 없는 도메인 준비
-온-프레미스 디렉터리를 Office 365와 동기화 하는 경우 Azure Active Directory (Azure AD)에서 확인 된 도메인이 있어야 합니다. 온-프레미스 도메인과 연결 된 UPN (사용자 계정 이름)만 동기화 됩니다. 하지만 예를 들어 라우팅할 수 없는 도메인을 포함 하는 UPN은 billa@contoso와 마찬가지로 billa@contoso.onmicrosoft.com와 같은 onmicrosoft.com 도메인에 동기화 됩니다. 
+온-프레미스 디렉터리를 Microsoft 365와 동기화 하는 경우 Azure Active Directory (Azure AD)에서 확인 된 도메인이 있어야 합니다. 온-프레미스 도메인과 연결 된 UPN (사용자 계정 이름)만 동기화 됩니다. 하지만 예를 들어 라우팅할 수 없는 도메인을 포함 하는 UPN은 billa@contoso와 마찬가지로 billa@contoso.onmicrosoft.com와 같은 onmicrosoft.com 도메인에 동기화 됩니다. 
 
-현재 AD DS (Active Directory 도메인 서비스)의 사용자 계정에 대해 로컬 도메인을 사용 하는 경우에는 Office 365 도메인과 올바르게 동기화 하기 위해 확인 된 도메인 (예 billa@contoso.com)을 사용 하도록 변경 하는 것이 좋습니다.
+현재 AD DS (Active Directory 도메인 서비스)의 사용자 계정에 대해 로컬 도메인을 사용 하는 경우에는 Microsoft 365 도메인과 적절 하 게 동기화 하기 위해 확인 된 도메인 (예 billa@contoso.com)을 사용 하도록 변경 하는 것이 좋습니다.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>로컬 온-프레미스 도메인만 있는 경우에는 어떻게 하나요?
 
 AD DS를 Azure AD와 동기화 하는 데 사용할 수 있는 가장 최근 도구를 Azure AD Connect 라고 합니다. 자세한 내용은 [AZURE AD와 온-프레미스 Id 통합](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)을 참조 하세요.
   
-Azure AD Connect 사용자가 온-프레미스에서 사용 하는 것과 동일한 자격 증명으로 로그인 할 수 있도록 사용자의 UPN과 암호를 동기화 합니다. 그러나 Azure AD Connect는 사용자를 Office 365에서 확인 된 도메인으로 동기화 합니다. 이는 Office 365 id가 Azure AD에서 관리 되므로 Azure AD에서 도메인을 확인 함을 의미 합니다. 즉, 도메인은 유효한 인터넷 도메인 (예: .com, org, .net, 미국 등) 이어야 합니다. 내부 AD DS가 라우팅할 수 없는 도메인 (예: .local)을 사용 하는 경우이는 Office 365에 있는 확인 된 도메인과 일치할 수도 없습니다. 온-프레미스 AD DS에서 주 도메인을 변경 하거나 하나 이상의 UPN 접미사를 추가 하 여이 문제를 해결할 수 있습니다.
+Azure AD Connect 사용자가 온-프레미스에서 사용 하는 것과 동일한 자격 증명으로 로그인 할 수 있도록 사용자의 UPN과 암호를 동기화 합니다. 그러나 Azure AD Connect는 Microsoft 365에서 확인 한 도메인에만 사용자를 동기화 합니다. 이는 Microsoft 365 id가 Azure AD에서 관리 되므로 Azure AD에서 도메인을 확인 하는 것을 의미 합니다. 즉, 도메인은 유효한 인터넷 도메인 (예: .com, org, .net, 미국 등) 이어야 합니다. 내부 AD DS가 라우팅할 수 없는 도메인 (예: .local)을 사용 하는 경우이는 Microsoft 365에 있는 확인 된 도메인과 일치할 수도 없습니다. 온-프레미스 AD DS에서 주 도메인을 변경 하거나 하나 이상의 UPN 접미사를 추가 하 여이 문제를 해결할 수 있습니다.
   
 ### <a name="change-your-primary-domain"></a>**주 도메인 변경**
 
-기본 도메인을 Office 365에서 확인 한 도메인 (예: contoso.com)으로 변경 합니다. 그런 다음 contoso.com으로 업데이트 되는 contoso 라는 도메인이 있는 모든 사용자입니다. 자세한 내용은 [도메인 이름 바꾸기 작동 방법을](https://go.microsoft.com/fwlink/p/?LinkId=624174)참조 하세요. 이는 매우 관련이 있는 프로세스 이며, 다음 섹션에서 보다 쉬운 솔루션을 설명 합니다.
+Microsoft 365에서 확인 한 도메인 (예: contoso.com)으로 주 도메인을 변경 합니다. 그런 다음 contoso.com으로 업데이트 되는 contoso 라는 도메인이 있는 모든 사용자입니다. 자세한 내용은 [도메인 이름 바꾸기 작동 방법을](https://go.microsoft.com/fwlink/p/?LinkId=624174)참조 하세요. 이는 매우 관련이 있는 프로세스 이며, 다음 섹션에서 보다 쉬운 솔루션을 설명 합니다.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN 접미사를 추가 하 고 사용자를 업데이트 합니다.**
 
-Office 365에서 확인 한 도메인과 일치 하도록 AD DS에서 새 UPN 접미사 또는 접미사를 등록 하 여 로컬 문제를 해결할 수 있습니다. 새 접미사를 등록 한 후에는 사용자 Upn을 새 도메인 이름 (예: billa@contoso.com으로 바꿉니다.
+Microsoft 365에서 확인 한 도메인 (또는 도메인)과 일치 하도록 AD DS에서 새 UPN 접미사 또는 접미사를 등록 하 여 로컬 문제를 해결할 수 있습니다. 새 접미사를 등록 한 후에는 사용자 Upn을 새 도메인 이름 (예: billa@contoso.com으로 바꿉니다.
   
-확인 된 도메인을 사용 하도록 Upn을 업데이트 한 후에는 온-프레미스 AD DS를 Office 365과 동기화 할 수 있습니다.
+확인 된 도메인을 사용 하도록 Upn을 업데이트 한 후에는 온-프레미스 AD DS를 Microsoft 365과 동기화 할 수 있습니다.
   
  **1 단계: 새 UPN 접미사 추가**
   

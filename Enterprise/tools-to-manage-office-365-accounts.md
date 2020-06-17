@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 사용자를 관리 하는 데 사용할 도구와 사용자 id를 관리 하는 방법에 따라 사용할 수 있는 작업에 대해 알아봅니다. '
-ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 46a17dc1e5e9337b9f1d8a03f5903acc96dad74b
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843949"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735664"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 계정 관리 도구
 
 구성에 따라 다양 한 방식으로 Office 365 사용자를 관리할 수 있습니다. [Microsoft 365 관리 센터](https://admin.microsoft.com), Windows PowerShell, 온-프레미스 디렉터리 또는 Azure Active directory 관리 포털에서 사용자를 관리할 수 있습니다.
 
-Office 365을 구입 하는 즉시 관리 센터 및 Windows PowerShell을 사용 하 여 계정을 관리할 수 있습니다. 조직의 모든 사용자가 클라우드 id를 관리할 때 Office 365에 대해 별도의 사용자 ID와 암호를 사용 합니다. 온-프레미스 인프라와 통합 하 고 사용자 계정이 Office 365와 동기화 되도록 하려면 Azure Active Directory Connect를 사용 하 여 id 동기화를 제공 하 고, 선택적으로 암호 동기화를 제공 하거나, 전체를 제공할 수 있습니다. single sign-on 기능
+Office 365을 구입 하는 즉시 관리 센터 및 Windows PowerShell을 사용 하 여 계정을 관리할 수 있습니다. 조직의 모든 사용자가 클라우드 id를 관리할 때 Office 365에 대해 별도의 사용자 ID와 암호를 사용 합니다. 온-프레미스 인프라와 통합 하 고 사용자 계정이 Office 365와 동기화 되어 있는 경우 Azure Active Directory Connect를 사용 하 여 id 동기화를 제공 하 고 필요에 따라 암호 동기화 또는 전체 single sign-on 기능을 제공할 수 있습니다.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>사용자 계정을 관리 하는 위치 및 방법 계획
 
@@ -72,4 +72,4 @@ Office 365을 구입 하는 즉시 관리 센터 및 Windows PowerShell을 사�
 관리 센터를 통해 모든 사용자를 추가 하 고 관리 하는 경우 Office 365 계정을 만드는 것과 동일한 시간에 위치를 지정 하 고 라이선스를 할당 합니다. 따라서 계획은 그다지 많지 않아도 됩니다.
 
 > [!IMPORTANT]
-> 라이선스 (예: SharePoint Online에)를 할당 하지 않고 Office 365에서 계정을 만드는 것은 계정 소유자가 Office 365 포털을 볼 수 있지만 회사 구독 내의 어떤 서비스에도 액세스 하지 못하는 것을 의미 합니다. 위치 및 라이선스를 할당 한 후에는 할당 한 서비스에 계정이 복제 됩니다. 사용자는 자신의 계정에 로그인 하 고 할당 한 서비스를 사용할 수 있습니다.
+> 라이선스 (예: SharePoint Online에)를 할당 하지 않고 Office 365에서 계정을 만드는 것은 계정 소유자가 Microsoft 365 관리 센터를 볼 수 있지만 회사 구독 내의 어떤 서비스에도 액세스 하지 못하는 것을 의미 합니다. 위치 및 라이선스를 할당 한 후에는 할당 한 서비스에 계정이 복제 됩니다. 사용자는 자신의 계정에 로그인 하 고 할당 한 서비스를 사용할 수 있습니다.

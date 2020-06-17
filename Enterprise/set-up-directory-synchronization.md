@@ -1,9 +1,9 @@
 ---
-title: Office 365에서 디렉터리 동기화 설정
+title: Microsoft 365에 대 한 디렉터리 동기화 설정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -21,23 +21,23 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
-description: Office 365와 온-프레미스 Active Directory 간에 디렉터리 동기화를 설정 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: d549d2b56ef1d642e5dfc16b747e6eb909dd7337
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft 365와 온-프레미스 Active Directory 간에 디렉터리 동기화를 설정 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 775ff04976c92d7e937ddc018e0e1dd617c8fca3
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844049"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735998"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Office 365에서 디렉터리 동기화 설정
+# <a name="set-up-directory-synchronization-for-microsoft-365"></a>Microsoft 365에 대 한 디렉터리 동기화 설정
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-Office 365에서는 azure Active Directory (Azure AD) 테 넌 트를 사용 하 여 인증 및 클라우드 기반 리소스에 액세스 하기 위한 사용 권한을 위한 id를 저장 하 고 관리 합니다. 
+Microsoft 365는 azure AD (Active Directory) 테 넌 트를 사용 하 여 인증 및 클라우드 기반 리소스에 액세스 하기 위한 사용 권한을 위한 id를 저장 하 고 관리 합니다. 
 
-온-프레미스 AD DS (Active Directory 도메인 서비스)를 사용 하는 경우 AD DS 사용자 계정, 그룹 및 연락처를 Office 365 구독의 Azure AD 테 넌 트와 동기화 할 수 있습니다. Office 365의 하이브리드 id입니다. 구성 요소는 다음과 같습니다.
+온-프레미스 AD DS (Active Directory 도메인 서비스)를 사용 하는 경우 AD DS 사용자 계정, 그룹 및 연락처를 Microsoft 365 구독의 Azure AD 테 넌 트와 동기화 할 수 있습니다. Microsoft 365의 하이브리드 id입니다. 구성 요소는 다음과 같습니다.
 
-![Office 365의 디렉터리 동기화 구성 요소](./media/about-office-365-identity/hybrid-identity.png)
+![Microsoft 365에 대 한 디렉터리 동기화 구성 요소](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect는 온-프레미스 서버에서 실행 되며 AD DS를 Azure AD 테 넌 트와 동기화 합니다. 또한 디렉터리 동기화와 함께 다음과 같은 인증 옵션을 지정할 수 있습니다.
 
@@ -57,12 +57,12 @@ Azure AD Connect는 온-프레미스 서버에서 실행 되며 AD DS를 Azure A
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Azure AD Connect에 대 한 필수 구성 요소 검토
 
-Office 365 구독을 사용 하 여 무료 Azure AD 구독을 받을 수 있습니다. 디렉터리 동기화를 설정할 때 온-프레미스 서버 중 하나에 Azure AD Connect를 설치 합니다.
+Microsoft 365 구독을 사용 하 여 무료 Azure AD 구독을 받게 됩니다. 디렉터리 동기화를 설정할 때 온-프레미스 서버 중 하나에 Azure AD Connect를 설치 합니다.
   
-Office 365의 경우 다음 작업을 수행 해야 합니다.
+Microsoft 365의 경우 다음을 수행 해야 합니다.
   
 - 온-프레미스 도메인을 확인 합니다. Azure AD Connect 마법사는이 과정을 안내 합니다.
-- Office 365 테 넌 트 및 AD DS의 관리자 계정에 대 한 사용자 이름 및 암호를 가져옵니다.
+- Microsoft 365 테 넌 트 및 AD DS의 관리자 계정에 대 한 사용자 이름 및 암호를 가져옵니다.
 
 Azure AD Connect를 설치 하는 온-프레미스 서버의 경우 다음이 필요 합니다.
   
@@ -80,14 +80,14 @@ Azure AD Connect에 대 한 하드웨어, 소프트웨어, 계정 및 사용 권
 
 시작 하기 전에 다음을 확인 해야 합니다.
 
-- Office 365 전역 관리자의 사용자 이름 및 암호
+- Microsoft 365 전역 관리자의 사용자 이름 및 암호
 - AD DS 도메인 관리자의 사용자 이름 및 암호
 - 어떤 인증 방법 (PHS, PTA, 페더레이션된)
 - [AZURE AD 원활한 sso (Single sign-on)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) 를 사용 하 고 있는지 여부
 
 다음 단계를 따릅니다:
 
-1. [Microsoft 365 관리 센터](https://admin.microsoft.com) 에 로그인https://admin.microsoft.com) 하 고 왼쪽 탐색 창에서 **사용자** \> **활성 사용자** 를 선택 합니다.
+1. [Microsoft 365 관리 센터](https://admin.microsoft.com) 에 로그인 https://admin.microsoft.com) 하 고 왼쪽 탐색 창에서 **사용자** \> **활성 사용자** 를 선택 합니다.
 2. **활성 사용자** 페이지에서 **더** (3 개의 점) \> **디렉터리 동기화**를 선택 합니다.
   
 3. **Azure Active Directory 준비** 페이지에서 **다운로드 센터로 이동을 선택 하 여 Azure AD Connect 도구** 링크를 시작 하도록 설정 합니다. 
@@ -95,7 +95,7 @@ Azure AD Connect에 대 한 하드웨어, 소프트웨어, 계정 및 사용 권
 
 ## <a name="3-finish-setting-up-domains"></a>3. 도메인 설정 마침
 
-DNS 레코드를 관리 하 여 도메인 설정을 완료 하려면 [Office 365에 대 한 dns 레코드 만들기](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 의 단계를 수행 합니다.
+DNS 레코드를 관리 하 여 도메인 설정을 완료 하려면 [Microsoft 365 용 dns 레코드 만들기](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 의 단계를 수행 합니다.
 
 ## <a name="next-step"></a>다음 단계
 

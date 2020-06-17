@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell에서 Office 365 그룹에 대 한 일반적인 관리 작업을 수행 하는 방법을 알아봅니다.
-ms.openlocfilehash: 5868c875645685b10197ab05fd233940b73b0e88
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711841"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736026"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell을 사용하여 Office 365 그룹 관리
  
@@ -148,7 +148,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-display-name-of-the-office-365-group"></a>Office 365 그룹의 표시 이름 변경
 
-표시 이름 Office 365 그룹의 이름을 지정 합니다. Exchange 관리 센터 또는 Office 365 관리자 포털에서이 이름을 볼 수 있습니다. Remove-unifiedgroup 명령을 실행 하 여 그룹의 표시 이름을 편집 하거나 표시 이름을 기존 Office 365 그룹에 할당할 수 있습니다.
+표시 이름 Office 365 그룹의 이름을 지정 합니다. Exchange 관리 센터 또는 Microsoft 365 관리 센터에서이 이름을 볼 수 있습니다. Remove-unifiedgroup 명령을 실행 하 여 그룹의 표시 이름을 편집 하거나 표시 이름을 기존 Office 365 그룹에 할당할 수 있습니다.
 
 ```
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

@@ -3,18 +3,18 @@ title: 엔터프라이즈 클라우드 솔루션 설명서
 summary: Microsoft 클라우드를 사용 하 여 비즈니스 문제를 해결 합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 채택 등에 대 한 정보를 찾아보세요.
 metadata:
   title: 엔터프라이즈 클라우드 솔루션 설명서 | Microsoft Docs
-  description: Microsoft 클라우드를 사용하여 비즈니스 문제를 해결합니다. 최신 하이브리드 및 보안 클라우드 솔루션, 클라우드 도입 등에 대한 정보를 알아보세요.
+  description: Solve business problems by using the Microsoft Cloud. Find information on the latest hybrid and security cloud solutions, cloud adoption, and more.
   ms.service: o365-solutions
   ms.topic: landing-page
   author: chenhao2020
   ms.author: v-chenha
   ms.date: 03/18/2020
-  ms.openlocfilehash: c5743dc8df8ba5487faf1e44609d766dcb49bac4
-  ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+  ms.openlocfilehash: cb258d8a5cd695f4c1c90863cb8969d9be00801e
+  ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
   ms.translationtype: MT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 04/23/2020
-  ms.locfileid: "43794060"
+  ms.lasthandoff: 06/15/2020
+  ms.locfileid: "44735926"
 landingContent:
 - title: 엔터프라이즈 클라우드 솔루션
   linkLists:
@@ -28,5 +28,3 @@ landingContent:
       url: /office365/enterprise/cloud-adoption-test-lab-guides-tlgs
     - text: 하이브리드 솔루션
       url: /office365/enterprise/hybrid-solutions
-    - text: 보안 솔루션
-      url: /office365/enterprise/security-solutions
