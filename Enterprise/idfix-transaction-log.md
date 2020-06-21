@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: 예제를 제공 하 고 Microsoft 365 IdFix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
-ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 199d765d640a30fa163f74e6b6029b228b41a63d
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711558"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774513"
 ---
 # <a name="microsoft-365-idfix-transaction-log"></a>Microsoft 365 IdFix 트랜잭션 로그
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 예제를 제공 하 고 Microsoft 365 IdFix 트랜잭션 로그의 명명 규칙 및 기본 로그 수준에 대해 설명 합니다.
   

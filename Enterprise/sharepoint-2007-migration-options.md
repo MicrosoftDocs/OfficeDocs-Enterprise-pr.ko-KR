@@ -25,16 +25,16 @@ ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
 description: SharePoint Server 2007는 지원 종료에 도달 했으며 업그레이드 하는 데 걸리는 시간입니다. 이 문서를 사용 하 여 계획을 만드는 데 도움을 받을 수 있습니다.
-ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841155"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774993"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>고려할 SharePoint 2007 마이그레이션 옵션
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 Microsoft SharePoint 2007 및 SharePoint Server 2007가 지원 종료에 도달 했습니다. 업그레이드 하는 데 걸리는 시간입니다. 이 문서에서는 마이그레이션 옵션에 대 한 정보를 제공 합니다.
   
@@ -54,9 +54,9 @@ SharePoint Server 환경을 업그레이드 하는 방법에는 여러 가지가
     
 - 사이트 모음 또는 라이브러리 간 데이터 수동 이동
     
-- FastTrack Wizard를 Office 365으로 업그레이드 ([SharePoint Online 배포 관리자](https://aka.ms/spoguidance))
+- FastTrack 마법사에서 Microsoft 365로 업그레이드 ([SharePoint Online 배포 관리자](https://aka.ms/spoguidance))
     
-- Office 365의 마이그레이션 API-SharePoint Online (SPO)
+- Microsoft 365의 마이그레이션 API-SharePoint Online (SPO)
     
 가장 적합 한 것은 무엇 인가요?
   
@@ -67,7 +67,7 @@ SharePoint Server 환경을 업그레이드 하는 방법에는 여러 가지가
   
 업그레이드 하려는 SharePoint 버전에 대 한 [제품 수명 주기](https://support.microsoft.com/lifecycle/search) 및 시스템 요구 사항을 확인 해야 합니다. 이는 다음 업그레이드가 필요한 경우 (예: SharePoint Server 2010와 같은 레거시 제품을 일시 중지 하 여 더 많은 업그레이드를 계획 하는 경우 지원 날짜 종료 확인), 요금제를 지 원하는 하드웨어를 확보 해야 하는 경우를 고려해 야 합니다. 
   
-SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로 전환할 계획 이라면 [office 365에 대 한 서비스 설명](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)링크를 책갈피로 설정할 수 있습니다. SharePoint Online 기능 및이 기능이 온-프레미스 SharePoint Server와 다를 수 있는 방식에 대해 자세히 알아보려면 서비스 설명이 필요 합니다. 업그레이드 기능 Microsoft Office SharePoint Server 2007 팜 설치에 손상 된 사이트가 있으면 업그레이드 전에 해당 사이트를 수정 합니다.
+클라우드를 통해 SharePoint 사이트의 일부 또는 전체를 Microsoft 365로 전환할 계획 이라면 [microsoft 365 및 Office 365 서비스 설명](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)에 대 한 링크를 책갈피로 설정할 수 있습니다. SharePoint Online 기능 및이 기능이 온-프레미스 SharePoint Server와 다를 수 있는 방식에 대해 자세히 알아보려면 서비스 설명이 필요 합니다. 업그레이드 기능 Microsoft Office SharePoint Server 2007 팜 설치에 손상 된 사이트가 있으면 업그레이드 전에 해당 사이트를 수정 합니다.
   
 ## <a name="a-note-about-managing-risk"></a>위험 관리에 대 한 참고 사항
 
@@ -75,18 +75,18 @@ SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로
   
 1. 데이터베이스 연결을 사용 하 여 Microsoft Office SharePoint Server 2007 데이터베이스를 따로 백업 하 여 업그레이드를 수행할 수 있는 위치입니다.
     
-2. Microsoft Office SharePoint Server 2007 팜에서 소수의 중요 문서 라이브러리 및 기타 정보를 사용 하는 경우에는 Microsoft Office SharePoint Server 2007에서 SharePoint Server 2010으로 데이터를 수동으로 이동 하도록 선택할 수 있습니다. 하거나 다음 버전을 사용 하 여 작업을 보다 쉽게 수행할 수 있습니다.
+2. Microsoft Office SharePoint Server 2007 팜에서 소수의 중요 문서 라이브러리 및 기타 정보를 사용 하는 경우에는 Microsoft Office SharePoint Server 2007에서 SharePoint Server 2010으로 데이터를 수동으로 이동 하거나 다음 버전 (작업을 보다 쉽게 만들 수 있음)로 특정 사이트 및 웹만 사용할 수 있습니다.
     
 3. Microsoft Office SharePoint Server 2007 서버 팜에서 직접 수행 하는 작업은 업그레이드할 때 팜에 포함 되는 데이터를 보다 안전 하 게 사용할 수 있습니다.
     
 현재 위치 업그레이드와 같은 방법은 Microsoft Office SharePoint Server 2007 팜에서 직접 작업 하므로 경로를 중단 하 고 초기 환경으로 다시 시작할 수 있는 쉬운 옵션을 제공 하지 않을 수 있습니다. 가능한 한 많은 보안 조치 (원본 환경에 대 한 백업 가져오기 및 테스트)를 구축 합니다. 예를 들어 Microsoft Office SharePoint Server 2007 팜이 가상이 고 백업 및 복원을 위해 복제 된 경우에는 업그레이드를 위해 서비스 창 앞에 있는 최신 데이터베이스를 백업 하 고 복원 합니다. 데이터베이스 백업을 복원 하는 옵션이 있다는 것은 안전 하 게 복구를 제공 하는 것이 아니라 안심 하 고 사용할 수 있다는 것입니다.
   
 > [!TIP]
-> 모범 사례 업그레이드에 대 한 문서는 [Microsoft Office Sharepoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [Sharepoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)및 [sharepoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)에 대 한 정보입니다. 업그레이드 또는 Office 365 마이그레이션 경험이 있는 [Microsoft 파트너](https://partnercenter.microsoft.com/pcv/search) 를 검색할 수도 있습니다. 
+> 모범 사례 업그레이드에 대 한 문서는 [Microsoft Office Sharepoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [Sharepoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)및 [sharepoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)에 대 한 정보입니다. 업그레이드 또는 Microsoft 365 마이그레이션 경험이 있는 [Microsoft 파트너](https://partnercenter.microsoft.com/pcv/search) 를 검색할 수도 있습니다. 
   
 ## <a name="make-your-plan"></a>계획 만들기
 
-업그레이드 해야 하는 경우 계획이 필요 하며,이 경우에는 한 가지 크기에 모두 적합 하지는 않습니다. 계획은 ' SharePoint Online을 사용 하 여 Office 365 구독 만들기, 도메인 등록 및 사용자가 파일을 저장 하도록 리디렉션 '으로 간단할 수 있습니다. 이는 그렇지 않을 수 있습니다. 이 의사 결정은 사용자에 게 필요한 작업을 수행 하는 데 도움이 됩니다.
+업그레이드 해야 하는 경우 계획이 필요 하며,이 경우에는 한 가지 크기에 모두 적합 하지는 않습니다. 계획은 ' SharePoint Online을 사용 하 여 Microsoft 365 구독을 만들고, 도메인을 등록 하 고, 사용자를 리디렉션하여 파일을 저장 하도록 리디렉션 '으로 간단할 수 있습니다. 이는 그렇지 않을 수 있습니다. 이 의사 결정은 사용자에 게 필요한 작업을 수행 하는 데 도움이 됩니다.
   
 > [!NOTE]
 > 주기가 종료 된 소프트웨어에서 실행 하는 것은 위험 합니다. 문제가 발견 되는 경우 지원 되지 않는 제품은 더 이상 패치 되지 않습니다. 또한 새 보안 위협이 발생 하는 경우에는 수명 주기 제품이 더 이상 지원 되지 않으므로 보안 패치나 수정 된 사항은 없습니다. 해당 상황을 방지 하세요. 
@@ -109,15 +109,15 @@ SharePoint 사이트의 일부 또는 전체를 클라우드에서 Office 365로
     
 - 사용자 지정 기능
     
-SharePoint 팜에서 비즈니스에 필요한 작업을 실행 하는 경우 클라이언트 서비스 요구 사항에 대 한 중요 한 데이터의 큰 카탈로그 처럼 작동 한다고 말하면 ' 중요 한 앱 ' 옆에 틱을 배치 하 고 ' 가용성 '도 사용할 수 있습니다. 한 동안 SharePoint를 사용할 수 없는 경우 영향을 받습니다. 마찬가지로 팜이 제공 하는 중요 서비스가 사용자 지정 코드, 사이트 정의 또는 함께 작동 하는 여러 사용자 지정을 기반으로 하기 때문에 ' 사용자 지정 '을 확인할 수 있습니다.
+SharePoint 팜에서 비즈니스에 필요한 작업을 실행 하는 경우 클라이언트 서비스 요구 사항에 대 한 중요 한 데이터의 큰 카탈로그 처럼 작동 한다고 말하면 ' 중요 한 앱 ' 옆에 틱을 배치 하 고 ' 가용성 '도 사용할 수 있습니다. 마찬가지로 팜이 제공 하는 중요 서비스가 사용자 지정 코드, 사이트 정의 또는 함께 작동 하는 여러 사용자 지정을 기반으로 하기 때문에 ' 사용자 지정 '을 확인할 수 있습니다.
   
-소프트웨어에 대 한 기본 제공 기능을 사용 하지 않고 SharePoint에서 이러한 요구 사항을 충족 하 고 일반적으로이를 업데이트 하 고 일반적인 관리 및 유지 관리를 수행 하는 경우에는 ' 기본 제공 SharePoint '를 선택 했을 수 있습니다. 이전 버전의 SharePoint에서 앉아 있는 이유입니다. 즉, Microsoft Office SharePoint Server 2007의 지원 종료에서 현재까지 필요한 작업을 수행 했으며 지금까지 업그레이드할 필요가 없습니다.
+소프트웨어에 대 한 기본 제공 기능을 사용 하지 않고 SharePoint에서 이러한 요구 사항을 충족 하 고 일반적으로이를 업데이트 하 고 일반적인 관리 및 유지 관리를 수행 하는 경우에는 ' 기본 제공 SharePoint '를 선택 했을 수 있습니다. 즉, Microsoft Office SharePoint Server 2007의 지원 종료에서 현재까지 필요한 작업을 수행 했으며 지금까지 업그레이드할 필요가 없습니다.
   
 이러한 항목을 글머리 기호로 표시 하면 업그레이드 조건을 만들 수 있습니다. 즉, 모든 업그레이드에서이 모음을 충족 해야 합니다. 이렇게 하면 현재 요구 사항에 적합 하지 않은 방법을 규칙 할 수 있습니다.
   
 ### <a name="a-simple-sample-plan"></a>간단한 예제 계획
 
-SharePoint 업그레이드에 소요 되는 경로에 대 한 리더십 및 기타 관리자와의 합의도 더 많이 받아야 할 수 있습니다. SharePoint Server 관리자는 Microsoft SQL Server admins, 네트워킹 및 보안 팀과 공동 작업을 수행 하는 경우가 많습니다. 이해 관계자가 많은 경우에는 업그레이드 및 마이그레이션 계획에 대 한 계약을 작성 하거나 조정 해야 할 수 있습니다. 예를 들어 회사의 일부 Office 365에서 SharePoint Online을 사용 하도록 데이터를 마이그레이션하는 경우 네트워크 내부에 성능 조정 이나 테스트를 수행 해야 할 수 있습니다. 영향을 받는 팀에 게 미리 알려야 합니다.
+SharePoint 업그레이드에 소요 되는 경로에 대 한 리더십 및 기타 관리자와의 합의도 더 많이 받아야 할 수 있습니다. SharePoint Server 관리자는 Microsoft SQL Server admins, 네트워킹 및 보안 팀과 공동 작업을 수행 하는 경우가 많습니다. 이해 관계자가 많은 경우에는 업그레이드 및 마이그레이션 계획에 대 한 계약을 작성 하거나 조정 해야 할 수 있습니다. 예를 들어 회사의 일부에서 Microsoft 365의 SharePoint Online을 사용 하도록 데이터를 마이그레이션하는 경우 네트워크 내부에 성능 조정 또는 테스트를 수행 해야 할 수 있습니다. 영향을 받는 팀에 게 미리 알려야 합니다.
   
 간단한 예제에서는 SharePoint 관리자의 제안서를 표시 한 다음 모든 관련자 들이 동의한 계획을 나열 합니다. 이해를 돕기 위해 계약과 결정 사항을 문서화 합니다.
   
@@ -146,8 +146,8 @@ SharePoint 업그레이드에 소요 되는 경로에 대 한 리더십 및 기�
 |**예** <br/> |**아니요** <br/> |
 |데이터베이스 연결을 사용 하 여 데이터베이스 업그레이드  <br/> |전체 업그레이드  <br/> |
 |팜 및 side-by-side로 업그레이드  <br/> |하이브리드 업그레이드  <br/> |
-|Office 365에서 SPO로의 마이그레이션 API (개인 사이트 데이터에 대 한)  <br/> |SharePoint 하이브리드 (아직 필요 하지 않음)  <br/> |
-|일부 수동 데이터는 중요 한 데이터에 대 한 SharePoint Online으로 마이그레이션  <br/> |FastTrack 마법사에서 Office 365로 업그레이드  <br/> |
+|Microsoft 365에서 SPO로의 마이그레이션 API (개인 사이트 데이터에 대 한)  <br/> |SharePoint 하이브리드 (아직 필요 하지 않음)  <br/> |
+|일부 수동 데이터는 중요 한 데이터에 대 한 SharePoint Online으로 마이그레이션  <br/> |FastTrack 마법사에서 Microsoft 365로 업그레이드  <br/> |
    
  **제안 된 계획:**
   
@@ -157,7 +157,7 @@ SharePoint 업그레이드에 소요 되는 경로에 대 한 리더십 및 기�
     
 - 여기에서 SharePoint Online으로 업그레이드 하려는 경우 [Fasttrack 지원을](https://fasttrack.microsoft.com) 고려 합니다. 
     
-- 사이트 모음을 Office 365 구독으로 오프 로드할 수 있는지 확인 합니다. (Office 365은 다양 한 [준수 표준을](https://technet.microsoft.com/library/office-365-compliance.aspx)충족 합니다. Office 365는 [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) 를 포함 하며 준수 센터를 통해 [유지](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) 될 수 있습니다. 
+- 사이트 모음을 Microsoft 365 구독으로 오프 로드할 수 있는지 확인 합니다. (Microsoft 365는 다양 한 [준수 표준을](https://technet.microsoft.com/library/office-365-compliance.aspx)충족 합니다. Microsoft 365는 [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) 를 포함 하며 준수 센터를 통해 [유지](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) 될 수 있습니다. 
     
 그렇지 않으면 SharePoint Server 2016로의 side-by-side 업그레이드를 계속 수행 합니다.
   

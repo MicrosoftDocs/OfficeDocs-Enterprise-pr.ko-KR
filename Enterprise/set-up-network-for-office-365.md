@@ -1,5 +1,5 @@
 ---
-title: Office 365의 네트워크 설정
+title: Microsoft 365에 대 한 네트워크 설정
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,45 +18,45 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
-description: '요약: Office 365의 네트워킹을 이해하려면 다음 문서를 참조하세요.'
-ms.openlocfilehash: c1976a6b1ae5bff0b5f6f909ee9ab8495f371653
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: '요약: Microsoft 365에 대 한 네트워킹을 이해 하려면 다음 문서를 참조 하세요.'
+ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844029"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735663"
 ---
-# <a name="set-up-your-network-for-office-365"></a>Office 365의 네트워크 설정
+# <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365에 대 한 네트워크 설정
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-Office 365 온보딩에서 중요한 부분은 네트워크와 인터넷 연결의 액세스가 최적으로 설정되어 있는지를 확인하는 것입니다. 전역으로 배포된 SaaS(Software-as-a-Service) 클라우드에 액세스하도록 온-프레미스 네트워크를 구성하는 것은 온-프레미스 데이터 센터와 중앙 인터넷 커넥션으로의 트래픽에 최적화된 기존 네트워크의 경우와는 다릅니다. 
+An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
 
 이 문서를 사용하여 주요 차이점을 이해하고 에지 장치, 클라이언트 컴퓨터, 온-프레미스 네트워크를 수정하여 온-프레미스 사용자를 위한 최적의 성능을 구현하세요.
 
-## <a name="how-office-365-networking-works"></a>Office 365 네트워킹 작동 방식
+## <a name="how-microsoft-365-networking-works"></a>Microsoft 365 네트워킹 작동 방식
 
-Office 365의 연결 개요는 다음 문서를 참조하세요.
+Microsoft 365 연결에 대 한 개요는 다음 문서를 참조 하세요.
 
-- [Office 365 네트워킹 연결 개요](office-365-networking-overview.md)
-- [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
-- [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
+- [Microsoft 365 네트워킹 연결 개요](office-365-networking-overview.md)
+- [Microsoft 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
+- [Microsoft 365 네트워크 연결 평가](assessing-network-connectivity.md)
 
-성능 향상에 대한 조언은 [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)을 참조하세요.
+성능 향상에 대 한 도움말을 보려면 [네트워크 계획 및 성능 조정의 Microsoft 365](network-planning-and-performance.md)을 참조 하세요.
 
-## <a name="support-office-365-networking-as-a-network-equipment-vendor"></a>네트워크 장비 공급업체로서 Office 365 네트워킹 지원
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>네트워크 장비 공급 업체로 Microsoft 365 네트워킹 지원
 
-네트워크 장비 공급업체의 경우 [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)에 참가하세요. 프로그램에 등록하여 제품 및 솔루션에 Office 365 네트워크 연결 원칙을 구축하세요. 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## <a name="office-365-endpoints"></a>Office 365 엔드포인트
 
 엔드포인트는 인터넷에서 Office 365 트래픽을 위한 대상 IP 주소, DNS 도메인 이름, URL의 집합입니다. 
 
-Office 365 클라우드 기반 서비스에 대한 성능을 최적화하려면 클라이언트 브라우저와 에지 네트워크의 장치가 일부 엔드포인트를 특별하게 처리해야 합니다. 이러한 장치로는 방화벽, SSL Break and Inspect 및 패킷 검사 장치, 데이터 손실 방지 시스템 등이 있습니다.
+To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
 
 자세한 내용은 [Office 365 엔드포인트 관리](managing-office-365-endpoints.md)를 참조하세요.
 
-현재 5개의 서로 다른 Office 365 클라우드가 있습니다. 이 표는 각 클라우드의 엔드포인트 목록으로 안내합니다.
+There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
 
 |||
 |:-------|:-----|
@@ -75,15 +75,15 @@ Office 365 클라우드의 최신 엔드포인트 목록을 자동으로 가져�
 - [Mac용 Office 2016의 네트워크 요청](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-office-365-networking"></a>Office 365 네트워킹의 추가 항목
+## <a name="additional-topics-for-microsoft-365-networking"></a>Microsoft 365 네트워킹에 대 한 추가 항목
 
-Office 365 네트워킹의 특수한 항목은 다음 문서를 참조하세요.
+Microsoft 365 네트워킹의 특수 한 항목은 다음 문서를 참조 하세요.
 
 - [콘텐츠 배달 네트워크](content-delivery-networks.md)
 - [Office 365 서비스의 IPv6 지원](ipv6-support.md)
 - [NAT 지원(Office 365)](nat-support-with-office-365.md)
 
-## <a name="expressroute-for-office-365"></a>Office 365용 ExpressRoute
+## <a name="expressroute-for-microsoft-365"></a>Microsoft 365용 ExpressRoute
 
 Office 365 트래픽의 ExpressRoute 사용에 대한 자세한 내용은 다음 문서를 참조하세요.
 

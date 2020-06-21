@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Mac 용 Office 응용 프로그램은 macOS 플랫폼에서 기본 앱 환경을 제공 합니다. 각 앱은 네트워크 액세스를 사용할 수 없는 경우의 상태를 비롯 하 여 다양 한 시나리오에서 작동 하도록 설계 되었습니다. 컴퓨터가 네트워크에 연결 되 면 응용 프로그램은 일련의 웹 기반 서비스에 자동으로 연결 하 여 향상 된 기능을 제공 합니다. 이 백서에서는 응용 프로그램에서 연결을 시도 하는 끝점과 Url 및 제공 되는 서비스에 대해 설명 합니다. 이 정보는 네트워크 구성 문제를 해결 하 고 네트워크 프록시 서버에 대 한 정책을 설정할 때 유용 합니다. 이 문서의 세부 정보는 Office 365 URL 및 주소 범위 문서를 보완 하기 위해 작성 되었습니다.
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844549"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774953"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Mac용 Office의 네트워크 요청
 
@@ -52,7 +52,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
 |**URL**|**유형**|**설명**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Office 365 설치 포털은 최신 설치 패키지에 연결 서비스를 전달 합니다.  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Microsoft 365 설치 포털에서 최신 설치 패키지에 연결 서비스를 전달 합니다.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |대비  <br/> |콘텐츠 배달 네트워크의 설치 패키지 위치입니다.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |대비  <br/> |콘텐츠 배달 네트워크의 설치 패키지 위치입니다.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |ST  <br/> |Microsoft 자동 업데이트의 관리 제어 끝점  <br/> |
@@ -86,7 +86,7 @@ URL 형식은 다음과 같이 정의 됩니다.
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |ST  <br/> |앱 내 지원 서비스  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ST  <br/> |전자 메일 계정 검색 서비스입니다.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ST  <br/> |Outlook 자동 검색  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ST  <br/> |Office 365 서비스의 Outlook 끝점입니다.  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ST  <br/> |Microsoft 365 용 Outlook 끝점 서비스입니다.  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |ST  <br/> |Outlook 추가 기능 아이콘  <br/> |
    
 > [!NOTE]
@@ -94,7 +94,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
  **로그인**
   
-클라우드 기반 저장소에 로그인 할 때 다음 네트워크 끝점에 연결 됩니다. 계정 유형에 따라 각 서비스에 연결할 수 있습니다. 예시는 다음과 같습니다:
+클라우드 기반 저장소에 로그인 할 때 다음 네트워크 끝점에 연결 됩니다. 계정 유형에 따라 각 서비스에 연결할 수 있습니다. 예시:
   
 - **MSA: Microsoft 계정** -일반적으로 소비자 및 정품 시나리오에 사용 됩니다. 
     
@@ -103,10 +103,10 @@ URL 형식은 다음과 같이 정의 됩니다.
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Windows 권한 부여 서비스  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office 365 Login Service (OrgID)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 365 Login Service (OrgID)  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 계정 로그인 서비스 (MSA)  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |진단  <br/> |Microsoft 계정에 MSA (로그인 서비스 도우미)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |대비  <br/> |Office 365 로그인 브랜딩 (OrgID)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |대비  <br/> |Microsoft 365 로그인 브랜딩 (OrgID)  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |진단  <br/> |문서 및 위치 저장소 로케이터  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |진단  <br/> |MRU (최근에 사용한) 문서 서비스  <br/> |
    
@@ -115,7 +115,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
  **정품 인증**
   
-다음 네트워크 끝점은 Office 365 구독 및 정품 라이선스 정품 인증에 적용 됩니다. 특히 볼륨 라이선스 설치에는 적용 되지 않습니다.
+다음 네트워크 끝점은 Microsoft 365 구독 및 정품 라이선스 정품 인증에 적용 됩니다. 특히 볼륨 라이선스 설치에는 적용 되지 않습니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -123,15 +123,15 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **새로운 기능 콘텐츠**
   
-다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독에만 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |대비  <br/> |새로운 JSON 페이지 콘텐츠  <br/> |
    
- **리서치 도구**
+ **Researcher**
   
-다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독에만 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -141,7 +141,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **스마트 조회**
   
-다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -153,7 +153,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **PowerPoint Designer**
   
-다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독에만 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -161,7 +161,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **PowerPoint 빠른 시작**
   
-다음 네트워크 끝점은 Office 365 구독에만 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독에만 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **웃는 얼굴 보내기/Frown**
   
-다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **지원 서비스에 문의**
   
-다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **PDF로 저장**
   
-다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독 및 정품/볼륨 라이선스 정품 인증 둘 다에 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ URL 형식은 다음과 같이 정의 됩니다.
    
  **Office 앱 (즉, 추가 기능)**
   
-Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝점이 Office 365 구독 및 정품/볼륨 라이선스 정품 인증에 모두 적용 됩니다.
+Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝점이 Microsoft 365 구독 및 정품/볼륨 라이선스 정품 인증에 모두 적용 됩니다.
   
 |**URL**|**앱**|**유형**|**설명**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝�
    
  **안전한 링크**
   
-다음 네트워크 끝점은 Office 365 구독 전용의 모든 Office 응용 프로그램에 적용 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독에 대 한 모든 Office 응용 프로그램에만 적용 됩니다.
   
 |**URL**|**유형**|**설명**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ Office 앱 추가 기능을 신뢰할 수 있는 경우 다음 네트워크 끝�
    
  **크래시 보고**
   
-다음 네트워크 끝점은 Office 365 구독 및 정품/볼륨 라이선스 정품 인증 모두에 대해 모든 Office 응용 프로그램에 적용 됩니다. 프로세스가 예기치 않게 중단 되 면 보고서가 생성 되어 Watson 서비스로 전송 됩니다.
+다음 네트워크 끝점은 Microsoft 365 구독 및 정품/볼륨 라이선스 정품 인증의 모든 Office 응용 프로그램에 적용 됩니다. 프로세스가 예기치 않게 중단 되 면 보고서가 생성 되어 Watson 서비스로 전송 됩니다.
   
 |**URL**|**유형**|**설명**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ Mac 용 Office는 정기적으로 Microsoft에 원격 분석 정보를 보냅니
     
 - **사용 용도** 앱을 사용 하는 방법과 치명적이 지 않은 오류에 대 한 정보가 포함 됩니다. 이 데이터는 60 분 마다 전송 됩니다. 
     
-Microsoft는 개인 정보를 매우 진지 하 게 사용 합니다. Microsoft의 데이터 수집 정책에 대 한 자세한 내용은 [https://privacy.microsoft.com](https://privacy.microsoft.com)를 참조 하세요. 응용 프로그램에서 ' Usage ' 원격 분석을 보내지 못하도록 하기 위해 **SendAllTelemetryEnabled** 기본 설정이 조정 될 수 있습니다. 기본 설정은 응용 프로그램별 이며 macOS 구성 프로필을 통해 설정 하거나 터미널에서 수동으로 설정할 수 있습니다. 
+Microsoft는 개인 정보를 매우 진지 하 게 사용 합니다. Microsoft의 데이터 수집 정책에 대 한 자세한 내용은를 참조 [https://privacy.microsoft.com](https://privacy.microsoft.com) 하세요. 응용 프로그램에서 ' Usage ' 원격 분석을 보내지 못하도록 하기 위해 **SendAllTelemetryEnabled** 기본 설정이 조정 될 수 있습니다. 기본 설정은 응용 프로그램별 이며 macOS 구성 프로필을 통해 설정 하거나 터미널에서 수동으로 설정할 수 있습니다. 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -309,7 +309,7 @@ Microsoft는 개인 정보를 매우 진지 하 게 사용 합니다. Microsoft�
 > [!NOTE]
 > **SendAllTelemetryEnabled** 가 **FALSE**로 설정 된 경우 해당 프로세스에 대 한 모든 충돌 보고가 사용 하지 않도록 설정 됩니다. 사용 현황 원격 분석을 보내지 않고 충돌 보고를 사용 하도록 설정 하려면 다음 기본 설정을 지정 하면 됩니다.```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
-### <a name="updates"></a>업데이트 
+### <a name="updates"></a>업데이트
   
 Microsoft는 정기적으로 Office for Mac 업데이트를 릴리스 합니다 (보통 한 달에 한 번). 사용자와 IT 관리자가 최신 보안 픽스를 설치할 수 있도록 컴퓨터를 최신 상태로 유지 하는 것이 적극 권장 합니다. IT 관리자가 컴퓨터 업데이트를 면밀 하 게 제어 하 고 관리 하려는 경우 다음 기본 설정을 지정 하 여 자동 업데이트 프로세스에서 제품 업데이트를 자동적으로 감지 하 고 제공 하지 못하도록 할 수 있습니다.
   

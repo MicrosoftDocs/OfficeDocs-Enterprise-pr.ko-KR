@@ -3,7 +3,7 @@ title: 데이터 이동 일반 FAQ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: 다음은 핵심 데이터를 새 데이터 센터 지역으로 이동 하는 방법에 대 한 일반적인 질문에 대 한 대답입니다.
-ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735846"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781043"
 ---
 # <a name="data-move-general-faq"></a>데이터 이동 일반 FAQ
 
@@ -52,7 +52,7 @@ Exchange Online, SharePoint Online 및 비즈니스용 OneDrive와 함께 사용
 - 개인 메시지 및 채널 메시지를 포함 한 팀 대화방 메시지 
 - 채팅에 사용 되는 팀 이미지 
 
-팀 파일은 SharePoint Online 및 팀 채팅 파일에 저장 되며 비즈니스용 OneDrive에 저장 됩니다.  음성 메일, 일정, 채팅 기록 및 연락처는 Exchange Online에 저장 됩니다.  대부분의 경우 Exchange Online, SharePoint Online 및 비즈니스용 OneDrive는 이미 로컬 데이터 센터 지역에 있는 고객에 의해 사용 되 고 있으며 적격 고객 국가에 대 한 Office 365 마이그레이션 프로그램의 일부일 뿐입니다.
+팀 파일은 SharePoint Online 및 팀 채팅 파일에 저장 되며 비즈니스용 OneDrive에 저장 됩니다.  음성 메일, 일정, 채팅 기록 및 연락처는 Exchange Online에 저장 됩니다.  대부분의 경우 Exchange Online, SharePoint Online 및 비즈니스용 OneDrive는 고객이 로컬 데이터 센터 지역에 있는 고객에 게 이미 사용 되 고 있으며 적합 한 고객 국가에 대 한 Microsoft 365 마이그레이션 프로그램의 일부 이기도 합니다.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>서로 다른 온-os에 다른 서비스가 있는 경우의 영향은 무엇입니까?
 
@@ -80,11 +80,11 @@ Exchange Online, SharePoint Online 및 비즈니스용 OneDrive와 함께 사용
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>마감 시간 전에 이사를 요청 하지 않은 경우 어떻게 되나요?
   
-예외 기준에 대 한 요청을 수락 하 여 테 넌 트에 이동을 완료 하기 위해 커밋된 마감 기한을 부여할 수 있습니다.   [Office 365 지원](https://go.microsoft.com/fwlink/p/?LinkID=522459) 서비스에 문의 하 여 요청을 받으십시오.
+예외 기준에 대 한 요청을 수락 하 여 테 넌 트에 이동을 완료 하기 위해 커밋된 마감 기한을 부여할 수 있습니다.   [Microsoft 365 지원](https://go.microsoft.com/fwlink/p/?LinkID=522459) 서비스에 문의 하 여 요청을 받으십시오.
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>네트워크 성능을 개선 하기 위해 데이터를 이동 하려는 경우에는 어떻게 하나요?
   
-Microsoft 365 데이터 센터에 물리적으로 근접 한 것은 더 나은 네트워킹 성능을 보장 하지 않습니다. 최종 사용자와 Microsoft 365 서비스 간의 네트워크 성능에 영향을 주는 요인 및 구성 요소에는 여러 가지가 있습니다. 이 및 성능 조정에 대 한 자세한 내용은 [Office 365의 네트워크 계획 및 성능 조정을](network-planning-and-performance.md)참조 하세요.
+Microsoft 365 데이터 센터에 물리적으로 근접 한 것은 더 나은 네트워킹 성능을 보장 하지 않습니다. 최종 사용자와 Microsoft 365 서비스 간의 네트워크 성능에 영향을 주는 요인 및 구성 요소에는 여러 가지가 있습니다. 이 및 성능 조정에 대 한 자세한 내용은 [Microsoft 365의 네트워크 계획 및 성능 조정을](network-planning-and-performance.md)참조 하세요.
   
  ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a>모든 서비스가 같은 날에 데이터를 이동 합니까?
  
@@ -104,11 +104,11 @@ Microsoft는 이동의 구체적 날짜나 기간을 알려드릴 수 없습니�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>이동이 완료 되었는지 어떻게 알 수 있나요?
   
-각 서비스 데이터의 이동이 완료 되었는지 확인 하는 Office 365 메시지 센터를 시청 합니다. 각 서비스의 데이터를 이동 하면 완료 알림을 게시 하 여 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 세 가지 완료 알림을 받게 됩니다.  Microsoft 365 관리 센터에서 조직 프로필 아래의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수도 있습니다.  
+각 서비스 데이터의 이동이 완료 되었는지 확인 하려면 Microsoft 365 메시지 센터를 시청 하세요. 각 서비스의 데이터를 이동 하면 완료 알림을 게시 하 여 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 세 가지 완료 알림을 받게 됩니다.  Microsoft 365 관리 센터에서 조직 프로필 아래의 데이터 위치 섹션을 통해 rest에서 고객 데이터의 위치를 확인할 수도 있습니다.  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Microsoft 365 고객은 새 데이터 센터의 geos 중 하나에서, 등록을 마친 후 다른 국가를 선택 했습니다. 새 데이터 센터 지역으로 이동 하려면 어떻게 해야 합니까?
 
-테 넌 트와 연결 된 등록 국가는 변경할 수 없습니다. 대신 새 구독을 사용 하 여 새 Office 365 테 넌 트를 만들고 사용자와 데이터를 새 테 넌 트로 수동으로 이동 해야 합니다.
+테 넌 트와 연결 된 등록 국가는 변경할 수 없습니다. 대신 새 구독을 사용 하 여 Microsoft 365 테 넌 트를 새로 만들고 사용자와 데이터를 새 테 넌 트로 수동으로 이동 해야 합니다.
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Exchange Online 이동 중에 전자 메일 데이터를 Microsoft 365로 마이그레이션하는 프로세스를 진행 하는 경우 어떻게 되나요?
 
@@ -126,7 +126,7 @@ Microsoft는 이동의 구체적 날짜나 기간을 알려드릴 수 없습니�
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>내 고객 데이터가 이미 새 데이터 센터 지역으로 이동 되었습니다. 뒤로 이동할 수 있나요?
  
-아니요, 이것이 가능 하지 않습니다. 새 지리적 데이터 센터로 이동한 고객은 다시 이동할 수 없습니다. 모든 지역에 있는 고객은 이전에 했던 것과 동일한 서비스 품질, 성능 및 보안 제어 기능을 경험할 수 있습니다.  [Office 365](https://aka.ms/multi-geo) 일부 고객은 추가 기능을 사용 하 여 단일 테 넌 트를 통해 여러 위성 지역를 만들고 데이터 상주 약정을 사용 하 여 사용자 데이터를 해당 지역로 이동할 수 있습니다.
+아니요, 이것이 가능 하지 않습니다. 새 지리적 데이터 센터로 이동한 고객은 다시 이동할 수 없습니다. 모든 지역에 있는 고객은 이전에 했던 것과 동일한 서비스 품질, 성능 및 보안 제어 기능을 경험할 수 있습니다.  [Microsoft 365 다중 Geo](https://aka.ms/multi-geo) 는 일부 고객에 게 추가 기능으로 제공 되며 단일 테 넌 트가 여러 개의 위성 지역를 만들고 데이터 상주 약정을 사용 하 여 사용자 데이터를 해당 지역로 이동할 수 있도록 합니다.
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Microsoft 365 테 넌 트는 새 데이터 센터에 호스트 되는 사용자가 해당 국가의 외부에서 사용할 수 있나요?
   
@@ -137,14 +137,14 @@ Microsoft는 이동의 구체적 날짜나 기간을 알려드릴 수 없습니�
 예, 테 넌 트가 등록할 수 있습니다. 현재 기본 지역에서 새 로컬 데이터 센터 지역으로 모든 EXO 사서함을 이동 합니다.  사용자가 원하는 대로 위성 지역 데이터 상주를 계속 사용할 수 있도록 다중 지역 위성 지역에 구성 된 EXO 사서함을 이동 하지 않습니다.  
 
 SharePoint Online 및 비즈니스용 OneDrive는 이동 프로그램의 일부로 새 데이터 센터 지역으로 마이그레이션할 수 없지만, 비즈니스용 OneDrive 공유가 다중 지리적 프로그램을 통해 원하는 지역으로 이동 하도록 구성할 수도 있습니다.
-  
+
 ## <a name="related-topics"></a>관련 항목
 
 [핵심 데이터를 새로운 Microsoft 365 datacenter (지역)로 이동](moving-data-to-new-datacenter-geos.md)
 
 [데이터 이동을 요청하는 방법](request-your-data-move.md)
 
-[Office 365 다중 지역](https://aka.ms/multi-geo)
+[Microsoft 365 다중 지역](https://aka.ms/multi-geo)
 
 [Microsoft 365 대화형 데이터 센터 맵](https://office.com/datamaps)
 

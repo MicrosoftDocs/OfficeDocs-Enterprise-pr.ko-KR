@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Microsoft 365 Enterprise 배포에 대 한 계획을 받을 리소스에 액세스할 수 있습니다.
-ms.openlocfilehash: 106ee743f6f1ddd49d2d81d653f97bfa40566649
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735796"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774473"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise 계획
 
@@ -33,7 +33,7 @@ ms.locfileid: "44735796"
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>Microsoft 365 FastTrack 계획
 
-Microsoft [365에 대 한 Fasttrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365) 은 microsoft 365 배포를 계획 하기 위한 microsoft의 도움을 받을 수 있는 최상의 방법입니다. FastTrack은 가장 일반적인 디자인 고려 사항을 지원 하 고 방식에 따라 질문에 답할 수 있습니다. 
+Microsoft [365에 대 한 Fasttrack](https://www.microsoft.com/fasttrack/microsoft-365) 은 microsoft 365 배포를 계획 하기 위한 microsoft의 도움을 받을 수 있는 최상의 방법입니다. FastTrack은 가장 일반적인 디자인 고려 사항을 지원 하 고 방식에 따라 질문에 답할 수 있습니다. 
 
 >[!Note]
 >[Microsoft 파트너](https://www.microsoft.com/solution-providers/home)로부터 도움을 받을 수도 있습니다.
@@ -43,7 +43,7 @@ Microsoft [365에 대 한 Fasttrack](https://www.microsoft.com/en-us/fasttrack/m
 
 Microsoft 365을 직접 계획 하려면 다음 영역에 대 한 계획 및 디자인 결정을 단계적으로 진행 합니다.
 
-- Microsoft 365 테 넌 트
+- Microsoft 365 테넌트
 
   인터넷에 대 한 네트워크 연결, Microsoft 365 id 및 앱, 온-프레미스, Azure 및 기타 요소와의 통합에 대 한 계획을 포함 합니다. [여기](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)에서 시작 합니다.
 

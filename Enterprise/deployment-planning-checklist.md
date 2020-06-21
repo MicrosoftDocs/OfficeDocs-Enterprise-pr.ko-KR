@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 이 검사 목록은 조직에 게 Microsoft 365로의 마이그레이션을 계획 하 고 준비 하는 데 도움이 됩니다.
-ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 3eaca9cdc248dd4c72691fec37eb6e54add52218
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711903"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774823"
 ---
 # <a name="deployment-planning-checklist-for-microsoft-365"></a>Microsoft 365 배포 계획 검사 목록
 
@@ -80,5 +80,5 @@ Microsoft 365을 설정 하는 데 도움이 필요 하십니까? [Microsoft 365
 | 선택적으로 데이터 마이그레이션 ( [전자 메일](https://go.microsoft.com/fwlink/?LinkId=534823)및 [파일](https://go.microsoft.com/fwlink/?LinkId=534824)등) |||||
 |기능 확인 후 최종 단계 완료 |||||
 | [Microsoft 365를 가리키도록 DNS 설정](https://go.microsoft.com/fwlink/?LinkId=534835) 마이그레이션 |||||
-| [Microsoft 365을 사용 하 여 시작할](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) 수 있는 경우 사용자에 게 알림 |||||
+| [Microsoft 365을 사용 하 여 시작할](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) 수 있는 경우 사용자에 게 알림 |||||
 | Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Mac 용 Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [모바일 장치](https://go.microsoft.com/fwlink/?LinkId=534840))에 연결 하도록 클라이언트 시스템을 다시 구성 합니다.  |||||

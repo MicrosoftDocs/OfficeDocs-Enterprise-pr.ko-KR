@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: SharePoint 2010 및 SharePoint Server 2010에 대 한 지원이 종료 되었습니다 (2021 년 4 월 13 일). 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532297"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774453"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 Microsoft SharePoint 2010 및 SharePoint Server 2010는 기술 지원 종료 **(2021 년 4 월 13 일**)에 도달 합니다. 이 문서에서는 기존 SharePoint Server 2010 데이터를 Office 365에서 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
   
@@ -128,7 +128,7 @@ Sharepoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하 고 
   
 |||
 |:-----|:-----|
-||직렬 업그레이드 경로 * * * *: SharePoint Server 2010 **\>** sharepoint server 2013 **\>** sharepoint server 2016 |
+||직렬 업그레이드 경로 * * * *: SharePoint Server 2010 **\>** Sharepoint server 2013 **\>** sharepoint server 2016 |
    
 SharePoint 2010에서 SharePoint Server 2016로의 전체 경로를 따르도록 선택한 경우 시간 및 계획이 계획 됩니다. 업그레이드에는 업그레이드 된 하드웨어 측면에서 비용이 소요 됩니다 (SQL server도 업그레이드 해야 한다는 점을 염두에 두어야 함), 소프트웨어 및 관리를 포함 합니다. 또한 사용자 지정 내용을 업그레이드 하거나 중단 해야 할 수도 있습니다. SharePoint Server 팜을 업그레이드 하기 전에 모든 중요 한 사용자 지정 내용에 대 한 메모를 수집 해야 합니다.
   
@@ -162,15 +162,15 @@ SharePoint 2010에서 SharePoint Server 2016로의 전체 경로를 따르도록
   
 - 다음 **에 대 한 하드웨어/소프트웨어 요구 사항**: 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - 다음 **에 대 한 소프트웨어 경계 및 제한**사항: 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **업그레이드 프로세스 개요**: 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Sharepoint Online과 SharePoint Server 온-프레미스 간에 SharePoint 하이브리드 솔루션을 만듭니다.
 

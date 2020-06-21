@@ -1,5 +1,5 @@
 ---
-title: SharePoint Server 2007 지원 로드맵 최종본
+title: SharePoint Server 2007 지원 종료 로드맵
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -36,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 2017 년 10 월 10 일에 SharePoint Server 2007에 대 한 지원이 종료 되었습니다. 이 문서를 읽으면 업그레이드 옵션, 문제 해결, 모범 사례, 시스템 요구 사항, 업그레이드 단계 및 Microsoft 파트너 로부터 도움을 받는 방법에 대해 알아볼 수 있습니다.
-ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 860e142912d54b87c10677681dcbb429a6df9a8a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844009"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775003"
 ---
-# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 지원 로드맵 최종본
+# <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 지원 종료 로드맵
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 **2017 년 10 월 10 일**, Microsoft Office SharePoint Server 2007 지원 종료에 도달 했습니다. SharePoint Server 2007에서 Office 365 또는 최신 버전의 SharePoint Server 온-프레미스로 마이그레이션을 시작한 적이 없다면 이제 계획을 시작 하는 데 걸리는 시간입니다. 이 문서에서는 사용자가 데이터를 SharePoint Online으로 마이그레이션하거나 SharePoint Server를 온-프레미스로 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다. 
   
@@ -108,9 +108,7 @@ Office 365로 마이그레이션하면 데이터를 구성 하 고 클라우드�
   
 ### <a name="migrate-to-sharepoint-online"></a>SharePoint Online으로 마이그레이션
 
-연결 된 서비스 설명을 검토 하 여 SharePoint Online에 필요한 모든 기능이 있는지 확인 합니다. 다음은 모든 Office 365 서비스 설명에 대 한 링크입니다.
-  
-[Office 365 서비스 설명](https://go.microsoft.com/fwlink/?linkid=272060)
+연결 된 서비스 설명을 검토 하 여 SharePoint Online에 필요한 모든 기능이 있는지 확인 합니다. [Microsoft 365 및 Office 365 서비스 설명을](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)참조 하세요.
   
 SharePoint 2007에서 SharePoint Online으로 마이그레이션하는 직접적인 방법은 없습니다. SharePoint Online으로 이동 하는 작업은 수동으로 수행 해야 합니다. SharePoint Server 2013 또는 SharePoint Server 2016로 업그레이드 하는 경우 이동 과정에서 SharePoint 마이그레이션 API (예: 비즈니스용 OneDrive로 정보 마이그레이션)를 사용 하는 것이 포함 될 수도 있습니다.
   
@@ -141,7 +139,7 @@ SharePoint 2007에서 SharePoint Online으로 마이그레이션하는 직접적
 SharePoint 2007에서 SharePoint Server 2016로 전체 경로를 사용 하기 위해서는 상당한 시간이 투자 되 고, 업그레이드 된 하드웨어 측면에서 비용이 수반 됩니다 (SQL server도 업그레이드 해야 한다는 점을 유의 해야 함), 소프트웨어 및 관리를 의미 합니다. 기능의 중요도에 따라 사용자 지정 내용이 업그레이드 되거나 중단 되어야 합니다.
   
 > [!NOTE]
-> 수명 종료 SharePoint 2007 팜을 유지 관리 하 고, 새 하드웨어에 SharePoint Server 2016 팜을 설치한 다음 (별도의 팜을 나란히 실행), 콘텐츠를 다운로드 하 고 다시 업로드 하기 위해 콘텐츠의 수동 마이그레이션을 계획 및 실행 하는 것이 가능 합니다. 예제) 마지막으로 수정한 계정을 수동으로 이동 하는 계정의 별칭으로 이동 하는 것과 같은 수동 이동의 몇 가지 gotchas, 미리 수행 해야 하는 작업 (예: 사이트, 하위 사이트, 사용 권한 및 목록 다시 만들기)에 대해 알아야 합니다. 구조). 이는 저장소로 이동할 수 있는 데이터를 고려 하거나 더 이상 필요 하지 않은 마이그레이션에 대 한 영향을 줄일 수 있는 작업입니다.
+> 수명 종료 SharePoint 2007 팜을 유지 관리 하 고, 새 하드웨어에 SharePoint Server 2016 팜을 설치한 다음, 별도의 팜을 함께 실행 하 고 콘텐츠를 수동으로 마이그레이션을 계획 하 고 실행 하 여 콘텐츠를 다운로드 하 고 다시 업로드 하는 것이 가능 합니다. 일부 수동 이동 (예: 마지막으로 수정한 계정을 수동 이동을 수행 하는 계정의 별칭으로 이동 하는 것)과 미리 수행 해야 하는 작업 (이 경우 사이트, 하위 사이트, 사용 권한 및 목록 구조 다시 만들기)에 대해 잘 gotchas 합니다. 이는 저장소로 이동할 수 있는 데이터를 고려 하거나 더 이상 필요 하지 않은 마이그레이션에 대 한 영향을 줄일 수 있는 작업입니다.
   
 두 방법 중 하나를 수행 하 여 업그레이드 전에 환경을 정리 합니다. 업그레이드를 수행 하기 전에 기존 팜이 제대로 작동 하 고 있어야 합니다. 
   
@@ -176,15 +174,15 @@ SharePoint 2007에서 SharePoint Server 2016로 전체 경로를 사용 하기 �
   
 - 다음 **에 대 한 하드웨어/소프트웨어 요구 사항**: 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - 다음 **에 대 한 소프트웨어 경계 및 제한**사항: 
     
-    [Sharepoint server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **업그레이드 프로세스 개요**: 
     
-    [Sharepoint server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>SharePoint Online과 온-프레미스 간에 SharePoint 하이브리드 솔루션 만들기
 
@@ -192,7 +190,7 @@ SharePoint 2007에서 SharePoint Server 2016로 전체 경로를 사용 하기 �
   
 하이브리드 SharePoint Server 팜이 비즈니스에 이익이 되는 경우 기존 유형의 하이브리드를 숙지 하 고 온-프레미스 SharePoint 팜과 Office 365 구독 간에 연결을 구성 하는 방법에 익숙해져야 합니다.
   
-[Office 365 개발/테스트 환경을](https://go.microsoft.com/fwlink/?linkid=843152)만들어 어떻게 작동 하는지 확인할 수 있는 좋은 방법 중 하나입니다. 평가판이 있거나 Office 365 구독을 구매한 후에는 직접 데이터를 마이그레이션할 수 있는 SharePoint Online의 사이트 모음, 웹 및 문서 라이브러리를 만드는 방법, 즉 마이그레이션 API를 사용 하 여 수동으로 또는-My를 마이그레이션하려고 합니다. 하이브리드 마법사를 통해 비즈니스용 OneDrive에 사이트 콘텐츠를 추가할 수 있습니다.
+[Office 365 개발/테스트 환경을](https://go.microsoft.com/fwlink/?linkid=843152)만들어 어떻게 작동 하는지 확인할 수 있는 좋은 방법 중 하나입니다. 평가판이 있거나 Office 365 구독을 구매한 경우 SharePoint Online에서 사이트 모음, 웹 및 문서 라이브러리를 만들 수 있으며, 마이그레이션 API를 사용 하 여 수동으로 데이터를 마이그레이션하고, 아니면 하이브리드 마법사를 통해 내 사이트 콘텐츠를 비즈니스용 OneDrive로 마이그레이션하려는 경우
   
 > [!NOTE]
 > 하이브리드 옵션을 사용 하려면 SharePoint 2007 팜을 온-프레미스에서 SharePoint Server 2013 또는 SharePoint Server 2016로 업그레이드 해야 합니다. 

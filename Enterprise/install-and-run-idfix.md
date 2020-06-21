@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Microsoft 365로 동기화 하기 전에 AD DS (Active Directory 도메인 서비스)를 정리 하는 데 도움이 되는 Microsoft 365 IdFix 도구를 다운로드 하 고 실행 하는 방법을 설명 합니다.
-ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711598"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774863"
 ---
 # <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Microsoft 365 IdFix 도구 다운로드 및 실행
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 IdFix는 Microsoft 365으로 동기화 하기 전에 AD DS (Active Directory 도메인 서비스) 도메인의 중복 및 서식 문제와 같은 오류를 식별 합니다. 
   
@@ -125,8 +125,3 @@ IdFix를 다운로드 하 고 추출한 후에는이를 실행 하 여 AD DS 도
 - [IdFix 제외 및 지원 개체/특성](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Microsoft 365 IdFix 트랜잭션 로그](idfix-transaction-log.md)
     
-## <a name="video-training"></a>비디오 교육
-
-자세한 내용은 LinkedIn 학습을 통해 제공 되는이과에서 [IdFix 도구 설치 및 사용](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)을 참조 하세요.
-  
-

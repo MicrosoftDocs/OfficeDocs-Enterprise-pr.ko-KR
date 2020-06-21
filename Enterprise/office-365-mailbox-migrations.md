@@ -1,7 +1,7 @@
 ---
-title: Office 365 사서함 마이그레이션
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 사서함 마이그레이션
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Office 365 사서함 마이그레이션에 사용 되는 cmdlet에 대 한 간략 한 요약입니다.
-ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft 365 사서함 마이그레이션에 사용 되는 cmdlet에 대 한 간략 한 요약입니다.
+ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843609"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774903"
 ---
-# <a name="office-365-mailbox-migrations"></a>Office 365 사서함 마이그레이션
+# <a name="microsoft-365-mailbox-migrations"></a>Microsoft 365 사서함 마이그레이션
 
 Exchange 기반 하이브리드 배포를 사용 하는 경우 고객은 온-프레미스 Exchange 사서함을 [Exchange online](https://docs.microsoft.com/Exchange/exchange-online) 조직으로 이동 하거나 exchange online 사서함을 [exchange 온-프레미스](https://docs.microsoft.com/Exchange/exchange-server) 조직으로 이동할 수 있습니다. 마이그레이션 일괄 처리는 온-프레미스 조직과 Exchange Online 조직 간에 사서함을 이동할 때 사용 됩니다.
 
