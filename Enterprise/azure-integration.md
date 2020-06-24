@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Microsoft 365 구독에는 Azure AD에 대 한 구독이 포함 되어 있습니다. 온-프레미스 환경에 암호 동기화 또는 single sign-on을 사용 하려면 Microsoft 365를 Azure AD와 통합 합니다.
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774843"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842060"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Microsoft 365과 Azure 통합
 
@@ -40,7 +40,7 @@ Azure는 Microsoft 365 구독을 확장 및 사용자 지정 하는 데 사용�
 
  - [Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)
  - [AD FS 배포 관리자](https://aka.ms/adfsguidance)
- - [Azure AD Premium 설정 가이드](https://aka.ms/aadpguidance)
+ - [Azure AD 설정 가이드](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure AD edition 및 Microsoft 365 id 관리
 
