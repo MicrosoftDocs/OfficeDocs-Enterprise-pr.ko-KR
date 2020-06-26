@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '요약: Office 365의 다양 한 응용 프로그램 내에서 격리 및 액세스 제어에 대 한 설명입니다.'
-ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
+ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844409"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892127"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Office 365에서 격리 및 액세스 제어
 
@@ -43,7 +43,7 @@ Exchange Online은 고객 데이터를 사서함에 저장 합니다. 사서함�
 - 일정 및 약속 있음/없음 정보
 - Contacts
 - 작업
-- Notes
+- 참고
 - 그룹
 - 유추 데이터
 
@@ -70,3 +70,33 @@ Acl 외에도 인증 공급자 (테 넌 트 별 Azure Active Directory)를 지�
 SharePoint Online에서는 콘텐츠 메타 데이터 저장소에 대해 SQL Server 및 Azure 저장소를 사용 합니다. 콘텐츠 저장소의 파티션 키는 SQL의 *SiteId* 입니다. SQL 쿼리를 실행 하는 경우 SharePoint Online은 테 넌 트 수준 *SubscriptionId* 확인의 일부로 확인 된 *SiteId* 를 사용 합니다.
 
 SharePoint Online은 Microsoft Azure blob에 암호화 된 파일 콘텐츠를 저장 합니다. 각 SharePoint Online 팜에는 자체 Microsoft Azure 계정이 있으며 Azure에 저장 된 모든 blob는 SQL 콘텐츠 저장소에 저장 된 키를 사용 하 여 개별적으로 암호화 됩니다. 인증 계층에 의해 코드에 보호 되는 암호화 키가 최종 사용자에 게 직접 표시 되지 않습니다. SharePoint Online에는 HTTP 요청이 두 개 이상의 테 넌 트에 대 한 데이터를 읽거나 쓰는 시간을 검색 하는 실시간 모니터링이 있습니다. 요청 id *subscriptionid* 는 액세스 되는 리소스의 *subscriptionid* 에 따라 추적 됩니다. 여러 테 넌 트의 리소스에 액세스 하는 요청은 최종 사용자가 수행 하지 않아야 합니다. 다중 테 넌 트 환경의 서비스 요청은 유일한 예외입니다. 예를 들어 검색 크롤러는 전체 데이터베이스에 대 한 콘텐츠 변경 내용을 한 번에 가져옵니다. 이는 일반적으로 두 개 이상의 테 넌 트의 사이트를 단일 서비스 요청에 쿼리 하는 것과 관련 하 여 효율성을 이유로 수행 됩니다.
+
+## <a name="teams"></a>Teams
+
+팀 데이터는 콘텐츠 형식에 따라 다르게 저장 됩니다. 
+
+자세한 내용은 [Microsoft 팀 아키텍처의 Ignite 브레이크 아웃 세션](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) 을 참조 하십시오.
+
+### <a name="core-teams-customer-data"></a>핵심 팀 고객 데이터
+
+테 넌 트를 호주, 캐나다, 유럽 연합, 프랑스, 독일, 인도, 일본, 남아프리카 공화국, 남부 한국, 스위스 (리히텐슈타인), 아랍에미리트, 영국 또는 미국 중에서 프로 비전 하는 경우 Microsoft는 다음 고객 데이터를 해당 위치 내에만 보관 합니다.
+
+- 팀 채팅, 팀 및 채널 대화, 이미지, 음성 메일 메시지 및 연락처
+- SharePoint Online 사이트 콘텐츠 및 해당 사이트 내에 저장되어 있는 파일
+- OneDrive for work 또는 학교에 업로드 된 파일
+
+#### <a name="chat-channel-messages-team-structure"></a>채팅, 채널 메시지, 팀 구조
+
+팀의 모든 팀은 Microsoft 365 그룹 및 해당 SharePoint 사이트 및 Exchange 사서함에 의해 지원 됩니다. 개인 채팅 (그룹 채팅 포함)은 채널에서 대화의 일부로 전송 된 메시지와, 팀 및 채널의 구조가 Azure에서 실행 되는 채팅 서비스에 저장 됩니다. 정보 보호 기능을 사용 하기 위해 사용자 및 그룹 사서함의 숨겨진 폴더에도 데이터가 저장 됩니다.
+
+#### <a name="voicemail-and-contacts"></a>음성 메일 및 연락처
+
+음성 사서함는 Exchange에 저장 됩니다. 연락처는 Exchange 기반 클라우드 데이터 저장소에 저장 됩니다. Exchange 및 Exchange 기반 클라우드 저장소는 전 세계 데이터 센터의 각 운영 체제에 데이터 상주를 제공 합니다. 모든 팀의 경우 음성 메일 및 연락처는 오스트레일리아, 캐나다, 프랑스, 독일, 인도, 일본, 아랍에미리트, 미국 및 미국, 영국, 남부 아프리카, 대한민국, 스위스 (예를 들어, 리히텐슈타인) 및 미국으로 저장 됩니다. 다른 모든 국가의 경우 파일은 테 넌 트 선호도에 따라 미국, 유럽 또는 아시아 태평양 장소에 저장 됩니다.
+
+#### <a name="images-and-media"></a>이미지 및 미디어
+
+채팅에 사용 되는 미디어 (저장 되지는 않았지만 원본 Giphy 서비스 URL에 대 한 참조 링크 이며, Giphy은 Microsoft 서비스가 아닌 Giphy)는 채팅 서비스와 동일한 위치에 배포 되는 Azure 기반 미디어 서비스에 저장 됩니다.
+
+#### <a name="files"></a>파일
+
+채널에서 누군가가 공유 하는 파일 (OneNote 및 Wiki 포함)은 팀의 SharePoint 사이트에 저장 됩니다. 개인 채팅 또는 모임 중에 공유 되는 파일은 파일을 공유 하는 사용자의 OneDrive 또는 회사의 학교 계정으로 업로드 되 고 저장 됩니다. Exchange, SharePoint 및 OneDrive는 전 세계 데이터 센터의 각 상주에 데이터를 제공 합니다. 따라서 기존 고객의 경우 팀 환경의 일부인 모든 파일, OneNote 전자 필기장, 팀 위 콘텐츠 및 사서함은 이미 테 넌 트 선호도에 따라 위치에 저장 됩니다. 파일은 호주, 캐나다, 프랑스, 독일, 인도, 일본, 아랍에미리트, 미국, 대한민국, 아랍에미리트, 미국, 스위스 (리히텐슈타인)로 저장 됩니다. 다른 모든 국가의 경우 파일은 테 넌 트 선호도에 따라 미국, 유럽 또는 아시아 태평양 위치에 저장 됩니다.
