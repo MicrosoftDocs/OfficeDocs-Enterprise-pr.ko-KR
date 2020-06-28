@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775107"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906241"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
@@ -38,11 +38,11 @@ Office 2010 및 Exchange 2010는 **2020 년 10 월 13 일**에 지원 종료에 
 
 SharePoint 2010 및 Project Server 2010는 **2021 년 4 월 13 일**에 지원 종료에 도달 합니다.
 
-업그레이드를 계획 하는 동안에는 Office 365 또는 Microsoft 365로의 전환을 고려 하는 것이 좋습니다. 
+업그레이드를 계획 하는 동안에는 Microsoft 365으로 이동 하는 것이 좋습니다. 
 
-- Office 365에는 Exchange Server 및 SharePoint Server 같은 Office 2010 서버 제품에 대 한 클라우드 기반 서비스와 팀 및 비즈니스용 OneDrive 등의 서비스를 포함 합니다. 
+- Microsoft 365에는 Exchange Server 및 SharePoint Server 같은 Office 2010 서버 제품에 대 한 클라우드 기반 서비스와 팀 및 비즈니스용 OneDrive 등의 서비스를 포함 합니다. 
 
-- Office 365 E3 및 E5 및 Microsoft 365 Enterprise에 포함 된 Microsoft 365 Apps for enterprise (이전 명칭: Office 365 ProPlus)는 로컬 장치에 설치한 Office 클라이언트 응용 프로그램 집합입니다. Microsoft 클라우드에서 지속적으로 새로운 생산성 및 보안 기능을 사용 하 여 업데이트 됩니다.
+- Microsoft 365 E3 및 E5에 포함 된 microsoft 365 (이전 이름 Office 365 ProPlus)의 경우 로컬 장치에 설치한 Office 클라이언트 응용 프로그램 집합은 다음과 같습니다. Microsoft 클라우드에서 지속적으로 새로운 생산성 및 보안 기능을 사용 하 여 업데이트 됩니다.
 
 Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
 
@@ -68,7 +68,7 @@ Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이�
 
 ## <a name="related-topics"></a>관련 항목
 
-[비디오: Office 365 이란?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[비디오: Microsoft 365 이란?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/?linkid=865200)
 

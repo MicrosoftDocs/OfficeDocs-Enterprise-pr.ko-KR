@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2007 서버 및 클라이언트 응용 프로그램에 대 한 지원이 곧 종료 되며 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
-ms.openlocfilehash: 8da5cd95b683be40c4efa3137ecfca4d31e11aae
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Office 2007 서버에 대 한 지원이 종료 되었으며 클라이언트 응용 프로그램 및 사용자 지정 지원 계약을 사용할 수 없습니다. 이 문서를 사용 하 여 업그레이드 계획을 시작 합니다.
+ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774563"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906231"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 서버 및 클라이언트에서 업그레이드 하는 데 도움이 되는 리소스
 
 *이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-Office 2007 제품 및 서비스를 사용 중인 경우 이러한 응용 프로그램에 대 한 지원이 종료 되었습니다. 업그레이드를 계획 하는 동안 Office 365부터 시작 하 여 Microsoft 클라우드로 전환 하는 것이 좋은 시간입니다. 이 문서를 사용 하 여 옵션을 검토 하 고 업그레이드를 계획 합니다.
+Office 2007 제품 및 서비스를 사용 중인 경우 이러한 응용 프로그램에 대 한 지원이 종료 되었습니다. 업그레이드를 계획 하는 동안 microsoft 365 클라우드로 이동 하는 것이 좋습니다. 이 문서를 사용 하 여 옵션을 검토 하 고 업그레이드를 계획 합니다.
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 계획 로드맵
   
@@ -57,7 +57,7 @@ Microsoft 제품에 대 한 지원이 종료 되 면 새로운 보안 업데이�
      
 ## <a name="related-topics"></a>관련 항목
 
-[비디오: Office 365 이란?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[비디오: Microsoft 365 이란?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/?linkid=865200)
 

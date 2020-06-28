@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 감사 사용 및 투명성을 위한 Microsoft 365 내의 eDiscovery 기능 및 기타 검색 기능에 대 한 개요입니다.
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774943"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906191"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery 및 검색 기능 개요 
 
@@ -35,7 +35,7 @@ EDiscovery 기능은 관리자, 준수 책임자 및 기타 권한 있는 사용
 
 ## <a name="audit-log-search"></a>감사 로그 검색
 
-Microsoft 365 조직의 변경 내용을 추적 하는 것 외에도 감사 보고서를 확인 하 고 감사 로그를 내보낼 수 있습니다. Microsoft 365 테 넌 트에 대해 감사가 사용 되도록 설정 되 면 사용자 및 관리 활동이 이벤트 로그에 기록 되 고 검색 가능 하 게 됩니다. 예를 들어 사서함 감사 로깅을 사용 하 여 사서함 소유자가 아닌 사용자가 사서함에서 수행 하는 작업을 추적할 수 있습니다. 규정 준수 관리자는 특정 사용자 작업에 대해 검색 및 필터 기능을 사용할 수 있습니다. 예를 들어 관리자가 사용자 관리 작업을 수행 하거나 최근 90 일 이내에 테 넌 트 구성의 변경 내용을 보려는 경우 특정 문서를 보거나 다운로드 한 사용자를 식별 합니다. 검색 결과에는 사용자 또는 관리자가 수행한 특정 작업에 대 한 중요 한 법적 정보가 포함 됩니다. Microsoft 365에 기록 된 사용자 및 관리 활동에 대 한 설명을 보려면 [감사 로그 검색](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 을 참조 하십시오.
+Microsoft 365 조직의 변경 내용을 추적 하는 것 외에도 감사 보고서를 확인 하 고 감사 로그를 내보낼 수 있습니다. 감사가 Microsoft 365 테 넌 트로 설정 되 면 사용자 및 관리 활동이 이벤트 로그에 기록 되 고 검색 가능 하 게 됩니다. 예를 들어 사서함 감사 로깅을 사용 하 여 사서함 소유자가 아닌 사용자가 사서함에서 수행 하는 작업을 추적할 수 있습니다. 규정 준수 관리자는 특정 사용자 작업에 대해 검색 및 필터 기능을 사용할 수 있습니다. 예를 들어 관리자가 사용자 관리 작업을 수행 하거나 최근 90 일 이내에 테 넌 트 구성의 변경 내용을 보려는 경우 특정 문서를 보거나 다운로드 한 사용자를 식별 합니다. 검색 결과에는 사용자 또는 관리자가 수행한 특정 작업에 대 한 중요 한 법적 정보가 포함 됩니다. Microsoft 365에 기록 된 사용자 및 관리 활동에 대 한 설명을 보려면 [감사 로그 검색](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 을 참조 하십시오.
 
 SharePoint Online 및 비즈니스용 OneDrive의 이벤트는 발생 한 30 분 내에 로그에 표시 됩니다. Exchange Online의 이벤트는 발생 한 24 시간 이내에 감사 로그에 표시 됩니다. Azure AD의 로그인 이벤트는 발생 시간 내에 사용할 수 있으며 Azure AD의 기타 디렉터리 이벤트는 발생 한 후에 사용할 수 있습니다. 추가 분석을 위해 감사 로그 검색 결과에서 통풍구를 내보낼 수 있습니다. 단일 감사 로그 검색에서 최대 5만 개의 항목을 내보냅니다. 이 제한에 해당 하는 추가 항목을 내보내려면 날짜 범위를 줄이거나 여러 감사 로그 검색을 실행 합니다.
 
