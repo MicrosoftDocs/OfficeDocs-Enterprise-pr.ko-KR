@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션 이해 '
-ms.openlocfilehash: 7e9ba9135d024be5c12d6ca19b55ec68588d9ab4
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772149"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998563"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션
 
@@ -128,7 +128,7 @@ Office 365 서비스 신규 독일 데이터 센터 지역의 추가 혜택:
 - 경쟁력 있는 가격의 [Azure](https://azure.microsoft.com/pricing/calculator/),[Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans), [Dynamics 365 고객 참여](https://dynamics.microsoft.com/pricing/) 및 [Power BI](https://powerbi.microsoft.com/pricing/)를 제공 합니다. 
 - 수많은 네트워크 엣지 사이트, Peering Location, 송신 지점이 있는 Microsoft 글로벌 네트워크에 연결되어 전세계 어디서나 강력한 사용자 환경을 제공합니다.  
 - 독일 내 지역 고객 데이터 보관 요구사항을 충족하는데 도움을 줍니다.  
-- 최신 버전 서비스 및 Microsoft 팀과 Office 365 Multi-Geo를 포함한 새로운 기능 등 글로벌 클라우드에 포함된 모든 기능이 제공됩니다.   [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://products.office.com/ko-KR/where-is-your-data-located) 및 [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability)의 지역별 상품을 비교하세요. 
+- 최신 버전 서비스 및 Microsoft 팀과 Office 365 Multi-Geo를 포함한 새로운 기능 등 글로벌 클라우드에 포함된 모든 기능이 제공됩니다.   [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://docs.microsoft.com/office365/enterprise/o365-data-locations) 및 [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability)의 지역별 상품을 비교하세요. 
 - 고객의 준법 및 규정 요구 사항을 충족 할 수 있도록 모든 기능, 엔터프라이즈급 보안 및 종합 기능을 제공 합니다. 
 - 기존 온라인 서비스 계약을 통해 사용 가능합니다. 
 
