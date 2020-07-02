@@ -1,7 +1,7 @@
 ---
-title: 서비스 거부 공격에 대해 클라우드 서비스를 방어 하는 Office 365
-ms.author: robmazz
-author: robmazz
+title: 서비스 거부 공격에 대해 Microsoft 365 클라우드 서비스 방어
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft가 해당 클라우드 서비스를 DoS (서비스 거부) 공격에 defends 하는 방법입니다.
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843619"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998332"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>서비스 거부 공격에 대해 Microsoft 클라우드 서비스 방어
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>서비스 거부 공격에 대해 Microsoft 365 클라우드 서비스 방어
 
 ## <a name="introduction"></a>소개
 Microsoft 데이터 센터는 경계 펜스, 비디오 카메라, 보안 담당자 및 생체 인식, 스마트 카드 및 다단계 인증을 사용 하는 보안 entrances 포함 된 심층 방어 보안으로 보호 됩니다. 심층 방어 보안은 모든 기능의 모든 영역과 각 물리적 서버 단위를 통해 진행 됩니다. [Microsoft 클라우드 인프라 및 운영 그룹](https://www.microsoft.com/cloud-platform/global-datacenters) 은 클라우드 서비스에 대 한 핵심 인프라 및 기본 기술을 제공 합니다. 이 데이터 센터는 물리적 보안 및 안정성을 위한 업계 표준을 준수 하며, Microsoft 운영 담당자가 관리 하 고 모니터링 하 고 관리 합니다.
 
 클라우드 서비스를 추가로 보호 하기 위해 Microsoft는 Microsoft Azure 지속적인 모니터링 및 침투 테스트 프로세스의 일부인 DDoS 방어 시스템을 제공 합니다. Azure DDoS 방어 시스템은 외부, 다른 Azure 테 넌 트 로부터의 공격에 대 한 견딜 수 있도록 설계 되었습니다. Azure는 SYN 쿠키, 속도 제한, 연결 제한 등의 표준 검색 및 완화 기술을 사용 하 여 DDoS 공격 으로부터 보호 합니다.
 
-Microsoft의 클라우드 서비스는 여러 원본의 공격 위협을 받게 됩니다. 다양 한 DoS 위협을 완화 하 고 보호 하기 위해 DoS에서 기본 인프라를 보호 하는 기본 목표를 사용 하 여 확장성이 높고 동적인 Azure 기반 위협 감지 및 완화 시스템을 개발 및 구현 했습니다. 클라우드 서비스 고객에 대 한 서비스 중단을 방지 하 고 지원 합니다. Azure DoS 완화 시스템은 인바운드, 아웃 바운드 및 지역 간 트래픽을 보호 합니다.
+Microsoft의 클라우드 서비스는 여러 원본의 공격 위협을 받게 됩니다. 다양 한 DoS 위협에 대비 하 고 보호 하기 위해 확장성과 동적 Azure 기반 위협 검색 및 완화 시스템은 DoS 공격 으로부터 기본 인프라를 보호 하 고 클라우드 서비스 고객에 대 한 서비스 중단을 방지 하는 데 도움이 되는 기본 목표로 개발 및 구현 되었습니다. Azure DoS 완화 시스템은 인바운드, 아웃 바운드 및 지역 간 트래픽을 보호 합니다.
 
 OSI ( [Open Systems](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) transport) 모델의 네트워크 (L3) 및 전송 (L4) 계층에서 대상에 대해 대부분의 DoS 공격이 시작 되었습니다. L3 및 L4 계층에서 지시 되는 공격은 네트워크 인터페이스 또는 서비스를 지나치게 빠르게 리소스에 대 한 공격 트래픽을 방지 하 고 합법적인 트래픽에 대응 하는 기능을 거부할 수 있도록 설계 되었습니다. 특히 L3 및 L4 공격은 네트워크 링크, 장치 또는 서비스의 용량을 포화 또는 응용 프로그램을 지 원하는 가상 컴퓨터 또는 서버에 대 한 Cpu를 지나치게 활용 하려고 시도 합니다.
 

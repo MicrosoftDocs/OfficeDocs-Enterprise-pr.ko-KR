@@ -16,18 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 요약:Windows PowerShell을 사용하여 Office 365로 전자 메일을 마이그레이션하는 방법을 알아봅니다.
-ms.openlocfilehash: df8c6715f47de4a7edce091c69c1b8218cbdcd54
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 340a8fd9ae40b64445a1b6dc25b16cf302ac377b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004541"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998610"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>PowerShell을 사용 하 여 Office 365 전자 메일 마이그레이션에 대 한
 
- **요약:** Windows PowerShell을 사용하여 Office 365로 전자 메일을 마이그레이션하는 방법을 알아봅니다.
-  
-대부분의 관리자는 처음에 Office 365를 설정할 때 기존 시스템에서 전자 메일을 마이그레이션하게 됩니다. Office 365 관리 사용자 인터페이스를 사용하여 이 작업을 수행할 수도 있습니다. Windows PowerShell을 사용하여 전자 메일을 마이그레이션할 수도 있습니다.
+When administrators first set up Office 365, many of them migrate email from existing systems. You can also do this by using the Office 365 administration user interface. You can also use Windows PowerShell to migrate email.
   
 ## <a name="office-365-licensing-and-windows-powershell"></a>Office 365 라이선스 및 Windows PowerShell
 

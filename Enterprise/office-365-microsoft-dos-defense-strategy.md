@@ -1,7 +1,7 @@
 ---
-title: Office 365 DoS 방어 전략
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 DoS 방어 전략
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: DoS (서비스 거부) 공격에 대 한 Microsoft 방어 전략 개요
-ms.openlocfilehash: c30e8e5c91ead81ceda9cfaeb4ef6b17c9addc9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844389"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998755"
 ---
-# <a name="office-365-denial-of-service-defense-strategy"></a>Office 365 서비스 거부 방어 전략
+# <a name="microsoft-365-denial-of-service-defense-strategy"></a>Microsoft 365 서비스 거부 방어 전략
 
 네트워크 기반 DoS (서비스 거부) 공격을 방어 하기 위한 Microsoft의 전략은 규모와 전역 공간으로 인해 고유 합니다. 이 확장을 통해 Microsoft는 조직, 공급자 또는 고객 조직이 일치 시킬 수 있는 전략 및 기법을 활용 합니다. DoS 전략의 세밀는 글로벌 현재 상태입니다. Microsoft는 전 세계에서 인터넷 공급자, 피어 링 공급자 (공개 및 개인) 및 사설 기업에 관여 합니다. 이를 통해 Microsoft는 인터넷에 심각한 정보를 제공 하 고 Microsoft에서 큰 영역을 통해 공격을 수행할 수 있습니다.
 

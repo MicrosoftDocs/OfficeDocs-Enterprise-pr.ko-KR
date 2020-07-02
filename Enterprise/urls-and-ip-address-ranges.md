@@ -3,7 +3,7 @@ title: 'Office 365 URL 및 IP 주소 범위 '
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,16 +24,16 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Summary: Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 58453be147fec41bb35b7d6d758ce3d5df5a4148
-ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.openlocfilehash: d75fa6d88255ff5df785fa335a9976c4bcca309d
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44747374"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997446"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 및 IP 주소 범위 
 
- **Summary:** Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
+Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
   
 > [!NOTE]
 > COVID-19 위기에 대한 대응의 일환으로 Microsoft는 일부 계획된 URL과 IP 주소 변경에 대해 일시적인 모라토리엄을 선언했습니다. 이번 모라토리엄은 재택 근무 Office 365 시나리오에 권장되는 네트워크 최적화를 구현할 때 고객 IT 팀에 자신감과 간편함을 제공하기 위한 것입니다. 2020년 3월 24부터 2020년 6월 30일까지, 이번 모라토리엄으로 주요 Office 365 서비스(Exchange Online, SharePoint Online, Microsoft Teams)부터 최적화 범주에 포함된 IP 범위와 URL에 대한 변경이 중단됩니다. 다른 엔드포인트 범주의 변경은 평소와 같이 수행됩니다. 이 기간 동안, 고객은 클라우드 측 네트워크 변경으로 인해 Office 365 연결 시 위험을 최소화하며 Office 365 최적화 범주 서비스 엔드포인트 정의를 정적 방식으로 사용하여 대상 네트워크 최적화를수행할 수 있습니다. 모라토리엄 기간이 끝날 때 서비스 중단이 발생하지 않도록, 고객은 [Office 365 엔드포인트 관리](managing-office-365-endpoints.md)에서 제공하는 지침을 사용하여 Office 365 서비스 엔드포인트의 변경 관리 및/또는 자동화 프로세스를 구현하는 것이 좋습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "44747374"
   
 ||||
 |:-----|:-----|:-----|
-|**마지막 업데이트:** 06/16/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> | **사용:** 프록시 [PAC 파일](managing-office-365-endpoints.md#pacfiles) <br/> |
+|**마지막 업데이트:** 06/29/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [변경 로그 구독](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> | **사용:** 프록시 [PAC 파일](managing-office-365-endpoints.md#pacfiles) <br/> |
 
  Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This allows for customers who do not yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you are using a script or a network device to access this data, you should go to the [Web service](office-365-ip-web-service.md) directly.
 

@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
-ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844559"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998533"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 통한 네트워크 계획
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
   
@@ -72,13 +72,13 @@ Azure Express 기반 구독은 고객 중심 이며 구독은 고객과 연결 �
   
 적절 한 대역폭 수준을 확인 하려면 기존 네트워크 사용량을 테스트 하는 것이 가장 좋습니다. 이는 모든 네트워크 구성 및 응용 프로그램이 어떤 점에서 고유한 지에 대 한 실제 사용량을 측정 하는 유일한 방법입니다. 측정 시 네트워크 요구 사항을 이해 하기 위해 총 대역폭 소비, 대기 시간 및 TCP 혼잡 주의를 기울여야 합니다.
   
-모든 네트워크 응용 프로그램을 포함 하는 예상 초기 계획을 사용 하는 경우, 실제 사용량을 확인 하기 위해 조직의 여러 사용자 프로필을 구성 하는 소규모 그룹과 함께 파일럿 Office 365을 만들고 두 측정값을 통해 각 사무실 위치에 필요한 대역폭 테스트 중에 발견 되는 대기 시간이 나 TCP 혼잡 문제가 있는 경우에는 egress를 Office 365을 사용 하는 사용자에 게 보다 가깝게 이동 하거나, SSL 암호 해독/검사와 같은 집중적인 네트워크 검색을 제거 해야 할 수 있습니다.
+모든 네트워크 응용 프로그램을 포함 하는 예상 초기 계획을 사용 하는 경우, 실제 사용량을 확인 하기 위해 조직의 여러 사용자 프로필을 구성 하는 소규모 그룹과 함께 파일럿 Office 365을 수행 하 고, 두 측정값을 활용 하 여 각 사무실 위치에 필요한 대역폭의 양을 추정 합니다. 테스트 중에 발견 되는 대기 시간이 나 TCP 혼잡 문제가 있는 경우에는 egress를 Office 365을 사용 하는 사용자에 게 보다 가깝게 이동 하거나, SSL 암호 해독/검사와 같은 집중적인 네트워크 검색을 제거 해야 할 수 있습니다.
   
 권장 되는 네트워크 처리 유형에 대 한 모든 권장 사항은 대상 및 인터넷 회로 둘 다에 적용 됩니다. [성능 조정 사이트](https://aka.ms/tune)의 나머지 지침 에서도 마찬가지입니다.
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에 대 한 Azure Express 경로에 보안 제어 적용
 
-Azure Express 연결의 보안은 인터넷 연결 보안과 같은 원칙으로 시작 됩니다. 대부분의 고객은 온-프레미스 네트워크를 Office 365 및 기타 Microsoft 클라우드에 연결 하는 Express 경로를 따라 네트워크 및 경계 컨트롤을 배포 하도록 선택 합니다. 이러한 컨트롤에는 방화벽, 응용 프로그램 프록시, 데이터 누출 방지, 침입 감지, 침입 방지 시스템 등이 포함 될 수 있습니다. 대부분의 경우 고객이 온-프레미스에서 시작 되는 트래픽에 서로 다른 수준의 제어를 적용 하 고, Microsoft에서 온-프레미스 네트워크로 시작 되는 트래픽과 온-프레미스에서 시작 된 트래픽이 일반으로 이동 되는 트래픽을 비교 합니다. 인터넷 대상입니다.
+Azure Express 연결의 보안은 인터넷 연결 보안과 같은 원칙으로 시작 됩니다. 대부분의 고객은 온-프레미스 네트워크를 Office 365 및 기타 Microsoft 클라우드에 연결 하는 Express 경로를 따라 네트워크 및 경계 컨트롤을 배포 하도록 선택 합니다. 이러한 컨트롤에는 방화벽, 응용 프로그램 프록시, 데이터 누출 방지, 침입 감지, 침입 방지 시스템 등이 포함 될 수 있습니다. 대부분의 경우 고객이 온-프레미스에서 시작 되는 트래픽에 서로 다른 수준의 제어를 적용 하 고, Microsoft에서 고객의 온-프레미스 네트워크로 시작 된 트래픽과 온-프레미스에서 일반 인터넷 목적지로 시작 되는 트래픽을 비교 합니다.
   
 다음은 배포 하도록 선택한 [express 연결 모델](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) 에 보안을 통합 하는 몇 가지 예입니다.
 
@@ -94,7 +94,7 @@ Office 365 연결에 대 한 Express에서 사용 되는 네트워크/보안 경
   
 - Depth 및 type network/security 컨트롤은 Office 365 사용자 환경에 대 한 성능 및 확장성에 영향을 줄 수 있습니다.
 
-- 아웃 바운드 (온-프레미스\>-microsoft) 및 인바운드 (microsoft\>온-프레미스), [사용 하도록 설정 된 경우] 흐름의 요구 사항이 서로 다를 수 있습니다. 이는 일반 인터넷 대상에 대 한 아웃 바운드와 다를 수 있습니다.
+- 아웃 바운드 (온-프레미스- \> microsoft) 및 인바운드 (microsoft 온- \> 프레미스), [사용 하도록 설정 된 경우] 흐름의 요구 사항이 서로 다를 수 있습니다. 이는 일반 인터넷 대상에 대 한 아웃 바운드와 다를 수 있습니다.
 
 - Office 365-포트/프로토콜 및 필수 IP 서브넷에 대 한 요구 사항은 트래픽이 Office 365 또는 인터넷을 통해 라우팅할 수 있는 것과 관계 없이 동일 합니다.
 
@@ -148,7 +148,7 @@ Office 365에 대 한 종단 간 연결 시나리오에 고가용성 및 복구 
 연결 시나리오에는 Office 365에 대 한 여러 독립 및 활성 네트워크 경로에 최적화 된 네트워크 토폴로지가 포함 되어야 합니다. 따라서 개별 장치 또는 장비 수준에서 중복성을 위해 최적화 된 토폴로지 보다 종단 간 가용성이 향상 됩니다.
   
 > [!TIP]
-> 사용자가 여러 대륙 또는 지역에 분산 되어 있고 이러한 각 위치가 단일 비트 회로가 있는 단일 온-프레미스 위치에 중복 WAN 회로를 연결 하는 경우, 사용자에 게는 덜 발생 합니다. 서로 다른 지역을 가장 가까운 피어 링 위치에 연결 하는 독립가는 독자적인 회로를 포함 하는 네트워크 토폴로지 디자인 보다 종단 간 서비스 가용성입니다.
+> 사용자가 여러 대륙 또는 지역에 분산 되어 있고, 이러한 각 위치에서 단일 대상 회로가 있는 단일 온-프레미스 위치에 중복 WAN 회로를 연결 하는 경우, 사용자에 게는 서로 다른 지역을 가장 가까운 피어 링 위치에 연결 하는 독립 비트 단위 회로를 포함 하는 네트워크 토폴로지 디자인 보다 종단 간 서비스 가용성이 낮아집니다.
   
 각 회선이 서로 다른 지리적 피어 링 위치로 연결 되는 두 개 이상의 Express 회로를 프로 비전 하는 것이 좋습니다. 사용자가 Office 365 서비스에 대 한 간 연결을 사용 하는 모든 지역에이 활성 활성 회로 쌍을 프로 비전 해야 합니다. 이를 통해 데이터 센터 또는 피어 링 위치와 같은 주요 위치에 영향을 주는 재해 동안 각 지역이 연결 된 상태로 유지 됩니다. 활성/활성으로 구성 하면 최종 사용자 트래픽이 여러 네트워크 경로에 분산 될 수 있습니다. 이렇게 하면 장치 또는 네트워크 장비 중단 시 영향을 받는 사용자의 범위가 줄어듭니다.
   
@@ -176,7 +176,7 @@ Woodgrove 은행의 네트워크 구성은 몇 가지 주요 원칙을 기반으
 
 이 구성에서는 실제 및 가상 수준에서의 중복성을 사용 하 여 Woodgrove 은행은 안정적인 방식으로 로컬 복구, 지역 복구 및 전역 복구를 제공할 수 있습니다. Woodgrove는 지역별 단일 Azure Express 경로를 평가 하 고 인터넷 장애 조치 (failover) 가능성을 확인 한 후이 구성을 선택 했습니다.
   
-Woodgrove에 지역별 Azure Express 경로를 여러 개 사용할 수 없는 경우 북미 태평양의 Azure Express 회로에의 한 라우팅 트래픽이 허용 되지 않는 대기 시간 및 필수 DNS 전달자 구성을 추가 합니다. 복잡성이 증가 합니다.
+Woodgrove에 지역별 Azure Express 경로를 여러 개 사용할 수 없는 경우 북미 태평양의 Azure Express 회로에의 한 라우팅 트래픽이 허용 되지 않는 대기 시간을 더하고 필요한 DNS 전달자 구성에 따라 복잡성이 증가 합니다.
   
 인터넷을 백업 구성으로 활용 하는 것은 권장 되지 않습니다. 이로 인해 Woodgrove의 안정성 원칙이 끊어지고 연결을 사용 하는 일관 된 환경이 제공 됩니다. 또한 수동 구성은 구성 된 BGP 광고 (NAT 구성, DNS 구성 및 프록시 구성)를 고려 하 여 장애 조치 (failover)를 수행 해야 합니다. 장애 조치 (failover) 복잡성이 추가 되 면 복구 시간이 증가 하 고 관련 단계를 진단 하 고 문제 해결 하는 기능이 저하 됩니다.
   
@@ -210,9 +210,9 @@ Woodgrove에 지역별 Azure Express 경로를 여러 개 사용할 수 없는 �
   
 [비즈니스용 Skype Online의 네트워크 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[비즈니스용 Skype Online의 Express 경로 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Express를 사용 하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정](performance-tuning-using-baselines-and-history.md)
   

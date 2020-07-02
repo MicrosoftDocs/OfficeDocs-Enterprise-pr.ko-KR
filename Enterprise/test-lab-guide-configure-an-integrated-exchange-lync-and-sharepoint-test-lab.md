@@ -15,22 +15,22 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 f1.keywords:
 - NOCSH
 description: '요약: Exchange Server 2013, Lync Server 2013를 실행 하는 서버 및 SharePoint Server 2013를 실행 하는 서버를 실행 하는 서버가 포함 된 통합 테스트 랩을 만드는 방법을 알아봅니다.'
-ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bfb2e1be3b9bb401514e736d38a6f1a2944940f0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841105"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996522"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>테스트 랩 가이드: 통합 된 Exchange, Lync 및 SharePoint 테스트 랩 구성
 
- **요약:** Exchange Server 2013, Lync Server 2013 실행 서버 및 SharePoint Server 2013을 실행 하는 서버를 실행 하는 서버가 포함 된 통합 테스트 랩을 만드는 방법을 알아봅니다.
+ Exchange Server 2013, Lync Server 2013 실행 서버 및 SharePoint Server 2013을 실행 하는 서버를 실행 하는 서버가 포함 된 통합 테스트 랩을 만드는 방법을 알아봅니다.
  
 **통합 된 Exchange, Lync 및 SharePoint 테스트 랩 가이드 개요 비디오 시청**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
-이 구성에서 생성 되는 테스트 랩 (세 가지 서버 유형 사이에 서버 간 인증을 포함)을 사용 하 여 Exchange Server 2013를 실행 하는 서버를 사용 하는 여러 제품 시나리오 및 솔루션을 구축 하 고 보여주는 데 사용할 수 있습니다. Lync Server 2013를 실행 하는 서버와 SharePoint Server 2013를 실행 하는 서버입니다.
+이 구성에서 생성 되는 테스트 랩 (세 가지 서버 유형 간의 서버 간 인증 포함)은 Exchange Server 2013, Lync Server 2013 실행 서버 및 SharePoint Server 2013을 실행 하는 서버를 사용 하는 여러 제품 시나리오 및 솔루션을 구축 하 고 보여 주는 데 사용할 수 있습니다.
   
 이 문서에는 다음에 대 한 지침이 포함 되어 있습니다.
   

@@ -1,7 +1,7 @@
 ---
-title: Office 365 클라이언트 앱 지원-Single Sign-on
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 클라이언트 앱 지원-Single Sign-on
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Single sign-on에 대 한 Office 365 클라이언트 앱 지원
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Microsoft 365 클라이언트 앱이 single sign-on을 지원 합니다.
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619334"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998516"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Office 365 클라이언트 앱 지원-Single Sign-on
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 클라이언트 앱 지원-Single Sign-on
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 SSO (Single sign-on)는 사용자가 Azure Active Directory (Azure AD)의 응용 프로그램에 로그온 할 때 보안 및 편의성을 추가 합니다. Single sign-on을 사용 하는 경우 사용자는 도메인에 가입 된 장치, 회사 리소스, SaaS (software as a service) 응용 프로그램 및 웹 응용 프로그램에 액세스 하기 위해 한 계정으로 한 번씩 로그인 합니다.
 
@@ -39,7 +39,7 @@ SSO (Single sign-on)는 사용자가 Azure Active Directory (Azure AD)의 응용
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Office 365의 플랫폼 지원에 대 한 자세한 내용은 [office 365에 대 한 시스템 요구 사항을](https://products.office.com/office-system-requirements)참조 하세요.
+Microsoft 365의 플랫폼 지원에 대 한 자세한 내용은 [microsoft 365의 시스템 요구 사항을](https://products.office.com/office-system-requirements)참조 하세요.
 
 ## <a name="supported-clients"></a>지원되는 클라이언트
 

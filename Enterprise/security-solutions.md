@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: '요약: 다음의 문서를 활용해 Microsoft의 클라우드 제품으로 보안 솔루션을 배포합니다.'
-ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: cc32383a2a8e9d0849e68bf7305b19edb067cb11
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711831"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998180"
 ---
 # <a name="security-solutions"></a>보안 솔루션
 
- **요약:** 다음의 문서를 활용해 Microsoft의 클라우드 제품으로 보안 솔루션을 배포합니다.
-  
 보안 액세스, 공동 작업, Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365 및 Microsoft Enterprise Mobility + Security(EMS) 제품군의 데이터를 위한 솔루션은 다음과 같습니다.
 
 - [GDPR에 대한 Office 365 정보 보호](office-365-information-protection-for-gdpr.md)

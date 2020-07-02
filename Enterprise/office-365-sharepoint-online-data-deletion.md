@@ -1,7 +1,7 @@
 ---
-title: Office 365 SharePoint Online 데이터 삭제
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 SharePoint Online 데이터 삭제
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: SharePoint Online의 데이터 삭제에 대 한 설명
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842045"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997818"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365에서 SharePoint Online 데이터 삭제
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365에서 SharePoint Online 데이터 삭제
 
 SharePoint Online은 개체를 응용 프로그램 데이터베이스 내에서 추상화 된 코드로 저장 합니다. 사용자가 SharePoint Online에 파일을 업로드 하면 해당 파일이 분해 되어 응용 프로그램 코드로 변환 되어 여러 데이터베이스에 걸쳐 여러 테이블에 저장 됩니다. SharePoint Online에서 고객이 업로드 하는 모든 콘텐츠는 청크, 암호화 (여러 AES 256 비트 키 사용 가능)로 분할 되 고 데이터 센터 전체에 분산 됩니다. 청크 및 암호화 프로세스에 대 한 구체적인 정보는 [Microsoft 클라우드에서 암호화](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)를 참조 하세요. 
 
@@ -40,6 +40,6 @@ SharePoint Online에서 항목은 원래 위치에서 삭제 한 시간부터 93
 
 실수로 사이트 모음을 삭제 한 경우에는 SharePoint 관리 센터를 사용 하 여 전역 관리자 또는 SharePoint 관리에 의해 복원 될 수 있습니다.
 
-삭제 된 사이트 모음은 93 일 동안 보존 됩니다. 93 일이 지나면 사이트와 모든 해당 콘텐츠 및 설정이 목록, 라이브러리, 페이지 및 모든 하위 사이트를 포함 하 여 영구적으로 삭제 됩니다.
+삭제 된 사이트 모음은 93 일 동안 보존 됩니다. 93 일이 지나면 목록, 라이브러리, 페이지, 모든 하위 사이트를 포함 한 사이트와 해당 콘텐츠 및 설정이 영구적으로 삭제 됩니다.
 
 하드 삭제는 사용자가 사이트 모음 휴지통에서 삭제 된 항목을 제거 하거나, 보존 및 백업 기간이 만료 되거나, 관리자가 [remove-spodeletedsite cmdlet](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)을 사용 하 여 사이트 모음을 영구적으로 삭제할 때 발생 합니다. 사용자가 SharePoint Online에서 콘텐츠를 영구적으로 삭제 하거나 제거 하면 삭제 된 청크의 모든 암호화 키도 삭제 됩니다. 이전에 삭제 한 청크를 저장 한 디스크의 블록은 사용 되지 않는 것으로 표시 되며 다시 사용할 수 있습니다.

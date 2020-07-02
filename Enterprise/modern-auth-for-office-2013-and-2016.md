@@ -22,26 +22,26 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Office 2013 및 2016 클라이언트 앱에 대해 Office 365 최신 인증이 다르게 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
-ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
+description: Microsoft 365 최신 인증이 Office 2013 및 2016 클라이언트 앱에 대해 다르게 작동 하는 방식을 알아봅니다.
+ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280217"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997845"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-이 문서를 읽으면 Office 2013 및 Office 2016 클라이언트 앱이 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 Office 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
+이 문서를 읽으면 Office 2013 및 Office 2016 클라이언트 앱이 Exchange Online, SharePoint Online 및 비즈니스용 Skype Online에 대 한 Microsoft 365 테 넌 트의 인증 구성에 따라 최신 인증 기능을 사용 하는 방법을 알아봅니다.
 
 > [!NOTE]
 > Office 2010 및 Office for Mac 2011와 같은 레거시 클라이언트 앱은 최신 인증을 지원 하지 않으며 기본 인증만 사용할 수 있습니다.
 
-## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 서비스에 대 한 최신 인증의 가용성
+## <a name="availability-of-modern-authentication-for-microsoft-365-services"></a>Microsoft 365 서비스에 대 한 최신 인증 가용성
 
-Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같습니다.
+Microsoft 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같습니다.
   
 - 기본적으로 Exchange **Online에 대해 설정 됩니다** . 기능을 설정 하거나 해제 하려면 [최신 인증 사용 또는 사용 안 함을](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) 참조 하세요. 
     
@@ -56,7 +56,7 @@ Office 365 서비스의 경우 최신 인증의 기본 상태는 다음과 같�
 
 Office 2013 클라이언트 앱은 기본적으로 레거시 인증을 지원 합니다. 레거시는 Microsoft 온라인 로그인 도우미 또는 기본 인증 중 하나를 지원 한다는 것을 의미 합니다. 이러한 클라이언트가 최신 인증 기능을 사용 하도록 하려면 Windows 클라이언트에 레지스트리 키가 설정 되어 있어야 합니다. 자세한 내용은 [Windows 장치에서 Office 2013에 대 한 최신 인증 사용](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)을 참조 하세요.
 
-Microsoft Office 2013이 설치되었고 Windows를 실행 중인 장치(예: 노트북 및 태블릿)에 대해 최신 인증을 사용하려면 다음 레지스트리 키를 설정해야 합니다. 최신 인증을 사용할 각 장치에서 키를 설정해야 합니다.
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**레지스트리 키**|**유형**|**값** |
 |:-------|:------:|--------:|
@@ -67,7 +67,7 @@ Microsoft Office 2013이 설치되었고 Windows를 실행 중인 장치(예: �
   
 Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, 클라이언트에서 이러한 새 흐름을 사용 하는 데 필요한 작업은 없습니다. 그러나 레거시 인증을 사용 하려면 명시적 작업을 수행 해야 합니다.
   
-최신 인증이 설정 되어 있는지 여부에 따라 office 2013 및 Office 2016 클라이언트 인증이 Office 365 services에서 작동 하는 방식을 확인 하려면 아래 링크를 클릭 하십시오.
+최신 인증이 설정 되어 있는지 여부에 따라 Office 2013 및 Office 2016 클라이언트 인증이 Microsoft 365 services에서 작동 하는 방식을 확인 하려면 아래 링크를 클릭 하십시오.
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -117,10 +117,10 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
    
 ## <a name="see-also"></a>참고 항목
 
-[Windows 장치에서 Office 2013를 사용하기 위한 최신 인증의 사용](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Windows 장치에서 Office 2013를 사용하기 위한 최신 인증의 사용](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 
-[Office 365 배포에 대 한 다단계 인증 계획 (Office 365 관리자 용)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Microsoft 365에 대한 다단계 인증 사용](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 
-[2 단계 인증을 사용 하 여 Office 365에 로그인 (최종 사용자 용)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+[다단계 인증을 사용 하 여 Microsoft 365에 로그인](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

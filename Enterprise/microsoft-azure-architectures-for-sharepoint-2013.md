@@ -14,18 +14,16 @@ f1.keywords:
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: '요약: SharePoint 2013 솔루션을 Microsoft Azure 가상 컴퓨터에서 호스트할 수 있습니다. 적합 한 솔루션 유형과 Microsoft Azure를 설정 하 여이를 호스트 하는 방법에 대해 알아봅니다.'
-ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793741"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997900"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013용 Microsoft Azure 아키텍처
 
- **요약:** SharePoint 2013 솔루션은 Microsoft Azure 가상 컴퓨터에서 호스팅할 수 있습니다. 적합 한 솔루션 유형과 Microsoft Azure를 설정 하 여이를 호스트 하는 방법에 대해 알아봅니다.
-  
-Azure는 SharePoint Server 2013 솔루션을 호스트 하는 데 적합 한 환경입니다. 대부분의 경우 Office 365을 권장 하지만 Azure에서 호스트 되는 SharePoint Server 팜이 특정 솔루션에 적합 한 옵션 일 수 있습니다. 이 문서에서는 Azure 플랫폼에 적합 한 방식으로 SharePoint 솔루션을 설계 하는 방법을 설명 합니다. 다음 두 가지 특정 솔루션은 예제로 사용 됩니다.
+Azure는 SharePoint Server 2013 솔루션을 호스트 하는 데 적합 한 환경입니다. 대부분의 경우 Microsoft 365을 권장 하지만 Azure에서 호스트 되는 SharePoint Server 팜이 특정 솔루션에 적합 한 옵션 일 수 있습니다. 이 문서에서는 Azure 플랫폼에 적합 한 방식으로 SharePoint 솔루션을 설계 하는 방법을 설명 합니다. 다음 두 가지 특정 솔루션은 예제로 사용 됩니다.
   
 - [Microsoft Azure에서 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -35,18 +33,18 @@ Azure는 SharePoint Server 2013 솔루션을 호스트 하는 데 적합 한 환
 
 Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰어난 옵션입니다. 다른 솔루션 보다이 플랫폼에 적합 한 몇 가지 솔루션이 있습니다. 다음 표에는 권장 해결 방법이 나와 있습니다.
   
-|**솔루션**|**Azure에이 솔루션을 권장 하는 이유**|
+|**해결 방법**|**Azure에이 솔루션을 권장 하는 이유**|
 |:-----|:-----|
 |개발 및 테스트 환경  <br/> |이러한 환경을 손쉽게 만들고 관리할 수 있습니다.  <br/> |
 |Azure에 대 한 온-프레미스 SharePoint 팜의 재해 복구  <br/> |**호스팅된 보조 데이터 센터** 다른 지역의 보조 데이터 센터에 투자 하는 대신 Azure를 사용 합니다. <br/> **저렴 한 재해 복구 환경** 온-프레미스 재해 복구 환경 보다 리소스를 줄이고 유지 관리 하 고 비용을 지불 합니다. 리소스 수는 콜드 대기, 웜 대기 또는 핫 대기 중에서 선택한 재해 복구 환경에 따라 달라 집니다. <br/> **보다 탄력적 플랫폼** 재해가 발생 하는 경우 복구 SharePoint 팜을 쉽게 확장 하 여 부하 요구 사항을 충족할 수 있습니다. 리소스가 더 이상 필요 하지 않은 경우에 확장 됩니다. <br/> [Microsoft Azure의 SharePoint Server 2013 재해 복구를](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)참조 하세요.  <br/> |
-|Office 365에서 사용할 수 없는 기능 및 배율을 사용 하는 인터넷 연결 사이트  <br/> |**노력 집중** 인프라를 구축 하는 것 보다는 훌륭한 사이트 구축에 집중 합니다. <br/> **Azure에서 회복 력을 활용** 합니다. 새 서버를 추가 하 여 요청을 위한 팜의 크기를 조정 하 고 필요한 리소스만 지불 합니다. 동적 컴퓨터 할당이 지원 되지 않습니다 (자동 크기 조정). <br/> **Azure Active Directory (AD) 사용** 고객 계정에 대 한 Azure AD를 활용 합니다. <br/> **Office 365에서 사용할 수 없는 SharePoint 기능 추가** 상세 보고 및 web analytics 추가 <br/> [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트를](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)참조 하세요.  <br/> |
-|Office 365 또는 온-프레미스 환경을 지원 하기 위한 앱 팜  <br/> |온-프레미스 및 클라우드 환경을 모두 지원 하기 위해 Azure에서 **앱을 구축, 테스트 및 호스트** 합니다. <br/> 온-프레미스 환경에 대 한 새 하드웨어를 구입 하는 대신 Azure에서 **이 역할을 호스트** 합니다. <br/> |
+|Microsoft 365에서 사용할 수 없는 기능 및 배율을 사용 하는 인터넷 연결 사이트  <br/> |**노력 집중** 인프라를 구축 하는 것 보다는 훌륭한 사이트 구축에 집중 합니다. <br/> **Azure에서 회복 력을 활용** 합니다. 새 서버를 추가 하 여 요청을 위한 팜의 크기를 조정 하 고 필요한 리소스만 지불 합니다. 동적 컴퓨터 할당이 지원 되지 않습니다 (자동 크기 조정). <br/> **Azure Active Directory (AD) 사용** 고객 계정에 대 한 Azure AD를 활용 합니다. <br/> **Microsoft 365에서 사용할 수 없는 SharePoint 기능 추가** 상세 보고 및 web analytics 추가 <br/> [SharePoint Server 2013을 사용 하 여 Microsoft Azure의 인터넷 사이트를](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)참조 하세요.  <br/> |
+|Microsoft 365 또는 온-프레미스 환경을 지원 하기 위한 앱 팜  <br/> |온-프레미스 및 클라우드 환경을 모두 지원 하기 위해 Azure에서 **앱을 구축, 테스트 및 호스트** 합니다. <br/> 온-프레미스 환경에 대 한 새 하드웨어를 구입 하는 대신 Azure에서 **이 역할을 호스트** 합니다. <br/> |
    
 인트라넷 및 공동 작업 솔루션 및 작업에 대 한 자세한 내용은 다음 옵션을 고려 하십시오.
   
-- Office 365이 비즈니스 요구 사항을 충족 하는지 또는 솔루션의 일부일 수 있는지 확인 합니다. Office 365에서는 항상 최신 상태로 유지 되는 다양 한 기능 집합을 제공 합니다.
+- Microsoft 365이 비즈니스 요구 사항을 충족 하는지 또는 솔루션의 일부일 수 있는지 확인 합니다. Microsoft 365에서는 항상 최신 상태를 유지 하는 다양 한 기능 집합을 제공 합니다.
     
-- Office 365이 모든 비즈니스 요구 사항을 충족 하지 않는 경우 MCS (Microsoft 컨설팅 서비스)에서 온-프레미스 SharePoint 2013의 표준 구현을 고려 합니다. 표준 아키텍처는 사용자 지정 된 것 보다 더 빠르고 저렴 하며 쉬운 해결책이 될 수 있습니다. 
+- Microsoft 365이 모든 비즈니스 요구 사항을 충족 하지 않는 경우 MCS (Microsoft 컨설팅 서비스)에서 온-프레미스 SharePoint 2013의 표준 구현을 고려 합니다. 표준 아키텍처는 사용자 지정 된 것 보다 더 빠르고 저렴 하며 쉬운 해결책이 될 수 있습니다. 
     
 - 표준 구현이 비즈니스 요구 사항을 충족 하지 않는 경우에는 사용자 지정 된 온-프레미스 솔루션을 고려해 야 합니다.
     

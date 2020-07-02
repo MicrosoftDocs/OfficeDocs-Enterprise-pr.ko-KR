@@ -1,7 +1,7 @@
 ---
-title: Office 365에서 서비스 거부 공격 으로부터 보호
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365의 서비스 거부 공격 으로부터 보호
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: DoS (서비스 거부) 공격의 개요
-ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 2cbe5eb86402fd7b7888f39440a58935604c90eb
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843591"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998422"
 ---
-# <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Office 365에서 서비스 거부 공격 으로부터 보호
+# <a name="defend-against-denial-of-service-attacks-in-microsoft-365"></a>Microsoft 365의 서비스 거부 공격 으로부터 보호
 
 ## <a name="introduction"></a>소개
 
@@ -31,9 +31,9 @@ Microsoft는 100 데이터 센터 보다 많은 글로벌 클라우드 인프라
 - Microsoft Azure
 - Microsoft Bing
 - Microsoft Dynamics 365
-- Microsoft Office 365
+- Microsoft 365 및 Office 365
 - Microsoft OneDrive
-- 시간이
+- Skype
 - Xbox LIVE
 
 인터넷 현재 상태와 클라우드 서비스를 제공 하는 다양 한 인터넷 속성을 가진 전역 조직으로, Microsoft는 해커 및 기타 악의적인 개인이 사용할 수 있는 광범위 한 일반 목표입니다. 클라이언트와 Microsoft 클라우드 간의 네트워크 통신 계층은 악의적인 공격의 가장 큰 목표 중 하나입니다. 실제로 Microsoft는 특정 형태의 네트워크 기반에서는 사이버 공격과 계속 해 서 지속적으로 영구적으로 사용 됩니다. 이 줄에서 Microsoft는 심층 방어 보안 원칙을 사용 하 여 클라우드 서비스 및 네트워크를 보호 합니다. 이러한 공격 으로부터 보호 하는 안정적이 고 지속적인 완화 시스템이 없는 경우 Microsoft의 클라우드 서비스는 오프 라인 상태 이며 고객이 사용할 수 없습니다.
@@ -51,7 +51,7 @@ Microsoft는 100 데이터 센터 보다 많은 글로벌 클라우드 인프라
 - 무선 또는 유선 인터넷 연결 끊기
 - 웹 또는 인터넷 서비스에 대 한 장기간 액세스 권한 손실
 
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 - [서비스 거부 공격에 대한 보안 핵심 원칙](office-365-core-principles-of-defense-against-dos-attacks.md)
 - [Microsoft의 서비스 거부 방어 전략](office-365-microsoft-dos-defense-strategy.md)

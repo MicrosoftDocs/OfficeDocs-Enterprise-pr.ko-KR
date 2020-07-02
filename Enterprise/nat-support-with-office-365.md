@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '요약: NAT (Network Address Translation)를 사용 하 여 조직 내에서 IP 주소당 사용할 수 있는 정확한 클라이언트 수를 대략적으로 결정 하는 방법에 대해 자세히 설명 합니다.'
-ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844569"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998543"
 ---
 # <a name="nat-support-with-office-365"></a>NAT 지원(Office 365)
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 이전에는 네트워크 포트당 약 2000 클라이언트에서 IP 주소당 365에 사용 해야 하는 최대 Exchange 클라이언트 수를 제안 했습니다.
   
@@ -40,7 +40,7 @@ NAT를 사용 하 여 회사 네트워크에 있는 수천 명의 사용자가 �
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Office 365에서 여러 연결이 동시에 열리도록 해야 하는 이유는 무엇 인가요?
 
-Outlook에서는 추가 기능, 공유 일정, 사서함 등이 있는 경우 8 개 이상의 연결을 열 수 있습니다. Windows 기반 NAT 장치에서는 최대 64000 개의 포트를 사용할 수 있으므로 포트를 모두 사용 하기 전에 IP 주소 뒤에 최대 8000 명의 사용자가 있을 수 있습니다. 고객이 NAT에 대해 비 Windows OS 기반 장치를 사용 하는 경우 사용할 수 있는 총 포트는 사용 중인 NAT 장치나 소프트웨어에 따라 달라 집니다. 이 시나리오에서 포트의 최대 수는 64000 보다 작을 수 있습니다. 포트를 사용 하는 경우에도 Windows 제한 4000 포트와 같은 다른 요인의 영향을 받으며, 사용할 수 있는 총 포트 수가 60, 000 개까지 줄어듭니다. Internet Explorer와 같이 동시에 연결할 수 있는 다른 응용 프로그램이 있을 수 있습니다. 추가 포트를 요구 합니다.
+Outlook에서는 추가 기능, 공유 일정, 사서함 등이 있는 경우 8 개 이상의 연결을 열 수 있습니다. Windows 기반 NAT 장치에서는 최대 64000 개의 포트를 사용할 수 있으므로 포트를 모두 사용 하기 전에 IP 주소 뒤에 최대 8000 명의 사용자가 있을 수 있습니다. 고객이 NAT에 대해 비 Windows OS 기반 장치를 사용 하는 경우 사용할 수 있는 총 포트는 사용 중인 NAT 장치나 소프트웨어에 따라 달라 집니다. 이 시나리오에서 포트의 최대 수는 64000 보다 작을 수 있습니다. 포트를 사용 하는 경우에도 Windows 제한 4000 포트와 같은 다른 요인의 영향을 받으며, 사용할 수 있는 총 포트 수를 60, 000 개까지 줄일 수 있는 Internet Explorer 등의 다른 응용 프로그램이 있을 수 있습니다.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Office 365을 사용 하 여 단일 공용 IP 주소에서 지원 되는 최대 장치 계산
 
@@ -60,7 +60,7 @@ Outlook에서는 추가 기능, 공유 일정, 사서함 등이 있는 경우 8 
 
 그런 다음 단일 공용 IP 주소에서 지원 되는 최대 장치 수 = (64000-4000)/(6 + 4) = 6000
   
-Office 365 호스팅 팩을 사용 하는 경우 Microsoft Office Outlook 2007 용 2011 년 9 월에 제공 되는 업데이트 또는 Microsoft Outlook 2010의 11 월 2011 또는 이후 업데이트에 포함 된 Outlook의 연결 수 (Office Outlook 2007 with Service Exchange에 대 한 팩 2 및 Outlook 2010)는 2 개까지 사용할 수 있습니다. 네트워크 사용량이 최대 수준으로 요구 되는 최소 및 최대 포트 수를 결정 하려면 여러 운영 체제, 사용자 동작 등의 요소를 고려해 야 합니다.
+Office 365 호스팅 팩을 사용 하는 경우 Microsoft Office Outlook 2007 용 2011 년 9 월, microsoft Outlook 2010 용 11 월 2011 또는 이후 업데이트에 대 한 업데이트에는 Outlook (Office Outlook 2007 서비스 팩 2 및 Outlook 2010)에서 Exchange로의 연결 수가 2 개까지 포함 될 수 있습니다. 네트워크 사용량이 최대 수준으로 요구 되는 최소 및 최대 포트 수를 결정 하려면 여러 운영 체제, 사용자 동작 등의 요소를 고려해 야 합니다.
   
 단일 공용 IP 주소에서 더 많은 장치를 지원 하려면 설명 된 단계에 따라 지원 가능한 최대 장치 수를 평가 합니다.
   

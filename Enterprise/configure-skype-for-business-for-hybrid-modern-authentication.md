@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
-ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840725"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997434"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
   
@@ -125,15 +125,15 @@ Standard Edition 서버를 사용 하는 경우 내부 URL은 비어 있습니�
 
 2. 온-프레미스에서이 명령을 실행 하 여 SFB 웹 서비스 Url의 목록을 가져옵니다.
 
-   AppPrincipalId는로 `00000004`시작 합니다. 이는 비즈니스용 Skype Online에 해당 합니다.
+   AppPrincipalId는로 시작 `00000004` 합니다. 이는 비즈니스용 Skype Online에 해당 합니다.
 
-   메모 작성 및 현재 상태 URL을 포함 하는이 명령의 출력이 며, 대부분은로 `00000004-0000-0ff1-ce00-000000000000/`시작 하는 spn으로 구성 됩니다.
+   메모 작성 및 현재 상태 URL을 포함 하는이 명령의 출력이 며, 대부분은로 시작 하는 Spn으로 구성 됩니다 `00000004-0000-0ff1-ce00-000000000000/` .
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
 ```
 
-3. https://lyncwebint01.contoso.com 예 https://lyncwebext01.contoso.com) 를 들어 온-프레미스의 내부 **또는** 외부 SFB url이 없는 경우에는이 목록에 특정 레코드를 추가 해야 합니다.
+3. 예를 들어 온-프레미스의 내부 **또는** 외부 SFB url이 없는 경우에는 https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) 이 목록에 특정 레코드를 추가 해야 합니다.
 
     아래의 *예제 url* 을 추가 명령에 있는 실제 url로 바꿔야 합니다.
   
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 2 단계에서 **(new-msolserviceprincipal** 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 Spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 Url이 표시 됩니다. 예를 들어, Spn 목록에는 이제 특정 Url https://lyncwebint01.contoso.com 과 https://lyncwebext01.contoso.com/가 포함 됩니다.
+4. 2 단계에서 **(new-msolserviceprincipal** 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 Spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 Url이 표시 됩니다. 예를 들어, Spn 목록에는 이제 특정 Url과가 포함 됩니다 https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>EvoSTS 인증 서버 개체 만들기
 
@@ -170,9 +170,9 @@ HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새
   
 ' OAuth 기관 '에 대 한 비즈니스용 Skype 클라이언트의 ' 구성 정보 '도 확인 해야 합니다. 클라이언트 컴퓨터에서이 작업을 수행 하려면 CTRL 키를 누른 상태에서 Windows 알림 트레이에서 비즈니스용 Skype 아이콘을 마우스 오른쪽 단추로 클릭 합니다. 나타나는 메뉴에서 **구성 정보** 를 클릭 합니다. 바탕 화면에 표시 되는 ' 비즈니스용 Skype 구성 정보 ' 창에서 다음을 찾습니다.
   
-![최신 인증을 사용 하는 비즈니스용 Skype 클라이언트의 구성 정보에는의 https://login.windows.net/common/oauth2/authorizeLYNC 및 EWS OAUTH 인증 기관 URL이 표시 됩니다.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![최신 인증을 사용 하는 비즈니스용 Skype 클라이언트의 구성 정보에는의 Lync 및 EWS OAUTH 인증 기관 URL이 표시 https://login.windows.net/common/oauth2/authorize 됩니다.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-또한 CTRL 키를 누른 상태로 Outlook 클라이언트 아이콘 (Windows 알림 트레이)을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자\*' 유형의 인증 유형에 대해 클라이언트의 SMTP 주소를 찾습니다.
+또한 CTRL 키를 누른 상태로 Outlook 클라이언트 아이콘 (Windows 알림 트레이)을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. \*OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자 ' 유형의 인증 유형에 대해 클라이언트의 SMTP 주소를 찾습니다.
   
 ## <a name="related-articles"></a>관련 문서
 

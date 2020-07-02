@@ -1,7 +1,7 @@
 ---
-title: Office 365 비디오의 office 365 테 넌 트 격리
-ms.author: robmazz
-author: robmazz
+title: Office 365 비디오에서 테넌트 격리
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '요약: Office 365 비디오의 테 넌 트 격리에 대 한 설명입니다.'
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843659"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998701"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 비디오에서 테넌트 격리
 
 > [!NOTE]
-> Office 365 비디오가 Microsoft Stream으로 대체 됩니다. 비디오 공동 작업에 대 한 인텔리전스를 추가 하 고 현재 Office 365 비디오 고객의 전환 계획에 대해 자세히 알아보려면 [Office 365 비디오에서 Stream으로 마이그레이션을](https://docs.microsoft.com/stream/)참조 하세요.
+> Office 365 비디오가 Microsoft Stream으로 대체 됩니다. 비디오 공동 작업에 대 한 인텔리전스를 추가 하 고 현재 Microsoft 365 비디오 고객을 위한 전환 계획에 대해 자세히 알아보려면 [Office 365 비디오 전환에서 Microsoft Stream overview를](https://docs.microsoft.com/stream/migrate-from-office-365)참조 하세요.
 
 ## <a name="introduction"></a>소개
 

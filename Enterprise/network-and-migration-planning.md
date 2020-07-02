@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: fbf8046fb5f386dfceb3a59dbc384e578fe3a519
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419386"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998553"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 이 문서에는 네트워크 계획 및 테스트에 대 한 정보와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
   

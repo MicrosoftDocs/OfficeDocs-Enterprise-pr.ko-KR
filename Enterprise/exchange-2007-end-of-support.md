@@ -13,16 +13,16 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: 2017 년 4 월 11 일에 Exchange Server 2007 지원 종료에 도달 했습니다. 아직 Exchange 2007에서 Office 365 또는 Exchange 2016로의 마이그레이션을 시작한 적이 없는 경우에는 계획을 시작 하는 데 걸리는 시간입니다.
-ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: a0dd549c4a9be5721dae66111e8cdd5a569b2b9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605653"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996552"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 지원 종료 로드맵
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 **2017 년 4 월 11 일**에 Exchange Server 2007 지원 종료에 도달 했습니다. 아직 Exchange 2007에서 Office 365 또는 Exchange 2016로의 마이그레이션을 시작한 적이 없는 경우에는 계획을 시작 하는 데 걸리는 시간입니다. 
   
@@ -80,7 +80,7 @@ Exchange 2007 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
     
 #### <a name="how-should-i-migrate-to-office-365"></a>Office 365로 마이그레이션하는 방법
 
-조직에 따라 Office 365에 액세스 하는 데 도움이 되는 몇 가지 옵션을 사용할 수 있습니다. 마이그레이션 옵션을 선택할 때는 이동 해야 하는 좌석 또는 사서함 수, 마이그레이션에 소요 되는 시간, 온-프레미스 설치 및 Office 365 중에 원활한 통합이 필요한 지 여부 등 몇 가지 사항을 고려해 야 합니다. 마이그레이션 이 표에서는 마이그레이션 옵션 및 사용할 방법을 결정 하는 가장 중요 한 요소를 보여 줍니다.
+조직에 따라 Office 365에 액세스 하는 데 도움이 되는 몇 가지 옵션을 사용할 수 있습니다. 마이그레이션 옵션을 선택할 때는 이동 해야 하는 좌석 또는 사서함 수, 마이그레이션에 소요 되는 시간, 마이그레이션 중에 온-프레미스 설치 및 Office 365 간에 원활한 통합이 필요한 지 여부 등 몇 가지 사항을 고려해 야 합니다. 이 표에서는 마이그레이션 옵션 및 사용할 방법을 결정 하는 가장 중요 한 요소를 보여 줍니다.
   
 | |
 |**마이그레이션 옵션**|**조직 크기**|**기간**|
@@ -179,9 +179,9 @@ Exchange 2007 배포를 중지 하는 데 도움이 되는 가장 간단 하 고
     
 - Office 365에서는 TCP 포트 443을 통해 외부에서 Outlook 사용을 통해 "hybrid server"에 연결 해야 합니다.
     
-- 온-프레미스 Active Directory 서버와 Office 365 간에 Azure Active Directory Connect (AADConnect)를 사용 하 여 디렉터리 동기화를 설정 해야 합니다.
+- 온-프레미스 Active Directory 서버와 Office 365 간에 Azure Active Directory (Azure AD) 연결을 사용 하 여 디렉터리 동기화를 설정 해야 합니다.
     
-- 사용자는 로컬 네트워크에 로그인 할 때 사용 하는 것과 동일한 사용자 이름과 암호를 사용 하 여 Office 365 사서함에 로그인 할 수 있습니다 (암호 동기화 및/또는 Active Directory Federation Services를 사용 하는 Azure Active Directory Connect 필요).
+- 사용자는 로컬 네트워크에 로그인 할 때 사용 하는 것과 동일한 사용자 이름과 암호를 사용 하 여 Office 365 사서함에 로그인 할 수 있습니다 (암호 동기화 및/또는 Active Directory Federation Services를 사용 하는 Azure AD Connect 필요).
     
 - 마이그레이션하려는 각 사용자 사서함에 대해 Exchange Online을 포함 하는 Office 365 라이선스가 필요 합니다.
     
@@ -219,7 +219,7 @@ Office 365로 마이그레이션할 수 없는 경우 Exchange 2016로 마이그
 |:-----|:-----|
 |지원 날짜 종료  <br/> | Exchange 2007와 마찬가지로 각 Exchange 버전의 지원 종료 날짜는 다음과 같습니다.  <br/> **Exchange 2010** -2020 년 1 월  <br/> **Exchange 2013** -2023 년 4 월  <br/> **Exchange 2016** -2025 년 10 월  <br/>  지원 날짜가 끝나면 이전에 다른 마이그레이션을 수행 해야 합니다. 1 월 2020이 생각 보다 훨씬 더 가깝습니다.  <br/> |
 |Exchange 2010 및 2013의 마이그레이션 경로  <br/> |Exchange 2010 또는 Exchange 2013로 마이그레이션하는 일반적인 단계는 다음과 같습니다.  <br/> 기존 Exchange 2007 조직에 Exchange 2010 또는 2013을 설치 하 고 Exchange 2010 또는 2013에 사서함 및 공용 폴더를 exchange 2010 또는 2013 서비스 해제 남은 Exchange 2007 서버로 이동 합니다. |
-|Exchange 2016의 마이그레이션 경로  <br/> |Exchange 2016로 마이그레이션하는 일반적인 단계는 다음과 같습니다.  <br/> 기존 Exchange 2007 조 직에 Exchange 2013 설치 exchange 2013 사서함 및 공용 폴더를 exchange 2013 서비스 해제 나머지 Exchange 2007 서버에 Exchange 2016을 기존에 설치 합니다. Exchange 2013 조직 사서함, 공용 폴더, 서비스 및 기타 인프라를 Exchange 2016으로 이동 합니다 (순서와 관계 없음). 서비스 해제 나머지 Exchange 2013 서버 [!NOTE] > exchange 2013에서 exchange 2016로 마이그레이션하는>는 단순 합니다. 두 버전에는 거의 동일한 하드웨어 요구 사항이 적용 됩니다. 따라서 이러한 버전은 호환성이 있으므로 Exchange 2013에 대해 구매한 서버를 다시 작성 하 고 Exchange 2016을 설치 하는 것을 의미 합니다. 또한 온라인 사서함을 이동 하는 경우 대부분의 사용자는 사서함이 서버에서 이동 된 것을 확인 한 후 Exchange 2016를 사용 하 여 다시 작성 한 후에 야 합니다.           |
+|Exchange 2016의 마이그레이션 경로  <br/> |Exchange 2016로 마이그레이션하는 일반적인 단계는 다음과 같습니다.  <br/> 기존 Exchange 2007 조 직에 Exchange 2013 설치 exchange 2013 사서함 및 공용 폴더를 exchange 2013 서비스 해제 나머지 Exchange 2007 서버는 기존 Exchange 2016 조직에 Exchange 2013을 설치 합니다. 사서함, 공용 폴더, 서비스 및 기타 인프라를 Exchange 2016으로 이동 합니다 (순서와 관계 없음). 서비스 해제 나머지 Exchange 2013 서버 > [!NOTE] exchange 2013에서 exchange 2016로 마이그레이션하는>는 단순 합니다. 두 버전에는 거의 동일한 하드웨어 요구 사항이 적용 됩니다. 따라서 이러한 버전은 호환성이 있으므로 Exchange 2013에 대해 구매한 서버를 다시 작성 하 고 Exchange 2016을 설치 하는 것을 의미 합니다. 또한 온라인 사서함을 이동 하는 경우 대부분의 사용자는 사서함이 서버에서 이동 된 것을 확인 한 후 Exchange 2016를 사용 하 여 다시 작성 한 후에 야 합니다.           |
 |버전 동시 사용  <br/> | 다음으로 마이그레이션할 때:  <br/> **Exchange 2016** Exchange 2007 서버를 포함 하는 조직에는 exchange 2016을 설치할 수 없습니다. 먼저 Exchange 2010 또는 2013 (Exchange 2013 권장)로 마이그레이션을 수행 하 고 모든 Exchange 2007 server를 제거한 다음 Exchange 2016로 마이그레이션해야 합니다.  <br/> **Exchange 2010 또는 exchange 2013** Exchange 2010 또는 Exchange 2013를 기존 Exchange 2007 조 직에 설치할 수 있습니다. 이를 통해 하나 이상의 Exchange 2010 또는 2013 서버를 설치 하 고 마이그레이션을 수행할 수 있습니다.  <br/> |
 |서버 하드웨어  <br/> | 서버 하드웨어 요구 사항이 Exchange 2007에서 변경 되었습니다. 사용할 하드웨어가 호환 되는지 확인 해야 합니다. 각 버전의 하드웨어 요구 사항에 대 한 자세한 내용은 여기에서 확인할 수 있습니다.  <br/> [Exchange 2016 시스템 요구 사항](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 시스템 요구 사항](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 시스템 요구 사항](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Exchange 성능이 크게 개선 되 고, 컴퓨팅 파워 및 저장 용량이 최신 서버에 더 많이 제공 되는 경우 동일한 사서함 수를 지원 하기 위한 서버 수가 더 적어집니다.  <br/> |
 |운영 체제 버전  <br/> | 각 버전에 대해 지원 되는 최소 운영 체제 버전은 다음과 같습니다.  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  운영 체제 지원에 대 한 자세한 내용은 [Exchange 지원 가능성 매트릭스](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)를 확인할 수 있습니다.  <br/> |

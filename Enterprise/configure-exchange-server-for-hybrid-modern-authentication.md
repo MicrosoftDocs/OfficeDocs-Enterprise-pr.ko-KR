@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
-ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774523"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997384"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 Exchange Server 온-프레미스를 구성하는 방법
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 하이브리드 최신 인증 (HMA)은 보다 안전한 사용자 인증 및 권한 부여를 제공 하 고 Exchange server 온-프레미스 하이브리드 배포에 사용할 수 있는 id 관리 방법입니다.
   
@@ -65,7 +65,7 @@ HMA를 켜는 방법은 다음과 같습니다.
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Azure AD에서 온-프레미스 웹 서비스 Url을 Spn으로 추가
 
-온-프레미스 웹 서비스 Url을 Azure AD Spn으로 할당 하는 명령을 실행 합니다. 인증 및 권한 부여 중에는 클라이언트 컴퓨터 및 장치에서 Spn을 사용 합니다. 온-프레미스에서 Azure Active Directory (AAD)에 연결 하는 데 사용할 수 있는 모든 Url은 AAD (내부 및 외부 네임 스페이스가 모두 포함 됨)에 등록 되어야 합니다.
+온-프레미스 웹 서비스 Url을 Azure AD Spn으로 할당 하는 명령을 실행 합니다. 인증 및 권한 부여 중에는 클라이언트 컴퓨터 및 장치에서 Spn을 사용 합니다. 온-프레미스에서 Azure Active Directory (Azure AD)에 연결 하는 데 사용할 수 있는 모든 Url은 Azure AD에 등록 해야 합니다 (내부 및 외부 네임 스페이스가 모두 포함 됨).
   
 먼저 AAD에서 추가 해야 하는 모든 Url을 수집 합니다. 온-프레미스에서 다음 명령을 실행 합니다.
   

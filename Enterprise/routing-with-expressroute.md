@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure Express 경로를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 올바르게 이해 하려면 핵심 Express 경로 및 라우팅 도메인에 대 한 회사의 요구 사항을 파악 해야 합니다. 이를 통해 Office 365 고객이 의존할 수 있는 Express를 사용 하기 위한 기본이 설정 됩니다.
-ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844059"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998197"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 사용한 라우팅
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 Azure Express 경로를 사용 하 여 Office 365에 대 한 라우팅 트래픽을 올바르게 이해 하려면 핵심 Express 경로 및 [라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)에 대 한 회사의 [요구 사항을](https://azure.microsoft.com/documentation/articles/expressroute-routing/) 파악 해야 합니다. 이를 통해 Office 365 고객이 의존할 수 있는 Express를 사용 하기 위한 기본이 설정 됩니다.
   
@@ -117,7 +117,7 @@ Microsoft 피어 링을 사용 하 여 사용할 수 있는 각 Office 365 기�
 |\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> 자동 검색\<-\>outlook.com  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> 자동 검색- \<tenant\> outlook.com  <br/> |
 |\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>인터넷 및 Express를 통한 Office 365 트래픽 라우팅
@@ -156,11 +156,11 @@ Exchange Online, SharePoint Online 및 비즈니스용 Skype Online의 최대 �
   
 - outlook.office365.com, outlook.office.com
 
-- \<테 넌 트\>-sharepoint.com, \<테 넌 트\>-my.sharepoint.com, \<테 넌 트\>-\<이름\>app. sharepoint.com
+- \<tenant-name\>. sharepoint.com, \<tenant-name\> -my.sharepoint.com, \<tenant-name\> - \<app\> sharepoint.com
 
 - \*. TCP가 아닌 트래픽에 대 한 IP 범위와 함께 Lync.com
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*visio.officeapps.live.com, \*word-edit.officeapps.live.com, \*word-view.officeapps.live.com, office.live.com
+- \*broadcast.officeapps.live.com, \* excel.officeapps.live.com, \* onenote.officeapps.live.com, \* powerpoint.officeapps.live.com, \* view.officeapps.live.com, \* visio.officeapps.live.com, \* word-edit.officeapps.live.com, \* word-view.officeapps.live.com, office.live.com
 
 [Windows 8에서 프록시 설정 배포 및 관리](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) 에 대해 자세히 알아보고 [Office 365이 프록시로 제한 되지 않도록](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx)합니다.
   
@@ -197,25 +197,25 @@ Exchange Online, SharePoint Online 및 비즈니스용 Skype Online의 최대 �
   
 Humongous 보험은 전 세계의 사무실과 지리적으로 분산 되어 있습니다. Office 365에 대 한 Azure Express 경로를 구현 하 여 직접 네트워크 연결에 대 한 Office 365 트래픽을 대부분 유지 하려는 경우 또한 Humongous 보험 사무소에는 2 개의 추가 대륙도 있습니다. 대표이 가능 하지 않은 원격 사무실에 있는 직원은 Express 연결을 사용 하기 위해 기본 기능 중 하나 또는 둘 모두에 다시 라우트 해야 합니다.
   
-여기서는 Office 365에서 가능한 한 빨리 Microsoft 데이터 센터에 트래픽을 전송 하는 방법을 안내 합니다. 이 예에서는 Humongous 보험이 원격 사무소에서 가능한 한 빨리 Microsoft 데이터 센터에 연결 하거나, 원격 사무소에서 Microsoft에 액세스 하기 위해 내부 네트워크를 통해 라우트 해야 하는지 여부를 결정 해야 합니다. 가능한 한 빠르게 데이터 센터 연결
+여기서는 Office 365에서 가능한 한 빨리 Microsoft 데이터 센터에 트래픽을 전송 하는 방법을 안내 합니다. 이 예에서는 Humongous 보험이 원격 사무소에서 가능한 한 빨리 Microsoft 데이터 센터에 연결할 수 있도록 하거나, 원격 사무소에서 내부 네트워크를 통해 라우팅 해야 하는 경우에는 외부에 있는 연결을 통해 Microsoft 데이터 센터에 연결할 수 있는지 여부를 결정 해야 합니다.
   
 Microsoft의 데이터 센터, 네트워크 및 응용 프로그램 아키텍처는 전역적으로 서로 다른 통신을 수행 하 고 가능한 한 가장 효율적인 방법으로 서비스를 제공 하도록 설계 되었습니다. 이는 전 세계 가장 큰 네트워크 중 하나입니다. 필요한 것 보다 더 긴 고객 네트워크에 남아 있는 Office 365에 대 한 요청을 전송 하면이 아키텍처를 활용할 수 없습니다.
   
-Humongous 보험 환경에서는가 위를 통해 사용 하려는 응용 프로그램에 따라 계속 진행 해야 합니다. 예를 들어 비즈니스용 skype Online 고객 인 경우 비즈니스용 skype online 모임에 연결할 때 Express에 대 한 연결을 활용 하기 위한 계획을 수립 합니다. 연결 가이드는 세 번째 위치에 대 한 추가 Express 회로를 프로 비전 하는 것입니다. 이는 네트워킹 측면에서 더 비쌉니다. 그러나 Microsoft 데이터 센터에 배달 하기 전에 한 대륙에서 다른 전환로 요청을 라우팅하는 경우 비즈니스용 Skype 온라인 모임 및 통신 중에도 성능이 저하 되거나 사용할 수 없습니다.
+Humongous 보험 환경에서는가 위를 통해 사용 하려는 응용 프로그램에 따라 계속 진행 해야 합니다. 예를 들어 비즈니스용 Skype Online 고객 또는 외부 비즈니스용 Skype Online 모임에 연결할 때가 중 연결을 활용 하려는 경우 비즈니스용 Skype Online 미디어 품질 및 네트워크 연결 가이드의 디자인은 세 번째 위치에 대 한 추가 Express 회로를 프로 비전 하는 것입니다. 이는 네트워킹 측면에서 더 비쌉니다. 그러나 Microsoft 데이터 센터에 배달 하기 전에 한 대륙에서 다른 전환로 요청을 라우팅하는 경우 비즈니스용 Skype 온라인 모임 및 통신 중에도 성능이 저하 되거나 사용할 수 없습니다.
   
-Humongous 보험을 사용 하 고 있지 않거나 어떤 방식으로든 비즈니스용 Skype Online을 사용할 계획이 없는 경우에는 Office 365에서 거 대를 간 연결을 사용 하 여 네트워크 트래픽을 대륙으로 전송 하는 것이 가능 하지만 불필요 한 대기 시간이 나 TCP가 발생할 수 있습니다. 혼잡. 두 경우 모두 로컬 사이트에서 인터넷으로 인터넷을 전송 하는 라우팅은 Office 365에서 사용 하는 콘텐츠 배달 네트워크를 활용 하는 것이 좋습니다.
+Humongous 보험을 사용 하 고 있지 않거나 어떤 방식으로든 비즈니스용 Skype Online을 사용할 계획이 없는 경우에는 Office 365에서 거 지 연결을 사용 하 여 네트워크 트래픽을 대륙으로 전송 하는 것이 가능 하지만 불필요 한 대기 시간이 나 TCP 혼잡이 발생할 수 있습니다. 두 경우 모두 로컬 사이트에서 인터넷으로 인터넷을 전송 하는 라우팅은 Office 365에서 사용 하는 콘텐츠 배달 네트워크를 활용 하는 것이 좋습니다.
   
 ![여러 지리적 위치](media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Humongous 보험이 다중 지리 전략을 계획 하는 경우 회로 규모, 회로 수, 장애 조치 (failover 등)에 대해 고려해 야 할 몇 가지 사항이 있습니다.
   
-회로 사용을 시도 하는 여러 지역이 있는 단일 위치에서 Humongous 보험은 원격 사무실의 Office 365에 대 한 연결이 office 365 데이터 센터에 전송 되 고 본사 위치 이를 위해 Humongous 보험은 본사 인터넷 송신 지점에서 가장 가까운 Office 365 환경에 적절 한 연결을 설정 하는 데 필요한 라운드트립 및 DNS 조회 수를 줄이기 위해 DNS 전달을 구현 합니다. 이는 클라이언트가 로컬 프런트 엔드 서버를 확인 하는 것을 방지 하 고 사용자가 연결 하는 프런트 엔드 서버가 Microsoft와의 Humongous 보험을 피어 링 하는 본사 부근에 있는지 확인 합니다. 또한 [도메인 이름에 대해 조건부 전달자를 할당 하는](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx)방법에 대해서도 배울 수 있습니다.
+여러 지역에서 회로 사용을 시도 하는 단일 위치에서 Humongous 보험 회사는 원격 사무실에서 온 office 365에 대 한 연결을 본사에서 가장 가까운 365 회사에 전송 하 고 본사 위치에서 받은 데이터를 확인 하려고 합니다. 이를 위해 Humongous 보험은 본사 인터넷 송신 지점에서 가장 가까운 Office 365 환경에 적절 한 연결을 설정 하는 데 필요한 라운드트립 및 DNS 조회 수를 줄이기 위해 DNS 전달을 구현 합니다. 이는 클라이언트가 로컬 프런트 엔드 서버를 확인 하는 것을 방지 하 고 사용자가 연결 하는 프런트 엔드 서버가 Microsoft와의 Humongous 보험을 피어 링 하는 본사 부근에 있는지 확인 합니다. 또한 [도메인 이름에 대해 조건부 전달자를 할당 하는](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx)방법에 대해서도 배울 수 있습니다.
   
 이 시나리오에서 원격 사무실의 트래픽은 북미의 Office 365 프런트 엔드 인프라를 확인 하 고 Office 365을 활용 하 여 Office 365 응용 프로그램의 아키텍처에 따라 백엔드 서버에 연결 합니다. 예를 들어 Exchange Online은 북미의 연결을 종료 하 고 해당 프런트 엔드 서버는 테 넌 트를 삭제할 때마다 백 엔드 사서함 서버에 연결 합니다. 모든 서비스에는 유니캐스트 및 애니캐스트 대상으로 구성 된 광범위 하 게 배포 되는 전면 도어 서비스가 있습니다.
   
 Humongous에 여러 대륙의 주요 사무실이 있는 경우 비즈니스용 Skype 온라인 등의 중요 한 응용 프로그램에 대 한 대기 시간을 줄이기 위해 지역별 활성/활성 회로를 최소한 두 개 이상 권장 됩니다. 모든 사무실이 한 대륙에 있거나 실시간 공동 작업을 사용 하 고 있지 않은 경우 통합 또는 배포 된 egress 지점이 고객 관련 의사 결정이 됩니다. 여러 회로를 사용할 수 있는 경우 BGP 라우팅을 통해 장애 조치 (failover)가 단일 회로를 사용할 수 없게 됩니다.
   
-예제 [라우팅 구성](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) 및 [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)를 확인 하세요.
+예제 [라우팅 구성](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) 및를 확인 [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) 하세요.
   
 ## <a name="selective-routing-with-expressroute"></a>Express 경로를 사용한 선택적 라우팅
 
@@ -225,13 +225,13 @@ Humongous에 여러 대륙의 주요 사무실이 있는 경우 비즈니스용 
 
 2. **PAC 파일/u** t l-Office 365에서 특정 fqdn에 대 한 네트워크 트래픽을 특정 경로의 경로로 전송 합니다. 이는 [PAC 파일 배포](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies)로 식별 되는 클라이언트 컴퓨터 별로 경로를 선택적으로 결정 하는 것입니다.
 
-3. **경로 필터링** - [경로 필터](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) 는 Microsoft 피어 링을 통해 지원 되는 서비스의 하위 집합을 사용 하는 방법입니다.
+3. **경로 필터링**  -  [경로 필터](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) 는 Microsoft 피어 링을 통해 지원 되는 서비스의 하위 집합을 사용 하는 방법입니다.
 
 4. **Bgp 커뮤니티** [태그](https://aka.ms/bgpexpressroute365) 를 기반으로 하는 필터링을 통해 고객은 어떤 Office 365 응용 프로그램에서 어떤 방법으로 이동 하 고 인터넷을 통과할 지를 결정할 수 있습니다.
 
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   
@@ -247,9 +247,9 @@ Humongous에 여러 대륙의 주요 사무실이 있는 경우 비즈니스용 
   
 [비즈니스용 Skype Online의 네트워크 최적화](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[비즈니스용 Skype Online의 Express 경로 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Express를 사용 하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용](bgp-communities-in-expressroute.md)
   

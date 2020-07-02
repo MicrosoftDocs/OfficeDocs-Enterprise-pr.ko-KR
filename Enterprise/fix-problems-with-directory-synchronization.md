@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365에서 발생 하는 디렉터리 동기화 문제의 일반적인 원인에 대해 설명 하 고 이러한 문제를 해결 하는 데 도움이 되는 몇 가지 방법을 제공 합니다.
-ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d9e390a7230499f724ebbdae592264a850dd9418
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711911"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998036"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365의 디렉터리 동기화 문제 해결
 
@@ -42,9 +42,9 @@ ms.locfileid: "44711911"
   
 [마법사의 지침](set-up-directory-synchronization.md) 에 따라 Azure AD Connect를 다운로드 합니다. 
   
-여전히 Azure DirSync (Active Directory 동기화)를 사용 하는 경우 dirsync 설치를 위한 시스템 요구 사항, 필요한 권한 및 일반적인 오류를 해결 하는 방법에 대 한 자세한 내용은 [Microsoft 365의 Azure Active Directory 동기화 도구 설치 및 구성 마법사 오류 메시지 문제 해결 방법을](https://go.microsoft.com/fwlink/p/?LinkId=396717) 확인 하세요. 
+여전히 Azure AD (Active Directory) 동기화 (DirSync)를 사용 하는 경우 dirsync 설치를 위한 시스템 요구 사항, 필요한 권한 및 일반적인 오류를 해결 하는 방법에 대 한 자세한 내용은 [Microsoft 365의 Azure Active Directory 동기화 도구 설치 및 구성 마법사 오류 메시지 문제 해결 방법을](https://go.microsoft.com/fwlink/p/?LinkId=396717) 확인 하세요. 
   
-Azure Active Directory 동기화에서 Azure AD Connect로의 연결을 업데이트 하려면 [업그레이드 지침](https://go.microsoft.com/fwlink/p/?LinkId=733240)을 참조 하세요.
+Azure ad Sync에서 Azure AD Connect로 업데이트 하려면 [업그레이드 지침](https://go.microsoft.com/fwlink/p/?LinkId=733240)을 참조 하세요.
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Microsoft 365에서 디렉터리 동기화 문제의 일반적인 원인 해결
 

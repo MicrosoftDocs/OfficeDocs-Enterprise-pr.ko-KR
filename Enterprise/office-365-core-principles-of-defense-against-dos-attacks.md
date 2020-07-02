@@ -1,7 +1,7 @@
 ---
-title: 서비스 거부 공격에 대 한 방어의 Office 365 핵심 원리
-ms.author: robmazz
-author: robmazz
+title: 서비스 거부 공격에 대 한 방어의 Microsoft 365 핵심 원리
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft가 DoS (서비스 거부) 공격에 대 한 방어에서 absorption, 검색 및 완화의 핵심 원칙을 활용 하는 방법
-ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
-ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
+ms.openlocfilehash: 70e1f47e373f85bf2f4eb4d631672e293bae2bb6
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278081"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998412"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>서비스 거부 공격에 대한 보안 핵심 원칙
 

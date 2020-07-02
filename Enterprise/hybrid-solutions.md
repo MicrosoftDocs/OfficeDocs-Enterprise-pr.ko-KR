@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '요약: 다음 문서를 참조하여 Microsoft Azure에서 Office Server 작업을 배포합니다.'
-ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711568"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998016"
 ---
 # <a name="hybrid-solutions"></a>하이브리드 솔루션
 
- **요약:** 다음 문서를 참조하여 Microsoft Azure에서 Office Server 작업을 배포합니다.
-  
 일반적으로 Azure 인프라 서비스의 온-프레미스에서 배포되는 일부 Office Server 작업을 이제 Microsoft Azure를 사용해 배포할 수 있습니다.
   
 Azure의 Microsoft 365 id 인프라의 경우:
@@ -37,7 +35,7 @@ Azure의 Microsoft 365 id 인프라의 경우:
   
 - [온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Azure에서 Microsoft 365에 대 한 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Azure에서 Microsoft 365용 고가용성 페더레이션 인증 배포](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 Azure의 SharePoint Server 2013 작업을 위해 다음 사항을 준비해주세요.
   

@@ -1,7 +1,7 @@
 ---
-title: Office 365 검색에서 office 365 테 넌 트 격리
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 검색에서 테 넌 트 격리
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: Office 365 검색에서의 테 넌 트 격리에 대 한 설명입니다.'
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '요약: Microsoft 365 검색의 테 넌 트 격리에 대 한 설명입니다.'
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844419"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998258"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Office 365 검색에서 테넌트 격리
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 검색에서 테 넌 트 격리
 
 SharePoint Online 검색에서는 테 넌 트 간의 정보 누출을 방지 하는 보호 기능을 사용 하 여 공유 데이터 구조의 효율성을 균형 있게 조정 합니다. 이 모델에서는 다음과 같은 검색 기능을 사용 하지 않습니다.
 
@@ -56,7 +56,7 @@ SharePoint Online 검색에서는 테 넌 트 간의 정보 누출을 방지 하
 
 검색에서는 검색 인덱스에 저장 된 Acl을 통해 문서에 대 한 액세스를 제어 합니다. 모든 항목은 특별 한 ACL 필드의 용어 집합으로 인덱싱됩니다. ACL 필드에는 문서를 볼 수 있는 그룹 또는 사용자 당 하나의 용어가 포함 되어 있습니다. 모든 쿼리는 인증 된 사용자가 속한 각 그룹에 대해 하나씩 ACE (액세스 제어 항목) 용어 목록을 사용 하 여 확장 됩니다.
 
-예를 들어 "<*guid*>와 같은 쿼리를 예로 들 있습니다. *FOO 및 tenantID*: <*guid*> "이 (가) <*guid*>입니다. *foo 및 tenantID*: <*guid*> *및* (*docacl:*<*ace1*> *또는 docacl*: <*ace2*> *또는 docacl*: <*ace3*> *...*) "
+예를 들어 "<*guid*>와 같은 쿼리를 예로 들 있습니다. *FOO 및 tenantID*: <*guid*> "이 (가) <*guid*>입니다. *foo 및 tenantID*: <*guid* >  *및* (*docacl:* < *ace1* >  *또는 docacl*: <*ace2* >  *또는 docacl*: <*ace3* >  *...*) "
 
 사용자와 그룹 식별자 및 Ace가 고유 하므로 일부 사용자 에게만 표시 되는 문서에 대 한 테 넌 트 간의 추가 보안 수준이 제공 됩니다. 테 넌 트의 일반 사용자에 게 액세스 권한을 부여 하는 특수 "외부 사용자를 제외한 모든 사람" ACE의 경우에도 마찬가지입니다. 그러나 "모든 사용자"에 대 한 Ace는 모든 테 넌 트에서 동일 하므로 공용 문서에 대 한 테 넌 트 분리는 테 넌 트 ID 필터링에 따라 다릅니다. Deny Ace도 지원 됩니다. 쿼리 확대는 deny ACE와 일치 하는 경우 결과에서 문서를 제거 하는 절을 추가 합니다.
 

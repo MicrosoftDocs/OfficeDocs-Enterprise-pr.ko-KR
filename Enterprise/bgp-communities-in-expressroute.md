@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
-ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844949"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997875"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용
 
@@ -44,7 +44,7 @@ Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Off
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |Exchange 및 EOP 서비스 포함\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|비즈니스용 Skype\*  <br/> |12076:5030  <br/> |비즈니스용 Skype Online & Microsoft 팀 서비스  <br/> |
+|비즈니스용 Skype\*  <br/> |12076:5030  <br/> |비즈니스용 Skype Online & Microsoft 팀원 서비스  <br/> |
 |기타 Office 365 서비스\*  <br/> |12076:5100  <br/> |Office 365 포털 서비스와 함께 Azure Active Directory (인증 및 디렉터리 동기화 시나리오)가 포함 됩니다.  <br/> |
 |\*Express에 포함 된 서비스 시나리오의 범위는 [Office 365 endpoints](https://aka.ms/o365endpoints) 문서에 설명 되어 있습니다.  <br/> \*\*추가 서비스 및 BGP 커뮤니티 값이 나중에 추가 될 수 있습니다. [현재 BGP 커뮤니티 목록을 참조](https://azure.microsoft.com/documentation/articles/expressroute-routing/)하세요.  <br/> |
 
@@ -77,11 +77,11 @@ Contoso Corporation은 현재 Exchange Online 및 SharePoint Online 용 Office 3
 
 Woodgrove 은행은 Office 365을 비롯 한 여러 Microsoft 클라우드 서비스를 포함 하는 고객입니다. 네트워크 용량을 평가 하 고 Woodgrove 은행은 지원 되는 Office 365 서비스의 기본 경로로 Azure Express 경로를 배포 하기로 결정 합니다. 라우팅 테이블은 전체 Office 365 IP 접두사와 모든 예상 대역폭과 대기 시간 요구를 지원 하도록 프로 비전 된 Azure Express 회로를 지원할 수 있습니다.
   
-Office 365 이외의 Microsoft 클라우드 서비스와 관련 된 네트워크 트래픽을 확인 하기 위해 Woodgrove 은행은 office 365에 대 한 모든 IP 접두사에 대 한 office 365 관련 BGP 커뮤니티 값, 12076:5010, 12076:5020, 12076:5030 등을 사용 하는 것의 범위를 지정 합니다. 12076:5100
+Office 365 이외의 Microsoft 클라우드 서비스와 관련 된 네트워크 트래픽을 확인 하기 위해 Woodgrove 은행은 office 365에 대 한 모든 IP 접두사에 대 한 office 365 관련 BGP 커뮤니티 값, 12076:5010, 12076:5020, 12076:5030, 12076:5100 등을 사용 하는 것의 범위를 지정 합니다.
 
 |**사용 되는 BGP 커뮤니티 태그**|**Azure Express를 통해 라우팅할 수 있는 기능**|**인터넷 경로 필요**|
 |:-----|:-----|:-----|
-|Exchange, 비즈니스용 Skype & Microsoft 팀, SharePoint, &amp; 기타 서비스  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp; 비즈니스용 OneDrive  <br/> Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/> |
+|Exchange, 비즈니스용 Skype & Microsoft 팀, SharePoint, &amp; 기타 서비스  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; 비즈니스용 OneDrive  <br/> Skype SIP 신호, 다운로드, 음성, 비디오 및 데스크톱 공유  <br/> Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP 커뮤니티 사용에 대 한 주요 계획 고려 사항
 
@@ -93,7 +93,7 @@ BGP 커뮤니티를 활용 하 여 고객 네트워크를 통해 거가 보급 �
 
 - Azure Express는 고객이 할당 한 BGP 커뮤니티에 따라 Microsoft 네트워크에서 작업을 지원 하지 않습니다.
 
-- Office 365에서 사용 되는 IP 접두사는 서비스 관련 BGP 커뮤니티 값 으로만 표시 되며 location 관련 BGP 커뮤니티는 지원 되지 않습니다. Office 365 서비스는 본질적으로 전역적으로 진행 되며, 테 넌 트의 위치 또는 Office 365 클라우드 내의 데이터를 기반으로 하는 접두사는 지원 되지 않습니다. 권장 되는 방법은 Office 365 서비스의 IP 주소에 대 한 실제 위치에 관계 없이 사용자 네트워크 위치에서 Microsoft 글로벌 네트워크로 가장 짧은 네트워크 경로를 조정 하도록 네트워크를 구성 하는 것입니다. 요청 하 고 있습니다.
+- Office 365에서 사용 되는 IP 접두사는 서비스 관련 BGP 커뮤니티 값 으로만 표시 되며 location 관련 BGP 커뮤니티는 지원 되지 않습니다. Office 365 서비스는 본질적으로 전역적으로 진행 되며, 테 넌 트의 위치 또는 Office 365 클라우드 내의 데이터를 기반으로 하는 접두사는 지원 되지 않습니다. 권장 되는 방법은 요청 하는 Office 365 서비스의 IP 주소에 대 한 실제 위치에 관계 없이 사용자 네트워크 위치에서 Microsoft 글로벌 네트워크로 가장 짧은 네트워크 경로를 조정 하도록 네트워크를 구성 하는 것입니다.
 
 - 각 BGP 커뮤니티 값에 포함 된 IP 접두사는 값과 연결 된 Office 365 응용 프로그램에 대 한 IP 주소를 포함 하는 서브넷을 나타냅니다. 경우에 따라 둘 이상의 Office 365 응용 프로그램에 서브넷 내에 ip 주소가 있는 경우 두 개 이상의 커뮤니티 값에 IP 접두사가 존재 합니다. 드문 경우는 아니지만, 할당 조각화로 인 한 동작이 며 접두사 개수 나 대역폭 관리 목표에는 영향을 주지 않습니다. 고객은 Office 365의 BGP 커뮤니티를 활용 하 여 영향을 최소화할 때 "필요 하지 않은 작업을 수행 합니다." 방식을 사용 하는 것이 좋습니다.
 
@@ -101,11 +101,11 @@ BGP 커뮤니티를 활용 하 여 고객 네트워크를 통해 거가 보급 �
 
 - BGP 커뮤니티를 사용한 Azure Express에서의 범위 지정은 내부 네트워크가 Microsoft 피어 링 관계를 통해 볼 수 있는 경로에만 영향을 줍니다. 범위 지정 라우팅과 함께 PAC 또는 WPAD 구성을 사용 하는 등의 추가 응용 프로그램 수준 구성을 수행 해야 할 수 있습니다.
 
-- Microsoft에서 할당 한 BGP 커뮤니티를 사용 하는 것 외에도, 고객은 Azure Express를 통해 배운 Office 365 IP 접두사에 자체 BGP 커뮤니티를 할당 하 여 내부 라우팅에 영향을 줄 수 있습니다. 일반적인 사용 사례는 지정 된 각 정보 기반 피어 링 위치를 통해 배운 모든 경로에 위치 기반의 BGP 커뮤니티를 할당 한 다음 고객 네트워크에서 해당 정보 다운스트림을 사용 하 여 가장 짧은 우선 순위 또는 가장 선호 되는 네트워크 경로를 조정 합니다. Microsoft 네트워크 Office 365에 대 한 외부로의 할당 된 BGP 커뮤니티를 사용 하는 것은 Microsoft 통제 또는 가시성 범위를 벗어납니다.
+- Microsoft에서 할당 한 BGP 커뮤니티를 사용 하는 것 외에도, 고객은 Azure Express를 통해 배운 Office 365 IP 접두사에 자체 BGP 커뮤니티를 할당 하 여 내부 라우팅에 영향을 줄 수 있습니다. 일반적인 사용 사례는 지정 된 각 정보 기반 피어 링 위치를 통해 배운 모든 경로에 위치 기반의 BGP 커뮤니티를 할당 한 다음 고객 네트워크에서 해당 정보 다운스트림을 사용 하 여 Microsoft 네트워크로 가장 짧게 또는 가장 선호 되는 네트워크 경로를 조정 하는 것입니다. Office 365에 대 한 외부로의 할당 된 BGP 커뮤니티를 사용 하는 것은 Microsoft 통제 또는 가시성 범위를 벗어납니다.
 
-여기서는 다음을 수행 [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365)하는 데 사용할 수 있는 간단한 링크를 제공 합니다.
+여기서는 다음을 수행 하는 데 사용할 수 있는 간단한 링크를 제공 [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) 합니다.
   
-## <a name="related-topics"></a>관련 주제
+## <a name="related-topics"></a>관련 항목
 
 [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   
@@ -119,9 +119,9 @@ BGP 커뮤니티를 활용 하 여 고객 네트워크를 통해 거가 보급 �
   
 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[비즈니스용 Skype Online의 Express 경로 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[비즈니스용 Skype Online의 ExpressRoute 및 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Express를 사용 하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute를 사용하는 호출 흐름](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
   

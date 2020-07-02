@@ -1,7 +1,7 @@
 ---
-title: Office 365 데이터 소멸
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 데이터 소멸
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Office 365 데이터 센터 디스크 드라이브 및 서버의 재활용, 폐기 또는 폐기에 대 한 Microsoft 정책 개요
-ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft 365 데이터 센터 디스크 드라이브 및 서버의 재활용, 폐기 또는 파괴에 대 한 Microsoft 정책 개요
+ms.openlocfilehash: 8e0725f449dd999c0f892543883a775695969dc9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843689"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998442"
 ---
-# <a name="office-365-data-destruction"></a>Office 365 데이터 소멸
+# <a name="microsoft-365-data-destruction"></a>Microsoft 365 데이터 소멸
 
 ## <a name="physical-data-destruction"></a>실제 데이터 소멸
 
-Microsoft는 디스크 드라이브의 재활용 및 폐기, 서버 장애 또는 더 이상 중지를 해결 하는 표준 정책을 데이터 처리 합니다. Microsoft는 Office 365 디스크 드라이브를 다시 사용 하기 전에 국가 표준 및 기술 특별 게시 800-88 ([미디어 삭제에 대 한 NIST SP 800-88 지침](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf))와 일치 하는 실제 삭제 프로세스를 수행 합니다. Office 365의 모든 디스크 드라이브는 BitLocker 볼륨 수준 암호화를 사용 하 여 암호화 되므로 NIST SP 800-88 준수 지우기는 기술적으로 필요 하지 않습니다. 그렇지만 Microsoft는이 프로세스를 수행 합니다.
+Microsoft는 디스크 드라이브의 재활용 및 폐기, 서버 장애 또는 더 이상 중지를 해결 하는 표준 정책을 데이터 처리 합니다. 모든 Microsoft 365 디스크 드라이브를 다시 사용 하기 전에 Microsoft는 국가 표준 및 기술 특별 게시 800-88 ([미디어 삭제에 대 한 NIST SP 800-88 지침](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf))와 일치 하는 실제 삭제 프로세스를 수행 합니다. Microsoft 365의 모든 디스크 드라이브는 BitLocker 볼륨 수준 암호화를 사용 하 여 암호화 되므로 NIST SP 800-88 준수 지우기는 기술적으로 필요 하지 않습니다. 그렇지만 Microsoft는이 프로세스를 수행 합니다.
 
-Office 365 데이터 센터 내에서 사용 되는 실패 한 디스크는 물리적으로 파괴 되 고 ISO 프로세스를 통해 감사 됩니다. 자산 유형에 따라 적절 한 폐기 방법이 결정 됩니다. 삭제할 수 없는 하드 드라이브의 경우 Microsoft는 소멸 프로세스를 사용 하 여 미디어를 파기 하 고 정보 복구를 렌더링 합니다. 예를 들어 디스크는 물리적으로 파괴 되거나, pulverized 또는 incinerated입니다. Microsoft는 모든 소멸 레코드를 보존 하 고 Office 365 내에서 다시 사용 되는 서버에 대 한 유사한 삭제 프로세스를 수행 합니다. 이러한 지침은 electronic 및 실제 삭제가 모두 포함 됩니다.
+Microsoft 365 데이터 센터 내에서 사용 되는 실패 한 디스크는 물리적으로 파괴 되 고 ISO 프로세스를 통해 감사 됩니다. 자산 유형에 따라 적절 한 폐기 방법이 결정 됩니다. 삭제할 수 없는 하드 드라이브의 경우 Microsoft는 소멸 프로세스를 사용 하 여 미디어를 파기 하 고 정보 복구를 렌더링 합니다. 예를 들어 디스크는 물리적으로 파괴 되거나, pulverized 또는 incinerated입니다. Microsoft는 모든 소멸 레코드를 보존 하 고 Microsoft 365 내에서 다시 사용 되는 서버에 대 한 유사한 삭제 프로세스를 수행 합니다. 이러한 지침은 electronic 및 실제 삭제가 모두 포함 됩니다.
 
 각 데이터 센터는 현장 물리적 소멸 프로세스를 사용 하 여 해당 디스크를 삭제 합니다. 디스크를 삭제 하도록 지정 된 저장소 미디어에 대 한 보안 계급는 데이터 센터의 각 영역에 있습니다. 각 보안 함 스테이션에는 비디오 모니터링 감시 기능이 있습니다. 삭제 함이 약 50% 용량에 도달 하면 사이트 서비스 팀이 실제 보안 팀에 연락 하 여 제거를 조정 합니다. 사이트 서비스 담당자 및 보안 Office 보안 삭제 함을 제거 하 고 지정 된 보안 저장소 영역에 배치 합니다. 삭제 중의 데이터 베어링 장치 처리를 관리 하는 정책 및 절차는 소멸을 위해 승인 된 기계 상태를 확인 하는 절차를 포함 하 여 주기적으로 테스트 됩니다.
 

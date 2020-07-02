@@ -1,7 +1,7 @@
 ---
-title: 데이터 손상을 다루는 Office 365
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 데이터 손상 처리
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Office 365의 데이터 손상 및 Microsoft의 예방 및 복구 작업에 대해 설명 합니다.
-ms.openlocfilehash: 1477ab4dca0f9126eb04b76b9f8f65ff0b5eefc8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft 365의 데이터 손상 및 Microsoft의 예방 및 복구 작업에 대해 설명 합니다.
+ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844489"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998452"
 ---
-# <a name="dealing-with-data-corruption-in-office-365"></a>Office 365의 데이터 손상 처리
+# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Microsoft 365의 데이터 손상 처리
 
 대규모 클라우드 서비스를 실행할 때의 까다로운 측면 중 하나는 대규모 데이터 및 독립 시스템에 따라 데이터 손상을 처리 하는 방법입니다. 데이터 손상은 다음과 같은 이유로 인해 발생할 수 있습니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "41844489"
 - 악의적인 해커 및 불만을 품은 직원
 - 데이터 손실을 발생 시키는 외부 서비스의 사건
 
-데이터 무결성이 높을수록 데이터 손상 사고가 더 적기 때문에 Microsoft는 손상 발생을 방지 하기 위해 Office 365 보호 메커니즘을 기본적으로 제공 하 고 시스템 및 프로세스를 통해 데이터를 복구할 수 있습니다. 다음을 포함 하 여 데이터 손상에 대 한 복구 력을 늘리기 위해 엔지니어링 릴리스 프로세스의 다양 한 단계 내에 검사 및 프로세스가 존재 합니다.
+데이터 무결성이 높을수록 데이터 손상 사고가 더 적기 때문에 Microsoft는 손상 발생을 방지 하기 위해 Microsoft 365 보호 메커니즘을 기본적으로 제공 하 고 시스템 및 프로세스를 통해 데이터를 복구할 수 있습니다. 다음을 포함 하 여 데이터 손상에 대 한 복구 력을 늘리기 위해 엔지니어링 릴리스 프로세스의 다양 한 단계 내에 검사 및 프로세스가 존재 합니다.
 
 - 시스템 디자인
 - 코드 구성 및 구조
@@ -40,4 +40,4 @@ ms.locfileid: "41844489"
 - 단위 테스트, 통합 테스트 및 시스템 테스트
 - 여행 와이어 테스트/게이트
 
-Office 365 프로덕션 환경에서 데이터 센터 간의 피어 복제를 사용 하면 데이터가 항상 여러 개인 경우를 확인할 수 있습니다. 표준 이미지 및 스크립트는 손실 된 서버를 복구 하는 데 사용 되 고, 복제 된 데이터는 고객 데이터를 복원 하는 데 사용 됩니다. 기본 제공 되는 데이터 복구 력 검사 및 프로세스 때문에 Microsoft는 Office 365 정보 시스템 설명서 (보안 관련 문서 포함)의 백업만 유지 하 고 SharePoint Online의 기본 제공 복제와 내부 코드를 사용 합니다. 리포지토리 도구, 원본 서비스 센터 시스템 설명서는 SharePoint Online에 저장 되며, 원본 서비스 센터에는 시스템 및 응용 프로그램 이미지가 포함 됩니다. SharePoint Online 및 원본 서비스는 모두 버전 관리를 사용 하며 거의 실시간으로 복제 됩니다.
+Microsoft 365 프로덕션 환경에서 데이터 센터 간의 피어 복제를 사용 하면 항상 모든 데이터가 포함 된 라이브 복사본을 여러 개 유지할 수 있습니다. 표준 이미지 및 스크립트는 손실 된 서버를 복구 하는 데 사용 되 고, 복제 된 데이터는 고객 데이터를 복원 하는 데 사용 됩니다. 기본 제공 되는 데이터 복구 력 검사 및 프로세스로 인해 Microsoft는 SharePoint Online의 기본 제공 복제 및 내부 코드 리포지토리 도구인 원본 서비스 센터를 사용 하 여 Microsoft 365 information system 설명서 (보안 관련 문서 포함)의 백업만 유지 합니다. 시스템 설명서는 SharePoint Online에 저장 되며, 원본 서비스 센터에는 시스템 및 응용 프로그램 이미지가 포함 됩니다. SharePoint Online 및 원본 서비스는 모두 버전 관리를 사용 하며 거의 실시간으로 복제 됩니다.

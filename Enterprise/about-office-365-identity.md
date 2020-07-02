@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Microsoft 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 44777f206b61b01dc8a66817f549120af827bbc3
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698955"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998076"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 id 모델 및 Azure Active Directory
 
@@ -48,14 +48,14 @@ Microsoft 365에서는 microsoft 365 구독에 포함 되어 있는 Azure Active
 
 |||
 |:-------|:-----|:-----|
-|  | **클라우드 전용 id** | **하이브리드 ID** |
-| **정의** | 사용자 계정이 Microsoft 365 구독의 azure AD (Active Directory) 테 넌 트에만 있습니다. | 사용자 계정이 AD DS에 있고 복사본은 Microsoft 365 구독의 Azure AD 테 넌 트에도 있습니다. 또한 Azure AD의 사용자 계정에는 이미 해시 된 AD DS 사용자 계정 암호의 해시 버전을 포함할 수 있습니다. |
+|  | **클라우드 전용 ID** | **하이브리드 ID** |
+| **정의** | 사용자 계정은 Microsoft 365 구독의 Azure AD 테 넌 트에만 있습니다. | 사용자 계정이 AD DS에 있고 복사본은 Microsoft 365 구독의 Azure AD 테 넌 트에도 있습니다. 또한 Azure AD의 사용자 계정에는 이미 해시 된 AD DS 사용자 계정 암호의 해시 버전을 포함할 수 있습니다. |
 | **Microsoft 365에서 사용자 자격 증명을 인증 하는 방법** | Microsoft 365 구독의 Azure AD 테 넌 트는 클라우드 id 계정을 사용 하 여 인증을 수행 합니다. | Microsoft 365 구독에 대 한 Azure AD 테 넌 트가 인증 프로세스를 처리 하거나 사용자를 다른 id 공급자로 리디렉션합니다. |
 | **최적 시나리오** | 온-프레미스 AD DS가 없거나 필요 하지 않은 조직 | AD DS 또는 다른 id 공급자를 사용 하는 조직 |
 | **가장 큰 혜택** | 간편 하 게 사용할 수 있습니다. 추가 디렉터리 도구 또는 서버가 필요 하지 않습니다. | 사용자는 온-프레미스 또는 클라우드 기반 리소스에 액세스할 때 동일한 자격 증명을 사용할 수 있습니다. |
 ||||
 
-## <a name="cloud-only-identity"></a>클라우드 전용 id
+## <a name="cloud-only-identity"></a>클라우드 전용 ID
 
 클라우드 전용 id는 Azure AD에만 있는 사용자 계정을 사용 합니다. 클라우드 id는 일반적으로 온-프레미스 서버가 없거나 AD DS를 사용 하 여 로컬 id를 관리 하지 않는 소규모 조직에서 사용 됩니다. 
 

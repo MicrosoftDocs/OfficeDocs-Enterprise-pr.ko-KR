@@ -1,7 +1,7 @@
 ---
-title: Office 365 Exchange Online 데이터 삭제
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 Exchange Online 데이터 삭제
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online 내에서 소프트 및 하드 데이터 삭제를 처리 하는 방법
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843639"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998322"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Office 365에서 Exchange Online 데이터 삭제
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Microsoft 365에서 Exchange Online 데이터 삭제
+
 Exchange Online 내에는 두 가지 유형의 삭제 (소프트 삭제 및 하드 삭제)가 있습니다. 이는 사서함에 있는 모든 사서함과 항목에 적용 됩니다.
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>일시 삭제 되 고 영구 삭제 된 사서함

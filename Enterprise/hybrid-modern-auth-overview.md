@@ -15,16 +15,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: 325c34ec636ce9661b25f7b8be83ce8cbf61a291
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516459"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998026"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
 
-*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 _최신 인증은_ 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. Office 365 하이브리드 배포는 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에 제공 되 고, 분할 된 비즈니스용 Skype 하이브리드에도 사용할 수 있습니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보
   
@@ -41,7 +41,7 @@ _최신 인증은_ 사용자 인증 및 권한 부여를 보다 안전 하 게 �
   
 - **인증 방법**: MFA (다단계 인증); 스마트 카드 인증; 클라이언트 인증서 기반 인증
 - **권한 부여 방법**: Microsoft의 개방형 권한 부여 구현 (OAuth)
-- **조건부 액세스 정책**: MAM (모바일 응용 프로그램 관리) 및 Azure Active Directory 조건부 액세스
+- **조건부 액세스 정책**: MAM (모바일 응용 프로그램 관리) 및 Azure Active Directory (azure AD) 조건부 액세스
 
 최신 인증을 사용 하 여 사용자 id를 관리 하면 관리자가 온-프레미스 (Exchange 및 비즈니스용 Skype), Exchange 하이브리드 및 비즈니스용 Skype 하이브리드/분할 도메인 시나리오에 보다 안전 하 게 다양 한 id 관리 방법을 제공할 수 있습니다.
   
@@ -59,9 +59,9 @@ Office 365의 최신 인증에 대 한 자세한 내용은 [office 365 클라이
   
 EvoSTS를 사용 하면 온-프레미스 서버가 OAuth (토큰 발급)을 활용 하 여 클라이언트에 게 권한을 부여할 수 있으며, 온-프레미스에서 클라우드의 공통 보안 방법 (예를 들어 Multi-factor Authentication)을 사용할 수 있습니다. 또한, evoSTS는 사용자가 요청의 일부로 자신의 암호를 제공 하지 않고 리소스에 대 한 액세스를 요청할 수 있도록 하는 토큰을 발급 합니다. 사용자가 로그인 한 위치 (온라인 또는 온-프레미스)와 관계 없이 필요한 리소스를 호스트 하는 위치도 확인 하기 때문에, 이제는 최신 인증이 구성 된 후 사용자 및 클라이언트에 게 권한을 부여 하는 것이 핵심입니다.
   
-예를 들어 비즈니스용 Skype 클라이언트에서 사용자를 대신 하 여 일정 정보를 가져오기 위해 Exchange 서버에 액세스 해야 하는 경우에는 ADAL (Active Directory 인증 라이브러리)을 사용 하 여이 작업을 수행 합니다. ADAL은 클라이언트 응용 프로그램에서 OAuth 보안 토큰을 사용 하 여 디렉터리의 보안 리소스를 사용할 수 있도록 설계 된 코드 라이브러리입니다. ADAL은 OAuth를 통해 사용자에 게 리소스에 대 한 액세스 권한을 부여 하기 위해 클레임 및 암호가 아닌 exchange 토큰을 확인 합니다. 이 처럼, 이와 같은 트랜잭션의 경우 사용자 클레임의 유효성을 검사 하 고 필요한 토큰을 발급 하는 방법을 아는 서버는 보안 토큰 서비스 온-프레미스 또는 Active Directory Federation Services 일 수 있습니다. 그러나 최신 인증은 Azure Active Directory (AAD)를 사용 하 여 해당 기관을 중앙 집중식으로 확인 합니다.
+예를 들어 비즈니스용 Skype 클라이언트에서 사용자를 대신 하 여 일정 정보를 가져오기 위해 Exchange 서버에 액세스 해야 하는 경우에는 ADAL (Active Directory 인증 라이브러리)을 사용 하 여이 작업을 수행 합니다. ADAL은 클라이언트 응용 프로그램에서 OAuth 보안 토큰을 사용 하 여 디렉터리의 보안 리소스를 사용할 수 있도록 설계 된 코드 라이브러리입니다. ADAL은 OAuth를 통해 사용자에 게 리소스에 대 한 액세스 권한을 부여 하기 위해 클레임 및 암호가 아닌 exchange 토큰을 확인 합니다. 이 처럼, 이와 같은 트랜잭션의 경우 사용자 클레임의 유효성을 검사 하 고 필요한 토큰을 발급 하는 방법을 아는 서버는 보안 토큰 서비스 온-프레미스 또는 Active Directory Federation Services 일 수 있습니다. 그러나 최신 인증은 Azure AD를 사용 하 여 해당 기관을 중앙에 확인 합니다.
   
-또한 Exchange server 및 비즈니스용 Skype 환경이 완전히 온-프레미스이 고 권한 부여 서버가 온라인 상태이 고 온-프레미스 환경에 클라우드의 Office 365 구독에 대 한 연결을 만들고 유지 관리할 수 있는 기능 (즉, 구독에서 디렉터리로 사용 하는 Azure Active Directory 인스턴스)이 포함 되어 있어야 합니다.
+또한 Exchange server 및 비즈니스용 Skype 환경이 완전히 온-프레미스이 고 권한 부여 서버가 온라인 상태이 고 온-프레미스 환경에 클라우드의 Office 365 구독에 대 한 연결을 만들고 유지 관리할 수 있는 기능 (즉, 구독에서 디렉터리로 사용 하는 Azure AD 인스턴스)이 포함 되어 있어야 합니다.
   
 변경 되지 않는 내용 온-프레미스를 분할 도메인에 포함시킬지 아니면 비즈니스용 Skype 및 Exchange server를 사용 하 고 있는지 여부에 관계 없이 모든 사용자는 먼저 *온-프레미스*인증을 받아야 합니다. 최신 인증을 하이브리드 방식으로 구현 하는 경우 _Lyncdiscovery_ 및 자동 검색 _은 모두 온_ -프레미스 서버를 가리킵니다.
   
@@ -111,10 +111,10 @@ Get-help 인증 구성 cmdlet에 대 한 자세한 내용은 [get-CsOAuthConfigu
   - 하이브리드 환경에 Lync Server 2010 또는 2013이 없습니다.
 
 >[!NOTE]
->비즈니스용 Skype 프런트 엔드 서버가 인터넷 액세스용으로 프록시 서버를 사용 하는 경우에는 각 프런트 엔드에 대해 web.config 파일의 구성 섹션에 사용 되는 프록시 서버 IP 및 포트 번호를 입력 해야 합니다.
+>비즈니스용 Skype 프런트 엔드 서버가 인터넷 액세스용으로 프록시 서버를 사용 하는 경우에는 각 프런트 엔드에서 web.config 파일의 구성 섹션에 사용 되는 프록시 서버 IP 및 포트 번호를 입력 해야 합니다.
   
-- C:\Program Files\Skype for Business Server 2015 \ Web Components\Web ticket\int\web.config
-- C:\Program Files\Skype for Business Server 2015 \ Web Components\Web ticket\ext\web.config
+- Business Server 2015에 대 한 C:\Program Files\Skype \ 웹 Components\Web ticket\int\web.config
+- Business Server 2015에 대 한 C:\Program Files\Skype \ 웹 Components\Web ticket\ext\web.config
 
 ```xml
 <configuration>
@@ -168,7 +168,7 @@ Get-help 인증 구성 cmdlet에 대 한 자세한 내용은 [get-CsOAuthConfigu
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>시작 하기 전에 알아야 할 사항
 <a name="BKMK_Whatelse"> </a>
 
-- 온-프레미스 서버에 대 한 모든 시나리오에는 온-프레미스에 최신 인증을 설정 하는 작업이 포함 됩니다 (실제로, 비즈니스용 Skype의 경우 인증 및 권한 부여를 담당 하는 서버가 Microsoft 클라우드 (AAD의 보안 토큰 서비스, ' evoSTS ')에 있고, 온-프레미스 설치에서 비즈니스용 Skype 또는 Exchange에 사용 되는 Url 또는 네임 스페이스에 대 한 Azure Active Directory (AAD)를 업데이트 하기 위해 지원 되는 토폴로지 목록이 있습니다. 따라서 온-프레미스 서버는 Microsoft 클라우드 종속성을 사용 합니다. 이 작업을 수행 하려면 ' 하이브리드 인증 '을 구성 하는 것이 원인일 수 있습니다.
+- 온-프레미스 서버에 대 한 모든 시나리오에는 온-프레미스에 최신 인증을 설정 하는 작업이 포함 됩니다 (실제로, 비즈니스용 Skype의 경우 인증 및 권한 부여를 담당 하는 서버가 Microsoft 클라우드 (AAD의 보안 토큰 서비스, ' evoSTS ')에 있고 비즈니스용 Skype 또는 Exchange의 온-프레미스 설치에서 사용 하는 Url 또는 네임 스페이스에 대해 Azure AD를 업데이트 하기 위해 지원 되는 토폴로지 목록이 있습니다. 따라서 온-프레미스 서버는 Microsoft 클라우드 종속성을 사용 합니다. 이 작업을 수행 하려면 ' 하이브리드 인증 '을 구성 하는 것이 원인일 수 있습니다.
 - 이 문서에서는 Exchange 온-프레미스 및 비즈니스용 Skype 온-프레미스에 대해 지원 되는 최신 인증 토폴로지를 선택 하는 데 도움이 되는 다른 사용자에 게 제공 되는 링크, 설치 단계를 설명 하는 방법 문서 및 최신 인증을 사용 하지 않도록 설정 하는 방법을 설명 합니다. 서버 환경에서 최신 인증을 사용 하기 위해 home 기반이 필요한 경우이 페이지를 브라우저에서 즐겨찾기 페이지로 이동 합니다.
 
 ## <a name="related-topics"></a>관련 항목

@@ -1,7 +1,7 @@
 ---
-title: Office 365의 office 365 격리 및 액세스 제어
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365의 격리 및 액세스 제어
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: '요약: Office 365의 다양 한 응용 프로그램 내에서 격리 및 액세스 제어에 대 한 설명입니다.'
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: '요약: Microsoft 365의 다양 한 응용 프로그램 내에서 격리 및 액세스 제어에 대 한 설명입니다.'
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892127"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998792"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Office 365에서 격리 및 액세스 제어
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365의 격리 및 액세스 제어
 
-Azure Active Directory 및 Office 365에서는 수십 개의 서비스, 수백 개의 엔터티, 수천 개의 관계 및 수백만 개의 특성을 포함 하는 고도로 복잡 한 데이터 모델을 사용 합니다. 높은 수준에서 Azure Active Directory 및 서비스 디렉터리는 상태 기반 복제 프로토콜을 사용 하 여 동기화 된 테 넌 트 및 받는 사람의 컨테이너입니다. Azure Active Directory 내에 보관 된 디렉터리 정보 외에도 각 서비스 작업에는 자체 디렉터리 서비스 인프라가 있습니다.
+Azure Active Directo ry (Azure AD) 및 Microsoft 365에서는 수십 개의 서비스, 수백 개의 엔터티, 수천 개의 관계 및 수백만 개의 특성을 포함 하는 고도로 복잡 한 데이터 모델을 사용 합니다. 높은 수준에서 Azure AD 및 서비스 디렉터리는 상태 기반 복제 프로토콜을 사용 하 여 동기화 된 테 넌 트 및 받는 사람의 컨테이너입니다. Azure AD 내에 보관 된 디렉터리 정보 외에도 각 서비스 작업에는 자체 디렉터리 서비스 인프라가 있습니다.
  
-![Office 365 테 넌 트 데이터 동기화](media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 테 넌 트 데이터 동기화](media/office-365-isolation-tenant-data-sync.png)
 
-이 모델 내에는 단일 디렉터리 데이터 원본이 없습니다. 특정 시스템은 개별 데이터를 소유 하지만 단일 시스템에는 모든 데이터가 저장 되지 않습니다. Office 365 서비스가이 데이터 모델의 Azure Active Directory와 공동으로 사용 됩니다. Azure Active Directory는 공유 데이터 (일반적으로 모든 서비스에서 사용 되는 작고 정적 데이터)에 대 한 "시스템 확정"입니다. Office 365 및 Azure Active Directory 내에서 사용 되는 페더레이션 모델은 데이터의 공유 보기를 제공 합니다.
+이 모델 내에는 단일 디렉터리 데이터 원본이 없습니다. 특정 시스템은 개별 데이터를 소유 하지만 단일 시스템에는 모든 데이터가 저장 되지 않습니다. Microsoft 365 서비스는이 데이터 모델에서 Azure AD와 공동으로 진행 됩니다. Azure AD는 공유 데이터 (일반적으로 모든 서비스에서 사용 되는 작고 정적 데이터)에 대 한 "시스템 확정"입니다. Microsoft 365 및 Azure AD 내에서 사용 되는 페더레이션 모델은 데이터의 공유 보기를 제공 합니다.
 
-Office 365에서는 실제 저장소 및 Azure 클라우드 저장소를 모두 사용 합니다. Exchange Online (Exchange Online Protection 포함) 및 비즈니스용 Skype는 고객 데이터에 대 한 자체 저장소를 사용 합니다. SharePoint Online은 SQL Server 저장소 및 Azure 저장소를 모두 사용 하므로, 저장소 수준에서 고객 데이터를 추가로 격리 해야 합니다.
+Microsoft 365에서는 실제 저장소 및 Azure 클라우드 저장소를 모두 사용 합니다. Exchange Online (Exchange Online Protection 포함) 및 비즈니스용 Skype는 고객 데이터에 대 한 자체 저장소를 사용 합니다. SharePoint Online은 SQL Server 저장소 및 Azure 저장소를 모두 사용 하므로, 저장소 수준에서 고객 데이터를 추가로 격리 해야 합니다.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -47,7 +47,7 @@ Exchange Online은 고객 데이터를 사서함에 저장 합니다. 사서함�
 - 그룹
 - 유추 데이터
 
-Exchange Online 내의 각 사서함 데이터베이스에는 여러 테 넌 트의 사서함이 포함 됩니다. 인증 코드는 테 넌 시에 포함 된 각 사서함을 보호 합니다. 기본적으로 할당 된 사용자만 사서함에 액세스할 수 있습니다. 사서함을 보안 하는 ACL (액세스 제어 목록)에 테 넌 트 수준에서 Azure Active Directory에 의해 인증 된 id가 포함 되어 있습니다. 각 테 넌 트에 대 한 사서함은 테 넌 트의 사용자만을 포함 하는, tenant의 인증 공급자에 대해 인증 된 id로 제한 됩니다. 테 넌 트의 콘텐츠를 테 넌 트 B의 사용자가 어떠한 방식으로도 가져올 수 없습니다.
+Exchange Online 내의 각 사서함 데이터베이스에는 여러 테 넌 트의 사서함이 포함 됩니다. 인증 코드는 테 넌 시에 포함 된 각 사서함을 보호 합니다. 기본적으로 할당 된 사용자만 사서함에 액세스할 수 있습니다. 사서함을 보안 하는 ACL (액세스 제어 목록)에 테 넌 트 수준에서 Azure AD가 인증 한 id가 포함 되어 있습니다. 각 테 넌 트에 대 한 사서함은 테 넌 트의 사용자만을 포함 하는, tenant의 인증 공급자에 대해 인증 된 id로 제한 됩니다. 테 넌 트의 콘텐츠를 테 넌 트 B의 사용자가 어떠한 방식으로도 가져올 수 없습니다.
 
 ## <a name="skype-for-business"></a>비즈니스용 Skype
 
@@ -63,7 +63,7 @@ SharePoint Online에는 데이터 격리를 제공 하는 몇 가지 독립적�
 
 사용자가 데이터를 포함 하는 저장소에 직접 액세스 하는 경우에는 콘텐츠를 SharePoint Online이 아닌 사람이 나 다른 시스템으로 해석할 수 없습니다. 이러한 메커니즘에는 보안 액세스 제어 및 속성이 포함 됩니다. 모든 SharePoint Online 리소스는 테 넌 시를 포함 하 여 인증 코드 및 RBAC 정책에 의해 보호 됩니다. 리소스를 보안 하는 ACL (액세스 제어 목록)에 테 넌 트 수준에서 인증 된 id가 포함 되어 있습니다. 테 넌 트에 대 한 SharePoint Online 데이터는 테 넌 트에 대 한 인증 공급자가 인증 한 id로만 제한 됩니다.
 
-Acl 외에도 인증 공급자 (테 넌 트 별 Azure Active Directory)를 지정 하는 테 넌 트 수준 속성은 한 번 작성 되며 일단 설정 된 후에는 변경할 수 없습니다. 테 넌 트에 대해 authentication provider 테 넌 트 속성을 설정한 후에는 테 넌 트에 제공 된 Api를 사용 하 여 변경할 수 없습니다.
+Acl 외에도 인증 공급자 (테 넌 트 별 Azure AD)를 지정 하는 테 넌 트 수준 속성은 한 번 기록 되 고 설정 된 후에는 변경할 수 없습니다. 테 넌 트에 대해 authentication provider 테 넌 트 속성을 설정한 후에는 테 넌 트에 제공 된 Api를 사용 하 여 변경할 수 없습니다.
 
 각 테 넌 트에 대해 고유한 *SubscriptionId* 가 사용 됩니다. 모든 고객 사이트는 테 넌 트에서 소유 하 고 테 넌 트에 고유한 *SubscriptionId* 를 할당 합니다. 사이트의 *SubscriptionId* 속성은 영구 기록 됩니다. 일단 테 넌 트에 할당 되 면 사이트를 다른 테 넌 트로 이동할 수 없습니다. *SubscriptionId* 는 인증 공급자에 대 한 보안 범위를 만드는 데 사용 되는 키 이며 테 넌 트에 연결 됩니다.
 

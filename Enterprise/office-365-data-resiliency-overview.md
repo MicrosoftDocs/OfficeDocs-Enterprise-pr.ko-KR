@@ -1,7 +1,7 @@
 ---
-title: Office 365의 데이터 복구
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365의 데이터 복구
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft Office 365의 데이터 복구 기능을 이해 합니다.
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft Microsoft 365의 데이터 복구 기능을 이해 합니다.
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843679"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998472"
 ---
-# <a name="data-resiliency-in-office-365"></a>Office 365의 데이터 복구
+# <a name="data-resiliency-in-microsoft-365"></a>Microsoft 365의 데이터 복구
 
 ## <a name="introduction"></a>소개
 
@@ -39,9 +39,9 @@ ms.locfileid: "41843679"
 
 현재 고객은 품질을 손상 시 키 지 않고 Microsoft의 지속적인 혁신을 기대 하며,이는 Microsoft의 서비스 및 소프트웨어가 복구 및 복구 력을 염두에 두고 구축 되는 이유 중 하나입니다. 
 
-## <a name="office-365-data-resiliency-principles"></a>Office 365 데이터 복구 원칙
+## <a name="microsoft-365-data-resiliency-principles"></a>Microsoft 365 데이터 복구 원칙
 
-회복성은 클라우드 기반 서비스에서 특정 유형의 오류를 견딜 수 있지만 고객 측면에서 완전히 작동 하는 기능을 의미 합니다. 데이터 복원 이란 Office 365 내에서 발생 하는 오류에 관계 없이 중요 한 고객 데이터는 그대로 유지 되며 영향을 받지 않습니다. 이 끝까지 Office 365 서비스는 다음과 같은 다섯 가지 복원 원칙을 기반으로 설계 되었습니다.
+회복성은 클라우드 기반 서비스에서 특정 유형의 오류를 견딜 수 있지만 고객 측면에서 완전히 작동 하는 기능을 의미 합니다. 데이터 복구는 Microsoft 365 내에서 발생 하는 오류에 관계 없이 중요 한 고객 데이터는 그대로 유지 되 고 영향을 받지 않습니다. 이를 위해 Microsoft 365 서비스는 다음과 같은 다섯 가지 복원 원칙을 기반으로 설계 되었습니다.
 
 - 중요 한 데이터와 중요 하지 않은 데이터가 있습니다. 드문 오류 시나리오에서 중요 하지 않은 데이터 (예: 메시지를 읽은 경우)를 삭제할 수 있습니다. 중요 한 데이터 (예: 전자 메일 메시지 등의 고객 데이터)는 극단적인 비용으로 보호 해야 합니다. 디자인 목표에 따라 배달 되는 메일 메시지는 항상 중요 하며 메시지를 읽었는지 여부와 같은 작업은 중요 하지 않습니다. 
 - 고객 데이터의 복사본은 다양 한 오류 영역으로 구분 하거나 가능한 한 많은 수 (예: 단일 자격 증명 (프로세스, 서버 또는 운영자)가 액세스할 수 있는 데이터 센터)로 분리 하 여 오류 격리를 제공 해야 합니다. 
@@ -49,7 +49,7 @@ ms.locfileid: "41843679"
 - 고객 데이터를 손상 으로부터 보호 해야 합니다. 이를 검색 하거나 모니터링, 복구 및 복구할 수 있어야 합니다. 
 - 대부분의 데이터 손실은 고객 작업을 통해 발생 하므로 고객이 실수로 삭제 된 항목을 복원할 수 있도록 하는 GUI를 사용 하 여 자체적으로 복구할 수 있습니다. 
  
-강력한 테스트 및 유효성 검사와 더불어, 이러한 원칙에 대 한 클라우드 서비스 구축을 통해 Office 365는 고객의 요구 사항을 충족 하 고 충족할 수 있으며, 플랫폼을 지속적으로 혁신 하 고 개선 하도록 보장 합니다. 
+강력한 테스트 및 유효성 검사와 더불어, 이러한 원칙에 대 한 클라우드 서비스 구축을 통해 Microsoft 365는 고객의 요구 사항을 충족 하 고 충족할 수 있으며, 플랫폼을 지속적으로 혁신 하 고 개선 하도록 보장 합니다. 
 
 ## <a name="related-links"></a>관련 링크
 
