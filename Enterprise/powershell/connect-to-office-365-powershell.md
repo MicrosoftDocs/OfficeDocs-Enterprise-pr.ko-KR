@@ -3,7 +3,7 @@ title: PowerShell Office 365에 연결
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 06/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Office 365 PowerShell을 통해 Office 365 조직에 연결하여 명령줄에서 관리 센터 작업을 수행합니다.
-ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
-ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
-ms.translationtype: HT
+ms.openlocfilehash: 0906da2b8773973236bc8cb6ef273d1a14528bfd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170616"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997424"
 ---
 # <a name="connect-to-office-365-powershell"></a>PowerShell Office 365에 연결
 
@@ -47,7 +47,7 @@ Office 365 및 관리자 계정, 그룹 및 라이선스에 연결하는 데 사
     > Azure Active Directory PowerShell for Graph 모듈의 경우 PowerShell 버전 5.1 이상을 사용해야 합니다. Windows PowerShell용 Microsoft Azure Active Directory 모듈의 경우 PowerShell 버전 5.1 이상 PowerShell 버전 6 이하를 사용해야 합니다. PowerShell 버전 7은 사용할 수 없습니다. Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2 SP1의 경우, [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616)을 다운로드하고 설치합니다.  
     
     > [!NOTE]
-    > Windows 64비트 버전을 사용하세요. 32비트 버전의 Microsoft PowerShell용 Windows Azure Active Directory 모듈은 2014년 10월에 중단되었습니다.
+    > Use a 64-bit version of Windows. Support for the 32-bit version the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in October of 2014.
     
 이러한 절차는 Office 365 관리자 역할의 구성원인 사용자를 대상으로 합니다. 자세한 내용은 [Office 365 관리자 역할 정보](https://go.microsoft.com/fwlink/p/?LinkId=532367)를 참조하세요.
 
@@ -64,7 +64,7 @@ Azure Active Directory PowerShell for Graph 모듈에서 새 cmdlet을 필요로
 
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
 
-다음이 단계 연결할 때마다 하지 컴퓨터에 한 번만 필요 합니다. 주기적으로 최신 버전의 소프트웨어를 설치 하려면 필요할 수 있습니다.
+These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
   
 1. 관리자 권한의 Windows PowerShell 명령 프롬프트를 엽니다(관리자 권한으로 Windows PowerShell 실행).
     
@@ -106,9 +106,9 @@ PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈
     
 ### <a name="step-1-install-required-software"></a>1단계: 필수 소프트웨어 설치
 
-다음이 단계 연결할 때마다 하지 컴퓨터에 한 번만 필요 합니다. 주기적으로 최신 버전의 소프트웨어를 설치 하려면 필요할 수 있습니다.
+These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
   
-1.  64비트 버전의 Microsoft Online Services 로그인 도우미를 설치합니다.[IT 전문가용 Microsoft Online Services 로그인 도우미 RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)를 설치합니다.
+1.  Windows 10을 실행 하 고 있지 않은 경우 Microsoft Online Services 로그인 도우미: [IT 전문가 용 Microsoft Online Services 로그인 도우미 RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)를 설치 64 합니다.
     
 2. 다음 단계에 따라 Windows PowerShell용 Microsoft Azure Active Directory 모듈을 설치합니다.
     
@@ -136,13 +136,13 @@ MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 �
 
 ### <a name="how-do-you-know-this-worked"></a>작동 여부는 어떻게 확인하나요?
 
-어떠한 오류도 전송되지 않으면 성공적으로 연결되었음을 의미합니다. 빠른 테스트는 Office 365 cmdlet(예: **Get-MsolUser** )을 실행하여 결과를 확인하는 것입니다.
+If you don't receive any errors, you connected successfully. A quick test is to run an Office 365 cmdlet—for example, **Get-MsolUser** —and see the results.
   
 오류가 발생하면 다음 요구 사항을 확인합니다.
   
 - **가장 흔한 문제는 암호를 잘못 입력한 경우입니다**. 2단계를 다시 실행합니다. 사용자 이름과 암호를 입력할 때 신중하게 확인합니다.
     
-- **Windows PowerShell용 Microsoft Azure Active Directory 모듈을 사용하려면 컴퓨터에서 Microsoft .NET Framework 3.5.* x* 기능이 사용되도록 설정되어야 합니다.** 컴퓨터 최신 버전(예: 4 또는 4.5.* x*)이 설치되어 있을 수 있지만 이전 버전의 .NET Framework와의 호환성이 사용되거나 사용되지 않도록 설정되어 있을 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
+- **The Microsoft Azure Active Directory Module for Windows PowerShell requires that the Microsoft .NET Framework 3.5.* x* feature is enabled on your computer**. It's likely that your computer has a newer version installed (for example, 4 or 4.5.* x*), but backwards compatibility with older versions of the .NET Framework can be enabled or disabled. For more information, see the following topics:
     
   - Windows Server 2012 또는 Windows Server 2012 R2의 경우 [역할 및 기능 추가 마법사를 사용하여 .NET Framework 3.5를 사용 가능하도록 설정](https://go.microsoft.com/fwlink/p/?LinkId=532368)을 참조하세요.
     
@@ -151,13 +151,13 @@ MFA를 사용하는 경우, 추가 대화 상자에 있는 지침을 따라서 �
   - Windows 10, Windows 8.1 및 Windows 8의 경우, [Windows 10, Windows 8.1 및 Windows 8에 .NET Framework 3.5 설치](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)를 참조하세요.
 
   
-- **사용자의 Microsoft PowerShell용 Windows Azure Active Directory 모듈 버전이 오래되었을 수 있습니다.** 확인하려면 Microsoft PowerShell용 Windows Azure Active Directory 모듈 또는 Office 365 PowerShell에서 다음 명령을 실행하세요.
+- **Your version of the Microsoft Azure Active Directory Module for Windows PowerShell might be out of date.** To check, run the following command in Office 365 PowerShell or the Microsoft Azure Active Directory Module for Windows PowerShell:
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    반환된 버전 번호가 1.0.8070.2 값보다 낮은 경우 Microsoft PowerShell용 Windows Azure Active Directory 모듈을 제거한 후 1단계의 링크에서 최신 버전을 설치합니다.
+    반환 된 버전 번호가 번호가 1.0.8070.2 값 보다 작으면 Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 제거 하 고 위의 1 단계에서 설치 합니다.
 
 - **연결 오류가 발생하면** ["Connect-MsolService: 형식의 예외가 발생했습니다." 오류](https://go.microsoft.com/fwlink/p/?LinkId=532377) 항목을 참조하세요.
     
