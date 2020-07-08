@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365의 격리 및 액세스 제어
+title: Microsoft 365에서 격리 및 액세스 제어
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '요약: Microsoft 365의 다양 한 응용 프로그램 내에서 격리 및 액세스 제어에 대 한 설명입니다.'
-ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: fc0aa37025936a1a60cfbb8914b079eba5ba2e7f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998792"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052591"
 ---
-# <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365의 격리 및 액세스 제어
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365에서 격리 및 액세스 제어
 
-Azure Active Directo ry (Azure AD) 및 Microsoft 365에서는 수십 개의 서비스, 수백 개의 엔터티, 수천 개의 관계 및 수백만 개의 특성을 포함 하는 고도로 복잡 한 데이터 모델을 사용 합니다. 높은 수준에서 Azure AD 및 서비스 디렉터리는 상태 기반 복제 프로토콜을 사용 하 여 동기화 된 테 넌 트 및 받는 사람의 컨테이너입니다. Azure AD 내에 보관 된 디렉터리 정보 외에도 각 서비스 작업에는 자체 디렉터리 서비스 인프라가 있습니다.
+Azure Active Directory (Azure AD) 및 Microsoft 365에서는 수십 개의 서비스, 수백 개의 엔터티, 수천 개의 관계 및 수백만 개의 특성을 포함 하는 고도로 복잡 한 데이터 모델을 사용 합니다. 높은 수준에서 Azure AD 및 서비스 디렉터리는 상태 기반 복제 프로토콜을 사용 하 여 동기화 된 테 넌 트 및 받는 사람의 컨테이너입니다. Azure AD 내에 보관 된 디렉터리 정보 외에도 각 서비스 작업에는 자체 디렉터리 서비스 인프라가 있습니다.
  
 ![Microsoft 365 테 넌 트 데이터 동기화](media/office-365-isolation-tenant-data-sync.png)
 

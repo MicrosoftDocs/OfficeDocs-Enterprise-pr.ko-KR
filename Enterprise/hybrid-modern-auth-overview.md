@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '최신 인증은 사용자 인증 및 권한 부여를 보다 안전 하 게 제공 하는 id 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스의 하이브리드 배포에는 사용할 수 있으며,이는 분할 도메인 하이브리드 비즈니스를 지원 합니다. 이 문서에서는 필수 구성 요소, 최신 인증 설정/해제, 관련 클라이언트 (예: Outlook 및 Skype 클라이언트) 정보'
-ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 056262ade67b8ffd452f68cc0c5e3882326b2e44
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998026"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052421"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype와 Exchange 서버를 사용 하기 위한 필수 구성 요소
 
@@ -157,8 +157,8 @@ Get-help 인증 구성 cmdlet에 대 한 자세한 내용은 [get-CsOAuthConfigu
 
 - **일반 필수 구성 요소**
   - ADFS를 사용 하는 경우 페더레이션 하려면 Windows 2012 R2 ADFS 3.0 이상이 있어야 합니다.
-  - Id 구성은 AAD Connect에서 지 원하는 형식 (예: 암호 해시 동기화, 통과 인증, Office 365, et cetera에서 지 원하는 온-프레미스 STS)입니다.
-  - 사용자 복제 및 동기화를 위해 AAD 연결이 구성 되었으며 제대로 작동 하 고 있습니다.
+  - Id 구성은 Azure AD Connect (암호 해시 동기화, 통과 인증, Office 365, et cetera에서 지 원하는 온-프레미스 STS)에서 지 원하는 형식 중 하나입니다.
+  - Azure AD Connect가 구성 되었으며 사용자 복제 및 동기화를 위해 제대로 작동 하 고 있습니다.
   - 온-프레미스 및 Office 365 환경 간에 Exchange 클래식 하이브리드 토폴로지 모드를 사용 하 여 하이브리드가 구성 되어 있는지 확인 해야 합니다. Exchange 하이브리드에 대 한 공식적인 지원 설명은 현재 CU 또는 current CU가 있어야 한다고 명시 되어 있습니다.
     > [!NOTE]
     > 하이브리드 최신 인증은 [하이브리드 에이전트](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)에서 지원 되지 않습니다.
@@ -168,7 +168,7 @@ Get-help 인증 구성 cmdlet에 대 한 자세한 내용은 [get-CsOAuthConfigu
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>시작 하기 전에 알아야 할 사항
 <a name="BKMK_Whatelse"> </a>
 
-- 온-프레미스 서버에 대 한 모든 시나리오에는 온-프레미스에 최신 인증을 설정 하는 작업이 포함 됩니다 (실제로, 비즈니스용 Skype의 경우 인증 및 권한 부여를 담당 하는 서버가 Microsoft 클라우드 (AAD의 보안 토큰 서비스, ' evoSTS ')에 있고 비즈니스용 Skype 또는 Exchange의 온-프레미스 설치에서 사용 하는 Url 또는 네임 스페이스에 대해 Azure AD를 업데이트 하기 위해 지원 되는 토폴로지 목록이 있습니다. 따라서 온-프레미스 서버는 Microsoft 클라우드 종속성을 사용 합니다. 이 작업을 수행 하려면 ' 하이브리드 인증 '을 구성 하는 것이 원인일 수 있습니다.
+- 온-프레미스 서버에 대 한 모든 시나리오에는 온-프레미스에 최신 인증을 설정 하는 작업이 포함 됩니다 (실제로, 비즈니스용 Skype의 경우 인증 및 권한 부여를 담당 하는 서버가 Microsoft 클라우드 (' evoSTS ' 라는 Azure AD의 보안 토큰 서비스)에 있고 비즈니스용 Skype 또는 Exchange의 온-프레미스 설치에서 사용 하는 Url 또는 네임 스페이스에 대해 Azure AD를 업데이트 하는 지원 되는 토폴로지 목록이 있습니다. 따라서 온-프레미스 서버는 Microsoft 클라우드 종속성을 사용 합니다. 이 작업을 수행 하려면 ' 하이브리드 인증 '을 구성 하는 것이 원인일 수 있습니다.
 - 이 문서에서는 Exchange 온-프레미스 및 비즈니스용 Skype 온-프레미스에 대해 지원 되는 최신 인증 토폴로지를 선택 하는 데 도움이 되는 다른 사용자에 게 제공 되는 링크, 설치 단계를 설명 하는 방법 문서 및 최신 인증을 사용 하지 않도록 설정 하는 방법을 설명 합니다. 서버 환경에서 최신 인증을 사용 하기 위해 home 기반이 필요한 경우이 페이지를 브라우저에서 즐겨찾기 페이지로 이동 합니다.
 
 ## <a name="related-topics"></a>관련 항목

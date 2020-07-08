@@ -15,37 +15,37 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
-ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법 이며 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스 및 비즈니스용 Skype 하이브리드에 사용할 수 있습니다.
+ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997434"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052511"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
 
 *이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법으로, 비즈니스용 skype 서버 온-프레미스 및 Exchange server 온-프레미스에서 사용 가능 하 고, 하이브리드의 wmi for Business 비즈니스를 사용할 수 있습니다.
+최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법 이며 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스 및 비즈니스용 Skype 하이브리드에 사용할 수 있습니다.
   
  **중요** 최신 인증 (MA)에 대 한 자세한 내용과 회사나 조직에서이를 사용 하는 데 도움이 될 수 있는 이유를 확인 하세요. [이 문서](hybrid-modern-auth-overview.md) 에서 개요를 확인 합니다. MA에서 어떤 비즈니스용 Skype 토폴로지가 지원 되는지 파악 해야 하는 경우 여기에서 문서화 되었습니다.
   
- **시작 하기 전에**다음을 호출 합니다.
+ **시작 하기 전에**다음과 같은 용어를 사용 합니다.
   
-- 최신 인증 \> MA
+- 최신 인증 (MA)
 
-- 하이브리드 최신 인증 \> HMA
+- 하이브리드 최신 인증 (HMA)
 
-- Exchange 온-프레미스 \> exch
+- Exchange 온-프레미스 (EXCH)
 
-- Exchange Online \> exo
+- Exchange Online (EXO)
 
-- 비즈니스용 Skype 온-프레미스 \> SFB
+- 비즈니스용 Skype 온-프레미스 (SFB)
 
-- 및 비즈니스용 Skype Online \> SFBO
+- 비즈니스용 Skype Online (SFBO)
 
-또한이 문서의 그래픽에 회색으로 표시 된 개체 또는 희미하게 나타나는 개체가 있는 경우에도는 s m a 구성에 포함 **되지 않습니다** .
+또한이 문서의 그래픽에 회색 또는 희미하게 표시 되는 개체가 있는 경우에도 해당 요소는 s m a 구성에 포함 **되지 않습니다** .
   
 ## <a name="read-the-summary"></a>요약 읽기
 
@@ -59,7 +59,7 @@ ms.locfileid: "44997434"
 
 1. EXO에 대 한 최신 인증을 사용 하도록 설정 합니다 (아직 설정 되지 않은 경우).
 
-1. SFBO에 대 한 최신 인증을 사용 하도록 설정 합니다 (아직 설정 되지 않은 경우).
+1. SFBO에 대 한 최신 인증을 설정 합니다 (아직 설정 되지 않은 경우).
 
 1. Exchange 온-프레미스에 대해 하이브리드 최신 인증을 사용 하도록 설정 합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "44997434"
   
 ![혼합 6 비즈니스용 Skype HMA 토폴로지의 경우 네 가지 가능한 위치 모두에서 MA가 설정 됩니다.](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-여기에서 볼 수 있듯이 MA를 켜는 네 가지 위치는 다음과 같습니다. 최상의 사용자 환경에서는 이러한 네 가지 위치 모두에 MA를 설정 하는 것이 좋습니다. 이러한 모든 위치에서 MA를 설정할 수 없는 경우 환경에 필요한 위치 에서만 MA를 설정 하도록 단계를 조정 합니다.
+여기에서 볼 수 있듯이 MA를 켜는 네 가지 위치는 다음과 같습니다. 최상의 사용자 환경을 위해서는 이러한 모든 위치에서 MA를 켜는 것이 좋습니다. 이러한 모든 위치에서 MA를 설정할 수 없는 경우 환경에 필요한 위치 에서만 MA를 설정 하도록 단계를 조정 합니다.
   
 지원 되는 토폴로지의 [MA가 있는 비즈니스용 Skype에 대 한 지원 가능성 항목](https://technet.microsoft.com/library/mt803262.aspx) 을 참조 하세요.
   
@@ -89,7 +89,7 @@ ms.locfileid: "44997434"
 
 - **SFB 2015 CU5 웹 서비스 Url**
 
-모든 SfB 2015 풀에 배포 된 내부 및 외부 웹 서비스 URL이 필요 합니다. 이러한 사항을 가져오려면 비즈니스용 Skype 관리 셸에서 다음을 실행 합니다.
+배포 된 모든 SfB 2015 풀에 대 한 내부 및 외부 웹 서비스 Url이 필요 합니다. 이러한 사항을 가져오려면 비즈니스용 Skype 관리 셸에서 다음을 실행 합니다.
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -115,13 +115,13 @@ Standard Edition 서버를 사용 하는 경우 내부 URL은 비어 있습니�
   
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>비즈니스용 Skype 온-프레미스에 대해 하이브리드 최신 인증을 사용 하도록 설정
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Azure AD에서 온-프레미스 웹 서비스 Url을 Spn으로 추가
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Azure Active Directory에서 온-프레미스 웹 서비스 Url을 Spn으로 추가
 
 이제 SFBO에서 서비스 주체로 이전에 수집한 Url을 추가 하기 위한 명령을 실행 해야 합니다.
   
  **참고 사항** Spn (서비스 사용자 이름)은 웹 서비스를 식별 하 고이를 보안 주체 (예: 계정 이름 또는 그룹)와 연결 하 여 인증 된 사용자를 대신 하 여 서비스를 수행할 수 있도록 합니다. 서버에 인증 하는 클라이언트는 Spn에 포함 된 정보를 사용 합니다.
   
-1. 먼저 [다음 지침](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)을 사용 하 여 AAD에 연결 합니다.
+1. 먼저 [다음 지침](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)을 사용 하 여 Azure Active Directory (azure AD)에 연결 합니다.
 
 2. 온-프레미스에서이 명령을 실행 하 여 SFB 웹 서비스 Url의 목록을 가져옵니다.
 
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 2 단계에서 **(new-msolserviceprincipal** 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록/스크린샷에서 새 Spn 목록을 비교 합니다 (레코드의 새 목록을 스크린샷 할 수도 있음). 성공적으로 완료 되 면 목록에 두 개의 새 Url이 표시 됩니다. 예를 들어, Spn 목록에는 이제 특정 Url과가 포함 됩니다 https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com/ .
+4. 2 단계에서 **(new-msolserviceprincipal** 명령을 다시 실행 하 고 출력을 검토 하 여 새 레코드가 추가 되었는지 확인 합니다. 목록 또는 스크린샷을 새 Spn 목록 앞에 비교 합니다. 레코드에 대 한 새 목록을 스크린샷 할 수도 있습니다. 성공적으로 완료 되 면 목록에 두 개의 새 Url이 표시 됩니다. 예를 들어, Spn 목록에는 이제 특정 Url과가 포함 됩니다 https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>EvoSTS 인증 서버 개체 만들기
 
@@ -164,7 +164,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 ## <a name="verify"></a>지
 
-HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새 인증 흐름을 사용 합니다. HMA를 설정 하는 것 만으로도 클라이언트에 대 한 재인증이 트리거되지 않습니다. 클라이언트는 인증 토큰 및/또는 인증서의 수명에 따라 다시 인증 합니다.
+HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새 인증 흐름을 사용 합니다. HMA를 설정 하면 모든 클라이언트에 대 한 재인증이 트리거되지 않습니다. 클라이언트는 인증 토큰 및/또는 인증서의 수명에 따라 다시 인증 합니다.
   
 해당 HMA가 사용 하도록 설정한 후에 작동 하는지 테스트 하려면 테스트 SFB Windows 클라이언트에서 로그 아웃 하 고 ' 내 자격 증명 삭제 '를 클릭 해야 합니다. 다시 로그인 합니다. 이제 클라이언트에서 최신 인증 흐름을 사용 하 고 있으며, 클라이언트가 서버에 연결 하 여 로그인 하기 바로 전에 확인 된 ' 회사 또는 학교 ' 계정에 대 한 **Office 365** 프롬프트를 포함 합니다.
   
@@ -172,7 +172,7 @@ HMA를 사용 하도록 설정 하면 클라이언트의 다음 로그인은 새
   
 ![최신 인증을 사용 하는 비즈니스용 Skype 클라이언트의 구성 정보에는의 Lync 및 EWS OAUTH 인증 기관 URL이 표시 https://login.windows.net/common/oauth2/authorize 됩니다.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-또한 CTRL 키를 누른 상태로 Outlook 클라이언트 아이콘 (Windows 알림 트레이)을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. \*OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자 ' 유형의 인증 유형에 대해 클라이언트의 SMTP 주소를 찾습니다.
+또한 CTRL 키를 누른 상태로 Outlook 클라이언트 (Windows 알림 트레이)에 대 한 아이콘을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 상태 '를 클릭 합니다. \*OAuth에서 사용 되는 전달자 토큰을 나타내는 ' 전달자 ' 유형의 인증 유형에 대해 클라이언트의 SMTP 주소를 찾습니다.
   
 ## <a name="related-articles"></a>관련 문서
 
