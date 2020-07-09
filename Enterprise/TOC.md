@@ -69,7 +69,7 @@
 ### [Microsoft 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)
 ### [Microsoft 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
 ### [Microsoft 365 네트워크 연결 평가](assessing-network-connectivity.md)
-### [Office 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)
+### [Microsoft 365 네트워킹 파트너 프로그램](office-365-networking-partner-program.md)
 ### Office 365 IP 주소 및 URL
 #### [Office 365 엔드포인트](office-365-endpoints.md)
 #### [Office 365 끝점 관리](managing-office-365-endpoints.md)
@@ -97,13 +97,13 @@
 #### [미국 정부 DoD 끝점](office-365-u-s-government-dod-endpoints.md)
 #### [미국 정부 GCC High 끝점](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 암호화 체인 - DOD 및 GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Microsoft 365 서비스의 IPv6 지원](ipv6-support.md)
-### [Microsoft 365로 NAT 지원](nat-support-with-office-365.md)
+### [Office 365 서비스의 IPv6 지원](ipv6-support.md)
+### [NAT 지원(Office 365)](nat-support-with-office-365.md)
 ### Microsoft 365용 ExpressRoute를 사용한 작업
-#### [Microsoft 365용 ExpressRoute](azure-expressroute.md)
-#### [Microsoft 365용 ExpressRoute 구현](implementing-expressroute.md)
-#### [Microsoft 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
-#### [Microsoft 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
+#### [Office 365용 ExpressRoute](azure-expressroute.md)
+#### [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
+#### [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
+#### [Office 365용 ExpressRoute를 사용한 라우팅](routing-with-expressroute.md)
 
 ## 2. ID 설정
 ### [전역 관리자 계정 보호](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Microsoft 365 규정 준수](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 보안](https://docs.microsoft.com/microsoft-365/security/)
 # [비즈니스용 Microsoft 365](https://www.microsoft.com/microsoft-365/business)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Microsoft 365 도움말 센터](https://docs.microsoft.com/microsoft-365)
