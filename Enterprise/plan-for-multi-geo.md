@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Microsoft 365 Multi-Geo, Multi-Geo 작동 방식 및 데이터 저장소에 사용할 수 있는 지리적 위치에 대해 알아봅니다.
-ms.openlocfilehash: 41a17cf4506b62ae588afa750d6f9e3a8c99191d
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 8f06c43b9a622e06959ab12fa0e055c8653ca61c
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057714"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052461"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 Business를 위한 계획
 
@@ -58,7 +58,7 @@ Multi-Geo를 사용하려면 다음 4가지 주요 단계가 필요합니다.
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-Multi-Geo를 구성할 경우 Microsoft 365로 마이그레이션하는 동안 온-프레미스 인프라를 통합할 기회를 고려하는 것이 좋습니다. 예를 들어, 싱가포르 및 말레이시아에 온-프레미스 팜이 있는 경우, 데이터 상주 요구 사항에 맞을 경우 APC 위성 위치로 통합할 수 있습니다.
+When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so.
 
 ## <a name="best-practices"></a>모범 사례
 
@@ -66,13 +66,13 @@ Multi-Geo를 구성할 경우 Microsoft 365로 마이그레이션하는 동안 �
 
 테스트 사용자와 테스트를 마친 후에는 IT 부서의 파일럿 그룹을 선택하여 새로운 지리적 위치에서 OneDrive 및 Exchange를 가장 먼저 사용할 수 있습니다. 이 첫 번째 그룹에서는 아직 OneDrive가 없는 사용자를 선택합니다. 이 초기 그룹에 5명 이하를 두고 일괄 공개 접근 방식을 따라 점차적으로 확장하는 것을 권장합니다.
 
-Microsoft 365에서 해당 OneDrive를 프로비전할 지리적 위치를 결정할 수 있도록 각 사용자에게는 PDL(*기본 설정 데이터 위치*)이 설정되어 있어야 합니다. 사용자의 기본 설정 데이터 위치는 선택한 위성 위치 중 하나 또는 사용자의 중앙 위치와 일치해야 합니다. PDL 필드는 필수는 아니지만 모든 사용자에 대해 PDL을 설정하는 것이 좋습니다. PDL이 없는 사용자의 워크로드는 중앙 위치에 프로비전됩니다.
+Each user should have a *preferred data location* (PDL) set so that Microsoft 365 can determine in which geo location to provision their OneDrive. The user's preferred data location must match one of your chosen satellite locations or your central location. While the PDL field is not mandatory, we recommend that a PDL be set for all users. Workloads of a user without a PDL will be provisioned in the central location.
 
-사용자 목록을 만들고, 해당 UPN(사용자 주체 이름)과 해당 기본 설정 데이터 위치에 대한 위치 코드를 포함합니다. 시작할 테스트 사용자와 초기 파일럿 그룹을 포함합니다. 구성 절차를 위해 이 목록이 필요합니다.
+Create a list of your users, and include their user principal name (UPN) and the location code for the appropriate preferred data location. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
 사용자가 온 - 프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되는 경우 기본 데이터 위치를 Active Directory 특성으로 설정하고 Azure Active Directory Connect를 사용하여 동기화해야 합니다. Azure AD PowerShell을 사용하여 동기화된 사용자의 기본 데이터 위치를 직접 구성할 수 없습니다. Active Directory에서 PDL을 설정하고 동기화하는 단계는 [Azure Active Directory Connect 동기화: Microsoft 365 리소스의 기본 설정 데이터 위치 구성](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)에서 다룹니다.
 
-SharePoint 및 OneDrive 설정과 서비스가 다중 위치를 인식하므로 다중 위치 테넌트의 관리는 다중 위치가 아닌 테넌트의 관리와 다를 수 있습니다. 구성을 계속하기 전에 [다중 위치 환경 관리](administering-a-multi-geo-environment.md)를 검토하는 것이 좋습니다.
+The administration of a multi-geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
 다중 위치 환경의 최종 사용자 경험에 대한 자세한 내용은 [다중 위치 환경의 사용자 경험](multi-geo-user-experience.md)을 읽어보세요.
 
