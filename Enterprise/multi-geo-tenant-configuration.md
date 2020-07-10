@@ -13,22 +13,22 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 Multi-Geo 구성 방법 알아보기
-ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 928033dcbec0ad0b52f24bd0bec4dd6b9f9331bc
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057724"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052571"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo 테넌트 구성
 
 Microsoft 365 Multi-Geo에 대한 테넌트를 구성하기 전에 [Microsoft 365 Multi-Geo 계획](plan-for-multi-geo.md)을 꼭 읽으세요. 이 문서에 나온 단계를 수행하려면 위성 위치로 사용할 지리적 위치 목록과 해당 위치를 제공하려는 테스트 사용자가 필요합니다.
 
-## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>테넌트에 Microsoft 365 요금제의 Multi-Geo 기능 추가
+## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>테넌트에 Microsoft 365 요금제의 Multi-Geo 기능 추가
 
 Microsoft 365 Multi-Geo를 사용하려면 _Microsoft 365 요금제에서 Multi-Geo 기능_ 요금제가 필요합니다. 계정 팀과 협력하여 테넌트에 이 요금제를 추가하십시오. 귀하의 계정 팀이 귀하를 적절한 라이센스 전문가와 연결시켜 테넌트를 구성할 것입니다.
 
-_Microsoft 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요금제입니다. 따라서 위성 위치에 호스트하려는 각 사용자를 위해 라이선스가 필요합니다. 시간에 따라 위성 위치에 사용자를 추가하면서 라이선스를 더 추가할 수 있습니다.
+Note that the _Multi-Geo Capabilities in Microsoft 365_ plan are a user-level service plan. You need a license for each user that you want to host in a satellite location. You can add more licenses over time as you add users in satellite locations.
 
 테넌트가 _Microsoft 365의 Multi-Geo 기능_ 요금제로 프로비저닝되면 OneDrive 및 SharePoint 관리 센터에서 **지리적 위치** 탭을 사용할 수 있게 됩니다.
 
@@ -54,15 +54,15 @@ _Microsoft 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요�
 
 6. **닫기**를 클릭합니다.
 
-테넌트의 크기에 따라 프로비전하는 데 몇 시간에서 72시간까지 걸릴 수 있습니다. 위성 위치의 프로비전이 완료되면 이메일 확인이 수신됩니다. 새 지리적 위치가 OneDrive 관리 센터의 **지리적 위치** 탭의 지도에 파란색으로 표시되면 사용자의 기본 설정 데이터 위치를 해당 지리적 위치로 설정할 수 있습니다. 
+Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
 
 > [!IMPORTANT]
-> 새 위성 위치가 기본 설정으로 지정됩니다. 이 경우 해당 위성 위치를 로컬 준수 요구에 적절하게 구성할 수 있습니다.
+> Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
 
 ## <a name="setting-users-preferred-data-location"></a>사용자의 기본 설정 데이터 위치 지정
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-필요한 위성 위치를 사용하도록 설정한 경우, 해당 기본 설정 데이터 위치를 사용하도록 사용자 계정을 업데이트할 수 있습니다. 해당 사용자가 기본 데이터 위치에 있더라도, 모든 사용자의 중앙 위치를 지정하는 것이 좋습니다.
+Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
 
 > [!IMPORTANT]
 > 사용자의 기본 데이터 위치가 위성 위치 또는 중앙 위치로 구성되지 않은 위치로 설정된 경우 OneDrive, SharePoint 사이트 및 그룹 사서함을 프로비저닝할 때 시스템이 중앙 위치로 기본 설정됩니다.
@@ -70,32 +70,32 @@ _Microsoft 365의 Multi-Geo 기능_ 요금제는 사용자 수준 서비스 요�
 > [!TIP]
 > Multi-Geo를 보다 광범위한 조직으로 롤아웃하기 전에 테스트 사용자 또는 소규모의 사용자 그룹을 사용하여 유효성 검사를 시작하는 것이 좋습니다.
 
-Azure Active Directory에는 두 가지 유형의 사용자 개체(클라우드 전용 사용자 및 동기화된 사용자)가 있습니다. 사용자 유형에 해당하는 지침을 따르십시오.
+Azure Active Directory(Azure AD)에는 두 가지 유형의 사용자 개체(클라우드 전용 사용자 및 동기화된 사용자)가 있습니다. 사용자 유형에 해당하는 지침을 따르십시오.
 
-### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Azure Active Directory Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Azure AD Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
 
-회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되면 해당 PreferredDataLocation이 AD에 입력되고 AAD와 동기화됩니다. [Azure Active Directory Connect 동기화: Microsoft 365 리소스의 기본 설정 데이터 위치 구성](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)의 프로세스에 따라 온-프레미스 Active Directory에서 Azure Active Directory로의 기본 설정 데이터 위치 동기화를 구성합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure AD로 동기화 되는 경우 해당 PreferredDataLocation을 AD에 채워야 하며 Azure AD로 동기화 해야 합니다.
+
+[Azure Active Directory 연결 동기화: Microsoft 365 리소스에 대한 기본 데이터 위치 동기화](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) 벌차를 따라 온-프레미스 Active Directory 도메인 서비스 (AD DS)에서 Azure AD로의 기본 데이터 위치 동기화를 구성 합니다.
 
 표준 사용자 만들기 워크플로의 일환으로, 사용자의 기본 설정 데이터 위치를 설정하는 것이 좋습니다.
 
 > [!IMPORTANT]
-> OneDrive를 프로비저닝하지 않은 신규 사용자의 경우, 사용자의 PDL이 Azure Active Directory에 동기화 된 후 최소 24시간 동안 기다렸다가 사용자가 비즈니스용 OneDrive에 로그인하기 전에 변경 내용이 전파되도록 기다리십시오. (비즈니스용 OneDrive를 프로비저닝하기 위해 사용자가 로그인하기 전에 기본 데이터 위치를 설정하면 사용자의 새 OneDrive가 올바른 위치에 프로비저닝됩니다.)
+> OneDrive를 프로비저닝하지 않은 신규 사용자의 경우, 사용자의 PDL이 Azure AD에 동기화 된 후 최소 24시간 동안 기다렸다가 사용자가 비즈니스용 OneDrive에 로그인하기 전에 변경 내용이 전파되도록 기다리십시오. (비즈니스용 OneDrive를 프로비저닝하기 위해 사용자가 로그인하기 전에 기본 데이터 위치를 설정하면 사용자의 새 OneDrive가 올바른 위치에 프로비저닝됩니다.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>클라우드 전용 사용자를 위한 기본 설정 데이터 위치 지정 
 
-회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure Active Directory로 동기화되지 않을 경우, 즉 Microsoft 365 또는 AAD에서 생성될 경우 AAD(Azure Active Directory) PowerShell을 사용하여 PDL을 설정해야 합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure AD로 동기화되지 않을 경우, 즉 Microsoft 365 또는 AAD에서 생성될 경우 Windows PowerShell용 Azure Active Directory 모듈을 사용하여 PDL을 설정해야 합니다.
 
-이 섹션의 절차를 수행하려면 [Windows PowerShell용 Microsoft Azure Active Directory 모듈](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)이 필요합니다. Azure Active Directory PowerShell이 이미 설치된 경우 최신 버전으로 업데이트해야 합니다.
+이 항목의 절차는 [Wiindows PowerShell 모듈용 Microsoft Azure Active Directory 모듈](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)을 필요로 합니다. 이 모듈이 이미 설치 되어 있는 경우에는 최신 버전으로 업데이트를 확인 하세요.
 
-1.  Windows PowerShell용 Microsoft Azure Active Directory 모듈을 엽니다.
+1.  테넌트에 대한 전역 관리자 자격 증명으로 [연결 및 로그인](/powershell/connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-2.  `Connect-MsolService`를 실행하고 테넌트에 대한 전역 관리자 자격 증명을 입력합니다.
-
-3.  [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet을 사용하여 각 사용자에 대한 기본 설정 데이터 위치를 지정합니다. 예를 들면 다음과 같습니다.
+2.  Use the [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
-    Get-MsolUser cmdlet을 사용하여 기본 데이터 위치가 적절히 업데이트되었는지 확인할 수 있습니다. 예를 들면 다음과 같습니다.
+    You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
@@ -140,16 +140,16 @@ Microsoft 365 앱 시작 관리자에서 OneDrive를 선택하고 사용자의 P
 
 **OneDrive 모바일 앱**
 
-테스트 계정 자격 증명을 사용하여 OneDrive 모바일 앱에 로그인합니다. 비즈니스용 OneDrive 파일을 볼 수 있고, 모바일 장치에서 해당 파일과 상호 작용할 수 있는지 확인합니다.
+테스트 계정 자격 증명을 사용하여 OneDrive 모바일 앱에 로그인 합니다. 비즈니스용 OneDrive 파일을 볼 수 있고, 모바일 장치에서 해당 파일과 상호 작용할 수 있는지 확인합니다.
 
 **OneDrive 동기화 클라이언트**
 
-OneDrive 동기화 클라이언트가 로그인 시 비즈니스용 OneDrive 지리적 위치를 자동으로 감지하는지 확인합니다. 동기화 클라이언트를 다운로드해야 할 경우 OneDrive 라이브러리에서 **동기화**를 클릭할 수 있습니다.
+Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 **Office 응용 프로그램**
 
-Word와 같은 Office 응용 프로그램에서 로그인하여 비즈니스용 OneDrive에 액세스할 수 있는지 확인합니다. Office 응용 프로그램을 열고 "OneDrive- <TenantName>"을 선택합니다. Office에서 사용자의 OneDrive 위치가 감지되고 열 수 있는 파일이 표시됩니다.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
 
 **공유**
 
-OneDrive 파일을 공유해 보세요. 사용자 선택 기능에는 모든 SharePoint Online 사용자가 해당 지리적 위치에 관계없이 표시됩니다.
+Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their geo location.
