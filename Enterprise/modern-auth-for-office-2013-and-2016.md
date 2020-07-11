@@ -23,14 +23,14 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 최신 인증이 Office 2013 및 2016 클라이언트 앱에 대해 다르게 작동 하는 방식을 알아봅니다.
-ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 22f9bf521fc5da367cb8f8d6f02a004baf42a866
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997845"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102606"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 및 Office 2016 클라이언트 앱에 대해 최신 인증이 작동하는 방법
+# <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>최신 인증이 Office 2013, Office 2016 및 Office 2019 클라이언트 앱에 작동 하는 방식
 
 *이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
@@ -65,7 +65,7 @@ To enable modern authentication for any devices running Windows (for example on 
   
 비즈니스용 [skype와 함께 ADAL (최신 인증)을 사용](https://go.microsoft.com/fwlink/p/?LinkId=785431) 하 여 비즈니스용 skype에서 작동 하는 방식에 대해 알아봅니다. 
   
-Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, 클라이언트에서 이러한 새 흐름을 사용 하는 데 필요한 작업은 없습니다. 그러나 레거시 인증을 사용 하려면 명시적 작업을 수행 해야 합니다.
+Office 2016 및 Office 2019 클라이언트는 기본적으로 최신 인증을 지원 하며, 이러한 새 흐름을 사용 하기 위해 클라이언트에 필요한 작업이 없습니다. 그러나 레거시 인증을 사용 하려면 명시적 작업을 수행 해야 합니다.
   
 최신 인증이 설정 되어 있는지 여부에 따라 Office 2013 및 Office 2016 클라이언트 인증이 Microsoft 365 services에서 작동 하는 방식을 확인 하려면 아래 링크를 클릭 하십시오.
   
@@ -82,6 +82,10 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 (기본값) * * * *|테 넌 트에 대 한 최신 인증을 끈 인증 동작 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2019  <br/> |아니요 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |예  <br/> |Outlook 2010, 2013 또는 2019에서 최신 인증을 적용 합니다. <br/> [추가 정보](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook 클라이언트 내에서 최신 인증을 적용 합니다.<br/> |
+|Office 2019  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
+|Office 2019  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
+|Office 2019  <br/> |예, EnableADAL = 0  <br/> |아니요  <br/> |기본 인증  <br/> |기본 인증  <br/> |
 |Office 2016  <br/> |아니요 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |예  <br/> |Outlook 2010, 2013 또는 2016에서 최신 인증을 적용 합니다. <br/> [추가 정보](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook 클라이언트 내에서 최신 인증을 적용 합니다.<br/> |
 |Office 2016  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버가 최신 인증 연결을 거부 하면 기본 인증이 사용 됩니다. 테 넌 트가 사용 하도록 설정 되지 않은 경우 서버는 최신 인증을 거부 합니다.  <br/> |
@@ -96,6 +100,9 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 (기본값) * * * *|테 넌 트에 대 한 최신 인증을 끈 인증 동작 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2019  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |최신 인증만  <br/> |연결 하지 못했습니다.  <br/> |
+|Office 2019  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |최신 인증만  <br/> |연결 하지 못했습니다.  <br/> |
+|Office 2019  <br/> |예, EnableADAL = 0  <br/> |아니요  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |
 |Office 2016  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |최신 인증만  <br/> |연결 하지 못했습니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |최신 인증만  <br/> |연결 하지 못했습니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 0  <br/> |아니요  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |
@@ -109,6 +116,9 @@ Office 2016 클라이언트는 기본적으로 최신 인증을 지원 하며, �
   
 |Office 클라이언트 응용 프로그램 버전 * * * *|레지스트리 키 유무 (? * * * *)|최신 인증은? * * * *|테 넌 트에 대 한 최신 인증이 설정 된 인증 동작 * * * *|테 넌 트에 대해 최신 인증을 끈 인증 동작 (기본값) * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2019  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |
+|Office 2019  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |
+|Office 2019  <br/> |예, EnableADAL = 0  <br/> |아니요  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |
 |Office 2016  <br/> |아니요, 또는 EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |
 |Office 2016  <br/> |예, EnableADAL = 0  <br/> |아니요  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |
