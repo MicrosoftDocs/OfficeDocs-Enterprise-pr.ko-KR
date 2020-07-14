@@ -20,18 +20,18 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: '요약: SharePoint, Exchange, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델, 배포 및 플랫폼 옵션을 설명하는 IT 포스트를 확인하세요.'
-ms.openlocfilehash: 33613e8e4b4eefc051a1c249773301c5249b0b69
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: 9e6e4f2b32bb2e5b39f8891d8acddc0699cdbf8d
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997989"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102566"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 
 이러한 IT 포스터에서는 SharePoint, Exchange, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델 및 배포 옵션을 설명하고 Microsoft Azure에서 SharePoint를 배포하기 위한 디자인 정보를 제공합니다.
   
-Microsoft 365에서는 사용자가 클라우드 기반 서비스로 익숙한 공동 작업 및 통신 서비스를 제공할 수 있습니다. 몇 가지 예외를 제외 하면 온-프레미스 배포를 유지 관리 하거나 Microsoft 365을 사용 하 든 상관 없이 사용자 환경이 동일 하 게 유지 됩니다. 이와 같이 사용자 환경이 통합되면 각 작업이 진행될 위치를 결정하기 쉽지 않으며 다음과 같은 의문이 제기될 수 있습니다.
+Microsoft 365를 사용하면 사용자에게 친숙한 공동 작업 및 통신 서비스를 클라우드 기반 서비스로 제공할 수 있습니다. 몇 가지 예외를 제외하고, 사용자 환경은 온-프레미스 배포를 유지 관리하든, Microsoft 365를 사용하든 동일하게 유지됩니다. 이와 같이 사용자 환경이 통합되면 각 작업이 진행될 위치를 결정하기 쉽지 않으며 다음과 같은 의문이 제기될 수 있습니다.
   
 - 개별 작업을 진행하기 위해 선택할 플랫폼 옵션을 어떻게 결정할 수 있을까요?
     
@@ -53,8 +53,6 @@ Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:c
 - **아키텍처 모델 포스터** 이러한 리소스를 사용하여 SharePoint 2016 및 비즈니스용 Skype 2015에 이상적인 플랫폼과 구성을 확인할 수 있습니다.
     
   - [Microsoft SharePoint 2016 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
-    
-  - [OneDrive 및 Microsoft 365의 SharePoint Online에 제공 되는 다중 지역 기능](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#MultiGeoO365ODB)
     
   - [SharePoint Server 2016 데이터베이스](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_Databases)
     
@@ -97,13 +95,6 @@ These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a w
 |:-----|:-----|
 |[![SharePoint 2016 아키텍처 모델 포스터 미리 보기](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | 이 IT 포스터는 비즈니스 의사 결정권자 및 솔루션 설계자가 알고 있어야 하는 SharePoint Online, Microsoft Azure 및 SharePoint 온-프레미스 구성에 대해 설명합니다. <br/><br/> - **SharePoint Online(SaaS)** - SaaS(Software as a Service) 구독 모델을 통해 SharePoint를 사용합니다. <br/> - **SharePoint 하이브리드** - SharePoint 사이트 및 앱을 본인의 상황에 맞춰서 클라우드로 이동합니다. <br/> - **SharePoint in Azure (IaaS)** - You extend your on-premises environment into Microsoft Azure and deploy SharePoint 2016 Servers there. (This is recommended for High Availability/Disaster Recovery and dev/test environments.) <br/> - **SharePoint 온-프레미스** - 직접 유지 관리하는 데이터 센터에서 SharePoint 환경을 계획, 배포, 유지 관리, 사용자 지정합니다. <br/> |
    
-<a name="MultiGeoO365ODB"> </a>
-### <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365"></a>OneDrive 및 Microsoft 365의 SharePoint Online에 제공 되는 다중 지역 기능
-
-|**항목**|**설명**|
-|:-----|:-----|
-|[![Microsoft 365 모델의 다중 지역 OneDrive](media/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.vsdx) <br/> | 이 포스터는 OneDrive 및 Microsoft 365의 SharePoint Online에 제공 되는 다중 지리적 기능의 단일 페이지 개요입니다. 이 모델에는 다음이 포함 됩니다. <br/><br/> - 이점 <br/> - 배포 단계 <br/> - 예제 구성 <br/><br/>  OneDrive 및 Microsoft 365의 SharePoint Online에 제공 되는 다중 위치 기능에 대 한 자세한 내용은 [여기](https://aka.ms/onedrivemultigeo)를 클릭 하세요.  <br/> |
-   
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 데이터베이스
 
@@ -139,7 +130,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![SharePoint 2013 플랫폼 옵션의 미리 보기 이미지](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |BDMs (비즈니스 의사 결정권자) 및 설계자의 경우이 모델은 SharePoint 2013, SharePoint의 Microsoft 365, 온-프레미스 하이브리드, Microsoft 365, Azure 및 온-프레미스 전용 배포의 플랫폼 옵션을 보여 줍니다. 여기에는 각 아키텍처, 권장 사항, 라이선스 요구 사항, 각 플랫폼에 대한 설계자 및 IT 전문가의 작업 목록 등에 대한 개요가 포함됩니다. Azure의 여러 SharePoint 솔루션은 강조 표시 됩니다. <br/> |
+|[![SharePoint 2013 플랫폼 옵션의 미리 보기 이미지](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |이 모델은 비즈니스 의사 결정자(BDM) 및 설계자를 위해 SharePoint 2013, Microsoft 365의 SharePoint, 온-프레미스 하이브리드 및 Microsoft 365, 온-프레미스 전용 배포용 플랫폼 옵션을 보여줍니다. 각 아키텍처, 권장 사항, 라이선스 요구 사항 및 각 플랫폼에 대한 설계자와 IT 전문가 작업 목록에 대한 개요를 포함합니다. Azure에 있는 몇 가지 SharePoint 솔루션이 강조 표시되어 있습니다. <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013 플랫폼 옵션
@@ -148,7 +139,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Exchange 플랫폼 옵션의 미리 보기 이미지](media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |BDM 및 설계자의 경우 이 모델에서는 Exchange 2013에 대한 사용 가능한 플랫폼 옵션을 설명합니다. 고객은 Microsoft 365, 하이브리드 Exchange, Exchange Server 온-프레미스 및 호스팅된 Exchange를 사용 하 여 Exchange Online에서 선택할 수 있습니다. 이 포스터에는 각 라이선스 요구 사항 및 IT 전문가 업무에 가장 적합한 시나리오를 포함하여 각 아키텍처 옵션에 대한 세부 정보를 포함합니다. <br/> |
+|[![Exchange 플랫폼 옵션의 미리 보기 이미지](media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |BDM 및 설계자의 경우 이 모델에서는 Exchange 2013에 대한 사용 가능한 플랫폼 옵션을 설명합니다. 고객은 Microsoft 365의 Exchange Online, 하이브리드 Exchange, 온-프레미스의 Exchange Server 및 호스티드 Exchange 중에서 선택할 수 있습니다. 이 포스터에는 각 라이선스 요구 사항 및 IT 전문가 업무에 가장 적합한 시나리오를 포함하여 각 아키텍처 옵션에 대한 세부 정보를 포함합니다. <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="lync-2013-platform-options"></a>Lync 2013 플랫폼 옵션
@@ -157,7 +148,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Lync 플랫폼 옵션의 축소판 이미지](media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |BDM 및 설계자의 경우 이 모델에서는 Lync 2013에 대한 사용 가능한 플랫폼 옵션을 설명합니다. 고객은 Lync Online에서 Microsoft 365, Hybrid Lync, Lync Server 온-프레미스 및 호스팅된 Lync를 선택할 수 있습니다. 이 IT 포스터에는 각 라이선스 요구 사항 및 IT 전문가 업무에 가장 적합한 시나리오를 포함하여 각 아키텍처 옵션에 대한 세부 정보를 포함합니다.  <br/> |
+|[![Lync 플랫폼 옵션의 축소판 이미지](media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |BDM 및 설계자의 경우 이 모델에서는 Lync 2013에 대한 사용 가능한 플랫폼 옵션을 설명합니다. 고객은 Microsoft 365의 Lync Online, 하이브리드 Lync, 온-프레미스의 Lync Server 및 호스티드 Lync 중에서 선택할 수 있습니다. 이 IT 포스터에는 각 라이선스 요구 사항 및 IT 전문가 업무에 가장 적합한 시나리오를 포함하여 각 아키텍처 옵션에 대한 세부 정보를 포함합니다.  <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="sharepoint-in-azure-solutions-posters"></a>Azure의 SharePoint 솔루션 포스터
@@ -171,7 +162,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![SharePoint를 사용한 Azure의 인터넷 사이트 이미지](media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |이 포스터에서는 Azure의 인터넷 연결 사이트에 대 한 주요 디자인 작업 및 권장 아키텍처 선택을 소개 합니다.  <br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![SharePoint를 사용한 Azure의 인터넷 사이트 이미지](media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |이 포스트에서는 Azure에 제공되는 인터넷 연결 사이트에 대한 핵심 디자인 작업과 권장되는 아키텍처 옵션에 대해 간단히 설명합니다.  <br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="DesignSampleInternetSites"> </a>
 ### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>디자인 샘플: SharePoint 2013용 Microsoft Azure의 인터넷 사이트
@@ -180,7 +171,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![디자인 샘플 이미지: SharePoint 2013용 Microsoft Azure의 인터넷 사이트](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |이 디자인 예제를 SharePoint Server 2013를 사용 하 여 Azure에서 아키텍처 인터넷 연결 사이트의 시작 지점으로 사용 합니다. <br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![디자인 샘플 이미지: SharePoint 2013용 Microsoft Azure의 인터넷 사이트](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |SharePoint Server 2013을 사용하여 Azure에서 아키텍처 인터넷 연결 사이트를 구성하는 시작 단계로 이 디자인 샘플을 활용하세요. <br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="sharepoint_recovery_Azure"> </a>
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Microsoft Azure로의 SharePoint 재해 복구
@@ -189,7 +180,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Azure에 대한 SharePoint 재해 복구 프로세스](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |이 IT 포스터는 Azure의 재해 복구 환경에 대 한 아키텍처 원리를 보여 줍니다. <br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [Microsoft Azure에서 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Azure에 대한 SharePoint 재해 복구 프로세스](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |이 IT 포스터는 Azure의 재해 복구 환경에 대한 아키텍처 원리를 표시합니다. <br/><br/> 자세한 내용은 다음 문서를 참조하십시오.  <br/><br/> - [Microsoft Azure에서 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013용 Microsoft Azure 아키텍처](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ## <a name="see-also"></a>참고 항목
 
@@ -197,7 +188,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
   
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   
-[Microsoft 365 Enterprise 테스트 랩 가이드](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[엔터프라이즈용 Microsoft 365 테스트 랩 가이드](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [하이브리드 솔루션](hybrid-solutions.md)
 

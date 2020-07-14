@@ -3,7 +3,7 @@ title: 독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에�
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션 이해 '
-ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
+ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998563"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092887"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션
 
@@ -60,6 +60,8 @@ Microsoft 주도 방식에 동의하면 다음 서비스도 함께 마이그레�
 - Dynamics 365 / Power Platform
 
 이들 서비스의 마이그레이션의 필요 조건과 영향에 관한 내용은 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 문서를 참조하세요.
+
+Office 365 비디오가 2021년 3월 1일에 사용 중지됩니다. Office 365 테넌트를 새 독일어 데이터 센터 영역으로 마이그레이션하도록 선택하면 SharePoint Online 마이그레이션이 완료된 후에 Office 365 비디오가 지원되지 않습니다. [자세한 정보](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Office 365 서비스 신규 독일 데이터 센터 지역으로의 마이그레이션을 준비하는 방법 
 
@@ -102,6 +104,11 @@ SharePoint Online 마이그레이션이 완료 되면 데이터 인덱스가 다
 ### <a name="skype-for-business-online"></a>비즈니스용 Skype Online
 
 기존 비즈니스용 Skype Online 고객은 Microsoft 팀으로 이관 됩니다. 자세한 내용은 [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home)을 참조하세요. 
+
+### <a name="office-365-video"></a>Office 365 비디오
+Office 365 비디오의 콘텐츠는 SharePoint Online 마이그레이션의 일부로 마이그레이션됩니다. 그러나 Office 365 비디오는 만료되며 새 독일어 데이터 센터 영역으로 SharePoint Online의 마이그레이션이 완료된 후에 Office 365 비디오가 지원되지 않습니다. Office 365 비디오의 비디오는 SharePoint 마이그레이션 후에 Office 365 비디오 UI에서 재생되지 않습니다.
+
+Microsoft Stream이 독일 Microsoft에 배포되는 것이 아니며 현재 새 독일 데이터 센터 지역에 Microsoft Stream을 배포하기 위한 시간 표시 막대는 없습니다. 따라서 해당 지역에는 Microsoft Stream에 대한 Office 365 비디오의 마이그레이션 도구를 제공하지 않습니다. 사용자의 콘텐츠를 보존하려면 2021년 3월 1일 이전에 콘텐츠를 직접 다운로드하거나 이동시켜야 합니다. [자세한 정보](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 
 ## <a name="key-differences-between-microsoft-cloud-germany-microsoft-cloud-deutschland-and-office-365-services-in-the-new-german-datacenter-regions"></a>독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)와 Office 365 서비스 신규 독일 데이터 센터 지역과의 주요 차이 

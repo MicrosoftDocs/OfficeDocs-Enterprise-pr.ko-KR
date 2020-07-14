@@ -18,16 +18,16 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Summary: Learn core cloud architecture concepts for Microsoft identity, security, networking, and hybrid. Review prescriptive recommendations for protecting files, identities, and devices when using Microsoft's cloud."
-ms.openlocfilehash: c1d41fa4ca098a913c7fea039765f916614c7f9c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: 1798e56139262e2328487b6a998d860bc095b6fc
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997905"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102616"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 클라우드 IT 아키텍처 리소스
 
-이러한 아키텍처 도구 및 포스터는 microsoft 클라우드 서비스에 대 한 정보를 제공 합니다 (예를 들어 Windows 365, 창 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 및 하이브리드 온-프레미스 및 클라우드 솔루션 포함). IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다. 
+이러한 아키텍처 도구 및 포스터는 Microsoft 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, 하이브리드 온-프레미스 및 클라우드 솔루션을 비롯한 Microsoft 클라우드 서비스에 대한 정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다. 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
@@ -68,7 +68,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 </a>
 ## Microsoft Cloud for Enterprise Architects 시리즈
 
-이러한 클라우드 아키텍처 포스터는 microsoft 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online 및 하이브리드 온-프레미스 및 클라우드 솔루션을 포함 하 여 Microsoft 클라우드 서비스에 대 한 정보를 제공 합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다.
+이러한 클라우드 아키텍처 포스터는 Microsoft 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, 하이브리드 온-프레미스 및 클라우드 솔루션을 비롯한 Microsoft 클라우드 서비스에 대한 정보를 제공합니다. IT 의사 결정권자와 설계자는 이러한 리소스를 사용하여 작업에 이상적인 솔루션을 결정하고 ID 및 보안과 같은 핵심 인프라 구성 요소에 대한 의사 결정을 내릴 수 있습니다.
 
 <!--  
 <a name="platformoptions"></a>
@@ -109,7 +109,7 @@ Microsoft 클라우드 서비스 및 플랫폼의 네트워킹과 관련하여 I
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li> 클라우드 연결을 위해 네트워크 확장 </li><li> Microsoft 클라우드 연결의 공통 요소 </li><li> Microsoft 클라우드 연결을 위한 ExpressRoute </li><li> Microsoft SaaS, Azure PaaS, Azure IaaS를 위한 네트워킹 디자인 </li></ul><br/>  <br/>|
+|[![Microsoft 클라우드 네트워킹 모델의 축소판 이미지](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_networking.vsdx) <br/> | 이 모델에는 다음이 포함됩니다. <ul><li> 클라우드 연결을 위해 네트워크 확장 </li><li> Microsoft 클라우드 연결의 공통 요소 </li><li> Microsoft 클라우드 연결을 위한 ExpressRoute </li><li> Microsoft SaaS, Azure PaaS, Azure IaaS를 위한 네트워킹 디자인 </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud for Enterprise Architects
@@ -118,7 +118,7 @@ Microsoft 서비스 및 플랫폼용 하이브리드 클라우드와 관련하�
   
 |**항목**|**설명**|
 |:-----|:-----|
-|[![Microsoft 하이브리드 클라우드 모델의 축소판 이미지](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | 이 모델에는 다음이 포함됩니다. <ul><li> Microsoft 클라우드 서비스(SaaS, Azure PaaS, Azure IaaS) 및 공통 요소 </li><li> Microsoft 클라우드 서비스를 위한 하이브리드 클라우드 아키텍처 </li><li> Microsoft SaaS (Microsoft 365), Azure PaaS 및 Azure IaaS에 대 한 하이브리드 클라우드 시나리오 </li></ul><br/>|
+|[![Microsoft 하이브리드 클라우드 모델의 축소판 이미지](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_hybrid.vsdx)  | 이 모델에는 다음이 포함됩니다. <ul><li> Microsoft 클라우드 서비스(SaaS, Azure PaaS, Azure IaaS) 및 공통 요소 </li><li> Microsoft 클라우드 서비스를 위한 하이브리드 클라우드 아키텍처 </li><li> Microsoft SaaS(Microsoft 365), Azure PaaS, Azure IaaS를 위한 하이브리드 클라우드 시나리오 </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>일반적인 공격 및 조직을 보호하는 Microsoft 기능
@@ -225,7 +225,7 @@ Microsoft supports several options as you begin your journey to Teams in the Mic
 
 [Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
-[Microsoft 365 Enterprise 테스트 랩 가이드](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[엔터프라이증용 Microsoft 365 테스트 랩 가이드](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [하이브리드 솔루션](hybrid-solutions.md)
 
