@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Microsoft 365 Multi-Geo를 사용하여 Microsoft 365 범위를 여러 지리적 지역으로 확장합니다.
-ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052581"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117280"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -47,6 +47,15 @@ Multi-Geo 환경에서 Microsoft 365 테넌트는 중앙 위치(Microsoft 365 �
 - **선호 하는 데이터 위치 (PDL)** - 사용자가 Exchange 사서함과 OneDrive를 프로비저닝하는 위치를 나타내는 관리자가 설정한 사용자 속성 또한 PDL은 사용자가 만든 SharePoint 사이트가 프로비저닝되는 위치를 결정합니다.
 - **위성 위치** - 지리적 인식 Microsoft 365 작업(SharePoint, OneDrive 및 Exchange)이 Multi-Geo 테넌트에서 사용하도록 설정된 지리적 위치
 - **테넌트** – Microsoft 365에서 일반적으로 하나 이상의 도메인에 연결되어 있는 조직을 나타내는 표현(예: contoso.com)
+
+## <a name="licensing"></a>라이선싱
+
+Microsoft 365 Multi-Geo는 테넌트에 250개 이상의 Microsoft 365 좌석이 있고, 이러한 좌석의 5% 이상이 Multi-Geo를 사용하는 EA 고객을 위해 다음과 같은 Microsoft 365 구독 계획의 추가 기능으로 제공됩니다. 자세한 내용은 Microsoft 계정 팀에 문의하시기 바랍니다.
+
+- Microsoft 365 F1, E1, E3 또는 E5
+- 온라인 계획 1 또는 계획 2 교환
+- OneDrive for Business 계획 1 또는 계획 2
+- SharePoint Online 계획 1 또는 계획 2
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 Multi-Geo 사용 가능 여부
 
