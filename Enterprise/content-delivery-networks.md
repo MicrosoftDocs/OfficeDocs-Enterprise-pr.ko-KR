@@ -3,7 +3,7 @@ title: 콘텐츠 배달 네트워크
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 이 정보를 사용 하 여 Office 365에서 CDNs (콘텐츠 배달 네트워크)를 사용 하 여 성능을 개선 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d63d784804640b1dda3394d129f905b01fa4b972
+ms.sourcegitcommit: f12be5137553cc41d8bd43e9e6cfbce84215a763
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997474"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146516"
 ---
 # <a name="content-delivery-networks-cdns"></a>콘텐츠 배달 네트워크(CDN)
 
@@ -77,6 +77,9 @@ Office 365 CDN 사용에 대 한 개념 및 HOWTO 정보를 제공 하는 일련
 Office 365 CDN에 포함 된 것은 아니지만 office 365 테 넌 트에서 이러한 CDNs를 사용 하 여 SharePoint 개발 라이브러리, 사용자 지정 코드 및 Office 365 CDN의 범위를 벗어난 기타 목적에 액세스할 수 있습니다.
 
 ### <a name="azure-cdn"></a>Azure CDN
+
+>[!NOTE]
+>Q3 2020 부터는 SharePoint Online에서 향상 된 비디오 재생 및 안정성을 지원 하기 위해 Azure CDN에 대 한 비디오 캐싱을 시작 합니다. 인기 비디오는 사용자에 가장 가까운 CDN 끝점에서 스트리밍됩니다. 이 데이터는 Microsoft 365 준수 경계 내에 유지 됩니다. 이 서비스는 모든 테 넌 트에 대 한 무료 서비스가 며 구성 하는 데 고객 작업을 수행할 필요가 없습니다.
 
 **AZURE cdn** 을 사용 하 여 사용자 지정 웹 파트, 라이브러리 및 기타 리소스 자산을 호스팅하기 위한 자체 CDN 인스턴스를 배포할 수 있으며,이를 통해 cdn 저장소에 액세스 키를 적용 하 고 cdn 구성을 보다 강력 하 게 제어할 수도 있습니다. Azure CDN 사용은 무료이 아니며 Azure 구독이 필요 합니다.
 
