@@ -49,7 +49,7 @@ ms.locfileid: "44774833"
 
 조직의 사용자 유형을 재고 합니다. 그룹화 란? 예를 들어 조직에 대 한 높은 수준의 기능 또는 목적으로 사용자를 그룹화 할 수 있습니다.
 
-Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
+또한 일부 클라우드 서비스는 사용자 계정 없이 조직 외부의 사용자와 공유될 수 있습니다. 이러한 사용자 그룹도 식별해야 합니다.
 
 클라우드 환경을 관리 하는 여러 가지 용도로 Azure AD에서 그룹을 사용할 수 있습니다. 예를 들어 Azure AD 그룹을 사용 하 여 다음을 수행할 수 있습니다.
 

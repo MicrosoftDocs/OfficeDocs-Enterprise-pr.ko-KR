@@ -43,7 +43,7 @@ Exchange Online cmdlet 참조 항목은 [Exchange Online PowerShell 설명서](h
 Exchange Online PowerShell에 대 한 연결 지침을 보려면 [Exchange Online powershell에 연결](https://go.microsoft.com/fwlink/p/?LinkId=396554)을 클릭 합니다.
   
 > [!NOTE]
-> Reporting cmdlets for other services, for example, SharePoint Online, Skype for Business Online, and Office 365 user activity are available in Exchange Online PowerShell. For more information, see [Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> 다른 서비스(예: SharePoint Online, 비즈니스용 Skype 온라인 및 Office 365 사용자 작업)에 대한 보고 cmdlet은 Exchange Online PowerShell에서 사용할 수 있습니다. 자세한 내용은 [Exchange Online의 보고 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=691595)을 참조하세요. 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>SharePoint 온라인 PowerShell cmdlet
 

@@ -44,9 +44,9 @@ Microsoft 365를 사용하면 사용자에게 친숙한 공동 작업 및 통신
 - Azure에서 Office Server 작업용으로 지원되는 구성은 어느 것인가요?
     
 > [!TIP]
-> Most of the posters on this page are available in multiple languages, including Chinese, English, French, German, Italian, Japanese, Korean, Portuguese, Russian, and Spanish. To download a poster in one of these languages, click the **More languages** link for that poster.
+> 이 페이지에 있는 대부분의 포스터는 중국어, 영어, 프랑스어, 독일어, 이탈리아어, 일본어, 한국어, 포르투갈어, 러시아어 및 스페인어 등의 다중 언어로 제공됩니다. 이러한 언어 중 하나로 제공되는 포스터를 다운로드하려면 해당 포스터의 **추가 언어** 링크를 클릭합니다.
   
-Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
+여러분의 의견을 알려주세요! [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)에 전자 메일을 보내주세요. 
   
 이 페이지는 다음 포스터에 연결됩니다.
   
@@ -76,7 +76,7 @@ Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:c
     
 ## <a name="architectural-models-posters"></a>아키텍처 모델 포스터
 
-These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a way to compare the various deployment methods in an easy-to-print format. Each poster provides a list of all the configurations or platform options available and gives you the following information for each option:
+SharePoint 2016 및 비즈니스용 Skype 2015용으로 제작된 이러한 새 IT 포스터는 쉽게 인쇄하여 다양한 배포 방법을 비교할 수 있습니다. 각 포스터는 사용 가능한 모든 구성 또는 플랫폼 옵션 목록을 제공하며 각 옵션에 대해 다음 정보를 제공합니다.
   
 - **개요** 개념도를 포함하여 간단한 플랫폼 요약을 제공합니다.
     
@@ -93,25 +93,25 @@ These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a w
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![SharePoint 2016 아키텍처 모델 포스터 미리 보기](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | 이 IT 포스터는 비즈니스 의사 결정권자 및 솔루션 설계자가 알고 있어야 하는 SharePoint Online, Microsoft Azure 및 SharePoint 온-프레미스 구성에 대해 설명합니다. <br/><br/> - **SharePoint Online(SaaS)** - SaaS(Software as a Service) 구독 모델을 통해 SharePoint를 사용합니다. <br/> - **SharePoint 하이브리드** - SharePoint 사이트 및 앱을 본인의 상황에 맞춰서 클라우드로 이동합니다. <br/> - **SharePoint in Azure (IaaS)** - You extend your on-premises environment into Microsoft Azure and deploy SharePoint 2016 Servers there. (This is recommended for High Availability/Disaster Recovery and dev/test environments.) <br/> - **SharePoint 온-프레미스** - 직접 유지 관리하는 데이터 센터에서 SharePoint 환경을 계획, 배포, 유지 관리, 사용자 지정합니다. <br/> |
+|[![SharePoint 2016 아키텍처 모델 포스터 미리 보기](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | 이 IT 포스터는 비즈니스 의사 결정권자 및 솔루션 설계자가 알고 있어야 하는 SharePoint Online, Microsoft Azure 및 SharePoint 온-프레미스 구성에 대해 설명합니다. <br/><br/> - **SharePoint Online(SaaS)** - SaaS(Software as a Service) 구독 모델을 통해 SharePoint를 사용합니다. <br/> - **SharePoint 하이브리드** - SharePoint 사이트 및 앱을 본인의 상황에 맞춰서 클라우드로 이동합니다. <br/> - **Azure의 SharePoint(IaaS)** - Microsoft Azure에 온-프레미스 환경을 확장하고 SharePoint 2016 Server를 배포합니다. (이 기능은 고가용성/재해 복구 및 개발/테스트 환경에 권장됩니다.) <br/> - **SharePoint 온-프레미스** - 직접 유지 관리하는 데이터 센터에서 SharePoint 환경을 계획, 배포, 유지 관리, 사용자 지정합니다. <br/> |
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 데이터베이스
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![SharePoint Server 2016 데이터베이스 포스터 미리 보기](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | This IT poster is a quick reference guide for SharePoint Server 2016 databases. Each database has the following details: <br/><br/> - 크기 <br/> - 크기 조정 지침 <br/> - I/O 패턴 <br/> - 요구 사항 <br/><br/>  The first page has the SharePoint system databases and the service applications that have multiple databases. The second page shows all of the service applications that have single databases. <br/><br/>  SharePoint Server 2016 데이터베이스에 대한 자세한 내용은 [SharePoint Server 2016의 데이터베이스 형식 및 설명](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions)을 참조하십시오. <br/> |
+|[![SharePoint Server 2016 데이터베이스 포스터 미리 보기](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | 이 IT 포스터는 SharePoint Server 2016 데이터베이스에 대한 빠른 참조 안내서입니다. 각 데이터베이스에는 다음과 같은 세부 정보가 포함되어 있습니다.<br/><br/> - 크기 <br/> - 크기 조정 지침 <br/> - I/O 패턴 <br/> - 요구 사항 <br/><br/>  첫 번째 페이지에는 SharePoint 시스템 데이터베이스 및 여러 데이터베이스를 포함하는 서비스 응용 프로그램 데이터베이스가 포함되어 있습니다. 두 번째 페이지에는 단일 데이터베이스가 있는 모든 서비스 응용 프로그램이 표시됩니다. <br/><br/>  SharePoint Server 2016 데이터베이스에 대한 자세한 내용은 [SharePoint Server 2016의 데이터베이스 형식 및 설명](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions)을 참조하십시오. <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft 비즈니스용 Skype 2015 아키텍처 모델
 
 |**항목**|**설명**|
 |:-----|:-----|
-|[![비즈니스용 Skype 아키텍처 모델 포스터의 미리 보기](media/132288c0-6ae4-4394-88ab-b57dae367714.png)          ](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=55022) <br/> |이 포스터는 비즈니스 의사 결정권자 및 솔루션 설계자가 알고 있어야 하는 비즈니스용 Skype Online, 온-프레미스, 하이브리드, 클라우드 PBX와 Exchange 구성 및 SharePoint 구성과의 통합에 대해 설명합니다. <br/><br/> IT 전문가들이 비즈니스용 Skype Online 및 온-프레미스의 비즈니스용 Skype를 사용할 수 있는 다양한 기본 아키텍처 모델을 보다 잘 인식할 수 있도록 하기 위해 제작되었습니다. <br/><br/>Start with whichever configuration best suits your organization's needs and future plans. Consider and use others as needed. For example, you might want to consider integration with Exchange and SharePoint or a solution that takes advantage of Microsoft's Cloud PBX offering.  <br/> |
+|[![비즈니스용 Skype 아키텍처 모델 포스터의 미리 보기](media/132288c0-6ae4-4394-88ab-b57dae367714.png)          ](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [추가 언어](https://www.microsoft.com/download/details.aspx?id=55022) <br/> |이 포스터는 비즈니스 의사 결정권자 및 솔루션 설계자가 알고 있어야 하는 비즈니스용 Skype Online, 온-프레미스, 하이브리드, 클라우드 PBX와 Exchange 구성 및 SharePoint 구성과의 통합에 대해 설명합니다. <br/><br/> IT 전문가들이 비즈니스용 Skype Online 및 온-프레미스의 비즈니스용 Skype를 사용할 수 있는 다양한 기본 아키텍처 모델을 보다 잘 인식할 수 있도록 하기 위해 제작되었습니다. <br/><br/>조직의 필요와 향후 계획에 가장 적합한 구성으로 시작합니다. 필요에 따라 다른 구성을 고려하고 사용합니다. 예를 들어, Exchange 및 SharePoint 또는 Microsoft 클라우드 PBX 서비스를 활용하는 솔루션과의 통합을 고려할 수 있습니다.  <br/> |
    
 ## <a name="platform-options-posters"></a>플랫폼 옵션 포스터
 
-These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way to compare the various deployment methods at a single glance in a large poster format. Each poster provides a list of all the configurations or platform options available and gives you the following information for each option:
+이러한 SharePoint 2013, Exchange 2013 및 Lync 2013용 IT 포스터는 다양한 배포 방법을 대형 포스트 형식으로 한 눈에 쉽게 비교할 수 있도록 합니다. 각 포스터는 사용 가능한 모든 구성 또는 플랫폼 옵션 목록을 제공하며 각 옵션에 대해 다음 정보를 제공합니다.
   
 - **개요** 개념도를 포함하여 간단한 플랫폼 요약을 제공합니다.
     

@@ -56,7 +56,7 @@ Microsoft 365 서비스의 경우 최신 인증의 기본 상태는 다음과 �
 
 Office 2013 클라이언트 앱은 기본적으로 레거시 인증을 지원 합니다. 레거시는 Microsoft 온라인 로그인 도우미 또는 기본 인증 중 하나를 지원 한다는 것을 의미 합니다. 이러한 클라이언트가 최신 인증 기능을 사용 하도록 하려면 Windows 클라이언트에 레지스트리 키가 설정 되어 있어야 합니다. 자세한 내용은 [Windows 장치에서 Office 2013에 대 한 최신 인증 사용](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)을 참조 하세요.
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Microsoft Office 2013이 설치되었고 Windows를 실행 중인 장치(예: 노트북 및 태블릿)에 대해 최신 인증을 사용하려면 다음 레지스트리 키를 설정해야 합니다. 최신 인증을 사용할 각 장치에서 키를 설정해야 합니다.
   
 |**레지스트리 키**|**유형**|**값** |
 |:-------|:------:|--------:|

@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>2단계: 사용자 및 그룹 추가
 
-Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
+이제 사용자를 만들어 사이트 모음 그룹에 추가할 수 있습니다. 그런 다음 .csv 파일을 사용하여 새 그룹 및 사용자를 대량 업로드합니다.
 
 다음 절차에서는 TeamSite01, Blog01, Project01 및 Community01의 예제 사이트를 계속 사용 합니다.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>여기서 *Myalias* 는 사용자 이름과 같습니다.<br/>
 
-5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
+5. 프롬프트가 반환될 때까지 기다렸다가 계속 진행합니다. 먼저 작성된 그룹이 표시되고, 사용자를 추가하면 그룹 목록이 반복적으로 표시됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
