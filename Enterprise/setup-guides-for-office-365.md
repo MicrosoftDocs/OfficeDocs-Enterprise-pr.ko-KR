@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 설치 가이드를 사용 하 여 Microsoft 365 또는 Office 365의 계획 및 구성을 가속화 합니다.
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735976"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201632"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 및 Office 365 서비스용 설정 가이드
 
@@ -103,6 +103,15 @@ Gmail 사용자의 사서함을 Microsoft 365로 마이그레이션하는 경우
 | **실행** | [원격 작업 설정 가이드](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Windows 가상 데스크톱 설정 가이드
+
+Windows 가상 데스크톱은 클라우드에서 실행 되는 종합적인 데스크톱 및 앱 가상화 서비스입니다. 간소화 된 관리, 다중 세션 Windows 10, Microsoft 365 앱에 대 한 최적화 및 RDS (원격 데스크톱 서비스) 환경에 대 한 지원을 제공 하는 VDI (가상 데스크톱 인프라) 뿐입니다. 시간 (분)에 Windows 데스크톱 및 앱을 배포 및 확장 하 고 기본 제공 되는 보안 및 규정 준수 기능을 알아봅니다. **Windows Virtual Desktop 설정 가이드** 에서는 관리자에 게 배포, 설치 지침 및 추가 리소스에 대 한 계획 리소스와 필수 구성 요소를 제공 합니다. 
+
+|||
+|:-------|:-----|
+| **실행** | [Windows 가상 데스크톱 설정 가이드](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>보안 가이드
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD 설정 가이드
@@ -112,6 +121,15 @@ Gmail 사용자의 사서함을 Microsoft 365로 마이그레이션하는 경우
 |||
 |:-------|:-----|
 | **실행** | [Azure AD 설정 가이드](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>Passwordless 배포 계획
+
+사용자가 Windows Hello for Business, Microsoft Authenticator 앱 또는 보안 키와 같은 passwordless 인증 방법 중 하나를 사용 하 여 장치에 안전 하 게 액세스할 수 있도록 하는 다른 로그인 방식으로 업그레이드 합니다. 이 마법사를 사용 하 여 사용할 가장 적합 한 passwordless 메서드를 검색 하 고이를 배포 하는 방법에 대 한 지침을 받을 수 있습니다.
+
+|||
+|:-------|:-----|
+| **실행** | [Passwordless 배포 계획](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender ATP (Advanced Threat Protection) advisor
