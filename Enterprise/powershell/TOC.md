@@ -1,14 +1,14 @@
 
-# [Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
-## [Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
-### [Office 365 PowerShell을 사용해야 하는 이유](why-you-need-to-use-office-365-powershell.md)
-### [PowerShell Office 365에 연결](connect-to-office-365-powershell.md)
+# [PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+## [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
+### [Microsoft 365 용 PowerShell을 사용해야 하는 이유](why-you-need-to-use-office-365-powershell.md)
+### [PowerShell로 Microsoft 365 연결](connect-to-office-365-powershell.md)
 ### [단일 Windows PowerShell 창에서 모든 Office 365 서비스에 연결](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-### [Office 365에서 Windows PowerShell을 사용하여 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
+### [PowerShell을 사용하여 Microsoft 365 보고서 만들기](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Office 365 서비스에 대한 cmdlet 참조](cmdlet-references-for-office-365-services.md)
-### [Office 365 PowerShell 커뮤니티 리소스](office-365-powershell-community-resources.md)
+### [PowerShell 용 Microsoft 365 커뮤니티 리소스](office-365-powershell-community-resources.md)
 
-## [사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+## [Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 
 ### 사용자 계정
 #### [사용자 계정 만들기](create-user-accounts-with-office-365-powershell.md)
@@ -30,19 +30,19 @@
 
 ### 그룹
 #### [그룹 멤버 자격 유지 관리](maintain-group-membership-with-office-365-powershell.md)
-#### [Office 365 그룹 관리](manage-office-365-groups-with-powershell.md)
+#### [Microsoft 365 그룹](manage-office-365-groups-with-powershell.md)
 
 ## [SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
 ### [SharePoint Online 사이트 만들기 및 사용자 추가](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [SharePoint Online 사용자 및 그룹 관리](manage-sharepoint-users-and-groups-with-powershell.md)
 ### [SharePoint Online 사이트 그룹 관리](manage-sharepoint-site-groups-with-powershell.md)
 ## [Exchange Online 관리](manage-exchange-online-with-office-365-powershell.md)
-## [PowerShell을 사용하여 Office 365로 이메일 마이그레이션](use-powershell-for-email-migration-to-office-365.md)
-### [PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
-### [PowerShell을 사용하여 Office 365로 IMAP 마이그레이션 수행](use-powershell-to-perform-an-imap-migration-to-office-365.md)
-### [PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션 수행](use-powershell-to-perform-a-staged-migration-to-office-365.md)
-## [위임된 액세스 파트너용 Windows PowerShell을 사용하여 Office 365 관리](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
-### [위임된 액세스 파트너용 Windows PowerShell을 사용하여 Office 365 테넌트 관리](manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
+## [전자 메일용 PowerShell을 사용하여 Office 365로 마이그레이션](use-powershell-for-email-migration-to-office-365.md)
+### [PowerShell을 사용하여 Microsoft 365로 컷오버 마이그레이션 수행](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
+### [PowerShell을 사용하여 Microsoft 365로 IMAP 마이그레이션 수행](use-powershell-to-perform-an-imap-migration-to-office-365.md)
+### [PowerShell을 사용하여 Microsoft 365로 미리 구성된 마이그레이션 수행](use-powershell-to-perform-a-staged-migration-to-office-365.md)
+## [위임된 액세스 파트너용 Windows PowerShell로 Microsoft 365 관리](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+### [위임된 액세스 파트너용 Windows PowerShell로 Microsoft 365 테넌트 관리](manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
 ### [위임된 액세스 파트너용 Windows PowerShell을 사용하여 클라이언트 테넌트에 도메인 추가](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [위임된 액세스 파트너용 원격 Windows PowerShell을 통해 Exchange Online에 연결](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [위임된 액세스 파트너용 Windows PowerShell을 통해 고객 보고 데이터 검색](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
@@ -50,3 +50,4 @@
 ## [비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [비즈니스용 Skype Online 정책 관리](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [비즈니스용 Skype Online 정책에 대한 사용자 단위 할당](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+## [중앙 집중식 배포 PowerShell을 사용하여 추가 기능을 관리](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
