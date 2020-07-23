@@ -1,9 +1,9 @@
 ---
-title: PowerShell을 사용 하 여 Office 365 전자 메일 마이그레이션에 대 한
+title: Microsoft 365로의 전자 메일 마이그레이션을 위해 PowerShell 사용
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.date: 12/15/2017
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,44 +15,39 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: 요약:Windows PowerShell을 사용하여 Office 365로 전자 메일을 마이그레이션하는 방법을 알아봅니다.
-ms.openlocfilehash: 340a8fd9ae40b64445a1b6dc25b16cf302ac377b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: '요약: Windows PowerShell을 사용 하 여 전자 메일을 Microsoft 365로 마이그레이션하는 방법을 알아봅니다.'
+ms.openlocfilehash: e3b16f43161d87d46306e3f9420c84037be24ba8
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998610"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230224"
 ---
-# <a name="use-powershell-for-email-migration-to-office-365"></a><span data-ttu-id="aa4ec-103">PowerShell을 사용 하 여 Office 365 전자 메일 마이그레이션에 대 한</span><span class="sxs-lookup"><span data-stu-id="aa4ec-103">Use PowerShell for email migration to Office 365</span></span>
+# <a name="use-powershell-for-email-migration-to-microsoft-365"></a><span data-ttu-id="15171-103">Microsoft 365로의 전자 메일 마이그레이션을 위해 PowerShell 사용</span><span class="sxs-lookup"><span data-stu-id="15171-103">Use PowerShell for email migration to Microsoft 365</span></span>
 
-<span data-ttu-id="aa4ec-p101">대부분의 관리자는 처음에 Office 365를 설정할 때 기존 시스템에서 전자 메일을 마이그레이션하게 됩니다. Office 365 관리 사용자 인터페이스를 사용하여 이 작업을 수행할 수도 있습니다. Windows PowerShell을 사용하여 전자 메일을 마이그레이션할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa4ec-p101">When administrators first set up Office 365, many of them migrate email from existing systems. You can also do this by using the Office 365 administration user interface. You can also use Windows PowerShell to migrate email.</span></span>
-  
-## <a name="office-365-licensing-and-windows-powershell"></a><span data-ttu-id="aa4ec-107">Office 365 라이선스 및 Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="aa4ec-107">Office 365 licensing and Windows PowerShell</span></span>
+<span data-ttu-id="15171-104">*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*</span><span class="sxs-lookup"><span data-stu-id="15171-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="aa4ec-108">Windows PowerShell을 사용하여 Office 365로 전자 메일을 마이그레이션합니다.</span><span class="sxs-lookup"><span data-stu-id="aa4ec-108">Use Windows PowerShell to migrate email to Office 365.</span></span> 
+<span data-ttu-id="15171-p101">관리자가 Microsoft 365를 처음 설정 하면 대부분의 사용자는 기존 시스템에서 전자 메일을 마이그레이션합니다. Microsoft 365 관리 센터를 사용 하 여이 작업을 수행할 수도 있습니다. Windows PowerShell을 사용 하 여 전자 메일을 마이그레이션할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="15171-p101">When administrators first set up Microsoft 365, many of them migrate email from existing systems. You can also do this by using the Microsoft 365 admin center. You can also use Windows PowerShell to migrate email.</span></span>
   
-- [<span data-ttu-id="aa4ec-109">PowerShell을 사용하여 Office 365로 단독형 마이그레이션 수행</span><span class="sxs-lookup"><span data-stu-id="aa4ec-109">Use PowerShell to perform a cutover migration to Office 365</span></span>](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
+<span data-ttu-id="15171-108">Windows PowerShell을 사용 하 여 Microsoft 365로 전자 메일을 마이그레이션합니다.</span><span class="sxs-lookup"><span data-stu-id="15171-108">Use Windows PowerShell to migrate email to Microsoft 365.</span></span> 
+  
+- [<span data-ttu-id="15171-109">PowerShell을 사용 하 여 Microsoft 365로의 마이그레이션 수행</span><span class="sxs-lookup"><span data-stu-id="15171-109">Use PowerShell to perform a cutover migration to Microsoft 365</span></span>](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
     
-- [<span data-ttu-id="aa4ec-110">PowerShell을 사용하여 Office 365로 IMAP 마이그레이션 수행</span><span class="sxs-lookup"><span data-stu-id="aa4ec-110">Use PowerShell to perform an IMAP migration to Office 365</span></span>](use-powershell-to-perform-an-imap-migration-to-office-365.md)
+- [<span data-ttu-id="15171-110">PowerShell을 사용 하 여 Microsoft 365로 IMAP 마이그레이션 수행</span><span class="sxs-lookup"><span data-stu-id="15171-110">Use PowerShell to perform an IMAP migration to Microsoft 365</span></span>](use-powershell-to-perform-an-imap-migration-to-office-365.md)
     
-- [<span data-ttu-id="aa4ec-111">PowerShell을 사용하여 Office 365로 미리 구성된 마이그레이션 수행</span><span class="sxs-lookup"><span data-stu-id="aa4ec-111">Use PowerShell to perform a staged migration to Office 365</span></span>](use-powershell-to-perform-a-staged-migration-to-office-365.md)
+- [<span data-ttu-id="15171-111">PowerShell을 사용 하 여 Microsoft 365로 미리 구성 된 마이그레이션 수행</span><span class="sxs-lookup"><span data-stu-id="15171-111">Use PowerShell to perform a staged migration to Microsoft 365</span></span>](use-powershell-to-perform-a-staged-migration-to-office-365.md)
     
-## <a name="see-also"></a><span data-ttu-id="aa4ec-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="aa4ec-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="15171-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="15171-112">See also</span></span>
 
-#### 
-
-[<span data-ttu-id="aa4ec-113">Office 365 PowerShell 사용한 Office 365 관리</span><span class="sxs-lookup"><span data-stu-id="aa4ec-113">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="15171-113">PowerShell을 사용 하 여 Microsoft 365 관리</span><span class="sxs-lookup"><span data-stu-id="15171-113">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="aa4ec-114">Office 365 PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="aa4ec-114">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="15171-114">Microsoft 365 용 PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="15171-114">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
   
-[<span data-ttu-id="aa4ec-115">Office 365 PowerShell을 사용하여 SharePoint Online 관리</span><span class="sxs-lookup"><span data-stu-id="aa4ec-115">Manage SharePoint Online with Office 365 PowerShell</span></span>](manage-sharepoint-online-with-office-365-powershell.md)
+[<span data-ttu-id="15171-115">PowerShell을 사용 하 여 SharePoint Online 관리</span><span class="sxs-lookup"><span data-stu-id="15171-115">Manage SharePoint Online with PowerShell</span></span>](manage-sharepoint-online-with-office-365-powershell.md)
   
-[<span data-ttu-id="aa4ec-116">Office 365에서 Windows PowerShell을 사용하여 보고서 만들기</span><span class="sxs-lookup"><span data-stu-id="aa4ec-116">Use Windows PowerShell to create reports in Office 365</span></span>](use-windows-powershell-to-create-reports-in-office-365.md)
-#### 
-
-[<span data-ttu-id="aa4ec-117">Windows PowerShell을 사용하여 Office 365를 관리할 때의 이점</span><span class="sxs-lookup"><span data-stu-id="aa4ec-117">Advantages of using Windows PowerShell to manage Office 365</span></span>](https://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
+<span data-ttu-id="15171-116">[Windows PowerShell을 사용 하 여 Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md) 
+ 에서 보고서 만들기 [Microsoft 365 PowerShell을 사용 해야 하는 이유](why-you-need-to-use-office-365-powershell.md)</span><span class="sxs-lookup"><span data-stu-id="15171-116">[Use Windows PowerShell to create reports in Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)
+[Why you need to use Microsoft 365 PowerShell](why-you-need-to-use-office-365-powershell.md)</span></span>
   
-[<span data-ttu-id="aa4ec-118">Office 365의 Windows PowerShell 기술 참조</span><span class="sxs-lookup"><span data-stu-id="aa4ec-118">Windows PowerShell in Office 365 technical reference</span></span>](https://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
-  
-[<span data-ttu-id="aa4ec-119">Office 365 라이선싱 및 Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="aa4ec-119">Office 365 Licensing and Windows PowerShell</span></span>](https://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
+[<span data-ttu-id="15171-117">PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리</span><span class="sxs-lookup"><span data-stu-id="15171-117">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 
