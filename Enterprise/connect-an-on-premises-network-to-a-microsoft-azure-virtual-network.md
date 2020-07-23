@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '요약: 사이트 간 VPN 연결을 사용하여 Office Server 작업용 프레미스 간 Azure Virtual Network를 구성하는 방법을 알아봅니다.'
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840655"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230074"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
 프레미스 간 Azure Virtual Network가 온-프레미스 네트워크에 연결되어 Azure 인프라 서비스에서 호스트되는 서브넷 및 가상 시스템을 포함하도록 네트워크를 확장합니다. 이 연결을 통해 온-프레미스 네트워크의 컴퓨터는 Azure의 가상 시스템에 직접 액세스할 수 있으며 그 반대의 경우도 가능합니다. 
 
-예를 들어 Azure VIrtual Machine에서 실행 중인 디렉터리 동기화 서버는 온-프레미스 도메인 컨트롤러에서 계정 변경 내용을 쿼리하고 해당 변경 내용을 Office 365 구독과 동기화해야 합니다. 이 문서에서는 사이트 간 VPN(가상 사설망) 연결을 사용하여 Azure Virtual Machine을 호스트할 준비가 된 크로스-프레미스 Azure Virtual Network를 설정하는 방법을 보여줍니다.
+예를 들어 Azure 가상 컴퓨터에서 실행 되는 디렉터리 동기화 서버는 온-프레미스 도메인 컨트롤러에 계정의 변경 내용을 쿼리하고 해당 변경 내용을 Microsoft 365 구독과 동기화 해야 합니다. 이 문서에서는 Azure 가상 컴퓨터를 호스팅할 준비가 된 사이트 간 VPN (가상 사설망) 연결을 사용 하 여 크로스-프레미스 Azure virtual network를 설정 하는 방법을 보여 줍니다.
 
 ## <a name="overview"></a>개요
 
@@ -335,4 +335,4 @@ Azure에서 필요한 가상 머신을 만듭니다. 자세한 내용은 [Azure 
   
 ## <a name="next-step"></a>다음 단계
   
-[Microsoft Azure에서 Office 365 디렉터리 동기화 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Microsoft Azure에서 Microsoft 365 디렉터리 동기화 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

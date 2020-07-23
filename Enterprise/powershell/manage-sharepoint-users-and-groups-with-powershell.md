@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리
+title: PowerShell을 사용 하 여 SharePoint Online 사용자 및 그룹 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '요약: Office 365 PowerShell을 사용 하 여 SharePoint Online 사용자, 그룹 및 사이트를 관리 합니다.'
-ms.openlocfilehash: c820fd009635a8a9b27f28d858d345794bea6334
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: '요약: Microsoft 365 용 PowerShell을 사용 하 여 SharePoint Online 사용자, 그룹 및 사이트를 관리 합니다.'
+ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004121"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230474"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 SharePoint Online 사용자 및 그룹 관리
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>PowerShell을 사용 하 여 SharePoint Online 사용자 및 그룹 관리
 
-많은 사용자 계정 또는 그룹 목록을 사용 하 고이를 보다 쉽게 관리 하기 원하는 SharePoint Online 관리자는 Office 365 PowerShell을 사용할 수 있습니다. 
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+많은 사용자 계정 또는 그룹 목록을 사용 하 고이를 보다 쉽게 관리 하기 위해 사용 하는 SharePoint Online 관리자는 Microsoft 365 용 PowerShell을 사용할 수 있습니다. 
 
 시작 하기 전에이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
 
@@ -56,7 +58,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>사이트 모음 관리자 그룹에 사용자 추가
 
-`Set-SPOUser` Cmdlet을 사용 하 여 사이트 모음의 사이트 모음 관리자 목록에 사용자를 추가 합니다.
+Cmdlet을 사용 `Set-SPOUser` 하 여 사이트 모음의 사이트 모음 관리자 목록에 사용자를 추가 합니다.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -80,7 +82,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>다른 사이트 모음 그룹에 사용자 추가
 
-이 작업에서는 `Add-SPOUser` cmdlet을 사용 하 여 사이트 모음의 SharePoint 그룹에 사용자를 추가 합니다.
+이 작업에서는 cmdlet을 사용 하 여 `Add-SPOUser` 사이트 모음의 SharePoint 그룹에 사용자를 추가 합니다.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -103,7 +105,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>사이트 모음 그룹 만들기
 
-`New-SPOSiteGroup` Cmdlet을 사용 하 여 새 SharePoint 그룹을 만들고 사이트 모음에 추가 합니다.
+Cmdlet을 사용 `New-SPOSiteGroup` 하 여 새 SharePoint 그룹을 만들고 사이트 모음에 추가 합니다.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -112,7 +114,7 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-권한 수준과 같은 그룹 속성은 나중에 `Set-SPOSiteGroup` cmdlet을 사용 하 여 업데이트할 수 있습니다.
+권한 수준과 같은 그룹 속성은 나중에 cmdlet을 사용 하 여 업데이트할 수 있습니다 `Set-SPOSiteGroup` .
 
 예를 들어 보기 전용 권한이 있는 감사자 그룹을 contoso 테 넌 시의 contosotest 사이트 모음에 추가 해 보겠습니다.
 
@@ -130,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 그러나 SharePoint Online 관리 셸 및 CSV 파일을 사용 하는 것이 빠르고 쉬운 방법입니다. 이 작업에서는 Windows PowerShell을 사용하여 사이트 모음 보안 그룹에서 사용자를 제거합니다. 그런 다음 CSV 파일을 사용해 여러 사이트에서 다수의 사용자를 제거합니다. 
 
-명령 구문을 볼 수 있도록 ' Remove-SPOUser ' cmdlet을 사용 하 여 사이트 모음 그룹에서 단일 Office 365 사용자를 제거 하는 것이 좋습니다. 이 작업을 위한 구문은 다음과 같습니다.
+여기서는 명령 구문이 표시 될 수 있도록 ' Remove-SPOUser ' cmdlet을 사용 하 여 사이트 모음 그룹에서 단일 Microsoft 365 사용자만 제거 합니다. 이 작업을 위한 구문은 다음과 같습니다.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -277,9 +279,9 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Office 365 PowerShell을 사용하여 SharePoint Online 관리](create-sharepoint-sites-and-add-users-with-powershell.md)
+[PowerShell을 사용 하 여 SharePoint Online 관리](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

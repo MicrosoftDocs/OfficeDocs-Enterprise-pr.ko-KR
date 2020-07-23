@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997952"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230034"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365용 Azure Express 경로
 
@@ -64,9 +64,9 @@ Office 365, Windows Update, TechNet 등의 모든 Microsoft 응용 프로그램�
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |비즈니스용 Skype Online<sup>1</sup> <br/> Microsoft 팀 <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> 비즈니스용 OneDrive<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|포털 및 공유<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|포털 및 공유<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> 이러한 각 응용 프로그램은 Express에서 지원 되지 않는 인터넷 연결 요구 사항이 있습니다. 자세한 내용은 [Office 365 endpoints 문서](https://aka.ms/o365endpoints) 를 참조 하십시오.
+<sup>1</sup> 이러한 각 응용 프로그램은 express에서 지원 되지 않는 인터넷 연결 요구 사항이 있습니다. 자세한 내용은 [Office 365 endpoints 문서](https://aka.ms/o365endpoints) 를 참조 하십시오.
 
 Office 365 용 Express에 포함 되지 않은 서비스는 중국에서 엔터프라이즈 클라이언트 다운로드, 온-프레미스 Id 공급자 로그인 및 Office 365 (운영 하는 21 Vianet 되며) 서비스에 대 한 Microsoft 365 앱입니다.
 
@@ -90,7 +90,7 @@ Office 365 용 Express에 포함 되지 않은 서비스는 중국에서 엔터�
 
 8. 선택적으로 [QoS를 구현](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) 하 고 지역별 확장을 평가 합니다.
 
-<sup>1</sup> 중요 한 성능 고려 사항 여기에서 결정 사항은 비즈니스용 Skype와 같은 응용 프로그램에 중요 한 대기 시간에 영향을 미칠 수 있습니다.
+<sup>1</sup> 가지 중요 한 성능 고려 사항 여기에서 결정 사항은 비즈니스용 Skype와 같은 응용 프로그램에 중요 한 대기 시간에 영향을 미칠 수 있습니다.
 
 추가 참조에 대해서는 [라우팅 가이드](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) 와, [express 경로 설명서](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)를 사용 하십시오.
 
@@ -112,7 +112,7 @@ Office 365에 대 한 Express를 구입 하려면 하나 이상의 [승인 된 �
 
 [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
 
-[Office 365의 Express에서 BGP 커뮤니티 사용 (미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용](bgp-communities-in-expressroute.md)
 
 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 

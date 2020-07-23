@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
+title: PowerShell을 사용 하 여 Microsoft 365 사용자 계정 속성 구성
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,57 +18,59 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: '요약: Office 365 PowerShell을 사용 하 여 Office 365 테 넌 트에서 개별 또는 여러 사용자 계정에 대 한 속성을 구성 합니다.'
-ms.openlocfilehash: 5748bd382357168e4184754fb49fb7304e2d2474
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: '요약: Microsoft 365 용 PowerShell을 사용 하 여 Microsoft 365 테 넌 트에서 개별 또는 여러 사용자 계정의 속성을 구성 합니다.'
+ms.openlocfilehash: ccf9bf9930551ab1ee26ef7a1f69427cdc4871f5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004721"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230854"
 ---
-# <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell를 사용 하 여 사용자 계정 속성 구성
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 사용자 계정 속성 구성
 
-Microsoft 365 관리 센터를 사용 하 여 Office 365 테 넌 트의 사용자 계정에 대 한 속성을 구성할 수 있지만 Office 365 PowerShell을 사용 하 고 관리 센터에서 수행할 수 없는 몇 가지 작업을 실행할 수도 있습니다.
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+Microsoft 365 관리 센터를 사용 하 여 Microsoft 365 테 넌 트의 사용자 계정에 대 한 속성을 구성할 수 있지만 PowerShell을 사용 하 여 Microsoft 365 관리 센터에서 수행할 수 없는 몇 가지 작업을 실행할 수도 있습니다.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
 Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사용자 계정 속성을 구성 하려면 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet을 사용 하 고 설정 하거나 변경할 속성을 지정 합니다. 
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
    
 ### <a name="change-properties-for-a-specific-user-account"></a>특정 사용자 계정에 대 한 속성 변경
 
 **-ObjectID** 매개 변수를 사용 하 여 계정을 식별 하 고 추가 매개 변수를 사용 하 여 특정 속성을 설정 하거나 변경 합니다. 가장 일반적인 매개 변수 목록은 다음과 같습니다.
   
-- -부서 "\<부서 이름>"
+- -부서 " \<department name> "
     
-- -DisplayName "\<전체 사용자 이름>"
+- -DisplayName " \<full user name> "
     
-- -FacsimilieTelephoneNumber "\<팩스 번호>"
+- -FacsimilieTelephoneNumber " \<fax number> "
     
-- -GivenName "\<사용자 이름>"
+- -GivenName " \<user first name> "
     
-- -성 "\<사용자 성>"
+- -성 " \<user last name> "
     
-- -Mobile "\<휴대폰 번호>"
+- -Mobile " \<mobile phone number> "
     
-- -JobTitle "\<직책>"
+- -JobTitle " \<job title> "
     
-- -PreferredLanguage "\<language>"
+- -PreferredLanguage " \<language> "
     
-- -StreetAddress "\<주소>"
+- -StreetAddress " \<street address> "
     
-- -도시명 "\<구/군/시 이름>"
+- -구/군/시 " \<city name> "
     
-- -State "\<상태 이름>"
+- -State " \<state name> "
     
-- -PostalCode "\<우편 번호>"
+- -PostalCode " \<postal code> "
     
-- -Country "\<국가 이름>"
+- -Country " \<country name> "
     
-- -TelephoneNumber "\<사무실 전화 번호>"
+- -TelephoneNumber " \<office phone number> "
     
-- -UsageLocation "\<2 자리 국가 또는 지역 코드>"
+- -UsageLocation " \<2-character country or region code> "
     
     ISO 3166-1 alpha-2 (A2) 두 자리 국가 또는 지역 코드입니다.
     
@@ -81,17 +83,17 @@ Graph 모듈에 대 한 Azure Active Directory PowerShell을 사용 하 여 사�
 Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 (**AzureADUser**)에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용자 계정 이름 목록을 사전순 ( **Sort UserPrincipalName** )으로 정렬 하 고 다음 명령 ( **|** )으로 보냅니다.
+- 사용자 계정 이름 목록을 사전순 (**Sort UserPrincipalName**)으로 정렬 하 고 다음 명령 ()으로 보냅니다 **|** .
     
-- 각 계정에 대해 사용자 계정 이름 속성을 표시 합니다 ( **UserPrincipalName 선택** ).
+- 각 계정에 대해 사용자 계정 이름 속성을 표시 합니다 (**UserPrincipalName 선택**).
 
-- 한 **화면을 한** 번에 한 화면씩 표시 합니다.
+- 한**화면을 한**번에 한 화면씩 표시 합니다.
     
-이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
+이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름과 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 아래에 **$userName** 변수를 입력 하 \< and > 고 (문자 제거) 다음 명령을 실행 합니다.
   
 ```powershell
 $userName="<Display name>"
@@ -121,11 +123,11 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 (**AzureADUser**)에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용자 위치를 프랑스 ( **AzureADUser-UsageLocation "FR"** )로 설정 합니다.
+- 사용자 위치를 프랑스 (**AzureADUser-UsageLocation "FR"**)로 설정 합니다.
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>특정 사용자 계정 집합의 속성 변경
 
@@ -135,19 +137,19 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 (**AzureADUser**)에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 부서 속성이 "회계"로 설정 된 모든 사용자 계정을 찾습니다 ( **여기서 {$ _. 부서-eq "Accounting"}** )를 사용 하 고 결과 정보를 다음 명령 ( **|** )으로 보냅니다.
+- 부서 속성이 "회계"로 설정 된 모든 사용자 계정을 찾습니다 (**여기서 {$ _. 부서-eq "Accounting"}**)를 사용 하 고 결과 정보를 다음 명령 ( **|** )으로 보냅니다.
     
-- 사용자 위치를 프랑스 ( **AzureADUser-UsageLocation "FR"** )로 설정 합니다.
+- 사용자 위치를 프랑스 (**AzureADUser-UsageLocation "FR"**)로 설정 합니다.
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
 Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여 사용자 계정에 대 한 속성을 구성 하려면 **get-msoluser** cmdlet을 사용 하 고 설정 하거나 변경할 속성을 지정 합니다. 
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
   
 >[!Note]
 >PowerShell Core는 Windows PowerShell용 Microsoft Azure Active Directory 모듈 및 이름에 **Msol**이 있는 cmdlet을 지원하지 않습니다. 이러한 cmdlet을 계속 사용하려면 Windows PowerShell에서 이를 실행해야 합니다.
@@ -159,37 +161,37 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
 
 **-UserPrincipalName** 매개 변수를 사용 하 여 계정을 식별 하 고 추가 매개 변수를 사용 하 여 특정 속성을 설정 하거나 변경 합니다. 가장 일반적인 매개 변수 목록은 다음과 같습니다.
   
-- -도시명 "\<구/군/시 이름>"
+- -구/군/시 " \<city name> "
     
-- -Country "\<국가 이름>"
+- -Country " \<country name> "
     
-- -부서 "\<부서 이름>"
+- -부서 " \<department name> "
     
-- -DisplayName "\<전체 사용자 이름>"
+- -DisplayName " \<full user name> "
     
-- -Fax "\<팩스 번호>"
+- -Fax " \<fax number> "
     
-- -FirstName "\<사용자 이름>"
+- -FirstName " \<user first name> "
     
-- -LastName "\<user last name>"
+- -LastName " \<user last name> "
     
-- -MobilePhone "\<휴대폰 번호>"
+- -MobilePhone " \<mobile phone number> "
     
-- -Office "\<사무실 위치>"
+- -Office " \<office location> "
     
-- -PhoneNumber "\<사무실 전화 번호>"
+- -PhoneNumber " \<office phone number> "
     
-- -PostalCode "\<우편 번호>"
+- -PostalCode " \<postal code> "
     
-- -PreferredLanguage "\<language>"
+- -PreferredLanguage " \<language> "
     
-- -State "\<상태 이름>"
+- -State " \<state name> "
     
-- -StreetAddress "\<주소>"
+- -StreetAddress " \<street address> "
     
-- -Title "\<제목 이름>"
+- -Title " \<title name> "
     
-- -UsageLocation "\<2 자리 국가 또는 지역 코드>"
+- -UsageLocation " \<2-character country or region code> "
     
     ISO 3166-1 alpha-2 (A2) 두 자리 국가 또는 지역 코드입니다.
     
@@ -201,17 +203,17 @@ Windows PowerShell 용 Microsoft Azure Active Directory 모듈을 사용 하 여
 Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 (**get-msoluser**)에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용자 계정 이름 목록을 사전순 ( **Sort UserPrincipalName** )으로 정렬 하 고 다음 명령 ( **|** )으로 보냅니다.
+- 사용자 계정 이름 목록을 사전순 (**Sort UserPrincipalName**)으로 정렬 하 고 다음 명령 ()으로 보냅니다 **|** .
     
-- 각 계정에 대해 사용자 계정 이름 속성을 표시 합니다 ( **UserPrincipalName 선택** ).
+- 각 계정에 대해 사용자 계정 이름 속성을 표시 합니다 (**UserPrincipalName 선택**).
     
-- 한 **화면을 한** 번에 한 화면씩 표시 합니다.
+- 한**화면을 한**번에 한 화면씩 표시 합니다.
     
-이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름 및 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 다음 명령을 실행 하 여 아래의 **$userName** 변수를 입력 합니다 ( \< 및 > 문자 제거).
+이 명령에는 모든 계정이 나열 됩니다. 표시 이름 (이름과 성)을 기준으로 계정의 사용자 계정 이름을 표시 하려면 아래에 **$userName** 변수를 입력 하 \< and > 고 (문자 제거) 다음 명령을 실행 합니다.
   
 ```powershell
 $userName="<Display name>"
@@ -241,11 +243,11 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 (**get-msoluser**)에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용자 위치를 프랑스 ( **get-msoluser-UsageLocation "FR"** )로 설정 합니다.
+- 사용자 위치를 프랑스 (**get-msoluser-UsageLocation "FR"**)로 설정 합니다.
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>특정 사용자 계정 집합의 속성 변경
 
@@ -255,19 +257,19 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 (**get-msoluser**)에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 부서 속성이 "회계"로 설정 된 모든 사용자 계정을 찾습니다 ( **여기서 {$ _. 부서-eq "Accounting"}** )를 사용 하 고 결과 정보를 다음 명령 ( **|** )으로 보냅니다.
+- 부서 속성이 "회계"로 설정 된 모든 사용자 계정을 찾습니다 (**여기서 {$ _. 부서-eq "Accounting"}**)를 사용 하 고 결과 정보를 다음 명령 ( **|** )으로 보냅니다.
     
-- 사용자 위치를 프랑스 ( **get-msoluser-UsageLocation "FR"** )로 설정 합니다.
+- 사용자 위치를 프랑스 (**get-msoluser-UsageLocation "FR"**)로 설정 합니다.
     
 
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)

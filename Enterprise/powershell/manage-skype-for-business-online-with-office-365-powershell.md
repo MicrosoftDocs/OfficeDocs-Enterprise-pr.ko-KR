@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
+title: PowerShell을 사용 하 여 비즈니스용 Skype Online 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 요약:Office 365 PowerShell을 사용하여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리합니다.
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: '요약: Microsoft 365 용 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리 합니다.'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415940"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230444"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리
+# <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell을 사용 하 여 비즈니스용 Skype Online 관리
 
-비즈니스용 Skype 온라인 관리자의 기본 작업 중 하나는 정책을 관리하는 것입니다. Office 365 관리 센터에서 이러한 작업 중 일부를 수행할 수 있지만 Office 365 PowerShell에서 훨씬 더 빠르고 쉽게 수행할 수 있는 작업도 있습니다. 
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+비즈니스용 Skype 온라인 관리자의 기본 작업 중 하나는 정책을 관리하는 것입니다. Microsoft 365 관리 센터에서 이러한 작업 중 일부를 수행할 수는 있지만, PowerShell에서 다른 작업은 훨씬 빠르고 간편 합니다. 
 
 ## <a name="before-you-start"></a>시작하기 전에
 
@@ -62,15 +64,15 @@ ms.locfileid: "44415940"
 
 자세한 내용은 다음 항목을 참조하세요.
   
-- [Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [PowerShell을 사용 하 여 비즈니스용 Skype Online 정책 관리](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Office 365 powershell 비즈니스 온라인 정책에 대 한 사용자 당 Skype 할당](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [PowerShell을 사용 하 여 비즈니스용 Skype Online 정책 할당](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
 [비즈니스용 Skype PowerShell cmdlet 참조](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

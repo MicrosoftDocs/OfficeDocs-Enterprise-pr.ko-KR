@@ -3,7 +3,7 @@ title: 하이브리드 솔루션
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '요약: 다음 문서를 참조하여 Microsoft Azure에서 Office Server 작업을 배포합니다.'
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998016"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229954"
 ---
 # <a name="hybrid-solutions"></a>하이브리드 솔루션
 
-일반적으로 Azure 인프라 서비스의 온-프레미스에서 배포되는 일부 Office Server 작업을 이제 Microsoft Azure를 사용해 배포할 수 있습니다.
+Microsoft Azure를 사용 하 여 Azure 인프라 서비스에서 일반적으로 온-프레미스에 배포 된 일부 Office Server 작업을 배포할 수 있습니다.
   
 Azure의 Microsoft 365 id 인프라의 경우:
 

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 용 Express를 통해 다양 한 인터넷 연결 Office 365 서비스에 대 한 대체 라우팅 경로를 제공 합니다. Office 365의 Express 기반 아키텍처는 네트워크에 해당 IP 접두사를 다시 배포 하기 위한 프로 비전 된 Express 회로에 인터넷을 통해 이미 액세스할 수 있는 Office 365 서비스의 공용 IP 접두사를 사용 하는 것입니다. Express를 사용 하면 많은 Office 365 서비스에 대해 인터넷 및가을 통해 여러 다른 라우팅 경로를 효과적으로 사용 하도록 설정할 수 있습니다. 네트워크에서의 라우팅 상태는 내부 네트워크 토폴로지가 디자인 되는 방식이 크게 변경 된 것일 수 있습니다.
-ms.openlocfilehash: ab40a346ca1b19fcd100f17b934b766b21741010
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998130"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230304"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
@@ -582,7 +582,7 @@ Express 기반 연결을 사용 하 여 Office 365을 배포 하는 동안, Expr
   
 [Office 365용 ExpressRoute를 사용한 네트워크 계획](network-planning-with-expressroute.md)
   
-[Office 365의 Express에서 BGP 커뮤니티 사용 (미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용](bgp-communities-in-expressroute.md)
   
 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

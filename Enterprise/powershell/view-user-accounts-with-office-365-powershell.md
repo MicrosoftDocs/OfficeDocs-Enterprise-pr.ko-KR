@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell을 사용한 사용자 계정 보기
+title: PowerShell을 사용 하 여 Microsoft 365 사용자 계정 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,21 +18,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: '요약: Office 365 PowerShell을 사용 하 여 다양 한 방식으로 사용자 계정을 보거나, 나열 하거나, 표시 합니다.'
-ms.openlocfilehash: c97fd55b2516198f2beaddd558174c62972547c6
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: '요약: PowerShell을 사용 하 여 다양 한 방식으로 Microsoft 365 사용자 계정을 보거나, 나열 하거나, 표시 합니다.'
+ms.openlocfilehash: a67457169328828b2b471dd5db6a53bab3bbacda
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004151"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230204"
 ---
-# <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell을 사용한 사용자 계정 보기
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 사용자 계정 보기
 
-Microsoft 365 관리 센터를 사용 하 여 Office 365 테 넌 트에 대 한 계정을 볼 수도 있지만 Office 365 PowerShell을 사용 하 여 관리 센터에서 수행할 수 없는 몇 가지 작업을 수행 해도 됩니다.
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+Microsoft 365 관리 센터를 사용 하 여 Microsoft 365 테 넌 트에 대 한 계정을 볼 수도 있지만 Microsoft 365 용 PowerShell을 사용 하 여 관리 센터에서 수행할 수 없는 작업을 수행 하는 경우도 있습니다.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
   
 ### <a name="view-all-accounts"></a>모든 계정 보기
 
@@ -79,9 +81,9 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
 - 사용자 계정 이름, 부서 및 사용 위치만 표시 합니다 ( **DisplayName, 학과, UsageLocation 선택** ).
   
@@ -107,9 +109,9 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 
 이 명령은 다음과 같은 그래프에 Azure Active Directory PowerShell을 지시 합니다.
   
-- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 ( **AzureADUser** )에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용 위치 ( **여기서 {$\_)가 지정 되지 않은 모든 사용자 계정을 찾습니다. UsageLocation-eq $Null}** ). 중괄호 내에서이 명령은 Office 365 PowerShell에 UsageLocation 사용자 계정 속성 ( ** $ \_을 사용 하는 경우에만 계정 집합을 찾습니다. UsageLocation** )이 지정 되지 않았습니다 ( **-eq $Null** ).
+- 사용 위치 ( **여기서 {$)가 지정 되지 않은 모든 사용자 계정을 찾습니다. \_ UsageLocation-eq $Null}** ). 중괄호 내에서이 명령은 PowerShell에 UsageLocation 사용자 계정 속성 (을 사용 하는 경우에만 계정 집합을 찾습니다 ** $ \_ . UsageLocation** )이 지정 되지 않았습니다 ( **-eq $Null** ).
     
 **UsageLocation** 속성은 사용자 계정에 연결 된 여러 속성 중 하나에 불과합니다. 사용자 계정에 대 한 모든 속성을 보려면 **Select** cmdlet 및 와일드 카드 문자 (*)를 사용 하 여 특정 사용자 계정에 대해 모두 표시 합니다. 예를 들면 다음과 같습니다.
   
@@ -124,12 +126,12 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  이러한 예에 표시 되는 **where** cmdlet의 구문은 여기에 해당 합니다 **\_.** [사용자 계정 속성 이름] [비교 연산자] 가치 **}**. > [비교 연산자]는 equals의 경우- **eq** , **-ne** = 같지 않음,-a = 부등호, **-lt** for a,- **gt** = 보다 작음, 기타 보다 작거나 같습니다.  [값]은 일반적으로 문자열 (문자, 숫자 및 기타 문자 시퀀스), 숫자 값 또는 **$Null** 이 지정 되지 않은> 자세한 내용은 [어디](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) 를 참조 하세요.
+>  이러한 예에 표시 되는 **where** cmdlet의 구문은 여기에 해당 합니다 ** \_ .** [사용자 계정 속성 이름] [비교 연산자] 가치 **}**. > [비교 연산자]는 equals의 경우- **eq** , **-ne** = 같지 않음,-a = 부등호, **-lt** for a,- **gt** = 보다 작음, 기타 보다 작거나 같습니다.  [값]은 일반적으로 문자열 (문자, 숫자 및 기타 문자 시퀀스), 숫자 값 또는 **$Null** 이 지정 되지 않은> 자세한 내용은 [어디](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) 를 참조 하세요.
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
 
 ### <a name="view-all-accounts"></a>모든 계정 보기
 
@@ -155,7 +157,7 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-msoluser** cmdlet에도 매개 변수 집합이 있어 표시된 사용자 계정 집합을 필터링할 수 있습니다. 예를 들어 Office 365에 추가 되었지만 아직 어떤 서비스를 사용 하도록 허가 되지 않은 사용자의 목록을 보려면이 명령을 실행 합니다.
+**Get-msoluser** cmdlet에도 매개 변수 집합이 있어 표시된 사용자 계정 집합을 필터링할 수 있습니다. 예를 들어 라이선스가 없는 사용자 목록 (Microsoft 365에 추가 되었지만 아직 어떤 서비스를 사용 하도록 허가 되지 않은 사용자)의 경우에는이 명령을 실행 합니다.
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
@@ -182,17 +184,17 @@ Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>공통 속성을 기준으로 일부 계정 보기
 
-표시할 계정 목록을 보다 신중 하 게 선택 하려면 **Where** Cmdlet을 **get-msoluser** cmdlet과 함께 사용 하면 됩니다. 두 cmdlet을 결합 하려면 Office 365 PowerShell에 명령 결과를 가져와서 다음 명령으로 보내는 "파이프" 문자 "|"을 사용 합니다. 다음은 지정되지 않은 사용 위치가 있는 사용자 계정만 표시하는 예제 명령입니다.
+표시할 계정 목록을 보다 신중 하 게 선택 하려면 **Where** Cmdlet을 **get-msoluser** cmdlet과 함께 사용 하면 됩니다. 두 cmdlet을 결합 하기 위해 "파이프" 문자 "|"을 사용 하 여 PowerShell에 한 명령의 결과를 가져오고 다음 명령에 전송 하도록 지시 합니다. 다음은 지정되지 않은 사용 위치가 있는 사용자 계정만 표시하는 예제 명령입니다.
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용 위치 ( **여기서 {$\_)가 지정 되지 않은 모든 사용자 계정을 찾습니다. UsageLocation-eq $Null}** ). 중괄호 내에서이 명령은 Office 365 PowerShell에 UsageLocation 사용자 계정 속성 ( ** $ \_을 사용 하는 경우에만 계정 집합을 찾습니다. UsageLocation** )이 지정 되지 않았습니다 ( **-eq $Null** ).
+- 사용 위치 ( **여기서 {$)가 지정 되지 않은 모든 사용자 계정을 찾습니다. \_ UsageLocation-eq $Null}** ). 중괄호 내에서이 명령은 PowerShell에 UsageLocation 사용자 계정 속성 (을 사용 하는 경우에만 계정 집합을 찾습니다 ** $ \_ . UsageLocation** )이 지정 되지 않았습니다 ( **-eq $Null** ).
     
 다음과 비슷한 정보가 표시됩니다.
   
@@ -217,7 +219,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  이러한 예에 표시 되는 **where** cmdlet의 구문은 여기에 해당 합니다 **\_.** [사용자 계정 속성 이름] [비교 연산자] 가치 **}**.  [비교 연산자]는 equals의 경우- **eq** , **-ne** : 같지 않음,-a = 부등호, **-** a = 보다 작음,- **gt** for = 및 기타입니다.  [값]은 일반적으로 문자열 (문자, 숫자 및 기타 문자의 시퀀스), 숫자 값 또는 **$Null** 지정 되지 않음에 해당 합니다. 자세한 내용은 [위치](https://technet.microsoft.com/library/hh849715.aspx) 를 참조 하세요.
+>  이러한 예에 표시 되는 **where** cmdlet의 구문은 여기에 해당 합니다 ** \_ .** [사용자 계정 속성 이름] [비교 연산자] 가치 **}**.  [비교 연산자]는 equals의 경우- **eq** , **-ne** : 같지 않음,-a = 부등호, **-** a = 보다 작음,- **gt** for = 및 기타입니다.  [값]은 일반적으로 문자열 (문자, 숫자 및 기타 문자의 시퀀스), 숫자 값 또는 **$Null** 지정 되지 않음에 해당 합니다. 자세한 내용은 [위치](https://technet.microsoft.com/library/hh849715.aspx) 를 참조 하세요.
   
 다음 명령을 사용 하 여 사용자 계정의 차단 상태를 확인할 수 있습니다.
   
@@ -235,15 +237,15 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
     
 - isLicensed
     
-사용자가 근무 하는 부서 및 Office 365 서비스를 사용 하는 국가/지역 같은 추가 속성이 필요한 경우 **Select** cmdlet과 함께 **get-msoluser** 를 실행 하 여 사용자 계정 속성 목록을 지정할 수 있습니다. 예를 들면 다음과 같습니다.
+사용자가 근무 하는 부서와 Microsoft 365 서비스를 사용 하는 국가/지역 같은 추가 속성이 필요한 경우 **Select** cmdlet과 함께 **get-msoluser** 를 실행 하 여 사용자 계정 속성 목록을 지정할 수 있습니다. 예를 들면 다음과 같습니다.
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
 - 사용자 계정 이름, 부서 및 사용 위치만 표시 합니다 ( **DisplayName, 학과, UsageLocation 선택** ).
     
@@ -272,11 +274,11 @@ Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
 ```
 
-이 명령은 Office 365 PowerShell에 다음과 같이 지시 합니다.
+이 명령은 PowerShell에 다음을 지시 합니다.
   
-- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ( **|** )으로 전송 합니다.
+- 사용자 계정 ( **get-msoluser** )에 대 한 모든 정보를 가져오고 다음 명령 ()으로 전송 **|** 합니다.
     
-- 사용 위치 ( **여기서 {$\_)가 지정 되지 않은 모든 사용자 계정을 찾습니다. UsageLocation-eq $Null}** )을 사용 하 고 결과 정보를 다음 명령 ( **|** )로 보냅니다. 중괄호 내에서 명령은 Office 365 PowerShell에 게 UsageLocation 사용자 계정 속성 ( ** $ \_을 갖는 계정 집합만 찾도록 지시 합니다. UsageLocation** )이 지정 되지 않았습니다 ( **-eq $Null** ).
+- 사용 위치 ( **여기서 {$)가 지정 되지 않은 모든 사용자 계정을 찾습니다. \_ UsageLocation-eq $Null}** )을 사용 하 고 결과 정보를 다음 명령 ( **|** )로 보냅니다. 중괄호 안에 있는 명령은 PowerShell에서 UsageLocation 사용자 계정 속성 (을 사용 하는 경우에만 계정 집합을 찾습니다 ** $ \_ . UsageLocation** )이 지정 되지 않았습니다 ( **-eq $Null** ).
     
 - 사용자 계정 이름, 부서 및 사용 위치만 표시 합니다 ( **DisplayName, 학과, UsageLocation 선택** ).
     
@@ -289,7 +291,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-디렉터리 동기화를 사용 하 여 Office 365 사용자를 만들고 관리 하는 경우 Office 365 사용자가 프로젝션 한 로컬 계정을 표시할 수 있습니다. 다음은 Azure AD Connect가 ObjectGUID의 기본 소스 앵커를 사용 하도록 구성 된 것으로 가정 합니다 (원본 앵커를 구성 하려면 [AZURE Ad connect: Design 개념](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)참조) 하며, PowerShell 용 Active Directory 도메인 서비스 모듈이 설치 되어 있다고 가정 합니다 ( [RSAT 도구](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)참조).
+디렉터리 동기화를 사용 하 여 Microsoft 365 사용자를 만들고 관리 하는 경우 Microsoft 365 사용자가 프로젝션 된 로컬 계정을 표시할 수 있습니다. 다음은 Azure AD Connect가 ObjectGUID의 기본 소스 앵커를 사용 하도록 구성 된 것으로 가정 합니다 (원본 앵커를 구성 하려면 [AZURE Ad connect: Design 개념](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)참조) 하며, PowerShell 용 Active Directory 도메인 서비스 모듈이 설치 되어 있다고 가정 합니다 ( [RSAT 도구](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)참조).
 
 ```powershell
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
@@ -297,9 +299,9 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

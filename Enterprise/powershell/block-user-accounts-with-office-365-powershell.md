@@ -1,9 +1,9 @@
 ---
-title: 블록 사용자 계정 Office 365 PowerShell을 사용 하 여
+title: PowerShell을 사용 하 여 Microsoft 365 사용자 계정 차단
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,21 +17,23 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Office 365 PowerShell을 사용 하 여 Office 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 5633c35feee67ede65c4fffa8bc55276c3b979b8
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: PowerShell을 사용 하 여 Microsoft 365 계정에 대 한 액세스를 차단 및 차단 해제 하는 방법을 설명 합니다.
+ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004731"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230894"
 ---
-# <a name="block-user-accounts-with-office-365-powershell"></a>블록 사용자 계정 Office 365 PowerShell을 사용 하 여
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 사용자 계정 차단
 
-Office 365 계정에 대 한 액세스를 차단 하면 사용자가 계정을 사용 하 여 Office 365 조직의 서비스 및 데이터에 로그인 하 고 액세스할 수 없습니다. Office 365 PowerShell을 사용 하 여 개별 및 여러 사용자 계정에 대 한 액세스를 차단할 수 있습니다.
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+Microsoft 365 계정에 대 한 액세스를 차단 하면 사용자가 계정을 사용 하 여 Microsoft 365 조직의 서비스 및 데이터에 로그인 하 고 액세스할 수 없습니다. PowerShell을 사용 하 여 개별 및 여러 사용자 계정에 대 한 액세스를 차단할 수 있습니다.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
  
 ### <a name="block-access-to-individual-user-accounts"></a>개별 사용자 계정에 대 한 액세스 차단
 
@@ -95,7 +97,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-다음 명령에서 예제 텍스트 파일은 C:\My Documents\accounts.txt입니다 .입니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
+다음 명령에서는 예제 텍스트 파일을 C:\My Documents\Accounts.txt 합니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
   
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
@@ -111,7 +113,7 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
     
 ### <a name="block-access-to-individual-user-accounts"></a>개별 사용자 계정에 대 한 액세스 차단
 
@@ -153,7 +155,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-다음 명령에서 예제 텍스트 파일은 C:\My Documents\accounts.txt입니다 .입니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
+다음 명령에서는 예제 텍스트 파일을 C:\My Documents\Accounts.txt 합니다. 텍스트 파일의 경로 및 파일 이름으로 바꿉니다.
     
 텍스트 파일에 나열 된 계정에 대 한 액세스를 차단 하려면 다음 명령을 실행 합니다.
     
@@ -168,8 +170,8 @@ kakers@contoso.com
 
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)

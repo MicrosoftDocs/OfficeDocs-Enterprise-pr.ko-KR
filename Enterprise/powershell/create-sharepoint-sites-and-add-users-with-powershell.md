@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
+title: SharePoint Online 사이트 만들기 및 PowerShell을 사용 하 여 사용자 추가
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,27 +17,29 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '요약: Office 365 PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
-ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: '요약: PowerShell을 사용 하 여 새 SharePoint Online 사이트를 만든 다음 해당 사이트에 사용자 및 그룹을 추가 합니다.'
+ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735706"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230804"
 ---
-# <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>SharePoint Online 사이트를 만들고 Office 365 PowerShell을 사용하여 사용자 추가
+# <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>SharePoint Online 사이트 만들기 및 PowerShell을 사용 하 여 사용자 추가
 
-Office 365 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고 사용자를 추가 하는 경우 Microsoft 365 관리 센터에서 보다 훨씬 빠르게 작업을 빠르게 수행할 수 있습니다. Office 365 관리 센터에서 수행할 수 없는 작업을 수행할 수도 있습니다. 
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+Microsoft 365 용 PowerShell을 사용 하 여 SharePoint Online 사이트를 만들고 사용자를 추가 하는 경우 Microsoft 365 관리 센터에서 보다 훨씬 빠르게 작업을 빠르게 수행할 수 있습니다. Microsoft 365 관리 센터에서 수행할 수 없는 작업을 수행할 수도 있습니다. 
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
 이 항목의 절차를 수행 하려면 SharePoint Online에 연결 해야 합니다. 자세한 내용은 [SharePoint Online PowerShell에 연결을](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) 참조 하세요.
 
-## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>1 단계: Office 365 PowerShell을 사용 하 여 새 사이트 모음 만들기
+## <a name="step-1-create-new-site-collections-using-powershell"></a>1 단계: PowerShell을 사용 하 여 새 사이트 모음 만들기
 
-제공 된 예제 코드와 메모장을 사용 하 여 만든 Office 365 PowerShell 및 .csv 파일을 사용 하 여 여러 사이트를 만듭니다. 이 절차에서는 괄호로 표시 된 자리 표시자 정보를 자체 사이트 및 테 넌 트 관련 정보와 함께 대체 합니다. 이 프로세스를 통해 단일 파일을 만들고 해당 파일을 사용 하는 단일 Office 365 PowerShell 명령을 실행할 수 있습니다. 이렇게 하면 반복 및 이식 가능 하 게 작업을 수행 하 고 SharePoint Online 관리 셸에 긴 명령을 입력 하는 것과 같은 여러 가지 오류를 모두 없앨 수 있습니다. 이 절차는 두 부분으로 구성 됩니다. 먼저 .csv 파일을 만든 다음 Office 365 PowerShell을 사용 하 여 해당 .csv 파일을 참조 하 여 해당 콘텐츠를 사용 하 여 사이트를 만듭니다.
+제공 된 예제 코드와 메모장을 사용 하 여 만든 PowerShell 및 .csv 파일을 사용 하 여 여러 사이트를 만듭니다. 이 절차에서는 괄호로 표시 된 자리 표시자 정보를 자체 사이트 및 테 넌 트 관련 정보와 함께 대체 합니다. 이 프로세스를 통해 단일 파일을 만들고 해당 파일을 사용 하는 단일 PowerShell 명령을 실행할 수 있습니다. 이렇게 하면 반복 및 이식 가능 하 게 작업을 수행 하 고 SharePoint Online 관리 셸에 긴 명령을 입력 하는 것과 같은 여러 가지 오류를 모두 없앨 수 있습니다. 이 절차는 두 부분으로 구성 됩니다. 먼저 .csv 파일을 만든 다음 PowerShell을 사용 하 여 해당 .csv 파일을 참조 하 여 해당 콘텐츠를 사용 하 여 사이트를 만듭니다.
 
-Office 365 PowerShell cmdlet은 .csv 파일을 가져온 후 파일의 첫 번째 줄을 열 머리글로 읽는 중괄호 내부의 루프에 파이프 합니다. 그런 다음 Office 365 PowerShell cmdlet은 나머지 레코드를 반복 하 고 각 레코드에 대 한 새 사이트 모음을 만들고, 열 머리글에 따라 사이트 모음의 속성을 할당 합니다.
+PowerShell cmdlet은 .csv 파일을 가져온 후 파일의 첫 번째 줄을 열 머리글로 읽는 중괄호 내부의 루프에 파이프 합니다. 그런 다음 PowerShell cmdlet은 나머지 레코드를 반복 하 고 각 레코드에 대해 새 사이트 모음을 만들고, 열 머리글에 따라 사이트 모음의 속성을 할당 합니다.
 
 ### <a name="create-a-csv-file"></a>.csv 파일 만들기
 
@@ -156,9 +158,9 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[SharePoint Online 사이트 그룹 관리 Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[PowerShell을 사용 하 여 SharePoint Online 사이트 그룹 관리](manage-sharepoint-site-groups-with-powershell.md)
 
-[Office 365 PowerShell을 사용하여 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

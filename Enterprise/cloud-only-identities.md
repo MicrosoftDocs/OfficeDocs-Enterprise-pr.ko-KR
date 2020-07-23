@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 구독에서 클라우드 전용 id를 사용 하는 경우 사용자 및 그룹을 만드는 방법에 대해 설명 합니다.
-ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 0c2568d7be3f7a7b476d4cf918f00baf238da5ad
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774833"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230024"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 클라우드 전용 id
 
@@ -61,12 +61,12 @@ ms.locfileid: "44774833"
 다음을 사용 하 여 새 ***사용자*** 를 만듭니다.
 
 - [Microsoft 365 관리 센터](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
+- [Microsoft 365 용 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 다음을 사용 하 여 새 ***그룹*** 을 만듭니다.
 
 - [Microsoft 365 관리 센터](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+- [Microsoft 365 용 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
 ## <a name="next-step-for-cloud-only-identity"></a>클라우드 전용 id의 다음 단계

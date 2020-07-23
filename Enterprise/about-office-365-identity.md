@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Microsoft 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998076"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230064"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 id 모델 및 Azure Active Directory
 
@@ -90,7 +90,7 @@ Azure AD 테 넌 트에는 AD DS 계정의 복사본이 있습니다. 이 구성
 
 원본 및 신뢰할 수 있는 사용자 계정이 온-프레미스 AD DS에 저장 되기 때문에 Active Directory 사용자 및 컴퓨터 도구와 같은 도구를 사용 하 여 AD DS와 동일한 도구로 id를 관리 합니다. 
 
-Azure AD에서 동기화 된 사용자 계정을 관리 하는 데에는 Microsoft 365 관리 센터 또는 Office 365 PowerShell을 사용 하지 않습니다.
+Microsoft 365에는 Microsoft 365 관리 센터 또는 PowerShell을 사용 하 여 Azure AD에서 동기화 된 사용자 계정을 관리 하지 않습니다.
 
 ## <a name="next-step"></a>다음 단계
 

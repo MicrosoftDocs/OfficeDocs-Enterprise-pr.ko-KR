@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
-ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Office 365 용 Express를 통해 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결이 제공 됩니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
+ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998533"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230884"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365용 ExpressRoute를 통한 네트워크 계획
 
 *이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-Office 365 용 Express는 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결을 제공 합니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
+Office 365 용 Express를 통해 네트워크와 Microsoft의 데이터 센터 간에 계층 3 연결이 제공 됩니다. 회로는 Office 365의 프런트 엔드 서버에 대 한 BGP (Border Gateway Protocol) 경로 알림을 사용 합니다. 온-프레미스 장치를 사용 하 여 Office 365에 대 한 올바른 TCP/IP 경로를 선택 해야 하는 경우에는 Azure Express를 인터넷 대신 사용할 수 있는 것으로 간주 됩니다.
   
 Azure Express에서는 Microsoft의 데이터 센터 내에서 Office 365 서버에서 제공 하는 지원 되는 특정 기능 집합에 대 한 직접 경로를 추가 합니다. Azure Express 서버는 Microsoft 데이터 센터 또는 기본 인터넷 서비스 (예: 도메인 이름 확인)에 인터넷 연결을 대체 하지 않습니다. Azure Express 경로와 인터넷 회로는 안전 하 고 중복 되어야 합니다.
   
@@ -37,7 +37,7 @@ Azure Express에서는 Microsoft의 데이터 센터 내에서 Office 365 서버
 
 |**네트워크 계획의 차이점**|**인터넷 네트워크 연결**|**Express 하기 네트워크 연결**|
 |:-----|:-----|:-----|
-| 다음을 포함 하 여 필요한 인터넷 서비스에 대 한 액세스 권한  <br/>  DNS 이름 확인  <br/>  인증서 해지 확인  <br/>  콘텐츠 배달 네트워크  <br/> |예  <br/> |Microsoft에서 소유한 DNS 및/또는 CDN 인프라에 대 한 요청은 Express 경로 네트워크를 사용할 수 있습니다.  <br/> |
+| 다음을 포함 하 여 필요한 인터넷 서비스에 대 한 액세스 권한  <br/>  DNS 이름 확인  <br/>  인증서 해지 확인  <br/>  콘텐츠 배달 네트워크(CDN)  <br/> |예  <br/> |Microsoft에서 소유한 DNS 및/또는 CDN 인프라에 대 한 요청은 Express 경로 네트워크를 사용할 수 있습니다.  <br/> |
 | 다음을 포함 하는 Office 365 서비스에 대 한 액세스 권한  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  비즈니스용 Skype Online  <br/>  브라우저에서 Office  <br/>  Office 365 포털 및 인증  <br/> |예, 모든 응용 프로그램 및 기능  <br/> |예, [특정 응용 프로그램 및 기능](https://aka.ms/o365endpoints) <br/> |
 |주변에 온-프레미스 보안  <br/> |예  <br/> |예  <br/> |
 |고가용성 계획  <br/> |대체 인터넷 네트워크 연결에 대 한 장애 조치 (Failover)  <br/> |대체 Express 연결에 대 한 장애 조치 (Failover)  <br/> |
@@ -204,7 +204,7 @@ Woodgrove에 지역별 Azure Express 경로를 여러 개 사용할 수 없는 �
   
 [Office 365용 ExpressRoute 구현](implementing-expressroute.md)
   
-[Office 365의 Express에서 BGP 커뮤니티 사용 (미리 보기)](bgp-communities-in-expressroute.md)
+[Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용](bgp-communities-in-expressroute.md)
   
 [비즈니스용 Skype Online의 미디어 품질 및 네트워크 연결 성능](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

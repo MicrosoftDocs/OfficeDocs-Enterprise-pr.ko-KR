@@ -18,15 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell에서 Microsoft 365 그룹에 대 한 일반적인 관리 작업을 수행 하는 방법을 알아봅니다.
-ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
+ms.openlocfilehash: 25a0a3c90082c016c37820f12caddd1dc1f09704
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117260"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230604"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 그룹 관리
  
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
 이 문서에서는 Microsoft PowerShell의 그룹에 대 한 일반적인 관리 작업을 수행 하는 단계를 제공 합니다. 또한 그룹에 대 한 PowerShell cmdlet도 나열 합니다. SharePoint 사이트 관리에 대 한 자세한 내용은 [PowerShell을 사용 하 여 Sharepoint Online 사이트 관리](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)를 참조 하세요.
 
 ## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Microsoft 365 Groups 링크 사용 지침

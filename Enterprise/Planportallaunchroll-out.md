@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 이 문서에서는 SharePoint Online에서 포털 시작을 계획 하는 방법과 성공적인 시작을 위해 수행 해야 하는 단계에 대해 설명 합니다.
-ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4edd1bc9c2001912a8ebb77e467f9663474ecb66
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004111"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230174"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online에서 포털 시작 롤아웃 계획 계획
 
@@ -35,14 +35,14 @@ ms.locfileid: "44004111"
 배포 방법이 아래에 강조 표시 되어 있습니다.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint Online의 용량 계획 개요
-어떤 팜에서 든 효율적으로 용량을 사용 하 고 예기치 않은 성장을 처리 하기 위해 특정 사용 시나리오를 추적 하는 자동화 기능을 제공 합니다. 한 팜의 모든 테 넌 트에 대해 정확한 증가를 예측할 수는 없지만 집계 된 요청의 합계는 시간이 지남에 따라 예측 가능 합니다. SharePoint Online의 성장 추세를 파악 하 여 향후 확장이 계획 될 수 있습니다. [용량 계획 및 부하 테스트 SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)에 대 한 자세한 내용을 설명 합니다.
+어떤 팜에서 든 효율적으로 용량을 사용 하 고 예기치 않은 성장을 처리 하기 위해 특정 사용 시나리오를 추적 하는 자동화 기능을 제공 합니다. 한 팜의 모든 테 넌 트에 대해 정확한 증가를 예측할 수는 없지만 집계 된 요청의 합계는 시간이 지남에 따라 예측 가능 합니다. SharePoint Online의 성장 추세를 파악 하 여 향후 확장이 계획 될 수 있습니다. [용량 계획 및 부하 테스트 SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)에 대 한 자세한 내용을 설명 합니다.
 
 성공적인 시작의 주요 부분은 아래에 설명 된 "웨이브" 또는 "단계별 롤아웃" 접근 방식입니다. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>테스트 SharePoint Online을 로드할 수 있나요?
 SharePoint Online은 팜 간에 균형이 조정 되는 공유 된 다중 tenanted 환경으로, 수평으로 조정 됩니다. 부하 테스트 확장 크기가 지속적으로 변경 되는 경우에는이를 제외 하 고 SharePoint Online과 같은 환경에서 예기치 않은 결과가 제공 되지만이는 허용 되지 않습니다. 
 
-자세한 내용은 [용량 계획 및 부하 테스트 SharePoint Online를](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online) 확인 하세요.
+자세한 내용은 [용량 계획 및 부하 테스트 SharePoint Online를](capacity-planning-and-load-testing-sharepoint-online.md) 확인 하세요.
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>권장 지침에 따라 페이지 최적화
 온-프레미스 배포의 페이지는 sharepoint online에 대 한 권장 지침에 따라 검토 하지 않고 SharePoint Online으로 이동 해서는 안 됩니다. 가장 좋은 방법은 조직의 모든 사용자가 사이트의 시작 지점으로 액세스 하 게 되는 사이트 또는 포털에 대해 언제 든 지 모든 홈 페이지를 최적화 하는 것입니다.

@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: SharePoint 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057998"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201622"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint 사이트를 다른 지리적 위치로 이동
 
@@ -112,9 +112,9 @@ https://Contoso.sharepoint.com/sites/projectx에서 https://ContosoEUR.sharepoin
 
 ![Start-SPOSiteContentMove cmdlet을 보여주는 PowerShell 창 스크린샷](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Microsoft 365 그룹에 연결된 사이트의 SharePoint 사이트 지리적 이동 시작
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Microsoft 365 그룹에 연결된 사이트의 SharePoint 사이트 지리적 이동 시작
 
-Microsoft 365 그룹에 연결된 사이트를 이동하려면 먼저 전역 관리자가 Microsoft 365 그룹의 PDL(기본 데이터 위치) 특성을 변경해야 합니다.
+Office 365 그룹에 연결된 사이트를 이동하려면 먼저 전역 관리자 또는 SharePoint 관리자가 Office 365 그룹의 PDL(기본 데이터 위치) 특성을 변경해야 합니다.
 
 Microsoft 365 그룹의 PDL을 설정하려면:
 

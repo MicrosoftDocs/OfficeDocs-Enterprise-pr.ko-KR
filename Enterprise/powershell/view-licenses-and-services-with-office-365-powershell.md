@@ -1,9 +1,9 @@
 ---
-title: 라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
+title: PowerShell을 사용 하 여 Microsoft 365 라이선스 및 서비스 보기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,30 +19,32 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: Office 365 PowerShell을 사용 하 여 Office 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 확인 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: PowerShell을 사용 하 여 Microsoft 365 조직에서 사용할 수 있는 라이선스 계획, 서비스 및 라이선스에 대 한 정보를 보는 방법에 대해 설명 합니다.
+ms.openlocfilehash: f0b7d6cd5981bec09e7773d10d82ff81c0f34d4e
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009533"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230214"
 ---
-# <a name="view-licenses-and-services-with-office-365-powershell"></a>라이선스 및 Office 365 PowerShell을 사용 하 여 서비스를 표시 합니다.
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 라이선스 및 서비스 보기
 
-모든 Office 365 구독은 다음과 같은 요소로 구성 되어 있습니다.
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
-- **라이선스 계획** 이러한 계획은 라이선스 요금제 또는 Office 365 요금제 라고도 합니다. 라이선스 계획은 사용자에 게 제공 되는 Office 365 서비스를 정의 합니다. Office 365 구독에는 여러 라이선싱 계획이 포함 될 수 있습니다. 라이선스 계획의 예로는 Office 365 Enterprise E3을 들 수 있습니다.
+모든 Microsoft 365 구독은 다음과 같은 요소로 구성 되어 있습니다.
+
+- **라이선스 계획** 이러한 계획은 라이선스 요금제 또는 Microsoft 365 요금제 라고도 합니다. 라이선스 계획은 사용자에 게 제공 되는 Microsoft 365 서비스를 정의 합니다. Microsoft 365 구독에는 여러 라이선싱 계획이 포함 될 수 있습니다. 라이선스 계획의 예로는 Microsoft 365 E3을 들 수 있습니다.
     
-- **서비스** 이러한 계획은 서비스 계획이 라고도 합니다. 서비스는 각 라이선싱 계획에서 사용할 수 있는 Office 365 제품, 기능, 기능으로, Exchange Online 및 Microsoft 365 Apps for enterprise (이전 명칭: Office 365 ProPlus)입니다. 사용자는 다양 한 서비스에 대 한 액세스 권한을 부여 하는 다른 라이센스 계획에서 할당 된 여러 개의 라이센스를 가질 수 있습니다.
+- **서비스** 이러한 계획은 서비스 계획이 라고도 합니다. 서비스는 각 라이선스 계획에서 사용할 수 있는 Microsoft 365 제품, 기능, 기능 (예: Exchange Online 및 Microsoft 365 Apps for enterprise for Office 365 ProPlus)입니다. 사용자는 다양 한 서비스에 대 한 액세스 권한을 부여 하는 다른 라이센스 계획에서 할당 된 여러 개의 라이센스를 가질 수 있습니다.
     
-- **라이선스** 각 라이선스 계획에는 구매한 라이선스 수가 포함 됩니다. 라이선스 계획에 정의 된 Office 365 서비스를 사용할 수 있도록 사용자에 게 라이선스를 할당 합니다. 모든 사용자 계정에는 라이선스 요금제가 하나 이상 있어야 Office 365에 로그온 하 고 서비스를 사용할 수 있습니다.
+- **라이선스** 각 라이선스 계획에는 구매한 라이선스 수가 포함 됩니다. 라이선스 계획에 정의 된 Microsoft 365 서비스를 사용할 수 있도록 사용자에 게 라이선스를 할당 합니다. 모든 사용자 계정에는 라이선스 요금제가 하나 이상 있어야 Microsoft 365에 로그온 하 고 서비스를 사용할 수 있습니다.
     
-Office 365 PowerShell을 사용 하 여 Office 365 조직의 사용 가능한 라이선스 계획, 라이선스 및 서비스에 대 한 세부 정보를 볼 수 있습니다. 서로 다른 Office 365 구독에서 사용할 수 있는 제품, 기능 및 서비스에 대 한 자세한 내용은 [office 365 계획 옵션](https://go.microsoft.com/fwlink/p/?LinkId=691147)을 참조 하세요.
+Microsoft 365 용 PowerShell을 사용 하 여 Microsoft 365 조직의 사용 가능한 라이선스 계획, 라이선스 및 서비스에 대 한 세부 정보를 확인할 수 있습니다. 서로 다른 Office 365 구독에서 사용할 수 있는 제품, 기능 및 서비스에 대 한 자세한 내용은 [office 365 계획 옵션](https://go.microsoft.com/fwlink/p/?LinkId=691147)을 참조 하세요.
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 모듈용 Azure Active Directory PowerShell 사용하기
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)합니다.
   
 현재 라이선스 계획 및 각 계획에 사용 가능한 라이선스에 대 한 요약 정보를 보려면 다음 명령을 실행 합니다.
   
@@ -52,13 +54,13 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 결과에 다음이 포함 됩니다.
   
-- **SkuPartNumber:** 조직에 사용할 수 있는 라이선스 계획을 표시 합니다. 예를 `ENTERPRISEPACK` 들어 Office 365 Enterprise e 3의 라이선스 계획 이름을 사용할 수 있습니다.
+- **SkuPartNumber:** 조직에 사용할 수 있는 라이선스 계획을 표시 합니다. 예를 들어 `ENTERPRISEPACK` Office 365 Enterprise e 3의 라이선스 계획 이름을 사용할 수 있습니다.
     
 - **Enabled:** 특정 라이선스 계획을 위해 구매한 라이선스 수입니다.
     
 - **ConsumedUnits:** 특정 라이선스 계획에서 사용자에 게 할당 한 라이선스 수입니다.
     
-모든 라이선스 계획에서 사용할 수 있는 Office 365 서비스에 대 한 세부 정보를 보려면 먼저 라이선스 계획 목록을 표시 합니다.
+모든 라이선스 계획에서 사용할 수 있는 Microsoft 365 서비스에 대 한 세부 정보를 보려면 먼저 라이선스 계획 목록을 표시 합니다.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -76,9 +78,9 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ```
 
-\<index>는 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령 표시에서 1을 뺀 값으로 라이선스 계획의 행 번호를 지정 하는 정수입니다.
+\<index>는 명령 표시에서 `Get-AzureADSubscribedSku | Select SkuPartNumber` 1을 뺀 값으로 라이선스 계획의 행 번호를 지정 하는 정수입니다.
 
-예를 들어 다음과 같이 `Get-AzureADSubscribedSku | Select SkuPartNumber` 명령을 표시 하는 경우를 예로 들 수 있습니다.
+예를 들어 다음과 같이 명령을 표시 하는 경우를 예로 들 `Get-AzureADSubscribedSku | Select SkuPartNumber` 수 있습니다.
 
 ```powershell
 SkuPartNumber
@@ -101,10 +103,10 @@ ENTERPRISEPREMIUM은 세 번째 행입니다. 따라서 인덱스 값은 (3-1) �
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell용 Microsoft Azure Active Directory 모듈 사용하기
 
-먼저, [Office 365 테넌트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
+먼저 [Microsoft 365 테 넌 트에 연결](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)합니다.
 
 >[!Note]
->이 항목에서 설명하는 절차를 자동화하는 PowerShell 스크립트를 사용할 수 있습니다. 특히이 스크립트를 사용 하면 Sway를 포함 하 여 Office 365 조직에서 서비스를 확인 하 고 사용 하지 않도록 설정할 수 있습니다. 자세한 내용은 [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)를 참조하세요.
+>이 항목에서 설명하는 절차를 자동화하는 PowerShell 스크립트를 사용할 수 있습니다. 특히이 스크립트를 사용 하면 Sway를 포함 하 여 Microsoft 365 조직에서 서비스를 확인 하 고 사용 하지 않도록 설정할 수 있습니다. 자세한 내용은 [PowerShell을 사용 하 여 Sway에 액세스 사용 안 함을](disable-access-to-sway-with-office-365-powershell.md)참조 하세요.
 >
     
 현재 라이선스 계획 및 각 계획에 사용 가능한 라이선스에 대 한 요약 정보를 보려면 다음 명령을 실행 합니다.
@@ -119,7 +121,7 @@ Get-MsolAccountSku
 
 결과에는 다음 정보가 포함됩니다.
   
-- **AccountSkuId:** 구문을 `<CompanyName>:<LicensingPlan>`사용 하 여 조직에 사용할 수 있는 라이선스 계획을 표시 합니다.  CompanyName>는 Office 365에 등록할 때 제공한 값으로, 조직에서 고유 합니다. _ \<_ LicensingPlan>값은 모든 사용자에 대해 동일 합니다. _ \<_ 예를 들어이 값 `litwareinc:ENTERPRISEPACK`에서 회사 이름은 `litwareinc`및 라이선스 계획 이름 `ENTERPRISEPACK`(Office 365 Enterprise e 3의 시스템 이름)입니다.
+- **AccountSkuId:** 구문을 사용 하 여 조직에 사용할 수 있는 라이선스 계획을 표시 합니다 `<CompanyName>:<LicensingPlan>` .  _\<CompanyName>_ 은 Microsoft 365에 등록할 때 입력 한 값 이며 조직에서 고유 합니다. _\<LicensingPlan>_ 값은 모든 사용자에 대해 동일 합니다. 예를 들어이 값에서 `litwareinc:ENTERPRISEPACK` 회사 이름은 `litwareinc` 및 라이선스 계획 이름 `ENTERPRISEPACK` (Office 365 Enterprise e 3의 시스템 이름)입니다.
     
 - **Activeunits:** 특정 라이선스 계획을 위해 구매한 라이선스 수입니다.
     
@@ -127,13 +129,13 @@ Get-MsolAccountSku
     
 - **ConsumedUnits:** 특정 라이선스 계획에서 사용자에 게 할당 한 라이선스 수입니다.
     
-모든 라이선스 계획에서 사용할 수 있는 Office 365 서비스에 대 한 세부 정보를 보려면 다음 명령을 실행 합니다.
+모든 라이선스 계획에서 사용할 수 있는 Microsoft 365 서비스에 대 한 세부 정보를 보려면 다음 명령을 실행 합니다.
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-다음 표에서는 가장 일반적인 서비스에 대 한 Office 365 서비스 계획 및 해당 이름을 보여 줍니다. 서비스 계획 목록이 다를 수도 있습니다. 
+다음 표에서는 Microsoft 365 서비스 계획 및 가장 일반적인 서비스에 대 한 친숙 한 이름을 보여 줍니다. 서비스 계획 목록이 다를 수도 있습니다. 
   
 |**서비스 계획**|**설명**|
 |:-----|:-----|
@@ -149,22 +151,22 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
    
 라이선스 계획의 전체 목록 (제품 이름), 포함 된 서비스 계획 및 해당 하는 이름에 대 한 자세한 내용은 [product name and service plan identifier for license](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)을 참조 하십시오.
 
-특정 라이선스 계획에서 사용할 수 있는 Office 365 서비스에 대 한 세부 정보를 보려면 다음 구문을 사용 합니다.
+특정 라이선스 계획에서 사용할 수 있는 Microsoft 365 서비스에 대 한 세부 정보를 보려면 다음 구문을 사용 합니다.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-이 예에서는 litwareinc: ENTERPRISEPACK (Office 365 Enterprise E3) 라이선스 계획에서 사용할 수 있는 Office 365 서비스를 표시 합니다.
+이 예에서는 litwareinc: ENTERPRISEPACK (Office 365 Enterprise E3) 라이선스 요금제에서 사용할 수 있는 서비스를 표시 합니다.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>기타 참고 항목
+## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell을 사용 하 여 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)

@@ -16,14 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 요약:DelegatedOrg 값을 사용하여 Exchange Online에 연결하도록 원격 Windows PowerShell을 사용합니다.
-ms.openlocfilehash: 4a9f08325fc56308b27467423b047375985562c5
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997374"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230834"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>DAP(위임된 액세스 권한) 파트너용 원격 Windows PowerShell을 사용하여 Exchange Online 테넌트에 연결
+
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
 
 > [!IMPORTANT]
 > 이 항목의 절차는 DAP(위임된 액세스 권한) 파트너에게만 해당합니다. DAP 파트너가 아닌 경우 이 항목의 절차를 사용하지 마세요. 
@@ -35,7 +37,7 @@ DAP 파트너는 Exchange Online PowerShell을 사용 하 여 고객 Exchange On
 > [!NOTE]
 > DAP 파트너는 Exchange Online PowerShell서 고객 테넌트 조직에 연결하기 위해 [다단계 인증을 사용하여 Exchange Online PowerShell에 연결](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)의 절차를 사용할 수 없습니다. MFA와 Exchange Online 원격 PowerShell 모듈은 위임된 인증을 사용하지 않습니다.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용
+## <a name="what-do-you-need-to-know-before-you-begin"></a>시작하기 전에 알아야 할 내용은 무엇인가요?
 
 - 예상 완료 시간: 5분
 

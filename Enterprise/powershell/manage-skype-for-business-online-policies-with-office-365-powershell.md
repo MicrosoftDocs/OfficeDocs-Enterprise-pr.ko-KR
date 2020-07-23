@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
+title: PowerShell을 사용 하 여 비즈니스용 Skype Online 정책 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: '요약: Office 365 PowerShell을 사용 하 여 정책으로 비즈니스용 Skype Online 사용자 계정 속성을 관리 합니다.'
-ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '요약: PowerShell을 사용 하 여 정책으로 비즈니스용 Skype Online 사용자 계정 속성을 관리 합니다.'
+ms.openlocfilehash: 4310de23d47025468ea78a597f6379b51deaaa96
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841335"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230434"
 ---
-# <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 온라인 비즈니스 정책을 용 Skype 관리
+# <a name="manage-skype-for-business-online-policies-with-powershell"></a>PowerShell을 사용 하 여 비즈니스용 Skype Online 정책 관리
 
-비즈니스용 Skype Online에 대 한 사용자 계정의 여러 속성을 관리 하려면 Office 365 PowerShell을 사용 하 여 정책 속성으로 지정 해야 합니다.
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+비즈니스용 Skype Online에 대 한 사용자 계정의 여러 속성을 관리 하려면 Microsoft 365 용 PowerShell을 사용 하 여 정책 속성으로 지정 해야 합니다.
   
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -112,7 +114,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 적용 범위 Ableto 매개 변수는 반환 된 데이터를 지정 된 사용자에 게 할당할 수 있는 정책 (예: Alex Darrow)으로 제한 합니다. 라이선스 및 사용 위치 제한에 따라 사용 가능한 모든 정책의 하위 집합을 나타낼 수 있습니다. 
   
-정책 속성이 Office 365에서 사용 되지 않는 경우도 있고, 일부 경우에는 Microsoft 지원 담당자만 관리할 수 있습니다. 
+정책 속성이 Microsoft 365에서 사용 되지 않는 경우도 있고, 일부 경우에는 Microsoft 지원 담당자만 관리할 수 있습니다. 
   
 비즈니스용 Skype를 사용 하는 경우 사용자는 일종의 정책에 따라 관리 해야 합니다. 유효한 정책 관련 속성이 비어 있는 경우에는 해당 사용자가 사용자 단위 정책을 특별히 할당 하지 않으면 사용자에 게 자동으로 적용 되는 정책 인 전역 정책에 의해 관리 되 고 있음을 의미 합니다. 사용자 계정에 대해 나열 된 클라이언트 정책이 표시 되지 않으므로 글로벌 정책에 의해 관리 됩니다. 다음 명령을 사용 하 여 전역 클라이언트 정책을 결정할 수 있습니다.
   
@@ -122,9 +124,9 @@ Get-CsClientPolicy -Identity "Global"
 
 ## <a name="see-also"></a>참고 항목
 
-[Office 365 PowerShell을 사용하여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell을 사용 하 여 Microsoft 팀 관리
+title: PowerShell을 사용 하 여 Microsoft 팀 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: '요약: Office 365 PowerShell을 사용 하 여 Microsoft 팀을 관리 합니다.'
-ms.openlocfilehash: 0f15d71558ddb5166090b067da06e0a6321a2b99
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: '요약: PowerShell을 사용 하 여 Microsoft 팀을 관리 합니다.'
+ms.openlocfilehash: 8958c6ec6f0c17c21461cbee4cb1a6441ceed8d6
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209128"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230614"
 ---
-# <a name="manage-microsoft-teams-with-office-365-powershell"></a>Office 365 PowerShell을 사용 하 여 Microsoft 팀 관리
+# <a name="manage-microsoft-teams-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 팀 관리
 
-Office 365 PowerShell을 사용 하 여 Microsoft 팀을 관리할 수 있습니다.
+*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+
+PowerShell을 사용 하 여 Microsoft 팀을 관리할 수 있습니다.
   
 먼저 [Microsoft 팀 모듈](https://www.powershellgallery.com/packages/MicrosoftTeams/)을 설치 합니다.
     
@@ -83,7 +85,7 @@ Disconnect-MicrosoftTeams
 
 [팀 PowerShell 개요](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   
-[Office 365 PowerShell 사용한 Office 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 시작](getting-started-with-office-365-powershell.md)
+[Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
