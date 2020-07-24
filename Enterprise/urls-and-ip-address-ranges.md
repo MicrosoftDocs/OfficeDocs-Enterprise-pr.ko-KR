@@ -24,25 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '요약: Office 365를 사용하려면 인터넷에 연결되어 있어야 합니다. 아래의 끝점은 Government 커뮤니티 클라우드(GCC)를 포함하여 Office 365 요금제를 사용하는 고객에 연결할 수 있어야 합니다.'
 hideEdit: true
-ms.openlocfilehash: 175359f998c4dd695c301540f94e7d7527377ffc
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: 1df2420812cd6ba0fbec619a4a280874c3d9fc9b
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091212"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387701"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 및 IP 주소 범위
 
 Office 365를 사용하려면 인터넷에 연결되어 있어야 합니다. 아래의 끝점은 정부 커뮤니티 클라우드(GCC)를 포함하여 Office 365 요금제를 사용하는 고객에 연결할 수 있어야 합니다.
   
-> [!NOTE]
-> COVID-19 위기에 대한 대응의 일환으로 Microsoft는 일부 계획된 URL과 IP 주소 변경에 대해 일시적인 모라토리엄을 선언했습니다. 이번 모라토리엄은 재택 근무 Office 365 시나리오에 권장되는 네트워크 최적화를 구현할 때 고객 IT 팀에 자신감과 간편함을 제공하기 위한 것입니다. 2020년 3월 24부터 2020년 6월 30일까지, 이번 모라토리엄으로 주요 Office 365 서비스(Exchange Online, SharePoint Online, Microsoft Teams)부터 최적화 범주에 포함된 IP 범위와 URL에 대한 변경이 중단됩니다. 다른 엔드포인트 범주의 변경은 평소와 같이 수행됩니다. 이 기간 동안, 고객은 클라우드 측 네트워크 변경으로 인해 Office 365 연결 시 위험을 최소화하며 Office 365 최적화 범주 서비스 엔드포인트 정의를 정적 방식으로 사용하여 대상 네트워크 최적화를수행할 수 있습니다. 모라토리엄 기간이 끝날 때 서비스 중단이 발생하지 않도록, 고객은 [Office 365 엔드포인트 관리](managing-office-365-endpoints.md)에서 제공하는 지침을 사용하여 Office 365 서비스 엔드포인트의 변경 관리 및/또는 자동화 프로세스를 구현하는 것이 좋습니다.
-
-> [!NOTE]
-> Microsoft는 이 페이지에 있는 IP 주소와 FQDN 항목을 위해 REST 기반 웹 서비스를 출시했습니다. 이 새로운 서비스는 방화벽 및 프록시 서버와 같은 네트워크 경계 장치를 구성하고 업데이트하는 작업을 도와줍니다. 끝점, 최신 버전의 목록 또는 특정 변경 사항의 목록을 다운로드할 수 있습니다. 이 서비스는 2018년 10월 2일부터 사용되지 않는 이 페이지에 연결된 XML 문서를 대체합니다. 새로운 서비스를 실행하려면 [웹 서비스](office-365-ip-web-service.md)로 이동하세요.
-  
 *Office 365 Worldwide(+GCC)* | [21vianet에서 운영하는 Microsoft Office 365](urls-and-ip-address-ranges-21vianet.md) | [Microsoft Office 365 Germany](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)  | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
-  
+
 ||||
 |:-----|:-----|:-----|
 |**마지막 업데이트:** 2020년 7월 9일 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [로그 구독 변경](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**다운로드:** 모든 필수 및 선택 대상을 [JSON 형식](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) 목록에 다운로드합니다.  <br/> | **사용:** 프록시 [PAC 파일](managing-office-365-endpoints.md#pacfiles) <br/> |

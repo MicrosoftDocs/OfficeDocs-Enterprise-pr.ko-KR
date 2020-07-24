@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: PowerShell을 사용 하 여 Microsoft 365에 대 한 디렉터리 동기화를 해제 하는 방법을 알아봅니다.
-ms.openlocfilehash: 935d7e26c7b99aba876500e6b9d428557aed5b9c
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906211"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387711"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Microsoft 365에 대 한 디렉터리 동기화 해제
 PowerShell을 사용 하 여 디렉터리 동기화를 해제할 수 있습니다. 그러나 디렉터리 동기화를 문제 해결 단계로 해제 하지 않는 것이 좋습니다. 디렉터리 동기화 문제를 해결 하는 데 도움이 필요한 경우 [Microsoft 365의 디렉터리 동기화 문제 해결](fix-problems-with-directory-synchronization.md) 문서를 참조 하십시오. 
@@ -41,3 +41,8 @@ PowerShell을 사용 하 여 디렉터리 동기화를 해제할 수 있습니�
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
+
+>[!Note]
+>이 명령을 사용 하는 경우에는 72 시간을 기다린 후 디렉터리 동기화를 다시 설정 해야 합니다.
+>
+ 
