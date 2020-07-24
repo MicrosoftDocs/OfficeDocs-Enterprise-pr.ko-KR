@@ -15,6 +15,7 @@
 ### ID 계획D
 #### [Id 모델](about-office-365-identity.md)
 #### [하이브리드 ID](plan-for-directory-synchronization.md)
+#### [Microsoft 365 계정 관리 도구](tools-to-manage-office-365-accounts.md)
 
 ### [Microsoft 365용 타사 SSL 인증서 계획](plan-for-third-party-ssl-certificates.md)
 ### [Microsoft 365 및 Office 365 서비스용 설정 가이드](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [클라우드 전용 ID](cloud-only-identities.md)
 ### 하이브리드 ID
 #### [디렉터리 동기화 준비](prepare-for-directory-synchronization.md)
+#### [디렉터리 동기화를 위해 라우팅할 수 없는 도메인(예: .local 도메인) 준비](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### IdFix 도구 실행
 ##### [IdFix 도구로 디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [IdFix 도구 다운로드 및 실행](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Office 365 데이터 센터의 고객 데이터](o365-data-locations.md)
 
 ### 하이브리드 솔루션
+#### [개요](hybrid-solutions.md)
 #### [Azure Active Directory를 사용하여 SharePoint Server 2016 인증](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [온-프레미스 네트워크를 Azure Virtual Network에 연결](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Azure IaaS에서 디렉터리 동기화 서버 배포](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Microsoft 365 비디오에서 테넌트 격리](office-365-isolation-in-office-365-video.md)
 ### [Microsoft Graph 및 Delve에서 테넌트 격리](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [Microsoft 365용 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Microsoft 365 규정 준수](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 보안](https://docs.microsoft.com/microsoft-365/security/)
 # [비즈니스용 Microsoft 365](https://www.microsoft.com/microsoft-365/business)
