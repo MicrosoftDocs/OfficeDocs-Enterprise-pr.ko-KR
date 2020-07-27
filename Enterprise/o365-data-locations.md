@@ -3,9 +3,9 @@ title: Microsoft 365 데이터 위치
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 06/17/2020
+ms.date: 07/22/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 search.appverid:
@@ -17,31 +17,31 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Microsoft 365 데이터 위치'
-ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
-ms.translationtype: MT
+ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781063"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263697"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 고객 데이터가 저장 되는 위치
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 고객 데이터가 저장되는 위치
 
-아래 표에는 고객 데이터가 Microsoft의 모든 글로벌 클라우드 위치에 걸쳐 Microsoft 365 서비스에 대해 rest로 저장 되는 위치가 나와 있습니다. 청구지 주소 국가의 위치를 확장하여 각 서비스에 대한 고객 데이터가 저장되는 위치를 확인합니다.
+아래 표는 미사용 고객 데이터가 모든 Microsoft 전역 클라우드 위치에서 Microsoft 365 서비스에 대해 저장되는 위치를 보여 줍니다. 청구지 주소 국가의 위치를 확장하여 각 서비스에 대한 고객 데이터가 저장되는 위치를 확인합니다.
 
 고객은 **설정 | 조직 프로필 | 데이터 위치 카드**의 Office 365 관리 센터에서 테넌트별 데이터 위치 정보를 봐야 합니다.
 
-새 Microsoft 365 테 넌 트가 최초 구독에 연결 된 트랜잭션의 국가를 기반으로 하 여 Geo에 게 기본값으로 설정 됩니다.
+새 Microsoft 365 테넌트는 해당 테넌트의 첫 번째 구독과 연결된 거래 국가를 기준으로 기본 지역이 설정됩니다.
 
 [Microsoft 온라인 서비스 사용 약관(OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215)에서 미사용 고객 데이터의 저장 위치에 대한 계약 약정에 대한 정보를 찾아보세요.
 
 Azure Active Directory 데이터 위치는 [AAD 데이터 맵](https://go.microsoft.com/fwlink/p/?linkid=2092972)을 방문하세요.
 
 
-COVID-19 위기에 대 한 전례 없는 상황 및 유럽에서의 온라인 서비스 수요를 관리 해야 하는 경우 조직에서 교육을 진행 하는 경우 유럽 연합 (EU), 영국 자유 교역 연결 (영국), 미국 (미국) 또는 캐나다 (미국)/i p a p (US), i p m a p m a r (회사)의 데이터 센터로 데이터를 전송 하거나 EU에서 Microsoft 365 테 넌 트를 프로 비전 할 수 있습니다. , EFTA, 영국, US 또는 CA즉, 귀하의 데이터는 EU, EFTA, UK, US 또는 CA 내에 저장되어 있을 수 있습니다. 규정 준수, 개인 정보 보호 및 보안에 대한 Microsoft의 약속은 변하지 않고 서비스 가용성을 유지하기 위해 필요한 신중한 조치를 구현합니다.  데이터 전송과 관련하여 모든 해당 법률을 준수합니다.
+COVID-19와 관련하여 전례 없는 상황과 유럽의 온라인 서비스 수요 관리 필요성으로 인해 조직이 교육 기관인 경우 유럽 연합(EU), 유럽 자유 무역 협회(EFTA), 영국(UK), 미국(US) 또는 캐나다(CA)에서 Microsoft 365 테넌트를 프로비저닝하거나 EU, EFTA, UK, US 또는 CA의 모든 데이터 센터로 데이터를 전송할 수 있습니다.즉, 귀하의 데이터는 EU, EFTA, UK, US 또는 CA 내에 저장되어 있을 수 있습니다. 규정 준수, 개인 정보 보호 및 보안에 대한 Microsoft의 약속은 변하지 않고 서비스 가용성을 유지하기 위해 필요한 신중한 조치를 구현합니다.  데이터 전송과 관련하여 모든 해당 법률을 준수합니다.
 
 
 
@@ -58,11 +58,11 @@ Microsoft는 데이터 센터의 정확한 주소를 공개하지 않습니다. 
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>고객 데이터의 위치가 최종 사용자 경험에 직접적인 영향을 주나요?
 
-Microsoft 365의 성능은 단순히 사용자의 데이터 센터 위치로의 거리에 비례 하지 않습니다. Microsoft는 글로벌 클라우드 네트워크, 전역 클라우드 인프라 및 Microsoft 365 서비스 아키텍처에 지속적으로 투자 하 여 사용자에 게 일관 되 고 일관성 있는 환경에서 고객 데이터를 저장할 수 있는 위치를 제공 합니다. 사용자에게 성능 문제가 발생하는 경우 자세한 문제를 해결해야 합니다. Microsoft는 [Office 지원 웹 사이트](https://go.microsoft.com/fwlink/p/?linkid=862645)에서 최종 사용자의 성과를 계획 하 고 최적화 하기 위해 microsoft 365 고객을 위한 지침을 게시 했습니다.
+Microsoft 365의 성능은 단순히 사용자의 데이터 센터 위치와의 거리에 비례하지 않습니다. Microsoft의 글로벌 클라우드 네트워크, 전역 클라우드 인프라 및 Microsoft 365 서비스 아키텍처에 대한 지속적인 투자는 사용자에게 고객 데이터가 저장되는 위치와 관계없이 단일하고 일관된 환경을 제공하는 데 도움이 됩니다. 사용자에게 성능 문제가 발생하는 경우 자세한 문제를 해결해야 합니다. Microsoft는 [Office 지원 웹 사이트](https://go.microsoft.com/fwlink/p/?linkid=862645)에서 Microsoft 365 고객이 최종 사용자 성능을 계획하고 최적화하는 지침을 게시했습니다.
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft에서 내 국가, 지역 및 산업별 규정을 준수하는 데 어떤 도움을 줄 수 있나요?
 
-개인 데이터의 수집 및 사용을 관리 하는 국가, 지역별 및 업계 관련 요구 사항을 준수 하기 위해 Microsoft 365는 전역 클라우드 생산성 공급자에 대 한 가장 포괄적인 준수 집합을 제공 합니다. Microsoft 보안 센터의 [microsoft 365 준수](https://go.microsoft.com/fwlink/p/?linkid=862317) 섹션에서 [준수 제공품](https://go.microsoft.com/fwlink/p/?linkid=864391) 및 자세한 내용을 검토 하세요. 또한 특정 Microsoft 365 계획에서는 데이터를 관리 하 고 법적 및 규정 요구 사항을 준수 하 고 데이터에 대해 수행 된 작업을 모니터링 하는 데 도움이 되는 추가 규정 준수 솔루션을 제공 합니다.
+개인 데이터 수집 및 사용에 관한 국가, 지역 및 산업별 요구 사항을 준수할 수 있도록 Microsoft 365는 모든 글로벌 클라우드 생산성 공급업체 가운데 가장 포괄적인 규정 준수 제품을 제공합니다. Microsoft 보안 센터의 [Microsoft 365 규정 준수](https://go.microsoft.com/fwlink/p/?linkid=862317) 섹션에서 [규정 준수 제품](https://go.microsoft.com/fwlink/p/?linkid=864391)에 대한 자세한 내용을 검토하세요. 또한 특정 Microsoft 365 플랜은 데이터를 관리하고 법적 및 규제 요구 사항을 준수하며 데이터에 대한 조치를 모니터링할 수 있도록 추가 규정 준수 솔루션을 제공합니다.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>누가 어떤 규칙에 따라 데이터에 액세스할 수 있나요?
 
@@ -70,15 +70,15 @@ Microsoft 365의 성능은 단순히 사용자의 데이터 센터 위치로의 
 
 ### <a name="does-microsoft-access-your-data"></a>Microsoft가 데이터에 액세스하나요?
 
-Microsoft는 대부분의 Microsoft 365 운영을 자동화 하 여 의도적으로 고객 데이터에 대 한 자체 액세스를 제한 합니다. 이를 통해 Microsoft 365을 확장 하 고 고객 데이터에 대 한 내부 위협의 위험을 해결 하는 데 도움이 됩니다. 기본적으로 Microsoft 엔지니어는 관리 권한이 없으며 Microsoft 365의 고객 데이터에 대 한 액세스 권한이 없습니다. Microsoft 엔지니어는 제한된 시간 동안 고객 데이터에 대한 액세스를 제한하고 기록할 수 있지만, 그것이 정상적인 서비스 운영에 꼭 필요하고 또한 Microsoft의 고위 경영진이 승인한 경우에만(고객 Lockbox 기능에 대해 라이선스가 있는 고객의 경우 고객에 의해서만) 가능합니다.
+Microsoft는 고객 데이터에 대한 자체 액세스를 의도적으로 제한하면서 대부분의 Microsoft 365 작업을 자동화합니다. 이를 통해 Microsoft 365를 대규모로 관리하고 고객 데이터에 대한 내부 위협의 위험을 해결할 수 있습니다. 기본적으로 Microsoft 엔지니어는 Microsoft 365의 고객 데이터에 대한 관리자 권한 및 액세스 권한이 없습니다. Microsoft 엔지니어는 제한된 시간 동안 고객 데이터에 대한 액세스를 제한하고 기록할 수 있지만, 그것이 정상적인 서비스 운영에 꼭 필요하고 또한 Microsoft의 고위 경영진이 승인한 경우에만(고객 Lockbox 기능에 대해 라이선스가 있는 고객의 경우 고객에 의해서만) 가능합니다.
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Microsoft는 데이터를 어떻게 보호하나요?
 
-Microsoft는 정보를 안전 하 게 유지 하기 위해 Microsoft 365에 기본적으로 제공 되는 강력한 정책, 컨트롤 및 시스템을 포함 하 고 있습니다. Microsoft 보안 센터에서 [microsoft 365 security 섹션](https://go.microsoft.com/fwlink/p/?linkid=864393) 을 검토 하 여 자세한 내용을 확인 하세요.
+Microsoft는 정보를 안전하게 유지할 수 있도록 Microsoft 365에 기본 제공되는 강력한 정책, 제어 및 시스템을 보유하고 있습니다. 자세한 내용은 Microsoft 보안 센터에서 [Microsoft 365 보안 섹션](https://go.microsoft.com/fwlink/p/?linkid=864393)을 검토하세요.
 
-### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365에서 데이터를 암호화 하나요?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365에서 데이터를 암호화하나요?
 
-Microsoft 365는 전송 중에 고객 데이터를 암호화 하는 서비스 쪽 기술을 사용 합니다. 나머지 고객 데이터의 경우 Microsoft 365에서는 볼륨 수준 및 파일 수준 암호화를 사용 합니다. 전송 중인 고객 데이터의 경우 Microsoft 365는 TLS (전송 계층 보안) 및 IPsec (인터넷 프로토콜 보안)과 같은 데이터 센터와 클라이언트와 서버 간의 통신에 여러 암호화 기술을 사용 합니다. Microsoft 365에는 고객 관리 암호화 기능도 포함 되어 있습니다.
+Microsoft 365는 유휴 및 전송중인 고객 데이터를 암호화하는 서비스측 기술을 사용합니다. 유휴 고객 데이터의 경우 Microsoft 365는 볼륨 수준 및 파일 수준 암호화를 사용합니다. 전송 중인 고객 데이터의 경우 Microsoft 365는 TLS(전송 계층 보안) 및 IPsec(Internet Protocol Security)과 같은 클라이언트와 서버 간 통신에 여러 암호화 기술을 사용합니다. Microsoft 365에는 고객 관리 암호화 기능도 포함되어 있습니다.
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Microsoft Azure에 대한 데이터 상주 정보는 어디에서 찾을 수 있나요?
 
@@ -86,26 +86,26 @@ Microsoft Azure에 대한 데이터 상주 정보를 찾으려면 [지역별 사
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365의 Multi-Geo 기능이란 무엇인가요?
 
-[다중 지역](https://go.microsoft.com/fwlink/p/?linkid=872033) 에서는 Microsoft 365 클라우드의 사용 가능한 위치에 나머지 지역의 핵심 고객 데이터를 할당할 수 있습니다.   
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) 기능을 통해 고객은 Microsoft 365 클라우드의 사용 가능한 위치에 미사용 상태의 주요 고객 데이터를 배치할 수 있습니다.   
 
 ### <a name="what-services-support-multi-geo"></a>Multi-Geo를 지원하는 서비스는 무엇인가요?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033)는 Exchange Online, OneDrive 및 SharePoint Online에서 사용할 수 있습니다. Microsoft는 다른 Microsoft 365 서비스에 대 한 다중 지역 조사를 진행 중입니다.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033)는 Exchange Online, OneDrive 및 SharePoint Online에서 사용할 수 있습니다. Microsoft는 다른 Microsoft 365 서비스를 위해 Multi-Geo를 조사하고 있습니다.
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune 데이터 위치에 대 한 예외는 무엇입니까?
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune 데이터 위치의 예외는 무엇인가요?
 
-Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습니다. 다음의 경우 제외:
+Microsoft는 명시된 Geo 외부에 미사용 Intune 고객 데이터를 저장하지 않습니다. 다음의 경우는 예외입니다.
 
-- Microsoft가 고객 지원을 제공 하거나, 서비스 문제를 해결 하거나, 법적 요구 사항을 준수 해야 합니다.
-- 고객은 다음을 사용 하 여 고객 데이터를 저장할 수 있도록 계정을 구성 합니다.
+- Microsoft는 고객 지원을 제공하거나, 서비스 문제를 해결하거나, 법적 요구 사항을 준수해야 합니다.
+- 고객은 다음을 사용하는 것을 비롯하여 이러한 고객 데이터 스토리지를 사용할 수 있도록 계정을 구성합니다.
 
-  - 전역 캐싱 서비스를 제공 하 고 전 세계에 지 위치에 고객 데이터를 저장 하는 CDN (콘텐츠 배달 네트워크)과 같이 전역적으로 작동 하도록 설계 된 기능
+  - 전역 캐싱 서비스를 제공하고 전 세계의 최첨단 위치에 고객 데이터를 저장하는 CDN(콘텐츠 배달 네트워크) 등과 같이 전역적으로 작동하도록 설계된 기능
 
-  - Azure Active Directory (Azure AD)-디렉터리 데이터를 전역적으로 저장할 수 있습니다. 이는 미국 (Azure ad data가 미국에만 저장 되어 있는 경우) 또는 유럽 (Azure AD data가 유럽 또는 미국에 저장 된 경우)의 Azure AD 배포에는 적용 되지 않습니다.
+  - 디렉터리 데이터를 전역적으로 저장할 수 있는 Azure AD(Azure Active Directory). 미국의 Azure AD 배포(Azure AD 데이터가 미국에서만 저장되는 경우) 또는 유럽의 Azure AD 배포(Azure AD 데이터가 유럽 또는 미국에 저장되는 경우)에는 해당되지 않습니다.
    
-  - 일반적으로 미국에 고객 데이터를 저장 하지만 전역적으로 저장할 수 있는 미리 보기, 베타 또는 기타 시험판 서비스
+  - 일반적으로 미국에 고객 데이터가 저장되지만 전역적으로 저장할 수 있는 미리 보기, 베타 또는 기타 시험판 서비스
 
-상관 없이 Microsoft는 고객 또는 최종 사용자가 고객 데이터에 액세스할 수 있는 Geo를 제어 하거나 제한 하지 않습니다. 
+그렇지만 Microsoft는 고객이나 최종 사용자가 고객 데이터에 액세스할 수 있는 지리적 위치를 제어하거나 제한하지 않습니다. 
 
 ## <a name="data-center-locations"></a>데이터 센터 위치
 
@@ -129,7 +129,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | --- | --- |
 | 오스트레일리아 | 시드니, 멜버른 |
 | 캐나다 | 퀘벡 시티, 토론토 |
-| 유럽 연합 | 오스트리아 (빈), 핀란드 (헬싱키), 프랑스 (파리, Marseille), 아일랜드 (더블린), 네덜란드 (암스테르담) |
+| 유럽 연합 | 오스트리아(비엔나), 핀란드(헬싱키), 프랑스(파리, 마르세유), 아일랜드(더블린), 네덜란드(암스테르담) |
 | 프랑스 | 파리, 마르세유 |
 | 독일 | 프랑크푸르트, 베를린 |
 | 인도 | 첸나이, 뭄바이, 푸네 |
@@ -142,7 +142,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | 영국 | 더럼, 런던, 카디프 |
 | 미국 |  보이드톤, 샤이엔, 시카고, 디모인, 퀸시, 샌안토니오, 산타클라라, 산호세 |
 
-새 Microsoft 365 테 넌 트가 최초 구독에 연결 된 청구 주소 국가를 기반으로 하 여 Geo에 게 기본값으로 설정 됩니다. 기존 Office 365 서비스에 대한 고객 데이터가 저장된 위치를 확인하려면 설정 | 조직 프로필 | 데이터 위치 카드의 Office 365 관리 센터에서 테넌트별 데이터 위치 정보를 볼 수 있습니다. 또는 Microsoft 365 서비스 사용을 시작 하는 경우 다음 목록에서 비즈니스가 기반으로 하는 국가를 확장 하 여 고객 데이터가 저장 되는 위치를 확인할 수 있습니다.
+새 Microsoft 365 테넌트는 해당 테넌트의 첫 번째 구독과 연결된 청구지 주소 국가를 기준으로 기본 지역이 설정됩니다. 기존 Office 365 서비스에 대한 고객 데이터가 저장된 위치를 확인하려면 설정 | 조직 프로필 | 데이터 위치 카드의 Office 365 관리 센터에서 테넌트별 데이터 위치 정보를 볼 수 있습니다. 또는 지금 Microsoft 365 서비스를 사용하여 시작하는 경우 아래 목록에서 비즈니스 기반 국가를 확장하여 고객 데이터가 저장되는 위치를 확인할 수 있습니다.
 
 ## <a name="afghanistan"></a>아프가니스탄
 <details><summary>클릭하여 확장</summary><p>
@@ -226,7 +226,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -274,7 +274,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -298,7 +298,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -418,7 +418,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -514,7 +514,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -562,7 +562,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -634,7 +634,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -706,7 +706,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -826,7 +826,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -850,7 +850,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -922,7 +922,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 2 - 아시아 태평양 |
 | 비즈니스용 Skype | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 2 - 아시아 태평양 |
+| Office Online &amp; Mobile | 전세계 지리적 위치 2 - 아시아 태평양 |
 | EOP | 전세계 지리적 위치 2 - 아시아 태평양 |
 | Intune | 전세계 지리적 위치 2 - 아시아 태평양 |
 | MyAnalytics | 전세계 지리적 위치 2 - 아시아 태평양 |
@@ -1018,7 +1018,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1042,7 +1042,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1090,7 +1090,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1138,7 +1138,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1354,7 +1354,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1474,7 +1474,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1618,7 +1618,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1714,7 +1714,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1762,7 +1762,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1786,7 +1786,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1834,7 +1834,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -1858,7 +1858,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 3 - 아메리카 |
 | 비즈니스용 Skype | 미국 |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 3 - 아메리카 |
+| Office Online &amp; Mobile | 전세계 지리적 위치 3 - 아메리카 |
 | EOP | 전세계 지리적 위치 3 - 아메리카 |
 | Intune | 미국 |
 | MyAnalytics | 전세계 지리적 위치 3 - 아메리카 |
@@ -1882,7 +1882,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2122,7 +2122,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2170,7 +2170,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2194,7 +2194,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2362,7 +2362,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2506,7 +2506,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2530,7 +2530,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2626,7 +2626,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2698,7 +2698,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2746,7 +2746,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2770,7 +2770,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2866,7 +2866,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2890,7 +2890,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -2938,7 +2938,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3010,7 +3010,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3034,7 +3034,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3202,7 +3202,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3298,7 +3298,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3322,7 +3322,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3394,7 +3394,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3490,7 +3490,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3514,7 +3514,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3538,7 +3538,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3658,7 +3658,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3706,7 +3706,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3730,7 +3730,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3778,7 +3778,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3970,7 +3970,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -3994,7 +3994,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4114,7 +4114,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4426,7 +4426,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4474,7 +4474,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4762,7 +4762,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4906,7 +4906,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -4954,7 +4954,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 미국 |
+| Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | Intune | 미국 |
 | MyAnalytics | 미국 |
@@ -5050,7 +5050,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5098,7 +5098,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 미국 |
 | 비즈니스용 Skype | 미국 |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 미국 |
+| Office Online &amp; Mobile | 미국 |
 | EOP | 미국 |
 | Intune | 미국 |
 | MyAnalytics | 미국 |
@@ -5194,7 +5194,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5218,7 +5218,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5276,7 +5276,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | OneNote 서비스 | 스위스 |
 | Stream | 전세계 지리적 위치 1 - EMEA |
 | Whiteboard | 전세계 지리적 위치 1 - EMEA |
-| Forms | 전세계 지리적 위치 1 - EMEA |
+| 양식 | 전세계 지리적 위치 1 - EMEA |
 | Workplace Analytics | 미국 |
 </p></details>
 
@@ -5314,7 +5314,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5338,7 +5338,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5410,7 +5410,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5506,7 +5506,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5530,7 +5530,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5650,7 +5650,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5674,7 +5674,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5818,7 +5818,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 2 - 아시아 태평양 |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5938,7 +5938,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
@@ -5962,7 +5962,7 @@ Microsoft는 Intune을 명시 된 지리적 위치 밖에 저장 하지 않습�
 | SharePoint Online | 전세계 지리적 위치 1 - EMEA |
 | 비즈니스용 Skype | 전세계 지리적 위치 1 - EMEA |
 | Microsoft Teams | 전세계 지리적 위치 1 - EMEA |
-| Office Online &amp; 모바일 | 전세계 지리적 위치 1 - EMEA |
+| Office Online &amp; Mobile | 전세계 지리적 위치 1 - EMEA |
 | EOP | 전세계 지리적 위치 1 - EMEA |
 | Intune | 전세계 지리적 위치 1 - EMEA |
 | MyAnalytics | 전세계 지리적 위치 1 - EMEA |
