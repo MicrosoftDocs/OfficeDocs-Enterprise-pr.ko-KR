@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057674"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433569"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo 검색 구성
 
@@ -258,11 +258,11 @@ GET 요청을 사용하여 URL에 쿼리 매개 변수를 지정합니다. POST 
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>**모든** 지리적 위치로 팬아웃되는 샘플 GET 요청
 
-https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https:// \<tenant\> / \_ api/search/query? querytext = ' sharepoint ' &Properties = ' enablemultigeosearch가: true ' &ClientType = ' my \_ client \_ id '
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**일부** 지리적 위치로 팬아웃할 샘플 GET 요청
 
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' my_client_id ' &속성 = ' enablemultigeosearch가: true, multigeosearchconfiguration: [{DataLocation \\ : "베트남" \\ , 끝점 \\ : "https \\ //contosoNAM.sharepoint.com" \\ , SourceId \\ : ": b81eab55-3140-4312-b0f4-9459d1b4ffee)"} \\ , {DataLocation \\ : "CAN" \\ , 끝점 \\ : "https \\ //contosoCAN.sharepoint-df.com"}] '
 
 > [!NOTE]
 > MultiGeoSearchConfiguration 속성의 지리적 위치 목록에 있는 쉼표와 콜론 앞에는 **백슬래시** 문자가 있습니다. 이는 GET 요청이 콜론을 사용하여 속성과 쉼표를 구분하여 속성 인수를 구분하기 때문입니다. 이스케이프 문자로 백슬래시가 없으면 MultiGeoSearchConfiguration 속성이 잘못 해석됩니다.

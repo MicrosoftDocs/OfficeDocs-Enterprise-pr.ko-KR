@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 지원 서비스를 호출 하기 전에 Microsoft 365 서비스의 상태를 확인 하 여 활성 서비스가 중단 되었는지 확인 합니다.
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266696"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433889"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 서비스 상태를 확인 하는 방법
 
@@ -68,6 +68,9 @@ Microsoft 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이�
 - 최대 2 개의 전자 메일 주소
 - 인시던트 또는 권고에 대해 알림을 사용할지 여부
 - 알림을 받으려는 서비스
+
+> [!NOTE]
+> 각 관리자는 기본 설정 집합을 가질 수 있으며 두 개의 전자 메일 주소 제한은 관리자 계정 마다 제한 됩니다.
 
 > [!TIP]
 > 또한 모바일 장치에서 [Microsoft 365 Admin 앱](https://go.microsoft.com/fwlink/p/?linkid=627216) 을 사용 하 여 서비스 상태를 볼 수 있으며,이는 푸시 알림을 최신 상태로 유지 하는 데 유용한 방법입니다. 
@@ -145,4 +148,5 @@ Microsoft 365 서비스에 문제가 발생 하 여 **서비스 상태** 페이�
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft 365 관리 센터의 활동 보고서](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Microsoft 365 관리 센터](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ 의 활동 보고서 [메시지 센터 기본 설정](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

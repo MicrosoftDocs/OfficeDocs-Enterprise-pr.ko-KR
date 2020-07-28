@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: OneDrive 사이트를 다른 지리적 위치로 이동하는 방법을 알아봅니다.
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058008"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433879"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive 사이트를 다른 지리적 위치로 이동 
 
@@ -199,4 +199,8 @@ OneDrive 지리적 이동이 완료되면, 사용자는 iOS 모바일 앱에서 
 
 ### <a name="existing-followed-groups-and-sites"></a>기존의 팔로우된 그룹 및 사이트
 
-팔로우된 사이트 및 그룹은 해당 지리적 위치에 관계없이 사용자의 비즈니스용 OneDrive에 표시됩니다. 다른 지리적 위치에서 호스트된 사이트 및 그룹은 별도 탭에서 열립니다.
+팔 로우 하는 사이트 및 그룹이 지리적 위치에 관계 없이 사용자의 OneDrive에 표시 됩니다. 다른 지리적 위치에 호스트 되는 사이트 및 그룹은 별도의 탭에서 열립니다.
+
+### <a name="delve-geo-url-updates"></a>Delve 지역 URL 업데이트
+
+OneDrive를 새 지역으로 이동한 후에만 사용자가 PDL에 해당 하는 Delve 지역으로 전송 됩니다.

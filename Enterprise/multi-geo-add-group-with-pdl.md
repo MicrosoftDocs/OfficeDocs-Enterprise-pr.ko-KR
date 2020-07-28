@@ -1,5 +1,5 @@
 ---
-title: 특정 PDL을 사용하여 Microsoft 365 그룹 만들기
+title: 특정 PDL을 사용 하 여 Microsoft 365 그룹 만들기
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
-description: Multi-Geo 환경에서 지정된 기본 설정 데이터 위치를 사용하여 Microsoft 365 그룹을 만드는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+localization_priority: Normal
+description: 다중 위치 환경에서 지정 된 기본 설정 데이터 위치를 사용 하 여 Microsoft 365 그룹을 만드는 방법을 알아봅니다.
+ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057988"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433859"
 ---
-# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>특정 PDL을 사용하여 Microsoft 365 그룹 만들기
+# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>특정 PDL을 사용 하 여 Microsoft 365 그룹 만들기
 
-Multi-Gep 환경의 사용자가 Microsoft 365 그룹을 만들 때 그룹 기본 설정 데이터 위치가 자동으로 사용자의 위치로 설정됩니다. 전역, SharePoint, Exchange 관리자는 선택하는 모든 영역에서 그룹을 만들 수 있습니다. 
+다중 위치 환경에서 사용자가 Microsoft 365 그룹을 만들면 그룹 기본 설정 데이터 위치가 자동으로 해당 사용자의로 설정 됩니다. 전역, SharePoint, Exchange 관리자는 선택하는 모든 영역에서 그룹을 만들 수 있습니다. 
 
 특정 PDL로 그룹을 만들어야 할 경우 SharePoint 관리자 센터에서 만들거나 혹은 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet을 사용하여 그룹을 만들 수 있습니다. 이 작업을 진행 시 그룹 사서함 및 그룹과 연결된 SharePoint 사이트가 지정된 PDL에서 프로비저닝됩니다.
 
-PDL을 사용하여 지정하는 Microsoft 365 그룹을 만들려면 그룹 사이트를 만들 지리적 위치에서 SharePoint 관리 센터로 이동합니다.
+지정한 PDL을 사용 하 여 Microsoft 365 그룹을 만들려면 그룹 사이트를 만들 지리적 위치에서 SharePoint 관리 센터로 이동 합니다.
 
 예시:
 

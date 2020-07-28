@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Microsoft 365 Multi-Geo를 사용하여 Microsoft 365 범위를 여러 지리적 지역으로 확장합니다.
-ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
-ms.translationtype: HT
+ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117280"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433809"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

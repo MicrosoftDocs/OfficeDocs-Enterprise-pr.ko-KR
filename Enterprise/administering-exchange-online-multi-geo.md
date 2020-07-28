@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Microsoft PowerShell을 사용하여 Exchange Online Multi-Geo 설정을 관리하는 방법을 알아보세요.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352948"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433509"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Multi-Geo 환경에서 Exchange Online 사서함 관리
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **참고:** 데이터베이스 이름의 지리적 위치 코드가 **MailboxRegion** 값과 일치하지 않는 경우 사서함은 자동으로 재배치 큐에 넣어지며 **MailboxRegion** 값에서 지정한 지리적 위치로 이동합니다(Exchange Online이 이러한 속성 값 사이의 불일치를 찾음).
+> [!NOTE]
+> 데이터베이스 이름에 있는 지리적 위치 코드가 **MailboxRegion** 값과 일치 하지 않으면 사서함이 자동으로 재배치 큐에 배치 되 고 **MailboxRegion** 값으로 지정 된 지리적 위치로 이동 됩니다 (이러한 속성 값 간에 불일치를 검색 하는 경우).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>기존 클라우드 전용 사서함을 특정 지리적 위치로 이동
 
@@ -133,17 +134,16 @@ Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoL
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**참고**:
-
-- 앞서 설명한 대로 온-프레미스 Active Directory의 동기화된 사용자 개체에는 이 절차를 사용할 수 없습니다. Active Directory에서 **PreferredDataLocation** 값을 변경하고 AAD Connect를 사용하여 동기화해야 합니다. 자세한 내용은 [Azure Active Directory Connect 동기화: Microsoft 365 리소스의 기본 데이터 위치 구성](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)을 참조하세요.
-
-- 새로운 지리적 위치로 사서함 위치를 변경하는 데 걸리는 시간은 몇 가지 요인에 따라 달라집니다.
-
-  - 사서함 크기 및 유형
-
-  - 이동 중인 사서함 수
-
-  - 이동 리소스의 가용성
+> [!NOTE]
+> - 앞에서 설명한 것 처럼, 온-프레미스 Active Directory에서 동기화 된 사용자 개체에는이 절차를 사용할 수 없습니다. Active Directory에서 **PreferredDataLocation** 값을 변경하고 AAD Connect를 사용하여 동기화해야 합니다. 자세한 내용은 [Azure Active Directory Connect 동기화: Microsoft 365 리소스의 기본 데이터 위치 구성](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)을 참조하세요.
+> 
+> - 새로운 지리적 위치로 사서함 위치를 변경하는 데 걸리는 시간은 몇 가지 요인에 따라 달라집니다.
+> 
+>   - 사서함 크기 및 유형
+> 
+>   - 이동 중인 사서함 수
+> 
+>   - 이동 리소스의 가용성
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>사용하지 않도록 설정한 소송 보존 중인 사서함 이동
 

@@ -10,15 +10,15 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Microsoft 365 Multi-Geo의 eDiscovery를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: a956a38f00590161c04009b472a4a8a9d2e89d2b
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 7257e5e9a5a7154d574743e3e515e49e9dc714b2
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057958"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433829"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo eDiscovery 구성
 

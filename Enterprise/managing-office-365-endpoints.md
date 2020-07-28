@@ -17,16 +17,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 일부 엔터프라이즈 네트워크는 일반 인터넷 위치에 대한 액세스를 제한하거나 상당한 수의 백홀이나 네트워크 트래픽 처리를 포함합니다. 이러한 네트워크의 컴퓨터에서 Office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자는 Office 365 끝점 목록을 구성하는 FQDN, URL 및 IP 주소 목록을 관리해야 합니다. 네트워크 요청에서 Office 365에 연결할 수 있도록 하려면 이러한 목록을 직접 경로, 프록시 우회 및/또는 방화벽 규칙 및 PAC 파일에 추가해야 합니다.
-ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: MT
+ms.openlocfilehash: 335cfd3f27762c249cc9af88b169a9f0bb59bda7
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845039"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433559"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 
-사무실 위치가 여러 개인이고 WAN을 연결하는 대부분의 엔터프라이즈 조직에서는 Office 365 네트워크 연결을 구성해야 합니다. 방화벽을 통해 직접 모든 신뢰할 수 있는 Office 365 네트워크 요청을 보내 모든 추가 패킷 수준 검사 또는 처리를 건너뜀으로써 네트워크를 최적화할 수 있습니다. 이렇게 하면 대기 시간 및 경계 용량 요구 사항이 줄어듭니다. 사용자에게 최적의 성능을 제공할 수 있는 첫 번째 단계는 Office 365 네트워크 트래픽을 식별하는 것입니다. Office 365 네트워크 연결에 대한 자세한 내용은 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)을 참조하세요.
+여러 사무실 위치 및 연결 WAN이 있는 대부분의 엔터프라이즈 조직은 Office 365 네트워크 연결에 대 한 구성을 필요로 합니다. 방화벽을 통해 직접 모든 신뢰할 수 있는 Office 365 네트워크 요청을 보내 모든 추가 패킷 수준 검사 또는 처리를 건너뜀으로써 네트워크를 최적화할 수 있습니다. 이렇게 하면 대기 시간 및 경계 용량 요구 사항이 줄어듭니다. 사용자에게 최적의 성능을 제공할 수 있는 첫 번째 단계는 Office 365 네트워크 트래픽을 식별하는 것입니다. Office 365 네트워크 연결에 대한 자세한 내용은 [Office 365 네트워크 연결 원칙](office-365-network-connectivity-principles.md)을 참조하세요.
 
 [Office 365 IP 주소 및 URL 웹 서비스](office-365-ip-web-service.md)를 사용하여 Office 365 네트워크 끝점에 액세스하고 이 끝점을 변경하는 것이 좋습니다.
 
@@ -145,7 +145,7 @@ Microsoft는 사용자가 직접 라우팅해야 하는 Office 365 서버의 IP 
 1. [IPv4](https://www.ipaddressguide.com/cidr) 또는 i p v 6의 경우와 같이 CIDR 계산기를 사용 하 여 IP 주소가 보다 큰 게시 범위에 포함 되어 있는지 [확인 합니다.](https://www.ipaddressguide.com/ipv6-cidr) 예를 들어 40.96.0.0/13은 40.103와 일치 하지 않는 40.96에도 IP 주소 40.103.0.1을 포함 합니다.
 2. [whois 쿼리](https://dnsquery.org/)를 사용하여 파트너가 IP를 소유하는지 확인합니다. Microsoft가 해당 IP를 소유한 경우 내부 파트너일 수 있습니다. 대부분의 파트너 네트워크 끝점은 _기본_ 범주에 속하는 것으로 나열 되며 IP 주소가 게시 되지 않습니다.
 3. IP 주소는 Office 365 또는 종속성에 속하지 않을 수 있습니다. Office 365 네트워크 끝점 게시에는 Microsoft 네트워크 끝점이 모두 포함 되지 않습니다.
-4. 인증서를 확인합니다. 브라우저에서 *HTTPS://\<IP_주소\>* 를 사용하여 IP 주소에 연결한 후 인증서에 나열된 도메인을 확인하여 IP 주소와 연결된 도메인을 파악합니다. Microsoft 소유의 IP 주소이고 Office 365 IP 주소 목록에 없는 경우 *MSOCDN.NET*과 같은 Microsoft CDN과 연결된 IP 주소이거나 게시된 IP 정보가 없는 다른 Microsoft 도메인일 수 있습니다. 인증서의 도메인이 Microsoft가 IP 주소를 나열하려고 요구하는 도메인인 경우 알려주세요.
+4. 인증서 확인 브라우저에서 *HTTPS:// \<IP_ADDRESS\> * 을 사용 하 여 IP 주소에 연결 하 고 인증서에 나열 된 도메인을 확인 하 여 ip 주소와 연결 된 도메인을 파악 합니다. Microsoft 소유의 IP 주소이고 Office 365 IP 주소 목록에 없는 경우 *MSOCDN.NET*과 같은 Microsoft CDN과 연결된 IP 주소이거나 게시된 IP 정보가 없는 다른 Microsoft 도메인일 수 있습니다. 인증서의 도메인이 Microsoft가 IP 주소를 나열하려고 요구하는 도메인인 경우 알려주세요.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>일부 Office 365 URL은 DNS의 A 레코드 대신 CNAME 레코드를 가리킵니다. CNAME 레코드로 무엇을 해야 하나요?

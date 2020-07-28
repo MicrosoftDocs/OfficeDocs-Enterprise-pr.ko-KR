@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: 위성 지리적 위치에서 SharePoint Multi-Geo 사용
-ms.openlocfilehash: e920aae90326e9635204675d6872340f7808143c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
-ms.translationtype: HT
+ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973950"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433489"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>위성 지리적 위치에서 SharePoint Multi-Geo 사용
 
