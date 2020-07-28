@@ -1,5 +1,5 @@
 ---
-title: 특정 PDL을 사용하여 Microsoft 365 그룹 만들기
+title: 특정 PDL을 사용 하 여 Microsoft 365 그룹 만들기
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,37 +11,37 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
-description: Multi-Geo 환경에서 지정된 기본 설정 데이터 위치를 사용하여 Microsoft 365 그룹을 만드는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+localization_priority: Normal
+description: 다중 위치 환경에서 지정 된 기본 설정 데이터 위치를 사용 하 여 Microsoft 365 그룹을 만드는 방법을 알아봅니다.
+ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057988"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433859"
 ---
-# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a><span data-ttu-id="48ff0-103">특정 PDL을 사용하여 Microsoft 365 그룹 만들기</span><span class="sxs-lookup"><span data-stu-id="48ff0-103">Create an Microsoft 365 Group with a specific PDL</span></span>
+# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a><span data-ttu-id="c6c4d-103">특정 PDL을 사용 하 여 Microsoft 365 그룹 만들기</span><span class="sxs-lookup"><span data-stu-id="c6c4d-103">Create a Microsoft 365 Group with a specific PDL</span></span>
 
-<span data-ttu-id="48ff0-104">Multi-Gep 환경의 사용자가 Microsoft 365 그룹을 만들 때 그룹 기본 설정 데이터 위치가 자동으로 사용자의 위치로 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-104">When users in a multi-geo environment create an Microsoft 365 Group, the group preferred data location is automatically set to that of the user.</span></span> <span data-ttu-id="48ff0-105">전역, SharePoint, Exchange 관리자는 선택하는 모든 영역에서 그룹을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-105">Global, SharePoint, and Exchange Administrators can create groups in any region they select.</span></span> 
+<span data-ttu-id="c6c4d-104">다중 위치 환경에서 사용자가 Microsoft 365 그룹을 만들면 그룹 기본 설정 데이터 위치가 자동으로 해당 사용자의로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-104">When users in a multi-geo environment create a Microsoft 365 Group, the group preferred data location is automatically set to that of the user.</span></span> <span data-ttu-id="c6c4d-105">전역, SharePoint, Exchange 관리자는 선택하는 모든 영역에서 그룹을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-105">Global, SharePoint, and Exchange Administrators can create groups in any region they select.</span></span> 
 
-<span data-ttu-id="48ff0-106">특정 PDL로 그룹을 만들어야 할 경우 SharePoint 관리자 센터에서 만들거나 혹은 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet을 사용하여 그룹을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-106">If you need to create a group with a specific PDL, you can do that using from the SharePoint admin center or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet.</span></span> <span data-ttu-id="48ff0-107">이 작업을 진행 시 그룹 사서함 및 그룹과 연결된 SharePoint 사이트가 지정된 PDL에서 프로비저닝됩니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-107">When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.</span></span>
+<span data-ttu-id="c6c4d-106">특정 PDL로 그룹을 만들어야 할 경우 SharePoint 관리자 센터에서 만들거나 혹은 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet을 사용하여 그룹을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-106">If you need to create a group with a specific PDL, you can do that using from the SharePoint admin center or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet.</span></span> <span data-ttu-id="c6c4d-107">이 작업을 진행 시 그룹 사서함 및 그룹과 연결된 SharePoint 사이트가 지정된 PDL에서 프로비저닝됩니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-107">When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.</span></span>
 
-<span data-ttu-id="48ff0-108">PDL을 사용하여 지정하는 Microsoft 365 그룹을 만들려면 그룹 사이트를 만들 지리적 위치에서 SharePoint 관리 센터로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-108">To create an Microsoft 365 Group with the PDL that you specify, go to the SharePoint admin center in the geo location where you want to create the group site.</span></span>
+<span data-ttu-id="c6c4d-108">지정한 PDL을 사용 하 여 Microsoft 365 그룹을 만들려면 그룹 사이트를 만들 지리적 위치에서 SharePoint 관리 센터로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-108">To create a Microsoft 365 Group with the PDL that you specify, go to the SharePoint admin center in the geo location where you want to create the group site.</span></span>
 
-<span data-ttu-id="48ff0-109">예시:</span><span class="sxs-lookup"><span data-stu-id="48ff0-109">For example:</span></span>
+<span data-ttu-id="c6c4d-109">예시:</span><span class="sxs-lookup"><span data-stu-id="c6c4d-109">For example:</span></span>
 
-<span data-ttu-id="48ff0-110">호주의 위치에서 그룹 사이트를 만드려는 경우 https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement로 이동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-110">If you want to create a group site in your Australia location, you can go to https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement</span></span>
+<span data-ttu-id="c6c4d-110">호주의 위치에서 그룹 사이트를 만드려는 경우 https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement로 이동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-110">If you want to create a group site in your Australia location, you can go to https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement</span></span>
 
-1. <span data-ttu-id="48ff0-111">**+ 만들기**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-111">Select **+ Create**.</span></span>
-2. <span data-ttu-id="48ff0-112">프로세스를 따라 그룹 사이트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-112">Follow the process to create a group site.</span></span>
+1. <span data-ttu-id="c6c4d-111">**+ 만들기**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-111">Select **+ Create**.</span></span>
+2. <span data-ttu-id="c6c4d-112">프로세스를 따라 그룹 사이트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-112">Follow the process to create a group site.</span></span>
 
-<span data-ttu-id="48ff0-113">사이트 만들기 요청을 시작한 SharePoint 관리 센터에 해당하는 지리적 위치에서 그룹 사이트가 프로비저닝됩니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-113">Your group site will be provisioned in the geo location corresponding to the SharePoint admin center from which you initiated the site creation request.</span></span> 
+<span data-ttu-id="c6c4d-113">사이트 만들기 요청을 시작한 SharePoint 관리 센터에 해당하는 지리적 위치에서 그룹 사이트가 프로비저닝됩니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-113">Your group site will be provisioned in the geo location corresponding to the SharePoint admin center from which you initiated the site creation request.</span></span> 
 
-<span data-ttu-id="48ff0-114">Exchange PowerShell 사용하기</span><span class="sxs-lookup"><span data-stu-id="48ff0-114">Using Exchange PowerShell</span></span> 
+<span data-ttu-id="c6c4d-114">Exchange PowerShell 사용하기</span><span class="sxs-lookup"><span data-stu-id="c6c4d-114">Using Exchange PowerShell</span></span> 
 
-<span data-ttu-id="48ff0-115">Exchange Online PowerShell에 연결하고 *MailBoxRegion* 매개 변수를 지리적 위치 코드와 함께 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-115">Connect to Exchange Online PowerShell and pass the parameter *-MailBoxRegion* with the geo location code.</span></span>
+<span data-ttu-id="c6c4d-115">Exchange Online PowerShell에 연결하고 *MailBoxRegion* 매개 변수를 지리적 위치 코드와 함께 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-115">Connect to Exchange Online PowerShell and pass the parameter *-MailBoxRegion* with the geo location code.</span></span>
 
-<span data-ttu-id="48ff0-116">예:</span><span class="sxs-lookup"><span data-stu-id="48ff0-116">For example:</span></span> 
+<span data-ttu-id="c6c4d-116">예:</span><span class="sxs-lookup"><span data-stu-id="c6c4d-116">For example:</span></span> 
 
 ```PowerShell
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
@@ -49,12 +49,12 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ![구문을 사용하는 New-UnifiedGroup PowerShell cmdlet의 스크린 샷](media/multi-geo-new-group-with-pdl-powershell.png)
 
-<span data-ttu-id="48ff0-118">SharePoint 그룹 사이트 프로비전은 주문형입니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-118">Note that SharePoint group site provisioning is on-demand.</span></span> <span data-ttu-id="48ff0-119">그룹 소유자 또는 구성원이 처음 액세스할 때 사이트가 프로비저닝됩니다.</span><span class="sxs-lookup"><span data-stu-id="48ff0-119">The site will be provisioned the first time a group owner or member attempts to access it.</span></span>
+<span data-ttu-id="c6c4d-118">SharePoint 그룹 사이트 프로비전은 주문형입니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-118">Note that SharePoint group site provisioning is on-demand.</span></span> <span data-ttu-id="c6c4d-119">그룹 소유자 또는 구성원이 처음 액세스할 때 사이트가 프로비저닝됩니다.</span><span class="sxs-lookup"><span data-stu-id="c6c4d-119">The site will be provisioned the first time a group owner or member attempts to access it.</span></span>
 
-## <a name="geo-location-codes"></a><span data-ttu-id="48ff0-120">지리적 위치 코드</span><span class="sxs-lookup"><span data-stu-id="48ff0-120">Geo location codes</span></span>
+## <a name="geo-location-codes"></a><span data-ttu-id="c6c4d-120">지리적 위치 코드</span><span class="sxs-lookup"><span data-stu-id="c6c4d-120">Geo location codes</span></span>
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-## <a name="see-also"></a><span data-ttu-id="48ff0-121">참고 항목</span><span class="sxs-lookup"><span data-stu-id="48ff0-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c6c4d-121">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c6c4d-121">See also</span></span>
 
-[<span data-ttu-id="48ff0-122">Exchange Online PowerShell에 연결</span><span class="sxs-lookup"><span data-stu-id="48ff0-122">Connect to Exchange Online PowerShell</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+[<span data-ttu-id="c6c4d-122">Exchange Online PowerShell에 연결</span><span class="sxs-lookup"><span data-stu-id="c6c4d-122">Connect to Exchange Online PowerShell</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
