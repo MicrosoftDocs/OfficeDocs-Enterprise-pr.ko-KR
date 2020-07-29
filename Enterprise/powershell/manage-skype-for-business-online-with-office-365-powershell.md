@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: '요약: Microsoft 365 용 PowerShell을 사용 하 여 비즈니스용 Skype 온라인 정책, 사용자 단위 정책 및 모임 설정을 관리 합니다.'
-ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 0701fdb8a0a1f588e1c113ad7050ed516638aebc
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230444"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502613"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell을 사용 하 여 비즈니스용 Skype Online 관리
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 비즈니스용 Skype 온라인 관리자의 기본 작업 중 하나는 정책을 관리하는 것입니다. Microsoft 365 관리 센터에서 이러한 작업 중 일부를 수행할 수는 있지만, PowerShell에서 다른 작업은 훨씬 빠르고 간편 합니다. 
 
@@ -36,12 +36,12 @@ ms.locfileid: "45230444"
 
 1. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
     
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $userCredential = Get-Credential
-  $sfbSession = New-CsOnlineSession -Credential $userCredential
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
 
 2. **Windows PowerShell 자격 증명 요청** 대화 상자에서 비즈니스용 Skype Online 관리자 계정 이름 및 암호를 입력 하 고 **확인**을 클릭 합니다.
 
@@ -50,11 +50,11 @@ ms.locfileid: "45230444"
 
 1. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다.
 
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $sfbSession = New-CsOnlineSession
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $sfbSession = New-CsOnlineSession
+   Import-PSSession $sfbSession
+   ```
 
 2. **CsOnlineSession** 명령에서 메시지가 표시 되 면 비즈니스용 Skype Online 관리자 계정 이름을 입력 합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "45230444"
     
 ## <a name="see-also"></a>참고 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 
