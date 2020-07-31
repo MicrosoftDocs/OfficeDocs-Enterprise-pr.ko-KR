@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft가 해당 클라우드 서비스를 DoS (서비스 거부) 공격에 defends 하는 방법입니다.
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998332"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529091"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>서비스 거부 공격에 대해 Microsoft 365 클라우드 서비스 방어
 
-## <a name="introduction"></a>소개
 Microsoft 데이터 센터는 경계 펜스, 비디오 카메라, 보안 담당자 및 생체 인식, 스마트 카드 및 다단계 인증을 사용 하는 보안 entrances 포함 된 심층 방어 보안으로 보호 됩니다. 심층 방어 보안은 모든 기능의 모든 영역과 각 물리적 서버 단위를 통해 진행 됩니다. [Microsoft 클라우드 인프라 및 운영 그룹](https://www.microsoft.com/cloud-platform/global-datacenters) 은 클라우드 서비스에 대 한 핵심 인프라 및 기본 기술을 제공 합니다. 이 데이터 센터는 물리적 보안 및 안정성을 위한 업계 표준을 준수 하며, Microsoft 운영 담당자가 관리 하 고 모니터링 하 고 관리 합니다.
 
 클라우드 서비스를 추가로 보호 하기 위해 Microsoft는 Microsoft Azure 지속적인 모니터링 및 침투 테스트 프로세스의 일부인 DDoS 방어 시스템을 제공 합니다. Azure DDoS 방어 시스템은 외부, 다른 Azure 테 넌 트 로부터의 공격에 대 한 견딜 수 있도록 설계 되었습니다. Azure는 SYN 쿠키, 속도 제한, 연결 제한 등의 표준 검색 및 완화 기술을 사용 하 여 DDoS 공격 으로부터 보호 합니다.
