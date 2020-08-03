@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '요약: Microsoft 365 용 PowerShell을 사용 하 여 SharePoint Online 사용자, 그룹 및 사이트를 관리 합니다.'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230474"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542819"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>PowerShell을 사용 하 여 SharePoint Online 사용자 및 그룹 관리
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 많은 사용자 계정 또는 그룹 목록을 사용 하 고이를 보다 쉽게 관리 하기 위해 사용 하는 SharePoint Online 관리자는 Microsoft 365 용 PowerShell을 사용할 수 있습니다. 
 
@@ -67,9 +67,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-이러한 명령을 사용 하려면 replace the < 및 > 문자를 포함 하 여 따옴표 안에 있는 모든 내용을 올바른 이름으로 바꿉니다.
+이러한 명령을 사용 하려면 < 및 > 문자를 포함 하 여 따옴표 안에 있는 모든 것을 올바른 이름으로 바꿉니다.
 
-예를 들어이 명령 집합은 contoso 테 넌 시의 ContosoTest 사이트 모음에 있는 사이트 모음 관리자의 목록에 오 팔 Castillo (사용자 이름 opalc)을 추가 합니다.
+예를 들어 다음 명령 집합은 Contoso 테 넌 시에 있는 ContosoTest 사이트 모음의 사이트 모음 관리자 목록에 오 팔 Castillo (사용자 이름 opalc)을 추가 합니다.
 
 ```powershell
 $tenant = "contoso"
@@ -279,9 +279,8 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[PowerShell을 사용 하 여 SharePoint Online 관리](create-sharepoint-sites-and-add-users-with-powershell.md)
+[PowerShell로 SharePoint 온라인 관리](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
-
