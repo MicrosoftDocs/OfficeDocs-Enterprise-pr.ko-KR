@@ -184,6 +184,7 @@
 ##### [3단계: AD FS 서버 구성](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [4단계: 웹 응용 프로그램 프록시 구성](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [5단계: 페더레이션 인증 구성](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+#### [Microsoft Azure에서 SharePoint Server 2013 재해 복구](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 
 # Microsoft 365 관리
 
@@ -253,7 +254,7 @@
 ### [Exchange Online 데이터 삭제](office-365-exchange-online-data-deletion.md)
 ### [SharePoint Online 데이터 삭제](office-365-sharepoint-online-data-deletion.md)
 ### [비즈니스용 Skype 데이터 삭제](office-365-skype-data-deletion.md)
-## [Microsoft 365에서 서비스 거부(DoS) 공격으로부터 보호](office-365-defending-against-denial-of-service-attacks-overview.md)
+## [Microsoft 365에서 서비스 거부(DoS) 공격으로부터 보호](office-365-defending-cloud-services-against-dos-attacks.md)
 ### [Microsoft의 서비스 거부 방어 전략](office-365-microsoft-dos-defense-strategy.md)
 ### [서비스 거부 공격에 대한 보안 핵심 원칙](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Microsoft 클라우드에서 암호화](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
