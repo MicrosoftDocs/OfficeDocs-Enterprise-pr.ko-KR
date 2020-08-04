@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 다중 위치 환경의 SharePoint 및 OneDrive 서비스 관리에 대해 알아봅니다.
-ms.openlocfilehash: a4e467edebbcfbb0288b698f3e7d5bcf589cdd69
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433529"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548900"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Multi-Geo 환경 관리
 
@@ -104,3 +104,7 @@ Multi-Geo 테넌트에 대해 하나의 중앙 준수 센터인 [Microsoft 365 �
 - 캐나다
 - 인도
 - 영국
+
+## <a name="yammer"></a>Yammer
+
+Yammer는 다중 지역 작업이 아닙니다. Yammer에 저장 된 yammer 스레드는 테 넌 트의 중앙 위치에 배치 됩니다. Yammer에서 Yammer 파일을 SharePoint 내에 저장 하는 파일 저장소 변경 내용을 롤아웃하기는 중입니다. SharePoint에 저장 된 yammer 파일은 Yammer 그룹과 연결 되는 SharePoint 사이트에 놓이게 됩니다. SharePoint 그룹 사이트는 [Sharepoint 사이트 및 그룹](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365#sharepoint-sites-and-groups)에 설명 된 대로 PDL 논리를 기반으로 합니다.
