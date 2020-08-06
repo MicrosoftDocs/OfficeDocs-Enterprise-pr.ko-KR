@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '요약: Office 365 배포를 계획할 때 사용할 DNS 레코드 목록을 참조합니다.'
-ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502673"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570981"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365에 대한 외부 Domain Name System 레코드
 
@@ -125,14 +125,13 @@ Office 365용 Exchange Online 전자 메일을 사용하지 않는 시나리오�
 > [!NOTE]
 > 예를 들어, 방화벽을 통해 전자 메일 트래픽을 관리하기 위한 에지 전자 메일 서버를 포함하는 복잡한 시나리오가있는 경우 더욱 자세한 SPF 레코드를 설정해야합니다. 방법 알아보기:[스푸핑을 방지하기 위해 Office 365에서 SPF 레코드를 설정합니다](https://go.microsoft.com/fwlink/?LinkId=787656). 또한, [스푸핑을 방지하기 위해 Office 365에서 Sender Policy Framework (SPF)를 사용하는 방법](https://go.microsoft.com/fwlink/?LinkId=787065)을 참조하여 Office 365에서 SPF가 작동하는 방식에 대해 자세히 알아볼 수 있습니다.
   
-|||||
+| 숫자|다음를 사용하는 경우...  <br/> |용도  <br/> |추가할 포함 내용  <br/> |
 |:-----|:-----|:-----|:-----|
-||다음를 사용하는 경우...  <br/> |용도  <br/> |추가할 포함 내용  <br/> |
-|1  <br/> |모든 전자 메일 시스템(필수)  <br/> |이 값으로 시작하는 모든 SPF 레코드  <br/> |v=spf1  <br/> |
+|개  <br/> |모든 전자 메일 시스템(필수)  <br/> |이 값으로 시작하는 모든 SPF 레코드  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online(일반적)  <br/> |Exchange Online만 사용  <br/> |포함:spf.protection.outlook.com  <br/> |
-|3  <br/> |제3자 전자 메일 시스템(덜 일반적임)  <br/> ||포함되는 사항:\<email system like mail.contoso.com\>  <br/> |
-|4  <br/> |온-프레미스 메일 시스템(덜 일반적임)  <br/> |Exchange Online Protection 또는 Exchange Online 및 다른 메일 시스템을 사용하는 경우 사용  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> 포함되는 사항은 다음과 같습니다.\<mail.contoso.com\>  <br/> 괄호 안의 값(\<\>)은 도메인의 전자 메일을 전송하는 다른 메일 시스템이어야 합니다.  <br/> |
-|5  <br/> |모든 전자 메일 시스템(필수)  <br/> ||-모두  <br/> |
+|3(sp3)  <br/> |제3자 전자 메일 시스템(덜 일반적임)  <br/> ||포함되는 사항:\<email system like mail.contoso.com\>  <br/> |
+|4   <br/> |온-프레미스 메일 시스템(덜 일반적임)  <br/> |Exchange Online Protection 또는 Exchange Online 및 다른 메일 시스템을 사용하는 경우 사용  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> 포함되는 사항은 다음과 같습니다.\<mail.contoso.com\>  <br/> 괄호 안의 값(\<\>)은 도메인의 전자 메일을 전송하는 다른 메일 시스템이어야 합니다.  <br/> |
+|5   <br/> |모든 전자 메일 시스템(필수)  <br/> ||-모두  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>예: 기존 SPF 레코드에 추가
 <a name="bkmk_addtospf"> </a>

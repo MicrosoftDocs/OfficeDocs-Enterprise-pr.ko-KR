@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Microsoft 365을 기존 디렉터리 서비스와 통합 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736036"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571061"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 통합 온-프레미스 환경
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365을 기존 디렉터리 서비스와 통합 하 고 Exchange Server의 온-프레미스 설치, 비즈니스용 Skype 서버 2015 또는 SharePoint Server와 통합할 수 있습니다.
   
@@ -50,7 +50,7 @@ Microsoft 365 및 온-프레미스 환경을 통합 하기 전에 [네트워크 
 Microsoft 365 사용자 및 계정을 관리 하는 데 사용할 수 있는 도구 목록은 [microsoft 365 계정을 관리 하는 위치](manage-office-365-accounts.md) 를 참조 하세요. 
   
 ## <a name="integrate-microsoft-365-with-directory-services"></a>디렉터리 서비스와 함께 Microsoft 365 통합
-온-프레미스 디렉터리에 기존 사용자 계정이 있는 경우에는 Microsoft 365에서 이러한 계정을 모두 다시 만들지 않고 환경 간에 차이점이 나 오류가 발생 하는 위험을 방지할 수 있습니다. 디렉터리 동기화를 사용 하면 온라인 및 온-프레미스 환경 간에 이러한 계정을 미러링할 수 있습니다. 디렉터리 동기화를 사용 하면 사용자가 각 환경에 대 한 새로운 정보를 저장할 필요가 없으며 계정을 두 번 만들거나 업데이트할 필요가 없습니다. 디렉터리 동기화를 위해 [온-프레미스 디렉터리를 준비](prepare-for-directory-synchronization.md) 해야 하는 경우이를 수동으로 수행 하거나 [idfix 도구](install-and-run-idfix.md) (Idfix 도구는 Active DIRECTORY 도메인 서비스 [AD DS] 에서만 작동)를 사용할 수 있습니다. 
+온-프레미스 디렉터리에 기존 사용자 계정이 있는 경우에는 Microsoft 365에서 이러한 계정을 모두 다시 만들지 않고 환경 간에 차이점이 나 오류가 발생 하는 위험을 방지할 수 있습니다. 디렉터리 동기화를 사용 하면 온라인 및 온-프레미스 환경 간에 이러한 계정을 미러링할 수 있습니다. 디렉터리 동기화를 사용 하면 사용자가 각 환경에 대 한 새로운 정보를 저장할 필요가 없으며 계정을 두 번 만들거나 업데이트할 필요가 없습니다. 디렉터리 동기화를 위해 온 [-프레미스 디렉터리를 준비](prepare-for-directory-synchronization.md) 해야 합니다.
   
 ![디렉터리 동기화를 사용 하 여 온-프레미스 및 온라인 사용자 계정 정보 동기화 유지](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   

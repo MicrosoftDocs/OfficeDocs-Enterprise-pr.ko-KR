@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 디렉터리 동기화를 비활성화 하는 방법에 대해 알아보세요. 또한 해당 상태를 볼 수 있습니다.
-ms.openlocfilehash: d6f3a9f1f4e069716501f58e188daedacbf7e597
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906201"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571041"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Microsoft 365에서 디렉터리 동기화 상태 보기
 
@@ -50,5 +50,4 @@ ms.locfileid: "44906201"
 |**암호 동기화 사용** | True 또는 False입니다. 온-프레미스와 Microsoft 365 테 넌 트 간에 암호 해시 동기화가 있는지 여부를 지정 합니다. |
 |**마지막 암호 동기화** | 암호 해시 동기화를 마지막으로 실행 한 시간입니다. 마지막 동기화가 3 일 전까지 경고 및 문제 해결 도구에 대 한 링크를 표시 합니다. |
 |**디렉터리 동기화 클라이언트 버전** | 새 버전의 Azure AD Connect가 릴리스되면 다운로드 링크를 포함 합니다. |
-|**IDFix 도구** | 로컬 Active Directory를 확인 하는 데 사용할 수 있는 도구인 [Idfix](install-and-run-idfix.md)에 대 한 링크를 다운로드 합니다. |
 |**디렉터리 동기화 서비스 계정** | Microsoft 365 디렉터리 동기화 서비스 계정의 이름을 표시 합니다. |

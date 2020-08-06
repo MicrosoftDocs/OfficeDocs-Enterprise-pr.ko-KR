@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Microsoft 365, Active Directory 도메인 서비스 정리 및 Azure Active Directory Connect 도구를 사용한 디렉터리 동기화에 대해 설명 합니다.
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711871"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571161"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365에 대 한 하이브리드 id 및 디렉터리 동기화
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 비즈니스 요구 사항과 기술 요구 사항에 따라 하이브리드 id 모델 및 디렉터리 동기화가 Microsoft 365를 채택 하는 엔터프라이즈 고객에 게 가장 일반적으로 선택 됩니다. 디렉터리 동기화를 사용 하면 AD DS (Active Directory 도메인 서비스)에서 id를 관리할 수 있으며, 사용자 계정, 그룹 및 연락처에 대 한 모든 업데이트는 Microsoft 365 구독의 azure AD (azure Active Directory) 테 넌 트와 동기화 됩니다.
 
@@ -97,13 +97,11 @@ PTA 사용자는 온-프레미스 계정 및 암호를 사용 하 여 온-프레
   
 자세한 내용은 [AZURE AD 페더레이션 호환성 목록을](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) 참조 하세요.
   
-## <a name="ad-ds-cleanup"></a>AD DS 정리
+## <a name="ad-ds-preparation"></a>AD DS 준비
 
 동기화를 사용 하 여 Microsoft 365로 원활 하 게 전환할 수 있도록 하려면 Microsoft 365 디렉터리 동기화 배포를 시작 하기 전에 AD DS 포리스트를 준비 해야 합니다.
   
-[디렉터리 동기화를 설정](set-up-directory-synchronization.md)하는 경우에는 [idfix 도구를 다운로드 하 고 실행](install-and-run-idfix.md)하는 단계 중 하나입니다. IdFix 도구를 사용 하 여 [디렉터리 정리](prepare-directory-attributes-for-synch-with-idfix.md)를 지원할 수 있습니다.
-  
-디렉터리 정리는 다음 작업에 중점을 두어야 합니다.
+디렉터리 준비에서는 다음과 같은 작업에 초점을 두어야 합니다.
 
 - 중복 **Proxyaddress** 및 **userPrincipalName** 특성을 제거 합니다.
 - 비어 있거나 잘못 된 **userPrincipalName** 특성을 올바른 **userPrincipalName** 특성으로 업데이트 합니다.

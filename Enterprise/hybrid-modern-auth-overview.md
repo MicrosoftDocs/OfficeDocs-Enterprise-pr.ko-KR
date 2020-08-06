@@ -8,19 +8,19 @@ ms.date: 04/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
 description: '최신 인증은 더욱 안전한 사용자 인증 및 권한 부여를 제공하는 ID 관리 방법입니다. 비즈니스용 Skype 서버 온-프레미스 및 Exchange 서버 온-프레미스의 하이브리드 배포뿐 아니라, 분할된 도메인 비즈니스용 Skype 하이브리드에 사용할 수 있습니다. 이 문서는 필수 구성 요소에 대한 관련 문서, 최신 인증 설정/해제 및 일부 관련 클라이언트(예: Outlook 및 Skype 클라이언트) 정보의 링크가 있습니다.'
-ms.openlocfilehash: 8b5fcbd20ed0a4f630cda7a05eb068008296d694
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: df755c8af161609c1c18dbe066662aaf1d410429
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502603"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571051"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>하이브리드 최신 인증 개요 및 온-프레미스 비즈니스용 Skype 및 Exchange 서버에서 사용하기 위한 필수 구성 요소
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365에 대 한 디렉터리 동기화 준비
+title: " Microsoft 365로 디렉터리 동기화 준비"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 디렉터리 동기화 및이 방법을 사용할 경우의 장기적 이점을 사용 하 여 사용자를 Microsoft 365에 프로 비전 하도록 준비 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735696"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571001"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Microsoft 365에 대 한 디렉터리 동기화 준비
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a> Microsoft 365로 디렉터리 동기화 준비
 
 *이 문서는 Microsoft 365 Enterprise 및 Microsoft 365 Enterprise에 모두 적용 됩니다.*
 
@@ -166,8 +166,6 @@ AD DS 사용자 중 일부에 중복 된 특성이 하나 이상 있는 경우�
   - 라우팅 가능한 도메인을 사용 해야 합니다. 예를 들어 로컬 또는 내부 도메인은 사용할 수 없습니다.
   - 유니코드는 밑줄 문자로 변환됩니다.
   - **userPrincipalName** 는 디렉터리에 중복 된 값을 포함할 수 없습니다. 
-
-Idfix 도구를 사용 하 여 [디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md) 를 참조 하 여 AD DS의 특성에서 오류를 식별 합니다.
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. userPrincipalName 특성을 준비 합니다.
 
@@ -189,9 +187,6 @@ Active Directory에 대체 UPN 접미사를 추가 하는 방법에 대 한 자�
   
 또한 [디렉터리 동기화를 위해 라우팅할 수 없는 도메인 (예: 로컬 도메인)을 준비 하는 방법을](prepare-a-non-routable-domain-for-directory-synchronization.md)참조 하세요.
 
-
 ## <a name="next-steps"></a>다음 단계
 
-디렉터리 동기화 전에 AD DS 특성의 오류를 수정 하는 데 도움이 되도록 [IdFix 도구를 사용 하 여 디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md) 를 참조 하세요.
-
-IdFix 도구로 식별 된 모든 특성 오류를 수정 하 고 위의 1 ~ 5 단계를 수행한 경우 [디렉터리 동기화 설정을](set-up-directory-synchronization.md)참조 하십시오.
+위의 1 ~ 5 단계를 수행한 경우 [디렉터리 동기화 설정을](set-up-directory-synchronization.md)참조 하십시오.
