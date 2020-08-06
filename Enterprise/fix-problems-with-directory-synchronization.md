@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365의 디렉터리 동기화 문제의 일반적인 원인을 설명하고 문제를 해결할 수 있는 몇 가지 방법을 제공합니다.
-ms.openlocfilehash: fac0c477f3c68271a2f0f8c4e2a09fc051fe1ce4
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: faf0f061b8f2798054e63f3338b8076c0ec88f73
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502653"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570971"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365의 디렉터리 동기화 문제 해결
 
@@ -89,8 +89,3 @@ Azure AD 동기화 서비스에서 Azure AD Connect로 업데이트 하려면 [�
     
 - [PowerShell을 사용하여 중복된 전자 메일 주소 수정](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
-## <a name="diagnostic-tools"></a>진단 도구
-
-[IDFix 도구](prepare-directory-attributes-for-synch-with-idfix.md)는 Microsoft 365로 마이그라에션을 준비 할 때 온프레미스 활성 디렉터리 환경에서 식별 개체 및 특성을 검색하고 복구하는데 사용됩니다. IDFix는 Microsoft 365 서비스와의 디렉터리 동기화를 담당하는 활성 디렉터리 관리자를 대상으로 합니다. 
-
-Microsoft 다운로드 센터에서 [IDFix 도구 다운로드](https://go.microsoft.com/fwlink/p/?LinkId=396718)
