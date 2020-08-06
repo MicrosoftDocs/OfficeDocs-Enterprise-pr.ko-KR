@@ -112,11 +112,6 @@
 ### 하이브리드 ID
 #### [디렉터리 동기화 준비](prepare-for-directory-synchronization.md)
 #### [디렉터리 동기화를 위해 라우팅할 수 없는 도메인(예: .local 도메인) 준비](prepare-a-non-routable-domain-for-directory-synchronization.md)
-#### IdFix 도구 실행
-##### [IdFix 도구로 디렉터리 특성 준비](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [IdFix 도구 다운로드 및 실행](install-and-run-idfix.md)
-##### [IdFix 제외 및 지원 개체/특성](idfix-excluded-and-supported-objects-and-attributes.md)
-##### [IdFix 트랜잭션 로그](idfix-transaction-log.md)
 #### [디렉터리 동기화 설정](set-up-directory-synchronization.md)
 ### [사용자 계정에 라이선스 할당](assign-licenses-to-user-accounts.md)
 
