@@ -7,7 +7,7 @@ ms.date: 05/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: '요약: SharePoint, Exchange, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델, 배포 및 플랫폼 옵션을 설명하는 IT 포스트를 확인하세요.'
-ms.openlocfilehash: 9e6e4f2b32bb2e5b39f8891d8acddc0699cdbf8d
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
-ms.translationtype: HT
+ms.openlocfilehash: 39af22a29a63be068e4b4f857548303811d5442d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102566"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592102"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Exchange, SharePoint, 비즈니스용 Skype 및 Lync에 대한 아키텍처 모델
 
