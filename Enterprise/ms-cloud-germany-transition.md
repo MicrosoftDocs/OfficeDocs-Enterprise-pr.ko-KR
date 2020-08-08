@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션 이해 '
-ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
-ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
-ms.translationtype: HT
+ms.openlocfilehash: f63a9228b8669ce0b7a1d49c7b0045a2065f9ec4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092887"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592142"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>독일 Microsoft 클라우드(도이칠란드 Microsoft 클라우드)에서 Office 365 서비스 독일 신규 데이터 센터 지역으로의 마이그레이션
 
@@ -59,7 +59,7 @@ Microsoft 주도 방식에 동의하면 다음 서비스도 함께 마이그레�
 - Office 365 그룹
 - Dynamics 365 / Power Platform
 
-이들 서비스의 마이그레이션의 필요 조건과 영향에 관한 내용은 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 문서를 참조하세요.
+이들 서비스의 마이그레이션의 필요 조건과 영향에 관한 내용은 [Dynamics 365 고객 참여](https://aka.ms/d365ceoptin) 문서를 참조하세요.
 
 Office 365 비디오가 2021년 3월 1일에 사용 중지됩니다. Office 365 테넌트를 새 독일어 데이터 센터 영역으로 마이그레이션하도록 선택하면 SharePoint Online 마이그레이션이 완료된 후에 Office 365 비디오가 지원되지 않습니다. [자세한 정보](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -203,7 +203,7 @@ Microsoft Cloud Germany(Microsoft Cloud Deutschland) 클라우드 서비스를 �
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 및 Power BI
 
-지금 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 및 [Power BI](https://aka.ms/pbioptin)의 Microsoft 기반 마이그레이션에 동의 하세요.  마이그레이션을 시작할 준비가 되면 Microsoft 365 관리 센터에서 [메시지 센터를](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 통해 알려 드립니다. 
+지금 [Dynamics 365 고객 참여](https://aka.ms/D365ceOptIn) 및 [Power BI](https://aka.ms/PBIOptIn)의 Microsoft 기반 마이그레이션에 동의 하세요.  마이그레이션을 시작할 준비가 되면 Microsoft 365 관리 센터에서 [메시지 센터를](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 통해 알려 드립니다. 
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>사용하고 있는 Office 서비스 가격이 변동되나요? 
 
@@ -221,7 +221,7 @@ Microsoft Cloud Germany(Microsoft Cloud Deutschland) 클라우드 서비스를 �
 
 - [Microsoft Cloud Deutschland 마이그레이션 지원](https://aka.ms/germanymigrateassist)
 - [마이그레이션에 대해 옵트인하는 방법](https://aka.ms/office365germanymoveoptin)
-- [Dynamics 365 마이그레이션 프로그램 정보](https://aka.ms/D365ceOptIn)
+- [Dynamics 365 마이그레이션 프로그램 정보](https://aka.ms/d365ceoptin)
 - [Power BI 마이그레이션 프로그램 정보](https://aka.ms/pbioptin)
 - [Office 365 URL 및 IP 주소 범위](https://aka.ms/o365endpoints)
 - [Office 365 하이브리드 구성 마법사](https://aka.ms/HybridWizard)
