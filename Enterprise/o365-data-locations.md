@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: Microsoft 365 데이터 위치'
-ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 9d69b51a257978c557944951eabb099f76b9011e
+ms.sourcegitcommit: c779ded7647cb84f8daafc25565d3edac2917e83
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263697"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588000"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Azure Active Directory 데이터 위치는 [AAD 데이터 맵](https://go.microsoft.com/fwlink/p/?linkid=2092972)을 방문하세요.
 
 
-COVID-19와 관련하여 전례 없는 상황과 유럽의 온라인 서비스 수요 관리 필요성으로 인해 조직이 교육 기관인 경우 유럽 연합(EU), 유럽 자유 무역 협회(EFTA), 영국(UK), 미국(US) 또는 캐나다(CA)에서 Microsoft 365 테넌트를 프로비저닝하거나 EU, EFTA, UK, US 또는 CA의 모든 데이터 센터로 데이터를 전송할 수 있습니다.즉, 귀하의 데이터는 EU, EFTA, UK, US 또는 CA 내에 저장되어 있을 수 있습니다. 규정 준수, 개인 정보 보호 및 보안에 대한 Microsoft의 약속은 변하지 않고 서비스 가용성을 유지하기 위해 필요한 신중한 조치를 구현합니다.  데이터 전송과 관련하여 모든 해당 법률을 준수합니다.
+COVID-19와 관련된 전례 없는 상황과 온라인 서비스 수요를 관리해야 하는 필요성 때문에, 귀사가 유럽의 교육 기관인 경우, 당사는 유럽 연합 내에서 Office 365 테넌트를 프로비저닝하고 데이터를 이전하고 유휴 상태로 데이터를 저장할 수 있습니다.  조직이 인도의 교육 기관인 경우, 당사는 귀하의 Office 365 테넌트를 프로비저닝하고, 데이터를 인도, 유럽 또는 미국 내에서 이전하고, 미사용 데이터를 저장할 수 있습니다.  조직이 남아프리카의 교육 기관인 경우, 당사는 귀하의 Office 365 테넌트를 프로비저닝하고, 데이터를 남아프리카 또는 유럽에 전송하고, 유휴 상태로 데이터를 저장할 수 있습니다.  규정 준수, 개인 정보 보호 및 보안에 대한 Microsoft의 약속은 변하지 않고 서비스 가용성을 유지하기 위해 필요한 신중한 조치를 구현합니다. 데이터 전송과 관련하여 모든 해당 법률을 준수합니다.
 
 
 

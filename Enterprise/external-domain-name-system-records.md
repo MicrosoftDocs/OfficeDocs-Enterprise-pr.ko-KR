@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '요약: Office 365 배포를 계획할 때 사용할 DNS 레코드 목록을 참조합니다.'
-ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
-ms.translationtype: MT
+ms.openlocfilehash: d9bd097538e0aaab19e8b2a6eeb989c3a16492db
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570981"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592192"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365에 대한 외부 Domain Name System 레코드
 
@@ -127,11 +127,11 @@ Office 365용 Exchange Online 전자 메일을 사용하지 않는 시나리오�
   
 | 숫자|다음를 사용하는 경우...  <br/> |용도  <br/> |추가할 포함 내용  <br/> |
 |:-----|:-----|:-----|:-----|
-|개  <br/> |모든 전자 메일 시스템(필수)  <br/> |이 값으로 시작하는 모든 SPF 레코드  <br/> |v=spf1  <br/> |
+|1  <br/> |모든 전자 메일 시스템(필수)  <br/> |이 값으로 시작하는 모든 SPF 레코드  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online(일반적)  <br/> |Exchange Online만 사용  <br/> |포함:spf.protection.outlook.com  <br/> |
-|3(sp3)  <br/> |제3자 전자 메일 시스템(덜 일반적임)  <br/> ||포함되는 사항:\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |온-프레미스 메일 시스템(덜 일반적임)  <br/> |Exchange Online Protection 또는 Exchange Online 및 다른 메일 시스템을 사용하는 경우 사용  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> 포함되는 사항은 다음과 같습니다.\<mail.contoso.com\>  <br/> 괄호 안의 값(\<\>)은 도메인의 전자 메일을 전송하는 다른 메일 시스템이어야 합니다.  <br/> |
-|5   <br/> |모든 전자 메일 시스템(필수)  <br/> ||-모두  <br/> |
+|3  <br/> |제3자 전자 메일 시스템(덜 일반적임)  <br/> ||포함되는 사항:\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |온-프레미스 메일 시스템(덜 일반적임)  <br/> |Exchange Online Protection 또는 Exchange Online 및 다른 메일 시스템을 사용하는 경우 사용  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> 포함되는 사항은 다음과 같습니다.\<mail.contoso.com\>  <br/> 괄호 안의 값(\<\>)은 도메인의 전자 메일을 전송하는 다른 메일 시스템이어야 합니다.  <br/> |
+|5  <br/> |모든 전자 메일 시스템(필수)  <br/> ||-모두  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>예: 기존 SPF 레코드에 추가
 <a name="bkmk_addtospf"> </a>
