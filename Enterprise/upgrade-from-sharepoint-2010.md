@@ -18,17 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: SharePoint 2010 및 SharePoint Server 2010에 대 한 지원이 종료 되었습니다 (2021 년 4 월 13 일). 이 문서를 참조 하 여 SharePoint Online으로 업그레이드 하거나 SharePoint Server 온-프레미스의 최신 버전으로 업그레이드할 수 있습니다.
-ms.openlocfilehash: 91083cbf64bde3e083ba87e2867e7e1a9e22628c
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: SharePoint 2010 및 Sharepoint Server 2010에서 업그레이드할 정보 및 리소스를 검색 하 고, 두 종료에 대 한 지원은 2020 년 10 월 13 일에 해당 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6382c375439acaf8b978f6ef5c2813eaebc0701d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102586"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603620"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010에서 업그레이드
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft SharePoint 2010 및 SharePoint Server 2010는 기술 지원 종료 **(2021 년 4 월 13 일**)에 도달 합니다. 이 문서에서는 Microsoft 365에서 기존 SharePoint Server 2010 데이터를 SharePoint Online으로 마이그레이션하거나 온-프레미스 SharePoint Server 2010 환경을 업그레이드 하는 데 도움이 되는 리소스에 대해 자세히 설명 합니다.
   
@@ -253,13 +254,13 @@ SharePoint 2007에서 SharePoint Server 2016로 전체 경로를 사용 하기 �
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 클라이언트 및 서버 및 Windows 7의 옵션 요약
 
-Office 2010 클라이언트 및 서버 및 Windows 7의 업그레이드, 마이그레이션 및 클라우드 간 옵션에 대 한 자세한 요약을 보려면 [지원 종료 포스터](./downloads/Office2010Windows7EndOfSupport.pdf)를 참조 하세요.
+Office 2010 클라이언트 및 서버와 Windows 7에 대한 업그레이드, 마이그레이션 및 클라우드 옵션으로 이동에 대한 시각적 요약은 [지원 종료 포스터](./downloads/Office2010Windows7EndOfSupport.pdf)를 참조하세요.
 
 [![Office 2010 클라이언트 및 서버와 Windows 7에 대한 지원 종료 포스터 이미지](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
-이 한 페이지 포스터는 Office 2010 클라이언트 및 서버 제품 및 Windows 7의 지원 종료를 방지 하기 위해 수행할 수 있는 다양 한 경로를 이해 하는 빠른 방법 이며, Microsoft 365 Enterprise의 기본 설정 경로 및 옵션을 통해 강조 표시 됩니다.
+이 한 페이지 포스터를 통해 Office 2010 클라이언트 및 서버 제품과 Windows 7의 지원 종료를 방지하는 다양한 방법을 빠르게 살펴보고 Microsoft 365 Enterprise에서 기본적으로 사용되는 경로와 옵션을 집중적으로 알 수 있습니다.
 
-또한이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) 하 여 letter, legal 또는 tabloid (11 x 17) 형식으로 인쇄할 수 있습니다.
+이 포스터를 [다운로드](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)하고 편지형, 법률문서형 또는 타블로이드(11 x 17) 형식으로 인쇄할 수 있습니다.
         
 ## <a name="related-topics"></a>관련 항목
 

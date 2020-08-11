@@ -9,20 +9,22 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection: M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: O365 통합 앱이 Azure AD에서 등록 되 고 관리 되는 방법 알아보기
-ms.openlocfilehash: 0cb3ac73230e0ddce62366af9019a12ea2b04d09
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Azure AD에서 Office 365 통합 앱을 등록 하 고 관리 하 여 전역 관리자 수준에서 앱 권한 부여를 허용 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 66b552848e53b8a93ccffdef11e17c897f30e44f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998093"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606364"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Microsoft 365 관리자를 위한 통합 된 앱 및 Azure AD
 

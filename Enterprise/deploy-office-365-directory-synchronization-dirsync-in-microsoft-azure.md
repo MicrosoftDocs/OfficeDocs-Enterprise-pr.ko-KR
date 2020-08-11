@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: '요약: Azure의 가상 머신에 Azure AD Connect를 배포 하 여 온-프레미스 디렉터리와 Microsoft 365 구독의 Azure AD 테 넌 트 간에 계정을 동기화 합니다.'
-ms.openlocfilehash: bd1b973c60576002f110a909c0022b27f4595b81
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Azure의 가상 머신에 Azure AD Connect를 배포 하 여 온-프레미스 디렉터리와 Azure AD 테 넌 트 간의 계정을 동기화 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 2872e3d5d233d04885fadd3e422ec1d15284ac26
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229974"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605744"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure에서 Microsoft 365 디렉터리 동기화 배포
 

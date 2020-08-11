@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: 기존 Office 365 고객은 가맹 Microsoft 365 서비스의 고객 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 시간 전에 요청을 제출 해야 합니다.
-ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 기존 Office 365 고객은 Microsoft 365 서비스 데이터를 새 지역으로 이동 하기 위해 해당 국가의 마감 날짜 이전에 요청을 제출 해야 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 72b7c7d1f6b6b19ff5749787fd8ea6e789c3372a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433759"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606164"
 ---
 # <a name="how-to-request-your-data-move"></a>데이터 이동을 요청하는 방법
 

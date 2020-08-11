@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ search.appverid:
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
-description: 세션 시간 제한은 Microsoft 365 클라이언트 앱의 보안 및 접근성을 조정 하는 데 사용 됩니다.
-ms.openlocfilehash: d439d36a3a67914658098e757b916dcf110b1df4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Microsoft 365 클라이언트 앱에서 세션 시간 제한을 사용 하 여 보안을 조정 하 고 액세스 용이성을 결정 하는 방법을 알아봅니다.
+ms.openlocfilehash: 72146ca49e07bf3641982bc880897456699d0877
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998160"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605220"
 ---
 # <a name="session-timeouts-for-microsoft-365"></a>Microsoft 365에 대 한 세션 시간 제한
 
@@ -43,7 +45,7 @@ ms.locfileid: "44998160"
 |Microsoft 365 관리 센터  <br/> |관리자 센터에 대 한 자격 증명을 8 시간 마다 제공 하 라는 메시지가 표시 됩니다.  <br/> |
 |SharePoint Online  <br/> |사용자가 **로그인 유지**를 선택 하기만 하면 5 일 동안 비활성 상태가 됩니다. 사용자가 24 시간 이상이 이전 로그인에서 전달 된 후에 SharePoint Online에 다시 액세스 하는 경우 시간 제한 값은 5 일로 다시 설정 됩니다.  <br/> |
 |Outlook Web App  <br/> |6 시간  <br/> [Set-organizationconfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) Cmdlet에서 _ActivityBasedAuthenticationTimeoutInterval_ 매개 변수를 사용 하 여이 값을 변경할 수 있습니다.  <br/> |
-|Azure Active Directory Domain Services  <br/> (최신 인증을 사용 하는 Office 2013 Windows 클라이언트에서 사용)  <br/> | 최신 인증은 액세스 토큰 및 새로 고침 토큰을 사용 하 여 Azure Active Directory를 사용 하는 Microsoft 365 리소스에 대 한 사용자 액세스 권한을 부여 합니다. 액세스 토큰은 인증을 완료 한 후 제공 되는 JSON 웹 토큰이 며 1 시간 동안 유효 합니다. 수명이 긴 새로 고침 토큰도 제공 됩니다. 액세스 토큰이 만료 되 면 Office 클라이언트는 유효한 새로 고침 토큰을 사용 하 여 새 액세스 토큰을 가져옵니다. 사용자의 초기 인증이 여전히 유효한 경우이 exchange가 성공 합니다.  <br/>  새로 고침 토큰은 90 일 동안 유효 하며 지속적인 사용을 위해서는 해지할 때까지 유효 합니다.  <br/>  새로 고침 토큰은 다음과 같은 여러 가지 이벤트로 무효화 될 수 있습니다.  <br/>  새로 고침 토큰이 발급 된 이후 사용자의 암호가 변경 되었습니다.  <br/>  관리자는 사용자가 액세스 하려고 하는 리소스에 대 한 액세스를 제한 하는 조건부 액세스 정책을 적용할 수 있습니다.  <br/> |
+|Azure Active Directory  <br/> (최신 인증을 사용 하는 Office 2013 Windows 클라이언트에서 사용)  <br/> | 최신 인증은 액세스 토큰 및 새로 고침 토큰을 사용 하 여 Azure Active Directory를 사용 하는 Microsoft 365 리소스에 대 한 사용자 액세스 권한을 부여 합니다. 액세스 토큰은 인증을 완료 한 후 제공 되는 JSON 웹 토큰이 며 1 시간 동안 유효 합니다. 수명이 긴 새로 고침 토큰도 제공 됩니다. 액세스 토큰이 만료 되 면 Office 클라이언트는 유효한 새로 고침 토큰을 사용 하 여 새 액세스 토큰을 가져옵니다. 사용자의 초기 인증이 여전히 유효한 경우이 exchange가 성공 합니다.  <br/>  새로 고침 토큰은 90 일 동안 유효 하며 지속적인 사용을 위해서는 해지할 때까지 유효 합니다.  <br/>  새로 고침 토큰은 다음과 같은 여러 가지 이벤트로 무효화 될 수 있습니다.  <br/>  새로 고침 토큰이 발급 된 이후 사용자의 암호가 변경 되었습니다.  <br/>  관리자는 사용자가 액세스 하려고 하는 리소스에 대 한 액세스를 제한 하는 조건부 액세스 정책을 적용할 수 있습니다.  <br/> |
 |Android, iOS 및 Windows 10 용 SharePoint 및 OneDrive 모바일 앱  <br/> |액세스 토큰의 기본 수명은 1 시간입니다. 새로 고침 토큰의 기본 최대 비활성 시간은 90 일입니다.  <br/> [토큰 및 토큰 수명 구성 방법에 대 한 자세한 정보](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> 새로 고침 토큰을 해지 하려면 사용자의 Microsoft 365 암호를 다시 설정할 수 있습니다.  <br/> |
 |Microsoft 365 로그인이 포함 된 Yammer  <br/> |브라우저의 수명입니다. 사용자가 브라우저를 닫고 새 브라우저에서 Yammer에 액세스 하는 경우 Yammer는 Microsoft 365를 사용 하 여이를 다시 인증 합니다. 사용자가 쿠키를 캐시 하는 타사 브라우저를 사용 하는 경우 브라우저를 다시 열 때 다시 인증 하지 않아도 될 수 있습니다.  <br/> > [!NOTE]> Yammer에 대해 Microsoft 365 로그인을 사용 하는 네트워크에만 유효 합니다.           |
    

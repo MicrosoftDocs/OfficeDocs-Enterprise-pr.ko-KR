@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: Microsoft 365을 배포한 후에는 아래의 일부 도구 및 기법을 사용 하 여 Microsoft 365 연결을 유지할 수 있습니다. 저속 네트워크에서 Microsoft 365을 사용 하기 위한 최상의 방법과 공식적인 서비스 상태 및 연속성 지침을 이해 하는 것이 좋습니다.
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 이 문서에서는 Microsoft 365 연결을 모니터링 하 고 유지 관리 하는 데 사용할 수 있는 도구와 방법에 대해 설명 합니다.
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571011"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606864"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Microsoft 365 연결 모니터링
 
@@ -41,7 +43,7 @@ Microsoft 365을 배포한 후에는 아래의 일부 도구 및 기법을 사�
 
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>참고 항목
+## <a name="related-topics"></a>관련 항목
 
 [Microsoft 365 Enterprise 서비스 및 응용 프로그램 구성](configure-services-and-applications.md)
   

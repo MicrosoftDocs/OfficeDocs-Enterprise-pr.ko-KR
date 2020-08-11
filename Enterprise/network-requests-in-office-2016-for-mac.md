@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Mac 용 Office 응용 프로그램은 macOS 플랫폼에서 기본 앱 환경을 제공 합니다. 각 앱은 네트워크 액세스를 사용할 수 없는 경우의 상태를 비롯 하 여 다양 한 시나리오에서 작동 하도록 설계 되었습니다. 컴퓨터가 네트워크에 연결 되 면 응용 프로그램은 일련의 웹 기반 서비스에 자동으로 연결 하 여 향상 된 기능을 제공 합니다. 이 백서에서는 응용 프로그램에서 연결을 시도 하는 끝점과 Url 및 제공 되는 서비스에 대해 설명 합니다. 이 정보는 네트워크 구성 문제를 해결 하 고 네트워크 프록시 서버에 대 한 정책을 설정할 때 유용 합니다. 이 문서의 세부 정보는 Office 365 URL 및 주소 범위 문서를 보완 하기 위해 작성 되었습니다.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 이 문서에서는 Mac 용 Office 응용 프로그램에서 연결을 시도 하는 끝점과 Url 및 제공 된 서비스에 대해 설명 합니다.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774953"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606724"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Mac용 Office의 네트워크 요청
 
@@ -94,7 +96,7 @@ URL 형식은 다음과 같이 정의 됩니다.
   
  **로그인**
   
-클라우드 기반 저장소에 로그인 할 때 다음 네트워크 끝점에 연결 됩니다. 계정 유형에 따라 각 서비스에 연결할 수 있습니다. 예시:
+클라우드 기반 저장소에 로그인 할 때 다음 네트워크 끝점에 연결 됩니다. 계정 유형에 따라 각 서비스에 연결할 수 있습니다. 예제:
   
 - **MSA: Microsoft 계정** -일반적으로 소비자 및 정품 시나리오에 사용 됩니다. 
     
@@ -129,7 +131,7 @@ URL 형식은 다음과 같이 정의 됩니다.
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |대비  <br/> |새로운 JSON 페이지 콘텐츠  <br/> |
    
- **Researcher**
+ **리서치 도구**
   
 다음 네트워크 끝점은 Microsoft 365 구독에만 적용 됩니다.
   
@@ -159,7 +161,7 @@ URL 형식은 다음과 같이 정의 됩니다.
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |<  <br/> |진단  <br/> |PowerPoint Designer 웹 서비스  <br/> |
    
- **PowerPoint 빠른 시작**
+ **PowerPoint QuickStarter**
   
 다음 네트워크 끝점은 Microsoft 365 구독에만 적용 됩니다.
   
@@ -322,7 +324,7 @@ Microsoft는 정기적으로 Office for Mac 업데이트를 릴리스 합니다 
 프록시 서버에서 인증을 요청 하는 경우 407 응답이 클라이언트에 반환 됩니다. 최상의 환경을 위해 Office for Mac 빌드 15.27 이상에 NTLM 및 Kerberos 서버 작업에 대 한 특정 수정 프로그램을 포함 하 고 있는지 확인 합니다.
   
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Office 365 URL 및 IP 주소 범위](urls-and-ip-address-ranges.md)
 

@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
-description: 2017 년 4 월 11 일에 Exchange Server 2007 지원 종료에 도달 했습니다. 아직 Exchange 2007에서 Microsoft 365, Office 365 또는 Exchange 2016로 마이그레이션을 시작한 적이 없는 경우에는 계획을 시작 하는 데 걸리는 시간입니다.
-ms.openlocfilehash: 7228d123a8f4fe21c3d92753fe3f60a7d2e4f67b
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.custom: seo-marvel-apr2020
+description: Exchange Server 2007이 지원 종료에 도달 하 고 Microsoft 365, Office 365 또는 Exchange 2016로의 마이그레이션 계획을 시작 하면 옵션에 대해 알아봅니다.
+ms.openlocfilehash: c77d3de47ea917730874253c286565971d80ea48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052440"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606404"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 지원 종료 로드맵
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 **2017 년 4 월 11 일**에 Exchange Server 2007 지원 종료에 도달 했습니다. 아직 Exchange 2007에서 Microsoft 365, Office 365 또는 Exchange 2016로 마이그레이션을 시작한 적이 없는 경우에는 계획을 시작 하는 데 걸리는 시간입니다. 
   

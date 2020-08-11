@@ -15,13 +15,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: SharePoint Online의 데이터 삭제에 대 한 설명
-ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 삭제 된 콘텐츠가 저장 되는 위치 및 기간에 대 한 데이터 삭제가 SharePoint Online에서 작동 하는 방식을 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 424cfcc1bcad53ff3e12278367614d048043e4bb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997818"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606294"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365에서 SharePoint Online 데이터 삭제
 

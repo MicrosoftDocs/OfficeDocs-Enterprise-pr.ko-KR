@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Microsoft 365 내의 보고 기능에 대 한 설명입니다.
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Azure Active Directory 및 Exchange Online을 포함 하 여 Microsoft 365 내의 다양 한 보고 기능에 대해 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997788"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606314"
 ---
-# <a name="microsoft-365-reporting-features"></a>Microsoft 365 보고 기능 
+# <a name="microsoft-365-reporting-features"></a>Microsoft 365 보고 기능
 
 Microsoft 365의 보고 기능은 Azure Active Directory (Azure AD), Exchange Online, 장치 관리, 관리 검토 및 DLP (데이터 손실 방지)에 대 한 다양 한 감사 보고서를 제공 합니다. 이러한 보고서는 Microsoft 365 활동 보고서와는 다릅니다.
 

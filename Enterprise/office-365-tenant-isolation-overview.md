@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365에 대 한 테 넌 트 격리를 적용 하는 방법을 요약해 서 설명 합니다.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Microsoft 365와 같은 클라우드 서비스에서 테 넌 트 격리를 적용 하는 방법에 대 한 요약 정보를 포함 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998647"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606544"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365의 테 넌 트 격리
 
@@ -30,8 +31,8 @@ ms.locfileid: "44998647"
 
 다중 테 넌 트 환경에서 테 넌 트 격리를 유지 관리 하는 두 가지 주요 목적은 다음과 같습니다.
 
-1.  테 넌 트 간에 고객 콘텐츠 누출 또는 무단 액세스 차단 한
-2.  한 테 넌 트의 작업이 다른 테 넌 트에 대 한 서비스에 악영향을 미치지 않도록 방지
+1.    테 넌 트 간에 고객 콘텐츠 누출 또는 무단 액세스 차단 한
+2.    한 테 넌 트의 작업이 다른 테 넌 트에 대 한 서비스에 악영향을 미치지 않도록 방지
 
 고객이 Microsoft 365 서비스 또는 응용 프로그램을 손상 하거나, 다음을 비롯 하 여 다른 테 넌 트 또는 Microsoft 365 시스템 자체의 정보에 무단으로 액세스 하지 못하도록 방지 하기 위해 Microsoft 365에서 여러 가지 보호 방법을 구현 했습니다.
 
@@ -46,8 +47,8 @@ ms.locfileid: "44998647"
 
 - [Azure Active Directory에서 격리 및 액세스 제어](office-365-isolation-in-azure-active-directory.md)
 - [Office Graph 및 Delve에서 테넌트 격리](office-365-isolation-in-graph-and-delve.md)
-- [Microsoft 365 검색에서 테 넌 트 격리](office-365-isolation-in-office-365-search.md)
+- [Microsoft 365 검색에서 테넌트 격리](office-365-isolation-in-office-365-search.md)
 - [Office 365 비디오에서 테넌트 격리](office-365-isolation-in-office-365-video.md)
 - [리소스 제한 사항](office-365-resource-limits.md)
 - [테넌트 경계 모니터링 및 테스트](office-365-monitoring-and-testing.md)
-- [Microsoft 365의 격리 및 액세스 제어](office-365-isolation-in-office-365.md)
+- [Microsoft 365에서 격리 및 액세스 제어](office-365-isolation-in-office-365.md)

@@ -7,18 +7,18 @@ manager: arnek
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: 다중 위치 환경에서 검색을 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: 다중 지리적 환경에서 검색을 구성 하는 방법을 알아봅니다. 비즈니스용 OneDrive와 같은 일부 클라이언트만 다중 지리적 환경에서 결과를 반환할 수 있습니다.
+ms.openlocfilehash: 94d8b9de0fc7eeb6b7fda20275686de62eaa9346
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433569"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605774"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo 검색 구성
 
@@ -88,12 +88,12 @@ Multi-Geo 환경이 설정된 후에 각 검색 센터는 자체 지리적 위�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo 검색은 수치 구체화에 대한 동적 버킷팅을 지원하지 않습니다.</td>
-<td align="left">숫자 구체화에 대해 <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" 매개 변수</a>를 사용합니다.</td>
+<td align="left">숫자 구체화에는 <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" 매개 변수</a> 를 사용 합니다.</td>
 </tr>
 <tr class="even">
 <td align="left">문서 ID</td>
 <td align="left">문서 ID에 의존하는 검색 기반 응용 프로그램을 개발하는 경우 Multi-Geo 환경의 문서 ID가 지리적 위치 간에 고유하지 않으며 지리적 위치별로 고유합니다.</td>
-<td align="left">위치 정보를 식별 할 수 있는 열을 추가했습니다. 고유성을 얻으려면 이 열을 사용하십시오. 이 열은 "GeoLocationSource"라고 합니다.</td>
+<td align="left">위치 정보를 식별 할 수 있는 열을 추가했습니다. 고유성을 얻으려면 이 열을 사용하십시오. 이 열의 이름은 "GeoLocationSource"입니다.</td>
 </tr>
 <tr class="odd">
 <td align="left">결과의 수</td>

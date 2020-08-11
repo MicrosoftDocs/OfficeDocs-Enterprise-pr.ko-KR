@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Microsoft 365 용 PowerShell을 사용 하 여 사용자 계정을 만드는 방법을 알아봅니다.
-ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 이 문서에서는 PowerShell을 사용 하 여 사용자 계정 또는 여러 Microsoft 365 사용자 계정을 만드는 방법을 알아봅니다.
+ms.openlocfilehash: 2f4d7b42e68e3bd426ea73c8568e0c603af06dcb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230794"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605994"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 사용자 계정 만들기
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365 용 PowerShell을 사용 하 여 사용자 계정, 특히 여러 사용자 계정을 효율적으로 만들 수 있습니다. PowerShell에서 사용자 계정을 만드는 경우에는 특정 계정 속성이 항상 필요 합니다. 다른 속성의 계정을 만들 필요는 없습니다 그렇지 않을 경우 중요 합니다. 다음 표에서는 이러한 속성에 대해 설명 합니다.
   
@@ -119,10 +120,10 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 3. 결과 볼 수 있는 출력 파일을 검토 합니다. 암호를 지정 하지 않았으므로 Microsoft 365이 생성 하는 임의의 암호가 출력 파일에 표시 됩니다.
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)

@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Microsoft 365 용 PowerShell을 사용 하 여 사용자 계정을 삭제 하는 방법을 알아봅니다.
-ms.openlocfilehash: 62d9dee2e6b0d2054116e5e5f005b5928112186d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 이 문서에서는 PowerShell에서 서로 다른 모듈을 사용 하 여 Microsoft 365 사용자 계정을 삭제 하는 방법을 알아봅니다.
+ms.openlocfilehash: d34201e2ef467ab4250ccde46a3d082b1b927d61
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230714"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605984"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 사용자 계정 삭제
 
@@ -117,8 +118,8 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 ## <a name="see-also"></a>참고 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)

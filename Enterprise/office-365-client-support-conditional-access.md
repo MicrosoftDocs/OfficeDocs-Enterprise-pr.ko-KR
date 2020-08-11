@@ -14,13 +14,14 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: 조건부 액세스에 대 한 Microsoft 365 클라이언트 앱 지원 이해
-ms.openlocfilehash: 6081af2ad3bca69978a10baabeae0a13d783f0ae
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Microsoft 365에 대 한 조건부 액세스를 지 원하는 플랫폼, 클라이언트 및 Powershell 모듈에 대해 설명 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 77fe8411109bf77287674d8c6fa1607a0689f46f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998506"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606702"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Microsoft 365 클라이언트 앱 지원-조건부 액세스
 
@@ -64,6 +65,6 @@ Microsoft 365의 플랫폼 지원에 대 한 자세한 내용은 [microsoft 365�
 > [!NOTE]
 > <sup>1</sup> Macos의 OneDrive에 대 한 지원이 곧 제공 될 예정입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

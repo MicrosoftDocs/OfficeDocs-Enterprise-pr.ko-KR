@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
-description: '이 문서는 관리자를 위해 작성되었습니다. 사용자가 Outlook 사서함에서 항목을 영구적으로 삭제 했습니까? 사용자가 다시 작업을 하려고 하지만 복구할 수는 없습니다. 제거 된 항목이 사용자 사서함에서 영구적으로 제거 되지 않은 경우 해당 항목을 복구할 수 있습니다. '
-ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: 이 문서에는 사용자 사서함에서 영구적으로 제거 하지 않은 경우 제거 된 항목을 복구 하는 데 도움이 되는 정보가 포함 되어 있습니다.
+ms.openlocfilehash: 04249494ca777ba09df7bf6495b8ac931e83bab7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998312"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606184"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>사용자 사서함에서 지운 편지함 복구 - 관리자 도움말
 

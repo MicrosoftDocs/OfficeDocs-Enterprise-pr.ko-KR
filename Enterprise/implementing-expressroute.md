@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: Office 365 용 Express를 통해 다양 한 인터넷 연결 Office 365 서비스에 대 한 대체 라우팅 경로를 제공 합니다. Office 365의 Express 기반 아키텍처는 네트워크에 해당 IP 접두사를 다시 배포 하기 위한 프로 비전 된 Express 회로에 인터넷을 통해 이미 액세스할 수 있는 Office 365 서비스의 공용 IP 접두사를 사용 하는 것입니다. Express를 사용 하면 많은 Office 365 서비스에 대해 인터넷 및가을 통해 여러 다른 라우팅 경로를 효과적으로 사용 하도록 설정할 수 있습니다. 네트워크에서의 라우팅 상태는 내부 네트워크 토폴로지가 디자인 되는 방식이 크게 변경 된 것일 수 있습니다.
-ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 다양 한 인터넷 연결 Office 365 서비스에 대 한 대체 라우팅 경로를 제공 하는 Office 365 용 Express를 구현 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 3495b66556a8bd8d9aa16aaa4a3283e6017e883c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230304"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605700"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365용 ExpressRoute 구현
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Office 365 용 Express를 통해 다양 한 인터넷 연결 Office 365 서비스에 대 한 대체 라우팅 경로를 제공 합니다. Office 365의 Express 기반 아키텍처는 네트워크에 해당 IP 접두사를 다시 배포 하기 위한 프로 비전 된 Express 회로에 인터넷을 통해 이미 액세스할 수 있는 Office 365 서비스의 공용 IP 접두사를 사용 하는 것입니다. Express를 사용 하면 많은 Office 365 서비스에 대해 인터넷 및가을 통해 여러 다른 라우팅 경로를 효과적으로 사용 하도록 설정할 수 있습니다. 네트워크에서의 라우팅 상태는 내부 네트워크 토폴로지가 디자인 되는 방식이 크게 변경 된 것일 수 있습니다.
   
@@ -570,7 +572,7 @@ Express 기반 연결을 사용 하 여 Office 365을 배포 하는 동안, Expr
   
 다음의 간단한 링크를 사용할 수 있습니다. [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   

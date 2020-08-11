@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: Microsoft Graph 및 Delve의 Microsoft 365 테 넌 트 격리에 대 한 설명입니다.'
-ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Office Graph 및 Delve에서 Microsoft 365 테 넌 트 격리가 작동 하는 방식에 대 한 설명을 찾습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 285f910362628f52c379fcf535da7d0b1365383a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998268"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605600"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft Graph 및 Delve에서 microsoft 365 테 넌 트 격리
 

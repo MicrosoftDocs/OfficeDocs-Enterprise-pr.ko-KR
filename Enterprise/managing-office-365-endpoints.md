@@ -13,16 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
-description: 일부 엔터프라이즈 네트워크는 일반 인터넷 위치에 대한 액세스를 제한하거나 상당한 수의 백홀이나 네트워크 트래픽 처리를 포함합니다. 이러한 네트워크의 컴퓨터에서 Office 365에 액세스할 수 있도록 하려면 네트워크 및 프록시 관리자는 Office 365 끝점 목록을 구성하는 FQDN, URL 및 IP 주소 목록을 관리해야 합니다. 네트워크 요청에서 Office 365에 연결할 수 있도록 하려면 이러한 목록을 직접 경로, 프록시 우회 및/또는 방화벽 규칙 및 PAC 파일에 추가해야 합니다.
-ms.openlocfilehash: 35f07538bd55386dc245286822eab9e14e70a3cf
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: 엔터프라이즈 조직 네트워크 아키텍처에서 작동 하도록 Office 365 끝점을 관리 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 336e1a0d92ee9844bbd9b020d03774473c1d738b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592162"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606324"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 끝점 관리
 

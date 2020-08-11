@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: 이 문서에서는 페이지를 로드할 때까지 JavaScript를 사용 하 여 이미지 로드를 지연 시키고 불필요 한 JavaScript 로드를 기다리는 방법으로 SharePoint Online 페이지의 로드 시간을 줄이는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: JavaScript를 사용 하 여 이미지 및 중요 하지 않은 JavaScript의 로드를 지연 시켜 SharePoint Online 페이지의 로드 시간을 줄이는 방법을 알아봅니다.
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009353"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605754"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online에서 이미지 및 JavaScript 로드 지연
 
@@ -34,7 +36,7 @@ ms.locfileid: "44009353"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript를 사용 하 여 SharePoint Online 페이지에서 이미지 로드를 지연 시켜 페이지 로드 시간 개선
 
-JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 \<img\> 태그에서 src 특성 값을 제거 하 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 대체 합니다. 예시:
+JavaScript를 사용 하 여 웹 브라우저에서 이미지를 미리 가져오는 것을 방지할 수 있습니다. 이렇게 하면 전반적인 문서 렌더링이 향상 됩니다. 이렇게 하려면 tag에서 src 특성 값을 제거 하 \<img\> 고 데이터-src와 같은 데이터 특성에 있는 파일에 대 한 경로로 바꿉니다. 예제:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-SharePoint Online의 경우 #s4-workspace \<div\> 태그의 scroll 이벤트에 다음 함수를 연결 해야 합니다. 이는 리본 메뉴가 페이지 맨 위에 계속 연결 되도록 하기 위해 창 이벤트가 재정의 되기 때문입니다.
+SharePoint Online의 경우 #s4-workspace 태그의 scroll 이벤트에 다음 함수를 연결 해야 \<div\> 합니다. 이는 리본 메뉴가 페이지 맨 위에 계속 연결 되도록 하기 위해 창 이벤트가 재정의 되기 때문입니다.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-확장명이 .js 인 JavaScript 파일로 텍스트 파일을 저장 합니다 (예: Delayloadimages.js)로).
+텍스트 파일을 확장명이 .js 인 JavaScript 파일로 저장 합니다 (예: delayLoadImages.js).
   
-Delayloadimages.js)로를 작성 한 후에는 SharePoint Online의 마스터 페이지에 파일 내용을 추가할 수 있습니다. 마스터 페이지의 머리글에 스크립트 링크를 추가 하 여이 작업을 수행 합니다. 마스터 페이지에 있는 JavaScript는 해당 마스터 페이지 레이아웃을 사용 하는 SharePoint Online 사이트의 모든 페이지에 적용 됩니다. 또는 사이트의 한 페이지 에서만이 항목을 사용 하려는 경우 스크립트 편집기 웹 파트를 사용 하 여 JavaScript를 페이지에 포함 합니다. 자세한 내용은 다음 항목을 참조 하십시오.
+delayLoadImages.js 작성을 마친 후에는 SharePoint Online의 마스터 페이지에 파일 내용을 추가할 수 있습니다. 마스터 페이지의 머리글에 스크립트 링크를 추가 하 여이 작업을 수행 합니다. 마스터 페이지에 있는 JavaScript는 해당 마스터 페이지 레이아웃을 사용 하는 SharePoint Online 사이트의 모든 페이지에 적용 됩니다. 또는 사이트의 한 페이지 에서만이 항목을 사용 하려는 경우 스크립트 편집기 웹 파트를 사용 하 여 JavaScript를 페이지에 포함 합니다. 자세한 내용은 다음 항목을 참조 하십시오.
   
 - [방법: SharePoint 2013에서 사이트에 마스터 페이지 적용](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [방법: SharePoint 2013에서 페이지 레이아웃 만들기](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>예제: SharePoint Online의 마스터 페이지에서 JavaScript Delayloadimages.js)로 파일 참조
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>예제: SharePoint Online의 마스터 페이지에서 JavaScript delayLoadImages.js 파일 참조
   
 이 작업을 수행 하려면 마스터 페이지에서 jQuery도 참조 해야 합니다. 다음 예제에서는 이미지가 하나만 로드 되었지만 페이지에 몇 개 더 추가 된 초기 페이지 로드를 볼 수 있습니다.
   

@@ -1,5 +1,5 @@
 ---
-title: PowerShell을 사용 하 여 Microsoft 365 관리
+title: PowerShell로 Microsoft 365 관리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: '요약: PowerShell을 사용 하 여 Microsoft 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, 보안 & 준수 센터를 관리 하는 방법을 알아봅니다.'
-ms.openlocfilehash: 741ec15a78db9393e11ba6d06720457e20741581
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: PowerShell을 사용 하 여 Microsoft 365 사용자 및 라이선스 및 Microsoft 365 앱을 관리 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: ed20ec5bbe05ab0be382b87c04ba2dbc9428b4cc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230514"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605934"
 ---
-# <a name="manage-microsoft-365-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 관리
+# <a name="manage-microsoft-365-with-powershell"></a>PowerShell로 Microsoft 365 관리
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365 용 PowerShell은 Microsoft 365 관리 센터를 보완 하는 강력한 관리 도구입니다. 예를 들어 PowerShell automation을 사용 하 여 여러 사용자 계정 및 라이선스를 보다 신속 하 게 관리 하 고 보고서를 만들 수 있습니다. Microsoft 365 사용자 및 라이선스, 비즈니스용 Skype Online, SharePoint Online, Exchange Online, 보안 & 준수 센터에 PowerShell을 사용 하는 방법을 알아봅니다.
   

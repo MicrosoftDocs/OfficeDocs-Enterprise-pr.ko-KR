@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 위성 지리적 위치에서 SharePoint Multi-Geo 사용
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 이 문서에서는 위성 지리적 위치에서 SharePoint 다중 Geo를 사용 하도록 설정 하는 방법에 대 한 전역 또는 SharePoint 관리자 정보를 제공 합니다.
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433489"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605854"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>위성 지리적 위치에서 SharePoint Multi-Geo 사용
 
@@ -38,11 +38,11 @@ ms.locfileid: "45433489"
 
 지리적 위치를 SPO 모드로 설정하려면 SPO 모드에서 설정하려는 지리적 위치에 연결하세요.
 
-1.  SharePoint Online 관리 셸을 여세요. 
-2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    SharePoint Online 관리 셸을 여세요. 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  서비스에서 다양한 게시 작업을 수행하고 테넌트를 다시 표시하는 동안 이 작업은 보통 1시간 정도 걸립니다. 최소 1시간이 지나면 Get-SPOMultiGeoExperience를 수행해 주세요.  이 작업을 수행하면 지리적 위치가 SPO 모드에 설정되었는지 여부가 표시됩니다.</br></br>
+4.    서비스에서 다양한 게시 작업을 수행하고 테넌트를 다시 표시하는 동안 이 작업은 보통 1시간 정도 걸립니다. 최소 1시간이 지나면 Get-SPOMultiGeoExperience를 수행해 주세요.  이 작업을 수행하면 지리적 위치가 SPO 모드에 설정되었는지 여부가 표시됩니다.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

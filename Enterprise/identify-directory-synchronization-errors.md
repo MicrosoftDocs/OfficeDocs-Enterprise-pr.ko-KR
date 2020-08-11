@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -20,13 +22,13 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Microsoft 365 관리 센터에서 디렉터리 동기화 오류를 확인 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 57ca9ce125679931adcca93621474cec9ee9b82f
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: Microsoft 365 관리 센터에서 디렉터리 동기화 오류 및 가능한 수정 사항을 확인 하는 방법을 알아봅니다.
+ms.openlocfilehash: 344cc71d192e6a73826c66c8bcbf8569d10e45d8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842080"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605710"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Microsoft 365에서 디렉터리 동기화 오류 보기
 

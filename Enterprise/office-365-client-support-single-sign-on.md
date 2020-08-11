@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Microsoft 365 클라이언트 앱이 single sign-on을 지원 합니다.
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Microsoft 365에 대 한 single sign-on을 지 원하는 플랫폼, 클라이언트 및 Powershell 모듈에 대해 설명 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998516"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605650"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 클라이언트 앱 지원-Single Sign-on
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 SSO (Single sign-on)는 사용자가 Azure Active Directory (Azure AD)의 응용 프로그램에 로그온 할 때 보안 및 편의성을 추가 합니다. Single sign-on을 사용 하는 경우 사용자는 도메인에 가입 된 장치, 회사 리소스, SaaS (software as a service) 응용 프로그램 및 웹 응용 프로그램에 액세스 하기 위해 한 계정으로 한 번씩 로그인 합니다.
 
@@ -66,6 +67,6 @@ Microsoft 365의 플랫폼 지원에 대 한 자세한 내용은 [microsoft 365�
 > <sup>3</sup> Android의 화이트 보드 지원 곧 제공 될 예정입니다. <br>
 > <sup>4</sup> Macos에서 Outlook, 팀 및 회사 포털에 대 한 지원이 곧 제공 될 예정입니다. <br>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -14,17 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft Microsoft 365의 데이터 복구 기능을 이해 합니다.
-ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Microsoft 365의 데이터 복구 및 복구에 대 한 디자인 및 원칙에 대해 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7f70b464cf6fe9bd6cb9a236320878fd6adb9db4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998472"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606654"
 ---
 # <a name="data-resiliency-in-microsoft-365"></a>Microsoft 365의 데이터 복구
-
-## <a name="introduction"></a>소개
 
 클라우드 컴퓨팅의 복잡 한 특성이 제공 되는 경우 Microsoft는 문제가 발생 하는 경우를 대비 하 여 문제에 대 한 것이 아니라는 것을 고려 합니다. 안정성을 최대화 하 고 문제가 발생 했을 때 고객에 게 부정적인 영향을 최소화 하도록 클라우드 서비스를 설계 합니다. Microsoft는 복잡 한 실제 인프라에 의존 하는 전통적인 전략을 넘어서 클라우드 서비스에 직접 중복성을 구축 했습니다. Microsoft는 덜 복잡 한 실제 인프라와 서비스에 데이터 복구를 구축 하 고 고객에 게 고가용성을 제공 하는 보다 지능적 소프트웨어를 조합 하 여 사용 합니다. 
 

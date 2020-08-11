@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: 프로덕션 환경의 Yammer enterprise 액세스 제어에 대 한 간략 한 요약입니다.'
-ms.openlocfilehash: 0da479eb36359ec6b795a8e4323441edc4678f1a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 이 문서에는 프로덕션 환경의 Yammer Enterprise Access 컨트롤에 대 한 간략 한 요약이 포함 되어 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a6157715836b046fa98fbdaf8427f7708b771081
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775117"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606494"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Yammer enterprise 액세스 제어 
 

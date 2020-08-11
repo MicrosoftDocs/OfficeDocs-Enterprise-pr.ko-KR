@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft가 해당 클라우드 서비스를 DoS (서비스 거부) 공격에 defends 하는 방법입니다.
-ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
-ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
+description: 이 문서에서는 Microsoft가 해당 클라우드 서비스를 DoS (서비스 거부) 공격에 defends 하는 방법을 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1eb4f7544d978cdbc1e3673bd1badefde7bc3dd6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529091"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606644"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>서비스 거부 공격에 대해 Microsoft 365 클라우드 서비스 방어
 

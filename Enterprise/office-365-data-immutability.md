@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365의 데이터 불변성을 정의 하 고 설명 합니다.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Microsoft 365에서 규정 준수, 내부 거 버 넌 스 요구 사항 및 소송 위험을 해결 하기 위해 검색 가능한 형태의 데이터를 보존 하는 방법을 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998462"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605640"
 ---
 # <a name="immutability-in-microsoft-365"></a>Microsoft 365의 불변성
 
@@ -28,7 +29,7 @@ ms.locfileid: "44998462"
 
 일반적으로 불변성에 대 한 일반적인 방법은 전자 메일 메시지를 별도의 읽기 전용 저장소 위치로 이동 하는 방식으로 작동 합니다. 이러한 시스템은 검색에 대 한 사서함 항목을 보존 하기 위한 목적을 제공 하지만 일반적인 일별 워크플로에서 보존 된 항목을 제거 하 여 사용자 환경에 영향을 줍니다. IT 전문가를 위해이 불변성 접근법을 사용 하려면 별도의 서버 및 저장소 인프라를 배포 하 고 지속적으로 유지 관리 해야 합니다. 검색은 메일 시스템 외부의 도구를 통해 수행 되며 관련 배포 및 유지 관리 비용을 포함 합니다.
 
-Microsoft 365 및 해당 서비스의 보관에 대 한 보존 정책 기능을 통해 들어오는, 내부 및 나가는 데이터의 여러 클래스를 보존 하 고 보존할 수 있습니다. 여기에는 다음이 포함됩니다.
+Microsoft 365 및 해당 서비스의 보관에 대 한 보존 정책 기능을 통해 들어오는, 내부 및 나가는 데이터의 여러 클래스를 보존 하 고 보존할 수 있습니다. 해당 활동은 다음과 같습니다.
 
 - 인바운드 및 아웃 바운드 전자 메일 통신
 - 전자 메일 양식 또는 공유 온라인 문서에 포함 된 서적 및 레코드

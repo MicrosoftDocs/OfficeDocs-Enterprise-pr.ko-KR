@@ -17,14 +17,15 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 - LIL_Placement
+- seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: PowerShell을 사용 하 여 사용자가 Microsoft 365 서비스에 액세스할 수 없도록 설정 합니다.
-ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: 이 문서에서는 PowerShell을 사용 하 여 사용자의 Microsoft 365 서비스에 대 한 액세스를 사용 하지 않도록 설정 하는 방법을 알아봅니다.
+ms.openlocfilehash: f546014b83e0910e38817e0b7ef84d67f1b88614
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502643"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605974"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell을 사용 하 여 Microsoft 365 서비스에 액세스할 수 없도록 설정
 
@@ -171,9 +172,9 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="related-topic"></a>관련 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   

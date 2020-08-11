@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -22,13 +24,13 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 최신 인증이 Office 2013 및 2016 클라이언트 앱에 대해 다르게 작동 하는 방식을 알아봅니다.
-ms.openlocfilehash: 469dd665a3f427db3e2ae3731945e53b900f05e9
-ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
+description: Microsoft 365 최신 인증 기능이 Office 2013 및 2016 클라이언트 앱에 대해 다르게 작동 하는 방식을 알아봅니다.
+ms.openlocfilehash: 20a6f495ac7e8bd6b2a918ca05b9edd074c7d61c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533493"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606914"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>최신 인증이 Office 2013, Office 2016 및 Office 2019 클라이언트 앱에 작동 하는 방식
 
@@ -60,8 +62,8 @@ Microsoft Office 2013이 설치되었고 Windows를 실행 중인 장치(예: �
   
 |**레지스트리 키**|**유형**|**값** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |개  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |개 |
   
 비즈니스용 [skype와 함께 ADAL (최신 인증)을 사용](https://go.microsoft.com/fwlink/p/?LinkId=785431) 하 여 비즈니스용 skype에서 작동 하는 방식에 대해 알아봅니다. 
   
@@ -125,7 +127,7 @@ Office 2016 및 Office 2019 클라이언트는 기본적으로 최신 인증을 
 |Office 2013  <br/> |아니요  <br/> |아니요  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |
 |Office 2013  <br/> |예, EnableADAL = 1  <br/> |예  <br/> |가장 먼저 인증을 시도 합니다. 서버에서 최신 인증 연결을 거부 하는 경우 Microsoft Online 로그인 도우미가 사용 됩니다. 비즈니스용 Skype Online 테 넌 트를 사용할 수 없는 경우 서버는 최신 인증을 거부 합니다.  <br/> |Microsoft Online 로그인 도우미 전용입니다.  <br/> |
    
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Windows 장치에서 Office 2013를 사용하기 위한 최신 인증의 사용](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 

@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Exchange Online 및 Microsoft 365 내의 다양 한 데이터 복구 측면에 대 한 설명입니다.
-ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Exchange Online 및 Microsoft 365 내의 다양 한 데이터 복구 측면에 대 한 설명을 찾습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 18d8179f37cb97316b71a43cccfc631a5cc550da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998739"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606614"
 ---
 # <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Microsoft 365에서 Exchange Online 데이터 복구
 
-## <a name="introduction"></a>소개
 Exchange 데이터베이스에 영향을 줄 수 있는 두 가지 유형의 손상은 일반적으로 하드웨어 (특히 저장 하드웨어) 문제가 발생 하 여 발생 하는 물리적 손상 및 기타 요인으로 인 한 논리적 손상입니다. 일반적으로 Exchange 데이터베이스 내에서 발생할 수 있는 논리적 손상에는 다음과 같은 두 가지 유형이 있습니다. 
 - **데이터베이스 논리적 손상** -데이터베이스 페이지 체크섬은 일치 하지만 페이지의 데이터가 논리적으로 잘못 되었습니다. 데이터베이스 엔진 (ESE (Extensible Storage Engine))에서 데이터베이스 페이지를 쓰려고 했지만 운영 체제가 성공 메시지를 반환 하는 경우에는 데이터가 디스크에 기록 되지 않거나 잘못 된 위치에 기록 된 경우에 발생할 수 있습니다. 이를 *손실 플러시*라고 합니다. ESE에는 데이터베이스 및 기타 데이터 손실 시나리오의 물리적인 손상을 방지 하기 위해 설계 된 다양 한 기능 및 보호책이 포함 되어 있습니다. 데이터 손실 로부터 손실 플러시가 발생 하지 않도록 하기 위해 ESE에는 데이터베이스의 손실 플러시 감지 메커니즘 (단일 페이지 복원)이 포함 되어 있습니다. 
 - **저장소 논리적 손상** -사용자가 기대 하지 않는 방식으로 데이터를 추가, 삭제 또는 조작 합니다. 이러한 경우는 일반적으로 타사 응용 프로그램에 의해 발생 합니다. 일반적으로 사용자가 해당 개체를 손상으로 보기 때문에 손상이 발생 합니다. Exchange 저장소는 논리적 손상을 생성 한 트랜잭션이 유효한 MAPI 작업의 계열로 간주 합니다. Exchange Online의 원본 [위치 유지](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) 기능은 사용자 또는 응용 프로그램에 의해 콘텐츠가 영구적으로 삭제 되는 것을 방지 하므로 저장소 논리적 손상의 보호 기능을 제공 합니다. 

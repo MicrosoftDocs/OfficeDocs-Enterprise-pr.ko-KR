@@ -7,18 +7,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Microsoft 365 Multi-Geo를 사용하여 Microsoft 365 범위를 여러 지리적 지역으로 확장합니다.
-ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: 이 문서에서는 microsoft 365 다중 위치를 사용 하 여 Microsoft 365 현재 지역을 여러 지역 지역으로 확장 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 74fdf77ed28ea443cdb14bd37c2735b3a221e14d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433809"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605510"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

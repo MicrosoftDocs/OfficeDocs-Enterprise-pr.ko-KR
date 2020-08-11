@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: 다중 지역 환경에서 SharePoint 사이트를 특정한 지리적 위치로 제한하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 1b1b072709ee54b2a18255798995650fc9f9942e
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 이 문서에서는 여러 지리적 환경에서 SharePoint 사이트를 지정 된 지리적 위치로 제한 하는 방법을 알아봅니다.
+ms.openlocfilehash: 7f0147d803fe4dbc6aa444a5e5014884c0f00beb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433479"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606154"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>SharePoint 사이트 콘텐츠를 지리적 위치로 제한
 

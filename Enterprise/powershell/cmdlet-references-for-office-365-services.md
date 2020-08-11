@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 서비스에 대 한 Cmdlet 참조
+title: Office 365 서비스에 대한 cmdlet 참조
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: '요약: Azure Active Directory, Exchange Online, SharePoint Online, 비즈니스용 Skype Online 및 보안 & 준수에 대 한 Microsoft 365 for PowerShell cmdlet 참조 항목을 소개 합니다.'
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Azure AD, Exchange Online, SharePoint Online, 비즈니스용 Skype Online 및 보안 & 준수에 대 한 Microsoft 365 PowerShell cmdlet 참조 항목을 찾습니다.
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230864"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606024"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 서비스에 대 한 Cmdlet 참조
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Office 365 서비스에 대한 cmdlet 참조
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 다양 한 Microsoft 365 서비스에 대 한 Cmdlet 참조 항목에서는 각 cmdlet을 사용 하는 방법에 대 한 자세한 정보 및 지침을 제공 합니다. 또한 PowerShell을 지 원하는 각 Microsoft 365 서비스에는 서로 다른 연결 지침이 필요 합니다.
   
@@ -67,9 +69,9 @@ Microsoft 365 보안 및 &amp; 준수 센터 cmdlet 참조 항목은 [Exchange O
 
 
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

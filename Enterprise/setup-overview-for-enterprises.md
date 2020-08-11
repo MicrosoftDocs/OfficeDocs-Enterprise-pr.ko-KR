@@ -16,15 +16,17 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 이러한 개요 단계는 네트워크 설정, id 만들기, 엔터프라이즈 용 Microsoft 365 앱 배포, 데이터 마이그레이션, 조직의 사용자가 Microsoft 365 사용을 시작 하는 데 도움을 주기 위한 것입니다.
-ms.openlocfilehash: 274cd4ae285ae97825b4d46a125cd9eeecf83312
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: 이러한 개요 단계는 네트워크를 설정 하 고, id를 만들고, Microsoft 365 앱을 배포 하 고, 데이터를 마이그레이션하는 데 도움을 주기 위한 것입니다.
+ms.openlocfilehash: aa1e4a364843ab6c502e037d464517b643dddbdc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735946"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605130"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>조직에 Microsoft 365 Enterprise 배포
 

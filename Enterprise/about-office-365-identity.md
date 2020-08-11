@@ -14,19 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-mar2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Microsoft 365에서 사용자 id가 관리 되는 방식을 알아봅니다.
-ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 클라우드 전용 또는 하이브리드 id 모델을 사용 하 여 Microsoft 365에서 Azure AD 사용자 id 서비스를 관리 하는 방법을 알아봅니다.
+ms.openlocfilehash: fee2f0e9c8a2ee1216fb2a37e6d517348111b064
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433619"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605834"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 id 모델 및 Azure Active Directory
 
@@ -98,6 +100,6 @@ Microsoft 365에는 Microsoft 365 관리 센터 또는 PowerShell을 사용 하 
 하이브리드 id 모델이 필요한 경우 [하이브리드 id](plan-for-directory-synchronization.md)를 참조 하세요.
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

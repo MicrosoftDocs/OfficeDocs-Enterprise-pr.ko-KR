@@ -1,5 +1,5 @@
 ---
-title: PowerShell을 사용 하 여 Microsoft 365에 대 한 보고서 만들기
+title: PowerShell을 사용하여 Microsoft 365 보고서 만들기
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '요약: microsoft 365 용 PowerShell을 사용 하 여 Microsoft 365 관리 센터에서 생성할 수 없는 보고서를 만듭니다.'
-ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: d2d03d6ac170fef95352a2aabf6cd27176202a1e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229804"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605320"
 ---
-# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>PowerShell을 사용 하 여 Microsoft 365에 대 한 보고서 만들기
+# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>PowerShell을 사용하여 Microsoft 365 보고서 만들기
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365 관리 센터에서는 다양한 보고서가 제공됩니다. 그러나 이러한 보고서에는 제공되는 정보가 너무 많거나 부족할 수도 있습니다. Microsoft 365 용 PowerShell이 필요한 경우
   
@@ -59,13 +61,13 @@ Microsoft 365 관리 센터에서는 다양한 보고서가 제공됩니다. 그
     
   - [PowerShell 사용하여 Exchange Online 보고서 표시](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a>참고 항목
+## <a name="related-topics"></a>관련 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
   
-[PowerShell을 사용 하 여 SharePoint Online 관리](manage-sharepoint-online-with-office-365-powershell.md)
+[PowerShell로 SharePoint 온라인 관리](manage-sharepoint-online-with-office-365-powershell.md)
   
-[PowerShell을 사용 하 여 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 사용자 계정, 라이선스 및 그룹 관리](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

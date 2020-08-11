@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: PowerShell을 사용 하 여 Microsoft 365에 대 한 디렉터리 동기화를 해제 하는 방법을 알아봅니다.
-ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
+description: 이 문서에서는 PowerShell을 사용 하 여 Microsoft 365에 대 한 디렉터리 동기화를 해제 하는 방법에 대 한 정보를 확인 합니다.
+ms.openlocfilehash: 815d20ff6a0697f1533e44305e20e61a9282312b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387711"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603650"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Microsoft 365에 대 한 디렉터리 동기화 해제
 PowerShell을 사용 하 여 디렉터리 동기화를 해제할 수 있습니다. 그러나 디렉터리 동기화를 문제 해결 단계로 해제 하지 않는 것이 좋습니다. 디렉터리 동기화 문제를 해결 하는 데 도움이 필요한 경우 [Microsoft 365의 디렉터리 동기화 문제 해결](fix-problems-with-directory-synchronization.md) 문서를 참조 하십시오. 

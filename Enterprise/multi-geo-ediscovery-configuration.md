@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: Microsoft 365 Multi-Geo의 eDiscovery를 구성하는 방법을 알아봅니다.
-ms.openlocfilehash: 7257e5e9a5a7154d574743e3e515e49e9dc714b2
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Region 매개 변수를 사용 하 여 Microsoft 365 다중 Geo의 위성 위치에서 사용할 eDiscovery를 구성 하는 방법을 알아봅니다.
+ms.openlocfilehash: dec73aef93951bd86f2b84c4eba637bac725603a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433829"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606804"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo eDiscovery 구성
 

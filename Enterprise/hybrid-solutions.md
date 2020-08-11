@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: '요약: 다음 문서를 참조하여 Microsoft Azure에서 Office Server 작업을 배포합니다.'
-ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Microsoft Azure에서 Office Server 작업을 배포 하는 데 유용한 정보에 대 한 링크 목록을 제공 합니다.
+ms.openlocfilehash: abefa94dd193286021fd187499eac28b6bc41f87
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229954"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605724"
 ---
 # <a name="hybrid-solutions"></a>하이브리드 솔루션
 
@@ -46,7 +48,7 @@ Azure의 SharePoint Server 2013 작업을 위해 다음 사항을 준비해주�
 - [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="see-also"></a>참고 항목
+## <a name="related-topics"></a>관련 항목
 
 [클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   

@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: 이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다. 탐색을 선택 하 고 구성 하는 것은 SharePoint Online의 사이트 성능 및 확장성에 큰 영향을 줍니다. 이 문서는 클래식 팀 사이트에는 적용 되지 않습니다.
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 이 문서에서는 sharepoint Online에서 SharePoint 게시를 사용 하는 탐색 옵션 사이트에 대해 설명 합니다.
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004763"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606764"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online에 대 한 탐색 옵션
 
@@ -33,7 +35,7 @@ ms.locfileid: "44004763"
 >[!NOTE]
 >메가 메뉴, 연속 탐색 또는 허브 탐색 같은 최신 SharePoint 탐색 옵션을 사용 중인 경우이 문서는 사이트에 적용 되지 않습니다. 최신 SharePoint 사이트 아키텍처는 보다 평면화 된 사이트 계층 구조와 허브 및 스포크 모델을 활용 합니다. 이렇게 하면 SharePoint 게시 기능을 사용할 필요가 없는 많은 시나리오가 실현 될 수 있습니다.
 
-## <a name="overview"></a>개요
+## <a name="overview-of-navigation-options"></a>탐색 옵션 개요
 
 탐색 공급자 구성은 전체 사이트에 대 한 성능을 크게 향상 시킬 수 있으며, SharePoint 사이트의 요구 사항에 맞게 효율적으로 확장 되는 탐색 공급자 및 구성을 선택 하기 위해 신중 하 게 고려해 야 합니다. 두 가지 기본 탐색 공급자와 사용자 지정 탐색 구현도 있습니다.
 
@@ -71,15 +73,15 @@ ms.locfileid: "44004763"
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>구조적 탐색 캐싱을 구현 하는 방법
 
-**사이트 설정** > **Look and Feel** > **탐색**의 디자인에서 전역 탐색 또는 현재 탐색에 대해 구조적 탐색이 선택 되어 있는지 확인할 수 있습니다. **페이지 표시** 를 선택 하면 성능에 부정적인 영향을 줄 수 있습니다.
+**사이트 설정**  >  탐색의**디자인**에서  >  **Navigation**전역 탐색 또는 현재 탐색에 대해 구조적 탐색이 선택 되어 있는지 확인할 수 있습니다. **페이지 표시** 를 선택 하면 성능에 부정적인 영향을 줄 수 있습니다.
 
 ![하위 사이트 표시 선택 된 구조적 탐색](media/SPONavOptionsStructuredShowSubsites.png)
 
-캐싱은 사이트 모음 수준과 사이트 수준에서 사용 하거나 사용 하지 않도록 설정할 수 있으며 기본적으로는 둘 다 사용 하도록 설정 됩니다. 사이트 모음 수준에서 사용 하도록 설정 하려면 사이트 **설정** > **사이트 모음 관리** > **사이트 모음 탐색**에서 **캐싱 사용**확인란을 선택 합니다.
+캐싱은 사이트 모음 수준과 사이트 수준에서 사용 하거나 사용 하지 않도록 설정할 수 있으며 기본적으로는 둘 다 사용 하도록 설정 됩니다. 사이트 모음 수준에서 사용 하도록 설정 하려면 사이트 **설정**  >  **사이트 모음 관리**  >  **사이트 모음 탐색**에서 **캐싱 사용**확인란을 선택 합니다.
 
 ![사이트 수준에서 캐싱 사용](media/structural-nav/structural-nav-caching-site-coll.png)
 
-사이트 수준에서 사용 하도록 설정 하려면 **사이트 설정** > **탐색**에서 **캐싱 사용**확인란을 선택 합니다.
+사이트 수준에서 사용 하도록 설정 하려면 **사이트 설정**  >  **탐색**에서 **캐싱 사용**확인란을 선택 합니다.
 
 ![사이트 수준에서 캐싱 사용](media/structural-nav/structural-nav-caching-site.png)
 
@@ -99,7 +101,7 @@ ms.locfileid: "44004763"
 
 Docs.microsoft.com에는 관리 되는 탐색 세부 정보에 대 한 몇 가지 문서가 있습니다. 예를 들어 [SharePoint Server의 관리 탐색 개요](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)를 참조 하세요.
 
-관리 되는 탐색을 구현 하려면 사이트의 탐색 구조에 해당 하는 Url을 사용 하 여 용어를 설정 합니다. 관리 탐색은 대부분의 경우 구조적 탐색을 대체 하기 위해 수동으로 맞게 조정 된 수도 있습니다. 예를 들면 다음과 같습니다.
+관리 되는 탐색을 구현 하려면 사이트의 탐색 구조에 해당 하는 Url을 사용 하 여 용어를 설정 합니다. 관리 탐색은 대부분의 경우 구조적 탐색을 대체 하기 위해 수동으로 맞게 조정 된 수도 있습니다. 예제:
 
 ![SharePoint Online 사이트 구조](media/SPONavOptionsListOfSites.png))
 
@@ -119,15 +121,15 @@ Docs.microsoft.com에는 관리 되는 탐색 세부 정보에 대 한 몇 가�
 
 검색을 사용 하면 연속 크롤링을 사용 하 여 백그라운드로 작성 되는 인덱스를 활용할 수 있습니다. 검색 결과가 검색 인덱스에서 추출 되 고 결과가 보안 트리밍 됩니다. 이는 보안 조정이 필요한 경우 일반적으로 기본 탐색 공급자 보다 빠릅니다. 구조적 탐색에 대해 검색 사용 (특히 사이트 구조가 복잡 한 경우) 페이지 로드 시간이 크게 단축 됩니다. 이에 대 한 관리 방식의 주요 이점은 보안 트리밍이 향상 된다는 것입니다.
 
-이 방법에는 사용자 지정 마스터 페이지를 만들고 기본 탐색 코드를 사용자 지정 HTML로 바꾸는 작업이 포함 됩니다. 다음 예제에 나와 있는이 절차에 따라 파일 `seattle.html`의 탐색 코드를 바꿉니다. 이 예제에서는 `seattle.html` 파일을 열고 전체 요소 `id="DeltaTopNavigation"` 를 사용자 지정 HTML 코드로 바꿉니다.
+이 방법에는 사용자 지정 마스터 페이지를 만들고 기본 탐색 코드를 사용자 지정 HTML로 바꾸는 작업이 포함 됩니다. 다음 예제에 나와 있는이 절차에 따라 파일의 탐색 코드를 바꿉니다 `seattle.html` . 이 예제에서는 파일을 열고 `seattle.html` 전체 요소를 `id="DeltaTopNavigation"` 사용자 지정 HTML 코드로 바꿉니다.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>예: 마스터 페이지에서 기본 탐색 코드 교체
 
 1. 사이트 설정 페이지로 이동 합니다.
 2. **마스터 페이지**를 클릭 하 여 마스터 페이지 갤러리를 엽니다.
-3. 여기에서 라이브러리를 탐색 하 고 파일 `seattle.master`을 다운로드할 수 있습니다.
+3. 여기에서 라이브러리를 탐색 하 고 파일을 다운로드할 수 있습니다 `seattle.master` .
 4. 텍스트 편집기를 사용 하 여 코드를 편집 하 고 다음 스크린 샷에서 코드 블록을 삭제 합니다.<br/>![표시 된 코드 블록 삭제](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. `<SharePoint:AjaxDelta id="DeltaTopNavigation">` 와 `<\SharePoint:AjaxDelta>` 태그 사이에 있는 코드를 제거 하 고 다음 코드 조각으로 바꿉니다.<br/>
+5. 와 태그 사이에 있는 코드를 제거 `<SharePoint:AjaxDelta id="DeltaTopNavigation">` `<\SharePoint:AjaxDelta>` 하 고 다음 코드 조각으로 바꿉니다.<br/>
 
 ```javascript
 <div id="loading">
@@ -206,13 +208,13 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. 결과가 자체 nodes 배열에 할당 되 고 계층 구조는 배열형을 사용 하 여 배열 자체에 출력을 할당 하는 개체를 기반으로 작성 됩니다. 이 배열은 HTML에 바인딩된 개체입니다. 이 작업은 자체 개체를 ko-kr Binding () 함수에 전달 하 여 toggleView () 함수에서 수행 됩니다.<br/>이렇게 하면 계층 구조 배열이 다음 HTML에 바인딩됩니다.<br/>
+8. 결과는 자체 nodes 배열에 할당 되며, linq.js를 사용 하 여 배열 자체에 출력을 할당 하는 개체를 통해 계층 구조가 작성 됩니다. 이 배열은 HTML에 바인딩된 개체입니다. 이 작업은 자체 개체를 ko-kr Binding () 함수에 전달 하 여 toggleView () 함수에서 수행 됩니다.<br/>이렇게 하면 계층 구조 배열이 다음 HTML에 바인딩됩니다.<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-And `mouseenter` `mouseexit` 에 대 한 이벤트 처리기는 `addEventsToElements()` 함수에서 수행 되는 하위 사이트 드롭다운 메뉴를 처리 하기 위해 최상위 탐색에 추가 됩니다.
+And에 대 한 이벤트 처리기는 `mouseenter` `mouseexit` 함수에서 수행 되는 하위 사이트 드롭다운 메뉴를 처리 하기 위해 최상위 탐색에 추가 됩니다 `addEventsToElements()` .
 
 복잡 한 탐색 예제에서 로컬 캐싱을 사용 하지 않고 새로운 페이지 로드를 수행 하면 서버에 소요 된 시간이 벤치 마크 구조적 탐색에서 아래로 세분화 되어 관리 되는 탐색 방법과 비슷한 결과가 표시 됩니다.
 
@@ -456,11 +458,11 @@ function addEventsToElements() {
 
 ```
 
-위에 표시 된 코드를 요약 하려면이 `jQuery $(document).ready` 함수를 `viewModel object` 만든 다음 해당 개체에 대 `loadNavigationNodes()` 한 함수를 호출 합니다. 이 함수는 클라이언트 브라우저의 HTML5 로컬 저장소에 저장 된 이전에 작성 된 탐색 계층 구조를 로드 하거나 함수 `queryRemoteInterface()`를 호출 합니다.
+위에 표시 된 코드를 요약 하려면 `jQuery $(document).ready` 이 함수를 `viewModel object` 만든 다음 `loadNavigationNodes()` 해당 개체에 대 한 함수를 호출 합니다. 이 함수는 클라이언트 브라우저의 HTML5 로컬 저장소에 저장 된 이전에 작성 된 탐색 계층 구조를 로드 하거나 함수를 호출 `queryRemoteInterface()` 합니다.
 
-`QueryRemoteInterface()`스크립트 앞부분에서 정의한 쿼리 `getRequest()` 매개 변수와 함께 함수를 사용 하 여 요청을 작성 하 고 서버에서 데이터를 반환 합니다. 이 데이터는 기본적으로 사이트 모음에서 다양 한 속성과 함께 데이터 전송 개체로 표시 되는 모든 사이트의 배열입니다.
+`QueryRemoteInterface()``getRequest()`스크립트 앞부분에서 정의한 쿼리 매개 변수와 함께 함수를 사용 하 여 요청을 작성 하 고 서버에서 데이터를 반환 합니다. 이 데이터는 기본적으로 사이트 모음에서 다양 한 속성과 함께 데이터 전송 개체로 표시 되는 모든 사이트의 배열입니다.
 
-이 데이터는 이전에 정의한 HTML에 값 `SPO.Models.NavigationNode` 을 데이터 바인딩할 `Knockout.js` 때 사용할 예측 가능한 속성을 만들기 위해 사용 하는 이전에 정의 된 개체로 구문 분석 됩니다.
+이 데이터는 이전에 정의한 `SPO.Models.NavigationNode` `Knockout.js` HTML에 값을 데이터 바인딩할 때 사용할 예측 가능한 속성을 만들기 위해 사용 하는 이전에 정의 된 개체로 구문 분석 됩니다.
 
 그런 다음 개체를 결과 배열에 추가 합니다. 이 배열은 나중에 페이지를 로드할 때 성능을 개선 하기 위해 녹아웃을 사용 하 여 JSON으로 구문 분석 되며 로컬 브라우저 저장소에 저장 됩니다.
 
@@ -474,9 +476,9 @@ function addEventsToElements() {
 
 - jQueryhttps://jquery.com/
 - KnockoutJS -https://knockoutjs.com/
-- Linq .js- https://linqjs.codeplex.com/또는 github.com/neuecc/linq.js
+- Linq.js https://linqjs.codeplex.com/ 또는 github.com/neuecc/linq.js
 
-현재 버전의 LinqJS에는 위의 코드에서 사용 된 ByHierarchy 메서드가 포함 되지 않으며 탐색 코드가 손상 됩니다. 이 문제를 해결 하려면 명령줄 `Flatten: function ()`앞에 있는 Linq .js 파일에 다음 메서드를 추가 합니다.
+현재 버전의 LinqJS에는 위의 코드에서 사용 된 ByHierarchy 메서드가 포함 되지 않으며 탐색 코드가 손상 됩니다. 이 문제를 해결 하려면 줄 앞에 있는 Linq.js 파일에 다음 메서드를 추가 합니다 `Flatten: function ()` .
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

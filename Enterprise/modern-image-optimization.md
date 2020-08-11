@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: SharePoint Online 최신 사이트 페이지에서 이미지를 최적화하는 방법을 알아봅니다.
-ms.openlocfilehash: b5b1af0e78b3be7f84b1ee83048010feabddf82e
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: SharePoint online에 포함 된 도구를 사용 하 여 SharePoint Online 최신 사이트 페이지의 이미지를 최적화 하는 방법을 알아봅니다.
+ms.openlocfilehash: 6130855d163da738a34605ba1057bbfc956ebf23
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571131"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606904"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online 최신 사이트 페이지에서 이미지 최적화
 

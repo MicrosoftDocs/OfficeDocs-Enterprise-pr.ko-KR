@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: SharePoint Online 최신 사이트 페이지의 웹 파트 성능을 최적화하는 방법에 대해 배워보세요.
-ms.openlocfilehash: ffa4937f734a803b34af277fb697bc991f0d0d3c
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 페이지 진단을 사용 하 여 SharePoint Online 최신 사이트 페이지에서 웹 파트의 성능을 최적화 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 14ad6152ba039a33b599f5b9467daef7665b7178
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571021"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606874"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online 최신 사이트 페이지에서 웹 파트 성능 최적화
 

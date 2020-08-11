@@ -1,5 +1,5 @@
 ---
-title: PowerShell을 사용 하 여 Microsoft 365로 IMAP 마이그레이션 수행
+title: PowerShell을 사용하여 Microsoft 365로 IMAP 마이그레이션 수행
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: '요약: Windows PowerShell을 사용 하 여 Microsoft 365로 IMAP 마이그레이션을 수행 하는 방법을 알아봅니다.'
-ms.openlocfilehash: fa53fd1829121bb697277805e4f07d25ec2179b9
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: PowerShell을 사용 하 여 Microsoft 365로의 IMAP (Internet Mail Access Protocol) 마이그레이션을 수행 하는 방법을 알아봅니다.
+ms.openlocfilehash: 0254f35791ac83aed1afff293c98fcd654a27480
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229774"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606204"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>PowerShell을 사용 하 여 Microsoft 365로 IMAP 마이그레이션 수행
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>PowerShell을 사용하여 Microsoft 365로 IMAP 마이그레이션 수행
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365 배포 프로세스의 일환으로, IMAP (Internet Mail Access Protocol) 전자 메일 서비스에서 Microsoft 365로 사용자 사서함의 콘텐츠를 마이그레이션하도록 선택할 수 있습니다. 이 문서에서는 Exchange Online PowerShell을 사용 하 여 전자 메일 IMAP 마이그레이션에 대 한 작업을 안내 합니다. 
   

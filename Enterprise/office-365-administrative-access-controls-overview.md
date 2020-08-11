@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: '요약: Microsoft 365의 관리 액세스 제어 및 데이터 분류에 대 한 개요입니다.'
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: 이 문서에서는 Microsoft 365의 관리 액세스 제어 및 데이터 분류에 대 한 개요를 제공 합니다.
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774973"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606714"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Microsoft 365의 관리 액세스 제어 
 

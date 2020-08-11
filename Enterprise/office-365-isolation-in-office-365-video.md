@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: Office 365 비디오의 테 넌 트 격리에 대 한 설명입니다.'
-ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 테 넌 트 격리에서 각 테 넌 트의 저장 된 비디오를 Office 365 비디오와 별도로 유지 하는 방법에 대 한 설명을 찾습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dc341241308a9e54dae2894587ef0fb6b5db0148
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998701"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605580"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 비디오에서 테넌트 격리
 

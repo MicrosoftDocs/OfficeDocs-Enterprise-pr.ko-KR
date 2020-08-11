@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: 새 데이터 센터? 지속적인 고객 요구 및 사용 증가를 지원 하기 위해 용량을 추가 하 고 리소스를 계산 합니다. 또한 새 데이터 센터 지역는 핵심 고객 데이터에 대 한 상주 데이터를 제공 합니다. 핵심 고객 데이터는 Microsoft Online Services 용어로, Exchange Online 사서함 콘텐츠 (전자 메일 본문, 일정 항목 및 전자 메일 첨부 파일 콘텐츠)와 SharePoint Online 사이트 콘텐츠 및 해당 사이트 내에 저장 된 파일 및 비즈니스용 OneDrive에 업로드 된 파일에 정의 된 고객 데이터의 하위 집합을 지칭 하는 용어입니다.
-ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+description: 새로운 Office 365 데이터 센터의 지역 및 data 상주 옵션을 사용 하 여 핵심 데이터를 새 지역으로 이동 하도록 요청 하는 방법에 대해 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d612c77eec4cb14e9522f3003c557e7e5bffd900
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547726"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606824"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>핵심 데이터를 새로운 Microsoft 365 datacenter (지역)로 이동
 

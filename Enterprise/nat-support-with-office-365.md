@@ -11,22 +11,24 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: '요약: NAT (Network Address Translation)를 사용 하 여 조직 내에서 IP 주소당 사용할 수 있는 정확한 클라이언트 수를 대략적으로 결정 하는 방법에 대해 자세히 설명 합니다.'
-ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
+description: 이 문서에서는 NAT를 사용 하 여 조직에서 IP 주소당 사용할 수 있는 클라이언트 수를 대략적으로 설명 하는 방법에 대 한 세부 정보를 제공 합니다.
+ms.openlocfilehash: f5914efb8042076e3ae7cad0d5fcb1f7eb97c12a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201612"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606774"
 ---
 # <a name="nat-support-with-office-365"></a>NAT 지원(Office 365)
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 이전에는 네트워크 포트당 약 2000 클라이언트에서 IP 주소당 365에 사용 해야 하는 최대 Exchange 클라이언트 수를 제안 했습니다.
   
@@ -76,7 +78,7 @@ Office 365 호스팅 팩을 사용 하는 경우 Microsoft Office Outlook 2007 �
   
 클라이언트 부하를 추가 공용 IP 주소에 분산 하는 방법에는 여러 가지가 있습니다. 사용 가능한 전략은 회사 게이트웨이 솔루션의 기능에 따라 달라 집니다. 가장 간단한 방법은 사용자 주소 공간을 분할 하 고 각 게이트웨이에 여러 IP 주소를 정적으로 "할당" 하는 것입니다. 많은 게이트웨이 장치에서 제공 하는 또 다른 대안은 IP 주소 풀을 사용 하는 기능입니다. 주소 풀의 이점은 보다 동적이 고 사용자 기반이 증가 함에 따라 조정이 필요할 가능성이 더 낮습니다.
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

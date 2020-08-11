@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: '요약: Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만들 수 있습니다. 이 문서에서는 이 솔루션을 디자인하고 구현하는 방법을 설명합니다.'
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Azure를 사용 하 여 온-프레미스 SharePoint 팜에 대 한 재해 복구 환경을 만드는 방법에 대해 설명 합니다.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998170"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606134"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure에서 SharePoint Server 2013 재해 복구
 
@@ -496,7 +498,7 @@ SharePoint 팜에 대 한 외부 액세스의 경우 인트라넷에서 클라�
 |C  <br/> |80  <br/> |데이터 루트 디렉터리  <br/> |<DriveLetter>: \\ 프로그램 파일 \\ Microsoft SQL Server\\  <br/> |
 |E-learning  <br/> |500  <br/> |사용자 데이터베이스 디렉터리  <br/> |<DriveLetter>: \\ 프로그램 파일 \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ 데이터  <br/> |
 |식량  <br/> |500  <br/> |사용자 데이터베이스 로그 디렉터리  <br/> |<DriveLetter>: \\ 프로그램 파일 \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ 데이터  <br/> |
-|1g  <br/> |500  <br/> |Temp DB 디렉터리  <br/> |<DriveLetter>: \\ 프로그램 파일 \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ 데이터  <br/> |
+|G  <br/> |500  <br/> |Temp DB 디렉터리  <br/> |<DriveLetter>: \\ 프로그램 파일 \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ 데이터  <br/> |
 |도움말  <br/> |500  <br/> |Temp DB 로그 디렉터리  <br/> |<DriveLetter>: \\ 프로그램 파일 \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ 데이터  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>테스트 환경 설정

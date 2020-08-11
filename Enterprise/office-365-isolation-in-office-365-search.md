@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 검색에서 테 넌 트 격리
+title: Microsoft 365 검색에서 테넌트 격리
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: Microsoft 365 검색의 테 넌 트 격리에 대 한 설명입니다.'
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 테 넌 트 격리가 Microsoft 365 검색에서 테 넌 트 데이터를 분리 하는 방법에 대 한 설명을 찾습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998258"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605590"
 ---
-# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 검색에서 테 넌 트 격리
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 검색에서 테넌트 격리
 
 SharePoint Online 검색에서는 테 넌 트 간의 정보 누출을 방지 하는 보호 기능을 사용 하 여 공유 데이터 구조의 효율성을 균형 있게 조정 합니다. 이 모델에서는 다음과 같은 검색 기능을 사용 하지 않습니다.
 

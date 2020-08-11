@@ -13,22 +13,24 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: 네트워크 계획 및 테스트에 대 한 정보 링크와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
-ms.openlocfilehash: 530e07aeb2f3420f0c752f2b254913a42c73f8ee
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
+description: 이 문서에는 네트워크 계획, 테스트 및 Office 365 마이그레이션에 대 한 정보에 대 한 링크가 포함 되어 있습니다.
+ms.openlocfilehash: 56a4d0179f373fd846d2a746d081829a04e94088
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117270"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606754"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365의 네트워크 및 마이그레이션 계획
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 이 문서에는 네트워크 계획 및 테스트에 대 한 정보와 Office 365로의 마이그레이션에 대 한 링크가 포함 되어 있습니다.
   
@@ -73,7 +75,7 @@ Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려�
   
 1. 사용자를 즉시 활용할 수 있도록 하기 원하십니까? 네트워크가 너무 많이 사용 되지 않는 경우 SharePoint Online, Exchange Online, Lync Online 등 Office 365 사용에 대 한 팁을 보려면 [느린 네트워크에서 office 365을 사용할](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) 때 유용한 정보를 참조 하세요. 이 문서에서는 Office 365 환경을 최적화 하기 위해 TechNet 및 Support.office.com의 콘텐츠 로드에 대해 설명 하 고, 웹 페이지를 사용자 지정 하는 간편한 방법 및 최상의 Office 365 환경을 위한 Internet Explorer 설정을 설정 하는 방법에 대 한 정보를 제공 합니다. 
     
-2. Office [365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 을 읽고 office 365 트래픽을 안전 하 게 관리 하 고 가능한 최적의 성능을 얻는 데 필요한 연결 원칙을 이해 합니다. 이 문서는 Office 365 네트워크 연결을 안전 하 게 최적화 하기 위한 가장 최근 지침을 이해 하는 데 도움이 됩니다. 
+2. Office [365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples) 을 읽고 office 365 트래픽을 안전 하 게 관리 하 고 가능한 최적의 성능을 얻는 데 필요한 연결 원칙을 이해 합니다. 이 문서는 Office 365 네트워크 연결을 안전하게 최적화하기 위한 최신 가이드를 이해하는 데 도움이 됩니다. 
     
 3. Windows 업데이트 일정을 신중 하 게 관리 하 여 메일 마이그레이션 성능을 향상 시킵니다. 클라이언트 컴퓨터를 일괄적으로 업데이트 하 고 네트워크 대역폭 사용을 조정 하기 위해 Office 365로 마이그레이션하기 전에 모든 클라이언트 컴퓨터가 업데이트 되는지 확인할 수 있습니다. 자세한 내용은 [최신 업데이트에 대 한 Office 365 데스크톱 수동 업데이트 및 구성을](https://support.microsoft.com/gp/office-2013-365-update)참조 하십시오.
     
@@ -112,6 +114,6 @@ Office 365 환경을 개선 하는 방법에 대 한 자세한 내용을 보려�
     
 - [Office 365 서비스에 대 한 설정 가이드](setup-guides-for-office-365.md)
  
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

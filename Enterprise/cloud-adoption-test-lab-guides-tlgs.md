@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '요약: 이러한 TLGs (테스트 랩 가이드)를 사용 하 여 Microsoft 365에 대 한 데모, 개념 증명 또는 개발/테스트 환경을 설정 합니다.'
-ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 198185f75ef2f0a9347508e17717811feb3a0cd9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230014"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606084"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>TLGs (테스트 랩 가이드)를 사용 하 여 Microsoft 365 테스트
 
@@ -48,9 +49,9 @@ TLG를 사용하면 Microsoft 제품을 빠르게 학습할 수 있습니다. �
 
     이 단계는 선택 사항이며 하이브리드 ID에 대한 시뮬레이트된 엔터프라이즈 구성을 구축하려는 경우에 필요합니다.
     
-Office 365와 Microsoft 365 모두에 적용되는 추가 TLG를 보려면 [여기](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)를 클릭합니다.  
+Office 365 및 Microsoft 365에 모두 적용 되는 추가 TLGs에 대 한 자세한 내용은 [테스트 랩 가이드](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)로 이동 하세요.  
     
-## <a name="see-also"></a>참고 항목
+## <a name="related-topics"></a>관련 항목
 
 [클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   

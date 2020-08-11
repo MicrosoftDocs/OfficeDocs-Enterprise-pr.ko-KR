@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 - SPO_Content
-description: Office 365와 비즈니스 간의 연결 성능을 확인 하는 몇 가지 간단한 방법은 연결의 대략적인 기준선을 설정 하는 데 사용할 수 있습니다. 클라이언트 컴퓨터 연결의 성능 기록을 알면 초기에 문제를 검색 하 고 문제를 예측 하는 데 도움이 될 수 있습니다.
-ms.openlocfilehash: ffccd9f5763d7d47dbb3aa02d3063582d1fa83cc
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 클라이언트 컴퓨터 연결 기록을 확인 하 여 초기 문제를 조기에 검색 하는 데 도움이 되는 방법을 알아봅니다.
+ms.openlocfilehash: 31849e14b5dec7cba3878a85219ef2b8994f0fb9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774553"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605470"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>초기 계획 및 성능 기록을 사용하여 Office 365 성능 조정
 
@@ -325,7 +327,7 @@ Office 365에 대 한 인터넷 요청에 따라 수행 되는 작업을 실제�
   
 성능 문제를 해결 하기 위해 *지금* 까지 성능 문제가 발생 했을 때 추적을 수행 해야 합니다. 로그를 수집 하는 데 사용할 수 있는 적절 한 도구를 사용 해야 하며, 작업 계획 (즉, 가장 적합 한 정보를 수집 하기 위해 수행할 문제 해결 작업 목록)이 필요 합니다. 가장 먼저 수행할 작업은 시간을 반영 하는 폴더에 파일을 저장할 수 있도록 테스트의 날짜 및 시간을 기록 하는 것입니다. 다음으로, 문제 단계 자체로 세분화 합니다. 다음은 테스트에 사용 하는 정확한 단계입니다. 기본 사항을 잊지 마십시오. Outlook 에서만 문제가 발생 하는 경우 문제 동작이 하나의 Office 365 서비스 에서만 수행 되는지 기록해 야 합니다. 이 문제의 범위를 좁혀 해결할 수 있는 문제를 중점적으로 파악 하는 데 도움이 됩니다. 
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Office 365 끝점 관리](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 

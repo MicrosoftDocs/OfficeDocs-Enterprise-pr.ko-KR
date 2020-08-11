@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: microsoft 담당자 365에 대 한 지침을 소개 합니다.'
-ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 이 문서에서는 microsoft 고객을 위한 Microsoft 직원 차단 모범 사례에 365 대 한 개요를 확인할 수 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52b872d9b8b49b0ed72cdfb0d879712a6e129a33
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775097"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605490"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Microsoft 365 담당자 컨트롤
 

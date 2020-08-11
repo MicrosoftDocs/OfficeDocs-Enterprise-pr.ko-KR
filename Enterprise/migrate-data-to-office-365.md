@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: FastTrack 배포를 옵트아웃 했 고 데이터를 Microsoft 365로 마이그레이션할 준비가 되 면이 위치를 시작 합니다.
-ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.custom: seo-marvel-apr2020
+description: 이 문서에서는 조직 데이터를 Microsoft 365로 마이그레이션하는 데 도움이 되는 리소스를 확인할 수 있습니다.
+ms.openlocfilehash: b7598b6d8ccf566c43aacded5237dc4dc22fe42e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711851"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605670"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>조직 데이터를 Microsoft 365 Enterprise로 마이그레이션
 

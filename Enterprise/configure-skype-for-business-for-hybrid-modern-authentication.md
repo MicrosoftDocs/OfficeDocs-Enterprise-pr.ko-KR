@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법 이며 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스 및 비즈니스용 Skype 하이브리드에 사용할 수 있습니다.
-ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: 비즈니스용 Skype 온-프레미스에서 HMA (하이브리드 최신 인증)를 사용 하도록 구성 하 여 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 방법을 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e82325281341d35454161f03873acc30898ad536
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052511"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605764"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>하이브리드 최신 인증을 사용하도록 비즈니스용 Skype 온-프레미스를 구성하는 방법
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 최신 인증은 보다 안전한 사용자 인증 및 권한 부여를 제공 하는 id 관리 방법 이며 비즈니스용 Skype 서버 온-프레미스 및 Exchange server 온-프레미스 및 비즈니스용 Skype 하이브리드에 사용할 수 있습니다.
   
@@ -73,7 +74,7 @@ ms.locfileid: "45052511"
   
 지원 되는 토폴로지의 [MA가 있는 비즈니스용 Skype에 대 한 지원 가능성 항목](https://technet.microsoft.com/library/mt803262.aspx) 을 참조 하세요.
   
- **중요** 시작 하기 전에 모든 필수 구성 요소가 충족 되었는지 다시 한 번 확인 합니다. 이 정보는 [여기](hybrid-modern-auth-overview.md)에서 찾을 수 있습니다.
+ **중요** 시작 하기 전에 모든 필수 구성 요소가 충족 되었는지 다시 한 번 확인 합니다. 이 정보는 [하이브리드 최신 인증 개요 및 필수 구성 요소](hybrid-modern-auth-overview.md)에 나와 있습니다.
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>필요한 모든 HMA 관련 정보 수집
 

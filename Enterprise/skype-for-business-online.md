@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 비즈니스용 skype에 대 한 관리자 도움말 가져오기-비즈니스용 Skype, 네트워크, 모임 및 IM, 사용자를 위한 외부 액세스를 설정 합니다. 설정 구성, 문제 해결 및 사용 현황 보고서 보기
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 관리자는 네트워크, 모임, IM 및 사용자에 대 한 외부 액세스를 포함 하 여 비즈니스용 Skype Online의 부분을 설정 하는 데 도움이 되는 도움말을 찾을 수 있습니다.
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841115"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603660"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365의 비즈니스용 Skype Online - 관리자 도움말
 
@@ -40,7 +41,7 @@ Office 365 비즈니스 에디션 관리자는 Microsoft의 해박한 지원 에
   
 - [사용자가 외부 비즈니스용 Skype 사용자와 연락하도록 허용](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [비즈니스용 Skype 사용자가 Skype 대화 상대를 추가할 수 있도록 허용](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [비즈니스용 Skype 사용자가 Skype 연락처를 추가하도록 허용](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>통화 및 비디오 품질 향상
 
@@ -52,7 +53,7 @@ Office 365 비즈니스 에디션 관리자는 Microsoft의 해박한 지원 에
     
 - [비즈니스용 Skype에서 오디오 및 비디오 문제 해결](https://support.office.com/article/62777bc6-c52b-47ae-84ba-a8905c3b71dc)
     
-## <a name="set-up-skype-for-business-online"></a>비즈니스용 Skype 온라인 설정
+## <a name="set-up-skype-for-business-online"></a>비즈니스용 Skype Online 설정
 
 - [비즈니스용 Skype 추가 기능 라이선스](https://support.office.com/article/3ed752b1-5983-43f9-bcfd-760619ab40a7)
     

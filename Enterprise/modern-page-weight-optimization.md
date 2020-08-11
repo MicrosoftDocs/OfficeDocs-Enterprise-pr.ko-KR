@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: SharePoint Online 최신 사이트 페이지에서 페이지 부하를 최적화하는 방법을 학습하세요.
-ms.openlocfilehash: d571508648973a73efe1367c4d09b8cc6c8eb522
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 페이지 진단 도구를 사용 하 여 SharePoint Online의 최신 사이트 페이지에서 페이지 가중치를 최적화 하는 방법을 알아봅니다.
+ms.openlocfilehash: 0a658217b89dd50ce1c6e58024d4d78d19998612
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571111"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606894"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online 최신 사이트 페이지에서 페이지부하 최적화
 

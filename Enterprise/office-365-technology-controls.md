@@ -14,13 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: microsoft 365에 대 한 Microsoft의 기술 제어 관행에 대 한 개요입니다.'
-ms.openlocfilehash: ef17d00cdeac4a5c7fa9dd1b2d5b5a644bb62ddb
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: 이 문서에서는 microsoft 365의 기술 제어를 위해 Microsoft에서 사용 하는 도구 및 기술에 대 한 개요를 제공 합니다.
+ms.openlocfilehash: 4944fcdac1142344178d289be1e5699b80b47683
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774853"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606274"
 ---
 # <a name="microsoft-365-technology-controls"></a>Microsoft 365 기술 컨트롤 
 

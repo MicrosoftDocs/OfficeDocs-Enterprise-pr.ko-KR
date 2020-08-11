@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Office 365에서 Azure Express 경로를 사용 하는 방법과이를 사용 하 여 배포 하는 경우 네트워크 구현 프로젝트를 계획 하는 방법을 알아봅니다.
+ms.openlocfilehash: 3d74d8b9274aebd92710f859a8c39aed12fe8da2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230034"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605794"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365용 Azure Express 경로
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Azure Express를 Office 365에서 사용 하는 방법과 Office 365에 사용할 Azure Express 경로를 배포 하는 경우에 필요한 네트워크 구현 프로젝트를 계획 하는 방법에 대해 알아봅니다. Azure에서 실행 되는 인프라 및 플랫폼 서비스는 네트워크 아키텍처 및 성능 고려 사항에 영향을 주는 경우가 많습니다. 이러한 경우 Azure에 대 한 모든 방법을 사용할 것을 권장 합니다. Office 365 및 Dynamics 365과 같은 서비스 제품을 제공 하는 소프트웨어는 인터넷을 통해 안전 하 고 안정적으로 액세스할 수 있도록 작성 되었습니다. [Office 365 네트워크 연결을 평가](assessing-network-connectivity.md)하는 문서에서 인터넷 성능 및 보안에 대해 자세히 설명 하 고 office 365의 Azure express를 고려할 수 있는 경우를 확인할 수 있습니다.
 
@@ -100,7 +102,7 @@ Office 365에 대 한 Express를 구입 하려면 하나 이상의 [승인 된 �
 
 [Office 365에 대 한 express](https://aka.ms/ert)를 등록할 준비가 되셨습니까?
 
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
 
@@ -124,6 +126,6 @@ Office 365에 대 한 Express를 구입 하려면 하나 이상의 [승인 된 �
 
 [Office 365 네트워크 및 성능 조정](network-planning-and-performance.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

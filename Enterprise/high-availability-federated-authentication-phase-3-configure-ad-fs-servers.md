@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: '요약: Microsoft Azure에서 Microsoft 365에 대 한 고가용성 페더레이션 인증용 AD FS (Active Directory Federation Services) 서버를 만들고 구성 합니다.'
-ms.openlocfilehash: e4fa1ac49d9c9a60567d587416347093ff0784c9
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: Microsoft Azure에서 Microsoft 365에 대 한 고가용성 페더레이션 인증을 위해 AD FS 서버를 만들고 구성 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 3b4805dd29eb62b337cb455530615fd9c13c0f5c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102516"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606374"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>고가용성 페더레이션 인증 3단계: AD FS 서버 구성
 

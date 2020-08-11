@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365는 전 세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 설계 되었습니다. 서비스가 발전 함에 따라 Microsoft 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 향상 되었습니다.
-ms.openlocfilehash: 0ccf729dc8eddfd99ffc0b70c8ab56e31451be88
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: eae7e56c13ab0d0799226c834dd7d9092c8f9551
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997962"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605804"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Microsoft 365 네트워크 연결 평가
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365는 전 세계의 모든 고객이 인터넷 연결을 사용 하 여 서비스에 연결할 수 있도록 설계 되었습니다. 서비스가 발전 함에 따라 Microsoft 365의 보안, 성능 및 안정성이 인터넷을 사용 하 여 서비스에 대 한 연결을 설정 하는 고객에 따라 향상 되었습니다.
   
@@ -107,13 +109,13 @@ Microsoft 365 연결 테스트에 대해 자세히 살펴보고 [새로운 네�
   
 여기서는 다음을 수행 하는 데 사용할 수 있는 간단한 링크를 제공 [ https://aka.ms/o365networkconnectivity 합니다.](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>참고 항목
+## <a name="related-topics"></a>관련 항목
 
 [Microsoft 365 네트워크 연결 개요](office-365-networking-overview.md)
 
 [Microsoft 365 네트워크 연결 원칙](https://aka.ms/o365networkingprinciples)
 
-[Office 365 끝점 관리](managing-office-365-endpoints.md)
+[Office 365 엔드포인트 관리](managing-office-365-endpoints.md)
 
 [Office 365 URL 및 IP 주소 범위](urls-and-ip-address-ranges.md)
 

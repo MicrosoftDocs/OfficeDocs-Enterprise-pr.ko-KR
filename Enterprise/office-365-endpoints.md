@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: '요약: 서로 다른 Microsoft 365 클라우드의 인터넷 끝점에 대 한 다음 문서를 참조 하세요.'
-ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Microsoft 365 트래픽에 대 한 대상 IP 주소 및 Url을 보려면 다른 Microsoft 365 클라우드의 인터넷 끝점에 대 한이 문서 목록을 사용 하십시오.
+ms.openlocfilehash: 1ef9d3a97beb14a1d51827d145f6fdc644c49f3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592202"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606624"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 끝점
 

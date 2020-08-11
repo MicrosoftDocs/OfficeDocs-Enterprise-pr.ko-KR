@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '요약: 사이트 간 VPN 연결을 사용하여 Office Server 작업용 프레미스 간 Azure Virtual Network를 구성하는 방법을 알아봅니다.'
-ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 939ba28b1fc2b21a93e22ce019879fef73d58c1c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230074"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606054"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>온-프레미스 네트워크를 Microsoft Azure Virtual Network에 연결
 
@@ -32,7 +33,7 @@ ms.locfileid: "45230074"
 
 예를 들어 Azure 가상 컴퓨터에서 실행 되는 디렉터리 동기화 서버는 온-프레미스 도메인 컨트롤러에 계정의 변경 내용을 쿼리하고 해당 변경 내용을 Microsoft 365 구독과 동기화 해야 합니다. 이 문서에서는 Azure 가상 컴퓨터를 호스팅할 준비가 된 사이트 간 VPN (가상 사설망) 연결을 사용 하 여 크로스-프레미스 Azure virtual network를 설정 하는 방법을 보여 줍니다.
 
-## <a name="overview"></a>개요
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>크로스-프레미스 Azure virtual network 구성
 
 Azure의 가상 시스템은 온-프레미스 환경에서 격리할 필요가 없습니다. Azure Virtual Machine을 온-프레미스 네트워크 리소스에 연결하려면 프레미스 간 Azure Virtual Network를 구성해야 합니다. 다음 다이어그램은 Azure의 가상 컴퓨터가 있는 프레미스 간 Azure Virtual Network를 배포하는 데 필요한 구성 요소를 표시합니다.
   

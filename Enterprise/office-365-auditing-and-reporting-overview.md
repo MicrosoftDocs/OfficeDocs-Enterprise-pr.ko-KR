@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Microsoft 365 및 서비스 보증 내의 감사 및 보고 기능에 대 한 개요
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Office 365, Microsoft 365 및 서비스 보증 내의 감사 및 보고 기능에 대 한 개요입니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774963"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606684"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft 클라우드 서비스의 감사 및 보고
 
@@ -58,6 +59,6 @@ Microsoft OneDrive 관리 센터에서는 조직의 비즈니스용 OneDrive 설
 
 - [eDiscovery 및 검색 기능](office-365-ediscovery-and-search-features.md)
 - [Microsoft 365 보고 기능](office-365-reporting-features.md)
-- [Microsoft 365 관리 활동 API](office-365-management-activity-api.md)
+- [Microsoft 365 관리 작업 API](office-365-management-activity-api.md)
 - [Microsoft 365 사서함 마이그레이션](office-365-mailbox-migrations.md)
-- [Microsoft 365 엔지니어링에 대 한 내부 로깅](office-365-internal-logging.md)
+- [Microsoft 365 엔지니어링에 대한 내부 로깅](office-365-internal-logging.md)

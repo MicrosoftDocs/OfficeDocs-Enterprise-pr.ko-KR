@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
-description: Microsoft 365 Enterprise 서비스 및 응용 프로그램 구성
-ms.openlocfilehash: 915d4baa18705e813f6d11a35dff6208c26ab0d3
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: 'Microsoft 365 Enterprise 서비스 및 응용 프로그램 (예: SharePoint, Exchange 및 비즈니스용 Skype)을 구성 합니다.'
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4ce56110cb11a6b13d5cd384d813f449156f45fc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735956"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606064"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Microsoft 365 Enterprise 서비스 및 응용 프로그램 구성
 

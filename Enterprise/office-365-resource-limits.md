@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: Microsoft 365 내의 다양 한 응용 프로그램에 대 한 리소스 제한에 대해 설명 합니다.'
-ms.openlocfilehash: c3f10be1e64cb5d355d319a603cc0c1d2f238dc7
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Microsoft 365 내의 다양 한 응용 프로그램에 대 한 리소스 제한에 대 한 정보를 확인할 수 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4d2e7987620891ddeac2c4fa08aaeb203f001f57
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997855"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606304"
 ---
 # <a name="resource-limits"></a>리소스 제한 사항
 

@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: '요약: SharePoint 2013 솔루션을 Microsoft Azure 가상 컴퓨터에서 호스트할 수 있습니다. 적합 한 솔루션 유형과 Microsoft Azure를 설정 하 여이를 호스트 하는 방법에 대해 알아봅니다.'
-ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Microsoft Azure 가상 컴퓨터에서 호스트할 수 있는 SharePoint 2013 솔루션의 유형과 Azure를 호스트 하도록 설정 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: f76d5020ab4695f48edca956d6593040c42dcc70
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997900"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605690"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013용 Microsoft Azure 아키텍처
 
@@ -33,7 +35,7 @@ Azure는 SharePoint Server 2013 솔루션을 호스트 하는 데 적합 한 환
 
 Azure 인프라 서비스는 SharePoint 솔루션을 호스팅하기 위한 뛰어난 옵션입니다. 다른 솔루션 보다이 플랫폼에 적합 한 몇 가지 솔루션이 있습니다. 다음 표에는 권장 해결 방법이 나와 있습니다.
   
-|**해결 방법**|**Azure에이 솔루션을 권장 하는 이유**|
+|**솔루션**|**Azure에이 솔루션을 권장 하는 이유**|
 |:-----|:-----|
 |개발 및 테스트 환경  <br/> |이러한 환경을 손쉽게 만들고 관리할 수 있습니다.  <br/> |
 |Azure에 대 한 온-프레미스 SharePoint 팜의 재해 복구  <br/> |**호스팅된 보조 데이터 센터** 다른 지역의 보조 데이터 센터에 투자 하는 대신 Azure를 사용 합니다. <br/> **저렴 한 재해 복구 환경** 온-프레미스 재해 복구 환경 보다 리소스를 줄이고 유지 관리 하 고 비용을 지불 합니다. 리소스 수는 콜드 대기, 웜 대기 또는 핫 대기 중에서 선택한 재해 복구 환경에 따라 달라 집니다. <br/> **보다 탄력적 플랫폼** 재해가 발생 하는 경우 복구 SharePoint 팜을 쉽게 확장 하 여 부하 요구 사항을 충족할 수 있습니다. 리소스가 더 이상 필요 하지 않은 경우에 확장 됩니다. <br/> [Microsoft Azure의 SharePoint Server 2013 재해 복구를](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)참조 하세요.  <br/> |
@@ -217,7 +219,7 @@ SharePoint 팜의 계층에 가용성 집합을 추가 하면 구현이 완료 �
   
 ## <a name="see-also"></a>참고 항목
 
-[클라우드 도입 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
+[클라우드 채택 및 하이브리드 솔루션](cloud-adoption-and-hybrid-solutions.yml)
   
 [SharePoint Server 2013을 사용하는 Microsoft Azure의 인터넷 사이트](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

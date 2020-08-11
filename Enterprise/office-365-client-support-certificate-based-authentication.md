@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 인증서 기반 인증에 대 한 Microsoft 365 클라이언트 앱 지원을 제공 합니다.
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 인증서 기반 인증에 대 한 Microsoft 365 클라이언트 앱 지원에 대 한 세부 정보를 확인 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998600"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606674"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Microsoft 365 클라이언트 앱 지원-인증서 기반 인증
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 인증서 기반 인증을 사용 하면 Windows, Android 또는 iOS 장치에서 클라이언트 인증서를 사용 하 여 Azure Active Directory에 인증할 수 있습니다. 이 기능을 구성 하면 모바일 장치에서 특정 메일 및 Microsoft Office 응용 프로그램에 대 한 사용자 이름 및 암호 조합을 입력할 필요가 없습니다.
 
@@ -67,6 +68,6 @@ Microsoft 365의 플랫폼 지원에 대 한 자세한 내용은 [microsoft 365�
 > <sup>3</sup> 웹 앱에서 PowerApps 및 화이트 보드에 대 한 지원이 곧 제공 될 예정입니다. <br>
 > <sup>4</sup> Android의 화이트 보드에 대 한 지원이 곧 제공 될 예정입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

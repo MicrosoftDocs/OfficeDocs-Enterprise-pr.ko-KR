@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 최신 인증을 위해 Microsoft 365 클라이언트 앱을 지원 합니다.
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Microsoft 365에 대 한 최신 인증을 지 원하는 플랫폼, 클라이언트 및 Powershell 모듈에 대해 설명 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998496"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606664"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Microsoft 365 클라이언트 앱 지원-최신 인증
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 최신 인증은 여러 플랫폼의 Office 클라이언트 앱에 대해 ADAL (Active Directory 인증 라이브러리) 기반 로그인을 사용 하도록 설정 합니다. 이를 통해 MFA (Multi-factor Authentication), 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능을 사용할 수 있습니다.
 
@@ -65,6 +66,6 @@ Microsoft 365의 플랫폼 지원에 대 한 자세한 내용은 [microsoft 365�
 > <sup>1</sup> 웹 앱에 대 한 화이트 보드 및 비즈니스용 Skype 지원을 곧 사용할 수 있습니다. <br>
 > <sup>2</sup> Android에서 화이트 보드에 대 한 지원이 곧 제공 될 예정입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

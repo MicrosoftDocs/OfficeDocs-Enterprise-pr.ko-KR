@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: 인터넷 연결이 항상 빠른 속도로 작동 하지 않는 경우에는 유용 하지 않을까요? 해당 일이 곧 제공 될 예정입니다. 그러나이 경우에도 balky 네트워크를 해결 하기 위해 수행할 수 있는 실질적인 작업을 계속 해 서 수행 해야 합니다.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: 이 문서에서는 저속 네트워크에서 Office 365을 사용 하기 위해 채택할 수 있는 모범 사례를 안내 합니다.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844959"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605784"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>저속 네트워크에서의 Office 365 사용에 대 한 모범 사례
 
@@ -180,7 +181,7 @@ OneNote의 장점은 데스크톱, 랩톱, 태블릿 또는 스마트폰에 관�
 
 Microsoft는 네트워크를 모니터링 하 고, 대역폭과 대기 시간을 측정 하 고, 페이지 로드 시간을 높이 며, 디스크 i/o를 줄이고, 데이터 센터에 하드웨어를 추가 하 고 데이터 센터를 더 추가 하는 등의 방법으로 Office 365의 전반적인 성과를 지속적으로 개선 합니다. 현재 상태 및 보고 문제를 확인 하는 방법에 대 한 자세한 내용은 [How to 365 check service health](https://docs.microsoft.com/office365/enterprise/view-service-health)를 참조 하십시오.
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Office 365의 네트워크 계획 및 성능 조정](network-planning-and-performance.md)
   

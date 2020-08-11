@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '요약: Microsoft 365 내의 격리 컨트롤에 대 한 설명입니다.'
-ms.openlocfilehash: da26bb6a41c97a16865bfdd5bdf6aada2069f7fe
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Microsoft 365 내에서 격리 컨트롤이 작동 하 여 서비스가 상호 운영 되거나 필요에 따라 자율적으로 남을 수 있도록 하는 방법을 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: da49d19371c0b7f704bf7cb1c4c83205b9cc9cb0
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774913"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605620"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365 격리 컨트롤 
 

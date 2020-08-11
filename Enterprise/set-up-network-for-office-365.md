@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: '요약: Microsoft 365에 대 한 네트워킹을 이해 하려면 다음 문서를 참조 하세요.'
-ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: 네트워크 연결 개요 및 끝점 목록을 비롯 하 여 Microsoft 365 용 네트워크를 설정 하는 데 도움이 되는 정보가 포함 된 문서에 대 한 링크를 확인할 수 있습니다.
+ms.openlocfilehash: 2c5966dc169a189a4f5040d4b5673859a38e6640
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592152"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605210"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365에 대 한 네트워크 설정
 

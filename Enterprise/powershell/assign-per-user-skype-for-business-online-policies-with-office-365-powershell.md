@@ -11,29 +11,29 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: '요약: Microsoft 365 용 PowerShell을 사용 하 여 비즈니스용 Skype Online 정책에 대 한 사용자 단위 통신 설정을 지정 합니다.'
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229845"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606464"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Microsoft 365 용 PowerShell을 사용 하 여 비즈니스용 Skype Online 정책 할당
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365 용 PowerShell을 사용 하는 것은 비즈니스용 Skype 온라인 정책을 사용 하 여 사용자별 통신 설정을 효율적으로 할당 하는 효율적인 방법입니다.
   
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="prepare-to-run-the-powershell-commands"></a>PowerShell 명령 실행 준비
 
 다음 절차에 따라 명령을 실행 하도록 설정 합니다 (이미 완료 한 단계 건너뛰기).
   
 1. [비즈니스용 Skype Online 커넥터 모듈](https://www.microsoft.com/download/details.aspx?id=39366)을 다운로드 하 고 설치 합니다.
     
-2. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행 합니다. 
+2. Windows PowerShell 명령 프롬프트를 열고 다음 명령을 실행합니다. 
     
 ```powershell
 Import-Module LyncOnlineConnector
@@ -136,10 +136,10 @@ $count = 0
 
 이렇게 하면 클라이언트 정책이 없는 경우 500 사용자가 한 번에 검색 됩니다. 여기에는 클라이언트 정책 "ClientPolicyNoIMURL"과 외부 액세스 정책 "FederationAndPicDefault"가 부여 됩니다. 결과가 50 그룹으로 일괄 처리 되 고 각 50의 각 배치가 원격 컴퓨터로 전송 됩니다.
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
-[PowerShell을 사용 하 여 비즈니스용 Skype Online 관리](manage-skype-for-business-online-with-office-365-powershell.md)
+[PowerShell을 통해 비즈니스용 Skype Oline 관리](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)

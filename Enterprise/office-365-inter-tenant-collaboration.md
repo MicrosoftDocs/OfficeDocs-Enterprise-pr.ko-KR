@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Microsoft 365 공동 작업이 테 넌 트 및 조직에서 작동 하는 방법을 알아봅니다.
-ms.openlocfilehash: 197f12f7c102da30582eb2c4f4447d895ca2768d
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 다양 한 조직이 안전 하 게 함께 작업할 수 있도록 하는 테 넌 트 및 조직에서 Microsoft 365 공동 작업이 작동 하는 방법을 알아봅니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e68df7c7b4d3574951957f576ffe7c896c0d13da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998728"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606564"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 테 넌 트 간 공동 작업
 

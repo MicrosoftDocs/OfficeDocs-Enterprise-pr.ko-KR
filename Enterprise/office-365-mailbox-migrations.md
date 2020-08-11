@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 사서함 마이그레이션에 사용 되는 cmdlet에 대 한 간략 한 요약입니다.
-ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 이 문서에는 Microsoft 365 사서함 마이그레이션에 대 한 간략 한 요약과 마이그레이션에 사용 되는 cmdlet 목록이 포함 되어 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c28ab1702e6a81826ce77bf0b4ef30e4d24832b4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774903"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605570"
 ---
 # <a name="microsoft-365-mailbox-migrations"></a>Microsoft 365 사서함 마이그레이션
 

@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '요약: PowerShell을 사용 하 여 SharePoint Online 사이트 그룹을 관리 합니다.'
-ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 이 문서에서는 Microsoft 365 용 PowerShell을 사용 하 여 SharePoint Online 사이트 그룹을 관리 하는 절차를 알아봅니다.
+ms.openlocfilehash: 5df2b57db4ac57aaf7905346d090ccde2d96a11c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230494"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605904"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>PowerShell을 사용 하 여 SharePoint Online 사이트 그룹 관리
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 Microsoft 365 관리 센터를 사용할 수도 있지만 Microsoft 365 용 PowerShell을 사용 하 여 SharePoint Online 사이트 그룹을 관리할 수도 있습니다.
 
@@ -91,7 +92,7 @@ foreach ($y in $x)
     }
 ```
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [SharePoint Online PowerShell에 연결](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -99,7 +100,7 @@ foreach ($y in $x)
 
 [PowerShell을 사용 하 여 SharePoint Online 사용자 및 그룹 관리](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

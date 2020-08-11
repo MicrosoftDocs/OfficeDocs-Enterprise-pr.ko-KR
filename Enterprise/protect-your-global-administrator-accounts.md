@@ -18,17 +18,18 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Microsoft 365 구독에 대 한 전역 관리자 액세스를 보호 합니다.
-ms.openlocfilehash: fdab22944902b554bc7fa295d189cfd2899933ef
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 이 문서에서는 Microsoft 365 구독에 대 한 전역 관리자 액세스를 보호 하는 방법에 대해 설명 합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5184b39a48348b07f0a16ce3db2aeaccfe0b2d21
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229764"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606194"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Microsoft 365 전역 관리자 계정 보호
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 정보 수집 및 피싱 공격을 포함 하 여 Microsoft 365 구독의 보안 침해는 일반적으로 Microsoft 365 전역 관리자 계정의 자격 증명을 손상 시켜 수행 합니다. 클라우드의 보안은 사용자와 Microsoft 간의 파트너 관계입니다.
   
@@ -163,6 +164,6 @@ Microsoft 365 구독에 대 한 id를 설정 하는 경우 다음을 참조 하�
 - 하이브리드 id를 사용 하 [는 경우 디렉터리 동기화 준비](prepare-for-directory-synchronization.md)
 
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 보안 로드맵](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)

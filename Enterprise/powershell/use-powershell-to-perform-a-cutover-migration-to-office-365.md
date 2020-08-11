@@ -1,5 +1,5 @@
 ---
-title: PowerShell을 사용 하 여 Microsoft 365로의 마이그레이션 수행
+title: PowerShell을 사용하여 Microsoft 365로 컷오버 마이그레이션 수행
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -12,19 +12,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: '요약: Windows PowerShell을 사용 하 여 Microsoft 365로의 마이그레이션을 수행 하는 방법을 알아봅니다.'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Microsoft 365로 마이그레이션을 수행 하 여 PowerShell을 사용 하 여 원본 전자 메일 시스템에서 콘텐츠를 한 번에 이동 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229854"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606224"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>PowerShell을 사용 하 여 Microsoft 365로의 마이그레이션 수행
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>PowerShell을 사용하여 Microsoft 365로 컷오버 마이그레이션 수행
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 단순 마이그레이션을 사용 하 여 원본 전자 메일 시스템의 사용자 사서함 내용을 한 번에 Microsoft 365로 마이그레이션할 수 있습니다. 이 문서에서는 Exchange Online PowerShell을 사용하는 전자 메일 단독형 마이그레이션 작업을 살펴봅니다. 
   

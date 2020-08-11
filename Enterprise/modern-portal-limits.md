@@ -13,16 +13,18 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
-description: SharePoint Online의 최신 사이트에 대 한 성능 권장 사항에 대해 알아봅니다.
-ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Sharepoint Online의 최신 사이트에 대 한 성능 권장 사항에 대해 설명 하 고 (예: 외부 끝점에 대 한 통화 제한)에 대해 알아봅니다.'
+ms.openlocfilehash: 1ec6dfb4b32a8915528adce168badf3645c26e48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844789"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606884"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online 최신 포털 사이트 제한
 

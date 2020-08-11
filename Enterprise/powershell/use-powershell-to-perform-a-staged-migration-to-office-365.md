@@ -1,5 +1,5 @@
 ---
-title: PowerShell을 사용 하 여 Microsoft 365로 미리 구성 된 마이그레이션 수행
+title: PowerShell을 사용하여 Microsoft 365로 미리 구성된 마이그레이션 수행
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: '요약: Windows PowerShell을 사용 하 여 Microsoft 365로 미리 구성 된 마이그레이션을 수행 하는 방법을 알아봅니다.'
-ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: PowerShell을 사용 하 여 Microsoft 365로 미리 구성 된 마이그레이션을 사용 하 여 시간에 따라 원본 전자 메일 시스템에서 콘텐츠를 이동 하는 방법을 알아봅니다.
+ms.openlocfilehash: a50966f65bbec5e4b453c4caf02e4b89fa7d04b5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229794"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606214"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>PowerShell을 사용 하 여 Microsoft 365로 미리 구성 된 마이그레이션 수행
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>PowerShell을 사용하여 Microsoft 365로 미리 구성된 마이그레이션 수행
 
-*이 문서는 Microsoft 365 Enterprise 및 Office 365 Enterprise에 모두 적용 됩니다.*
+*이 문서는 Microsoft 365 Enterprise와 Office 365 Enterprise에 모두 적용됩니다.*
 
 미리 구성 된 마이그레이션을 사용 하 여 시간에 따라 원본 전자 메일 시스템에서 Microsoft 365으로 사용자 사서함의 내용을 마이그레이션할 수 있습니다.
   

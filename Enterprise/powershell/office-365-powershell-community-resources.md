@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: '요약: 이러한 커뮤니티 공간에서 Microsoft 365 용 PowerShell에 대 한 도움말을 제공 합니다.'
-ms.openlocfilehash: 8f07fa685f6abe4edb5d7a54a0f9584eecd0f3f7
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 이 문서에서는 피어에 연결 하 고 Microsoft 365 용 PowerShell에 대 한 도움말을 볼 수 있는 커뮤니티 리소스를 제공 합니다.
+ms.openlocfilehash: 4166e47bc974f9109d23bbe3732f0c5da3d41960
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230404"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606454"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>PowerShell 용 Microsoft 365 커뮤니티 리소스
 
@@ -29,9 +31,9 @@ ms.locfileid: "45230404"
     
 - [Exchange Server TechNet 커뮤니티 포럼](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
-[PowerShell을 사용 하 여 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
+[PowerShell로 Microsoft 365 관리](manage-office-365-with-office-365-powershell.md)
   
 [Microsoft 365 용 PowerShell 시작](getting-started-with-office-365-powershell.md)
 

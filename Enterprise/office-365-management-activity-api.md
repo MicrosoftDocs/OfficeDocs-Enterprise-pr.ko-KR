@@ -14,13 +14,14 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Office 365 관리 활동 API에 대 한 간략 한 요약입니다.
-ms.openlocfilehash: 8c7e4723ffb1792847c4b4eca0ec8285b8848c98
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 Office 365 관리 활동 API 및 활동 로그에서 제공 하는 정보에 대 한 간략 한 요약을 확인할 수 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 05b47be60816b09a24df3dd0076a4d0cbcdabe84
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998677"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605550"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 관리 작업 API
 

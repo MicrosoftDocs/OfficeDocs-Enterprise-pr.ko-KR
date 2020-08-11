@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -20,13 +22,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: Microsoft 365을 기존 디렉터리 서비스와 통합 하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 이 문서에서는 Microsoft 365을 기존 디렉터리 서비스 및 온-프레미스 환경에 통합 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: 9eadad2f7dd4c0843b522658c361a0950f61509b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571061"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606574"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 통합 온-프레미스 환경
 
@@ -82,6 +84,6 @@ Azure AD Connect는 DirSync 및 Azure AD Sync와 같은 이전 버전의 id 통�
 
 또한 [Microsoft Azure에서 microsoft 365 디렉터리 동기화 배포를](https://go.microsoft.com/fwlink/?LinkId=517887)참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 365 Enterprise 개요](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

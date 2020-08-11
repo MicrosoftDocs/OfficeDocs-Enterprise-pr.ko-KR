@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 비즈니스용 Skype에서 데이터를 삭제 하는 방법에 대해 설명 합니다.
-ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 보존 되지 않는 콘텐츠 형식을 비롯 하 여 비즈니스용 Skype에서 데이터를 삭제 하는 방법에 대 한 설명을 확인할 수 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40ce2ca16367b0ca4b86ed839ca3ac9c6ddc04e4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997798"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606284"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365에서 비즈니스용 Skype 데이터 삭제
 

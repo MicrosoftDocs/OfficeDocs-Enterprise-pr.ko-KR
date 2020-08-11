@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
-description: Office 365 비디오 리포지토리와 스트리밍 서비스는 조직 내에서 비디오를 간단 하 게 저장 하 고 스트리밍하는 작업을 수행 합니다. Office 365 비디오에 대 한 많은 유용한 정보가 있습니다. 이 네트워킹 FAQ는 대역폭 계획, 암호화 및 서비스가 CDNs (콘텐츠 배달 네트워크)를 활용 하는 방법에 대 한 가장 일반적인 질문에 대 한 답변을 제공 하도록 설계 되었습니다.
-ms.openlocfilehash: 21c7327878bc76bc3bbe92d004a26a4704ef8c3d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
+description: 대역폭 계획, 암호화 & 서비스에서 CDNs (콘텐츠 배달 네트워크)를 활용 하는 방법을 확인 하는 방법에 대 한 질문과 대답을 제공 합니다.
+ms.openlocfilehash: 938876075bf849a94f52de9285e83cd442fe2006
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841975"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605480"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 비디오 네트워킹에 대 한 질문과 대답
 

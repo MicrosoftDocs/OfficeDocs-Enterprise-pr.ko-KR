@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: DoS (서비스 거부) 공격에 대 한 Microsoft 방어 전략 개요
-ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 이 문서에서는 DoS (서비스 거부) 공격에 대 한 Microsoft 방어 전략의 개요를 확인할 수 있습니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 242ec7a6fed574a0e5aa767ab31c28fc33b28e88
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998755"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605540"
 ---
 # <a name="microsoft-365-denial-of-service-defense-strategy"></a>Microsoft 365 서비스 거부 방어 전략
 

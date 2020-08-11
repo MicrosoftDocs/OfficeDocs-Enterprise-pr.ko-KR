@@ -1,5 +1,5 @@
 ---
-title: sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
+title: SharePoint Online과 함께 Office 365 CDN (콘텐츠 배달 네트워크) 사용
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 위치에 관계 없이 모든 사용자에 게 SharePoint Online 자산을 빠르게 배달 하는 방법에 대해 설명 하 고 콘텐츠에 액세스 하는 방법을 알아봅니다.
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: Office 365 CDN (콘텐츠 배달 네트워크)을 사용 하 여 SharePoint Online 자산의 속도를 빠르게 제공 하는 방법을 알아봅니다.
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316027"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606124"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>sharepoint Online을 활용해 Office 365 콘텐츠 배달 네트워크(CDN) 사용하기
 
@@ -304,7 +306,7 @@ _Path_ 값은 자산이 포함 된 라이브러리 또는 폴더에 대 한 상�
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ 와일드 카드 수정자 ***/** 는 경로의 시작 부분 에서만 사용할 수 있으며 지정 된 url의 모든 URL 세그먼트와 일치 합니다.
++ 와일드 카드 수정자 *는 **/** 경로의 시작 부분 에서만 사용할 수 있으며 지정 된 url의 모든 URL 세그먼트와 일치 합니다.
 + 경로는 문서 라이브러리, 폴더 또는 사이트를 가리킬 수 있습니다. 예를 들어 경로 _*/site1_ 은 사이트 아래의 모든 문서 라이브러리와 일치 합니다.
 
 특정 상대 경로를 사용 하 여 원본을 추가할 수 있습니다. 전체 경로를 사용 하 여 원점을 추가할 수는 없습니다.
@@ -387,7 +389,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
 
-**SPOTenantCdnOrigin** cmdlet을 사용 하면 사이트 모음을 전용 원본으로 정의할 수 있습니다. 예:
+**SPOTenantCdnOrigin** cmdlet을 사용 하면 사이트 모음을 전용 원본으로 정의할 수 있습니다. 예제:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -587,7 +589,7 @@ _Path_ 값은 자산이 포함 된 라이브러리 또는 폴더에 대 한 상�
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ 와일드 카드 수정자 ***/** 는 경로의 시작 부분 에서만 사용할 수 있으며 지정 된 url의 모든 URL 세그먼트와 일치 합니다.
++ 와일드 카드 수정자 *는 **/** 경로의 시작 부분 에서만 사용할 수 있으며 지정 된 url의 모든 URL 세그먼트와 일치 합니다.
 + 경로는 문서 라이브러리, 폴더 또는 사이트를 가리킬 수 있습니다. 예를 들어 경로 _*/site1_ 은 사이트 아래의 모든 문서 라이브러리와 일치 합니다.
 
 특정 상대 경로를 사용 하 여 원본을 추가할 수 있습니다. 전체 경로를 사용 하 여 원점을 추가할 수는 없습니다.
@@ -670,7 +672,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>예: SharePoint Online에 대 한 사이트 모음에 대 한 개인 원본 구성
 
-**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예:
+**추가-Pnpten앤틸리스 Cdn근원** cmdlet을 사용 하 여 사이트 모음을 전용 원본으로 정의 합니다. 예제:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -818,7 +820,7 @@ spo cdn origin remove --type Public --origin */masterpage
 
 ### <a name="modify-an-office-365-cdn-origin"></a>Office 365 CDN 원본 수정
 
-기존 CDN 원본을 수정할 수 없습니다. 대신 `spo cdn origin remove` 명령을 사용 하 여 이전에 정의 된 CDN 원본을 제거 하 고 `spo cdn origin add` 명령을 사용 하 여 새로 추가 해야 합니다.
+기존 CDN 원본을 수정할 수 없습니다. 대신 명령을 사용 하 여 이전에 정의 된 CDN 원본을 제거 `spo cdn origin remove` 하 고 명령을 사용 하 여 새로 추가 해야 합니다 `spo cdn origin add` .
 
 ### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a>Office 365 CDN에 포함할 파일 형식 변경
 
@@ -848,7 +850,7 @@ spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications -
 
 ### <a name="disable-the-office-365-cdn"></a>Office 365 CDN 사용 안 함
 
-Office 365 CDN을 사용 하지 않도록 설정 `spo cdn set` 하려면 다음과 같이 명령을 사용 합니다.
+Office 365 CDN을 사용 하지 않도록 설정 하려면 다음과 같이 명령을 사용 합니다 `spo cdn set` .
 
 ```sh
 spo cdn set --type Public --enabled false
@@ -879,7 +881,7 @@ CDN 및 구성 된 원본 및 정책을 사용 하도록 설정 했으므로 이
 + 원본의 자산에 대 한 각 링크에 대해 경로를 CDN 원본에 있는 파일의 경로로 바꿉니다. 상대 경로를 사용할 수 있습니다.
 + 페이지 또는 콘텐츠를 저장 합니다.
 
-예를 들어 문서 라이브러리 폴더 _/site/CDN_origins/site/_ 로 복사한 이미지 _/site/SiteAssets/images/image.png_을 고려해 보십시오. CDN 자산을 사용 하려면 원래 경로를 원본 경로와 함께 이미지 파일 위치로 바꿔 새 URL _/site/CDN_origins/public/.png_를 만듭니다.
+예를 들어 문서 라이브러리 폴더 _/site/CDN_origins/site/_ 로 복사한 이미지 _/site/SiteAssets/images/image.png_를 고려해 야 합니다. CDN 자산을 사용 하려면 이미지 파일 위치에 대 한 원래 경로를 원본 경로와 함께 대체 하 여 새 URL _/site/CDN_origins/site/image.png_을 만듭니다.
 
 상대 경로 대신 자산에 대 한 전체 URL을 사용 하려면 다음과 같이 링크를 구성 합니다.
 
@@ -894,7 +896,7 @@ CDN에서 자산이 제공 되 고 있는지 확인 하는 방법에 대 한 자
 
 SharePoint Online의 **게시 기능은** SHAREPOINT 대신 cdn 서비스에서 자산이 제공 되도록 공용 원본에 저장 된 자산의 url을 해당 cdn에 맞게 자동으로 다시 씁니다.
 
-원본이 게시 기능이 사용 하도록 설정 된 사이트에 있고 CDN에 대해 오프 로드 하려는 자산이 다음 범주 중 하나에 포함 되어 있는 경우 SharePoint에서는 자산이 CDN에서 제외 된 경우에는 원본의 자산에 대 한 Url을 자동으로 다시 씁니다.  정책.
+원본이 게시 기능이 사용 하도록 설정 된 사이트에 있고 CDN에 대해 오프 로드 하려는 자산이 다음 범주 중 하나에 포함 되어 있는 경우 SharePoint에서는 자산이 CDN 정책에 의해 제외 되지 않은 경우 원본의 자산에 대 한 Url을 자동으로 다시 씁니다.
 
 다음은 SharePoint 게시 기능에 의해 자동으로 다시 작성 되는 링크에 대 한 간략 한 설명입니다.
 
@@ -946,7 +948,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN의 비공개 원본에 있는 자산에 대 한 액세스는 SharePoint Online에서 생성 된 토큰에 의해 부여 됩니다. 원본에서 지정한 폴더나 라이브러리에 대 한 액세스 권한이 이미 있는 사용자에 게는 사용자가 자신의 사용 권한 수준에 따라 파일에 액세스할 수 있도록 허용 하는 토큰이 자동으로 부여 됩니다. 이러한 액세스 토큰은 토큰 재생 공격을 방지 하기 위해 생성 된 30 ~ 90 분에 유효 합니다.
 
-액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예:
+액세스 토큰이 생성 되 면 SharePoint Online에서 클라이언트에 대 한 사용자 지정 URI 두 _개 (edge_ 인증 토큰)와 _oat_ (원본 인증 토큰)을 함께 반환 합니다. 각 토큰의 구조는 _< ' >__< ' 보안 서명 ' >' 만료 시간 '으로 지정 _됩니다. 예제:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -957,14 +959,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>비공개 원본에 있는 자산에 대해서는 항목 수준 권한이 지원 되지 않습니다.
 
-SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권한을 지원 하지 않는다는 점에 유의 해야 합니다. 예를 들어에 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`있는 파일의 경우 사용자는 다음 조건에 해당 하는 파일에 대 한 유효한 액세스 권한을 갖습니다.
+SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권한을 지원 하지 않는다는 점에 유의 해야 합니다. 예를 들어에 있는 파일의 경우 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` 사용자는 다음 조건에 해당 하는 파일에 대 한 유효한 액세스 권한을 갖습니다.
 
-|사용자  |사용 권한  |유효한 액세스  |
+|사용자  |권한  |유효한 액세스  |
 |---------|---------|---------|
-|사용자 1     |Folder1에 대 한 액세스 권한         |CDN에서 image1에 액세스할 수 있음         |
-|사용자 2     |Folder1에 대 한 액세스 권한이 없음         |CDN에서 image1에 액세스할 수 없음         |
-|사용자 3     |Folder1에 대 한 액세스 권한이 없지만 SharePoint Online에서 image1에 액세스할 수 있는 권한이 명시적으로 부여 됩니다.         |SharePoint Online에서 직접 자산 image1에 액세스할 수 있으 나 CDN에서 액세스 가능         |
-|사용자 4     |Folder1에 대 한 액세스 권한이 있지만 SharePoint Online에서 image1에 대 한 액세스 권한이 명시적으로 거부 되었습니다.         |SharePoint Online에서 자산에 액세스할 수는 없지만 SharePoint Online에서 파일에 대 한 액세스가 거부 되더라도 CDN에서 자산에 액세스할 수 있습니다.         |
+|사용자 1     |Folder1에 대 한 액세스 권한         |CDN에서 image1.jpg에 액세스할 수 있음         |
+|사용자 2     |Folder1에 대 한 액세스 권한이 없음         |CDN에서 image1.jpg에 액세스할 수 없음         |
+|사용자 3     |Folder1에 대 한 액세스 권한이 없지만 SharePoint Online의 image1.jpg에 대 한 액세스 권한을 명시적으로 부여 받을 수 있습니다.         |SharePoint Online에서 직접 image1.jpg 자산에 액세스할 수 있으 나 CDN에서 액세스 가능         |
+|사용자 4     |Folder1에 대 한 액세스 권한이 있지만 SharePoint Online에서 image1.jpg에 대 한 액세스 권한이 명시적으로 거부 되었습니다.         |SharePoint Online에서 자산에 액세스할 수는 없지만 SharePoint Online에서 파일에 대 한 액세스가 거부 되더라도 CDN에서 자산에 액세스할 수 있습니다.         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Office 365 CDN 문제 해결
@@ -977,7 +979,7 @@ SharePoint Online은 전용 원본에 있는 자산에 대 한 항목 수준 권
 또한 브라우저의 개발자 도구를 사용 하 여 페이지의 각 자산에 대 한 URL을 보거나 타사 네트워크 추적 도구를 사용할 수 있습니다.
 
 > [!NOTE]
-> Fiddler와 같은 네트워크 도구를 사용 하 여 SharePoint 페이지에서 자산을 렌더링 하지 않는 사용자의 자산을 테스트 하는 경우 URL이 SharePoint Online 테 넌 트의 `https://yourdomain.sharepoint.com`루트 URL 인 GET 요청에 referer 헤더 "referer:"를 수동으로 추가 해야 합니다.
+> Fiddler와 같은 네트워크 도구를 사용 하 여 SharePoint 페이지에서 자산을 렌더링 하지 않는 사용자의 자산을 테스트 하는 경우 `https://yourdomain.sharepoint.com` URL이 Sharepoint Online 테 넌 트의 루트 URL 인 GET 요청에 referer 헤더 "referer:"를 수동으로 추가 해야 합니다.
 
 SharePoint Online에서 제공 되는 referer가 있어야 하기 때문에 CDN Url을 웹 브라우저에서 직접 테스트할 수 없습니다. 그러나 SharePoint 페이지에 CDN 자산 URL을 추가한 다음 브라우저에서 페이지를 열면 CDN 자산이 페이지에 렌더링 된 것을 볼 수 있습니다.
 
@@ -1029,7 +1031,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 + [SharePoint Online 관리 셸 시작](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Office 365 CLI 설치](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [콘텐츠 배달 네트워크](https://aka.ms/o365cdns)
 

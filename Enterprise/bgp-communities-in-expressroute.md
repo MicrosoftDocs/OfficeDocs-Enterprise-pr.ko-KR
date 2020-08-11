@@ -13,19 +13,21 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: Azure Express 경로를 사용 하 여 Office 365에 연결 하는 기능은 Office 365 끝점이 배포 되는 네트워크를 나타내는 특정 IP 서브넷의 BGP 광고를 기반으로 합니다. Office 365의 전역 특성 및 Office 365을 구성 하는 서비스 수로 인해 고객은 네트워크에서 허용 되는 광고를 관리 해야 하는 경우가 많습니다. IP 서브넷 수 줄이기 BGP network 관리 용어를 정렬 하기 위해이 문서의 나머지 부분에서 IP 접두사 라고 하며, 고객을 위해 다음과 같은 최종 목표를 사용 합니다.
-ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Azure Express에서 BGP 커뮤니티를 사용 하 여 Office 365 시나리오의 IP 접두사 및 필요한 대역폭을 관리 하는 방법에 대해 알아봅니다.
+ms.openlocfilehash: ce83b95de0b1032ebd23f0262f814aeac4ed2d0a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997875"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606094"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 시나리오에서 (으)로의 BGP 커뮤니티 사용
 
@@ -61,7 +63,7 @@ Contoso Corporation은 현재 Exchange Online 및 SharePoint Online 용 Office 3
 |SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; 비즈니스용 OneDrive  <br/> | DNS, CRL, &amp; CDN 요청  <br/>  기타 모든 Office 365 서비스는 Azure Express를 통해 명시적으로 지원 되지 않습니다.  <br/>  다른 모든 Microsoft 클라우드 서비스  <br/>  Office 365 포털, Office 365 인증, &amp; office (브라우저)  <br/>  Exchange Online, Exchange Online Protection 및 비즈니스용 Skype Online  <br/> |
 
 > [!NOTE]
-> 각 서비스에 대 한 접두사 카운트를 낮추려면 서비스 간에 최소한의 겹치는 부분이 유지 됩니다. 이는 예상 되는 동작입니다.
+> 각 서비스에 대 한 접두사 카운트를 낮추려면 서비스 간에 최소한의 겹치는 부분이 유지 됩니다. 이것은 예상된 동작입니다.
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>시나리오 2: 일부 Office 365 서비스에 대 한 대상 및 내부 대역폭 사용 범위 지정
 
@@ -105,7 +107,7 @@ BGP 커뮤니티를 활용 하 여 고객 네트워크를 통해 거가 보급 �
 
 여기서는 다음을 수행 하는 데 사용할 수 있는 간단한 링크를 제공 [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) 합니다.
   
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 주제
 
 [Office 365 네트워크 연결 평가](assessing-network-connectivity.md) 
   
