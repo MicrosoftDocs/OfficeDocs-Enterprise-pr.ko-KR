@@ -15,16 +15,17 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom:
-- Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: '요약: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.'
-ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
-ms.translationtype: MT
+ms.custom:
+- seo-marvel-apr2020
+- Ent_Architecture
+description: Microsoft의 클라우드 제품에서 조직, 구독, 라이선스, 사용자 계정 및 테넌트의 관계를 이해합니다.
+ms.openlocfilehash: 7546d4b24c66946e287aa51deb2d1f1896045322
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906283"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603670"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 클라우드 제품용 구독, 라이선스, 계정 및 테넌트
 
@@ -46,12 +47,12 @@ Microsoft는 해당 클라우드 제품 간에 일관된 ID 사용 및 요금 �
 
 구독은 하나 혹은 이상의 Microsoft 클라우드 플랫폼 또는 서비스를 사용하기 위한 Microsoft와의 약정이며 사용자 단위 라이선스 요금이나 클라우드 기반 리소스 소비량을 기준으로 요금이 부과됩니다. 
 
-- Microsoft의 SaaS (Software as a Service) 기반 클라우드 서비스 (Microsoft 365 및 Dynamics 365) 최종 사용자 사용권 수수료 
+- Microsoft의 서비스로서의 소프트웨어 (SaaS) 기반 클라우드 서비스(Microsoft 365 및 Dynamics 365)는 사용자 단위 라이선스 요금을 부과합니다. 
 - Microsoft의 서비스로서의 플랫폼 (PaaS) 및 서비스로서의 인프라 (IaaS) 클라우드 서비스는 (Azure) 클라우드 리소스 소비량을 기반으로 요금을 부과합니다.
  
 평가판 구독을 사용할 수도 있지만, 일정 기간이 지나거나 이용 요금이 다 사용된 후에는 구독이 만료됩니다. 평가판 구독을 유료 구독으로 변환할 수 있습니다.
   
-조직은 다수의 Microsoft의 클라우드 서비스를 구독할 수 있습니다. 그림 1에는 여러 Microsoft 365 구독, Dynamics 365 구독 및 여러 Azure 구독이 있는 단일 조직이 나와 있습니다.
+조직은 다수의 Microsoft의 클라우드 서비스를 구독할 수 있습니다. 그림 1에서는 여러 개의 Microsoft 365 구독, Dynamics 365 구독 및 여러 개의 Azure 구독이 있는 단일 조직을 보여줍니다.
 
 **그림 1: 여러 개의 조직용 구독 예**
 
@@ -59,7 +60,7 @@ Microsoft는 해당 클라우드 제품 간에 일관된 ID 사용 및 요금 �
   
 ### <a name="licenses"></a>라이선스
 
-Microsoft의 SaaS 클라우드 제품의 경우 라이선스를 통해 특정 사용자 계정이 클라우드 서비스를 사용할 수 있도록 해줍니다. 구독의 일부로서 구독자에게 고정 월별 요금이 청구됩니다. 관리자는 구독의 개별 사용자 계정에 라이선스를 할당합니다. 그림 2의 예를 들어 Contoso Corporation에는 365 Microsoft 365 E5 기능 및 서비스를 사용 하기 위해 최대 100의 개별 사용자 계정에 대 한 100 라이선스가 포함 되어 있습니다.
+Microsoft의 SaaS 클라우드 제품의 경우 라이선스를 통해 특정 사용자 계정이 클라우드 서비스를 사용할 수 있도록 해줍니다. 구독의 일부로서 구독자에게 고정 월별 요금이 청구됩니다. 관리자는 구독의 개별 사용자 계정에 라이선스를 할당합니다. 예를 들어, 그림 2에서 Contoso Corporation는 Microsoft 365 E5를 구독하고 100개의 라이선스를 보유하고 있어 최대 100개의 개별 사용자 계정을 사용하여 Microsoft 365 E5의 기능 및 서비스를 사용할 수 있습니다.
   
 **그림 2: 조직을 위한 SaaS 기반 구독에 포함된 라이선스**
 
@@ -83,11 +84,11 @@ Azure IaaS 기반 가상 머신의 경우 가상 머신 이미지에 설치되�
   
 ### <a name="tenants"></a>테넌트
 
-SaaS 클라우드 제품의 경우 테 넌 트는 클라우드 서비스를 제공 하는 서버를 소유 하는 지역 위치입니다. 예를 들어 Contoso Corporation은 해당 파리 본사의 15000 작업자에 게 Microsoft 365, EMS 및 Dynamics 365 테 넌 트를 호스트 하기 위해 유럽 지역을 선택 했습니다.
+SaaS 클라우드 제공품의 경우 테넌트는 클라우드 서비스를 제공하는 서버가 있는 지역 위치입니다. 예를 들어, Contoso Corporation은 유럽 지역을 선택하여 파리 본사에 있는 15,000명의 작업자를 위해 Microsoft 365, EMS 및 Dynamics 365 테넌트를 호스트했습니다.
   
 Azure IaaS에 호스트된 Azure PaaS 서비스 및 가상 머신 기반 워크로드는 전 세계의 모든 Azure 데이터 센터에서 테넌시를 둘 수 있습니다. Azure PaaS 앱 또는 서비스를 만들 때는 위치로 사용되고, IaaS 워크로드의 요소로도 알려진 Azure 데이터 센터를 지정할 수 있습니다.
   
-Azure AD 테 넌 트는 계정과 그룹을 포함 하는 Azure AD의 특정 인스턴스입니다. Microsoft 365 또는 Dynamics 365의 유료 또는 평가판 구독에는 무료 Azure AD 테 넌 트가 포함 됩니다. 이 Azure AD 테 넌 트에는 다른 Azure 서비스가 포함 되지 않으며 Azure 평가판 또는 유료 구독과 동일 하지 않습니다.
+Azure AD 테넌트는 계정 및 그룹을 포함하는 Azure AD의 특정 인스턴스를 말합니다. Microsoft 365 또는 Dynamics 365의 유료 또는 평가판 구독에는 무료 Azure AD 테넌트가 포함됩니다. Azure AD 테넌트는 다른 Azure 서비스를 포함하지 않으며 Azure 평가판 또는 유료 구독과 다릅니다.
   
 ### <a name="summary-of-the-hierarchy"></a>계층 구조의 요약
 
@@ -130,8 +131,8 @@ Azure AD 테 넌 트는 계정과 그룹을 포함 하는 Azure AD의 특정 인
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Microsoft 365** <br/> |해당 없음  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |Microsoft 365 관리 센터에서 조직에 Dynamics 365 구독을 추가합니다.  <br/> |
-|**Azure** <br/> |조직에 Microsoft 365 구독을 추가 합니다.  <br/> |해당 없음  <br/> |조직에 Dynamics 365 구독을 추가합니다.  <br/> |
-|**Dynamics 365** <br/> |조직에 Microsoft 365 구독을 추가 합니다.  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |해당 없음  <br/> |
+|**Azure** <br/> |조직에 Microsoft 365 구독을 추가합니다.  <br/> |해당 없음  <br/> |조직에 Dynamics 365 구독을 추가합니다.  <br/> |
+|**Dynamics 365** <br/> |조직에 Microsoft 365 구독을 추가합니다.  <br/> |Azure Portal에서 조직에 Azure 구독을 추가합니다.  <br/> |해당 없음  <br/> |
    
 관리 센터를 사용하면 Microsoft SaaS 기반 서비스를 위해 조직에 구독을 쉽게 추가할 수 있습니다.
   
@@ -141,19 +142,19 @@ Azure AD 테 넌 트는 계정과 그룹을 포함 하는 Azure AD의 특정 인
     
 3. **서비스 구매** 페이지에서 새 구독을 구입합니다.
     
-관리 센터는 SaaS 기반 클라우드 서비스에 대 한 새 구독에 대 한 Microsoft 365 구독의 조직 및 Azure 테 넌 트를 할당 합니다.
+관리 센터는 SaaS 기반 클라우드 서비스에 대한 새 구독에 Microsoft 365 구독의 조직 및 Azure 테넌트를 할당합니다.
   
-Microsoft 365 구독으로 동일한 조직 및 Azure AD 테 넌 트를 사용 하 여 Azure 구독을 추가 하려면 다음을 수행 합니다.
+Microsoft 365 구독과 동일한 조직 및 Azure 테넌트를 갖는 Azure 구독을 추가하려면
   
-1. [https://portal.azure.com](https://portal.azure.com)Microsoft 365 전역 관리자 계정을 사용 하 여 Azure portal ()에 로그인 합니다.
+1. Microsoft 365 전역 관리자 계정을 사용하여 Azure Portal 포털([https://portal.azure.com](https://portal.azure.com))에 로그인합니다.
     
 2. 왼쪽 탐색 모음에서 **구독**을 클릭하고 **추가**를 클릭합니다.
     
 3. **구독 추가** 페이지에서 서비스를 선택하고 결제 정보 및 계약을 완료합니다.
     
-Azure 및 Microsoft 365 구독을 별도로 구매한 경우 Azure 구독에서 Microsoft 365 Azure AD 테 넌 트에 액세스 하려면의 지침에 따라 [Azure Active Directory 테 넌 트에 기존 azure 구독을 추가](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)합니다 .를 참조 하세요.
+Azure 및 Microsoft 365 구독으로 따로 구입했으며 Azure 구독에서 Microsoft 365 Azure AD 테넌트에 액세스하려는 경우 [Azure Active Directory 테넌트에 기존의 Azure 구독을 추가](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)의 지침을 참조하세요.
  
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>기타 참고 항목
 
 [Microsoft 클라우드 IT 아키텍처 리소스](microsoft-cloud-it-architecture-resources.md)
   

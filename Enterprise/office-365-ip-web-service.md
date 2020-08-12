@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Office 365 IP 주소 및 URL 웹 서비스를 통해 Office 365 네트워크 트래픽을 보다 잘 식별하고 차별화할 수 있으므로 변경 사항을 보다 쉽게 평가, 구성 하고 최신 상태로 유지할 수 있습니다.
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Office 365 IP 주소 및 URL 웹 서비스를 사용하여 Office 365 네트워크 트래픽을 손쉽게 식별하고 구분하는 방법을 알아봅니다.
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843601"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605630"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 주소 및 URL 웹 서비스
 
@@ -61,7 +63,7 @@ Office 365 IP 주소 및 URL 웹 서비스를 통해 Office 365 네트워크 트
 다음은 모든 웹 서비스 메서드에서 공통되는 매개 변수입니다.
 
 - **format=<JSON | CSV>** - 기본적으로 반환되는 데이터 형식은 JSON입니다. 이 선택적 매개 변수를 사용하여 쉼표로 구분된 값(CSV) 형식으로 데이터를 반환하십시오.
-- **ClientRequestId =\<guid >** - 클라이언트 연결을 위해 생성해야 하는 필수 GUID입니다. 웹 서비스를 호출하는 각 시스템에 대해 고유한 GUID를 생성합니다(이 페이지에 포함된 스크립트가 GUID를 생성함). 다음 예제에 표시된 GUID는 앞으로 웹 서비스에 의해 차단될 수 있으므로 사용하지 마십시오. GUID 형식은 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_이며 여기서 x는 16진수를 나타냅니다.
+- **ClientRequestId=\<guid>** — 클라이언트 연결을 위해 생성해야 하는 필수 GUID입니다. 웹 서비스를 호출하는 각 시스템에 대해 고유한 GUID를 생성합니다(이 페이지에 포함된 스크립트가 GUID를 생성함). 다음 예제에 표시된 GUID는 앞으로 웹 서비스에 의해 차단될 수 있으므로 사용하지 마십시오. GUID 형식은 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_이며 여기서 x는 16진수를 나타냅니다.
 
   GUID를 생성하려면 [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell 명령을 사용하거나 [Online GUID 생성기](https://www.guidgenerator.com/)와 같은 온라인 서비스를 사용할 수 있습니다.
 
@@ -247,7 +249,7 @@ Worldwide,2018063000
 
 변경 내용 웹 메서드에 대한 필수 매개 변수입니다.
 
-- ** 버전 = \<YYYYMMDDNN>** - 필수 URL 경로 매개 변수입니다. 이 값은 현재 구현한 버전입니다. 웹 서비스는 해당 버전 이후의 변경 사항을 반환합니다. 형식은 _YYYYMMDD_입니다. 여기서 _NN_은 하루 동안 게시해야하는 여러 버전이 있는 경우 자연수 증가분이고 _00_은 해당 날짜의 첫 번째 업데이트를 나타냅니다. 웹 서비스는 _버전_ 매개 변수가 정확히 10 자리를 포함하도록 요구합니다.
+- **Version=\<YYYYMMDDNN>** — 필수 URL 경로 매개 변수입니다. 이 값은 현재 구현한 버전입니다. 웹 서비스는 해당 버전 이후의 변경 사항을 반환합니다. 형식은 _YYYYMMDD_입니다. 여기서 _NN_은 하루 동안 게시해야하는 여러 버전이 있는 경우 자연수 증가분이고 _00_은 해당 날짜의 첫 번째 업데이트를 나타냅니다. 웹 서비스는 _버전_ 매개 변수가 정확히 10 자리를 포함하도록 요구합니다.
 
 변경 웹 메서드는 엔드 포인트 웹 메서드와 같은 방식으로 비율이 제한됩니다. 429 HTTP 응답 코드를 받은 경우, 다시 요청을 반복하기까지 1시간을 기다리거나 요청에 대한 새 GUID를 생성합니다.
 

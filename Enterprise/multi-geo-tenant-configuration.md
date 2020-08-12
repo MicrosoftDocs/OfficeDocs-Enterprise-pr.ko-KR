@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Microsoft 365 Multi-Geo 구성 방법 알아보기
-ms.openlocfilehash: 518bc6dc5bf72e5196a46df8ee7b2e80b7b1838a
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: 이 문서에서는 위성 위치를 추가하고 Microsoft 365 Multi-Geo용 테넌트를 구성하는 방법을 알아봅니다.
+ms.openlocfilehash: 53a339c9bc709920adb55992d44be2f6280fffcd
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433819"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606794"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo 테넌트 구성
 
@@ -74,7 +76,7 @@ Azure Active Directory(Azure AD)에는 두 가지 유형의 사용자 개체(클
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Azure AD Connect를 사용하여 사용자의 기본 설정 데이터 위치 동기화 
 
-회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure AD로 동기화 되는 경우 해당 PreferredDataLocation을 AD에 채워야 하며 Azure AD로 동기화 해야 합니다.
+회사의 사용자가 온-프레미스 Active Directory 시스템에서 Azure AD로 동기화되는 경우, 해당 PreferredDataLocation을 AD에 채워야 하며 Azure AD로 동기화해야 합니다.
 
 [Azure Active Directory 연결 동기화: Microsoft 365 리소스에 대한 기본 데이터 위치 동기화](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) 벌차를 따라 온-프레미스 Active Directory 도메인 서비스 (AD DS)에서 Azure AD로의 기본 데이터 위치 동기화를 구성 합니다.
 

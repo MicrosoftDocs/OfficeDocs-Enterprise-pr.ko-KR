@@ -15,13 +15,14 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
-description: Office 365 네트워크 연결에 대한 네트워크 계획을 시작하기 전에 먼저 Office 365 트래픽을 안전하게 관리하고 최상의 성능을 얻을 수 있는 연결 원칙을 이해하는 것이 중요합니다. 이 문서는 Office 365 네트워크 연결을 안전하게 최적화하기 위한 최신 가이드를 이해하는 데 도움이 됩니다.
-ms.openlocfilehash: 399f00412bfd5c26a5910b9dcaa141a4fababd93
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: 이 문서는 Office 365 네트워크 연결을 안전하게 최적화하기 위한 최신 가이드를 재공합니다.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: be8877ca651e29763b16996670b294cb23bea960
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502703"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605500"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 네트워크 연결 원칙
 

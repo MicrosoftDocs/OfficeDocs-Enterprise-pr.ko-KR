@@ -1,5 +1,5 @@
 ---
-title: 다중 위치 환경의 사용자 작업 환경
+title: Multi-Geo 환경의 사용자 작업 환경
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: 다중 위치 환경의 SharePoint, OneDrive 및 Exchange 사용자 작업 환경에 대해 알아봅니다.
-ms.openlocfilehash: 55c3f431474715ce03cc313a5d8d208d76b60b78
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: Microsoft 365용 Multi-Geo 환경의 SharePoint, OneDrive 및 Exchange 사용자 작업 환경에 대해 알아봅니다.
+ms.openlocfilehash: e33c5d0d699d3d1343f7ba9cb2b0c1b20c4d4366
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433799"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606784"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>다중 위치 환경의 사용자 작업 환경
 
